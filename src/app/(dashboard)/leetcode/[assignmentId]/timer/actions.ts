@@ -1,29 +1,30 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import type { AttemptResult } from "@/features/leetcode/timer";
 import {
-  calculateAttemptResult,
-  type AttemptResult,
-} from "@/features/leetcode/timer";
+  completeAttemptFromAssignment,
+  getLeetcodeAssignment,
+  type LeetcodeAssignmentAttempt,
+} from "../../assignment-lookup";
 
 type AttemptStatus = "completed" | "failed" | "skipped";
 
 const validAttemptStatuses = new Set<string>(["completed", "failed", "skipped"]);
 
 export type CompleteAttemptInput = {
-  startedAt: string;
-  timeLimitMinutes: number;
+  assignmentId: string;
   status: AttemptStatus;
 };
 
 export async function completeAttempt(
   input: CompleteAttemptInput,
 ): Promise<AttemptResult> {
-  const result = calculateAttemptResult({
-    startedAt: input.startedAt,
+  const assignment = getLeetcodeAssignment(input.assignmentId);
+  const result = completeAttemptFromAssignment({
+    assignment,
     endedAt: new Date().toISOString(),
-    timeLimitMinutes: input.timeLimitMinutes,
-    requestedStatus: input.status,
+    status: input.status,
   });
 
   revalidatePath("/leetcode");
@@ -31,16 +32,21 @@ export async function completeAttempt(
   return result;
 }
 
-export async function completeAttemptFromForm(formData: FormData): Promise<void> {
+export async function completeAttemptFromForm(
+  assignment: LeetcodeAssignmentAttempt,
+  formData: FormData,
+): Promise<void> {
   const status = String(formData.get("status") ?? "");
 
   if (!validAttemptStatuses.has(status)) {
     throw new Error(`Invalid attempt status: ${status}`);
   }
 
-  await completeAttempt({
-    startedAt: String(formData.get("startedAt") ?? ""),
-    timeLimitMinutes: Number(formData.get("timeLimitMinutes")),
+  completeAttemptFromAssignment({
+    assignment,
+    endedAt: new Date().toISOString(),
     status: status as AttemptStatus,
   });
+
+  revalidatePath("/leetcode");
 }

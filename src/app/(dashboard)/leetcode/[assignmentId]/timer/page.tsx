@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { TimerPanel } from "@/components/timer-panel";
+import { getLeetcodeAssignment } from "../../assignment-lookup";
 import { findStarterLeetCodeAssignment } from "../../assignments";
 import { completeAttemptFromForm } from "./actions";
 
@@ -25,13 +26,15 @@ export default async function LeetCodeTimerPage({ params }: TimerPageProps) {
   }
 
   const startedAt = new Date().toISOString();
+  const attemptAssignment = getLeetcodeAssignment(assignmentId, startedAt);
+  const completeBoundAttempt = completeAttemptFromForm.bind(null, attemptAssignment);
 
   return (
     <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_24rem]">
       <TimerPanel
-        problemTitle={assignment.problemTitle}
-        startedAt={startedAt}
-        timeLimitMinutes={assignment.timeLimitMinutes}
+        problemTitle={attemptAssignment.title}
+        startedAt={attemptAssignment.startedAt}
+        timeLimitMinutes={attemptAssignment.timeLimitMinutes}
       />
       <aside className="space-y-5 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
         <div>
@@ -46,13 +49,7 @@ export default async function LeetCodeTimerPage({ params }: TimerPageProps) {
             the server from this attempt start time.
           </p>
         </div>
-        <form action={completeAttemptFromForm} className="space-y-4">
-          <input type="hidden" name="startedAt" value={startedAt} />
-          <input
-            type="hidden"
-            name="timeLimitMinutes"
-            value={assignment.timeLimitMinutes}
-          />
+        <form action={completeBoundAttempt} className="space-y-4">
           <fieldset className="space-y-3">
             <legend className="text-sm font-semibold text-slate-700">
               Final status
