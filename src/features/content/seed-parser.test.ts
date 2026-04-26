@@ -143,4 +143,89 @@ Design a URL shortener.
 `),
     ).toThrow(/Missing prompt slug.*Design TinyURL/);
   });
+
+  it("does not read indented child fields as section metadata", () => {
+    expect(() =>
+      parseLeetcodeSeed(`# LeetCode Patterns
+
+## Pattern: Two Pointers
+Slug: two-pointers
+Description: Move two indices through a sequence.
+
+### Subpattern: Opposite Ends
+
+- Problem: Two Sum II
+  Slug: two-sum-ii
+  Difficulty: medium
+  URL: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+  Estimated Minutes: 20
+  Tags: array, pointers
+`),
+    ).toThrow(/Missing slug.*subpattern Opposite Ends/);
+  });
+
+  it("preserves prompt text that starts with a label-like line", () => {
+    const result = parseSystemDesignSeed(`# System Design Prompts
+
+## Topic: URL Shortener
+Slug: url-shortener
+Tags: hashing
+
+### Prompt: Design TinyURL
+Slug: design-tinyurl
+Difficulty: medium
+Expected Concepts: redirects
+
+Requirements:
+Design a URL shortener that supports analytics.
+`);
+
+    expect(result.prompts[0].promptText).toBe(
+      "Requirements:\nDesign a URL shortener that supports analytics.",
+    );
+  });
+
+  it("rejects duplicate leetcode problem slugs", () => {
+    expect(() =>
+      parseLeetcodeSeed(`# LeetCode Patterns
+
+## Pattern: Two Pointers
+Slug: two-pointers
+Description: Move two indices through a sequence.
+
+### Subpattern: Opposite Ends
+Slug: opposite-ends
+
+- Problem: Two Sum II
+  Slug: duplicate-problem
+  Difficulty: medium
+  URL: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+  Estimated Minutes: 20
+  Tags: array, pointers
+
+- Problem: Three Sum
+  Slug: duplicate-problem
+  Difficulty: medium
+  URL: https://leetcode.com/problems/3sum/
+  Estimated Minutes: 30
+  Tags: array, pointers
+`),
+    ).toThrow(/Duplicate leetcode problem slug.*duplicate-problem/);
+  });
+
+  it("rejects duplicate roadmap topic slugs", () => {
+    expect(() =>
+      parseRoadmapSeed(`# Backend Roadmap
+Source: https://roadmap.sh/backend
+
+## Topic: Internet
+Slug: duplicate-topic
+Description: Understand how the internet works.
+
+## Topic: HTTP
+Slug: duplicate-topic
+Description: Understand HTTP fundamentals.
+`),
+    ).toThrow(/Duplicate roadmap topic slug.*duplicate-topic/);
+  });
 });

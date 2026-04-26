@@ -73,6 +73,13 @@ interface Section {
   startLine: number;
 }
 
+const promptMetadataFields = new Set([
+  "slug",
+  "difficulty",
+  "source",
+  "expected concepts",
+]);
+
 function parseSections(markdown: string): Section[] {
   const lines = markdown.split(/\r?\n/);
   const sections: Section[] = [];
@@ -91,9 +98,11 @@ function parseSections(markdown: string): Section[] {
   return sections;
 }
 
-function field(lines: string[], name: string): string | null {
+function field(lines: string[], name: string, options: { topLevelOnly?: boolean } = {}): string | null {
   const normalizedName = name.toLowerCase();
   for (const line of lines) {
+    if (options.topLevelOnly && /^\s/.test(line)) continue;
+
     const trimmed = line.trim();
     const separator = trimmed.indexOf(":");
     if (separator === -1) continue;
@@ -107,8 +116,17 @@ function field(lines: string[], name: string): string | null {
   return null;
 }
 
-function requiredField(lines: string[], name: string, context: string): string {
-  const value = field(lines, name);
+function sectionField(lines: string[], name: string): string | null {
+  return field(lines, name, { topLevelOnly: true });
+}
+
+function requiredField(
+  lines: string[],
+  name: string,
+  context: string,
+  options: { topLevelOnly?: boolean } = {},
+): string {
+  const value = field(lines, name, options);
   if (!value) {
     if (context.startsWith("prompt ") && name.toLowerCase() === "slug") {
       throw new Error(`Missing prompt slug for ${context.slice("prompt ".length)}`);
@@ -159,7 +177,11 @@ function firstParagraph(lines: string[]): string {
   for (const line of lines) {
     const trimmed = line.trim();
     if (!trimmed && hasStarted) break;
-    if (!trimmed || /^[A-Za-z ]+:/.test(trimmed)) continue;
+    if (!trimmed) continue;
+
+    const separator = trimmed.indexOf(":");
+    const key = separator === -1 ? "" : trimmed.slice(0, separator).toLowerCase();
+    if (separator > -1 && promptMetadataFields.has(key)) continue;
 
     hasStarted = true;
     paragraph.push(trimmed);
@@ -189,6 +211,35 @@ function listItemSections(lines: string[], marker: string): Array<{ title: strin
   return items;
 }
 
+function assertUniqueSlugs(
+  records: Array<{ slug: string }>,
+  label: string,
+): void {
+  const seen = new Set<string>();
+
+  for (const record of records) {
+    if (seen.has(record.slug)) {
+      throw new Error(`Duplicate ${label} slug: ${record.slug}`);
+    }
+
+    seen.add(record.slug);
+  }
+}
+
+function assertResolvedParentSlugs(
+  topics: Array<{ slug: string; parentSlug: string | null }>,
+): void {
+  const topicSlugs = new Set(topics.map((topic) => topic.slug));
+
+  for (const topic of topics) {
+    if (topic.parentSlug && !topicSlugs.has(topic.parentSlug)) {
+      throw new Error(
+        `Unresolved roadmap topic parent slug for ${topic.slug}: ${topic.parentSlug}`,
+      );
+    }
+  }
+}
+
 export function parseLeetcodeSeed(markdown: string): LeetcodeSeed {
   const seed: LeetcodeSeed = { patterns: [], subpatterns: [], problems: [] };
   let currentPatternSlug: string | null = null;
@@ -197,8 +248,12 @@ export function parseLeetcodeSeed(markdown: string): LeetcodeSeed {
   for (const section of parseSections(markdown)) {
     if (section.heading.startsWith("## Pattern:")) {
       const name = titleFromHeading(section.heading, "## Pattern:");
-      const slug = requiredField(section.body, "Slug", `pattern ${name}`);
-      const description = requiredField(section.body, "Description", `pattern ${name}`);
+      const slug = requiredField(section.body, "Slug", `pattern ${name}`, {
+        topLevelOnly: true,
+      });
+      const description = requiredField(section.body, "Description", `pattern ${name}`, {
+        topLevelOnly: true,
+      });
       currentPatternSlug = slug;
       currentSubpatternSlug = null;
       seed.patterns.push({
@@ -216,8 +271,10 @@ export function parseLeetcodeSeed(markdown: string): LeetcodeSeed {
         throw new Error(`Missing parent pattern for subpattern ${name}`);
       }
 
-      const slug = requiredField(section.body, "Slug", `subpattern ${name}`);
-      const description = field(section.body, "Description") ?? "";
+      const slug = requiredField(section.body, "Slug", `subpattern ${name}`, {
+        topLevelOnly: true,
+      });
+      const description = sectionField(section.body, "Description") ?? "";
       currentSubpatternSlug = slug;
       seed.subpatterns.push({
         slug,
@@ -249,6 +306,10 @@ export function parseLeetcodeSeed(markdown: string): LeetcodeSeed {
     }
   }
 
+  assertUniqueSlugs(seed.patterns, "leetcode pattern");
+  assertUniqueSlugs(seed.subpatterns, "leetcode subpattern");
+  assertUniqueSlugs(seed.problems, "leetcode problem");
+
   return seed;
 }
 
@@ -263,9 +324,11 @@ export function parseRoadmapSeed(markdown: string): RoadmapSeed {
     roadmap: {
       slug: "backend",
       title: "Backend Roadmap",
-      sourceUrl: requiredField(root.body, "Source", "roadmap Backend Roadmap"),
+      sourceUrl: requiredField(root.body, "Source", "roadmap Backend Roadmap", {
+        topLevelOnly: true,
+      }),
       description:
-        field(root.body, "Description") ??
+        sectionField(root.body, "Description") ??
         "Backend engineering roadmap.",
     },
     topics: [],
@@ -277,14 +340,18 @@ export function parseRoadmapSeed(markdown: string): RoadmapSeed {
     if (!section.heading.startsWith("## Topic:")) continue;
 
     const title = titleFromHeading(section.heading, "## Topic:");
-    const slug = requiredField(section.body, "Slug", `topic ${title}`);
+    const slug = requiredField(section.body, "Slug", `topic ${title}`, {
+      topLevelOnly: true,
+    });
     currentTopicSlug = slug;
     seed.topics.push({
       slug,
-      parentSlug: field(section.body, "Parent") || null,
+      parentSlug: sectionField(section.body, "Parent") || null,
       title,
-      description: requiredField(section.body, "Description", `topic ${title}`),
-      sourceUrl: field(section.body, "Source"),
+      description: requiredField(section.body, "Description", `topic ${title}`, {
+        topLevelOnly: true,
+      }),
+      sourceUrl: sectionField(section.body, "Source"),
       displayOrder: seed.topics.length,
     });
 
@@ -304,6 +371,9 @@ export function parseRoadmapSeed(markdown: string): RoadmapSeed {
     }
   }
 
+  assertUniqueSlugs(seed.topics, "roadmap topic");
+  assertResolvedParentSlugs(seed.topics);
+
   return seed;
 }
 
@@ -314,13 +384,15 @@ export function parseSystemDesignSeed(markdown: string): SystemDesignSeed {
   for (const section of parseSections(markdown)) {
     if (section.heading.startsWith("## Topic:")) {
       const title = titleFromHeading(section.heading, "## Topic:");
-      const slug = requiredField(section.body, "Slug", `topic ${title}`);
+      const slug = requiredField(section.body, "Slug", `topic ${title}`, {
+        topLevelOnly: true,
+      });
       currentTopicSlug = slug;
       seed.topics.push({
         slug,
         title,
-        description: field(section.body, "Description") ?? "",
-        conceptTags: csv(field(section.body, "Tags")),
+        description: sectionField(section.body, "Description") ?? "",
+        conceptTags: csv(sectionField(section.body, "Tags")),
       });
       continue;
     }
@@ -332,7 +404,9 @@ export function parseSystemDesignSeed(markdown: string): SystemDesignSeed {
       }
 
       const context = `prompt ${title}`;
-      const slug = requiredField(section.body, "Slug", context);
+      const slug = requiredField(section.body, "Slug", context, {
+        topLevelOnly: true,
+      });
       const promptText = firstParagraph(section.body);
       if (!promptText) {
         throw new Error(`Missing prompt text for ${context}`);
@@ -343,12 +417,15 @@ export function parseSystemDesignSeed(markdown: string): SystemDesignSeed {
         slug,
         title,
         promptText,
-        difficulty: parseDifficulty(field(section.body, "Difficulty"), title),
-        sourceUrl: field(section.body, "Source"),
-        expectedConcepts: csv(field(section.body, "Expected Concepts")),
+        difficulty: parseDifficulty(sectionField(section.body, "Difficulty"), title),
+        sourceUrl: sectionField(section.body, "Source"),
+        expectedConcepts: csv(sectionField(section.body, "Expected Concepts")),
       });
     }
   }
+
+  assertUniqueSlugs(seed.topics, "system design topic");
+  assertUniqueSlugs(seed.prompts, "system design prompt");
 
   return seed;
 }
