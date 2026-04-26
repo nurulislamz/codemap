@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { TimerPanel } from "@/components/timer-panel";
-import { getLeetcodeAssignment } from "../../assignment-lookup";
-import { findStarterLeetCodeAssignment } from "../../assignments";
+import {
+  createStarterAttempt,
+  type StarterAttemptDisplay,
+} from "../../attempt-store";
 import { completeAttemptFromForm } from "./actions";
 
 type TimerPageProps = {
@@ -19,27 +21,27 @@ const attemptStatuses = [
 
 export default async function LeetCodeTimerPage({ params }: TimerPageProps) {
   const { assignmentId } = await params;
-  const assignment = findStarterLeetCodeAssignment(assignmentId);
+  let attempt: StarterAttemptDisplay;
 
-  if (!assignment) {
+  try {
+    attempt = createStarterAttempt(assignmentId);
+  } catch {
     notFound();
   }
 
-  const startedAt = new Date().toISOString();
-  const attemptAssignment = getLeetcodeAssignment(assignmentId, startedAt);
-  const completeBoundAttempt = completeAttemptFromForm.bind(null, attemptAssignment);
+  const completeBoundAttempt = completeAttemptFromForm.bind(null, attempt.attemptId);
 
   return (
     <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_24rem]">
       <TimerPanel
-        problemTitle={attemptAssignment.title}
-        startedAt={attemptAssignment.startedAt}
-        timeLimitMinutes={attemptAssignment.timeLimitMinutes}
+        problemTitle={attempt.title}
+        startedAt={attempt.startedAt}
+        timeLimitMinutes={attempt.timeLimitMinutes}
       />
       <aside className="space-y-5 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-700">
-            {assignment.pattern} / {assignment.subpattern}
+            {attempt.pattern} / {attempt.subpattern}
           </p>
           <h2 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950">
             Record attempt
@@ -78,7 +80,7 @@ export default async function LeetCodeTimerPage({ params }: TimerPageProps) {
           </button>
         </form>
         <Link
-          href={assignment.sourceUrl}
+          href={attempt.sourceUrl}
           className="inline-flex text-sm font-semibold text-emerald-800 underline-offset-4 hover:underline"
         >
           Open problem on LeetCode
