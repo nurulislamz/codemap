@@ -51,9 +51,14 @@ export default function RoadmapPage() {
               <p className="mt-2 max-w-2xl leading-7 text-slate-600">
                 {topic.description}
               </p>
+              <p className="mt-2 text-sm font-semibold text-amber-700">
+                Preview only: progress tracking is not connected yet.
+              </p>
             </div>
             <StatusSelect
+              ariaLabel={`${topic.title} status preview`}
               defaultValue="not_started"
+              disabled
               name={`${topic.title.toLowerCase().replaceAll(" ", "-")}-status`}
             />
           </article>

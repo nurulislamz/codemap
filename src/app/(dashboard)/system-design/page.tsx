@@ -2,6 +2,7 @@ import { TaskCard } from "@/components/task-card";
 
 const starterPrompts = [
   {
+    id: "design-tinyurl",
     track: "URL Shortener",
     title: "Design TinyURL",
     description:
@@ -9,6 +10,7 @@ const starterPrompts = [
     actionHref: "/system-design#design-tinyurl",
   },
   {
+    id: "rate-limiter",
     track: "Rate Limiter",
     title: "Design an API Rate Limiter",
     description:
@@ -37,14 +39,15 @@ export default function SystemDesignPage() {
         className="grid gap-5 md:grid-cols-2"
       >
         {starterPrompts.map((prompt) => (
-          <TaskCard
-            actionHref={prompt.actionHref}
-            actionLabel="Practice"
-            description={prompt.description}
-            key={prompt.title}
-            title={prompt.title}
-            track={prompt.track}
-          />
+          <div id={prompt.id} key={prompt.id}>
+            <TaskCard
+              actionHref={prompt.actionHref}
+              actionLabel="Practice"
+              description={prompt.description}
+              title={prompt.title}
+              track={prompt.track}
+            />
+          </div>
         ))}
       </section>
     </div>
