@@ -4,9 +4,9 @@ import type { ReactNode } from "react";
 const navItems = [
   { href: "/dashboard", label: "Dashboard" },
   { href: "/leetcode", label: "LeetCode" },
-  { href: "/dashboard/roadmap", label: "Roadmap" },
-  { href: "/dashboard/system-design", label: "System Design" },
-  { href: "/dashboard/flashcards", label: "Flashcards" },
+  { href: "/roadmap", label: "Roadmap" },
+  { href: "/system-design", label: "System Design" },
+  { href: "/flashcards", label: "Flashcards" },
 ];
 
 type AppShellProps = {
