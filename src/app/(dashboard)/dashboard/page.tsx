@@ -5,7 +5,7 @@ const starterCards = [
     track: "LeetCode",
     title: "Pattern practice",
     description: "Review today's algorithm assignment and start a timed attempt.",
-    actionHref: "/dashboard/leetcode",
+    actionHref: "/leetcode",
     actionLabel: "Open LeetCode",
   },
   {

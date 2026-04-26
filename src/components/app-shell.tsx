@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard" },
-  { href: "/dashboard/leetcode", label: "LeetCode" },
+  { href: "/leetcode", label: "LeetCode" },
   { href: "/dashboard/roadmap", label: "Roadmap" },
   { href: "/dashboard/system-design", label: "System Design" },
   { href: "/dashboard/flashcards", label: "Flashcards" },
