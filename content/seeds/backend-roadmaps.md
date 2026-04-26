@@ -1,7 +1,7 @@
 # Backend Roadmap
 Source: https://roadmap.sh/backend
 Scraped Date: 2026-04-26
-Review Status: manually curated starter seed
+Review Status: scraper starter output
 Description: Backend engineering roadmap.
 
 ## Topic: Internet
