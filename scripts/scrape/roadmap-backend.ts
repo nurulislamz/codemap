@@ -1,11 +1,14 @@
+import { getSeedDate } from "./seed-date";
 import { writeSeedFile } from "./write-seed";
 
 async function main(): Promise<void> {
-  const scrapedDate = new Date().toISOString().slice(0, 10);
+  const seedDate = getSeedDate();
+  const force = process.argv.includes("--force");
   const markdown = `# Backend Roadmap
 Source: https://roadmap.sh/backend
-Scraped Date: ${scrapedDate}
-Review Status: scraper starter output
+Seed Date: ${seedDate}
+Review Status: curated starter seed
+Seed Method: curated constants
 Description: Backend engineering roadmap.
 
 ## Topic: Internet
@@ -29,7 +32,7 @@ Source: https://roadmap.sh/backend
   Summary: Visual summary of request and response fundamentals.
 `;
 
-  await writeSeedFile("content/seeds/backend-roadmaps.md", markdown);
+  await writeSeedFile("content/seeds/backend-roadmaps.md", markdown, { force });
 }
 
 main().catch((error: unknown) => {

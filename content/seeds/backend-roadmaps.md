@@ -1,7 +1,8 @@
 # Backend Roadmap
 Source: https://roadmap.sh/backend
-Scraped Date: 2026-04-26
-Review Status: scraper starter output
+Seed Date: 2026-04-26
+Review Status: curated starter seed
+Seed Method: curated constants
 Description: Backend engineering roadmap.
 
 ## Topic: Internet

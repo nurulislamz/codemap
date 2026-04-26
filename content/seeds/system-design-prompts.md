@@ -1,8 +1,9 @@
 # System Design Prompts
 
 Source: https://github.com/donnemartin/system-design-primer
-Scraped Date: 2026-04-26
-Review Status: scraper starter output
+Seed Date: 2026-04-26
+Review Status: curated starter seed
+Seed Method: curated constants
 
 ## Topic: URL Shortener
 Slug: url-shortener

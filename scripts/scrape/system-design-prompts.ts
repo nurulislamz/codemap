@@ -1,12 +1,15 @@
+import { getSeedDate } from "./seed-date";
 import { writeSeedFile } from "./write-seed";
 
 async function main(): Promise<void> {
-  const scrapedDate = new Date().toISOString().slice(0, 10);
+  const seedDate = getSeedDate();
+  const force = process.argv.includes("--force");
   const markdown = `# System Design Prompts
 
 Source: https://github.com/donnemartin/system-design-primer
-Scraped Date: ${scrapedDate}
-Review Status: scraper starter output
+Seed Date: ${seedDate}
+Review Status: curated starter seed
+Seed Method: curated constants
 
 ## Topic: URL Shortener
 Slug: url-shortener
@@ -87,7 +90,7 @@ Expected Concepts: queues, delivery providers, retries, preferences, deduplicati
 Design a notification system that can send email, push, and in-app messages.
 `;
 
-  await writeSeedFile("content/seeds/system-design-prompts.md", markdown);
+  await writeSeedFile("content/seeds/system-design-prompts.md", markdown, { force });
 }
 
 main().catch((error: unknown) => {

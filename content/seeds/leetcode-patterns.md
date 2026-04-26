@@ -1,8 +1,9 @@
 # LeetCode Patterns
 
 Source: https://leetcode.com/problemset/
-Scraped Date: 2026-04-26
-Review Status: scraper starter output
+Seed Date: 2026-04-26
+Review Status: curated starter seed
+Seed Method: curated constants
 
 ## Pattern: Two Pointers
 Slug: two-pointers
