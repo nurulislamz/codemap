@@ -258,8 +258,8 @@ create policy "system design sessions owner access" on system_design_sessions fo
 create policy "daily plans owner access" on daily_plans for all using (auth.uid() = user_id);
 create policy "flashcards owner access" on flashcards for all using (auth.uid() = user_id);
 create policy "flashcard reviews owner access" on flashcard_reviews for all using (auth.uid() = user_id);
-create policy "ai jobs owner access" on ai_generation_jobs for all using (auth.uid() = user_id);
-create policy "email notifications owner access" on email_notifications for all using (auth.uid() = user_id);
+create policy "ai jobs owner read access" on ai_generation_jobs for select using (auth.uid() = user_id);
+create policy "email notifications owner read access" on email_notifications for select using (auth.uid() = user_id);
 
 create policy "daily plan items via owner plan" on daily_plan_items
   for all using (

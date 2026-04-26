@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+type EnvInput = Record<string, string | undefined>;
+
 const envSchema = z.object({
   NEXT_PUBLIC_SUPABASE_URL: z.string().url(),
   NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1),
@@ -19,7 +21,7 @@ const envSchema = z.object({
 
 export type AppEnv = z.infer<typeof envSchema>;
 
-export function createEnv(input: NodeJS.ProcessEnv): AppEnv {
+export function createEnv(input: EnvInput): AppEnv {
   return envSchema.parse(input);
 }
 
