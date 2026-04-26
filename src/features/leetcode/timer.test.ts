@@ -29,4 +29,35 @@ describe("calculateAttemptResult", () => {
       status: "failed",
     });
   });
+
+  it("rejects statuses that cannot be persisted to item_status", () => {
+    expect(() =>
+      calculateAttemptResult({
+        startedAt: "2026-04-26T10:00:00.000Z",
+        endedAt: "2026-04-26T10:05:00.000Z",
+        timeLimitMinutes: 30,
+        requestedStatus: "abandoned" as "completed",
+      }),
+    ).toThrow(/Invalid attempt status.*abandoned/);
+  });
+
+  it("throws a clear error for invalid server timestamps", () => {
+    expect(() =>
+      calculateAttemptResult({
+        startedAt: "not-a-date",
+        endedAt: "2026-04-26T10:05:00.000Z",
+        timeLimitMinutes: 30,
+        requestedStatus: "skipped",
+      }),
+    ).toThrow(/Invalid startedAt/);
+
+    expect(() =>
+      calculateAttemptResult({
+        startedAt: "2026-04-26T10:00:00.000Z",
+        endedAt: "not-a-date",
+        timeLimitMinutes: 30,
+        requestedStatus: "skipped",
+      }),
+    ).toThrow(/Invalid endedAt/);
+  });
 });

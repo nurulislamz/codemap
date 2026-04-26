@@ -14,8 +14,18 @@ export function nextReviewDate(reviewedAt: string, recallRating: number): Date {
     throw new Error(`Recall rating must be between 0 and 5. Received ${recallRating}.`);
   }
 
-  const nextReviewAt = new Date(reviewedAt);
+  const nextReviewAt = parseTimestamp(reviewedAt, "reviewedAt");
   nextReviewAt.setUTCDate(nextReviewAt.getUTCDate() + intervalDays);
 
   return nextReviewAt;
+}
+
+function parseTimestamp(value: string, fieldName: string): Date {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    throw new Error(`Invalid ${fieldName}: ${value}`);
+  }
+
+  return date;
 }

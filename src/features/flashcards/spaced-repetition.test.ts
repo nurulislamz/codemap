@@ -19,4 +19,8 @@ describe("nextReviewDate", () => {
     expect(() => nextReviewDate("2026-04-26T00:00:00Z", -1)).toThrow(/0 and 5/);
     expect(() => nextReviewDate("2026-04-26T00:00:00Z", 6)).toThrow(/0 and 5/);
   });
+
+  it("throws a clear error for invalid review timestamps", () => {
+    expect(() => nextReviewDate("not-a-date", 3)).toThrow(/Invalid reviewedAt/);
+  });
 });

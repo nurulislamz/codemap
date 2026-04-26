@@ -1,4 +1,6 @@
-type AttemptStatus = "completed" | "failed" | "skipped" | "abandoned";
+type AttemptStatus = "completed" | "failed" | "skipped";
+
+const validAttemptStatuses = new Set<string>(["completed", "failed", "skipped"]);
 
 export interface AttemptResultInput {
   startedAt: string;
@@ -14,8 +16,10 @@ export interface AttemptResult {
 }
 
 export function calculateAttemptResult(input: AttemptResultInput): AttemptResult {
-  const startedAt = new Date(input.startedAt).getTime();
-  const endedAt = new Date(input.endedAt).getTime();
+  assertAttemptStatus(input.requestedStatus);
+
+  const startedAt = parseTimestamp(input.startedAt, "startedAt").getTime();
+  const endedAt = parseTimestamp(input.endedAt, "endedAt").getTime();
   const elapsedSeconds = Math.max(0, Math.floor((endedAt - startedAt) / 1000));
 
   return {
@@ -23,4 +27,20 @@ export function calculateAttemptResult(input: AttemptResultInput): AttemptResult
     isOverTime: elapsedSeconds > input.timeLimitMinutes * 60,
     status: input.requestedStatus,
   };
+}
+
+function assertAttemptStatus(status: string): asserts status is AttemptStatus {
+  if (!validAttemptStatuses.has(status)) {
+    throw new Error(`Invalid attempt status: ${status}`);
+  }
+}
+
+function parseTimestamp(value: string, fieldName: string): Date {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    throw new Error(`Invalid ${fieldName}: ${value}`);
+  }
+
+  return date;
 }

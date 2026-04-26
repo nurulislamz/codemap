@@ -4,6 +4,7 @@ type Track = "leetcode" | "roadmap" | "system_design" | "flashcards";
 
 export interface DailyPlanInput {
   date: string;
+  timezone?: string;
   leetcode: Array<{
     id: string;
     title: string;
@@ -49,6 +50,9 @@ interface CandidatePlanItem {
 }
 
 export function buildDailyPlan(input: DailyPlanInput): DailyPlanOutput {
+  assertPlanDate(input.date);
+  const timezone = input.timezone ?? "UTC";
+
   const leetcode = input.leetcode
     .map((item, index) => ({ item, index }))
     .filter(({ item }) => item.status !== "completed")
@@ -57,13 +61,16 @@ export function buildDailyPlan(input: DailyPlanInput): DailyPlanOutput {
 
   const roadmap = input.roadmap
     .filter((item) => item.status !== "completed")
-    .sort((a, b) => a.order - b.order)[0];
+    .sort((a, b) => a.order - b.order || a.id.localeCompare(b.id))[0];
 
   const systemDesign = input.systemDesign.find((item) => item.status !== "completed");
 
   const flashcard = input.flashcards
-    .filter((item) => dateKey(item.nextReviewAt) <= input.date)
-    .sort((a, b) => a.nextReviewAt.localeCompare(b.nextReviewAt))[0];
+    .filter((item) => localDateKey(item.nextReviewAt, timezone, item.id) <= input.date)
+    .sort(
+      (a, b) =>
+        a.nextReviewAt.localeCompare(b.nextReviewAt) || a.id.localeCompare(b.id),
+    )[0];
 
   const items: Array<CandidatePlanItem | undefined> = [
     leetcode && {
@@ -104,6 +111,53 @@ function scoreLeetcode(item: { status: Status; confidence: Confidence }): number
   return statusScore + confidenceScore;
 }
 
-function dateKey(value: string): string {
-  return new Date(value).toISOString().slice(0, 10);
+function assertPlanDate(value: string): void {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+
+  if (!match) {
+    throw new Error(`Invalid plan date: ${value}`);
+  }
+
+  const [, year, month, day] = match;
+  const date = new Date(`${value}T00:00:00Z`);
+  const isValid =
+    !Number.isNaN(date.getTime()) &&
+    date.getUTCFullYear() === Number(year) &&
+    date.getUTCMonth() + 1 === Number(month) &&
+    date.getUTCDate() === Number(day);
+
+  if (!isValid) {
+    throw new Error(`Invalid plan date: ${value}`);
+  }
+}
+
+function localDateKey(value: string, timezone: string, flashcardId: string): string {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    throw new Error(`Invalid flashcard nextReviewAt for ${flashcardId}: ${value}`);
+  }
+
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: timezone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(date);
+
+  const year = partValue(parts, "year");
+  const month = partValue(parts, "month");
+  const day = partValue(parts, "day");
+
+  return `${year}-${month}-${day}`;
+}
+
+function partValue(parts: Intl.DateTimeFormatPart[], type: string): string {
+  const value = parts.find((part) => part.type === type)?.value;
+
+  if (!value) {
+    throw new Error(`Unable to format local date part: ${type}`);
+  }
+
+  return value;
 }
