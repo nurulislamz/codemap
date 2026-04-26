@@ -89,7 +89,7 @@ async function upsertBySlug(
   await supabase.from(table).upsert(row, { onConflict: "slug" }).throwOnError();
 }
 
-async function importLeetcode(supabase: ServiceRoleClient, seed: LeetcodeSeed): Promise<void> {
+export async function importLeetcode(supabase: ServiceRoleClient, seed: LeetcodeSeed): Promise<void> {
   const patternIds = new Map<string, string>();
   const subpatternIds = new Map<string, string>();
 
@@ -152,7 +152,7 @@ async function importLeetcode(supabase: ServiceRoleClient, seed: LeetcodeSeed): 
   }
 }
 
-async function importRoadmap(supabase: ServiceRoleClient, seed: RoadmapSeed): Promise<void> {
+export async function importRoadmap(supabase: ServiceRoleClient, seed: RoadmapSeed): Promise<void> {
   await upsertBySlug(supabase, "roadmaps", {
     slug: seed.roadmap.slug,
     title: seed.roadmap.title,
@@ -208,10 +208,6 @@ async function importRoadmap(supabase: ServiceRoleClient, seed: RoadmapSeed): Pr
     });
   }
 
-  for (const topicId of topicIds.values()) {
-    await supabase.from("roadmap_resources").delete().eq("topic_id", topicId).throwOnError();
-  }
-
   for (const resource of seed.resources) {
     const topicId = topicIds.get(resource.topicSlug);
     if (!topicId) {
@@ -222,18 +218,21 @@ async function importRoadmap(supabase: ServiceRoleClient, seed: RoadmapSeed): Pr
 
     await supabase
       .from("roadmap_resources")
-      .insert({
-        topic_id: topicId,
-        title: resource.title,
-        url: resource.url,
-        resource_type: resource.resourceType,
-        summary: resource.summary,
-      })
+      .upsert(
+        {
+          topic_id: topicId,
+          title: resource.title,
+          url: resource.url,
+          resource_type: resource.resourceType,
+          summary: resource.summary,
+        },
+        { onConflict: "topic_id,url" },
+      )
       .throwOnError();
   }
 }
 
-async function importSystemDesign(
+export async function importSystemDesign(
   supabase: ServiceRoleClient,
   seed: SystemDesignSeed,
 ): Promise<void> {
@@ -283,10 +282,10 @@ async function main(): Promise<void> {
   const summary = buildImportSummary(input);
 
   if (!dryRun) {
-    const { createSupabaseServiceRoleClient } = await import(
-      "../../src/server/supabase/service-role"
+    const { createSupabaseScriptServiceRoleClient } = await import(
+      "../../src/server/supabase/script-service-role"
     );
-    const supabase = createSupabaseServiceRoleClient();
+    const supabase = createSupabaseScriptServiceRoleClient();
 
     await importLeetcode(supabase, input.leetcode);
     await importRoadmap(supabase, input.roadmap);

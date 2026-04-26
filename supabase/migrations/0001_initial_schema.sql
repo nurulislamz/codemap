@@ -79,7 +79,8 @@ create table roadmap_resources (
   title text not null,
   url text not null,
   resource_type text not null default 'article',
-  summary text not null default ''
+  summary text not null default '',
+  unique (topic_id, url)
 );
 
 create table system_design_topics (
@@ -111,6 +112,14 @@ create table system_design_resources (
   summary text not null default '',
   check ((topic_id is not null) or (prompt_id is not null))
 );
+
+create unique index system_design_resources_topic_url_key
+  on system_design_resources (topic_id, url)
+  where topic_id is not null;
+
+create unique index system_design_resources_prompt_url_key
+  on system_design_resources (prompt_id, url)
+  where prompt_id is not null;
 
 create table leetcode_assignments (
   id uuid primary key default gen_random_uuid(),
