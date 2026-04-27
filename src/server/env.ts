@@ -2,17 +2,27 @@ import { z } from "zod";
 
 type EnvInput = Record<string, string | undefined>;
 
+export function hasSupabasePublicEnv(input: EnvInput = process.env): boolean {
+  return Boolean(input.NEXT_PUBLIC_SUPABASE_URL && input.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+}
+
+export function isOfflineMode(input: EnvInput = process.env): boolean {
+  return input.OFFLINE_MODE === "true" || !hasSupabasePublicEnv(input);
+}
+
 const envSchema = z.object({
-  NEXT_PUBLIC_SUPABASE_URL: z.string().url(),
-  NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1),
-  SUPABASE_SERVICE_ROLE_KEY: z.string().min(1),
-  SUPABASE_DB_URL: z.string().min(1),
-  CRON_SECRET: z.string().min(16).or(z.literal("secret")),
-  RESEND_API_KEY: z.string().min(1),
-  EMAIL_FROM: z.string().min(1),
-  OPENAI_API_KEY: z.string().min(1),
-  OWNER_EMAIL: z.string().email(),
-  APP_BASE_URL: z.string().url(),
+  NEXT_PUBLIC_SUPABASE_URL: z.string().url().optional(),
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1).optional(),
+  APP_BASE_URL: z.string().url().default("http://localhost:3000"),
+  DATABASE_URL: z.string().min(1).optional(),
+  OFFLINE_MODE: z.enum(["true", "false"]).optional(),
+  SUPABASE_SERVICE_ROLE_KEY: z.string().min(1).optional(),
+  SUPABASE_DB_URL: z.string().min(1).optional(),
+  CRON_SECRET: z.string().min(16).optional(),
+  RESEND_API_KEY: z.string().min(1).optional(),
+  EMAIL_FROM: z.string().min(1).optional(),
+  OPENAI_API_KEY: z.string().min(1).optional(),
+  OWNER_EMAIL: z.string().email().optional(),
   AI_FLASHCARDS_ENABLED: z
     .enum(["true", "false"])
     .default("false")
@@ -27,4 +37,15 @@ export function createEnv(input: EnvInput): AppEnv {
 
 export function getEnv(): AppEnv {
   return createEnv(process.env);
+}
+
+export function requireEnv<T extends keyof AppEnv>(
+  env: AppEnv,
+  key: T,
+): NonNullable<AppEnv[T]> {
+  const value = env[key];
+  if (value === undefined || value === null || value === "") {
+    throw new Error(`Missing required environment variable: ${String(key)}`);
+  }
+  return value as NonNullable<AppEnv[T]>;
 }

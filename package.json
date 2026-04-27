@@ -14,12 +14,16 @@
     "scrape:roadmap": "tsx scripts/scrape/roadmap-backend.ts",
     "scrape:leetcode": "tsx scripts/scrape/leetcode-patterns.ts",
     "scrape:system-design": "tsx scripts/scrape/system-design-prompts.ts",
-    "import:seeds": "tsx scripts/import/import-seeds.ts"
+    "import:seeds": "tsx scripts/import/import-seeds.ts",
+    "import:leetcode-patterns": "tsx scripts/import/import-leetcode-patterns-csv.ts"
   },
   "dependencies": {
+    "@libsql/client": "^0.17.3",
     "@supabase/ssr": "^0.10.2",
     "@supabase/supabase-js": "^2.104.1",
     "cheerio": "^1.2.0",
+    "drizzle-kit": "^0.31.10",
+    "drizzle-orm": "^0.45.2",
     "gray-matter": "^4.0.3",
     "hast-util-to-text": "^4.0.2",
     "next": "16.2.4",

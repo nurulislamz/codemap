@@ -2,8 +2,9 @@ import { describe, expect, it } from "vitest";
 import { createEnv } from "./env";
 
 describe("createEnv", () => {
-  it("requires Supabase, cron, email, AI, owner, and app URL settings", () => {
-    expect(() => createEnv({})).toThrow(/NEXT_PUBLIC_SUPABASE_URL/);
+  it("parses even when Supabase settings are missing (offline/local mode)", () => {
+    const env = createEnv({});
+    expect(env.APP_BASE_URL).toBeTruthy();
   });
 
   it("parses a complete environment", () => {
@@ -12,7 +13,7 @@ describe("createEnv", () => {
       NEXT_PUBLIC_SUPABASE_ANON_KEY: "anon",
       SUPABASE_SERVICE_ROLE_KEY: "service",
       SUPABASE_DB_URL: "postgres://user:pass@localhost:5432/postgres",
-      CRON_SECRET: "secret",
+      CRON_SECRET: "secret-secret-secret",
       RESEND_API_KEY: "resend",
       EMAIL_FROM: "Learning <learning@example.com>",
       OPENAI_API_KEY: "openai",
@@ -31,7 +32,7 @@ describe("createEnv", () => {
       NEXT_PUBLIC_SUPABASE_ANON_KEY: "anon",
       SUPABASE_SERVICE_ROLE_KEY: "service",
       SUPABASE_DB_URL: "postgres://user:pass@localhost:5432/postgres",
-      CRON_SECRET: "secret",
+      CRON_SECRET: "secret-secret-secret",
       RESEND_API_KEY: "resend",
       EMAIL_FROM: "Learning <learning@example.com>",
       OPENAI_API_KEY: "openai",

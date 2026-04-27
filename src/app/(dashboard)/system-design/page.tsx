@@ -1,25 +1,14 @@
 import { TaskCard } from "@/components/task-card";
+import { getSeedContent } from "@/server/data/seed-content";
 
-const starterPrompts = [
-  {
-    id: "design-tinyurl",
-    track: "URL Shortener",
-    title: "Design TinyURL",
-    description:
-      "Cover ID generation, redirect reads, custom aliases, analytics tradeoffs, and cache placement.",
-    actionHref: "/system-design#design-tinyurl",
-  },
-  {
-    id: "rate-limiter",
-    track: "Rate Limiter",
-    title: "Design an API Rate Limiter",
-    description:
-      "Compare token bucket, fixed window, sliding window, distributed counters, and failure modes.",
-    actionHref: "/system-design#rate-limiter",
-  },
-];
+export default async function SystemDesignPage() {
+  const seed = await getSeedContent();
 
-export default function SystemDesignPage() {
+  const prompts = seed.systemDesign.prompts.map((prompt) => {
+    const topic = seed.systemDesign.topics.find((t) => t.slug === prompt.topicSlug);
+    return { ...prompt, topicTitle: topic?.title ?? prompt.topicSlug };
+  });
+
   return (
     <div className="space-y-10">
       <section className="max-w-3xl">
@@ -27,29 +16,41 @@ export default function SystemDesignPage() {
           System design practice
         </p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-950 md:text-6xl">
-          Focused architecture reps
+          Architecture reps with guidance
         </h1>
         <p className="mt-5 text-lg leading-8 text-slate-700">
-          Start with common backend interview prompts. These cards are static
-          until seeded system design prompts are connected to storage.
+          Seeded prompts give you an always-available practice set. Sessions and progress
+          persistence will attach to Supabase in the next iteration.
         </p>
       </section>
-      <section
-        aria-label="System design starter prompts"
-        className="grid gap-5 md:grid-cols-2"
-      >
-        {starterPrompts.map((prompt) => (
-          <div id={prompt.id} key={prompt.id}>
+
+      <section aria-label="System design prompts" className="grid gap-5 md:grid-cols-2">
+        {prompts.map((prompt) => (
+          <div key={prompt.slug} id={prompt.slug} className="space-y-4">
             <TaskCard
-              actionHref={prompt.actionHref}
-              actionLabel="Practice"
-              description={prompt.description}
+              track={`${prompt.topicTitle} • ${prompt.difficulty}`}
               title={prompt.title}
-              track={prompt.track}
+              description={prompt.promptText}
+              actionHref={prompt.sourceUrl ?? `/system-design#${prompt.slug}`}
+              actionLabel={prompt.sourceUrl ? "Open source" : "Jump to prompt"}
             />
+
+            {prompt.expectedConcepts.length ? (
+              <details className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+                <summary className="cursor-pointer text-sm font-semibold text-slate-800">
+                  Expected concepts
+                </summary>
+                <ul className="mt-3 list-disc pl-5 text-sm leading-6 text-slate-700">
+                  {prompt.expectedConcepts.map((concept) => (
+                    <li key={concept}>{concept}</li>
+                  ))}
+                </ul>
+              </details>
+            ) : null}
           </div>
         ))}
       </section>
     </div>
   );
 }
+

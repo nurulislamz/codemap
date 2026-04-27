@@ -23,6 +23,10 @@
 # production
 /build
 
+# local sqlite
+dev.db
+*.db
+
 # misc
 .DS_Store
 *.pem

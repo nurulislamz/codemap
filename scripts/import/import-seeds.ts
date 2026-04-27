@@ -13,7 +13,9 @@ import {
 } from "../../src/features/content/seed-parser";
 import type { Database } from "../../src/server/supabase/types";
 
-type ServiceRoleClient = SupabaseClient<Database>;
+// Scripts are typechecked during `next build`; keep this permissive to avoid
+// Supabase generic-schema mismatch issues in the shim `Database` type.
+type ServiceRoleClient = SupabaseClient<Database, any, any>;
 type ParsedSeedInput = {
   leetcode: LeetcodeSeed;
   roadmap: RoadmapSeed;

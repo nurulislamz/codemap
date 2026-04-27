@@ -8,6 +8,10 @@ type TaskCardProps = {
   description?: string;
 };
 
+function isExternalHref(href: string) {
+  return href.startsWith("http://") || href.startsWith("https://");
+}
+
 export function TaskCard({
   track,
   title,
@@ -30,12 +34,23 @@ export function TaskCard({
       ) : (
         <div className="flex-1" />
       )}
-      <Link
-        href={actionHref}
-        className="mt-6 inline-flex w-fit rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700"
-      >
-        {actionLabel}
-      </Link>
+      {isExternalHref(actionHref) ? (
+        <a
+          href={actionHref}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-6 inline-flex w-fit rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700"
+        >
+          {actionLabel}
+        </a>
+      ) : (
+        <Link
+          href={actionHref}
+          className="mt-6 inline-flex w-fit rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700"
+        >
+          {actionLabel}
+        </Link>
+      )}
     </article>
   );
 }

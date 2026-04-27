@@ -1,3 +1,5 @@
+import { FlashcardJobForm } from "@/components/flashcard-job-form";
+
 export default function FlashcardsPage() {
   return (
     <div className="space-y-10">
@@ -12,6 +14,15 @@ export default function FlashcardsPage() {
           A starter review surface for weak backend concepts. Scheduling and
           persisted recall ratings arrive in later tasks.
         </p>
+      </section>
+      <section className="max-w-3xl rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-700">
+          AI generation
+        </p>
+        <p className="mt-3 leading-7 text-slate-600">
+          Queue a flashcard-generation job (requires Supabase Auth + RLS policies + enabled cron processor).
+        </p>
+        <FlashcardJobForm />
       </section>
       <article className="max-w-3xl rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
         <p className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-700">

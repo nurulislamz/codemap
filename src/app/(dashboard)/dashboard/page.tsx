@@ -1,37 +1,32 @@
 import { TaskCard } from "@/components/task-card";
+import { buildDailyPlanItems } from "@/server/data/daily-plan";
 
-const starterCards = [
-  {
-    track: "LeetCode",
-    title: "Pattern practice",
-    description: "Review today's algorithm assignment and start a timed attempt.",
-    actionHref: "/leetcode",
-    actionLabel: "Open LeetCode",
+const trackMeta: Record<string, { label: string; actionLabel: string; description: string }> = {
+  leetcode: {
+    label: "LeetCode",
+    actionLabel: "Start timer",
+    description: "Timed attempt for today's algorithm assignment.",
   },
-  {
-    track: "Roadmap",
-    title: "Backend fundamentals",
-    description: "Continue the next reading from the backend engineering roadmap.",
-    actionHref: "/roadmap",
-    actionLabel: "Open Roadmap",
+  roadmap: {
+    label: "Roadmap",
+    actionLabel: "Read",
+    description: "One focused backend fundamentals reading.",
   },
-  {
-    track: "System Design",
-    title: "Design prompt",
-    description: "Practice a focused architecture prompt with expected concepts.",
-    actionHref: "/system-design",
-    actionLabel: "Open Prompts",
+  system_design: {
+    label: "System Design",
+    actionLabel: "Practice",
+    description: "One system design prompt to run as a rep.",
   },
-  {
-    track: "Flashcards",
-    title: "Due reviews",
-    description: "Review weak areas and keep spaced repetition moving.",
-    actionHref: "/flashcards",
-    actionLabel: "Review Cards",
+  flashcards: {
+    label: "Flashcards",
+    actionLabel: "Review",
+    description: "Due-card review to keep recall sharp.",
   },
-];
+};
 
-export default function DashboardPage() {
+export default async function DashboardPage() {
+  const items = await buildDailyPlanItems();
+
   return (
     <div className="space-y-10">
       <section className="max-w-3xl">
@@ -42,18 +37,34 @@ export default function DashboardPage() {
           Backend interview command center
         </h1>
         <p className="mt-5 text-lg leading-8 text-slate-700">
-          A private dashboard for LeetCode practice, roadmap study, system
-          design reps, and flashcard reviews.
+          A private dashboard for LeetCode practice, roadmap study, system design reps,
+          and flashcard reviews.
         </p>
       </section>
       <section
-        aria-label="Starter tasks"
+        aria-label="Today's plan"
         className="grid gap-5 md:grid-cols-2 xl:grid-cols-4"
       >
-        {starterCards.map((card) => (
-          <TaskCard key={card.track} {...card} />
-        ))}
+        {items.map((item) => {
+          const meta = trackMeta[item.track] ?? {
+            label: item.track,
+            actionLabel: "Open",
+            description: "",
+          };
+
+          return (
+            <TaskCard
+              key={`${item.track}-${item.href}`}
+              track={meta.label}
+              title={item.title}
+              description={meta.description}
+              actionHref={item.href}
+              actionLabel={meta.actionLabel}
+            />
+          );
+        })}
       </section>
     </div>
   );
 }
+

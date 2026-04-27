@@ -18,9 +18,17 @@ export function AppShell({ children }: AppShellProps) {
     <div className="min-h-screen bg-[#f4f0e8] text-slate-950">
       <header className="border-b border-slate-900/10 bg-[#fffaf0]/85 backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-col gap-5 px-6 py-5 md:flex-row md:items-center md:justify-between">
-          <Link href="/dashboard" className="text-lg font-bold tracking-tight">
-            Backend Prep
-          </Link>
+          <div className="flex items-center justify-between gap-4">
+            <Link href="/dashboard" className="text-lg font-bold tracking-tight">
+              Backend Prep
+            </Link>
+            <Link
+              href="/logout"
+              className="inline-flex rounded-full border border-slate-900/10 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-emerald-700 hover:text-emerald-800"
+            >
+              Sign out
+            </Link>
+          </div>
           <nav aria-label="Primary navigation">
             <ul className="flex flex-wrap gap-2">
               {navItems.map((item) => (
