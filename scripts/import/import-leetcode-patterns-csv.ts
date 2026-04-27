@@ -110,7 +110,7 @@ async function main(): Promise<void> {
   const fileFlag = process.argv.find((arg) => arg.startsWith("--file="));
   const filePath = fileFlag
     ? fileFlag.slice("--file=".length)
-    : resolve(process.cwd(), "../../leetcode_patterns.csv");
+    : resolve(process.cwd(), "leetcode_patterns.csv");
 
   const raw = await readFile(filePath, "utf8");
   const minors = parsePatternsCsv(raw);
@@ -150,4 +150,3 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
-

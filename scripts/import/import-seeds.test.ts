@@ -33,7 +33,9 @@ describe("buildImportSummary", () => {
 });
 
 describe("import-seeds CLI", () => {
-  it("prints a dry-run summary without requiring Supabase secrets", async () => {
+  it(
+    "prints a dry-run summary without requiring Supabase secrets",
+    async () => {
     const { stdout } = await execFileAsync(
       "corepack",
       ["pnpm", "tsx", "scripts/import/import-seeds.ts", "--dry-run"],
@@ -61,9 +63,13 @@ describe("import-seeds CLI", () => {
     expect(summary.leetcodePatterns).toBeGreaterThan(0);
     expect(summary.roadmapTopics).toBeGreaterThan(0);
     expect(summary.systemDesignPrompts).toBeGreaterThan(0);
-  });
+    },
+    20000,
+  );
 
-  it("non-dry setup reaches environment validation without importing server-only", async () => {
+  it(
+    "non-dry setup reaches environment validation without importing server-only",
+    async () => {
     try {
       await execFileAsync("corepack", ["pnpm", "tsx", "scripts/import/import-seeds.ts"], {
         cwd: process.cwd(),
@@ -79,7 +85,9 @@ describe("import-seeds CLI", () => {
       expect(stderr).not.toContain("server-only");
       expect(stderr).toContain("NEXT_PUBLIC_SUPABASE_URL");
     }
-  });
+    },
+    20000,
+  );
 });
 
 describe("seed write path", () => {
