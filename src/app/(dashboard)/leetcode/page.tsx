@@ -1,6 +1,4 @@
-import { TaskCard } from "@/ui/task-card";
 import { getLeetcodePatternTree } from "@/lib/leetcode-patterns";
-import { starterLeetCodeAssignments } from "./assignments";
 
 function difficultyBadgeClasses(difficulty: string) {
   switch (difficulty.toLowerCase()) {
@@ -32,22 +30,6 @@ export default async function LeetCodePage() {
           problems to repeatable techniques.
         </p>
       </section>
-      <section
-        aria-label="LeetCode starter tasks"
-        className="grid gap-5 md:grid-cols-2"
-      >
-        {starterLeetCodeAssignments.map((assignment) => (
-          <TaskCard
-            key={assignment.id}
-            track={`${assignment.pattern} / ${assignment.subpattern}`}
-            title={assignment.problemTitle}
-            description={`${assignment.description} Target: ${assignment.timeLimitMinutes} minutes.`}
-            actionHref={`/leetcode/${assignment.id}/timer`}
-            actionLabel="Start timer"
-          />
-        ))}
-      </section>
-
       <section aria-label="LeetCode pattern library" className="space-y-6">
         <div className="max-w-3xl">
           <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
@@ -100,6 +82,12 @@ export default async function LeetCodePage() {
                               {`No. ${problem.number} • Difficulty: ${problem.difficulty}`}
                             </p>
                             <div className="mt-6 flex flex-wrap gap-2">
+                              <a
+                                href={`/leetcode/${problem.number}/timer`}
+                                className="inline-flex w-fit rounded-full bg-emerald-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-950"
+                              >
+                                Start timer
+                              </a>
                               <a
                                 href={problem.leetcodeUrl}
                                 target="_blank"

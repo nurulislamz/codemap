@@ -1,6 +1,5 @@
 import "server-only";
 
-import { starterLeetCodeAssignments } from "@/domain/leetcode/starter-assignments";
 import { getSeedContent } from "./seed-content";
 
 export interface EmailPlanItem {
@@ -28,9 +27,6 @@ function pickIndex(length: number, date: Date): number {
 export async function buildDailyPlanItems(date = new Date()): Promise<EmailPlanItem[]> {
   const seed = await getSeedContent();
 
-  const assignment =
-    starterLeetCodeAssignments[pickIndex(starterLeetCodeAssignments.length, date)];
-
   const roadmapTopic = seed.roadmap.topics[pickIndex(seed.roadmap.topics.length, date)];
   const roadmapResource = seed.roadmap.resources.find(
     (resource) => resource.topicSlug === roadmapTopic?.slug,
@@ -40,15 +36,6 @@ export async function buildDailyPlanItems(date = new Date()): Promise<EmailPlanI
     seed.systemDesign.prompts[pickIndex(seed.systemDesign.prompts.length, date)];
 
   const items: EmailPlanItem[] = [];
-
-  if (assignment) {
-    items.push({
-      track: "leetcode",
-      title: assignment.problemTitle,
-      href: `/leetcode/${assignment.id}/timer`,
-      meta: { kind: "leetcode", sourceUrl: assignment.sourceUrl },
-    });
-  }
 
   if (roadmapTopic) {
     items.push({
