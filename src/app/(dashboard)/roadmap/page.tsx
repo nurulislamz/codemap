@@ -1,5 +1,5 @@
-import { StatusSelect } from "@/components/status-select";
-import { getSeedContent } from "@/server/data/seed-content";
+import { StatusSelect } from "@/ui/status-select";
+import { getSeedContent } from "@/backend/data/seed-content";
 
 export default async function RoadmapPage() {
   const seed = await getSeedContent();
@@ -21,8 +21,8 @@ export default async function RoadmapPage() {
           Track fundamentals intentionally
         </h1>
         <p className="mt-5 text-lg leading-8 text-slate-700">
-          Seeded from versioned Markdown so you can curate the learning path before
-          importing it to Supabase. Progress tracking is a UI preview for now.
+          Static starter content for now. Progress tracking is a UI preview until
+          Firestore persistence is connected.
         </p>
       </section>
 
@@ -71,4 +71,3 @@ export default async function RoadmapPage() {
     </div>
   );
 }
-

@@ -1,5 +1,5 @@
-import { TaskCard } from "@/components/task-card";
-import { getSeedContent } from "@/server/data/seed-content";
+import { TaskCard } from "@/ui/task-card";
+import { getSeedContent } from "@/backend/data/seed-content";
 
 export default async function SystemDesignPage() {
   const seed = await getSeedContent();
@@ -19,8 +19,8 @@ export default async function SystemDesignPage() {
           Architecture reps with guidance
         </h1>
         <p className="mt-5 text-lg leading-8 text-slate-700">
-          Seeded prompts give you an always-available practice set. Sessions and progress
-          persistence will attach to Supabase in the next iteration.
+          Starter prompts give you an always-available practice set. Sessions and
+          progress persistence will attach to Firestore in the next iteration.
         </p>
       </section>
 
@@ -53,4 +53,3 @@ export default async function SystemDesignPage() {
     </div>
   );
 }
-

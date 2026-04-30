@@ -1,13 +1,9 @@
 import { NextResponse } from "next/server";
 
-import { getDb } from "@/server/db/client";
-import { aiGenerationJobs, profiles } from "@/server/db/schema";
-import { LOCAL_USER_ID } from "@/server/db/local-user";
-import { stableUuidFromString } from "@/server/ids/stable-uuid";
+import { LOCAL_USER_ID } from "@/backend/db/local-user";
+import { stableUuidFromString } from "@/backend/ids/stable-uuid";
 
 export async function POST(request: Request) {
-  const db = await getDb();
-
   const body = (await request.json().catch(() => null)) as
     | { topic?: unknown; notes?: unknown; source_table?: unknown; source_key?: unknown; source_track?: unknown }
     | null;
@@ -32,31 +28,13 @@ export async function POST(request: Request) {
   const nowIso = new Date().toISOString();
   const jobId = stableUuidFromString(`${LOCAL_USER_ID}:flashcards.generate:${nowIso}`);
 
-  // Ensure profile exists for the local owner.
-  await db
-    .insert(profiles)
-    .values({ id: LOCAL_USER_ID, email: "local@localhost", createdAt: nowIso })
-    .onConflictDoNothing();
-
-  await db.insert(aiGenerationJobs).values({
-    id: jobId,
-    userId: LOCAL_USER_ID,
-    jobType: "flashcards.generate",
-    inputPayload: JSON.stringify({
-      topic,
-      notes,
-      source_track,
-      source_table,
-      source_key,
-    }),
-    status: "queued",
-    attempts: 0,
-    createdAt: nowIso,
-    updatedAt: nowIso,
-  });
+  void source_track;
+  void source_table;
+  void source_key;
 
   return NextResponse.json({
-    ok: true,
-    job: { id: jobId, status: "queued", created_at: nowIso },
+    ok: false,
+    skipped: "AI job persistence is not connected after removing the local DB layer.",
+    job: { id: jobId, status: "skipped", created_at: nowIso },
   });
 }

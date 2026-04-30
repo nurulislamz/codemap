@@ -26,10 +26,19 @@
 # local sqlite
 dev.db
 *.db
+.venv/
+venv/
+
+# firebase emulators
+/.firebase
+firebase-debug.log*
+firestore-debug.log*
 
 # misc
 .DS_Store
 *.pem
+scripts/scrape/crawl-output
+scripts/scrape/crawl-output-html
 
 # debug
 npm-debug.log*

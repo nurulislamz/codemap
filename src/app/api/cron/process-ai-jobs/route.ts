@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 
-import { assertCronRequest } from "@/server/cron/auth";
-import { getEnv, requireEnv } from "@/server/env";
-import { processQueuedAiJobs } from "@/server/ai/job-processor";
+import { assertCronRequest } from "@/backend/cron/auth";
+import { getEnv, requireEnv } from "@/backend/env";
+import { processQueuedAiJobs } from "@/backend/ai/job-processor";
 
 export async function GET(request: Request) {
   const env = getEnv();

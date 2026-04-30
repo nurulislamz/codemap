@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { redirect } from "next/navigation";
-import { TimerPanel } from "@/components/timer-panel";
+import { TimerPanel } from "@/ui/timer-panel";
 import {
   createStarterAttempt,
   type StarterAttemptDisplay,

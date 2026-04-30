@@ -1,4 +1,4 @@
-import { calculateAttemptResult } from "../../../features/leetcode/timer";
+import { calculateAttemptResult } from "../../../domain/leetcode/timer";
 import { findStarterLeetCodeAssignment } from "./assignments";
 
 type AttemptStatus = "completed" | "failed" | "skipped";

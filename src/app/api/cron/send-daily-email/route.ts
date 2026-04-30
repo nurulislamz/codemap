@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 
-import { assertCronRequest } from "@/server/cron/auth";
-import { buildDailyPlanItems, toDailyEmailHtml } from "@/server/data/daily-plan";
-import { sendDailyEmail } from "@/server/email/resend";
-import { getEnv, requireEnv } from "@/server/env";
+import { assertCronRequest } from "@/backend/cron/auth";
+import { buildDailyPlanItems, toDailyEmailHtml } from "@/backend/data/daily-plan";
+import { sendDailyEmail } from "@/backend/email/resend";
+import { getEnv, requireEnv } from "@/backend/env";
 import {
   createEmailNotificationQueued,
   filterEmailPlanItemsForPreferences,
@@ -15,7 +15,7 @@ import {
   replaceDailyPlanItemsForPlan,
   upsertDailyPlanForUser,
   utcMidnightFromDateString,
-} from "@/server/data/daily-plan-persistence";
+} from "@/backend/data/daily-plan-persistence";
 
 function extractProviderMessageId(result: unknown): string | null {
   if (!result || typeof result !== "object") return null;

@@ -1,5 +1,5 @@
-import { TaskCard } from "@/components/task-card";
-import { buildDailyPlanItems } from "@/server/data/daily-plan";
+import { TaskCard } from "@/ui/task-card";
+import { buildDailyPlanItems } from "@/backend/data/daily-plan";
 
 const trackMeta: Record<string, { label: string; actionLabel: string; description: string }> = {
   leetcode: {

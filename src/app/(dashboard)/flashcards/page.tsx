@@ -1,4 +1,4 @@
-import { FlashcardJobForm } from "@/components/flashcard-job-form";
+import { FlashcardJobForm } from "@/ui/flashcard-job-form";
 
 export default function FlashcardsPage() {
   return (

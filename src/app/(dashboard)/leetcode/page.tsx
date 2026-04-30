@@ -1,18 +1,22 @@
-import { TaskCard } from "@/components/task-card";
-import { getSeedContent } from "@/server/data/seed-content";
-import { listLeetcodePatternsFromDb } from "@/server/data/leetcode-patterns-db";
+import { TaskCard } from "@/ui/task-card";
+import { getLeetcodePatternTree } from "@/lib/leetcode-patterns";
 import { starterLeetCodeAssignments } from "./assignments";
 
-export default async function LeetCodePage() {
-  const seed = await getSeedContent();
-  const dbPatterns = await listLeetcodePatternsFromDb();
-
-  function parseProblemsCsv(value: string): string[] {
-    return value
-      .split(",")
-      .map((part) => part.trim())
-      .filter(Boolean);
+function difficultyBadgeClasses(difficulty: string) {
+  switch (difficulty.toLowerCase()) {
+    case "easy":
+      return "bg-emerald-100 text-emerald-800 border-emerald-300";
+    case "medium":
+      return "bg-amber-100 text-amber-900 border-amber-300";
+    case "hard":
+      return "bg-red-100 text-red-800 border-red-300";
+    default:
+      return "bg-slate-100 text-slate-800 border-slate-300";
   }
+}
+
+export default async function LeetCodePage() {
+  const patternTree = getLeetcodePatternTree();
 
   return (
     <div className="space-y-10">
@@ -50,111 +54,90 @@ export default async function LeetCodePage() {
             Pattern library
           </h2>
           <p className="mt-2 text-base leading-7 text-slate-700">
-            Loaded from the local SQLite database when available. Falls back to Markdown seeds.
+            Loaded from the local JSON pattern data.
           </p>
         </div>
 
         <div className="space-y-8">
-          {dbPatterns.length
-            ? (() => {
-                const rows = dbPatterns.flatMap((major) =>
-                  major.minors.flatMap((minor) => {
-                    const problems = parseProblemsCsv(minor.problemsCsv);
-                    return (problems.length ? problems : ["—"]).map((problem, idx) => ({
-                      major: major.name,
-                      minor: minor.name,
-                      problem,
-                      key: `${minor.id}:${idx}`,
-                    }));
-                  }),
-                );
+          {patternTree.map((pattern) => (
+            <section key={pattern.topPattern} className="space-y-4">
+              <header className="max-w-3xl">
+                <h3 className="text-xl font-semibold tracking-tight text-slate-950">
+                  {pattern.topPattern}
+                </h3>
+              </header>
 
-                return (
-                  <div className="overflow-x-auto rounded-3xl border border-slate-200 bg-white shadow-sm">
-                    <table className="min-w-full border-collapse text-left text-sm">
-                      <thead className="bg-[#fffaf0] text-xs font-semibold uppercase tracking-[0.2em] text-slate-700">
-                        <tr>
-                          <th className="px-5 py-4">Major</th>
-                          <th className="px-5 py-4">Minor</th>
-                          <th className="px-5 py-4">Problem</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {rows.map((row, idx) => (
-                          <tr
-                            key={row.key}
-                            className={idx % 2 === 0 ? "bg-white" : "bg-slate-50/40"}
-                          >
-                            <td className="whitespace-nowrap px-5 py-4 font-semibold text-slate-900">
-                              {row.major}
-                            </td>
-                            <td className="whitespace-nowrap px-5 py-4 text-slate-800">
-                              {row.minor}
-                            </td>
-                            <td className="min-w-[32rem] px-5 py-4 leading-6 text-slate-700">
-                              {row.problem}
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                );
-              })()
-            : seed.leetcode.patterns.map((pattern) => {
-                const subpatterns = seed.leetcode.subpatterns.filter(
-                  (subpattern) => subpattern.patternSlug === pattern.slug,
-                );
+              <div className="space-y-8">
+                {pattern.subPatterns.map((subPattern) => (
+                  <div key={`${pattern.topPattern}:${subPattern.subPattern}`} className="space-y-4">
+                    <div className="max-w-3xl">
+                      <p className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-800">
+                        {subPattern.subPattern}
+                      </p>
+                    </div>
 
-                return (
-                  <section key={pattern.slug} className="space-y-4">
-                    <header className="max-w-3xl">
-                      <h3 className="text-xl font-semibold tracking-tight text-slate-950">
-                        {pattern.name}
-                      </h3>
-                      <p className="mt-2 leading-7 text-slate-600">{pattern.description}</p>
-                    </header>
-
-                    <div className="space-y-6">
-                      {subpatterns.map((subpattern) => {
-                        const problems = seed.leetcode.problems.filter(
-                          (problem) => problem.subpatternSlug === subpattern.slug,
-                        );
-
+                    <div className="grid gap-3 md:grid-cols-2">
+                      {subPattern.problems.map((problem) => {
                         return (
-                          <div key={subpattern.slug} className="space-y-4">
-                            <div className="max-w-3xl">
-                              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-800">
-                                {subpattern.name}
-                              </p>
-                              {subpattern.description ? (
-                                <p className="mt-2 text-sm leading-6 text-slate-600">
-                                  {subpattern.description}
-                                </p>
+                          <article
+                            key={`${pattern.topPattern}:${subPattern.subPattern}:${problem.number}:${problem.title}`}
+                            className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+                          >
+                            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-700">
+                              {`${pattern.topPattern} / ${subPattern.subPattern}`}
+                            </p>
+                            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950">
+                              {problem.title}
+                            </h2>
+                            <span
+                              className={`mt-3 inline-flex w-fit rounded-full border px-2.5 py-1 text-xs font-semibold uppercase tracking-wide ${difficultyBadgeClasses(
+                                problem.difficulty
+                              )}`}
+                            >
+                              {problem.difficulty}
+                            </span>
+                            <p className="mt-3 flex-1 text-base leading-7 text-slate-600">
+                              {`No. ${problem.number} • Difficulty: ${problem.difficulty}`}
+                            </p>
+                            <div className="mt-6 flex flex-wrap gap-2">
+                              <a
+                                href={problem.leetcodeUrl}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex w-fit rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-700"
+                              >
+                                Open LeetCode
+                              </a>
+                              {problem.solutions?.neetcode?.textUrl ? (
+                                <a
+                                  href={problem.solutions.neetcode.textUrl}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="inline-flex w-fit rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-emerald-700 hover:text-emerald-800"
+                                >
+                                  NeetCode text
+                                </a>
+                              ) : null}
+                              {problem.solutions?.neetcode?.videoUrl ? (
+                                <a
+                                  href={problem.solutions.neetcode.videoUrl}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="inline-flex w-fit rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-emerald-700 hover:text-emerald-800"
+                                >
+                                  NeetCode video
+                                </a>
                               ) : null}
                             </div>
-
-                            <div className="grid gap-5 md:grid-cols-2">
-                              {problems.map((problem) => (
-                                <TaskCard
-                                  key={problem.slug}
-                                  track={`${problem.difficulty} • ${problem.estimatedMinutes} min`}
-                                  title={problem.title}
-                                  description={
-                                    problem.tags.length ? `Tags: ${problem.tags.join(", ")}` : undefined
-                                  }
-                                  actionHref={problem.sourceUrl}
-                                  actionLabel="Open problem"
-                                />
-                              ))}
-                            </div>
-                          </div>
+                          </article>
                         );
                       })}
                     </div>
-                  </section>
-                );
-              })}
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
         </div>
       </section>
     </div>

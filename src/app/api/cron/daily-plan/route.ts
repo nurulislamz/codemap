@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 
-import { assertCronRequest } from "@/server/cron/auth";
-import { getEnv, requireEnv } from "@/server/env";
-import { buildDailyPlanItems } from "@/server/data/daily-plan";
+import { assertCronRequest } from "@/backend/cron/auth";
+import { getEnv, requireEnv } from "@/backend/env";
+import { buildDailyPlanItems } from "@/backend/data/daily-plan";
 import {
   filterEmailPlanItemsForPreferences,
   getUtcDateString,
@@ -10,7 +10,7 @@ import {
   replaceDailyPlanItemsForPlan,
   upsertDailyPlanForUser,
   utcMidnightFromDateString,
-} from "@/server/data/daily-plan-persistence";
+} from "@/backend/data/daily-plan-persistence";
 
 export async function GET(request: Request) {
   const env = getEnv();
