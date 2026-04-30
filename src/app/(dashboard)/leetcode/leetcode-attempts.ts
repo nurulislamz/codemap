@@ -19,13 +19,21 @@ export async function createLeetCodeAttempt(input: LeetCodeAttemptEventWrite): P
 
     const attempt: LeetCodeAttemptEvent = {
         ...validatedInput,
-        durationSeconds: Math.floor((endedAt.getTime() - startedAt.getTime()) / 1000),
+        durationSeconds: Math.max(
+            0,
+            Math.floor((endedAt.getTime() - startedAt.getTime()) / 1000),
+        ),
         userId: LOCAL_USER_ID,
         language: validatedInput.language ?? null,
         failureReason: validatedInput.failureReason ?? null,
         notes: validatedInput.notes ?? null,
         attemptId: ref.id
     }
+    
+    if (attempt.durationSeconds <= 0) {
+        throw new Error("Attempt duration must be greater than 0 seconds");
+    }
+
     await ref.set(attempt);
     return attempt;
 }
@@ -56,13 +64,13 @@ export async function getLatestLeetCodeAttempt(): Promise<LeetCodeAttemptEvent |
     return snapshot.docs[0].data() as LeetCodeAttemptEvent;
 }
 
-export async function getAnySuccessfulLeetCodeAttempt(problemId: number): Promise<boolean> {
+export async function getAnySuccessfulLeetCodeAttempt(problemId: string): Promise<boolean> {
     const snapshot = await getFirestoreDb()
         .collection("users")
         .doc(LOCAL_USER_ID)
         .collection("leetcodeAttempts")
         .where("problemId", "==", problemId)
-        .where("success", "==", true)
+        .where("isSuccessful", "==", true)
         .limit(1)
         .get();
         
