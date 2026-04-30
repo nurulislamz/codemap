@@ -1,8 +1,8 @@
 import {
-  leetcodeAttemptEventWriteSchema,
-  type LeetCodeAttemptEventWrite
+  leetcodeAttemptEventSchema,
+  type LeetCodeAttemptEvent
 } from "../leetcode";
 
-export function validateLeetCodeAttemptEventWrite(input: unknown): LeetCodeAttemptEventWrite {
-  return leetcodeAttemptEventWriteSchema.parse(input);
+export function validateLeetCodeAttemptEventWrite(input: unknown): LeetCodeAttemptEvent {
+  return leetcodeAttemptEventSchema.parse(input);
 }

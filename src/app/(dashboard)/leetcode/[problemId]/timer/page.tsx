@@ -5,7 +5,7 @@ import { TimerPanel } from "@/ui/timer-panel";
 import {
   createStarterAttempt,
   type StarterAttemptDisplay,
-} from "../../attempt-store";
+} from "../../leetcode-db-client";
 import { completeAttemptFromForm, completeDbAttemptFromForm } from "./actions";
 import { createDbAttemptOrNull, getDbAttemptOrNull } from "./db-attempts";
 

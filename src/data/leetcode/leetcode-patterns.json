@@ -10,13 +10,25 @@
               "number": "11",
               "title": "Container With Most Water",
               "leetcodeUrl": "https://leetcode.com/problems/container-with-most-water/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/container-with-most-water",
+                  "videoUrl": "https://www.youtube.com/watch?v=UuiTKBwPgAo"
+                }
+              }
             },
             {
               "number": "15",
               "title": "3Sum",
               "leetcodeUrl": "https://leetcode.com/problems/3sum/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/3sum",
+                  "videoUrl": "https://www.youtube.com/watch?v=jzZsG8n2R9A"
+                }
+              }
             },
             {
               "number": "16",
@@ -28,31 +40,61 @@
               "number": "18",
               "title": "4Sum",
               "leetcodeUrl": "https://leetcode.com/problems/4sum/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/4sum",
+                  "videoUrl": "https://www.youtube.com/watch?v=EYeR-_1NRlQ"
+                }
+              }
             },
             {
               "number": "167",
               "title": "Two Sum II - Input Array Is Sorted",
               "leetcodeUrl": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/two-sum-ii-input-array-is-sorted",
+                  "videoUrl": "https://www.youtube.com/watch?v=cQ1Oz4ckceM"
+                }
+              }
             },
             {
               "number": "349",
               "title": "Intersection of Two Arrays",
               "leetcodeUrl": "https://leetcode.com/problems/intersection-of-two-arrays/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/intersection-of-two-arrays",
+                  "videoUrl": "https://www.youtube.com/watch?v=fwUTXaMom6U"
+                }
+              }
             },
             {
               "number": "881",
               "title": "Boats to Save People",
               "leetcodeUrl": "https://leetcode.com/problems/boats-to-save-people/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/boats-to-save-people",
+                  "videoUrl": "https://www.youtube.com/watch?v=XbaxWuHIWUs"
+                }
+              }
             },
             {
               "number": "977",
               "title": "Squares of a Sorted Array",
               "leetcodeUrl": "https://leetcode.com/problems/squares-of-a-sorted-array/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/squares-of-a-sorted-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=FPCZsG_AkUg"
+                }
+              }
             },
             {
               "number": "259",
@@ -69,25 +111,49 @@
               "number": "141",
               "title": "Linked List Cycle",
               "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/linked-list-cycle",
+                  "videoUrl": "https://www.youtube.com/watch?v=gBTe7lFR3vc"
+                }
+              }
             },
             {
               "number": "202",
               "title": "Happy Number",
               "leetcodeUrl": "https://leetcode.com/problems/happy-number/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/happy-number",
+                  "videoUrl": "https://www.youtube.com/watch?v=ljz85bxOYJ0"
+                }
+              }
             },
             {
               "number": "287",
               "title": "Find the Duplicate Number",
               "leetcodeUrl": "https://leetcode.com/problems/find-the-duplicate-number/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-the-duplicate-number",
+                  "videoUrl": "https://www.youtube.com/watch?v=wjYnzkAhcNk"
+                }
+              }
             },
             {
               "number": "392",
               "title": "Is Subsequence",
               "leetcodeUrl": "https://leetcode.com/problems/is-subsequence/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/is-subsequence",
+                  "videoUrl": "https://www.youtube.com/watch?v=99RVfqklbCE"
+                }
+              }
             }
           ]
         },
@@ -98,13 +164,25 @@
               "number": "19",
               "title": "Remove Nth Node From End of List",
               "leetcodeUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/remove-nth-node-from-end-of-list",
+                  "videoUrl": "https://www.youtube.com/watch?v=XVuQxVej6y8"
+                }
+              }
             },
             {
               "number": "876",
               "title": "Middle of the Linked List",
               "leetcodeUrl": "https://leetcode.com/problems/middle-of-the-linked-list/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/middle-of-the-linked-list",
+                  "videoUrl": "https://www.youtube.com/watch?v=A2_ldqM4QcY"
+                }
+              }
             },
             {
               "number": "2095",
@@ -121,31 +199,61 @@
               "number": "26",
               "title": "Remove Duplicates from Sorted Array",
               "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/remove-duplicates-from-sorted-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=DEJAZBq0FDA"
+                }
+              }
             },
             {
               "number": "27",
               "title": "Remove Element",
               "leetcodeUrl": "https://leetcode.com/problems/remove-element/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/remove-element",
+                  "videoUrl": "https://www.youtube.com/watch?v=Pcd1ii9P9ZI"
+                }
+              }
             },
             {
               "number": "75",
               "title": "Sort Colors",
               "leetcodeUrl": "https://leetcode.com/problems/sort-colors/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/sort-colors",
+                  "videoUrl": "https://www.youtube.com/watch?v=4xbWSRZHqac"
+                }
+              }
             },
             {
               "number": "80",
               "title": "Remove Duplicates from Sorted Array II",
               "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/remove-duplicates-from-sorted-array-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=ycAq8iqh0TI"
+                }
+              }
             },
             {
               "number": "283",
               "title": "Move Zeroes",
               "leetcodeUrl": "https://leetcode.com/problems/move-zeroes/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/move-zeroes",
+                  "videoUrl": "https://www.youtube.com/watch?v=aayNRwUN3Do"
+                }
+              }
             },
             {
               "number": "443",
@@ -157,7 +265,13 @@
               "number": "905",
               "title": "Sort Array By Parity",
               "leetcodeUrl": "https://leetcode.com/problems/sort-array-by-parity/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/sort-array-by-parity",
+                  "videoUrl": "https://www.youtube.com/watch?v=QC4c9fyr8As"
+                }
+              }
             },
             {
               "number": "2337",
@@ -169,7 +283,13 @@
               "number": "2938",
               "title": "Separate Black and White Balls",
               "leetcodeUrl": "https://leetcode.com/problems/separate-black-and-white-balls/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/separate-black-and-white-balls",
+                  "videoUrl": "https://www.youtube.com/watch?v=-VVN0FI0KFo"
+                }
+              }
             }
           ]
         },
@@ -180,19 +300,37 @@
               "number": "844",
               "title": "Backspace String Compare",
               "leetcodeUrl": "https://leetcode.com/problems/backspace-string-compare/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/backspace-string-compare",
+                  "videoUrl": "https://www.youtube.com/watch?v=k2qrymM_DOo"
+                }
+              }
             },
             {
               "number": "1598",
               "title": "Crawler Log Folder",
               "leetcodeUrl": "https://leetcode.com/problems/crawler-log-folder/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/crawler-log-folder",
+                  "videoUrl": "https://www.youtube.com/watch?v=Ur3saIXP7ro"
+                }
+              }
             },
             {
               "number": "2390",
               "title": "Removing Stars From a String",
               "leetcodeUrl": "https://leetcode.com/problems/removing-stars-from-a-string/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/removing-stars-from-a-string",
+                  "videoUrl": "https://www.youtube.com/watch?v=pRyFZIaKegA"
+                }
+              }
             }
           ]
         },
@@ -203,13 +341,25 @@
               "number": "5",
               "title": "Longest Palindromic Substring",
               "leetcodeUrl": "https://leetcode.com/problems/longest-palindromic-substring/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/longest-palindromic-substring",
+                  "videoUrl": "https://www.youtube.com/watch?v=XYQecbcd6_c"
+                }
+              }
             },
             {
               "number": "647",
               "title": "Palindromic Substrings",
               "leetcodeUrl": "https://leetcode.com/problems/palindromic-substrings/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/palindromic-substrings",
+                  "videoUrl": "https://www.youtube.com/watch?v=4RACzI5-du8"
+                }
+              }
             }
           ]
         },
@@ -226,7 +376,13 @@
               "number": "344",
               "title": "Reverse String",
               "leetcodeUrl": "https://leetcode.com/problems/reverse-string/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/reverse-string",
+                  "videoUrl": "https://www.youtube.com/watch?v=_d0T_2Lk2qA"
+                }
+              }
             },
             {
               "number": "345",
@@ -272,7 +428,13 @@
               "number": "3254",
               "title": "Find the Power of K-Size Subarrays I",
               "leetcodeUrl": "https://leetcode.com/problems/find-the-power-of-k-size-subarrays-i/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-the-power-of-k-size-subarrays-i",
+                  "videoUrl": "https://www.youtube.com/watch?v=67QUp_zOIFg"
+                }
+              }
             },
             {
               "number": "3318",
@@ -289,43 +451,85 @@
               "number": "3",
               "title": "Longest Substring Without Repeating Characters",
               "leetcodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/longest-substring-without-repeating-characters",
+                  "videoUrl": "https://www.youtube.com/watch?v=wiGpQwVHdE0"
+                }
+              }
             },
             {
               "number": "76",
               "title": "Minimum Window Substring",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-window-substring/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-window-substring",
+                  "videoUrl": "https://www.youtube.com/watch?v=jSto0O4AJbM"
+                }
+              }
             },
             {
               "number": "209",
               "title": "Minimum Size Subarray Sum",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-size-subarray-sum/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-size-subarray-sum",
+                  "videoUrl": "https://www.youtube.com/watch?v=aYqYMIqZx5s"
+                }
+              }
             },
             {
               "number": "219",
               "title": "Contains Duplicate II",
               "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate-ii/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/contains-duplicate-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=ypn0aZ0nrL4"
+                }
+              }
             },
             {
               "number": "424",
               "title": "Longest Repeating Character Replacement",
               "leetcodeUrl": "https://leetcode.com/problems/longest-repeating-character-replacement/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/longest-repeating-character-replacement",
+                  "videoUrl": "https://www.youtube.com/watch?v=gqXU1UyA8pk"
+                }
+              }
             },
             {
               "number": "713",
               "title": "Subarray Product Less Than K",
               "leetcodeUrl": "https://leetcode.com/problems/subarray-product-less-than-k/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/subarray-product-less-than-k",
+                  "videoUrl": "https://www.youtube.com/watch?v=Cg6_nF7YIks"
+                }
+              }
             },
             {
               "number": "904",
               "title": "Fruit Into Baskets",
               "leetcodeUrl": "https://leetcode.com/problems/fruit-into-baskets/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/fruit-into-baskets",
+                  "videoUrl": "https://www.youtube.com/watch?v=yYtaV0G3mWQ"
+                }
+              }
             },
             {
               "number": "1004",
@@ -337,7 +541,13 @@
               "number": "1438",
               "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
               "leetcodeUrl": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit",
+                  "videoUrl": "https://www.youtube.com/watch?v=V-ecDfY5xEw"
+                }
+              }
             },
             {
               "number": "1493",
@@ -349,25 +559,49 @@
               "number": "1658",
               "title": "Minimum Operations to Reduce X to Zero",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-operations-to-reduce-x-to-zero",
+                  "videoUrl": "https://www.youtube.com/watch?v=xumn16n7njs"
+                }
+              }
             },
             {
               "number": "1838",
               "title": "Frequency of the Most Frequent Element",
               "leetcodeUrl": "https://leetcode.com/problems/frequency-of-the-most-frequent-element/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/frequency-of-the-most-frequent-element",
+                  "videoUrl": "https://www.youtube.com/watch?v=vgBrQ0NM5vE"
+                }
+              }
             },
             {
               "number": "2461",
               "title": "Maximum Sum of Distinct Subarrays With Length K",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-sum-of-distinct-subarrays-with-length-k",
+                  "videoUrl": "https://www.youtube.com/watch?v=pT-lOE1on3M"
+                }
+              }
             },
             {
               "number": "2516",
               "title": "Take K of Each Character From Left and Right",
               "leetcodeUrl": "https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/take-k-of-each-character-from-left-and-right",
+                  "videoUrl": "https://www.youtube.com/watch?v=QzcxeJZByNM"
+                }
+              }
             },
             {
               "number": "2762",
@@ -379,7 +613,13 @@
               "number": "2779",
               "title": "Maximum Beauty of an Array After Applying Operation",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-beauty-of-an-array-after-applying-operation",
+                  "videoUrl": "https://www.youtube.com/watch?v=x29QnzSBFVI"
+                }
+              }
             },
             {
               "number": "2981",
@@ -414,13 +654,25 @@
               "number": "239",
               "title": "Sliding Window Maximum",
               "leetcodeUrl": "https://leetcode.com/problems/sliding-window-maximum/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/sliding-window-maximum",
+                  "videoUrl": "https://www.youtube.com/watch?v=DfljaUwZsOk"
+                }
+              }
             },
             {
               "number": "862",
               "title": "Shortest Subarray with Sum at Least K",
               "leetcodeUrl": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/shortest-subarray-with-sum-at-least-k",
+                  "videoUrl": "https://www.youtube.com/watch?v=5AY70aAHZiQ"
+                }
+              }
             },
             {
               "number": "1696",
@@ -437,19 +689,37 @@
               "number": "1",
               "title": "TwoSum",
               "leetcodeUrl": "https://leetcode.com/problems/two-sum/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/two-sum",
+                  "videoUrl": "https://www.youtube.com/watch?v=KLlXCFG5TnA"
+                }
+              }
             },
             {
               "number": "438",
               "title": "Find All Anagrams in a String",
               "leetcodeUrl": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-all-anagrams-in-a-string",
+                  "videoUrl": "https://www.youtube.com/watch?v=G8xtZy0fDKg"
+                }
+              }
             },
             {
               "number": "567",
               "title": "Permutation in String",
               "leetcodeUrl": "https://leetcode.com/problems/permutation-in-string/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/permutation-in-string",
+                  "videoUrl": "https://www.youtube.com/watch?v=UbyhOgBN834"
+                }
+              }
             }
           ]
         }
@@ -465,25 +735,49 @@
               "number": "102",
               "title": "Binary Tree Level Order Traversal",
               "leetcodeUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/binary-tree-level-order-traversal",
+                  "videoUrl": "https://www.youtube.com/watch?v=6ZnyEApgFYg"
+                }
+              }
             },
             {
               "number": "103",
               "title": "Binary Tree Zigzag Level Order Traversal",
               "leetcodeUrl": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/binary-tree-zigzag-level-order-traversal",
+                  "videoUrl": "https://www.youtube.com/watch?v=igbboQbiwqw"
+                }
+              }
             },
             {
               "number": "199",
               "title": "Binary Tree Right Side View",
               "leetcodeUrl": "https://leetcode.com/problems/binary-tree-right-side-view/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/binary-tree-right-side-view",
+                  "videoUrl": "https://www.youtube.com/watch?v=d4zLyf32e3I"
+                }
+              }
             },
             {
               "number": "515",
               "title": "Find Largest Value in Each Tree Row",
               "leetcodeUrl": "https://leetcode.com/problems/find-largest-value-in-each-tree-row/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-largest-value-in-each-tree-row",
+                  "videoUrl": "https://www.youtube.com/watch?v=wB9JOh7Z_cY"
+                }
+              }
             },
             {
               "number": "1161",
@@ -500,19 +794,37 @@
               "number": "100",
               "title": "Same Tree",
               "leetcodeUrl": "https://leetcode.com/problems/same-tree/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/same-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=vRbbcKXCxOw"
+                }
+              }
             },
             {
               "number": "101",
               "title": "Symmetric Tree",
               "leetcodeUrl": "https://leetcode.com/problems/symmetric-tree/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/symmetric-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=Mao9uzxwvmc"
+                }
+              }
             },
             {
               "number": "105",
               "title": "Construct Binary Tree from Preorder and Inorder Traversal",
               "leetcodeUrl": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/construct-binary-tree-from-preorder-and-inorder-traversal",
+                  "videoUrl": "https://www.youtube.com/watch?v=ihj4IQGZ2zc"
+                }
+              }
             },
             {
               "number": "114",
@@ -524,7 +836,13 @@
               "number": "226",
               "title": "Invert Binary Tree",
               "leetcodeUrl": "https://leetcode.com/problems/invert-binary-tree/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/invert-binary-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=OnSn2XEQ4MY"
+                }
+              }
             },
             {
               "number": "257",
@@ -536,7 +854,13 @@
               "number": "988",
               "title": "Smallest String Starting From Leaf",
               "leetcodeUrl": "https://leetcode.com/problems/smallest-string-starting-from-leaf/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/smallest-string-starting-from-leaf",
+                  "videoUrl": "https://www.youtube.com/watch?v=UvdWfxQ_ZDs"
+                }
+              }
             }
           ]
         },
@@ -547,25 +871,49 @@
               "number": "94",
               "title": "Binary Tree Inorder Traversal",
               "leetcodeUrl": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/binary-tree-inorder-traversal",
+                  "videoUrl": "https://www.youtube.com/watch?v=g_S5WuasWUE"
+                }
+              }
             },
             {
               "number": "98",
               "title": "Validate Binary Search Tree",
               "leetcodeUrl": "https://leetcode.com/problems/validate-binary-search-tree/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/validate-binary-search-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=s6ATEkipzow"
+                }
+              }
             },
             {
               "number": "173",
               "title": "Binary Search Tree Iterator",
               "leetcodeUrl": "https://leetcode.com/problems/binary-search-tree-iterator/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/binary-search-tree-iterator",
+                  "videoUrl": "https://www.youtube.com/watch?v=RXy5RzGF5wo"
+                }
+              }
             },
             {
               "number": "230",
               "title": "Kth Smallest Element in a BST",
               "leetcodeUrl": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/kth-smallest-element-in-a-bst",
+                  "videoUrl": "https://www.youtube.com/watch?v=5LUXSvjmGCw"
+                }
+              }
             },
             {
               "number": "501",
@@ -588,31 +936,61 @@
               "number": "104",
               "title": "Maximum Depth of Binary Tree",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-depth-of-binary-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=hTM3phVI6YQ"
+                }
+              }
             },
             {
               "number": "110",
               "title": "Balanced Binary Tree",
               "leetcodeUrl": "https://leetcode.com/problems/balanced-binary-tree/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/balanced-binary-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=QfJsau0ItOY"
+                }
+              }
             },
             {
               "number": "124",
               "title": "Binary Tree Maximum Path Sum",
               "leetcodeUrl": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/binary-tree-maximum-path-sum",
+                  "videoUrl": "https://www.youtube.com/watch?v=Hr5cWUld4vU"
+                }
+              }
             },
             {
               "number": "145",
               "title": "Binary Tree Postorder Traversal",
               "leetcodeUrl": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/binary-tree-postorder-traversal",
+                  "videoUrl": "https://www.youtube.com/watch?v=QhszUQhGGlA"
+                }
+              }
             },
             {
               "number": "337",
               "title": "House Robber III",
               "leetcodeUrl": "https://leetcode.com/problems/house-robber-iii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/house-robber-iii",
+                  "videoUrl": "https://www.youtube.com/watch?v=nHR8ytpzz7c"
+                }
+              }
             },
             {
               "number": "366",
@@ -624,7 +1002,13 @@
               "number": "543",
               "title": "Diameter of Binary Tree",
               "leetcodeUrl": "https://leetcode.com/problems/diameter-of-binary-tree/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/diameter-of-binary-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=K81C31ytOZE"
+                }
+              }
             },
             {
               "number": "863",
@@ -636,7 +1020,13 @@
               "number": "1110",
               "title": "Delete Nodes And Return Forest",
               "leetcodeUrl": "https://leetcode.com/problems/delete-nodes-and-return-forest/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/delete-nodes-and-return-forest",
+                  "videoUrl": "https://www.youtube.com/watch?v=UhKu0q1yXHY"
+                }
+              }
             },
             {
               "number": "2458",
@@ -653,7 +1043,13 @@
               "number": "235",
               "title": "Lowest Common Ancestor of a Binary Search Tree",
               "leetcodeUrl": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/lowest-common-ancestor-of-a-binary-search-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=gs2LMfuOR9k"
+                }
+              }
             },
             {
               "number": "236",
@@ -676,13 +1072,25 @@
               "number": "572",
               "title": "Subtree of Another Tree",
               "leetcodeUrl": "https://leetcode.com/problems/subtree-of-another-tree/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/subtree-of-another-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=E36O5SWp-LE"
+                }
+              }
             },
             {
               "number": "652",
               "title": "Find Duplicate Subtrees",
               "leetcodeUrl": "https://leetcode.com/problems/find-duplicate-subtrees/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-duplicate-subtrees",
+                  "videoUrl": "https://www.youtube.com/watch?v=kn0Z5_qPPzY"
+                }
+              }
             }
           ]
         }
@@ -698,19 +1106,37 @@
               "number": "130",
               "title": "Surrounded Regions",
               "leetcodeUrl": "https://leetcode.com/problems/surrounded-regions/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/surrounded-regions",
+                  "videoUrl": "https://www.youtube.com/watch?v=9z2BunfoZ5Y"
+                }
+              }
             },
             {
               "number": "200",
               "title": "Number of Islands",
               "leetcodeUrl": "https://leetcode.com/problems/number-of-islands/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/number-of-islands",
+                  "videoUrl": "https://www.youtube.com/watch?v=pV2kpPD66nE"
+                }
+              }
             },
             {
               "number": "417",
               "title": "Pacific Atlantic Water Flow",
               "leetcodeUrl": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/pacific-atlantic-water-flow",
+                  "videoUrl": "https://www.youtube.com/watch?v=s-VkcjHqkGI"
+                }
+              }
             },
             {
               "number": "547",
@@ -722,7 +1148,13 @@
               "number": "695",
               "title": "Max Area of Island",
               "leetcodeUrl": "https://leetcode.com/problems/max-area-of-island/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/max-area-of-island",
+                  "videoUrl": "https://www.youtube.com/watch?v=iJGr1OtmH0c"
+                }
+              }
             },
             {
               "number": "733",
@@ -740,25 +1172,49 @@
               "number": "1020",
               "title": "Number of Enclaves",
               "leetcodeUrl": "https://leetcode.com/problems/number-of-enclaves/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/number-of-enclaves",
+                  "videoUrl": "https://www.youtube.com/watch?v=gf0zsh1FIgE"
+                }
+              }
             },
             {
               "number": "1254",
               "title": "Number of Closed Islands",
               "leetcodeUrl": "https://leetcode.com/problems/number-of-closed-islands/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/number-of-closed-islands",
+                  "videoUrl": "https://www.youtube.com/watch?v=X8k48xek8g8"
+                }
+              }
             },
             {
               "number": "1905",
               "title": "Count Sub Islands",
               "leetcodeUrl": "https://leetcode.com/problems/count-sub-islands/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/count-sub-islands",
+                  "videoUrl": "https://www.youtube.com/watch?v=mLpW3qfbNJ8"
+                }
+              }
             },
             {
               "number": "2101",
               "title": "Detonate the Maximum Bombs",
               "leetcodeUrl": "https://leetcode.com/problems/detonate-the-maximum-bombs/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/detonate-the-maximum-bombs",
+                  "videoUrl": "https://www.youtube.com/watch?v=8NPbAvVXKR4"
+                }
+              }
             }
           ]
         },
@@ -775,13 +1231,25 @@
               "number": "994",
               "title": "Rotting Oranges",
               "leetcodeUrl": "https://leetcode.com/problems/rotting-oranges/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/rotting-oranges",
+                  "videoUrl": "https://www.youtube.com/watch?v=y704fEOx0s0"
+                }
+              }
             },
             {
               "number": "1091",
               "title": "Shortest Path in Binary Matrix",
               "leetcodeUrl": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/shortest-path-in-binary-matrix",
+                  "videoUrl": "https://www.youtube.com/watch?v=YnxUdAO7TAo"
+                }
+              }
             }
           ]
         },
@@ -792,19 +1260,37 @@
               "number": "207",
               "title": "Course Schedule",
               "leetcodeUrl": "https://leetcode.com/problems/course-schedule/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/course-schedule",
+                  "videoUrl": "https://www.youtube.com/watch?v=EgI5nU9etnU"
+                }
+              }
             },
             {
               "number": "210",
               "title": "Course Schedule II",
               "leetcodeUrl": "https://leetcode.com/problems/course-schedule-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/course-schedule-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=Akt3glAwyfY"
+                }
+              }
             },
             {
               "number": "802",
               "title": "Find Eventual Safe States",
               "leetcodeUrl": "https://leetcode.com/problems/find-eventual-safe-states/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-eventual-safe-states",
+                  "videoUrl": "https://www.youtube.com/watch?v=Re_v0j0CRsg"
+                }
+              }
             },
             {
               "number": "1059",
@@ -821,19 +1307,37 @@
               "number": "210",
               "title": "Course Schedule II",
               "leetcodeUrl": "https://leetcode.com/problems/course-schedule-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/course-schedule-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=Akt3glAwyfY"
+                }
+              }
             },
             {
               "number": "269",
               "title": "Alien Dictionary",
               "leetcodeUrl": "https://leetcode.com/problems/alien-dictionary/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/alien-dictionary",
+                  "videoUrl": "https://www.youtube.com/watch?v=6kTZYvNNyps"
+                }
+              }
             },
             {
               "number": "310",
               "title": "Minimum Height Trees",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-height-trees/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-height-trees",
+                  "videoUrl": "https://www.youtube.com/watch?v=wQGQnyv_9hI"
+                }
+              }
             },
             {
               "number": "444",
@@ -851,25 +1355,49 @@
               "number": "1857",
               "title": "Largest Color Value in a Directed Graph",
               "leetcodeUrl": "https://leetcode.com/problems/largest-color-value-in-a-directed-graph/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/largest-color-value-in-a-directed-graph",
+                  "videoUrl": "https://www.youtube.com/watch?v=xLoDjKczUSk"
+                }
+              }
             },
             {
               "number": "2050",
               "title": "Parallel Courses III",
               "leetcodeUrl": "https://leetcode.com/problems/parallel-courses-iii/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/parallel-courses-iii",
+                  "videoUrl": "https://www.youtube.com/watch?v=a_NlRPnqCrg"
+                }
+              }
             },
             {
               "number": "2115",
               "title": "Find All Possible Recipes from Given Supplies",
               "leetcodeUrl": "https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-all-possible-recipes-from-given-supplies",
+                  "videoUrl": "https://www.youtube.com/watch?v=AQrsAc3EcyQ"
+                }
+              }
             },
             {
               "number": "2392",
               "title": "Build a Matrix With Conditions",
               "leetcodeUrl": "https://leetcode.com/problems/build-a-matrix-with-conditions/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/build-a-matrix-with-conditions",
+                  "videoUrl": "https://www.youtube.com/watch?v=khTKB1PzCuw"
+                }
+              }
             }
           ]
         },
@@ -880,19 +1408,37 @@
               "number": "133",
               "title": "Clone Graph",
               "leetcodeUrl": "https://leetcode.com/problems/clone-graph/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/clone-graph",
+                  "videoUrl": "https://www.youtube.com/watch?v=mQeF6bN8hMk"
+                }
+              }
             },
             {
               "number": "1334",
               "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
               "leetcodeUrl": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+                  "videoUrl": "https://www.youtube.com/watch?v=--wKPR3ByJc"
+                }
+              }
             },
             {
               "number": "138",
               "title": "Copy List with Random Pointer",
               "leetcodeUrl": "https://leetcode.com/problems/copy-list-with-random-pointer/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/copy-list-with-random-pointer",
+                  "videoUrl": "https://www.youtube.com/watch?v=5Y2EiZST97Y"
+                }
+              }
             },
             {
               "number": "1490",
@@ -909,37 +1455,73 @@
               "number": "743",
               "title": "Network Delay Time",
               "leetcodeUrl": "https://leetcode.com/problems/network-delay-time/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/network-delay-time",
+                  "videoUrl": "https://www.youtube.com/watch?v=EaphyqKU4PQ"
+                }
+              }
             },
             {
               "number": "778",
               "title": "Swim in Rising Water",
               "leetcodeUrl": "https://leetcode.com/problems/swim-in-rising-water/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/swim-in-rising-water",
+                  "videoUrl": "https://www.youtube.com/watch?v=amvrKlMLuGY"
+                }
+              }
             },
             {
               "number": "1514",
               "title": "Path with Maximum Probability",
               "leetcodeUrl": "https://leetcode.com/problems/path-with-maximum-probability/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/path-with-maximum-probability",
+                  "videoUrl": "https://www.youtube.com/watch?v=kPsDTGcrzGM"
+                }
+              }
             },
             {
               "number": "1631",
               "title": "Path With Minimum Effort",
               "leetcodeUrl": "https://leetcode.com/problems/path-with-minimum-effort/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/path-with-minimum-effort",
+                  "videoUrl": "https://www.youtube.com/watch?v=XQlxCCx2vI4"
+                }
+              }
             },
             {
               "number": "1976",
               "title": "Number of Ways to Arrive at Destination",
               "leetcodeUrl": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/number-of-ways-to-arrive-at-destination",
+                  "videoUrl": "https://www.youtube.com/watch?v=VFCzKOH1hnk"
+                }
+              }
             },
             {
               "number": "2045",
               "title": "Second Minimum Time to Reach Destination",
               "leetcodeUrl": "https://leetcode.com/problems/second-minimum-time-to-reach-destination/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/second-minimum-time-to-reach-destination",
+                  "videoUrl": "https://www.youtube.com/watch?v=2F7gwxfy1CU"
+                }
+              }
             },
             {
               "number": "2203",
@@ -951,19 +1533,37 @@
               "number": "2290",
               "title": "Minimum Obstacle Removal to Reach Corner",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-obstacle-removal-to-reach-corner",
+                  "videoUrl": "https://www.youtube.com/watch?v=VxeH7_QL-28"
+                }
+              }
             },
             {
               "number": "2577",
               "title": "Minimum Time to Visit a Cell In a Grid",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-time-to-visit-a-cell-in-a-grid",
+                  "videoUrl": "https://www.youtube.com/watch?v=Kj98r8IgJOQ"
+                }
+              }
             },
             {
               "number": "2812",
               "title": "Find the Safest Path in a Grid",
               "leetcodeUrl": "https://leetcode.com/problems/find-the-safest-path-in-a-grid/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-the-safest-path-in-a-grid",
+                  "videoUrl": "https://www.youtube.com/watch?v=-5mQcNiVWTs"
+                }
+              }
             }
           ]
         },
@@ -974,13 +1574,25 @@
               "number": "787",
               "title": "Cheapest Flights Within K Stops",
               "leetcodeUrl": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/cheapest-flights-within-k-stops",
+                  "videoUrl": "https://www.youtube.com/watch?v=5eIK3zUdYmE"
+                }
+              }
             },
             {
               "number": "1129",
               "title": "Shortest Path with Alternating Colors",
               "leetcodeUrl": "https://leetcode.com/problems/shortest-path-with-alternating-colors/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/shortest-path-with-alternating-colors",
+                  "videoUrl": "https://www.youtube.com/watch?v=69rcy6lb-HQ"
+                }
+              }
             }
           ]
         },
@@ -991,13 +1603,25 @@
               "number": "200",
               "title": "Number of Islands",
               "leetcodeUrl": "https://leetcode.com/problems/number-of-islands/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/number-of-islands",
+                  "videoUrl": "https://www.youtube.com/watch?v=pV2kpPD66nE"
+                }
+              }
             },
             {
               "number": "261",
               "title": "Graph Valid Tree",
               "leetcodeUrl": "https://leetcode.com/problems/graph-valid-tree/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/graph-valid-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=bXsUuownnoQ"
+                }
+              }
             },
             {
               "number": "305",
@@ -1009,7 +1633,13 @@
               "number": "323",
               "title": "Number of Connected Components in an Undirected Graph",
               "leetcodeUrl": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/number-of-connected-components-in-an-undirected-graph",
+                  "videoUrl": "https://www.youtube.com/watch?v=8f1XPm4WOUc"
+                }
+              }
             },
             {
               "number": "547",
@@ -1021,13 +1651,25 @@
               "number": "684",
               "title": "Redundant Connection",
               "leetcodeUrl": "https://leetcode.com/problems/redundant-connection/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/redundant-connection",
+                  "videoUrl": "https://www.youtube.com/watch?v=1lNK80tOTfc"
+                }
+              }
             },
             {
               "number": "721",
               "title": "Accounts Merge",
               "leetcodeUrl": "https://leetcode.com/problems/accounts-merge/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/accounts-merge",
+                  "videoUrl": "https://www.youtube.com/watch?v=6st4IxEF-90"
+                }
+              }
             },
             {
               "number": "737",
@@ -1051,7 +1693,13 @@
               "number": "959",
               "title": "Regions Cut By Slashes",
               "leetcodeUrl": "https://leetcode.com/problems/regions-cut-by-slashes/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/regions-cut-by-slashes",
+                  "videoUrl": "https://www.youtube.com/watch?v=j8KrBYIxHK8"
+                }
+              }
             },
             {
               "number": "1101",
@@ -1068,7 +1716,13 @@
               "number": "210",
               "title": "Course Schedule II",
               "leetcodeUrl": "https://leetcode.com/problems/course-schedule-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/course-schedule-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=Akt3glAwyfY"
+                }
+              }
             },
             {
               "number": "547",
@@ -1086,7 +1740,13 @@
               "number": "2127",
               "title": "Maximum Employees to Be Invited to a Meeting",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-employees-to-be-invited-to-a-meeting",
+                  "videoUrl": "https://www.youtube.com/watch?v=aPBELJa-LM8"
+                }
+              }
             }
           ]
         },
@@ -1120,7 +1780,13 @@
               "number": "1584",
               "title": "Min Cost to Connect All Points",
               "leetcodeUrl": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/min-cost-to-connect-all-points",
+                  "videoUrl": "https://www.youtube.com/watch?v=f7JOBJIC-NA"
+                }
+              }
             },
             {
               "number": "1168",
@@ -1132,7 +1798,13 @@
               "number": "1489",
               "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
               "leetcodeUrl": "https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=83JnUxrLKJU"
+                }
+              }
             }
           ]
         },
@@ -1143,7 +1815,13 @@
               "number": "127",
               "title": "Word Ladder",
               "leetcodeUrl": "https://leetcode.com/problems/word-ladder/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/word-ladder",
+                  "videoUrl": "https://www.youtube.com/watch?v=h9iTnkgv05E"
+                }
+              }
             },
             {
               "number": "126",
@@ -1171,31 +1849,61 @@
               "number": "70",
               "title": "Climbing Stairs",
               "leetcodeUrl": "https://leetcode.com/problems/climbing-stairs/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/climbing-stairs",
+                  "videoUrl": "https://www.youtube.com/watch?v=Y0lT9Fck7qI"
+                }
+              }
             },
             {
               "number": "91",
               "title": "Decode Ways",
               "leetcodeUrl": "https://leetcode.com/problems/decode-ways/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/decode-ways",
+                  "videoUrl": "https://www.youtube.com/watch?v=6aEyTjOwlJU"
+                }
+              }
             },
             {
               "number": "198",
               "title": "House Robber",
               "leetcodeUrl": "https://leetcode.com/problems/house-robber/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/house-robber",
+                  "videoUrl": "https://www.youtube.com/watch?v=73r3KWiEvyk"
+                }
+              }
             },
             {
               "number": "213",
               "title": "House Robber II",
               "leetcodeUrl": "https://leetcode.com/problems/house-robber-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/house-robber-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=rWAJCfYYOvM"
+                }
+              }
             },
             {
               "number": "337",
               "title": "House Robber III",
               "leetcodeUrl": "https://leetcode.com/problems/house-robber-iii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/house-robber-iii",
+                  "videoUrl": "https://www.youtube.com/watch?v=nHR8ytpzz7c"
+                }
+              }
             },
             {
               "number": "509",
@@ -1207,13 +1915,25 @@
               "number": "740",
               "title": "Delete and Earn",
               "leetcodeUrl": "https://leetcode.com/problems/delete-and-earn/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/delete-and-earn",
+                  "videoUrl": "https://www.youtube.com/watch?v=7FCemBxvGw0"
+                }
+              }
             },
             {
               "number": "746",
               "title": "Min Cost Climbing Stairs",
               "leetcodeUrl": "https://leetcode.com/problems/min-cost-climbing-stairs/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/min-cost-climbing-stairs",
+                  "videoUrl": "https://www.youtube.com/watch?v=ktmzAZWkEZ0"
+                }
+              }
             }
           ]
         },
@@ -1224,13 +1944,25 @@
               "number": "53",
               "title": "Maximum Subarray",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-subarray",
+                  "videoUrl": "https://www.youtube.com/watch?v=5WZl3MMT0Eg"
+                }
+              }
             },
             {
               "number": "918",
               "title": "Maximum Sum Circular Subarray",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-sum-circular-subarray/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-sum-circular-subarray",
+                  "videoUrl": "https://www.youtube.com/watch?v=fxT9KjakYPM"
+                }
+              }
             },
             {
               "number": "2321",
@@ -1242,13 +1974,25 @@
               "number": "1749",
               "title": "Maximum Absolute Sum of Any Subarray",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-absolute-sum-of-any-subarray",
+                  "videoUrl": "https://www.youtube.com/watch?v=y1VEygeHpGU"
+                }
+              }
             },
             {
               "number": "152",
               "title": "Maximum Product Subarray",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-product-subarray/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-product-subarray",
+                  "videoUrl": "https://www.youtube.com/watch?v=lXVy6YWFcRM"
+                }
+              }
             }
           ]
         },
@@ -1259,19 +2003,37 @@
               "number": "322",
               "title": "Coin Change",
               "leetcodeUrl": "https://leetcode.com/problems/coin-change/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/coin-change",
+                  "videoUrl": "https://www.youtube.com/watch?v=H9bfqozjoqs"
+                }
+              }
             },
             {
               "number": "377",
               "title": "Combination Sum IV",
               "leetcodeUrl": "https://leetcode.com/problems/combination-sum-iv/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/combination-sum-iv",
+                  "videoUrl": "https://www.youtube.com/watch?v=dw2nMCxG0ik"
+                }
+              }
             },
             {
               "number": "518",
               "title": "Coin Change II",
               "leetcodeUrl": "https://leetcode.com/problems/coin-change-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/coin-change-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=Mjy4hd2xgrs"
+                }
+              }
             }
           ]
         },
@@ -1282,13 +2044,25 @@
               "number": "139",
               "title": "Word Break",
               "leetcodeUrl": "https://leetcode.com/problems/word-break/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/word-break",
+                  "videoUrl": "https://www.youtube.com/watch?v=Sx9NNgInc3A"
+                }
+              }
             },
             {
               "number": "140",
               "title": "Word Break II",
               "leetcodeUrl": "https://leetcode.com/problems/word-break-ii/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/word-break-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=QgLKdluDo08"
+                }
+              }
             }
           ]
         },
@@ -1299,13 +2073,25 @@
               "number": "1143",
               "title": "Longest Common Subsequence",
               "leetcodeUrl": "https://leetcode.com/problems/longest-common-subsequence/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/longest-common-subsequence",
+                  "videoUrl": "https://www.youtube.com/watch?v=Ua0GhsJSlWM"
+                }
+              }
             },
             {
               "number": "1092",
               "title": "Shortest Common Supersequence",
               "leetcodeUrl": "https://leetcode.com/problems/shortest-common-supersequence/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/shortest-common-supersequence",
+                  "videoUrl": "https://www.youtube.com/watch?v=JkjQNJSxXN0"
+                }
+              }
             },
             {
               "number": "1312",
@@ -1322,7 +2108,13 @@
               "number": "72",
               "title": "Edit Distance",
               "leetcodeUrl": "https://leetcode.com/problems/edit-distance/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/edit-distance",
+                  "videoUrl": "https://www.youtube.com/watch?v=XYi2-LPrwm4"
+                }
+              }
             },
             {
               "number": "583",
@@ -1345,43 +2137,85 @@
               "number": "62",
               "title": "Unique Paths",
               "leetcodeUrl": "https://leetcode.com/problems/unique-paths/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/unique-paths",
+                  "videoUrl": "https://www.youtube.com/watch?v=IlEsdxuD4lY"
+                }
+              }
             },
             {
               "number": "63",
               "title": "Unique Paths II",
               "leetcodeUrl": "https://leetcode.com/problems/unique-paths-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/unique-paths-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=d3UOz7zdE4I"
+                }
+              }
             },
             {
               "number": "64",
               "title": "Minimum Path Sum",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-path-sum/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-path-sum",
+                  "videoUrl": "https://www.youtube.com/watch?v=pGMsrvt0fpk"
+                }
+              }
             },
             {
               "number": "120",
               "title": "Triangle",
               "leetcodeUrl": "https://leetcode.com/problems/triangle/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/triangle",
+                  "videoUrl": "https://www.youtube.com/watch?v=OM1MTokvxs4"
+                }
+              }
             },
             {
               "number": "221",
               "title": "Maximal Square",
               "leetcodeUrl": "https://leetcode.com/problems/maximal-square/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximal-square",
+                  "videoUrl": "https://www.youtube.com/watch?v=6X7Ha2PrDmM"
+                }
+              }
             },
             {
               "number": "931",
               "title": "Minimum Falling Path Sum",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-falling-path-sum/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-falling-path-sum",
+                  "videoUrl": "https://www.youtube.com/watch?v=b_F3mz9l-uQ"
+                }
+              }
             },
             {
               "number": "1277",
               "title": "Count Square Submatrices with All Ones",
               "leetcodeUrl": "https://leetcode.com/problems/count-square-submatrices-with-all-ones/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/count-square-submatrices-with-all-ones",
+                  "videoUrl": "https://www.youtube.com/watch?v=5Li-cR5h_uw"
+                }
+              }
             }
           ]
         },
@@ -1392,7 +2226,13 @@
               "number": "312",
               "title": "Burst Balloons",
               "leetcodeUrl": "https://leetcode.com/problems/burst-balloons/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/burst-balloons",
+                  "videoUrl": "https://www.youtube.com/watch?v=VFskby7lUbw"
+                }
+              }
             },
             {
               "number": "546",
@@ -1409,19 +2249,37 @@
               "number": "95",
               "title": "Unique Binary Search Trees II",
               "leetcodeUrl": "https://leetcode.com/problems/unique-binary-search-trees-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/unique-binary-search-trees-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=m907FlQa2Yc"
+                }
+              }
             },
             {
               "number": "96",
               "title": "Unique Binary Search Trees",
               "leetcodeUrl": "https://leetcode.com/problems/unique-binary-search-trees/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/unique-binary-search-trees",
+                  "videoUrl": "https://www.youtube.com/watch?v=Ox0TenN3Zpg"
+                }
+              }
             },
             {
               "number": "241",
               "title": "Different Ways to Add Parentheses",
               "leetcodeUrl": "https://leetcode.com/problems/different-ways-to-add-parentheses/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/different-ways-to-add-parentheses",
+                  "videoUrl": "https://www.youtube.com/watch?v=cykVFFm5D3s"
+                }
+              }
             }
           ]
         },
@@ -1432,7 +2290,13 @@
               "number": "300",
               "title": "Longest Increasing Subsequence",
               "leetcodeUrl": "https://leetcode.com/problems/longest-increasing-subsequence/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/longest-increasing-subsequence",
+                  "videoUrl": "https://www.youtube.com/watch?v=cjWnW0hdF1Y"
+                }
+              }
             },
             {
               "number": "354",
@@ -1444,7 +2308,13 @@
               "number": "1671",
               "title": "Minimum Number of Removals to Make Mountain Array",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-number-of-removals-to-make-mountain-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=Ys-q9qPpleY"
+                }
+              }
             },
             {
               "number": "2407",
@@ -1461,13 +2331,25 @@
               "number": "121",
               "title": "Best Time to Buy and Sell Stock",
               "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/best-time-to-buy-and-sell-stock",
+                  "videoUrl": "https://www.youtube.com/watch?v=1pkOgXD63yU"
+                }
+              }
             },
             {
               "number": "122",
               "title": "Best Time to Buy and Sell Stock II",
               "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/best-time-to-buy-and-sell-stock-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=3SJ3pUkPQMc"
+                }
+              }
             },
             {
               "number": "123",
@@ -1485,7 +2367,13 @@
               "number": "309",
               "title": "Best Time to Buy and Sell Stock with Cooldown",
               "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/best-time-to-buy-and-sell-stock-with-cooldown",
+                  "videoUrl": "https://www.youtube.com/watch?v=I7j0F7AHpb8"
+                }
+              }
             }
           ]
         }
@@ -1501,19 +2389,37 @@
               "number": "215",
               "title": "Kth Largest Element in an Array",
               "leetcodeUrl": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/kth-largest-element-in-an-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=XEmy13g1Qxc"
+                }
+              }
             },
             {
               "number": "347",
               "title": "Top K Frequent Elements",
               "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-elements/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/top-k-frequent-elements",
+                  "videoUrl": "https://www.youtube.com/watch?v=YPTqKIgVk-k"
+                }
+              }
             },
             {
               "number": "451",
               "title": "Sort Characters By Frequency",
               "leetcodeUrl": "https://leetcode.com/problems/sort-characters-by-frequency/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/sort-characters-by-frequency",
+                  "videoUrl": "https://www.youtube.com/watch?v=OXdXc9HTrIg"
+                }
+              }
             },
             {
               "number": "506",
@@ -1525,25 +2431,49 @@
               "number": "703",
               "title": "Kth Largest Element in a Stream",
               "leetcodeUrl": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/kth-largest-element-in-a-stream",
+                  "videoUrl": "https://www.youtube.com/watch?v=hOjcdrqMoQ8"
+                }
+              }
             },
             {
               "number": "973",
               "title": "K Closest Points to Origin",
               "leetcodeUrl": "https://leetcode.com/problems/k-closest-points-to-origin/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/k-closest-points-to-origin",
+                  "videoUrl": "https://www.youtube.com/watch?v=rI2EBUEMfTk"
+                }
+              }
             },
             {
               "number": "1046",
               "title": "Last Stone Weight",
               "leetcodeUrl": "https://leetcode.com/problems/last-stone-weight/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/last-stone-weight",
+                  "videoUrl": "https://www.youtube.com/watch?v=B-QCq79-Vfw"
+                }
+              }
             },
             {
               "number": "2558",
               "title": "Take Gifts From the Richest Pile",
               "leetcodeUrl": "https://leetcode.com/problems/take-gifts-from-the-richest-pile/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/take-gifts-from-the-richest-pile",
+                  "videoUrl": "https://www.youtube.com/watch?v=bHEQ4D_XcyY"
+                }
+              }
             }
           ]
         },
@@ -1554,7 +2484,13 @@
               "number": "295",
               "title": "Find Median from Data Stream",
               "leetcodeUrl": "https://leetcode.com/problems/find-median-from-data-stream/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-median-from-data-stream",
+                  "videoUrl": "https://www.youtube.com/watch?v=itmhHWaHupI"
+                }
+              }
             },
             {
               "number": "1825",
@@ -1571,7 +2507,13 @@
               "number": "23",
               "title": "Merge k Sorted Lists",
               "leetcodeUrl": "https://leetcode.com/problems/merge-k-sorted-lists/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/merge-k-sorted-lists",
+                  "videoUrl": "https://www.youtube.com/watch?v=q5a5OiGbT6Q"
+                }
+              }
             },
             {
               "number": "373",
@@ -1589,7 +2531,13 @@
               "number": "632",
               "title": "Smallest Range Covering Elements from K Lists",
               "leetcodeUrl": "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/smallest-range-covering-elements-from-k-lists",
+                  "videoUrl": "https://www.youtube.com/watch?v=L_0aPFMgGpU"
+                }
+              }
             }
           ]
         },
@@ -1600,25 +2548,49 @@
               "number": "253",
               "title": "Meeting Rooms II",
               "leetcodeUrl": "https://leetcode.com/problems/meeting-rooms-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/meeting-rooms-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=FdzJmTCVyJU"
+                }
+              }
             },
             {
               "number": "767",
               "title": "Reorganize String",
               "leetcodeUrl": "https://leetcode.com/problems/reorganize-string/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/reorganize-string",
+                  "videoUrl": "https://www.youtube.com/watch?v=2g_b1aYTHeg"
+                }
+              }
             },
             {
               "number": "857",
               "title": "Minimum Cost to Hire K Workers",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-cost-to-hire-k-workers",
+                  "videoUrl": "https://www.youtube.com/watch?v=f879mUH6vJk"
+                }
+              }
             },
             {
               "number": "1642",
               "title": "Furthest Building You Can Reach",
               "leetcodeUrl": "https://leetcode.com/problems/furthest-building-you-can-reach/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/furthest-building-you-can-reach",
+                  "videoUrl": "https://www.youtube.com/watch?v=zyTeznvXCtg"
+                }
+              }
             },
             {
               "number": "1792",
@@ -1630,19 +2602,37 @@
               "number": "1834",
               "title": "Single-Threaded CPU",
               "leetcodeUrl": "https://leetcode.com/problems/single-threaded-cpu/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/single-threaded-cpu",
+                  "videoUrl": "https://www.youtube.com/watch?v=RR1n-d4oYqE"
+                }
+              }
             },
             {
               "number": "1942",
               "title": "The Number of the Smallest Unoccupied Chair",
               "leetcodeUrl": "https://leetcode.com/problems/the-number-of-the-smallest-unoccupied-chair/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/the-number-of-the-smallest-unoccupied-chair",
+                  "videoUrl": "https://www.youtube.com/watch?v=LqhxcaCctCc"
+                }
+              }
             },
             {
               "number": "2402",
               "title": "Meeting Rooms III",
               "leetcodeUrl": "https://leetcode.com/problems/meeting-rooms-iii/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/meeting-rooms-iii",
+                  "videoUrl": "https://www.youtube.com/watch?v=2VLwjvODQbA"
+                }
+              }
             }
           ]
         }
@@ -1658,25 +2648,49 @@
               "number": "17",
               "title": "Letter Combinations of a Phone Number",
               "leetcodeUrl": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/letter-combinations-of-a-phone-number",
+                  "videoUrl": "https://www.youtube.com/watch?v=0snEunUacZY"
+                }
+              }
             },
             {
               "number": "77",
               "title": "Combinations",
               "leetcodeUrl": "https://leetcode.com/problems/combinations/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/combinations",
+                  "videoUrl": "https://www.youtube.com/watch?v=q0s6m7AiM7o"
+                }
+              }
             },
             {
               "number": "78",
               "title": "Subsets",
               "leetcodeUrl": "https://leetcode.com/problems/subsets/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/subsets",
+                  "videoUrl": "https://www.youtube.com/watch?v=REOH22Xwdkk"
+                }
+              }
             },
             {
               "number": "90",
               "title": "Subsets II",
               "leetcodeUrl": "https://leetcode.com/problems/subsets-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/subsets-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=Vn2v6ajA7U0"
+                }
+              }
             }
           ]
         },
@@ -1693,7 +2707,13 @@
               "number": "46",
               "title": "Permutations",
               "leetcodeUrl": "https://leetcode.com/problems/permutations/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/permutations",
+                  "videoUrl": "https://www.youtube.com/watch?v=FZe0UqISmUw"
+                }
+              }
             },
             {
               "number": "60",
@@ -1710,13 +2730,25 @@
               "number": "39",
               "title": "Combination Sum",
               "leetcodeUrl": "https://leetcode.com/problems/combination-sum/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/combination-sum",
+                  "videoUrl": "https://www.youtube.com/watch?v=GBKI9VSKdGg"
+                }
+              }
             },
             {
               "number": "40",
               "title": "Combination Sum II",
               "leetcodeUrl": "https://leetcode.com/problems/combination-sum-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/combination-sum-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=FOyRpNUSFeA"
+                }
+              }
             }
           ]
         },
@@ -1727,7 +2759,13 @@
               "number": "22",
               "title": "Generate Parentheses",
               "leetcodeUrl": "https://leetcode.com/problems/generate-parentheses/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/generate-parentheses",
+                  "videoUrl": "https://www.youtube.com/watch?v=s9fokUqJ76A"
+                }
+              }
             },
             {
               "number": "301",
@@ -1744,13 +2782,25 @@
               "number": "79",
               "title": "Word Search",
               "leetcodeUrl": "https://leetcode.com/problems/word-search/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/word-search",
+                  "videoUrl": "https://www.youtube.com/watch?v=pfiQ_PS1g8E"
+                }
+              }
             },
             {
               "number": "212",
               "title": "Word Search II",
               "leetcodeUrl": "https://leetcode.com/problems/word-search-ii/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/word-search-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=asbcE9mZz_U"
+                }
+              }
             },
             {
               "number": "2018",
@@ -1773,7 +2823,13 @@
               "number": "51",
               "title": "N-Queens",
               "leetcodeUrl": "https://leetcode.com/problems/n-queens/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/n-queens",
+                  "videoUrl": "https://www.youtube.com/watch?v=Ph95IHmRp5M"
+                }
+              }
             }
           ]
         },
@@ -1784,7 +2840,13 @@
               "number": "131",
               "title": "Palindrome Partitioning",
               "leetcodeUrl": "https://leetcode.com/problems/palindrome-partitioning/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/palindrome-partitioning",
+                  "videoUrl": "https://www.youtube.com/watch?v=3jvWodd7ht0"
+                }
+              }
             },
             {
               "number": "132",
@@ -1796,7 +2858,13 @@
               "number": "1457",
               "title": "Pseudo-Palindromic Paths in a Binary Tree",
               "leetcodeUrl": "https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/pseudo-palindromic-paths-in-a-binary-tree",
+                  "videoUrl": "https://www.youtube.com/watch?v=MBsSpQnaFzg"
+                }
+              }
             }
           ]
         }
@@ -1812,13 +2880,25 @@
               "number": "56",
               "title": "Merge Intervals",
               "leetcodeUrl": "https://leetcode.com/problems/merge-intervals/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/merge-intervals",
+                  "videoUrl": "https://www.youtube.com/watch?v=44H3cEC2fFM"
+                }
+              }
             },
             {
               "number": "57",
               "title": "Insert Interval",
               "leetcodeUrl": "https://leetcode.com/problems/insert-interval/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/insert-interval",
+                  "videoUrl": "https://www.youtube.com/watch?v=A8NUOmlwOlM"
+                }
+              }
             },
             {
               "number": "759",
@@ -1836,7 +2916,13 @@
               "number": "2406",
               "title": "Divide Intervals Into Minimum Number of Groups",
               "leetcodeUrl": "https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/divide-intervals-into-minimum-number-of-groups",
+                  "videoUrl": "https://www.youtube.com/watch?v=FVjKrhdMutc"
+                }
+              }
             }
           ]
         },
@@ -1847,13 +2933,25 @@
               "number": "45",
               "title": "Jump Game II",
               "leetcodeUrl": "https://leetcode.com/problems/jump-game-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/jump-game-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=dJ7sWiOoK7g"
+                }
+              }
             },
             {
               "number": "55",
               "title": "Jump Game",
               "leetcodeUrl": "https://leetcode.com/problems/jump-game/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/jump-game",
+                  "videoUrl": "https://www.youtube.com/watch?v=Yan0cv2cLy8"
+                }
+              }
             }
           ]
         },
@@ -1864,13 +2962,25 @@
               "number": "121",
               "title": "Best Time to Buy and Sell Stock",
               "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/best-time-to-buy-and-sell-stock",
+                  "videoUrl": "https://www.youtube.com/watch?v=1pkOgXD63yU"
+                }
+              }
             },
             {
               "number": "122",
               "title": "Best Time to Buy and Sell Stock II",
               "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/best-time-to-buy-and-sell-stock-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=3SJ3pUkPQMc"
+                }
+              }
             }
           ]
         },
@@ -1881,7 +2991,13 @@
               "number": "134",
               "title": "Gas Station",
               "leetcodeUrl": "https://leetcode.com/problems/gas-station/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/gas-station",
+                  "videoUrl": "https://www.youtube.com/watch?v=lJwbPZGo05A"
+                }
+              }
             },
             {
               "number": "2202",
@@ -1898,13 +3014,25 @@
               "number": "621",
               "title": "Task Scheduler",
               "leetcodeUrl": "https://leetcode.com/problems/task-scheduler/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/task-scheduler",
+                  "videoUrl": "https://www.youtube.com/watch?v=s8p8ukTyA2I"
+                }
+              }
             },
             {
               "number": "767",
               "title": "Reorganize String",
               "leetcodeUrl": "https://leetcode.com/problems/reorganize-string/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/reorganize-string",
+                  "videoUrl": "https://www.youtube.com/watch?v=2g_b1aYTHeg"
+                }
+              }
             },
             {
               "number": "1054",
@@ -1921,13 +3049,25 @@
               "number": "455",
               "title": "Assign Cookies",
               "leetcodeUrl": "https://leetcode.com/problems/assign-cookies/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/assign-cookies",
+                  "videoUrl": "https://www.youtube.com/watch?v=JW8fgvoxPTg"
+                }
+              }
             },
             {
               "number": "135",
               "title": "Candy",
               "leetcodeUrl": "https://leetcode.com/problems/candy/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/candy",
+                  "videoUrl": "https://www.youtube.com/watch?v=1IzCRCcK17A"
+                }
+              }
             },
             {
               "number": "406",
@@ -1939,7 +3079,13 @@
               "number": "1029",
               "title": "Two City Scheduling",
               "leetcodeUrl": "https://leetcode.com/problems/two-city-scheduling/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/two-city-scheduling",
+                  "videoUrl": "https://www.youtube.com/watch?v=d-B_gk_gJtQ"
+                }
+              }
             }
           ]
         }
@@ -1955,19 +3101,37 @@
               "number": "35",
               "title": "Search Insert Position",
               "leetcodeUrl": "https://leetcode.com/problems/search-insert-position/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/search-insert-position",
+                  "videoUrl": "https://www.youtube.com/watch?v=K-RYzDZkzCI"
+                }
+              }
             },
             {
               "number": "69",
               "title": "Sqrt(x)",
               "leetcodeUrl": "https://leetcode.com/problems/sqrtx/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/sqrtx",
+                  "videoUrl": "https://www.youtube.com/watch?v=zdMhGxRWutQ"
+                }
+              }
             },
             {
               "number": "74",
               "title": "Search a 2D Matrix",
               "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/search-a-2d-matrix",
+                  "videoUrl": "https://www.youtube.com/watch?v=Ber2pi2C0j0"
+                }
+              }
             },
             {
               "number": "278",
@@ -1979,19 +3143,37 @@
               "number": "374",
               "title": "Guess Number Higher or Lower",
               "leetcodeUrl": "https://leetcode.com/problems/guess-number-higher-or-lower/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/guess-number-higher-or-lower",
+                  "videoUrl": "https://www.youtube.com/watch?v=xW4QsTtaCa4"
+                }
+              }
             },
             {
               "number": "540",
               "title": "Single Element in a Sorted Array",
               "leetcodeUrl": "https://leetcode.com/problems/single-element-in-a-sorted-array/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/single-element-in-a-sorted-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=HGtqdzyUJ3k"
+                }
+              }
             },
             {
               "number": "704",
               "title": "Binary Search",
               "leetcodeUrl": "https://leetcode.com/problems/binary-search/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/binary-search",
+                  "videoUrl": "https://www.youtube.com/watch?v=s4DPM8ct1pI"
+                }
+              }
             },
             {
               "number": "1539",
@@ -2008,25 +3190,49 @@
               "number": "33",
               "title": "Search in Rotated Sorted Array",
               "leetcodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/search-in-rotated-sorted-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=U8XENwh8Oy8"
+                }
+              }
             },
             {
               "number": "81",
               "title": "Search in Rotated Sorted Array II",
               "leetcodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/search-in-rotated-sorted-array-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=oUnF7o88_Xc"
+                }
+              }
             },
             {
               "number": "153",
               "title": "Find Minimum in Rotated Sorted Array",
               "leetcodeUrl": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-minimum-in-rotated-sorted-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=nIVW4P8b1VA"
+                }
+              }
             },
             {
               "number": "162",
               "title": "Find Peak Element",
               "leetcodeUrl": "https://leetcode.com/problems/find-peak-element/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-peak-element",
+                  "videoUrl": "https://www.youtube.com/watch?v=kMzJy9es7Hc"
+                }
+              }
             },
             {
               "number": "852",
@@ -2038,7 +3244,13 @@
               "number": "1095",
               "title": "Find in Mountain Array",
               "leetcodeUrl": "https://leetcode.com/problems/find-in-mountain-array/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-in-mountain-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=BGgYC-YkGvc"
+                }
+              }
             }
           ]
         },
@@ -2049,7 +3261,13 @@
               "number": "410",
               "title": "Split Array Largest Sum",
               "leetcodeUrl": "https://leetcode.com/problems/split-array-largest-sum/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/split-array-largest-sum",
+                  "videoUrl": "https://www.youtube.com/watch?v=YUF3_eBdzsk"
+                }
+              }
             },
             {
               "number": "774",
@@ -2061,13 +3279,25 @@
               "number": "875",
               "title": "Koko Eating Bananas",
               "leetcodeUrl": "https://leetcode.com/problems/koko-eating-bananas/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/koko-eating-bananas",
+                  "videoUrl": "https://www.youtube.com/watch?v=U2SozAs9RzA"
+                }
+              }
             },
             {
               "number": "1011",
               "title": "Capacity To Ship Packages Within D Days",
               "leetcodeUrl": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/capacity-to-ship-packages-within-d-days",
+                  "videoUrl": "https://www.youtube.com/watch?v=ER_oLmdc-nw"
+                }
+              }
             },
             {
               "number": "1482",
@@ -2079,19 +3309,37 @@
               "number": "1760",
               "title": "Minimum Limit of Balls in a Bag",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-limit-of-balls-in-a-bag",
+                  "videoUrl": "https://www.youtube.com/watch?v=MQlC8EoOdZ0"
+                }
+              }
             },
             {
               "number": "2064",
               "title": "Minimized Maximum of Products Distributed to Any Store",
               "leetcodeUrl": "https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimized-maximum-of-products-distributed-to-any-store",
+                  "videoUrl": "https://www.youtube.com/watch?v=GKSSr2xkR8A"
+                }
+              }
             },
             {
               "number": "2226",
               "title": "Maximum Candies Allocated to K Children",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-candies-allocated-to-k-children/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-candies-allocated-to-k-children",
+                  "videoUrl": "https://www.youtube.com/watch?v=jpKfrXetb9Q"
+                }
+              }
             }
           ]
         },
@@ -2108,7 +3356,13 @@
               "number": "658",
               "title": "Find K Closest Elements",
               "leetcodeUrl": "https://leetcode.com/problems/find-k-closest-elements/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-k-closest-elements",
+                  "videoUrl": "https://www.youtube.com/watch?v=o-YDQzHoaKM"
+                }
+              }
             }
           ]
         },
@@ -2119,13 +3373,25 @@
               "number": "4",
               "title": "Median of Two Sorted Arrays",
               "leetcodeUrl": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/median-of-two-sorted-arrays",
+                  "videoUrl": "https://www.youtube.com/watch?v=q6IEA26hvXc"
+                }
+              }
             },
             {
               "number": "719",
               "title": "Find K-th Smallest Pair Distance",
               "leetcodeUrl": "https://leetcode.com/problems/find-k-th-smallest-pair-distance/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-k-th-smallest-pair-distance",
+                  "videoUrl": "https://www.youtube.com/watch?v=bQ-QcFKwsZc"
+                }
+              }
             },
             {
               "number": "378",
@@ -2147,7 +3413,13 @@
               "number": "20",
               "title": "Valid Parentheses",
               "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/valid-parentheses",
+                  "videoUrl": "https://www.youtube.com/watch?v=WTzjTskDFMg"
+                }
+              }
             },
             {
               "number": "32",
@@ -2159,19 +3431,37 @@
               "number": "921",
               "title": "Minimum Add to Make Parentheses Valid",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-add-to-make-parentheses-valid",
+                  "videoUrl": "https://www.youtube.com/watch?v=UizI7R6ND9Q"
+                }
+              }
             },
             {
               "number": "1249",
               "title": "Minimum Remove to Make Valid Parentheses",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-remove-to-make-valid-parentheses",
+                  "videoUrl": "https://www.youtube.com/watch?v=mgQ4O9iUEbg"
+                }
+              }
             },
             {
               "number": "1963",
               "title": "Minimum Number of Swaps to Make the String Balanced",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-number-of-swaps-to-make-the-string-balanced",
+                  "videoUrl": "https://www.youtube.com/watch?v=3YDBT9ZrfaU"
+                }
+              }
             }
           ]
         },
@@ -2182,13 +3472,25 @@
               "number": "402",
               "title": "Remove K Digits",
               "leetcodeUrl": "https://leetcode.com/problems/remove-k-digits/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/remove-k-digits",
+                  "videoUrl": "https://www.youtube.com/watch?v=cFabMOnJaq0"
+                }
+              }
             },
             {
               "number": "496",
               "title": "Next Greater Element I",
               "leetcodeUrl": "https://leetcode.com/problems/next-greater-element-i/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/next-greater-element-i",
+                  "videoUrl": "https://www.youtube.com/watch?v=68a1Dc_qVq4"
+                }
+              }
             },
             {
               "number": "503",
@@ -2200,31 +3502,61 @@
               "number": "739",
               "title": "Daily Temperatures",
               "leetcodeUrl": "https://leetcode.com/problems/daily-temperatures/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/daily-temperatures",
+                  "videoUrl": "https://www.youtube.com/watch?v=cTBiBSnjO3c"
+                }
+              }
             },
             {
               "number": "901",
               "title": "Online Stock Span",
               "leetcodeUrl": "https://leetcode.com/problems/online-stock-span/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/online-stock-span",
+                  "videoUrl": "https://www.youtube.com/watch?v=slYh0ZNEqSw"
+                }
+              }
             },
             {
               "number": "907",
               "title": "Sum of Subarray Minimums",
               "leetcodeUrl": "https://leetcode.com/problems/sum-of-subarray-minimums/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/sum-of-subarray-minimums",
+                  "videoUrl": "https://www.youtube.com/watch?v=aX1F2-DrBkQ"
+                }
+              }
             },
             {
               "number": "962",
               "title": "Maximum Width Ramp",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-width-ramp/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-width-ramp",
+                  "videoUrl": "https://www.youtube.com/watch?v=3pTEJ1vzgSI"
+                }
+              }
             },
             {
               "number": "1475",
               "title": "Final Prices With a Special Discount in a Shop",
               "leetcodeUrl": "https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/final-prices-with-a-special-discount-in-a-shop",
+                  "videoUrl": "https://www.youtube.com/watch?v=BYushAxaQOg"
+                }
+              }
             },
             {
               "number": "1673",
@@ -2241,7 +3573,13 @@
               "number": "150",
               "title": "Evaluate Reverse Polish Notation",
               "leetcodeUrl": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/evaluate-reverse-polish-notation",
+                  "videoUrl": "https://www.youtube.com/watch?v=iu0082c4HDE"
+                }
+              }
             },
             {
               "number": "224",
@@ -2270,19 +3608,37 @@
               "number": "71",
               "title": "Simplify Path",
               "leetcodeUrl": "https://leetcode.com/problems/simplify-path/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/simplify-path",
+                  "videoUrl": "https://www.youtube.com/watch?v=qYlHrAKJfyA"
+                }
+              }
             },
             {
               "number": "394",
               "title": "Decode String",
               "leetcodeUrl": "https://leetcode.com/problems/decode-string/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/decode-string",
+                  "videoUrl": "https://www.youtube.com/watch?v=qB0zZpBJlh8"
+                }
+              }
             },
             {
               "number": "735",
               "title": "Asteroid Collision",
               "leetcodeUrl": "https://leetcode.com/problems/asteroid-collision/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/asteroid-collision",
+                  "videoUrl": "https://www.youtube.com/watch?v=LN7KjRszjk4"
+                }
+              }
             }
           ]
         },
@@ -2293,19 +3649,37 @@
               "number": "155",
               "title": "Min Stack",
               "leetcodeUrl": "https://leetcode.com/problems/min-stack/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/min-stack",
+                  "videoUrl": "https://www.youtube.com/watch?v=qkLl7nAwDPo"
+                }
+              }
             },
             {
               "number": "895",
               "title": "Maximum Frequency Stack",
               "leetcodeUrl": "https://leetcode.com/problems/maximum-frequency-stack/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/maximum-frequency-stack",
+                  "videoUrl": "https://www.youtube.com/watch?v=Z6idIicFDOE"
+                }
+              }
             },
             {
               "number": "901",
               "title": "Online Stock Span",
               "leetcodeUrl": "https://leetcode.com/problems/online-stock-span/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/online-stock-span",
+                  "videoUrl": "https://www.youtube.com/watch?v=slYh0ZNEqSw"
+                }
+              }
             }
           ]
         },
@@ -2316,7 +3690,13 @@
               "number": "84",
               "title": "Largest Rectangle in Histogram",
               "leetcodeUrl": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/largest-rectangle-in-histogram",
+                  "videoUrl": "https://www.youtube.com/watch?v=zx5Sw9130L0"
+                }
+              }
             },
             {
               "number": "85",
@@ -2338,7 +3718,13 @@
               "number": "136",
               "title": "Single Number",
               "leetcodeUrl": "https://leetcode.com/problems/single-number/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/single-number",
+                  "videoUrl": "https://www.youtube.com/watch?v=qMPX1AOa83k"
+                }
+              }
             },
             {
               "number": "137",
@@ -2350,13 +3736,25 @@
               "number": "268",
               "title": "Missing Number",
               "leetcodeUrl": "https://leetcode.com/problems/missing-number/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/missing-number",
+                  "videoUrl": "https://www.youtube.com/watch?v=WnPLSRLSANE"
+                }
+              }
             },
             {
               "number": "389",
               "title": "Find the Difference",
               "leetcodeUrl": "https://leetcode.com/problems/find-the-difference/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-the-difference",
+                  "videoUrl": "https://www.youtube.com/watch?v=oFmv4N4z00c"
+                }
+              }
             }
           ]
         },
@@ -2367,13 +3765,25 @@
               "number": "191",
               "title": "Number of 1 Bits",
               "leetcodeUrl": "https://leetcode.com/problems/number-of-1-bits/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/number-of-1-bits",
+                  "videoUrl": "https://www.youtube.com/watch?v=5Km3utixwZs"
+                }
+              }
             },
             {
               "number": "231",
               "title": "Power of Two",
               "leetcodeUrl": "https://leetcode.com/problems/power-of-two/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/power-of-two",
+                  "videoUrl": "https://www.youtube.com/watch?v=H2bjttEV4Vc"
+                }
+              }
             },
             {
               "number": "477",
@@ -2390,7 +3800,13 @@
               "number": "338",
               "title": "Counting Bits",
               "leetcodeUrl": "https://leetcode.com/problems/counting-bits/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/counting-bits",
+                  "videoUrl": "https://www.youtube.com/watch?v=RyBM56RIWrM"
+                }
+              }
             },
             {
               "number": "1494",
@@ -2402,7 +3818,13 @@
               "number": "1442",
               "title": "Count Triplets That Can Form Two Arrays of Equal XOR",
               "leetcodeUrl": "https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/count-triplets-that-can-form-two-arrays-of-equal-xor",
+                  "videoUrl": "https://www.youtube.com/watch?v=e4Yx9KjqzQ8"
+                }
+              }
             }
           ]
         },
@@ -2413,13 +3835,25 @@
               "number": "231",
               "title": "Power of Two",
               "leetcodeUrl": "https://leetcode.com/problems/power-of-two/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/power-of-two",
+                  "videoUrl": "https://www.youtube.com/watch?v=H2bjttEV4Vc"
+                }
+              }
             },
             {
               "number": "342",
               "title": "Power of Four",
               "leetcodeUrl": "https://leetcode.com/problems/power-of-four/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/power-of-four",
+                  "videoUrl": "https://www.youtube.com/watch?v=qEYZPwnlM0U"
+                }
+              }
             }
           ]
         }
@@ -2435,31 +3869,61 @@
               "number": "83",
               "title": "Remove Duplicates from Sorted List",
               "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/remove-duplicates-from-sorted-list",
+                  "videoUrl": "https://www.youtube.com/watch?v=p10f-VpO4nE"
+                }
+              }
             },
             {
               "number": "92",
               "title": "Reverse Linked List II",
               "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/reverse-linked-list-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=RF_M9tX4Eag"
+                }
+              }
             },
             {
               "number": "206",
               "title": "Reverse Linked List",
               "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/reverse-linked-list",
+                  "videoUrl": "https://www.youtube.com/watch?v=G0_I-ZF0S38"
+                }
+              }
             },
             {
               "number": "25",
               "title": "Reverse Nodes in k-Group",
               "leetcodeUrl": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/reverse-nodes-in-k-group",
+                  "videoUrl": "https://www.youtube.com/watch?v=1UOPsfP85V4"
+                }
+              }
             },
             {
               "number": "234",
               "title": "Palindrome Linked List",
               "leetcodeUrl": "https://leetcode.com/problems/palindrome-linked-list/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/palindrome-linked-list",
+                  "videoUrl": "https://www.youtube.com/watch?v=yOzXms1J6Nk"
+                }
+              }
             },
             {
               "number": "82",
@@ -2476,13 +3940,25 @@
               "number": "21",
               "title": "Merge Two Sorted Lists",
               "leetcodeUrl": "https://leetcode.com/problems/merge-two-sorted-lists/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/merge-two-sorted-lists",
+                  "videoUrl": "https://www.youtube.com/watch?v=XIdigk956u0"
+                }
+              }
             },
             {
               "number": "23",
               "title": "Merge k Sorted Lists",
               "leetcodeUrl": "https://leetcode.com/problems/merge-k-sorted-lists/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/merge-k-sorted-lists",
+                  "videoUrl": "https://www.youtube.com/watch?v=q5a5OiGbT6Q"
+                }
+              }
             }
           ]
         },
@@ -2493,7 +3969,13 @@
               "number": "2",
               "title": "Add Two Numbers",
               "leetcodeUrl": "https://leetcode.com/problems/add-two-numbers/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/add-two-numbers",
+                  "videoUrl": "https://www.youtube.com/watch?v=wgFPrzTjm7s"
+                }
+              }
             },
             {
               "number": "369",
@@ -2510,7 +3992,13 @@
               "number": "160",
               "title": "Intersection of Two Linked Lists",
               "leetcodeUrl": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/intersection-of-two-linked-lists",
+                  "videoUrl": "https://www.youtube.com/watch?v=D0X0BONOQhI"
+                }
+              }
             },
             {
               "number": "599",
@@ -2527,25 +4015,49 @@
               "number": "24",
               "title": "Swap Nodes in Pairs",
               "leetcodeUrl": "https://leetcode.com/problems/swap-nodes-in-pairs/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/swap-nodes-in-pairs",
+                  "videoUrl": "https://www.youtube.com/watch?v=o811TZLAWOo"
+                }
+              }
             },
             {
               "number": "61",
               "title": "Rotate List",
               "leetcodeUrl": "https://leetcode.com/problems/rotate-list/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/rotate-list",
+                  "videoUrl": "https://www.youtube.com/watch?v=UcGtPs2LE_c"
+                }
+              }
             },
             {
               "number": "86",
               "title": "Partition List",
               "leetcodeUrl": "https://leetcode.com/problems/partition-list/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/partition-list",
+                  "videoUrl": "https://www.youtube.com/watch?v=KT1iUciJr4g"
+                }
+              }
             },
             {
               "number": "143",
               "title": "Reorder List",
               "leetcodeUrl": "https://leetcode.com/problems/reorder-list/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/reorder-list",
+                  "videoUrl": "https://www.youtube.com/watch?v=S5bfdUTrKLM"
+                }
+              }
             },
             {
               "number": "328",
@@ -2567,19 +4079,37 @@
               "number": "48",
               "title": "Rotate Image",
               "leetcodeUrl": "https://leetcode.com/problems/rotate-image/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/rotate-image",
+                  "videoUrl": "https://www.youtube.com/watch?v=fMSJSS7eO1w"
+                }
+              }
             },
             {
               "number": "189",
               "title": "Rotate Array",
               "leetcodeUrl": "https://leetcode.com/problems/rotate-array/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/rotate-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=BHr381Guz3Y"
+                }
+              }
             },
             {
               "number": "867",
               "title": "Transpose Matrix",
               "leetcodeUrl": "https://leetcode.com/problems/transpose-matrix/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/transpose-matrix",
+                  "videoUrl": "https://www.youtube.com/watch?v=DzMT3bDgVn0"
+                }
+              }
             }
           ]
         },
@@ -2590,25 +4120,49 @@
               "number": "54",
               "title": "Spiral Matrix",
               "leetcodeUrl": "https://leetcode.com/problems/spiral-matrix/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/spiral-matrix",
+                  "videoUrl": "https://www.youtube.com/watch?v=BJnMZNwUk1M"
+                }
+              }
             },
             {
               "number": "59",
               "title": "Spiral Matrix II",
               "leetcodeUrl": "https://leetcode.com/problems/spiral-matrix-ii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/spiral-matrix-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=RvLrWFBJ9fM"
+                }
+              }
             },
             {
               "number": "885",
               "title": "Spiral Matrix III",
               "leetcodeUrl": "https://leetcode.com/problems/spiral-matrix-iii/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/spiral-matrix-iii",
+                  "videoUrl": "https://www.youtube.com/watch?v=Xf5Zm5Y8PKM"
+                }
+              }
             },
             {
               "number": "2326",
               "title": "Spiral Matrix IV",
               "leetcodeUrl": "https://leetcode.com/problems/spiral-matrix-iv/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/spiral-matrix-iv",
+                  "videoUrl": "https://www.youtube.com/watch?v=sOV1nRhmsMQ"
+                }
+              }
             }
           ]
         },
@@ -2619,7 +4173,13 @@
               "number": "73",
               "title": "Set Matrix Zeroes",
               "leetcodeUrl": "https://leetcode.com/problems/set-matrix-zeroes/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/set-matrix-zeroes",
+                  "videoUrl": "https://www.youtube.com/watch?v=T41rL0L3Pnw"
+                }
+              }
             },
             {
               "number": "289",
@@ -2642,7 +4202,13 @@
               "number": "238",
               "title": "Product of Array Except Self",
               "leetcodeUrl": "https://leetcode.com/problems/product-of-array-except-self/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/product-of-array-except-self",
+                  "videoUrl": "https://www.youtube.com/watch?v=bNvIQI2wAjk"
+                }
+              }
             },
             {
               "number": "845",
@@ -2654,7 +4220,13 @@
               "number": "2483",
               "title": "Minimum Penalty for a Shop",
               "leetcodeUrl": "https://leetcode.com/problems/minimum-penalty-for-a-shop/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/minimum-penalty-for-a-shop",
+                  "videoUrl": "https://www.youtube.com/watch?v=0d7ShRoOFVE"
+                }
+              }
             }
           ]
         },
@@ -2665,25 +4237,49 @@
               "number": "66",
               "title": "Plus One",
               "leetcodeUrl": "https://leetcode.com/problems/plus-one/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/plus-one",
+                  "videoUrl": "https://www.youtube.com/watch?v=jIaA8boiG1s"
+                }
+              }
             },
             {
               "number": "43",
               "title": "Multiply Strings",
               "leetcodeUrl": "https://leetcode.com/problems/multiply-strings/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/multiply-strings",
+                  "videoUrl": "https://www.youtube.com/watch?v=1vZswirL8Y8"
+                }
+              }
             },
             {
               "number": "989",
               "title": "Add to Array-Form of Integer",
               "leetcodeUrl": "https://leetcode.com/problems/add-to-array-form-of-integer/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/add-to-array-form-of-integer",
+                  "videoUrl": "https://www.youtube.com/watch?v=eBTZQt1TWfk"
+                }
+              }
             },
             {
               "number": "67",
               "title": "Add Binary",
               "leetcodeUrl": "https://leetcode.com/problems/add-binary/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/add-binary",
+                  "videoUrl": "https://www.youtube.com/watch?v=keuWJ47xG8g"
+                }
+              }
             }
           ]
         },
@@ -2694,13 +4290,25 @@
               "number": "88",
               "title": "Merge Sorted Array",
               "leetcodeUrl": "https://leetcode.com/problems/merge-sorted-array/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/merge-sorted-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=P1Ic85RarKY"
+                }
+              }
             },
             {
               "number": "977",
               "title": "Squares of a Sorted Array",
               "leetcodeUrl": "https://leetcode.com/problems/squares-of-a-sorted-array/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/squares-of-a-sorted-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=FPCZsG_AkUg"
+                }
+              }
             }
           ]
         },
@@ -2711,31 +4319,61 @@
               "number": "41",
               "title": "First Missing Positive",
               "leetcodeUrl": "https://leetcode.com/problems/first-missing-positive/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/first-missing-positive",
+                  "videoUrl": "https://www.youtube.com/watch?v=8g78yfzMlao"
+                }
+              }
             },
             {
               "number": "268",
               "title": "Missing Number",
               "leetcodeUrl": "https://leetcode.com/problems/missing-number/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/missing-number",
+                  "videoUrl": "https://www.youtube.com/watch?v=WnPLSRLSANE"
+                }
+              }
             },
             {
               "number": "287",
               "title": "Find the Duplicate Number",
               "leetcodeUrl": "https://leetcode.com/problems/find-the-duplicate-number/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-the-duplicate-number",
+                  "videoUrl": "https://www.youtube.com/watch?v=wjYnzkAhcNk"
+                }
+              }
             },
             {
               "number": "442",
               "title": "Find All Duplicates in an Array",
               "leetcodeUrl": "https://leetcode.com/problems/find-all-duplicates-in-an-array/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-all-duplicates-in-an-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=Y8x0iAVEITo"
+                }
+              }
             },
             {
               "number": "448",
               "title": "Find All Numbers Disappeared in an Array",
               "leetcodeUrl": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-all-numbers-disappeared-in-an-array",
+                  "videoUrl": "https://www.youtube.com/watch?v=8i-f24YFWC4"
+                }
+              }
             }
           ]
         }
@@ -2751,19 +4389,37 @@
               "number": "9",
               "title": "Palindrome Number",
               "leetcodeUrl": "https://leetcode.com/problems/palindrome-number/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/palindrome-number",
+                  "videoUrl": "https://www.youtube.com/watch?v=yubRKwixN-U"
+                }
+              }
             },
             {
               "number": "125",
               "title": "Valid Palindrome",
               "leetcodeUrl": "https://leetcode.com/problems/valid-palindrome/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/valid-palindrome",
+                  "videoUrl": "https://www.youtube.com/watch?v=jJXJ16kPFWg"
+                }
+              }
             },
             {
               "number": "680",
               "title": "Valid Palindrome II",
               "leetcodeUrl": "https://leetcode.com/problems/valid-palindrome-ii/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/valid-palindrome-ii",
+                  "videoUrl": "https://www.youtube.com/watch?v=JrxRYBwG6EI"
+                }
+              }
             }
           ]
         },
@@ -2774,13 +4430,25 @@
               "number": "49",
               "title": "Group Anagrams",
               "leetcodeUrl": "https://leetcode.com/problems/group-anagrams/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/group-anagrams",
+                  "videoUrl": "https://www.youtube.com/watch?v=vzdNOK2oB2E"
+                }
+              }
             },
             {
               "number": "242",
               "title": "Valid Anagram",
               "leetcodeUrl": "https://leetcode.com/problems/valid-anagram/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/valid-anagram",
+                  "videoUrl": "https://www.youtube.com/watch?v=9UtInBqnCgA"
+                }
+              }
             }
           ]
         },
@@ -2791,13 +4459,25 @@
               "number": "13",
               "title": "Roman to Integer",
               "leetcodeUrl": "https://leetcode.com/problems/roman-to-integer/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/roman-to-integer",
+                  "videoUrl": "https://www.youtube.com/watch?v=3jdxYj3DD98"
+                }
+              }
             },
             {
               "number": "12",
               "title": "Integer to Roman",
               "leetcodeUrl": "https://leetcode.com/problems/integer-to-roman/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/integer-to-roman",
+                  "videoUrl": "https://www.youtube.com/watch?v=ohBNdSJyLh8"
+                }
+              }
             }
           ]
         },
@@ -2825,7 +4505,13 @@
               "number": "43",
               "title": "Multiply Strings",
               "leetcodeUrl": "https://leetcode.com/problems/multiply-strings/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/multiply-strings",
+                  "videoUrl": "https://www.youtube.com/watch?v=1vZswirL8Y8"
+                }
+              }
             },
             {
               "number": "415",
@@ -2837,7 +4523,13 @@
               "number": "67",
               "title": "Add Binary",
               "leetcodeUrl": "https://leetcode.com/problems/add-binary/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/add-binary",
+                  "videoUrl": "https://www.youtube.com/watch?v=keuWJ47xG8g"
+                }
+              }
             }
           ]
         },
@@ -2848,13 +4540,25 @@
               "number": "28",
               "title": "Find the Index of the First Occurrence in a String",
               "leetcodeUrl": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-the-index-of-the-first-occurrence-in-a-string",
+                  "videoUrl": "https://www.youtube.com/watch?v=JoF0Z7nVSrA"
+                }
+              }
             },
             {
               "number": "214",
               "title": "Shortest Palindrome",
               "leetcodeUrl": "https://leetcode.com/problems/shortest-palindrome/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/shortest-palindrome",
+                  "videoUrl": "https://www.youtube.com/watch?v=niOT-FK1RH8"
+                }
+              }
             },
             {
               "number": "686",
@@ -2889,7 +4593,13 @@
               "number": "28",
               "title": "Find the Index of the First Occurrence in a String",
               "leetcodeUrl": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-the-index-of-the-first-occurrence-in-a-string",
+                  "videoUrl": "https://www.youtube.com/watch?v=JoF0Z7nVSrA"
+                }
+              }
             },
             {
               "number": "686",
@@ -2911,25 +4621,49 @@
               "number": "146",
               "title": "LRU Cache",
               "leetcodeUrl": "https://leetcode.com/problems/lru-cache/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/lru-cache",
+                  "videoUrl": "https://www.youtube.com/watch?v=7ABFKPK2hD4"
+                }
+              }
             },
             {
               "number": "155",
               "title": "Min Stack",
               "leetcodeUrl": "https://leetcode.com/problems/min-stack/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/min-stack",
+                  "videoUrl": "https://www.youtube.com/watch?v=qkLl7nAwDPo"
+                }
+              }
             },
             {
               "number": "225",
               "title": "Implement Stack using Queues",
               "leetcodeUrl": "https://leetcode.com/problems/implement-stack-using-queues/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/implement-stack-using-queues",
+                  "videoUrl": "https://www.youtube.com/watch?v=rW4vm0-DLYc"
+                }
+              }
             },
             {
               "number": "232",
               "title": "Implement Queue using Stacks",
               "leetcodeUrl": "https://leetcode.com/problems/implement-queue-using-stacks/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/implement-queue-using-stacks",
+                  "videoUrl": "https://www.youtube.com/watch?v=eanwa3ht3YQ"
+                }
+              }
             },
             {
               "number": "251",
@@ -2941,19 +4675,37 @@
               "number": "271",
               "title": "Encode and Decode Strings",
               "leetcodeUrl": "https://leetcode.com/problems/encode-and-decode-strings/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/encode-and-decode-strings",
+                  "videoUrl": "https://www.youtube.com/watch?v=B1k_sxOSgv8"
+                }
+              }
             },
             {
               "number": "295",
               "title": "Find Median from Data Stream",
               "leetcodeUrl": "https://leetcode.com/problems/find-median-from-data-stream/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/find-median-from-data-stream",
+                  "videoUrl": "https://www.youtube.com/watch?v=itmhHWaHupI"
+                }
+              }
             },
             {
               "number": "341",
               "title": "Flatten Nested List Iterator",
               "leetcodeUrl": "https://leetcode.com/problems/flatten-nested-list-iterator/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/flatten-nested-list-iterator",
+                  "videoUrl": "https://www.youtube.com/watch?v=4ILiBgLokM8"
+                }
+              }
             },
             {
               "number": "346",
@@ -2989,7 +4741,13 @@
               "number": "380",
               "title": "Insert Delete GetRandom O(1)",
               "leetcodeUrl": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/insert-delete-getrandom-o1",
+                  "videoUrl": "https://www.youtube.com/watch?v=j4KwhBziOpg"
+                }
+              }
             },
             {
               "number": "432",
@@ -3001,7 +4759,13 @@
               "number": "460",
               "title": "LFU Cache",
               "leetcodeUrl": "https://leetcode.com/problems/lfu-cache/",
-              "difficulty": "hard"
+              "difficulty": "hard",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/lfu-cache",
+                  "videoUrl": "https://www.youtube.com/watch?v=bLEIHn-DgoA"
+                }
+              }
             },
             {
               "number": "604",
@@ -3013,7 +4777,13 @@
               "number": "622",
               "title": "Design Circular Queue",
               "leetcodeUrl": "https://leetcode.com/problems/design-circular-queue/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/design-circular-queue",
+                  "videoUrl": "https://www.youtube.com/watch?v=aBbsfn863oA"
+                }
+              }
             },
             {
               "number": "641",
@@ -3031,7 +4801,13 @@
               "number": "706",
               "title": "Design HashMap",
               "leetcodeUrl": "https://leetcode.com/problems/design-hashmap/",
-              "difficulty": "easy"
+              "difficulty": "easy",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/design-hashmap",
+                  "videoUrl": "https://www.youtube.com/watch?v=cNWsgbKwwoU"
+                }
+              }
             },
             {
               "number": "715",
@@ -3049,7 +4825,13 @@
               "number": "981",
               "title": "Time Based Key-Value Store",
               "leetcodeUrl": "https://leetcode.com/problems/time-based-key-value-store/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/time-based-key-value-store",
+                  "videoUrl": "https://www.youtube.com/watch?v=fu2cD_6E8Hw"
+                }
+              }
             },
             {
               "number": "1146",
@@ -3085,7 +4867,13 @@
               "number": "2013",
               "title": "Detect Squares",
               "leetcodeUrl": "https://leetcode.com/problems/detect-squares/",
-              "difficulty": "medium"
+              "difficulty": "medium",
+              "solutions": {
+                "neetcode": {
+                  "textUrl": "https://neetcode.io/solutions/detect-squares",
+                  "videoUrl": "https://www.youtube.com/watch?v=bahebearrDc"
+                }
+              }
             },
             {
               "number": "2034",

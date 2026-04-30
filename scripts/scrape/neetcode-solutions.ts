@@ -1,7 +1,7 @@
 import { execFile } from "node:child_process";
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { basename, dirname, join, resolve } from "node:path";
+import { basename, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
 
@@ -52,6 +52,7 @@ interface CliOptions {
   dataPath: string;
   cacheDir: string;
   reportPath: string;
+  fetcher: "auto" | "crawl4ai" | "direct";
   write: boolean;
   dryRun: boolean;
   force: boolean;
@@ -190,6 +191,7 @@ function parseCliOptions(args: string[]): CliOptions {
     dataPath: defaultDataPath,
     cacheDir: defaultCacheDir,
     reportPath: defaultReportPath,
+    fetcher: "auto",
     write: false,
     dryRun: true,
     force: false,
@@ -212,6 +214,10 @@ function parseCliOptions(args: string[]): CliOptions {
         break;
       case "--report":
         options.reportPath = requireValue(arg, next);
+        index += 1;
+        break;
+      case "--fetcher":
+        options.fetcher = parseFetcher(requireValue(arg, next));
         index += 1;
         break;
       case "--limit":
@@ -243,6 +249,13 @@ function parseCliOptions(args: string[]): CliOptions {
   }
 
   return options;
+}
+
+function parseFetcher(value: string): CliOptions["fetcher"] {
+  if (value === "auto" || value === "crawl4ai" || value === "direct") {
+    return value;
+  }
+  throw new Error("--fetcher must be one of: auto, crawl4ai, direct.");
 }
 
 function requireValue(flag: string, value: string | undefined): string {
@@ -277,6 +290,22 @@ async function scrapeNeetcodeHtml(textUrl: string, slug: string, options: CliOpt
   }
 
   await mkdir(dirname(cachePath), { recursive: true });
+  if (options.fetcher === "direct" || options.fetcher === "auto") {
+    try {
+      const directHtml = await fetchDirectHtml(textUrl);
+      if (options.fetcher === "direct" || hasNeetcodeSolutionPage(directHtml, slug)) {
+        await writeFile(cachePath, directHtml, "utf8");
+        return directHtml;
+      }
+    } catch (error) {
+      if (options.fetcher === "direct") throw error;
+    }
+  }
+
+  if (options.fetcher === "direct") {
+    throw new Error(`Direct fetch did not return usable HTML for ${textUrl}.`);
+  }
+
   await execFileAsync(options.python, [
     "scripts/scrape/crawl4ai-cli.py",
     textUrl,
@@ -292,6 +321,21 @@ async function scrapeNeetcodeHtml(textUrl: string, slug: string, options: CliOpt
   ]);
 
   return readFile(cachePath, "utf8");
+}
+
+async function fetchDirectHtml(url: string): Promise<string> {
+  const response = await fetch(url, {
+    headers: {
+      "user-agent": "Mozilla/5.0 compatible; codemap-neetcode-enricher/1.0",
+      accept: "text/html,application/xhtml+xml",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`Direct fetch failed with HTTP ${response.status} for ${url}.`);
+  }
+
+  return response.text();
 }
 
 export function resolvePythonExecutable(explicitPython?: string): string {

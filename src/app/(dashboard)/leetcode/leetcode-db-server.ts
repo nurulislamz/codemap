@@ -2,33 +2,19 @@ import "server-only"
 
 import { LOCAL_USER_ID } from "@/backend/db/local-user";
 import { getFirestoreDb } from "@/backend/firebase/firestore";
-import { LeetCodeAttemptEvent, LeetCodeAttemptEventWrite } from "@/backend/firebase/leetcode";
-import { validateLeetCodeAttemptEventWrite } from "@/backend/firebase/schema/firestore-guard";
+import {
+    leetcodeAttemptEventSchema,
+    type LeetCodeAttemptEvent,
+} from "@/backend/firebase/leetcode";
 
-export async function createLeetCodeAttempt(input: LeetCodeAttemptEventWrite): Promise<LeetCodeAttemptEvent> {
-    const validatedInput = validateLeetCodeAttemptEventWrite(input);
-    
-    const startedAt = new Date(validatedInput.startedAt);
-    const endedAt = new Date(validatedInput.endedAt);
+export async function createLeetCodeAttempt(input: LeetCodeAttemptEvent): Promise<LeetCodeAttemptEvent> {
+    const attempt = leetcodeAttemptEventSchema.parse(input);
     
     const ref = getFirestoreDb()
         .collection("users")
         .doc(LOCAL_USER_ID)
         .collection("leetcodeAttempts")
-        .doc();
-
-    const attempt: LeetCodeAttemptEvent = {
-        ...validatedInput,
-        durationSeconds: Math.max(
-            0,
-            Math.floor((endedAt.getTime() - startedAt.getTime()) / 1000),
-        ),
-        userId: LOCAL_USER_ID,
-        language: validatedInput.language ?? null,
-        failureReason: validatedInput.failureReason ?? null,
-        notes: validatedInput.notes ?? null,
-        attemptId: ref.id
-    }
+        .doc(attempt.attemptId);
     
     if (attempt.durationSeconds <= 0) {
         throw new Error("Attempt duration must be greater than 0 seconds");
