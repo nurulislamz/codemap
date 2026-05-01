@@ -1,6 +1,7 @@
 "use client";
 
-import type { LeetCodeAttemptEvent } from "@/backend/firebase/leetcode";
+
+import { LeetCodeAttemptEvent } from "@/backend/firebase/leetcode";
 import { createLeetCodeAttempt } from "./leetcode-db-server";
 
 type SubmitLeetCodeAttemptInput = Omit<LeetCodeAttemptEvent, "attemptId">;

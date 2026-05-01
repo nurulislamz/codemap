@@ -2,6 +2,13 @@
 
 import { useState } from "react";
 
+type GenerateFlashcardsResponse = {
+  error?: string;
+  job?: {
+    id?: string;
+  };
+};
+
 export function FlashcardJobForm() {
   const [topic, setTopic] = useState("DNS resolution");
   const [notes, setNotes] = useState(
@@ -27,7 +34,7 @@ export function FlashcardJobForm() {
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ topic, notes, source_track: "roadmap", source_table: "seed" }),
           });
-          const data = (await response.json()) as any;
+          const data = (await response.json()) as GenerateFlashcardsResponse;
           if (!response.ok) {
             throw new Error(data?.error ?? "Request failed");
           }
@@ -80,4 +87,3 @@ export function FlashcardJobForm() {
     </form>
   );
 }
-

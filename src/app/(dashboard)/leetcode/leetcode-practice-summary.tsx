@@ -1,6 +1,6 @@
 "use client";
 
-import type { LeetcodeProblemRow } from "./leetcode-problem-table";
+import type { LeetcodeProblemRow } from "./leetcode-types";
 
 type LeetcodePracticeSummaryProps = {
   problems: LeetcodeProblemRow[];

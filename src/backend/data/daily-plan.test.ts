@@ -7,7 +7,7 @@ describe("toDailyEmailHtml", () => {
     const html = toDailyEmailHtml({
       appBaseUrl: "http://localhost:3000",
       items: [
-        { track: "leetcode", title: "Two Sum II", href: "/leetcode/a/timer" },
+        { track: "leetcode", title: "Two Sum II", href: "/leetcode" },
         { track: "roadmap", title: "Internet", href: "/roadmap" },
         { track: "system_design", title: "Design TinyURL", href: "/system-design" },
         { track: "flashcards", title: "DNS lookup", href: "/flashcards" },
@@ -15,8 +15,7 @@ describe("toDailyEmailHtml", () => {
     });
 
     expect(html).toContain("Two Sum II");
-    expect(html).toContain("http://localhost:3000/leetcode/a/timer");
+    expect(html).toContain("http://localhost:3000/leetcode");
     expect(html).toContain("Design TinyURL");
   });
 });
-

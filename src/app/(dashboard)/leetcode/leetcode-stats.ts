@@ -1,4 +1,4 @@
-import type { LeetcodeAttemptRow, LeetcodeProblemRow } from "./leetcode-problem-table";
+import type { LeetcodeAttemptRow, LeetcodeProblemRow } from "./leetcode-types";
 
 type Difficulty = LeetcodeProblemRow["difficulty"];
 

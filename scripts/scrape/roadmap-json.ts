@@ -15,6 +15,10 @@ interface RoadmapResource {
   url: string;
 }
 
+interface RoadmapArticleResource extends RoadmapResource {
+  type: string;
+}
+
 export interface RoadmapJsonNode {
   title: string;
   slug: string;
@@ -39,6 +43,75 @@ interface BuildOptions {
   rootKey?: string;
 }
 
+interface RoadmapApiNode {
+  id: string;
+  type: string;
+  position?: {
+    x?: number;
+    y?: number;
+  };
+  data?: {
+    label?: string;
+  };
+}
+
+interface RoadmapApiEdge {
+  source: string;
+  target: string;
+  data?: {
+    edgeStyle?: string;
+  };
+}
+
+interface RoadmapApiData {
+  slug: string;
+  title?: {
+    card?: string;
+    page?: string;
+  };
+  description?: string;
+  nodes: RoadmapApiNode[];
+  edges: RoadmapApiEdge[];
+}
+
+interface RoadmapTopicContentResource extends RoadmapResource {
+  type: string;
+}
+
+interface RoadmapTopicContent {
+  description?: string;
+  resources?: RoadmapTopicContentResource[];
+}
+
+interface RoadmapGraphOptions extends BuildOptions {
+  topicContentByNodeId?: Record<string, RoadmapTopicContent>;
+}
+
+export interface RoadmapGraphTopic {
+  title: string;
+  sourceId: string;
+  type: string;
+  order: number;
+  summary: string;
+  video: RoadmapResource | null;
+  articles: RoadmapArticleResource[];
+  parents: string[];
+  children: string[];
+}
+
+export interface RoadmapGraph {
+  title: string;
+  summary: string;
+  url: string;
+  order: string[];
+  topics: Record<string, RoadmapGraphTopic>;
+  edges: Array<{
+    from: string;
+    to: string;
+    style: string;
+  }>;
+}
+
 const ignoredLinkHosts = new Set([
   "facebook.com",
   "github.com",
@@ -59,6 +132,18 @@ const ignoredLineFragments = [
 ];
 
 const ignoredSectionTitles = new Set(["Frequently Asked Questions"]);
+
+const roadmapTopicNodeTypes = new Set(["button", "label", "paragraph", "subtopic", "topic"]);
+const ignoredRoadmapNodeLabels = new Set([
+  "At this point, you should know enough to get a job. Gain hands-on practice by building projects.",
+  "Click to visit the roadmap",
+  "Find the detailed version of this roadmap along with other similar roadmaps",
+  "Have a look at the following relevant tracks",
+  "Learn one language and build lots of projects before moving on",
+  "roadmap.sh",
+  "Visit Beginner Friendly Version",
+  "You may never need most of these, just know what they are and when to use them",
+]);
 
 export async function buildRoadmapJsonFromManifest(
   manifestPath: string,
@@ -89,6 +174,226 @@ export async function buildRoadmapJsonFromManifest(
   return {
     [rootKey]: buildNode(rootEntry, pageDataByUrl, childrenByUrl),
   };
+}
+
+export function buildRoadmapGraphFromRoadmapData(
+  roadmap: RoadmapApiData,
+  options: RoadmapGraphOptions = {},
+): Record<string, RoadmapGraph> {
+  const rootKey = options.rootKey ?? toCamelCase(roadmap.slug);
+  const rootTitle = roadmap.title?.page ?? roadmap.title?.card ?? roadmap.slug;
+  const meaningfulNodes = roadmap.nodes.filter(isMeaningfulRoadmapNode);
+  const topicNodes = meaningfulNodes
+    .filter((node) => node.type !== "title")
+    .sort(compareRoadmapNodesByPosition);
+  const nodeIdToKey = new Map<string, string>();
+  const usedKeys = new Map<string, number>();
+
+  for (const node of meaningfulNodes) {
+    if (node.type === "title") {
+      nodeIdToKey.set(node.id, rootKey);
+      continue;
+    }
+
+    nodeIdToKey.set(node.id, uniqueKey(toCamelCase(node.data?.label ?? node.id), usedKeys));
+  }
+
+  const topics: Record<string, RoadmapGraphTopic> = {};
+  const fallbackOrder: string[] = [];
+
+  topicNodes.forEach((node, index) => {
+    const key = nodeIdToKey.get(node.id);
+    if (!key) return;
+
+    const content = options.topicContentByNodeId?.[node.id];
+    const resources = content?.resources ?? [];
+    const video = resources.find((resource) => resource.type === "video");
+
+    fallbackOrder.push(key);
+    topics[key] = {
+      title: cleanText(node.data?.label ?? key),
+      sourceId: node.id,
+      type: node.type,
+      order: index + 1,
+      summary: summaryFromMarkdown(content?.description ?? ""),
+      video: video ? { title: video.title, url: video.url } : null,
+      articles: resources
+        .filter((resource) => resource.type !== "video")
+        .map((resource) => ({
+          type: resource.type,
+          title: resource.title,
+          url: resource.url,
+        })),
+      parents: [],
+      children: [],
+    };
+  });
+
+  const graph = buildRawEdgeGraph(roadmap.edges);
+  const edges = collapseRoadmapEdges(roadmap.edges, graph, nodeIdToKey);
+  const order = buildTopicOrder(rootKey, topics, edges, fallbackOrder);
+
+  for (const edge of edges) {
+    if (topics[edge.from] && !topics[edge.from].children.includes(edge.to)) {
+      topics[edge.from].children.push(edge.to);
+    }
+
+    if (topics[edge.to] && !topics[edge.to].parents.includes(edge.from)) {
+      topics[edge.to].parents.push(edge.from);
+    }
+  }
+
+  order.forEach((key, index) => {
+    topics[key].order = index + 1;
+  });
+
+  return {
+    [rootKey]: {
+      title: rootTitle,
+      summary: cleanText((roadmap.description ?? "").replaceAll("@currentYear@", String(new Date().getFullYear()))),
+      url: `https://roadmap.sh/${roadmap.slug}`,
+      order,
+      topics,
+      edges,
+    },
+  };
+}
+
+function isMeaningfulRoadmapNode(node: RoadmapApiNode): boolean {
+  const label = cleanText(node.data?.label ?? "");
+  if (!label) return false;
+  if (label === "vertical node" || label === "horizontal node") return false;
+  if (ignoredRoadmapNodeLabels.has(label)) return false;
+  return node.type === "title" || roadmapTopicNodeTypes.has(node.type);
+}
+
+function compareRoadmapNodesByPosition(a: RoadmapApiNode, b: RoadmapApiNode): number {
+  const yDiff = (a.position?.y ?? 0) - (b.position?.y ?? 0);
+  if (yDiff !== 0) return yDiff;
+  return (a.position?.x ?? 0) - (b.position?.x ?? 0);
+}
+
+function uniqueKey(baseKey: string, usedKeys: Map<string, number>): string {
+  const key = baseKey || "topic";
+  const count = usedKeys.get(key) ?? 0;
+  usedKeys.set(key, count + 1);
+  return count === 0 ? key : `${key}${count + 1}`;
+}
+
+function buildRawEdgeGraph(edges: RoadmapApiEdge[]): {
+  outgoing: Map<string, string[]>;
+  incoming: Map<string, string[]>;
+} {
+  const outgoing = new Map<string, string[]>();
+  const incoming = new Map<string, string[]>();
+
+  for (const edge of edges) {
+    outgoing.set(edge.source, [...(outgoing.get(edge.source) ?? []), edge.target]);
+    incoming.set(edge.target, [...(incoming.get(edge.target) ?? []), edge.source]);
+  }
+
+  return { outgoing, incoming };
+}
+
+function collapseRoadmapEdges(
+  rawEdges: RoadmapApiEdge[],
+  graph: { outgoing: Map<string, string[]>; incoming: Map<string, string[]> },
+  nodeIdToKey: Map<string, string>,
+): RoadmapGraph["edges"] {
+  const edges: RoadmapGraph["edges"] = [];
+  const seen = new Set<string>();
+
+  for (const rawEdge of rawEdges) {
+    const sources = findNearestMappedNodes(rawEdge.source, graph.incoming, nodeIdToKey);
+    const targets = findNearestMappedNodes(rawEdge.target, graph.outgoing, nodeIdToKey);
+    const style = rawEdge.data?.edgeStyle === "dashed" ? "dashed" : "solid";
+
+    for (const from of sources) {
+      for (const to of targets) {
+        if (from === to) continue;
+
+        const key = `${from}->${to}`;
+        if (seen.has(key)) continue;
+
+        seen.add(key);
+        edges.push({ from, to, style });
+      }
+    }
+  }
+
+  return edges;
+}
+
+function buildTopicOrder(
+  rootKey: string,
+  topics: Record<string, RoadmapGraphTopic>,
+  edges: RoadmapGraph["edges"],
+  fallbackOrder: string[],
+): string[] {
+  const childrenByKey = new Map<string, string[]>();
+  const visited = new Set<string>();
+  const order: string[] = [];
+
+  for (const edge of edges) {
+    childrenByKey.set(edge.from, [...(childrenByKey.get(edge.from) ?? []), edge.to]);
+  }
+
+  function visit(key: string): void {
+    for (const child of childrenByKey.get(key) ?? []) {
+      if (!topics[child] || visited.has(child)) continue;
+
+      visited.add(child);
+      order.push(child);
+      visit(child);
+    }
+  }
+
+  visit(rootKey);
+
+  for (const key of fallbackOrder) {
+    if (visited.has(key)) continue;
+
+    visited.add(key);
+    order.push(key);
+  }
+
+  return order;
+}
+
+function findNearestMappedNodes(
+  startNodeId: string,
+  nextNodesByNodeId: Map<string, string[]>,
+  nodeIdToKey: Map<string, string>,
+): string[] {
+  const mappedStart = nodeIdToKey.get(startNodeId);
+  if (mappedStart) return [mappedStart];
+
+  const found: string[] = [];
+  const seen = new Set([startNodeId]);
+  const queue = [...(nextNodesByNodeId.get(startNodeId) ?? [])];
+
+  while (queue.length > 0) {
+    const nodeId = queue.shift();
+    if (!nodeId || seen.has(nodeId)) continue;
+
+    seen.add(nodeId);
+    const mapped = nodeIdToKey.get(nodeId);
+    if (mapped) {
+      found.push(mapped);
+      continue;
+    }
+
+    queue.push(...(nextNodesByNodeId.get(nodeId) ?? []));
+  }
+
+  return found;
+}
+
+function summaryFromMarkdown(markdown: string): string {
+  const lines = markdown
+    .split(/\r?\n/)
+    .filter((line) => !line.trim().startsWith("#"));
+  return collectParagraphs(lines)[0] ?? "";
 }
 
 function buildNode(
@@ -311,6 +616,7 @@ function parseCliArgs(argv: string[]): {
   manifest: string;
   output: string;
   rootKey?: string;
+  skipTopicContent: boolean;
 } {
   const args = [...argv];
   if (args[0] === "--") {
@@ -326,6 +632,7 @@ function parseCliArgs(argv: string[]): {
 
   let output = "scripts/scrape/crawl-output/roadmap-tree.structured.json";
   let rootKey: string | undefined;
+  let skipTopicContent = false;
 
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
@@ -341,10 +648,15 @@ function parseCliArgs(argv: string[]): {
       continue;
     }
 
+    if (arg === "--skip-topic-content") {
+      skipTopicContent = true;
+      continue;
+    }
+
     throw new Error(`Unknown argument: ${arg}`);
   }
 
-  return { manifest, output, rootKey };
+  return { manifest, output, rootKey, skipTopicContent };
 }
 
 function requiredValue(args: string[], index: number, flag: string): string {
@@ -359,13 +671,92 @@ function requiredValue(args: string[], index: number, flag: string): string {
 async function main(): Promise<void> {
   const args = parseCliArgs(process.argv.slice(2));
   const outputPath = resolve(args.output);
-  const roadmapJson = await buildRoadmapJsonFromManifest(args.manifest, {
-    rootKey: args.rootKey,
-  });
+  const source = await readJsonSource(args.manifest);
+  const roadmapJson = isRoadmapApiData(source)
+    ? buildRoadmapGraphFromRoadmapData(source, {
+        rootKey: args.rootKey,
+        topicContentByNodeId: args.skipTopicContent
+          ? {}
+          : await fetchRoadmapTopicContent(source),
+      })
+    : await buildRoadmapJsonFromManifest(args.manifest, {
+        rootKey: args.rootKey,
+      });
 
   await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(outputPath, `${JSON.stringify(roadmapJson, null, 2)}\n`, "utf8");
   console.log(`[json] ${outputPath}`);
+}
+
+async function readJsonSource(source: string): Promise<unknown> {
+  if (/^https?:\/\//.test(source)) {
+    const response = await fetch(source);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${source}: ${response.status} ${response.statusText}`);
+    }
+
+    return response.json();
+  }
+
+  return JSON.parse(await readFile(source, "utf8")) as unknown;
+}
+
+function isRoadmapApiData(value: unknown): value is RoadmapApiData {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+
+  const candidate = value as Partial<RoadmapApiData>;
+  return (
+    typeof candidate.slug === "string" &&
+    Array.isArray(candidate.nodes) &&
+    Array.isArray(candidate.edges)
+  );
+}
+
+async function fetchRoadmapTopicContent(
+  roadmap: RoadmapApiData,
+): Promise<Record<string, RoadmapTopicContent>> {
+  const nodes = roadmap.nodes.filter((node) => node.type !== "title" && isMeaningfulRoadmapNode(node));
+  const contentByNodeId: Record<string, RoadmapTopicContent> = {};
+  const queue = [...nodes];
+  const concurrency = 8;
+  let completed = 0;
+
+  async function worker(): Promise<void> {
+    while (queue.length > 0) {
+      const node = queue.shift();
+      if (!node) return;
+
+      const content = await fetchOneRoadmapTopicContent(roadmap.slug, node.id);
+      if (content) {
+        contentByNodeId[node.id] = content;
+      }
+
+      completed += 1;
+      if (completed % 25 === 0 || completed === nodes.length) {
+        console.log(`[topic-content] ${completed}/${nodes.length}`);
+      }
+    }
+  }
+
+  await Promise.all(Array.from({ length: concurrency }, () => worker()));
+  return contentByNodeId;
+}
+
+async function fetchOneRoadmapTopicContent(
+  slug: string,
+  nodeId: string,
+): Promise<RoadmapTopicContent | null> {
+  const url = `https://roadmap.sh/${slug}/${nodeId}.json`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    return null;
+  }
+
+  const json = (await response.json()) as RoadmapTopicContent;
+  return {
+    description: json.description ?? "",
+    resources: Array.isArray(json.resources) ? json.resources : [],
+  };
 }
 
 if (process.argv[1]?.endsWith("roadmap-json.ts")) {

@@ -4,7 +4,11 @@ import { tmpdir } from "node:os";
 
 import { afterEach, describe, expect, it } from "vitest";
 
-import { buildRoadmapJsonFromManifest, parseMarkdownPage } from "./roadmap-json";
+import {
+  buildRoadmapGraphFromRoadmapData,
+  buildRoadmapJsonFromManifest,
+  parseMarkdownPage,
+} from "./roadmap-json";
 
 let tempDir: string | null = null;
 
@@ -107,5 +111,104 @@ describe("buildRoadmapJsonFromManifest", () => {
       slug: "howDoesInternetWork",
       description: "Networks move requests between clients and servers.",
     });
+  });
+});
+
+describe("buildRoadmapGraphFromRoadmapData", () => {
+  it("builds an ordered topic graph with topic summaries and resource buckets", () => {
+    const result = buildRoadmapGraphFromRoadmapData(
+      {
+        slug: "backend",
+        title: { page: "Backend Developer", card: "Backend" },
+        description: "Step by step guide to becoming a modern backend developer in @currentYear@",
+        nodes: [
+          {
+            id: "root",
+            type: "title",
+            position: { x: 0, y: 0 },
+            data: { label: "Backend" },
+          },
+          {
+            id: "intro",
+            type: "topic",
+            position: { x: 10, y: 100 },
+            data: { label: "Introduction" },
+          },
+          {
+            id: "connector",
+            type: "section",
+            position: { x: 10, y: 150 },
+            data: {},
+          },
+          {
+            id: "go",
+            type: "subtopic",
+            position: { x: 20, y: 200 },
+            data: { label: "Go" },
+          },
+        ],
+        edges: [
+          { source: "root", target: "intro", data: { edgeStyle: "solid" } },
+          { source: "intro", target: "connector", data: { edgeStyle: "solid" } },
+          { source: "connector", target: "go", data: { edgeStyle: "dashed" } },
+        ],
+      },
+      {
+        topicContentByNodeId: {
+          intro: {
+            description:
+              "# Backend Development\n\nBackend development focuses on server-side logic and data handling.",
+            resources: [
+              {
+                type: "article",
+                title: "What is backend?",
+                url: "https://example.com/backend",
+              },
+              {
+                type: "video",
+                title: "Backend overview",
+                url: "https://youtube.com/watch?v=backend",
+              },
+            ],
+          },
+          go: {
+            description: "# Go\n\nGo is a compiled language used for backend services.",
+            resources: [
+              {
+                type: "official",
+                title: "Go docs",
+                url: "https://go.dev/doc/",
+              },
+            ],
+          },
+        },
+      },
+    );
+
+    expect(result.backend.summary).toBe(
+      "Step by step guide to becoming a modern backend developer in 2026",
+    );
+    expect(result.backend.order).toEqual(["introduction", "go"]);
+    expect(result.backend.edges).toEqual([
+      { from: "backend", to: "introduction", style: "solid" },
+      { from: "introduction", to: "go", style: "solid" },
+    ]);
+    expect(result.backend.topics.introduction).toMatchObject({
+      title: "Introduction",
+      summary: "Backend development focuses on server-side logic and data handling.",
+      video: {
+        title: "Backend overview",
+        url: "https://youtube.com/watch?v=backend",
+      },
+      children: ["go"],
+    });
+    expect(result.backend.topics.introduction.articles).toEqual([
+      {
+        type: "article",
+        title: "What is backend?",
+        url: "https://example.com/backend",
+      },
+    ]);
+    expect(result.backend.topics.go.parents).toEqual(["introduction"]);
   });
 });

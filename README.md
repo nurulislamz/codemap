@@ -65,7 +65,15 @@ Convert a crawl manifest into structured JSON:
 ```bash
 corepack pnpm scrape:roadmap-json -- scripts/scrape/crawl-output/roadmap-tree.json \
   --output scripts/scrape/crawl-output/roadmap-tree.structured.json \
-  --root-key frontEndBasics
+  --root-key backend
+```
+
+Create the app-ready backend roadmap graph with per-topic summaries and resources:
+
+```bash
+corepack pnpm scrape:roadmap-json -- https://roadmap.sh/backend.json \
+  --output src/data/roadmap/backend-roadmap.json \
+  --root-key backend
 ```
 
 ## Firebase Emulator Setup (local)
@@ -82,6 +90,7 @@ In local auth/Firestore client code, keep emulator hosts in `.env.local`:
 ```bash
 FIREBASE_AUTH_EMULATOR_HOST=127.0.0.1:9099
 FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+NEXT_PUBLIC_USE_FIREBASE_AUTH_EMULATOR=true
 ```
 
 Use your emulator `projectId` values from `.firebaserc` and your Firebase web config in env:

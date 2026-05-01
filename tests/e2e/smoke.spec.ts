@@ -5,9 +5,7 @@ test("loads the dashboard shell", async ({ page }) => {
 
   await expect(page).toHaveURL(/\/dashboard$/);
   await expect(page).toHaveTitle(/LeetCode Backend Helper/);
-  await expect(
-    page.getByRole("heading", { name: "Backend interview command center" }),
-  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Home" })).toBeVisible();
   await expect(page.getByRole("navigation", { name: "Primary navigation" })).toContainText(
     "LeetCode",
   );

@@ -14,7 +14,7 @@ export async function createLeetCodeAttempt(input: LeetCodeAttemptEvent): Promis
         .collection("users")
         .doc(LOCAL_USER_ID)
         .collection("leetcodeAttempts")
-        .doc(attempt.attemptId);
+        .doc(attempt.problemId.toString());
     
     if (attempt.durationSeconds <= 0) {
         throw new Error("Attempt duration must be greater than 0 seconds");
@@ -24,11 +24,22 @@ export async function createLeetCodeAttempt(input: LeetCodeAttemptEvent): Promis
     return attempt;
 }
 
-export async function getLeetCodeAttempts(): Promise<LeetCodeAttemptEvent[]> { 
+export async function getAllLeetCodeAttempts(): Promise<LeetCodeAttemptEvent[]> { 
     const snapshot = await getFirestoreDb()
         .collection("users")
         .doc(LOCAL_USER_ID)
         .collection("leetcodeAttempts")
+        .get();
+    
+    return snapshot.docs.map(doc => doc.data() as LeetCodeAttemptEvent);
+}
+
+export async function getLeetCodeAttempts(problemId: number): Promise<LeetCodeAttemptEvent[]> { 
+    const snapshot = await getFirestoreDb()
+        .collection("users")
+        .doc(LOCAL_USER_ID)
+        .collection("leetcodeAttempts")
+        .where("problemId", "==", problemId.toLocaleString)
         .get();
     
     return snapshot.docs.map(doc => doc.data() as LeetCodeAttemptEvent);
@@ -57,6 +68,7 @@ export async function getAnySuccessfulLeetCodeAttempt(problemId: string): Promis
         .collection("leetcodeAttempts")
         .where("problemId", "==", problemId)
         .where("isSuccessful", "==", true)
+        .orderBy("startedAt", "desc")
         .limit(1)
         .get();
         

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { buildLeetcodeStats } from "./leetcode-stats";
-import type { LeetcodeAttemptRow, LeetcodeProblemRow } from "./leetcode-problem-table";
+import type { LeetcodeAttemptRow, LeetcodeProblemRow } from "./leetcode-types";
 
 const problems: LeetcodeProblemRow[] = [
   {

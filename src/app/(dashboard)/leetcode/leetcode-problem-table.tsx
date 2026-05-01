@@ -1,39 +1,23 @@
 "use client";
 
-import { Fragment, useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useMemo, useRef, useState } from "react";
 
-export type LeetcodeProblemRow = {
-  number: string;
-  title: string;
-  difficulty: "easy" | "medium" | "hard";
-  pattern: string;
-  subPattern: string;
-  leetcodeUrl: string;
-  estimatedMinutes: number;
-  solutionUrl?: string;
-  solutionVideoUrl?: string;
-  isCompleted: boolean;
-  lastAttemptedAt: string | null;
-  attemptCount: number;
-  bestDurationSeconds: number | null;
-};
-
-export type LeetcodeAttemptRow = {
-  attemptId: string;
-  problemId: string;
-  problemTitle: string;
-  isSuccessful: boolean;
-  startedAt: string;
-  endedAt: string;
-  durationSeconds: number;
-  notes?: string | null;
-  failureReason?: string | null;
-};
+import { useOutsideClick } from "@/ui/use-outside-click";
+import { LeetcodeAttemptOverlayButton } from "./leetcode-attempt-overlay";
+import { formatAttemptDate, formatSecondsDuration } from "./leetcode-formatters";
+import type {
+  LeetcodeAttemptRow,
+  LeetcodeProblemRow,
+  SaveLeetcodeAttemptAction,
+} from "./leetcode-types";
 
 type LeetcodeProblemTableProps = {
   problems: LeetcodeProblemRow[];
   attempts: LeetcodeAttemptRow[];
   externalPattern?: string | null;
+  searchQuery?: string;
+  onSearchQueryChange?: (query: string) => void;
+  saveAttemptAction?: SaveLeetcodeAttemptAction;
 };
 
 type ProblemSort = "default" | "az" | "za";
@@ -55,40 +39,20 @@ function difficultyStyles(difficulty: LeetcodeProblemRow["difficulty"]) {
   switch (difficulty) {
     case "easy":
       return {
-        pill: "border-success/30 bg-success/10 text-success",
-        dot: "bg-success",
+        pill: "border-[#2bd875]/30 bg-[#143b32] text-[#5ff08a]",
+        dot: "bg-[#2bd875]",
       };
     case "medium":
       return {
-        pill: "border-warning/30 bg-warning/10 text-warning",
-        dot: "bg-warning",
+        pill: "border-[#f7b615]/35 bg-[#3a2c10] text-[#ffd21d]",
+        dot: "bg-[#ffc400]",
       };
     case "hard":
       return {
-        pill: "border-error/30 bg-error/10 text-error",
-        dot: "bg-error",
+        pill: "border-[#ff5e7a]/35 bg-[#401923] text-[#ff6f87]",
+        dot: "bg-[#ff5e7a]",
       };
   }
-}
-
-function formatDate(value: string | null) {
-  if (!value) return "-";
-
-  return new Intl.DateTimeFormat("en-GB", {
-    day: "2-digit",
-    month: "short",
-    hour: "2-digit",
-    minute: "2-digit",
-  }).format(new Date(value));
-}
-
-function formatDuration(totalSeconds: number | null) {
-  if (totalSeconds === null) return "-";
-
-  const minutes = Math.floor(totalSeconds / 60);
-  const seconds = totalSeconds % 60;
-
-  return `${minutes}:${seconds.toString().padStart(2, "0")}`;
 }
 
 function formatStatus(problem: LeetcodeProblemRow) {
@@ -109,37 +73,46 @@ function difficultyRank(difficulty: LeetcodeProblemRow["difficulty"]) {
 }
 
 function progressDotClass(problem: LeetcodeProblemRow) {
-  if (problem.isCompleted) return "border-success bg-success/20";
-  if (problem.attemptCount > 0) return "border-primary bg-primary/20";
-  return "border-base-content/40";
+  if (problem.isCompleted) return "border-[#54eb78] bg-[#54eb78]/20";
+  if (problem.attemptCount > 0) return "border-[#8368ff] bg-[#8368ff]/20";
+  return "border-slate-500";
 }
 
 function progressTextClass(problem: LeetcodeProblemRow) {
-  if (problem.isCompleted) return "text-success";
-  if (problem.attemptCount > 0) return "text-primary";
-  return "text-base-content/70";
+  if (problem.isCompleted) return "text-[#54eb78]";
+  if (problem.attemptCount > 0) return "text-[#8b68ff]";
+  return "text-slate-400";
 }
 
 function attemptResultStyles(attempt: LeetcodeAttemptRow) {
   if (attempt.isSuccessful) {
     return {
-      pill: "border-success/30 bg-success/10 text-success",
-      dot: "bg-success",
+      pill: "border-[#2bd875]/30 bg-[#143b32] text-[#5ff08a]",
+      dot: "bg-[#2bd875]",
       label: "Accepted",
     };
   }
 
   return {
-    pill: "border-warning/30 bg-warning/10 text-warning",
-    dot: "bg-warning",
+    pill: "border-[#f7b615]/35 bg-[#3a2c10] text-[#ffd21d]",
+    dot: "bg-[#ffc400]",
     label: attempt.failureReason || "Wrong Answer",
   };
+}
+
+function latestAttemptNotes(attempts: LeetcodeAttemptRow[]) {
+  return attempts
+    .filter((attempt) => attempt.notes?.trim())
+    .toSorted(
+      (left, right) =>
+        new Date(right.endedAt).getTime() - new Date(left.endedAt).getTime(),
+    )[0]?.notes ?? null;
 }
 
 function resourcePill(label: string, href?: string) {
   if (!href) {
     return (
-      <span className="rounded-lg border border-base-300 bg-base-200/60 px-3 py-1.5 text-sm font-semibold text-base-content/30">
+      <span className="rounded-lg border border-[#26364d] bg-[#0a1422] px-4 py-2 text-sm font-bold text-slate-600">
         {label}
       </span>
     );
@@ -150,7 +123,7 @@ function resourcePill(label: string, href?: string) {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="rounded-lg border border-primary/20 bg-primary/5 px-3 py-1.5 text-sm font-semibold text-primary transition hover:border-primary/50 hover:bg-primary/10"
+      className="rounded-lg border border-[#3a3482] bg-[#121a33] px-4 py-2 text-sm font-bold text-[#8f73ff] transition hover:border-[#705cff] hover:bg-[#1a2550]"
     >
       {label}
     </a>
@@ -159,7 +132,7 @@ function resourcePill(label: string, href?: string) {
 
 function patternChip(label: string) {
   return (
-    <span className="rounded-lg border border-primary/10 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+    <span className="rounded-lg bg-[#261c59] px-3 py-1 text-xs font-semibold text-[#a48bff]">
       {label}
     </span>
   );
@@ -169,11 +142,14 @@ export function LeetcodeProblemTable({
   problems,
   attempts,
   externalPattern,
+  searchQuery,
+  onSearchQueryChange,
+  saveAttemptAction,
 }: LeetcodeProblemTableProps) {
   const patternMenuRef = useRef<HTMLDivElement>(null);
   const difficultyMenuRef = useRef<HTMLDivElement>(null);
   const statusMenuRef = useRef<HTMLDivElement>(null);
-  const [query, setQuery] = useState("");
+  const [internalQuery, setInternalQuery] = useState("");
   const [difficulty, setDifficulty] = useState(allOption);
   const [status, setStatus] = useState<ProgressFilter>("all");
   const [hasVideo, setHasVideo] = useState(false);
@@ -186,6 +162,8 @@ export function LeetcodeProblemTable({
   const [problemSort, setProblemSort] = useState<ProblemSort>("default");
   const [difficultySort, setDifficultySort] = useState<DifficultySort>("default");
   const [expandedProblemId, setExpandedProblemId] = useState<string | null>(null);
+  const query = searchQuery ?? internalQuery;
+  const setQuery = onSearchQueryChange ?? setInternalQuery;
 
   const patternOptions = useMemo(
     () => uniqueInOrder(problems.map((problem) => problem.pattern)),
@@ -193,14 +171,16 @@ export function LeetcodeProblemTable({
   );
 
   const subPatternOptions = useMemo(() => {
-    if (!activePatternForSubPatterns) return [];
+    const patternForSubPatterns = activePatternForSubPatterns ?? externalPattern;
+
+    if (!patternForSubPatterns) return [];
 
     return uniqueInOrder(
       problems
-        .filter((problem) => problem.pattern === activePatternForSubPatterns)
+        .filter((problem) => problem.pattern === patternForSubPatterns)
         .map((problem) => problem.subPattern),
     );
-  }, [activePatternForSubPatterns, problems]);
+  }, [activePatternForSubPatterns, externalPattern, problems]);
 
   const attemptsByProblemId = useMemo(() => {
     const grouped = new Map<string, LeetcodeAttemptRow[]>();
@@ -215,30 +195,21 @@ export function LeetcodeProblemTable({
     return grouped;
   }, [attempts]);
 
-  useEffect(() => {
-    function closeMenusOnOutsideClick(event: MouseEvent) {
-      const target = event.target as Node;
-
-      if (patternMenuRef.current && !patternMenuRef.current.contains(target)) {
-        setShowPatternMenu(false);
-        setActivePatternForSubPatterns(null);
-      }
-
-      if (difficultyMenuRef.current && !difficultyMenuRef.current.contains(target)) {
-        setShowDifficultyMenu(false);
-      }
-
-      if (statusMenuRef.current && !statusMenuRef.current.contains(target)) {
-        setShowStatusMenu(false);
-      }
-    }
-
-    document.addEventListener("mousedown", closeMenusOnOutsideClick);
-
-    return () => {
-      document.removeEventListener("mousedown", closeMenusOnOutsideClick);
-    };
-  }, []);
+  useOutsideClick(patternMenuRef, {
+    active: showPatternMenu,
+    onOutsideClick: () => {
+      setShowPatternMenu(false);
+      setActivePatternForSubPatterns(null);
+    },
+  });
+  useOutsideClick(difficultyMenuRef, {
+    active: showDifficultyMenu,
+    onOutsideClick: () => setShowDifficultyMenu(false),
+  });
+  useOutsideClick(statusMenuRef, {
+    active: showStatusMenu,
+    onOutsideClick: () => setShowStatusMenu(false),
+  });
 
   const filteredProblems = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -378,54 +349,42 @@ export function LeetcodeProblemTable({
     return "All statuses";
   }
 
+  function subPatternFilterLabel() {
+    if (selectedSubPatterns.length === 1) return selectedSubPatterns[0];
+    if (selectedSubPatterns.length > 1) return `${selectedSubPatterns.length} selected`;
+    return subPatternOptions[0] ?? "All";
+  }
+
   return (
     <section className="space-y-4">
-      <div className="rounded-2xl border border-base-300 bg-base-100/80 p-4 shadow-lg shadow-black/10">
+      <div className="rounded-xl border border-[#1b2a3e] bg-[#0b1626]/95 p-6 shadow-[0_18px_45px_rgba(0,0,0,0.22)]">
         <div className="space-y-4">
-          <label className="input input-bordered flex min-h-14 w-full items-center gap-3 rounded-xl border-base-300 bg-base-200/50 px-4">
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              className="h-5 w-5 text-base-content/50"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            >
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.3-4.3" />
-            </svg>
-            <input
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              className="grow bg-transparent"
-              placeholder="Search problems..."
-            />
-          </label>
-
-          <div className="grid gap-3 border-t border-base-300 pt-4 md:grid-cols-2 xl:grid-cols-[minmax(10rem,14rem)_minmax(10rem,14rem)_minmax(12rem,16rem)_auto_auto] xl:items-center">
-
-          <div
-            ref={difficultyMenuRef}
-            className="relative z-40"
-            onMouseLeave={() => setShowDifficultyMenu(false)}
-          >
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-[minmax(8rem,10rem)_minmax(8rem,10rem)_minmax(12rem,16rem)_auto_auto] xl:items-center">
+          <div ref={difficultyMenuRef} className="relative z-40">
             <button
               type="button"
-              className={`btn btn-outline min-h-14 w-full cursor-pointer justify-between rounded-xl border-base-300 px-5 ${
-                showDifficultyMenu ? "border-primary text-primary" : ""
+              aria-controls="leetcode-difficulty-menu"
+              aria-expanded={showDifficultyMenu}
+              aria-haspopup="menu"
+              className={`flex min-h-14 w-full cursor-pointer items-center justify-between rounded-xl border px-5 text-left text-base font-semibold transition ${
+                showDifficultyMenu
+                  ? "border-[#705cff] text-[#a48bff]"
+                  : "border-[#26364d] bg-[#07111f]/65 text-white"
               }`}
               onClick={() => setShowDifficultyMenu((current) => !current)}
             >
               {difficultyFilterLabel()}
-              <span>{showDifficultyMenu ? "⌃" : "⌄"}</span>
+              <span className="text-slate-400">{showDifficultyMenu ? "⌃" : "⌄"}</span>
             </button>
 
             {showDifficultyMenu ? (
               <>
               <div className="absolute left-0 top-full z-40 h-3 w-full" />
-              <div className="absolute left-0 top-full z-50 mt-2 w-56 rounded-2xl border border-base-300 bg-base-100 p-2 shadow-2xl shadow-black/40">
+              <div
+                id="leetcode-difficulty-menu"
+                role="menu"
+                className="absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-[#26364d] bg-[#0b1626] p-2 shadow-2xl shadow-black/40"
+              >
                 {[
                   [allOption, "All difficulties"],
                   ["easy", "Easy"],
@@ -435,8 +394,10 @@ export function LeetcodeProblemTable({
                   <button
                     key={value}
                     type="button"
-                    className={`flex w-full cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-left text-sm hover:bg-base-200 ${
-                      difficulty === value ? "bg-primary/10 text-primary" : ""
+                    role="menuitemradio"
+                    aria-checked={difficulty === value}
+                    className={`flex w-full cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-left text-sm hover:bg-[#121e31] ${
+                      difficulty === value ? "bg-[#6747ff]/15 text-[#a48bff]" : "text-slate-300"
                     }`}
                     onClick={() => {
                       setDifficulty(value);
@@ -452,26 +413,31 @@ export function LeetcodeProblemTable({
             ) : null}
           </div>
 
-          <div
-            ref={statusMenuRef}
-            className="relative z-40"
-            onMouseLeave={() => setShowStatusMenu(false)}
-          >
+          <div ref={statusMenuRef} className="relative z-40">
             <button
               type="button"
-              className={`btn btn-outline min-h-14 w-full cursor-pointer justify-between rounded-xl border-base-300 px-5 ${
-                showStatusMenu ? "border-primary text-primary" : ""
+              aria-controls="leetcode-status-menu"
+              aria-expanded={showStatusMenu}
+              aria-haspopup="menu"
+              className={`flex min-h-14 w-full cursor-pointer items-center justify-between rounded-xl border px-5 text-left text-base font-semibold transition ${
+                showStatusMenu
+                  ? "border-[#705cff] text-[#a48bff]"
+                  : "border-[#26364d] bg-[#07111f]/65 text-white"
               }`}
               onClick={() => setShowStatusMenu((current) => !current)}
             >
               {statusFilterLabel()}
-              <span>{showStatusMenu ? "⌃" : "⌄"}</span>
+              <span className="text-slate-400">{showStatusMenu ? "⌃" : "⌄"}</span>
             </button>
 
             {showStatusMenu ? (
               <>
               <div className="absolute left-0 top-full z-40 h-3 w-full" />
-              <div className="absolute left-0 top-full z-50 mt-2 w-56 rounded-2xl border border-base-300 bg-base-100 p-2 shadow-2xl shadow-black/40">
+              <div
+                id="leetcode-status-menu"
+                role="menu"
+                className="absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-[#26364d] bg-[#0b1626] p-2 shadow-2xl shadow-black/40"
+              >
                 {[
                   ["all", "All statuses"],
                   ["not-started", "Not started"],
@@ -482,8 +448,10 @@ export function LeetcodeProblemTable({
                   <button
                     key={value}
                     type="button"
-                    className={`flex w-full cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-left text-sm hover:bg-base-200 ${
-                      status === value ? "bg-primary/10 text-primary" : ""
+                    role="menuitemradio"
+                    aria-checked={status === value}
+                    className={`flex w-full cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-left text-sm hover:bg-[#121e31] ${
+                      status === value ? "bg-[#6747ff]/15 text-[#a48bff]" : "text-slate-300"
                     }`}
                     onClick={() => {
                       setStatus(value as ProgressFilter);
@@ -499,18 +467,16 @@ export function LeetcodeProblemTable({
             ) : null}
           </div>
 
-          <div
-            ref={patternMenuRef}
-            className="relative z-30"
-            onMouseLeave={() => {
-              setShowPatternMenu(false);
-              setActivePatternForSubPatterns(null);
-            }}
-          >
+          <div ref={patternMenuRef} className="relative z-30">
             <button
               type="button"
-              className={`btn btn-outline min-h-14 w-full cursor-pointer justify-between rounded-xl border-base-300 px-5 ${
-                showPatternMenu ? "border-primary text-primary" : ""
+              aria-controls="leetcode-pattern-menu"
+              aria-expanded={showPatternMenu}
+              aria-haspopup="menu"
+              className={`flex min-h-14 w-full cursor-pointer items-center justify-between gap-4 rounded-xl border px-5 text-left text-base font-semibold transition ${
+                showPatternMenu
+                  ? "border-[#705cff] text-[#a48bff]"
+                  : "border-[#26364d] bg-[#07111f]/65 text-white"
               }`}
               onClick={() => setShowPatternMenu((current) => !current)}
             >
@@ -532,23 +498,26 @@ export function LeetcodeProblemTable({
                   <path d="M3 9h6v6H3z" />
                   <path d="M15 9h6v6h-6z" />
                 </svg>
-                Patterns ({selectedPatterns.length + selectedSubPatterns.length})
+                <span className="text-white">Filter patterns</span>
+                <span className="text-[#9272ff]">{subPatternFilterLabel()}</span>
               </span>
-              <span>{showPatternMenu ? "⌃" : "⌄"}</span>
+              <span className="text-slate-400">{showPatternMenu ? "⌃" : "⌄"}</span>
             </button>
 
             {showPatternMenu ? (
               <>
               <div className="absolute left-0 top-full z-40 h-3 w-full" />
               <div
+                id="leetcode-pattern-menu"
+                role="menu"
                 className="absolute left-0 top-full z-50 mt-2 flex w-max max-w-[calc(100vw-3rem)] items-start gap-3"
               >
-                <div className="w-80 rounded-2xl border border-base-300 bg-base-100 p-3 shadow-2xl shadow-black/40">
-                  <label className="input input-bordered mb-2 flex h-10 items-center gap-2 rounded-xl border-base-300 bg-base-200/50 px-3">
+                <div className="w-80 rounded-xl border border-[#26364d] bg-[#0b1626] p-3 shadow-2xl shadow-black/40">
+                  <label className="mb-2 flex h-10 items-center gap-2 rounded-xl border border-[#26364d] bg-[#07111f]/65 px-3">
                     <svg
                       viewBox="0 0 24 24"
                       aria-hidden="true"
-                      className="h-4 w-4 text-base-content/50"
+                      className="h-4 w-4 text-slate-400"
                       fill="none"
                       stroke="currentColor"
                       strokeLinecap="round"
@@ -558,14 +527,14 @@ export function LeetcodeProblemTable({
                       <circle cx="11" cy="11" r="8" />
                       <path d="m21 21-4.3-4.3" />
                     </svg>
-                    <span className="text-sm text-base-content/50">Search patterns...</span>
+                    <span className="text-sm text-slate-500">Search minor patterns...</span>
                   </label>
 
                   <div className="max-h-72 space-y-1 overflow-y-auto">
-                    {patternOptions.map((patternOption) => (
+                    {(externalPattern ? [externalPattern] : patternOptions).map((patternOption) => (
                       <div
                         key={patternOption}
-                        className="flex cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-sm hover:bg-base-200"
+                        className="flex cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-[#121e31]"
                       >
                         <label className="flex min-w-0 flex-1 cursor-pointer items-center gap-3">
                           <input
@@ -578,8 +547,9 @@ export function LeetcodeProblemTable({
                         </label>
                         <button
                           type="button"
-                          className={`btn btn-ghost btn-xs cursor-pointer ${
-                            activePatternForSubPatterns === patternOption ? "text-primary" : ""
+                          aria-label={`Show ${patternOption} minor patterns`}
+                          className={`cursor-pointer rounded-md px-2 py-1 text-lg leading-none ${
+                            activePatternForSubPatterns === patternOption ? "text-[#a48bff]" : ""
                           }`}
                           onClick={() =>
                             setActivePatternForSubPatterns((current) =>
@@ -595,13 +565,13 @@ export function LeetcodeProblemTable({
                 </div>
 
                 {activePatternForSubPatterns ? (
-                  <div className="w-64 rounded-2xl border border-base-300 bg-base-100 p-3 shadow-2xl shadow-black/40">
+                  <div className="w-64 rounded-xl border border-[#26364d] bg-[#0b1626] p-3 text-slate-200 shadow-2xl shadow-black/40">
                     <div className="mb-2 font-semibold">{activePatternForSubPatterns}</div>
                     <div className="max-h-72 space-y-1 overflow-y-auto">
                       {subPatternOptions.map((subPatternOption) => (
                         <label
                           key={subPatternOption}
-                          className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 text-sm hover:bg-base-300/50"
+                          className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 text-sm hover:bg-[#121e31]"
                         >
                           <input
                             type="checkbox"
@@ -622,9 +592,12 @@ export function LeetcodeProblemTable({
 
           <button
             type="button"
-            className={`btn min-h-14 rounded-xl border-base-300 px-5 ${
-              hasVideo ? "btn-primary" : "btn-outline"
-            } w-full cursor-pointer xl:w-auto`}
+            aria-pressed={hasVideo}
+            className={`flex min-h-14 w-full cursor-pointer items-center justify-center gap-3 rounded-xl border px-5 text-base font-semibold transition xl:w-auto ${
+              hasVideo
+                ? "border-[#705cff] bg-[#6747ff] text-white"
+                : "border-[#26364d] bg-[#07111f]/65 text-white"
+            }`}
             onClick={() => setHasVideo((current) => !current)}
           >
             <svg
@@ -641,11 +614,23 @@ export function LeetcodeProblemTable({
               <rect x="3" y="6" width="13" height="12" rx="2" />
             </svg>
             Has video
+            <span
+              aria-hidden="true"
+              className={`relative h-6 w-11 rounded-full transition ${
+                hasVideo ? "bg-[#8b68ff]" : "bg-slate-700"
+              }`}
+            >
+              <span
+                className={`absolute top-1 h-4 w-4 rounded-full bg-slate-300 transition ${
+                  hasVideo ? "left-6" : "left-1"
+                }`}
+              />
+            </span>
           </button>
 
           <button
             type="button"
-            className="btn btn-outline min-h-14 w-full cursor-pointer rounded-xl border-base-300 px-5 xl:w-auto"
+            className="flex min-h-14 w-full cursor-pointer items-center justify-center gap-3 rounded-xl px-5 text-base font-semibold text-[#8f73ff] transition hover:bg-[#121e31] xl:w-auto"
             onClick={resetFilters}
           >
             <svg
@@ -663,7 +648,7 @@ export function LeetcodeProblemTable({
               <path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
               <path d="M3 21v-5h5" />
             </svg>
-            Reset
+            Clear filters
           </button>
           </div>
         </div>
@@ -674,7 +659,7 @@ export function LeetcodeProblemTable({
               <button
                 key={selectedItem}
                 type="button"
-                className="btn btn-outline btn-sm cursor-pointer rounded-lg border-primary/20 bg-primary/5 text-primary"
+                className="cursor-pointer rounded-lg border border-[#3a3482] bg-[#121a33] px-3 py-1.5 text-sm font-semibold text-[#8f73ff]"
                 onClick={() => {
                   setSelectedPatterns((current) =>
                     current.filter((item) => item !== selectedItem),
@@ -692,39 +677,57 @@ export function LeetcodeProblemTable({
         ) : null}
       </div>
 
-      <div className="overflow-x-auto rounded-2xl border border-base-300 bg-base-100/80 shadow-lg shadow-black/10">
+      <div className="overflow-x-auto rounded-xl border border-[#1b2a3e] bg-[#0b1626]/95 shadow-[0_18px_45px_rgba(0,0,0,0.22)]">
         <table className="table">
-          <thead className="bg-base-100">
-            <tr className="border-base-300 text-sm text-base-content/60">
-              <th className="w-16 px-4 py-4">#</th>
-              <th className="px-4 py-4">
+          <thead className="bg-[#0b1626]">
+            <tr className="border-[#1b2a3e] text-sm font-bold text-slate-400">
+              <th className="w-16 px-8 py-5">#</th>
+              <th
+                className="px-4 py-4"
+                aria-sort={
+                  problemSort === "az"
+                    ? "ascending"
+                    : problemSort === "za"
+                      ? "descending"
+                      : "none"
+                }
+              >
                 <button
                   type="button"
-                  className="inline-flex cursor-pointer items-center gap-2 transition hover:text-primary hover:underline hover:underline-offset-4"
+                  className="inline-flex cursor-pointer items-center gap-2 transition hover:text-[#a48bff]"
                   onClick={toggleProblemSort}
                 >
                   Problem
-                  <span className="text-xs text-base-content/40">{problemSortLabel()}</span>
+                  <span className="text-xs text-slate-600">{problemSortLabel()}</span>
                 </button>
               </th>
-              <th className="px-4 py-4">
+              <th
+                className="px-4 py-4"
+                aria-sort={
+                  difficultySort === "easy-first"
+                    ? "ascending"
+                    : difficultySort === "hard-first"
+                      ? "descending"
+                      : "none"
+                }
+              >
                 <button
                   type="button"
-                  className="inline-flex cursor-pointer items-center gap-2 transition hover:text-primary hover:underline hover:underline-offset-4"
+                  className="inline-flex cursor-pointer items-center gap-2 transition hover:text-[#a48bff]"
                   onClick={toggleDifficultySort}
                 >
                   Difficulty
-                  <span className="text-xs text-base-content/40">{difficultySortLabel()}</span>
+                  <span className="text-xs text-slate-600">{difficultySortLabel()}</span>
                 </button>
               </th>
               <th className="px-4 py-4">
                 <button
                   type="button"
-                  className="inline-flex cursor-pointer items-center gap-2 transition hover:text-primary hover:underline hover:underline-offset-4"
+                  className="inline-flex cursor-pointer items-center gap-2 transition hover:text-[#a48bff]"
                   onClick={toggleProgressFilter}
                 >
                   Progress
-                  <span className="text-xs text-base-content/40">{progressFilterLabel()}</span>
+                  <span className="text-xs text-slate-600">{progressFilterLabel()}</span>
                 </button>
               </th>
               <th className="px-4 py-4">Resources</th>
@@ -739,13 +742,13 @@ export function LeetcodeProblemTable({
 
               return (
                 <Fragment key={`${problem.pattern}:${problem.subPattern}:${problem.number}:${problem.title}`}>
-                  <tr className="border-base-300 transition hover:bg-base-200/60">
-                    <td className="px-4 py-4 align-middle font-mono text-base text-base-content/60">
+                  <tr className="border-[#1b2a3e] transition hover:bg-[#111d30]">
+                    <td className="px-8 py-5 align-middle font-mono text-base text-slate-200">
                       {problem.number}
                     </td>
                     <td className="px-4 py-4 align-middle">
                       <div className="flex items-start gap-4">
-                        <span className="text-base-content/40">
+                        <span className="text-slate-500">
                           <svg
                             viewBox="0 0 24 24"
                             aria-hidden="true"
@@ -760,7 +763,7 @@ export function LeetcodeProblemTable({
                           </svg>
                         </span>
                         <div className="min-w-0 space-y-2">
-                          <div className="font-semibold leading-snug">{problem.title}</div>
+                          <div className="font-semibold leading-snug text-white">{problem.title}</div>
                           <div className="flex flex-wrap gap-2">
                             {patternChip(problem.pattern)}
                             {patternChip(problem.subPattern)}
@@ -770,7 +773,7 @@ export function LeetcodeProblemTable({
                     </td>
                     <td className="px-4 py-4 align-middle">
                       <span
-                        className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold capitalize ${difficulty.pill}`}
+                        className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-bold capitalize ${difficulty.pill}`}
                       >
                         <span className={`h-2.5 w-2.5 rounded-full ${difficulty.dot}`} />
                         {problem.difficulty}
@@ -779,7 +782,8 @@ export function LeetcodeProblemTable({
                     <td className="whitespace-nowrap px-4 py-4 align-middle">
                         <button
                           type="button"
-                          className={`inline-flex cursor-pointer items-center gap-2 text-sm transition hover:text-primary hover:underline hover:underline-offset-4 ${progressTextClass(problem)}`}
+                          aria-expanded={isExpanded}
+                          className={`inline-flex cursor-pointer items-center gap-2 text-base transition hover:text-[#a48bff] ${progressTextClass(problem)}`}
                           onClick={() => setExpandedProblemId(isExpanded ? null : problem.number)}
                         >
                         <span className={`h-4 w-4 rounded-full border-2 ${progressDotClass(problem)}`} />
@@ -799,27 +803,29 @@ export function LeetcodeProblemTable({
                       </div>
                     </td>
                     <td className="px-4 py-4 text-right align-middle">
-                      <a
-                        href={`/leetcode/${problem.number}/timer`}
-                        className="btn btn-primary rounded-xl px-7 shadow-lg shadow-primary/20"
+                      <LeetcodeAttemptOverlayButton
+                        problem={problem}
+                        lastNotes={latestAttemptNotes(problemAttempts)}
+                        saveAttemptAction={saveAttemptAction}
+                        className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#6747ff] px-8 text-base font-bold text-white shadow-lg shadow-[#6747ff]/25 transition hover:bg-[#775bff]"
                       >
                         Start
-                      </a>
+                      </LeetcodeAttemptOverlayButton>
                     </td>
                   </tr>
 
                   {isExpanded ? (
-                    <tr className="border-base-300 bg-base-200/40">
+                    <tr className="border-[#1b2a3e] bg-[#111d30]">
                       <td colSpan={6}>
-                        <div className="mx-6 my-4 rounded-2xl border border-base-300 bg-base-100/70 p-6 shadow-inner shadow-black/20">
+                        <div className="mx-6 my-4 rounded-xl border border-[#26364d] bg-[#0b1626]/80 p-6 shadow-inner shadow-black/20">
                           {problemAttempts.length > 0 ? (
                             <div className="space-y-4">
                               <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
                                 <div>
                                   <h3 className="text-lg font-bold">Attempt History</h3>
-                                  <p className="text-sm text-base-content/60">
+                                  <p className="text-sm text-slate-400">
                                     {problemAttempts.length} attempts · Last attempt{" "}
-                                    {formatDate(problem.lastAttemptedAt)}
+                                    {formatAttemptDate(problem.lastAttemptedAt)}
                                   </p>
                                 </div>
 
@@ -828,7 +834,7 @@ export function LeetcodeProblemTable({
                                     href={problem.leetcodeUrl}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="inline-flex items-center gap-2 font-semibold text-primary transition hover:text-primary-focus"
+                                    className="inline-flex items-center gap-2 font-semibold text-[#8f73ff] transition hover:text-[#a48bff]"
                                   >
                                     View submission details
                                     <svg
@@ -846,10 +852,10 @@ export function LeetcodeProblemTable({
                                       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                                     </svg>
                                   </a>
-                                  <span className="h-6 w-px bg-base-300" />
+                                  <span className="h-6 w-px bg-[#26364d]" />
                                   <button
                                     type="button"
-                                    className="inline-flex cursor-pointer items-center gap-2 text-base-content/80 transition hover:text-base-content"
+                                    className="inline-flex cursor-pointer items-center gap-2 text-slate-300 transition hover:text-white"
                                     onClick={() => setExpandedProblemId(null)}
                                   >
                                     Collapse
@@ -859,9 +865,9 @@ export function LeetcodeProblemTable({
                               </div>
 
                               <div className="overflow-x-auto">
-                                <table className="table table-sm rounded-xl border border-base-300">
-                                  <thead className="bg-base-200/70">
-                                    <tr className="border-base-300 text-base-content/60">
+                                <table className="table table-sm rounded-xl border border-[#26364d]">
+                                  <thead className="bg-[#111d30]">
+                                    <tr className="border-[#26364d] text-slate-400">
                                       <th>Attempt</th>
                                       <th>Date</th>
                                       <th>Result</th>
@@ -874,12 +880,12 @@ export function LeetcodeProblemTable({
                                       const result = attemptResultStyles(attempt);
 
                                       return (
-                                      <tr key={attempt.attemptId} className="border-base-300">
-                                        <td className="font-mono text-base-content/80">
+                                      <tr key={attempt.attemptId} className="border-[#26364d]">
+                                        <td className="font-mono text-slate-300">
                                           #{problemAttempts.length - index}
                                         </td>
-                                        <td className="text-base-content/70">
-                                          {formatDate(attempt.endedAt)}
+                                        <td className="text-slate-400">
+                                          {formatAttemptDate(attempt.endedAt)}
                                         </td>
                                         <td>
                                           <span
@@ -889,9 +895,9 @@ export function LeetcodeProblemTable({
                                             {result.label}
                                           </span>
                                         </td>
-                                        <td>{formatDuration(attempt.durationSeconds)}</td>
-                                        <td className="max-w-xl text-base-content/70">
-                                          {attempt.notes || attempt.failureReason || "-"}
+                                        <td>{formatSecondsDuration(attempt.durationSeconds)}</td>
+                                        <td className="max-w-xl text-slate-400">
+                                          {attempt.notes || "-"}
                                         </td>
                                       </tr>
                                       );
@@ -903,7 +909,7 @@ export function LeetcodeProblemTable({
                           ) : (
                             <div className="space-y-1">
                               <h3 className="text-lg font-bold">Attempt History</h3>
-                              <p className="text-sm text-base-content/60">
+                              <p className="text-sm text-slate-400">
                                 No attempts yet. Start this problem to create your first attempt.
                               </p>
                             </div>
@@ -918,18 +924,18 @@ export function LeetcodeProblemTable({
           </tbody>
         </table>
 
-        <div className="flex flex-col gap-4 border-t border-base-300 px-4 py-5 text-sm text-base-content/60 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 border-t border-[#1b2a3e] px-8 py-5 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
           <p>
             Showing {filteredProblems.length} of {problems.length} problems
           </p>
           <div className="join">
-            <button type="button" className="btn btn-outline join-item btn-sm" disabled>
+            <button type="button" className="join-item rounded-l-lg border border-[#26364d] px-3 py-1.5 text-slate-600" disabled>
               Previous
             </button>
-            <button type="button" className="btn btn-primary join-item btn-sm">
+            <button type="button" className="join-item bg-[#6747ff] px-3 py-1.5 font-bold text-white">
               1
             </button>
-            <button type="button" className="btn btn-outline join-item btn-sm" disabled>
+            <button type="button" className="join-item rounded-r-lg border border-[#26364d] px-3 py-1.5 text-slate-600" disabled>
               Next
             </button>
           </div>

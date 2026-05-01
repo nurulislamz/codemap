@@ -1,1 +1,1 @@
-import x from "leetcode-patterns";
+export {};
