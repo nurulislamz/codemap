@@ -10,6 +10,7 @@ describe("normalizeLeetcodeProblem", () => {
         title: "Container With Most Water",
         leetcodeUrl: "https://leetcode.com/problems/container-with-most-water/",
         difficulty: "medium",
+        estimatedMinutes: 30,
         solutions: {
           neetcode: {
             textUrl: "https://neetcode.io/solutions/container-with-most-water",
@@ -20,6 +21,7 @@ describe("normalizeLeetcodeProblem", () => {
     ).toMatchObject({
       number: "11",
       title: "Container With Most Water",
+      estimatedMinutes: 30,
       solutions: {
         neetcode: {
           textUrl: "https://neetcode.io/solutions/container-with-most-water",

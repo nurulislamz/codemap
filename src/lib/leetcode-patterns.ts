@@ -11,6 +11,7 @@ type RawPattern = {
           title?: string | null;
           leetcodeUrl?: string | null;
           difficulty?: "easy" | "medium" | "hard" | null;
+          estimatedMinutes?: number | null;
           solutions?: {
             neetcode?: {
               textUrl?: string | null;
@@ -39,6 +40,7 @@ export type NormalizedProblem = {
   title: string;
   leetcodeUrl: string;
   difficulty: "easy" | "medium" | "hard";
+  estimatedMinutes: number;
   solutions?: {
     neetcode?: {
       textUrl: string;
@@ -68,6 +70,7 @@ export function normalizeLeetcodeProblem(problem: RawPattern["subPatterns"][numb
       title: match?.[2] ?? trimmed,
       leetcodeUrl: "https://leetcode.com/problemset/",
       difficulty: "medium",
+      estimatedMinutes: 30,
     };
   }
 
@@ -90,6 +93,10 @@ export function normalizeLeetcodeProblem(problem: RawPattern["subPatterns"][numb
       problem.difficulty === "easy" || problem.difficulty === "medium" || problem.difficulty === "hard"
         ? problem.difficulty
         : "medium",
+    estimatedMinutes:
+      typeof problem.estimatedMinutes === "number" && Number.isFinite(problem.estimatedMinutes)
+        ? problem.estimatedMinutes
+        : 30,
     ...(solutions ? { solutions } : {}),
   };
 }

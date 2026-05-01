@@ -3,10 +3,15 @@ import type { ReactNode } from "react";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard" },
-  { href: "/leetcode", label: "LeetCode" },
   { href: "/roadmap", label: "Roadmap" },
   { href: "/system-design", label: "System Design" },
   { href: "/flashcards", label: "Flashcards" },
+];
+
+const leetcodeNavItems = [
+  { href: "/leetcode/dashboard", label: "Dashboard" },
+  { href: "/leetcode", label: "All Problems" },
+  { href: "/leetcode/stats", label: "Stats" },
 ];
 
 type AppShellProps = {
@@ -25,6 +30,20 @@ export function AppShell({ children }: AppShellProps) {
           </div>
           <nav aria-label="Primary navigation">
             <ul className="flex flex-wrap gap-2">
+              <li>
+                <details className="dropdown dropdown-end">
+                  <summary className="btn btn-ghost btn-sm cursor-pointer rounded-full">
+                    LeetCode
+                  </summary>
+                  <ul className="menu dropdown-content z-50 mt-2 w-48 rounded-box border border-base-300 bg-base-100 p-2 shadow-xl">
+                    {leetcodeNavItems.map((item) => (
+                      <li key={item.href}>
+                        <Link href={item.href}>{item.label}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              </li>
               {navItems.map((item) => (
                 <li key={item.href}>
                   <Link
