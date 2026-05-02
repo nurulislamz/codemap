@@ -164,6 +164,7 @@ export function LeetcodeProblemTable({
   const [expandedProblemId, setExpandedProblemId] = useState<string | null>(null);
   const query = searchQuery ?? internalQuery;
   const setQuery = onSearchQueryChange ?? setInternalQuery;
+  const patternFilterLabel = subPatternFilterLabel();
 
   const patternOptions = useMemo(
     () => uniqueInOrder(problems.map((problem) => problem.pattern)),
@@ -361,7 +362,7 @@ export function LeetcodeProblemTable({
     <section className="space-y-4">
       <div className="rounded-xl border border-[#1b2a3e] bg-[#0b1626]/95 p-6 shadow-[0_18px_45px_rgba(0,0,0,0.22)]">
         <div className="space-y-4">
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-[minmax(12rem,14rem)_minmax(12rem,14rem)_minmax(16rem,22rem)_auto_auto] xl:items-center">
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-[minmax(13rem,15rem)_minmax(13rem,15rem)_minmax(18rem,1fr)_max-content_max-content] xl:items-center">
           <div ref={difficultyMenuRef} className="relative z-40">
             <button
               type="button"
@@ -501,8 +502,8 @@ export function LeetcodeProblemTable({
                   <path d="M15 9h6v6h-6z" />
                 </svg>
                 <span className="text-white">Filter patterns</span>
-                {subPatternFilterLabel() ? (
-                  <span className="text-[#9272ff]">{subPatternFilterLabel()}</span>
+                {patternFilterLabel ? (
+                  <span className="text-[#9272ff]">{patternFilterLabel}</span>
                 ) : null}
               </span>
               <span className="text-slate-400">{showPatternMenu ? "⌃" : "⌄"}</span>

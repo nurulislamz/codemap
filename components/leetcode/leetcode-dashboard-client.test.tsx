@@ -1,6 +1,7 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { LeetcodeDashboardClient } from "@/app/(app)/leetcode/dashboard/page";
+import { AuthProvider } from "@/components/auth/auth-provider";
+import { LeetcodeDashboardClient } from "./leetcode-dashboard-client";
 import type { LeetcodeAttemptRow, LeetcodeProblemRow } from "@/lib/leetcode/types";
 
 const problems: LeetcodeProblemRow[] = [
@@ -66,7 +67,9 @@ describe("LeetcodeDashboardClient", () => {
 
   it("renders a today-focused dashboard with stats, table rows, and suggestions", () => {
     render(
-      <LeetcodeDashboardClient problems={problems} attempts={attempts} />,
+      <AuthProvider>
+        <LeetcodeDashboardClient problems={problems} attempts={attempts} />
+      </AuthProvider>,
     );
 
     expect(
@@ -90,7 +93,11 @@ describe("LeetcodeDashboardClient", () => {
     const openedTab = { location: { href: "" } } as unknown as Window;
     const windowOpen = vi.spyOn(window, "open").mockReturnValue(openedTab);
 
-    render(<LeetcodeDashboardClient problems={problems} attempts={attempts} />);
+    render(
+      <AuthProvider>
+        <LeetcodeDashboardClient problems={problems} attempts={attempts} />
+      </AuthProvider>,
+    );
 
     const binaryTreeRow = screen.getByRole("row", {
       name: /Binary Tree Level Order Traversal/,

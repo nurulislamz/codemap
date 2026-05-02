@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { LeetcodePracticeDashboard } from "@/app/(app)/leetcode/allproblems/page";
+import { AuthProvider } from "@/components/auth/auth-provider";
+import { LeetcodePracticeDashboard } from "./leetcode-practice-dashboard";
 import type { LeetcodeProblemRow } from "@/lib/leetcode/types";
 
 const problems: LeetcodeProblemRow[] = [
@@ -37,7 +38,11 @@ const problems: LeetcodeProblemRow[] = [
 
 describe("LeetcodePracticeDashboard", () => {
   it("uses the top search and keeps pattern filters in the table toolbar", () => {
-    render(<LeetcodePracticeDashboard problems={problems} attempts={[]} />);
+    render(
+      <AuthProvider>
+        <LeetcodePracticeDashboard problems={problems} attempts={[]} />
+      </AuthProvider>,
+    );
 
     expect(
       screen.queryByRole("heading", { name: "Two Pointer Problems" }),

@@ -1,6 +1,7 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import type { MouseEvent, ReactNode } from "react";
 import { describe, expect, it, vi } from "vitest";
+import { AuthProvider } from "@/components/auth/auth-provider";
 import { AppShell } from "./app-shell";
 
 vi.mock("next/link", () => ({
@@ -33,7 +34,11 @@ vi.mock("next/navigation", () => ({
 
 describe("AppShell", () => {
   it("closes the LeetCode menu when clicking outside it", () => {
-    render(<AppShell>Page content</AppShell>);
+    render(
+      <AuthProvider>
+        <AppShell>Page content</AppShell>
+      </AuthProvider>,
+    );
 
     const nav = within(screen.getByRole("navigation", { name: "Primary navigation" }));
 
@@ -53,7 +58,11 @@ describe("AppShell", () => {
   });
 
   it("closes the LeetCode menu from keyboard and menu item selection", () => {
-    render(<AppShell>Page content</AppShell>);
+    render(
+      <AuthProvider>
+        <AppShell>Page content</AppShell>
+      </AuthProvider>,
+    );
 
     const nav = within(screen.getByRole("navigation", { name: "Primary navigation" }));
     const leetcodeButton = nav.getByRole("button", { name: "LeetCode" });
