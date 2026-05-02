@@ -31,7 +31,7 @@ export async function saveLeetCodeAttempt(input: SaveLeetcodeAttemptInput): Prom
     notes: formatNotes(status, notes),
   }, userId);
 
-  revalidatePath("/leetcode");
+  revalidatePath("/leetcode/allproblems");
   revalidatePath("/leetcode/dashboard");
 }
 

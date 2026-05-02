@@ -17,7 +17,7 @@ const navItems = [
 
 const leetcodeNavItems = [
   { href: "/leetcode/dashboard", label: "Dashboard" },
-  { href: "/leetcode", label: "All Problems" },
+  { href: "/leetcode/allproblems", label: "All Problems" },
   { href: "/leetcode/stats", label: "Stats" },
 ];
 
@@ -44,7 +44,7 @@ export function AppShell({ children }: AppShellProps) {
             href="/dashboard"
             className="text-3xl font-extrabold leading-none tracking-tight text-[#7c68ff]"
           >
-            Backend Prep
+            Interview Prep
           </Link>
 
           <nav aria-label="Primary navigation">

@@ -352,21 +352,23 @@ export function LeetcodeProblemTable({
   function subPatternFilterLabel() {
     if (selectedSubPatterns.length === 1) return selectedSubPatterns[0];
     if (selectedSubPatterns.length > 1) return `${selectedSubPatterns.length} selected`;
-    return subPatternOptions[0] ?? "All";
+    if (selectedPatterns.length === 1) return selectedPatterns[0];
+    if (selectedPatterns.length > 1) return `${selectedPatterns.length} selected`;
+    return "";
   }
 
   return (
     <section className="space-y-4">
       <div className="rounded-xl border border-[#1b2a3e] bg-[#0b1626]/95 p-6 shadow-[0_18px_45px_rgba(0,0,0,0.22)]">
         <div className="space-y-4">
-          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-[minmax(8rem,10rem)_minmax(8rem,10rem)_minmax(12rem,16rem)_auto_auto] xl:items-center">
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-[minmax(12rem,14rem)_minmax(12rem,14rem)_minmax(16rem,22rem)_auto_auto] xl:items-center">
           <div ref={difficultyMenuRef} className="relative z-40">
             <button
               type="button"
               aria-controls="leetcode-difficulty-menu"
               aria-expanded={showDifficultyMenu}
               aria-haspopup="menu"
-              className={`flex min-h-14 w-full cursor-pointer items-center justify-between rounded-xl border px-5 text-left text-base font-semibold transition ${
+              className={`flex min-h-14 w-full cursor-pointer items-center justify-between gap-4 rounded-xl border px-5 text-left text-base font-semibold transition ${
                 showDifficultyMenu
                   ? "border-[#705cff] text-[#a48bff]"
                   : "border-[#26364d] bg-[#07111f]/65 text-white"
@@ -396,7 +398,7 @@ export function LeetcodeProblemTable({
                     type="button"
                     role="menuitemradio"
                     aria-checked={difficulty === value}
-                    className={`flex w-full cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-left text-sm hover:bg-[#121e31] ${
+                    className={`flex w-full cursor-pointer items-center justify-between gap-4 rounded-lg px-3 py-2 text-left text-sm hover:bg-[#121e31] ${
                       difficulty === value ? "bg-[#6747ff]/15 text-[#a48bff]" : "text-slate-300"
                     }`}
                     onClick={() => {
@@ -419,7 +421,7 @@ export function LeetcodeProblemTable({
               aria-controls="leetcode-status-menu"
               aria-expanded={showStatusMenu}
               aria-haspopup="menu"
-              className={`flex min-h-14 w-full cursor-pointer items-center justify-between rounded-xl border px-5 text-left text-base font-semibold transition ${
+              className={`flex min-h-14 w-full cursor-pointer items-center justify-between gap-4 rounded-xl border px-5 text-left text-base font-semibold transition ${
                 showStatusMenu
                   ? "border-[#705cff] text-[#a48bff]"
                   : "border-[#26364d] bg-[#07111f]/65 text-white"
@@ -450,7 +452,7 @@ export function LeetcodeProblemTable({
                     type="button"
                     role="menuitemradio"
                     aria-checked={status === value}
-                    className={`flex w-full cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-left text-sm hover:bg-[#121e31] ${
+                    className={`flex w-full cursor-pointer items-center justify-between gap-4 rounded-lg px-3 py-2 text-left text-sm hover:bg-[#121e31] ${
                       status === value ? "bg-[#6747ff]/15 text-[#a48bff]" : "text-slate-300"
                     }`}
                     onClick={() => {
@@ -499,7 +501,9 @@ export function LeetcodeProblemTable({
                   <path d="M15 9h6v6h-6z" />
                 </svg>
                 <span className="text-white">Filter patterns</span>
-                <span className="text-[#9272ff]">{subPatternFilterLabel()}</span>
+                {subPatternFilterLabel() ? (
+                  <span className="text-[#9272ff]">{subPatternFilterLabel()}</span>
+                ) : null}
               </span>
               <span className="text-slate-400">{showPatternMenu ? "⌃" : "⌄"}</span>
             </button>
@@ -531,7 +535,7 @@ export function LeetcodeProblemTable({
                   </label>
 
                   <div className="max-h-72 space-y-1 overflow-y-auto">
-                    {(externalPattern ? [externalPattern] : patternOptions).map((patternOption) => (
+                    {(externalPattern ? [externalPattern] : [allOption, ...patternOptions]).map((patternOption) => (
                       <div
                         key={patternOption}
                         className="flex cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-[#121e31]"
@@ -539,26 +543,41 @@ export function LeetcodeProblemTable({
                         <label className="flex min-w-0 flex-1 cursor-pointer items-center gap-3">
                           <input
                             type="checkbox"
-                            checked={selectedPatterns.includes(patternOption)}
-                            onChange={() => toggleSelectedPattern(patternOption)}
+                            checked={
+                              patternOption === allOption
+                                ? selectedPatterns.length === 0 && selectedSubPatterns.length === 0
+                                : selectedPatterns.includes(patternOption)
+                            }
+                            onChange={() => {
+                              if (patternOption === allOption) {
+                                resetFilters();
+                                return;
+                              }
+
+                              toggleSelectedPattern(patternOption);
+                            }}
                             className="checkbox checkbox-primary checkbox-sm"
                           />
-                          <span className="truncate">{patternOption}</span>
+                          <span className="truncate">
+                            {patternOption === allOption ? "All problems" : patternOption}
+                          </span>
                         </label>
-                        <button
-                          type="button"
-                          aria-label={`Show ${patternOption} minor patterns`}
-                          className={`cursor-pointer rounded-md px-2 py-1 text-lg leading-none ${
-                            activePatternForSubPatterns === patternOption ? "text-[#a48bff]" : ""
-                          }`}
-                          onClick={() =>
-                            setActivePatternForSubPatterns((current) =>
-                              current === patternOption ? null : patternOption,
-                            )
-                          }
-                        >
-                          ›
-                        </button>
+                        {patternOption !== allOption ? (
+                          <button
+                            type="button"
+                            aria-label={`Show ${patternOption} minor patterns`}
+                            className={`cursor-pointer rounded-md px-2 py-1 text-lg leading-none ${
+                              activePatternForSubPatterns === patternOption ? "text-[#a48bff]" : ""
+                            }`}
+                            onClick={() =>
+                              setActivePatternForSubPatterns((current) =>
+                                current === patternOption ? null : patternOption,
+                              )
+                            }
+                          >
+                            ›
+                          </button>
+                        ) : null}
                       </div>
                     ))}
                   </div>

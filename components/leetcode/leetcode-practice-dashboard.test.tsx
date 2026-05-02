@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { LeetcodePracticeDashboard } from "./leetcode-practice-dashboard";
+import { LeetcodePracticeDashboard } from "@/app/(app)/leetcode/allproblems/page";
 import type { LeetcodeProblemRow } from "@/lib/leetcode/types";
 
 const problems: LeetcodeProblemRow[] = [

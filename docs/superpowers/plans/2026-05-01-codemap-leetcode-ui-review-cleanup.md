@@ -10,7 +10,7 @@
 ## Review Findings
 
 1. `leetcode-problem-table.tsx` exports shared row types and owns too many unrelated helpers.
-2. `/leetcode`, `/leetcode/dashboard`, and `/leetcode/stats` duplicate server-side row shaping and repeatedly filter attempts for every problem.
+2. `/leetcode/allproblems`, `/leetcode/dashboard`, and `/leetcode/stats` duplicate server-side row shaping and repeatedly filter attempts for every problem.
 3. LeetCode pages duplicate duration/date/percentage helpers and badge tone mappings.
 4. Dropdowns in `AppShell` and the problem table use always-mounted document listeners and minimal ARIA state.
 5. Dashboard derived data recomputes avoidable arrays and filters on every render.

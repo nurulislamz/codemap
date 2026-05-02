@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import LeetcodeDashboardLoading from "./dashboard/loading";
-import LeetcodeLoading from "./loading";
+import LeetcodeLoading from "./allproblems/loading";
 import LeetcodeStatsLoading from "./stats/loading";
 
 describe("LeetCode loading screens", () => {

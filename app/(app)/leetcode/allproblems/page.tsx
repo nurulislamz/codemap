@@ -3,13 +3,13 @@
 import { useMemo, useState } from "react";
 import {
   LeetcodeProblemTable,
-} from "./leetcode-problem-table";
+} from "@/components/leetcode/leetcode-problem-table";
 import type {
   LeetcodeAttemptRow,
   LeetcodeProblemRow,
   SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
-import { CodeIcon, LeetcodeHeroPanel, LeetcodePanel, LeetcodeStatCard } from "./leetcode-ui";
+import { CodeIcon, LeetcodeHeroPanel, LeetcodePanel, LeetcodeStatCard } from "@/components/leetcode/leetcode-ui";
 
 type LeetcodePracticeDashboardProps = {
   problems: LeetcodeProblemRow[];
