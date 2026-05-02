@@ -15,10 +15,12 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Layout
 
-- `src/app` – Next.js routes and API endpoints.
-- `src/backend` – non-UI business logic and integrations (data persistence, AI jobs, cron, email, auth/config helpers).
-- `src/domain` – reusable domain types and pure feature logic.
-- `src/ui` – presentational React components and component tests.
+- `src/app` – thin Next.js route glue: layouts, pages, loading states, and API endpoints.
+- `src/features` – product-area implementation such as auth, app shell, coming-soon pages, and LeetCode UI/data orchestration.
+- `src/backend` – server-only integrations and persistence (Firebase admin access, AI jobs, cron, email, env/config helpers).
+- `src/domain` – reusable pure feature logic that does not depend on React, Next.js, Firebase, or browser APIs.
+- `src/ui` – small shared UI primitives that are reused across features.
+- `src/data` – checked-in static datasets.
 - `src/test` – shared test setup utilities.
 
 ## Crawl4AI Setup (Python Scraper)
