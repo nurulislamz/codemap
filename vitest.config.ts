@@ -6,14 +6,14 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-      "server-only": fileURLToPath(new URL("./src/test/server-only.ts", import.meta.url)),
+      "@": fileURLToPath(new URL(".", import.meta.url)),
+      "server-only": fileURLToPath(new URL("./test/server-only.ts", import.meta.url)),
     },
   },
   test: {
     environment: "jsdom",
     exclude: ["**/node_modules/**", "**/.git/**", "**/.worktrees/**", "tests/e2e/**"],
     globals: true,
-    setupFiles: ["./src/test/setup.ts"],
+    setupFiles: ["./test/setup.ts"],
   },
 });

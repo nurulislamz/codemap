@@ -92,7 +92,7 @@ In local auth/Firestore client code, keep emulator hosts in `.env.local`:
 ```bash
 FIREBASE_AUTH_EMULATOR_HOST=127.0.0.1:9099
 FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
-NEXT_PUBLIC_USE_FIREBASE_AUTH_EMULATOR=true
+DEVELOPMENT_ENV=true
 ```
 
 Use your emulator `projectId` values from `.firebaserc` and your Firebase web config in env:

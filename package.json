@@ -9,6 +9,7 @@
     "build": "next build",
     "start": "next start",
     "firebase:emulators": "firebase emulators:start --only auth,firestore",
+    "auth:local-user": "tsx scripts/firebase/local-auth-user.ts",
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
