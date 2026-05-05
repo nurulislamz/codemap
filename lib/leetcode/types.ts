@@ -14,6 +14,23 @@ export type LeetcodeProblemRow = {
   bestDurationSeconds: number | null;
 };
 
+export type LeetcodeCatalogProblem = Omit<
+  LeetcodeProblemRow,
+  "isCompleted" | "lastAttemptedAt" | "attemptCount" | "bestDurationSeconds"
+>;
+
+export enum LeetcodeProblemDifficultyLabel {
+  Easy = "Easy",
+  Medium = "Medium",
+  Hard = "Hard",
+}
+
+export enum LeetcodeProblemStatusLabel {
+  Completed = "Completed",
+  Attempted = "Attempted",
+  Unattempted = "Unattempted",
+}
+
 export type LeetcodeAttemptRow = {
   attemptId: string;
   problemId: string;
@@ -50,3 +67,8 @@ export type LeetcodePatternSummary = {
   name: string;
   count: number;
 };
+
+export type LeetcodeMinorPatternCountsByPattern = Record<
+  string,
+  LeetcodePatternSummary[]
+>;

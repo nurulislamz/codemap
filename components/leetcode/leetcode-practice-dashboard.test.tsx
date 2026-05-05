@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { AuthProvider } from "@/components/auth/auth-provider";
 import { LeetcodePracticeDashboard } from "./leetcode-practice-dashboard";
@@ -37,10 +37,14 @@ const problems: LeetcodeProblemRow[] = [
 ];
 
 describe("LeetcodePracticeDashboard", () => {
-  it("uses the top search and keeps pattern filters in the table toolbar", () => {
+  it("renders the selected pattern from server state and keeps pattern filters in the table toolbar", () => {
     render(
       <AuthProvider>
-        <LeetcodePracticeDashboard problems={problems} attempts={[]} />
+        <LeetcodePracticeDashboard
+          problems={problems}
+          attempts={[]}
+          selectedPattern="Two Pointer"
+        />
       </AuthProvider>,
     );
 
@@ -50,7 +54,7 @@ describe("LeetcodePracticeDashboard", () => {
     expect(screen.getByText("Filter patterns")).toBeInTheDocument();
     expect(screen.queryByText("Minor pattern")).not.toBeInTheDocument();
     expect(
-      screen.getByRole("button", { name: /All Problems 2/ }),
+      screen.getByRole("link", { name: /All Problems 2/ }),
     ).toBeInTheDocument();
     expect(screen.getByRole("row", { name: /11 Container With Most Water/ })).toBeInTheDocument();
     expect(
@@ -58,12 +62,18 @@ describe("LeetcodePracticeDashboard", () => {
         name: /3 Longest Substring Without Repeating Characters/,
       }),
     ).not.toBeInTheDocument();
+  });
 
-    fireEvent.click(screen.getByRole("button", { name: /All Problems 2/ }));
-
-    fireEvent.change(screen.getByPlaceholderText("Search problems..."), {
-      target: { value: "longest" },
-    });
+  it("renders the search query from server state", () => {
+    render(
+      <AuthProvider>
+        <LeetcodePracticeDashboard
+          problems={problems}
+          attempts={[]}
+          query="longest"
+        />
+      </AuthProvider>,
+    );
 
     expect(
       screen.getByRole("row", {

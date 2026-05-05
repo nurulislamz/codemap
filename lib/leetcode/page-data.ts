@@ -1,10 +1,11 @@
 import "server-only";
 
 import { UnauthorizedError, getRequestUserId } from "@/lib/auth/identity";
-import { getLeetcodePatternTree } from "@/lib/leetcode/leetcode-patterns";
+import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import { getAllLeetCodeAttempts } from "./db-server";
 import type {
   LeetcodeAttemptRow,
+  LeetcodeMinorPatternCountsByPattern,
   LeetcodePatternSummary,
   LeetcodeProblemRow,
 } from "@/lib/leetcode/types";
@@ -21,10 +22,11 @@ function bestSuccessfulDuration(
 
 export async function getLeetcodePageData(): Promise<{
   patterns: LeetcodePatternSummary[];
+  minorPatternsByPattern: LeetcodeMinorPatternCountsByPattern;
   problems: LeetcodeProblemRow[];
   attempts: LeetcodeAttemptRow[];
 }> {
-  const patternTree = getLeetcodePatternTree();
+  const catalog = getLeetcodeCatalog();
   const userId = await getOptionalRequestUserId();
   const remoteAttempts = userId ? await getAllLeetCodeAttempts(userId) : [];
   const sortedAttempts = remoteAttempts.toSorted(
@@ -39,37 +41,23 @@ export async function getLeetcodePageData(): Promise<{
     ]);
   }
 
-  const problems: LeetcodeProblemRow[] = patternTree.flatMap((pattern) =>
-    pattern.subPatterns.flatMap((subPattern) =>
-      subPattern.problems.map((problem) => {
-        const problemAttempts = attemptsByProblemId.get(problem.number) ?? [];
-        const latestAttempt = problemAttempts[0];
+  const problems: LeetcodeProblemRow[] = catalog.problems.map((problem) => {
+    const problemAttempts = attemptsByProblemId.get(problem.number) ?? [];
+    const latestAttempt = problemAttempts[0];
 
-        return {
-          number: problem.number,
-          title: problem.title,
-          difficulty: problem.difficulty,
-          pattern: pattern.topPattern,
-          subPattern: subPattern.subPattern,
-          leetcodeUrl: problem.leetcodeUrl,
-          estimatedMinutes: problem.estimatedMinutes,
-          solutionUrl: problem.solutions?.neetcode?.textUrl,
-          solutionVideoUrl: problem.solutions?.neetcode?.videoUrl,
-          isCompleted: problemAttempts.some((attempt) => attempt.isSuccessful),
-          lastAttemptedAt: latestAttempt?.endedAt ?? null,
-          attemptCount: problemAttempts.length,
-          bestDurationSeconds: bestSuccessfulDuration(problemAttempts),
-        };
-      }),
-    ),
-  );
-  const problemTitleByNumber = new Map(
-    problems.map((problem) => [problem.number, problem.title]),
-  );
+    return {
+      ...problem,
+      isCompleted: problemAttempts.some((attempt) => attempt.isSuccessful),
+      lastAttemptedAt: latestAttempt?.endedAt ?? null,
+      attemptCount: problemAttempts.length,
+      bestDurationSeconds: bestSuccessfulDuration(problemAttempts),
+    };
+  });
   const attempts: LeetcodeAttemptRow[] = sortedAttempts.map((attempt) => ({
     attemptId: attempt.attemptId,
     problemId: attempt.problemId,
-    problemTitle: problemTitleByNumber.get(attempt.problemId) ?? attempt.problemId,
+    problemTitle:
+      catalog.problemTitleByNumber.get(attempt.problemId) ?? attempt.problemId,
     isSuccessful: attempt.isSuccessful,
     startedAt: attempt.startedAt,
     endedAt: attempt.endedAt,
@@ -77,15 +65,13 @@ export async function getLeetcodePageData(): Promise<{
     notes: attempt.notes,
     failureReason: attempt.failureReason,
   }));
-  const patterns = patternTree.map((pattern) => ({
-    name: pattern.topPattern,
-    count: pattern.subPatterns.reduce(
-      (total, subPattern) => total + subPattern.problems.length,
-      0,
-    ),
-  }));
 
-  return { patterns, problems, attempts };
+  return {
+    patterns: catalog.majorPatternCounts,
+    minorPatternsByPattern: catalog.minorPatternCountsByPattern,
+    problems,
+    attempts,
+  };
 }
 
 async function getOptionalRequestUserId() {

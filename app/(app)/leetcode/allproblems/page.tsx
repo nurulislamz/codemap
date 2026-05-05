@@ -4,13 +4,22 @@ import { getLeetcodePageData } from "@/lib/leetcode/page-data";
 
 export const dynamic = "force-dynamic";
 
-export default async function LeetCodePage() {
-  const { problems, attempts } = await getLeetcodePageData();
+type LeetCodePageProps = {
+  searchParams?: Promise<{
+    pattern?: string;
+    subPattern?: string[];
+    q?: string;
+  }>;
+};
+
+export default async function LeetCodePage({ searchParams }: LeetCodePageProps) {
+  const params = await searchParams;
 
   return (
     <LeetcodePracticeDashboard
-      problems={problems}
-      attempts={attempts}
+      selectedPattern={(params?.pattern) ?? null}
+      selectedSubPatterns={(params?.subPattern) ?? []}
+      query={(params?.q) ?? null}
       saveAttemptAction={saveLeetCodeAttempt}
     />
   );
