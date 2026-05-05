@@ -2,7 +2,7 @@
 
 import { Fragment, useMemo, useRef, useState } from "react";
 
-import { useOutsideClick } from "@/components/shell/use-outside-click";
+import { useOutsideClick } from "@/components/ui/use-outside-click";
 import { LeetcodeAttemptOverlayButton } from "./leetcode-attempt-overlay";
 import { formatAttemptDate, formatSecondsDuration } from "@/lib/leetcode/leetcode-formatters";
 import type {
