@@ -21,8 +21,8 @@ function bestSuccessfulDuration(
 }
 
 export async function getLeetcodePageData(): Promise<{
-  patterns: LeetcodePatternSummary[];
-  minorPatternsByPattern: LeetcodeMinorPatternCountsByPattern;
+  majorPatternCounts: LeetcodePatternSummary[];
+  minorPatternCountsByPattern: LeetcodeMinorPatternCountsByPattern;
   problems: LeetcodeProblemRow[];
   attempts: LeetcodeAttemptRow[];
 }> {
@@ -67,8 +67,8 @@ export async function getLeetcodePageData(): Promise<{
   }));
 
   return {
-    patterns: catalog.majorPatternCounts,
-    minorPatternsByPattern: catalog.minorPatternCountsByPattern,
+    majorPatternCounts: catalog.majorPatternCounts,
+    minorPatternCountsByPattern: catalog.minorPatternCountsByPattern,
     problems,
     attempts,
   };

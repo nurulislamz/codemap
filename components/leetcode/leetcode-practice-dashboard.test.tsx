@@ -36,6 +36,16 @@ const problems: LeetcodeProblemRow[] = [
   },
 ];
 
+const majorPatterns = [
+  { name: "Two Pointer", count: 1 },
+  { name: "Sliding Window", count: 1 },
+];
+
+const minorPatternsByPattern = {
+  "Two Pointer": [{ name: "Converging", count: 1 }],
+  "Sliding Window": [{ name: "Variable Window", count: 1 }],
+};
+
 describe("LeetcodePracticeDashboard", () => {
   it("renders the selected pattern from server state and keeps pattern filters in the table toolbar", () => {
     render(
@@ -43,6 +53,8 @@ describe("LeetcodePracticeDashboard", () => {
         <LeetcodePracticeDashboard
           problems={problems}
           attempts={[]}
+          majorPatterns={majorPatterns}
+          minorPatternsByPattern={minorPatternsByPattern}
           selectedPattern="Two Pointer"
         />
       </AuthProvider>,
@@ -70,6 +82,8 @@ describe("LeetcodePracticeDashboard", () => {
         <LeetcodePracticeDashboard
           problems={problems}
           attempts={[]}
+          majorPatterns={majorPatterns}
+          minorPatternsByPattern={minorPatternsByPattern}
           query="longest"
         />
       </AuthProvider>,

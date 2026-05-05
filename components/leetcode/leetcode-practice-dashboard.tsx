@@ -2,9 +2,9 @@ import Link from "next/link";
 import {
   LeetcodeProblemTable,
 } from "./leetcode-problem-table";
-import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import type {
   LeetcodeAttemptRow,
+  LeetcodeMinorPatternCountsByPattern,
   LeetcodeProblemRow,
   LeetcodePatternSummary,
   LeetcodeProblemDifficultyLabel,
@@ -14,6 +14,10 @@ import type {
 import { CodeIcon, LeetcodeHeroPanel, LeetcodePanel, LeetcodeStatCard } from "./leetcode-ui";
 
 type LeetcodePracticeDashboardProps = {
+  problems: LeetcodeProblemRow[];
+  attempts: LeetcodeAttemptRow[];
+  majorPatterns: LeetcodePatternSummary[];
+  minorPatternsByPattern: LeetcodeMinorPatternCountsByPattern;
   selectedPattern?: string | null;
   selectedSubPatterns?: string[];
   difficulty?: LeetcodeProblemDifficultyLabel | null;
@@ -92,6 +96,10 @@ function validateFilters(
 }
 
 export function LeetcodePracticeDashboard({
+  problems,
+  attempts,
+  majorPatterns,
+  minorPatternsByPattern,
   selectedPattern: selectedPatternInput = null,
   selectedSubPatterns: selectedSubPatternInputs = [],
   difficulty: selectedDifficulty = null,
@@ -99,14 +107,14 @@ export function LeetcodePracticeDashboard({
   query = "",
   saveAttemptAction,
 }: LeetcodePracticeDashboardProps) {
-  const { majorPatternCounts, minorPatternCountsByPattern } = getLeetcodeCatalog();
   const selectedPatternValue = selectedPatternInput ?? null;
-  const normalizedQuery = query.trim().toLowerCase();
+  const queryValue = query ?? "";
+  const normalizedQuery = queryValue.trim().toLowerCase();
   const minorPatterns = selectedPatternValue
-    ? minorPatternCountsByPattern[selectedPatternValue] ?? []
-    : Object.values(minorPatternCountsByPattern).flat();
+    ? minorPatternsByPattern[selectedPatternValue] ?? []
+    : Object.values(minorPatternsByPattern).flat();
   const invalidFilters = validateFilters(
-    majorPatternCounts,
+    majorPatterns,
     minorPatterns,
     selectedPatternInput,
     selectedSubPatternInputs,
@@ -154,7 +162,7 @@ export function LeetcodePracticeDashboard({
     for (const subPattern of subPatterns) {
       params.append("subPattern", subPattern);
     }
-    if (query.trim()) params.set("q", query.trim());
+    if (queryValue.trim()) params.set("q", queryValue.trim());
 
     const search = params.toString();
     return search ? `/leetcode/allproblems?${search}` : "/leetcode/allproblems";
@@ -195,7 +203,7 @@ export function LeetcodePracticeDashboard({
             </svg>
             <input
               name="q"
-              defaultValue={query}
+              defaultValue={queryValue}
               className="grow bg-transparent text-base text-slate-200 outline-none placeholder:text-slate-500"
               placeholder="Search problems..."
             />
@@ -349,7 +357,7 @@ export function LeetcodePracticeDashboard({
               </span>
             </Link>
 
-            {majorPatternCounts.map((pattern) => {
+            {majorPatterns.map((pattern) => {
               const isSelected = pattern.name === selectedPattern;
 
               return (

@@ -13,10 +13,20 @@ type LeetCodePageProps = {
 };
 
 export default async function LeetCodePage({ searchParams }: LeetCodePageProps) {
+  const {
+    problems,
+    attempts,
+    majorPatternCounts,
+    minorPatternCountsByPattern,
+  } = await getLeetcodePageData();
   const params = await searchParams;
 
   return (
     <LeetcodePracticeDashboard
+      problems={problems}
+      attempts={attempts}
+      majorPatterns={majorPatternCounts}
+      minorPatternsByPattern={minorPatternCountsByPattern}
       selectedPattern={(params?.pattern) ?? null}
       selectedSubPatterns={(params?.subPattern) ?? []}
       query={(params?.q) ?? null}
