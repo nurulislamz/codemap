@@ -4,7 +4,7 @@ import dailyTrack from "./daily-track.json";
 import patterns from "./leetcode-patterns.json";
 
 type DailyTrack = Record<string, string[]>;
-type CatalogProblem = string | { number?: string | null };
+type CatalogProblem = { number: string };
 type CatalogPatterns = {
   patterns: Array<{
     subPatterns: Array<{
@@ -20,13 +20,7 @@ function catalogProblemIds(): Set<string> {
   for (const pattern of catalog.patterns) {
     for (const subPattern of pattern.subPatterns) {
       for (const problem of subPattern.problems) {
-        if (typeof problem === "string") {
-          const match = problem.trim().match(/^(\d+)\./);
-          if (match) ids.add(match[1]);
-          continue;
-        }
-
-        if (problem.number) ids.add(problem.number);
+        ids.add(problem.number);
       }
     }
   }

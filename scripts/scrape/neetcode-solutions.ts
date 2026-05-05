@@ -7,7 +7,7 @@ import { promisify } from "node:util";
 
 const execFileAsync = promisify(execFile);
 
-const defaultDataPath = "src/data/leetcode/leetcode-patterns.json";
+const defaultDataPath = "data/leetcode/leetcode-patterns.json";
 const defaultCacheDir = "scripts/scrape/crawl-output/neetcode";
 const defaultReportPath = "scripts/scrape/crawl-output/neetcode-report.json";
 const neetcodeSolutionsBaseUrl = "https://neetcode.io/solutions";
@@ -31,7 +31,7 @@ export interface ProblemEntry {
 
 interface SubPatternEntry {
   name: string;
-  problems: Array<string | ProblemEntry>;
+  problems: ProblemEntry[];
 }
 
 interface PatternEntry {
@@ -275,9 +275,7 @@ function parseNonNegativeInteger(value: string, flag: string): number {
 
 function getProblemEntries(data: LeetcodePatternsData): ProblemEntry[] {
   return data.patterns.flatMap((pattern) =>
-    pattern.subPatterns.flatMap((subPattern) =>
-      subPattern.problems.filter((problem): problem is ProblemEntry => typeof problem !== "string"),
-    ),
+    pattern.subPatterns.flatMap((subPattern) => subPattern.problems),
   );
 }
 

@@ -6,7 +6,12 @@ import {
   progressWidth,
   toPercentage,
 } from "@/lib/leetcode/leetcode-formatters";
-import { getLeetcodePageData } from "@/lib/leetcode/page-data";
+import {
+  getSortedLeetcodeAttemptEventsForRequest,
+  hydrateProblemsWithAttempts,
+  toLeetcodeAttemptRows,
+} from "@/lib/leetcode/attempts";
+import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import { buildLeetcodeStats } from "@/lib/leetcode/leetcode-stats";
 import type { LeetcodeProblemRow } from "@/lib/leetcode/types";
 import {
@@ -152,7 +157,13 @@ function QualityIcon({ tone }: { tone: "accepted" | "reviewed" | "needsWork" }) 
 }
 
 export default async function LeetcodeStatsPage() {
-  const { problems, attempts } = await getLeetcodePageData();
+  const catalog = getLeetcodeCatalog();
+  const attemptEvents = await getSortedLeetcodeAttemptEventsForRequest();
+  const problems = hydrateProblemsWithAttempts(catalog.problems, attemptEvents);
+  const attempts = toLeetcodeAttemptRows(
+    attemptEvents,
+    catalog.problemTitleByNumber,
+  );
   const stats = buildLeetcodeStats(problems, attempts);
   const consistencyDays = buildRecentDisplayDays(stats.consistency.attemptsByDay, 14);
   const maxDailyAttempts = Math.max(1, ...consistencyDays.map((day) => day.attempts));

@@ -25,6 +25,7 @@ type LeetcodeAttemptOverlayButtonProps = {
   className: string;
   lastNotes?: string | null;
   saveAttemptAction?: SaveLeetcodeAttemptAction;
+  onAttemptSaved?: () => void;
   children?: ReactNode;
 };
 
@@ -47,6 +48,7 @@ export function LeetcodeAttemptOverlayButton({
   className,
   lastNotes,
   saveAttemptAction,
+  onAttemptSaved,
   children,
 }: LeetcodeAttemptOverlayButtonProps) {
   const { status: authStatus, getIdToken, signInWithGoogle } = useAuth();
@@ -152,6 +154,7 @@ export function LeetcodeAttemptOverlayButton({
         const idToken = await getIdToken();
 
         await saveAttemptAction({ ...input, idToken });
+        onAttemptSaved?.();
         setIsOpen(false);
         setStartedAt(null);
         setEndedAt(null);

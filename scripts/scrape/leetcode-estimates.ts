@@ -2,7 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const defaultDataPath = "src/data/leetcode/leetcode-patterns.json";
+const defaultDataPath = "data/leetcode/leetcode-patterns.json";
 
 type Difficulty = "easy" | "medium" | "hard";
 
@@ -17,7 +17,7 @@ type ProblemEntry = {
 
 type SubPatternEntry = {
   name: string;
-  problems: Array<string | ProblemEntry>;
+  problems: ProblemEntry[];
 };
 
 type PatternEntry = {
@@ -87,7 +87,6 @@ export function addEstimatedMinutes(data: LeetcodePatternsData): void {
   for (const pattern of data.patterns) {
     for (const subPattern of pattern.subPatterns) {
       for (const problem of subPattern.problems) {
-        if (typeof problem === "string") continue;
         problem.estimatedMinutes = estimateProblemMinutes({
           title: problem.title ?? "",
           difficulty: normalizeDifficulty(problem.difficulty),
@@ -169,7 +168,7 @@ function summarizeEstimates(data: LeetcodePatternsData): {
   const estimates = data.patterns.flatMap((pattern) =>
     pattern.subPatterns.flatMap((subPattern) =>
       subPattern.problems.flatMap((problem) =>
-        typeof problem === "string" || typeof problem.estimatedMinutes !== "number"
+        typeof problem.estimatedMinutes !== "number"
           ? []
           : [problem.estimatedMinutes],
       ),

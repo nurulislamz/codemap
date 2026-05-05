@@ -1,23 +1,16 @@
-import Link from "next/link";
-import {
-  LeetcodeProblemTable,
-} from "./leetcode-problem-table";
+import { LeetcodePracticeProgressClient } from "./leetcode-practice-progress-client";
 import type {
-  LeetcodeAttemptRow,
-  LeetcodeMinorPatternCountsByPattern,
+  LeetcodePatternGroup,
   LeetcodeProblemRow,
-  LeetcodePatternSummary,
   LeetcodeProblemDifficultyLabel,
   LeetcodeProblemStatusLabel,
   SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
-import { CodeIcon, LeetcodeHeroPanel, LeetcodePanel, LeetcodeStatCard } from "./leetcode-ui";
+import { CodeIcon, LeetcodeHeroPanel } from "./leetcode-ui";
 
 type LeetcodePracticeDashboardProps = {
   problems: LeetcodeProblemRow[];
-  attempts: LeetcodeAttemptRow[];
-  majorPatterns: LeetcodePatternSummary[];
-  minorPatternsByPattern: LeetcodeMinorPatternCountsByPattern;
+  patterns: LeetcodePatternGroup[];
   selectedPattern?: string | null;
   selectedSubPatterns?: string[];
   difficulty?: LeetcodeProblemDifficultyLabel | null;
@@ -26,68 +19,35 @@ type LeetcodePracticeDashboardProps = {
   saveAttemptAction?: SaveLeetcodeAttemptAction;
 };
 
-function SidebarIcon({ kind }: { kind: "all" | "pattern" }) {
-  if (kind === "all") {
-    return (
-      <svg
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-        className="h-5 w-5"
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-      >
-        <path d="M21 8 12 3 3 8l9 5 9-5z" />
-        <path d="M3 16l9 5 9-5" />
-        <path d="M3 12l9 5 9-5" />
-      </svg>
-    );
-  }
-
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-      className="h-5 w-5"
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-    >
-      <circle cx="6" cy="12" r="2" />
-      <circle cx="18" cy="6" r="2" />
-      <circle cx="18" cy="18" r="2" />
-      <path d="m8 11 8-4" />
-      <path d="m8 13 8 4" />
-    </svg>
-  );
-}
-
 type InvalidLeetcodeFilter = {
   type: "pattern" | "subPattern";
   value: string;
 };
 
 function validateFilters(
-  majorPatterns: LeetcodePatternSummary[],
-  minorPatterns: LeetcodePatternSummary[],
+  patterns: LeetcodePatternGroup[],
   selectedPatternInput: string | null,
   selectedSubPatternInputs: string[],
 ): InvalidLeetcodeFilter[] {
   const invalidFilters: InvalidLeetcodeFilter[] = [];
+  const selectedPattern = selectedPatternInput
+    ? patterns.find((pattern) => pattern.name === selectedPatternInput)
+    : null;
 
-  if (
-    selectedPatternInput &&
-    !majorPatterns.some((pattern) => pattern.name === selectedPatternInput)
-  ) {
+  if (selectedPatternInput && !selectedPattern) {
     invalidFilters.push({ type: "pattern", value: selectedPatternInput });
   }
 
+  const validSubPatterns = new Set(
+    selectedPattern
+      ? selectedPattern.subPatterns.map((subPattern) => subPattern.name)
+      : patterns.flatMap((pattern) =>
+          pattern.subPatterns.map((subPattern) => subPattern.name),
+        ),
+  );
+
   for (const subPattern of selectedSubPatternInputs) {
-    if (!minorPatterns.some((pattern) => pattern.name === subPattern)) {
+    if (!validSubPatterns.has(subPattern)) {
       invalidFilters.push({ type: "subPattern", value: subPattern });
     }
   }
@@ -97,25 +57,16 @@ function validateFilters(
 
 export function LeetcodePracticeDashboard({
   problems,
-  attempts,
-  majorPatterns,
-  minorPatternsByPattern,
+  patterns,
   selectedPattern: selectedPatternInput = null,
   selectedSubPatterns: selectedSubPatternInputs = [],
-  difficulty: selectedDifficulty = null,
-  status: selectedStatus = null,
   query = "",
   saveAttemptAction,
 }: LeetcodePracticeDashboardProps) {
   const selectedPatternValue = selectedPatternInput ?? null;
   const queryValue = query ?? "";
-  const normalizedQuery = queryValue.trim().toLowerCase();
-  const minorPatterns = selectedPatternValue
-    ? minorPatternsByPattern[selectedPatternValue] ?? []
-    : Object.values(minorPatternsByPattern).flat();
   const invalidFilters = validateFilters(
-    majorPatterns,
-    minorPatterns,
+    patterns,
     selectedPatternInput,
     selectedSubPatternInputs,
   );
@@ -135,39 +86,6 @@ export function LeetcodePracticeDashboard({
     .map((filter) => filter.value);
   const selectedPattern = hasInvalidFilters ? null : selectedPatternValue;
   const selectedSubPatterns = hasInvalidFilters ? [] : selectedSubPatternInputs;
-  const basePatternProblems = selectedPattern
-    ? problems.filter((problem) => problem.pattern === selectedPattern)
-    : problems;
-  const patternProblems = selectedSubPatterns.length > 0
-    ? basePatternProblems.filter((problem) =>
-        selectedSubPatterns.includes(problem.subPattern),
-      )
-    : basePatternProblems;
-
-  const completedCount = problems.filter((problem) => problem.isCompleted).length;
-  const attemptedCount = problems.filter((problem) => problem.attemptCount > 0).length;
-  const dueCount = patternProblems.filter((problem) => !problem.isCompleted).length;
-  const tableProblems = normalizedQuery
-    ? patternProblems.filter(
-        (problem) =>
-          problem.title.toLowerCase().includes(normalizedQuery) ||
-          problem.number.includes(normalizedQuery),
-      )
-    : patternProblems;
-  
-  function filterHref(pattern: string | null, subPatterns: string[] = []) {
-    const params = new URLSearchParams();
-
-    if (pattern) params.set("pattern", pattern);
-    for (const subPattern of subPatterns) {
-      params.append("subPattern", subPattern);
-    }
-    if (queryValue.trim()) params.set("q", queryValue.trim());
-
-    const search = params.toString();
-    return search ? `/leetcode/allproblems?${search}` : "/leetcode/allproblems";
-  }
-
   return (
     <div className="space-y-5">
       <LeetcodeHeroPanel
@@ -214,102 +132,6 @@ export function LeetcodePracticeDashboard({
         </form>
       </LeetcodeHeroPanel>
 
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        <LeetcodeStatCard
-          label="Total Problems"
-          value={problems.length}
-          note="All available problems"
-          tone="primary"
-          icon={
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              className="h-7 w-7"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            >
-              <path d="M8 6h11" />
-              <path d="M8 12h11" />
-              <path d="M8 18h11" />
-              <path d="M3 6h.01" />
-              <path d="M3 12h.01" />
-              <path d="M3 18h.01" />
-            </svg>
-          }
-        />
-        <LeetcodeStatCard
-          label="Completed"
-          value={completedCount}
-          note={completedCount > 0 ? "Keep solving to grow" : "Keep solving to grow"}
-          tone="success"
-          icon={
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              className="h-8 w-8"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            >
-              <path d="m9 12 2 2 4-5" />
-              <circle cx="12" cy="12" r="9" />
-            </svg>
-          }
-        />
-        <LeetcodeStatCard
-          label="Attempted"
-          value={attemptedCount}
-          note={attemptedCount > 0 ? "Problems touched" : "Start your first problem"}
-          tone="info"
-          icon={
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              className="h-8 w-8"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            >
-              <path d="M3 17 9 11l4 4 8-8" />
-              <path d="M14 7h7v7" />
-            </svg>
-          }
-        />
-        <LeetcodeStatCard
-          label="Due Today"
-          value={dueCount}
-          note="Keep your streak going"
-          tone="warning"
-          icon={
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              className="h-8 w-8"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            >
-              <path d="M8 2v4" />
-              <path d="M16 2v4" />
-              <rect x="3" y="4" width="18" height="18" rx="2" />
-              <path d="M3 10h18" />
-              <path d="M8 14h.01" />
-              <path d="M12 14h.01" />
-              <path d="M16 14h.01" />
-            </svg>
-          }
-        />
-      </section>
-
       {hasUnknownPattern ? (
         <div
           role="alert"
@@ -328,78 +150,14 @@ export function LeetcodePracticeDashboard({
         </div>
       ) : null}
 
-      <div className="grid gap-4 xl:grid-cols-[21rem_minmax(0,1fr)]">
-        <LeetcodePanel className="p-5">
-          <h2 className="mb-4 text-lg font-extrabold text-white">Major Patterns</h2>
-
-          <div className="space-y-2">
-            <Link
-              href={filterHref(null)}
-              aria-label={`All Problems ${problems.length}`}
-              className={`flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm transition ${
-                selectedPattern === null
-                  ? "bg-[#6747ff] text-white shadow-lg shadow-[#6747ff]/30"
-                  : "text-slate-300 hover:bg-[#121e31]"
-              }`}
-            >
-              <span className="flex min-w-0 items-center gap-3">
-                <SidebarIcon kind="all" />
-                <span className="font-semibold">All Problems</span>
-              </span>
-              <span
-                className={`rounded-full border px-2.5 py-0.5 text-xs font-semibold ${
-                  selectedPattern === null
-                    ? "border-white/15 bg-white/10 text-white"
-                    : "border-[#24344b] bg-[#0a1422] text-slate-400"
-                }`}
-              >
-                  {problems.length}
-              </span>
-            </Link>
-
-            {majorPatterns.map((pattern) => {
-              const isSelected = pattern.name === selectedPattern;
-
-              return (
-                <Link
-                  key={pattern.name}
-                  href={filterHref(pattern.name)}
-                  aria-label={`${pattern.name} ${pattern.count}`}
-                  className={`flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm transition ${
-                    isSelected
-                      ? "bg-[#6747ff] text-white shadow-lg shadow-[#6747ff]/30"
-                      : "text-slate-300 hover:bg-[#121e31]"
-                  }`}
-                >
-                  <span className="flex min-w-0 items-center gap-3">
-                    <SidebarIcon kind="pattern" />
-                    <span className="truncate font-semibold">{pattern.name}</span>
-                  </span>
-                  <span
-                    className={`rounded-full border px-2.5 py-0.5 text-xs font-semibold ${
-                      isSelected
-                        ? "border-white/15 bg-white/10 text-white"
-                        : "border-[#24344b] bg-[#0a1422] text-slate-400"
-                    }`}
-                  >
-                    {pattern.count}
-                  </span>
-                </Link>
-              );
-            })}
-          </div>
-
-        </LeetcodePanel>
-
-        <main className="min-w-0 space-y-4">
-          <LeetcodeProblemTable
-            problems={tableProblems}
-            attempts={attempts}
-            externalPattern={selectedPattern}
-            saveAttemptAction={saveAttemptAction}
-          />
-        </main>
-      </div>
+      <LeetcodePracticeProgressClient
+        problems={problems}
+        patterns={patterns}
+        initialSelectedPattern={selectedPattern}
+        initialSelectedSubPatterns={selectedSubPatterns}
+        query={queryValue}
+        saveAttemptAction={saveAttemptAction}
+      />
     </div>
   );
 }

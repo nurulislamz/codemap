@@ -1,8 +1,6 @@
 import { saveLeetCodeAttempt } from "@/lib/leetcode/actions";
 import { LeetcodePracticeDashboard } from "@/components/leetcode/leetcode-practice-dashboard";
-import { getLeetcodePageData } from "@/lib/leetcode/page-data";
-
-export const dynamic = "force-dynamic";
+import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 
 type LeetCodePageProps = {
   searchParams?: Promise<{
@@ -13,20 +11,13 @@ type LeetCodePageProps = {
 };
 
 export default async function LeetCodePage({ searchParams }: LeetCodePageProps) {
-  const {
-    problems,
-    attempts,
-    majorPatternCounts,
-    minorPatternCountsByPattern,
-  } = await getLeetcodePageData();
+  const { problems, patternGroups } = getLeetcodeCatalog();
   const params = await searchParams;
 
   return (
     <LeetcodePracticeDashboard
       problems={problems}
-      attempts={attempts}
-      majorPatterns={majorPatternCounts}
-      minorPatternsByPattern={minorPatternCountsByPattern}
+      patterns={patternGroups}
       selectedPattern={(params?.pattern) ?? null}
       selectedSubPatterns={(params?.subPattern) ?? []}
       query={(params?.q) ?? null}

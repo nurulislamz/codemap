@@ -1,11 +1,22 @@
 import { saveLeetCodeAttempt } from "@/lib/leetcode/actions";
 import { LeetcodeDashboardClient } from "@/components/leetcode/leetcode-dashboard-client";
-import { getLeetcodePageData } from "@/lib/leetcode/page-data";
+import {
+  getSortedLeetcodeAttemptEventsForRequest,
+  hydrateProblemsWithAttempts,
+  toLeetcodeAttemptRows,
+} from "@/lib/leetcode/attempts";
+import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 
 export const dynamic = "force-dynamic";
 
 export default async function LeetcodeDashboardPage() {
-  const { problems, attempts } = await getLeetcodePageData();
+  const catalog = getLeetcodeCatalog();
+  const attemptEvents = await getSortedLeetcodeAttemptEventsForRequest();
+  const problems = hydrateProblemsWithAttempts(catalog.problems, attemptEvents);
+  const attempts = toLeetcodeAttemptRows(
+    attemptEvents,
+    catalog.problemTitleByNumber,
+  );
 
   return (
     <LeetcodeDashboardClient

@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
 
-import { normalizeLeetcodeProblem } from "./leetcode-patterns";
+import {
+  assertRawLeetcodePatterns,
+  normalizeLeetcodeProblem,
+} from "./catalog";
 
 describe("normalizeLeetcodeProblem", () => {
   it("keeps optional NeetCode solution links from object entries", () => {
@@ -29,5 +32,23 @@ describe("normalizeLeetcodeProblem", () => {
         },
       },
     });
+  });
+
+  it("rejects string problem entries in catalog data", () => {
+    expect(() =>
+      assertRawLeetcodePatterns({
+        patterns: [
+          {
+            name: "Two Pointer",
+            subPatterns: [
+              {
+                name: "Converging",
+                problems: ["11. Container With Most Water"],
+              },
+            ],
+          },
+        ],
+      }),
+    ).toThrow(/non-object problem/);
   });
 });

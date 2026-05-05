@@ -18,6 +18,7 @@ type LeetcodeProblemTableProps = {
   searchQuery?: string;
   onSearchQueryChange?: (query: string) => void;
   saveAttemptAction?: SaveLeetcodeAttemptAction;
+  onAttemptSaved?: () => void;
 };
 
 type ProblemSort = "default" | "az" | "za";
@@ -145,6 +146,7 @@ export function LeetcodeProblemTable({
   searchQuery,
   onSearchQueryChange,
   saveAttemptAction,
+  onAttemptSaved,
 }: LeetcodeProblemTableProps) {
   const patternMenuRef = useRef<HTMLDivElement>(null);
   const difficultyMenuRef = useRef<HTMLDivElement>(null);
@@ -827,6 +829,7 @@ export function LeetcodeProblemTable({
                         problem={problem}
                         lastNotes={latestAttemptNotes(problemAttempts)}
                         saveAttemptAction={saveAttemptAction}
+                        onAttemptSaved={onAttemptSaved}
                         className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#6747ff] px-8 text-base font-bold text-white shadow-lg shadow-[#6747ff]/25 transition hover:bg-[#775bff]"
                       >
                         Start

@@ -1,23 +1,14 @@
 export type LeetcodeProblemRow = {
   number: string;
   title: string;
-  difficulty: "easy" | "medium" | "hard";
+  difficulty: LeetcodeProblemDifficultyLabel;
   pattern: string;
   subPattern: string;
   leetcodeUrl: string;
   estimatedMinutes: number;
   solutionUrl?: string;
   solutionVideoUrl?: string;
-  isCompleted: boolean;
-  lastAttemptedAt: string | null;
-  attemptCount: number;
-  bestDurationSeconds: number | null;
 };
-
-export type LeetcodeCatalogProblem = Omit<
-  LeetcodeProblemRow,
-  "isCompleted" | "lastAttemptedAt" | "attemptCount" | "bestDurationSeconds"
->;
 
 export enum LeetcodeProblemDifficultyLabel {
   Easy = "Easy",
@@ -68,7 +59,6 @@ export type LeetcodePatternSummary = {
   count: number;
 };
 
-export type LeetcodeMinorPatternCountsByPattern = Record<
-  string,
-  LeetcodePatternSummary[]
->;
+export type LeetcodePatternGroup = LeetcodePatternSummary & {
+  subPatterns: LeetcodePatternSummary[];
+};
