@@ -1,12 +1,15 @@
 import { LeetcodePracticeProgressClient } from "./leetcode-practice-progress-client";
-import type {
+import {
   LeetcodePatternGroup,
   LeetcodeProblemRow,
-  LeetcodeProblemDifficultyLabel,
   LeetcodeProblemStatusLabel,
   SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
+import { LeetcodeProblemDifficultyLabel } from "@/lib/leetcode/types";
 import { CodeIcon, LeetcodeHeroPanel } from "./leetcode-ui";
+import { redirect } from "next/dist/server/api-utils";
+import { zodDef } from "openai/_vendor/zod-to-json-schema/util.mjs";
+import zod from "zod";
 
 type LeetcodePracticeDashboardProps = {
   problems: LeetcodeProblemRow[];
@@ -24,27 +27,15 @@ type InvalidLeetcodeFilter = {
   value: string;
 };
 
-function isDifficulty(
-  difficulty: string | null,
-): difficulty is LeetcodeProblemDifficultyLabel {
-  return difficulty === "Easy" || difficulty === "Medium" || difficulty === "Hard";
-}
-
 function validateFilters(
   patterns: LeetcodePatternGroup[],
   selectedPatternInput: string | null,
   selectedSubPatternInputs: string[],
   selectedDifficultyInput: string | null,
 ): InvalidLeetcodeFilter[] {
-  const invalidFilters: InvalidLeetcodeFilter[] = [];
   const selectedPattern = selectedPatternInput
     ? patterns.find((pattern) => pattern.name === selectedPatternInput)
     : null;
-
-  if (selectedPatternInput && !selectedPattern) {
-    invalidFilters.push({ type: "pattern", value: selectedPatternInput });
-  }
-
   const validSubPatterns = new Set(
     selectedPattern
       ? selectedPattern.subPatterns.map((subPattern) => subPattern.name)
@@ -52,6 +43,36 @@ function validateFilters(
           pattern.subPatterns.map((subPattern) => subPattern.name),
         ),
   );
+  const difficultySchema = zod
+    .enum(LeetcodeProblemDifficultyLabel)
+    .nullable();
+
+  const filterSchema = zod
+    .object({
+      selectedPattern: zod
+        .string()
+        .nullable()
+        .refine((pattern) => !pattern || Boolean(selectedPattern)),
+      selectedSubPatterns: zod.array(
+        zod.string().refine((subPattern) => validSubPatterns.has(subPattern)),
+      ),
+      selectedDifficulty: difficultySchema,
+    })
+    .strict();
+
+  const filters = {
+    selectedPattern: selectedPatternInput,
+    selectedSubPatterns: selectedSubPatternInputs,
+    selectedDifficulty: selectedDifficultyInput,
+  };
+
+  if (filterSchema.safeParse(filters).success) return [];
+
+  const invalidFilters: InvalidLeetcodeFilter[] = [];
+
+  if (selectedPatternInput && !selectedPattern) {
+    invalidFilters.push({ type: "pattern", value: selectedPatternInput });
+  }
 
   for (const subPattern of selectedSubPatternInputs) {
     if (!validSubPatterns.has(subPattern)) {
@@ -59,53 +80,42 @@ function validateFilters(
     }
   }
 
-  if (selectedDifficultyInput && !isDifficulty(selectedDifficultyInput)) {
+  if (
+    selectedDifficultyInput &&
+    !difficultySchema.safeParse(selectedDifficultyInput).success
+  ) {
     invalidFilters.push({ type: "difficulty", value: selectedDifficultyInput });
   }
 
   return invalidFilters;
 }
 
+function validateQuery(query: string | null) {
+  if (query && query.length > 100) {
+    console.warn(
+      `LeetCode search query is too long (${query.length} characters). Ignoring search query.`,
+    );
+    return null;
+  }
+  return query;
+}
+
 export function LeetcodePracticeDashboard({
   problems,
   patterns,
-  selectedPattern: selectedPatternInput = null,
-  selectedSubPatterns: selectedSubPatternInputs = [],
-  selectedDifficulty: selectedDifficultyInput = null,
+  selectedPattern: selectedPattern = null,
+  selectedSubPatterns: selectedSubPattern = [],
+  selectedDifficulty: selectedDifficulty = null,
   query = "",
   saveAttemptAction,
 }: LeetcodePracticeDashboardProps) {
-  const selectedPatternValue = selectedPatternInput ?? null;
-  const queryValue = query ?? "";
   const invalidFilters = validateFilters(
     patterns,
-    selectedPatternInput,
-    selectedSubPatternInputs,
-    selectedDifficultyInput,
+    selectedPattern,
+    selectedSubPattern,
+    selectedDifficulty,
   );
 
-  if (invalidFilters.length > 0) {
-    console.warn(
-      `Invalid LeetCode filters detected. Rendering all problems instead: ${invalidFilters
-        .map((filter) => `${filter.type}=${filter.value}`)
-        .join(", ")}`,
-    );
-  }
-
-  const hasInvalidFilters = invalidFilters.length > 0;
-  const hasUnknownPattern = invalidFilters.some((filter) => filter.type === "pattern");
-  const unknownSubPatterns = invalidFilters
-    .filter((filter) => filter.type === "subPattern")
-    .map((filter) => filter.value);
-  const hasUnknownDifficulty = invalidFilters.some(
-    (filter) => filter.type === "difficulty",
-  );
-  const selectedPattern = hasInvalidFilters ? null : selectedPatternValue;
-  const selectedSubPatterns = hasInvalidFilters ? [] : selectedSubPatternInputs;
-  const selectedDifficulty =
-    hasInvalidFilters || !isDifficulty(selectedDifficultyInput)
-      ? null
-      : selectedDifficultyInput;
   return (
     <div className="space-y-5">
       <LeetcodeHeroPanel

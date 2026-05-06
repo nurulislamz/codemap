@@ -1,6 +1,7 @@
 import {
   LeetcodeProblemDifficultyLabel,
   type LeetcodeAttemptRow,
+  type LeetcodeProblemProgressRow,
   type LeetcodeProblemRow,
 } from "./types";
 
@@ -63,7 +64,7 @@ const difficulties: Difficulty[] = [
 ];
 
 export function buildLeetcodeStats(
-  problems: LeetcodeProblemRow[],
+  problems: LeetcodeProblemProgressRow[],
   attempts: LeetcodeAttemptRow[],
 ): LeetcodeStats {
   const attemptedProblems = problems.filter((problem) => problem.attemptCount > 0);
@@ -150,7 +151,7 @@ function calculateLatestStreakDays(dates: string[]): number {
 }
 
 function buildDifficultyStats(
-  problems: LeetcodeProblemRow[],
+  problems: LeetcodeProblemProgressRow[],
 ): Record<Difficulty, DifficultyStats> {
   return difficulties.reduce<Record<Difficulty, DifficultyStats>>(
     (stats, difficulty) => {
@@ -176,8 +177,8 @@ function buildDifficultyStats(
   );
 }
 
-function buildPatternStats(problems: LeetcodeProblemRow[]): PatternStats[] {
-  const grouped = new Map<string, LeetcodeProblemRow[]>();
+function buildPatternStats(problems: LeetcodeProblemProgressRow[]): PatternStats[] {
+  const grouped = new Map<string, LeetcodeProblemProgressRow[]>();
 
   for (const problem of problems) {
     grouped.set(problem.pattern, [...(grouped.get(problem.pattern) ?? []), problem]);

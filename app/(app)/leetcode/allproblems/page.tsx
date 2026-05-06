@@ -19,11 +19,10 @@ export default async function LeetCodePage({ searchParams }: LeetCodePageProps) 
     <LeetcodePracticeDashboard
       problems={problems}
       patterns={patternGroups}
-      selectedPattern={(params?.pattern) ?? null}
-      selectedSubPatterns={(params?.subPattern) ?? []}
-      selectedDifficulty={(params?.difficulty) ?? null}
-      query={(params?.q) ?? null}
-      saveAttemptAction={saveLeetCodeAttempt}
-    />
-  );
+      selectedPattern={params?.pattern}
+      selectedSubPatterns={params?.subPattern}
+      selectedDifficulty={params?.difficulty}
+      query={params?.q}
+      saveAttemptAction={saveLeetCodeAttempt}/>
+  )
 }

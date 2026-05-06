@@ -75,7 +75,23 @@ export function normalizeLeetcodeProblem(
 type LeetcodeCatalog = {
   problems: LeetcodeProblemRow[];
   patternGroups: LeetcodePatternGroup[];
-  problemTitleByNumber: Map<string, string>;
+  index: LeetcodeCatalogIndex;
+};
+
+export type LeetcodeCatalogIndex = {
+  patterns: Map<string, LeetcodeCatalogPatternEntry>;
+  problems: Map<string, LeetcodeProblemRow>;
+};
+
+export type LeetcodeCatalogPatternEntry = {
+  group: LeetcodePatternGroup;
+  subPatterns: Map<string, LeetcodeCatalogSubPatternEntry>;
+  problems: LeetcodeProblemRow[];
+};
+
+export type LeetcodeCatalogSubPatternEntry = {
+  summary: LeetcodePatternSummary;
+  problems: LeetcodeProblemRow[];
 };
 
 let cachedCatalog: LeetcodeCatalog | null = null;
@@ -87,22 +103,31 @@ export function getLeetcodeCatalog(): LeetcodeCatalog {
   const data = rawPatterns;
   const problems: LeetcodeProblemRow[] = [];
   const patternGroups: LeetcodePatternGroup[] = [];
+  const index: LeetcodeCatalogIndex = {
+    patterns: new Map(),
+    problems: new Map(),
+  };
 
   for (const pattern of data.patterns) {
     let majorPatternCount = 0;
     const subPatterns: LeetcodePatternSummary[] = [];
+    const patternProblems: LeetcodeProblemRow[] = [];
+    const indexedSubPatterns = new Map<string, LeetcodeCatalogSubPatternEntry>();
 
     for (const subPattern of pattern.subPatterns) {
       majorPatternCount += subPattern.problems.length;
-      subPatterns.push({
+      const summary = {
         name: subPattern.name,
         count: subPattern.problems.length,
-      });
+      };
+      const subPatternProblems: LeetcodeProblemRow[] = [];
+
+      subPatterns.push(summary);
 
       for (const rawProblem of subPattern.problems) {
         const problem = normalizeLeetcodeProblem(rawProblem);
 
-        problems.push({
+        const row = {
           number: problem.number,
           title: problem.title,
           difficulty: problem.difficulty,
@@ -112,27 +137,38 @@ export function getLeetcodeCatalog(): LeetcodeCatalog {
           estimatedMinutes: problem.estimatedMinutes,
           solutionUrl: problem.solutions?.neetcode?.textUrl,
           solutionVideoUrl: problem.solutions?.neetcode?.videoUrl,
-          isCompleted: false,
-          lastAttemptedAt: null,
-          attemptCount: 0,
-          bestDurationSeconds: null,
-        });
+        };
+
+        problems.push(row);
+        patternProblems.push(row);
+        subPatternProblems.push(row);
+        index.problems.set(row.number, row);
       }
+
+      indexedSubPatterns.set(subPattern.name, {
+        summary,
+        problems: subPatternProblems,
+      });
     }
 
-    patternGroups.push({
+    const group = {
       name: pattern.name,
       count: majorPatternCount,
       subPatterns,
+    };
+
+    patternGroups.push(group);
+    index.patterns.set(pattern.name, {
+      group,
+      subPatterns: indexedSubPatterns,
+      problems: patternProblems,
     });
   }
 
   cachedCatalog = {
     problems,
     patternGroups,
-    problemTitleByNumber: new Map(
-      problems.map((problem) => [problem.number, problem.title]),
-    ),
+    index,
   };
 
   return cachedCatalog;

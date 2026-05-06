@@ -18,10 +18,6 @@ const problems: LeetcodeProblemRow[] = [
     estimatedMinutes: 30,
     solutionUrl: "https://neetcode.io/solutions/container-with-most-water",
     solutionVideoUrl: "https://www.youtube.com/watch?v=UuiTKBwPgAo",
-    isCompleted: false,
-    lastAttemptedAt: null,
-    attemptCount: 0,
-    bestDurationSeconds: null,
   },
   {
     number: "3",
@@ -32,10 +28,6 @@ const problems: LeetcodeProblemRow[] = [
     leetcodeUrl:
       "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
     estimatedMinutes: 30,
-    isCompleted: true,
-    lastAttemptedAt: "2026-04-30T12:00:00.000Z",
-    attemptCount: 2,
-    bestDurationSeconds: 960,
   },
 ];
 

@@ -4,10 +4,10 @@ import { buildLeetcodeStats } from "./leetcode-stats";
 import {
   LeetcodeProblemDifficultyLabel,
   type LeetcodeAttemptRow,
-  type LeetcodeProblemRow,
+  type LeetcodeProblemProgressRow,
 } from "./types";
 
-const problems: LeetcodeProblemRow[] = [
+const problems: LeetcodeProblemProgressRow[] = [
   {
     number: "1",
     title: "Two Sum",

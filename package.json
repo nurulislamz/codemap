@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "next dev",
     "dev:local": "concurrently -n firebase,next -c yellow,cyan \"firebase emulators:start --only auth,firestore\" \"next dev\"",
+    "dev:local-signed-in": "concurrently -n firebase,auth,next -c yellow,green,cyan \"firebase emulators:start --only auth,firestore\" \"tsx scripts/firebase/local-auth-user.ts --wait\" \"NEXT_PUBLIC_LOCAL_DEV_AUTO_SIGN_IN=true NEXT_PUBLIC_LOCAL_DEV_AUTH_EMAIL=${LOCAL_DEV_AUTH_EMAIL:-local-owner@codemap.dev} NEXT_PUBLIC_LOCAL_DEV_AUTH_PASSWORD=${LOCAL_DEV_AUTH_PASSWORD:-local-owner-password} next dev\"",
     "build": "next build",
     "start": "next start",
     "firebase:emulators": "firebase emulators:start --only auth,firestore",
     "auth:local-user": "tsx scripts/firebase/local-auth-user.ts",
+    "auth:local-user:wait": "tsx scripts/firebase/local-auth-user.ts --wait",
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",

@@ -7,6 +7,7 @@ import {
   GoogleAuthProvider,
   onAuthStateChanged,
   setPersistence,
+  signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
 } from "firebase/auth";
@@ -55,6 +56,54 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setStatus(nextUser ? "signed-in" : "signed-out");
     });
   }, [auth]);
+
+  useEffect(() => {
+    if (
+      !auth ||
+      status !== "signed-out" ||
+      process.env.NEXT_PUBLIC_LOCAL_DEV_AUTO_SIGN_IN !== "true" ||
+      !process.env.NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_ORIGIN
+    ) {
+      return;
+    }
+
+    let cancelled = false;
+    let retryTimer: ReturnType<typeof setTimeout> | null = null;
+    let attempts = 0;
+    const email =
+      process.env.NEXT_PUBLIC_LOCAL_DEV_AUTH_EMAIL || "local-owner@codemap.dev";
+    const password =
+      process.env.NEXT_PUBLIC_LOCAL_DEV_AUTH_PASSWORD || "local-owner-password";
+
+    const signIn = async () => {
+      attempts += 1;
+
+      try {
+        await setPersistence(auth, browserLocalPersistence);
+        await signInWithEmailAndPassword(auth, email, password);
+      } catch (error) {
+        if (cancelled) {
+          return;
+        }
+
+        if (attempts >= 30) {
+          console.warn("Local dev auto sign-in failed.", error);
+          return;
+        }
+
+        retryTimer = setTimeout(signIn, 500);
+      }
+    };
+
+    void signIn();
+
+    return () => {
+      cancelled = true;
+      if (retryTimer) {
+        clearTimeout(retryTimer);
+      }
+    };
+  }, [auth, status]);
 
   const value = useMemo<AuthContextValue>(() => {
     return {

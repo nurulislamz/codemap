@@ -8,12 +8,13 @@ import { formatAttemptDate, formatSecondsDuration } from "@/lib/leetcode/leetcod
 import type {
   LeetcodeAttemptRow,
   LeetcodeProblemDifficultyLabel,
+  LeetcodeProblemProgressRow,
   LeetcodeProblemRow,
   SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
 
 type LeetcodeProblemTableProps = {
-  problems: LeetcodeProblemRow[];
+  problems: LeetcodeProblemProgressRow[];
   attempts: LeetcodeAttemptRow[];
   externalPattern?: string | null;
   selectedDifficulty?: LeetcodeProblemDifficultyLabel | null;
@@ -37,6 +38,7 @@ type ProgressFilter =
   | "not-started";
 
 const allOption = "all";
+const pageSize = 25;
 
 function uniqueInOrder(values: string[]) {
   return values.filter((value, index) => values.indexOf(value) === index);
@@ -64,7 +66,7 @@ function difficultyStyles(difficulty: LeetcodeProblemRow["difficulty"]) {
   return difficultyStyleByDifficulty[difficulty];
 }
 
-function formatStatus(problem: LeetcodeProblemRow) {
+function formatStatus(problem: LeetcodeProblemProgressRow) {
   if (problem.isCompleted) return "Completed";
   if (problem.attemptCount > 0) return "In progress";
   return "Not started";
@@ -80,13 +82,13 @@ function difficultyRank(difficulty: LeetcodeProblemRow["difficulty"]) {
   return difficultyRankByDifficulty[difficulty];
 }
 
-function progressDotClass(problem: LeetcodeProblemRow) {
+function progressDotClass(problem: LeetcodeProblemProgressRow) {
   if (problem.isCompleted) return "border-[#54eb78] bg-[#54eb78]/20";
   if (problem.attemptCount > 0) return "border-[#8368ff] bg-[#8368ff]/20";
   return "border-slate-500";
 }
 
-function progressTextClass(problem: LeetcodeProblemRow) {
+function progressTextClass(problem: LeetcodeProblemProgressRow) {
   if (problem.isCompleted) return "text-[#54eb78]";
   if (problem.attemptCount > 0) return "text-[#8b68ff]";
   return "text-slate-400";
@@ -174,6 +176,7 @@ export function LeetcodeProblemTable({
   const [problemSort, setProblemSort] = useState<ProblemSort>("default");
   const [difficultySort, setDifficultySort] = useState<DifficultySort>("easy-first");
   const [expandedProblemId, setExpandedProblemId] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
   const query = searchQuery ?? internalQuery;
   const setQuery = onSearchQueryChange ?? setInternalQuery;
   const difficulty =
@@ -233,7 +236,22 @@ export function LeetcodeProblemTable({
     setSelectedSubPatterns([]);
     setActivePatternForSubPatterns(null);
     setShowPatternMenu(false);
+    setCurrentPage(1);
   }, [externalPattern]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+    setExpandedProblemId(null);
+  }, [
+    difficulty,
+    externalPattern,
+    hasVideo,
+    problemSort,
+    query,
+    selectedPatterns,
+    selectedSubPatterns,
+    status,
+  ]);
 
   const filteredProblems = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -285,6 +303,13 @@ export function LeetcodeProblemTable({
     selectedSubPatterns,
     status,
   ]);
+  const pageCount = Math.max(1, Math.ceil(filteredProblems.length / pageSize));
+  const safeCurrentPage = Math.min(currentPage, pageCount);
+  const firstVisibleProblemIndex = (safeCurrentPage - 1) * pageSize;
+  const visibleProblems = filteredProblems.slice(
+    firstVisibleProblemIndex,
+    firstVisibleProblemIndex + pageSize,
+  );
 
   function resetFilters() {
     setQuery("");
@@ -299,6 +324,7 @@ export function LeetcodeProblemTable({
     setProblemSort("default");
     setDifficultySort("easy-first");
     setExpandedProblemId(null);
+    setCurrentPage(1);
   }
 
   function resetPatternFilters() {
@@ -331,6 +357,16 @@ export function LeetcodeProblemTable({
         ? current.filter((item) => item !== subPattern)
         : [...current, subPattern],
     );
+  }
+
+  function goToPreviousPage() {
+    setCurrentPage((page) => Math.max(1, page - 1));
+    setExpandedProblemId(null);
+  }
+
+  function goToNextPage() {
+    setCurrentPage((page) => Math.min(pageCount, page + 1));
+    setExpandedProblemId(null);
   }
 
   function toggleProblemSort() {
@@ -791,7 +827,7 @@ export function LeetcodeProblemTable({
             </tr>
           </thead>
           <tbody>
-            {filteredProblems.map((problem) => {
+            {visibleProblems.map((problem) => {
               const problemAttempts = attemptsByProblemId.get(problem.number) ?? [];
               const isExpanded = expandedProblemId === problem.number;
               const difficulty = difficultyStyles(problem.difficulty);
@@ -983,16 +1019,30 @@ export function LeetcodeProblemTable({
 
         <div className="flex flex-col gap-4 border-t border-[#1b2a3e] px-8 py-5 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            Showing {filteredProblems.length} of {problems.length} problems
+            Showing{" "}
+            {filteredProblems.length > 0
+              ? `${firstVisibleProblemIndex + 1}-${firstVisibleProblemIndex + visibleProblems.length}`
+              : "0"}{" "}
+            of {filteredProblems.length} problems
           </p>
           <div className="join">
-            <button type="button" className="join-item rounded-l-lg border border-[#26364d] px-3 py-1.5 text-slate-600" disabled>
+            <button
+              type="button"
+              className="join-item rounded-l-lg border border-[#26364d] px-3 py-1.5 text-slate-300 disabled:text-slate-600"
+              disabled={safeCurrentPage === 1}
+              onClick={goToPreviousPage}
+            >
               Previous
             </button>
             <button type="button" className="join-item bg-[#6747ff] px-3 py-1.5 font-bold text-white">
-              1
+              {safeCurrentPage}
             </button>
-            <button type="button" className="join-item rounded-r-lg border border-[#26364d] px-3 py-1.5 text-slate-600" disabled>
+            <button
+              type="button"
+              className="join-item rounded-r-lg border border-[#26364d] px-3 py-1.5 text-slate-300 disabled:text-slate-600"
+              disabled={safeCurrentPage === pageCount}
+              onClick={goToNextPage}
+            >
               Next
             </button>
           </div>

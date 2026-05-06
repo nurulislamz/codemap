@@ -4,7 +4,7 @@ import { LeetcodeProblemTable } from "./leetcode-problem-table";
 import {
   LeetcodeProblemDifficultyLabel,
   type LeetcodeAttemptRow,
-  type LeetcodeProblemRow,
+  type LeetcodeProblemProgressRow,
 } from "@/lib/leetcode/types";
 
 const authState = vi.hoisted(() => ({
@@ -22,7 +22,7 @@ vi.mock("@/components/auth/auth-provider", () => ({
   }),
 }));
 
-const problems: LeetcodeProblemRow[] = [
+const problems: LeetcodeProblemProgressRow[] = [
   {
     number: "1",
     title: "Two Sum",

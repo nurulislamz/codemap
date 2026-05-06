@@ -15,7 +15,7 @@ export default async function LeetcodeDashboardPage() {
   const problems = hydrateProblemsWithAttempts(catalog.problems, attemptEvents);
   const attempts = toLeetcodeAttemptRows(
     attemptEvents,
-    catalog.problemTitleByNumber,
+    catalog.index.problems,
   );
 
   return (

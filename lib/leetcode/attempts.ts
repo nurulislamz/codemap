@@ -6,6 +6,7 @@ import type { LeetCodeAttemptEvent } from "@/lib/firebase/leetcode";
 import { getAllLeetCodeAttempts } from "./db-server";
 import type {
   LeetcodeAttemptRow,
+  LeetcodeProblemProgressRow,
   LeetcodeProblemRow,
 } from "@/lib/leetcode/types";
 
@@ -38,13 +39,13 @@ export async function getLeetcodeAttemptRowsForUser(
   const catalog = getLeetcodeCatalog();
   const attempts = await getSortedLeetcodeAttemptEventsForUser(userId);
 
-  return toLeetcodeAttemptRows(attempts, catalog.problemTitleByNumber);
+  return toLeetcodeAttemptRows(attempts, catalog.index.problems);
 }
 
 export function hydrateProblemsWithAttempts(
   problems: LeetcodeProblemRow[],
   attempts: LeetCodeAttemptEvent[],
-): LeetcodeProblemRow[] {
+): LeetcodeProblemProgressRow[] {
   const attemptsByProblemId = groupAttemptsByProblemId(attempts);
 
   return problems.map((problem) => {
@@ -63,12 +64,12 @@ export function hydrateProblemsWithAttempts(
 
 export function toLeetcodeAttemptRows(
   attempts: LeetCodeAttemptEvent[],
-  problemTitleByNumber: Map<string, string>,
+  problemsByNumber: Map<string, LeetcodeProblemRow>,
 ): LeetcodeAttemptRow[] {
   return attempts.map((attempt) => ({
     attemptId: attempt.attemptId,
     problemId: attempt.problemId,
-    problemTitle: problemTitleByNumber.get(attempt.problemId) ?? attempt.problemId,
+    problemTitle: problemsByNumber.get(attempt.problemId)?.title ?? attempt.problemId,
     isSuccessful: attempt.isSuccessful,
     startedAt: attempt.startedAt,
     endedAt: attempt.endedAt,

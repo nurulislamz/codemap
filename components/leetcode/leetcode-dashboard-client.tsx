@@ -7,13 +7,14 @@ import { formatMinutesDuration } from "@/lib/leetcode/leetcode-formatters";
 import {
   LeetcodeProblemDifficultyLabel,
   type LeetcodeAttemptRow,
+  type LeetcodeProblemProgressRow,
   type LeetcodeProblemRow,
   type SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
 import { LeetcodePanel } from "./leetcode-ui";
 
 type LeetcodeDashboardClientProps = {
-  problems: LeetcodeProblemRow[];
+  problems: LeetcodeProblemProgressRow[];
   attempts: LeetcodeAttemptRow[];
   saveAttemptAction?: SaveLeetcodeAttemptAction;
 };
@@ -66,7 +67,7 @@ function difficultyClasses(difficulty: LeetcodeProblemRow["difficulty"]) {
   }
 }
 
-function statusForProblem(problem: LeetcodeProblemRow) {
+function statusForProblem(problem: LeetcodeProblemProgressRow) {
   if (problem.isCompleted) {
     return {
       label: "Review",

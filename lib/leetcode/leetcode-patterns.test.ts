@@ -61,4 +61,18 @@ describe("normalizeLeetcodeProblem", () => {
       LeetcodeProblemDifficultyLabel.Medium,
     );
   });
+
+  it("builds a hierarchical catalog index for patterns and problems", () => {
+    const catalog = getLeetcodeCatalog();
+
+    const twoPointer = catalog.index.patterns.get("Two Pointer");
+    const converging = twoPointer?.subPatterns.get("Converging");
+    const container = catalog.index.problems.get("11");
+
+    expect(twoPointer?.problems.some((problem) => problem.number === "11")).toBe(
+      true,
+    );
+    expect(converging?.problems.map((problem) => problem.number)).toContain("11");
+    expect(container?.title).toBe("Container With Most Water");
+  });
 });

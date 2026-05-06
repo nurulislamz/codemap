@@ -1,9 +1,9 @@
 "use client";
 
-import type { LeetcodeProblemRow } from "@/lib/leetcode/types";
+import type { LeetcodeProblemProgressRow } from "@/lib/leetcode/types";
 
 type LeetcodePracticeSummaryProps = {
-  problems: LeetcodeProblemRow[];
+  problems: LeetcodeProblemProgressRow[];
 };
 
 export function LeetcodePracticeSummary({ problems }: LeetcodePracticeSummaryProps) {

@@ -166,7 +166,7 @@ export default async function LeetcodeStatsPage() {
   const problems = hydrateProblemsWithAttempts(catalog.problems, attemptEvents);
   const attempts = toLeetcodeAttemptRows(
     attemptEvents,
-    catalog.problemTitleByNumber,
+    catalog.index.problems,
   );
   const stats = buildLeetcodeStats(problems, attempts);
   const consistencyDays = buildRecentDisplayDays(stats.consistency.attemptsByDay, 14);

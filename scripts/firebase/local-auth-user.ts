@@ -18,6 +18,7 @@ async function main() {
   loadEnvFile(".env.local", { overrideLoadedValues: false });
   loadEnvFile(".env.development.local", { overrideLoadedValues: true });
 
+  const waitForEmulator = process.argv.includes("--wait");
   const email = process.env.LOCAL_DEV_AUTH_EMAIL || defaultEmail;
   const password = process.env.LOCAL_DEV_AUTH_PASSWORD || defaultPassword;
   const authHost = normalizeAuthHost(
@@ -26,12 +27,36 @@ async function main() {
   const apiKey = process.env.NEXT_PUBLIC_FIREBASE_API_KEY || "demo";
   const baseUrl = `http://${authHost}/identitytoolkit.googleapis.com/v1`;
 
+  if (waitForEmulator) {
+    await waitForAuthEmulator(baseUrl, apiKey);
+  }
+
   const result = await createOrSignInLocalUser({ baseUrl, apiKey, email, password });
 
   console.log(`Firebase auth emulator user ready`);
   console.log(`email: ${result.email ?? email}`);
   console.log(`uid: ${result.localId}`);
   console.log(`idToken: ${result.idToken}`);
+}
+
+async function waitForAuthEmulator(baseUrl: string, apiKey: string) {
+  const deadline = Date.now() + 30_000;
+  const url = `${baseUrl}/accounts:signInWithPassword?key=${apiKey}`;
+
+  while (Date.now() < deadline) {
+    try {
+      await postAuth(url, {
+        email: "wait-for-auth-emulator@codemap.dev",
+        password: "not-a-real-password",
+        returnSecureToken: true,
+      });
+      return;
+    } catch {
+      await new Promise((resolve) => setTimeout(resolve, 500));
+    }
+  }
+
+  throw new Error("Timed out waiting for Firebase auth emulator.");
 }
 
 async function createOrSignInLocalUser(input: {

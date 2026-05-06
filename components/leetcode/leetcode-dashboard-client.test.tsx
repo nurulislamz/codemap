@@ -5,10 +5,10 @@ import { LeetcodeDashboardClient } from "./leetcode-dashboard-client";
 import {
   LeetcodeProblemDifficultyLabel,
   type LeetcodeAttemptRow,
-  type LeetcodeProblemRow,
+  type LeetcodeProblemProgressRow,
 } from "@/lib/leetcode/types";
 
-const problems: LeetcodeProblemRow[] = [
+const problems: LeetcodeProblemProgressRow[] = [
   {
     number: "3",
     title: "Longest Substring Without Repeating Characters",

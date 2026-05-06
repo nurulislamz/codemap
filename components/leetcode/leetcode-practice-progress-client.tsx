@@ -8,6 +8,7 @@ import { LeetcodePanel, LeetcodeStatCard } from "./leetcode-ui";
 import type {
   LeetcodeAttemptRow,
   LeetcodeProblemDifficultyLabel,
+  LeetcodeProblemProgressRow,
   LeetcodePatternGroup,
   LeetcodeProblemRow,
   SaveLeetcodeAttemptAction,
@@ -54,7 +55,7 @@ function attemptsByProblemId(attempts: LeetcodeAttemptRow[]) {
 function hydrateProblems(
   problems: LeetcodeProblemRow[],
   attempts: LeetcodeAttemptRow[],
-) {
+): LeetcodeProblemProgressRow[] {
   const groupedAttempts = attemptsByProblemId(attempts);
 
   return problems.map((problem) => {
@@ -177,12 +178,16 @@ export function LeetcodePracticeProgressClient({
     cachedAttemptUser === user?.uid && cachedAttempts ? cachedAttempts : [],
   );
 
+  const hydratedProblems = useMemo(
+    () => hydrateProblems(problems, attempts),
+    [attempts, problems],
+  );
   const selectedPatternProblems = useMemo(
     () =>
       selectedPattern
-        ? problems.filter((problem) => problem.pattern === selectedPattern)
-        : problems,
-    [problems, selectedPattern],
+        ? hydratedProblems.filter((problem) => problem.pattern === selectedPattern)
+        : hydratedProblems,
+    [hydratedProblems, selectedPattern],
   );
   const validSelectedSubPatterns = useMemo(() => {
     const minorPatterns = selectedPattern
@@ -286,22 +291,9 @@ export function LeetcodePracticeProgressClient({
     return () => window.removeEventListener("popstate", handlePopState);
   }, [patterns]);
 
-  const hydratedProblems = useMemo(
-    () => hydrateProblems(problems, attempts),
-    [attempts, problems],
-  );
-  const hydratedPatternProblems = useMemo(
-    () => hydrateProblems(patternProblems, attempts),
-    [attempts, patternProblems],
-  );
-  const hydratedTableProblems = useMemo(
-    () => hydrateProblems(tableProblems, attempts),
-    [attempts, tableProblems],
-  );
-
   const completedCount = hydratedProblems.filter((problem) => problem.isCompleted).length;
   const attemptedCount = hydratedProblems.filter((problem) => problem.attemptCount > 0).length;
-  const dueCount = hydratedPatternProblems.filter((problem) => !problem.isCompleted).length;
+  const dueCount = patternProblems.filter((problem) => !problem.isCompleted).length;
 
   return (
     <>
@@ -483,7 +475,7 @@ export function LeetcodePracticeProgressClient({
 
         <main className="min-w-0 space-y-4">
           <LeetcodeProblemTable
-            problems={hydratedTableProblems}
+            problems={tableProblems}
             attempts={attempts}
             externalPattern={selectedPattern}
             selectedDifficulty={selectedDifficulty}

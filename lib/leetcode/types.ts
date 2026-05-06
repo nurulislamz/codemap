@@ -8,6 +8,9 @@ export type LeetcodeProblemRow = {
   estimatedMinutes: number;
   solutionUrl?: string;
   solutionVideoUrl?: string;
+};
+
+export type LeetcodeProblemProgressRow = LeetcodeProblemRow & {
   isCompleted: boolean;
   lastAttemptedAt: string | null;
   attemptCount: number;

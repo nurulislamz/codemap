@@ -1,10 +1,10 @@
 "use client";
 
 import { useMemo } from "react";
-import type { LeetcodeProblemRow } from "@/lib/leetcode/types";
+import type { LeetcodeProblemProgressRow } from "@/lib/leetcode/types";
 
 type LeetcodePatternOverviewProps = {
-  problems: LeetcodeProblemRow[];
+  problems: LeetcodeProblemProgressRow[];
 };
 
 type PatternOverviewItem = {
