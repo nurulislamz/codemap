@@ -28,7 +28,7 @@ export function LeetcodePracticeDashboard({
   selectedPattern: selectedPattern = null,
   selectedSubPatterns: selectedSubPattern = [],
   selectedDifficulty: selectedDifficulty = null,
-  query = "",
+  query = null,
   saveAttemptAction,
 }: LeetcodePracticeDashboardProps) {
   const invalidFilters = validateFilters(
@@ -37,7 +37,12 @@ export function LeetcodePracticeDashboard({
     selectedSubPattern,
     selectedDifficulty,
   );
-
+  if (invalidFilters.length > 0) {
+    console.warn("Invalid Leetcode filters selected:", invalidFilters);
+    selectedPattern = null;
+    selectedSubPattern = [];
+    selectedDifficulty = null;
+  }
 
   return (
     <div className="space-y-5">
@@ -47,20 +52,6 @@ export function LeetcodePracticeDashboard({
         description="Sharpen your skills by solving hand-picked coding problems."
       >
         <form action="/leetcode/allproblems" className="w-full md:w-[25rem]">
-          {selectedPattern ? (
-            <input type="hidden" name="pattern" value={selectedPattern} />
-          ) : null}
-          {selectedSubPatterns.map((subPattern) => (
-            <input
-              key={subPattern}
-              type="hidden"
-              name="subPattern"
-              value={subPattern}
-            />
-          ))}
-          {selectedDifficulty ? (
-            <input type="hidden" name="difficulty" value={selectedDifficulty} />
-          ) : null}
           <label className="flex min-h-14 w-full min-w-0 items-center gap-3 rounded-full border border-[#26364d] bg-[#07111f]/70 px-6 shadow-inner shadow-black/10">
             <svg
               viewBox="0 0 24 24"
@@ -77,7 +68,7 @@ export function LeetcodePracticeDashboard({
             </svg>
             <input
               name="q"
-              defaultValue={queryValue}
+              defaultValue={""}
               className="grow bg-transparent text-base text-slate-200 outline-none placeholder:text-slate-500"
               placeholder="Search problems..."
             />
@@ -88,30 +79,12 @@ export function LeetcodePracticeDashboard({
         </form>
       </LeetcodeHeroPanel>
 
-      {hasUnknownPattern ? (
+      {invalidFilters.length > 0 ? (
         <div
           role="alert"
           className="rounded-xl border border-[#ff8b3d]/30 bg-[#41271d]/60 px-5 py-4 text-sm font-semibold text-[#ffb06f]"
         >
-          Unknown pattern selected. Showing all problems instead.
-        </div>
-      ) : null}
-
-      {unknownSubPatterns.length > 0 ? (
-        <div
-          role="alert"
-          className="rounded-xl border border-[#ff8b3d]/30 bg-[#41271d]/60 px-5 py-4 text-sm font-semibold text-[#ffb06f]"
-        >
-          Unknown sub-pattern selected. Ignoring invalid sub-pattern filters.
-        </div>
-      ) : null}
-
-      {hasUnknownDifficulty ? (
-        <div
-          role="alert"
-          className="rounded-xl border border-[#ff8b3d]/30 bg-[#41271d]/60 px-5 py-4 text-sm font-semibold text-[#ffb06f]"
-        >
-          Unknown difficulty selected. Showing all difficulties instead.
+          Unknown filter {invalidFilters.map((f) => f.value).join(", ")} selected. Showing all problems instead.
         </div>
       ) : null}
 
@@ -137,17 +110,25 @@ function validateFilters(
   
   const invalidFilters: InvalidLeetcodeFilter[] = [];
 
-  if (selectedPatternInput && catalog.patternCounts.get(selectedPatternInput)) {
-    console.log("Selected pattern:", selectedPatternInput);
+  if (selectedPatternInput && !catalog.patternCounts.get(selectedPatternInput)) {
+    invalidFilters.push({ type: "pattern", value: selectedPatternInput });
   }
 
   selectedSubPatternInputs.forEach((subPattern) => {
-    if (catalog.patternCounts.get(subPattern)) {
-      console.log("Selected sub-pattern:", subPattern);
+    if (!catalog.patternCounts.get(subPattern)) {
+      invalidFilters.push({ type: "subPattern", value: subPattern });
     }
   });
 
   if (selectedDifficultyInput && !Object.values(LeetcodeProblemDifficultyLabel).includes(selectedDifficultyInput as LeetcodeProblemDifficultyLabel)) {
-    console.log("Selected difficulty:", selectedDifficultyInput);
+    invalidFilters.push({ type: "difficulty", value: selectedDifficultyInput });
   }
+  
+  return invalidFilters;
+}
+
+function validateQuery(query: string | null) {
+  if (!query) return null;
+  const trimmedQuery = query.trim();
+  return trimmedQuery.length > 0 ? trimmedQuery : null;
 }
