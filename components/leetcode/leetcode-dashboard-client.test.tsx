@@ -1,10 +1,13 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { AuthProvider } from "@/components/auth/auth-provider";
-import { LeetcodeDashboardClient } from "./leetcode-dashboard-client";
+import {
+  LeetcodeDashboardProblemTableClient,
+  type LeetcodeDashboardDifficultyFilterOption,
+  type LeetcodeDashboardProblemRow,
+} from "./leetcode-dashboard-client";
 import {
   LeetcodeProblemDifficultyLabel,
-  type LeetcodeAttemptRow,
   type LeetcodeProblemProgressRow,
 } from "@/lib/leetcode/types";
 
@@ -51,19 +54,39 @@ const problems: LeetcodeProblemProgressRow[] = [
   },
 ];
 
-const attempts: LeetcodeAttemptRow[] = [
+const dashboardProblems: LeetcodeDashboardProblemRow[] = problems.map((problem) => ({
+  ...problem,
+  actionLabel: problem.attemptCount > 0 && !problem.isCompleted ? "Resume" : "Start",
+  difficultyClassName: "border-test",
+  lastNotes: null,
+  statusClassName: "border-test",
+  statusLabel: problem.isCompleted
+    ? "Review"
+    : problem.attemptCount > 0
+      ? "In Progress"
+      : "Not Started",
+}));
+
+const difficultyFilters: LeetcodeDashboardDifficultyFilterOption[] = [
+  { label: "All", selectedClassName: "border-test", value: "all" },
   {
-    attemptId: "attempt-1",
-    problemId: "121",
-    problemTitle: "Best Time to Buy and Sell Stock",
-    isSuccessful: true,
-    startedAt: new Date().toISOString(),
-    endedAt: new Date().toISOString(),
-    durationSeconds: 600,
+    label: "Easy",
+    selectedClassName: "border-test",
+    value: LeetcodeProblemDifficultyLabel.Easy,
+  },
+  {
+    label: "Medium",
+    selectedClassName: "border-test",
+    value: LeetcodeProblemDifficultyLabel.Medium,
+  },
+  {
+    label: "Hard",
+    selectedClassName: "border-test",
+    value: LeetcodeProblemDifficultyLabel.Hard,
   },
 ];
 
-describe("LeetcodeDashboardClient", () => {
+describe("LeetcodeDashboardProblemTableClient", () => {
   afterEach(() => {
     vi.useRealTimers();
     vi.restoreAllMocks();
@@ -72,18 +95,15 @@ describe("LeetcodeDashboardClient", () => {
   it("renders a today-focused dashboard with stats, table rows, and suggestions", () => {
     render(
       <AuthProvider>
-        <LeetcodeDashboardClient problems={problems} attempts={attempts} />
+        <LeetcodeDashboardProblemTableClient
+          difficultyFilters={difficultyFilters}
+          problems={dashboardProblems}
+        />
       </AuthProvider>,
     );
 
-    expect(
-      screen.getByRole("heading", { name: "Problems for Today" }),
-    ).toBeInTheDocument();
-    expect(screen.getByText("Due Today")).toBeInTheDocument();
     expect(screen.getByText("Today's Problems")).toBeInTheDocument();
     expect(screen.getByRole("row", { name: /1\. Longest Substring/ })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Suggested Problems" })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Today's Progress" })).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: "Easy" }));
 
@@ -99,7 +119,10 @@ describe("LeetcodeDashboardClient", () => {
 
     render(
       <AuthProvider>
-        <LeetcodeDashboardClient problems={problems} attempts={attempts} />
+        <LeetcodeDashboardProblemTableClient
+          difficultyFilters={difficultyFilters}
+          problems={dashboardProblems}
+        />
       </AuthProvider>,
     );
 
