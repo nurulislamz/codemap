@@ -1,4 +1,8 @@
-import type { LeetcodeAttemptRow, LeetcodeProblemRow } from "./types";
+import {
+  LeetcodeProblemDifficultyLabel,
+  type LeetcodeAttemptRow,
+  type LeetcodeProblemRow,
+} from "./types";
 
 type Difficulty = LeetcodeProblemRow["difficulty"];
 
@@ -52,7 +56,11 @@ export type LeetcodeStats = {
   recentAttempts: LeetcodeAttemptRow[];
 };
 
-const difficulties: Difficulty[] = ["easy", "medium", "hard"];
+const difficulties: Difficulty[] = [
+  LeetcodeProblemDifficultyLabel.Easy,
+  LeetcodeProblemDifficultyLabel.Medium,
+  LeetcodeProblemDifficultyLabel.Hard,
+];
 
 export function buildLeetcodeStats(
   problems: LeetcodeProblemRow[],
@@ -161,9 +169,9 @@ function buildDifficultyStats(
       return stats;
     },
     {
-      easy: emptyDifficultyStats(),
-      medium: emptyDifficultyStats(),
-      hard: emptyDifficultyStats(),
+      [LeetcodeProblemDifficultyLabel.Easy]: emptyDifficultyStats(),
+      [LeetcodeProblemDifficultyLabel.Medium]: emptyDifficultyStats(),
+      [LeetcodeProblemDifficultyLabel.Hard]: emptyDifficultyStats(),
     },
   );
 }

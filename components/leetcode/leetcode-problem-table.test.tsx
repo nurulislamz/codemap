@@ -1,7 +1,11 @@
 import { act, fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { LeetcodeProblemTable } from "./leetcode-problem-table";
-import type { LeetcodeAttemptRow, LeetcodeProblemRow } from "@/lib/leetcode/types";
+import {
+  LeetcodeProblemDifficultyLabel,
+  type LeetcodeAttemptRow,
+  type LeetcodeProblemRow,
+} from "@/lib/leetcode/types";
 
 const authState = vi.hoisted(() => ({
   status: "signed-out" as "loading" | "signed-in" | "signed-out" | "unavailable",
@@ -22,7 +26,7 @@ const problems: LeetcodeProblemRow[] = [
   {
     number: "1",
     title: "Two Sum",
-    difficulty: "easy",
+    difficulty: LeetcodeProblemDifficultyLabel.Easy,
     pattern: "Arrays",
     subPattern: "Hash Map",
     leetcodeUrl: "https://leetcode.com/problems/two-sum/",
@@ -37,7 +41,7 @@ const problems: LeetcodeProblemRow[] = [
   {
     number: "102",
     title: "Binary Tree Level Order Traversal",
-    difficulty: "medium",
+    difficulty: LeetcodeProblemDifficultyLabel.Medium,
     pattern: "Trees",
     subPattern: "Breadth First Search",
     leetcodeUrl: "https://leetcode.com/problems/binary-tree-level-order-traversal/",
@@ -50,7 +54,7 @@ const problems: LeetcodeProblemRow[] = [
   {
     number: "76",
     title: "Minimum Window Substring",
-    difficulty: "hard",
+    difficulty: LeetcodeProblemDifficultyLabel.Hard,
     pattern: "Sliding Window",
     subPattern: "Variable Window",
     leetcodeUrl: "https://leetcode.com/problems/minimum-window-substring/",
@@ -132,6 +136,21 @@ describe("LeetcodeProblemTable", () => {
     expect(screen.getByRole("row", { name: /Binary Tree Level Order Traversal/ })).toBeInTheDocument();
     expect(screen.queryByRole("row", { name: /Two Sum/ })).not.toBeInTheDocument();
     expect(screen.queryByRole("row", { name: /Minimum Window Substring/ })).not.toBeInTheDocument();
+  });
+
+  it("sorts problems by easy to hard by default", () => {
+    render(
+      <LeetcodeProblemTable
+        problems={[problems[2], problems[1], problems[0]]}
+        attempts={attempts}
+      />,
+    );
+
+    const rows = screen.getAllByRole("row").slice(1);
+
+    expect(rows[0]).toHaveTextContent("Two Sum");
+    expect(rows[1]).toHaveTextContent("Binary Tree Level Order Traversal");
+    expect(rows[2]).toHaveTextContent("Minimum Window Substring");
   });
 
   it("filters by difficulty and clears filters", () => {

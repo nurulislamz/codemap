@@ -6,6 +6,7 @@ type LeetCodePageProps = {
   searchParams?: Promise<{
     pattern?: string;
     subPattern?: string[];
+    difficulty?: string;
     q?: string;
   }>;
 };
@@ -20,6 +21,7 @@ export default async function LeetCodePage({ searchParams }: LeetCodePageProps) 
       patterns={patternGroups}
       selectedPattern={(params?.pattern) ?? null}
       selectedSubPatterns={(params?.subPattern) ?? []}
+      selectedDifficulty={(params?.difficulty) ?? null}
       query={(params?.q) ?? null}
       saveAttemptAction={saveLeetCodeAttempt}
     />

@@ -2,8 +2,10 @@ import { describe, expect, it } from "vitest";
 
 import {
   assertRawLeetcodePatterns,
+  getLeetcodeCatalog,
   normalizeLeetcodeProblem,
 } from "./catalog";
+import { LeetcodeProblemDifficultyLabel } from "./types";
 
 describe("normalizeLeetcodeProblem", () => {
   it("keeps optional NeetCode solution links from object entries", () => {
@@ -50,5 +52,13 @@ describe("normalizeLeetcodeProblem", () => {
         ],
       }),
     ).toThrow(/non-object problem/);
+  });
+
+  it("normalizes raw catalog difficulty values to display labels", () => {
+    const catalog = getLeetcodeCatalog();
+
+    expect(catalog.problems[0]?.difficulty).toBe(
+      LeetcodeProblemDifficultyLabel.Medium,
+    );
   });
 });

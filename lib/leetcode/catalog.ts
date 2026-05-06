@@ -1,18 +1,20 @@
 import "server-only";
 
 import rawPatterns from "@/data/leetcode/leetcode-patterns.json";
-import type {
-  LeetcodePatternGroup,
-  LeetcodePatternSummary,
+import {
   LeetcodeProblemDifficultyLabel,
-  LeetcodeProblemRow,
+  type LeetcodePatternGroup,
+  type LeetcodePatternSummary,
+  type LeetcodeProblemRow,
 } from "@/lib/leetcode/types";
+
+type RawLeetcodeProblemDifficulty = "easy" | "medium" | "hard";
 
 type RawLeetcodeProblem = {
   number: string;
   title: string;
   leetcodeUrl: string;
-  difficulty: LeetcodeProblemDifficultyLabel;
+  difficulty: RawLeetcodeProblemDifficulty;
   estimatedMinutes: number;
   solutions?: {
     neetcode?: {
@@ -64,7 +66,7 @@ export function normalizeLeetcodeProblem(
     number: problem.number,
     title: problem.title,
     leetcodeUrl: problem.leetcodeUrl,
-    difficulty: problem.difficulty,
+    difficulty: normalizeDifficulty(problem.difficulty),
     estimatedMinutes: problem.estimatedMinutes,
     ...(solutions ? { solutions } : {}),
   };
@@ -110,6 +112,10 @@ export function getLeetcodeCatalog(): LeetcodeCatalog {
           estimatedMinutes: problem.estimatedMinutes,
           solutionUrl: problem.solutions?.neetcode?.textUrl,
           solutionVideoUrl: problem.solutions?.neetcode?.videoUrl,
+          isCompleted: false,
+          lastAttemptedAt: null,
+          attemptCount: 0,
+          bestDurationSeconds: null,
         });
       }
     }
@@ -136,8 +142,21 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
-function isDifficulty(value: unknown): value is LeetcodeProblemRow["difficulty"] {
+function isDifficulty(value: unknown): value is RawLeetcodeProblemDifficulty {
   return value === "easy" || value === "medium" || value === "hard";
+}
+
+function normalizeDifficulty(
+  difficulty: RawLeetcodeProblemDifficulty,
+): LeetcodeProblemDifficultyLabel {
+  switch (difficulty) {
+    case "easy":
+      return LeetcodeProblemDifficultyLabel.Easy;
+    case "medium":
+      return LeetcodeProblemDifficultyLabel.Medium;
+    case "hard":
+      return LeetcodeProblemDifficultyLabel.Hard;
+  }
 }
 
 export function assertRawLeetcodePatterns(

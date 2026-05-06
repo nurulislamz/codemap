@@ -2,13 +2,17 @@ import { fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { AuthProvider } from "@/components/auth/auth-provider";
 import { LeetcodeDashboardClient } from "./leetcode-dashboard-client";
-import type { LeetcodeAttemptRow, LeetcodeProblemRow } from "@/lib/leetcode/types";
+import {
+  LeetcodeProblemDifficultyLabel,
+  type LeetcodeAttemptRow,
+  type LeetcodeProblemRow,
+} from "@/lib/leetcode/types";
 
 const problems: LeetcodeProblemRow[] = [
   {
     number: "3",
     title: "Longest Substring Without Repeating Characters",
-    difficulty: "medium",
+    difficulty: LeetcodeProblemDifficultyLabel.Medium,
     pattern: "Sliding Window",
     subPattern: "Variable Window",
     leetcodeUrl:
@@ -22,7 +26,7 @@ const problems: LeetcodeProblemRow[] = [
   {
     number: "102",
     title: "Binary Tree Level Order Traversal",
-    difficulty: "medium",
+    difficulty: LeetcodeProblemDifficultyLabel.Medium,
     pattern: "Trees",
     subPattern: "Breadth First Search",
     leetcodeUrl: "https://leetcode.com/problems/binary-tree-level-order-traversal/",
@@ -35,7 +39,7 @@ const problems: LeetcodeProblemRow[] = [
   {
     number: "121",
     title: "Best Time to Buy and Sell Stock",
-    difficulty: "easy",
+    difficulty: LeetcodeProblemDifficultyLabel.Easy,
     pattern: "Arrays",
     subPattern: "Kadane",
     leetcodeUrl: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",

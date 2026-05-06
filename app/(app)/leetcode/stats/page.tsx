@@ -13,7 +13,11 @@ import {
 } from "@/lib/leetcode/attempts";
 import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import { buildLeetcodeStats } from "@/lib/leetcode/leetcode-stats";
-import type { LeetcodeProblemRow } from "@/lib/leetcode/types";
+import {
+  LeetcodeProblemDifficultyLabel,
+  leetcodeProblemDifficultyLabels,
+  type LeetcodeProblemRow,
+} from "@/lib/leetcode/types";
 import {
   CodeIcon,
   LeetcodeHeroPanel,
@@ -34,19 +38,19 @@ type DisplayDay = {
 
 function difficultyClass(difficulty: LeetcodeProblemRow["difficulty"]) {
   switch (difficulty) {
-    case "easy":
+    case LeetcodeProblemDifficultyLabel.Easy:
       return {
         text: "text-emerald-300",
         bar: "bg-emerald-400",
         panel: "border-emerald-400/45 bg-emerald-400/10",
       };
-    case "medium":
+    case LeetcodeProblemDifficultyLabel.Medium:
       return {
         text: "text-amber-300",
         bar: "bg-amber-400",
         panel: "border-amber-400/45 bg-amber-400/10",
       };
-    case "hard":
+    case LeetcodeProblemDifficultyLabel.Hard:
       return {
         text: "text-rose-300",
         bar: "bg-rose-400",
@@ -379,7 +383,7 @@ export default async function LeetcodeStatsPage() {
           </p>
 
           <div className="mt-6 grid gap-5 md:grid-cols-3">
-            {(["easy", "medium", "hard"] as const).map((difficulty) => {
+            {leetcodeProblemDifficultyLabels.map((difficulty) => {
               const item = stats.byDifficulty[difficulty];
               const styles = difficultyClass(difficulty);
 

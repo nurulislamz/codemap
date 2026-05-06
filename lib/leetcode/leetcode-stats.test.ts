@@ -1,13 +1,17 @@
 import { describe, expect, it } from "vitest";
 
 import { buildLeetcodeStats } from "./leetcode-stats";
-import type { LeetcodeAttemptRow, LeetcodeProblemRow } from "./types";
+import {
+  LeetcodeProblemDifficultyLabel,
+  type LeetcodeAttemptRow,
+  type LeetcodeProblemRow,
+} from "./types";
 
 const problems: LeetcodeProblemRow[] = [
   {
     number: "1",
     title: "Two Sum",
-    difficulty: "easy",
+    difficulty: LeetcodeProblemDifficultyLabel.Easy,
     pattern: "Hash Map",
     subPattern: "Lookup",
     leetcodeUrl: "https://leetcode.com/problems/two-sum/",
@@ -20,7 +24,7 @@ const problems: LeetcodeProblemRow[] = [
   {
     number: "2",
     title: "Longest Increasing Subsequence",
-    difficulty: "medium",
+    difficulty: LeetcodeProblemDifficultyLabel.Medium,
     pattern: "Dynamic Programming",
     subPattern: "1D DP",
     leetcodeUrl: "https://leetcode.com/problems/longest-increasing-subsequence/",
@@ -33,7 +37,7 @@ const problems: LeetcodeProblemRow[] = [
   {
     number: "3",
     title: "LFU Cache",
-    difficulty: "hard",
+    difficulty: LeetcodeProblemDifficultyLabel.Hard,
     pattern: "Design",
     subPattern: "Cache",
     leetcodeUrl: "https://leetcode.com/problems/lfu-cache/",
@@ -93,7 +97,7 @@ describe("buildLeetcodeStats", () => {
       successRate: 33,
       averageSuccessfulDurationSeconds: 700,
     });
-    expect(stats.byDifficulty.easy).toMatchObject({
+    expect(stats.byDifficulty[LeetcodeProblemDifficultyLabel.Easy]).toMatchObject({
       total: 1,
       completed: 1,
       attempted: 1,

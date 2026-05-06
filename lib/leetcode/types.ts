@@ -8,6 +8,10 @@ export type LeetcodeProblemRow = {
   estimatedMinutes: number;
   solutionUrl?: string;
   solutionVideoUrl?: string;
+  isCompleted: boolean;
+  lastAttemptedAt: string | null;
+  attemptCount: number;
+  bestDurationSeconds: number | null;
 };
 
 export enum LeetcodeProblemDifficultyLabel {
@@ -15,6 +19,12 @@ export enum LeetcodeProblemDifficultyLabel {
   Medium = "Medium",
   Hard = "Hard",
 }
+
+export const leetcodeProblemDifficultyLabels = [
+  LeetcodeProblemDifficultyLabel.Easy,
+  LeetcodeProblemDifficultyLabel.Medium,
+  LeetcodeProblemDifficultyLabel.Hard,
+] as const;
 
 export enum LeetcodeProblemStatusLabel {
   Completed = "Completed",

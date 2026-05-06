@@ -13,21 +13,28 @@ type LeetcodePracticeDashboardProps = {
   patterns: LeetcodePatternGroup[];
   selectedPattern?: string | null;
   selectedSubPatterns?: string[];
-  difficulty?: LeetcodeProblemDifficultyLabel | null;
+  selectedDifficulty?: string | null;
   status?: LeetcodeProblemStatusLabel | null;
   query?: string | null;
   saveAttemptAction?: SaveLeetcodeAttemptAction;
 };
 
 type InvalidLeetcodeFilter = {
-  type: "pattern" | "subPattern";
+  type: "pattern" | "subPattern" | "difficulty";
   value: string;
 };
+
+function isDifficulty(
+  difficulty: string | null,
+): difficulty is LeetcodeProblemDifficultyLabel {
+  return difficulty === "Easy" || difficulty === "Medium" || difficulty === "Hard";
+}
 
 function validateFilters(
   patterns: LeetcodePatternGroup[],
   selectedPatternInput: string | null,
   selectedSubPatternInputs: string[],
+  selectedDifficultyInput: string | null,
 ): InvalidLeetcodeFilter[] {
   const invalidFilters: InvalidLeetcodeFilter[] = [];
   const selectedPattern = selectedPatternInput
@@ -52,6 +59,10 @@ function validateFilters(
     }
   }
 
+  if (selectedDifficultyInput && !isDifficulty(selectedDifficultyInput)) {
+    invalidFilters.push({ type: "difficulty", value: selectedDifficultyInput });
+  }
+
   return invalidFilters;
 }
 
@@ -60,6 +71,7 @@ export function LeetcodePracticeDashboard({
   patterns,
   selectedPattern: selectedPatternInput = null,
   selectedSubPatterns: selectedSubPatternInputs = [],
+  selectedDifficulty: selectedDifficultyInput = null,
   query = "",
   saveAttemptAction,
 }: LeetcodePracticeDashboardProps) {
@@ -69,6 +81,7 @@ export function LeetcodePracticeDashboard({
     patterns,
     selectedPatternInput,
     selectedSubPatternInputs,
+    selectedDifficultyInput,
   );
 
   if (invalidFilters.length > 0) {
@@ -84,8 +97,15 @@ export function LeetcodePracticeDashboard({
   const unknownSubPatterns = invalidFilters
     .filter((filter) => filter.type === "subPattern")
     .map((filter) => filter.value);
+  const hasUnknownDifficulty = invalidFilters.some(
+    (filter) => filter.type === "difficulty",
+  );
   const selectedPattern = hasInvalidFilters ? null : selectedPatternValue;
   const selectedSubPatterns = hasInvalidFilters ? [] : selectedSubPatternInputs;
+  const selectedDifficulty =
+    hasInvalidFilters || !isDifficulty(selectedDifficultyInput)
+      ? null
+      : selectedDifficultyInput;
   return (
     <div className="space-y-5">
       <LeetcodeHeroPanel
@@ -105,6 +125,9 @@ export function LeetcodePracticeDashboard({
               value={subPattern}
             />
           ))}
+          {selectedDifficulty ? (
+            <input type="hidden" name="difficulty" value={selectedDifficulty} />
+          ) : null}
           <label className="flex min-h-14 w-full min-w-0 items-center gap-3 rounded-full border border-[#26364d] bg-[#07111f]/70 px-6 shadow-inner shadow-black/10">
             <svg
               viewBox="0 0 24 24"
@@ -150,11 +173,21 @@ export function LeetcodePracticeDashboard({
         </div>
       ) : null}
 
+      {hasUnknownDifficulty ? (
+        <div
+          role="alert"
+          className="rounded-xl border border-[#ff8b3d]/30 bg-[#41271d]/60 px-5 py-4 text-sm font-semibold text-[#ffb06f]"
+        >
+          Unknown difficulty selected. Showing all difficulties instead.
+        </div>
+      ) : null}
+
       <LeetcodePracticeProgressClient
         problems={problems}
         patterns={patterns}
         initialSelectedPattern={selectedPattern}
         initialSelectedSubPatterns={selectedSubPatterns}
+        initialSelectedDifficulty={selectedDifficulty}
         query={queryValue}
         saveAttemptAction={saveAttemptAction}
       />

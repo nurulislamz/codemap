@@ -1,12 +1,13 @@
 "use client";
 
-import { Fragment, useMemo, useRef, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 
 import { useOutsideClick } from "@/components/ui/use-outside-click";
 import { LeetcodeAttemptOverlayButton } from "./leetcode-attempt-overlay";
 import { formatAttemptDate, formatSecondsDuration } from "@/lib/leetcode/leetcode-formatters";
 import type {
   LeetcodeAttemptRow,
+  LeetcodeProblemDifficultyLabel,
   LeetcodeProblemRow,
   SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
@@ -15,6 +16,10 @@ type LeetcodeProblemTableProps = {
   problems: LeetcodeProblemRow[];
   attempts: LeetcodeAttemptRow[];
   externalPattern?: string | null;
+  selectedDifficulty?: LeetcodeProblemDifficultyLabel | null;
+  onSelectedDifficultyChange?: (
+    difficulty: LeetcodeProblemDifficultyLabel | null,
+  ) => void;
   searchQuery?: string;
   onSearchQueryChange?: (query: string) => void;
   saveAttemptAction?: SaveLeetcodeAttemptAction;
@@ -23,6 +28,7 @@ type LeetcodeProblemTableProps = {
 
 type ProblemSort = "default" | "az" | "za";
 type DifficultySort = "default" | "easy-first" | "hard-first";
+type DifficultyFilter = typeof allOption | LeetcodeProblemDifficultyLabel;
 type ProgressFilter =
   | "all"
   | "completed"
@@ -36,24 +42,26 @@ function uniqueInOrder(values: string[]) {
   return values.filter((value, index) => values.indexOf(value) === index);
 }
 
+const difficultyStyleByDifficulty: Record<
+  LeetcodeProblemRow["difficulty"],
+  { pill: string; dot: string }
+> = {
+  Easy: {
+    pill: "border-[#2bd875]/30 bg-[#143b32] text-[#5ff08a]",
+    dot: "bg-[#2bd875]",
+  },
+  Medium: {
+    pill: "border-[#f7b615]/35 bg-[#3a2c10] text-[#ffd21d]",
+    dot: "bg-[#ffc400]",
+  },
+  Hard: {
+    pill: "border-[#ff5e7a]/35 bg-[#401923] text-[#ff6f87]",
+    dot: "bg-[#ff5e7a]",
+  },
+};
+
 function difficultyStyles(difficulty: LeetcodeProblemRow["difficulty"]) {
-  switch (difficulty) {
-    case "easy":
-      return {
-        pill: "border-[#2bd875]/30 bg-[#143b32] text-[#5ff08a]",
-        dot: "bg-[#2bd875]",
-      };
-    case "medium":
-      return {
-        pill: "border-[#f7b615]/35 bg-[#3a2c10] text-[#ffd21d]",
-        dot: "bg-[#ffc400]",
-      };
-    case "hard":
-      return {
-        pill: "border-[#ff5e7a]/35 bg-[#401923] text-[#ff6f87]",
-        dot: "bg-[#ff5e7a]",
-      };
-  }
+  return difficultyStyleByDifficulty[difficulty];
 }
 
 function formatStatus(problem: LeetcodeProblemRow) {
@@ -62,15 +70,14 @@ function formatStatus(problem: LeetcodeProblemRow) {
   return "Not started";
 }
 
+const difficultyRankByDifficulty: Record<LeetcodeProblemRow["difficulty"], number> = {
+  Easy: 1,
+  Medium: 2,
+  Hard: 3,
+};
+
 function difficultyRank(difficulty: LeetcodeProblemRow["difficulty"]) {
-  switch (difficulty) {
-    case "easy":
-      return 1;
-    case "medium":
-      return 2;
-    case "hard":
-      return 3;
-  }
+  return difficultyRankByDifficulty[difficulty];
 }
 
 function progressDotClass(problem: LeetcodeProblemRow) {
@@ -143,6 +150,8 @@ export function LeetcodeProblemTable({
   problems,
   attempts,
   externalPattern,
+  selectedDifficulty,
+  onSelectedDifficultyChange,
   searchQuery,
   onSearchQueryChange,
   saveAttemptAction,
@@ -152,7 +161,8 @@ export function LeetcodeProblemTable({
   const difficultyMenuRef = useRef<HTMLDivElement>(null);
   const statusMenuRef = useRef<HTMLDivElement>(null);
   const [internalQuery, setInternalQuery] = useState("");
-  const [difficulty, setDifficulty] = useState(allOption);
+  const [internalDifficulty, setInternalDifficulty] =
+    useState<DifficultyFilter>(allOption);
   const [status, setStatus] = useState<ProgressFilter>("all");
   const [hasVideo, setHasVideo] = useState(false);
   const [showPatternMenu, setShowPatternMenu] = useState(false);
@@ -162,10 +172,14 @@ export function LeetcodeProblemTable({
   const [selectedPatterns, setSelectedPatterns] = useState<string[]>([]);
   const [selectedSubPatterns, setSelectedSubPatterns] = useState<string[]>([]);
   const [problemSort, setProblemSort] = useState<ProblemSort>("default");
-  const [difficultySort, setDifficultySort] = useState<DifficultySort>("default");
+  const [difficultySort, setDifficultySort] = useState<DifficultySort>("easy-first");
   const [expandedProblemId, setExpandedProblemId] = useState<string | null>(null);
   const query = searchQuery ?? internalQuery;
   const setQuery = onSearchQueryChange ?? setInternalQuery;
+  const difficulty =
+    selectedDifficulty === undefined
+      ? internalDifficulty
+      : selectedDifficulty ?? allOption;
   const patternFilterLabel = subPatternFilterLabel();
 
   const patternOptions = useMemo(
@@ -213,6 +227,13 @@ export function LeetcodeProblemTable({
     active: showStatusMenu,
     onOutsideClick: () => setShowStatusMenu(false),
   });
+
+  useEffect(() => {
+    setSelectedPatterns([]);
+    setSelectedSubPatterns([]);
+    setActivePatternForSubPatterns(null);
+    setShowPatternMenu(false);
+  }, [externalPattern]);
 
   const filteredProblems = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -267,18 +288,33 @@ export function LeetcodeProblemTable({
 
   function resetFilters() {
     setQuery("");
-    setDifficulty(allOption);
+    setDifficultyFilter(allOption);
     setStatus("all");
     setHasVideo(false);
-    setSelectedPatterns([]);
-    setSelectedSubPatterns([]);
+    resetPatternFilters();
     setShowPatternMenu(false);
     setShowDifficultyMenu(false);
     setShowStatusMenu(false);
     setActivePatternForSubPatterns(null);
     setProblemSort("default");
-    setDifficultySort("default");
+    setDifficultySort("easy-first");
     setExpandedProblemId(null);
+  }
+
+  function resetPatternFilters() {
+    setSelectedPatterns([]);
+    setSelectedSubPatterns([]);
+    setActivePatternForSubPatterns(null);
+    setShowPatternMenu(false);
+  }
+
+  function setDifficultyFilter(value: DifficultyFilter) {
+    if (onSelectedDifficultyChange) {
+      onSelectedDifficultyChange(value === allOption ? null : value);
+      return;
+    }
+
+    setInternalDifficulty(value);
   }
 
   function toggleSelectedPattern(pattern: string) {
@@ -338,9 +374,7 @@ export function LeetcodeProblemTable({
   }
 
   function difficultyFilterLabel() {
-    if (difficulty === "easy") return "Easy";
-    if (difficulty === "medium") return "Medium";
-    if (difficulty === "hard") return "Hard";
+    if (difficulty !== allOption) return difficulty;
     return "All difficulties";
   }
 
@@ -392,9 +426,9 @@ export function LeetcodeProblemTable({
               >
                 {[
                   [allOption, "All difficulties"],
-                  ["easy", "Easy"],
-                  ["medium", "Medium"],
-                  ["hard", "Hard"],
+                  ["Easy", "Easy"],
+                  ["Medium", "Medium"],
+                  ["Hard", "Hard"],
                 ].map(([value, label]) => (
                   <button
                     key={value}
@@ -405,7 +439,7 @@ export function LeetcodeProblemTable({
                       difficulty === value ? "bg-[#6747ff]/15 text-[#a48bff]" : "text-slate-300"
                     }`}
                     onClick={() => {
-                      setDifficulty(value);
+                      setDifficultyFilter(value as DifficultyFilter);
                       setShowDifficultyMenu(false);
                     }}
                   >
@@ -553,7 +587,7 @@ export function LeetcodeProblemTable({
                             }
                             onChange={() => {
                               if (patternOption === allOption) {
-                                resetFilters();
+                                resetPatternFilters();
                                 return;
                               }
 

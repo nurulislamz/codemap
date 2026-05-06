@@ -4,10 +4,11 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { LeetcodeAttemptOverlayButton } from "./leetcode-attempt-overlay";
 import { formatMinutesDuration } from "@/lib/leetcode/leetcode-formatters";
-import type {
-  LeetcodeAttemptRow,
-  LeetcodeProblemRow,
-  SaveLeetcodeAttemptAction,
+import {
+  LeetcodeProblemDifficultyLabel,
+  type LeetcodeAttemptRow,
+  type LeetcodeProblemRow,
+  type SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
 import { LeetcodePanel } from "./leetcode-ui";
 
@@ -21,9 +22,9 @@ type DifficultyFilter = "all" | LeetcodeProblemRow["difficulty"];
 
 const filters: { label: string; value: DifficultyFilter }[] = [
   { label: "All", value: "all" },
-  { label: "Easy", value: "easy" },
-  { label: "Medium", value: "medium" },
-  { label: "Hard", value: "hard" },
+  { label: "Easy", value: LeetcodeProblemDifficultyLabel.Easy },
+  { label: "Medium", value: LeetcodeProblemDifficultyLabel.Medium },
+  { label: "Hard", value: LeetcodeProblemDifficultyLabel.Hard },
 ];
 
 function isSameLocalDay(value: string, date: Date) {
@@ -56,11 +57,11 @@ function calculateStreak(attempts: LeetcodeAttemptRow[]) {
 
 function difficultyClasses(difficulty: LeetcodeProblemRow["difficulty"]) {
   switch (difficulty) {
-    case "easy":
+    case LeetcodeProblemDifficultyLabel.Easy:
       return "border-[#1d7452] bg-[#113a32] text-[#38e68a]";
-    case "medium":
+    case LeetcodeProblemDifficultyLabel.Medium:
       return "border-[#74561b] bg-[#352913] text-[#ffd323]";
-    case "hard":
+    case LeetcodeProblemDifficultyLabel.Hard:
       return "border-[#74304a] bg-[#341827] text-[#ff6f91]";
   }
 }
@@ -447,11 +448,11 @@ export function LeetcodeDashboardClient({
                 {filters.map((filter) => {
                   const isSelected = difficulty === filter.value;
                   const selectedClass =
-                    filter.value === "easy"
+                    filter.value === LeetcodeProblemDifficultyLabel.Easy
                       ? "border-[#1d7452] bg-[#123a32] text-[#38e68a]"
-                      : filter.value === "medium"
+                      : filter.value === LeetcodeProblemDifficultyLabel.Medium
                         ? "border-[#74561b] bg-[#352913] text-[#ffd323]"
-                        : filter.value === "hard"
+                        : filter.value === LeetcodeProblemDifficultyLabel.Hard
                           ? "border-[#74304a] bg-[#341827] text-[#ff6f91]"
                           : "border-[#5a4fc2] bg-[#272059] text-[#a895ff]";
 
