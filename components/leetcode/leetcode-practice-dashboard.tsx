@@ -26,7 +26,7 @@ type InvalidLeetcodeFilter = {
 export function LeetcodePracticeDashboard({
   catalog: catalog, 
   selectedPattern: selectedPattern = null,
-  selectedSubPatterns: selectedSubPattern = [],
+  selectedSubPatterns: selectedSubPatterns = [],
   selectedDifficulty: selectedDifficulty = null,
   query = null,
   saveAttemptAction,
@@ -34,15 +34,22 @@ export function LeetcodePracticeDashboard({
   const invalidFilters = validateFilters(
     catalog,
     selectedPattern,
-    selectedSubPattern,
+    selectedSubPatterns,
     selectedDifficulty,
   );
   if (invalidFilters.length > 0) {
     console.warn("Invalid Leetcode filters selected:", invalidFilters);
     selectedPattern = null;
-    selectedSubPattern = [];
+    selectedSubPatterns = [];
     selectedDifficulty = null;
   }
+  const problems = Array.from(catalog.problems.values()).flat();
+  const queryValue = validateQuery(query) ?? "";
+  const selectedDifficultyValue = Object.values(LeetcodeProblemDifficultyLabel).includes(
+    selectedDifficulty as LeetcodeProblemDifficultyLabel,
+  )
+    ? (selectedDifficulty as LeetcodeProblemDifficultyLabel)
+    : null;
 
   return (
     <div className="space-y-5">
@@ -90,10 +97,9 @@ export function LeetcodePracticeDashboard({
 
       <LeetcodePracticeProgressClient
         problems={problems}
-        patterns={patterns}
         initialSelectedPattern={selectedPattern}
         initialSelectedSubPatterns={selectedSubPatterns}
-        initialSelectedDifficulty={selectedDifficulty}
+        initialSelectedDifficulty={selectedDifficultyValue}
         query={queryValue}
         saveAttemptAction={saveAttemptAction}
       />

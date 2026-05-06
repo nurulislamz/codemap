@@ -38,8 +38,12 @@ export async function getLeetcodeAttemptRowsForUser(
 ): Promise<LeetcodeAttemptRow[]> {
   const catalog = getLeetcodeCatalog();
   const attempts = await getSortedLeetcodeAttemptEventsForUser(userId);
+  const problems = Array.from(catalog.problems.values()).flat();
 
-  return toLeetcodeAttemptRows(attempts, catalog.index.problemsByNumber);
+  return toLeetcodeAttemptRows(
+    attempts,
+    new Map(problems.map((problem) => [problem.number, problem])),
+  );
 }
 
 export function hydrateProblemsWithAttempts(

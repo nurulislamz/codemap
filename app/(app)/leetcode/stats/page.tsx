@@ -163,10 +163,11 @@ function QualityIcon({ tone }: { tone: "accepted" | "reviewed" | "needsWork" }) 
 export default async function LeetcodeStatsPage() {
   const catalog = getLeetcodeCatalog();
   const attemptEvents = await getSortedLeetcodeAttemptEventsForRequest();
-  const problems = hydrateProblemsWithAttempts(catalog.index.problems, attemptEvents);
+  const catalogProblems = Array.from(catalog.problems.values()).flat();
+  const problems = hydrateProblemsWithAttempts(catalogProblems, attemptEvents);
   const attempts = toLeetcodeAttemptRows(
     attemptEvents,
-    catalog.index.problemsByNumber,
+    new Map(catalogProblems.map((problem) => [problem.number, problem])),
   );
   const stats = buildLeetcodeStats(problems, attempts);
   const consistencyDays = buildRecentDisplayDays(stats.consistency.attemptsByDay, 14);

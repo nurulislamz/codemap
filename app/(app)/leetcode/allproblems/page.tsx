@@ -1,9 +1,8 @@
 import {
   parseDifficulty,
   type LeetcodeProblemDifficultyLabel,
-  type SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
-import type { LeetcodeCatalog } from "@/lib/leetcode/catalog";
+import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import {
   CodeIcon,
   LeetcodeHeroPanel,
@@ -11,28 +10,30 @@ import {
   LeetcodeStatCard,
 } from "@/components/leetcode/leetcode-ui";
 import { LeetcodePracticeProgressClient } from "@/components/leetcode/leetcode-practice-progress-client";
-import { hydrateProblemsWithAttempts } from "@/lib/leetcode/attempts";
-import type { LeetCodeAttemptEvent } from "@/lib/firebase/leetcode";
+import { saveLeetCodeAttempt } from "@/lib/leetcode/actions";
 
-type LeetcodePracticeDashboardProps = {
-  catalog: LeetcodeCatalog;
-  attemptEvents: LeetCodeAttemptEvent[];
-  selectedPattern?: string | null;
-  selectedSubPatterns?: string[];
-  selectedDifficulty?: string | null;
-  query?: string | null;
-  saveAttemptAction?: SaveLeetcodeAttemptAction;
-};
+export const dynamic = "force-dynamic";
 
-export function LeetcodePracticeDashboard({
-  catalog,
-  attemptEvents,
-  selectedPattern = null,
-  selectedSubPatterns = [],
-  selectedDifficulty = null,
-  query = null,
-  saveAttemptAction,
-}: LeetcodePracticeDashboardProps) {
+export default async function LeetcodeAllProblemsPage({
+  searchParams,
+}: {
+  searchParams?: Promise<{
+    pattern?: string;
+    subPattern?: string | string[];
+    difficulty?: string;
+    q?: string;
+  }>;
+}) {
+  const params = await searchParams;
+  const catalog = getLeetcodeCatalog();
+  let selectedPattern = params?.pattern ?? null;
+  let selectedSubPatterns = params?.subPattern
+    ? Array.isArray(params.subPattern)
+      ? params.subPattern
+      : [params.subPattern]
+    : [];
+  let selectedDifficulty = params?.difficulty ?? null;
+  const query = params?.q ?? null;
   const invalidFilters: Array<{
     type: "pattern" | "subPattern" | "difficulty";
     value: string;
@@ -64,11 +65,10 @@ export function LeetcodePracticeDashboard({
   }
 
   const problems = Array.from(catalog.problems.values()).flat();
-  const hydratedProblems = hydrateProblemsWithAttempts(problems, attemptEvents);
   const totalCount = problems.length;
-  const completedCount = hydratedProblems.filter((problem) => problem.isCompleted).length;
-  const attemptedCount = hydratedProblems.filter((problem) => problem.attemptCount > 0).length;
-  const dueCount = hydratedProblems.filter((problem) => !problem.isCompleted).length;
+  const completedCount = 0;
+  const attemptedCount = 0;
+  const dueCount = problems.length;
   const queryValue = query ?? "";
   const selectedDifficultyValue = parseDifficulty(selectedDifficulty);
 
@@ -321,7 +321,7 @@ export function LeetcodePracticeDashboard({
           initialSelectedSubPatterns={selectedSubPatterns}
           initialSelectedDifficulty={selectedDifficultyValue}
           query={queryValue}
-          saveAttemptAction={saveAttemptAction}
+          saveAttemptAction={saveLeetCodeAttempt}
         />
       </div>
     </div>

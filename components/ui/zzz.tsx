@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
@@ -24,6 +26,9 @@ type AppShellProps = {
 
 export function AppShell({ children }: AppShellProps) {
   const { status, user, signInWithGoogle, signOutUser } = useAuth();
+  const pathname = usePathname();
+  const leetcodeMenuRef = useRef<HTMLLIElement>(null);
+  const [isLeetcodeMenuOpen, setIsLeetcodeMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-[#08111d] text-slate-100">
