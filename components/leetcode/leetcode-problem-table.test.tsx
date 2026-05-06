@@ -201,12 +201,15 @@ describe("LeetcodeProblemTable", () => {
     const startButton = within(binaryTreeRow).getByRole("button", { name: "Start" });
 
     expect(startButton).not.toHaveAttribute("href");
+    expect(startButton).toHaveClass("cursor-pointer");
 
     fireEvent.click(startButton);
 
     expect(windowOpen).not.toHaveBeenCalled();
     expect(screen.getByText("Ready to start")).toBeInTheDocument();
     expect(screen.queryByText("Failure notes")).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Start timer" })).toHaveClass("cursor-pointer");
+    expect(screen.getByRole("button", { name: "Show last notes" })).toHaveClass("cursor-pointer");
 
     fireEvent.click(screen.getByRole("button", { name: "Show last notes" }));
     expect(screen.getByText("Review BFS queue boundaries")).toBeInTheDocument();
@@ -245,18 +248,35 @@ describe("LeetcodeProblemTable", () => {
     expect(screen.getByLabelText("Time remaining")).toHaveTextContent(stoppedAt ?? "");
   });
 
+  it("closes the attempt overlay when clicking the backdrop", () => {
+    render(<LeetcodeProblemTable problems={problems} attempts={attempts} />);
+
+    const binaryTreeRow = screen.getByRole("row", {
+      name: /Binary Tree Level Order Traversal/,
+    });
+
+    fireEvent.click(within(binaryTreeRow).getByRole("button", { name: "Start" }));
+    fireEvent.click(screen.getByRole("dialog", { name: /Binary Tree Level Order Traversal/ }));
+
+    expect(
+      screen.queryByRole("dialog", { name: /Binary Tree Level Order Traversal/ }),
+    ).not.toBeInTheDocument();
+  });
+
   it("saves attempts locally when the user is signed out", async () => {
     vi.useFakeTimers();
     vi.spyOn(window, "open").mockReturnValue({
       location: { href: "" },
     } as unknown as Window);
     const saveAttemptAction = vi.fn();
+    const onAttemptSaved = vi.fn();
 
     render(
       <LeetcodeProblemTable
         problems={problems}
         attempts={attempts}
         saveAttemptAction={saveAttemptAction}
+        onAttemptSaved={onAttemptSaved}
       />,
     );
 
@@ -282,11 +302,46 @@ describe("LeetcodeProblemTable", () => {
     );
 
     expect(saveAttemptAction).not.toHaveBeenCalled();
+    expect(onAttemptSaved).toHaveBeenCalledOnce();
     expect(savedAttempts[0]).toMatchObject({
       problemId: "102",
       problemTitle: "Binary Tree Level Order Traversal",
       notes: "Saved locally",
       isSuccessful: true,
+    });
+  });
+
+  it("defaults the saved result to time ran out when the timer expires", async () => {
+    vi.useFakeTimers();
+    vi.spyOn(window, "open").mockReturnValue({
+      location: { href: "" },
+    } as unknown as Window);
+
+    render(<LeetcodeProblemTable problems={problems} attempts={attempts} />);
+
+    const binaryTreeRow = screen.getByRole("row", {
+      name: /Binary Tree Level Order Traversal/,
+    });
+
+    fireEvent.click(within(binaryTreeRow).getByRole("button", { name: "Start" }));
+    fireEvent.click(screen.getByRole("button", { name: "Start timer" }));
+
+    await act(async () => {
+      vi.advanceTimersByTime(30 * 60 * 1000);
+    });
+
+    expect(screen.getByRole("radio", { name: "Time ran out" })).toBeChecked();
+
+    fireEvent.click(screen.getByRole("button", { name: "Save attempt" }));
+
+    const savedAttempts = JSON.parse(
+      window.localStorage.getItem("codemap.leetcodeAttempts.v1") ?? "[]",
+    );
+
+    expect(savedAttempts[0]).toMatchObject({
+      problemId: "102",
+      status: "timed_out",
+      isSuccessful: false,
     });
   });
 

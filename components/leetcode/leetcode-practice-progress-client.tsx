@@ -7,6 +7,7 @@ import {
   getLeetcodePracticeRows,
   hydrateLeetcodeProblemsWithAttempts,
 } from "@/lib/leetcode/progress";
+import { getLocalLeetcodeAttempts } from "@/lib/leetcode/storage/local-attempt-storage";
 import {
   parseDifficulty,
   type LeetcodeAttemptRow,
@@ -100,9 +101,23 @@ export function LeetcodePracticeProgressClient({
       if (authStatus === "loading") return;
 
       if (authStatus !== "signed-in" || !user) {
+        await Promise.resolve();
+
+        const localAttempts = getLocalLeetcodeAttempts().map((attempt) => ({
+          attemptId: attempt.attemptId,
+          problemId: attempt.problemId,
+          problemTitle: attempt.problemTitle,
+          isSuccessful: attempt.isSuccessful,
+          startedAt: attempt.startedAt,
+          endedAt: attempt.endedAt,
+          durationSeconds: attempt.durationSeconds,
+          notes: attempt.notes,
+          failureReason: attempt.status === "timed_out" ? "Time ran out" : null,
+        }));
+
         cachedAttemptUser = null;
-        cachedAttempts = [];
-        setAttempts([]);
+        cachedAttempts = localAttempts;
+        setAttempts(localAttempts);
         return;
       }
 
@@ -129,7 +144,9 @@ export function LeetcodePracticeProgressClient({
   );
 
   useEffect(() => {
-    void loadAttempts();
+    const timeoutId = window.setTimeout(() => void loadAttempts(), 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, [loadAttempts]);
 
   useEffect(() => {

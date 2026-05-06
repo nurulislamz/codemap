@@ -136,6 +136,7 @@ export function LeetcodeAttemptOverlayButton({
 
     if (shouldSaveLocally) {
       saveLocalLeetcodeAttempt(problem, input);
+      onAttemptSaved?.();
       setIsOpen(false);
       setStartedAt(null);
       setEndedAt(null);
@@ -206,7 +207,7 @@ export function LeetcodeAttemptOverlayButton({
 
   return (
     <>
-      <button type="button" className={className} onClick={openOverlay}>
+      <button type="button" className={`${className} cursor-pointer`} onClick={openOverlay}>
         {children ?? actionLabel}
       </button>
 
@@ -215,9 +216,13 @@ export function LeetcodeAttemptOverlayButton({
           role="dialog"
           aria-modal="true"
           aria-labelledby={titleId}
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4"
+          className="fixed inset-0 z-[100] flex cursor-pointer items-center justify-center bg-black/70 p-4"
+          onClick={closeOverlay}
         >
-          <div className="grid max-h-[calc(100vh-2rem)] w-full max-w-5xl overflow-y-auto rounded-2xl border border-[#26364d] bg-[#0b1626] shadow-2xl shadow-black/60 lg:grid-cols-[minmax(0,1fr)_22rem]">
+          <div
+            className="grid max-h-[calc(100vh-2rem)] w-full max-w-5xl cursor-default overflow-y-auto rounded-2xl border border-[#26364d] bg-[#0b1626] shadow-2xl shadow-black/60 lg:grid-cols-[minmax(0,1fr)_22rem]"
+            onClick={(event) => event.stopPropagation()}
+          >
             <section className="bg-slate-950 p-6 text-white sm:p-8">
               <div className="flex items-start justify-between gap-4">
                 <div>
@@ -237,7 +242,7 @@ export function LeetcodeAttemptOverlayButton({
                 <button
                   type="button"
                   aria-label="Close attempt overlay"
-                  className="grid h-10 w-10 shrink-0 place-items-center rounded-lg border border-slate-700 text-xl text-slate-300 transition hover:border-slate-500 hover:text-white"
+                  className="grid h-10 w-10 shrink-0 cursor-pointer place-items-center rounded-lg border border-slate-700 text-xl text-slate-300 transition hover:border-slate-500 hover:text-white"
                   onClick={closeOverlay}
                 >
                   ×
@@ -262,14 +267,14 @@ export function LeetcodeAttemptOverlayButton({
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <button
                     type="button"
-                    className="rounded-xl bg-[#6747ff] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#775bff]"
+                    className="cursor-pointer rounded-xl bg-[#6747ff] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#775bff]"
                     onClick={startAttempt}
                   >
                     Start timer
                   </button>
                   <button
                     type="button"
-                    className="rounded-xl border border-slate-700 px-5 py-3 text-sm font-bold text-slate-200 transition hover:border-slate-500 hover:text-white"
+                    className="cursor-pointer rounded-xl border border-slate-700 px-5 py-3 text-sm font-bold text-slate-200 transition hover:border-slate-500 hover:text-white"
                     onClick={() => setShowLastNotes((current) => !current)}
                   >
                     {showLastNotes ? "Hide last notes" : "Show last notes"}
@@ -279,14 +284,14 @@ export function LeetcodeAttemptOverlayButton({
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <button
                     type="button"
-                    className="rounded-xl bg-[#6747ff] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#775bff]"
+                    className="cursor-pointer rounded-xl bg-[#6747ff] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#775bff]"
                     onClick={() => showResults()}
                   >
                     Finish attempt
                   </button>
                   <button
                     type="button"
-                    className="rounded-xl border border-slate-700 px-5 py-3 text-sm font-bold text-slate-200 transition hover:border-slate-500 hover:text-white"
+                    className="cursor-pointer rounded-xl border border-slate-700 px-5 py-3 text-sm font-bold text-slate-200 transition hover:border-slate-500 hover:text-white"
                     onClick={() => showResults("skipped")}
                   >
                     Skip
@@ -303,7 +308,7 @@ export function LeetcodeAttemptOverlayButton({
                     <>
                       <button
                         type="button"
-                        className="font-bold underline underline-offset-4"
+                        className="cursor-pointer font-bold underline underline-offset-4"
                         onClick={() => void signInWithGoogle()}
                       >
                         Sign in
@@ -367,7 +372,7 @@ export function LeetcodeAttemptOverlayButton({
                       {attemptStatuses.map((status) => (
                         <label
                           key={status.value}
-                          className="flex items-center gap-3 rounded-xl border border-[#26364d] bg-[#101a2a] px-4 py-3 text-sm font-semibold text-slate-200"
+                          className="flex cursor-pointer items-center gap-3 rounded-xl border border-[#26364d] bg-[#101a2a] px-4 py-3 text-sm font-semibold text-slate-200"
                         >
                           <input
                             type="radio"
@@ -396,7 +401,7 @@ export function LeetcodeAttemptOverlayButton({
 
                     <button
                       type="submit"
-                      className="w-full rounded-xl bg-[#6747ff] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#775bff] disabled:cursor-not-allowed disabled:opacity-60"
+                      className="w-full cursor-pointer rounded-xl bg-[#6747ff] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#775bff] disabled:cursor-not-allowed disabled:opacity-60"
                       disabled={isPending}
                     >
                       {isPending ? "Saving..." : "Save attempt"}
