@@ -29,6 +29,18 @@ export const leetcodeProblemDifficultyLabels = [
   LeetcodeProblemDifficultyLabel.Hard,
 ] as const;
 
+export function parseDifficulty(value: string | null) {
+  if (
+    value === LeetcodeProblemDifficultyLabel.Easy ||
+    value === LeetcodeProblemDifficultyLabel.Medium ||
+    value === LeetcodeProblemDifficultyLabel.Hard
+  ) {
+    return value;
+  }
+
+  return null;
+}
+
 export enum LeetcodeProblemStatusLabel {
   Completed = "Completed",
   Attempted = "Attempted",
