@@ -39,7 +39,7 @@ export async function getLeetcodeAttemptRowsForUser(
   const catalog = getLeetcodeCatalog();
   const attempts = await getSortedLeetcodeAttemptEventsForUser(userId);
 
-  return toLeetcodeAttemptRows(attempts, catalog.index.problems);
+  return toLeetcodeAttemptRows(attempts, catalog.index.problemsByNumber);
 }
 
 export function hydrateProblemsWithAttempts(

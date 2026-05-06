@@ -9,7 +9,6 @@ import type {
   LeetcodeAttemptRow,
   LeetcodeProblemDifficultyLabel,
   LeetcodeProblemProgressRow,
-  LeetcodePatternGroup,
   LeetcodeProblemRow,
   SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";

@@ -57,7 +57,7 @@ describe("normalizeLeetcodeProblem", () => {
   it("normalizes raw catalog difficulty values to display labels", () => {
     const catalog = getLeetcodeCatalog();
 
-    expect(catalog.problems[0]?.difficulty).toBe(
+    expect(catalog.index.problems[0]?.difficulty).toBe(
       LeetcodeProblemDifficultyLabel.Medium,
     );
   });
@@ -67,12 +67,18 @@ describe("normalizeLeetcodeProblem", () => {
 
     const twoPointer = catalog.index.patterns.get("Two Pointer");
     const converging = twoPointer?.subPatterns.get("Converging");
-    const container = catalog.index.problems.get("11");
+    const container = catalog.index.problemsByNumber.get("11");
 
-    expect(twoPointer?.problems.some((problem) => problem.number === "11")).toBe(
-      true,
-    );
-    expect(converging?.problems.map((problem) => problem.number)).toContain("11");
+    expect(
+      twoPointer?.problemIndexes.some(
+        (problemIndex) => catalog.index.problems[problemIndex]?.number === "11",
+      ),
+    ).toBe(true);
+    expect(
+      converging?.problemIndexes.map(
+        (problemIndex) => catalog.index.problems[problemIndex]?.number,
+      ),
+    ).toContain("11");
     expect(container?.title).toBe("Container With Most Water");
   });
 });

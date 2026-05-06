@@ -2,96 +2,26 @@ import "server-only";
 
 import rawPatterns from "@/data/leetcode/leetcode-patterns.json";
 import {
+  type LeetcodePatternCounts,
   LeetcodeProblemDifficultyLabel,
-  type LeetcodePatternGroup,
-  type LeetcodePatternSummary,
   type LeetcodeProblemRow,
 } from "@/lib/leetcode/types";
-
-type RawLeetcodeProblemDifficulty = "easy" | "medium" | "hard";
-
-type RawLeetcodeProblem = {
-  number: string;
-  title: string;
-  leetcodeUrl: string;
-  difficulty: RawLeetcodeProblemDifficulty;
-  estimatedMinutes: number;
-  solutions?: {
-    neetcode?: {
-      textUrl?: string | null;
-      videoUrl?: string | null;
-    } | null;
-  } | null;
-};
-
-type RawLeetcodePatterns = {
-  patterns: {
-    name: string;
-    subPatterns: {
-      name: string;
-      problems: RawLeetcodeProblem[];
-    }[];
-  }[];
-};
-
-export type NormalizedProblem = {
-  number: string;
-  title: string;
-  leetcodeUrl: string;
-  difficulty: LeetcodeProblemDifficultyLabel;
-  estimatedMinutes: number;
-  solutions?: {
-    neetcode?: {
-      textUrl: string;
-      videoUrl?: string;
-    };
-  };
-};
-
-export function normalizeLeetcodeProblem(
-  problem: RawLeetcodeProblem,
-): NormalizedProblem {
-  const neetcode = problem.solutions?.neetcode;
-  const solutions =
-    neetcode?.textUrl
-      ? {
-          neetcode: {
-            textUrl: neetcode.textUrl,
-            ...(neetcode.videoUrl ? { videoUrl: neetcode.videoUrl } : {}),
-          },
-        }
-      : null;
-
-  return {
-    number: problem.number,
-    title: problem.title,
-    leetcodeUrl: problem.leetcodeUrl,
-    difficulty: normalizeDifficulty(problem.difficulty),
-    estimatedMinutes: problem.estimatedMinutes,
-    ...(solutions ? { solutions } : {}),
-  };
-}
+import { StringValidation } from "zod/v3";
 
 type LeetcodeCatalog = {
-  problems: LeetcodeProblemRow[];
-  patternGroups: LeetcodePatternGroup[];
-  index: LeetcodeCatalogIndex;
-};
-
-export type LeetcodeCatalogIndex = {
-  patterns: Map<string, LeetcodeCatalogPatternEntry>;
-  problems: Map<string, LeetcodeProblemRow>;
+  problems: Map<number, LeetcodeProblemRow[]>;
+  patternCounts: Map<string, LeetcodePatternCounts>;
+  index: Map<string, LeetcodeCatalogPatternEntry>;
 };
 
 export type LeetcodeCatalogPatternEntry = {
-  group: LeetcodePatternGroup;
   subPatterns: Map<string, LeetcodeCatalogSubPatternEntry>;
-  problems: LeetcodeProblemRow[];
+  problemIndexes: number[];
 };
 
 export type LeetcodeCatalogSubPatternEntry = {
-  summary: LeetcodePatternSummary;
-  problems: LeetcodeProblemRow[];
+  name: string;
+  problemIndexes: number[];
 };
 
 let cachedCatalog: LeetcodeCatalog | null = null;
@@ -101,28 +31,23 @@ export function getLeetcodeCatalog(): LeetcodeCatalog {
 
   assertRawLeetcodePatterns(rawPatterns);
   const data = rawPatterns;
-  const problems: LeetcodeProblemRow[] = [];
-  const patternGroups: LeetcodePatternGroup[] = [];
-  const index: LeetcodeCatalogIndex = {
-    patterns: new Map(),
-    problems: new Map(),
-  };
+  const problems = new Map<number, LeetcodeProblemRow[]>();
+  const patternCounts = new Map<string, LeetcodePatternCounts>();
+  const index = new Map<string, LeetcodeCatalogPatternEntry>();
 
   for (const pattern of data.patterns) {
     let majorPatternCount = 0;
-    const subPatterns: LeetcodePatternSummary[] = [];
-    const patternProblems: LeetcodeProblemRow[] = [];
+    const subPatternCounts: LeetcodePatternCounts[] = [];
+    const patternProblemIndexes: number[] = [];
     const indexedSubPatterns = new Map<string, LeetcodeCatalogSubPatternEntry>();
 
     for (const subPattern of pattern.subPatterns) {
       majorPatternCount += subPattern.problems.length;
-      const summary = {
-        name: subPattern.name,
-        count: subPattern.problems.length,
-      };
-      const subPatternProblems: LeetcodeProblemRow[] = [];
+      const subPatternProblemIndexes: number[] = [];
 
-      subPatterns.push(summary);
+      subPatternCounts.push({
+        count: subPattern.problems.length,
+      });
 
       for (const rawProblem of subPattern.problems) {
         const problem = normalizeLeetcodeProblem(rawProblem);
@@ -138,36 +63,33 @@ export function getLeetcodeCatalog(): LeetcodeCatalog {
           solutionUrl: problem.solutions?.neetcode?.textUrl,
           solutionVideoUrl: problem.solutions?.neetcode?.videoUrl,
         };
+        const problemIndex = problems.size;
 
-        problems.push(row);
-        patternProblems.push(row);
-        subPatternProblems.push(row);
-        index.problems.set(row.number, row);
+        problems.set(problemIndex, [row]);
+        patternProblemIndexes.push(problemIndex);
+        subPatternProblemIndexes.push(problemIndex);
       }
 
       indexedSubPatterns.set(subPattern.name, {
-        summary,
-        problems: subPatternProblems,
+        name: subPattern.name,
+        problemIndexes: subPatternProblemIndexes,
       });
     }
 
-    const group = {
-      name: pattern.name,
+    patternCounts.set(pattern.name, {
       count: majorPatternCount,
-      subPatterns,
-    };
+      children: subPatternCounts,
+    });
 
-    patternGroups.push(group);
-    index.patterns.set(pattern.name, {
-      group,
+    index.set(pattern.name, {
       subPatterns: indexedSubPatterns,
-      problems: patternProblems,
+      problemIndexes: patternProblemIndexes,
     });
   }
 
   cachedCatalog = {
     problems,
-    patternGroups,
+    patternCounts,
     index,
   };
 
@@ -246,4 +168,68 @@ export function assertRawLeetcodePatterns(
       }
     }
   }
+}
+
+type RawLeetcodeProblemDifficulty = "easy" | "medium" | "hard";
+
+type RawLeetcodeProblem = {
+  number: string;
+  title: string;
+  leetcodeUrl: string;
+  difficulty: RawLeetcodeProblemDifficulty;
+  estimatedMinutes: number;
+  solutions?: {
+    neetcode?: {
+      textUrl?: string | null;
+      videoUrl?: string | null;
+    } | null;
+  } | null;
+};
+
+type RawLeetcodePatterns = {
+  patterns: {
+    name: string;
+    subPatterns: {
+      name: string;
+      problems: RawLeetcodeProblem[];
+    }[];
+  }[];
+};
+
+export type NormalizedProblem = {
+  number: string;
+  title: string;
+  leetcodeUrl: string;
+  difficulty: LeetcodeProblemDifficultyLabel;
+  estimatedMinutes: number;
+  solutions?: {
+    neetcode?: {
+      textUrl: string;
+      videoUrl?: string;
+    };
+  };
+};
+
+export function normalizeLeetcodeProblem(
+  problem: RawLeetcodeProblem,
+): NormalizedProblem {
+  const neetcode = problem.solutions?.neetcode;
+  const solutions =
+    neetcode?.textUrl
+      ? {
+          neetcode: {
+            textUrl: neetcode.textUrl,
+            ...(neetcode.videoUrl ? { videoUrl: neetcode.videoUrl } : {}),
+          },
+        }
+      : null;
+
+  return {
+    number: problem.number,
+    title: problem.title,
+    leetcodeUrl: problem.leetcodeUrl,
+    difficulty: normalizeDifficulty(problem.difficulty),
+    estimatedMinutes: problem.estimatedMinutes,
+    ...(solutions ? { solutions } : {}),
+  };
 }

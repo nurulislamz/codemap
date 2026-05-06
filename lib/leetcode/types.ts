@@ -67,11 +67,7 @@ export type SaveLeetcodeAttemptAction = (
   input: SaveLeetcodeAttemptInput,
 ) => Promise<void>;
 
-export type LeetcodePatternSummary = {
-  name: string;
+export type LeetcodePatternCounts = {
   count: number;
-};
-
-export type LeetcodePatternGroup = LeetcodePatternSummary & {
-  subPatterns: LeetcodePatternSummary[];
+  children?: LeetcodePatternCounts[] | null;
 };

@@ -12,10 +12,10 @@ export const dynamic = "force-dynamic";
 export default async function LeetcodeDashboardPage() {
   const catalog = getLeetcodeCatalog();
   const attemptEvents = await getSortedLeetcodeAttemptEventsForRequest();
-  const problems = hydrateProblemsWithAttempts(catalog.problems, attemptEvents);
+  const problems = hydrateProblemsWithAttempts(catalog.index.problems, attemptEvents);
   const attempts = toLeetcodeAttemptRows(
     attemptEvents,
-    catalog.index.problems,
+    catalog.index.problemsByNumber,
   );
 
   return (
