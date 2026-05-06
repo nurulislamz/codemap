@@ -1,9 +1,8 @@
 import "server-only";
 
 import { UnauthorizedError, getRequestUserId } from "@/lib/auth/identity";
-import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import type { LeetCodeAttemptEvent } from "@/lib/firebase/leetcode";
-import { getAllLeetCodeAttempts } from "./db-server";
+import { getAllLeetCodeAttempts, getLeetCodeAttempts } from "./db-server";
 import type {
   LeetcodeAttemptRow,
   LeetcodeProblemProgressRow,
@@ -35,14 +34,15 @@ export async function getSortedLeetcodeAttemptEventsForRequest(): Promise<
 
 export async function getLeetcodeAttemptRowsForUser(
   userId: string,
+  problemId: string,
 ): Promise<LeetcodeAttemptRow[]> {
-  const catalog = getLeetcodeCatalog();
-  const attempts = await getSortedLeetcodeAttemptEventsForUser(userId);
-  const problems = Array.from(catalog.problems.values()).flat();
+  const attempts = sortAttemptsByEndDate(
+    await getLeetCodeAttempts(problemId, userId),
+  );
 
   return toLeetcodeAttemptRows(
     attempts,
-    new Map(problems.map((problem) => [problem.number, problem])),
+    new Map(),
   );
 }
 

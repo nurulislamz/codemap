@@ -127,20 +127,28 @@ export function LeetcodePracticeProgressClient({
       }
 
       const idToken = await getIdToken();
-      const response = await fetch("/api/leetcode/attempts", {
-        cache: "no-store",
-        headers: idToken ? { authorization: `Bearer ${idToken}` } : {},
-      });
+      const attemptGroups = await Promise.all(
+        problems.map(async (problem) => {
+          const response = await fetch(
+            `/api/leetcode/attempts?problemId=${encodeURIComponent(problem.number)}`,
+            {
+              cache: "no-store",
+              headers: idToken ? { authorization: `Bearer ${idToken}` } : {},
+            },
+          );
 
-      if (!response.ok) return;
+          if (!response.ok) return [];
 
-      const data = (await response.json()) as AttemptsResponse;
-      const nextAttempts = data.attempts ?? [];
+          const data = (await response.json()) as AttemptsResponse;
+          return data.attempts ?? [];
+        }),
+      );
+      const nextAttempts = attemptGroups.flat();
       cachedAttemptUser = user.uid;
       cachedAttempts = nextAttempts;
       setAttempts(nextAttempts);
     },
-    [authStatus, getIdToken, user],
+    [authStatus, getIdToken, problems, user],
   );
 
   useEffect(() => {

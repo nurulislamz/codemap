@@ -1,17 +1,18 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { LeetcodePracticeProgressClient } from "./leetcode-practice-progress-client";
 import { LeetcodeProblemDifficultyLabel, type LeetcodeProblemRow } from "@/lib/leetcode/types";
 
 const authState = vi.hoisted(() => ({
   status: "signed-out" as "loading" | "signed-in" | "signed-out" | "unavailable",
+  user: null as { uid: string } | null,
 }));
 const getIdToken = vi.hoisted(() => vi.fn(async () => null));
 
 vi.mock("@/components/auth/auth-provider", () => ({
   useAuth: () => ({
     status: authState.status,
-    user: null,
+    user: authState.user,
     getIdToken,
     signInWithGoogle: vi.fn(),
     signOutUser: vi.fn(),
@@ -33,6 +34,7 @@ const problems: LeetcodeProblemRow[] = [
 describe("LeetcodePracticeProgressClient", () => {
   beforeEach(() => {
     authState.status = "signed-out";
+    authState.user = null;
 
     const storage = new Map<string, string>();
 
@@ -107,5 +109,30 @@ describe("LeetcodePracticeProgressClient", () => {
     fireEvent.click(progressButton);
 
     expect(await screen.findByText("Time ran out")).toBeInTheDocument();
+  });
+
+  it("fetches signed-in attempts by problem id", async () => {
+    authState.status = "signed-in";
+    authState.user = { uid: "firebase-user-123" };
+    getIdToken.mockResolvedValue("id-token-123");
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => ({
+        ok: true,
+        json: async () => ({ attempts: [] }),
+      })),
+    );
+
+    render(<LeetcodePracticeProgressClient problems={problems} query="" />);
+
+    await waitFor(() =>
+      expect(fetch).toHaveBeenCalledWith(
+        "/api/leetcode/attempts?problemId=102",
+        expect.objectContaining({
+          cache: "no-store",
+          headers: { authorization: "Bearer id-token-123" },
+        }),
+      ),
+    );
   });
 });
