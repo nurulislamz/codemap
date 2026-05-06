@@ -1,19 +1,15 @@
 import { LeetcodePracticeProgressClient } from "./leetcode-practice-progress-client";
 import {
-  LeetcodePatternGroup,
-  LeetcodeProblemRow,
   LeetcodeProblemStatusLabel,
   SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
 import { LeetcodeProblemDifficultyLabel } from "@/lib/leetcode/types";
 import { CodeIcon, LeetcodeHeroPanel } from "./leetcode-ui";
-import { redirect } from "next/dist/server/api-utils";
-import { zodDef } from "openai/_vendor/zod-to-json-schema/util.mjs";
 import zod from "zod";
+import { LeetcodeCatalog } from "@/lib/leetcode/catalog";
 
 type LeetcodePracticeDashboardProps = {
-  problems: LeetcodeProblemRow[];
-  patterns: LeetcodePatternGroup[];
+  catalog: LeetcodeCatalog;
   selectedPattern?: string | null;
   selectedSubPatterns?: string[];
   selectedDifficulty?: string | null;
@@ -27,82 +23,8 @@ type InvalidLeetcodeFilter = {
   value: string;
 };
 
-function validateFilters(
-  patterns: LeetcodePatternGroup[],
-  selectedPatternInput: string | null,
-  selectedSubPatternInputs: string[],
-  selectedDifficultyInput: string | null,
-): InvalidLeetcodeFilter[] {
-  const selectedPattern = selectedPatternInput
-    ? patterns.find((pattern) => pattern.name === selectedPatternInput)
-    : null;
-  const validSubPatterns = new Set(
-    selectedPattern
-      ? selectedPattern.subPatterns.map((subPattern) => subPattern.name)
-      : patterns.flatMap((pattern) =>
-          pattern.subPatterns.map((subPattern) => subPattern.name),
-        ),
-  );
-  const difficultySchema = zod
-    .enum(LeetcodeProblemDifficultyLabel)
-    .nullable();
-
-  const filterSchema = zod
-    .object({
-      selectedPattern: zod
-        .string()
-        .nullable()
-        .refine((pattern) => !pattern || Boolean(selectedPattern)),
-      selectedSubPatterns: zod.array(
-        zod.string().refine((subPattern) => validSubPatterns.has(subPattern)),
-      ),
-      selectedDifficulty: difficultySchema,
-    })
-    .strict();
-
-  const filters = {
-    selectedPattern: selectedPatternInput,
-    selectedSubPatterns: selectedSubPatternInputs,
-    selectedDifficulty: selectedDifficultyInput,
-  };
-
-  if (filterSchema.safeParse(filters).success) return [];
-
-  const invalidFilters: InvalidLeetcodeFilter[] = [];
-
-  if (selectedPatternInput && !selectedPattern) {
-    invalidFilters.push({ type: "pattern", value: selectedPatternInput });
-  }
-
-  for (const subPattern of selectedSubPatternInputs) {
-    if (!validSubPatterns.has(subPattern)) {
-      invalidFilters.push({ type: "subPattern", value: subPattern });
-    }
-  }
-
-  if (
-    selectedDifficultyInput &&
-    !difficultySchema.safeParse(selectedDifficultyInput).success
-  ) {
-    invalidFilters.push({ type: "difficulty", value: selectedDifficultyInput });
-  }
-
-  return invalidFilters;
-}
-
-function validateQuery(query: string | null) {
-  if (query && query.length > 100) {
-    console.warn(
-      `LeetCode search query is too long (${query.length} characters). Ignoring search query.`,
-    );
-    return null;
-  }
-  return query;
-}
-
 export function LeetcodePracticeDashboard({
-  problems,
-  patterns,
+  catalog: catalog, 
   selectedPattern: selectedPattern = null,
   selectedSubPatterns: selectedSubPattern = [],
   selectedDifficulty: selectedDifficulty = null,
@@ -110,11 +32,12 @@ export function LeetcodePracticeDashboard({
   saveAttemptAction,
 }: LeetcodePracticeDashboardProps) {
   const invalidFilters = validateFilters(
-    patterns,
+    catalog,
     selectedPattern,
     selectedSubPattern,
     selectedDifficulty,
   );
+
 
   return (
     <div className="space-y-5">
@@ -203,4 +126,28 @@ export function LeetcodePracticeDashboard({
       />
     </div>
   );
+}
+
+function validateFilters(
+  catalog: LeetcodeCatalog,
+  selectedPatternInput: string | null,
+  selectedSubPatternInputs: string[],
+  selectedDifficultyInput: string | null,
+) {
+  
+  const invalidFilters: InvalidLeetcodeFilter[] = [];
+
+  if (selectedPatternInput && catalog.patternCounts.get(selectedPatternInput)) {
+    console.log("Selected pattern:", selectedPatternInput);
+  }
+
+  selectedSubPatternInputs.forEach((subPattern) => {
+    if (catalog.patternCounts.get(subPattern)) {
+      console.log("Selected sub-pattern:", subPattern);
+    }
+  });
+
+  if (selectedDifficultyInput && !Object.values(LeetcodeProblemDifficultyLabel).includes(selectedDifficultyInput as LeetcodeProblemDifficultyLabel)) {
+    console.log("Selected difficulty:", selectedDifficultyInput);
+  }
 }

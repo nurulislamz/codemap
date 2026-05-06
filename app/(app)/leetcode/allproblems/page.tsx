@@ -12,14 +12,12 @@ type LeetCodePageProps = {
 };
 
 export default async function LeetCodePage({ searchParams }: LeetCodePageProps) {
-  const { index, patternGroups } = getLeetcodeCatalog();
-  const problems = index.problems;
+  const catalog = getLeetcodeCatalog();
   const params = await searchParams;
 
   return (
     <LeetcodePracticeDashboard
-      problems={problems}
-      patterns={patternGroups}
+      catalog={catalog}
       selectedPattern={params?.pattern}
       selectedSubPatterns={params?.subPattern}
       selectedDifficulty={params?.difficulty}

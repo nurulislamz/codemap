@@ -8,7 +8,7 @@ import {
 } from "@/lib/leetcode/types";
 import { StringValidation } from "zod/v3";
 
-type LeetcodeCatalog = {
+export type LeetcodeCatalog = {
   problems: Map<number, LeetcodeProblemRow[]>;
   patternCounts: Map<string, LeetcodePatternCounts>;
   index: Map<string, LeetcodeCatalogPatternEntry>;
