@@ -38,25 +38,29 @@ export function Menu() {
   }
 
   function renderAuthControls(className: string, closeOnAction = false) {
-    return (
-      <div className={className}>
-        {status === "signed-in" ? (
-          <>
-            <span className="max-w-52 truncate text-slate-400">
-              {user?.email ?? "Signed in"}
-            </span>
-            <button
-              type="button"
-              className="rounded-md border border-white/15 px-3.5 py-1.5 text-sm text-slate-200 transition hover:border-[#7c68ff] hover:bg-white/5 hover:text-white"
-              onClick={() => {
-                if (closeOnAction) closeMenus();
-                void signOutUser();
-              }}
-            >
-              Sign out
-            </button>
-          </>
-        ) : status === "signed-out" ? (
+    if (status === "signed-in") {
+      return (
+        <div className={className}>
+          <span className="max-w-52 truncate text-slate-400">
+            {user?.email ?? "Signed in"}
+          </span>
+          <button
+            type="button"
+            className="rounded-md border border-white/15 px-3.5 py-1.5 text-sm text-slate-200 transition hover:border-[#7c68ff] hover:bg-white/5 hover:text-white"
+            onClick={() => {
+              if (closeOnAction) closeMenus();
+              void signOutUser();
+            }}
+          >
+            Sign out
+          </button>
+        </div>
+      );
+    }
+
+    if (status === "signed-out") {
+      return (
+        <div className={className}>
           <button
             type="button"
             className="rounded-md bg-gradient-to-r from-[#7c68ff] to-[#5d47ff] px-4 py-2 text-sm font-bold text-white shadow-lg shadow-[#6747ff]/20 transition hover:brightness-110"
@@ -67,9 +71,11 @@ export function Menu() {
           >
             Sign in
           </button>
-        ) : null}
-      </div>
-    );
+        </div>
+      );
+    }
+
+    return null;
   }
 
   return (
@@ -98,9 +104,14 @@ export function Menu() {
 
             if (item.href === "/leetcode") {
               return (
-                <li key={item.href} ref={leetcodeMenuRef} className="relative">
-                  <button
-                    type="button"
+                <li
+                  key={item.href}
+                  ref={leetcodeMenuRef}
+                  className="relative"
+                  onMouseLeave={() => setIsLeetcodeMenuOpen(false)}
+                >
+                  <Link
+                    href="/leetcode"
                     aria-expanded={isLeetcodeMenuOpen}
                     aria-controls="leetcode-nav-menu"
                     aria-haspopup="menu"
@@ -109,10 +120,11 @@ export function Menu() {
                         ? "text-white after:w-full"
                         : "text-slate-300 after:w-0"
                     }`}
-                    onClick={() => setIsLeetcodeMenuOpen((current) => !current)}
+                    onMouseEnter={() => setIsLeetcodeMenuOpen(true)}
+                    onFocus={() => setIsLeetcodeMenuOpen(true)}
                   >
                     {item.label}
-                  </button>
+                  </Link>
 
                   {isLeetcodeMenuOpen ? (
                     <ul
@@ -120,6 +132,7 @@ export function Menu() {
                       aria-label="LeetCode menu"
                       role="menu"
                       className="absolute left-0 top-full z-50 mt-4 w-52 rounded-xl border border-white/10 bg-[#101a2a] p-2 text-sm text-slate-100 shadow-2xl shadow-black/40"
+                      onMouseEnter={() => setIsLeetcodeMenuOpen(true)}
                     >
                       {leetcodeNavItems.map((leetcodeItem) => (
                         <li key={leetcodeItem.href}>

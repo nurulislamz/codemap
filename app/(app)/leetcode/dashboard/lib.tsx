@@ -1,37 +1,13 @@
 import {
-  type LeetcodeDashboardDifficultyFilterOption,
   type LeetcodeDashboardProblemRow,
 } from "@/components/leetcode/leetcode-dashboard-client";
 import { LeetcodePanel } from "@/components/leetcode/leetcode-ui";
 import {
-  LeetcodeProblemDifficultyLabel,
   type LeetcodeAttemptRow,
   type LeetcodeProblemProgressRow,
   type LeetcodeProblemRow,
+  LeetcodeProblemDifficultyLabel,
 } from "@/lib/leetcode/types";
-
-export const difficultyFilters: LeetcodeDashboardDifficultyFilterOption[] = [
-  {
-    label: "All",
-    selectedClassName: "border-[#5a4fc2] bg-[#272059] text-[#a895ff]",
-    value: "all",
-  },
-  {
-    label: "Easy",
-    selectedClassName: "border-[#1d7452] bg-[#123a32] text-[#38e68a]",
-    value: LeetcodeProblemDifficultyLabel.Easy,
-  },
-  {
-    label: "Medium",
-    selectedClassName: "border-[#74561b] bg-[#352913] text-[#ffd323]",
-    value: LeetcodeProblemDifficultyLabel.Medium,
-  },
-  {
-    label: "Hard",
-    selectedClassName: "border-[#74304a] bg-[#341827] text-[#ff6f91]",
-    value: LeetcodeProblemDifficultyLabel.Hard,
-  },
-];
 
 export function isSameLocalDay(value: string, date: Date) {
   const input = new Date(value);
@@ -103,6 +79,8 @@ function difficultyClasses(difficulty: LeetcodeProblemRow["difficulty"]) {
       return "border-[#74561b] bg-[#352913] text-[#ffd323]";
     case LeetcodeProblemDifficultyLabel.Hard:
       return "border-[#74304a] bg-[#341827] text-[#ff6f91]";
+    default:
+      return "border-[#334258] bg-[#172233] text-slate-300";
   }
 }
 

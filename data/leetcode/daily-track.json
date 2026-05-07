@@ -1,735 +1,4220 @@
 {
-  "1": [
-    "349",
-    "977",
-    "11"
-  ],
-  "2": [
-    "15",
-    "16",
-    "18"
-  ],
-  "3": [
-    "259",
-    "881",
-    "167"
-  ],
-  "4": [
-    "141",
-    "202",
-    "392"
-  ],
-  "5": [
-    "287"
-  ],
-  "6": [
-    "876",
-    "19",
-    "2095"
-  ],
-  "7": [
-    "26",
-    "27",
-    "283"
-  ],
-  "8": [
-    "905",
-    "75",
-    "443"
-  ],
-  "9": [
-    "2337",
-    "2938",
-    "80"
-  ],
-  "10": [
-    "844",
-    "1598",
-    "2390"
-  ],
-  "11": [
-    "5",
-    "647"
-  ],
-  "12": [
-    "344",
-    "345",
-    "541"
-  ],
-  "13": [
-    "151"
-  ],
-  "14": [
-    "643",
-    "2985",
-    "3318"
-  ],
-  "15": [
-    "346",
-    "3254"
-  ],
-  "16": [
-    "219",
-    "3",
-    "209"
-  ],
-  "17": [
-    "424",
-    "713",
-    "904"
-  ],
-  "18": [
-    "1438",
-    "1493",
-    "1658"
-  ],
-  "19": [
-    "1838",
-    "2461",
-    "2516"
-  ],
-  "20": [
-    "2762",
-    "2779",
-    "2981"
-  ],
-  "21": [
-    "3026",
-    "3346",
-    "1004"
-  ],
-  "22": [
-    "3347",
-    "76"
-  ],
-  "23": [
-    "1696",
-    "239",
-    "862"
-  ],
-  "24": [
-    "1",
-    "438",
-    "567"
-  ],
-  "25": [
-    "102",
-    "103",
-    "199"
-  ],
-  "26": [
-    "515",
-    "1161"
-  ],
-  "27": [
-    "100",
-    "101",
-    "226"
-  ],
-  "28": [
-    "257",
-    "105",
-    "114"
-  ],
-  "29": [
-    "988"
-  ],
-  "30": [
-    "94",
-    "501",
-    "530"
-  ],
-  "31": [
-    "98",
-    "230",
-    "173"
-  ],
-  "32": [
-    "104",
-    "110",
-    "145"
-  ],
-  "33": [
-    "543",
-    "337",
-    "366"
-  ],
-  "34": [
-    "863",
-    "1110",
-    "124"
-  ],
-  "35": [
-    "2458"
-  ],
-  "36": [
-    "235",
-    "236"
-  ],
-  "37": [
-    "572",
-    "652",
-    "297"
-  ],
-  "38": [
-    "733",
-    "130",
-    "200"
-  ],
-  "39": [
-    "417",
-    "547",
-    "695"
-  ],
-  "40": [
-    "841",
-    "1020",
-    "1254"
-  ],
-  "41": [
-    "1905",
-    "2101"
-  ],
-  "42": [
-    "542",
-    "994",
-    "1091"
-  ],
-  "43": [
-    "207",
-    "802",
-    "1059"
-  ],
-  "44": [
-    "210"
-  ],
-  "45": [
-    "310",
-    "444",
-    "1136"
-  ],
-  "46": [
-    "2115",
-    "269",
-    "1857"
-  ],
-  "47": [
-    "2392",
-    "2050"
-  ],
-  "48": [
-    "133",
-    "138",
-    "1334"
-  ],
-  "49": [
-    "1490"
-  ],
-  "50": [
-    "743",
-    "1514",
-    "1631"
-  ],
-  "51": [
-    "2812",
-    "1976",
-    "778"
-  ],
-  "52": [
-    "2045",
-    "2203",
-    "2290"
-  ],
-  "53": [
-    "2577"
-  ],
-  "54": [
-    "787",
-    "1129"
-  ],
-  "55": [
-    "261",
-    "323",
-    "684"
-  ],
-  "56": [
-    "721",
-    "947",
-    "959"
-  ],
-  "57": [
-    "1101",
-    "737",
-    "952"
-  ],
-  "58": [
-    "305"
-  ],
-  "59": [
-    "1192",
-    "2127"
-  ],
-  "60": [
-    "2360"
-  ],
-  "61": [
-    "1135",
-    "1584",
-    "1168"
-  ],
-  "62": [
-    "1489"
-  ],
-  "63": [
-    "127",
-    "815",
-    "126"
-  ],
-  "64": [
-    "70",
-    "509",
-    "746"
-  ],
-  "65": [
-    "91",
-    "198",
-    "740"
-  ],
-  "66": [
-    "213"
-  ],
-  "67": [
-    "53",
-    "152",
-    "918"
-  ],
-  "68": [
-    "1749",
-    "2321"
-  ],
-  "69": [
-    "322",
-    "377",
-    "518"
-  ],
-  "70": [
-    "139",
-    "140"
-  ],
-  "71": [
-    "1143",
-    "1092",
-    "1312"
-  ],
-  "72": [
-    "72",
-    "583",
-    "712"
-  ],
-  "73": [
-    "62",
-    "64",
-    "120"
-  ],
-  "74": [
-    "221",
-    "931",
-    "1277"
-  ],
-  "75": [
-    "63"
-  ],
-  "76": [
-    "312",
-    "546"
-  ],
-  "77": [
-    "96",
-    "241",
-    "95"
-  ],
-  "78": [
-    "300",
-    "354",
-    "1671"
-  ],
-  "79": [
-    "2407"
-  ],
-  "80": [
-    "121",
-    "309",
-    "122"
-  ],
-  "81": [
-    "123",
-    "188"
-  ],
-  "82": [
-    "1046",
-    "2558",
-    "506"
-  ],
-  "83": [
-    "703",
-    "347",
-    "451"
-  ],
-  "84": [
-    "973",
-    "215"
-  ],
-  "85": [
-    "1825",
-    "295"
-  ],
-  "86": [
-    "373",
-    "378",
-    "23"
-  ],
-  "87": [
-    "632"
-  ],
-  "88": [
-    "767",
-    "1642",
-    "1792"
-  ],
-  "89": [
-    "1834",
-    "1942",
-    "253"
-  ],
-  "90": [
-    "857",
-    "2402"
-  ],
-  "91": [
-    "17",
-    "77",
-    "78"
-  ],
-  "92": [
-    "90"
-  ],
-  "93": [
-    "31",
-    "46",
-    "60"
-  ],
-  "94": [
-    "39",
-    "40"
-  ],
-  "95": [
-    "22",
-    "301"
-  ],
-  "96": [
-    "79",
-    "2018",
-    "212"
-  ],
-  "97": [
-    "37",
-    "51"
-  ],
-  "98": [
-    "131",
-    "1457",
-    "132"
-  ],
-  "99": [
-    "56",
-    "57",
-    "986"
-  ],
-  "100": [
-    "2406",
-    "759"
-  ],
-  "101": [
-    "55",
-    "45"
-  ],
-  "102": [
-    "134",
-    "2202"
-  ],
-  "103": [
-    "621",
-    "1054"
-  ],
-  "104": [
-    "455",
-    "406",
-    "1029"
-  ],
-  "105": [
-    "135"
-  ],
-  "106": [
-    "35",
-    "69",
-    "278"
-  ],
-  "107": [
-    "374",
-    "704",
-    "1539"
-  ],
-  "108": [
-    "74",
-    "540"
-  ],
-  "109": [
-    "33",
-    "153",
-    "162"
-  ],
-  "110": [
-    "852",
-    "81",
-    "1095"
-  ],
-  "111": [
-    "875",
-    "1011",
-    "1482"
-  ],
-  "112": [
-    "1760",
-    "2064",
-    "2226"
-  ],
-  "113": [
-    "410",
-    "774"
-  ],
-  "114": [
-    "34",
-    "658"
-  ],
-  "115": [
-    "4",
-    "719"
-  ],
-  "116": [
-    "20",
-    "921",
-    "1249"
-  ],
-  "117": [
-    "1963",
-    "32"
-  ],
-  "118": [
-    "496",
-    "1475",
-    "402"
-  ],
-  "119": [
-    "739",
-    "901",
-    "907"
-  ],
-  "120": [
-    "962",
-    "503",
-    "1673"
-  ],
-  "121": [
-    "150",
-    "227",
-    "224"
-  ],
-  "122": [
-    "772"
-  ],
-  "123": [
-    "71",
-    "394",
-    "735"
-  ],
-  "124": [
-    "155",
-    "895"
-  ],
-  "125": [
-    "84",
-    "85"
-  ],
-  "126": [
-    "136",
-    "268",
-    "389"
-  ],
-  "127": [
-    "137"
-  ],
-  "128": [
-    "191",
-    "231",
-    "477"
-  ],
-  "129": [
-    "338",
-    "1442",
-    "1494"
-  ],
-  "130": [
-    "342"
-  ],
-  "131": [
-    "83",
-    "206",
-    "234"
-  ],
-  "132": [
-    "82",
-    "92",
-    "25"
-  ],
-  "133": [
-    "21"
-  ],
-  "134": [
-    "2",
-    "369"
-  ],
-  "135": [
-    "160",
-    "599"
-  ],
-  "136": [
-    "24",
-    "61",
-    "86"
-  ],
-  "137": [
-    "143",
-    "328"
-  ],
-  "138": [
-    "867",
-    "48",
-    "189"
-  ],
-  "139": [
-    "54",
-    "59",
-    "885"
-  ],
-  "140": [
-    "2326"
-  ],
-  "141": [
-    "73",
-    "289",
-    "498"
-  ],
-  "142": [
-    "238",
-    "845",
-    "2483"
-  ],
-  "143": [
-    "66",
-    "67",
-    "989"
-  ],
-  "144": [
-    "43"
-  ],
-  "145": [
-    "88"
-  ],
-  "146": [
-    "448",
-    "442",
-    "41"
-  ],
-  "147": [
-    "9",
-    "125",
-    "680"
-  ],
-  "148": [
-    "242",
-    "49"
-  ],
-  "149": [
-    "13",
-    "12"
-  ],
-  "150": [
-    "8",
-    "65"
-  ],
-  "151": [
-    "415"
-  ],
-  "152": [
-    "28",
-    "796",
-    "686"
-  ],
-  "153": [
-    "214",
-    "3008"
-  ],
-  "154": [
-    "459"
-  ],
-  "155": [
-    "225",
-    "232",
-    "359"
-  ],
-  "156": [
-    "604",
-    "706",
-    "251"
-  ],
-  "157": [
-    "271",
-    "341",
-    "353"
-  ],
-  "158": [
-    "362",
-    "379",
-    "380"
-  ],
-  "159": [
-    "622",
-    "641",
-    "900"
-  ],
-  "160": [
-    "981",
-    "1146",
-    "1348"
-  ],
-  "161": [
-    "1352",
-    "1381",
-    "1756"
-  ],
-  "162": [
-    "2013",
-    "2034",
-    "2336"
-  ],
-  "163": [
-    "146",
-    "432",
-    "642"
-  ],
-  "164": [
-    "715",
-    "2296",
-    "460"
+  "version": 2,
+  "generatedFrom": "data/leetcode/leetcode-patterns.json",
+  "days": [
+    {
+      "day": 1,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "Converging",
+        "label": "Converging practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "349"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "977"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "11"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "Converging",
+        "label": "Converging practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "15"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "16"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "18"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "Converging",
+        "label": "Converging practice"
+      },
+      "estimatedMinutes": 95,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "259"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "881"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "167"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "Fast & Slow",
+        "label": "Fast & Slow practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "141"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "202"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "392"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "Fast & Slow",
+        "label": "Fast & Slow practice"
+      },
+      "estimatedMinutes": 30,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "287"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "Fixed Separation",
+        "label": "Fixed Separation practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "876"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "19"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "2095"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "In-place Array Modification",
+        "label": "In-place Array Modification practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "26"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "27"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "283"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "In-place Array Modification",
+        "label": "In-place Array Modification practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "905"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "75"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "443"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "In-place Array Modification",
+        "label": "In-place Array Modification practice"
+      },
+      "estimatedMinutes": 95,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "2337"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "2938"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "80"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "String Comparison with special characters",
+        "label": "String Comparison with special characters practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "844"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1598"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "2390"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "Expanding From Center",
+        "label": "Expanding From Center practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "5"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "647"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "String Reversal",
+        "label": "String Reversal practice"
+      },
+      "estimatedMinutes": 50,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "344"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "345"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "541"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "focus": {
+        "pattern": "Two Pointer",
+        "subPattern": "String Reversal",
+        "label": "String Reversal practice"
+      },
+      "estimatedMinutes": 30,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "151"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Fixed Size",
+        "label": "Fixed Size practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "643"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "2985"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "3318"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Fixed Size",
+        "label": "Fixed Size practice"
+      },
+      "estimatedMinutes": 55,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "346"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "3254"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Variable Size",
+        "label": "Variable Size practice"
+      },
+      "estimatedMinutes": 80,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "219"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "3"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "209"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Variable Size",
+        "label": "Variable Size practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "424"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "713"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "904"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Variable Size",
+        "label": "Variable Size practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1438"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1493"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1658"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Variable Size",
+        "label": "Variable Size practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1838"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "2461"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "2516"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Variable Size",
+        "label": "Variable Size practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "2762"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "2779"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "2981"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Variable Size",
+        "label": "Variable Size practice"
+      },
+      "estimatedMinutes": 95,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "3026"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "3346"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1004"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Variable Size",
+        "label": "Variable Size practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "3347"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Variable Size",
+        "label": "Variable Size practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "76"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Monotonic Queue for Max/Min",
+        "label": "Monotonic Queue for Max/Min practice"
+      },
+      "estimatedMinutes": 85,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1696"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "239"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Monotonic Queue for Max/Min",
+        "label": "Monotonic Queue for Max/Min practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "862"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "focus": {
+        "pattern": "Sliding Window",
+        "subPattern": "Character Frequency Matching",
+        "label": "Character Frequency Matching practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "438"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "567"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Level Order Traversal",
+        "label": "Level Order Traversal practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "102"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "103"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "199"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Level Order Traversal",
+        "label": "Level Order Traversal practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "515"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1161"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Recursive Preorder Traversal",
+        "label": "Recursive Preorder Traversal practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "100"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "101"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "226"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Recursive Preorder Traversal",
+        "label": "Recursive Preorder Traversal practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "257"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "105"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "114"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Recursive Preorder Traversal",
+        "label": "Recursive Preorder Traversal practice"
+      },
+      "estimatedMinutes": 35,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "988"
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Recursive Inorder Traversal",
+        "label": "Recursive Inorder Traversal practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "94"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "501"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "530"
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Recursive Inorder Traversal",
+        "label": "Recursive Inorder Traversal practice"
+      },
+      "estimatedMinutes": 115,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "98"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "230"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "173"
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Recursive Postorder Traversal",
+        "label": "Recursive Postorder Traversal practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "104"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "110"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "145"
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Recursive Postorder Traversal",
+        "label": "Recursive Postorder Traversal practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "543"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "337"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "366"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Recursive Postorder Traversal",
+        "label": "Recursive Postorder Traversal practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "863"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1110"
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Recursive Postorder Traversal",
+        "label": "Recursive Postorder Traversal practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "124"
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Recursive Postorder Traversal",
+        "label": "Recursive Postorder Traversal practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2458"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Lowest Common Ancestor",
+        "label": "Lowest Common Ancestor practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "235"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "236"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "focus": {
+        "pattern": "Tree Traversal Patterns (DFS & BFS)",
+        "subPattern": "Serialization and Deserialization",
+        "label": "Serialization and Deserialization practice"
+      },
+      "estimatedMinutes": 100,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "572"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "652"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "297"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "DFS - Connected Components / Island Counting",
+        "label": "DFS - Connected Components / Island Counting practice"
+      },
+      "estimatedMinutes": 105,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "733"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "130"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "200"
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "DFS - Connected Components / Island Counting",
+        "label": "DFS - Connected Components / Island Counting practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "417"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "547"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "695"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "DFS - Connected Components / Island Counting",
+        "label": "DFS - Connected Components / Island Counting practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "841"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1020"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1254"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "DFS - Connected Components / Island Counting",
+        "label": "DFS - Connected Components / Island Counting practice"
+      },
+      "estimatedMinutes": 80,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1905"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "2101"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "BFS - Connected Components / Island Counting",
+        "label": "BFS - Connected Components / Island Counting practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "542"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "994"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1091"
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "DFS - Cycle Detection",
+        "label": "DFS - Cycle Detection practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "207"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "802"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1059"
+        }
+      ]
+    },
+    {
+      "day": 47,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "DFS - Cycle Detection",
+        "label": "DFS - Cycle Detection practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "210"
+        }
+      ]
+    },
+    {
+      "day": 48,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "BFS - Topological Sort(Kahn's Algorithm)",
+        "label": "BFS - Topological Sort(Kahn's Algorithm) practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "310"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "444"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1136"
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "BFS - Topological Sort(Kahn's Algorithm)",
+        "label": "BFS - Topological Sort(Kahn's Algorithm) practice"
+      },
+      "estimatedMinutes": 110,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "2115"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "269"
+        }
+      ]
+    },
+    {
+      "day": 50,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "BFS - Topological Sort(Kahn's Algorithm)",
+        "label": "BFS - Topological Sort(Kahn's Algorithm) practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "1857"
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "BFS - Topological Sort(Kahn's Algorithm)",
+        "label": "BFS - Topological Sort(Kahn's Algorithm) practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2392"
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "BFS - Topological Sort(Kahn's Algorithm)",
+        "label": "BFS - Topological Sort(Kahn's Algorithm) practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2050"
+        }
+      ]
+    },
+    {
+      "day": 53,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Deep Copy / Cloning",
+        "label": "Deep Copy / Cloning practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "133"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "138"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1334"
+        }
+      ]
+    },
+    {
+      "day": 54,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Deep Copy / Cloning",
+        "label": "Deep Copy / Cloning practice"
+      },
+      "estimatedMinutes": 40,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "1490"
+        }
+      ]
+    },
+    {
+      "day": 55,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Shortest Path",
+        "label": "Shortest Path practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "743"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1514"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1631"
+        }
+      ]
+    },
+    {
+      "day": 56,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Shortest Path",
+        "label": "Shortest Path practice"
+      },
+      "estimatedMinutes": 85,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "2812"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1976"
+        }
+      ]
+    },
+    {
+      "day": 57,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Shortest Path",
+        "label": "Shortest Path practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "778"
+        }
+      ]
+    },
+    {
+      "day": 58,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Shortest Path",
+        "label": "Shortest Path practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2045"
+        }
+      ]
+    },
+    {
+      "day": 59,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Shortest Path",
+        "label": "Shortest Path practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2203"
+        }
+      ]
+    },
+    {
+      "day": 60,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Shortest Path",
+        "label": "Shortest Path practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2290"
+        }
+      ]
+    },
+    {
+      "day": 61,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Shortest Path",
+        "label": "Shortest Path practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2577"
+        }
+      ]
+    },
+    {
+      "day": 62,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Shortest Path (Bellman-Ford / BFS+K)",
+        "label": "Shortest Path (Bellman-Ford / BFS+K) practice"
+      },
+      "estimatedMinutes": 80,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "787"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1129"
+        }
+      ]
+    },
+    {
+      "day": 63,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Union-Find",
+        "label": "Union-Find practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "261"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "323"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "684"
+        }
+      ]
+    },
+    {
+      "day": 64,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Union-Find",
+        "label": "Union-Find practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "721"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "947"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "959"
+        }
+      ]
+    },
+    {
+      "day": 65,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Union-Find",
+        "label": "Union-Find practice"
+      },
+      "estimatedMinutes": 85,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1101"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "737"
+        }
+      ]
+    },
+    {
+      "day": 66,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Union-Find",
+        "label": "Union-Find practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "952"
+        }
+      ]
+    },
+    {
+      "day": 67,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Union-Find",
+        "label": "Union-Find practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "305"
+        }
+      ]
+    },
+    {
+      "day": 68,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Strongly Connected Components (Kosaraju / Tarjan)",
+        "label": "Strongly Connected Components (Kosaraju / Tarjan) practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "1192"
+        }
+      ]
+    },
+    {
+      "day": 69,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Strongly Connected Components (Kosaraju / Tarjan)",
+        "label": "Strongly Connected Components (Kosaraju / Tarjan) practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2127"
+        }
+      ]
+    },
+    {
+      "day": 70,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Bridges & Articulation Points (Tarjan low-link)",
+        "label": "Bridges & Articulation Points (Tarjan low-link) practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2360"
+        }
+      ]
+    },
+    {
+      "day": 71,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Minimum Spanning Tree (Kruskal / Prim / DSU + heap)",
+        "label": "Minimum Spanning Tree (Kruskal / Prim / DSU + heap) practice"
+      },
+      "estimatedMinutes": 80,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1135"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1584"
+        }
+      ]
+    },
+    {
+      "day": 72,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Minimum Spanning Tree (Kruskal / Prim / DSU + heap)",
+        "label": "Minimum Spanning Tree (Kruskal / Prim / DSU + heap) practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "1168"
+        }
+      ]
+    },
+    {
+      "day": 73,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Minimum Spanning Tree (Kruskal / Prim / DSU + heap)",
+        "label": "Minimum Spanning Tree (Kruskal / Prim / DSU + heap) practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "1489"
+        }
+      ]
+    },
+    {
+      "day": 74,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Bidirectional BFS",
+        "label": "Bidirectional BFS practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "127"
+        }
+      ]
+    },
+    {
+      "day": 75,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Bidirectional BFS",
+        "label": "Bidirectional BFS practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "815"
+        }
+      ]
+    },
+    {
+      "day": 76,
+      "focus": {
+        "pattern": "Graph Traversal Patterns (DFS & BFS)",
+        "subPattern": "Bidirectional BFS",
+        "label": "Bidirectional BFS practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "126"
+        }
+      ]
+    },
+    {
+      "day": 77,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Fibonacci Style",
+        "label": "Fibonacci Style practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "70"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "509"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "746"
+        }
+      ]
+    },
+    {
+      "day": 78,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Fibonacci Style",
+        "label": "Fibonacci Style practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "91"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "198"
+        }
+      ]
+    },
+    {
+      "day": 79,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Fibonacci Style",
+        "label": "Fibonacci Style practice"
+      },
+      "estimatedMinutes": 95,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "740"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "213"
+        }
+      ]
+    },
+    {
+      "day": 80,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Kadane's Algorithm for Max/Min Subarray",
+        "label": "Kadane's Algorithm for Max/Min Subarray practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "53"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "152"
+        }
+      ]
+    },
+    {
+      "day": 81,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Kadane's Algorithm for Max/Min Subarray",
+        "label": "Kadane's Algorithm for Max/Min Subarray practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "918"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1749"
+        }
+      ]
+    },
+    {
+      "day": 82,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Kadane's Algorithm for Max/Min Subarray",
+        "label": "Kadane's Algorithm for Max/Min Subarray practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2321"
+        }
+      ]
+    },
+    {
+      "day": 83,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Coin Change / Unbounded Knapsack Style",
+        "label": "Coin Change / Unbounded Knapsack Style practice"
+      },
+      "estimatedMinutes": 95,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "322"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "377"
+        }
+      ]
+    },
+    {
+      "day": 84,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Coin Change / Unbounded Knapsack Style",
+        "label": "Coin Change / Unbounded Knapsack Style practice"
+      },
+      "estimatedMinutes": 50,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "518"
+        }
+      ]
+    },
+    {
+      "day": 85,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Word Break Style",
+        "label": "Word Break Style practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "139"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "140"
+        }
+      ]
+    },
+    {
+      "day": 86,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Longest Common Subsequence - LCS",
+        "label": "Longest Common Subsequence - LCS practice"
+      },
+      "estimatedMinutes": 115,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1143"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1092"
+        }
+      ]
+    },
+    {
+      "day": 87,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Longest Common Subsequence - LCS",
+        "label": "Longest Common Subsequence - LCS practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "1312"
+        }
+      ]
+    },
+    {
+      "day": 88,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Edit Distance / Levenshtein Distance",
+        "label": "Edit Distance / Levenshtein Distance practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "72"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "583"
+        }
+      ]
+    },
+    {
+      "day": 89,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Edit Distance / Levenshtein Distance",
+        "label": "Edit Distance / Levenshtein Distance practice"
+      },
+      "estimatedMinutes": 50,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "712"
+        }
+      ]
+    },
+    {
+      "day": 90,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Unique Paths on Grid",
+        "label": "Unique Paths on Grid practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "62"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "64"
+        }
+      ]
+    },
+    {
+      "day": 91,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Unique Paths on Grid",
+        "label": "Unique Paths on Grid practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "120"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "221"
+        }
+      ]
+    },
+    {
+      "day": 92,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Unique Paths on Grid",
+        "label": "Unique Paths on Grid practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "931"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1277"
+        }
+      ]
+    },
+    {
+      "day": 93,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Unique Paths on Grid",
+        "label": "Unique Paths on Grid practice"
+      },
+      "estimatedMinutes": 50,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "63"
+        }
+      ]
+    },
+    {
+      "day": 94,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Interval DP",
+        "label": "Interval DP practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "312"
+        }
+      ]
+    },
+    {
+      "day": 95,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Interval DP",
+        "label": "Interval DP practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "546"
+        }
+      ]
+    },
+    {
+      "day": 96,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Catalan Numbers",
+        "label": "Catalan Numbers practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "96"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "241"
+        }
+      ]
+    },
+    {
+      "day": 97,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Catalan Numbers",
+        "label": "Catalan Numbers practice"
+      },
+      "estimatedMinutes": 50,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "95"
+        }
+      ]
+    },
+    {
+      "day": 98,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Longest Increasing Subsequence",
+        "label": "Longest Increasing Subsequence practice"
+      },
+      "estimatedMinutes": 115,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "300"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "354"
+        }
+      ]
+    },
+    {
+      "day": 99,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Longest Increasing Subsequence",
+        "label": "Longest Increasing Subsequence practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "1671"
+        }
+      ]
+    },
+    {
+      "day": 100,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Longest Increasing Subsequence",
+        "label": "Longest Increasing Subsequence practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2407"
+        }
+      ]
+    },
+    {
+      "day": 101,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Stock problems",
+        "label": "Stock problems practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "121"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "309"
+        }
+      ]
+    },
+    {
+      "day": 102,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Stock problems",
+        "label": "Stock problems practice"
+      },
+      "estimatedMinutes": 50,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "122"
+        }
+      ]
+    },
+    {
+      "day": 103,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Stock problems",
+        "label": "Stock problems practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "123"
+        }
+      ]
+    },
+    {
+      "day": 104,
+      "focus": {
+        "pattern": "Dynamic Programming (DP)",
+        "subPattern": "Stock problems",
+        "label": "Stock problems practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "188"
+        }
+      ]
+    },
+    {
+      "day": 105,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "Top K Elements",
+        "label": "Top K Elements practice"
+      },
+      "estimatedMinutes": 50,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1046"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "2558"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "506"
+        }
+      ]
+    },
+    {
+      "day": 106,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "Top K Elements",
+        "label": "Top K Elements practice"
+      },
+      "estimatedMinutes": 80,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "703"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "347"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "451"
+        }
+      ]
+    },
+    {
+      "day": 107,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "Top K Elements",
+        "label": "Top K Elements practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "973"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "215"
+        }
+      ]
+    },
+    {
+      "day": 108,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "Two Heaps for Median Finding",
+        "label": "Two Heaps for Median Finding practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "1825"
+        }
+      ]
+    },
+    {
+      "day": 109,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "Two Heaps for Median Finding",
+        "label": "Two Heaps for Median Finding practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "295"
+        }
+      ]
+    },
+    {
+      "day": 110,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "K-way Merge",
+        "label": "K-way Merge practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "373"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "378"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "23"
+        }
+      ]
+    },
+    {
+      "day": 111,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "K-way Merge",
+        "label": "K-way Merge practice"
+      },
+      "estimatedMinutes": 55,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "632"
+        }
+      ]
+    },
+    {
+      "day": 112,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "Scheduling / Minimum Cost",
+        "label": "Scheduling / Minimum Cost practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "767"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1642"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1792"
+        }
+      ]
+    },
+    {
+      "day": 113,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "Scheduling / Minimum Cost",
+        "label": "Scheduling / Minimum Cost practice"
+      },
+      "estimatedMinutes": 95,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1834"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1942"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "253"
+        }
+      ]
+    },
+    {
+      "day": 114,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "Scheduling / Minimum Cost",
+        "label": "Scheduling / Minimum Cost practice"
+      },
+      "estimatedMinutes": 55,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "857"
+        }
+      ]
+    },
+    {
+      "day": 115,
+      "focus": {
+        "pattern": "Heap (Priority Queue)",
+        "subPattern": "Scheduling / Minimum Cost",
+        "label": "Scheduling / Minimum Cost practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2402"
+        }
+      ]
+    },
+    {
+      "day": 116,
+      "focus": {
+        "pattern": "Backtracking",
+        "subPattern": "Subsets (Include/Exclude)",
+        "label": "Subsets (Include/Exclude) practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "17"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "77"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "78"
+        }
+      ]
+    },
+    {
+      "day": 117,
+      "focus": {
+        "pattern": "Backtracking",
+        "subPattern": "Subsets (Include/Exclude)",
+        "label": "Subsets (Include/Exclude) practice"
+      },
+      "estimatedMinutes": 35,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "90"
+        }
+      ]
+    },
+    {
+      "day": 118,
+      "focus": {
+        "pattern": "Backtracking",
+        "subPattern": "Permutations",
+        "label": "Permutations practice"
+      },
+      "estimatedMinutes": 115,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "31"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "46"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "60"
+        }
+      ]
+    },
+    {
+      "day": 119,
+      "focus": {
+        "pattern": "Backtracking",
+        "subPattern": "Combination Sum",
+        "label": "Combination Sum practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "39"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "40"
+        }
+      ]
+    },
+    {
+      "day": 120,
+      "focus": {
+        "pattern": "Backtracking",
+        "subPattern": "Parentheses Generation",
+        "label": "Parentheses Generation practice"
+      },
+      "estimatedMinutes": 85,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "22"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "301"
+        }
+      ]
+    },
+    {
+      "day": 121,
+      "focus": {
+        "pattern": "Backtracking",
+        "subPattern": "Word Search / Path Finding in Grid",
+        "label": "Word Search / Path Finding in Grid practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "79"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "2018"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "212"
+        }
+      ]
+    },
+    {
+      "day": 122,
+      "focus": {
+        "pattern": "Backtracking",
+        "subPattern": "N-Queens / Constraint Satisfaction",
+        "label": "N-Queens / Constraint Satisfaction practice"
+      },
+      "estimatedMinutes": 55,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "37"
+        }
+      ]
+    },
+    {
+      "day": 123,
+      "focus": {
+        "pattern": "Backtracking",
+        "subPattern": "N-Queens / Constraint Satisfaction",
+        "label": "N-Queens / Constraint Satisfaction practice"
+      },
+      "estimatedMinutes": 55,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "51"
+        }
+      ]
+    },
+    {
+      "day": 124,
+      "focus": {
+        "pattern": "Backtracking",
+        "subPattern": "Palindrome Partitioning",
+        "label": "Palindrome Partitioning practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "131"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1457"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "132"
+        }
+      ]
+    },
+    {
+      "day": 125,
+      "focus": {
+        "pattern": "Greedy",
+        "subPattern": "Interval Merging/Scheduling",
+        "label": "Interval Merging/Scheduling practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "56"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "57"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "986"
+        }
+      ]
+    },
+    {
+      "day": 126,
+      "focus": {
+        "pattern": "Greedy",
+        "subPattern": "Interval Merging/Scheduling",
+        "label": "Interval Merging/Scheduling practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "2406"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "759"
+        }
+      ]
+    },
+    {
+      "day": 127,
+      "focus": {
+        "pattern": "Greedy",
+        "subPattern": "Jump Game Reachability/Minimization",
+        "label": "Jump Game Reachability/Minimization practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "55"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "45"
+        }
+      ]
+    },
+    {
+      "day": 128,
+      "focus": {
+        "pattern": "Greedy",
+        "subPattern": "Gas Station Circuit",
+        "label": "Gas Station Circuit practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "134"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "2202"
+        }
+      ]
+    },
+    {
+      "day": 129,
+      "focus": {
+        "pattern": "Greedy",
+        "subPattern": "Task Scheduling",
+        "label": "Task Scheduling practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "621"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1054"
+        }
+      ]
+    },
+    {
+      "day": 130,
+      "focus": {
+        "pattern": "Greedy",
+        "subPattern": "Sorting Based",
+        "label": "Sorting Based practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "455"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "406"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1029"
+        }
+      ]
+    },
+    {
+      "day": 131,
+      "focus": {
+        "pattern": "Greedy",
+        "subPattern": "Sorting Based",
+        "label": "Sorting Based practice"
+      },
+      "estimatedMinutes": 55,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "135"
+        }
+      ]
+    },
+    {
+      "day": 132,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "On Sorted Array/List",
+        "label": "On Sorted Array/List practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "35"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "69"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "278"
+        }
+      ]
+    },
+    {
+      "day": 133,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "On Sorted Array/List",
+        "label": "On Sorted Array/List practice"
+      },
+      "estimatedMinutes": 50,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "374"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "704"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1539"
+        }
+      ]
+    },
+    {
+      "day": 134,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "On Sorted Array/List",
+        "label": "On Sorted Array/List practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "74"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "540"
+        }
+      ]
+    },
+    {
+      "day": 135,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "Find Min/Max in Rotated Sorted Array",
+        "label": "Find Min/Max in Rotated Sorted Array practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "33"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "153"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "162"
+        }
+      ]
+    },
+    {
+      "day": 136,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "Find Min/Max in Rotated Sorted Array",
+        "label": "Find Min/Max in Rotated Sorted Array practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "852"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "81"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1095"
+        }
+      ]
+    },
+    {
+      "day": 137,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "On Answer / Condition Function",
+        "label": "On Answer / Condition Function practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "875"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1011"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1482"
+        }
+      ]
+    },
+    {
+      "day": 138,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "On Answer / Condition Function",
+        "label": "On Answer / Condition Function practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1760"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "2064"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "2226"
+        }
+      ]
+    },
+    {
+      "day": 139,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "On Answer / Condition Function",
+        "label": "On Answer / Condition Function practice"
+      },
+      "estimatedMinutes": 55,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "410"
+        }
+      ]
+    },
+    {
+      "day": 140,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "On Answer / Condition Function",
+        "label": "On Answer / Condition Function practice"
+      },
+      "estimatedMinutes": 55,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "774"
+        }
+      ]
+    },
+    {
+      "day": 141,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "Find First/Last Occurrence",
+        "label": "Find First/Last Occurrence practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "34"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "658"
+        }
+      ]
+    },
+    {
+      "day": 142,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "Median / Kth across Two Sorted Arrays",
+        "label": "Median / Kth across Two Sorted Arrays practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "4"
+        }
+      ]
+    },
+    {
+      "day": 143,
+      "focus": {
+        "pattern": "Binary Search",
+        "subPattern": "Median / Kth across Two Sorted Arrays",
+        "label": "Median / Kth across Two Sorted Arrays practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "719"
+        }
+      ]
+    },
+    {
+      "day": 144,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Valid Parentheses Matching",
+        "label": "Valid Parentheses Matching practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "20"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "921"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1249"
+        }
+      ]
+    },
+    {
+      "day": 145,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Valid Parentheses Matching",
+        "label": "Valid Parentheses Matching practice"
+      },
+      "estimatedMinutes": 85,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1963"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "32"
+        }
+      ]
+    },
+    {
+      "day": 146,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Monotonic Stack",
+        "label": "Monotonic Stack practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "496"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1475"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "402"
+        }
+      ]
+    },
+    {
+      "day": 147,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Monotonic Stack",
+        "label": "Monotonic Stack practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "739"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "901"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "907"
+        }
+      ]
+    },
+    {
+      "day": 148,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Monotonic Stack",
+        "label": "Monotonic Stack practice"
+      },
+      "estimatedMinutes": 100,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "962"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "503"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1673"
+        }
+      ]
+    },
+    {
+      "day": 149,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Expression Evaluation",
+        "label": "Expression Evaluation practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "150"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "227"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "224"
+        }
+      ]
+    },
+    {
+      "day": 150,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Expression Evaluation",
+        "label": "Expression Evaluation practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "772"
+        }
+      ]
+    },
+    {
+      "day": 151,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Simulation / Backtracking Helper",
+        "label": "Simulation / Backtracking Helper practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "71"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "394"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "735"
+        }
+      ]
+    },
+    {
+      "day": 152,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Min Stack Design",
+        "label": "Min Stack Design practice"
+      },
+      "estimatedMinutes": 105,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "155"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "895"
+        }
+      ]
+    },
+    {
+      "day": 153,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Largest Rectangle in Histogram",
+        "label": "Largest Rectangle in Histogram practice"
+      },
+      "estimatedMinutes": 55,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "84"
+        }
+      ]
+    },
+    {
+      "day": 154,
+      "focus": {
+        "pattern": "Stack",
+        "subPattern": "Largest Rectangle in Histogram",
+        "label": "Largest Rectangle in Histogram practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "85"
+        }
+      ]
+    },
+    {
+      "day": 155,
+      "focus": {
+        "pattern": "Bit Manipulation",
+        "subPattern": "Bitwise XOR - Finding Single/Missing Number",
+        "label": "Bitwise XOR - Finding Single/Missing Number practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "136"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "268"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "389"
+        }
+      ]
+    },
+    {
+      "day": 156,
+      "focus": {
+        "pattern": "Bit Manipulation",
+        "subPattern": "Bitwise XOR - Finding Single/Missing Number",
+        "label": "Bitwise XOR - Finding Single/Missing Number practice"
+      },
+      "estimatedMinutes": 35,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "137"
+        }
+      ]
+    },
+    {
+      "day": 157,
+      "focus": {
+        "pattern": "Bit Manipulation",
+        "subPattern": "Bitwise AND - Counting Set Bits (Hamming Weight)",
+        "label": "Bitwise AND - Counting Set Bits (Hamming Weight) practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "191"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "231"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "477"
+        }
+      ]
+    },
+    {
+      "day": 158,
+      "focus": {
+        "pattern": "Bit Manipulation",
+        "subPattern": "Bitwise DP - Counting Bits Optimization",
+        "label": "Bitwise DP - Counting Bits Optimization practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "338"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1442"
+        }
+      ]
+    },
+    {
+      "day": 159,
+      "focus": {
+        "pattern": "Bit Manipulation",
+        "subPattern": "Bitwise DP - Counting Bits Optimization",
+        "label": "Bitwise DP - Counting Bits Optimization practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "1494"
+        }
+      ]
+    },
+    {
+      "day": 160,
+      "focus": {
+        "pattern": "Bit Manipulation",
+        "subPattern": "Bitwise Operations - Power of Two/Four Check",
+        "label": "Bitwise Operations - Power of Two/Four Check practice"
+      },
+      "estimatedMinutes": 15,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "342"
+        }
+      ]
+    },
+    {
+      "day": 161,
+      "focus": {
+        "pattern": "Linked List Manipulation",
+        "subPattern": "In-place Reversal",
+        "label": "In-place Reversal practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "83"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "206"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "234"
+        }
+      ]
+    },
+    {
+      "day": 162,
+      "focus": {
+        "pattern": "Linked List Manipulation",
+        "subPattern": "In-place Reversal",
+        "label": "In-place Reversal practice"
+      },
+      "estimatedMinutes": 70,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "82"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "92"
+        }
+      ]
+    },
+    {
+      "day": 163,
+      "focus": {
+        "pattern": "Linked List Manipulation",
+        "subPattern": "In-place Reversal",
+        "label": "In-place Reversal practice"
+      },
+      "estimatedMinutes": 55,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "25"
+        }
+      ]
+    },
+    {
+      "day": 164,
+      "focus": {
+        "pattern": "Linked List Manipulation",
+        "subPattern": "Merging Two Sorted Lists",
+        "label": "Merging Two Sorted Lists practice"
+      },
+      "estimatedMinutes": 15,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "21"
+        }
+      ]
+    },
+    {
+      "day": 165,
+      "focus": {
+        "pattern": "Linked List Manipulation",
+        "subPattern": "Addition of Numbers",
+        "label": "Addition of Numbers practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "2"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "369"
+        }
+      ]
+    },
+    {
+      "day": 166,
+      "focus": {
+        "pattern": "Linked List Manipulation",
+        "subPattern": "Intersection Detection",
+        "label": "Intersection Detection practice"
+      },
+      "estimatedMinutes": 30,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "160"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "599"
+        }
+      ]
+    },
+    {
+      "day": 167,
+      "focus": {
+        "pattern": "Linked List Manipulation",
+        "subPattern": "Reordering / Partitioning",
+        "label": "Reordering / Partitioning practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "24"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "61"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "86"
+        }
+      ]
+    },
+    {
+      "day": 168,
+      "focus": {
+        "pattern": "Linked List Manipulation",
+        "subPattern": "Reordering / Partitioning",
+        "label": "Reordering / Partitioning practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "143"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "328"
+        }
+      ]
+    },
+    {
+      "day": 169,
+      "focus": {
+        "pattern": "Array/Matrix Manipulation",
+        "subPattern": "In-place Rotation",
+        "label": "In-place Rotation practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "867"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "48"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "189"
+        }
+      ]
+    },
+    {
+      "day": 170,
+      "focus": {
+        "pattern": "Array/Matrix Manipulation",
+        "subPattern": "Spiral Traversal",
+        "label": "Spiral Traversal practice"
+      },
+      "estimatedMinutes": 100,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "54"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "59"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "885"
+        }
+      ]
+    },
+    {
+      "day": 171,
+      "focus": {
+        "pattern": "Array/Matrix Manipulation",
+        "subPattern": "Spiral Traversal",
+        "label": "Spiral Traversal practice"
+      },
+      "estimatedMinutes": 35,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2326"
+        }
+      ]
+    },
+    {
+      "day": 172,
+      "focus": {
+        "pattern": "Array/Matrix Manipulation",
+        "subPattern": "In-place Marking",
+        "label": "In-place Marking practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "73"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "289"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "498"
+        }
+      ]
+    },
+    {
+      "day": 173,
+      "focus": {
+        "pattern": "Array/Matrix Manipulation",
+        "subPattern": "Prefix/Suffix Products",
+        "label": "Prefix/Suffix Products practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "238"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "845"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "2483"
+        }
+      ]
+    },
+    {
+      "day": 174,
+      "focus": {
+        "pattern": "Array/Matrix Manipulation",
+        "subPattern": "Plus One",
+        "label": "Plus One practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "66"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "67"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "989"
+        }
+      ]
+    },
+    {
+      "day": 175,
+      "focus": {
+        "pattern": "Array/Matrix Manipulation",
+        "subPattern": "Plus One",
+        "label": "Plus One practice"
+      },
+      "estimatedMinutes": 30,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "43"
+        }
+      ]
+    },
+    {
+      "day": 176,
+      "focus": {
+        "pattern": "Array/Matrix Manipulation",
+        "subPattern": "In-place from End",
+        "label": "In-place from End practice"
+      },
+      "estimatedMinutes": 15,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "88"
+        }
+      ]
+    },
+    {
+      "day": 177,
+      "focus": {
+        "pattern": "Array/Matrix Manipulation",
+        "subPattern": "Cyclic Sort",
+        "label": "Cyclic Sort practice"
+      },
+      "estimatedMinutes": 105,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "448"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "442"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "41"
+        }
+      ]
+    },
+    {
+      "day": 178,
+      "focus": {
+        "pattern": "String Manipulation",
+        "subPattern": "Palindrome Check",
+        "label": "Palindrome Check practice"
+      },
+      "estimatedMinutes": 50,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "9"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "125"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "680"
+        }
+      ]
+    },
+    {
+      "day": 179,
+      "focus": {
+        "pattern": "String Manipulation",
+        "subPattern": "Anagram Check",
+        "label": "Anagram Check practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "242"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "49"
+        }
+      ]
+    },
+    {
+      "day": 180,
+      "focus": {
+        "pattern": "String Manipulation",
+        "subPattern": "Roman to Integer Conversion",
+        "label": "Roman to Integer Conversion practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "13"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "12"
+        }
+      ]
+    },
+    {
+      "day": 181,
+      "focus": {
+        "pattern": "String Manipulation",
+        "subPattern": "String to Integer (atoi)",
+        "label": "String to Integer (atoi) practice"
+      },
+      "estimatedMinutes": 85,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "8"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "65"
+        }
+      ]
+    },
+    {
+      "day": 182,
+      "focus": {
+        "pattern": "String Manipulation",
+        "subPattern": "Manual Simulation",
+        "label": "Manual Simulation practice"
+      },
+      "estimatedMinutes": 15,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "415"
+        }
+      ]
+    },
+    {
+      "day": 183,
+      "focus": {
+        "pattern": "String Manipulation",
+        "subPattern": "String Matching - Naive / KMP / Rabin-Karp",
+        "label": "String Matching - Naive / KMP / Rabin-Karp practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "28"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "796"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "686"
+        }
+      ]
+    },
+    {
+      "day": 184,
+      "focus": {
+        "pattern": "String Manipulation",
+        "subPattern": "String Matching - Naive / KMP / Rabin-Karp",
+        "label": "String Matching - Naive / KMP / Rabin-Karp practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "214"
+        }
+      ]
+    },
+    {
+      "day": 185,
+      "focus": {
+        "pattern": "String Manipulation",
+        "subPattern": "String Matching - Naive / KMP / Rabin-Karp",
+        "label": "String Matching - Naive / KMP / Rabin-Karp practice"
+      },
+      "estimatedMinutes": 60,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "3008"
+        }
+      ]
+    },
+    {
+      "day": 186,
+      "focus": {
+        "pattern": "String Manipulation",
+        "subPattern": "Repeated Substring Pattern Detection",
+        "label": "Repeated Substring Pattern Detection practice"
+      },
+      "estimatedMinutes": 15,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "459"
+        }
+      ]
+    },
+    {
+      "day": 187,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "225"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "232"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "359"
+        }
+      ]
+    },
+    {
+      "day": 188,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "604"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "706"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "251"
+        }
+      ]
+    },
+    {
+      "day": 189,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "271"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "341"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "353"
+        }
+      ]
+    },
+    {
+      "day": 190,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "362"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "379"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "380"
+        }
+      ]
+    },
+    {
+      "day": 191,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "622"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "641"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "900"
+        }
+      ]
+    },
+    {
+      "day": 192,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "981"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1146"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1348"
+        }
+      ]
+    },
+    {
+      "day": 193,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "1352"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "1381"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "1756"
+        }
+      ]
+    },
+    {
+      "day": 194,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 120,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "2013"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "2034"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "2336"
+        }
+      ]
+    },
+    {
+      "day": 195,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 115,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "146"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "432"
+        }
+      ]
+    },
+    {
+      "day": 196,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "642"
+        }
+      ]
+    },
+    {
+      "day": 197,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "715"
+        }
+      ]
+    },
+    {
+      "day": 198,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 65,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "2296"
+        }
+      ]
+    },
+    {
+      "day": 199,
+      "focus": {
+        "pattern": "Design",
+        "subPattern": "Design (General/Specific)",
+        "label": "Design (General/Specific) practice"
+      },
+      "estimatedMinutes": 75,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "460"
+        }
+      ]
+    }
   ]
 }

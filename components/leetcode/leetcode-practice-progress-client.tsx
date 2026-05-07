@@ -48,6 +48,7 @@ export function LeetcodePracticeProgressClient({
     useState<string[]>(initialSelectedSubPatterns);
   const [selectedDifficulty, setSelectedDifficulty] =
     useState<LeetcodeProblemDifficultyLabel | null>(initialSelectedDifficulty);
+  const [searchQuery, setSearchQuery] = useState(query);
   const [attempts, setAttempts] = useState<LeetcodeAttemptRow[]>(() =>
     cachedAttemptUser === user?.uid && cachedAttempts ? cachedAttempts : [],
   );
@@ -74,10 +75,18 @@ export function LeetcodePracticeProgressClient({
         problems: hydratedProblems,
         selectedPattern,
         selectedSubPatterns,
-        query,
+        query: searchQuery,
       }),
-    [hydratedProblems, query, selectedPattern, selectedSubPatterns],
+    [hydratedProblems, searchQuery, selectedPattern, selectedSubPatterns],
   );
+
+  function clearAllFilters() {
+    setSelectedPattern(null);
+    setSelectedSubPatterns([]);
+    setSelectedDifficulty(null);
+    setSearchQuery("");
+    window.history.pushState(null, "", "/leetcode/allproblems");
+  }
 
   function selectDifficulty(difficulty: LeetcodeProblemDifficultyLabel | null) {
     setSelectedDifficulty(difficulty);
@@ -289,6 +298,9 @@ export function LeetcodePracticeProgressClient({
           externalPattern={selectedPattern}
           selectedDifficulty={selectedDifficulty}
           onSelectedDifficultyChange={selectDifficulty}
+          searchQuery={searchQuery}
+          onSearchQueryChange={setSearchQuery}
+          onClearFilters={clearAllFilters}
           saveAttemptAction={saveAttemptAction}
           onAttemptSaved={() => void loadAttempts({ force: true })}
         />

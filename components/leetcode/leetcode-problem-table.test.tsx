@@ -138,6 +138,67 @@ describe("LeetcodeProblemTable", () => {
     expect(screen.queryByRole("row", { name: /Minimum Window Substring/ })).not.toBeInTheDocument();
   });
 
+  it("shows the external pattern as selected without letting the local menu toggle it", () => {
+    render(
+      <LeetcodeProblemTable
+        problems={problems}
+        attempts={attempts}
+        externalPattern="Trees"
+      />,
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: /Filter patterns/ }));
+
+    const treesCheckbox = screen.getByRole("checkbox", { name: "Trees" });
+
+    expect(treesCheckbox).toBeChecked();
+    expect(treesCheckbox).toBeDisabled();
+  });
+
+  it("shows attempt history newest first", () => {
+    render(
+      <LeetcodeProblemTable
+        problems={[
+          {
+            ...problems[1],
+            attemptCount: 2,
+            lastAttemptedAt: "2026-04-30T10:00:00.000Z",
+          },
+        ]}
+        attempts={[
+          {
+            attemptId: "older-attempt",
+            problemId: "102",
+            problemTitle: "Binary Tree Level Order Traversal",
+            isSuccessful: false,
+            startedAt: "2026-04-28T08:30:00.000Z",
+            endedAt: "2026-04-28T08:45:00.000Z",
+            durationSeconds: 900,
+            notes: "Older note",
+          },
+          {
+            attemptId: "newer-attempt",
+            problemId: "102",
+            problemTitle: "Binary Tree Level Order Traversal",
+            isSuccessful: true,
+            startedAt: "2026-04-30T09:45:00.000Z",
+            endedAt: "2026-04-30T10:00:00.000Z",
+            durationSeconds: 900,
+            notes: "Newer note",
+          },
+        ]}
+      />,
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: /In progress · 2 attempts/ }));
+
+    const history = screen.getByRole("heading", { name: "Attempt History" }).closest("td");
+    const rows = within(history as HTMLElement).getAllByRole("row");
+
+    expect(rows[1]).toHaveTextContent("Newer note");
+    expect(rows[2]).toHaveTextContent("Older note");
+  });
+
   it("sorts problems by easy to hard by default", () => {
     render(
       <LeetcodeProblemTable
@@ -343,6 +404,27 @@ describe("LeetcodeProblemTable", () => {
       status: "timed_out",
       isSuccessful: false,
     });
+  });
+
+  it("uses the shared difficulty dot style when a custom pill class is provided", () => {
+    render(
+      <LeetcodeProblemTable
+        problems={[
+          {
+            ...problems[0],
+            difficultyClassName: "border-[#1d7452] bg-[#123a32] text-[#38e68a]",
+          },
+        ]}
+        attempts={[]}
+      />,
+    );
+
+    const row = screen.getByRole("row", { name: /Two Sum/ });
+    const dot = within(row).getByText("Easy").closest("span")?.querySelector("span");
+
+    expect(dot).not.toBeNull();
+    expect(dot).toHaveClass("bg-[#2bd875]");
+    expect(dot).not.toHaveClass("bg-slate-400");
   });
 
   it("sends the current Firebase ID token when the signed-in user saves an attempt", async () => {

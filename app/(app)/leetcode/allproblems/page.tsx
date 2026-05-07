@@ -2,7 +2,7 @@ import { parseDifficulty } from "@/lib/leetcode/types";
 import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import {
   CodeIcon,
-  LeetcodeHeroPanel,
+  SectionHero,
   LeetcodeStatCard,
 } from "@/components/leetcode/leetcode-ui";
 import { LeetcodePracticeProgressClient } from "@/components/leetcode/leetcode-practice-progress-client";
@@ -64,7 +64,7 @@ export default async function LeetcodeAllProblemsPage({
 
   return (
     <div className="space-y-5">
-      <LeetcodeHeroPanel
+      <SectionHero
         icon={<CodeIcon className="h-9 w-9" />}
         title="Practice Problems"
         description="Sharpen your skills by solving hand-picked coding problems."
@@ -95,7 +95,7 @@ export default async function LeetcodeAllProblemsPage({
             </button>
           </label>
         </form>
-      </LeetcodeHeroPanel>
+      </SectionHero>
 
       {invalidFilters.length > 0 ? (
         <div

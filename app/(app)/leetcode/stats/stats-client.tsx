@@ -20,7 +20,7 @@ import {
 } from "@/lib/leetcode/types";
 import {
   CodeIcon,
-  LeetcodeHeroPanel,
+  SectionHero,
   LeetcodePanel,
   LeetcodeStatCard,
   leetcodePrimaryActionClass,
@@ -86,7 +86,7 @@ export function LeetcodeStatsClient({
 
   return (
     <div className="space-y-5 pb-4">
-      <LeetcodeHeroPanel
+      <SectionHero
         icon={<CodeIcon className="h-9 w-9" />}
         title="Practice dashboard"
         description="Track completion, attempt quality, pattern coverage, and practice consistency from saved attempt history."
@@ -100,7 +100,7 @@ export function LeetcodeStatsClient({
             ›
           </span>
         </Link>
-      </LeetcodeHeroPanel>
+      </SectionHero>
 
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {summaryCards.map((item) => (

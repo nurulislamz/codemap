@@ -1,17 +1,10 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { AuthProvider } from "@/components/auth/auth-provider";
-import {
-  LeetcodeDashboardProblemTableClient,
-  type LeetcodeDashboardDifficultyFilterOption,
-  type LeetcodeDashboardProblemRow,
-} from "./leetcode-dashboard-client";
-import {
-  LeetcodeProblemDifficultyLabel,
-  type LeetcodeProblemProgressRow,
-} from "@/lib/leetcode/types";
+import { LeetcodeDashboardProblemTableClient, type LeetcodeDashboardProblemRow } from "./leetcode-dashboard-client";
+import { LeetcodeProblemDifficultyLabel } from "@/lib/leetcode/types";
 
-const problems: LeetcodeProblemProgressRow[] = [
+const problems: LeetcodeDashboardProblemRow[] = [
   {
     number: "3",
     title: "Longest Substring Without Repeating Characters",
@@ -25,6 +18,11 @@ const problems: LeetcodeProblemProgressRow[] = [
     lastAttemptedAt: new Date().toISOString(),
     attemptCount: 1,
     bestDurationSeconds: null,
+    actionLabel: "Start",
+    difficultyClassName: "border-[#1d7452] bg-[#123a32] text-[#38e68a]",
+    lastNotes: null,
+    statusClassName: "border-[#334258] bg-[#172233] text-slate-300",
+    statusLabel: "Not Started",
   },
   {
     number: "102",
@@ -38,79 +36,32 @@ const problems: LeetcodeProblemProgressRow[] = [
     lastAttemptedAt: null,
     attemptCount: 0,
     bestDurationSeconds: null,
-  },
-  {
-    number: "121",
-    title: "Best Time to Buy and Sell Stock",
-    difficulty: LeetcodeProblemDifficultyLabel.Easy,
-    pattern: "Arrays",
-    subPattern: "Kadane",
-    leetcodeUrl: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
-    estimatedMinutes: 15,
-    isCompleted: true,
-    lastAttemptedAt: new Date().toISOString(),
-    attemptCount: 1,
-    bestDurationSeconds: 600,
-  },
-];
-
-const dashboardProblems: LeetcodeDashboardProblemRow[] = problems.map((problem) => ({
-  ...problem,
-  actionLabel: problem.attemptCount > 0 && !problem.isCompleted ? "Resume" : "Start",
-  difficultyClassName: "border-test",
-  lastNotes: null,
-  statusClassName: "border-test",
-  statusLabel: problem.isCompleted
-    ? "Review"
-    : problem.attemptCount > 0
-      ? "In Progress"
-      : "Not Started",
-}));
-
-const difficultyFilters: LeetcodeDashboardDifficultyFilterOption[] = [
-  { label: "All", selectedClassName: "border-test", value: "all" },
-  {
-    label: "Easy",
-    selectedClassName: "border-test",
-    value: LeetcodeProblemDifficultyLabel.Easy,
-  },
-  {
-    label: "Medium",
-    selectedClassName: "border-test",
-    value: LeetcodeProblemDifficultyLabel.Medium,
-  },
-  {
-    label: "Hard",
-    selectedClassName: "border-test",
-    value: LeetcodeProblemDifficultyLabel.Hard,
+    actionLabel: "Start",
+    difficultyClassName: "border-[#1d7452] bg-[#123a32] text-[#38e68a]",
+    lastNotes: null,
+    statusClassName: "border-[#334258] bg-[#172233] text-slate-300",
+    statusLabel: "Not Started",
   },
 ];
 
 describe("LeetcodeDashboardProblemTableClient", () => {
   afterEach(() => {
-    vi.useRealTimers();
     vi.restoreAllMocks();
   });
 
-  it("renders a today-focused dashboard with stats, table rows, and suggestions", () => {
+  it("renders dashboard rows", () => {
     render(
       <AuthProvider>
         <LeetcodeDashboardProblemTableClient
-          difficultyFilters={difficultyFilters}
-          problems={dashboardProblems}
+          problems={problems}
+          attempts={[]}
         />
       </AuthProvider>,
     );
 
     expect(screen.getByText("Today's Problems")).toBeInTheDocument();
-    expect(screen.getByRole("row", { name: /1\. Longest Substring/ })).toBeInTheDocument();
-
-    fireEvent.click(screen.getByRole("button", { name: "Easy" }));
-
-    expect(screen.getByRole("row", { name: /Best Time to Buy and Sell Stock/ })).toBeInTheDocument();
-    expect(
-      screen.queryByRole("row", { name: /Binary Tree Level Order Traversal/ }),
-    ).not.toBeInTheDocument();
+    expect(screen.getByRole("row", { name: /Binary Tree Level Order Traversal/ })).toBeInTheDocument();
+    expect(screen.getByRole("row", { name: /Longest Substring Without Repeating Characters/ })).toBeInTheDocument();
   });
 
   it("opens the attempt overlay before starting a dashboard attempt", () => {
@@ -120,8 +71,8 @@ describe("LeetcodeDashboardProblemTableClient", () => {
     render(
       <AuthProvider>
         <LeetcodeDashboardProblemTableClient
-          difficultyFilters={difficultyFilters}
-          problems={dashboardProblems}
+          problems={problems}
+          attempts={[]}
         />
       </AuthProvider>,
     );
@@ -132,15 +83,13 @@ describe("LeetcodeDashboardProblemTableClient", () => {
     const startButton = within(binaryTreeRow).getByRole("button", { name: "Start" });
 
     expect(startButton).not.toHaveAttribute("href");
+    expect(startButton).toHaveClass("cursor-pointer");
 
     fireEvent.click(startButton);
 
     expect(windowOpen).not.toHaveBeenCalled();
-    expect(
-      screen.getByRole("dialog", {
-        name: /Binary Tree Level Order Traversal/,
-      }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole("dialog", { name: /Binary Tree Level Order Traversal/ })).toBeInTheDocument();
     expect(screen.getByText("Ready to start")).toBeInTheDocument();
+    expect(screen.queryByText("Failure notes")).not.toBeInTheDocument();
   });
 });

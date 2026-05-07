@@ -4,7 +4,7 @@ import {
   SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
 import { LeetcodeProblemDifficultyLabel } from "@/lib/leetcode/types";
-import { CodeIcon, LeetcodeHeroPanel } from "./leetcode-ui";
+import { CodeIcon, SectionHero } from "./leetcode-ui";
 import { LeetcodeCatalog } from "@/lib/leetcode/catalog";
 
 type LeetcodePracticeDashboardProps = {
@@ -51,7 +51,7 @@ export function LeetcodePracticeDashboard({
 
   return (
     <div className="space-y-5">
-      <LeetcodeHeroPanel
+      <SectionHero
         icon={<CodeIcon className="h-9 w-9" />}
         title="Practice Problems"
         description="Sharpen your skills by solving hand-picked coding problems."
@@ -82,7 +82,7 @@ export function LeetcodePracticeDashboard({
             </button>
           </label>
         </form>
-      </LeetcodeHeroPanel>
+      </SectionHero>
 
       {invalidFilters.length > 0 ? (
         <div

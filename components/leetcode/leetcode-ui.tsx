@@ -60,7 +60,7 @@ export function CodeIcon({ className = "h-7 w-7" }: { className?: string }) {
   );
 }
 
-export function LeetcodeHeroPanel({
+export function SectionHero({
   icon,
   title,
   description,

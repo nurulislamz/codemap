@@ -48,7 +48,7 @@ describe("AppShell", () => {
     );
     expect(screen.queryByRole("menu", { name: "LeetCode menu" })).not.toBeInTheDocument();
 
-    fireEvent.click(nav.getByRole("button", { name: "LeetCode" }));
+    fireEvent.mouseEnter(nav.getByRole("link", { name: "LeetCode" }));
 
     expect(screen.getByRole("menu", { name: "LeetCode menu" })).toBeInTheDocument();
 
@@ -65,15 +65,15 @@ describe("AppShell", () => {
     );
 
     const nav = within(screen.getByRole("navigation", { name: "Primary navigation" }));
-    const leetcodeButton = nav.getByRole("button", { name: "LeetCode" });
+    const leetcodeLink = nav.getByRole("link", { name: "LeetCode" });
 
-    fireEvent.click(leetcodeButton);
+    fireEvent.mouseEnter(leetcodeLink);
     expect(screen.getByRole("menu", { name: "LeetCode menu" })).toBeInTheDocument();
 
     fireEvent.keyDown(document, { key: "Escape" });
     expect(screen.queryByRole("menu", { name: "LeetCode menu" })).not.toBeInTheDocument();
 
-    fireEvent.click(leetcodeButton);
+    fireEvent.mouseEnter(leetcodeLink);
     fireEvent.click(screen.getByRole("menuitem", { name: "Stats" }));
     expect(screen.queryByRole("menu", { name: "LeetCode menu" })).not.toBeInTheDocument();
   });

@@ -14,15 +14,35 @@ import type {
 } from "@/lib/leetcode/types";
 
 type LeetcodeProblemTableProps = {
-  problems: LeetcodeProblemProgressRow[];
+  problems: (LeetcodeProblemProgressRow & {
+    actionLabel?: string;
+    difficultyClassName?: string;
+    difficultyDotClassName?: string;
+    statusLabel?: string;
+    statusClassName?: string;
+    statusDotClassName?: string;
+  })[];
   attempts: LeetcodeAttemptRow[];
   externalPattern?: string | null;
   selectedDifficulty?: LeetcodeProblemDifficultyLabel | null;
   onSelectedDifficultyChange?: (
     difficulty: LeetcodeProblemDifficultyLabel | null,
   ) => void;
+  disabledFilters?: {
+    difficulty?: boolean;
+    status?: boolean;
+    pattern?: boolean;
+    hasVideo?: boolean;
+    clearFilters?: boolean;
+  };
   searchQuery?: string;
   onSearchQueryChange?: (query: string) => void;
+  onClearFilters?: () => void;
+  title?: string;
+  subtitle?: string;
+  showControls?: boolean;
+  showPagination?: boolean;
+  emptyMessage?: string;
   saveAttemptAction?: SaveLeetcodeAttemptAction;
   onAttemptSaved?: () => void;
 };
@@ -154,8 +174,15 @@ export function LeetcodeProblemTable({
   externalPattern,
   selectedDifficulty,
   onSelectedDifficultyChange,
+  disabledFilters,
   searchQuery,
   onSearchQueryChange,
+  onClearFilters,
+  title,
+  subtitle,
+  showControls = true,
+  showPagination = true,
+  emptyMessage = "No problems found.",
   saveAttemptAction,
   onAttemptSaved,
 }: LeetcodeProblemTableProps) {
@@ -177,6 +204,13 @@ export function LeetcodeProblemTable({
   const [difficultySort, setDifficultySort] = useState<DifficultySort>("easy-first");
   const [expandedProblemId, setExpandedProblemId] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const {
+    difficulty: disableDifficultyFilter = false,
+    status: disableStatusFilter = false,
+    pattern: disablePatternFilter = false,
+    hasVideo: disableHasVideoFilter = false,
+    clearFilters: disableClearFilters = false,
+  } = disabledFilters ?? {};
   const query = searchQuery ?? internalQuery;
   const setQuery = onSearchQueryChange ?? setInternalQuery;
   const difficulty =
@@ -211,6 +245,16 @@ export function LeetcodeProblemTable({
         attempt,
       ]);
     }
+
+    grouped.forEach((problemAttempts, problemId) => {
+      grouped.set(
+        problemId,
+        problemAttempts.toSorted(
+          (left, right) =>
+            new Date(right.endedAt).getTime() - new Date(left.endedAt).getTime(),
+        ),
+      );
+    });
 
     return grouped;
   }, [attempts]);
@@ -252,6 +296,25 @@ export function LeetcodeProblemTable({
     selectedSubPatterns,
     status,
   ]);
+
+  useEffect(() => {
+    if (disableDifficultyFilter) {
+      setShowDifficultyMenu(false);
+    }
+  }, [disableDifficultyFilter]);
+
+  useEffect(() => {
+    if (disableStatusFilter) {
+      setShowStatusMenu(false);
+    }
+  }, [disableStatusFilter]);
+
+  useEffect(() => {
+    if (disablePatternFilter) {
+      setShowPatternMenu(false);
+      setActivePatternForSubPatterns(null);
+    }
+  }, [disablePatternFilter]);
 
   const filteredProblems = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -303,17 +366,24 @@ export function LeetcodeProblemTable({
     selectedSubPatterns,
     status,
   ]);
-  const pageCount = Math.max(1, Math.ceil(filteredProblems.length / pageSize));
-  const safeCurrentPage = Math.min(currentPage, pageCount);
+  const pageCount = showPagination
+    ? Math.max(1, Math.ceil(filteredProblems.length / pageSize))
+    : 1;
+  const safeCurrentPage = showPagination ? Math.min(currentPage, pageCount) : 1;
   const firstVisibleProblemIndex = (safeCurrentPage - 1) * pageSize;
   const visibleProblems = filteredProblems.slice(
-    firstVisibleProblemIndex,
-    firstVisibleProblemIndex + pageSize,
+    showPagination ? firstVisibleProblemIndex : 0,
+    showPagination ? firstVisibleProblemIndex + pageSize : filteredProblems.length,
   );
 
   function resetFilters() {
-    setQuery("");
-    setDifficultyFilter(allOption);
+    if (onClearFilters) {
+      onClearFilters();
+    } else {
+      setQuery("");
+      setDifficultyFilter(allOption);
+    }
+
     setStatus("all");
     setHasVideo(false);
     resetPatternFilters();
@@ -431,131 +501,313 @@ export function LeetcodeProblemTable({
   }
 
   return (
-    <section className="space-y-4">
-      <div className="rounded-xl border border-[#1b2a3e] bg-[#0b1626]/95 p-6 shadow-[0_18px_45px_rgba(0,0,0,0.22)]">
-        <div className="space-y-4">
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-[minmax(13rem,15rem)_minmax(13rem,15rem)_minmax(18rem,1fr)_max-content_max-content] xl:items-center">
-          <div ref={difficultyMenuRef} className="relative z-40">
-            <button
-              type="button"
-              aria-controls="leetcode-difficulty-menu"
-              aria-expanded={showDifficultyMenu}
-              aria-haspopup="menu"
-              className={`flex min-h-14 w-full cursor-pointer items-center justify-between gap-4 rounded-xl border px-5 text-left text-base font-semibold transition ${
-                showDifficultyMenu
-                  ? "border-[#705cff] text-[#a48bff]"
-                  : "border-[#26364d] bg-[#07111f]/65 text-white"
-              }`}
-              onClick={() => setShowDifficultyMenu((current) => !current)}
-            >
-              {difficultyFilterLabel()}
-              <span className="text-slate-400">{showDifficultyMenu ? "⌃" : "⌄"}</span>
-            </button>
-
-            {showDifficultyMenu ? (
-              <>
-              <div className="absolute left-0 top-full z-40 h-3 w-full" />
-              <div
-                id="leetcode-difficulty-menu"
-                role="menu"
-                className="absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-[#26364d] bg-[#0b1626] p-2 shadow-2xl shadow-black/40"
-              >
-                {[
-                  [allOption, "All difficulties"],
-                  ["Easy", "Easy"],
-                  ["Medium", "Medium"],
-                  ["Hard", "Hard"],
-                ].map(([value, label]) => (
-                  <button
-                    key={value}
-                    type="button"
-                    role="menuitemradio"
-                    aria-checked={difficulty === value}
-                    className={`flex w-full cursor-pointer items-center justify-between gap-4 rounded-lg px-3 py-2 text-left text-sm hover:bg-[#121e31] ${
-                      difficulty === value ? "bg-[#6747ff]/15 text-[#a48bff]" : "text-slate-300"
-                    }`}
-                    onClick={() => {
-                      setDifficultyFilter(value as DifficultyFilter);
-                      setShowDifficultyMenu(false);
-                    }}
-                  >
-                    {label}
-                    {difficulty === value ? <span>✓</span> : null}
-                  </button>
-                ))}
-              </div>
-              </>
-            ) : null}
+    <section className="overflow-hidden rounded-xl border border-[#1b2a3e] bg-[#0b1626]/95 shadow-[0_18px_45px_rgba(0,0,0,0.22)]">
+      <div className="space-y-4 p-6">
+        {(title || subtitle) ? (
+          <div className="space-y-1">
+            {title ? <h2 className="text-2xl font-extrabold text-white">{title}</h2> : null}
+            {subtitle ? <p className="text-base text-slate-400">{subtitle}</p> : null}
           </div>
-
-          <div ref={statusMenuRef} className="relative z-40">
-            <button
-              type="button"
-              aria-controls="leetcode-status-menu"
-              aria-expanded={showStatusMenu}
-              aria-haspopup="menu"
-              className={`flex min-h-14 w-full cursor-pointer items-center justify-between gap-4 rounded-xl border px-5 text-left text-base font-semibold transition ${
-                showStatusMenu
-                  ? "border-[#705cff] text-[#a48bff]"
-                  : "border-[#26364d] bg-[#07111f]/65 text-white"
-              }`}
-              onClick={() => setShowStatusMenu((current) => !current)}
-            >
-              {statusFilterLabel()}
-              <span className="text-slate-400">{showStatusMenu ? "⌃" : "⌄"}</span>
-            </button>
-
-            {showStatusMenu ? (
-              <>
-              <div className="absolute left-0 top-full z-40 h-3 w-full" />
-              <div
-                id="leetcode-status-menu"
-                role="menu"
-                className="absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-[#26364d] bg-[#0b1626] p-2 shadow-2xl shadow-black/40"
-              >
-                {[
-                  ["all", "All statuses"],
-                  ["not-started", "Not started"],
-                  ["not-completed", "Not completed"],
-                  ["attempted", "Attempted"],
-                  ["completed", "Completed"],
-                ].map(([value, label]) => (
-                  <button
-                    key={value}
-                    type="button"
-                    role="menuitemradio"
-                    aria-checked={status === value}
-                    className={`flex w-full cursor-pointer items-center justify-between gap-4 rounded-lg px-3 py-2 text-left text-sm hover:bg-[#121e31] ${
-                      status === value ? "bg-[#6747ff]/15 text-[#a48bff]" : "text-slate-300"
+        ) : null}
+        {showControls ? (
+          <div className="space-y-4">
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-[minmax(13rem,15rem)_minmax(13rem,15rem)_minmax(18rem,1fr)_max-content_max-content] xl:items-center">
+              <div ref={difficultyMenuRef} className="relative z-40">
+                <button
+                  type="button"
+                  aria-controls="leetcode-difficulty-menu"
+                  aria-expanded={showDifficultyMenu}
+                  aria-haspopup="menu"
+                  disabled={disableDifficultyFilter}
+                  className={`flex min-h-14 w-full items-center justify-between gap-4 rounded-xl border px-5 text-left text-base font-semibold transition ${
+                    disableDifficultyFilter
+                      ? "cursor-not-allowed border-[#26364d]/70 bg-[#07111f]/55 text-slate-500"
+                      : "cursor-pointer" +
+                        (showDifficultyMenu
+                          ? " border-[#705cff] text-[#a48bff]"
+                          : " border-[#26364d] bg-[#07111f]/65 text-white")
                     }`}
-                    onClick={() => {
-                      setStatus(value as ProgressFilter);
-                      setShowStatusMenu(false);
-                    }}
-                  >
-                    {label}
-                    {status === value ? <span>✓</span> : null}
-                  </button>
-                ))}
-              </div>
-              </>
-            ) : null}
-          </div>
+                  onClick={() => {
+                    if (disableDifficultyFilter) return;
+                    setShowDifficultyMenu((current) => !current);
+                  }}
+                >
+                  {difficultyFilterLabel()}
+                  <span className="text-slate-400">{showDifficultyMenu ? "⌃" : "⌄"}</span>
+                </button>
 
-          <div ref={patternMenuRef} className="relative z-30">
-            <button
-              type="button"
-              aria-controls="leetcode-pattern-menu"
-              aria-expanded={showPatternMenu}
-              aria-haspopup="menu"
-              className={`flex min-h-14 w-full cursor-pointer items-center justify-between gap-4 rounded-xl border px-5 text-left text-base font-semibold transition ${
-                showPatternMenu
-                  ? "border-[#705cff] text-[#a48bff]"
-                  : "border-[#26364d] bg-[#07111f]/65 text-white"
-              }`}
-              onClick={() => setShowPatternMenu((current) => !current)}
-            >
-              <span className="inline-flex items-center gap-2">
+                {showDifficultyMenu ? (
+                  <>
+                    <div className="absolute left-0 top-full z-40 h-3 w-full" />
+                    <div
+                      id="leetcode-difficulty-menu"
+                      role="menu"
+                      className="absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-[#26364d] bg-[#0b1626] p-2 shadow-2xl shadow-black/40"
+                    >
+                      {[
+                        [allOption, "All difficulties"],
+                        ["Easy", "Easy"],
+                        ["Medium", "Medium"],
+                        ["Hard", "Hard"],
+                      ].map(([value, label]) => (
+                        <button
+                          key={value}
+                          type="button"
+                          role="menuitemradio"
+                          aria-checked={difficulty === value}
+                          className={`flex w-full cursor-pointer items-center justify-between gap-4 rounded-lg px-3 py-2 text-left text-sm hover:bg-[#121e31] ${
+                            difficulty === value
+                              ? "bg-[#6747ff]/15 text-[#a48bff]"
+                              : "text-slate-300"
+                          }`}
+                          onClick={() => {
+                            setDifficultyFilter(value as DifficultyFilter);
+                            setShowDifficultyMenu(false);
+                          }}
+                        >
+                          {label}
+                          {difficulty === value ? <span>✓</span> : null}
+                        </button>
+                      ))}
+                    </div>
+                  </>
+                ) : null}
+              </div>
+
+              <div ref={statusMenuRef} className="relative z-40">
+                <button
+                  type="button"
+                  aria-controls="leetcode-status-menu"
+                  aria-expanded={showStatusMenu}
+                  aria-haspopup="menu"
+                  disabled={disableStatusFilter}
+                  className={`flex min-h-14 w-full items-center justify-between gap-4 rounded-xl border px-5 text-left text-base font-semibold transition ${
+                    disableStatusFilter
+                      ? "cursor-not-allowed border-[#26364d]/70 bg-[#07111f]/55 text-slate-500"
+                      : "cursor-pointer" +
+                        (showStatusMenu
+                          ? " border-[#705cff] text-[#a48bff]"
+                          : " border-[#26364d] bg-[#07111f]/65 text-white")
+                  }`}
+                  onClick={() => {
+                    if (disableStatusFilter) return;
+                    setShowStatusMenu((current) => !current);
+                  }}
+                >
+                  {statusFilterLabel()}
+                  <span className="text-slate-400">{showStatusMenu ? "⌃" : "⌄"}</span>
+                </button>
+
+                {showStatusMenu ? (
+                  <>
+                    <div className="absolute left-0 top-full z-40 h-3 w-full" />
+                    <div
+                      id="leetcode-status-menu"
+                      role="menu"
+                      className="absolute left-0 top-full z-50 mt-2 w-56 rounded-xl border border-[#26364d] bg-[#0b1626] p-2 shadow-2xl shadow-black/40"
+                    >
+                      {[
+                        ["all", "All statuses"],
+                        ["not-started", "Not started"],
+                        ["not-completed", "Not completed"],
+                        ["attempted", "Attempted"],
+                        ["completed", "Completed"],
+                      ].map(([value, label]) => (
+                        <button
+                          key={value}
+                          type="button"
+                          role="menuitemradio"
+                          aria-checked={status === value}
+                          className={`flex w-full cursor-pointer items-center justify-between gap-4 rounded-lg px-3 py-2 text-left text-sm hover:bg-[#121e31] ${
+                            status === value
+                              ? "bg-[#6747ff]/15 text-[#a48bff]"
+                              : "text-slate-300"
+                          }`}
+                          onClick={() => {
+                            setStatus(value as ProgressFilter);
+                            setShowStatusMenu(false);
+                          }}
+                        >
+                          {label}
+                          {status === value ? <span>✓</span> : null}
+                        </button>
+                      ))}
+                    </div>
+                  </>
+                ) : null}
+              </div>
+
+              <div ref={patternMenuRef} className="relative z-30">
+                <button
+                  type="button"
+                  aria-controls="leetcode-pattern-menu"
+                  aria-expanded={showPatternMenu}
+                  aria-haspopup="menu"
+                  disabled={disablePatternFilter}
+                  className={`flex min-h-14 w-full items-center justify-between gap-4 rounded-xl border px-5 text-left text-base font-semibold transition ${
+                    disablePatternFilter
+                      ? "cursor-not-allowed border-[#26364d]/70 bg-[#07111f]/55 text-slate-500"
+                      : "cursor-pointer" +
+                        (showPatternMenu
+                          ? " border-[#705cff] text-[#a48bff]"
+                          : " border-[#26364d] bg-[#07111f]/65 text-white")
+                  }`}
+                  onClick={() => {
+                    if (disablePatternFilter) return;
+                    setShowPatternMenu((current) => !current);
+                  }}
+                >
+                  <span className="inline-flex items-center gap-2">
+                    <svg
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      className="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    >
+                      <path d="M6 3v6" />
+                      <path d="M18 15v6" />
+                      <path d="M6 15v6" />
+                      <path d="M18 3v6" />
+                      <path d="M3 9h6v6H3z" />
+                      <path d="M15 9h6v6h-6z" />
+                    </svg>
+                    <span className="text-white">Filter patterns</span>
+                    {patternFilterLabel ? (
+                      <span className="text-[#9272ff]">{patternFilterLabel}</span>
+                    ) : null}
+                  </span>
+                  <span className="text-slate-400">{showPatternMenu ? "⌃" : "⌄"}</span>
+                </button>
+
+                {showPatternMenu ? (
+                  <>
+                    <div className="absolute left-0 top-full z-40 h-3 w-full" />
+                    <div
+                      id="leetcode-pattern-menu"
+                      role="menu"
+                      className="absolute left-0 top-full z-50 mt-2 flex w-max max-w-[calc(100vw-3rem)] items-start gap-3"
+                    >
+                      <div className="w-80 rounded-xl border border-[#26364d] bg-[#0b1626] p-3 shadow-2xl shadow-black/40">
+                        <label className="mb-2 flex h-10 items-center gap-2 rounded-xl border border-[#26364d] bg-[#07111f]/65 px-3">
+                          <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                            className="h-4 w-4 text-slate-400"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                          >
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                          </svg>
+                          <span className="text-sm text-slate-500">Search minor patterns...</span>
+                        </label>
+
+                        <div className="max-h-72 space-y-1 overflow-y-auto">
+                          {(externalPattern ? [externalPattern] : [allOption, ...patternOptions]).map((patternOption) => (
+                            <div
+                              key={patternOption}
+                              className="flex cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-[#121e31]"
+                            >
+                              <label className="flex min-w-0 flex-1 cursor-pointer items-center gap-3">
+                                <input
+                                  type="checkbox"
+                                  disabled={disablePatternFilter || patternOption === externalPattern}
+                                  checked={
+                                    patternOption === allOption
+                                      ? selectedPatterns.length === 0 && selectedSubPatterns.length === 0
+                                      : patternOption === externalPattern ||
+                                        selectedPatterns.includes(patternOption)
+                                  }
+                                  onChange={() => {
+                                    if (patternOption === externalPattern || disablePatternFilter) return;
+                                    if (patternOption === allOption) {
+                                      resetPatternFilters();
+                                      return;
+                                    }
+
+                                    toggleSelectedPattern(patternOption);
+                                  }}
+                                  className="checkbox checkbox-primary checkbox-sm"
+                                />
+                                <span className="truncate">
+                                  {patternOption === allOption ? "All problems" : patternOption}
+                                </span>
+                              </label>
+                              {patternOption !== allOption ? (
+                                <button
+                                  type="button"
+                                  aria-label={`Show ${patternOption} minor patterns`}
+                                  disabled={disablePatternFilter}
+                                  className={`rounded-md px-2 py-1 text-lg leading-none ${
+                                    activePatternForSubPatterns === patternOption
+                                      ? "text-[#a48bff]"
+                                      : "text-slate-200"
+                                  } ${disablePatternFilter ? "cursor-not-allowed opacity-60" : "cursor-pointer"}`}
+                                  onClick={() => {
+                                    if (disablePatternFilter) return;
+                                    setActivePatternForSubPatterns((current) =>
+                                      current === patternOption ? null : patternOption,
+                                    );
+                                  }}
+                                >
+                                  ›
+                                </button>
+                              ) : null}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {activePatternForSubPatterns ? (
+                        <div className="w-64 rounded-xl border border-[#26364d] bg-[#0b1626] p-3 text-slate-200 shadow-2xl shadow-black/40">
+                          <div className="mb-2 font-semibold">{activePatternForSubPatterns}</div>
+                          <div className="max-h-72 space-y-1 overflow-y-auto">
+                            {subPatternOptions.map((subPatternOption) => (
+                              <label
+                                key={subPatternOption}
+                                className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 text-sm hover:bg-[#121e31]"
+                              >
+                                <input
+                                  type="checkbox"
+                                  disabled={disablePatternFilter}
+                                  checked={selectedSubPatterns.includes(subPatternOption)}
+                                  onChange={() => toggleSelectedSubPattern(subPatternOption)}
+                                  className="checkbox checkbox-primary checkbox-sm"
+                                />
+                                {subPatternOption}
+                              </label>
+                            ))}
+                          </div>
+                        </div>
+                      ) : null}
+                    </div>
+                  </>
+                ) : null}
+              </div>
+
+              <button
+                type="button"
+                aria-pressed={hasVideo}
+                disabled={disableHasVideoFilter}
+                className={`flex min-h-14 w-full items-center justify-center gap-3 rounded-xl border px-5 text-base font-semibold transition xl:w-auto ${
+                  disableHasVideoFilter
+                    ? "cursor-not-allowed border-[#26364d]/70 bg-[#07111f]/55 text-slate-500"
+                    : hasVideo
+                      ? "cursor-pointer border-[#705cff] bg-[#6747ff] text-white"
+                      : "cursor-pointer border-[#26364d] bg-[#07111f]/65 text-white"
+                }`}
+                onClick={() => {
+                  if (disableHasVideoFilter) return;
+                  setHasVideo((current) => !current);
+                }}
+              >
                 <svg
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -566,186 +818,60 @@ export function LeetcodeProblemTable({
                   strokeLinejoin="round"
                   strokeWidth="2"
                 >
-                  <path d="M6 3v6" />
-                  <path d="M18 15v6" />
-                  <path d="M6 15v6" />
-                  <path d="M18 3v6" />
-                  <path d="M3 9h6v6H3z" />
-                  <path d="M15 9h6v6h-6z" />
+                  <path d="m16 13 5 3V8l-5 3" />
+                  <rect x="3" y="6" width="13" height="12" rx="2" />
                 </svg>
-                <span className="text-white">Filter patterns</span>
-                {patternFilterLabel ? (
-                  <span className="text-[#9272ff]">{patternFilterLabel}</span>
-                ) : null}
-              </span>
-              <span className="text-slate-400">{showPatternMenu ? "⌃" : "⌄"}</span>
-            </button>
+                Has video
+                <span
+                  aria-hidden="true"
+                  className={`relative h-6 w-11 rounded-full transition ${
+                    hasVideo ? "bg-[#8b68ff]" : "bg-slate-700"
+                  }`}
+                >
+                  <span
+                    className={`absolute top-1 h-4 w-4 rounded-full bg-slate-300 transition ${
+                      hasVideo ? "left-6" : "left-1"
+                    }`}
+                  />
+                </span>
+              </button>
 
-            {showPatternMenu ? (
-              <>
-              <div className="absolute left-0 top-full z-40 h-3 w-full" />
-              <div
-                id="leetcode-pattern-menu"
-                role="menu"
-                className="absolute left-0 top-full z-50 mt-2 flex w-max max-w-[calc(100vw-3rem)] items-start gap-3"
-              >
-                <div className="w-80 rounded-xl border border-[#26364d] bg-[#0b1626] p-3 shadow-2xl shadow-black/40">
-                  <label className="mb-2 flex h-10 items-center gap-2 rounded-xl border border-[#26364d] bg-[#07111f]/65 px-3">
-                    <svg
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                      className="h-4 w-4 text-slate-400"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                    >
-                      <circle cx="11" cy="11" r="8" />
-                      <path d="m21 21-4.3-4.3" />
-                    </svg>
-                    <span className="text-sm text-slate-500">Search minor patterns...</span>
-                  </label>
-
-                  <div className="max-h-72 space-y-1 overflow-y-auto">
-                    {(externalPattern ? [externalPattern] : [allOption, ...patternOptions]).map((patternOption) => (
-                      <div
-                        key={patternOption}
-                        className="flex cursor-pointer items-center justify-between rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-[#121e31]"
-                      >
-                        <label className="flex min-w-0 flex-1 cursor-pointer items-center gap-3">
-                          <input
-                            type="checkbox"
-                            checked={
-                              patternOption === allOption
-                                ? selectedPatterns.length === 0 && selectedSubPatterns.length === 0
-                                : selectedPatterns.includes(patternOption)
-                            }
-                            onChange={() => {
-                              if (patternOption === allOption) {
-                                resetPatternFilters();
-                                return;
-                              }
-
-                              toggleSelectedPattern(patternOption);
-                            }}
-                            className="checkbox checkbox-primary checkbox-sm"
-                          />
-                          <span className="truncate">
-                            {patternOption === allOption ? "All problems" : patternOption}
-                          </span>
-                        </label>
-                        {patternOption !== allOption ? (
-                          <button
-                            type="button"
-                            aria-label={`Show ${patternOption} minor patterns`}
-                            className={`cursor-pointer rounded-md px-2 py-1 text-lg leading-none ${
-                              activePatternForSubPatterns === patternOption ? "text-[#a48bff]" : ""
-                            }`}
-                            onClick={() =>
-                              setActivePatternForSubPatterns((current) =>
-                                current === patternOption ? null : patternOption,
-                              )
-                            }
-                          >
-                            ›
-                          </button>
-                        ) : null}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {activePatternForSubPatterns ? (
-                  <div className="w-64 rounded-xl border border-[#26364d] bg-[#0b1626] p-3 text-slate-200 shadow-2xl shadow-black/40">
-                    <div className="mb-2 font-semibold">{activePatternForSubPatterns}</div>
-                    <div className="max-h-72 space-y-1 overflow-y-auto">
-                      {subPatternOptions.map((subPatternOption) => (
-                        <label
-                          key={subPatternOption}
-                          className="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 text-sm hover:bg-[#121e31]"
-                        >
-                          <input
-                            type="checkbox"
-                            checked={selectedSubPatterns.includes(subPatternOption)}
-                            onChange={() => toggleSelectedSubPattern(subPatternOption)}
-                            className="checkbox checkbox-primary checkbox-sm"
-                          />
-                          {subPatternOption}
-                        </label>
-                      ))}
-                    </div>
-                  </div>
-                ) : null}
-              </div>
-              </>
-            ) : null}
-          </div>
-
-          <button
-            type="button"
-            aria-pressed={hasVideo}
-            className={`flex min-h-14 w-full cursor-pointer items-center justify-center gap-3 rounded-xl border px-5 text-base font-semibold transition xl:w-auto ${
-              hasVideo
-                ? "border-[#705cff] bg-[#6747ff] text-white"
-                : "border-[#26364d] bg-[#07111f]/65 text-white"
-            }`}
-            onClick={() => setHasVideo((current) => !current)}
-          >
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            >
-              <path d="m16 13 5 3V8l-5 3" />
-              <rect x="3" y="6" width="13" height="12" rx="2" />
-            </svg>
-            Has video
-            <span
-              aria-hidden="true"
-              className={`relative h-6 w-11 rounded-full transition ${
-                hasVideo ? "bg-[#8b68ff]" : "bg-slate-700"
-              }`}
-            >
-              <span
-                className={`absolute top-1 h-4 w-4 rounded-full bg-slate-300 transition ${
-                  hasVideo ? "left-6" : "left-1"
+              <button
+                type="button"
+                disabled={disableClearFilters}
+                className={`flex min-h-14 w-full items-center justify-center gap-3 rounded-xl px-5 text-base font-semibold transition xl:w-auto ${
+                  disableClearFilters
+                    ? "cursor-not-allowed text-slate-500"
+                    : "cursor-pointer text-[#8f73ff] hover:bg-[#121e31]"
                 }`}
-              />
-            </span>
-          </button>
-
-          <button
-            type="button"
-            className="flex min-h-14 w-full cursor-pointer items-center justify-center gap-3 rounded-xl px-5 text-base font-semibold text-[#8f73ff] transition hover:bg-[#121e31] xl:w-auto"
-            onClick={resetFilters}
-          >
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            >
-              <path d="M3 12a9 9 0 0 1 15-6.7L21 8" />
-              <path d="M21 3v5h-5" />
-              <path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
-              <path d="M3 21v-5h5" />
-            </svg>
-            Clear filters
-          </button>
+                onClick={() => {
+                  if (disableClearFilters) return;
+                  resetFilters();
+                }}
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                >
+                  <path d="M3 12a9 9 0 0 1 15-6.7L21 8" />
+                  <path d="M21 3v5h-5" />
+                  <path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
+                  <path d="M3 21v-5h5" />
+                </svg>
+                Clear filters
+              </button>
+            </div>
           </div>
-        </div>
+        ) : null}
 
-        {selectedPatterns.length > 0 || selectedSubPatterns.length > 0 ? (
+        {showControls &&
+        (selectedPatterns.length > 0 || selectedSubPatterns.length > 0) ? (
           <div className="mt-3 flex flex-wrap gap-2">
             {[...selectedPatterns, ...selectedSubPatterns].map((selectedItem) => (
               <button
@@ -769,7 +895,7 @@ export function LeetcodeProblemTable({
         ) : null}
       </div>
 
-      <div className="overflow-x-auto rounded-xl border border-[#1b2a3e] bg-[#0b1626]/95 shadow-[0_18px_45px_rgba(0,0,0,0.22)]">
+      <div className="overflow-x-auto">
         <table className="table">
           <thead className="bg-[#0b1626]">
             <tr className="border-[#1b2a3e] text-sm font-bold text-slate-400">
@@ -827,12 +953,28 @@ export function LeetcodeProblemTable({
             </tr>
           </thead>
           <tbody>
-            {visibleProblems.map((problem) => {
-              const problemAttempts = attemptsByProblemId.get(problem.number) ?? [];
-              const isExpanded = expandedProblemId === problem.number;
-              const difficulty = difficultyStyles(problem.difficulty);
+            {visibleProblems.length === 0 ? (
+              <tr>
+                <td className="px-8 py-10 text-center text-slate-400" colSpan={6}>
+                  {emptyMessage}
+                </td>
+              </tr>
+            ) : (
+              visibleProblems.map((problem) => {
+                const problemAttempts = attemptsByProblemId.get(problem.number) ?? [];
+                const isExpanded = expandedProblemId === problem.number;
+                const difficulty = problem.difficultyClassName
+                  ? {
+                      pill: problem.difficultyClassName,
+                      dot: problem.difficultyDotClassName ?? difficultyStyles(problem.difficulty).dot,
+                    }
+                  : difficultyStyles(problem.difficulty);
+                const statusLabel = problem.statusLabel ?? formatStatus(problem);
+                const statusTextClass = problem.statusClassName ?? progressTextClass(problem);
+                const statusDotClass = problem.statusDotClassName ?? progressDotClass(problem);
+                const actionLabel = problem.actionLabel ?? "Start";
 
-              return (
+                return (
                 <Fragment key={`${problem.pattern}:${problem.subPattern}:${problem.number}:${problem.title}`}>
                   <tr className="border-[#1b2a3e] transition hover:bg-[#111d30]">
                     <td className="px-8 py-5 align-middle font-mono text-base text-slate-200">
@@ -865,8 +1007,8 @@ export function LeetcodeProblemTable({
                     </td>
                     <td className="px-4 py-4 align-middle">
                       <span
-                        className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-bold capitalize ${difficulty.pill}`}
-                      >
+                          className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-bold capitalize ${difficulty.pill}`}
+                        >
                         <span className={`h-2.5 w-2.5 rounded-full ${difficulty.dot}`} />
                         {problem.difficulty}
                       </span>
@@ -875,12 +1017,12 @@ export function LeetcodeProblemTable({
                         <button
                           type="button"
                           aria-expanded={isExpanded}
-                          className={`inline-flex cursor-pointer items-center gap-2 text-base transition hover:text-[#a48bff] ${progressTextClass(problem)}`}
+                          className={`inline-flex cursor-pointer items-center gap-2 text-base transition hover:text-[#a48bff] ${statusTextClass}`}
                           onClick={() => setExpandedProblemId(isExpanded ? null : problem.number)}
                         >
-                        <span className={`h-4 w-4 rounded-full border-2 ${progressDotClass(problem)}`} />
+                        <span className={`h-4 w-4 rounded-full border-2 ${statusDotClass}`} />
                         <span>
-                          {formatStatus(problem)} · {problem.attemptCount} attempts
+                          {statusLabel} · {problem.attemptCount} attempts
                         </span>
                         {problem.attemptCount > 0 ? (
                           <span className="text-xs">{isExpanded ? "⌃" : "⌄"}</span>
@@ -902,7 +1044,7 @@ export function LeetcodeProblemTable({
                         onAttemptSaved={onAttemptSaved}
                         className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#6747ff] px-8 text-base font-bold text-white shadow-lg shadow-[#6747ff]/25 transition hover:bg-[#775bff]"
                       >
-                        Start
+                        {actionLabel}
                       </LeetcodeAttemptOverlayButton>
                     </td>
                   </tr>
@@ -1013,40 +1155,46 @@ export function LeetcodeProblemTable({
                   ) : null}
                 </Fragment>
               );
-            })}
+              })
+            )}
           </tbody>
         </table>
 
-        <div className="flex flex-col gap-4 border-t border-[#1b2a3e] px-8 py-5 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            Showing{" "}
-            {filteredProblems.length > 0
-              ? `${firstVisibleProblemIndex + 1}-${firstVisibleProblemIndex + visibleProblems.length}`
-              : "0"}{" "}
-            of {filteredProblems.length} problems
-          </p>
-          <div className="join">
-            <button
-              type="button"
-              className="join-item rounded-l-lg border border-[#26364d] px-3 py-1.5 text-slate-300 disabled:text-slate-600"
-              disabled={safeCurrentPage === 1}
-              onClick={goToPreviousPage}
-            >
-              Previous
-            </button>
-            <button type="button" className="join-item bg-[#6747ff] px-3 py-1.5 font-bold text-white">
-              {safeCurrentPage}
-            </button>
-            <button
-              type="button"
-              className="join-item rounded-r-lg border border-[#26364d] px-3 py-1.5 text-slate-300 disabled:text-slate-600"
-              disabled={safeCurrentPage === pageCount}
-              onClick={goToNextPage}
-            >
-              Next
-            </button>
+        {showPagination ? (
+          <div className="flex flex-col gap-4 border-t border-[#1b2a3e] px-8 py-5 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+            <p>
+              Showing{" "}
+              {filteredProblems.length > 0
+                ? `${firstVisibleProblemIndex + 1}-${firstVisibleProblemIndex + visibleProblems.length}`
+                : "0"}{" "}
+              of {filteredProblems.length} problems
+            </p>
+            <div className="join">
+              <button
+                type="button"
+                className="join-item rounded-l-lg border border-[#26364d] px-3 py-1.5 text-slate-300 disabled:text-slate-600"
+                disabled={safeCurrentPage === 1}
+                onClick={goToPreviousPage}
+              >
+                Previous
+              </button>
+              <button
+                type="button"
+                className="join-item bg-[#6747ff] px-3 py-1.5 font-bold text-white"
+              >
+                {safeCurrentPage}
+              </button>
+              <button
+                type="button"
+                className="join-item rounded-r-lg border border-[#26364d] px-3 py-1.5 text-slate-300 disabled:text-slate-600"
+                disabled={safeCurrentPage === pageCount}
+                onClick={goToNextPage}
+              >
+                Next
+              </button>
+            </div>
           </div>
-        </div>
+        ) : null}
       </div>
     </section>
   );
