@@ -1,7 +1,11 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { LeetcodePracticeProgressClient } from "./leetcode-practice-progress-client";
-import { LeetcodeProblemDifficultyLabel, type LeetcodeProblemRow } from "@/lib/leetcode/types";
+import {
+  LeetcodeProblemDifficultyLabel,
+  type LeetcodeProblemRow,
+} from "@/lib/leetcode/types";
+import type { LeetcodeCatalog } from "@/lib/leetcode/catalog";
 
 const authState = vi.hoisted(() => ({
   status: "signed-out" as "loading" | "signed-in" | "signed-out" | "unavailable",
@@ -52,6 +56,9 @@ const patternProblems: LeetcodeProblemRow[] = [
   },
 ];
 
+const catalog = catalogFromProblems(problems);
+const patternCatalog = catalogFromProblems(patternProblems);
+
 describe("LeetcodePracticeProgressClient", () => {
   beforeEach(() => {
     authState.status = "signed-out";
@@ -95,7 +102,7 @@ describe("LeetcodePracticeProgressClient", () => {
       ]),
     );
 
-    render(<LeetcodePracticeProgressClient problems={problems} query="" />);
+    render(<LeetcodePracticeProgressClient catalog={catalog} query="" />);
 
     expect(
       await screen.findByRole("button", { name: /Completed · 1 attempts/ }),
@@ -122,7 +129,7 @@ describe("LeetcodePracticeProgressClient", () => {
       ]),
     );
 
-    render(<LeetcodePracticeProgressClient problems={problems} query="" />);
+    render(<LeetcodePracticeProgressClient catalog={catalog} query="" />);
 
     const progressButton = await screen.findByRole("button", {
       name: /In progress · 1 attempts/,
@@ -144,7 +151,7 @@ describe("LeetcodePracticeProgressClient", () => {
       })),
     );
 
-    render(<LeetcodePracticeProgressClient problems={problems} query="" />);
+    render(<LeetcodePracticeProgressClient catalog={catalog} query="" />);
 
     await waitFor(() =>
       expect(fetch).toHaveBeenCalledWith(
@@ -161,7 +168,7 @@ describe("LeetcodePracticeProgressClient", () => {
     window.history.pushState(null, "", "/leetcode/allproblems");
     const pushState = vi.spyOn(window.history, "pushState");
 
-    render(<LeetcodePracticeProgressClient problems={patternProblems} query="" />);
+    render(<LeetcodePracticeProgressClient catalog={patternCatalog} query="" />);
 
     expect(screen.getByRole("row", { name: /Container With Most Water/ })).toBeInTheDocument();
     expect(
@@ -169,6 +176,9 @@ describe("LeetcodePracticeProgressClient", () => {
         name: /Binary Tree Level Order Traversal/,
       }),
     ).toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /Converging 1/ }),
+    ).not.toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: /Trees 1/ }));
 
@@ -186,4 +196,73 @@ describe("LeetcodePracticeProgressClient", () => {
       }),
     ).toBeInTheDocument();
   });
+
+  it("clears the server-provided search query from the table controls", () => {
+    window.history.pushState(null, "", "/leetcode/allproblems?q=tree");
+
+    render(<LeetcodePracticeProgressClient catalog={patternCatalog} query="tree" />);
+
+    expect(
+      screen.queryByRole("row", { name: /Container With Most Water/ }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.getByRole("row", {
+        name: /Binary Tree Level Order Traversal/,
+      }),
+    ).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: "Clear filters" }));
+
+    expect(window.location.search).toBe("");
+    expect(
+      screen.getByRole("row", { name: /Container With Most Water/ }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("row", {
+        name: /Binary Tree Level Order Traversal/,
+      }),
+    ).toBeInTheDocument();
+  });
 });
+
+function catalogFromProblems(problems: LeetcodeProblemRow[]): LeetcodeCatalog {
+  const catalogProblems = new Map<number, LeetcodeProblemRow[]>();
+  const patternCounts = new Map<string, { count: number }>();
+  const index = new Map<
+    string,
+    {
+      subPatterns: Map<string, { name: string; problemIndexes: number[] }>;
+      problemIndexes: number[];
+    }
+  >();
+
+  problems.forEach((problem, problemIndex) => {
+    catalogProblems.set(problemIndex, [problem]);
+    patternCounts.set(problem.pattern, {
+      count: (patternCounts.get(problem.pattern)?.count ?? 0) + 1,
+    });
+    patternCounts.set(problem.subPattern, {
+      count: (patternCounts.get(problem.subPattern)?.count ?? 0) + 1,
+    });
+
+    const pattern = index.get(problem.pattern) ?? {
+      subPatterns: new Map<string, { name: string; problemIndexes: number[] }>(),
+      problemIndexes: [],
+    };
+    const subPattern = pattern.subPatterns.get(problem.subPattern) ?? {
+      name: problem.subPattern,
+      problemIndexes: [],
+    };
+
+    pattern.problemIndexes.push(problemIndex);
+    subPattern.problemIndexes.push(problemIndex);
+    pattern.subPatterns.set(problem.subPattern, subPattern);
+    index.set(problem.pattern, pattern);
+  });
+
+  return {
+    problems: catalogProblems,
+    patternCounts,
+    index,
+  };
+}

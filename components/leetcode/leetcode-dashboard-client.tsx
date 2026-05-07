@@ -112,7 +112,7 @@ export function LeetcodeDashboardProblemTableClient({
         </label>
       </div>
 
-      <div className="mt-5 overflow-hidden rounded-xl border border-[#26364d]">
+      <div className="mt-5 overflow-x-auto rounded-xl border border-[#26364d]">
         <table className="w-full min-w-[58rem] text-left">
           <thead className="bg-[#111d30] text-sm font-semibold text-slate-400">
             <tr>

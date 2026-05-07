@@ -48,6 +48,11 @@ export function getLeetcodeCatalog(): LeetcodeCatalog {
       subPatternCounts.push({
         count: subPattern.problems.length,
       });
+      patternCounts.set(subPattern.name, {
+        count:
+          (patternCounts.get(subPattern.name)?.count ?? 0) +
+          subPattern.problems.length,
+      });
 
       for (const rawProblem of subPattern.problems) {
         const problem = normalizeLeetcodeProblem(rawProblem);

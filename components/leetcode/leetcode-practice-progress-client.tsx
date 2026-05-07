@@ -13,13 +13,12 @@ import {
   parseDifficulty,
   type LeetcodeAttemptRow,
   type LeetcodeProblemDifficultyLabel,
-  type LeetcodeProblemRow,
   type SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
-import { LeetcodeCatalog } from "@/lib/leetcode/catalog";
+import type { LeetcodeCatalog } from "@/lib/leetcode/catalog";
 
 type LeetcodePracticeProgressClientProps = {
-  problems: LeetcodeCatalog;
+  catalog: LeetcodeCatalog;
   initialSelectedPattern?: string | null;
   initialSelectedSubPatterns?: string[];
   initialSelectedDifficulty?: LeetcodeProblemDifficultyLabel | null;
@@ -34,22 +33,6 @@ type AttemptsResponse = {
 let cachedAttemptUser: string | null = null;
 let cachedAttempts: LeetcodeAttemptRow[] | null = null;
 
-function isValidPattern(pattern: string | null, problems: LeetcodeProblemRow[]) {
-  return Boolean(pattern && problems.some((problem) => problem.pattern === pattern));
-}
-
-function readUrlFilters(problems: LeetcodeProblemRow[]) {
-  const params = new URLSearchParams(window.location.search);
-  const pattern = params.get("pattern");
-  const difficulty = params.get("difficulty");
-
-  return {
-    selectedPattern: isValidPattern(pattern, problems) ? pattern : null,
-    selectedSubPatterns: params.getAll("subPattern"),
-    selectedDifficulty: parseDifficulty(difficulty),
-  };
-}
-
 export function LeetcodePracticeProgressClient({
   catalog,
   initialSelectedPattern = null,
@@ -59,29 +42,32 @@ export function LeetcodePracticeProgressClient({
   saveAttemptAction,
 }: LeetcodePracticeProgressClientProps) {
   const { status: authStatus, user, getIdToken } = useAuth();
-  const [selectedPattern, setSelectedPattern] = useState<string | null>(initialSelectedPattern);
-  const [selectedSubPatterns, setSelectedSubPatterns] = useState<string[]>(
-    initialSelectedSubPatterns,
-  );
+  const [selectedPattern, setSelectedPattern] =
+    useState<string | null>(initialSelectedPattern);
+  const [selectedSubPatterns, setSelectedSubPatterns] =
+    useState<string[]>(initialSelectedSubPatterns);
   const [selectedDifficulty, setSelectedDifficulty] =
     useState<LeetcodeProblemDifficultyLabel | null>(initialSelectedDifficulty);
   const [attempts, setAttempts] = useState<LeetcodeAttemptRow[]>(() =>
     cachedAttemptUser === user?.uid && cachedAttempts ? cachedAttempts : [],
   );
 
+  const problems = useMemo(
+    () => Array.from(catalog.problems.values()).flat(),
+    [catalog.problems],
+  );
   const hydratedProblems = useMemo(
     () => hydrateLeetcodeProblemsWithAttempts(problems, attempts),
     [attempts, problems],
   );
-  const majorPatterns = useMemo(() => {
-    const counts = new Map<string, number>();
-
-    for (const problem of problems) {
-      counts.set(problem.pattern, (counts.get(problem.pattern) ?? 0) + 1);
-    }
-
-    return Array.from(counts, ([name, count]) => ({ name, count }));
-  }, [problems]);
+  const majorPatterns = useMemo(
+    () =>
+      Array.from(catalog.index.keys(), (name) => ({
+        name,
+        count: catalog.patternCounts.get(name)?.count ?? 0,
+      })),
+    [catalog.index, catalog.patternCounts],
+  );
   const tableProblems = useMemo(
     () =>
       getLeetcodePracticeRows({
@@ -98,7 +84,7 @@ export function LeetcodePracticeProgressClient({
     window.history.pushState(
       null,
       "",
-      practiceHref({
+      createHref({
         pattern: selectedPattern,
         subPatterns: selectedSubPatterns,
         query,
@@ -113,7 +99,7 @@ export function LeetcodePracticeProgressClient({
     window.history.pushState(
       null,
       "",
-      practiceHref({
+      createHref({
         pattern,
         subPatterns: [],
         query,
@@ -179,21 +165,27 @@ export function LeetcodePracticeProgressClient({
 
   useEffect(() => {
     const timeoutId = window.setTimeout(() => void loadAttempts(), 0);
-
     return () => window.clearTimeout(timeoutId);
   }, [loadAttempts]);
 
   useEffect(() => {
     function handlePopState() {
-      const nextFilters = readUrlFilters(problems);
-      setSelectedPattern(nextFilters.selectedPattern);
-      setSelectedSubPatterns(nextFilters.selectedSubPatterns);
-      setSelectedDifficulty(nextFilters.selectedDifficulty);
+      const params = new URLSearchParams(window.location.search);
+      const pattern = params.get("pattern");
+      const nextSelectedPattern =
+        pattern && catalog.patternCounts.has(pattern) ? pattern : null;
+      const nextSelectedSubPatterns = params
+        .getAll("subPattern")
+        .filter((subPattern) => catalog.patternCounts.has(subPattern));
+
+      setSelectedPattern(nextSelectedPattern);
+      setSelectedSubPatterns(nextSelectedSubPatterns);
+      setSelectedDifficulty(parseDifficulty(params.get("difficulty")));
     }
 
     window.addEventListener("popstate", handlePopState);
     return () => window.removeEventListener("popstate", handlePopState);
-  }, [problems]);
+  }, [catalog.patternCounts]);
 
   return (
     <div className="grid gap-4 xl:grid-cols-[21rem_minmax(0,1fr)]">
@@ -305,7 +297,7 @@ export function LeetcodePracticeProgressClient({
   );
 }
 
-function practiceHref({
+function createHref({
   pattern,
   subPatterns,
   query,

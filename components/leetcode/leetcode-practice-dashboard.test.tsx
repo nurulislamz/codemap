@@ -6,6 +6,7 @@ import {
   LeetcodeProblemDifficultyLabel,
   type LeetcodeProblemRow,
 } from "@/lib/leetcode/types";
+import type { LeetcodeCatalog } from "@/lib/leetcode/catalog";
 
 const problems: LeetcodeProblemRow[] = [
   {
@@ -31,26 +32,14 @@ const problems: LeetcodeProblemRow[] = [
   },
 ];
 
-const patterns = [
-  {
-    name: "Two Pointer",
-    count: 1,
-    subPatterns: [{ name: "Converging", count: 1 }],
-  },
-  {
-    name: "Sliding Window",
-    count: 1,
-    subPatterns: [{ name: "Variable Window", count: 1 }],
-  },
-];
+const catalog = catalogFromProblems(problems);
 
 describe("LeetcodePracticeDashboard", () => {
   it("renders the selected pattern from server state and keeps pattern filters in the table toolbar", () => {
     render(
       <AuthProvider>
         <LeetcodePracticeDashboard
-          problems={problems}
-          patterns={patterns}
+          catalog={catalog}
           selectedPattern="Two Pointer"
         />
       </AuthProvider>,
@@ -62,7 +51,7 @@ describe("LeetcodePracticeDashboard", () => {
     expect(screen.getByText("Filter patterns")).toBeInTheDocument();
     expect(screen.queryByText("Minor pattern")).not.toBeInTheDocument();
     expect(
-      screen.getByRole("link", { name: /All Problems 2/ }),
+      screen.getByRole("button", { name: /All Problems 2/ }),
     ).toBeInTheDocument();
     expect(screen.getByRole("row", { name: /11 Container With Most Water/ })).toBeInTheDocument();
     expect(
@@ -76,8 +65,7 @@ describe("LeetcodePracticeDashboard", () => {
     render(
       <AuthProvider>
         <LeetcodePracticeDashboard
-          problems={problems}
-          patterns={patterns}
+          catalog={catalog}
           query="longest"
         />
       </AuthProvider>,
@@ -99,8 +87,7 @@ describe("LeetcodePracticeDashboard", () => {
     render(
       <AuthProvider>
         <LeetcodePracticeDashboard
-          problems={problems}
-          patterns={patterns}
+          catalog={catalog}
           selectedDifficulty="Easy"
         />
       </AuthProvider>,
@@ -127,3 +114,45 @@ describe("LeetcodePracticeDashboard", () => {
     ).toBeInTheDocument();
   });
 });
+
+function catalogFromProblems(problems: LeetcodeProblemRow[]): LeetcodeCatalog {
+  const catalogProblems = new Map<number, LeetcodeProblemRow[]>();
+  const patternCounts = new Map<string, { count: number }>();
+  const index = new Map<
+    string,
+    {
+      subPatterns: Map<string, { name: string; problemIndexes: number[] }>;
+      problemIndexes: number[];
+    }
+  >();
+
+  problems.forEach((problem, problemIndex) => {
+    catalogProblems.set(problemIndex, [problem]);
+    patternCounts.set(problem.pattern, {
+      count: (patternCounts.get(problem.pattern)?.count ?? 0) + 1,
+    });
+    patternCounts.set(problem.subPattern, {
+      count: (patternCounts.get(problem.subPattern)?.count ?? 0) + 1,
+    });
+
+    const pattern = index.get(problem.pattern) ?? {
+      subPatterns: new Map<string, { name: string; problemIndexes: number[] }>(),
+      problemIndexes: [],
+    };
+    const subPattern = pattern.subPatterns.get(problem.subPattern) ?? {
+      name: problem.subPattern,
+      problemIndexes: [],
+    };
+
+    pattern.problemIndexes.push(problemIndex);
+    subPattern.problemIndexes.push(problemIndex);
+    pattern.subPatterns.set(problem.subPattern, subPattern);
+    index.set(problem.pattern, pattern);
+  });
+
+  return {
+    problems: catalogProblems,
+    patternCounts,
+    index,
+  };
+}

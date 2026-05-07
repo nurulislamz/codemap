@@ -7,7 +7,6 @@ import {
 } from "@/components/leetcode/leetcode-ui";
 import { LeetcodePracticeProgressClient } from "@/components/leetcode/leetcode-practice-progress-client";
 import { saveLeetCodeAttempt } from "@/lib/leetcode/actions";
-import { pathToFileURL } from "url";
 
 export const dynamic = "force-dynamic";
 
@@ -21,10 +20,8 @@ export default async function LeetcodeAllProblemsPage({
     q?: string;
   }>;
 }) {
-  // server component, safe to access searchParams directly without useSearchParams hook
   const params = await searchParams;
 
-  // Validate filters against catalog to prevent invalid values and potential XSS
   const catalog = getLeetcodeCatalog();
   let selectedPattern = params?.pattern ?? null;
   let selectedSubPatterns = params?.subPattern
@@ -36,15 +33,15 @@ export default async function LeetcodeAllProblemsPage({
   const query = params?.q ?? null;
   const invalidFilters: Array<{type: string; value: string;}> = [];
 
-  if (selectedPattern && !catalog.index.has(selectedPattern)) {
+  if (selectedPattern && !catalog.patternCounts.has(selectedPattern)) {
     invalidFilters.push({ type: "pattern", value: selectedPattern });
   }
 
   selectedSubPatterns.forEach((subPattern) => {
-    if (catalog.patternCounts.has(subPattern))
+    if (!catalog.patternCounts.has(subPattern)) {
       invalidFilters.push({ type: "subPattern", value: subPattern });
     }
-  );
+  });
 
   if (selectedDifficulty && !parseDifficulty(selectedDifficulty)) {
     invalidFilters.push({ type: "difficulty", value: selectedDifficulty });
@@ -207,7 +204,7 @@ export default async function LeetcodeAllProblemsPage({
       </section>
 
       <LeetcodePracticeProgressClient
-        problems={catalog}
+        catalog={catalog}
         initialSelectedPattern={selectedPattern}
         initialSelectedSubPatterns={selectedSubPatterns}
         initialSelectedDifficulty={selectedDifficultyValue}

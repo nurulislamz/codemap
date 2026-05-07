@@ -56,29 +56,35 @@ describe("normalizeLeetcodeProblem", () => {
 
   it("normalizes raw catalog difficulty values to display labels", () => {
     const catalog = getLeetcodeCatalog();
+    const container = Array.from(catalog.problems.values())
+      .flat()
+      .find((problem) => problem.number === "11");
 
-    expect(catalog.index.problems[0]?.difficulty).toBe(
-      LeetcodeProblemDifficultyLabel.Medium,
-    );
+    expect(container?.difficulty).toBe(LeetcodeProblemDifficultyLabel.Medium);
   });
 
   it("builds a hierarchical catalog index for patterns and problems", () => {
     const catalog = getLeetcodeCatalog();
 
-    const twoPointer = catalog.index.patterns.get("Two Pointer");
+    const twoPointer = catalog.index.get("Two Pointer");
     const converging = twoPointer?.subPatterns.get("Converging");
-    const container = catalog.index.problemsByNumber.get("11");
 
     expect(
       twoPointer?.problemIndexes.some(
-        (problemIndex) => catalog.index.problems[problemIndex]?.number === "11",
+        (problemIndex) => catalog.problems.get(problemIndex)?.[0]?.number === "11",
       ),
     ).toBe(true);
     expect(
       converging?.problemIndexes.map(
-        (problemIndex) => catalog.index.problems[problemIndex]?.number,
+        (problemIndex) => catalog.problems.get(problemIndex)?.[0]?.number,
       ),
     ).toContain("11");
-    expect(container?.title).toBe("Container With Most Water");
+  });
+
+  it("stores major patterns and sub-patterns in the flat pattern count map", () => {
+    const catalog = getLeetcodeCatalog();
+
+    expect(catalog.patternCounts.get("Two Pointer")?.count).toBeGreaterThan(0);
+    expect(catalog.patternCounts.get("Converging")?.count).toBeGreaterThan(0);
   });
 });
