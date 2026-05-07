@@ -31,6 +31,27 @@ const problems: LeetcodeProblemRow[] = [
   },
 ];
 
+const patternProblems: LeetcodeProblemRow[] = [
+  {
+    number: "11",
+    title: "Container With Most Water",
+    difficulty: LeetcodeProblemDifficultyLabel.Easy,
+    pattern: "Two Pointer",
+    subPattern: "Converging",
+    leetcodeUrl: "https://leetcode.com/problems/container-with-most-water/",
+    estimatedMinutes: 30,
+  },
+  {
+    number: "102",
+    title: "Binary Tree Level Order Traversal",
+    difficulty: LeetcodeProblemDifficultyLabel.Medium,
+    pattern: "Trees",
+    subPattern: "Breadth First Search",
+    leetcodeUrl: "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+    estimatedMinutes: 25,
+  },
+];
+
 describe("LeetcodePracticeProgressClient", () => {
   beforeEach(() => {
     authState.status = "signed-out";
@@ -134,5 +155,35 @@ describe("LeetcodePracticeProgressClient", () => {
         }),
       ),
     );
+  });
+
+  it("selects major patterns without navigating the document", async () => {
+    window.history.pushState(null, "", "/leetcode/allproblems");
+    const pushState = vi.spyOn(window.history, "pushState");
+
+    render(<LeetcodePracticeProgressClient problems={patternProblems} query="" />);
+
+    expect(screen.getByRole("row", { name: /Container With Most Water/ })).toBeInTheDocument();
+    expect(
+      screen.getByRole("row", {
+        name: /Binary Tree Level Order Traversal/,
+      }),
+    ).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: /Trees 1/ }));
+
+    expect(pushState).toHaveBeenCalledWith(
+      null,
+      "",
+      "/leetcode/allproblems?pattern=Trees",
+    );
+    expect(
+      screen.queryByRole("row", { name: /Container With Most Water/ }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.getByRole("row", {
+        name: /Binary Tree Level Order Traversal/,
+      }),
+    ).toBeInTheDocument();
   });
 });

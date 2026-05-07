@@ -1,4 +1,47 @@
-# CLAUDE.md
+# Codex Instructions
+
+## React / Next.js abstraction rule
+
+This is a Next.js React TypeScript app.
+
+Avoid unnecessary abstractions. Prefer simple, direct, readable code over splitting logic into many tiny functions, render helpers, wrapper components, custom hooks, or utility files.
+
+## Inline one-off abstractions
+
+Before finishing any change, check whether you created or found any of these that are only used once:
+
+- helper functions
+- `renderX` functions
+- tiny wrapper components
+- custom hooks
+- utility functions
+- constants that only hide simple JSX or simple expressions
+- files that exist only to export one tiny helper
+
+If something is only used once, inline it at the call site unless keeping it clearly improves readability.
+
+## React / TSX rules
+
+Do not split JSX into functions just to make the component look shorter.
+
+Avoid this:
+
+```tsx
+function renderHeader() {
+  return <Header title="Dashboard" />;
+}
+
+function renderStats() {
+  return <StatsCards stats={stats} />;
+}
+
+return (
+  <>
+    {renderHeader()}
+    {renderStats()}
+  </>
+);
+```
 
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 

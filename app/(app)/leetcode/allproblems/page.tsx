@@ -1,16 +1,13 @@
-import {
-  parseDifficulty,
-  type LeetcodeProblemDifficultyLabel,
-} from "@/lib/leetcode/types";
+import { parseDifficulty } from "@/lib/leetcode/types";
 import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import {
   CodeIcon,
   LeetcodeHeroPanel,
-  LeetcodePanel,
   LeetcodeStatCard,
 } from "@/components/leetcode/leetcode-ui";
 import { LeetcodePracticeProgressClient } from "@/components/leetcode/leetcode-practice-progress-client";
 import { saveLeetCodeAttempt } from "@/lib/leetcode/actions";
+import { pathToFileURL } from "url";
 
 export const dynamic = "force-dynamic";
 
@@ -24,7 +21,10 @@ export default async function LeetcodeAllProblemsPage({
     q?: string;
   }>;
 }) {
+  // server component, safe to access searchParams directly without useSearchParams hook
   const params = await searchParams;
+
+  // Validate filters against catalog to prevent invalid values and potential XSS
   const catalog = getLeetcodeCatalog();
   let selectedPattern = params?.pattern ?? null;
   let selectedSubPatterns = params?.subPattern
@@ -34,24 +34,17 @@ export default async function LeetcodeAllProblemsPage({
     : [];
   let selectedDifficulty = params?.difficulty ?? null;
   const query = params?.q ?? null;
-  const invalidFilters: Array<{
-    type: "pattern" | "subPattern" | "difficulty";
-    value: string;
-  }> = [];
+  const invalidFilters: Array<{type: string; value: string;}> = [];
 
   if (selectedPattern && !catalog.index.has(selectedPattern)) {
     invalidFilters.push({ type: "pattern", value: selectedPattern });
   }
 
   selectedSubPatterns.forEach((subPattern) => {
-    const hasSubPattern = Array.from(catalog.index.values()).some((pattern) =>
-      pattern.subPatterns.has(subPattern),
-    );
-
-    if (!hasSubPattern) {
+    if (catalog.patternCounts.has(subPattern))
       invalidFilters.push({ type: "subPattern", value: subPattern });
     }
-  });
+  );
 
   if (selectedDifficulty && !parseDifficulty(selectedDifficulty)) {
     invalidFilters.push({ type: "difficulty", value: selectedDifficulty });
@@ -213,141 +206,14 @@ export default async function LeetcodeAllProblemsPage({
         />
       </section>
 
-      <div className="grid gap-4 xl:grid-cols-[21rem_minmax(0,1fr)]">
-        <LeetcodePanel className="p-5">
-          <h2 className="mb-4 text-lg font-extrabold text-white">Major Patterns</h2>
-
-          <div className="space-y-2">
-            <a
-              href={filterHref({
-                pattern: null,
-                subPatterns: [],
-                query: queryValue,
-                difficulty: selectedDifficultyValue,
-              })}
-              aria-label={`All Problems ${problems.length}`}
-              className={`flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm transition ${
-                selectedPattern === null
-                  ? "bg-[#6747ff] text-white shadow-lg shadow-[#6747ff]/30"
-                  : "text-slate-300 hover:bg-[#121e31]"
-              }`}
-            >
-              <span className="flex min-w-0 items-center gap-3">
-                <svg
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  className="h-5 w-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                >
-                  <path d="M21 8 12 3 3 8l9 5 9-5z" />
-                  <path d="M3 16l9 5 9-5" />
-                  <path d="M3 12l9 5 9-5" />
-                </svg>
-                <span className="font-semibold">All Problems</span>
-              </span>
-              <span
-                className={`rounded-full border px-2.5 py-0.5 text-xs font-semibold ${
-                  selectedPattern === null
-                    ? "border-white/15 bg-white/10 text-white"
-                    : "border-[#24344b] bg-[#0a1422] text-slate-400"
-                }`}
-              >
-                {problems.length}
-              </span>
-            </a>
-
-            {Array.from(catalog.index.keys()).map((patternName) => {
-              const isSelected = patternName === selectedPattern;
-              const patternCount =
-                catalog.patternCounts.get(patternName)?.count ?? 0;
-
-              return (
-                <a
-                  key={patternName}
-                  href={filterHref({
-                    pattern: patternName,
-                    subPatterns: [],
-                    query: queryValue,
-                    difficulty: selectedDifficultyValue,
-                  })}
-                  aria-label={`${patternName} ${patternCount}`}
-                  className={`flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm transition ${
-                    isSelected
-                      ? "bg-[#6747ff] text-white shadow-lg shadow-[#6747ff]/30"
-                      : "text-slate-300 hover:bg-[#121e31]"
-                  }`}
-                >
-                  <span className="flex min-w-0 items-center gap-3">
-                    <svg
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                      className="h-5 w-5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                    >
-                      <circle cx="6" cy="12" r="2" />
-                      <circle cx="18" cy="6" r="2" />
-                      <circle cx="18" cy="18" r="2" />
-                      <path d="m8 11 8-4" />
-                      <path d="m8 13 8 4" />
-                    </svg>
-                    <span className="truncate font-semibold">{patternName}</span>
-                  </span>
-                  <span
-                    className={`rounded-full border px-2.5 py-0.5 text-xs font-semibold ${
-                      isSelected
-                        ? "border-white/15 bg-white/10 text-white"
-                      : "border-[#24344b] bg-[#0a1422] text-slate-400"
-                    }`}
-                  >
-                    {patternCount}
-                  </span>
-                </a>
-              );
-            })}
-          </div>
-        </LeetcodePanel>
-
-        <LeetcodePracticeProgressClient
-          problems={problems}
-          initialSelectedPattern={selectedPattern}
-          initialSelectedSubPatterns={selectedSubPatterns}
-          initialSelectedDifficulty={selectedDifficultyValue}
-          query={queryValue}
-          saveAttemptAction={saveLeetCodeAttempt}
-        />
-      </div>
+      <LeetcodePracticeProgressClient
+        problems={catalog}
+        initialSelectedPattern={selectedPattern}
+        initialSelectedSubPatterns={selectedSubPatterns}
+        initialSelectedDifficulty={selectedDifficultyValue}
+        query={queryValue}
+        saveAttemptAction={saveLeetCodeAttempt}
+      />
     </div>
   );
-}
-
-function filterHref({
-  pattern,
-  subPatterns,
-  query,
-  difficulty,
-}: {
-  pattern: string | null;
-  subPatterns: string[];
-  query: string;
-  difficulty: LeetcodeProblemDifficultyLabel | null;
-}) {
-  const params = new URLSearchParams();
-
-  if (pattern) params.set("pattern", pattern);
-  for (const subPattern of subPatterns) {
-    params.append("subPattern", subPattern);
-  }
-  if (difficulty) params.set("difficulty", difficulty);
-  if (query.trim()) params.set("q", query.trim());
-
-  const search = params.toString();
-  return search ? `/leetcode/allproblems?${search}` : "/leetcode/allproblems";
 }

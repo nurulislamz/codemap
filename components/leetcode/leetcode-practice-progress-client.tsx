@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useAuth } from "@/components/auth/auth-provider";
+import { LeetcodePanel } from "./leetcode-ui";
 import { LeetcodeProblemTable } from "./leetcode-problem-table";
 import {
   getLeetcodePracticeRows,
@@ -15,9 +16,10 @@ import {
   type LeetcodeProblemRow,
   type SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
+import { LeetcodeCatalog } from "@/lib/leetcode/catalog";
 
 type LeetcodePracticeProgressClientProps = {
-  problems: LeetcodeProblemRow[];
+  problems: LeetcodeCatalog;
   initialSelectedPattern?: string | null;
   initialSelectedSubPatterns?: string[];
   initialSelectedDifficulty?: LeetcodeProblemDifficultyLabel | null;
@@ -49,7 +51,7 @@ function readUrlFilters(problems: LeetcodeProblemRow[]) {
 }
 
 export function LeetcodePracticeProgressClient({
-  problems,
+  catalog,
   initialSelectedPattern = null,
   initialSelectedSubPatterns = [],
   initialSelectedDifficulty = null,
@@ -71,6 +73,15 @@ export function LeetcodePracticeProgressClient({
     () => hydrateLeetcodeProblemsWithAttempts(problems, attempts),
     [attempts, problems],
   );
+  const majorPatterns = useMemo(() => {
+    const counts = new Map<string, number>();
+
+    for (const problem of problems) {
+      counts.set(problem.pattern, (counts.get(problem.pattern) ?? 0) + 1);
+    }
+
+    return Array.from(counts, ([name, count]) => ({ name, count }));
+  }, [problems]);
   const tableProblems = useMemo(
     () =>
       getLeetcodePracticeRows({
@@ -92,6 +103,21 @@ export function LeetcodePracticeProgressClient({
         subPatterns: selectedSubPatterns,
         query,
         difficulty,
+      }),
+    );
+  }
+
+  function selectMajorPattern(pattern: string | null) {
+    setSelectedPattern(pattern);
+    setSelectedSubPatterns([]);
+    window.history.pushState(
+      null,
+      "",
+      practiceHref({
+        pattern,
+        subPatterns: [],
+        query,
+        difficulty: selectedDifficulty,
       }),
     );
   }
@@ -170,17 +196,112 @@ export function LeetcodePracticeProgressClient({
   }, [problems]);
 
   return (
-    <main className="min-w-0 space-y-4">
-      <LeetcodeProblemTable
-        problems={tableProblems}
-        attempts={attempts}
-        externalPattern={selectedPattern}
-        selectedDifficulty={selectedDifficulty}
-        onSelectedDifficultyChange={selectDifficulty}
-        saveAttemptAction={saveAttemptAction}
-        onAttemptSaved={() => void loadAttempts({ force: true })}
-      />
-    </main>
+    <div className="grid gap-4 xl:grid-cols-[21rem_minmax(0,1fr)]">
+      <LeetcodePanel className="p-5">
+        <h2 className="mb-4 text-lg font-extrabold text-white">Major Patterns</h2>
+
+        <div className="space-y-2">
+          <button
+            type="button"
+            aria-label={`All Problems ${problems.length}`}
+            aria-pressed={selectedPattern === null}
+            className={`flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm transition ${
+              selectedPattern === null
+                ? "bg-[#6747ff] text-white shadow-lg shadow-[#6747ff]/30"
+                : "text-slate-300 hover:bg-[#121e31]"
+            }`}
+            onClick={() => selectMajorPattern(null)}
+          >
+            <span className="flex min-w-0 items-center gap-3">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                className="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+              >
+                <path d="M21 8 12 3 3 8l9 5 9-5z" />
+                <path d="M3 16l9 5 9-5" />
+                <path d="M3 12l9 5 9-5" />
+              </svg>
+              <span className="font-semibold">All Problems</span>
+            </span>
+            <span
+              className={`rounded-full border px-2.5 py-0.5 text-xs font-semibold ${
+                selectedPattern === null
+                  ? "border-white/15 bg-white/10 text-white"
+                  : "border-[#24344b] bg-[#0a1422] text-slate-400"
+              }`}
+            >
+              {problems.length}
+            </span>
+          </button>
+
+          {majorPatterns.map(({ name, count }) => {
+            const isSelected = name === selectedPattern;
+
+            return (
+              <button
+                key={name}
+                type="button"
+                aria-label={`${name} ${count}`}
+                aria-pressed={isSelected}
+                className={`flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-sm transition ${
+                  isSelected
+                    ? "bg-[#6747ff] text-white shadow-lg shadow-[#6747ff]/30"
+                    : "text-slate-300 hover:bg-[#121e31]"
+                }`}
+                onClick={() => selectMajorPattern(name)}
+              >
+                <span className="flex min-w-0 items-center gap-3">
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    className="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  >
+                    <circle cx="6" cy="12" r="2" />
+                    <circle cx="18" cy="6" r="2" />
+                    <circle cx="18" cy="18" r="2" />
+                    <path d="m8 11 8-4" />
+                    <path d="m8 13 8 4" />
+                  </svg>
+                  <span className="truncate font-semibold">{name}</span>
+                </span>
+                <span
+                  className={`rounded-full border px-2.5 py-0.5 text-xs font-semibold ${
+                    isSelected
+                      ? "border-white/15 bg-white/10 text-white"
+                      : "border-[#24344b] bg-[#0a1422] text-slate-400"
+                  }`}
+                >
+                  {count}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      </LeetcodePanel>
+
+      <main className="min-w-0 space-y-4">
+        <LeetcodeProblemTable
+          problems={tableProblems}
+          attempts={attempts}
+          externalPattern={selectedPattern}
+          selectedDifficulty={selectedDifficulty}
+          onSelectedDifficultyChange={selectDifficulty}
+          saveAttemptAction={saveAttemptAction}
+          onAttemptSaved={() => void loadAttempts({ force: true })}
+        />
+      </main>
+    </div>
   );
 }
 
