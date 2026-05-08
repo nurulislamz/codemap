@@ -7,11 +7,11 @@ import { getRoadmapBySlug } from "@/lib/roadmap/catalog";
 import { getRoadmapLearnedMap } from "@/lib/roadmap/progress";
 import {
   Icon,
-  LeetcodePanel,
+  AppPanel,
   SectionHero,
   StatCard,
-  leetcodePrimaryActionClass,
-} from "@/components/leetcode/leetcode-ui";
+  primaryActionClass,
+} from "@/components/shared";
 
 export const dynamic = "force-dynamic";
 
@@ -62,7 +62,7 @@ export default async function RoadmapSlugPage({
             href={roadmap.url}
             target="_blank"
             rel="noreferrer"
-            className={leetcodePrimaryActionClass}
+            className={primaryActionClass}
           >
             Open on roadmap.sh
             <svg
@@ -112,13 +112,13 @@ export default async function RoadmapSlugPage({
           />
         </div>
 
-        <LeetcodePanel className="p-4">
+        <AppPanel className="p-4">
           <RoadmapConceptsModal
             roadmap={roadmap}
             initialSelectedTopicSlug={query?.topic ?? null}
             saveProgressAction={saveRoadmapProgress}
           />
-        </LeetcodePanel>
+        </AppPanel>
       </main>
     </div>
   );

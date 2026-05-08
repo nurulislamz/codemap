@@ -10,10 +10,6 @@ const envSchema = z.object({
   EMAIL_FROM: z.string().min(1).optional(),
   OPENAI_API_KEY: z.string().min(1).optional(),
   OWNER_EMAIL: z.string().email().optional(),
-  AI_FLASHCARDS_ENABLED: z
-    .enum(["true", "false"])
-    .default("false")
-    .transform((value) => value === "true"),
 });
 
 export type AppEnv = z.infer<typeof envSchema>;

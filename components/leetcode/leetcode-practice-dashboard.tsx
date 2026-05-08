@@ -4,7 +4,7 @@ import {
   SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
 import { LeetcodeProblemDifficultyLabel } from "@/lib/leetcode/types";
-import { CodeIcon, SectionHero } from "./leetcode-ui";
+import { CodeIcon, SectionHero } from "@/components/shared";
 import { LeetcodeCatalog } from "@/lib/leetcode/catalog";
 
 type LeetcodePracticeDashboardProps = {

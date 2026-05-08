@@ -124,7 +124,6 @@ The seed creates schema-shaped collections for:
 - `leetcode_attempts`
 - `daily_plans`
 - `daily_plan_items`
-- `flashcards`
 - `ai_generation_jobs`
 - `email_notifications`
 

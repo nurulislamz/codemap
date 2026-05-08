@@ -4,11 +4,11 @@ import { LeetcodeDashboardProblemTableClient } from "@/components/leetcode/leetc
 import {
   CodeIcon,
   Icon,
-  LeetcodePanel,
+  AppPanel,
   SectionHero,
   StatCard,
-  leetcodePrimaryActionClass,
-} from "@/components/leetcode/leetcode-ui";
+  primaryActionClass,
+} from "@/components/shared";
 import { saveLeetCodeAttempt } from "@/lib/leetcode/actions";
 import {
   getSortedLeetcodeAttemptEventsForRequest,
@@ -91,7 +91,7 @@ export default async function LeetcodeDashboardPage() {
         description={`${dailyTrackDay.focus.label} across ${dailyTrackTasks.length} focused tasks.`}
       >
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <Link href="/leetcode/allproblems" className={`${leetcodePrimaryActionClass} gap-4`}>
+          <Link href="/leetcode/allproblems" className={`${primaryActionClass} gap-4`}>
             View all problems
             <Icon name="chevron" className="h-5 w-5" />
           </Link>
@@ -99,7 +99,7 @@ export default async function LeetcodeDashboardPage() {
             href="/leetcode/tracks/complete-track"
             target="_blank"
             rel="noopener noreferrer"
-            className={`${leetcodePrimaryActionClass} gap-4`}
+            className={`${primaryActionClass} gap-4`}
           >
             Complete Track
             <Icon name="chevron" className="h-5 w-5" />
@@ -161,7 +161,7 @@ export default async function LeetcodeDashboardPage() {
         </div>
 
         <aside className="min-w-0 space-y-6">
-          <LeetcodePanel className="p-6">
+          <AppPanel className="p-6">
             <h2 className="text-2xl font-extrabold text-white">Track Progress</h2>
             <div className="mt-6 flex flex-col items-center gap-6">
               <ProgressRing percent={progressPercent} />
@@ -182,7 +182,7 @@ export default async function LeetcodeDashboardPage() {
                 </div>
               </div>
             </div>
-          </LeetcodePanel>
+          </AppPanel>
         </aside>
       </section>
     </div>

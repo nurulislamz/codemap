@@ -18,7 +18,6 @@ test.describe("coming soon routes", () => {
     ["/dashboard", "Home"],
     ["/roadmap", "Roadmap"],
     ["/system-design", "System Design"],
-    ["/flashcards", "Flashcards"],
   ] as const) {
     test(`${path} renders ${heading}`, async ({ page }) => {
       await page.goto(path);

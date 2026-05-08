@@ -7,7 +7,7 @@ import {
 } from "@/lib/leetcode/attempts";
 import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import { LeetcodeStatsClient } from "./stats-client";
-import { Icon, StatCard } from "@/components/leetcode/leetcode-ui";
+import { Icon, StatCard } from "@/components/shared";
 
 export const dynamic = "force-dynamic";
 

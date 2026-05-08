@@ -27,9 +27,9 @@ function buildPlanItems(input: {
   date: Date;
   roadmap: RoadmapSeed;
   systemDesign: SystemDesignSeed;
-}): Array<{ track: "leetcode" | "roadmap" | "system_design" | "flashcards"; title: string; href: string }> {
+}): Array<{ track: "leetcode" | "roadmap" | "system_design"; title: string; href: string }> {
   const items: Array<{
-    track: "leetcode" | "roadmap" | "system_design" | "flashcards";
+    track: "leetcode" | "roadmap" | "system_design";
     title: string;
     href: string;
   }> = [];
@@ -64,12 +64,6 @@ function buildPlanItems(input: {
       href: `/system-design#${systemPrompt.slug}`,
     });
   }
-
-  items.push({
-    track: "flashcards",
-    title: "Review due flashcards",
-    href: "/flashcards",
-  });
 
   return items;
 }
@@ -113,7 +107,6 @@ async function seedFirestoreSchema(db: ReturnType<typeof getFirestoreDb>) {
     status: "not_started",
     scheduled_order: idx,
   }));
-  const flashcardId = stableUuidFromString(`${LOCAL_USER_ID}:flashcard:seed`);
   const aiJobId = stableUuidFromString(`${LOCAL_USER_ID}:ai-job:seed`);
   const emailNotificationId = stableUuidFromString(`${LOCAL_USER_ID}:email:seed`);
 
@@ -130,9 +123,7 @@ async function seedFirestoreSchema(db: ReturnType<typeof getFirestoreDb>) {
         leetcode_enabled: true,
         roadmap_enabled: true,
         system_design_enabled: true,
-        flashcards_enabled: true,
         reminders_enabled: false,
-        ai_flashcards_enabled: false,
       },
     ],
     ...majorRows.map((row) => ["leetcode_major_patterns", row.id, row]),
@@ -168,28 +159,12 @@ async function seedFirestoreSchema(db: ReturnType<typeof getFirestoreDb>) {
       },
     ],
     [
-      "flashcards",
-      flashcardId,
-      {
-        id: flashcardId,
-        user_id: profileId,
-        source_track: "roadmap",
-        source_table: "seed",
-        source_id: "seed-0",
-        question: "What is the key goal of the Local schema bootstrap?",
-        answer: "To give Firestore a starter schema so the app can be developed locally.",
-        hint: "Think about collection/document shape.",
-        status: "draft",
-        created_at: nowIso,
-      },
-    ],
-    [
       "ai_generation_jobs",
       aiJobId,
       {
         id: aiJobId,
         user_id: profileId,
-        job_type: "flashcards.generate",
+        job_type: "seed",
         input_payload: JSON.stringify({
           topic: "Firestore bootstrap",
           notes: "Seed job for local development",
@@ -234,7 +209,6 @@ async function seedFirestoreSchema(db: ReturnType<typeof getFirestoreDb>) {
           "leetcode_attempts",
           "daily_plans",
           "daily_plan_items",
-          "flashcards",
           "ai_generation_jobs",
           "email_notifications",
         ],

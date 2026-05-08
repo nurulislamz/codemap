@@ -7,8 +7,8 @@ import {
   Icon,
   StatCard,
   SectionHero,
-  LeetcodePanel,
-} from "@/components/leetcode/leetcode-ui";
+  AppPanel,
+} from "@/components/shared";
 
 export const dynamic = "force-dynamic";
 
@@ -78,7 +78,7 @@ export default async function RoadmapPage({
           />
         </div>
 
-        <LeetcodePanel className="p-5">
+        <AppPanel className="p-5">
           <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
             {roadmaps.map((item) => (
               <li key={item.slug}>
@@ -96,7 +96,7 @@ export default async function RoadmapPage({
               </li>
             ))}
           </ul>
-        </LeetcodePanel>
+        </AppPanel>
       </main>
     </div>
   );

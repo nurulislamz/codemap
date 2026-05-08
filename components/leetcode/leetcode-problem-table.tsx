@@ -2,6 +2,7 @@
 
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 
+import { DropdownHoverBridge } from "@/components/shared";
 import { useOutsideClick } from "@/components/ui/use-outside-click";
 import { LeetcodeAttemptOverlayButton } from "./leetcode-attempt-overlay";
 import { formatAttemptDate, formatSecondsDuration } from "@/lib/leetcode/leetcode-formatters";
@@ -538,7 +539,7 @@ export function LeetcodeProblemTable({
 
                 {showDifficultyMenu ? (
                   <>
-                    <div className="absolute left-0 top-full z-40 h-3 w-full" />
+                    <DropdownHoverBridge />
                     <div
                       id="leetcode-difficulty-menu"
                       role="menu"
@@ -600,7 +601,7 @@ export function LeetcodeProblemTable({
 
                 {showStatusMenu ? (
                   <>
-                    <div className="absolute left-0 top-full z-40 h-3 w-full" />
+                    <DropdownHoverBridge />
                     <div
                       id="leetcode-status-menu"
                       role="menu"
@@ -685,7 +686,7 @@ export function LeetcodeProblemTable({
 
                 {showPatternMenu ? (
                   <>
-                    <div className="absolute left-0 top-full z-40 h-3 w-full" />
+                    <DropdownHoverBridge />
                     <div
                       id="leetcode-pattern-menu"
                       role="menu"

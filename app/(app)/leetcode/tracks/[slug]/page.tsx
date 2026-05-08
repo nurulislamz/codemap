@@ -19,10 +19,10 @@ import { LeetcodeDashboardProblemTableClient } from "@/components/leetcode/leetc
 import {
   CodeIcon,
   Icon,
-  leetcodePrimaryActionClass,
+  primaryActionClass,
   SectionHero,
   StatCard,
-} from "@/components/leetcode/leetcode-ui";
+} from "@/components/shared";
 import { dashboardProblemRow, latestAttemptNotes } from "@/app/(app)/leetcode/dashboard/lib";
 import { formatMinutesDuration } from "@/lib/leetcode/leetcode-formatters";
 
@@ -93,7 +93,7 @@ export default async function LeetcodeTrackDetailPage({
   return (
     <div className="mx-[calc(50%-50vw)] -mt-5 space-y-6 px-8 pb-4">
       <SectionHero icon={<CodeIcon className="h-9 w-9" />} title={track.title} description={track.description}>
-        <a href="/leetcode/dashboard" target="_blank" rel="noopener noreferrer" className={leetcodePrimaryActionClass}>
+        <a href="/leetcode/dashboard" target="_blank" rel="noopener noreferrer" className={primaryActionClass}>
           Open Dashboard
           <Icon name="chevron" className="h-5 w-5" />
         </a>

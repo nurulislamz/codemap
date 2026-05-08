@@ -21,10 +21,10 @@ import {
 import {
   CodeIcon,
   SectionHero,
-  LeetcodePanel,
+  AppPanel,
   StatCard,
-  leetcodePrimaryActionClass,
-} from "@/components/leetcode/leetcode-ui";
+  primaryActionClass,
+} from "@/components/shared";
 import {
   QualityIcon,
   StatIcon,
@@ -93,7 +93,7 @@ export function LeetcodeStatsClient({
       >
         <Link
           href="/leetcode"
-          className={leetcodePrimaryActionClass}
+          className={primaryActionClass}
         >
           Back to problems
           <span className="text-2xl leading-none" aria-hidden="true">
@@ -115,7 +115,7 @@ export function LeetcodeStatsClient({
         ))}
       </section>
 
-      <LeetcodePanel className="p-5">
+      <AppPanel className="p-5">
         <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_15rem]">
           <div className="min-w-0">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
@@ -225,10 +225,10 @@ export function LeetcodeStatsClient({
             </div>
           </div>
         </div>
-      </LeetcodePanel>
+      </AppPanel>
 
       <section className="grid gap-7 xl:grid-cols-[minmax(0,0.98fr)_minmax(0,0.9fr)]">
-        <LeetcodePanel className="p-7">
+        <AppPanel className="p-7">
           <h2 className="text-2xl font-extrabold tracking-tight text-white">
             Difficulty breakdown
           </h2>
@@ -267,9 +267,9 @@ export function LeetcodeStatsClient({
               );
             })}
           </div>
-        </LeetcodePanel>
+        </AppPanel>
 
-        <LeetcodePanel className="p-7">
+        <AppPanel className="p-7">
           <h2 className="text-2xl font-extrabold tracking-tight text-white">Attempt quality</h2>
           <p className="mt-2 text-base text-slate-300/72">
             Review of attempt outcomes.
@@ -297,11 +297,11 @@ export function LeetcodeStatsClient({
             Percentages are based on saved attempts. Avg accepted:{" "}
             {formatSecondsDuration(stats.attempts.averageSuccessfulDurationSeconds)}.
           </p>
-        </LeetcodePanel>
+        </AppPanel>
       </section>
 
       <section className="grid gap-7 xl:grid-cols-[minmax(0,0.9fr)_minmax(0,0.78fr)]">
-        <LeetcodePanel className="p-7">
+        <AppPanel className="p-7">
           <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="text-2xl font-extrabold tracking-tight text-white">Pattern coverage</h2>
@@ -339,9 +339,9 @@ export function LeetcodeStatsClient({
               </div>
             ))}
           </div>
-        </LeetcodePanel>
+        </AppPanel>
 
-        <LeetcodePanel className="p-7">
+        <AppPanel className="p-7">
           <h2 className="text-2xl font-extrabold tracking-tight text-white">Recent attempts</h2>
           <p className="mt-2 text-base text-slate-300/72">
             Latest saved attempt events.
@@ -382,7 +382,7 @@ export function LeetcodeStatsClient({
               </div>
             )}
           </div>
-        </LeetcodePanel>
+        </AppPanel>
       </section>
     </div>
   );

@@ -4,7 +4,7 @@ import {
   SkeletonPanel,
   SkeletonText,
 } from "@/components/ui/skeleton";
-import { CodeIcon } from "./leetcode-ui";
+import { CodeIcon } from "@/components/shared";
 
 type LeetcodeLoadingVariant = "problems" | "dashboard" | "stats";
 

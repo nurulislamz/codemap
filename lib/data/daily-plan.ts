@@ -3,14 +3,13 @@ import "server-only";
 import { getSeedContent } from "./seed-content";
 
 export interface EmailPlanItem {
-  track: "leetcode" | "roadmap" | "system_design" | "flashcards";
+  track: "leetcode" | "roadmap" | "system_design";
   title: string;
   href: string;
   meta?:
     | { kind: "leetcode"; sourceUrl: string }
     | { kind: "roadmap"; topicSlug: string; resourceUrl?: string }
-    | { kind: "system_design"; promptSlug: string }
-    | { kind: "flashcards" };
+    | { kind: "system_design"; promptSlug: string };
 }
 
 function dayOfYearUtc(date: Date): number {
@@ -58,13 +57,6 @@ export async function buildDailyPlanItems(date = new Date()): Promise<EmailPlanI
       meta: { kind: "system_design", promptSlug: systemPrompt.slug },
     });
   }
-
-  items.push({
-    track: "flashcards",
-    title: "Review due flashcards",
-    href: "/flashcards",
-    meta: { kind: "flashcards" },
-  });
 
   return items;
 }

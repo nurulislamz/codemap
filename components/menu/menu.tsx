@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
 import { useAuth } from "@/components/auth/auth-provider";
+import { DropdownHoverBridge } from "@/components/shared";
 import { useOutsideClick } from "../ui/use-outside-click";
 
 const navItems = [
@@ -11,7 +12,6 @@ const navItems = [
   { href: "/leetcode", label: "LeetCode" },
   { href: "/roadmap", label: "Roadmap" },
   { href: "/system-design", label: "System Design" },
-  { href: "/flashcards", label: "Flashcards" },
 ];
 
 const leetcodeNavItems = [
@@ -128,26 +128,29 @@ export function Menu() {
                   </Link>
 
                   {isLeetcodeMenuOpen ? (
-                    <ul
-                      id="leetcode-nav-menu"
-                      aria-label="LeetCode menu"
-                      role="menu"
-                      className="absolute left-0 top-full z-50 mt-2 w-52 rounded-xl border border-white/10 bg-[#101a2a] p-2 text-sm text-slate-100 shadow-2xl shadow-black/40"
-                      onMouseEnter={() => setIsLeetcodeMenuOpen(true)}
-                    >
-                      {leetcodeNavItems.map((leetcodeItem) => (
-                        <li key={leetcodeItem.href}>
-                          <Link
-                            href={leetcodeItem.href}
-                            role="menuitem"
-                            className="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white"
-                            onClick={() => setIsLeetcodeMenuOpen(false)}
-                          >
-                            {leetcodeItem.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                    <>
+                      <DropdownHoverBridge className="h-2 w-52" />
+                      <ul
+                        id="leetcode-nav-menu"
+                        aria-label="LeetCode menu"
+                        role="menu"
+                        className="absolute left-0 top-full z-50 mt-2 w-52 rounded-xl border border-white/10 bg-[#101a2a] p-2 text-sm text-slate-100 shadow-2xl shadow-black/40"
+                        onMouseEnter={() => setIsLeetcodeMenuOpen(true)}
+                      >
+                        {leetcodeNavItems.map((leetcodeItem) => (
+                          <li key={leetcodeItem.href}>
+                            <Link
+                              href={leetcodeItem.href}
+                              role="menuitem"
+                              className="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white"
+                              onClick={() => setIsLeetcodeMenuOpen(false)}
+                            >
+                              {leetcodeItem.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
                   ) : null}
                 </li>
               );

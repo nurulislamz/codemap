@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { buildDailyPlan } from "./scheduler";
 
 describe("buildDailyPlan", () => {
-  it("prioritizes weak unfinished LeetCode, next roadmap, system practice, and due flashcards", () => {
+  it("prioritizes weak unfinished LeetCode, next roadmap, and system practice", () => {
     const plan = buildDailyPlan({
       date: "2026-04-26",
       leetcode: [
@@ -29,10 +29,6 @@ describe("buildDailyPlan", () => {
         { id: "sd-done", title: "Design Pastebin", status: "completed", kind: "reading" },
         { id: "sd-1", title: "Design TinyURL", status: "not_started", kind: "practice" },
       ],
-      flashcards: [
-        { id: "fc-later", title: "Cache invalidation", nextReviewAt: "2026-04-27T09:00:00Z" },
-        { id: "fc-1", title: "DNS lookup steps", nextReviewAt: "2026-04-25T09:00:00Z" },
-      ],
     });
 
     expect(plan).toEqual({
@@ -55,12 +51,6 @@ describe("buildDailyPlan", () => {
           targetId: "sd-1",
           title: "Design TinyURL",
           scheduledOrder: 2,
-        },
-        {
-          track: "flashcards",
-          targetId: "fc-1",
-          title: "DNS lookup steps",
-          scheduledOrder: 3,
         },
       ],
     });
@@ -87,7 +77,6 @@ describe("buildDailyPlan", () => {
       ],
       roadmap: [],
       systemDesign: [],
-      flashcards: [],
     });
 
     expect(plan.items).toEqual([
@@ -100,38 +89,11 @@ describe("buildDailyPlan", () => {
     ]);
   });
 
-  it("compares due flashcards against the plan date in the requested timezone", () => {
-    const input = {
-      leetcode: [],
-      roadmap: [],
-      systemDesign: [],
-      timezone: "Europe/London",
-      flashcards: [
-        {
-          id: "fc-boundary",
-          title: "BST boundary",
-          nextReviewAt: "2026-04-25T23:30:00Z",
-        },
-      ],
-    };
-
-    expect(buildDailyPlan({ ...input, date: "2026-04-25" }).items).toEqual([]);
-    expect(buildDailyPlan({ ...input, date: "2026-04-26" }).items).toEqual([
-      {
-        track: "flashcards",
-        targetId: "fc-boundary",
-        title: "BST boundary",
-        scheduledOrder: 0,
-      },
-    ]);
-  });
-
   it("breaks equal roadmap order ties by id independent of input ordering", () => {
     const baseInput = {
       date: "2026-04-26",
       leetcode: [],
       systemDesign: [],
-      flashcards: [],
     };
 
     const firstPlan = buildDailyPlan({
@@ -153,52 +115,14 @@ describe("buildDailyPlan", () => {
     expect(secondPlan.items[0]?.targetId).toBe("road-a");
   });
 
-  it("breaks equal flashcard due timestamp ties by id independent of input ordering", () => {
-    const baseInput = {
-      date: "2026-04-26",
-      leetcode: [],
-      roadmap: [],
-      systemDesign: [],
-    };
-
-    const firstPlan = buildDailyPlan({
-      ...baseInput,
-      flashcards: [
-        { id: "fc-b", title: "Beta", nextReviewAt: "2026-04-26T09:00:00Z" },
-        { id: "fc-a", title: "Alpha", nextReviewAt: "2026-04-26T09:00:00Z" },
-      ],
-    });
-    const secondPlan = buildDailyPlan({
-      ...baseInput,
-      flashcards: [
-        { id: "fc-a", title: "Alpha", nextReviewAt: "2026-04-26T09:00:00Z" },
-        { id: "fc-b", title: "Beta", nextReviewAt: "2026-04-26T09:00:00Z" },
-      ],
-    });
-
-    expect(firstPlan.items[0]?.targetId).toBe("fc-a");
-    expect(secondPlan.items[0]?.targetId).toBe("fc-a");
-  });
-
-  it("throws clear errors for invalid plan and flashcard dates", () => {
+  it("throws clear errors for invalid plan dates", () => {
     expect(() =>
       buildDailyPlan({
         date: "not-a-date",
         leetcode: [],
         roadmap: [],
         systemDesign: [],
-        flashcards: [],
       }),
     ).toThrow(/Invalid plan date/);
-
-    expect(() =>
-      buildDailyPlan({
-        date: "2026-04-26",
-        leetcode: [],
-        roadmap: [],
-        systemDesign: [],
-        flashcards: [{ id: "fc-1", title: "Bad date", nextReviewAt: "not-a-date" }],
-      }),
-    ).toThrow(/Invalid flashcard nextReviewAt.*fc-1/);
   });
 });

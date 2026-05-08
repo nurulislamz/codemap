@@ -6,7 +6,7 @@ import { useAuth } from "@/components/auth/auth-provider";
 import { RoadmapTopicProgressForm } from "@/components/roadmap/roadmap-topic-progress-form";
 import type { RoadmapTopicProgress } from "@/lib/roadmap/progress";
 import type { SaveRoadmapProgressInput } from "@/lib/roadmap/actions";
-import { LeetcodePanel } from "@/components/leetcode/leetcode-ui";
+import { AppPanel } from "@/components/shared";
 
 type RoadmapConceptsModalProps = {
   roadmap: RoadmapDetail;
@@ -140,7 +140,7 @@ export function RoadmapConceptsModal({
 
   return (
     <>
-      <LeetcodePanel className="overflow-hidden">
+      <AppPanel className="overflow-hidden">
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#22314a] bg-[#0b1423] px-6 py-5">
           <div>
             <h2 className="text-2xl font-extrabold tracking-tight text-white">
@@ -232,7 +232,7 @@ export function RoadmapConceptsModal({
             </div>
           ))}
         </div>
-      </LeetcodePanel>
+      </AppPanel>
 
       {isOpen ? (
         <div
@@ -244,7 +244,7 @@ export function RoadmapConceptsModal({
             if (event.target === event.currentTarget) close();
           }}
         >
-          <LeetcodePanel className="w-full max-w-5xl max-h-[85vh] overflow-y-auto shadow-2xl shadow-black/60">
+          <AppPanel className="w-full max-w-5xl max-h-[85vh] overflow-y-auto shadow-2xl shadow-black/60">
             <div className="flex items-start justify-between gap-6 border-b border-[#22314a] bg-[#0b1423] px-6 py-5">
               <div className="min-w-0">
                 <h2 className="truncate text-2xl font-extrabold text-white">
@@ -312,7 +312,7 @@ export function RoadmapConceptsModal({
                 />
               </div>
             </div>
-          </LeetcodePanel>
+          </AppPanel>
         </div>
       ) : null}
     </>

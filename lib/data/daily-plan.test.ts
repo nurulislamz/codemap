@@ -10,7 +10,6 @@ describe("toDailyEmailHtml", () => {
         { track: "leetcode", title: "Two Sum II", href: "/leetcode" },
         { track: "roadmap", title: "Internet", href: "/roadmap" },
         { track: "system_design", title: "Design TinyURL", href: "/system-design" },
-        { track: "flashcards", title: "DNS lookup", href: "/flashcards" },
       ],
     });
 

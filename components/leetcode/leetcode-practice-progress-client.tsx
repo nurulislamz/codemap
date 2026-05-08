@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useAuth } from "@/components/auth/auth-provider";
-import { LeetcodePanel } from "./leetcode-ui";
+import { AppPanel } from "@/components/shared";
 import { LeetcodeProblemTable } from "./leetcode-problem-table";
 import {
   getLeetcodePracticeRows,
@@ -198,7 +198,7 @@ export function LeetcodePracticeProgressClient({
 
   return (
     <div className="grid gap-4 xl:grid-cols-[21rem_minmax(0,1fr)]">
-      <LeetcodePanel className="p-5">
+      <AppPanel className="p-5">
         <h2 className="mb-4 text-lg font-extrabold text-white">Major Patterns</h2>
 
         <div className="space-y-2">
@@ -289,7 +289,7 @@ export function LeetcodePracticeProgressClient({
             );
           })}
         </div>
-      </LeetcodePanel>
+      </AppPanel>
 
       <main className="min-w-0 space-y-4">
         <LeetcodeProblemTable

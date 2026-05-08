@@ -11,7 +11,6 @@ const navItems = [
   { href: "/leetcode", label: "LeetCode" },
   { href: "/roadmap", label: "Roadmap" },
   { href: "/system-design", label: "System Design" },
-  { href: "/flashcards", label: "Flashcards" },
 ];
 
 const leetcodeNavItems = [

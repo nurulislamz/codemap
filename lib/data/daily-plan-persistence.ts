@@ -10,7 +10,6 @@ export type NotificationPreference = {
   leetcode_enabled: boolean;
   roadmap_enabled: boolean;
   system_design_enabled: boolean;
-  flashcards_enabled: boolean;
 };
 
 const planItemsByPlanId = new Map<string, EmailPlanItem[]>();
@@ -30,7 +29,7 @@ export function filterEmailPlanItemsForPreferences(
   items: EmailPlanItem[],
   prefs: Pick<
     NotificationPreference,
-    "leetcode_enabled" | "roadmap_enabled" | "system_design_enabled" | "flashcards_enabled"
+    "leetcode_enabled" | "roadmap_enabled" | "system_design_enabled"
   >,
 ): EmailPlanItem[] {
   return items.filter((item) => {
@@ -41,8 +40,6 @@ export function filterEmailPlanItemsForPreferences(
         return prefs.roadmap_enabled;
       case "system_design":
         return prefs.system_design_enabled;
-      case "flashcards":
-        return prefs.flashcards_enabled;
       default: {
         const _exhaustive: never = item.track;
         return _exhaustive;
@@ -59,7 +56,6 @@ export async function listDailyEmailEnabledPreferences(): Promise<NotificationPr
       leetcode_enabled: true,
       roadmap_enabled: true,
       system_design_enabled: true,
-      flashcards_enabled: true,
     },
   ];
 }

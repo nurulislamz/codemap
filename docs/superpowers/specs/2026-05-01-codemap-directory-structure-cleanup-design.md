@@ -26,7 +26,6 @@ src/app/
   (app)/
     layout.tsx
     dashboard/page.tsx
-    flashcards/page.tsx
     leetcode/
       page.tsx
       loading.tsx
@@ -69,7 +68,6 @@ src/backend/
   env.ts
 
 src/domain/
-  flashcards/
   leetcode/
   planning/
 
@@ -138,7 +136,6 @@ Keep public URLs stable:
 - `/leetcode/dashboard`
 - `/leetcode/stats`
 - `/dashboard`
-- `/flashcards`
 - `/roadmap`
 - `/system-design`
 - `/login`

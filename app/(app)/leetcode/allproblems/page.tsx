@@ -4,7 +4,7 @@ import {
   CodeIcon,
   SectionHero,
   StatCard,
-} from "@/components/leetcode/leetcode-ui";
+} from "@/components/shared";
 import { LeetcodePracticeProgressClient } from "@/components/leetcode/leetcode-practice-progress-client";
 import { saveLeetCodeAttempt } from "@/lib/leetcode/actions";
 

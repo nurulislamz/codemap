@@ -12,10 +12,10 @@ import {
 import {
   CodeIcon,
   Icon,
-  LeetcodePanel,
+  AppPanel,
   SectionHero,
   StatCard,
-} from "@/components/leetcode/leetcode-ui";
+} from "@/components/shared";
 
 export const dynamic = "force-dynamic";
 
@@ -83,7 +83,7 @@ export default async function LeetcodeTracksPage() {
           />
         </div>
 
-        <LeetcodePanel className="p-5">
+        <AppPanel className="p-5">
           <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
             {tracks.map((track) => (
               <li key={track.slug}>
@@ -99,7 +99,7 @@ export default async function LeetcodeTracksPage() {
               </li>
             ))}
           </ul>
-        </LeetcodePanel>
+        </AppPanel>
       </main>
     </div>
   );
