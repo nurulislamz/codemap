@@ -69,13 +69,22 @@ type RawRoadmapTopic = {
 };
 
 export function getRoadmapCatalog(): RoadmapSummary[] {
-  return Object.entries(rawRoadmaps as RawRoadmapData).map(([slug, roadmap]) => ({
-    slug,
-    title: roadmap.title,
-    summary: roadmap.summary,
-    url: roadmap.url,
-    topicCount: roadmap.order.length,
-  }));
+  return Object.entries(rawRoadmaps as RawRoadmapData).map(([slug, roadmap]) => {
+    const topicCount = roadmap.order.filter((topicSlug) => {
+      const topic = roadmap.topics[topicSlug];
+      if (!topic) return false;
+      const resourceCount = (topic.video ? 1 : 0) + topic.articles.length;
+      return topic.type === "topic" || resourceCount > 0;
+    }).length;
+
+    return {
+      slug,
+      title: roadmap.title,
+      summary: roadmap.summary,
+      url: roadmap.url,
+      topicCount,
+    };
+  });
 }
 
 export function getRoadmapBySlug(slug: string): RoadmapDetail | null {
@@ -93,6 +102,8 @@ export function getRoadmapBySlug(slug: string): RoadmapDetail | null {
         return null;
       }
 
+      const resourceCount = (topic.video ? 1 : 0) + topic.articles.length;
+
       return {
         slug: topicSlug,
         title: topic.title,
@@ -106,19 +117,30 @@ export function getRoadmapBySlug(slug: string): RoadmapDetail | null {
           ...article,
           url: normalizeRoadmapResourceUrl(article.url),
         })),
-        resourceCount: (topic.video ? 1 : 0) + topic.articles.length,
+        resourceCount,
       };
     })
     .filter((topic): topic is RoadmapTopic => topic !== null);
+
+  const filteredTopics = topics.filter(
+    (topic) => topic.type === "topic" || topic.resourceCount > 0,
+  );
+  const topicSlugSet = new Set(filteredTopics.map((topic) => topic.slug));
 
   return {
     slug,
     title: roadmap.title,
     summary: roadmap.summary,
     url: roadmap.url,
-    topicCount: topics.length,
-    topics,
-    edges: roadmap.edges,
+    topicCount: filteredTopics.length,
+    topics: filteredTopics.map((topic) => ({
+      ...topic,
+      parents: topic.parents.filter((parent) => topicSlugSet.has(parent)),
+      children: topic.children.filter((child) => topicSlugSet.has(child)),
+    })),
+    edges: roadmap.edges.filter(
+      (edge) => topicSlugSet.has(edge.from) && topicSlugSet.has(edge.to),
+    ),
   };
 }
 

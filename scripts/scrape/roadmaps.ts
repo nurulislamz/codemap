@@ -76,17 +76,17 @@ function parseCliArgs(args: string[]): CliArgs {
 }
 
 function removeEmptyButtonTopics(roadmap: RoadmapGraph): RoadmapGraph {
-  const removeTitles = new Set(["DevOps", "System Design", "Full Stack"]);
   const toRemove = new Set<string>();
 
   for (const slug of roadmap.order) {
     const topic = roadmap.topics[slug];
     if (!topic) continue;
 
-    const hasSummary = topic.summary.trim().length > 0;
     const hasResources = Boolean(topic.video) || topic.articles.length > 0;
 
-    if (topic.type === "button" && removeTitles.has(topic.title) && !hasSummary && !hasResources) {
+    // roadmap.sh sometimes includes dummy leaf/button nodes with no resources.
+    // We keep section headings (type === "topic") so the UI can still group concepts.
+    if (topic.type !== "topic" && !hasResources) {
       toRemove.add(slug);
     }
   }

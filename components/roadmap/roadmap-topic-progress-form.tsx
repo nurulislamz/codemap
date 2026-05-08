@@ -28,7 +28,6 @@ export function RoadmapTopicProgressForm({
   const [learned, setLearned] = useState(initialProgress?.learned ?? false);
   const [notes, setNotes] = useState(initialProgress?.notes ?? "");
   const [links, setLinks] = useState(initialProgress?.links ?? []);
-  const [nextLink, setNextLink] = useState("");
   const [message, setMessage] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
 
@@ -86,27 +85,6 @@ export function RoadmapTopicProgressForm({
     };
   }, [authStatus, getIdToken, roadmapSlug, topicSlug, user]);
 
-  function addLink() {
-    const value = nextLink.trim();
-
-    if (!value) {
-      return;
-    }
-
-    try {
-      new URL(value);
-    } catch {
-      setMessage("Enter a full URL before adding it.");
-      return;
-    }
-
-    setLinks((currentLinks) =>
-      currentLinks.includes(value) ? currentLinks : [...currentLinks, value],
-    );
-    setNextLink("");
-    setMessage(null);
-  }
-
   function saveProgress() {
     setMessage(null);
     startTransition(async () => {
@@ -159,79 +137,13 @@ export function RoadmapTopicProgressForm({
         Learned
       </label>
 
-      <label className="block">
-        <span className="text-sm font-bold uppercase tracking-[0.12em] text-slate-400">
-          Notes
-        </span>
-        <textarea
-          value={notes}
-          rows={7}
-          className="mt-2 w-full resize-none rounded-lg border border-[#26364d] bg-[#0a1422] px-4 py-3 text-base leading-7 text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-[#7c68ff]"
-          placeholder="Write what you learned, what confused you, or what to review next."
-          onChange={(event) => setNotes(event.target.value)}
-        />
-      </label>
-
-      <div>
-        <span className="text-sm font-bold uppercase tracking-[0.12em] text-slate-400">
-          Links
-        </span>
-        <div className="mt-2 flex gap-2">
-          <input
-            type="url"
-            value={nextLink}
-            className="min-w-0 flex-1 rounded-lg border border-[#26364d] bg-[#0a1422] px-4 py-3 text-base text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-[#7c68ff]"
-            placeholder="https://..."
-            onChange={(event) => setNextLink(event.target.value)}
-          />
-          <button
-            type="button"
-            className="rounded-lg border border-[#374967] px-4 text-sm font-bold text-slate-200 transition hover:border-[#7c68ff] hover:text-white"
-            onClick={addLink}
-          >
-            Add link
-          </button>
-        </div>
-
-        {links.length > 0 ? (
-          <ul className="mt-3 space-y-2">
-            {links.map((link) => (
-              <li
-                key={link}
-                className="flex items-center justify-between gap-3 rounded-lg border border-[#22314a] bg-[#0b1626] px-3 py-2 text-sm"
-              >
-                <a
-                  href={link}
-                  className="min-w-0 truncate text-[#f3b857] hover:text-white"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {link}
-                </a>
-                <button
-                  type="button"
-                  className="shrink-0 text-slate-500 transition hover:text-white"
-                  onClick={() =>
-                    setLinks((currentLinks) =>
-                      currentLinks.filter((currentLink) => currentLink !== link),
-                    )
-                  }
-                >
-                  Remove
-                </button>
-              </li>
-            ))}
-          </ul>
-        ) : null}
-      </div>
-
       <div className="flex items-center justify-between gap-4">
         <button
           type="submit"
           disabled={isPending}
           className="inline-flex h-11 items-center justify-center rounded-lg bg-[#6747ff] px-5 text-sm font-extrabold text-white shadow-[0_14px_28px_rgba(103,71,255,0.25)] transition hover:bg-[#775bff] disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {isPending ? "Saving..." : "Save notes"}
+          {isPending ? "Saving..." : "Save"}
         </button>
         {message ? (
           <p className="text-sm font-semibold text-slate-400" role="status">
