@@ -3,7 +3,7 @@ import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import {
   CodeIcon,
   SectionHero,
-  LeetcodeStatCard,
+  StatCard,
 } from "@/components/leetcode/leetcode-ui";
 import { LeetcodePracticeProgressClient } from "@/components/leetcode/leetcode-practice-progress-client";
 import { saveLeetCodeAttempt } from "@/lib/leetcode/actions";
@@ -108,7 +108,7 @@ export default async function LeetcodeAllProblemsPage({
       ) : null}
 
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        <LeetcodeStatCard
+        <StatCard
           label="Total Problems"
           value={totalCount}
           note="All available problems"
@@ -133,7 +133,7 @@ export default async function LeetcodeAllProblemsPage({
             </svg>
           }
         />
-        <LeetcodeStatCard
+        <StatCard
           label="Completed"
           value={completedCount}
           note="Keep solving to grow"
@@ -154,7 +154,7 @@ export default async function LeetcodeAllProblemsPage({
             </svg>
           }
         />
-        <LeetcodeStatCard
+        <StatCard
           label="Attempted"
           value={attemptedCount}
           note={attemptedCount > 0 ? "Problems touched" : "Start your first problem"}
@@ -175,7 +175,7 @@ export default async function LeetcodeAllProblemsPage({
             </svg>
           }
         />
-        <LeetcodeStatCard
+        <StatCard
           label="Due Today"
           value={dueCount}
           note="Keep your streak going"

@@ -26,6 +26,14 @@ export type DailyTrack = {
   days: DailyTrackDay[];
 };
 
+export type DailyTrackProblemList = {
+  version: 2;
+  generatedFrom: string;
+  problemIds: string[];
+};
+
+export type LeetcodeTrackData = DailyTrack | DailyTrackProblemList;
+
 export type DailyTrackTaskStatus = "completed" | "in-progress" | "not-started";
 
 export type DailyTrackProblemTask = DailyTrackTask & {
@@ -40,26 +48,22 @@ export function getDailyTrack(): DailyTrack {
 
 export function selectDailyTrackDay(
   track: DailyTrack,
-  today: Date,
-  startedAt: Date | null,
+  problemsById: Map<string, LeetcodeProblemProgressRow>,
 ) {
   if (track.days.length === 0) {
     throw new Error("Daily track must contain at least one day.");
   }
 
-  if (startedAt === null) {
-    return track.days[0];
+  for (const day of track.days) {
+    const tasks = getDailyTrackProblemTasks(day, problemsById);
+    const hasIncompleteTask = tasks.some((task) => task.status !== "completed");
+
+    if (hasIncompleteTask) {
+      return day;
+    }
   }
 
-  const dayStart = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
-  const startDay = Date.UTC(
-    startedAt.getFullYear(),
-    startedAt.getMonth(),
-    startedAt.getDate(),
-  );
-  const dayIndex = Math.max(0, Math.floor((dayStart - startDay) / 86_400_000));
-
-  return track.days[dayIndex % track.days.length];
+  return track.days[track.days.length - 1];
 }
 
 export function getDailyTrackProblemTasks(

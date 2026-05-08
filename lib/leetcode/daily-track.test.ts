@@ -40,10 +40,10 @@ const track: DailyTrack = {
   ],
 };
 
-const problems = new Map<string, LeetcodeProblemProgressRow>([
-  [
-    "1",
-    problem({
+  const problems = new Map<string, LeetcodeProblemProgressRow>([
+    [
+      "1",
+      problem({
       number: "1",
       title: "Two Sum",
       isCompleted: true,
@@ -68,19 +68,89 @@ const problems = new Map<string, LeetcodeProblemProgressRow>([
       attemptCount: 0,
     }),
   ],
-]);
+  ]);
+
+  const allIncompleteProblems = new Map(
+    track.days.flatMap((day) =>
+      day.tasks.map((task) => {
+        const details = problems.get(task.problemId);
+        return [
+          task.problemId,
+          details === undefined
+            ? problem({
+                number: task.problemId,
+                title: `Problem ${task.problemId}`,
+                isCompleted: false,
+                attemptCount: 0,
+              })
+            : details,
+        ];
+      }),
+    ),
+  );
 
 describe("daily track helpers", () => {
   it("starts a new user on the first daily track day", () => {
-    expect(selectDailyTrackDay(track, new Date("2026-05-08T12:00:00Z"), null).day).toBe(1);
+    expect(selectDailyTrackDay(track, allIncompleteProblems).day).toBe(1);
   });
 
-  it("selects a daily track day from the user's start date", () => {
-    const startedAt = new Date("2026-05-08T12:00:00Z");
+  it("moves to the next day once all tasks in the current day are complete", () => {
+    const day1Complete = new Map(allIncompleteProblems);
 
-    expect(selectDailyTrackDay(track, new Date("2026-05-08T12:00:00Z"), startedAt).day).toBe(1);
-    expect(selectDailyTrackDay(track, new Date("2026-05-09T12:00:00Z"), startedAt).day).toBe(2);
-    expect(selectDailyTrackDay(track, new Date("2026-05-10T12:00:00Z"), startedAt).day).toBe(1);
+    day1Complete.set(
+      "1",
+      problem({
+        number: "1",
+        title: "Two Sum",
+        isCompleted: true,
+        attemptCount: 1,
+      }),
+    );
+    day1Complete.set(
+      "2",
+      problem({
+        number: "2",
+        title: "3Sum",
+        isCompleted: true,
+        attemptCount: 1,
+      }),
+    );
+
+    expect(selectDailyTrackDay(track, day1Complete).day).toBe(2);
+  });
+
+  it("returns the last day when all tasks are complete", () => {
+    const allComplete = new Map([
+      [
+        "1",
+        problem({
+          number: "1",
+          title: "Two Sum",
+          isCompleted: true,
+          attemptCount: 1,
+        }),
+      ],
+      [
+        "2",
+        problem({
+          number: "2",
+          title: "3Sum",
+          isCompleted: true,
+          attemptCount: 1,
+        }),
+      ],
+      [
+        "3",
+        problem({
+          number: "3",
+          title: "Minimum Size Subarray Sum",
+          isCompleted: true,
+          attemptCount: 1,
+        }),
+      ],
+    ]);
+
+    expect(selectDailyTrackDay(track, allComplete).day).toBe(2);
   });
 
   it("maps track tasks to progress rows", () => {

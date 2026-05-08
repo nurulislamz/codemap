@@ -3,6 +3,28 @@ import { dirname, resolve } from "node:path";
 
 import { buildRoadmapGraphFromRoadmapData } from "./roadmap-json";
 
+type RoadmapGraph = {
+  title: string;
+  summary: string;
+  url: string;
+  order: string[];
+  topics: Record<
+    string,
+    {
+      title: string;
+      sourceId: string;
+      type: string;
+      order: number;
+      summary: string;
+      video: { title: string; url: string } | null;
+      articles: Array<{ type: string; title: string; url: string }>;
+      parents: string[];
+      children: string[];
+    }
+  >;
+  edges: Array<{ from: string; to: string; style: string }>;
+};
+
 type CliArgs = {
   output: string;
   slugs: string[];
@@ -51,6 +73,47 @@ function parseCliArgs(args: string[]): CliArgs {
   }
 
   return { output, slugs, skipTopicContent };
+}
+
+function removeEmptyButtonTopics(roadmap: RoadmapGraph): RoadmapGraph {
+  const removeTitles = new Set(["DevOps", "System Design", "Full Stack"]);
+  const toRemove = new Set<string>();
+
+  for (const slug of roadmap.order) {
+    const topic = roadmap.topics[slug];
+    if (!topic) continue;
+
+    const hasSummary = topic.summary.trim().length > 0;
+    const hasResources = Boolean(topic.video) || topic.articles.length > 0;
+
+    if (topic.type === "button" && removeTitles.has(topic.title) && !hasSummary && !hasResources) {
+      toRemove.add(slug);
+    }
+  }
+
+  if (toRemove.size === 0) {
+    return roadmap;
+  }
+
+  const topics: RoadmapGraph["topics"] = {};
+  for (const slug of roadmap.order) {
+    if (toRemove.has(slug)) continue;
+    const topic = roadmap.topics[slug];
+    if (!topic) continue;
+
+    topics[slug] = {
+      ...topic,
+      parents: topic.parents.filter((parent) => !toRemove.has(parent)),
+      children: topic.children.filter((child) => !toRemove.has(child)),
+    };
+  }
+
+  const order = roadmap.order.filter((slug) => !toRemove.has(slug));
+  const edges = roadmap.edges.filter(
+    (edge) => !toRemove.has(edge.from) && !toRemove.has(edge.to),
+  );
+
+  return { ...roadmap, order, topics, edges };
 }
 
 async function main(): Promise<void> {
@@ -115,7 +178,8 @@ async function main(): Promise<void> {
       topicContentByNodeId: args.skipTopicContent ? {} : (topicContentByNodeId as never),
     });
 
-    roadmaps[slug] = (result as Record<string, unknown>)[slug];
+    const roadmap = (result as Record<string, unknown>)[slug] as RoadmapGraph;
+    roadmaps[slug] = removeEmptyButtonTopics(roadmap);
     console.log(`[roadmap] ${slug}`);
   }
 
@@ -130,4 +194,3 @@ if (process.argv[1]?.endsWith("roadmaps.ts")) {
     process.exit(1);
   });
 }
-

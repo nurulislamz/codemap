@@ -6,6 +6,7 @@ import { useAuth } from "@/components/auth/auth-provider";
 import { RoadmapTopicProgressForm } from "@/components/roadmap/roadmap-topic-progress-form";
 import type { RoadmapTopicProgress } from "@/lib/roadmap/progress";
 import type { SaveRoadmapProgressInput } from "@/lib/roadmap/actions";
+import { LeetcodePanel } from "@/components/leetcode/leetcode-ui";
 
 type RoadmapConceptsModalProps = {
   roadmap: RoadmapDetail;
@@ -122,7 +123,6 @@ export function RoadmapConceptsModal({
     setIsOpen(true);
 
     const url = new URL(window.location.href);
-    url.searchParams.set("roadmap", roadmap.slug);
     url.searchParams.set("topic", topicSlug);
     window.history.pushState(null, "", url.toString());
   }
@@ -140,23 +140,26 @@ export function RoadmapConceptsModal({
 
   return (
     <>
-      <section className="rounded-lg border border-[#26364d] bg-[#101a2a]/74 shadow-2xl shadow-black/20">
-        <div className="flex items-center justify-between gap-4 border-b border-[#26364d] px-6 py-5">
+      <LeetcodePanel className="overflow-hidden">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#22314a] bg-[#0b1423] px-6 py-5">
           <div>
-            <h2 className="text-xl font-extrabold text-white">Concepts</h2>
-            <p className="mt-1 text-sm text-slate-400">
+            <h2 className="text-2xl font-extrabold tracking-tight text-white">
+              Concepts
+            </h2>
+            <p className="mt-2 text-base text-slate-400">
               Ordered from the roadmap.sh graph data.
             </p>
           </div>
-          <p className="text-sm font-semibold text-slate-400">
+          <div className="rounded-full border border-[#22314a] bg-[#08111d] px-5 py-2.5 text-base font-bold text-slate-200">
             {roadmap.topicCount} concepts
-          </p>
+          </div>
         </div>
 
         <div className="divide-y divide-[#22314a]">
           {topicGroups.map((group) => (
             <div key={group.title}>
-              <div className="bg-[#0b1626] px-6 py-3 text-xs font-extrabold uppercase tracking-[0.18em] text-slate-400">
+              <div className="flex items-center gap-3 bg-[#0b1626] px-6 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-[#a997ff]">
+                <span className="h-2 w-2 rounded-full bg-[#7c68ff]" aria-hidden="true" />
                 {group.title}
               </div>
               {group.topics.map((topic) => {
@@ -166,33 +169,62 @@ export function RoadmapConceptsModal({
                   <button
                     key={topic.slug}
                     type="button"
-                    className={`grid w-full gap-4 px-6 py-4 text-left transition md:grid-cols-[3rem_minmax(0,1fr)_9rem] md:items-center ${
+                    className={`grid w-full gap-5 px-6 py-5 text-left transition md:grid-cols-[3.25rem_minmax(0,1fr)_14.5rem] md:items-center ${
                       learned
-                        ? "bg-[#102e22] hover:bg-[#143a2b]"
-                        : "bg-transparent hover:bg-[#111d30]"
+                        ? "bg-[#0f2a22] hover:bg-[#13362c]"
+                        : "bg-transparent hover:bg-[#0f1a2b]"
                     }`}
                     onClick={() => openTopic(topic.slug)}
                   >
                     <span
-                      className={`flex h-8 w-8 items-center justify-center rounded border text-xs font-extrabold ${
+                      className={`flex h-10 w-10 items-center justify-center rounded-xl border text-sm font-extrabold ${
                         learned
-                          ? "border-[#29d17d] bg-[#123a2a] text-[#63e59d]"
-                          : "border-[#516278] text-slate-500"
+                          ? "border-[#29d17d] bg-[#0b241a] text-[#63e59d]"
+                          : "border-[#3b4a62] bg-[#0b1626] text-slate-400"
                       }`}
                       aria-hidden="true"
                     >
                       {topic.order}
                     </span>
                     <span className="min-w-0">
-                      <span className="block truncate text-base font-bold text-white">
+                      <span className="block truncate text-lg font-extrabold text-white">
                         {topic.title}
                       </span>
-                      <span className="mt-1 block max-h-12 overflow-hidden text-sm leading-6 text-slate-400">
+                      <span className="mt-2 block max-h-14 overflow-hidden text-base leading-7 text-slate-400">
                         {topic.summary || "No summary available yet."}
                       </span>
                     </span>
-                    <span className="text-sm font-semibold text-slate-400 md:text-right">
-                      {topic.resourceCount} resources
+                    <span className="flex flex-wrap items-center gap-2 md:justify-end">
+                      <span className="inline-flex items-center gap-2 rounded-full border border-[#22314a] bg-[#08111d] px-4 py-2 text-sm font-bold text-slate-200">
+                        <svg
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          className="h-4 w-4 text-[#a997ff]"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                        >
+                          <path d="M12 20h9" />
+                          <path d="M12 4h9" />
+                          <path d="M4 7h6v6H4z" />
+                          <path d="M4 17h6v3H4z" />
+                        </svg>
+                        {topic.resourceCount} resources
+                      </span>
+                      <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        className="h-5 w-5 text-slate-500"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                      >
+                        <path d="m9 18 6-6-6-6" />
+                      </svg>
                     </span>
                   </button>
                 );
@@ -200,38 +232,38 @@ export function RoadmapConceptsModal({
             </div>
           ))}
         </div>
-      </section>
+      </LeetcodePanel>
 
       {isOpen ? (
         <div
           role="dialog"
           aria-modal="true"
           aria-label={`${selectedTopic.title} details`}
-          className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/70 px-4 py-10"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 py-8"
           onMouseDown={(event) => {
             if (event.target === event.currentTarget) close();
           }}
         >
-          <div className="w-full max-w-3xl rounded-lg border border-[#26364d] bg-[#0b1626] shadow-2xl shadow-black/60">
-            <div className="flex items-start justify-between gap-6 border-b border-[#22314a] px-6 py-5">
+          <LeetcodePanel className="w-full max-w-5xl max-h-[85vh] overflow-y-auto shadow-2xl shadow-black/60">
+            <div className="flex items-start justify-between gap-6 border-b border-[#22314a] bg-[#0b1423] px-6 py-5">
               <div className="min-w-0">
                 <h2 className="truncate text-2xl font-extrabold text-white">
                   {selectedTopic.title}
                 </h2>
-                <p className="mt-2 text-sm leading-6 text-slate-300">
+                <p className="mt-3 text-base leading-7 text-slate-300">
                   {selectedTopic.summary || "No summary available yet."}
                 </p>
               </div>
               <button
                 type="button"
-                className="shrink-0 rounded-lg border border-[#22314a] px-3 py-2 text-sm font-bold text-slate-300 transition hover:border-[#7c68ff] hover:text-white"
+                className="shrink-0 rounded-lg border border-[#22314a] bg-[#08111d] px-4 py-2 text-sm font-bold text-slate-200 transition hover:border-[#7c68ff] hover:bg-white/5 hover:text-white"
                 onClick={close}
               >
                 Close
               </button>
             </div>
 
-            <div className="grid gap-6 px-6 py-6 lg:grid-cols-[minmax(0,1fr)_20rem]">
+            <div className="grid gap-6 px-6 py-6 lg:grid-cols-[minmax(0,1fr)_22rem]">
               <div className="min-w-0 space-y-5">
                 <div>
                   <h3 className="text-sm font-bold uppercase tracking-[0.12em] text-slate-400">
@@ -250,7 +282,7 @@ export function RoadmapConceptsModal({
                             href={resource.url}
                             target="_blank"
                             rel="noreferrer"
-                            className="block rounded-lg border border-[#22314a] bg-[#08111d] px-3 py-2 text-sm font-semibold text-[#f3b857] transition hover:border-[#f3b857]/50 hover:text-white"
+                            className="block rounded-xl border border-[#22314a] bg-[#08111d] px-4 py-3 text-sm font-semibold text-[#f3b857] transition hover:border-[#f3b857]/50 hover:bg-[#0f1a2b] hover:text-white"
                           >
                             <span className="block text-xs uppercase tracking-[0.12em] text-slate-500">
                               {resource.type}
@@ -280,7 +312,7 @@ export function RoadmapConceptsModal({
                 />
               </div>
             </div>
-          </div>
+          </LeetcodePanel>
         </div>
       ) : null}
     </>

@@ -18,6 +18,7 @@ const leetcodeNavItems = [
   { href: "/leetcode/dashboard", label: "Dashboard" },
   { href: "/leetcode/allproblems", label: "All Problems" },
   { href: "/leetcode/stats", label: "Stats" },
+  { href: "/leetcode/tracks", label: "Tracks" },
 ];
 
 export function Menu() {
@@ -108,6 +109,7 @@ export function Menu() {
                   key={item.href}
                   ref={leetcodeMenuRef}
                   className="relative"
+                  onMouseEnter={() => setIsLeetcodeMenuOpen(true)}
                   onMouseLeave={() => setIsLeetcodeMenuOpen(false)}
                 >
                   <Link
@@ -120,7 +122,6 @@ export function Menu() {
                         ? "text-white after:w-full"
                         : "text-slate-300 after:w-0"
                     }`}
-                    onMouseEnter={() => setIsLeetcodeMenuOpen(true)}
                     onFocus={() => setIsLeetcodeMenuOpen(true)}
                   >
                     {item.label}
@@ -131,7 +132,7 @@ export function Menu() {
                       id="leetcode-nav-menu"
                       aria-label="LeetCode menu"
                       role="menu"
-                      className="absolute left-0 top-full z-50 mt-4 w-52 rounded-xl border border-white/10 bg-[#101a2a] p-2 text-sm text-slate-100 shadow-2xl shadow-black/40"
+                      className="absolute left-0 top-full z-50 mt-2 w-52 rounded-xl border border-white/10 bg-[#101a2a] p-2 text-sm text-slate-100 shadow-2xl shadow-black/40"
                       onMouseEnter={() => setIsLeetcodeMenuOpen(true)}
                     >
                       {leetcodeNavItems.map((leetcodeItem) => (

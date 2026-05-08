@@ -22,7 +22,7 @@ import {
   CodeIcon,
   SectionHero,
   LeetcodePanel,
-  LeetcodeStatCard,
+  StatCard,
   leetcodePrimaryActionClass,
 } from "@/components/leetcode/leetcode-ui";
 import {
@@ -104,7 +104,7 @@ export function LeetcodeStatsClient({
 
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {summaryCards.map((item) => (
-          <LeetcodeStatCard
+          <StatCard
             key={item.label}
             label={item.label}
             value={item.value}

@@ -1,11 +1,12 @@
 import Link from "next/link";
 
-import { LeetcodeAttemptOverlayButton } from "@/components/leetcode/leetcode-attempt-overlay";
 import { LeetcodeDashboardProblemTableClient } from "@/components/leetcode/leetcode-dashboard-client";
 import {
   CodeIcon,
+  Icon,
   LeetcodePanel,
   SectionHero,
+  StatCard,
   leetcodePrimaryActionClass,
 } from "@/components/leetcode/leetcode-ui";
 import { saveLeetCodeAttempt } from "@/lib/leetcode/actions";
@@ -18,9 +19,7 @@ import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
 import { getDailyTrack, getDailyTrackProblemTasks, selectDailyTrackDay } from "@/lib/leetcode/daily-track";
 import { formatMinutesDuration } from "@/lib/leetcode/leetcode-formatters";
 import {
-  Icon,
   ProgressRing,
-  StatCard,
   calculateStreak,
   dashboardProblemRow,
   isSameLocalDay,
@@ -40,11 +39,9 @@ export default async function LeetcodeDashboardPage() {
     new Map(catalogProblems.map((problem) => [problem.number, problem])),
   );
 
-  const today = new Date();
-  const trackStartedAt =
-    attempts.length === 0 ? null : new Date(attempts[attempts.length - 1].endedAt);
   const dailyTrack = getDailyTrack();
-  const dailyTrackDay = selectDailyTrackDay(dailyTrack, today, trackStartedAt);
+  const dailyTrackDay = selectDailyTrackDay(dailyTrack, problemsById);
+  const today = new Date();
   const dailyTrackTasks = getDailyTrackProblemTasks(dailyTrackDay, problemsById);
   const todayProblems = dailyTrackTasks.map((task) => task.problem);
   const todayProblemIds = new Set(todayProblems.map((problem) => problem.number));
@@ -93,42 +90,53 @@ export default async function LeetcodeDashboardPage() {
         title="Dashboard"
         description={`${dailyTrackDay.focus.label} across ${dailyTrackTasks.length} focused tasks.`}
       >
-        <Link href="/leetcode/allproblems" className={`${leetcodePrimaryActionClass} gap-4`}>
-          View all problems
-          <Icon name="chevron" className="h-5 w-5" />
-        </Link>
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+          <Link href="/leetcode/allproblems" className={`${leetcodePrimaryActionClass} gap-4`}>
+            View all problems
+            <Icon name="chevron" className="h-5 w-5" />
+          </Link>
+          <a
+            href="/leetcode/tracks/complete-track"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${leetcodePrimaryActionClass} gap-4`}
+          >
+            Complete Track
+            <Icon name="chevron" className="h-5 w-5" />
+          </a>
+        </div>
       </SectionHero>
 
       <section className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_24rem]">
         <div className="min-w-0 space-y-6">
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             <StatCard
-              icon="calendar"
               label="Track Tasks"
               value={String(todayProblems.length)}
               note="Problems to solve"
-              tone="purple"
+              tone="primary"
+              icon={<Icon name="calendar" className="h-7 w-7" />}
             />
             <StatCard
-              icon="clock"
               label="Estimated Time"
               value={formatMinutesDuration(estimatedMinutes)}
               note="Planned for today"
-              tone="purple"
+              tone="primary"
+              icon={<Icon name="clock" className="h-7 w-7" />}
             />
             <StatCard
-              icon="check"
               label="Completed"
               value={String(completedToday)}
               note="Track tasks done"
-              tone="green"
+              tone="success"
+              icon={<Icon name="check" className="h-7 w-7" />}
             />
             <StatCard
-              icon="flame"
               label="Streak"
               value={String(streak)}
               note={streak === 1 ? "day" : "days"}
-              tone="orange"
+              tone="warning"
+              icon={<Icon name="flame" className="h-7 w-7" />}
             />
           </div>
 
@@ -138,6 +146,7 @@ export default async function LeetcodeDashboardPage() {
             subtitle="Pattern / Subpattern is shown per problem."
             saveAttemptAction={saveLeetCodeAttempt}
             showControls={false}
+            showPagination={false}
           />
           <LeetcodeDashboardProblemTableClient
             problems={recentFailedRows}

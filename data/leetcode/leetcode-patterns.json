@@ -5325,6 +5325,72 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Blind 75",
+      "subPatterns": [
+        {
+          "name": "Blind 75",
+          "problems": [
+            {
+              "number": "128",
+              "title": "Longest Consecutive Sequence",
+              "leetcodeUrl": "https://leetcode.com/problems/longest-consecutive-sequence/",
+              "difficulty": "medium",
+              "estimatedMinutes": 45
+            },
+            {
+              "number": "435",
+              "title": "Non-overlapping Intervals",
+              "leetcodeUrl": "https://leetcode.com/problems/non-overlapping-intervals/",
+              "difficulty": "medium",
+              "estimatedMinutes": 45
+            },
+            {
+              "number": "190",
+              "title": "Reverse Bits",
+              "leetcodeUrl": "https://leetcode.com/problems/reverse-bits/",
+              "difficulty": "easy",
+              "estimatedMinutes": 30
+            },
+            {
+              "number": "208",
+              "title": "Implement Trie (Prefix Tree)",
+              "leetcodeUrl": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+              "difficulty": "medium",
+              "estimatedMinutes": 45
+            },
+            {
+              "number": "211",
+              "title": "Design Add and Search Words Data Structure",
+              "leetcodeUrl": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+              "difficulty": "medium",
+              "estimatedMinutes": 45
+            },
+            {
+              "number": "217",
+              "title": "Contains Duplicate",
+              "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate/",
+              "difficulty": "easy",
+              "estimatedMinutes": 25
+            },
+            {
+              "number": "371",
+              "title": "Sum of Two Integers",
+              "leetcodeUrl": "https://leetcode.com/problems/sum-of-two-integers/",
+              "difficulty": "medium",
+              "estimatedMinutes": 45
+            },
+            {
+              "number": "252",
+              "title": "Meeting Rooms",
+              "leetcodeUrl": "https://leetcode.com/problems/meeting-rooms/",
+              "difficulty": "easy",
+              "estimatedMinutes": 30
+            }
+          ]
+        }
+      ]
     }
   ]
 }
