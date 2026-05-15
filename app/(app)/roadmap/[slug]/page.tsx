@@ -7,7 +7,6 @@ import { getRoadmapBySlug } from "@/lib/roadmap/catalog";
 import { getRoadmapLearnedMap } from "@/lib/roadmap/progress";
 import {
   Icon,
-  AppPanel,
   SectionHero,
   StatCard,
   primaryActionClass,
@@ -112,13 +111,11 @@ export default async function RoadmapSlugPage({
           />
         </div>
 
-        <AppPanel className="p-4">
-          <RoadmapConceptsModal
-            roadmap={roadmap}
-            initialSelectedTopicSlug={query?.topic ?? null}
-            saveProgressAction={saveRoadmapProgress}
-          />
-        </AppPanel>
+        <RoadmapConceptsModal
+          roadmap={roadmap}
+          initialSelectedTopicSlug={query?.topic ?? null}
+          saveProgressAction={saveRoadmapProgress}
+        />
       </main>
     </div>
   );

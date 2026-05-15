@@ -46,12 +46,23 @@ interface BuildOptions {
 interface RoadmapApiNode {
   id: string;
   type: string;
+  width?: number | string;
+  height?: number | string;
   position?: {
     x?: number;
     y?: number;
   };
+  measured?: {
+    width?: number;
+    height?: number;
+  };
+  style?: {
+    width?: number | string;
+    height?: number | string;
+  };
   data?: {
     label?: string;
+    legend?: unknown;
   };
 }
 
@@ -98,6 +109,14 @@ export interface RoadmapGraphTopic {
   parents: string[];
   children: string[];
 }
+
+type RoadmapTopicLayout = {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  hasLegend: boolean;
+};
 
 export interface RoadmapGraph {
   title: string;
@@ -200,6 +219,7 @@ export function buildRoadmapGraphFromRoadmapData(
 
   const topics: Record<string, RoadmapGraphTopic> = {};
   const fallbackOrder: string[] = [];
+  const topicLayouts = new Map<string, RoadmapTopicLayout>();
 
   topicNodes.forEach((node, index) => {
     const key = nodeIdToKey.get(node.id);
@@ -227,10 +247,13 @@ export function buildRoadmapGraphFromRoadmapData(
       parents: [],
       children: [],
     };
+
+    topicLayouts.set(key, layoutFromRoadmapNode(node));
   });
 
   const graph = buildRawEdgeGraph(roadmap.edges);
   const edges = collapseRoadmapEdges(roadmap.edges, graph, nodeIdToKey);
+  assignImpliedEdges(topics, edges, topicLayouts);
   const order = buildTopicOrder(rootKey, topics, edges, fallbackOrder);
 
   for (const edge of edges) {
@@ -278,6 +301,133 @@ function uniqueKey(baseKey: string, usedKeys: Map<string, number>): string {
   const count = usedKeys.get(key) ?? 0;
   usedKeys.set(key, count + 1);
   return count === 0 ? key : `${key}${count + 1}`;
+}
+
+function layoutFromRoadmapNode(node: RoadmapApiNode): RoadmapTopicLayout {
+  return {
+    x: node.position?.x ?? 0,
+    y: node.position?.y ?? 0,
+    width: numericSize(node.measured?.width ?? node.width ?? node.style?.width),
+    height: numericSize(node.measured?.height ?? node.height ?? node.style?.height),
+    hasLegend: Boolean(node.data?.legend),
+  };
+}
+
+function numericSize(value: number | string | undefined): number {
+  if (typeof value === "number") return value;
+  if (typeof value === "string") {
+    const parsed = Number.parseFloat(value);
+    return Number.isFinite(parsed) ? parsed : 0;
+  }
+
+  return 0;
+}
+
+function assignImpliedEdges(
+  topics: Record<string, RoadmapGraphTopic>,
+  edges: RoadmapGraph["edges"],
+  topicLayouts: Map<string, RoadmapTopicLayout>,
+): void {
+  const entries = Object.entries(topics)
+    .map(([slug, topic]) => ({ slug, topic, layout: topicLayouts.get(slug) }))
+    .filter((entry) => entry.layout !== undefined);
+
+  const seen = new Set(edges.map((edge) => `${edge.from}->${edge.to}`));
+  const explicitParents = new Set(edges.map((edge) => edge.to));
+  const explicitChildren = new Set(edges.map((edge) => edge.from));
+
+  const orphanTopics = entries.filter(
+    ({ slug, topic }) =>
+      !explicitParents.has(slug) &&
+      !explicitChildren.has(slug) &&
+      topic.type !== "topic" &&
+      (topic.video !== null || topic.articles.length > 0),
+  );
+
+  const candidateParents = entries.filter((entry) => isVisualGroupParent(entry.topic, entry.layout));
+
+  const assignParent = (orphan: (typeof orphanTopics)[number]): boolean => {
+    let bestParent: (typeof candidateParents)[number] | null = null;
+    let bestScore = Number.POSITIVE_INFINITY;
+
+    for (const candidate of candidateParents) {
+      if (candidate.slug === orphan.slug) continue;
+
+      const match = visualGroupMatch(candidate.topic, candidate.layout, orphan.layout);
+      if (!match) continue;
+
+      if (match.score >= bestScore) continue;
+
+      bestParent = candidate;
+      bestScore = match.score;
+    }
+
+    if (!bestParent) {
+      return false;
+    }
+
+    const from = bestParent.slug;
+    const to = orphan.slug;
+    const edgeKey = `${from}->${to}`;
+
+    if (seen.has(edgeKey)) return false;
+
+    seen.add(edgeKey);
+    edges.push({ from, to, style: "solid" });
+
+    bestParent.topic.children.push(to);
+    orphan.topic.parents.push(from);
+
+    return true;
+  };
+
+  for (const orphan of orphanTopics) {
+    assignParent(orphan);
+  }
+}
+
+function isVisualGroupParent(topic: RoadmapGraphTopic, layout: RoadmapTopicLayout | undefined): boolean {
+  if (!layout) return false;
+  if (topic.type === "topic" || topic.type === "label" || topic.type === "paragraph") return true;
+  return topic.type === "subtopic" && !layout.hasLegend && layout.width >= 220;
+}
+
+function visualGroupMatch(
+  candidate: RoadmapGraphTopic,
+  candidateLayout: RoadmapTopicLayout,
+  childLayout: RoadmapTopicLayout | undefined,
+): { isAbove: boolean; score: number } | null {
+  if (!childLayout) return null;
+
+  const xGap = Math.abs(candidateLayout.x - childLayout.x);
+  const yGap = Math.abs(candidateLayout.y - childLayout.y);
+  const isAbove = candidateLayout.y < childLayout.y;
+
+  if (candidate.type === "label") {
+    if (!isAbove || xGap > 170 || yGap > 175) return null;
+    return { isAbove, score: yGap + xGap };
+  }
+
+  if (candidate.type === "paragraph") {
+    if (!isAbove || xGap > 210 || yGap > 280) return null;
+    return { isAbove, score: yGap + xGap };
+  }
+
+  if (candidate.type === "subtopic") {
+    if (!isAbove || xGap > 230 || yGap > 380) return null;
+    return { isAbove, score: yGap + xGap };
+  }
+
+  if (candidate.type !== "topic") return null;
+
+  const hasCloseColumn = xGap <= 260;
+  const hasSameRowRelationship = yGap <= 90 && xGap <= 520;
+
+  if (isAbove && yGap > 240) return null;
+  if (!isAbove && yGap > 280) return null;
+  if (!hasCloseColumn && !hasSameRowRelationship) return null;
+
+  return { isAbove, score: yGap + xGap * 1.5 };
 }
 
 function buildRawEdgeGraph(edges: RoadmapApiEdge[]): {

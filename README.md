@@ -134,4 +134,10 @@ corepack pnpm lint
 corepack pnpm test
 corepack pnpm build
 corepack pnpm test:e2e
+corepack pnpm test:e2e:smoke
+corepack pnpm test:e2e:full
+corepack pnpm test:e2e:visual
+corepack pnpm test:e2e:full:report
 ```
+
+`test:e2e:full:report` writes a consolidated findings report to `test-results/e2e-findings-report.md`.

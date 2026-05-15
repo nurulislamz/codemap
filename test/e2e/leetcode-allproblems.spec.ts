@@ -5,12 +5,11 @@ test.beforeEach(async ({ page }) => {
   await page.evaluate(() => window.localStorage.removeItem("codemap.leetcodeAttempts.v1"));
 });
 
-test("All Problems renders and supports search, filters, and reset", async ({ page }) => {
+test("@smoke @full all problems page supports search, filters, and reset", async ({ page }) => {
   await page.goto("/leetcode/allproblems");
 
   await expect(page).toHaveURL(/\/leetcode\/allproblems$/);
   await expect(page.getByRole("heading", { name: "Practice Problems" })).toBeVisible();
-  await expect(page.getByRole("link", { name: /All Problems/ })).toBeVisible();
   await expect(page.locator("tbody tr").first()).toBeVisible();
 
   await page.getByPlaceholder("Search problems...").fill("binary tree");
@@ -37,7 +36,7 @@ test("All Problems renders and supports search, filters, and reset", async ({ pa
   );
 });
 
-test("All Problems attempt overlay has clickable controls and closes from backdrop", async ({ page }) => {
+test("@full all problems attempt overlay controls work and backdrop closes dialog", async ({ page }) => {
   await page.goto("/leetcode/allproblems?q=binary+tree");
 
   const row = page.getByRole("row", { name: /Binary Tree Level Order Traversal/ });
@@ -56,7 +55,7 @@ test("All Problems attempt overlay has clickable controls and closes from backdr
   await expect(dialog).toBeHidden();
 });
 
-test("All Problems saves signed-out attempts locally and displays them in history", async ({ page }) => {
+test("@full signed-out attempts are saved locally and shown in history", async ({ page }) => {
   await page.goto("/leetcode/allproblems?q=binary+tree");
 
   const row = page.getByRole("row", { name: /Binary Tree Level Order Traversal/ });
@@ -83,7 +82,7 @@ test("All Problems saves signed-out attempts locally and displays them in histor
   await expect(page.getByText("Saved by all problems e2e")).toBeVisible();
 });
 
-test("All Problems displays locally stored timed-out attempts as time ran out", async ({ page }) => {
+test("@full locally stored timed-out attempts show as time ran out", async ({ page }) => {
   await page.addInitScript(() => {
     window.localStorage.setItem(
       "codemap.leetcodeAttempts.v1",

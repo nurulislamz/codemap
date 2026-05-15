@@ -1,4 +1,4 @@
-import { type APIRequestContext, type Page, expect, test } from "@playwright/test";
+import type { APIRequestContext, Page } from "@playwright/test";
 
 const FIREBASE_API_KEY = process.env.NEXT_PUBLIC_FIREBASE_API_KEY ?? "demo";
 const FIREBASE_AUTH_HOST = normalizeHost(
@@ -6,44 +6,11 @@ const FIREBASE_AUTH_HOST = normalizeHost(
 );
 const FIRESTORE_HOST = normalizeHost(process.env.FIRESTORE_EMULATOR_HOST ?? "127.0.0.1:8080");
 const FIREBASE_PROJECT_ID = process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID ?? "codemap-dev";
-const E2E_EMAIL = process.env.E2E_AUTH_EMAIL ?? "e2e-leetcode@codemap.dev";
-const E2E_PASSWORD = process.env.E2E_AUTH_PASSWORD ?? "e2e-leetcode-password";
 
-test("sign in, attempt a problem, and save to Firebase", async ({ page, request }) => {
-  const auth = await signInWithPassword(request, E2E_EMAIL, E2E_PASSWORD);
-  const notes = `e2e attempt ${Date.now()}`;
+const defaultEmail = process.env.E2E_AUTH_EMAIL ?? "e2e-leetcode@codemap.dev";
+const defaultPassword = process.env.E2E_AUTH_PASSWORD ?? "e2e-leetcode-password";
 
-  await page.goto("/leetcode");
-  await seedFirebaseAuthSession(page, auth);
-
-  await page.goto("/leetcode");
-  const firstStartButton = page.locator("tbody tr").first().getByRole("button", { name: /Start|Resume/ });
-  await expect(firstStartButton).toBeVisible();
-  await firstStartButton.click();
-
-  await expect(page.getByRole("dialog")).toBeVisible();
-  await expect(
-    page.getByText("You are not signed in. Attempts will save to this browser only."),
-  ).toHaveCount(0);
-  await page.getByRole("button", { name: "Start timer" }).click();
-  await expect(page.getByRole("button", { name: "Finish attempt" })).toBeVisible();
-  await page.getByRole("button", { name: "Finish attempt" }).click();
-  await expect(page.getByRole("heading", { name: "Record attempt" })).toBeVisible();
-  await page.getByLabel("Notes").fill(notes);
-  await page.getByRole("button", { name: "Save attempt" }).click();
-
-  await expect(page.getByRole("dialog")).toBeHidden({ timeout: 5000 });
-
-  const saved = await waitForSavedAttempt({
-    request,
-    userId: auth.uid,
-    notes,
-  });
-
-  expect(saved).toBe(true);
-});
-
-type E2EAuth = {
+export type E2EAuth = {
   uid: string;
   email: string;
   idToken: string;
@@ -51,7 +18,16 @@ type E2EAuth = {
   expiresIn: string;
 };
 
-async function signInWithPassword(request: APIRequestContext, email: string, password: string): Promise<E2EAuth> {
+export function getFirestoreAttemptsCollectionUrl(userId: string) {
+  return `http://${FIRESTORE_HOST}/v1/projects/${FIREBASE_PROJECT_ID}/databases/(default)/documents/users/${userId}/leetcodeAttempts`;
+}
+
+export async function createOrSignInE2EUser(
+  request: APIRequestContext,
+  options?: { email?: string; password?: string },
+): Promise<E2EAuth> {
+  const email = options?.email ?? defaultEmail;
+  const password = options?.password ?? defaultPassword;
   const signUpUrl = `http://${FIREBASE_AUTH_HOST}/identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_API_KEY}`;
   const signInUrl = `http://${FIREBASE_AUTH_HOST}/identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_API_KEY}`;
   const payload = {
@@ -96,31 +72,31 @@ async function signInWithPassword(request: APIRequestContext, email: string, pas
   };
 }
 
-async function seedFirebaseAuthSession(page: Page, auth: E2EAuth) {
+export async function seedFirebaseAuthSession(page: Page, auth: E2EAuth) {
   await page.evaluate(
-    async ({ apiKey, auth }) => {
+    async ({ apiKey, authUser }) => {
       const now = Date.now();
       const key = `firebase:authUser:${apiKey}:[DEFAULT]`;
       const persistenceKey = `firebase:persistence:${apiKey}:[DEFAULT]`;
       const value = {
-        uid: auth.uid,
-        email: auth.email,
+        uid: authUser.uid,
+        email: authUser.email,
         emailVerified: false,
         isAnonymous: false,
         providerData: [
           {
             providerId: "password",
-            uid: auth.email,
+            uid: authUser.email,
             displayName: null,
-            email: auth.email,
+            email: authUser.email,
             phoneNumber: null,
             photoURL: null,
           },
         ],
         stsTokenManager: {
-          refreshToken: auth.refreshToken,
-          accessToken: auth.idToken,
-          expirationTime: now + Number(auth.expiresIn) * 1000,
+          refreshToken: authUser.refreshToken,
+          accessToken: authUser.idToken,
+          expirationTime: now + Number(authUser.expiresIn) * 1000,
         },
         createdAt: String(now),
         lastLoginAt: String(now),
@@ -157,43 +133,8 @@ async function seedFirebaseAuthSession(page: Page, auth: E2EAuth) {
         };
       });
     },
-    { apiKey: FIREBASE_API_KEY, auth },
+    { apiKey: FIREBASE_API_KEY, authUser: auth },
   );
-}
-
-async function waitForSavedAttempt({
-  request,
-  userId,
-  notes,
-}: {
-  request: APIRequestContext;
-  userId: string;
-  notes: string;
-}) {
-  const base = `http://${FIRESTORE_HOST}/v1/projects/${FIREBASE_PROJECT_ID}/databases/(default)/documents`;
-  await expect
-    .poll(
-      async () => {
-        const response = await request.get(`${base}/users/${userId}/leetcodeAttempts`);
-
-        if (!response.ok()) {
-          return false;
-        }
-
-        const body = await response.json();
-        const documents: Array<{ fields?: { notes?: { stringValue?: string } } }> =
-          body?.documents ?? [];
-
-        return documents.some((doc) => doc.fields?.notes?.stringValue === notes);
-      },
-      {
-        message: "expected attempt document to be persisted in firestore emulator",
-        timeout: 10000,
-      },
-    )
-    .toBe(true);
-
-  return true;
 }
 
 function normalizeHost(host: string) {

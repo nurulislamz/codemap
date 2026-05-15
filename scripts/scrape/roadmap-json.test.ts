@@ -211,4 +211,142 @@ describe("buildRoadmapGraphFromRoadmapData", () => {
     ]);
     expect(result.backend.topics.go.parents).toEqual(["introduction"]);
   });
+
+  it("uses visual group headings for edge-less roadmap nodes without overriding explicit edges", () => {
+    const result = buildRoadmapGraphFromRoadmapData(
+      {
+        slug: "backend",
+        title: { page: "Backend Developer" },
+        description: "Backend roadmap",
+        nodes: [
+          {
+            id: "root",
+            type: "title",
+            position: { x: 0, y: 0 },
+            data: { label: "Backend" },
+          },
+          {
+            id: "nosql",
+            type: "topic",
+            position: { x: -300, y: 100 },
+            data: { label: "NoSQL Databases" },
+          },
+          {
+            id: "intro",
+            type: "topic",
+            position: { x: -300, y: 70 },
+            data: { label: "Introduction" },
+          },
+          {
+            id: "pick-language",
+            type: "topic",
+            position: { x: -700, y: 250 },
+            data: { label: "Pick a Backend Language" },
+          },
+          {
+            id: "go",
+            type: "subtopic",
+            position: { x: -580, y: 10 },
+            data: { label: "Go" },
+          },
+          {
+            id: "python",
+            type: "subtopic",
+            position: { x: -700, y: 60 },
+            data: { label: "Python" },
+          },
+          {
+            id: "document-dbs",
+            type: "paragraph",
+            position: { x: -540, y: 180 },
+            data: { label: "Document DBs" },
+          },
+          {
+            id: "key-value",
+            type: "paragraph",
+            position: { x: -360, y: 180 },
+            data: { label: "Key-Value" },
+          },
+          {
+            id: "mongodb",
+            type: "subtopic",
+            position: { x: -540, y: 240 },
+            data: { label: "MongoDB" },
+          },
+          {
+            id: "couchdb",
+            type: "subtopic",
+            position: { x: -540, y: 293 },
+            data: { label: "CouchDB" },
+          },
+          {
+            id: "redis",
+            type: "subtopic",
+            position: { x: -360, y: 240 },
+            data: { label: "Redis" },
+          },
+          {
+            id: "hashing",
+            type: "label",
+            position: { x: 100, y: 400 },
+            data: { label: "Hashing Algorithms" },
+          },
+          {
+            id: "md5",
+            type: "subtopic",
+            position: { x: 50, y: 450 },
+            data: { label: "MD5" },
+          },
+          {
+            id: "bcrypt",
+            type: "subtopic",
+            position: { x: 180, y: 450 },
+            data: { label: "bcrypt" },
+          },
+          {
+            id: "relational",
+            type: "topic",
+            position: { x: -300, y: 520 },
+            data: { label: "Relational Databases" },
+          },
+          {
+            id: "postgresql",
+            type: "subtopic",
+            position: { x: -540, y: 560 },
+            data: { label: "PostgreSQL" },
+          },
+        ],
+        edges: [
+          { source: "root", target: "nosql", data: { edgeStyle: "solid" } },
+          { source: "root", target: "intro", data: { edgeStyle: "solid" } },
+          { source: "relational", target: "postgresql", data: { edgeStyle: "dashed" } },
+        ],
+      },
+      {
+        topicContentByNodeId: {
+          go: { description: "Backend language.", resources: [{ type: "article", title: "Go", url: "https://example.com/go" }] },
+          python: { description: "Backend language.", resources: [{ type: "article", title: "Python", url: "https://example.com/python" }] },
+          mongodb: { description: "Document database.", resources: [{ type: "article", title: "MongoDB", url: "https://example.com/mongodb" }] },
+          couchdb: { description: "Document database.", resources: [{ type: "article", title: "CouchDB", url: "https://example.com/couchdb" }] },
+          redis: { description: "Key-value database.", resources: [{ type: "article", title: "Redis", url: "https://example.com/redis" }] },
+          md5: { description: "Hashing algorithm.", resources: [{ type: "article", title: "MD5", url: "https://example.com/md5" }] },
+          bcrypt: { description: "Password hashing.", resources: [{ type: "article", title: "bcrypt", url: "https://example.com/bcrypt" }] },
+          postgresql: { description: "Relational database.", resources: [{ type: "article", title: "PostgreSQL", url: "https://example.com/postgresql" }] },
+        },
+      },
+    );
+
+    expect(result.backend.topics.pickABackendLanguage.children).toEqual(["go", "python"]);
+    expect(result.backend.topics.go.parents).toEqual(["pickABackendLanguage"]);
+    expect(result.backend.topics.python.parents).toEqual(["pickABackendLanguage"]);
+    expect(result.backend.topics.documentDbs.children).toEqual(["mongodb", "couchdb"]);
+    expect(result.backend.topics.mongodb.parents).toEqual(["documentDbs"]);
+    expect(result.backend.topics.couchdb.parents).toEqual(["documentDbs"]);
+    expect(result.backend.topics.keyValue.children).toEqual(["redis"]);
+    expect(result.backend.topics.redis.parents).toEqual(["keyValue"]);
+    expect(result.backend.topics.hashingAlgorithms.children).toEqual(["md5", "bcrypt"]);
+    expect(result.backend.topics.md5.parents).toEqual(["hashingAlgorithms"]);
+    expect(result.backend.topics.bcrypt.parents).toEqual(["hashingAlgorithms"]);
+    expect(result.backend.topics.postgresql.parents).toEqual(["relationalDatabases"]);
+  });
 });

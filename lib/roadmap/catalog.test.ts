@@ -49,4 +49,30 @@ describe("roadmap catalog", () => {
       resourceCount: 5,
     });
   });
+
+  it("groups roadmap concepts by explicit parent relationships", async () => {
+    const { getRoadmapBySlug } = await import("./catalog");
+
+    const roadmap = getRoadmapBySlug("backend");
+    const introduction = roadmap?.topicGroups.find(
+      (group) => group.topic.slug === "introduction",
+    );
+    const javascript = roadmap?.topicGroups.find(
+      (group) => group.topic.slug === "javascript",
+    );
+
+    expect(introduction?.children.map((topic) => topic.slug)).toEqual([
+      "howDoesTheInternetWork",
+      "whatIsHttp",
+      "whatIsDomainName",
+      "whatIsHosting",
+      "dnsAndHowItWorks",
+      "browsersAndHowTheyWork",
+    ]);
+    expect(introduction?.children.map((topic) => topic.slug)).not.toContain("javascript");
+    expect(javascript).toMatchObject({
+      topic: expect.objectContaining({ slug: "javascript", title: "JavaScript" }),
+      children: [],
+    });
+  });
 });

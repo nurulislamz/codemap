@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { RoadmapDetail, RoadmapTopic } from "@/lib/roadmap/catalog";
+import type { RoadmapDetail } from "@/lib/roadmap/catalog";
 import { useAuth } from "@/components/auth/auth-provider";
 import { RoadmapTopicProgressForm } from "@/components/roadmap/roadmap-topic-progress-form";
 import type { RoadmapTopicProgress } from "@/lib/roadmap/progress";
 import type { SaveRoadmapProgressInput } from "@/lib/roadmap/actions";
-import { AppPanel } from "@/components/shared";
+import { AppPanel, Icon } from "@/components/shared";
 
 type RoadmapConceptsModalProps = {
   roadmap: RoadmapDetail;
@@ -31,6 +31,12 @@ export function RoadmapConceptsModal({
   const [learnedByTopic, setLearnedByTopic] = useState<Record<string, boolean>>(
     {},
   );
+  const [collapsedTopicSlugs, setCollapsedTopicSlugs] = useState<Record<string, boolean>>(
+    () =>
+      Object.fromEntries(
+        roadmap.topicGroups.slice(1).map((group) => [group.topic.slug, true]),
+      ),
+  );
 
   const selectedTopic = useMemo(() => {
     return (
@@ -38,27 +44,6 @@ export function RoadmapConceptsModal({
       roadmap.topics[0]
     );
   }, [roadmap.topics, selectedTopicSlug]);
-
-  const topicGroups = useMemo(() => {
-    const groups: Array<{ title: string; topics: RoadmapTopic[] }> = [];
-    let current: { title: string; topics: RoadmapTopic[] } | null = null;
-
-    roadmap.topics.forEach((topic) => {
-      if (topic.type === "topic") {
-        current = { title: topic.title, topics: [] };
-        groups.push(current);
-      }
-
-      if (!current) {
-        current = { title: "Other", topics: [] };
-        groups.push(current);
-      }
-
-      current.topics.push(topic);
-    });
-
-    return groups;
-  }, [roadmap.topics]);
 
   useEffect(() => {
     if (authStatus !== "signed-in" || !user) {
@@ -141,96 +126,244 @@ export function RoadmapConceptsModal({
   return (
     <>
       <AppPanel className="overflow-hidden">
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#22314a] bg-[#0b1423] px-6 py-5">
-          <div>
-            <h2 className="text-2xl font-extrabold tracking-tight text-white">
-              Concepts
-            </h2>
-            <p className="mt-2 text-base text-slate-400">
-              Ordered from the roadmap.sh graph data.
-            </p>
+        <div className="flex flex-wrap items-center justify-between gap-5 border-b border-[#22314a] bg-[#0b1423] px-6 py-5">
+          <div className="flex min-w-0 items-center gap-4">
+            <div className="grid h-14 w-14 shrink-0 place-items-center rounded-xl border border-[#8d72ff]/65 bg-[#241d55] text-[#a997ff] shadow-[inset_0_0_22px_rgba(141,114,255,0.22)]">
+              <Icon name="grid" className="h-6 w-6" />
+            </div>
+            <div className="min-w-0">
+              <h2 className="text-2xl font-extrabold tracking-tight text-white">
+                Concepts
+              </h2>
+              <p className="mt-1.5 text-base text-slate-400">
+                Step-by-step concepts and topics in this roadmap.
+              </p>
+            </div>
           </div>
-          <div className="rounded-full border border-[#22314a] bg-[#08111d] px-5 py-2.5 text-base font-bold text-slate-200">
-            {roadmap.topicCount} concepts
+          <div className="flex flex-wrap items-center gap-4">
+            <div className="flex items-center gap-4 rounded-lg border border-[#22314a] bg-[#0c1829] px-5 py-3 text-sm font-bold text-slate-100">
+              <span>{roadmap.topicGroups.length} groups</span>
+              <span className="h-1.5 w-1.5 rounded-full bg-[#a997ff]" aria-hidden="true" />
+              <span>{roadmap.topicCount} concepts</span>
+            </div>
+            <button
+              type="button"
+              className="inline-flex min-h-12 items-center gap-3 rounded-lg border border-[#22314a] bg-[#0c1829] px-5 text-sm font-bold text-slate-200 transition hover:border-[#7c68ff] hover:bg-[#101e33] hover:text-white"
+              onClick={() => {
+                const hasCollapsedGroup = roadmap.topicGroups.some(
+                  (group) => collapsedTopicSlugs[group.topic.slug] === true,
+                );
+
+                setCollapsedTopicSlugs(
+                  hasCollapsedGroup
+                    ? {}
+                    : Object.fromEntries(
+                        roadmap.topicGroups.map((group) => [group.topic.slug, true]),
+                      ),
+                );
+              }}
+            >
+              <Icon
+                name="chevron"
+                className={`h-4 w-4 transition ${
+                  roadmap.topicGroups.some(
+                    (group) => collapsedTopicSlugs[group.topic.slug] === true,
+                  )
+                    ? "rotate-90"
+                    : "-rotate-90"
+                }`}
+              />
+              {roadmap.topicGroups.some(
+                (group) => collapsedTopicSlugs[group.topic.slug] === true,
+              )
+                ? "Expand all"
+                : "Collapse all"}
+            </button>
           </div>
         </div>
 
-        <div className="divide-y divide-[#22314a]">
-          {topicGroups.map((group) => (
-            <div key={group.title}>
-              <div className="flex items-center gap-3 bg-[#0b1626] px-6 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-[#a997ff]">
-                <span className="h-2 w-2 rounded-full bg-[#7c68ff]" aria-hidden="true" />
-                {group.title}
-              </div>
-              {group.topics.map((topic) => {
-                const learned = learnedByTopic[topic.slug] === true;
+        <div className="hidden border-b border-[#22314a] bg-[#0a1322] px-6 py-3 text-xs font-extrabold uppercase text-slate-500 md:grid md:grid-cols-[5rem_4rem_minmax(15rem,1fr)_minmax(18rem,1.35fr)_7rem_8rem_9rem_2rem] md:items-center md:gap-4">
+          <span className="text-center">#</span>
+          <span />
+          <span>Concept</span>
+          <span>Summary</span>
+          <span>Related</span>
+          <span>Resources</span>
+          <span>Status</span>
+          <span />
+        </div>
 
-                return (
+        <div className="space-y-1 bg-[#08111d] p-3">
+          {roadmap.topicGroups.map((group, groupIndex) => {
+            const learned = learnedByTopic[group.topic.slug] === true;
+            const isCollapsed = collapsedTopicSlugs[group.topic.slug] === true;
+            const groupResourceCount = group.children.reduce(
+              (total, topic) => total + topic.resourceCount,
+              group.topic.resourceCount,
+            );
+
+            return (
+              <div
+                key={group.topic.slug}
+                className="overflow-hidden rounded-lg border border-[#1a2a3f] bg-[#0b1626]"
+              >
+                <div
+                  className={`grid w-full gap-4 px-4 py-4 text-left transition md:grid-cols-[5rem_4rem_minmax(15rem,1fr)_minmax(18rem,1.35fr)_7rem_8rem_9rem_2rem] md:items-center ${
+                    learned ? "bg-[#0f2a22]" : "bg-[#0d192a] hover:bg-[#101e33]"
+                  }`}
+                >
+                  <div className="hidden text-center text-sm font-extrabold text-slate-500 md:block">
+                    {groupIndex + 1}
+                  </div>
                   <button
-                    key={topic.slug}
                     type="button"
-                    className={`grid w-full gap-5 px-6 py-5 text-left transition md:grid-cols-[3.25rem_minmax(0,1fr)_14.5rem] md:items-center ${
-                      learned
-                        ? "bg-[#0f2a22] hover:bg-[#13362c]"
-                        : "bg-transparent hover:bg-[#0f1a2b]"
-                    }`}
-                    onClick={() => openTopic(topic.slug)}
+                    className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#7c68ff]/65 bg-[#151f3a] text-[#b5a6ff] transition hover:border-[#a997ff] hover:bg-[#1b2850] hover:text-white"
+                    aria-label={`${isCollapsed ? "Expand" : "Collapse"} ${group.topic.title}`}
+                    aria-expanded={!isCollapsed}
+                    onClick={() =>
+                      setCollapsedTopicSlugs((current) => ({
+                        ...current,
+                        [group.topic.slug]: !current[group.topic.slug],
+                      }))
+                    }
                   >
-                    <span
-                      className={`flex h-10 w-10 items-center justify-center rounded-xl border text-sm font-extrabold ${
-                        learned
-                          ? "border-[#29d17d] bg-[#0b241a] text-[#63e59d]"
-                          : "border-[#3b4a62] bg-[#0b1626] text-slate-400"
-                      }`}
-                      aria-hidden="true"
-                    >
-                      {topic.order}
+                    <Icon
+                      name="chevron"
+                      className={`h-5 w-5 transition ${isCollapsed ? "" : "rotate-90"}`}
+                    />
+                  </button>
+                  <button
+                    type="button"
+                    className="min-w-0 text-left"
+                    onClick={() => openTopic(group.topic.slug)}
+                  >
+                    <span className="flex min-w-0 items-center gap-3">
+                      <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-[#7c68ff]/40 bg-[#241d55] text-sm font-extrabold text-[#b5a6ff] md:hidden">
+                        {groupIndex + 1}
+                      </span>
+                      <span className="block truncate text-xl font-extrabold text-white md:text-lg">
+                        {group.topic.title}
+                      </span>
                     </span>
-                    <span className="min-w-0">
-                      <span className="block truncate text-lg font-extrabold text-white">
-                        {topic.title}
-                      </span>
-                      <span className="mt-2 block max-h-14 overflow-hidden text-base leading-7 text-slate-400">
-                        {topic.summary || "No summary available yet."}
-                      </span>
-                    </span>
-                    <span className="flex flex-wrap items-center gap-2 md:justify-end">
-                      <span className="inline-flex items-center gap-2 rounded-full border border-[#22314a] bg-[#08111d] px-4 py-2 text-sm font-bold text-slate-200">
-                        <svg
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                          className="h-4 w-4 text-[#a997ff]"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                        >
-                          <path d="M12 20h9" />
-                          <path d="M12 4h9" />
-                          <path d="M4 7h6v6H4z" />
-                          <path d="M4 17h6v3H4z" />
-                        </svg>
-                        {topic.resourceCount} resources
-                      </span>
-                      <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                        className="h-5 w-5 text-slate-500"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      >
-                        <path d="m9 18 6-6-6-6" />
-                      </svg>
+                    <span className="mt-2 block text-sm font-semibold text-slate-500 md:hidden">
+                      {group.children.length} related · {groupResourceCount} resources
                     </span>
                   </button>
-                );
-              })}
-            </div>
-          ))}
+                  <button
+                    type="button"
+                    className="min-w-0 text-left"
+                    onClick={() => openTopic(group.topic.slug)}
+                  >
+                    <span className="block max-h-14 overflow-hidden text-sm leading-6 text-slate-400 md:text-base md:leading-7">
+                      {group.topic.summary || "No summary available yet."}
+                    </span>
+                  </button>
+                  <span className="hidden items-center gap-2 text-sm font-bold text-slate-300 md:flex">
+                    <Icon name="layers" className="h-4 w-4 text-slate-500" />
+                    {group.children.length}
+                  </span>
+                  <span className="hidden items-center gap-2 text-sm font-bold text-slate-300 md:flex">
+                    <Icon name="grid" className="h-4 w-4 text-slate-500" />
+                    {groupResourceCount}
+                  </span>
+                  <span
+                    className={`hidden w-fit items-center gap-2 rounded-lg border px-3 py-1.5 text-sm font-bold md:inline-flex ${
+                      learned
+                        ? "border-[#2b8b58]/50 bg-[#0d301f] text-[#63e59d]"
+                        : "border-[#2f3d54] bg-[#0d1828] text-slate-400"
+                    }`}
+                  >
+                    <Icon name="check" className="h-4 w-4" />
+                    {learned ? "Learned" : "Not Started"}
+                  </span>
+                  <button
+                    type="button"
+                    className="hidden h-8 w-8 items-center justify-center rounded-md text-slate-500 transition hover:bg-white/5 hover:text-white md:flex"
+                    aria-label={`${group.topic.title} options`}
+                    onClick={() => openTopic(group.topic.slug)}
+                  >
+                    <span aria-hidden="true" className="text-xl leading-none">
+                      ⋮
+                    </span>
+                  </button>
+                </div>
+
+                {!isCollapsed && group.children.length > 0 ? (
+                  <div className="relative bg-[#08111d]">
+                    <div
+                      className="absolute bottom-7 left-[3.42rem] top-0 hidden w-px bg-[#29384f] md:block"
+                      aria-hidden="true"
+                    />
+                    {group.children.map((topic, childIndex) => {
+                      const childLearned = learnedByTopic[topic.slug] === true;
+
+                      return (
+                        <button
+                          key={topic.slug}
+                          type="button"
+                          className={`relative grid w-full gap-4 px-4 py-4 text-left transition md:grid-cols-[5rem_4rem_minmax(15rem,1fr)_minmax(18rem,1.35fr)_7rem_8rem_9rem_2rem] md:items-center ${
+                            childLearned
+                              ? "bg-[#0f2a22] hover:bg-[#13362c]"
+                              : "bg-[#08111d] hover:bg-[#0d192a]"
+                          }`}
+                          onClick={() => openTopic(topic.slug)}
+                        >
+                          <span className="relative hidden text-center text-sm font-bold text-slate-400 md:block">
+                            <span
+                              className="absolute left-[2.88rem] top-1/2 h-px w-5 bg-[#29384f]"
+                              aria-hidden="true"
+                            />
+                            {groupIndex + 1}.{childIndex + 1}
+                          </span>
+                          <span
+                            className={`hidden h-3 w-3 rounded-full border md:block ${
+                              childLearned
+                                ? "border-[#63e59d] bg-[#29d17d]"
+                                : "border-[#4a5870] bg-[#172235]"
+                            }`}
+                            aria-hidden="true"
+                          />
+                          <span className="min-w-0">
+                            <span className="flex items-center gap-3">
+                              <span className="text-sm font-bold text-slate-500 md:hidden">
+                                {groupIndex + 1}.{childIndex + 1}
+                              </span>
+                              <span className="block truncate text-base font-extrabold text-white">
+                                {topic.title}
+                              </span>
+                            </span>
+                          </span>
+                          <span className="block max-h-12 overflow-hidden text-sm leading-6 text-slate-400">
+                            {topic.summary || "No summary available yet."}
+                          </span>
+                          <span className="hidden text-sm font-bold text-slate-500 md:block">
+                            -
+                          </span>
+                          <span className="hidden items-center gap-2 text-sm font-bold text-slate-300 md:flex">
+                            <Icon name="grid" className="h-4 w-4 text-slate-500" />
+                            {topic.resourceCount}
+                          </span>
+                          <span
+                            className={`hidden w-fit items-center gap-2 rounded-lg border px-3 py-1.5 text-sm font-bold md:inline-flex ${
+                              childLearned
+                                ? "border-[#2b8b58]/50 bg-[#0d301f] text-[#63e59d]"
+                                : "border-[#2f3d54] bg-[#0d1828] text-slate-400"
+                            }`}
+                          >
+                            <Icon name="check" className="h-4 w-4" />
+                            {childLearned ? "Learned" : "Not Started"}
+                          </span>
+                          <span className="hidden text-center text-xl leading-none text-slate-500 md:block">
+                            ⋮
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                ) : null}
+              </div>
+            );
+          })}
         </div>
       </AppPanel>
 

@@ -31,6 +31,10 @@ export type RoadmapTopic = {
 
 export type RoadmapDetail = RoadmapSummary & {
   topics: RoadmapTopic[];
+  topicGroups: Array<{
+    topic: RoadmapTopic;
+    children: RoadmapTopic[];
+  }>;
   edges: Array<{
     from: string;
     to: string;
@@ -126,6 +130,20 @@ export function getRoadmapBySlug(slug: string): RoadmapDetail | null {
     (topic) => topic.type === "topic" || topic.resourceCount > 0,
   );
   const topicSlugSet = new Set(filteredTopics.map((topic) => topic.slug));
+  const orderedTopics = filteredTopics.map((topic) => ({
+    ...topic,
+    parents: topic.parents.filter((parent) => topicSlugSet.has(parent)),
+    children: topic.children.filter((child) => topicSlugSet.has(child)),
+  }));
+  const groupedChildSlugs = new Set(
+    orderedTopics.flatMap((topic) =>
+      topic.type === "topic"
+        ? orderedTopics
+            .filter((child) => child.parents.includes(topic.slug))
+            .map((child) => child.slug)
+        : [],
+    ),
+  );
 
   return {
     slug,
@@ -133,11 +151,16 @@ export function getRoadmapBySlug(slug: string): RoadmapDetail | null {
     summary: roadmap.summary,
     url: roadmap.url,
     topicCount: filteredTopics.length,
-    topics: filteredTopics.map((topic) => ({
-      ...topic,
-      parents: topic.parents.filter((parent) => topicSlugSet.has(parent)),
-      children: topic.children.filter((child) => topicSlugSet.has(child)),
-    })),
+    topics: orderedTopics,
+    topicGroups: orderedTopics
+      .filter((topic) => topic.type === "topic" || !groupedChildSlugs.has(topic.slug))
+      .map((topic) => ({
+        topic,
+        children:
+          topic.type === "topic"
+            ? orderedTopics.filter((child) => child.parents.includes(topic.slug))
+            : [],
+      })),
     edges: roadmap.edges.filter(
       (edge) => topicSlugSet.has(edge.from) && topicSlugSet.has(edge.to),
     ),

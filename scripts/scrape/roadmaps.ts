@@ -84,9 +84,11 @@ function removeEmptyButtonTopics(roadmap: RoadmapGraph): RoadmapGraph {
 
     const hasResources = Boolean(topic.video) || topic.articles.length > 0;
 
-    // roadmap.sh sometimes includes dummy leaf/button nodes with no resources.
-    // We keep section headings (type === "topic") so the UI can still group concepts.
-    if (topic.type !== "topic" && !hasResources) {
+    const hasRelations = topic.parents.length > 0 || topic.children.length > 0;
+
+    // roadmap.sh sometimes includes dummy nodes with no resources.
+    // Keep structure nodes that still participate in topic relationships.
+    if (topic.type !== "topic" && !hasResources && !hasRelations) {
       toRemove.add(slug);
     }
   }
