@@ -8,9 +8,10 @@ export default defineConfig({
   fullyParallel: true,
   reporter: "html",
   webServer: {
-    command: `corepack pnpm exec next dev --hostname 127.0.0.1 --port ${port}`,
+    command: `corepack pnpm exec firebase emulators:exec --only auth,firestore "next dev --hostname 127.0.0.1 --port ${port}"`,
     url: baseURL,
     reuseExistingServer: true,
+    gracefulShutdown: { signal: "SIGINT", timeout: 5000 },
   },
   use: {
     baseURL,

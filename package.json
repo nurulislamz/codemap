@@ -23,7 +23,7 @@
     "scrape:crawl4ai": "python3 scripts/scrape/crawl4ai-cli.py",
     "scrape:roadmap-tree": "python3 scripts/scrape/crawl4ai-cli.py --tree",
     "scrape:roadmap-json": "tsx scripts/scrape/roadmap-json.ts",
-    "scrape:roadmaps": "tsx scripts/scrape/roadmaps.ts",
+    "scrape:roadmaps": "python3 scripts/scrape/roadmaps.py",
     "seed:firestore": "tsx scripts/firestore/seed.ts"
   },
   "dependencies": {

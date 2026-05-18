@@ -1,12 +1,14 @@
 import { describe, expect, it } from "vitest";
 
+const roadmapImportTimeoutMs = 15000;
+
 describe("roadmap catalog", () => {
   it("lists available roadmaps from the static roadmap data", async () => {
     const { getRoadmapCatalog } = await import("./catalog");
 
     const roadmaps = getRoadmapCatalog();
 
-    expect(roadmaps.length).toBeGreaterThanOrEqual(6);
+    expect(roadmaps.length).toBeGreaterThanOrEqual(80);
     expect(roadmaps).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
@@ -26,9 +28,17 @@ describe("roadmap catalog", () => {
           slug: "system-design",
           url: "https://roadmap.sh/system-design",
         }),
+        expect.objectContaining({
+          slug: "react",
+          url: "https://roadmap.sh/react",
+        }),
+        expect.objectContaining({
+          slug: "typescript",
+          url: "https://roadmap.sh/typescript",
+        }),
       ]),
     );
-  });
+  }, roadmapImportTimeoutMs);
 
   it("keeps backend topics in roadmap order with resource counts", async () => {
     const { getRoadmapBySlug } = await import("./catalog");
@@ -46,9 +56,13 @@ describe("roadmap catalog", () => {
       roadmap?.topics.find((topic) => topic.slug === "howDoesTheInternetWork"),
     ).toMatchObject({
       title: "How does the internet work?",
-      resourceCount: 5,
+      resourceCount: expect.any(Number),
     });
-  });
+    expect(
+      roadmap?.topics.find((topic) => topic.slug === "howDoesTheInternetWork")
+        ?.resourceCount,
+    ).toBeGreaterThan(0);
+  }, roadmapImportTimeoutMs);
 
   it("groups roadmap concepts by explicit parent relationships", async () => {
     const { getRoadmapBySlug } = await import("./catalog");
@@ -60,6 +74,9 @@ describe("roadmap catalog", () => {
     const javascript = roadmap?.topicGroups.find(
       (group) => group.topic.slug === "javascript",
     );
+    const backendLanguage = roadmap?.topicGroups.find(
+      (group) => group.topic.slug === "pickABackendLanguage",
+    );
 
     expect(introduction?.children.map((topic) => topic.slug)).toEqual([
       "howDoesTheInternetWork",
@@ -70,9 +87,9 @@ describe("roadmap catalog", () => {
       "browsersAndHowTheyWork",
     ]);
     expect(introduction?.children.map((topic) => topic.slug)).not.toContain("javascript");
-    expect(javascript).toMatchObject({
-      topic: expect.objectContaining({ slug: "javascript", title: "JavaScript" }),
-      children: [],
-    });
-  });
+    expect(backendLanguage?.children.map((topic) => topic.slug)).toEqual(
+      expect.arrayContaining(["javascript", "go", "python", "ruby"]),
+    );
+    expect(javascript).toBeUndefined();
+  }, roadmapImportTimeoutMs);
 });

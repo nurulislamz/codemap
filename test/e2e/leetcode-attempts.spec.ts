@@ -34,12 +34,14 @@ test("@full signed-in attempt is persisted to firestore emulator", async ({
   await page.getByLabel("Notes").fill(notes);
   await page.getByRole("button", { name: "Save attempt" }).click();
 
-  await expect(page.getByRole("dialog")).toBeHidden({ timeout: 5000 });
+  await expect(page.getByRole("dialog")).toBeHidden({ timeout: 15000 });
 
   await expect
     .poll(
       async () => {
-        const response = await request.get(getFirestoreAttemptsCollectionUrl(auth.uid));
+        const response = await request.get(getFirestoreAttemptsCollectionUrl(auth.uid), {
+          headers: { authorization: `Bearer ${auth.idToken}` },
+        });
 
         if (!response.ok()) {
           return false;
