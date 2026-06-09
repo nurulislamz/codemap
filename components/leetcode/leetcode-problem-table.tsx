@@ -61,6 +61,21 @@ type ProgressFilter =
 const allOption = "all";
 const pageSize = 25;
 
+const problemBookmarkIcon = (
+  <svg
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+    className="h-5 w-5"
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="1.8"
+  >
+    <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+  </svg>
+);
+
 function uniqueInOrder(values: string[]) {
   return values.filter((value, index) => values.indexOf(value) === index);
 }
@@ -199,8 +214,8 @@ export function LeetcodeProblemTable({
   const [showDifficultyMenu, setShowDifficultyMenu] = useState(false);
   const [showStatusMenu, setShowStatusMenu] = useState(false);
   const [activePatternForSubPatterns, setActivePatternForSubPatterns] = useState<string | null>(null);
-  const [selectedPatterns, setSelectedPatterns] = useState<string[]>([]);
-  const [selectedSubPatterns, setSelectedSubPatterns] = useState<string[]>([]);
+  const [selectedPatterns, setSelectedPatterns] = useState<Set<string>>(new Set());
+  const [selectedSubPatterns, setSelectedSubPatterns] = useState<Set<string>>(new Set());
   const [problemSort, setProblemSort] = useState<ProblemSort>("default");
   const [difficultySort, setDifficultySort] = useState<DifficultySort>("easy-first");
   const [expandedProblemId, setExpandedProblemId] = useState<string | null>(null);
@@ -241,10 +256,12 @@ export function LeetcodeProblemTable({
     const grouped = new Map<string, LeetcodeAttemptRow[]>();
 
     for (const attempt of attempts) {
-      grouped.set(attempt.problemId, [
-        ...(grouped.get(attempt.problemId) ?? []),
-        attempt,
-      ]);
+      const existing = grouped.get(attempt.problemId);
+      if (existing) {
+        existing.push(attempt);
+      } else {
+        grouped.set(attempt.problemId, [attempt]);
+      }
     }
 
     grouped.forEach((problemAttempts, problemId) => {
@@ -277,8 +294,8 @@ export function LeetcodeProblemTable({
   });
 
   useEffect(() => {
-    setSelectedPatterns([]);
-    setSelectedSubPatterns([]);
+    setSelectedPatterns(new Set());
+    setSelectedSubPatterns(new Set());
     setActivePatternForSubPatterns(null);
     setShowPatternMenu(false);
     setCurrentPage(1);
@@ -319,7 +336,6 @@ export function LeetcodeProblemTable({
 
   const filteredProblems = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
-
     return problems.filter((problem) => {
       const matchesQuery =
         normalizedQuery.length === 0 ||
@@ -336,9 +352,9 @@ export function LeetcodeProblemTable({
         matchesQuery &&
         matchesStatus &&
         (!externalPattern || problem.pattern === externalPattern) &&
-        (selectedPatterns.length === 0 || selectedPatterns.includes(problem.pattern)) &&
-        (selectedSubPatterns.length === 0 ||
-          selectedSubPatterns.includes(problem.subPattern)) &&
+        (selectedPatterns.size === 0 || selectedPatterns.has(problem.pattern)) &&
+        (selectedSubPatterns.size === 0 ||
+          selectedSubPatterns.has(problem.subPattern)) &&
         (difficulty === allOption || problem.difficulty === difficulty) &&
         (!hasVideo || Boolean(problem.solutionVideoUrl))
       );
@@ -399,8 +415,8 @@ export function LeetcodeProblemTable({
   }
 
   function resetPatternFilters() {
-    setSelectedPatterns([]);
-    setSelectedSubPatterns([]);
+    setSelectedPatterns(new Set());
+    setSelectedSubPatterns(new Set());
     setActivePatternForSubPatterns(null);
     setShowPatternMenu(false);
   }
@@ -415,19 +431,21 @@ export function LeetcodeProblemTable({
   }
 
   function toggleSelectedPattern(pattern: string) {
-    setSelectedPatterns((current) =>
-      current.includes(pattern)
-        ? current.filter((item) => item !== pattern)
-        : [...current, pattern],
-    );
+    setSelectedPatterns((current) => {
+      const next = new Set(current);
+      if (next.has(pattern)) next.delete(pattern);
+      else next.add(pattern);
+      return next;
+    });
   }
 
   function toggleSelectedSubPattern(subPattern: string) {
-    setSelectedSubPatterns((current) =>
-      current.includes(subPattern)
-        ? current.filter((item) => item !== subPattern)
-        : [...current, subPattern],
-    );
+    setSelectedSubPatterns((current) => {
+      const next = new Set(current);
+      if (next.has(subPattern)) next.delete(subPattern);
+      else next.add(subPattern);
+      return next;
+    });
   }
 
   function goToPreviousPage() {
@@ -494,10 +512,10 @@ export function LeetcodeProblemTable({
   }
 
   function subPatternFilterLabel() {
-    if (selectedSubPatterns.length === 1) return selectedSubPatterns[0];
-    if (selectedSubPatterns.length > 1) return `${selectedSubPatterns.length} selected`;
-    if (selectedPatterns.length === 1) return selectedPatterns[0];
-    if (selectedPatterns.length > 1) return `${selectedPatterns.length} selected`;
+    if (selectedSubPatterns.size === 1) return [...selectedSubPatterns][0];
+    if (selectedSubPatterns.size > 1) return `${selectedSubPatterns.size} selected`;
+    if (selectedPatterns.size === 1) return [...selectedPatterns][0];
+    if (selectedPatterns.size > 1) return `${selectedPatterns.size} selected`;
     return "";
   }
 
@@ -722,9 +740,9 @@ export function LeetcodeProblemTable({
                                   disabled={disablePatternFilter || patternOption === externalPattern}
                                   checked={
                                     patternOption === allOption
-                                      ? selectedPatterns.length === 0 && selectedSubPatterns.length === 0
+                                      ? selectedPatterns.size === 0 && selectedSubPatterns.size === 0
                                       : patternOption === externalPattern ||
-                                        selectedPatterns.includes(patternOption)
+                                        selectedPatterns.has(patternOption)
                                   }
                                   onChange={() => {
                                     if (patternOption === externalPattern || disablePatternFilter) return;
@@ -778,7 +796,7 @@ export function LeetcodeProblemTable({
                                 <input
                                   type="checkbox"
                                   disabled={disablePatternFilter}
-                                  checked={selectedSubPatterns.includes(subPatternOption)}
+                                  checked={selectedSubPatterns.has(subPatternOption)}
                                   onChange={() => toggleSelectedSubPattern(subPatternOption)}
                                   className="checkbox checkbox-primary checkbox-sm"
                                 />
@@ -872,7 +890,7 @@ export function LeetcodeProblemTable({
         ) : null}
 
         {showControls &&
-        (selectedPatterns.length > 0 || selectedSubPatterns.length > 0) ? (
+        (selectedPatterns.size > 0 || selectedSubPatterns.size > 0) ? (
           <div className="mt-3 flex flex-wrap gap-2">
             {[...selectedPatterns, ...selectedSubPatterns].map((selectedItem) => (
               <button
@@ -880,12 +898,16 @@ export function LeetcodeProblemTable({
                 type="button"
                 className="cursor-pointer rounded-lg border border-[#3a3482] bg-[#121a33] px-3 py-1.5 text-sm font-semibold text-[#8f73ff]"
                 onClick={() => {
-                  setSelectedPatterns((current) =>
-                    current.filter((item) => item !== selectedItem),
-                  );
-                  setSelectedSubPatterns((current) =>
-                    current.filter((item) => item !== selectedItem),
-                  );
+                  setSelectedPatterns((current) => {
+                    const next = new Set(current);
+                    next.delete(selectedItem);
+                    return next;
+                  });
+                  setSelectedSubPatterns((current) => {
+                    const next = new Set(current);
+                    next.delete(selectedItem);
+                    return next;
+                  });
                 }}
               >
                 {selectedItem}
@@ -984,18 +1006,7 @@ export function LeetcodeProblemTable({
                     <td className="px-4 py-4 align-middle">
                       <div className="flex items-start gap-4">
                         <span className="text-slate-500">
-                          <svg
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                            className="h-5 w-5"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="1.8"
-                          >
-                            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-                          </svg>
+                          {problemBookmarkIcon}
                         </span>
                         <div className="min-w-0 space-y-2">
                           <div className="font-semibold leading-snug text-white">{problem.title}</div>

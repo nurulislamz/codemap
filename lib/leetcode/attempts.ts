@@ -94,10 +94,12 @@ function groupAttemptsByProblemId(attempts: LeetCodeAttemptEvent[]) {
   const attemptsByProblemId = new Map<string, LeetCodeAttemptEvent[]>();
 
   for (const attempt of attempts) {
-    attemptsByProblemId.set(attempt.problemId, [
-      ...(attemptsByProblemId.get(attempt.problemId) ?? []),
-      attempt,
-    ]);
+    const existing = attemptsByProblemId.get(attempt.problemId);
+    if (existing) {
+      existing.push(attempt);
+    } else {
+      attemptsByProblemId.set(attempt.problemId, [attempt]);
+    }
   }
 
   return attemptsByProblemId;

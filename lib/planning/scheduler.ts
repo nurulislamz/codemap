@@ -47,15 +47,33 @@ interface CandidatePlanItem {
 export function buildDailyPlan(input: DailyPlanInput): DailyPlanOutput {
   assertPlanDate(input.date);
 
-  const leetcode = input.leetcode
-    .map((item, index) => ({ item, index }))
-    .filter(({ item }) => item.status !== "completed")
-    .sort((a, b) => scoreLeetcode(b.item) - scoreLeetcode(a.item) || a.index - b.index)[0]
-    ?.item;
+  let leetcodeBest:
+    | { item: DailyPlanInput["leetcode"][number]; index: number; score: number }
+    | undefined;
+  input.leetcode.forEach((item, index) => {
+    if (item.status === "completed") return;
+    const score = scoreLeetcode(item);
+    if (
+      !leetcodeBest ||
+      score > leetcodeBest.score ||
+      (score === leetcodeBest.score && index < leetcodeBest.index)
+    ) {
+      leetcodeBest = { item, index, score };
+    }
+  });
+  const leetcode = leetcodeBest?.item;
 
-  const roadmap = input.roadmap
-    .filter((item) => item.status !== "completed")
-    .sort((a, b) => a.order - b.order || a.id.localeCompare(b.id))[0];
+  let roadmap: DailyPlanInput["roadmap"][number] | undefined;
+  for (const item of input.roadmap) {
+    if (item.status === "completed") continue;
+    if (
+      !roadmap ||
+      item.order < roadmap.order ||
+      (item.order === roadmap.order && item.id.localeCompare(roadmap.id) < 0)
+    ) {
+      roadmap = item;
+    }
+  }
 
   const systemDesign = input.systemDesign.find((item) => item.status !== "completed");
 

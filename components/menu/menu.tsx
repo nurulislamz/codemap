@@ -21,6 +21,14 @@ const leetcodeNavItems = [
   { href: "/leetcode/tracks", label: "Tracks" },
 ];
 
+const hamburgerIcon = (
+  <span className="flex flex-col gap-1.5">
+    <span className="block h-0.5 w-5 rounded-full bg-current" />
+    <span className="block h-0.5 w-5 rounded-full bg-current" />
+    <span className="block h-0.5 w-5 rounded-full bg-current" />
+  </span>
+);
+
 export function Menu() {
   const pathname = usePathname();
   const { status, user, signInWithGoogle, signOutUser } = useAuth();
@@ -89,11 +97,7 @@ export function Menu() {
         onClick={() => setIsMobileMenuOpen((current) => !current)}
       >
         <span className="sr-only">Toggle navigation</span>
-        <span className="flex flex-col gap-1.5">
-          <span className="block h-0.5 w-5 rounded-full bg-current" />
-          <span className="block h-0.5 w-5 rounded-full bg-current" />
-          <span className="block h-0.5 w-5 rounded-full bg-current" />
-        </span>
+        {hamburgerIcon}
       </button>
 
       <nav aria-label="Primary navigation" className="hidden md:block">

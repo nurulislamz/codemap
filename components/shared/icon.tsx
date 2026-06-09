@@ -1,22 +1,19 @@
-export function Icon({
-  name,
-  className = "h-6 w-6",
-}: {
-  name:
-    | "calendar"
-    | "check"
-    | "chevron"
-    | "clock"
-    | "code"
-    | "flame"
-    | "grid"
-    | "layers"
-    | "sparkle"
-    | "tree";
-  className?: string;
-}) {
-  const paths = {
-    calendar: (
+import type { ReactNode } from "react";
+
+type IconName =
+  | "calendar"
+  | "check"
+  | "chevron"
+  | "clock"
+  | "code"
+  | "flame"
+  | "grid"
+  | "layers"
+  | "sparkle"
+  | "tree";
+
+const paths: Record<IconName, ReactNode> = {
+  calendar: (
       <>
         <path d="M8 2v4" />
         <path d="M16 2v4" />
@@ -78,8 +75,15 @@ export function Icon({
         <path d="M12 21v-3" />
       </>
     ),
-  };
+};
 
+export function Icon({
+  name,
+  className = "h-6 w-6",
+}: {
+  name: IconName;
+  className?: string;
+}) {
   return (
     <svg
       aria-hidden="true"

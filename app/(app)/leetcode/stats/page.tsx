@@ -14,12 +14,9 @@ export const dynamic = "force-dynamic";
 export default async function LeetcodeStatsPage() {
   const roadmapCatalog = getRoadmapCatalog();
   const catalog = getLeetcodeCatalog();
-  const attemptEvents = await getSortedLeetcodeAttemptEventsForRequest();
-  const problems = Array.from(catalog.problems.values()).flat();
-  const attempts = toLeetcodeAttemptRows(
-    attemptEvents,
-    new Map(problems.map((problem) => [problem.number, problem])),
-  );
+  // Start the attempt-events fetch immediately so it runs in parallel with the
+  // roadmap progress lookups below (async-parallel).
+  const attemptEventsPromise = getSortedLeetcodeAttemptEventsForRequest();
 
   const totalRoadmapConcepts = roadmapCatalog.reduce(
     (total, roadmap) => total + roadmap.topicCount,
@@ -45,6 +42,13 @@ export default async function LeetcodeStatsPage() {
       throw error;
     }
   }
+
+  const attemptEvents = await attemptEventsPromise;
+  const problems = Array.from(catalog.problems.values()).flat();
+  const attempts = toLeetcodeAttemptRows(
+    attemptEvents,
+    new Map(problems.map((problem) => [problem.number, problem])),
+  );
 
   const roadmapCompletionRate = totalRoadmapConcepts === 0
     ? 0

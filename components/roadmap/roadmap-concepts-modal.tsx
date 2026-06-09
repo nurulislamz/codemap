@@ -45,6 +45,10 @@ export function RoadmapConceptsModal({
     );
   }, [roadmap.topics, selectedTopicSlug]);
 
+  const hasCollapsedGroup = roadmap.topicGroups.some(
+    (group) => collapsedTopicSlugs[group.topic.slug] === true,
+  );
+
   useEffect(() => {
     if (authStatus !== "signed-in" || !user) {
       const learned: Record<string, boolean> = {};
@@ -150,10 +154,6 @@ export function RoadmapConceptsModal({
               type="button"
               className="inline-flex min-h-12 items-center gap-3 rounded-lg border border-[#22314a] bg-[#0c1829] px-5 text-sm font-bold text-slate-200 transition hover:border-[#7c68ff] hover:bg-[#101e33] hover:text-white"
               onClick={() => {
-                const hasCollapsedGroup = roadmap.topicGroups.some(
-                  (group) => collapsedTopicSlugs[group.topic.slug] === true,
-                );
-
                 setCollapsedTopicSlugs(
                   hasCollapsedGroup
                     ? {}
@@ -166,18 +166,10 @@ export function RoadmapConceptsModal({
               <Icon
                 name="chevron"
                 className={`h-4 w-4 transition ${
-                  roadmap.topicGroups.some(
-                    (group) => collapsedTopicSlugs[group.topic.slug] === true,
-                  )
-                    ? "rotate-90"
-                    : "-rotate-90"
+                  hasCollapsedGroup ? "rotate-90" : "-rotate-90"
                 }`}
               />
-              {roadmap.topicGroups.some(
-                (group) => collapsedTopicSlugs[group.topic.slug] === true,
-              )
-                ? "Expand all"
-                : "Collapse all"}
+              {hasCollapsedGroup ? "Expand all" : "Collapse all"}
             </button>
           </div>
         </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, type RefObject } from "react";
+import { useEffect, useRef, type RefObject } from "react";
 
 type OutsideClickOptions = {
   active: boolean;
@@ -12,6 +12,14 @@ export function useOutsideClick<T extends HTMLElement>(
   ref: RefObject<T | null>,
   { active, onOutsideClick, onEscape = onOutsideClick }: OutsideClickOptions,
 ) {
+  const onOutsideClickRef = useRef(onOutsideClick);
+  const onEscapeRef = useRef(onEscape);
+
+  useEffect(() => {
+    onOutsideClickRef.current = onOutsideClick;
+    onEscapeRef.current = onEscape;
+  }, [onEscape, onOutsideClick]);
+
   useEffect(() => {
     if (!active) return;
 
@@ -19,13 +27,13 @@ export function useOutsideClick<T extends HTMLElement>(
       const target = event.target as Node | null;
 
       if (target && ref.current && !ref.current.contains(target)) {
-        onOutsideClick();
+        onOutsideClickRef.current();
       }
     }
 
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        onEscape();
+        onEscapeRef.current();
       }
     }
 
@@ -36,5 +44,5 @@ export function useOutsideClick<T extends HTMLElement>(
       document.removeEventListener("pointerdown", handlePointerDown);
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [active, onEscape, onOutsideClick, ref]);
+  }, [active, ref]);
 }
