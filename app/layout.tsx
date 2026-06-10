@@ -4,8 +4,16 @@ import { AppShell } from "@/components/shell/app-shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LeetCode Backend Helper",
+  title: {
+    default: "LeetCode Backend Helper",
+    template: "%s | LeetCode Backend Helper",
+  },
   description: "Personal backend interview prep dashboard.",
+  openGraph: {
+    title: "LeetCode Backend Helper",
+    description: "Personal backend interview prep dashboard.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

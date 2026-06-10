@@ -21,12 +21,16 @@ export function CountdownTimer({
   label = "Time remaining",
   onComplete,
 }: CountdownTimerProps) {
-  const [remainingSeconds, setRemainingSeconds] = useState(() =>
-    calculateRemainingSeconds(startedAt, timeLimitMinutes),
+  // Seed with the full limit rather than calling Date.now() during render: the
+  // initializer would run on the server and again on the client with a
+  // different clock, producing a hydration mismatch. The effect computes the
+  // real value immediately after mount.
+  const [remainingSeconds, setRemainingSeconds] = useState(
+    () => timeLimitMinutes * 60,
   );
 
   useEffect(() => {
-    const intervalId = window.setInterval(() => {
+    function syncRemaining() {
       setRemainingSeconds((currentSeconds) => {
         const nextSeconds = calculateRemainingSeconds(startedAt, timeLimitMinutes);
         if (currentSeconds > 0 && nextSeconds === 0) {
@@ -35,9 +39,17 @@ export function CountdownTimer({
 
         return nextSeconds;
       });
-    }, 1000);
+    }
 
-    return () => window.clearInterval(intervalId);
+    // Defer the first real reading off the synchronous effect body (avoids a
+    // cascading render) and run subsequent updates on the interval.
+    const initialId = window.setTimeout(syncRemaining, 0);
+    const intervalId = window.setInterval(syncRemaining, 1000);
+
+    return () => {
+      window.clearTimeout(initialId);
+      window.clearInterval(intervalId);
+    };
   }, [onComplete, startedAt, timeLimitMinutes]);
 
   return (

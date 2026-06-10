@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { saveLeetCodeAttempt } from "@/lib/leetcode/actions";
@@ -27,6 +28,22 @@ import { dashboardProblemRow, latestAttemptNotes } from "@/app/(app)/leetcode/da
 import { formatMinutesDuration } from "@/lib/leetcode/leetcode-formatters";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const track = getLeetcodeTrackBySlug(slug);
+
+  if (!track) return {};
+
+  return {
+    title: track.title,
+    description: track.description,
+  };
+}
 
 export default async function LeetcodeTrackDetailPage({
   params,

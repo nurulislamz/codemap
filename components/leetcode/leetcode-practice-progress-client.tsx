@@ -15,10 +15,10 @@ import {
   type LeetcodeProblemDifficultyLabel,
   type SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
-import type { LeetcodeCatalog } from "@/lib/leetcode/catalog";
+import type { LeetcodePracticeCatalog } from "@/lib/leetcode/catalog";
 
 type LeetcodePracticeProgressClientProps = {
-  catalog: LeetcodeCatalog;
+  catalog: LeetcodePracticeCatalog;
   initialSelectedPattern?: string | null;
   initialSelectedSubPatterns?: string[];
   initialSelectedDifficulty?: LeetcodeProblemDifficultyLabel | null;
@@ -53,21 +53,15 @@ export function LeetcodePracticeProgressClient({
     cachedAttemptUser === user?.uid && cachedAttempts ? cachedAttempts : [],
   );
 
-  const problems = useMemo(
-    () => Array.from(catalog.problems.values()).flat(),
-    [catalog.problems],
+  const problems = catalog.problems;
+  const majorPatterns = catalog.majorPatterns;
+  const patternNameSet = useMemo(
+    () => new Set(catalog.patternNames),
+    [catalog.patternNames],
   );
   const hydratedProblems = useMemo(
     () => hydrateLeetcodeProblemsWithAttempts(problems, attempts),
     [attempts, problems],
-  );
-  const majorPatterns = useMemo(
-    () =>
-      Array.from(catalog.index.keys(), (name) => ({
-        name,
-        count: catalog.patternCounts.get(name)?.count ?? 0,
-      })),
-    [catalog.index, catalog.patternCounts],
   );
   const tableProblems = useMemo(
     () =>
@@ -148,28 +142,19 @@ export function LeetcodePracticeProgressClient({
       }
 
       const idToken = await getIdToken();
-      const attemptGroups = await Promise.all(
-        problems.map(async (problem) => {
-          const response = await fetch(
-            `/api/leetcode/attempts?problemId=${encodeURIComponent(problem.number)}`,
-            {
-              cache: "no-store",
-              headers: idToken ? { authorization: `Bearer ${idToken}` } : {},
-            },
-          );
-
-          if (!response.ok) return [];
-
-          const data = (await response.json()) as AttemptsResponse;
-          return data.attempts ?? [];
-        }),
-      );
-      const nextAttempts = attemptGroups.flat();
+      const response = await fetch("/api/leetcode/attempts", {
+        cache: "no-store",
+        headers: idToken ? { authorization: `Bearer ${idToken}` } : {},
+      });
+      const data = response.ok
+        ? ((await response.json()) as AttemptsResponse)
+        : { attempts: [] };
+      const nextAttempts = data.attempts ?? [];
       cachedAttemptUser = user.uid;
       cachedAttempts = nextAttempts;
       setAttempts(nextAttempts);
     },
-    [authStatus, getIdToken, problems, user],
+    [authStatus, getIdToken, user],
   );
 
   useEffect(() => {
@@ -182,10 +167,10 @@ export function LeetcodePracticeProgressClient({
       const params = new URLSearchParams(window.location.search);
       const pattern = params.get("pattern");
       const nextSelectedPattern =
-        pattern && catalog.patternCounts.has(pattern) ? pattern : null;
+        pattern && patternNameSet.has(pattern) ? pattern : null;
       const nextSelectedSubPatterns = params
         .getAll("subPattern")
-        .filter((subPattern) => catalog.patternCounts.has(subPattern));
+        .filter((subPattern) => patternNameSet.has(subPattern));
 
       setSelectedPattern(nextSelectedPattern);
       setSelectedSubPatterns(nextSelectedSubPatterns);
@@ -194,7 +179,7 @@ export function LeetcodePracticeProgressClient({
 
     window.addEventListener("popstate", handlePopState);
     return () => window.removeEventListener("popstate", handlePopState);
-  }, [catalog.patternCounts]);
+  }, [patternNameSet]);
 
   return (
     <div className="grid gap-4 xl:grid-cols-[21rem_minmax(0,1fr)]">

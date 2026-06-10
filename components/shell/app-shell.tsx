@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 import { Menu } from "@/components/menu/menu";
 
 type AppShellProps = {
@@ -18,7 +18,9 @@ export function AppShell({ children }: AppShellProps) {
             Backend Prep
           </Link>
 
-          <Menu />
+          <Suspense fallback={null}>
+            <Menu />
+          </Suspense>
         </div>
       </header>
       <main className="w-full px-8 py-8">{children}</main>

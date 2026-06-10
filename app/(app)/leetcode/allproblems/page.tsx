@@ -1,5 +1,5 @@
 import { parseDifficulty } from "@/lib/leetcode/types";
-import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
+import { getLeetcodeCatalog, toLeetcodePracticeCatalog } from "@/lib/leetcode/catalog";
 import {
   CodeIcon,
   SectionHero,
@@ -204,7 +204,7 @@ export default async function LeetcodeAllProblemsPage({
       </section>
 
       <LeetcodePracticeProgressClient
-        catalog={catalog}
+        catalog={toLeetcodePracticeCatalog(catalog)}
         initialSelectedPattern={selectedPattern}
         initialSelectedSubPatterns={selectedSubPatterns}
         initialSelectedDifficulty={selectedDifficultyValue}

@@ -5,13 +5,15 @@ import {
   LeetcodeProblemDifficultyLabel,
   type LeetcodeProblemRow,
 } from "@/lib/leetcode/types";
-import type { LeetcodeCatalog } from "@/lib/leetcode/catalog";
+import type { LeetcodePracticeCatalog } from "@/lib/leetcode/catalog";
 
 const authState = vi.hoisted(() => ({
   status: "signed-out" as "loading" | "signed-in" | "signed-out" | "unavailable",
   user: null as { uid: string } | null,
 }));
-const getIdToken = vi.hoisted(() => vi.fn(async () => null));
+const getIdToken = vi.hoisted(() =>
+  vi.fn(async (): Promise<string | null> => null),
+);
 
 vi.mock("@/components/auth/auth-provider", () => ({
   useAuth: () => ({
@@ -139,7 +141,7 @@ describe("LeetcodePracticeProgressClient", () => {
     expect(await screen.findByText("Time ran out")).toBeInTheDocument();
   });
 
-  it("fetches signed-in attempts by problem id", async () => {
+  it("fetches signed-in attempts in a single batch request", async () => {
     authState.status = "signed-in";
     authState.user = { uid: "firebase-user-123" };
     getIdToken.mockResolvedValue("id-token-123");
@@ -155,13 +157,14 @@ describe("LeetcodePracticeProgressClient", () => {
 
     await waitFor(() =>
       expect(fetch).toHaveBeenCalledWith(
-        "/api/leetcode/attempts?problemId=102",
+        "/api/leetcode/attempts",
         expect.objectContaining({
           cache: "no-store",
           headers: { authorization: "Bearer id-token-123" },
         }),
       ),
     );
+    expect(fetch).toHaveBeenCalledTimes(1);
   });
 
   it("selects major patterns without navigating the document", async () => {
@@ -225,44 +228,26 @@ describe("LeetcodePracticeProgressClient", () => {
   });
 });
 
-function catalogFromProblems(problems: LeetcodeProblemRow[]): LeetcodeCatalog {
-  const catalogProblems = new Map<number, LeetcodeProblemRow[]>();
-  const patternCounts = new Map<string, { count: number }>();
-  const index = new Map<
-    string,
-    {
-      subPatterns: Map<string, { name: string; problemIndexes: number[] }>;
-      problemIndexes: number[];
+function catalogFromProblems(
+  problems: LeetcodeProblemRow[],
+): LeetcodePracticeCatalog {
+  const counts = new Map<string, number>();
+  const majorPatternOrder: string[] = [];
+
+  problems.forEach((problem) => {
+    if (!majorPatternOrder.includes(problem.pattern)) {
+      majorPatternOrder.push(problem.pattern);
     }
-  >();
-
-  problems.forEach((problem, problemIndex) => {
-    catalogProblems.set(problemIndex, [problem]);
-    patternCounts.set(problem.pattern, {
-      count: (patternCounts.get(problem.pattern)?.count ?? 0) + 1,
-    });
-    patternCounts.set(problem.subPattern, {
-      count: (patternCounts.get(problem.subPattern)?.count ?? 0) + 1,
-    });
-
-    const pattern = index.get(problem.pattern) ?? {
-      subPatterns: new Map<string, { name: string; problemIndexes: number[] }>(),
-      problemIndexes: [],
-    };
-    const subPattern = pattern.subPatterns.get(problem.subPattern) ?? {
-      name: problem.subPattern,
-      problemIndexes: [],
-    };
-
-    pattern.problemIndexes.push(problemIndex);
-    subPattern.problemIndexes.push(problemIndex);
-    pattern.subPatterns.set(problem.subPattern, subPattern);
-    index.set(problem.pattern, pattern);
+    counts.set(problem.pattern, (counts.get(problem.pattern) ?? 0) + 1);
+    counts.set(problem.subPattern, (counts.get(problem.subPattern) ?? 0) + 1);
   });
 
   return {
-    problems: catalogProblems,
-    patternCounts,
-    index,
+    problems,
+    majorPatterns: majorPatternOrder.map((name) => ({
+      name,
+      count: counts.get(name) ?? 0,
+    })),
+    patternNames: Array.from(counts.keys()),
   };
 }

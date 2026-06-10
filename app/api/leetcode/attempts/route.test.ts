@@ -2,6 +2,8 @@ import { describe, expect, it, vi } from "vitest";
 
 const getRequestUserId = vi.hoisted(() => vi.fn());
 const getLeetcodeAttemptRowsForUser = vi.hoisted(() => vi.fn());
+const getSortedLeetcodeAttemptEventsForUser = vi.hoisted(() => vi.fn());
+const toLeetcodeAttemptRows = vi.hoisted(() => vi.fn());
 
 vi.mock("@/lib/auth/identity", () => ({
   UnauthorizedError: class UnauthorizedError extends Error {},
@@ -10,16 +12,26 @@ vi.mock("@/lib/auth/identity", () => ({
 
 vi.mock("@/lib/leetcode/attempts", () => ({
   getLeetcodeAttemptRowsForUser,
+  getSortedLeetcodeAttemptEventsForUser,
+  toLeetcodeAttemptRows,
 }));
 
 describe("GET /api/leetcode/attempts", () => {
-  it("requires a problem id", async () => {
+  it("returns all attempts in one request when no problemId is given", async () => {
+    getRequestUserId.mockResolvedValue("firebase-user-123");
+    const events = [{ attemptId: "a1", problemId: "102" }];
+    const rows = [{ attemptId: "a1", problemId: "102" }];
+    getSortedLeetcodeAttemptEventsForUser.mockResolvedValue(events);
+    toLeetcodeAttemptRows.mockReturnValue(rows);
     const { GET } = await import("./route");
 
     const response = await GET(new Request("http://localhost/api/leetcode/attempts"));
 
-    expect(response.status).toBe(400);
-    expect(await response.json()).toEqual({ attempts: [], error: "Missing problemId" });
+    expect(response.status).toBe(200);
+    expect(getSortedLeetcodeAttemptEventsForUser).toHaveBeenCalledWith(
+      "firebase-user-123",
+    );
+    expect(await response.json()).toEqual({ attempts: rows });
   });
 
   it("returns attempts for the requested problem", async () => {

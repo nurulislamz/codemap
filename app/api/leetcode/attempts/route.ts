@@ -1,20 +1,24 @@
 import { NextResponse } from "next/server";
 
 import { UnauthorizedError, getRequestUserId } from "@/lib/auth/identity";
-import { getLeetcodeAttemptRowsForUser } from "@/lib/leetcode/attempts";
+import {
+  getLeetcodeAttemptRowsForUser,
+  getSortedLeetcodeAttemptEventsForUser,
+  toLeetcodeAttemptRows,
+} from "@/lib/leetcode/attempts";
 
 export async function GET(request: Request) {
   try {
     const problemId = new URL(request.url).searchParams.get("problemId");
+    const userId = await getRequestUserId();
 
+    // No problemId => return every attempt for the user in a single request,
+    // avoiding an N+1 fan-out of one request per problem from the client.
     if (!problemId) {
-      return NextResponse.json(
-        { attempts: [], error: "Missing problemId" },
-        { status: 400 },
-      );
+      const events = await getSortedLeetcodeAttemptEventsForUser(userId);
+      return NextResponse.json({ attempts: toLeetcodeAttemptRows(events, new Map()) });
     }
 
-    const userId = await getRequestUserId();
     const attempts = await getLeetcodeAttemptRowsForUser(userId, problemId);
 
     return NextResponse.json({ attempts });

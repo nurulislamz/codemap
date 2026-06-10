@@ -6,6 +6,10 @@ export function formatAttemptDate(value: string | null) {
     month: "short",
     hour: "2-digit",
     minute: "2-digit",
+    // Pin the timezone so SSR (server TZ) and hydration (browser TZ) render
+    // identical strings — otherwise the hour/minute mismatch causes a
+    // hydration error.
+    timeZone: "UTC",
   }).format(new Date(value));
 }
 

@@ -6,7 +6,6 @@ import {
   LeetcodeProblemDifficultyLabel,
   type LeetcodeProblemRow,
 } from "@/lib/leetcode/types";
-import { StringValidation } from "zod/v3";
 
 export type LeetcodeCatalog = {
   problems: Map<number, LeetcodeProblemRow[]>;
@@ -22,6 +21,15 @@ export type LeetcodeCatalogPatternEntry = {
 export type LeetcodeCatalogSubPatternEntry = {
   name: string;
   problemIndexes: number[];
+};
+
+// Plain, JSON-serializable view of the catalog for crossing the RSC -> Client
+// boundary. The raw LeetcodeCatalog is built from Map objects, which React
+// cannot serialize as Client Component props.
+export type LeetcodePracticeCatalog = {
+  problems: LeetcodeProblemRow[];
+  majorPatterns: { name: string; count: number }[];
+  patternNames: string[];
 };
 
 let cachedCatalog: LeetcodeCatalog | null = null;
@@ -99,6 +107,19 @@ export function getLeetcodeCatalog(): LeetcodeCatalog {
   };
 
   return cachedCatalog;
+}
+
+export function toLeetcodePracticeCatalog(
+  catalog: LeetcodeCatalog,
+): LeetcodePracticeCatalog {
+  return {
+    problems: Array.from(catalog.problems.values()).flat(),
+    majorPatterns: Array.from(catalog.index.keys(), (name) => ({
+      name,
+      count: catalog.patternCounts.get(name)?.count ?? 0,
+    })),
+    patternNames: Array.from(catalog.patternCounts.keys()),
+  };
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {

@@ -11,6 +11,7 @@ import { AppPanel, Icon } from "@/components/shared";
 type RoadmapConceptsModalProps = {
   roadmap: RoadmapDetail;
   initialSelectedTopicSlug?: string | null;
+  initialLearned?: Record<string, boolean>;
   saveProgressAction: (input: SaveRoadmapProgressInput) => Promise<void>;
 };
 
@@ -21,6 +22,7 @@ type LearnedMapResponse = {
 export function RoadmapConceptsModal({
   roadmap,
   initialSelectedTopicSlug = null,
+  initialLearned = {},
   saveProgressAction,
 }: RoadmapConceptsModalProps) {
   const { status: authStatus, user, getIdToken } = useAuth();
@@ -28,9 +30,10 @@ export function RoadmapConceptsModal({
     initialSelectedTopicSlug,
   );
   const [isOpen, setIsOpen] = useState(false);
-  const [learnedByTopic, setLearnedByTopic] = useState<Record<string, boolean>>(
-    {},
-  );
+  // Seed from the server-computed learned map so first paint matches the stat
+  // cards; the client fetch below only refreshes it for signed-in users.
+  const [learnedByTopic, setLearnedByTopic] =
+    useState<Record<string, boolean>>(initialLearned);
   const [collapsedTopicSlugs, setCollapsedTopicSlugs] = useState<Record<string, boolean>>(
     () =>
       Object.fromEntries(

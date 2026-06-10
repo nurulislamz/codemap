@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { UnauthorizedError, getRequestUserId } from "@/lib/auth/identity";
@@ -13,6 +14,22 @@ import {
 } from "@/components/shared";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const roadmap = getRoadmapBySlug(slug);
+
+  if (!roadmap) return {};
+
+  return {
+    title: roadmap.title,
+    description: roadmap.summary,
+  };
+}
 
 export default async function RoadmapSlugPage({
   params,
@@ -33,17 +50,18 @@ export default async function RoadmapSlugPage({
     (total, topic) => total + topic.resourceCount,
     0,
   );
-  let learnedCount = 0;
+  let learnedMap: Record<string, boolean> = {};
 
   try {
     const userId = await getRequestUserId();
-    const learnedMap = await getRoadmapLearnedMap(userId, roadmap.slug);
-    learnedCount = Object.values(learnedMap).filter(Boolean).length;
+    learnedMap = await getRoadmapLearnedMap(userId, roadmap.slug);
   } catch (error) {
     if (!(error instanceof UnauthorizedError)) {
       throw error;
     }
   }
+
+  const learnedCount = Object.values(learnedMap).filter(Boolean).length;
 
   const completionRate = roadmap.topicCount === 0
     ? 0
@@ -114,6 +132,7 @@ export default async function RoadmapSlugPage({
         <RoadmapConceptsModal
           roadmap={roadmap}
           initialSelectedTopicSlug={query?.topic ?? null}
+          initialLearned={learnedMap}
           saveProgressAction={saveRoadmapProgress}
         />
       </main>
