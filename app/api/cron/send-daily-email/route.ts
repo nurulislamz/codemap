@@ -106,8 +106,12 @@ export async function GET(request: Request) {
           notificationId = queuedRow.id;
           queued += 1;
         }
-      } catch {
+      } catch (e) {
         // Best-effort: do not fail the email send if notification logging fails.
+        console.warn(
+          `Email notification queue logging failed for user ${pref.user_id}`,
+          e,
+        );
       }
 
       const result = await sendDailyEmail({
@@ -126,13 +130,18 @@ export async function GET(request: Request) {
             sentAtIso: new Date().toISOString(),
             providerMessageId,
           });
-        } catch {
+        } catch (e) {
           // Best-effort
+          console.warn(
+            `Marking email notification sent failed for user ${pref.user_id}`,
+            e,
+          );
         }
       }
     } catch (e) {
       failed += 1;
       const message = e instanceof Error ? e.message : String(e);
+      console.error(`Daily email send failed for user ${pref.user_id}`, e);
       errors.push({ user_id: pref.user_id, error: message });
 
       if (notificationId) {
@@ -141,20 +150,28 @@ export async function GET(request: Request) {
             id: notificationId,
             errorMessage: message,
           });
-        } catch {
+        } catch (markError) {
           // Best-effort
+          console.warn(
+            `Marking email notification failed errored for user ${pref.user_id}`,
+            markError,
+          );
         }
       }
     }
   }
 
-  return NextResponse.json({
-    ok: true,
-    planDate,
-    usersProcessed,
-    queued,
-    sent,
-    failed,
-    errors,
-  });
+  // Non-200 lets the cron scheduler detect and alert on partial failures.
+  return NextResponse.json(
+    {
+      ok: failed === 0,
+      planDate,
+      usersProcessed,
+      queued,
+      sent,
+      failed,
+      errors,
+    },
+    { status: failed === 0 ? 200 : 500 },
+  );
 }

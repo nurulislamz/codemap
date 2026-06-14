@@ -48,6 +48,7 @@ export async function GET(request: Request) {
       });
       planItemsUpserted += result.upserted;
     } catch (e) {
+      console.error(`Daily plan generation failed for user ${pref.user_id}`, e);
       errors.push({
         user_id: pref.user_id,
         error: e instanceof Error ? e.message : String(e),
@@ -55,12 +56,16 @@ export async function GET(request: Request) {
     }
   }
 
-  return NextResponse.json({
-    ok: true,
-    planDate,
-    usersProcessed,
-    plansUpserted,
-    planItemsUpserted,
-    errors,
-  });
+  // Non-200 lets the cron scheduler detect and alert on partial failures.
+  return NextResponse.json(
+    {
+      ok: errors.length === 0,
+      planDate,
+      usersProcessed,
+      plansUpserted,
+      planItemsUpserted,
+      errors,
+    },
+    { status: errors.length === 0 ? 200 : 500 },
+  );
 }

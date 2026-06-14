@@ -1,8 +1,9 @@
 import "server-only";
 
+import { z } from "zod";
 import type { EmailPlanItem } from "./daily-plan";
 import { stableUuidFromString } from "@/lib/ids/stable-uuid";
-import { LOCAL_USER_ID } from "@/lib/db/local-user";
+import { getFirestoreDb } from "@/lib/firebase/firestore";
 
 export type NotificationPreference = {
   user_id: string;
@@ -12,7 +13,32 @@ export type NotificationPreference = {
   system_design_enabled: boolean;
 };
 
-const planItemsByPlanId = new Map<string, EmailPlanItem[]>();
+const notificationPreferenceSchema = z.object({
+  user_id: z.string().min(1),
+  email: z.string().min(1),
+  leetcode_enabled: z.boolean(),
+  roadmap_enabled: z.boolean(),
+  system_design_enabled: z.boolean(),
+});
+
+const emailPlanItemRowSchema = z.object({
+  plan_id: z.string().min(1),
+  track: z.enum(["leetcode", "roadmap", "system_design"]),
+  title: z.string(),
+  href: z.string(),
+  scheduled_order: z.number(),
+  meta: z
+    .union([
+      z.object({ kind: z.literal("leetcode"), sourceUrl: z.string() }),
+      z.object({
+        kind: z.literal("roadmap"),
+        topicSlug: z.string(),
+        resourceUrl: z.string().optional(),
+      }),
+      z.object({ kind: z.literal("system_design"), promptSlug: z.string() }),
+    ])
+    .nullish(),
+});
 
 export function getUtcDateString(date = new Date()): string {
   const y = date.getUTCFullYear();
@@ -49,21 +75,46 @@ export function filterEmailPlanItemsForPreferences(
 }
 
 export async function listDailyEmailEnabledPreferences(): Promise<NotificationPreference[]> {
-  return [
-    {
-      user_id: LOCAL_USER_ID,
-      email: "local@localhost",
-      leetcode_enabled: true,
-      roadmap_enabled: true,
-      system_design_enabled: true,
-    },
-  ];
+  const snapshot = await getFirestoreDb()
+    .collection("notification_preferences")
+    .get();
+
+  return snapshot.docs
+    .map((doc) => notificationPreferenceSchema.safeParse(doc.data()))
+    .filter((parsed) => parsed.success)
+    .map((parsed) => parsed.data)
+    .filter(
+      (pref) =>
+        pref.leetcode_enabled ||
+        pref.roadmap_enabled ||
+        pref.system_design_enabled,
+    );
 }
 
-export async function upsertDailyPlanForUser(input: { userId: string; planDate: string }) {
-  return {
-    id: stableUuidFromString(`${input.userId}:plan:${input.planDate}`),
-  };
+export async function upsertDailyPlanForUser(input: {
+  userId: string;
+  planDate: string;
+}) {
+  const id = dailyPlanId(input.userId, input.planDate);
+  const planRef = getFirestoreDb().collection("daily_plans").doc(id);
+  const existing = await planRef.get();
+
+  if (existing.exists) {
+    await planRef.set(
+      { generated_at: new Date().toISOString() },
+      { merge: true },
+    );
+  } else {
+    await planRef.set({
+      id,
+      user_id: input.userId,
+      plan_date: input.planDate,
+      generated_at: new Date().toISOString(),
+      status: "not_started",
+    });
+  }
+
+  return { id };
 }
 
 export async function replaceDailyPlanItemsForPlan(input: {
@@ -71,8 +122,32 @@ export async function replaceDailyPlanItemsForPlan(input: {
   items: EmailPlanItem[];
   stableKeyPrefix: string;
 }) {
-  void input.stableKeyPrefix;
-  planItemsByPlanId.set(input.planId, input.items);
+  const db = getFirestoreDb();
+  const itemsCollection = db.collection("daily_plan_items");
+  const existing = await itemsCollection
+    .where("plan_id", "==", input.planId)
+    .get();
+
+  const batch = db.batch();
+  existing.docs.forEach((doc) => batch.delete(doc.ref));
+
+  input.items.forEach((item, idx) => {
+    const id = stableUuidFromString(
+      `${input.stableKeyPrefix}:item:${idx}:${item.track}`,
+    );
+    batch.set(itemsCollection.doc(id), {
+      id,
+      plan_id: input.planId,
+      track: item.track,
+      title: item.title,
+      href: item.href,
+      status: "not_started",
+      scheduled_order: idx,
+      meta: item.meta ?? null,
+    });
+  });
+
+  await batch.commit();
   return { upserted: input.items.length };
 }
 
@@ -80,8 +155,23 @@ export async function getDailyPlanEmailItemsForUser(input: {
   userId: string;
   planDate: string;
 }): Promise<EmailPlanItem[]> {
-  const planId = stableUuidFromString(`${input.userId}:plan:${input.planDate}`);
-  return planItemsByPlanId.get(planId) ?? [];
+  const planId = dailyPlanId(input.userId, input.planDate);
+  const snapshot = await getFirestoreDb()
+    .collection("daily_plan_items")
+    .where("plan_id", "==", planId)
+    .get();
+
+  return snapshot.docs
+    .map((doc) => emailPlanItemRowSchema.safeParse(doc.data()))
+    .filter((parsed) => parsed.success)
+    .map((parsed) => parsed.data)
+    .sort((a, b) => a.scheduled_order - b.scheduled_order)
+    .map((row) => ({
+      track: row.track,
+      title: row.title,
+      href: row.href,
+      ...(row.meta ? { meta: row.meta } : {}),
+    }));
 }
 
 export async function createEmailNotificationQueued(input: {
@@ -91,11 +181,25 @@ export async function createEmailNotificationQueued(input: {
   body: string;
   notificationType: string;
 }): Promise<{ id: string } | null> {
-  void input.body;
-  void input.notificationType;
-  return {
-    id: stableUuidFromString(`${input.userId}:email:${input.scheduledForIso}:${input.subject}`),
-  };
+  const id = stableUuidFromString(
+    `${input.userId}:email:${input.scheduledForIso}:${input.subject}`,
+  );
+
+  await getFirestoreDb().collection("email_notifications").doc(id).set({
+    id,
+    user_id: input.userId,
+    notification_type: input.notificationType,
+    subject: input.subject,
+    body: input.body,
+    status: "queued",
+    scheduled_for: input.scheduledForIso,
+    sent_at: null,
+    provider_message_id: null,
+    error_message: null,
+    attempts: 0,
+  });
+
+  return { id };
 }
 
 export async function markEmailNotificationSent(input: {
@@ -103,9 +207,29 @@ export async function markEmailNotificationSent(input: {
   sentAtIso: string;
   providerMessageId?: string | null;
 }) {
-  void input;
+  await getFirestoreDb().collection("email_notifications").doc(input.id).set(
+    {
+      status: "sent",
+      sent_at: input.sentAtIso,
+      provider_message_id: input.providerMessageId ?? null,
+    },
+    { merge: true },
+  );
 }
 
-export async function markEmailNotificationFailed(input: { id: string; errorMessage: string }) {
-  void input;
+export async function markEmailNotificationFailed(input: {
+  id: string;
+  errorMessage: string;
+}) {
+  await getFirestoreDb().collection("email_notifications").doc(input.id).set(
+    {
+      status: "failed",
+      error_message: input.errorMessage,
+    },
+    { merge: true },
+  );
+}
+
+function dailyPlanId(userId: string, planDate: string) {
+  return stableUuidFromString(`${userId}:plan:${planDate}`);
 }
