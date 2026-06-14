@@ -8,13 +8,18 @@ import {
   useState,
   useTransition,
 } from "react";
-import type {
-  LeetcodeAttemptStatus,
-  LeetcodeProblemRow,
-  SaveLeetcodeAttemptAction,
+import {
+  leetcodeLanguages,
+  parseLeetcodeLanguage,
+  type LeetcodeAttemptStatus,
+  type LeetcodeLanguage,
+  type LeetcodeProblemRow,
+  type SaveLeetcodeAttemptAction,
 } from "@/lib/leetcode/types";
 import {
+  getLastUsedLeetcodeLanguage,
   getLatestLocalLeetcodeNotes,
+  saveLastUsedLeetcodeLanguage,
   saveLocalLeetcodeAttempt,
 } from "@/lib/leetcode/storage/local-attempt-storage";
 import { useAuth } from "@/components/auth/auth-provider";
@@ -60,6 +65,7 @@ export function LeetcodeAttemptOverlayButton({
   const [resultMode, setResultMode] = useState(false);
   const [showLastNotes, setShowLastNotes] = useState(false);
   const [localLastNotes, setLocalLastNotes] = useState<string | null>(null);
+  const [lastLanguage, setLastLanguage] = useState<LeetcodeLanguage | null>(null);
   const [defaultStatus, setDefaultStatus] = useState<LeetcodeAttemptStatus>("completed");
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
@@ -71,6 +77,7 @@ export function LeetcodeAttemptOverlayButton({
 
   function openOverlay() {
     setLocalLastNotes(getLatestLocalLeetcodeNotes(problem.number));
+    setLastLanguage(getLastUsedLeetcodeLanguage());
     setIsOpen(true);
     setStartedAt(null);
     setEndedAt(null);
@@ -119,6 +126,7 @@ export function LeetcodeAttemptOverlayButton({
 
   function submitAttempt(formData: FormData) {
     const status = String(formData.get("status")) as LeetcodeAttemptStatus;
+    const language = parseLeetcodeLanguage(String(formData.get("language") ?? ""));
     const notes = String(formData.get("notes") ?? "").trim();
 
     if (!startedAt || !endedAt) {
@@ -126,11 +134,16 @@ export function LeetcodeAttemptOverlayButton({
       return;
     }
 
+    if (language) {
+      saveLastUsedLeetcodeLanguage(language);
+    }
+
     const input = {
       problemId: problem.number,
       status,
       startedAt,
       endedAt,
+      language,
       notes: notes || null,
     };
 
@@ -161,7 +174,8 @@ export function LeetcodeAttemptOverlayButton({
         setEndedAt(null);
         setResultMode(false);
         setError(null);
-      } catch {
+      } catch (saveError) {
+        console.error("Failed to save leetcode attempt", saveError);
         setError("Attempt could not be saved. Try again.");
       }
     });
@@ -385,6 +399,22 @@ export function LeetcodeAttemptOverlayButton({
                         </label>
                       ))}
                     </fieldset>
+
+                    <label className="block text-sm font-semibold text-slate-300">
+                      Language
+                      <select
+                        name="language"
+                        defaultValue={lastLanguage ?? ""}
+                        className="mt-2 w-full cursor-pointer rounded-xl border border-[#26364d] bg-[#101a2a] p-3 text-sm text-slate-100 outline-none transition focus:border-[#6747ff]"
+                      >
+                        <option value="">Not recorded</option>
+                        {leetcodeLanguages.map((language) => (
+                          <option key={language} value={language}>
+                            {language}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
 
                     <label className="block text-sm font-semibold text-slate-300">
                       Notes

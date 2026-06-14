@@ -1,5 +1,6 @@
 import { toPercentage } from "@/lib/leetcode/leetcode-formatters";
 import type { LeetcodeStats } from "@/lib/leetcode/leetcode-stats";
+import { fillRecentDays } from "@/lib/stats/recent-days";
 import {
   LeetcodeProblemDifficultyLabel,
   type LeetcodeAttemptRow,
@@ -44,23 +45,17 @@ export function formatDayLabel(date: string) {
   }).format(new Date(`${date}T00:00:00.000Z`));
 }
 
-function toIsoDay(date: Date) {
-  return date.toISOString().slice(0, 10);
-}
-
 export function buildRecentDisplayDays(days: DisplayDay[], count: number): DisplayDay[] {
   if (days.length === 0) return [];
 
-  const byDate = new Map(days.map((day) => [day.date, day]));
   const latestDate = new Date(`${days.at(-1)?.date}T00:00:00.000Z`);
 
-  return Array.from({ length: count }, (_, index) => {
-    const date = new Date(latestDate);
-    date.setUTCDate(latestDate.getUTCDate() - (count - index - 1));
-    const isoDate = toIsoDay(date);
-
-    return byDate.get(isoDate) ?? { date: isoDate, attempts: 0, accepted: 0 };
-  });
+  return fillRecentDays(
+    days,
+    count,
+    (date) => ({ date, attempts: 0, accepted: 0 }),
+    latestDate,
+  );
 }
 
 export function buildYAxisTicks(maxDailyAttempts: number) {

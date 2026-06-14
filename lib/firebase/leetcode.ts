@@ -1,18 +1,10 @@
 import { z } from "zod";
 
+import { leetcodeLanguages } from "@/lib/leetcode/types";
+
 export const leetcodeDifficultySchema = z.enum(["easy", "medium", "hard"]);
 
-export const leetcodeLanguageSchema = z.enum([
-  "TypeScript",
-  "JavaScript",
-  "Python",
-  "Java",
-  "C++",
-  "C#",
-  "Go",
-  "Rust",
-  "Other",
-]);
+export const leetcodeLanguageSchema = z.enum(leetcodeLanguages);
 
 // List of leetcode problems with ids, patterns, links etc
 export const leetcodeProblemCatalogSchema = z.object({
@@ -36,7 +28,8 @@ export const leetcodeAttemptEventSchema = z.object({
   startedAt: z.iso.datetime(),
   endedAt: z.iso.datetime(),
   durationSeconds: z.number().int().nonnegative(),
-  language: leetcodeLanguageSchema.nullable(),
+  // Older attempt documents predate this field; default missing values to null.
+  language: leetcodeLanguageSchema.nullable().default(null),
   failureReason: z.string().max(200).nullable(),
   notes: z.string().max(200).nullable(),
 });
@@ -45,3 +38,5 @@ export const leetcodeAttemptEventSchema = z.object({
 // Write shape: problem progress
 export type LeetCodeProblem = z.infer<typeof leetcodeProblemCatalogSchema>;
 export type LeetCodeAttemptEvent = z.infer<typeof leetcodeAttemptEventSchema>;
+// Input shape: fields with schema defaults (language) may be omitted on write.
+export type LeetCodeAttemptEventInput = z.input<typeof leetcodeAttemptEventSchema>;

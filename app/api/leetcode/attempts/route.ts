@@ -24,9 +24,16 @@ export async function GET(request: Request) {
     return NextResponse.json({ attempts });
   } catch (error) {
     if (error instanceof UnauthorizedError) {
-      return NextResponse.json({ attempts: [] });
+      return NextResponse.json(
+        { attempts: [], error: "Unauthorized" },
+        { status: 401 },
+      );
     }
 
-    throw error;
+    console.error("Failed to load leetcode attempts", error);
+    return NextResponse.json(
+      { attempts: [], error: "Internal error" },
+      { status: 500 },
+    );
   }
 }

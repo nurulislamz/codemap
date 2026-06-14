@@ -31,6 +31,14 @@ type DailyAttemptStats = {
   accepted: number;
 };
 
+export type LanguageStats = {
+  language: string;
+  totalAttempts: number;
+  acceptedAttempts: number;
+  successRate: number;
+  averageSuccessfulDurationSeconds: number | null;
+};
+
 export type LeetcodeStats = {
   summary: {
     totalProblems: number;
@@ -48,6 +56,7 @@ export type LeetcodeStats = {
   };
   byDifficulty: Record<Difficulty, DifficultyStats>;
   byPattern: PatternStats[];
+  byLanguage: LanguageStats[];
   consistency: {
     activeDays: number;
     streakDays: number;
@@ -96,6 +105,7 @@ export function buildLeetcodeStats(
     },
     byDifficulty: buildDifficultyStats(problems),
     byPattern: buildPatternStats(problems),
+    byLanguage: buildLanguageStats(attempts),
     consistency: buildConsistencyStats(attempts),
     recentAttempts: attempts
       .toSorted(
@@ -203,6 +213,37 @@ function buildPatternStats(problems: LeetcodeProblemProgressRow[]): PatternStats
       };
     })
     .toSorted((left, right) => right.total - left.total || left.pattern.localeCompare(right.pattern));
+}
+
+export const unrecordedLanguageLabel = "Not recorded";
+
+function buildLanguageStats(attempts: LeetcodeAttemptRow[]): LanguageStats[] {
+  const grouped = new Map<string, LeetcodeAttemptRow[]>();
+
+  for (const attempt of attempts) {
+    const language = attempt.language ?? unrecordedLanguageLabel;
+    grouped.set(language, [...(grouped.get(language) ?? []), attempt]);
+  }
+
+  return Array.from(grouped.entries())
+    .map(([language, languageAttempts]) => {
+      const accepted = languageAttempts.filter((attempt) => attempt.isSuccessful);
+
+      return {
+        language,
+        totalAttempts: languageAttempts.length,
+        acceptedAttempts: accepted.length,
+        successRate: percentage(accepted.length, languageAttempts.length),
+        averageSuccessfulDurationSeconds: averageOrNull(
+          accepted.map((attempt) => attempt.durationSeconds),
+        ),
+      };
+    })
+    .toSorted(
+      (left, right) =>
+        right.totalAttempts - left.totalAttempts ||
+        left.language.localeCompare(right.language),
+    );
 }
 
 function emptyDifficultyStats(): DifficultyStats {

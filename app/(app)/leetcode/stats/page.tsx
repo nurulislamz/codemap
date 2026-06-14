@@ -6,6 +6,7 @@ import {
   toLeetcodeAttemptRows,
 } from "@/lib/leetcode/attempts";
 import { getLeetcodeCatalog } from "@/lib/leetcode/catalog";
+import { getRecentPomodoroSessionsForRequest } from "@/lib/pomodoro/db-server";
 import { LeetcodeStatsClient } from "./stats-client";
 import { Icon, StatCard } from "@/components/shared";
 
@@ -14,9 +15,10 @@ export const dynamic = "force-dynamic";
 export default async function LeetcodeStatsPage() {
   const roadmapCatalog = getRoadmapCatalog();
   const catalog = getLeetcodeCatalog();
-  // Start the attempt-events fetch immediately so it runs in parallel with the
-  // roadmap progress lookups below (async-parallel).
+  // Start the attempt-events and pomodoro fetches immediately so they run in
+  // parallel with the roadmap progress lookups below (async-parallel).
   const attemptEventsPromise = getSortedLeetcodeAttemptEventsForRequest();
+  const pomodoroSessionsPromise = getRecentPomodoroSessionsForRequest();
 
   const totalRoadmapConcepts = roadmapCatalog.reduce(
     (total, roadmap) => total + roadmap.topicCount,
@@ -44,6 +46,7 @@ export default async function LeetcodeStatsPage() {
   }
 
   const attemptEvents = await attemptEventsPromise;
+  const pomodoroSessions = await pomodoroSessionsPromise;
   const problems = Array.from(catalog.problems.values()).flat();
   const attempts = toLeetcodeAttemptRows(
     attemptEvents,
@@ -73,7 +76,11 @@ export default async function LeetcodeStatsPage() {
         />
       </section>
 
-      <LeetcodeStatsClient problems={problems} initialAttempts={attempts} />
+      <LeetcodeStatsClient
+        problems={problems}
+        initialAttempts={attempts}
+        initialPomodoroSessions={pomodoroSessions}
+      />
     </div>
   );
 }

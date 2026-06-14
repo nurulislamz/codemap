@@ -4215,6 +4215,90 @@
           "problemId": "460"
         }
       ]
+    },
+    {
+      "day": 200,
+      "focus": {
+        "pattern": "Blind 75",
+        "subPattern": "Blind 75",
+        "label": "Blind 75 practice"
+      },
+      "estimatedMinutes": 85,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "217"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "190"
+        },
+        {
+          "slot": 3,
+          "role": "stretch",
+          "problemId": "252"
+        }
+      ]
+    },
+    {
+      "day": 201,
+      "focus": {
+        "pattern": "Blind 75",
+        "subPattern": "Blind 75",
+        "label": "Blind 75 practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "128"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "208"
+        }
+      ]
+    },
+    {
+      "day": 202,
+      "focus": {
+        "pattern": "Blind 75",
+        "subPattern": "Blind 75",
+        "label": "Blind 75 practice"
+      },
+      "estimatedMinutes": 90,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "warmup",
+          "problemId": "211"
+        },
+        {
+          "slot": 2,
+          "role": "core",
+          "problemId": "371"
+        }
+      ]
+    },
+    {
+      "day": 203,
+      "focus": {
+        "pattern": "Blind 75",
+        "subPattern": "Blind 75",
+        "label": "Blind 75 practice"
+      },
+      "estimatedMinutes": 45,
+      "tasks": [
+        {
+          "slot": 1,
+          "role": "core",
+          "problemId": "435"
+        }
+      ]
     }
   ]
 }

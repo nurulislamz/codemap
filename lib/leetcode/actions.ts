@@ -12,6 +12,7 @@ export async function saveLeetCodeAttempt(input: SaveLeetcodeAttemptInput): Prom
   status,
   startedAt,
   endedAt,
+  language,
   notes,
   } = input;
   const durationSeconds = Math.max(
@@ -26,7 +27,7 @@ export async function saveLeetCodeAttempt(input: SaveLeetcodeAttemptInput): Prom
     startedAt,
     endedAt,
     durationSeconds,
-    language: null,
+    language: language ?? null,
     failureReason: formatFailureReason(status),
     notes: formatNotes(status, notes),
   }, userId);

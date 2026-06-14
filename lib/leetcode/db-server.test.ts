@@ -53,7 +53,7 @@ describe("leetcode-db-server", () => {
       startedAt: "2026-05-02T10:00:00.000Z",
       endedAt: "2026-05-02T10:12:00.000Z",
       durationSeconds: 720,
-      language: null,
+      language: "TypeScript",
       failureReason: null,
       notes: "Used queue",
     }, "firebase-user-123");
@@ -62,7 +62,31 @@ describe("leetcode-db-server", () => {
     expect(userDoc).toHaveBeenCalledWith("firebase-user-123");
     expect(attemptDoc).toHaveBeenCalledWith("11111111-1111-4111-8111-111111111111");
     expect(setAttempt).toHaveBeenCalledWith(
-      expect.objectContaining({ problemId: "102", notes: "Used queue" }),
+      expect.objectContaining({
+        problemId: "102",
+        language: "TypeScript",
+        notes: "Used queue",
+      }),
+    );
+  });
+
+  it("defaults language to null for attempts saved without one", async () => {
+    const { createLeetCodeAttempt } = await import("./db-server");
+
+    const attempt = await createLeetCodeAttempt({
+      attemptId: "22222222-2222-4222-8222-222222222222",
+      problemId: "102",
+      isSuccessful: true,
+      startedAt: "2026-05-02T10:00:00.000Z",
+      endedAt: "2026-05-02T10:12:00.000Z",
+      durationSeconds: 720,
+      failureReason: null,
+      notes: null,
+    }, "firebase-user-123");
+
+    expect(attempt.language).toBeNull();
+    expect(setAttempt).toHaveBeenCalledWith(
+      expect.objectContaining({ language: null }),
     );
   });
 

@@ -126,6 +126,7 @@ export function LeetcodePracticeProgressClient({
           startedAt: attempt.startedAt,
           endedAt: attempt.endedAt,
           durationSeconds: attempt.durationSeconds,
+          language: attempt.language ?? null,
           notes: attempt.notes,
           failureReason: attempt.status === "timed_out" ? "Time ran out" : null,
         }));

@@ -1,10 +1,13 @@
-import type {
-  LeetcodeAttemptStatus,
-  LeetcodeProblemRow,
-  SaveLeetcodeAttemptInput,
+import {
+  parseLeetcodeLanguage,
+  type LeetcodeAttemptStatus,
+  type LeetcodeLanguage,
+  type LeetcodeProblemRow,
+  type SaveLeetcodeAttemptInput,
 } from "@/lib/leetcode/types";
 
 const localAttemptStorageKey = "codemap.leetcodeAttempts.v1";
+const lastLanguageStorageKey = "codemap.leetcodeLastLanguage.v1";
 
 export type LocalLeetcodeAttempt = SaveLeetcodeAttemptInput & {
   attemptId: string;
@@ -73,6 +76,16 @@ function getLocalStorage() {
   }
 
   return window.localStorage;
+}
+
+export function getLastUsedLeetcodeLanguage(): LeetcodeLanguage | null {
+  return parseLeetcodeLanguage(
+    getLocalStorage()?.getItem(lastLanguageStorageKey) ?? null,
+  );
+}
+
+export function saveLastUsedLeetcodeLanguage(language: LeetcodeLanguage) {
+  getLocalStorage()?.setItem(lastLanguageStorageKey, language);
 }
 
 export function getLatestLocalLeetcodeNotes(problemId: string) {

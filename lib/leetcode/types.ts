@@ -47,6 +47,26 @@ export enum LeetcodeProblemStatusLabel {
   Unattempted = "Unattempted",
 }
 
+export const leetcodeLanguages = [
+  "TypeScript",
+  "JavaScript",
+  "Python",
+  "Java",
+  "C++",
+  "C#",
+  "Go",
+  "Rust",
+  "Other",
+] as const;
+
+export type LeetcodeLanguage = (typeof leetcodeLanguages)[number];
+
+export function parseLeetcodeLanguage(
+  value: string | null | undefined,
+): LeetcodeLanguage | null {
+  return leetcodeLanguages.find((language) => language === value) ?? null;
+}
+
 export type LeetcodeAttemptRow = {
   attemptId: string;
   problemId: string;
@@ -55,6 +75,7 @@ export type LeetcodeAttemptRow = {
   startedAt: string;
   endedAt: string;
   durationSeconds: number;
+  language?: LeetcodeLanguage | null;
   notes?: string | null;
   failureReason?: string | null;
 };
@@ -71,6 +92,7 @@ export type SaveLeetcodeAttemptInput = {
   status: LeetcodeAttemptStatus;
   startedAt: string;
   endedAt: string;
+  language?: LeetcodeLanguage | null;
   notes?: string | null;
   idToken?: string | null;
 };

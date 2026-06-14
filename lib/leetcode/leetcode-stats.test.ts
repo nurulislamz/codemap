@@ -58,6 +58,7 @@ const attempts: LeetcodeAttemptRow[] = [
     startedAt: "2026-04-29T10:00:00.000Z",
     endedAt: "2026-04-29T10:20:00.000Z",
     durationSeconds: 700,
+    language: "TypeScript",
   },
   {
     attemptId: "a2",
@@ -67,6 +68,7 @@ const attempts: LeetcodeAttemptRow[] = [
     startedAt: "2026-04-28T10:00:00.000Z",
     endedAt: "2026-04-28T10:30:00.000Z",
     durationSeconds: 1800,
+    language: "TypeScript",
   },
   {
     attemptId: "a3",
@@ -120,6 +122,27 @@ describe("buildLeetcodeStats", () => {
       { date: "2026-04-28", attempts: 1, accepted: 0 },
       { date: "2026-04-29", attempts: 1, accepted: 1 },
       { date: "2026-04-30", attempts: 1, accepted: 0 },
+    ]);
+  });
+
+  it("groups attempts by language with a bucket for unrecorded ones", () => {
+    const stats = buildLeetcodeStats(problems, attempts);
+
+    expect(stats.byLanguage).toEqual([
+      {
+        language: "TypeScript",
+        totalAttempts: 2,
+        acceptedAttempts: 1,
+        successRate: 50,
+        averageSuccessfulDurationSeconds: 700,
+      },
+      {
+        language: "Not recorded",
+        totalAttempts: 1,
+        acceptedAttempts: 0,
+        successRate: 0,
+        averageSuccessfulDurationSeconds: null,
+      },
     ]);
   });
 });

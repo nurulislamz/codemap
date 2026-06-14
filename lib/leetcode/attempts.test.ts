@@ -17,7 +17,7 @@ describe("leetcode attempts", () => {
         startedAt: "2026-05-06T10:00:00.000Z",
         endedAt: "2026-05-06T10:12:00.000Z",
         durationSeconds: 720,
-        language: null,
+        language: "Python",
         failureReason: null,
         notes: "Used queue",
       },
@@ -34,6 +34,7 @@ describe("leetcode attempts", () => {
         attemptId: "attempt-1",
         problemId: "102",
         problemTitle: "102",
+        language: "Python",
       }),
     ]);
   });

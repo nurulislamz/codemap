@@ -4,10 +4,11 @@ import { getFirestoreDb } from "@/lib/firebase/firestore";
 import {
     leetcodeAttemptEventSchema,
     type LeetCodeAttemptEvent,
+    type LeetCodeAttemptEventInput,
 } from "@/lib/firebase/leetcode";
 
 export async function createLeetCodeAttempt(
-    input: LeetCodeAttemptEvent,
+    input: LeetCodeAttemptEventInput,
     userId: string,
 ): Promise<LeetCodeAttemptEvent> {
     const attempt = leetcodeAttemptEventSchema.parse(input);

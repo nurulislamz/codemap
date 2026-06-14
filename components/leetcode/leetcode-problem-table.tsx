@@ -1119,6 +1119,7 @@ export function LeetcodeProblemTable({
                                       <th>Date</th>
                                       <th>Result</th>
                                       <th>Runtime</th>
+                                      <th>Language</th>
                                       <th>Notes</th>
                                     </tr>
                                   </thead>
@@ -1143,6 +1144,9 @@ export function LeetcodeProblemTable({
                                           </span>
                                         </td>
                                         <td>{formatSecondsDuration(attempt.durationSeconds)}</td>
+                                        <td className="text-slate-400">
+                                          {attempt.language || "-"}
+                                        </td>
                                         <td className="max-w-xl text-slate-400">
                                           {attempt.notes || "-"}
                                         </td>

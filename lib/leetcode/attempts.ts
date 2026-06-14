@@ -78,6 +78,7 @@ export function toLeetcodeAttemptRows(
     startedAt: attempt.startedAt,
     endedAt: attempt.endedAt,
     durationSeconds: attempt.durationSeconds,
+    language: attempt.language,
     notes: attempt.notes,
     failureReason: attempt.failureReason,
   }));
