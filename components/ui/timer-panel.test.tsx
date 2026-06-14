@@ -46,6 +46,12 @@ describe("TimerPanel", () => {
       />,
     );
 
+    // The first real reading is deferred off the synchronous effect body via
+    // setTimeout(0); flush it before asserting.
+    act(() => {
+      vi.advanceTimersByTime(0);
+    });
+
     expect(screen.getByLabelText("Warmup remaining")).toHaveTextContent("0:30");
   });
 
