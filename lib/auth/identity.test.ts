@@ -19,13 +19,11 @@ vi.mock("next/headers", () => ({
 }));
 
 describe("getRequestUserId", () => {
-  const originalNodeEnv = process.env.NODE_ENV;
-
   afterEach(() => {
     vi.resetModules();
     vi.clearAllMocks();
     requestHeaders.clear();
-    process.env.NODE_ENV = originalNodeEnv;
+    vi.unstubAllEnvs();
     delete process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID;
   });
 
