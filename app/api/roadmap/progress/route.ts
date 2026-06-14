@@ -26,9 +26,16 @@ export async function GET(request: Request) {
     return NextResponse.json({ progress });
   } catch (error) {
     if (error instanceof UnauthorizedError) {
-      return NextResponse.json({ progress: null });
+      return NextResponse.json(
+        { progress: null, error: "Unauthorized" },
+        { status: 401 },
+      );
     }
 
-    throw error;
+    console.error("Failed to load roadmap topic progress", error);
+    return NextResponse.json(
+      { progress: null, error: "Internal error" },
+      { status: 500 },
+    );
   }
 }

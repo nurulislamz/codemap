@@ -167,16 +167,6 @@ export function getRoadmapBySlug(slug: string): RoadmapDetail | null {
   };
 }
 
-export function getRoadmapTopic(
-  roadmap: RoadmapDetail,
-  topicSlug: string | null | undefined,
-): RoadmapTopic {
-  return (
-    roadmap.topics.find((topic) => topic.slug === topicSlug) ??
-    roadmap.topics[0]
-  );
-}
-
 function normalizeRoadmapResourceUrl(url: string) {
   if (url.startsWith("/")) {
     return `https://roadmap.sh${url}`;

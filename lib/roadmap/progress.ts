@@ -2,18 +2,16 @@ import "server-only";
 
 import { z } from "zod";
 import { getFirestoreDb } from "@/lib/firebase/firestore";
+import {
+  roadmapProgressDocumentId,
+  type RoadmapTopicProgress,
+  type RoadmapTopicProgressInput,
+} from "@/lib/roadmap/progress-shared";
 
-export type RoadmapTopicProgressInput = {
-  roadmapSlug: string;
-  topicSlug: string;
-  learned: boolean;
-  notes: string;
-  links: string[];
-};
-
-export type RoadmapTopicProgress = RoadmapTopicProgressInput & {
-  updatedAt?: string;
-};
+export type {
+  RoadmapTopicProgress,
+  RoadmapTopicProgressInput,
+} from "@/lib/roadmap/progress-shared";
 
 const roadmapTopicProgressInputSchema = z.object({
   roadmapSlug: z.string().min(1).max(80),
@@ -84,10 +82,6 @@ function getRoadmapProgressCollection(userId: string) {
     .collection("users")
     .doc(userId)
     .collection("roadmapProgress");
-}
-
-function roadmapProgressDocumentId(roadmapSlug: string, topicSlug: string) {
-  return `${roadmapSlug}__${topicSlug}`;
 }
 
 function isValidUrl(value: string) {

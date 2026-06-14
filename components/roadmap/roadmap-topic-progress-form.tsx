@@ -1,9 +1,13 @@
 "use client";
 
-import { useEffect, useState, useTransition } from "react";
+import { useState, useTransition } from "react";
 import { useAuth } from "@/components/auth/auth-provider";
 import type { SaveRoadmapProgressInput } from "@/lib/roadmap/actions";
-import type { RoadmapTopicProgress } from "@/lib/roadmap/progress";
+import {
+  writeLocalProgress,
+  type RoadmapTopicProgress,
+} from "@/lib/roadmap/progress-shared";
+import { useRoadmapTopicProgress } from "@/lib/roadmap/use-progress";
 
 type RoadmapTopicProgressFormProps = {
   roadmapSlug: string;
@@ -13,10 +17,6 @@ type RoadmapTopicProgressFormProps = {
   onSaved?: (progress: RoadmapTopicProgress) => void;
 };
 
-type ProgressResponse = {
-  progress?: RoadmapTopicProgress | null;
-};
-
 export function RoadmapTopicProgressForm({
   roadmapSlug,
   topicSlug,
@@ -24,66 +24,29 @@ export function RoadmapTopicProgressForm({
   saveProgressAction,
   onSaved,
 }: RoadmapTopicProgressFormProps) {
-  const { status: authStatus, user, getIdToken } = useAuth();
+  const { status: authStatus, getIdToken } = useAuth();
+  const savedProgress = useRoadmapTopicProgress(
+    roadmapSlug,
+    topicSlug,
+    initialProgress,
+  );
   const [learned, setLearned] = useState(initialProgress?.learned ?? false);
   const [notes, setNotes] = useState(initialProgress?.notes ?? "");
   const [links, setLinks] = useState(initialProgress?.links ?? []);
   const [message, setMessage] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
 
-  useEffect(() => {
-    if (authStatus === "loading") {
-      return;
+  // Sync form fields when loaded progress arrives, as a render-phase
+  // derivation rather than an effect (avoids a cascading render).
+  const [appliedProgress, setAppliedProgress] = useState(initialProgress);
+  if (savedProgress !== appliedProgress) {
+    setAppliedProgress(savedProgress);
+    if (savedProgress) {
+      setLearned(savedProgress.learned);
+      setNotes(savedProgress.notes);
+      setLinks(savedProgress.links);
     }
-
-    let cancelled = false;
-
-    async function loadProgress() {
-      if (authStatus === "signed-in" && user) {
-        const idToken = await getIdToken();
-        const response = await fetch(
-          `/api/roadmap/progress?roadmap=${encodeURIComponent(roadmapSlug)}&topic=${encodeURIComponent(topicSlug)}`,
-          {
-            cache: "no-store",
-            headers: idToken ? { authorization: `Bearer ${idToken}` } : {},
-          },
-        );
-
-        if (!response.ok || cancelled) {
-          return;
-        }
-
-        const data = (await response.json()) as ProgressResponse;
-
-        if (data.progress) {
-          setLearned(data.progress.learned);
-          setNotes(data.progress.notes);
-          setLinks(data.progress.links);
-        }
-        return;
-      }
-
-      const saved = window.localStorage.getItem(localProgressKey(roadmapSlug, topicSlug));
-
-      if (!saved || cancelled) {
-        return;
-      }
-
-      try {
-        const progress = JSON.parse(saved) as RoadmapTopicProgress;
-        setLearned(progress.learned);
-        setNotes(progress.notes);
-        setLinks(progress.links);
-      } catch {
-        window.localStorage.removeItem(localProgressKey(roadmapSlug, topicSlug));
-      }
-    }
-
-    void loadProgress();
-    return () => {
-      cancelled = true;
-    };
-  }, [authStatus, getIdToken, roadmapSlug, topicSlug, user]);
+  }
 
   function saveProgress() {
     setMessage(null);
@@ -110,10 +73,7 @@ export function RoadmapTopicProgressForm({
         return;
       }
 
-      window.localStorage.setItem(
-        localProgressKey(roadmapSlug, topicSlug),
-        JSON.stringify(progress),
-      );
+      writeLocalProgress(progress);
       setMessage("Saved locally.");
       onSaved?.({ ...progress, updatedAt: new Date().toISOString() });
     });
@@ -153,8 +113,4 @@ export function RoadmapTopicProgressForm({
       </div>
     </form>
   );
-}
-
-function localProgressKey(roadmapSlug: string, topicSlug: string) {
-  return `codemap:roadmap-progress:${roadmapSlug}:${topicSlug}`;
 }

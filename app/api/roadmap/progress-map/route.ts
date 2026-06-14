@@ -19,9 +19,16 @@ export async function GET(request: Request) {
     return NextResponse.json({ learned });
   } catch (error) {
     if (error instanceof UnauthorizedError) {
-      return NextResponse.json({ learned: {} });
+      return NextResponse.json(
+        { learned: {}, error: "Unauthorized" },
+        { status: 401 },
+      );
     }
 
-    throw error;
+    console.error("Failed to load roadmap learned map", error);
+    return NextResponse.json(
+      { learned: {}, error: "Internal error" },
+      { status: 500 },
+    );
   }
 }

@@ -2,10 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { RoadmapDetail } from "@/lib/roadmap/catalog";
-import { useAuth } from "@/components/auth/auth-provider";
 import { RoadmapTopicProgressForm } from "@/components/roadmap/roadmap-topic-progress-form";
-import type { RoadmapTopicProgress } from "@/lib/roadmap/progress";
 import type { SaveRoadmapProgressInput } from "@/lib/roadmap/actions";
+import { useRoadmapLearnedMap } from "@/lib/roadmap/use-progress";
 import { AppPanel, Icon } from "@/components/shared";
 
 type RoadmapConceptsModalProps = {
@@ -15,25 +14,21 @@ type RoadmapConceptsModalProps = {
   saveProgressAction: (input: SaveRoadmapProgressInput) => Promise<void>;
 };
 
-type LearnedMapResponse = {
-  learned?: Record<string, boolean>;
-};
-
 export function RoadmapConceptsModal({
   roadmap,
   initialSelectedTopicSlug = null,
   initialLearned = {},
   saveProgressAction,
 }: RoadmapConceptsModalProps) {
-  const { status: authStatus, user, getIdToken } = useAuth();
   const [selectedTopicSlug, setSelectedTopicSlug] = useState<string | null>(
     initialSelectedTopicSlug,
   );
   const [isOpen, setIsOpen] = useState(false);
-  // Seed from the server-computed learned map so first paint matches the stat
-  // cards; the client fetch below only refreshes it for signed-in users.
-  const [learnedByTopic, setLearnedByTopic] =
-    useState<Record<string, boolean>>(initialLearned);
+  const { learnedByTopic, markSaved } = useRoadmapLearnedMap(
+    roadmap.slug,
+    roadmap.topics,
+    initialLearned,
+  );
   const [collapsedTopicSlugs, setCollapsedTopicSlugs] = useState<Record<string, boolean>>(
     () =>
       Object.fromEntries(
@@ -51,51 +46,6 @@ export function RoadmapConceptsModal({
   const hasCollapsedGroup = roadmap.topicGroups.some(
     (group) => collapsedTopicSlugs[group.topic.slug] === true,
   );
-
-  useEffect(() => {
-    if (authStatus !== "signed-in" || !user) {
-      const learned: Record<string, boolean> = {};
-
-      roadmap.topics.forEach((topic) => {
-        const saved = window.localStorage.getItem(localProgressKey(roadmap.slug, topic.slug));
-        if (!saved) return;
-        try {
-          const parsed = JSON.parse(saved) as RoadmapTopicProgress;
-          learned[topic.slug] = Boolean(parsed.learned);
-        } catch {
-          window.localStorage.removeItem(localProgressKey(roadmap.slug, topic.slug));
-        }
-      });
-
-      const timeoutId = window.setTimeout(() => setLearnedByTopic(learned), 0);
-      return () => window.clearTimeout(timeoutId);
-    }
-
-    let cancelled = false;
-
-    async function loadLearned() {
-      const idToken = await getIdToken();
-      const response = await fetch(
-        `/api/roadmap/progress-map?roadmap=${encodeURIComponent(roadmap.slug)}`,
-        {
-          cache: "no-store",
-          headers: idToken ? { authorization: `Bearer ${idToken}` } : {},
-        },
-      );
-
-      if (!response.ok || cancelled) {
-        return;
-      }
-
-      const data = (await response.json()) as LearnedMapResponse;
-      setLearnedByTopic(data.learned ?? {});
-    }
-
-    void loadLearned();
-    return () => {
-      cancelled = true;
-    };
-  }, [authStatus, getIdToken, roadmap.slug, roadmap.topics, user]);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -117,13 +67,6 @@ export function RoadmapConceptsModal({
     const url = new URL(window.location.href);
     url.searchParams.set("topic", topicSlug);
     window.history.pushState(null, "", url.toString());
-  }
-
-  function markSaved(progress: RoadmapTopicProgress) {
-    setLearnedByTopic((current) => ({
-      ...current,
-      [progress.topicSlug]: progress.learned,
-    }));
   }
 
   function close() {
@@ -445,8 +388,4 @@ export function RoadmapConceptsModal({
       ) : null}
     </>
   );
-}
-
-function localProgressKey(roadmapSlug: string, topicSlug: string) {
-  return `codemap:roadmap-progress:${roadmapSlug}:${topicSlug}`;
 }
