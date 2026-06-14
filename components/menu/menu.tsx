@@ -12,6 +12,8 @@ const navItems = [
   { href: "/leetcode", label: "LeetCode" },
   { href: "/roadmap", label: "Roadmap" },
   { href: "/system-design", label: "System Design" },
+  { href: "/pomodoro", label: "Pomodoro" },
+  { href: "/projects", label: "Projects" },
 ];
 
 const leetcodeNavItems = [
