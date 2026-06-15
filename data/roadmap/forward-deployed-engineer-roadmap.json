@@ -1,0 +1,728 @@
+{
+  "title": "Forward Deployed Engineer",
+  "summary": "Step-by-step guide to becoming a Forward Deployed Engineer in 2026",
+  "url": "https://roadmap.sh/forward-deployed-engineer",
+  "order": [
+    "introduction",
+    "rolesResponsabilities",
+    "fromXToFde",
+    "frontendSkills",
+    "frontendRoadmap",
+    "backendRoadmap",
+    "backendSkills",
+    "linuxRoadmap",
+    "linuxSkills",
+    "dsaRoadmap",
+    "dsaSystemDesign",
+    "systemDesignRoadmap",
+    "aiEngineerRoadmap",
+    "aiEngineeringSkills",
+    "devopsRoadmap",
+    "devopsSkills",
+    "customerDeliveryFieldSkills",
+    "requirementsGathering",
+    "technicalScopingSequencing",
+    "enterpriseWorkflow",
+    "tradeoffsScopeSpeedQuality",
+    "discoveryScoping",
+    "roiAiImpact",
+    "businessAcumen",
+    "stakeholderManagement",
+    "technicalWriting",
+    "communication",
+    "productFeedbackLoop",
+    "continueLearningWithFollowingRelevantTracks"
+  ],
+  "topics": {
+    "introduction": {
+      "title": "Introduction",
+      "sourceId": "PBtnaTE_5AMOa5mxbhoT2",
+      "type": "topic",
+      "order": 1,
+      "summary": "A Forward Deployed Engineer is a software engineer who works directly inside a customer's environment to build, deploy, and stabilize AI systems. The role originated at Palantir, where engineers called Deltas would embed with clients, sometimes on military bases, to ship code overnight based on feedback from the field that same day. That same idea is now at the center of how companies like OpenAI and Anthropic are bringing AI into large enterprises. The job requires technical depth, the ability to read an unfamiliar codebase quickly, and the communication skills to explain what AI can and cannot do to a non-technical decision maker.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "orward deployed engineer is AI\u2019s hottest job",
+          "url": "https://thenewstack.io/forward-deployed-engineer-fde-openai-google/"
+        },
+        {
+          "type": "article",
+          "title": "Forward-deployed engineer: The complete guide",
+          "url": "https://www.rocketlane.com/blogs/forward-deployed-engineer"
+        }
+      ],
+      "parents": [
+        "forward-deployed-engineer"
+      ],
+      "children": [
+        "rolesResponsabilities",
+        "fromXToFde",
+        "frontendSkills"
+      ]
+    },
+    "rolesResponsabilities": {
+      "title": "Roles & Responsabilities",
+      "sourceId": "YNaf7swqsvYaXRK6uevdv",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "The FDE job has three phases: audit, evals, and deployment. In the audit phase, you embed with different teams inside the customer's organization, map their workflows, identify bottlenecks, and decide where AI can create real value and where it cannot. In the evals phase, you build systems to measure whether the AI is actually working, not just whether it produces an answer, but whether it reasons through problems the way a skilled human would. In the deployment phase, you ship the system into production, starting with the smallest possible unit of autonomy and layering on capabilities only after each step is proven to work.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Forward-deployed engineer: The complete guide",
+          "url": "https://www.rocketlane.com/blogs/forward-deployed-engineer"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "fromXToFde": {
+      "title": "From X to FDE",
+      "sourceId": "XjxnVjO0fR2XNzBUSzA4L",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "Three backgrounds tend to transition well into the FDE role: software engineers, consultants, and product managers. Software engineers already have the technical foundation but often need to develop the ability to communicate AI tradeoffs to non-technical stakeholders and build a portfolio that shows they can own a full deployment, not just write code. Consultants and PMs can already translate data into business outcomes, which is half the job, but need to close the gap on engineering by building real agents, RAG pipelines, and eval frameworks from scratch.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Definitive Guide to Forward Deployed Engineer Interviews in 2026",
+          "url": "https://www.sundeepteki.org/advice/the-definitive-guide-to-forward-deployed-engineer-interviews-in-2026"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "frontendSkills": {
+      "title": "Frontend Skills",
+      "sourceId": "CNTtsgHntKdMsM7FgrrB8",
+      "type": "topic",
+      "order": 4,
+      "summary": "Frontend development refers to the part of web development concerned with what users see and interact with in a browser. It covers HTML for structure, CSS for styling, and JavaScript for interactivity. FDEs who can build functional frontends are more self-sufficient in customer engagements, able to deliver end-to-end demos and working prototypes without depending on a separate frontend team.",
+      "video": {
+        "title": "Frontend web development - a complete overview",
+        "url": "https://www.youtube.com/watch?v=WG5ikvJ2TKA"
+      },
+      "articles": [
+        {
+          "type": "book",
+          "title": "Frontend Development Handbook",
+          "url": "https://github.com/FrontendMasters/front-end-handbook-2019/blob/master/exports/Front-end%20Developer%20Handbook%202019.pdf"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": [
+        "frontendRoadmap"
+      ]
+    },
+    "frontendRoadmap": {
+      "title": "Frontend Roadmap",
+      "sourceId": "cb67_B_KzR89lpYM292Q1",
+      "type": "button",
+      "order": 5,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "frontendSkills"
+      ],
+      "children": []
+    },
+    "backendRoadmap": {
+      "title": "Backend Roadmap",
+      "sourceId": "j8UBiuflu5tWiOWDJnA-U",
+      "type": "button",
+      "order": 8,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "backendSkills"
+      ],
+      "children": []
+    },
+    "backendSkills": {
+      "title": "Backend Skills",
+      "sourceId": "kK16boEALRDQdRmFRphso",
+      "type": "topic",
+      "order": 9,
+      "summary": "Backend development refers to the server-side logic of a web application, including handling requests, running business logic, interacting with databases, and returning responses. Backend systems are typically built with Python, Node.js, Java, or Go, connected to databases and external services. FDEs who can build solid backend systems can own the full delivery of a feature rather than handing off at the API boundary.",
+      "video": {
+        "title": "How The Backend Works",
+        "url": "https://www.youtube.com/watch?v=4r6WdaY3SOA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is backend? A comprehensive intro to server-side development",
+          "url": "https://alokai.com/blog/what-is-backend"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "backendRoadmap"
+      ]
+    },
+    "linuxRoadmap": {
+      "title": "Linux Roadmap",
+      "sourceId": "snDv-9nuGy5mkeOl-_S42",
+      "type": "button",
+      "order": 11,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "linuxSkills"
+      ],
+      "children": []
+    },
+    "linuxSkills": {
+      "title": "Linux Skills",
+      "sourceId": "CruESa0Ir9fSbxyX3ny13",
+      "type": "topic",
+      "order": 12,
+      "summary": "Linux is an open-source operating system used widely in servers, cloud environments, and developer workstations. Most production software runs on Linux, so being comfortable navigating a Linux system, managing processes, reading logs, and configuring services is a practical necessity for anyone building and deploying in real customer environments.",
+      "video": {
+        "title": "Linux Fundamentals",
+        "url": "ttps://www.youtube.com/watch?v=kPylihJRG70"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Linux for Noobs",
+          "url": "https://labex.io/courses/linux-for-noobs"
+        },
+        {
+          "type": "article",
+          "title": "Practice Linux Fundamentals",
+          "url": "https://labex.io/linuxjourney"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "linuxRoadmap",
+        "dsaSystemDesign"
+      ]
+    },
+    "dsaRoadmap": {
+      "title": "DSA Roadmap",
+      "sourceId": "cm5mtbXDu0_LRGHJC49cd",
+      "type": "button",
+      "order": 13,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "dsaSystemDesign"
+      ]
+    },
+    "dsaSystemDesign": {
+      "title": "DSA & System Design",
+      "sourceId": "aqrK4e6B8LFvFimKoqCNF",
+      "type": "topic",
+      "order": 14,
+      "summary": "Data structures are ways of organizing data in memory, such as arrays, linked lists, trees, graphs, and hash maps. Algorithms are step-by-step procedures for solving problems, like sorting, searching, or traversal. Knowing these well means being able to evaluate performance characteristics of code, debug inefficiencies in customer systems, and reason clearly about solutions to technical problems.",
+      "video": {
+        "title": "What Are Data Structures?",
+        "url": "https://www.youtube.com/watch?v=bum_19loj9A"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Data Structures & Algorithms Roadmap",
+          "url": "https://roadmap.sh/datastructures-and-algorithms"
+        },
+        {
+          "type": "article",
+          "title": "Data Structures and Algorithms (DSA) Tutorial",
+          "url": "https://www.tutorialspoint.com/data_structures_algorithms/index.htm"
+        }
+      ],
+      "parents": [
+        "linuxSkills",
+        "dsaRoadmap"
+      ],
+      "children": [
+        "aiEngineeringSkills",
+        "systemDesignRoadmap"
+      ]
+    },
+    "systemDesignRoadmap": {
+      "title": "System Design Roadmap",
+      "sourceId": "lN5Z_UILjs_ahEwsBcjXZ",
+      "type": "button",
+      "order": 15,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "dsaSystemDesign"
+      ],
+      "children": []
+    },
+    "aiEngineerRoadmap": {
+      "title": "AI Engineer Roadmap",
+      "sourceId": "90TU702898q1eQ9X-tVfd",
+      "type": "button",
+      "order": 17,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "aiEngineeringSkills"
+      ],
+      "children": []
+    },
+    "aiEngineeringSkills": {
+      "title": "AI Engineering Skills",
+      "sourceId": "tTTDizQfuACFUoAAsTCt1",
+      "type": "topic",
+      "order": 18,
+      "summary": "AI Engineering",
+      "video": {
+        "title": "AI, Machine Learning, Deep Learning and Generative AI Explained",
+        "url": "https://www.youtube.com/watch?v=qYNweeDHiyU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Is an AI Engineer? (And How to Become One)",
+          "url": "https://www.coursera.org/articles/ai-engineer"
+        }
+      ],
+      "parents": [
+        "dsaSystemDesign"
+      ],
+      "children": [
+        "aiEngineerRoadmap",
+        "devopsSkills"
+      ]
+    },
+    "devopsRoadmap": {
+      "title": "DevOps Roadmap",
+      "sourceId": "wGWfChyM1wjKO6e--NhC3",
+      "type": "button",
+      "order": 19,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "devopsSkills"
+      ],
+      "children": []
+    },
+    "devopsSkills": {
+      "title": "DevOps Skills",
+      "sourceId": "LRBwP7EQj4byox7yKdPAj",
+      "type": "topic",
+      "order": 20,
+      "summary": "DevOps is the practice of automating and streamlining how software is built, tested, and deployed. A forward-deployed engineer who knows DevOps can own the full deployment lifecycle, from spinning up infrastructure to shipping a containerized agent into a client's cloud environment, without depending on another team to get there.",
+      "video": {
+        "title": "DevOps In 5 Minutes",
+        "url": "https://www.youtube.com/watch?v=Xrgk023l4lI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Is DevOps? A Guide to the Basics",
+          "url": "https://www.coursera.org/articles/what-is-devops"
+        }
+      ],
+      "parents": [
+        "aiEngineeringSkills"
+      ],
+      "children": [
+        "devopsRoadmap",
+        "customerDeliveryFieldSkills"
+      ]
+    },
+    "customerDeliveryFieldSkills": {
+      "title": "Customer Delivery & Field Skills",
+      "sourceId": "XMksIsrFfHP899uom5BQJ",
+      "type": "label",
+      "order": 22,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "devopsSkills"
+      ],
+      "children": [
+        "discoveryScoping"
+      ]
+    },
+    "requirementsGathering": {
+      "title": "Requirements Gathering",
+      "sourceId": "s4Kooj99igkE02P-D-dAU",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "Project requirements come from observation as much as from conversation. You watch how teams actually work, not just how they describe their work, because those two things are often different. The goal is to surface the undocumented workflow, the data source people actually trust, and the edge cases that would break an agent in its first week of production. Written requirements are useful, but the real requirements live in the room with the people doing the work.",
+      "video": {
+        "title": "Requirement Gathering Techniques For A Business Analyst",
+        "url": "https://www.youtube.com/watch?v=8EBWxW5Cn1g"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Requirements Gathering in Business Analysis",
+          "url": "https://www.coursera.org/learn/requirements-gathering-in-business-analysis"
+        },
+        {
+          "type": "article",
+          "title": "Requirements Gathering in Software Engineering",
+          "url": "https://www.jamasoftware.com/requirements-management-guide/requirements-gathering-and-management-processes/what-is-requirements-gathering/"
+        }
+      ],
+      "parents": [
+        "discoveryScoping"
+      ],
+      "children": []
+    },
+    "technicalScopingSequencing": {
+      "title": "Technical Scoping & Sequencing",
+      "sourceId": "KqQHfy1Z8w-v8p73QkvG5",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "Technical scoping involves breaking a project into discrete tasks, estimating their complexity, and identifying dependencies. Sequencing means ordering those tasks logically, starting with the highest-risk or most uncertain parts. A well-scoped and sequenced project is easier to track and deliver on time, and gives the customer visibility into what is being built and in what order.",
+      "video": {
+        "title": "Project Scope Statement [IN 4 EASY STEPS]",
+        "url": "https://www.youtube.com/watch?v=QDLk2QIuJkg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to effectively scope your software projects",
+          "url": "https://medium.com/free-code-camp/how-to-effectively-scope-your-software-projects-from-planning-to-execution-e96cbcac54b9"
+        }
+      ],
+      "parents": [
+        "discoveryScoping"
+      ],
+      "children": []
+    },
+    "enterpriseWorkflow": {
+      "title": "Enterprise Workflow",
+      "sourceId": "c8dBwWaKLiW6X2HWfmVJt",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "Enterprise workflows are the processes and systems through which large organizations operate, including approvals, handoffs, integrations with existing tools, and compliance requirements. Building for enterprise environments requires understanding these workflows and designing solutions that fit within them.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is enterprise workflow management?",
+          "url": "https://www.manageengine.com/appcreator/enterprise-workflow-management.html"
+        }
+      ],
+      "parents": [
+        "businessAcumen"
+      ],
+      "children": []
+    },
+    "tradeoffsScopeSpeedQuality": {
+      "title": "Tradeoffs: Scope, Speed, Quality",
+      "sourceId": "eKUy2q5cGskmcg-sAAtYW",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "Every project involves tradeoffs between scope (how much is built), speed (how fast it is delivered), and quality (how well it holds up over time). Reducing scope can speed things up without sacrificing quality. Cutting corners on quality can speed things up in the short term but creates problems later. FDEs need to understand and communicate these tradeoffs clearly, helping customers make informed decisions rather than just agreeing to everything and delivering less than expected.",
+      "video": {
+        "title": "What is the Iron Triangle? Time, Cost, Quality, Scope?",
+        "url": "https://www.youtube.com/watch?v=JHSHOAfV-uw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Project management triangle: Triple constraint guide",
+          "url": "https://asana.com/resources/project-management-triangle"
+        }
+      ],
+      "parents": [
+        "discoveryScoping"
+      ],
+      "children": []
+    },
+    "discoveryScoping": {
+      "title": "Discovery & Scoping",
+      "sourceId": "hO7BCDFmbvQVcgM7W2t9S",
+      "type": "topic",
+      "order": 27,
+      "summary": "Discovery and scoping is the phase of a customer engagement where the team identifies the problem to solve, understands the current state of the customer's systems and processes, and defines what success looks like. It involves asking the right questions, identifying constraints, and setting realistic expectations before any building begins. Getting this phase right determines whether the rest of the engagement goes smoothly or runs into avoidable problems.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "AI Techniques (Production): Use Case Discovery & System Scoping",
+          "url": "https://academy.openai.com/public/clubs/builders-etkn1/videos/ai-techniques-production-use-case-discovery-and-system-scoping-2025-12-11"
+        },
+        {
+          "type": "article",
+          "title": "AI Discovery & Scoping Session",
+          "url": "https://www.elevatecorporatetraining.com.au/ai-discovery-scoping/"
+        }
+      ],
+      "parents": [
+        "customerDeliveryFieldSkills"
+      ],
+      "children": [
+        "requirementsGathering",
+        "technicalScopingSequencing",
+        "tradeoffsScopeSpeedQuality"
+      ]
+    },
+    "roiAiImpact": {
+      "title": "ROI & AI Impact",
+      "sourceId": "kyHwTMFBQxbHrGBcv3q0O",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "Understanding return on investment (ROI) for AI projects means being able to quantify how an AI system creates value, whether through cost savings, productivity improvements, revenue growth, or risk reduction. It also means being honest about what AI can realistically deliver. FDEs who can frame AI work in business terms help customers build confidence in the investment and avoid overselling what the technology can do.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to maximize AI ROI in 2026",
+          "url": "https://www.ibm.com/think/insights/ai-roi"
+        },
+        {
+          "type": "article",
+          "title": "What is ROI and How to Calculate Return on Investment",
+          "url": "https://www.esade.edu/beyond/en/what-is-roi-and-how-to-calculate-return-on-investment/"
+        }
+      ],
+      "parents": [
+        "businessAcumen"
+      ],
+      "children": []
+    },
+    "businessAcumen": {
+      "title": "Business Acumen",
+      "sourceId": "bE7j2U28V8Vf9OKHBqLwW",
+      "type": "topic",
+      "order": 29,
+      "summary": "Business acumen is the ability to understand how an organization operates, what its priorities are, how it makes money, and where technology can create real value. Being able to connect engineering decisions to business outcomes is what makes FDEs different from traditional software engineers.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "enterpriseWorkflow",
+        "roiAiImpact",
+        "stakeholderManagement",
+        "productFeedbackLoop"
+      ]
+    },
+    "stakeholderManagement": {
+      "title": "Stakeholder Management",
+      "sourceId": "L76T2X7AFpVtpMF9CjBJo",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "Stakeholder management in FDE work is less about keeping people happy and more about making sure the right people know what is happening before it becomes a problem. This means identifying who the skeptics are early, giving them the evidence they need to trust the system (usually evals), managing expectations before a demo rather than after it goes wrong, and escalating blockers fast rather than letting them quietly slow the engagement. The technical work can be excellent, and the engagement can still fail if the people who need to approve, adopt, or fund the system never get bought in.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Stakeholder Management Guide: Definitions, Processes & More",
+          "url": "https://simplystakeholders.com/resources/guides/stakeholder-management/"
+        }
+      ],
+      "parents": [
+        "businessAcumen"
+      ],
+      "children": []
+    },
+    "technicalWriting": {
+      "title": "Technical Writing",
+      "sourceId": "ir0uv9E3flgBz_cHntOf4",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "Technical writing is the practice of producing clear, accurate, and useful documentation for software systems. This includes API docs, architecture decision records, runbooks, onboarding guides, and design documents. Technical writing is especially important because good documentation is often what allows a customer to operate and extend a system after the engagement ends, without needing to call the FDE back for every question.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Technical Writer Roadmap",
+          "url": "https://roadmap.sh/technical-writer"
+        }
+      ],
+      "parents": [
+        "communication"
+      ],
+      "children": []
+    },
+    "communication": {
+      "title": "Communication",
+      "sourceId": "iaNbLDFrEDYEKwpkGFWts",
+      "type": "topic",
+      "order": 32,
+      "summary": "If you cannot explain what AI can and cannot do to a non-technical VP, you cannot be an FDE. Communication in this role is about translating between two different worlds: the technical reality of what you are building and the business reality of what the customer needs to justify the investment. That means being able to speak about token costs and latency in the same conversation where you are explaining ROI to an executive. It also means knowing when to say AI is not the right answer.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "technicalWriting",
+        "continueLearningWithFollowingRelevantTracks"
+      ]
+    },
+    "productFeedbackLoop": {
+      "title": "Product Feedback Loop",
+      "sourceId": "U2mQX5_XwmW74HFEM1Uzw",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "A product feedback loop is the cycle of shipping something, collecting feedback from users or stakeholders, and using that input to improve future iterations. This usually means working closely with the customer to observe how the delivered product is actually being used, identifying gaps between expectation and reality, and feeding those observations back into the build process while still on the engagement.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "businessAcumen"
+      ],
+      "children": []
+    },
+    "continueLearningWithFollowingRelevantTracks": {
+      "title": "Continue Learning with following relevant tracks",
+      "sourceId": "sVXZrBCsiSzWBBYWTm-nQ",
+      "type": "paragraph",
+      "order": 34,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "communication"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "customerDeliveryFieldSkills",
+      "to": "discoveryScoping",
+      "style": "solid"
+    },
+    {
+      "from": "discoveryScoping",
+      "to": "requirementsGathering",
+      "style": "dashed"
+    },
+    {
+      "from": "discoveryScoping",
+      "to": "technicalScopingSequencing",
+      "style": "dashed"
+    },
+    {
+      "from": "discoveryScoping",
+      "to": "tradeoffsScopeSpeedQuality",
+      "style": "dashed"
+    },
+    {
+      "from": "forward-deployed-engineer",
+      "to": "introduction",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "rolesResponsabilities",
+      "style": "dashed"
+    },
+    {
+      "from": "businessAcumen",
+      "to": "enterpriseWorkflow",
+      "style": "dashed"
+    },
+    {
+      "from": "businessAcumen",
+      "to": "roiAiImpact",
+      "style": "dashed"
+    },
+    {
+      "from": "businessAcumen",
+      "to": "stakeholderManagement",
+      "style": "dashed"
+    },
+    {
+      "from": "businessAcumen",
+      "to": "productFeedbackLoop",
+      "style": "dashed"
+    },
+    {
+      "from": "communication",
+      "to": "technicalWriting",
+      "style": "dashed"
+    },
+    {
+      "from": "communication",
+      "to": "continueLearningWithFollowingRelevantTracks",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "fromXToFde",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "frontendSkills",
+      "style": "solid"
+    },
+    {
+      "from": "frontendSkills",
+      "to": "frontendRoadmap",
+      "style": "dashed"
+    },
+    {
+      "from": "backendSkills",
+      "to": "backendRoadmap",
+      "style": "dashed"
+    },
+    {
+      "from": "linuxSkills",
+      "to": "linuxRoadmap",
+      "style": "dashed"
+    },
+    {
+      "from": "aiEngineeringSkills",
+      "to": "aiEngineerRoadmap",
+      "style": "dashed"
+    },
+    {
+      "from": "aiEngineeringSkills",
+      "to": "devopsSkills",
+      "style": "solid"
+    },
+    {
+      "from": "devopsSkills",
+      "to": "devopsRoadmap",
+      "style": "dashed"
+    },
+    {
+      "from": "devopsSkills",
+      "to": "customerDeliveryFieldSkills",
+      "style": "solid"
+    },
+    {
+      "from": "linuxSkills",
+      "to": "dsaSystemDesign",
+      "style": "solid"
+    },
+    {
+      "from": "dsaSystemDesign",
+      "to": "aiEngineeringSkills",
+      "style": "solid"
+    },
+    {
+      "from": "dsaRoadmap",
+      "to": "dsaSystemDesign",
+      "style": "dashed"
+    },
+    {
+      "from": "dsaSystemDesign",
+      "to": "systemDesignRoadmap",
+      "style": "dashed"
+    }
+  ]
+}

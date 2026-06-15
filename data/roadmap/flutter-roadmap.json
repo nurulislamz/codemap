@@ -1,0 +1,3486 @@
+{
+  "title": "Flutter Developer",
+  "summary": "Step by step guide to becoming a Flutter developer in 2026",
+  "url": "https://roadmap.sh/flutter",
+  "order": [
+    "basicsOfDart",
+    "dartPad",
+    "controlFlowStatements",
+    "functions",
+    "builtInTypes",
+    "variables",
+    "flutterCli",
+    "fvm",
+    "ides",
+    "vsCode",
+    "developmentEnvironment",
+    "androidStudio",
+    "operators",
+    "intellijIdea",
+    "responsiveWidgets",
+    "inheritedWidgets",
+    "widgets",
+    "workingWithAssets",
+    "statelessWidgets",
+    "git",
+    "fonts",
+    "images",
+    "statefulWidgets",
+    "otherFileTypes",
+    "styledWidgets",
+    "versionControlSystems",
+    "materialWidgets",
+    "repoHostingServices",
+    "github",
+    "cupertinoWidgets",
+    "dependencyInjection",
+    "pubDev",
+    "flutterPubDartPub",
+    "designPatterns",
+    "solidPrinciples",
+    "packageManagers",
+    "designPrinciples",
+    "oop",
+    "workingWithApis",
+    "storage",
+    "sqlite",
+    "sharedPreferences",
+    "firebase",
+    "jsonSerializeDeserialize",
+    "coreLibraries",
+    "webSockets",
+    "graphql",
+    "authentication",
+    "streams",
+    "restfulApis",
+    "storage2",
+    "firestore",
+    "futures",
+    "pushNotifications",
+    "lists",
+    "collections",
+    "lambdas",
+    "remoteConfig",
+    "functionalProgramming",
+    "advancedDart",
+    "cloudFunctions",
+    "isolates",
+    "asyncAwait",
+    "rxdart",
+    "changenotifier",
+    "valuenotifier",
+    "redux",
+    "riverpod",
+    "stateManagement",
+    "reactiveProgramming",
+    "bloc",
+    "provider",
+    "animationController",
+    "getx",
+    "animatedBuilder",
+    "animatedWidget",
+    "animations",
+    "curvedAnimation",
+    "renderObjects",
+    "hero",
+    "opacity",
+    "3Trees",
+    "immutability",
+    "flutterInternals",
+    "devTools",
+    "testing",
+    "fastLane",
+    "flutterInspector",
+    "integrationTesting",
+    "codemagic",
+    "flutterOutline",
+    "unitTesting",
+    "bitrise",
+    "memoryAllocation",
+    "widgetTesting",
+    "githubActions",
+    "tdd",
+    "bdd",
+    "segment",
+    "mixPanel",
+    "firebaseAppDist",
+    "ciCd",
+    "analytics",
+    "firebaseAnalytics",
+    "guidelinesProtocols",
+    "googleAnalytics",
+    "playstore",
+    "continueLearningWithTheseFollowingRelevantTracks",
+    "deployment"
+  ],
+  "topics": {
+    "basicsOfDart": {
+      "title": "Basics of Dart",
+      "sourceId": "AubSeLi2nwNTUA-L3Kfn4",
+      "type": "topic",
+      "order": 1,
+      "summary": "Dart is an open-source, general-purpose, object-oriented programming language with C-style syntax developed by Google in 2011. The purpose of Dart programming is to create a frontend user interfaces for the web and mobile apps. It can also be used to build server and desktop applications.",
+      "video": {
+        "title": "What is Dart?",
+        "url": "https://www.youtube.com/watch?v=sOSd6G1qXoY"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Dart Overview",
+          "url": "https://dart.dev/overview"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Dart",
+          "url": "https://app.daily.dev/tags/dart?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "flutter",
+        "operators"
+      ],
+      "children": [
+        "flutterCli",
+        "fvm",
+        "dartPad",
+        "controlFlowStatements",
+        "functions",
+        "builtInTypes",
+        "variables"
+      ]
+    },
+    "dartPad": {
+      "title": "Dart Pad",
+      "sourceId": "vR38pAZOfI55R7N7NLY5N",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "DartPad is an online tool that allows developers to write and run Dart code snippets. It can also be used to run Flutter code, making it a convenient way to try out Flutter apps and widgets without having to set up a full development environment.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "DartPad",
+          "url": "https://dart.dev/tools/dartpad"
+        },
+        {
+          "type": "official",
+          "title": "DartPad in Tutorials",
+          "url": "https://dart.dev/resources/dartpad-best-practices"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Dart",
+          "url": "https://app.daily.dev/tags/dart?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "basicsOfDart"
+      ],
+      "children": []
+    },
+    "controlFlowStatements": {
+      "title": "Control Flow Statements",
+      "sourceId": "keS-4La_a227quDYYbOJT",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "Dart's control flow statements manage program execution: `if-else` for conditional logic, `for`, `while`, and `do-while` loops for repetition, `switch-case` for multi-way selection, and `break` and `continue` to alter loop behavior, enabling complex program logic.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Branches",
+          "url": "https://dart.dev/language/branches"
+        },
+        {
+          "type": "official",
+          "title": "Loops",
+          "url": "https://dart.dev/language/loops"
+        }
+      ],
+      "parents": [
+        "basicsOfDart"
+      ],
+      "children": []
+    },
+    "functions": {
+      "title": "Functions",
+      "sourceId": "Pek6vOO-qKCetTznCGv6f",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "Dart is a true object-oriented language, so even functions are objects and have a type, Function. This means that functions can be assigned to variables or passed as arguments to other functions. You can also call an instance of a Dart class as if it were a function.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Functions",
+          "url": "https://dart.dev/language/functions"
+        }
+      ],
+      "parents": [
+        "basicsOfDart"
+      ],
+      "children": []
+    },
+    "builtInTypes": {
+      "title": "Built-in Types",
+      "sourceId": "TT6HoilzgmS8CAPiTTKZ0",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "There are several built-in data types, including int, double, String, bool, List, Sets, and Map. Additionally, there are other complex data types like dynamic, var, and Object in Dart programming language, which are used in Flutter.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in types",
+          "url": "https://dart.dev/language/built-in-types"
+        },
+        {
+          "type": "article",
+          "title": "Dart and Flutter Complete Guide \u2014 Mastering \u201cBuilt-In Types\u201d",
+          "url": "https://medium.com/flutter-line/dart-and-flutter-mastering-built-in-types-b080ac72abfd"
+        }
+      ],
+      "parents": [
+        "basicsOfDart"
+      ],
+      "children": []
+    },
+    "variables": {
+      "title": "Variables",
+      "sourceId": "P-SbMLN-AaNMss_7X0_5N",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "In Flutter, variables are used to store values. There are three types of variables in Flutter namely local, global and instance variables.Variables in Flutter can store values of different data types, such as numbers, strings, booleans, and more.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Variables",
+          "url": "https://dart.dev/guides/language/language-tour#variables"
+        }
+      ],
+      "parents": [
+        "basicsOfDart"
+      ],
+      "children": []
+    },
+    "flutterCli": {
+      "title": "Flutter CLI",
+      "sourceId": "FrbleiQ4BbIEbR4_v9o8N",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "Flutter CLI (Command Line Interface) is a command-line tool that is used to develop, build, and run Flutter applications. It provides a set of commands and tools that developers can use to create, test, and deploy Flutter apps from the terminal. Some of the common tasks that can be performed using the Flutter CLI include:",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "The Flutter CLI",
+          "url": "https://docs.flutter.dev/reference/flutter-cli"
+        },
+        {
+          "type": "official",
+          "title": "CLI Packages in Flutter",
+          "url": "https://dart.dev/server/libraries#command-line-packages"
+        },
+        {
+          "type": "official",
+          "title": "Get Started with Flutter CLI",
+          "url": "https://dart.dev/tutorials/server/get-started"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about CLI",
+          "url": "https://app.daily.dev/tags/cli?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "basicsOfDart"
+      ],
+      "children": []
+    },
+    "fvm": {
+      "title": "FVM",
+      "sourceId": "m92WPPeZUIeD8IgunLXe2",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Flutter version manager is a tool used to manage different versions of Flutter SDK on a developer's machine. Flutter is a popular open-source mobile application development framework, and its SDK is updated frequently with new features, bug fixes, and improvements. However, sometimes developers need to work with older versions of Flutter due to various reasons like compatibility issues or project requirements.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Flutter Version Manager",
+          "url": "https://fvm.app/"
+        },
+        {
+          "type": "official",
+          "title": "Flutter Version Manager - Documentation",
+          "url": "https://fvm.app/documentation/getting-started"
+        }
+      ],
+      "parents": [
+        "basicsOfDart"
+      ],
+      "children": []
+    },
+    "ides": {
+      "title": "IDEs",
+      "sourceId": "tg16K0Wjugv4ytayHfgTw",
+      "type": "label",
+      "order": 9,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "vsCode",
+        "androidStudio",
+        "intellijIdea"
+      ]
+    },
+    "vsCode": {
+      "title": "VS Code",
+      "sourceId": "HMDsgljLshA63XX-hhAxV",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "VS Code is a lightweight, fast, and highly customizable code editor that provides excellent support for Flutter development. To use VS Code for Flutter development, you must install the Flutter and Dart plugins for VS Code. These plugins support Flutter-specific features such as syntax highlighting, debugging, and hot reloading.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "VS Code for Flutter",
+          "url": "https://docs.flutter.dev/development/tools/vs-code"
+        },
+        {
+          "type": "official",
+          "title": "Flutter extension for VS Code",
+          "url": "https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter"
+        },
+        {
+          "type": "official",
+          "title": "Dart extension for VS Code",
+          "url": "https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Flutter",
+          "url": "https://app.daily.dev/tags/flutter?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "ides"
+      ],
+      "children": []
+    },
+    "developmentEnvironment": {
+      "title": "Development Environment",
+      "sourceId": "HCJXVgnglYuRhK0zl3iPG",
+      "type": "topic",
+      "order": 11,
+      "summary": "To set up a development environment for Flutter, you need to install the following software:",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with Flutter",
+          "url": "https://docs.flutter.dev/get-started/install"
+        },
+        {
+          "type": "official",
+          "title": "Installing Dart SDK",
+          "url": "https://dart.dev/get-dart"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "widgets"
+      ]
+    },
+    "androidStudio": {
+      "title": "Android Studio",
+      "sourceId": "QHPiMRg4IJXDErrEYamrJ",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Android Studio is an IDE that can be used for developing Flutter applications as well as Android apps. Flutter is a UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase. In Android Studio, developers can use the Flutter plugin to access a suite of tools specifically designed for Flutter development, including:",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Android Studio for Flutter",
+          "url": "https://docs.flutter.dev/development/tools/android-studio"
+        },
+        {
+          "type": "official",
+          "title": "Get started with Android Studio",
+          "url": "https://dart.dev/tools/jetbrains-plugin"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Android",
+          "url": "https://app.daily.dev/tags/android?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "ides"
+      ],
+      "children": []
+    },
+    "operators": {
+      "title": "Operators",
+      "sourceId": "Q2S4__BB30KljB7SlquJx",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "Flutter, and Dart, utilize various operators to manipulate data: arithmetic operators for math, relational operators for comparisons, logical operators for boolean logic, assignment operators for value assignment, and the ternary operator for concise conditional expressions, enabling diverse operations on values and variables.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Operators",
+          "url": "https://dart.dev/language/operators"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "basicsOfDart"
+      ]
+    },
+    "intellijIdea": {
+      "title": "IntelliJ Idea",
+      "sourceId": "lkABkFigkVzl1x4_8xEZz",
+      "type": "subtopic",
+      "order": 14,
+      "summary": "IntelliJ IDEA is a powerful Integrated Development Environment (IDE) created by JetBrains. Essentially, it's a software application that provides comprehensive facilities to computer programmers for software development.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "IntelliJ IDEA",
+          "url": "https://www.jetbrains.com/idea/"
+        },
+        {
+          "type": "article",
+          "title": "IntelliJ IDEA for Flutter",
+          "url": "https://docs.flutter.dev/development/tools/android-studio"
+        },
+        {
+          "type": "article",
+          "title": "Get started with IntelliJ",
+          "url": "https://dart.dev/tools/jetbrains-plugin"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about DevTools",
+          "url": "https://app.daily.dev/tags/devtools?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "ides"
+      ],
+      "children": []
+    },
+    "responsiveWidgets": {
+      "title": "Responsive Widgets",
+      "sourceId": "lCpJQ8GZp5KhpGO4Sttgu",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "Responsive widgets in Dart, primarily within Flutter, are crucial for building applications that adapt to diverse screen sizes and orientations. Developers achieve this adaptability using tools like `LayoutBuilder` to respond to available space, `MediaQuery` to gather device information, and `Expanded` and `Flexible` for dynamic space distribution. `AspectRatio` maintains proportions, `OrientationBuilder` adjusts for landscape or portrait modes, and `Wrap` handles overflow by moving widgets to new lines. Adaptive widgets and custom layouts further enhance platform-specific responsiveness. By employing these techniques and considering breakpoints and thorough testing, developers can create Flutter apps that provide a consistent and optimal user experience across various devices.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Responsive Widget",
+          "url": "https://docs.flutter.dev/ui/layout/adaptive-responsive"
+        }
+      ],
+      "parents": [
+        "widgets"
+      ],
+      "children": []
+    },
+    "inheritedWidgets": {
+      "title": "Inherited Widgets",
+      "sourceId": "DKt8U-iZcrXU5gWGRONqZ",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "Inherited widgets in Flutter are a powerful mechanism for efficiently propagating data down the widget tree. They essentially create a shared data scope that descendant widgets can access without needing to explicitly pass the data through constructors. When a widget needs to access data from an ancestor, it can simply look up the nearest inherited widget of the desired type.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Inherited Widgets",
+          "url": "https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html"
+        }
+      ],
+      "parents": [
+        "widgets"
+      ],
+      "children": []
+    },
+    "widgets": {
+      "title": "Widgets",
+      "sourceId": "dy2Jep9hIIECaLutx-3K0",
+      "type": "topic",
+      "order": 17,
+      "summary": "Widgets in Flutter are the basic building blocks of the user interface. They define how the UI looks and behaves. Widgets can be combined to create complex user interfaces and can be easily customized. Widgets in Flutter are also designed to be highly reusable, allowing developers to build complex UIs quickly and efficiently.",
+      "video": {
+        "title": "Flutter Widgets Explained",
+        "url": "https://www.youtube.com/watch?v=FU2Eeizo95o"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to Widgets",
+          "url": "https://docs.flutter.dev/development/ui/widgets-intro"
+        },
+        {
+          "type": "official",
+          "title": "Widget Catalog",
+          "url": "https://docs.flutter.dev/development/ui/widgets"
+        }
+      ],
+      "parents": [
+        "developmentEnvironment"
+      ],
+      "children": [
+        "responsiveWidgets",
+        "inheritedWidgets",
+        "statelessWidgets",
+        "statefulWidgets",
+        "styledWidgets",
+        "workingWithAssets",
+        "versionControlSystems"
+      ]
+    },
+    "workingWithAssets": {
+      "title": "Working with Assets",
+      "sourceId": "z50iixpcCMe9sTh-gwTI3",
+      "type": "topic",
+      "order": 18,
+      "summary": "Assets are resources such as images, fonts, and other files that are included in your app. To use assets in Flutter, you need to specify them in your app's `pubspec.yaml` file and then access them in your code.",
+      "video": {
+        "title": "Flutter Tutorial - Assets",
+        "url": "https://www.youtube.com/watch?v=Hxh6nNHSUjo"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Adding Assets in Flutter",
+          "url": "https://docs.flutter.dev/development/ui/assets-and-images"
+        }
+      ],
+      "parents": [
+        "widgets"
+      ],
+      "children": [
+        "fonts",
+        "images",
+        "otherFileTypes"
+      ]
+    },
+    "statelessWidgets": {
+      "title": "Stateless Widgets",
+      "sourceId": "e-m4iKuK6NqFaQLE5viNI",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "Stateless widgets in Flutter are widgets that don't maintain any mutable state. They are designed to be immutable and rebuild each time the framework needs to update the UI. They are suitable for static, unchanging views or simple animations. They can be created using the `StatelessWidget` class and have a single build method that returns a widget tree.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "StatelessWidget Class",
+          "url": "https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html"
+        },
+        {
+          "type": "article",
+          "title": "How to Create Stateless Widgets",
+          "url": "https://medium.com/flutter/how-to-create-stateless-widgets-6f33931d859"
+        }
+      ],
+      "parents": [
+        "widgets"
+      ],
+      "children": []
+    },
+    "git": {
+      "title": "Git",
+      "sourceId": "yQyIPT09n62f1v8JbkoYJ",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+      "video": {
+        "title": "Git & GitHub Crash Course For Beginners",
+        "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated Git & GitHub Roadmap",
+          "url": "https://roadmap.sh/git-github"
+        },
+        {
+          "type": "official",
+          "title": "Git Documentation",
+          "url": "https://git-scm.com/"
+        },
+        {
+          "type": "article",
+          "title": "Learn Git with Tutorials, News and Tips - Atlassian",
+          "url": "https://www.atlassian.com/git"
+        },
+        {
+          "type": "article",
+          "title": "Git Cheat Sheet",
+          "url": "https://cs.fyi/guide/git-cheatsheet"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Git",
+          "url": "https://app.daily.dev/tags/git?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "versionControlSystems"
+      ],
+      "children": []
+    },
+    "fonts": {
+      "title": "Fonts",
+      "sourceId": "cXsIM4rZsBChVdrm8poOp",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "You can use custom fonts in your app by including the font file in your app's assets and specifying the font in your app's styles. To use a custom font:",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Fonts",
+          "url": "https://docs.flutter.dev/cookbook/design/fonts"
+        },
+        {
+          "type": "article",
+          "title": "How to use custom fonts in Flutter",
+          "url": "https://blog.logrocket.com/use-custom-fonts-flutter/"
+        }
+      ],
+      "parents": [
+        "workingWithAssets"
+      ],
+      "children": []
+    },
+    "images": {
+      "title": "Images",
+      "sourceId": "7v3VFKGaRFjm87319gBpw",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "In Flutter, you can display images using the `Image` widget. There are several ways to add an image to your app:",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Adding Assets and Images",
+          "url": "https://docs.flutter.dev/development/ui/assets-and-images"
+        },
+        {
+          "type": "article",
+          "title": "Images in Flutter",
+          "url": "https://docs.flutter.dev/cookbook/images"
+        }
+      ],
+      "parents": [
+        "workingWithAssets"
+      ],
+      "children": []
+    },
+    "statefulWidgets": {
+      "title": "Stateful Widgets",
+      "sourceId": "07tpSQeeMLKggWwdUXAej",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "A stateful widget is dynamic: for example, it can change its appearance in response to events triggered by user interactions or when it receives data. Checkbox, Radio, Slider, InkWell, Form, and TextField are examples of stateful widgets.",
+      "video": {
+        "title": "Flutter Tutorial - Stateful Widgets",
+        "url": "https://www.youtube.com/watch?v=p5dkB3Mrxdo"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "StatefulWidget",
+          "url": "https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html"
+        }
+      ],
+      "parents": [
+        "widgets"
+      ],
+      "children": []
+    },
+    "otherFileTypes": {
+      "title": "Other File Types",
+      "sourceId": "WnG31VsKQRlxGX85qNIum",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "In Flutter, you can work with different file types besides images. Some common file types that you can use in Flutter include:",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "File Class",
+          "url": "https://api.flutter.dev/flutter/dart-io/File-class.html"
+        }
+      ],
+      "parents": [
+        "workingWithAssets"
+      ],
+      "children": []
+    },
+    "styledWidgets": {
+      "title": "Styled Widgets",
+      "sourceId": "wBSdmrVPv3Zuys3X8VvBm",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "Styled widgets in Flutter refer to widgets that are decorated with custom styles, such as colors, fonts, shapes, and visual properties. They help create consistent and visually appealing user interfaces by applying themes and styling across your application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Use themes to share colors and font styles",
+          "url": "https://docs.flutter.dev/cookbook/design/themes"
+        },
+        {
+          "type": "official",
+          "title": "Styling widgets",
+          "url": "https://docs.flutter.dev/ui/widgets/styling"
+        },
+        {
+          "type": "official",
+          "title": "Material theming",
+          "url": "https://docs.flutter.dev/ui/design/material"
+        },
+        {
+          "type": "official",
+          "title": "Cupertino theming",
+          "url": "https://docs.flutter.dev/ui/design/cupertino"
+        },
+        {
+          "type": "official",
+          "title": "styled_widget",
+          "url": "https://pub.dev/packages/styled_widget"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Flutter",
+          "url": "https://app.daily.dev/tags/flutter?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "widgets"
+      ],
+      "children": []
+    },
+    "versionControlSystems": {
+      "title": "Version Control Systems",
+      "sourceId": "2nz5JoAPsZftFNLypr3Is",
+      "type": "topic",
+      "order": 26,
+      "summary": "Version control systems allow you to track changes to your codebase/files over time. They allow you to go back to some previous version of the codebase without any issues. Also, they help in collaborating with people working on the same code \u2013 if you\u2019ve ever collaborated with other people on a project, you might already know the frustration of copying and merging the changes from someone else into your codebase; version control systems allow you to get rid of this issue.",
+      "video": {
+        "title": "Version Control System Introduction",
+        "url": "https://www.youtube.com/watch?v=zbKdDsNNOhg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Version Control? - GitHub",
+          "url": "https://github.com/resources/articles/software-development/what-is-version-control"
+        },
+        {
+          "type": "article",
+          "title": "What is Version Control? - Atlassian",
+          "url": "https://www.atlassian.com/git/tutorials/what-is-version-control"
+        }
+      ],
+      "parents": [
+        "widgets"
+      ],
+      "children": [
+        "git"
+      ]
+    },
+    "materialWidgets": {
+      "title": "Material Widgets",
+      "sourceId": "DrQqq-C8XdiXVXBMLS4Wy",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "Material Widgets are a set of Flutter widgets that implement Material Design, Google's visual language for design. They are designed to provide a consistent look and feel on both Android and iOS devices.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Material Components Widgets",
+          "url": "https://docs.flutter.dev/development/ui/widgets/material"
+        },
+        {
+          "type": "official",
+          "title": "Widget catalog in Flutter",
+          "url": "https://docs.flutter.dev/development/ui/widgets"
+        },
+        {
+          "type": "article",
+          "title": "Material Designs Guidelines",
+          "url": "https://m2.material.io/design/guidelines-overview"
+        }
+      ],
+      "parents": [
+        "packageManagers"
+      ],
+      "children": []
+    },
+    "repoHostingServices": {
+      "title": "Repo Hosting Services",
+      "sourceId": "qGN95GG0Q3dur72GS3EDX",
+      "type": "topic",
+      "order": 28,
+      "summary": "Several popular repository hosting services, including GitHub, GitLab, Bitbucket, AWS CodeCommit, and Azure DevOps, support Flutter development by offering Git repository management, issue tracking, and collaboration tools. When selecting a service, developers should consider factors like project needs, scalability, cost, ease of use, integrations, and third-party tool support to ensure the chosen platform aligns with their specific requirements.",
+      "video": {
+        "title": "Host Flutter Website On GitHub Pages",
+        "url": "https://www.youtube.com/watch?v=z-yOqoQ2q6s"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "GitHub",
+          "url": "https://github.com/"
+        },
+        {
+          "type": "official",
+          "title": "GitLab",
+          "url": "https://gitlab.com/"
+        },
+        {
+          "type": "official",
+          "title": "Azure",
+          "url": "https://azure.microsoft.com/"
+        },
+        {
+          "type": "article",
+          "title": "How to Deploy a Flutter Web App?",
+          "url": "https://medium.com/solute-labs/flutter-for-web-how-to-deploy-a-flutter-web-app-c7d9db7ced2e"
+        },
+        {
+          "type": "article",
+          "title": "Deploying - Flutter",
+          "url": "https://docs.flutter.dev/deployment/web#deploying-to-the-web"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "github",
+        "designPrinciples"
+      ]
+    },
+    "github": {
+      "title": "GitHub",
+      "sourceId": "V0R4VyQ64Bwwj6O8XbZyF",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "GitHub is a web-based platform that provides hosting for software development and version control using Git. It is widely used by developers and organizations around the world to manage and collaborate on software projects.",
+      "video": {
+        "title": "What is GitHub?",
+        "url": "https://www.youtube.com/watch?v=w3jLJU7DT5E"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated GitHub Roadmap",
+          "url": "https://roadmap.sh/git-github"
+        },
+        {
+          "type": "official",
+          "title": "GitHub",
+          "url": "https://github.com"
+        },
+        {
+          "type": "official",
+          "title": "GitHub Documentation",
+          "url": "https://docs.github.com/en/get-started/quickstart"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GitHub",
+          "url": "https://app.daily.dev/tags/github?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "repoHostingServices"
+      ],
+      "children": []
+    },
+    "cupertinoWidgets": {
+      "title": "Cupertino Widgets",
+      "sourceId": "L8oUQA4OAINr-WshHaOPZ",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "Cupertino widgets are a set of Flutter widgets that mimic the look and feel of Apple's iOS user interface. They are designed to provide a consistent look and feel on both iOS and Android devices, and include widgets such as CupertinoButton, CupertinoAlertDialog, and CupertinoSlider. These widgets are useful for building cross-platform apps that need to conform to the iOS design aesthetic.s",
+      "video": {
+        "title": "Flutter Cupertino Widgets",
+        "url": "https://www.youtube.com/watch?v=L-TY_5NZ7z4"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Cupertino (iOS-style) Widgets",
+          "url": "https://docs.flutter.dev/development/ui/widgets/cupertino"
+        },
+        {
+          "type": "article",
+          "title": "Flutter Cupertino Tutorial",
+          "url": "https://blog.logrocket.com/flutter-cupertino-tutorial-build-ios-apps-native/"
+        }
+      ],
+      "parents": [
+        "packageManagers"
+      ],
+      "children": []
+    },
+    "dependencyInjection": {
+      "title": "Dependency Injection",
+      "sourceId": "fhPl9rycPa1r10fuEuNhi",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "Dependency Injection is a design pattern that allows objects to receive their dependencies from external sources instead of creating them internally. In Flutter, this can be useful for managing complex state, reducing coupling between components, and making testing easier.",
+      "video": {
+        "title": "Flutter Dependency Injection For Beginners",
+        "url": "https://www.youtube.com/watch?v=vBT-FhgMaWM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Dependency Injection",
+          "url": "https://docs.flutter.dev/app-architecture/case-study/dependency-injection"
+        },
+        {
+          "type": "article",
+          "title": "Dependency Injection In Flutter",
+          "url": "https://medium.com/@rk0936626/dependency-injection-in-flutter-3e489ba1b988"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Dependency Injection",
+          "url": "https://app.daily.dev/tags/dependency-injection?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "designPrinciples"
+      ],
+      "children": []
+    },
+    "pubDev": {
+      "title": "pub.dev",
+      "sourceId": "lXruqvSShlQrdVEo_xPm1",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "`pub.dev` is the official package repository for Dart and Flutter packages. It is a platform for hosting, managing, and distributing Dart packages and Flutter plugins. Developers can use `pub.dev` to search for packages, find information about packages, and install packages in their Flutter projects.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "pub.dev",
+          "url": "https://pub.dev/"
+        },
+        {
+          "type": "official",
+          "title": "Using packages",
+          "url": "https://docs.flutter.dev/development/packages-and-plugins/using-packages"
+        }
+      ],
+      "parents": [
+        "packageManagers"
+      ],
+      "children": []
+    },
+    "flutterPubDartPub": {
+      "title": "flutter pub / dart pub",
+      "sourceId": "9xZlW6S-5-uDNWb7qzBmG",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "`pub` is the package manager for Dart and Flutter, used for managing dependencies and publishing packages.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Overview of Dart pub",
+          "url": "https://dart.dev/tools/pub/cmd"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Dart",
+          "url": "https://app.daily.dev/tags/dart?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "packageManagers"
+      ],
+      "children": []
+    },
+    "designPatterns": {
+      "title": "Design Patterns",
+      "sourceId": "MLdt_37kpF2eV0oy56GZF",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "Design patterns are solutions to common problems in software development that can be used to improve the quality and maintainability of your code.",
+      "video": {
+        "title": "Design Patterns Explained in 10 Minutes",
+        "url": "https://www.youtube.com/watch?v=tv-_1er1mWI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Flutter - Design",
+          "url": "https://dart.dev/guides/language/effective-dart/design"
+        },
+        {
+          "type": "article",
+          "title": "Cookbook Designs in Flutter",
+          "url": "https://docs.flutter.dev/cookbook/design"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Design Patterns",
+          "url": "https://app.daily.dev/tags/design-patterns?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "designPrinciples"
+      ],
+      "children": []
+    },
+    "solidPrinciples": {
+      "title": "SOLID Principles",
+      "sourceId": "VKqo4dAcy-JiZo7Lw5jeg",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "SOLID is a mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.",
+      "video": {
+        "title": "S.O.L.I.D Principles",
+        "url": "https://www.youtube.com/watch?v=fvNTJang7l4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "SOLID: The First 5 Principles of Object Oriented Design",
+          "url": "https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design"
+        },
+        {
+          "type": "article",
+          "title": "Overview of S.O.L.I.D Principles In Dart",
+          "url": "https://medium.flutterdevs.com/s-o-l-i-d-principles-in-dart-e6c0c8d1f8f1"
+        },
+        {
+          "type": "article",
+          "title": "The S.O.L.I.D Principles in Pictures",
+          "url": "https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about General Programming",
+          "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "designPrinciples"
+      ],
+      "children": []
+    },
+    "packageManagers": {
+      "title": "Package Managers",
+      "sourceId": "med4T8PVkxIo465VuKDEj",
+      "type": "topic",
+      "order": 36,
+      "summary": "The package manager for Flutter is called pub. It is used to manage Flutter projects' dependencies and publish Flutter packages. It is included with the Flutter SDK and can be run from the command line using the `pub` command.",
+      "video": {
+        "title": "Dart Package Manager (pub.dev) in Flutter",
+        "url": "https://www.youtube.com/watch?v=F1VRO0_MKLs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Packages and Plugins",
+          "url": "https://docs.flutter.dev/development/packages-and-plugins"
+        }
+      ],
+      "parents": [
+        "designPrinciples"
+      ],
+      "children": [
+        "materialWidgets",
+        "cupertinoWidgets",
+        "pubDev",
+        "flutterPubDartPub",
+        "workingWithApis"
+      ]
+    },
+    "designPrinciples": {
+      "title": "Design Principles",
+      "sourceId": "drwRSEnl1-ziCvxWJZMJ2",
+      "type": "topic",
+      "order": 37,
+      "summary": "Flutter development emphasizes design principles like Material Design, responsiveness, user-centeredness, simplicity, consistency, accessibility, and performance to create visually appealing and user-friendly applications that function seamlessly across various devices and cater to diverse user needs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Design - Principles",
+          "url": "https://docs.flutter.dev/cookbook/design"
+        }
+      ],
+      "parents": [
+        "repoHostingServices"
+      ],
+      "children": [
+        "dependencyInjection",
+        "oop",
+        "solidPrinciples",
+        "designPatterns",
+        "packageManagers"
+      ]
+    },
+    "oop": {
+      "title": "OOP",
+      "sourceId": "1-dfwbhXgeRT3VVq3RSRv",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "Object-oriented programming (OOP) is a programming paradigm that is based on the concept of \"objects,\" which are instances of a class. In OOP, a class is a blueprint for creating objects, which have both data (attributes) and behavior (methods). The main idea behind OOP is to model real-world objects and their interactions, making it well-suited for creating complex and large-scale software systems.",
+      "video": {
+        "title": "Software Development Tutorial - What is object-oriented languages?",
+        "url": "https://www.youtube.com/watch?app=desktop&v=SS-9y0H3Si8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Discover Object Oriented Programming",
+          "url": "https://blog.hubspot.com/website/object-oriented-programming"
+        }
+      ],
+      "parents": [
+        "designPrinciples"
+      ],
+      "children": []
+    },
+    "workingWithApis": {
+      "title": "Working with APIs",
+      "sourceId": "9Az7tmevGI6bVqCTvVL50",
+      "type": "topic",
+      "order": 39,
+      "summary": "Working with APIs in Flutter involves making HTTP requests to a server and processing the responses. Flutter provides a number of libraries for making HTTP requests, including `dart:io` and `http`.",
+      "video": {
+        "title": "How to work with APIs in Flutter?",
+        "url": "https://www.youtube.com/watch?v=uVo7HDWDUEQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Using Google APIs",
+          "url": "https://dart.dev/guides/google-apis"
+        }
+      ],
+      "parents": [
+        "packageManagers"
+      ],
+      "children": [
+        "webSockets",
+        "graphql",
+        "restfulApis",
+        "jsonSerializeDeserialize",
+        "storage"
+      ]
+    },
+    "storage": {
+      "title": "Storage",
+      "sourceId": "P_wptV7oenaYwef1QhKhu",
+      "type": "topic",
+      "order": 40,
+      "summary": "Flutter provides several options for persistent storage, some of which are as follow:",
+      "video": {
+        "title": "Storage - Flutter Tutorial",
+        "url": "https://www.youtube.com/watch?v=UpKrhZ0Hppks"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Cloud Storage in Flutter",
+          "url": "https://firebase.flutter.dev/docs/storage/overview/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Storage",
+          "url": "https://app.daily.dev/tags/storage?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "workingWithApis"
+      ],
+      "children": [
+        "coreLibraries",
+        "sqlite",
+        "sharedPreferences",
+        "firebase",
+        "advancedDart"
+      ]
+    },
+    "sqlite": {
+      "title": "SQLite",
+      "sourceId": "NPaqiuUpzQbrsXA5XNI7U",
+      "type": "subtopic",
+      "order": 41,
+      "summary": "SQLite is an open-source, lightweight relational database management system (RDBMS) used to store and manage data. It is written in C and self-contained, meaning it does not require a separate server process or system. SQLite is commonly used in mobile applications, embedded systems, and web browsers and is also supported by many programming languages. It is a popular choice for databases because it is easy to use and does not require a lot of setup or configuration.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "sqflite - pub.dev package",
+          "url": "https://pub.dev/packages/sqflite"
+        },
+        {
+          "type": "article",
+          "title": "drift - pub.dev package",
+          "url": "https://pub.dev/packages/drift"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about SQLite",
+          "url": "https://app.daily.dev/tags/sqlite?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "storage"
+      ],
+      "children": []
+    },
+    "sharedPreferences": {
+      "title": "Shared Preferences",
+      "sourceId": "Fdv7Nu26Egtl9tklKn5-8",
+      "type": "subtopic",
+      "order": 42,
+      "summary": "In Flutter, SharedPreferences is a plugin allowing you to store data in key-value pairs persistently. It is similar to a local database or cache, but it is specifically designed to store small pieces of data, such as user preferences or settings. The SharedPreferences plugin is often used to store simple pieces of data that need to be accessed by multiple screens or widgets in an app. For example, you might use SharedPreferences to store the user's login status or the app's theme color.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "How do I Access Shared Preferences?",
+          "url": "https://docs.flutter.dev/get-started/flutter-for/android-devs#how-do-i-access-shared-preferences"
+        },
+        {
+          "type": "official",
+          "title": "shared_preferences - pub.dev package",
+          "url": "https://pub.dev/packages/shared_preferences"
+        }
+      ],
+      "parents": [
+        "storage"
+      ],
+      "children": []
+    },
+    "firebase": {
+      "title": "Firebase",
+      "sourceId": "EVd1rLBHjKbtgkIE7InS7",
+      "type": "subtopic",
+      "order": 43,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "storage"
+      ],
+      "children": []
+    },
+    "jsonSerializeDeserialize": {
+      "title": "JSON Serialize / Deserialize",
+      "sourceId": "TMHrKxnciIpd8F1WLjray",
+      "type": "subtopic",
+      "order": 44,
+      "summary": "JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. In Flutter, JSON is used for transmitting data between the client and server, typically over an HTTP connection.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "JSON and serialization",
+          "url": "https://docs.flutter.dev/development/data-and-backend/json"
+        },
+        {
+          "type": "official",
+          "title": "Using JSON",
+          "url": "https://dart.dev/guides/json"
+        }
+      ],
+      "parents": [
+        "workingWithApis"
+      ],
+      "children": []
+    },
+    "coreLibraries": {
+      "title": "Core Libraries",
+      "sourceId": "nQio4JabDrFCmScx59Qit",
+      "type": "subtopic",
+      "order": 45,
+      "summary": "Dart has a rich set of core libraries that provide essentials for many everyday programming tasks such as working on collections of objects (dart:collection), making calculations (dart:math), and encoding/decoding data (dart:convert).",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Core Libraries",
+          "url": "https://dart.dev/guides/libraries"
+        },
+        {
+          "type": "official",
+          "title": "Libraries - Flutter API",
+          "url": "https://api.flutter.dev/"
+        }
+      ],
+      "parents": [
+        "storage"
+      ],
+      "children": []
+    },
+    "webSockets": {
+      "title": "Web Sockets",
+      "sourceId": "SUFuHR-r6NfAzIICXGHkK",
+      "type": "subtopic",
+      "order": 46,
+      "summary": "In addition to normal HTTP requests, you can connect to servers using WebSockets. Web sockets allows for bidirectional communication between a client (such as a web browser) and a server over a single, long-lived connection. They are a more efficient alternative to HTTP for providing real-time data, as they allow for the server to push data to the client as soon as it becomes available, rather than requiring the client to continuously poll the server for updates.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Work with WebSockets",
+          "url": "https://docs.flutter.dev/cookbook/networking/web-sockets"
+        },
+        {
+          "type": "article",
+          "title": "What is WebSocket and How It Works?",
+          "url": "https://www.wallarm.com/what/a-simple-explanation-of-what-a-websocket-is"
+        }
+      ],
+      "parents": [
+        "workingWithApis"
+      ],
+      "children": []
+    },
+    "graphql": {
+      "title": "GraphQL",
+      "sourceId": "Ym-8x_FNrs1C-Ki3aykIW",
+      "type": "subtopic",
+      "order": 47,
+      "summary": "GraphQL is a query language for your API that allows clients to request exactly the data they need, and nothing more. It was developed by Facebook and released as open source in 2015.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated GraphQL Roadmap",
+          "url": "https://roadmap.sh/graphql"
+        },
+        {
+          "type": "official",
+          "title": "GraphQL",
+          "url": "https://graphql.org"
+        },
+        {
+          "type": "official",
+          "title": "Learn GraphQL",
+          "url": "https://graphql.org/learn"
+        }
+      ],
+      "parents": [
+        "workingWithApis"
+      ],
+      "children": []
+    },
+    "authentication": {
+      "title": "Authentication",
+      "sourceId": "lCVoKYJlQEYE2viAuThk7",
+      "type": "subtopic",
+      "order": 48,
+      "summary": "Firebase Authentication is a service provided by Firebase that allows you to easily add user authentication to your Flutter app. With Firebase Authentication, you can authenticate users using email and password, phone number, or popular identity providers like Google, Facebook, and more.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Make Authenticated Requests",
+          "url": "https://docs.flutter.dev/cookbook/networking/authenticated-requests"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Authentication",
+          "url": "https://app.daily.dev/tags/authentication?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "streams": {
+      "title": "Streams",
+      "sourceId": "fIOq8ZumOrAo5uz4nbq2k",
+      "type": "subtopic",
+      "order": 49,
+      "summary": "Streams in Flutter are a way to receive data over time as it becomes available. They are similar to observables in other languages and frameworks. Streams can be used for things like getting real-time updates from a server, or listening for changes in user input. In Flutter, streams are represented by the `Stream` class and can be listened to using the `StreamBuilder` widget.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Creating streams in Dart",
+          "url": "https://dart.dev/articles/libraries/creating-streams"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Streams in Dart and Flutter",
+          "url": "https://medium.com/stackademic/understanding-streams-in-dart-and-flutter-0d153b559760"
+        },
+        {
+          "type": "article",
+          "title": "How to Use and Create Streams from Scratch in Dart and Flutter \u2013 a Beginner's Guide",
+          "url": "https://www.freecodecamp.org/news/how-to-use-and-create-streams-in-dart-and-flutter/"
+        }
+      ],
+      "parents": [
+        "advancedDart"
+      ],
+      "children": []
+    },
+    "restfulApis": {
+      "title": "RESTful APIs",
+      "sourceId": "soi3pRxOp6A4ZmGZPQCn3",
+      "type": "subtopic",
+      "order": 50,
+      "summary": "REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is a REST API?",
+          "url": "https://www.redhat.com/en/topics/api/what-is-a-rest-api"
+        },
+        {
+          "type": "article",
+          "title": "Roy Fieldings dissertation chapter, Representational State Transfer (REST)",
+          "url": "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm"
+        },
+        {
+          "type": "article",
+          "title": "Learn REST: A RESTful Tutorial",
+          "url": "https://restapitutorial.com/"
+        }
+      ],
+      "parents": [
+        "workingWithApis"
+      ],
+      "children": []
+    },
+    "storage2": {
+      "title": "Storage",
+      "sourceId": "x4B0gmCo5sXFHYs3CYsOn",
+      "type": "subtopic",
+      "order": 51,
+      "summary": "In Flutter, you can use Firebase Storage to store and retrieve binary data, such as images, audio files, and videos. Firebase Storage is a cloud-based storage service provided by Firebase that makes it easy to store and serve large binary data, such as images and videos, in your Flutter app.",
+      "video": {
+        "title": "How to Upload and Retrieve Images from Firebase Storage",
+        "url": "https://www.youtube.com/watch?v=sM-WMcX66FI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Firebase Storage",
+          "url": "https://firebase.google.com/docs/storage"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Storage",
+          "url": "https://app.daily.dev/tags/storage?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "firestore": {
+      "title": "Firestore",
+      "sourceId": "cMfsRtvzvDZZJ0TqeUOxm",
+      "type": "subtopic",
+      "order": 52,
+      "summary": "Firebase Firestore is a cloud-based NoSQL document database service provided by Firebase that makes it easy to store, manage, and retrieve data in your Flutter app. Firestore is a flexible, scalable, and easy-to-use database that allows you to store and retrieve data in the form of documents, collections, and fields.",
+      "video": {
+        "title": "Using Firestore - Flutter",
+        "url": "https://www.youtube.com/watch?v=DqJ_KjFzL9I"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Firebase Firestore",
+          "url": "https://firebase.google.com/docs/firestore"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Firestore",
+          "url": "https://app.daily.dev/tags/firestore?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "futures": {
+      "title": "Futures",
+      "sourceId": "I1cqvOsVD7-86VPnrdTAv",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "Futures in Flutter are a way of representing a potential value that will be available at some point in the future. Some key points about Futures in Flutter:",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Futures and Error handling",
+          "url": "https://dart.dev/guides/libraries/futures-error-handling"
+        }
+      ],
+      "parents": [
+        "advancedDart"
+      ],
+      "children": []
+    },
+    "pushNotifications": {
+      "title": "Push Notifications",
+      "sourceId": "YzJrDGmfS0vbWjnPnSFVo",
+      "type": "subtopic",
+      "order": 54,
+      "summary": "Implementing Firebase push notifications in Flutter involves setting up a Firebase project, integrating the FCM plugin, handling and displaying incoming notifications within the app, testing through the Firebase Console or tools like Postman, and customizing notification appearance with icons, sounds, and vibration patterns.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "How do I Set up Push Notifications?",
+          "url": "https://docs.flutter.dev/get-started/flutter-for/android-devs#how-do-i-set-up-push-notifications"
+        }
+      ],
+      "parents": [
+        "advancedDart"
+      ],
+      "children": []
+    },
+    "lists": {
+      "title": "Lists",
+      "sourceId": "C4wC3_wqNGl8umJ050-hJ",
+      "type": "subtopic",
+      "order": 55,
+      "summary": "Dart Flutter offers various widgets for displaying lists, including `ListView`, `ListTile`, `SingleChildScrollView` with `Column`, `GridView`, and `CustomScrollView` with `Slivers`, enabling scrolling lists, grids, and customized item appearances through widgets, layouts, and styling.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "List Class",
+          "url": "https://api.flutter.dev/flutter/dart-core/List-class.html"
+        }
+      ],
+      "parents": [
+        "advancedDart"
+      ],
+      "children": []
+    },
+    "collections": {
+      "title": "Collections",
+      "sourceId": "Nx6YqH-MiqX-UFMQNqeEp",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "Dart provides built-in collections like Lists (ordered, indexed), Sets (unordered, unique), Maps (key-value pairs), Queues (FIFO), and Stacks (LIFO) for efficient data storage and manipulation, useful in various scenarios like data storage, state management, and algorithm implementation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Generic Collections in Flutter",
+          "url": "https://dart.dev/guides/language/language-tour#generic-collections-and-the-types-they-contain"
+        },
+        {
+          "type": "official",
+          "title": "Iterable Collections",
+          "url": "https://dart.dev/codelabs/iterables"
+        }
+      ],
+      "parents": [
+        "advancedDart"
+      ],
+      "children": []
+    },
+    "lambdas": {
+      "title": "Lambdas",
+      "sourceId": "tMeuk-nsFMx3kVS7Yn4T0",
+      "type": "subtopic",
+      "order": 57,
+      "summary": "Lambdas, also known as anonymous functions, are a fundamental concept in Dart and Flutter. They are a way to create short, inline functions that can be passed as arguments to other functions or assigned to variables.",
+      "video": {
+        "title": "Anonymous Function in Dart | Lambda Function",
+        "url": "https://www.youtube.com/watch?v=XTKKQdTAR0U"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Anonymous Functions",
+          "url": "https://dart.dev/language/functions#anonymous-functions"
+        },
+        {
+          "type": "article",
+          "title": "Lambda Functions in Dart",
+          "url": "https://medium.com/jay-tillu/lambda-functions-in-dart-7db8b759f07a"
+        }
+      ],
+      "parents": [
+        "advancedDart"
+      ],
+      "children": []
+    },
+    "remoteConfig": {
+      "title": "Remote Config",
+      "sourceId": "4ZbGj54WR5iuk0V8X_cpL",
+      "type": "subtopic",
+      "order": 58,
+      "summary": "Firebase Remote Config, accessed in Flutter via the `firebase_remote_config` plugin, enables dynamic app behavior and appearance changes without app updates. This involves adding the plugin, initializing the service, defining default parameter values in the console or code, fetching and retrieving remote parameters, and updating those parameters either through the console or by activating fetched values, allowing for A/B testing and feature control.",
+      "video": {
+        "title": "Firebase Remote Config",
+        "url": "https://www.youtube.com/watch?v=34ExOdNEMXI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Remote Config",
+          "url": "https://firebase.google.com/docs/remote-config"
+        }
+      ],
+      "parents": [
+        "reactiveProgramming"
+      ],
+      "children": []
+    },
+    "functionalProgramming": {
+      "title": "Functional Programming",
+      "sourceId": "x5q_bWpxmpJFK8eaWZxuY",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "Dart supports functional programming through higher-order functions, immutable data structures, lambdas/closures, and pure functions, enabling developers to write code that emphasizes immutability, statelessness, and data transformation via functions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Functional Programming - Flutter",
+          "url": "https://docs.flutter.dev/resources/faq"
+        },
+        {
+          "type": "article",
+          "title": "Brief Overview of Functional Programming",
+          "url": "https://buildflutter.com/functional-programming-with-flutter/"
+        },
+        {
+          "type": "article",
+          "title": "Functional Programming in Dart & Flutter",
+          "url": "https://yogi-6.medium.com/list/functional-programming-in-dart-flutter-2f3ac9d7fa39"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Functional Programming",
+          "url": "https://app.daily.dev/tags/functional-programming?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "advancedDart"
+      ],
+      "children": []
+    },
+    "advancedDart": {
+      "title": "Advanced Dart",
+      "sourceId": "bvojoCWJRSB6pdBFM1SbY",
+      "type": "topic",
+      "order": 60,
+      "summary": "Advanced Dart concepts crucial for Flutter development include generics for reusable code, `async`/`await` for clean asynchronous operations, mixins for multiple inheritance, abstract classes for base implementations, streams for continuous event handling, isolates for parallel processing, futures for future value representation, null-aware operators for concise null handling, collection literals for efficient collection creation, and extension methods for adding functionality to existing classes, all contributing to more efficient and maintainable code.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Tutorials - Dart",
+          "url": "https://dart.dev/tutorials"
+        },
+        {
+          "type": "article",
+          "title": "Advanced Dart",
+          "url": "https://techdynasty.medium.com/advanced-dart-in-flutter-elevating-your-development-skills-1c8ec309266f"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Dart",
+          "url": "https://app.daily.dev/tags/dart?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "storage"
+      ],
+      "children": [
+        "streams",
+        "futures",
+        "pushNotifications",
+        "lists",
+        "collections",
+        "isolates",
+        "functionalProgramming",
+        "lambdas",
+        "asyncAwait",
+        "stateManagement"
+      ]
+    },
+    "cloudFunctions": {
+      "title": "Cloud Functions",
+      "sourceId": "bVeHBEoR_4kfPsEHmVYbp",
+      "type": "subtopic",
+      "order": 61,
+      "summary": "Cloud Functions for Firebase is a serverless computing platform that simplifies backend development by allowing developers to write JavaScript or TypeScript code, which runs automatically in response to events from Firebase services or incoming HTTP requests. This framework leverages Google's cloud infrastructure to provide a scalable and managed environment, making it easier to build powerful serverless applications without the need for server maintenance.",
+      "video": {
+        "title": "Getting Started with Firebase Cloud Functions",
+        "url": "https://youtube.com/playlist?list=PLl-K7zZEsYLkPZHe41m4jfAxUi0JjLgSM&si=yx0EwIXxhG2PHRXp"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Cloud Functions",
+          "url": "https://firebase.google.com/docs/functions"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Cloud",
+          "url": "https://app.daily.dev/tags/cloud?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "reactiveProgramming"
+      ],
+      "children": []
+    },
+    "isolates": {
+      "title": "Isolates",
+      "sourceId": "t_75W0nyd0UBytwvJAQ1x",
+      "type": "subtopic",
+      "order": 62,
+      "summary": "Flutter Isolates are parallel execution contexts that enhance performance and concurrency by running intensive tasks in the background, preventing UI freezes. They provide isolated memory spaces for reliable code, enable concurrent execution, and facilitate inter-isolate communication for data sharing and coordination, though developers must consider context-switching and communication overhead.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "How Isolates Work",
+          "url": "https://dart.dev/guides/language/concurrency#how-isolates-work"
+        },
+        {
+          "type": "article",
+          "title": "Dart - Isolates and event loops",
+          "url": "https://medium.com/dartlang/dart-asynchronous-programming-isolates-and-event-loops-bffc3e296a6a"
+        }
+      ],
+      "parents": [
+        "advancedDart"
+      ],
+      "children": []
+    },
+    "asyncAwait": {
+      "title": "Async / Await",
+      "sourceId": "_guWOSGfTpErGkzs69g1R",
+      "type": "subtopic",
+      "order": 63,
+      "summary": "Flutter's `async`/`await` pattern simplifies asynchronous programming by enabling code that appears synchronous. The `async` keyword designates a function as asynchronous, allowing non-blocking execution, while `await` pauses execution until an asynchronous operation completes, resulting in cleaner and more maintainable asynchronous code.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Asynchronous Programming: async, await",
+          "url": "https://dart.dev/codelabs/async-await"
+        },
+        {
+          "type": "official",
+          "title": "Async widgets",
+          "url": "https://docs.flutter.dev/development/ui/widgets/async"
+        }
+      ],
+      "parents": [
+        "advancedDart"
+      ],
+      "children": []
+    },
+    "rxdart": {
+      "title": "RxDart",
+      "sourceId": "ozQQKmfO_Ir9aJIMBvijK",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "RxDart is a library for Dart that provides additional functionality for working with reactive programming, specifically with the Streams and Observables classes. It extends the standard Dart Streams API and provides additional features such as the ability to transform and combine streams, and to compose and chain streams together. In Flutter, RxDart is commonly used to handle asynchronous data streams and user interactions in a more efficient and elegant way.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "RxDart Documentation",
+          "url": "https://pub.dev/documentation/rxdart/latest"
+        },
+        {
+          "type": "article",
+          "title": "Overview of RxDart in Flutter",
+          "url": "https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#bloc--rx"
+        }
+      ],
+      "parents": [
+        "reactiveProgramming"
+      ],
+      "children": []
+    },
+    "changenotifier": {
+      "title": "ChangeNotifier",
+      "sourceId": "VRWeqMV7qOdPzM5RfgpGF",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "Flutter's ChangeNotifier is a fundamental class for state management in Flutter. It allows developers to handle and notify listeners of data changes, ensuring efficient updates to the user interface. By extending ChangeNotifier, developers can create custom classes to represent specific states or data models. Integrating ChangeNotifier enhances the user experience by managing state and dynamically updating the UI. It simplifies state management and enables the creation of interactive Flutter applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "ChangeNotifier class - Flutter",
+          "url": "https://api.flutter.dev/flutter/foundation/ChangeNotifier-class.html"
+        },
+        {
+          "type": "official",
+          "title": "Simple app state management",
+          "url": "https://docs.flutter.dev/data-and-backend/state-mgmt/simple"
+        }
+      ],
+      "parents": [
+        "stateManagement"
+      ],
+      "children": []
+    },
+    "valuenotifier": {
+      "title": "ValueNotifier",
+      "sourceId": "aRmdyC2pzmR9r1ybU2CTP",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "Flutter's ValueNotifier is a lightweight tool for state management in Flutter. It efficiently handles a single value and notifies listeners of changes. With ValueNotifier, developers can easily track and update specific data, such as counters or user inputs. It simplifies state management and enables dynamic Flutter interfaces.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "ValueNotifier Class - Flutter",
+          "url": "https://api.flutter.dev/flutter/foundation/ValueNotifier-class.html"
+        },
+        {
+          "type": "article",
+          "title": "ValuerNotifier & ValueListenableBuilder",
+          "url": "https://medium.com/@avnishnishad/flutter-communication-between-widgets-using-valuenotifier-and-valuelistenablebuilder-b51ef627a58b"
+        }
+      ],
+      "parents": [
+        "stateManagement"
+      ],
+      "children": []
+    },
+    "redux": {
+      "title": "Redux",
+      "sourceId": "DoqnE2Iy3lKzEm88qjKI-",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "Redux is a state management library for Flutter, commonly used with the Flutter framework to manage the application's state. It helps to maintain a single source of truth for the state of the application, making it easier to understand, test and maintain the code. In Redux, the state is stored in a store and can only be updated through dispatching actions. The actions trigger the update of the state via reducers, which are pure functions that determine the next state based on the current state and the dispatched action.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "flutter_redux",
+          "url": "https://pub.dev/packages/flutter_redux"
+        },
+        {
+          "type": "official",
+          "title": "Redux - Tutorial",
+          "url": "https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#redux"
+        },
+        {
+          "type": "article",
+          "title": "Building a Flutter app with Redux",
+          "url": "https://hillel.dev/2018/06/01/building-a-large-flutter-app-with-redux/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Redux",
+          "url": "https://app.daily.dev/tags/redux?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "stateManagement"
+      ],
+      "children": []
+    },
+    "riverpod": {
+      "title": "Riverpod",
+      "sourceId": "KWT-Lu-HCeA3GdZawD0a7",
+      "type": "subtopic",
+      "order": 68,
+      "summary": "Riverpod was created by the same author as Provider, and is designed to make it easier to manage application state by providing a more intuitive API and better performance than Provider.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "riverpod",
+          "url": "https://pub.dev/packages/riverpod"
+        },
+        {
+          "type": "official",
+          "title": "Riverpod in Flutter",
+          "url": "https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#riverpod"
+        },
+        {
+          "type": "official",
+          "title": "riverpod Documentation",
+          "url": "https://riverpod.dev/"
+        },
+        {
+          "type": "article",
+          "title": "Documentation v2 is in progress",
+          "url": "https://docs-v2.riverpod.dev/"
+        },
+        {
+          "type": "article",
+          "title": "Flutter Riverpod 2.0: The Ultimate Guide",
+          "url": "https://codewithandrea.com/articles/flutter-state-management-riverpod/"
+        }
+      ],
+      "parents": [
+        "stateManagement"
+      ],
+      "children": []
+    },
+    "stateManagement": {
+      "title": "State Management",
+      "sourceId": "bYJ0G-g4R5faoJfFjRQW7",
+      "type": "topic",
+      "order": 69,
+      "summary": "State management in Flutter refers to the process of managing and updating the data or state of a Flutter application. In Flutter, the state of the widgets can change dynamically, for example, when a user interacts with the application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "State Management in Flutter",
+          "url": "https://docs.flutter.dev/development/data-and-backend/state-mgmt"
+        }
+      ],
+      "parents": [
+        "advancedDart"
+      ],
+      "children": [
+        "changenotifier",
+        "redux",
+        "bloc",
+        "valuenotifier",
+        "riverpod",
+        "provider",
+        "reactiveProgramming"
+      ]
+    },
+    "reactiveProgramming": {
+      "title": "Reactive Programming",
+      "sourceId": "wbush8eQsi9aDSRobGAyG",
+      "type": "topic",
+      "order": 70,
+      "summary": "Reactive programming is a programming paradigm that allows for handling changing data streams and updating the UI based on those changes.",
+      "video": {
+        "title": "Reactive Programming in Flutter",
+        "url": "https://www.youtube.com/watch?v=x4FKXw4Uvls"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Get Started with Reactive Programming",
+          "url": "https://www.didierboelens.com/2018/12/reactive-programming-streams-bloc-practical-use-cases/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Reactive Programming",
+          "url": "https://app.daily.dev/tags/reactive-programming?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "stateManagement"
+      ],
+      "children": [
+        "remoteConfig",
+        "cloudFunctions",
+        "rxdart",
+        "animations"
+      ]
+    },
+    "bloc": {
+      "title": "BLoC",
+      "sourceId": "ZfkaTipYJ1jLY-RC3mdmt",
+      "type": "subtopic",
+      "order": 71,
+      "summary": "Bloc (Business Logic Component) is a state management pattern used in Flutter to separate presentation logic from business logic. It helps to manage and maintain the app state, making it easier to test, debug, and reuse code. It uses streams to emit new states and reacts to changes in the state.",
+      "video": {
+        "title": "Flutter Bloc - Tutorial",
+        "url": "https://www.youtube.com/watch?v=Ep6R7U9wa0U"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "BLoC in Flutter",
+          "url": "https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#bloc--rx"
+        },
+        {
+          "type": "article",
+          "title": "Get started with flutter_bloc",
+          "url": "https://pub.dev/packages/flutter_bloc"
+        },
+        {
+          "type": "article",
+          "title": "Flutter bloc for beginners",
+          "url": "https://medium.com/flutter-community/flutter-bloc-for-beginners-839e22adb9f5"
+        }
+      ],
+      "parents": [
+        "stateManagement"
+      ],
+      "children": []
+    },
+    "provider": {
+      "title": "Provider",
+      "sourceId": "MfqUMirRIEiM7pr5NiGF_",
+      "type": "subtopic",
+      "order": 72,
+      "summary": "Provider is a wrapper around InheritedWidget (base class for widgets that efficiently propagate information down the tree) to make them easier to use and more reusable.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Provider",
+          "url": "https://pub.dev/packages/provider"
+        },
+        {
+          "type": "official",
+          "title": "Simple App State Management",
+          "url": "https://docs.flutter.dev/development/data-and-backend/state-mgmt/simple"
+        }
+      ],
+      "parents": [
+        "stateManagement"
+      ],
+      "children": []
+    },
+    "animationController": {
+      "title": "Animation Controller",
+      "sourceId": "eXaP_U-EzptBuOp5R0KK3",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "This class lets you perform tasks such as:",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "AnimationController - Flutter",
+          "url": "https://docs.flutter.dev/ui/animations/tutorial#animationcontroller"
+        },
+        {
+          "type": "article",
+          "title": "AnimationController class",
+          "url": "https://api.flutter.dev/flutter/animation/AnimationController-class.html"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "animations"
+      ]
+    },
+    "getx": {
+      "title": "GetX",
+      "sourceId": "nK_ZKTfNc8P-RJoz5jY32",
+      "type": "subtopic",
+      "order": 74,
+      "summary": "GetX is a lightweight and powerful solution for state management and navigation in Flutter. It provides a clean and simple API for managing app state and navigating between screens. GetX makes it easy to create scalable and maintainable apps, as it offers a central place to manage the app's state, reducing the amount of boilerplate code needed. It also provides out-of-the-box support for routing, making it easy to navigate between screens, and it supports hot reloading, which allows developers to see changes in real-time.",
+      "video": {
+        "title": "Complete GetX State Management | Flutter",
+        "url": "https://www.youtube.com/watch?v=CNpXbeI_slw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "GetX in Flutter",
+          "url": "https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#getx"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "animatedBuilder": {
+      "title": "Animated Builder",
+      "sourceId": "M6iJ0VZWB8mreItlxvvqI",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "AnimatedBuilder is a widget in Flutter that allows you to build animations. It takes an `Animation` object and a builder function as input, and it returns a widget that is rebuilt whenever the animation changes. The builder function is called with the BuildContext and the animation object and it should return the widget that should be animated. This can be used to create complex animations with ease, without having to manage animation state or listen to animation events in the widget tree.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "AnimatedBuilder Class",
+          "url": "https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html"
+        },
+        {
+          "type": "article",
+          "title": "Refactoring with AnimatedBuilders",
+          "url": "https://docs.flutter.dev/development/ui/animations/tutorial#refactoring-with-animatedbuilder"
+        }
+      ],
+      "parents": [
+        "animations"
+      ],
+      "children": []
+    },
+    "animatedWidget": {
+      "title": "Animated Widget",
+      "sourceId": "yRY8MJuXxhDV6Hd-hTMRu",
+      "type": "subtopic",
+      "order": 76,
+      "summary": "AnimatedWidget is a Flutter widget that takes an `Animation` object as an argument and automatically updates whenever the animation changes. This can be useful when you want to create animations that are tightly coupled to a widget, for example, to animate the size or color of a widget. With `AnimatedWidget`, you can encapsulate the animation logic into a single widget and reuse it throughout your app. This makes it easier to manage and maintain your animations, as the animation code is centralized and decoupled from the widget tree.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Simplifying with Animated\u00adWidget",
+          "url": "https://docs.flutter.dev/development/ui/animations/tutorial#simplifying-with-animatedwidgets"
+        },
+        {
+          "type": "article",
+          "title": "AnimatedWidget Class",
+          "url": "https://api.flutter.dev/flutter/widgets/AnimatedWidget-class.html"
+        }
+      ],
+      "parents": [
+        "animations"
+      ],
+      "children": []
+    },
+    "animations": {
+      "title": "Animations",
+      "sourceId": "KLoL-055KShGrQ-NQosy8",
+      "type": "topic",
+      "order": 77,
+      "summary": "Flutter\u2019s animation support makes it easy to implement a variety of animation types. Many widgets, especially Material widgets, come with the standard motion effects defined in their design spec, but it\u2019s also possible to customize these effects.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to Animations",
+          "url": "https://docs.flutter.dev/development/ui/animations"
+        },
+        {
+          "type": "article",
+          "title": "Animation library",
+          "url": "https://api.flutter.dev/flutter/animation/animation-library.html"
+        }
+      ],
+      "parents": [
+        "reactiveProgramming",
+        "animationController"
+      ],
+      "children": [
+        "animatedWidget",
+        "animatedBuilder",
+        "curvedAnimation",
+        "opacity",
+        "testing"
+      ]
+    },
+    "curvedAnimation": {
+      "title": "Curved Animation",
+      "sourceId": "F1kbyjRR2uHRbTe90LTFP",
+      "type": "subtopic",
+      "order": 78,
+      "summary": "Curved animations in Flutter can be achieved using the \"CurvedAnimation\" class. This class takes in a \"Curve\" object that defines the rate of change of the animation over time. The most commonly used curve is the \"Curves.easeInOut\" curve, which starts slow, speeds up in the middle, and then slows down again towards the end.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Curved\u00adAnimation",
+          "url": "https://docs.flutter.dev/development/ui/animations/tutorial"
+        },
+        {
+          "type": "article",
+          "title": "CurvedAnimation Class",
+          "url": "https://api.flutter.dev/flutter/animation/CurvedAnimation-class.html"
+        }
+      ],
+      "parents": [
+        "animations"
+      ],
+      "children": []
+    },
+    "renderObjects": {
+      "title": "Render Objects",
+      "sourceId": "9ytV8xPq60z7doFG07PHi",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "RenderObject's can be defined as \"Objects\" that render and manipulate layouts, sizes and draw the UI, providing the actual application rendering. They clean up some resources when dispose method is called, therefore it must be disposed by creator when is no longer used.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "RenderObject Documentation",
+          "url": "https://api.flutter.dev/flutter/rendering/RenderObject-class.html"
+        },
+        {
+          "type": "article",
+          "title": "Get started with RenderObjects - Flutter",
+          "url": "https://jasper-dev.hashnode.dev/getting-started-with-renderobjects-in-flutter"
+        }
+      ],
+      "parents": [
+        "flutterInternals"
+      ],
+      "children": []
+    },
+    "hero": {
+      "title": "Hero",
+      "sourceId": "5WPok-30ubqU8uox7XiSf",
+      "type": "subtopic",
+      "order": 80,
+      "summary": "Hero is a widget in Flutter that allows you to create smooth animations between screens or within a single screen, for widgets that are used in multiple places. It animates the transition of a widget from one screen to another or from one position to another within a screen. The widget that is being animated should have a unique tag property so that Flutter can match the source and destination widgets. Hero widgets are used for visual continuity between screens, so when the user navigates from one screen to another, the hero widget smoothly transitions to its new position instead of abruptly appearing or disappearing. This can make the navigation between screens feel more seamless and enjoyable for the user.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hero Animations",
+          "url": "https://docs.flutter.dev/development/ui/animations/hero-animations"
+        },
+        {
+          "type": "article",
+          "title": "HeroAnimation class",
+          "url": "https://docs.flutter.dev/development/ui/animations/hero-animations#heroanimation-class"
+        }
+      ],
+      "parents": [
+        "devTools"
+      ],
+      "children": []
+    },
+    "opacity": {
+      "title": "Opacity",
+      "sourceId": "aet6mLBkB1BtxI8e7x-h3",
+      "type": "subtopic",
+      "order": 81,
+      "summary": "Opacity is a Flutter widget that allows you to control the transparency of its child widget. It takes a single opacity argument, which is a value between 0.0 and 1.0, where 0.0 represents complete transparency and 1.0 represents complete opacity. The child widget is drawn with the specified opacity, making it appear translucent or transparent, depending on the value of the opacity argument. This can be useful for creating visual effects such as fading in or out, or to create partially transparent backgrounds or overlays. By using Opacity in combination with other widgets and animations, you can create sophisticated visual effects in your Flutter app.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Fade a Widget in and out",
+          "url": "https://docs.flutter.dev/cookbook/animation/opacity-animation"
+        },
+        {
+          "type": "article",
+          "title": "AnimatedOpacity widget",
+          "url": "https://docs.flutter.dev/codelabs/implicit-animations#animate-opacity-with-animatedopacity-widgets"
+        }
+      ],
+      "parents": [
+        "animations"
+      ],
+      "children": []
+    },
+    "3Trees": {
+      "title": "3 Trees",
+      "sourceId": "24xYv3joKX1roqRGfBXmr",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "A tree is a data structure that is used to represent the hierarchy of widgets in a Flutter app. The tree structure allows Flutter to manage the layout, styling, and behavior of the widgets in the app.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Tree in Flutter",
+          "url": "https://docs.flutter.dev/resources/inside-flutter#tree-surgery"
+        },
+        {
+          "type": "article",
+          "title": "Beginning Flutter \u2014 Understanding Tree",
+          "url": "https://medium.com/@JediPixels/beginning-flutter-understanding-the-widget-tree-3513c94dc356"
+        }
+      ],
+      "parents": [
+        "flutterInternals"
+      ],
+      "children": []
+    },
+    "immutability": {
+      "title": "Immutability",
+      "sourceId": "lHzW9dyF1u3qmjfdb3vHe",
+      "type": "subtopic",
+      "order": 83,
+      "summary": "Immutability in Flutter refers to objects that cannot be changed once they are created. In Flutter, immutability is used to ensure that objects in the widget tree are not modified unexpectedly, which can lead to unexpected behavior and bugs in the app.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Immutable Data in Flutter",
+          "url": "https://dart.academy/immutable-data-patterns-in-dart-and-flutter/"
+        }
+      ],
+      "parents": [
+        "flutterInternals"
+      ],
+      "children": []
+    },
+    "flutterInternals": {
+      "title": "Flutter Internals",
+      "sourceId": "dgdv8sDKkgQ365mR0kBR3",
+      "type": "topic",
+      "order": 84,
+      "summary": "The internal workings of Flutter refer to the underlying mechanisms and architecture that make up the Flutter framework. Flutter is a reactive framework for building user interfaces, which means that it allows developers to build dynamic, responsive apps that update automatically in response to changes in the state of the app.",
+      "video": {
+        "title": "Flutter and Dart | Widget & Flutter Internals",
+        "url": "https://www.youtube.com/watch?v=FBXMvOmiOLE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Flutter - Internals",
+          "url": "https://www.didierboelens.com/2019/09/flutter-internals/"
+        },
+        {
+          "type": "article",
+          "title": "Overview of Flutter Internals",
+          "url": "https://flutter.megathink.com/"
+        },
+        {
+          "type": "article",
+          "title": "A Guide To Flutter Internals",
+          "url": "https://medium.com/@subroto.2003/a-guide-to-flutter-internals-ce8d64d01c50"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Flutter",
+          "url": "https://app.daily.dev/tags/flutter?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "devTools"
+      ],
+      "children": [
+        "renderObjects",
+        "3Trees",
+        "immutability",
+        "fastLane",
+        "codemagic"
+      ]
+    },
+    "devTools": {
+      "title": "Dev Tools",
+      "sourceId": "Jti4RmGDn7jVaHOxtTwPc",
+      "type": "topic",
+      "order": 85,
+      "summary": "Flutter DevTools is a suite of development tools provided by Flutter to help developers build, test, and debug Flutter apps.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Flutter - DevTools",
+          "url": "https://docs.flutter.dev/development/tools/devtools/overview"
+        },
+        {
+          "type": "official",
+          "title": "Dart DevTools",
+          "url": "https://dart.dev/tools/dart-devtools"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Tools",
+          "url": "https://app.daily.dev/tags/tools?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": [
+        "hero",
+        "flutterOutline",
+        "flutterInternals",
+        "flutterInspector"
+      ]
+    },
+    "testing": {
+      "title": "Testing",
+      "sourceId": "zGkDu5j8ln8U9kZgz3TDJ",
+      "type": "topic",
+      "order": 86,
+      "summary": "Testing is a crucial part of the development process in Flutter, as it helps you to verify the behavior and appearance of your app and ensure that it behaves correctly and consistently across different devices and platforms.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Dart Testing",
+          "url": "https://dart.dev/guides/testing"
+        },
+        {
+          "type": "official",
+          "title": "Testing Flutter Apps",
+          "url": "https://docs.flutter.dev/testing"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Testing",
+          "url": "https://app.daily.dev/tags/testing?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "animations"
+      ],
+      "children": [
+        "unitTesting",
+        "widgetTesting",
+        "integrationTesting",
+        "devTools"
+      ]
+    },
+    "fastLane": {
+      "title": "Fast Lane",
+      "sourceId": "hd4O2UPI9bZiyGuCMA-J4",
+      "type": "subtopic",
+      "order": 87,
+      "summary": "Fastlane is a third-party tool for automating the development and deployment process for mobile apps, including apps built with Flutter.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Fast Lane - CI/CD in Flutter",
+          "url": "https://docs.flutter.dev/deployment/cd"
+        }
+      ],
+      "parents": [
+        "flutterInternals"
+      ],
+      "children": []
+    },
+    "flutterInspector": {
+      "title": "Flutter Inspector",
+      "sourceId": "ehlGkYI3dqzu3B1pkhg9t",
+      "type": "subtopic",
+      "order": 88,
+      "summary": "It is a tool in the Flutter SDK that provides a visual representation of the widget tree in a Flutter app. It allows developers to inspect the widgets in their app, see the properties and styles applied to each widget, and interact with the app in real-time.",
+      "video": {
+        "title": "How to Use the Flutter Inspector",
+        "url": "https://www.youtube.com/watch?v=CcLfGJZS8ns"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Using the Flutter Inspector",
+          "url": "https://docs.flutter.dev/development/tools/devtools/inspector"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Flutter",
+          "url": "https://app.daily.dev/tags/flutter?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "devTools"
+      ],
+      "children": []
+    },
+    "integrationTesting": {
+      "title": "Integration Testing",
+      "sourceId": "2RqGKWi13TLleTT7KpdZV",
+      "type": "subtopic",
+      "order": 89,
+      "summary": "Integration tests in Flutter are tests that verify the behavior of your app as a whole, rather than individual widgets or functions. Integration tests allow you to test the interactions between different parts of your app and verify that the overall behavior of the app is correct.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to Integration Testing",
+          "url": "https://docs.flutter.dev/cookbook/testing/integration/introduction"
+        },
+        {
+          "type": "official",
+          "title": "Integration Tests",
+          "url": "https://docs.flutter.dev/testing#integration-tests"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Testing",
+          "url": "https://app.daily.dev/tags/testing?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": []
+    },
+    "codemagic": {
+      "title": "Codemagic",
+      "sourceId": "DcSBkhcOG55_dNaLF1FWA",
+      "type": "subtopic",
+      "order": 90,
+      "summary": "Codemagic is a cloud-based continuous integration and delivery (CI/CD) platform specifically designed for Flutter mobile app development.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Codemagic - Flutter",
+          "url": "https://codemagic.io/start/"
+        },
+        {
+          "type": "article",
+          "title": "Create a build archive with Codemagic",
+          "url": "https://docs.flutter.dev/deployment/ios#create-a-build-archive-with-codemagic-cli-tools"
+        }
+      ],
+      "parents": [
+        "flutterInternals"
+      ],
+      "children": []
+    },
+    "flutterOutline": {
+      "title": "Flutter Outline",
+      "sourceId": "wisXrfrmnZYB3hs5f3_VS",
+      "type": "subtopic",
+      "order": 91,
+      "summary": "Flutter Outline is a feature in the Flutter development environment (IDE) that provides a tree-like representation of the widgets and elements in your Flutter app. It shows the hierarchy of the widgets, their relationships, and the structure of your app.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Flutter Widget Tree",
+          "url": "https://docs.flutter.dev/tools/devtools/inspector#flutter-widget-tree"
+        }
+      ],
+      "parents": [
+        "devTools"
+      ],
+      "children": []
+    },
+    "unitTesting": {
+      "title": "Unit Testing",
+      "sourceId": "BCsv2fKHVxaB22RJJJPWM",
+      "type": "subtopic",
+      "order": 92,
+      "summary": "Unit testing in Flutter is the process of testing individual units of code, such as functions or classes, to ensure that they behave as expected. Unit testing helps to catch bugs early in the development process and increases the confidence in your code by making it easier to refactor or make changes without breaking existing functionality.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to Unit Testing",
+          "url": "https://docs.flutter.dev/cookbook/testing/unit/introduction"
+        },
+        {
+          "type": "official",
+          "title": "Unit Tests - Flutter",
+          "url": "https://docs.flutter.dev/testing#unit-tests"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Testing",
+          "url": "https://app.daily.dev/tags/testing?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": []
+    },
+    "bitrise": {
+      "title": "Bitrise",
+      "sourceId": "1xTlq-0MaHN15KZid31Dk",
+      "type": "subtopic",
+      "order": 93,
+      "summary": "Bitrise is a cloud-based continuous integration and delivery (CI/CD) platform that can be used with Flutter mobile app development.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Adding a Flutter app to Bitrise",
+          "url": "https://devcenter.bitrise.io/en/getting-started/quick-start-guides/getting-started-with-flutter-apps.html"
+        }
+      ],
+      "parents": [
+        "ciCd"
+      ],
+      "children": []
+    },
+    "memoryAllocation": {
+      "title": "Memory Allocation",
+      "sourceId": "ZsruX7gozx2-0cQNIkZ6o",
+      "type": "subtopic",
+      "order": 94,
+      "summary": "Memory allocation is the process of reserving a portion of the device's memory for the use of your app. The memory allocation in Flutter is managed by the Dart virtual machine, which uses a garbage collector to automatically manage the memory used by the app.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Using the Memory view",
+          "url": "https://docs.flutter.dev/development/tools/devtools/memory"
+        }
+      ],
+      "parents": [
+        "analytics"
+      ],
+      "children": []
+    },
+    "widgetTesting": {
+      "title": "Widget Testing",
+      "sourceId": "9hNfDtZK7_b9qUOXlFGFZ",
+      "type": "subtopic",
+      "order": 95,
+      "summary": "Widget testing in Flutter is the process of testing the behavior and appearance of individual widgets, in isolation from the rest of your app. It allows you to verify that a widget works correctly, displays the expected output, and behaves correctly in response to user interactions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to Widget Testing",
+          "url": "https://docs.flutter.dev/cookbook/testing/widget/introduction"
+        },
+        {
+          "type": "official",
+          "title": "Widget Tests - Flutter",
+          "url": "https://docs.flutter.dev/testing#widget-tests"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Testing",
+          "url": "https://app.daily.dev/tags/testing?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": []
+    },
+    "githubActions": {
+      "title": "GitHub Actions",
+      "sourceId": "8rCjcuZNL9kicMBXiL46l",
+      "type": "subtopic",
+      "order": 96,
+      "summary": "GitHub Actions is a workflow automation tool provided by GitHub that can be used to automate various tasks in a Flutter mobile app development process. With GitHub Actions, developers can create custom workflows to automate tasks such as building the app, running tests, and deploying the app to various app stores. These workflows are defined as a series of actions in a YAML file, which can be committed to the repository.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GitHub Actions",
+          "url": "https://github.com/features/actions"
+        },
+        {
+          "type": "opensource",
+          "title": "Flutter - GitHub Actions",
+          "url": "https://github.com/nabilnalakath/flutter-githubaction"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GitHub",
+          "url": "https://app.daily.dev/tags/github?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "ciCd"
+      ],
+      "children": []
+    },
+    "tdd": {
+      "title": "TDD",
+      "sourceId": "JbM-Hbf2ShUQt268ZMeZA",
+      "type": "subtopic",
+      "order": 97,
+      "summary": "Test-driven development (TDD) is a software development methodology in which tests are written before the implementation of the code they are testing. The idea behind TDD is to write a failing test first, then write just enough code to make the test pass, and then refactor the code if necessary. This process is repeated for each new feature or requirement that is added to the app.",
+      "video": {
+        "title": "Flutter TDD Clean Architecture Course",
+        "url": "https://www.youtube.com/watch?v=KjE2IDphA_U"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Test-Driven Development in Flutter",
+          "url": "https://techblog.geekyants.com/test-driven-development-in-flutter"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about TDD",
+          "url": "https://app.daily.dev/tags/tdd?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "bdd": {
+      "title": "BDD",
+      "sourceId": "0fpwuPTW94iyNlsjXcPOO",
+      "type": "subtopic",
+      "order": 98,
+      "summary": "Behavior-driven development (BDD) is a software development methodology that emphasizes collaboration between developers, testers, and stakeholders to define and verify the behavior of an application. BDD uses natural language to describe the expected behavior of the application and provides a shared understanding of the requirements for the development team.",
+      "video": {
+        "title": "Tutorial - BDD in Flutter",
+        "url": "https://www.youtube.com/watch?v=Kwvsc31FE_8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Build Flutter with BDD",
+          "url": "https://medium.com/tide-engineering-team/build-flutter-with-bdd-b4507170a2fe"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Testing",
+          "url": "https://app.daily.dev/tags/testing?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "segment": {
+      "title": "Segment",
+      "sourceId": "PQ7o9Jw9SBEhHl8cc_46x",
+      "type": "subtopic",
+      "order": 99,
+      "summary": "Segment is an analytics platform that provides a single API for collecting, storing, and routing customer data from various sources, including mobile apps built with Flutter.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "flutter_segment",
+          "url": "https://pub.dev/packages/flutter_segment"
+        }
+      ],
+      "parents": [
+        "analytics"
+      ],
+      "children": []
+    },
+    "mixPanel": {
+      "title": "Mix Panel",
+      "sourceId": "RQMRtlRxvp0CZJzCjRtPu",
+      "type": "subtopic",
+      "order": 100,
+      "summary": "Mixpanel is a product analytics platform that provides insights into user behavior for mobile apps, including those built with Flutter.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Overview of Flutter Mixpanel",
+          "url": "https://levelup.gitconnected.com/flutter-web-mixpanel-6046ffb664fb"
+        },
+        {
+          "type": "article",
+          "title": "Flutter Mixpanel Analytics Integration",
+          "url": "https://medium.com/flutter-clan/flutter-mixpanel-analytics-integration-b5840b155f7b"
+        }
+      ],
+      "parents": [
+        "analytics"
+      ],
+      "children": []
+    },
+    "firebaseAppDist": {
+      "title": "Firebase App Dist",
+      "sourceId": "akQ7SEHiZm9pZK49rsbO2",
+      "type": "subtopic",
+      "order": 101,
+      "summary": "Firebase App Distribution is a service provided by Firebase, a mobile development platform owned by Google, that makes it easy to distribute pre-release versions of a mobile app to testers and stakeholders.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Firebase Hosting",
+          "url": "https://firebase.google.com/docs/hosting"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Firebase",
+          "url": "https://app.daily.dev/tags/firebase?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "ciCd"
+      ],
+      "children": []
+    },
+    "ciCd": {
+      "title": "CI / CD",
+      "sourceId": "ekKzwQCMOYJLVN5KAK-ew",
+      "type": "topic",
+      "order": 102,
+      "summary": "CI/CD (Continuous Integration and Continuous Deployment) is a software development practice that helps to automate the process of building, testing, and deploying mobile apps, including Flutter apps.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "CI/CD - Flutter",
+          "url": "https://docs.flutter.dev/deployment/cd"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about CI/CD",
+          "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "bitrise",
+        "githubActions",
+        "firebaseAppDist",
+        "analytics"
+      ]
+    },
+    "analytics": {
+      "title": "Analytics",
+      "sourceId": "s5OVzjQp6k7rSphhv3hZE",
+      "type": "topic",
+      "order": 103,
+      "summary": "Analytics is a key aspect of understanding user behavior and measuring app performance for Flutter apps. There are a number of analytics tools available for Flutter apps, each with their own set of features and benefits.",
+      "video": {
+        "title": "Flutter Analytics using Firebase",
+        "url": "https://www.youtube.com/watch?v=31KpJXqCayo"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Top Flutter Analytics",
+          "url": "https://fluttergems.dev/analytics-consumer-insights/"
+        }
+      ],
+      "parents": [
+        "ciCd"
+      ],
+      "children": [
+        "memoryAllocation",
+        "segment",
+        "mixPanel",
+        "googleAnalytics",
+        "firebaseAnalytics"
+      ]
+    },
+    "firebaseAnalytics": {
+      "title": "Firebase Analytics",
+      "sourceId": "g2qXhkk6oGaBJy8Y2JOwW",
+      "type": "subtopic",
+      "order": 104,
+      "summary": "Firebase Analytics is a free analytics tool provided by Google that helps to understand user behavior and measure app performance for mobile apps, including those built with Flutter.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Flutter - Firebase",
+          "url": "https://docs.flutter.dev/development/data-and-backend/firebase"
+        },
+        {
+          "type": "article",
+          "title": "How To Add Firebase Analytics in Flutter",
+          "url": "https://medium.datadriveninvestor.com/how-to-add-firebase-analytics-to-your-flutter-app-641fbda1d224?gi=ad489389a531"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Firebase",
+          "url": "https://app.daily.dev/tags/firebase?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "analytics"
+      ],
+      "children": []
+    },
+    "guidelinesProtocols": {
+      "title": "Guidelines & Protocols",
+      "sourceId": "BjE4Qvjpi0i_s4Oib9765",
+      "type": "subtopic",
+      "order": 105,
+      "summary": "Guidelines and protocols are important considerations for Flutter developers as they help to ensure that apps are built in a consistent, reliable, and user-friendly manner. Some of the key guidelines and protocols to consider when developing a Flutter app include:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Flutter - Protocols",
+          "url": "https://api.flutter.dev/objcdoc/Protocols.html"
+        }
+      ],
+      "parents": [
+        "deployment"
+      ],
+      "children": []
+    },
+    "googleAnalytics": {
+      "title": "Google Analytics",
+      "sourceId": "3IQRLoW9OEf0121-w4o5m",
+      "type": "subtopic",
+      "order": 106,
+      "summary": "Google Analytics is a free web analytics service provided by Google that helps to understand user behavior and measure app performance for mobile apps, including those built with Flutter.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Google Analytics for Firebase",
+          "url": "https://firebase.flutter.dev/docs/analytics/overview/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Google",
+          "url": "https://app.daily.dev/tags/google?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "analytics"
+      ],
+      "children": []
+    },
+    "playstore": {
+      "title": "Playstore",
+      "sourceId": "wF8Iy7V-f52qQxOsAJobz",
+      "type": "subtopic",
+      "order": 108,
+      "summary": "The Google Play Store is an online store for Android apps, games, and other digital content. It is operated by Google and is the official app store for Android devices.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Build and Release an Android App",
+          "url": "https://docs.flutter.dev/deployment/android"
+        },
+        {
+          "type": "article",
+          "title": "Publish your App - Android Developer",
+          "url": "https://developer.android.com/studio/publish"
+        },
+        {
+          "type": "article",
+          "title": "Publishing Flutter App To PlayStore",
+          "url": "https://medium.flutterdevs.com/publishing-flutter-app-to-playstore-fa7543b61a7b"
+        }
+      ],
+      "parents": [
+        "deployment"
+      ],
+      "children": []
+    },
+    "continueLearningWithTheseFollowingRelevantTracks": {
+      "title": "Continue learning with these following relevant tracks",
+      "sourceId": "O5dely89N5UCMBeUfh8ud",
+      "type": "paragraph",
+      "order": 109,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "deployment"
+      ],
+      "children": []
+    },
+    "deployment": {
+      "title": "Deployment",
+      "sourceId": "mdSWrWi-1n_YlY5iTJwZp",
+      "type": "topic",
+      "order": 110,
+      "summary": "Deployment in Flutter refers to the process of releasing a Flutter app to end-users. Deploying a Flutter app involves a combination of technical skills and experience, as well as knowledge of the relevant app stores and their policies and requirements.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Web Deployment",
+          "url": "https://dart.dev/web/deployment"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about CI/CD",
+          "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "guidelinesProtocols",
+        "playstore",
+        "continueLearningWithTheseFollowingRelevantTracks"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "from": "flutter",
+      "to": "basicsOfDart",
+      "style": "solid"
+    },
+    {
+      "from": "basicsOfDart",
+      "to": "dartPad",
+      "style": "dashed"
+    },
+    {
+      "from": "basicsOfDart",
+      "to": "controlFlowStatements",
+      "style": "dashed"
+    },
+    {
+      "from": "operators",
+      "to": "basicsOfDart",
+      "style": "dashed"
+    },
+    {
+      "from": "basicsOfDart",
+      "to": "functions",
+      "style": "dashed"
+    },
+    {
+      "from": "basicsOfDart",
+      "to": "builtInTypes",
+      "style": "dashed"
+    },
+    {
+      "from": "basicsOfDart",
+      "to": "variables",
+      "style": "dashed"
+    },
+    {
+      "from": "widgets",
+      "to": "responsiveWidgets",
+      "style": "dashed"
+    },
+    {
+      "from": "developmentEnvironment",
+      "to": "widgets",
+      "style": "solid"
+    },
+    {
+      "from": "widgets",
+      "to": "inheritedWidgets",
+      "style": "dashed"
+    },
+    {
+      "from": "widgets",
+      "to": "statelessWidgets",
+      "style": "dashed"
+    },
+    {
+      "from": "widgets",
+      "to": "statefulWidgets",
+      "style": "dashed"
+    },
+    {
+      "from": "widgets",
+      "to": "styledWidgets",
+      "style": "dashed"
+    },
+    {
+      "from": "widgets",
+      "to": "workingWithAssets",
+      "style": "solid"
+    },
+    {
+      "from": "widgets",
+      "to": "versionControlSystems",
+      "style": "solid"
+    },
+    {
+      "from": "repoHostingServices",
+      "to": "github",
+      "style": "dashed"
+    },
+    {
+      "from": "repoHostingServices",
+      "to": "designPrinciples",
+      "style": "solid"
+    },
+    {
+      "from": "designPrinciples",
+      "to": "dependencyInjection",
+      "style": "dashed"
+    },
+    {
+      "from": "designPrinciples",
+      "to": "oop",
+      "style": "dashed"
+    },
+    {
+      "from": "designPrinciples",
+      "to": "solidPrinciples",
+      "style": "dashed"
+    },
+    {
+      "from": "designPrinciples",
+      "to": "designPatterns",
+      "style": "dashed"
+    },
+    {
+      "from": "designPrinciples",
+      "to": "packageManagers",
+      "style": "solid"
+    },
+    {
+      "from": "packageManagers",
+      "to": "workingWithApis",
+      "style": "solid"
+    },
+    {
+      "from": "workingWithApis",
+      "to": "jsonSerializeDeserialize",
+      "style": "dashed"
+    },
+    {
+      "from": "workingWithApis",
+      "to": "storage",
+      "style": "solid"
+    },
+    {
+      "from": "storage",
+      "to": "sqlite",
+      "style": "dashed"
+    },
+    {
+      "from": "storage",
+      "to": "sharedPreferences",
+      "style": "dashed"
+    },
+    {
+      "from": "storage",
+      "to": "firebase",
+      "style": "dashed"
+    },
+    {
+      "from": "storage",
+      "to": "advancedDart",
+      "style": "solid"
+    },
+    {
+      "from": "advancedDart",
+      "to": "functionalProgramming",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedDart",
+      "to": "lambdas",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedDart",
+      "to": "asyncAwait",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedDart",
+      "to": "stateManagement",
+      "style": "solid"
+    },
+    {
+      "from": "stateManagement",
+      "to": "valuenotifier",
+      "style": "dashed"
+    },
+    {
+      "from": "stateManagement",
+      "to": "riverpod",
+      "style": "dashed"
+    },
+    {
+      "from": "stateManagement",
+      "to": "provider",
+      "style": "dashed"
+    },
+    {
+      "from": "stateManagement",
+      "to": "reactiveProgramming",
+      "style": "solid"
+    },
+    {
+      "from": "reactiveProgramming",
+      "to": "animations",
+      "style": "solid"
+    },
+    {
+      "from": "animations",
+      "to": "animatedWidget",
+      "style": "dashed"
+    },
+    {
+      "from": "animations",
+      "to": "animatedBuilder",
+      "style": "dashed"
+    },
+    {
+      "from": "animations",
+      "to": "curvedAnimation",
+      "style": "dashed"
+    },
+    {
+      "from": "animationController",
+      "to": "animations",
+      "style": "dashed"
+    },
+    {
+      "from": "animations",
+      "to": "opacity",
+      "style": "dashed"
+    },
+    {
+      "from": "animations",
+      "to": "testing",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "integrationTesting",
+      "style": "dashed"
+    },
+    {
+      "from": "testing",
+      "to": "devTools",
+      "style": "solid"
+    },
+    {
+      "from": "devTools",
+      "to": "flutterInternals",
+      "style": "solid"
+    },
+    {
+      "from": "ciCd",
+      "to": "analytics",
+      "style": "solid"
+    },
+    {
+      "from": "devTools",
+      "to": "flutterInspector",
+      "style": "dashed"
+    },
+    {
+      "from": "analytics",
+      "to": "firebaseAnalytics",
+      "style": "dashed"
+    },
+    {
+      "from": "deployment",
+      "to": "continueLearningWithTheseFollowingRelevantTracks",
+      "style": "solid"
+    },
+    {
+      "from": "basicsOfDart",
+      "to": "flutterCli",
+      "style": "solid"
+    },
+    {
+      "from": "basicsOfDart",
+      "to": "fvm",
+      "style": "solid"
+    },
+    {
+      "from": "ides",
+      "to": "vsCode",
+      "style": "solid"
+    },
+    {
+      "from": "ides",
+      "to": "androidStudio",
+      "style": "solid"
+    },
+    {
+      "from": "ides",
+      "to": "intellijIdea",
+      "style": "solid"
+    },
+    {
+      "from": "versionControlSystems",
+      "to": "git",
+      "style": "solid"
+    },
+    {
+      "from": "workingWithAssets",
+      "to": "fonts",
+      "style": "solid"
+    },
+    {
+      "from": "workingWithAssets",
+      "to": "images",
+      "style": "solid"
+    },
+    {
+      "from": "workingWithAssets",
+      "to": "otherFileTypes",
+      "style": "solid"
+    },
+    {
+      "from": "packageManagers",
+      "to": "materialWidgets",
+      "style": "solid"
+    },
+    {
+      "from": "packageManagers",
+      "to": "cupertinoWidgets",
+      "style": "solid"
+    },
+    {
+      "from": "packageManagers",
+      "to": "pubDev",
+      "style": "solid"
+    },
+    {
+      "from": "packageManagers",
+      "to": "flutterPubDartPub",
+      "style": "solid"
+    },
+    {
+      "from": "storage",
+      "to": "coreLibraries",
+      "style": "solid"
+    },
+    {
+      "from": "workingWithApis",
+      "to": "webSockets",
+      "style": "solid"
+    },
+    {
+      "from": "workingWithApis",
+      "to": "graphql",
+      "style": "solid"
+    },
+    {
+      "from": "advancedDart",
+      "to": "streams",
+      "style": "solid"
+    },
+    {
+      "from": "workingWithApis",
+      "to": "restfulApis",
+      "style": "solid"
+    },
+    {
+      "from": "advancedDart",
+      "to": "futures",
+      "style": "solid"
+    },
+    {
+      "from": "advancedDart",
+      "to": "pushNotifications",
+      "style": "solid"
+    },
+    {
+      "from": "advancedDart",
+      "to": "lists",
+      "style": "solid"
+    },
+    {
+      "from": "advancedDart",
+      "to": "collections",
+      "style": "solid"
+    },
+    {
+      "from": "reactiveProgramming",
+      "to": "remoteConfig",
+      "style": "solid"
+    },
+    {
+      "from": "reactiveProgramming",
+      "to": "cloudFunctions",
+      "style": "solid"
+    },
+    {
+      "from": "advancedDart",
+      "to": "isolates",
+      "style": "solid"
+    },
+    {
+      "from": "reactiveProgramming",
+      "to": "rxdart",
+      "style": "solid"
+    },
+    {
+      "from": "stateManagement",
+      "to": "changenotifier",
+      "style": "solid"
+    },
+    {
+      "from": "stateManagement",
+      "to": "redux",
+      "style": "solid"
+    },
+    {
+      "from": "stateManagement",
+      "to": "bloc",
+      "style": "solid"
+    },
+    {
+      "from": "flutterInternals",
+      "to": "renderObjects",
+      "style": "solid"
+    },
+    {
+      "from": "devTools",
+      "to": "hero",
+      "style": "solid"
+    },
+    {
+      "from": "flutterInternals",
+      "to": "3Trees",
+      "style": "solid"
+    },
+    {
+      "from": "flutterInternals",
+      "to": "immutability",
+      "style": "solid"
+    },
+    {
+      "from": "flutterInternals",
+      "to": "fastLane",
+      "style": "solid"
+    },
+    {
+      "from": "flutterInternals",
+      "to": "codemagic",
+      "style": "solid"
+    },
+    {
+      "from": "devTools",
+      "to": "flutterOutline",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "unitTesting",
+      "style": "solid"
+    },
+    {
+      "from": "ciCd",
+      "to": "bitrise",
+      "style": "solid"
+    },
+    {
+      "from": "analytics",
+      "to": "memoryAllocation",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "widgetTesting",
+      "style": "solid"
+    },
+    {
+      "from": "ciCd",
+      "to": "githubActions",
+      "style": "solid"
+    },
+    {
+      "from": "analytics",
+      "to": "segment",
+      "style": "solid"
+    },
+    {
+      "from": "analytics",
+      "to": "mixPanel",
+      "style": "solid"
+    },
+    {
+      "from": "ciCd",
+      "to": "firebaseAppDist",
+      "style": "solid"
+    },
+    {
+      "from": "deployment",
+      "to": "guidelinesProtocols",
+      "style": "solid"
+    },
+    {
+      "from": "analytics",
+      "to": "googleAnalytics",
+      "style": "solid"
+    },
+    {
+      "from": "deployment",
+      "to": "playstore",
+      "style": "solid"
+    }
+  ]
+}

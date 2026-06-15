@@ -1,0 +1,375 @@
+{
+  "title": "Engineering Manager",
+  "summary": "Everything you need to know to become an Engineering Manager in 2026",
+  "url": "https://roadmap.sh/engineering-manager",
+  "order": [
+    "whatIsEngineeringManagement",
+    "emVsTechLeadVsIc",
+    "people",
+    "technicalLeadership",
+    "teamMotivation",
+    "trustInfluenceBuilding",
+    "emotionalIntelligence",
+    "execution",
+    "agileMethodologies",
+    "teamSupport",
+    "burnoutPrevention",
+    "criticalSituationLeadership",
+    "emergencyStaffing",
+    "stressManagement",
+    "workLifeBalanceDuringCrises"
+  ],
+  "topics": {
+    "whatIsEngineeringManagement": {
+      "title": "What is Engineering Management?",
+      "sourceId": "_hYN0gEi9BL24nptEtXWU",
+      "type": "topic",
+      "order": 1,
+      "summary": "Engineering management is the integration of engineering principles with business practices to oversee and optimize complex engineering-driven enterprises. It involves planning, organizing, allocating resources, and directing activities that have a technological component.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Engineering Management Resources",
+          "url": "https://github.com/engineering-management/awesome-engineering-management"
+        },
+        {
+          "type": "article",
+          "title": "Software Engineering at Google: The Engineering Manager",
+          "url": "https://abseil.io/resources/swe-book/html/ch05.html#the_engineering_manager"
+        }
+      ],
+      "parents": [
+        "engineering-manager"
+      ],
+      "children": [
+        "emVsTechLeadVsIc",
+        "people",
+        "technicalLeadership"
+      ]
+    },
+    "emVsTechLeadVsIc": {
+      "title": "EM vs Tech Lead vs IC",
+      "sourceId": "oKbeLp4YB8rI1Q3vi0EnG",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "An Engineering Manager (EM), Technical Lead, and Individual Contributor (IC) play vital roles in tech teams. However, their responsibilities and focus areas differ. The EM prioritizes team management including hiring, team dynamics, facilitating communication, and ensuring deliverables. They often steer clear of day-to-day coding to focus on strategic matters. On the other hand, a Tech Lead leads by example. They are usually hands-on with coding and make key technical decisions. ICs, or team members, are skilled engineers who actively work on the product and are led by the Tech Lead and EM.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "whatIsEngineeringManagement"
+      ],
+      "children": []
+    },
+    "people": {
+      "title": "People",
+      "sourceId": "aSZ2uVCmpAdEPjJt6VKG4",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "Engineering Managers have a crucial role in managing the people aspect of their teams. They are responsible for building, nurturing, and guiding their teams towards a shared goal. This involves hiring the right talent, fostering collaboration, and promoting a positive environment for brainstorming and innovation. They also address personal and professional conflicts, ensuring a unified and efficient team.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "whatIsEngineeringManagement"
+      ],
+      "children": []
+    },
+    "technicalLeadership": {
+      "title": "Technical Leadership",
+      "sourceId": "_V1bNZwDOIKF_bskubGTG",
+      "type": "paragraph",
+      "order": 4,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "whatIsEngineeringManagement"
+      ],
+      "children": []
+    },
+    "teamMotivation": {
+      "title": "Team Motivation",
+      "sourceId": "U_oOnDXkCE387r9olvMZB",
+      "type": "subtopic",
+      "order": 40,
+      "summary": "For an Engineering Manager, sparking team motivation is paramount. They take the extra step to understand their team members' motivations, whether it's acquiring new skills or delivering high-quality products, and use this understanding to fuel their passion. Manager's key responsibility here is to set clear objectives, provide feedback, and foster a positive work environment.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "trustInfluenceBuilding"
+      ]
+    },
+    "trustInfluenceBuilding": {
+      "title": "Trust / Influence Building",
+      "sourceId": "7PBmYoSmIgZT21a2Ip3_S",
+      "type": "subtopic",
+      "order": 43,
+      "summary": "Building trust and influence is crucial for any Engineering Manager. This involves establishing a solid reputation, delivering on promises and being an active listener to your team's ideas and issues. It's a manager's job to ensure there's an open, honest environment that promotes trust. Balancing delegation and taking charge, especially in difficult situations, is key to building influence.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Understanding The Trust Equation",
+          "url": "https://trustedadvisor.com/why-trust-matters/understanding-trust/understanding-the-trust-equation"
+        }
+      ],
+      "parents": [
+        "teamMotivation"
+      ],
+      "children": [
+        "emotionalIntelligence"
+      ]
+    },
+    "emotionalIntelligence": {
+      "title": "Emotional Intelligence",
+      "sourceId": "h7gEQNbGiabDA1q1Bk_IB",
+      "type": "subtopic",
+      "order": 46,
+      "summary": "Emotional intelligence is crucial for an Engineering Manager. It helps them understand team dynamics, enhances communication, and strengthens relationships. Their main responsibilities include recognizing team members' emotions, gauging their reactions appropriately, and managing their responses effectively.",
+      "video": {
+        "title": "Daniel Goleman on the different kinds of empathy",
+        "url": "https://www.youtube.com/watch?v=WdDVvLEKoc8"
+      },
+      "articles": [],
+      "parents": [
+        "trustInfluenceBuilding"
+      ],
+      "children": []
+    },
+    "execution": {
+      "title": "Execution",
+      "sourceId": "iYGRSUanuDxhc3A7jlRjr",
+      "type": "label",
+      "order": 49,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "agileMethodologies"
+      ]
+    },
+    "agileMethodologies": {
+      "title": "Agile methodologies",
+      "sourceId": "n9gvPHn4c1U-l6v-W9v6r",
+      "type": "subtopic",
+      "order": 51,
+      "summary": "An Engineering Manager ensures smooth implementation of Agile methodologies within the team. The manager oversees sprint planning, backlog refinement, and retrospectives for consistent development flow. They have the key role in facilitating communication, fostering a high-performing environment, and encouraging adaptive planning.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Scrum Guide",
+          "url": "https://scrumguides.org/"
+        }
+      ],
+      "parents": [
+        "execution"
+      ],
+      "children": []
+    },
+    "teamSupport": {
+      "title": "Team Support",
+      "sourceId": "Vh1_v27lStdnRPwpY3ZPv",
+      "type": "label",
+      "order": 103,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "burnoutPrevention"
+      ]
+    },
+    "burnoutPrevention": {
+      "title": "Burnout prevention",
+      "sourceId": "mIUx8zAHWyPWPGvxuTK4y",
+      "type": "subtopic",
+      "order": 106,
+      "summary": "Burnout prevention focuses on strategies and practices aimed at minimizing and mitigating the risk of employees experiencing burnout, a state of emotional, physical, and mental exhaustion caused by prolonged or excessive stress. It involves creating a supportive work environment, promoting healthy work-life balance, and equipping individuals and teams with the tools and resources needed to manage stress effectively and maintain their well-being.",
+      "video": {
+        "title": "How to Avoid Burnout",
+        "url": "https://www.youtube.com/watch?v=smjGAcyqDnk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Preventing Burnout: A Guide to Protecting Your Well-Being",
+          "url": "https://www.psychiatry.org/news-room/apa-blogs/preventing-burnout-protecting-your-well-being"
+        },
+        {
+          "type": "article",
+          "title": "Beating Burnout",
+          "url": "https://hbr.org/2016/11/beating-burnout"
+        }
+      ],
+      "parents": [
+        "teamSupport"
+      ],
+      "children": [
+        "criticalSituationLeadership"
+      ]
+    },
+    "criticalSituationLeadership": {
+      "title": "Critical situation leadership",
+      "sourceId": "nnoVA8W70hrNDxN3XQCVL",
+      "type": "subtopic",
+      "order": 109,
+      "summary": "Leading a team through a critical situation involves guiding them effectively when facing unexpected challenges, high-pressure scenarios, or significant disruptions. This requires clear communication, decisive action, and a focus on maintaining team morale and productivity while navigating uncertainty and resolving the crisis at hand. It's about providing stability and direction when things are most volatile.",
+      "video": {
+        "title": "Situational Leadership Model Explained",
+        "url": "https://www.youtube.com/watch?v=pykuvuA-QFU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to Lead Through a Crisis",
+          "url": "https://www.ccl.org/articles/leading-effectively-articles/how-to-lead-through-a-crisis/"
+        },
+        {
+          "type": "article",
+          "title": "Lead how they need: adopting a situational leadership style",
+          "url": "https://www.atlassian.com/blog/teamwork/situational-leadership"
+        }
+      ],
+      "parents": [
+        "burnoutPrevention"
+      ],
+      "children": [
+        "emergencyStaffing"
+      ]
+    },
+    "emergencyStaffing": {
+      "title": "Emergency staffing",
+      "sourceId": "FwK-B7jRbBXVnuY9JxI1w",
+      "type": "subtopic",
+      "order": 112,
+      "summary": "Emergency staffing refers to the process of quickly securing and deploying personnel to address unexpected and critical situations that disrupt normal operations. This involves identifying skill gaps, finding available resources (either internal or external), and rapidly onboarding them to mitigate the impact of the emergency and restore stability. The goal is to minimize disruption and maintain essential functions during a crisis.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Five Components of Effective Emergency Staffing Solutions",
+          "url": "https://www.atriumglobal.com/resources/effective-emergency-staffing-solutions/"
+        }
+      ],
+      "parents": [
+        "criticalSituationLeadership"
+      ],
+      "children": [
+        "stressManagement"
+      ]
+    },
+    "stressManagement": {
+      "title": "Stress management",
+      "sourceId": "QFhhOgwz_bgZgOfKFg5XA",
+      "type": "subtopic",
+      "order": 115,
+      "summary": "Stress management encompasses the techniques and strategies used to control and reduce the negative impacts of stress. It involves identifying stressors, understanding their effects on physical and mental well-being, and implementing coping mechanisms to maintain a healthy balance. Effective stress management aims to improve overall resilience and performance by mitigating the adverse consequences of prolonged or intense pressure.",
+      "video": {
+        "title": "5 Steps to Rapidly Reduce Stress (Top Stress Management Techniques)",
+        "url": "https://www.youtube.com/watch?v=1WIHlVZcrzs"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Stress Management",
+          "url": "https://www.helpguide.org/mental-health/stress/stress-management"
+        }
+      ],
+      "parents": [
+        "emergencyStaffing"
+      ],
+      "children": [
+        "workLifeBalanceDuringCrises"
+      ]
+    },
+    "workLifeBalanceDuringCrises": {
+      "title": "Work-life balance during crises",
+      "sourceId": "tmY4Ktu6luFg5wKylJW76",
+      "type": "subtopic",
+      "order": 118,
+      "summary": "Maintaining work-life balance during a crisis involves strategies and practices that help team members manage their professional responsibilities while also prioritizing their personal well-being and commitments. This includes setting boundaries, utilizing time management techniques, encouraging open communication about workload and stress, and ensuring access to resources that support mental and physical health. The goal is to prevent burnout and maintain productivity and morale during challenging times.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Work-Life Balance Crisis",
+          "url": "https://www.speechtherapypd.com/blogs/the-worklife-balance-crisis"
+        },
+        {
+          "type": "article",
+          "title": "5 Ways to Keep Your Career on Track During a Life Crisis",
+          "url": "https://melodywilding.com/5-ways-to-keep-your-career-on-track-during-a-life-crisis/"
+        }
+      ],
+      "parents": [
+        "stressManagement"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "whatIsEngineeringManagement",
+      "to": "emVsTechLeadVsIc",
+      "style": "dashed"
+    },
+    {
+      "from": "whatIsEngineeringManagement",
+      "to": "people",
+      "style": "dashed"
+    },
+    {
+      "from": "engineering-manager",
+      "to": "whatIsEngineeringManagement",
+      "style": "solid"
+    },
+    {
+      "from": "whatIsEngineeringManagement",
+      "to": "technicalLeadership",
+      "style": "solid"
+    },
+    {
+      "from": "teamMotivation",
+      "to": "trustInfluenceBuilding",
+      "style": "solid"
+    },
+    {
+      "from": "trustInfluenceBuilding",
+      "to": "emotionalIntelligence",
+      "style": "solid"
+    },
+    {
+      "from": "execution",
+      "to": "agileMethodologies",
+      "style": "solid"
+    },
+    {
+      "from": "teamSupport",
+      "to": "burnoutPrevention",
+      "style": "solid"
+    },
+    {
+      "from": "burnoutPrevention",
+      "to": "criticalSituationLeadership",
+      "style": "solid"
+    },
+    {
+      "from": "criticalSituationLeadership",
+      "to": "emergencyStaffing",
+      "style": "solid"
+    },
+    {
+      "from": "emergencyStaffing",
+      "to": "stressManagement",
+      "style": "solid"
+    },
+    {
+      "from": "stressManagement",
+      "to": "workLifeBalanceDuringCrises",
+      "style": "solid"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "title": "Git and GitHub Beginner",
+  "summary": "Step by step guide to learn Git and GitHub in 2026",
+  "url": "https://roadmap.sh/git-github-beginner",
+  "order": [
+    "learnTheBasics",
+    "basicGitUsage",
+    "collaboration",
+    "moreGit",
+    "moreGithub",
+    "continueLearningAboutGitAndGithub"
+  ],
+  "topics": {
+    "learnTheBasics": {
+      "title": "Learn the Basics",
+      "sourceId": "HlUUGj3dOZ68t4gIjerXh",
+      "type": "topic",
+      "order": 1,
+      "summary": "Git is like a save button for your code, allowing you to track changes, revert to previous versions, and collaborate with others without overwriting each other's work. GitHub, on the other hand, is a website and platform that provides hosting for your Git repositories (projects), making it easy to share, manage, and collaborate on code with others remotely.",
+      "video": {
+        "title": "Git & GitHub Crash Course For Beginners",
+        "url": "https://www.youtube.com/watch?v=vA5TTz6BXhY"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Git & GitHub Roadmap",
+          "url": "https://roadmap.sh/git-github"
+        },
+        {
+          "type": "course",
+          "title": "What is Version Control? (Interactive Lesson)",
+          "url": "https://inter-git.com/lessons/introduction"
+        },
+        {
+          "type": "official",
+          "title": "Git",
+          "url": "https://git-scm.com/"
+        },
+        {
+          "type": "official",
+          "title": "GitHub",
+          "url": "https://github.com"
+        }
+      ],
+      "parents": [
+        "git-github-beginner"
+      ],
+      "children": [
+        "basicGitUsage"
+      ]
+    },
+    "basicGitUsage": {
+      "title": "Basic Git Usage",
+      "sourceId": "PtU5Qwfzn3N1i3oRlCGoR",
+      "type": "topic",
+      "order": 2,
+      "summary": "You must master the fundamental commands you'll use every day to manage your project's code. These commands allow you to track changes, save snapshots of your work, and collaborate with others. They include initializing a repository, adding files to be tracked, committing changes with messages, viewing the history of changes, and checking the status of your working directory.",
+      "video": {
+        "title": "Git & GitHub Crash Course For Beginners",
+        "url": "https://www.youtube.com/watch?v=vA5TTz6BXhY"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Creating a Repository? (Interactive Lesson)",
+          "url": "https://inter-git.com/lessons/creating-repository"
+        },
+        {
+          "type": "course",
+          "title": "Adding Files to Index (Interactive Lesson)",
+          "url": "https://inter-git.com/lessons/adding-files-to-index"
+        },
+        {
+          "type": "course",
+          "title": "Making a Commit (Interactive Lesson)",
+          "url": "https://inter-git.com/lessons/making-a-commit"
+        },
+        {
+          "type": "article",
+          "title": "Learn Git with Tutorials, News and Tips - Atlassian",
+          "url": "https://www.atlassian.com/git"
+        },
+        {
+          "type": "article",
+          "title": "Git Cheat Sheet",
+          "url": "https://cs.fyi/guide/git-cheatsheet"
+        }
+      ],
+      "parents": [
+        "learnTheBasics"
+      ],
+      "children": [
+        "collaboration"
+      ]
+    },
+    "collaboration": {
+      "title": "Collaboration",
+      "sourceId": "bXfCUG3h1TIFPgD4WUDph",
+      "type": "topic",
+      "order": 3,
+      "summary": "Collaboration in Git and GitHub refers to the process of multiple people working together on the same project, managing changes, and integrating their contributions seamlessly. It involves using Git's branching and merging capabilities, along with GitHub's pull request workflow, to coordinate efforts, review code, and ultimately build a cohesive and functional project.",
+      "video": {
+        "title": "Git & GitHub Tutorial for Beginners",
+        "url": "https://youtu.be/MnUd31TvBoU?si=noaQP5yMtmlHlHR0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Ultimate Github Collaboration Guide",
+          "url": "https://medium.com/@jonathanmines/the-ultimate-github-collaboration-guide-df816e98fb67"
+        }
+      ],
+      "parents": [
+        "basicGitUsage"
+      ],
+      "children": [
+        "moreGit"
+      ]
+    },
+    "moreGit": {
+      "title": "More Git",
+      "sourceId": "aZMVz6kc52vLGcZFD9Dgh",
+      "type": "topic",
+      "order": 4,
+      "summary": "Beyond the basics of tracking changes and collaborating, Git offers a range of powerful features for managing complex projects. These features allow you to streamline your workflow, experiment safely with new ideas, and maintain a clean and organized project history. Exploring these more advanced aspects of Git can significantly enhance your development process.",
+      "video": {
+        "title": "How to Use Git Reset Soft, Mixed, and Hard",
+        "url": "https://youtu.be/s1idhUiCk38?si=F60WS6ukxUUjM-ZI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Git stash",
+          "url": "https://www.atlassian.com/git/tutorials/saving-changes/git-stash"
+        },
+        {
+          "type": "article",
+          "title": "Git Reset and Revert Tutorial for Beginners",
+          "url": "https://www.datacamp.com/tutorial/git-reset-revert-tutorial"
+        },
+        {
+          "type": "article",
+          "title": "Merging vs. rebasing",
+          "url": "https://www.atlassian.com/git/tutorials/merging-vs-rebasing"
+        }
+      ],
+      "parents": [
+        "collaboration"
+      ],
+      "children": [
+        "moreGithub"
+      ]
+    },
+    "moreGithub": {
+      "title": "More GitHub",
+      "sourceId": "sti_TAgZvSpuFWtygAsKc",
+      "type": "topic",
+      "order": 5,
+      "summary": "GitHub isn't just about storing code; it's a collaborative platform. It offers features beyond basic version control, such as project management tools like issue tracking, where you can report bugs and suggest new features. You can also use GitHub's collaboration features, like pull requests, to propose changes to a project, fostering community involvement and code review.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "moreGit"
+      ],
+      "children": [
+        "continueLearningAboutGitAndGithub"
+      ]
+    },
+    "continueLearningAboutGitAndGithub": {
+      "title": "Continue learning about Git and GitHub",
+      "sourceId": "YFC1N-VgE5uMXF68ZBd8s",
+      "type": "paragraph",
+      "order": 6,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "moreGithub"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "git-github-beginner",
+      "to": "learnTheBasics",
+      "style": "solid"
+    },
+    {
+      "from": "learnTheBasics",
+      "to": "basicGitUsage",
+      "style": "solid"
+    },
+    {
+      "from": "basicGitUsage",
+      "to": "collaboration",
+      "style": "solid"
+    },
+    {
+      "from": "collaboration",
+      "to": "moreGit",
+      "style": "solid"
+    },
+    {
+      "from": "moreGit",
+      "to": "moreGithub",
+      "style": "solid"
+    },
+    {
+      "from": "moreGithub",
+      "to": "continueLearningAboutGitAndGithub",
+      "style": "solid"
+    }
+  ]
+}

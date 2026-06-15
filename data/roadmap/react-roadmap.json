@@ -1,0 +1,2794 @@
+{
+  "title": "React Developer",
+  "summary": "Everything that is there to learn about React and the ecosystem in 2026.",
+  "url": "https://roadmap.sh/react",
+  "order": [
+    "javascriptRoadmap",
+    "cliTools",
+    "vite",
+    "components",
+    "functionalComponents",
+    "rendering",
+    "hooks",
+    "creatingCustomHooks",
+    "hooksBestPractices",
+    "routers",
+    "reactRouter",
+    "stateManagement",
+    "jotai",
+    "writingCss",
+    "componentLibraries",
+    "materialUi",
+    "chakraUi",
+    "shadcnUi",
+    "pandaCss",
+    "cssModules",
+    "zustand",
+    "events",
+    "highOrderComponents",
+    "tanstackRouter",
+    "mobx",
+    "context",
+    "componentLifecycle",
+    "listsAndKeys",
+    "renderProps",
+    "refs",
+    "usestate2",
+    "usecallback",
+    "useref",
+    "usereducer",
+    "usememo",
+    "useeffect",
+    "usecontext",
+    "thereUsedToBeClassComponentsWhichReactDoesntRecommendAnyMoreYouDontNeedToLearnAboutThemButYouMightStillNoticeThemInSomeLegacyProjects",
+    "jsx",
+    "propsVsState",
+    "conditionalRendering",
+    "composition",
+    "tailwindCss",
+    "reactRouter2",
+    "radixUi",
+    "astro",
+    "vitest",
+    "jest",
+    "headlessComponentLibraries",
+    "reactAria",
+    "nextJs",
+    "reactTestingLibrary",
+    "arkUi",
+    "apiCalls",
+    "testing",
+    "frameworks",
+    "cypress",
+    "apollo",
+    "tanstackQuery",
+    "playwright",
+    "relay",
+    "axios",
+    "swr",
+    "urql",
+    "rtkQuery",
+    "typescript",
+    "forms",
+    "zod",
+    "reactHookForm",
+    "advancedTopics",
+    "typesValidation",
+    "formik",
+    "animation",
+    "errorBoundaries",
+    "reactNative",
+    "serverApis",
+    "framerMotion",
+    "suspense",
+    "reactSpring",
+    "portals",
+    "mobileApplications",
+    "gsock",
+    "haveALookAtTheFollowingRelatedRoadmaps"
+  ],
+  "topics": {
+    "javascriptRoadmap": {
+      "title": "JavaScript Roadmap",
+      "sourceId": "XDvH2t3AJGevS17uM8TO6",
+      "type": "button",
+      "order": 1,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "react"
+      ],
+      "children": [
+        "cliTools"
+      ]
+    },
+    "cliTools": {
+      "title": "CLI Tools",
+      "sourceId": "tU4Umtnfu01t9gLlnlK6b",
+      "type": "topic",
+      "order": 2,
+      "summary": "",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "vite",
+          "url": "https://vitejs.dev"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about CLI",
+          "url": "https://app.daily.dev/tags/cli?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "javascriptRoadmap"
+      ],
+      "children": [
+        "vite",
+        "components"
+      ]
+    },
+    "vite": {
+      "title": "Vite",
+      "sourceId": "y9ToYDix-koRbR6FLydFw",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.",
+      "video": {
+        "title": "Vite Crash Course",
+        "url": "https://youtu.be/LQQ3CR2JTX8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Vite Website",
+          "url": "https://vitejs.dev"
+        },
+        {
+          "type": "official",
+          "title": "Vite Documentation",
+          "url": "https://vitejs.dev/guide"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Vite",
+          "url": "https://app.daily.dev/tags/vite?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "cliTools"
+      ],
+      "children": []
+    },
+    "components": {
+      "title": "Components",
+      "sourceId": "79K4xgljcoSHkCYI1D55O",
+      "type": "topic",
+      "order": 4,
+      "summary": "Components are the building blocks of React applications. They let us split the UI into independent, reusable pieces, and think about each piece in isolation.",
+      "video": {
+        "title": "Components & Templates in React",
+        "url": "https://www.youtube.com/watch?v=9D1x7-2FmTA"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Creating and nesting components",
+          "url": "https://react.dev/learn#components"
+        },
+        {
+          "type": "article",
+          "title": "Explore the different types of components in React",
+          "url": "https://www.robinwieruch.de/react-component-types/"
+        },
+        {
+          "type": "article",
+          "title": "What is the difference between components, elements, and instances?",
+          "url": "https://www.robinwieruch.de/react-element-component/"
+        }
+      ],
+      "parents": [
+        "cliTools"
+      ],
+      "children": [
+        "usestate2",
+        "usecallback",
+        "useref",
+        "usereducer",
+        "usememo",
+        "useeffect",
+        "usecontext",
+        "functionalComponents",
+        "rendering"
+      ]
+    },
+    "functionalComponents": {
+      "title": "Functional Components",
+      "sourceId": "8mw4TxlLN4ZKAlLl-_NVV",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Functional components are some of the more common components that will come across while working in React. These are simply JavaScript functions. We can create a functional component to React by writing a JavaScript function. These functions may or may not receive data as parameters. In the functional Components, the return value is the JSX code to render to the DOM tree. Functional components can also have state which is managed using React hooks.",
+      "video": {
+        "title": "React JS Functional Components",
+        "url": "https://www.youtube.com/watch?v=NJ_qbsLf52w"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Functional Components and Props",
+          "url": "https://react.dev/reference/react/Component"
+        },
+        {
+          "type": "official",
+          "title": "Your first component",
+          "url": "https://react.dev/learn/your-first-component"
+        },
+        {
+          "type": "official",
+          "title": "Passing props to a component",
+          "url": "https://react.dev/learn/passing-props-to-a-component"
+        },
+        {
+          "type": "article",
+          "title": "Functional Components in React",
+          "url": "https://www.robinwieruch.de/react-function-component/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about React",
+          "url": "https://app.daily.dev/tags/react?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "components"
+      ],
+      "children": []
+    },
+    "rendering": {
+      "title": "Rendering",
+      "sourceId": "0uiGsC5SWavNdlFqizkKe",
+      "type": "topic",
+      "order": 6,
+      "summary": "React follows a declarative approach to rendering components, which means that developers specify what a component should look like, and React takes care of rendering the component to the screen. This is in contrast to an imperative approach, where developers would write code to manually manipulate the DOM (Document Object Model) to update the UI.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Render and Commit - Official Docs",
+          "url": "https://react.dev/learn/render-and-commit"
+        },
+        {
+          "type": "article",
+          "title": "Rendering in React - ui.dev",
+          "url": "https://ui.dev/why-react-renders"
+        },
+        {
+          "type": "article",
+          "title": "Fix the slow render before you fix the re-render",
+          "url": "https://kentcdodds.com/blog/fix-the-slow-render-before-you-fix-the-re-render"
+        }
+      ],
+      "parents": [
+        "components"
+      ],
+      "children": [
+        "componentLifecycle",
+        "listsAndKeys",
+        "renderProps",
+        "refs",
+        "hooks"
+      ]
+    },
+    "hooks": {
+      "title": "Hooks",
+      "sourceId": "LbLQhonBqzxHU6B-L--Vq",
+      "type": "topic",
+      "order": 7,
+      "summary": "Hooks were introduced in React 16.8 and they let us use React's features-like managing your component's state and or performing an after effect when certain changes occur in state(s) without writing a class.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hooks Reference",
+          "url": "https://react.dev/reference/react"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about React Hooks",
+          "url": "https://app.daily.dev/tags/react-hooks?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "rendering"
+      ],
+      "children": [
+        "mobx",
+        "context",
+        "creatingCustomHooks",
+        "hooksBestPractices",
+        "routers"
+      ]
+    },
+    "creatingCustomHooks": {
+      "title": "Creating Custom Hooks",
+      "sourceId": "HX75SExuzR5AP7TQ94qid",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Building your own Hooks lets you extract component logic into reusable functions.",
+      "video": {
+        "title": "Custom Hooks in React",
+        "url": "https://www.youtube.com/watch?v=I2Bgi0Qcdvc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Reusing Logic with Custom Hooks",
+          "url": "https://react.dev/learn/reusing-logic-with-custom-hooks"
+        },
+        {
+          "type": "article",
+          "title": "How to create a custom Hook (2) followed by Examples",
+          "url": "https://www.robinwieruch.de/react-custom-hook/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about React Hooks",
+          "url": "https://app.daily.dev/tags/react-hooks?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "hooks"
+      ],
+      "children": []
+    },
+    "hooksBestPractices": {
+      "title": "Hooks Best Practices",
+      "sourceId": "mkyU0ug8MXxV4biHuOity",
+      "type": "subtopic",
+      "order": 9,
+      "summary": "To fully leverage the capabilities of React Hooks, it is crucial to adopt best practices that not only enhance code readability but also optimize performance. By adhering to these practices, developers can create cleaner, more maintainable components that make the most of React's powerful features, leading to a more efficient and enjoyable development experience.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Rules of Hooks",
+          "url": "https://react.dev/reference/rules/rules-of-hooks/"
+        },
+        {
+          "type": "article",
+          "title": "React Hooks Best Practices: Unlocking Efficiency and Elegance",
+          "url": "https://medium.com/womenintechnology/react-hooks-best-practices-unlocking-efficiency-and-elegance-da23f7e1418a"
+        },
+        {
+          "type": "article",
+          "title": "Mastering React Hooks: Best Practices and Common Pitfalls",
+          "url": "https://dev.to/codesensei/mastering-react-hooks-best-practices-and-common-pitfalls-3d9i"
+        },
+        {
+          "type": "article",
+          "title": "React Hooks Cheat Sheet: Best Practices with Examples",
+          "url": "https://blog.logrocket.com/react-hooks-cheat-sheet-solutions-common-problems/"
+        },
+        {
+          "type": "article",
+          "title": "React Custom Hooks: Best Practices and Examples",
+          "url": "https://utopia-insights.dev/react-custom-hooks-best-practices-and-examples/"
+        }
+      ],
+      "parents": [
+        "hooks"
+      ],
+      "children": []
+    },
+    "routers": {
+      "title": "Routers",
+      "sourceId": "NStw6bi_pPB49K41BFSgo",
+      "type": "topic",
+      "order": 10,
+      "summary": "Routing is an essential concept in Single Page Applications (SPA). When your application is divided into separated logical sections, and all of them are under their own URL, your users can easily share links among each other.",
+      "video": {
+        "title": "React Router 6 \u2013 Tutorial for Beginners.",
+        "url": "https://www.youtube.com/watch?v=59IXY5IDrBA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to use Routing in React JS: A Comprehensive Guide.",
+          "url": "https://blog.logrocket.com/react-router-v6-guide/"
+        }
+      ],
+      "parents": [
+        "hooks"
+      ],
+      "children": [
+        "events",
+        "highOrderComponents",
+        "tanstackRouter",
+        "reactRouter",
+        "stateManagement"
+      ]
+    },
+    "reactRouter": {
+      "title": "React Router",
+      "sourceId": "jvp43wFkKlGQX2y7IxkbM",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "React Router is a standard library for routing in React applications. It enables navigation between different views or components within a single-page application (SPA) without requiring the browser to reload the page. It provides a declarative way to define routes and map them to specific components, allowing users to seamlessly navigate through different parts of the application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "React Router \u2014 Official Website",
+          "url": "https://reactrouter.com/"
+        },
+        {
+          "type": "article",
+          "title": "What is React Router?",
+          "url": "https://www.w3schools.com/react/react_router.asp"
+        },
+        {
+          "type": "article",
+          "title": "React Router V7: A Crash Course",
+          "url": "https://dev.to/pedrotech/react-router-v7-a-crash-course-2m86"
+        }
+      ],
+      "parents": [
+        "routers"
+      ],
+      "children": []
+    },
+    "stateManagement": {
+      "title": "State Management",
+      "sourceId": "I7_mX4h-Yywp1YyTJRKXI",
+      "type": "topic",
+      "order": 12,
+      "summary": "Application state management is the process of maintaining knowledge of an application's inputs across multiple related data flows that form a complete business transaction -- or a session -- to understand the condition of the app at any given moment. In computer science, an input is information put into the program by the user and state refers to the condition of an application according to its stored inputs -- saved as variables or constants. State can also be described as the collection of preserved information that forms a complete session.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is State Management?",
+          "url": "https://www.techtarget.com/searchapparchitecture/definition/state-management"
+        },
+        {
+          "type": "article",
+          "title": "Overview of State in React",
+          "url": "https://www.robinwieruch.de/react-state/"
+        }
+      ],
+      "parents": [
+        "routers"
+      ],
+      "children": [
+        "zustand",
+        "jotai",
+        "writingCss"
+      ]
+    },
+    "jotai": {
+      "title": "Jotai",
+      "sourceId": "yI6XiNW04EL78UL4lkVgd",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "Jotai takes an atomic approach to global React state management.",
+      "video": {
+        "title": "Jotai React - Better Global State Management",
+        "url": "https://www.youtube.com/watch?v=ZcKzPZN7Ids"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website: Jotai",
+          "url": "https://jotai.org/"
+        },
+        {
+          "type": "article",
+          "title": "State Management on React - Jotai",
+          "url": "https://dev.to/kevin-uehara/state-management-on-react-part-3-jotai-i7f"
+        }
+      ],
+      "parents": [
+        "stateManagement"
+      ],
+      "children": []
+    },
+    "writingCss": {
+      "title": "Writing CSS",
+      "sourceId": "DfrCkbD-HEHwLymv10zb5",
+      "type": "topic",
+      "order": 14,
+      "summary": "While \"CSS in JS\" is the most predominant way of styling modern frontend applications, there are several different ways to style your React applications whether it is vanilla CSS, CSS Modules, or CSS in JS etc and each has several frameworks available.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Ways to CSS style a React application",
+          "url": "https://www.robinwieruch.de/react-css-styling/"
+        }
+      ],
+      "parents": [
+        "tailwindCss",
+        "stateManagement"
+      ],
+      "children": [
+        "pandaCss",
+        "cssModules",
+        "componentLibraries"
+      ]
+    },
+    "componentLibraries": {
+      "title": "Component / Libraries",
+      "sourceId": "thfnymb_UIiKxakKfiua5",
+      "type": "topic",
+      "order": 15,
+      "summary": "React component libraries are collections of pre-built, reusable components that can be used to speed up the development process. They can be styled using CSS in various ways, including traditional CSS files, CSS modules, and CSS-in-JS solutions like styled-components.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "MUI: React Component Library",
+          "url": "https://mui.com/"
+        },
+        {
+          "type": "article",
+          "title": "NextUI.org",
+          "url": "https://nextui.org/"
+        }
+      ],
+      "parents": [
+        "writingCss"
+      ],
+      "children": [
+        "materialUi",
+        "chakraUi",
+        "shadcnUi"
+      ]
+    },
+    "materialUi": {
+      "title": "Material UI",
+      "sourceId": "gy7eBxPOlwG8BvxHVLDQ9",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "Material UI is an open-source React component library that implements Google's Material Design.",
+      "video": {
+        "title": "React Material UI Course",
+        "url": "https://www.youtube.com/watch?v=BHEPVdfBAqE&list=PLC3y8-rFHvwh-K9mDlrrcDywl7CeVL2rO"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Material UI website",
+          "url": "https://mui.com/material-ui/getting-started/"
+        }
+      ],
+      "parents": [
+        "componentLibraries"
+      ],
+      "children": []
+    },
+    "chakraUi": {
+      "title": "Chakra UI",
+      "sourceId": "uqphqAnlcJOLnwHZs5jWu",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "Chakra UI is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications.",
+      "video": {
+        "title": "Official Getting Started Video",
+        "url": "https://youtu.be/wI2vqXsjsIo"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Chakra UI Website",
+          "url": "https://chakra-ui.com/"
+        },
+        {
+          "type": "article",
+          "title": "Chakra UI Official Getting Started",
+          "url": "https://chakra-ui.com/docs/getting-started"
+        }
+      ],
+      "parents": [
+        "componentLibraries"
+      ],
+      "children": []
+    },
+    "shadcnUi": {
+      "title": "Shadcn UI",
+      "sourceId": "njKsYNkwTXPQ1NjlGKXab",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "Shadcn is an open-source framework providing pre-built, accessible, and customizable UI components for rapid web application development. It offers a streamlined approach to construct modern user interfaces.",
+      "video": {
+        "title": "Shadcn Setup and Tutorial",
+        "url": "https://www.youtube.com/watch?v=v0_AT8zaLo8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website",
+          "url": "https://ui.shadcn.com/"
+        },
+        {
+          "type": "official",
+          "title": "Documentation",
+          "url": "https://ui.shadcn.com/docs"
+        },
+        {
+          "type": "article",
+          "title": "Shadcn Guide",
+          "url": "https://blog.logrocket.com/shadcn-ui-adoption-guide/"
+        }
+      ],
+      "parents": [
+        "componentLibraries"
+      ],
+      "children": []
+    },
+    "pandaCss": {
+      "title": "Panda CSS",
+      "sourceId": "akVNUPOqaTXaSHoQFlkP_",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "Panda CSS is CSS-in-JS with build time generated styles, RSC compatible, multi-variant support, and best-in-class developer experience.",
+      "video": {
+        "title": "Panda CSS First Impressions | Theo Reacts",
+        "url": "https://www.youtube.com/watch?v=UlY-Ixddjm0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website",
+          "url": "https://panda-css.com"
+        },
+        {
+          "type": "official",
+          "title": "Tutorials and videos to get started with Panda!",
+          "url": "https://panda-css.com/learn"
+        },
+        {
+          "type": "article",
+          "title": "Panda CSS \u2013 CSS-in-JS without Runtime Overhead",
+          "url": "https://infinum.com/blog/panda-css-css-in-js-without-runtime-overhead/"
+        }
+      ],
+      "parents": [
+        "writingCss"
+      ],
+      "children": []
+    },
+    "cssModules": {
+      "title": "CSS Modules",
+      "sourceId": "awoEhwPKjUcR84XGL6Som",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "CSS files in which all class names and animation names are scoped locally by default.",
+      "video": {
+        "title": "CSS Modules: Why are they great?",
+        "url": "https://www.youtube.com/watch?v=pKMWU9OrA2s"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Project GitHub Repository",
+          "url": "https://github.com/css-modules/css-modules"
+        },
+        {
+          "type": "article",
+          "title": "Using CSS Modules In React App",
+          "url": "https://medium.com/@ralph1786/using-css-modules-in-react-app-c2079eadbb87"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about CSS",
+          "url": "https://app.daily.dev/tags/css?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "writingCss"
+      ],
+      "children": []
+    },
+    "zustand": {
+      "title": "Zustand",
+      "sourceId": "nl5imPsdY2oEWlg-9TTuk",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "Zustand is a small, fast and scalable bearbones state-management solution using simplified flux principles. Has a comfy api based on hooks, isn't boilerplatey or opinionated.",
+      "video": {
+        "title": "Zustand Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=AYO4qHAnLQI&t"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Zustand - Official Website",
+          "url": "https://github.com/pmndrs/zustand"
+        },
+        {
+          "type": "opensource",
+          "title": "Zustand Repository",
+          "url": "https://github.com/pmndrs/zustand"
+        },
+        {
+          "type": "article",
+          "title": "Working with Zustand",
+          "url": "https://tkdodo.eu/blog/working-with-zustand"
+        },
+        {
+          "type": "article",
+          "title": "Zustand - Official Documentation",
+          "url": "https://docs.pmnd.rs/zustand/getting-started/introduction"
+        }
+      ],
+      "parents": [
+        "stateManagement"
+      ],
+      "children": []
+    },
+    "events": {
+      "title": "Events",
+      "sourceId": "Nex2HcTOYIbfqUzXyxSMY",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Responding to Events",
+          "url": "https://react.dev/learn/responding-to-events"
+        },
+        {
+          "type": "official",
+          "title": "React Event Object (Synthetic Event)",
+          "url": "https://react.dev/reference/react-dom/components/common#react-event-object"
+        },
+        {
+          "type": "article",
+          "title": "React Event Handler",
+          "url": "https://www.robinwieruch.de/react-event-handler/"
+        }
+      ],
+      "parents": [
+        "routers"
+      ],
+      "children": []
+    },
+    "highOrderComponents": {
+      "title": "High Order Components",
+      "sourceId": "zOENl96GUZRw2PP2KxIck",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React\u2019s compositional nature.",
+      "video": {
+        "title": "Learn React Higher Order Component (HOC) in 10 Minutes",
+        "url": "https://youtu.be/J5P0q7EROfw?si=-8s5h1b0mZSGVgLt"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "High-Order Components",
+          "url": "https://reactjs.org/docs/higher-order-components.html"
+        },
+        {
+          "type": "article",
+          "title": "How to create a Higher-Order Component",
+          "url": "https://www.robinwieruch.de/react-higher-order-components/"
+        }
+      ],
+      "parents": [
+        "routers"
+      ],
+      "children": []
+    },
+    "tanstackRouter": {
+      "title": "Tanstack Router",
+      "sourceId": "zWL8VLx_g0SWubavJDs6i",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "TanStack Router is a powerful router for building React applications, offering a range of advanced features to streamline development.",
+      "video": {
+        "title": "TanStack Router - Crash Course",
+        "url": "https://www.youtube.com/watch?v=4sslBg8LprE&list=PLOQjd5dsGSxJilh0lBofeY8Qib98kzmF5"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "TanStack Router Documentation",
+          "url": "https://tanstack.com/router/latest/docs/framework/react/overview"
+        }
+      ],
+      "parents": [
+        "routers"
+      ],
+      "children": []
+    },
+    "mobx": {
+      "title": "MobX",
+      "sourceId": "1kbrCI5JS0c9wbzxXpgFU",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "",
+      "video": {
+        "title": "Mobx React - State Management",
+        "url": "https://www.youtube.com/watch?v=AgcaGGkYy_8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website: MobX",
+          "url": "https://mobx.js.org/"
+        },
+        {
+          "type": "article",
+          "title": "How to Improve State Management in React with MobX",
+          "url": "https://medium.com/whitespectre/how-to-improve-state-management-in-react-with-mobx-568808ff86a4"
+        }
+      ],
+      "parents": [
+        "hooks"
+      ],
+      "children": []
+    },
+    "context": {
+      "title": "Context",
+      "sourceId": "10uL0r388lKh8pWYWqRZD",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "Context provides a way to pass data through the component tree without having to pass props down manually at every level.",
+      "video": {
+        "title": "React Context API Crash Course",
+        "url": "https://www.youtube.com/watch?v=t9WmZFnE6Hg"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Passing Data Deeply with Context",
+          "url": "https://react.dev/learn/passing-data-deeply-with-context"
+        },
+        {
+          "type": "article",
+          "title": "State with useContext and useState/useReducer",
+          "url": "https://www.robinwieruch.de/react-state-usereducer-usestate-usecontext/"
+        }
+      ],
+      "parents": [
+        "hooks"
+      ],
+      "children": []
+    },
+    "componentLifecycle": {
+      "title": "Component Lifecycle",
+      "sourceId": "8OBlgDRUg-CTgDXY-QHyO",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "React components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting along with several \u201clifecycle methods\u201d that you can override to run code at particular times in the process.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Lifecycle of Reactive Effects",
+          "url": "https://react.dev/learn/lifecycle-of-reactive-effects"
+        },
+        {
+          "type": "official",
+          "title": "Class Component",
+          "url": "https://react.dev/reference/react/Component"
+        },
+        {
+          "type": "article",
+          "title": "React component lifecycle: React lifecycle methods & hooks",
+          "url": "https://tsh.io/blog/react-component-lifecycle-methods-vs-hooks/"
+        },
+        {
+          "type": "article",
+          "title": "The React lifecycle: methods and hooks explained",
+          "url": "https://retool.com/blog/the-react-lifecycle-methods-and-hooks-explained#react-hooks-and-the-component-lifecycle"
+        },
+        {
+          "type": "article",
+          "title": "React Lifecycle: Methods & Hooks In Detail",
+          "url": "https://www.bairesdev.com/blog/react-lifecycle-methods-hooks/"
+        },
+        {
+          "type": "article",
+          "title": "lifecycle diagram",
+          "url": "https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/"
+        }
+      ],
+      "parents": [
+        "rendering"
+      ],
+      "children": []
+    },
+    "listsAndKeys": {
+      "title": "Lists and Keys",
+      "sourceId": "HeWVCPHqVnnbOn6zIim4K",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "When you render lists in React, you can use the `key` prop to specify a unique key for each item. This key is used to identify which item to update when you want to update a specific item.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Lists and Keys",
+          "url": "https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key"
+        },
+        {
+          "type": "official",
+          "title": "Rendering Lists",
+          "url": "https://react.dev/learn/rendering-lists"
+        },
+        {
+          "type": "article",
+          "title": "List components in React by Example",
+          "url": "https://www.robinwieruch.de/react-list-component/"
+        },
+        {
+          "type": "article",
+          "title": "Why do we need the key prop in React?",
+          "url": "https://www.robinwieruch.de/react-list-key/"
+        }
+      ],
+      "parents": [
+        "rendering"
+      ],
+      "children": []
+    },
+    "renderProps": {
+      "title": "Render Props",
+      "sourceId": "vdumdIglnouf1KyGIGZnc",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "The term 'render props' refers to a technique for sharing code between React components using a prop whose value is a function.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Render Props in React",
+          "url": "https://react.dev/learn/passing-props-to-a-component"
+        },
+        {
+          "type": "article",
+          "title": "How to create a Render Prop Component",
+          "url": "https://www.robinwieruch.de/react-render-props/"
+        },
+        {
+          "type": "article",
+          "title": "Render Props Pattern",
+          "url": "https://www.patterns.dev/posts/render-props-pattern/"
+        }
+      ],
+      "parents": [
+        "rendering"
+      ],
+      "children": []
+    },
+    "refs": {
+      "title": "Refs",
+      "sourceId": "_zNAOhFWMcWqP4oxNPCXF",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "Refs provide a way to access DOM nodes or React elements created in the render method.",
+      "video": {
+        "title": "Learn useRef in 11 Minutes - Web Dev Simplified",
+        "url": "https://www.youtube.com/watch?v=t2ypzz6gJm0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Referencing Values with Refs",
+          "url": "https://react.dev/learn/referencing-values-with-refs"
+        },
+        {
+          "type": "official",
+          "title": "Manipulating the DOM with Refs",
+          "url": "https://react.dev/learn/manipulating-the-dom-with-refs"
+        },
+        {
+          "type": "article",
+          "title": "Examples of using refs in React",
+          "url": "https://www.robinwieruch.de/react-ref/"
+        },
+        {
+          "type": "article",
+          "title": "The Complete Guide to useRef() and Refs in React",
+          "url": "https://dmitripavlutin.com/react-useref-guide/"
+        },
+        {
+          "type": "article",
+          "title": "What Exactly Are Refs? - React - CodeGuage",
+          "url": "https://www.codeguage.com/courses/react/refs"
+        }
+      ],
+      "parents": [
+        "rendering"
+      ],
+      "children": []
+    },
+    "usestate2": {
+      "title": "useState",
+      "sourceId": "FK59Zsm5ENA9g11XWCan_",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "`useState` hook is used to manage the state of a component in functional components. Calling `useState` returns an array with two elements: the current state value and a function to update the state.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Using the State Hook",
+          "url": "https://react.dev/reference/react/useState"
+        },
+        {
+          "type": "article",
+          "title": "React useState Hook by Example",
+          "url": "https://www.robinwieruch.de/react-usestate-hook/"
+        }
+      ],
+      "parents": [
+        "components"
+      ],
+      "children": []
+    },
+    "usecallback": {
+      "title": "useCallback",
+      "sourceId": "dgoDNDtW2_q9R9yhkXrcz",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "`useCallback` is a React hook that returns a memoized version of a callback function. It's used to optimize performance by preventing unnecessary re-renders. Specifically, it helps avoid recreating functions when their dependencies haven't changed, which can be useful when passing callbacks to child components that rely on referential equality to prevent re-rendering.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "React Documentation on useCallback",
+          "url": "https://react.dev/reference/react/useCallback"
+        },
+        {
+          "type": "article",
+          "title": "useCallback Explained in Depth",
+          "url": "https://kentcdodds.com/blog/usememo-and-usecallback"
+        },
+        {
+          "type": "article",
+          "title": "useCallback Hook: An Introductory Guide",
+          "url": "https://dmitripavlutin.com/dont-overuse-react-usecallback/"
+        }
+      ],
+      "parents": [
+        "components"
+      ],
+      "children": []
+    },
+    "useref": {
+      "title": "useRef",
+      "sourceId": "t_laNdMmdLApYszqXRdWg",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "`useRef` is a React hook that provides a way to create a mutable reference that persists across component re-renders. It stores a value that doesn't cause re-renders when it changes.",
+      "video": {
+        "title": "WebDevSimplified",
+        "url": "https://www.youtube.com/watch?v=t2ypzz6gJm0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "useRef",
+          "url": "https://react.dev/reference/react/useRef"
+        }
+      ],
+      "parents": [
+        "components"
+      ],
+      "children": []
+    },
+    "usereducer": {
+      "title": "useReducer",
+      "sourceId": "v48Mv0wQqjXbvy8x6gDjQ",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "`useReducer`: An alternative to useState. Accepts a reducer of type (state, action) => newState, and returns the current state paired with a dispatch method. (If you\u2019re familiar with Redux, you already know how this works.)",
+      "video": {
+        "title": "Learn React Hooks: useReducer - Simply Explained!",
+        "url": "https://www.youtube.com/watch?v=rgp_iCVS8ys&t"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "useReducer Docs",
+          "url": "https://react.dev/reference/react/useReducer"
+        },
+        {
+          "type": "article",
+          "title": "The React useReducer Hook",
+          "url": "https://www.telerik.com/blogs/react-usereducer-hook"
+        },
+        {
+          "type": "article",
+          "title": "A guide to the React useReducer Hook",
+          "url": "https://blog.logrocket.com/react-usereducer-hook-ultimate-guide/"
+        }
+      ],
+      "parents": [
+        "components"
+      ],
+      "children": []
+    },
+    "usememo": {
+      "title": "useMemo",
+      "sourceId": "w3bNp7OkehI1gjx8NzlC8",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "`useMemo` is a React hook that memoizes the result of a function. It is used to optimize performance by caching the result of a function and returning the cached result when the inputs to the function have not changed.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "useMemo Docs",
+          "url": "https://react.dev/reference/react/useMemo"
+        },
+        {
+          "type": "article",
+          "title": "useMemo and useCallback - Josh W. Comeau",
+          "url": "https://www.joshwcomeau.com/react/usememo-and-usecallback/"
+        }
+      ],
+      "parents": [
+        "components"
+      ],
+      "children": []
+    },
+    "useeffect": {
+      "title": "useEffect",
+      "sourceId": "8OnzX03hkZ9K9i__tjmFX",
+      "type": "subtopic",
+      "order": 36,
+      "summary": "`useEffect` is a special hook that lets you run side effects in React. It is similar to componentDidMount and componentDidUpdate, but it only runs when the component (or some of its props) changes and during the initial mount.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Using the Effect Hook",
+          "url": "https://react.dev/reference/react/useEffect"
+        },
+        {
+          "type": "article",
+          "title": "React useEffect Hook by Example",
+          "url": "https://www.robinwieruch.de/react-useeffect-hook/"
+        }
+      ],
+      "parents": [
+        "components"
+      ],
+      "children": []
+    },
+    "usecontext": {
+      "title": "useContext",
+      "sourceId": "D5_O-uElftYGQr_bTU_se",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "The `useContext` Hook lets us share data between components without having to pass props down through every level of the component tree. This is particularly useful when many components need to access the same data or when components are deeply nested.",
+      "video": {
+        "title": "Learn useContext In 13 Minutes",
+        "url": "https://www.youtube.com/watch?v=5LrDIWkK_Bc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Using useContext",
+          "url": "https://react.dev/reference/react/useContext"
+        },
+        {
+          "type": "official",
+          "title": "Explore the concept of context",
+          "url": "https://react.dev/learn/passing-data-deeply-with-context"
+        }
+      ],
+      "parents": [
+        "components"
+      ],
+      "children": []
+    },
+    "thereUsedToBeClassComponentsWhichReactDoesntRecommendAnyMoreYouDontNeedToLearnAboutThemButYouMightStillNoticeThemInSomeLegacyProjects": {
+      "title": "There used to be \"Class Components\" which React doesn't recommend any more. You don't need to learn about them but you might still notice them in some legacy projects",
+      "sourceId": "h_o0LOSuwRvymWLF7IVj_",
+      "type": "paragraph",
+      "order": 39,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "jsx"
+      ]
+    },
+    "jsx": {
+      "title": "JSX",
+      "sourceId": "WREBxWSNQDD_6fzpHL6CE",
+      "type": "subtopic",
+      "order": 40,
+      "summary": "JSX stands for JavaScript XML. It allows writing HTML in JavaScript and converts the HTML tags into React elements.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Writing markup with JSX",
+          "url": "https://react.dev/learn/writing-markup-with-jsx"
+        },
+        {
+          "type": "official",
+          "title": "JavaScript in JSX with Curly Braces",
+          "url": "https://react.dev/learn/javascript-in-jsx-with-curly-braces"
+        },
+        {
+          "type": "article",
+          "title": "Working with JSX - React - CodeGuage",
+          "url": "https://www.codeguage.com/courses/react/jsx"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about JSX",
+          "url": "https://app.daily.dev/tags/jsx?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "thereUsedToBeClassComponentsWhichReactDoesntRecommendAnyMoreYouDontNeedToLearnAboutThemButYouMightStillNoticeThemInSomeLegacyProjects"
+      ],
+      "children": []
+    },
+    "propsVsState": {
+      "title": "Props vs State",
+      "sourceId": "RFuy3Eho3mnW1GpP08BVw",
+      "type": "subtopic",
+      "order": 42,
+      "summary": "Props (short for \u201cproperties\u201d) and state are both plain JavaScript objects. While both hold information that influences the output of component render, they are different in one important way: props get passed to the component (similar to function parameters) whereas state is managed within the component (similar to variables declared within a function).",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "State: A Component's Memory",
+          "url": "https://react.dev/learn/state-a-components-memory"
+        },
+        {
+          "type": "article",
+          "title": "How to use Props in React",
+          "url": "https://www.robinwieruch.de/react-pass-props-to-component/"
+        },
+        {
+          "type": "article",
+          "title": "What is the difference between state and props in React?",
+          "url": "https://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react"
+        },
+        {
+          "type": "article",
+          "title": "How to update state from props in React",
+          "url": "https://www.robinwieruch.de/react-derive-state-props/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "conditionalRendering": {
+      "title": "Conditional Rendering",
+      "sourceId": "aE6XBgH23135_9QmD4ff2",
+      "type": "subtopic",
+      "order": 43,
+      "summary": "In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.",
+      "video": {
+        "title": "Conditional rendering in React",
+        "url": "https://www.youtube.com/watch?v=4oCVDkb_EIs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Conditional Rendering",
+          "url": "https://react.dev/learn/conditional-rendering"
+        },
+        {
+          "type": "article",
+          "title": "Different techniques for conditional rendering in React",
+          "url": "https://www.robinwieruch.de/conditional-rendering-react/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "composition": {
+      "title": "Composition",
+      "sourceId": "4T59gdcwdXqj9kCuK7cfp",
+      "type": "subtopic",
+      "order": 45,
+      "summary": "React has a powerful composition model, and it is recommended to use composition instead of inheritance to reuse code between components.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Passing JSX as children",
+          "url": "https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children"
+        },
+        {
+          "type": "article",
+          "title": "Composition vs Inheritance",
+          "url": "https://reactjs.org/docs/composition-vs-inheritance.html"
+        },
+        {
+          "type": "article",
+          "title": "How to perform component composition in React",
+          "url": "https://www.robinwieruch.de/react-component-composition/"
+        },
+        {
+          "type": "article",
+          "title": "Achieving Reusability With React Composition",
+          "url": "https://formidable.com/blog/2021/react-composition/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "tailwindCss": {
+      "title": "Tailwind CSS",
+      "sourceId": "KO3viVIJJREtxXxsocN7j",
+      "type": "subtopic",
+      "order": 48,
+      "summary": "CSS Framework that provides atomic CSS classes to help you style components e.g. `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.",
+      "video": {
+        "title": "Tailwind CSS Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=lCxcTsOHrjo"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Tailwind Website",
+          "url": "https://tailwindcss.com"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Tailwind CSS",
+          "url": "https://app.daily.dev/tags/tailwind-css?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "writingCss"
+      ]
+    },
+    "reactRouter2": {
+      "title": "react-router",
+      "sourceId": "-WjJBYCmRRj08n_9HxohY",
+      "type": "subtopic",
+      "order": 49,
+      "summary": "There used to be Remix in this list but they announced to merge Remix into react-router after v7.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website",
+          "url": "https://remix.run/"
+        },
+        {
+          "type": "official",
+          "title": "Announcement to merge Remix into react-router",
+          "url": "https://remix.run/blog/merging-remix-and-react-router"
+        }
+      ],
+      "parents": [
+        "frameworks"
+      ],
+      "children": []
+    },
+    "radixUi": {
+      "title": "Radix UI",
+      "sourceId": "XL9XOV2h0BAuA5cFcM5L_",
+      "type": "subtopic",
+      "order": 50,
+      "summary": "Radix UI is an open-source library designed to make it easier to create accessible and customizable User Interface (UI) components in React. It provides developers with a range of `unstyled`, fully `accessible` primitives, giving them complete control over the appearance and behavior of their UI elements.",
+      "video": {
+        "title": "Radix UI Course",
+        "url": "https://www.youtube.com/playlist?list=PLlNdnoKwDZdwANQoaakE8-kYMyKFOETlo"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Getting Started with Radix UI",
+          "url": "https://www.radix-ui.com/themes/docs/overview/getting-started"
+        },
+        {
+          "type": "official",
+          "title": "Official Website",
+          "url": "https://www.radix-ui.com/"
+        },
+        {
+          "type": "article",
+          "title": "What is Radix UI?",
+          "url": "https://medium.com/@olivier.trinh/what-is-radix-ui-ff535bbb52d5"
+        }
+      ],
+      "parents": [
+        "headlessComponentLibraries"
+      ],
+      "children": []
+    },
+    "astro": {
+      "title": "Astro",
+      "sourceId": "_HoZkE7FH-v3wI_722ZTF",
+      "type": "subtopic",
+      "order": 51,
+      "summary": "Astro is the web framework for building content-driven websites like blogs, marketing, and e-commerce. Astro is best-known for pioneering a new frontend architecture to reduce JavaScript overhead and complexity compared to other frameworks. If you need a website that loads fast and has great SEO, then Astro is for you.",
+      "video": {
+        "title": "Astro Crash Course in 60 Minutes",
+        "url": "https://www.youtube.com/watch?v=NniT0vKyn-E"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Astro Website",
+          "url": "https://astro.build/"
+        }
+      ],
+      "parents": [
+        "frameworks"
+      ],
+      "children": []
+    },
+    "vitest": {
+      "title": "Vitest",
+      "sourceId": "LULjhsPNONyI5912DKzPw",
+      "type": "subtopic",
+      "order": 52,
+      "summary": "Vitest is a fast Vite-native unit test framework with out-of-box ESM, TypeScript and JSX support. Works on React, Vue, Svelte and more projects created with Vite",
+      "video": {
+        "title": "Testing with Vitest",
+        "url": "https://www.youtube.com/watch?v=cM_AeQHzlGg"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Vitest Website",
+          "url": "https://vitest.dev/"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": []
+    },
+    "jest": {
+      "title": "Jest",
+      "sourceId": "opa61u9gYgSpoPtxp58wu",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity. It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Jest Website",
+          "url": "https://jestjs.io/"
+        },
+        {
+          "type": "article",
+          "title": "Testing JavaScript with Jest on Vultr",
+          "url": "https://developer.mozilla.org/en-US/blog/test-javascript-with-jest-on-vultr/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Jest",
+          "url": "https://app.daily.dev/tags/jest?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": []
+    },
+    "headlessComponentLibraries": {
+      "title": "Headless Component Libraries",
+      "sourceId": "MnDgQq9Vcxsu3wDqv5uh2",
+      "type": "topic",
+      "order": 54,
+      "summary": "Headless component libraries have some powerful state, logic and data management tools that do not enforce any UI structure. Consequently, developers are able to build custom UI components with unique styles but that still benefit from strong reusable logics. This kind of library simplifies complex behaviors and accessibility issues in outdoor environments allowing you to create innovative interfaces. With headless components, developers keep code clean and maintainable as a result of the reusability aspect inherent in these, this also guarantees efficient and accessible components enhancing application quality.",
+      "video": {
+        "title": "Rise of Headless Components",
+        "url": "https://www.youtube.com/watch?v=_WtVG_pKsxM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What are headless components?",
+          "url": "https://dev.to/verthon/headless-ui-libraries-the-key-to-flexible-and-accessible-user-interfaces-546p"
+        },
+        {
+          "type": "article",
+          "title": "Headless Components: A Comprehensive Guide",
+          "url": "https://blog.logrocket.com/the-complete-guide-to-building-headless-interface-components-in-react/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "radixUi",
+        "reactAria",
+        "arkUi",
+        "apiCalls"
+      ]
+    },
+    "reactAria": {
+      "title": "React Aria",
+      "sourceId": "RvDfKoa_HIW3QDBfkPv3m",
+      "type": "subtopic",
+      "order": 55,
+      "summary": "React Aria is style-free out of the box, allowing you to build custom designs to fit your application or design system using any styling and animation solution. Each component is broken down into individual parts with built-in states, render props, and slots that make styling a breeze.",
+      "video": {
+        "title": "Why You Should Use React Aria Components",
+        "url": "https://www.youtube.com/watch?v=lTPh6NGLAmk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Getting Started with React Aria",
+          "url": "https://react-spectrum.adobe.com/react-aria/"
+        }
+      ],
+      "parents": [
+        "headlessComponentLibraries"
+      ],
+      "children": []
+    },
+    "nextJs": {
+      "title": "Next.js",
+      "sourceId": "HdWq9ue0JdwmwqSIN2OD_",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "Next.js is an open-source development framework built on top of Node.js enabling React based web applications functionalities such as server-side rendering and generating static websites.",
+      "video": {
+        "title": "Next.js Full course",
+        "url": "https://www.youtube.com/watch?v=9P8mASSREYM&list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website",
+          "url": "https://nextjs.org/"
+        },
+        {
+          "type": "official",
+          "title": "Official Docs for Getting Started",
+          "url": "https://nextjs.org/docs/getting-started"
+        },
+        {
+          "type": "article",
+          "title": "Mastering Next.js",
+          "url": "https://masteringnextjs.com/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about JavaScript",
+          "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "frameworks"
+      ],
+      "children": []
+    },
+    "reactTestingLibrary": {
+      "title": "react-testing-library",
+      "sourceId": "cQllxv7qGbRtM9O5llgN6",
+      "type": "subtopic",
+      "order": 57,
+      "summary": "The React Testing Library is a very lightweight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices. Its primary guiding principle is: The more your tests resemble the way your software is used, the more confidence they can give you.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "React Testing Library",
+          "url": "https://testing-library.com/docs/react-testing-library/intro/"
+        },
+        {
+          "type": "article",
+          "title": "How to use React Testing Library",
+          "url": "https://www.robinwieruch.de/react-testing-library/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about React",
+          "url": "https://app.daily.dev/tags/react?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": []
+    },
+    "arkUi": {
+      "title": "Ark UI",
+      "sourceId": "kiCTo0U6VgNON8rv_Ktlj",
+      "type": "subtopic",
+      "order": 58,
+      "summary": "It is a modern and versatile user interface framework designed to streamline the development of responsive and accessible web applications. It provides a `comprehensive set` of components and tools that simplify the process of building user interfaces, allowing developers to focus on functionality and design. With a strong emphasis on flexibility and ease of use, Ark UI enables rapid prototyping and `scalable solutions`, ensuring a consistent and polished user experience across various devices and platforms. Its modular architecture and extensive documentation make it an excellent choice for developers looking to enhance productivity and maintain high standards in their UI design.",
+      "video": {
+        "title": "Hands On ARK UI",
+        "url": "https://www.youtube.com/watch?v=zjo-77I0unk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website",
+          "url": "https://ark-ui.com/"
+        },
+        {
+          "type": "official",
+          "title": "Official Website",
+          "url": "https://ark-ui.com/react/docs/overview/introduction"
+        },
+        {
+          "type": "article",
+          "title": "What is ARK UI?",
+          "url": "https://shaxadd.medium.com/enhance-your-user-interfaces-with-ark-ui-a-comprehensive-guide-7e87dd0a79cf"
+        }
+      ],
+      "parents": [
+        "headlessComponentLibraries"
+      ],
+      "children": []
+    },
+    "apiCalls": {
+      "title": "API Calls",
+      "sourceId": "b4AP2OggxFAwsQtUwiUJJ",
+      "type": "topic",
+      "order": 59,
+      "summary": "APIs, short for Application Programming Interfaces, are software-to-software interfaces. Meaning, they allow different applications to talk to each other and exchange information or functionality. This allows businesses to access another business\u2019s data, piece of code, software, or services in order to extend the functionality of their own products \u2014 all while saving time and money. There are several options available to make API calls from your React.js applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "AJAX and APIs",
+          "url": "https://reactjs.org/docs/faq-ajax.html"
+        },
+        {
+          "type": "article",
+          "title": "How to fetch data in React",
+          "url": "https://www.robinwieruch.de/react-hooks-fetch-data/"
+        }
+      ],
+      "parents": [
+        "headlessComponentLibraries"
+      ],
+      "children": [
+        "apollo",
+        "tanstackQuery",
+        "relay",
+        "axios",
+        "swr",
+        "urql",
+        "rtkQuery",
+        "testing"
+      ]
+    },
+    "testing": {
+      "title": "Testing",
+      "sourceId": "e_lwZ-a72-tAan2KDX6k3",
+      "type": "topic",
+      "order": 60,
+      "summary": "A key to building software that meets requirements without defects is testing. Software testing helps developers know they are building the right software. When tests are run as part of the development process (often with continuous integration tools), they build confidence and prevent regressions in the code.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Software Testing?",
+          "url": "https://www.guru99.com/software-testing-introduction-importance.html"
+        },
+        {
+          "type": "article",
+          "title": "Testing Pyramid",
+          "url": "https://www.browserstack.com/guide/testing-pyramid-for-test-automation"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Testing",
+          "url": "https://app.daily.dev/tags/testing?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "apiCalls"
+      ],
+      "children": [
+        "vitest",
+        "jest",
+        "playwright",
+        "reactTestingLibrary",
+        "cypress",
+        "frameworks"
+      ]
+    },
+    "frameworks": {
+      "title": "Frameworks",
+      "sourceId": "W-atg_Msa9uPLr6RXAKSb",
+      "type": "topic",
+      "order": 61,
+      "summary": "Server-side rendering (SSR) is a technique for rendering a JavaScript application on the server, rather than in the browser. This can improve the performance and user experience of a web application, as the initial render of the application is done on the server and the content is sent to the browser as a fully-rendered HTML page.",
+      "video": {
+        "title": "Next.js 14 Full Course 2024",
+        "url": "https://www.youtube.com/watch?v=wm5gMKuwSYk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Next.js",
+          "url": "https://nextjs.org/"
+        },
+        {
+          "type": "article",
+          "title": "Remix",
+          "url": "https://remix.run/"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": [
+        "reactRouter2",
+        "astro",
+        "nextJs",
+        "forms"
+      ]
+    },
+    "cypress": {
+      "title": "Cypress",
+      "sourceId": "zN7Ps1puD-YpHbKi1pHH8",
+      "type": "subtopic",
+      "order": 62,
+      "summary": "Cypress framework is a JavaScript-based end-to-end testing framework built on top of Mocha \u2013 a feature-rich JavaScript test framework running on and in the browser, making asynchronous testing simple and convenient. It also uses a BDD/TDD assertion library and a browser to pair with any JavaScript testing framework.",
+      "video": {
+        "title": "Cypress End-to-End Testing",
+        "url": "https://www.youtube.com/watch?v=7N63cMKosIE"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website",
+          "url": "https://www.cypress.io/"
+        },
+        {
+          "type": "article",
+          "title": "Official Documentation",
+          "url": "https://docs.cypress.io/guides/overview/why-cypress#Other"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Cypress",
+          "url": "https://app.daily.dev/tags/cypress?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": []
+    },
+    "apollo": {
+      "title": "Apollo",
+      "sourceId": "8nMbfGxe3STMbrAVcqHHh",
+      "type": "subtopic",
+      "order": 63,
+      "summary": "Apollo is a platform for building a unified graph, a communication layer that helps you manage the flow of data between your application clients (such as web and native apps) and your back-end services.",
+      "video": {
+        "title": "Official YouTube Channel",
+        "url": "https://www.youtube.com/c/ApolloGraphQL/"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Apollo Website",
+          "url": "https://www.apollographql.com"
+        },
+        {
+          "type": "article",
+          "title": "Official Docs",
+          "url": "https://www.apollographql.com/docs/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Apollo",
+          "url": "https://app.daily.dev/tags/apollo?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "apiCalls"
+      ],
+      "children": []
+    },
+    "tanstackQuery": {
+      "title": "Tanstack Query",
+      "sourceId": "5EPmbiNdP_vhIXclv_GjV",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "TanStack Query, previously known as React Query, is a powerful library for fetching, caching, synchronizing, and updating server state in your React applications. It simplifies the process of handling asynchronous data, reducing boilerplate code and improving the user experience by providing features like automatic retries, background updates, and optimistic updates. It essentially helps you manage data fetching and caching in a declarative and efficient way.",
+      "video": {
+        "title": "TanStack Query - How to become a React Query God",
+        "url": "https://www.youtube.com/watch?v=mPaCnwpFvZY"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "TanStack Query",
+          "url": "https://tanstack.com/query/latest"
+        },
+        {
+          "type": "opensource",
+          "title": "TanStack Query",
+          "url": "https://github.com/TanStack/query"
+        },
+        {
+          "type": "article",
+          "title": "TanStack for Beginners: A Complete Guide & Tutorial",
+          "url": "https://codeparrot.ai/blogs/tanstack-for-beginners-a-complete-guide-tutorial"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about React",
+          "url": "https://app.daily.dev/tags/react?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "apiCalls"
+      ],
+      "children": []
+    },
+    "playwright": {
+      "title": "Playwright",
+      "sourceId": "g39P0c6M2sHNoUPs0m8tr",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "Playwright Test was created specifically to accommodate the needs of end-to-end testing. Playwright supports all modern rendering engines including Chromium, WebKit, and Firefox. Test on Windows, Linux, and macOS, locally or on CI, headless or headed with native mobile emulation of Google Chrome for Android and Mobile Safari.Playwright leverages the DevTools protocol to write powerful, stable automated tests.Playwright can actually see into and control the browser rather than relying on a middle translation layer, it allows for the simulation of more insightful and relevant user scenarios.",
+      "video": {
+        "title": "Get started with end-to-end testing: Playwright",
+        "url": "https://www.youtube.com/playlist?list=PLQ6Buerc008ed-F9OksF7ek37wR3y916p"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website: Playwright",
+          "url": "https://playwright.dev/"
+        },
+        {
+          "type": "article",
+          "title": "Playwright Tutorial: Learn Basics and Setup",
+          "url": "https://www.browserstack.com/guide/playwright-tutorial"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": []
+    },
+    "relay": {
+      "title": "Relay",
+      "sourceId": "cLfM342sZfsCwmPPxQpEI",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "Relay is a JavaScript client used in the browser to fetch GraphQL data. It's a JavaScript framework developed by Facebook for managing and fetching data in React applications. It is built with scalability in mind in order to power complex applications like Facebook. The ultimate goal of GraphQL and Relay is to deliver instant UI-response interactions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website",
+          "url": "https://relay.dev/"
+        },
+        {
+          "type": "official",
+          "title": "Introduction to Relay modern",
+          "url": "https://relay.dev/docs/"
+        }
+      ],
+      "parents": [
+        "apiCalls"
+      ],
+      "children": []
+    },
+    "axios": {
+      "title": "Axios",
+      "sourceId": "ElqWQClryfSYdL7P_mgYK",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "The most common way for frontend programs to communicate with servers is through the HTTP protocol. You are probably familiar with the Fetch API and the XMLHttpRequest interface, which allows you to fetch resources and make HTTP requests.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Axios Getting Started",
+          "url": "https://axios-http.com/docs/intro"
+        },
+        {
+          "type": "article",
+          "title": "How to make HTTP requests with Axios",
+          "url": "https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/#why"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Axios",
+          "url": "https://app.daily.dev/tags/axios?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "apiCalls"
+      ],
+      "children": []
+    },
+    "swr": {
+      "title": "swr",
+      "sourceId": "-ea1KsXEyz-4voHXklG_J",
+      "type": "subtopic",
+      "order": 68,
+      "summary": "SWR is a React Hooks library for data fetching.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "SWR: React Hooks for Data Fetching",
+          "url": "https://swr.vercel.app/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Next.js",
+          "url": "https://app.daily.dev/tags/nextjs?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "apiCalls"
+      ],
+      "children": []
+    },
+    "urql": {
+      "title": "urql",
+      "sourceId": "9M5jRu0pj8KMvg9f-2oqZ",
+      "type": "subtopic",
+      "order": 69,
+      "summary": "urql (Universal React Query Library) is a library for managing GraphQL data in React applications. It is developed and maintained by Formidable Labs and is available as open-source software.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "urql - Formidable Labs",
+          "url": "https://formidable.com/open-source/urql/"
+        }
+      ],
+      "parents": [
+        "apiCalls"
+      ],
+      "children": []
+    },
+    "rtkQuery": {
+      "title": "rtk-query",
+      "sourceId": "h49-tjEkKcq7d7ikRHIOx",
+      "type": "subtopic",
+      "order": 70,
+      "summary": "RTK Query is a data fetching and caching tool that is included in the Redux Toolkit package. It is designed to simplify common use cases for fetching data, including caching, polling, and invalidation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "RTK Query - Official Website",
+          "url": "https://redux-toolkit.js.org/rtk-query/overview"
+        }
+      ],
+      "parents": [
+        "apiCalls"
+      ],
+      "children": []
+    },
+    "typescript": {
+      "title": "TypeScript",
+      "sourceId": "ElgRwv5LSVg5FXGx-2K2s",
+      "type": "subtopic",
+      "order": 71,
+      "summary": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.",
+      "video": {
+        "title": "TypeScript for Beginners",
+        "url": "https://www.youtube.com/watch?v=BwuLxPH8IDs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website",
+          "url": "https://www.typescriptlang.org/"
+        },
+        {
+          "type": "article",
+          "title": "The TypeScript Handbook",
+          "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about TypeScript",
+          "url": "https://app.daily.dev/tags/typescript?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "typesValidation"
+      ],
+      "children": []
+    },
+    "forms": {
+      "title": "Forms",
+      "sourceId": "KHcC5pFN3qLnsbPPKpYd2",
+      "type": "topic",
+      "order": 72,
+      "summary": "Although you can build forms using vanilla React, it normally requires a lot of boilerplate code. This is because the form is built using a combination of state and props. To make it easier to manage forms, we use some sort of library.",
+      "video": {
+        "title": "React Forms: the SIMPLEST way",
+        "url": "https://www.youtube.com/watch?v=CT-72lTXdPg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to use Forms in React",
+          "url": "https://www.robinwieruch.de/react-form/"
+        }
+      ],
+      "parents": [
+        "frameworks"
+      ],
+      "children": [
+        "formik",
+        "reactHookForm",
+        "typesValidation"
+      ]
+    },
+    "zod": {
+      "title": "Zod",
+      "sourceId": "K3RZ8ESxWCpLKHePF87Hy",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "Zod is a TypeScript-first schema declaration and validation library. I'm using the term \"schema\" to broadly refer to any data type, from a simple string to a complex nested object.",
+      "video": {
+        "title": "Learn Zod In 30 Minutes",
+        "url": "https://www.youtube.com/watch?v=L6BE-U3oy80"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Zod Website",
+          "url": "https://zod.dev/"
+        }
+      ],
+      "parents": [
+        "typesValidation"
+      ],
+      "children": []
+    },
+    "reactHookForm": {
+      "title": "React Hook Form",
+      "sourceId": "_5ht0PAdVOJWPzTRS1mVg",
+      "type": "subtopic",
+      "order": 76,
+      "summary": "React hook form is an opensource form library for react. Performant, flexible and extensible forms with easy-to-use validation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "react-hook-form/react-hook-form",
+          "url": "https://github.com/react-hook-form/react-hook-form"
+        },
+        {
+          "type": "article",
+          "title": "React Hook Form: Official Website",
+          "url": "https://react-hook-form.com/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about React",
+          "url": "https://app.daily.dev/tags/react?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "forms"
+      ],
+      "children": []
+    },
+    "advancedTopics": {
+      "title": "Advanced Topics",
+      "sourceId": "ydxyne6RzIDPHij1Z3CsN",
+      "type": "paragraph",
+      "order": 77,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "typesValidation"
+      ],
+      "children": [
+        "animation"
+      ]
+    },
+    "typesValidation": {
+      "title": "Types & Validation",
+      "sourceId": "UNlvRp6k3_RDoTAAIEfJ1",
+      "type": "topic",
+      "order": 78,
+      "summary": "**Typescript** provides a static type system that helps you in avoiding mistakes during the development and provides other features (e.g. IDE support) that help you improve your productivity.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is TypeScript and why would I use it in place of JavaScript?",
+          "url": "https://stackoverflow.com/questions/12694530/what-is-typescript-and-why-would-i-use-it-in-place-of-javascript"
+        },
+        {
+          "type": "article",
+          "title": "When Use Zod",
+          "url": "https://www.totaltypescript.com/when-should-you-use-zod"
+        }
+      ],
+      "parents": [
+        "forms"
+      ],
+      "children": [
+        "typescript",
+        "zod",
+        "advancedTopics"
+      ]
+    },
+    "formik": {
+      "title": "Formik",
+      "sourceId": "gr1CaLvL7tFOkIRywSsID",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "Formik is another famous opensource form library that helps with getting values in and out of form state, validation and error messages, and handling form submissions.",
+      "video": {
+        "title": "Formik - Building React Forms easier",
+        "url": "https://www.youtube.com/watch?v=khGypss-RJs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Website \u2014 Formik",
+          "url": "https://formik.org/"
+        },
+        {
+          "type": "opensource",
+          "title": "formik/formik",
+          "url": "https://github.com/formik/formik"
+        }
+      ],
+      "parents": [
+        "forms"
+      ],
+      "children": []
+    },
+    "animation": {
+      "title": "Animation",
+      "sourceId": "bRpeoo9zXrnZ2IHSI7JX4",
+      "type": "topic",
+      "order": 80,
+      "summary": "Animation in React can be achieved using various methods, such as CSS transitions, keyframes, or libraries like `react-spring`, `framer-motion`, and `GSAP` (GreenSock Animation Platform). CSS transitions are ideal for simple animations, where you can toggle classes or manipulate inline styles to create smooth transitions. For more complex and interactive animations, libraries like `react-spring` provide a declarative approach, allowing you to create animations by defining spring physics or interpolating values. `framer-motion` offers a rich API to handle complex animations, gestures, and even layout transitions with ease. `GSAP` is another powerful library that excels at creating high-performance animations, offering fine-grained control over every aspect of the animation process. These tools integrate seamlessly with React's component-driven architecture, enabling you to create responsive and dynamic user interfaces.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Framer Motion Docs",
+          "url": "https://www.framer.com/motion/"
+        },
+        {
+          "type": "article",
+          "title": "GSAP Docs",
+          "url": "https://gsap.com/docs/v3/"
+        },
+        {
+          "type": "article",
+          "title": "React Spring Docs",
+          "url": "https://www.react-spring.dev/docs/getting-started"
+        }
+      ],
+      "parents": [
+        "advancedTopics"
+      ],
+      "children": [
+        "reactSpring",
+        "gsock",
+        "framerMotion",
+        "errorBoundaries"
+      ]
+    },
+    "errorBoundaries": {
+      "title": "Error Boundaries",
+      "sourceId": "gMHMjsh0i8paLZUH5mDX3",
+      "type": "topic",
+      "order": 81,
+      "summary": "In the past, JavaScript errors inside components used to corrupt React\u2019s internal state and cause it to emit cryptic errors on next renders. These errors were always caused by an earlier error in the application code, but React did not provide a way to handle them gracefully in components, and could not recover from them.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Error Boundaries in React",
+          "url": "https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary"
+        }
+      ],
+      "parents": [
+        "animation"
+      ],
+      "children": []
+    },
+    "reactNative": {
+      "title": "React Native",
+      "sourceId": "NvXAq1vN2wpncdW-yTL4c",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "React Native is an open-source UI software framework created by Meta Platforms, Inc. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "React Native: Official Website",
+          "url": "https://reactnative.dev/"
+        },
+        {
+          "type": "official",
+          "title": "Official Getting Started",
+          "url": "https://reactnative.dev/docs/getting-started"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about React",
+          "url": "https://app.daily.dev/tags/react?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "mobileApplications"
+      ],
+      "children": []
+    },
+    "serverApis": {
+      "title": "Server APIs",
+      "sourceId": "SUeXDkmOLipdRP4fSrZOH",
+      "type": "topic",
+      "order": 83,
+      "summary": "The react-dom/server APIs let you render React components to HTML on the server. These APIs are only used on the server at the top level of your app to generate the initial HTML. A framework may call them for you. Most of your components don\u2019t need to import or use them.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Documentation For API",
+          "url": "https://react.dev/reference/react-dom/server"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "framerMotion": {
+      "title": "Framer Motion",
+      "sourceId": "H6-XGDjs4f-qbv13v5av0",
+      "type": "subtopic",
+      "order": 84,
+      "summary": "Framer Motion is a popular open-source motion library for React that allows developers to create sophisticated animations and interactions with ease. It is designed to be simple to use yet powerful, providing a rich set of tools to animate elements in a declarative way.",
+      "video": {
+        "title": "Framer Motion Crash Course with React & TS",
+        "url": "https://www.youtube.com/watch?v=hjbxaYTMhy0&list=PLA4qBVt61k3Phpwt7uqaptIg9NYZ5aNu_"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Framer Motion Website",
+          "url": "https://www.framer.com/motion/introduction/"
+        }
+      ],
+      "parents": [
+        "animation"
+      ],
+      "children": []
+    },
+    "suspense": {
+      "title": "Suspense",
+      "sourceId": "_F3WMxhzaK9F8_-zHDDMF",
+      "type": "topic",
+      "order": 85,
+      "summary": "React Suspense is a feature in React that allows components to \"suspend\" rendering while they are waiting for something to happen, such as data to be fetched from an API or an image to be loaded. Suspense allows developers to create a more seamless user experience by rendering a placeholder or fallback component while the component is waiting for the required data to be available.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "React Suspense",
+          "url": "https://react.dev/reference/react/Suspense"
+        },
+        {
+          "type": "article",
+          "title": "React Suspense - A complete guide",
+          "url": "https://hygraph.com/blog/react-suspense"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "reactSpring": {
+      "title": "react spring",
+      "sourceId": "WzoB5B6SdOI4Mzv6U51nY",
+      "type": "subtopic",
+      "order": 86,
+      "summary": "React Spring is a popular animation library for React that leverages the principles of spring physics to create smooth, natural-looking animations. Unlike traditional animation libraries that rely on keyframes and linear transitions, React Spring uses spring-based physics to produce fluid and realistic animations that can dynamically respond to user interactions and state changes.",
+      "video": {
+        "title": "React Spring Crash Course",
+        "url": "https://www.youtube.com/watch?v=f2vdduklY20&list=PLLnpHn493BHGrM7tAQL8qVtqwqzbuuE5_"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "React Spring \u2014 Official Website",
+          "url": "https://www.react-spring.dev/"
+        },
+        {
+          "type": "article",
+          "title": "How to Create Interactive Animations Using React Spring",
+          "url": "https://www.sitepoint.com/react-spring-interactive-animations/"
+        }
+      ],
+      "parents": [
+        "animation"
+      ],
+      "children": []
+    },
+    "portals": {
+      "title": "Portals",
+      "sourceId": "DcDggX4OmmwvJGHwuV86t",
+      "type": "topic",
+      "order": 87,
+      "summary": "Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.",
+      "video": {
+        "title": "React Portals",
+        "url": "https://www.youtube.com/watch?v=HpHLa-5Wdys"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Portals in React",
+          "url": "https://react.dev/reference/react-dom/createPortal"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "mobileApplications"
+      ]
+    },
+    "mobileApplications": {
+      "title": "Mobile Applications",
+      "sourceId": "txARr3lgTvy-vJCj5zAb1",
+      "type": "topic",
+      "order": 88,
+      "summary": "",
+      "video": {
+        "title": "React Native Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=ZBCUegTZF7M"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "React Native Official website",
+          "url": "https://reactnative.dev/"
+        }
+      ],
+      "parents": [
+        "portals"
+      ],
+      "children": [
+        "reactNative",
+        "haveALookAtTheFollowingRelatedRoadmaps"
+      ]
+    },
+    "gsock": {
+      "title": "GSock",
+      "sourceId": "y2dI1DVLWKAkv6VRpgaQa",
+      "type": "subtopic",
+      "order": 89,
+      "summary": "`GSAP` (GreenSock Animation Platform) is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects...anything JavaScript can touch!",
+      "video": {
+        "title": "Intro to Greensock Web Animation",
+        "url": "https://www.youtube.com/watch?v=EOa7ccPWvXg"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "GSAP: Homepage",
+          "url": "https://gsap.com/docs/v3/"
+        },
+        {
+          "type": "article",
+          "title": "The Beginner's Guide to the GreenSock Animation Platform",
+          "url": "https://www.freecodecamp.org/news/the-beginners-guide-to-the-greensock-animation-platform-7dc9fd9eb826/"
+        }
+      ],
+      "parents": [
+        "animation"
+      ],
+      "children": []
+    },
+    "haveALookAtTheFollowingRelatedRoadmaps": {
+      "title": "Have a look at the following related roadmaps",
+      "sourceId": "GV_zWF6rSWg5bqgiXhOEf",
+      "type": "paragraph",
+      "order": 90,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "mobileApplications"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "react",
+      "to": "javascriptRoadmap",
+      "style": "solid"
+    },
+    {
+      "from": "cliTools",
+      "to": "vite",
+      "style": "dashed"
+    },
+    {
+      "from": "javascriptRoadmap",
+      "to": "cliTools",
+      "style": "solid"
+    },
+    {
+      "from": "components",
+      "to": "functionalComponents",
+      "style": "dashed"
+    },
+    {
+      "from": "cliTools",
+      "to": "components",
+      "style": "solid"
+    },
+    {
+      "from": "components",
+      "to": "rendering",
+      "style": "solid"
+    },
+    {
+      "from": "rendering",
+      "to": "hooks",
+      "style": "solid"
+    },
+    {
+      "from": "hooks",
+      "to": "creatingCustomHooks",
+      "style": "dashed"
+    },
+    {
+      "from": "hooks",
+      "to": "hooksBestPractices",
+      "style": "dashed"
+    },
+    {
+      "from": "hooks",
+      "to": "routers",
+      "style": "solid"
+    },
+    {
+      "from": "routers",
+      "to": "reactRouter",
+      "style": "dashed"
+    },
+    {
+      "from": "routers",
+      "to": "stateManagement",
+      "style": "solid"
+    },
+    {
+      "from": "stateManagement",
+      "to": "jotai",
+      "style": "dashed"
+    },
+    {
+      "from": "tailwindCss",
+      "to": "writingCss",
+      "style": "dashed"
+    },
+    {
+      "from": "stateManagement",
+      "to": "writingCss",
+      "style": "solid"
+    },
+    {
+      "from": "writingCss",
+      "to": "componentLibraries",
+      "style": "solid"
+    },
+    {
+      "from": "headlessComponentLibraries",
+      "to": "radixUi",
+      "style": "dashed"
+    },
+    {
+      "from": "headlessComponentLibraries",
+      "to": "reactAria",
+      "style": "dashed"
+    },
+    {
+      "from": "headlessComponentLibraries",
+      "to": "arkUi",
+      "style": "dashed"
+    },
+    {
+      "from": "headlessComponentLibraries",
+      "to": "apiCalls",
+      "style": "solid"
+    },
+    {
+      "from": "apiCalls",
+      "to": "testing",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "reactTestingLibrary",
+      "style": "dashed"
+    },
+    {
+      "from": "testing",
+      "to": "cypress",
+      "style": "dashed"
+    },
+    {
+      "from": "frameworks",
+      "to": "nextJs",
+      "style": "dashed"
+    },
+    {
+      "from": "testing",
+      "to": "frameworks",
+      "style": "solid"
+    },
+    {
+      "from": "frameworks",
+      "to": "forms",
+      "style": "solid"
+    },
+    {
+      "from": "forms",
+      "to": "reactHookForm",
+      "style": "dashed"
+    },
+    {
+      "from": "forms",
+      "to": "typesValidation",
+      "style": "solid"
+    },
+    {
+      "from": "typesValidation",
+      "to": "zod",
+      "style": "dashed"
+    },
+    {
+      "from": "typesValidation",
+      "to": "advancedTopics",
+      "style": "solid"
+    },
+    {
+      "from": "advancedTopics",
+      "to": "animation",
+      "style": "solid"
+    },
+    {
+      "from": "animation",
+      "to": "framerMotion",
+      "style": "dashed"
+    },
+    {
+      "from": "animation",
+      "to": "errorBoundaries",
+      "style": "solid"
+    },
+    {
+      "from": "portals",
+      "to": "mobileApplications",
+      "style": "solid"
+    },
+    {
+      "from": "mobileApplications",
+      "to": "reactNative",
+      "style": "dashed"
+    },
+    {
+      "from": "mobileApplications",
+      "to": "haveALookAtTheFollowingRelatedRoadmaps",
+      "style": "solid"
+    },
+    {
+      "from": "thereUsedToBeClassComponentsWhichReactDoesntRecommendAnyMoreYouDontNeedToLearnAboutThemButYouMightStillNoticeThemInSomeLegacyProjects",
+      "to": "jsx",
+      "style": "solid"
+    },
+    {
+      "from": "rendering",
+      "to": "componentLifecycle",
+      "style": "solid"
+    },
+    {
+      "from": "components",
+      "to": "usestate2",
+      "style": "solid"
+    },
+    {
+      "from": "components",
+      "to": "usecallback",
+      "style": "solid"
+    },
+    {
+      "from": "components",
+      "to": "useref",
+      "style": "solid"
+    },
+    {
+      "from": "rendering",
+      "to": "listsAndKeys",
+      "style": "solid"
+    },
+    {
+      "from": "components",
+      "to": "usereducer",
+      "style": "solid"
+    },
+    {
+      "from": "components",
+      "to": "usememo",
+      "style": "solid"
+    },
+    {
+      "from": "components",
+      "to": "useeffect",
+      "style": "solid"
+    },
+    {
+      "from": "rendering",
+      "to": "renderProps",
+      "style": "solid"
+    },
+    {
+      "from": "components",
+      "to": "usecontext",
+      "style": "solid"
+    },
+    {
+      "from": "rendering",
+      "to": "refs",
+      "style": "solid"
+    },
+    {
+      "from": "routers",
+      "to": "events",
+      "style": "solid"
+    },
+    {
+      "from": "routers",
+      "to": "highOrderComponents",
+      "style": "solid"
+    },
+    {
+      "from": "hooks",
+      "to": "mobx",
+      "style": "solid"
+    },
+    {
+      "from": "componentLibraries",
+      "to": "materialUi",
+      "style": "solid"
+    },
+    {
+      "from": "writingCss",
+      "to": "pandaCss",
+      "style": "solid"
+    },
+    {
+      "from": "hooks",
+      "to": "context",
+      "style": "solid"
+    },
+    {
+      "from": "componentLibraries",
+      "to": "chakraUi",
+      "style": "solid"
+    },
+    {
+      "from": "writingCss",
+      "to": "cssModules",
+      "style": "solid"
+    },
+    {
+      "from": "stateManagement",
+      "to": "zustand",
+      "style": "solid"
+    },
+    {
+      "from": "componentLibraries",
+      "to": "shadcnUi",
+      "style": "solid"
+    },
+    {
+      "from": "routers",
+      "to": "tanstackRouter",
+      "style": "solid"
+    },
+    {
+      "from": "frameworks",
+      "to": "reactRouter2",
+      "style": "solid"
+    },
+    {
+      "from": "frameworks",
+      "to": "astro",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "vitest",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "jest",
+      "style": "solid"
+    },
+    {
+      "from": "apiCalls",
+      "to": "apollo",
+      "style": "solid"
+    },
+    {
+      "from": "apiCalls",
+      "to": "tanstackQuery",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "playwright",
+      "style": "solid"
+    },
+    {
+      "from": "apiCalls",
+      "to": "relay",
+      "style": "solid"
+    },
+    {
+      "from": "apiCalls",
+      "to": "axios",
+      "style": "solid"
+    },
+    {
+      "from": "apiCalls",
+      "to": "swr",
+      "style": "solid"
+    },
+    {
+      "from": "apiCalls",
+      "to": "urql",
+      "style": "solid"
+    },
+    {
+      "from": "apiCalls",
+      "to": "rtkQuery",
+      "style": "solid"
+    },
+    {
+      "from": "typesValidation",
+      "to": "typescript",
+      "style": "solid"
+    },
+    {
+      "from": "forms",
+      "to": "formik",
+      "style": "solid"
+    },
+    {
+      "from": "animation",
+      "to": "reactSpring",
+      "style": "solid"
+    },
+    {
+      "from": "animation",
+      "to": "gsock",
+      "style": "solid"
+    }
+  ]
+}

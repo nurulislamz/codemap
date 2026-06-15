@@ -1,0 +1,2053 @@
+{
+  "title": "GraphQL",
+  "summary": "Step by step guide to learn GraphQL in 2026",
+  "url": "https://roadmap.sh/graphql",
+  "order": [
+    "introduction",
+    "problemsGraphqlSolves",
+    "whatIsGraphql",
+    "thinkingInGraphs",
+    "graphqlOnFrontend",
+    "graphqlOnBackend",
+    "graphqlQueries",
+    "variables",
+    "aliases",
+    "arguments",
+    "directives",
+    "fragments",
+    "fields",
+    "whatAreQueries",
+    "mutations",
+    "multipleFieldsInMutation",
+    "operationName",
+    "typeSystem",
+    "fields2",
+    "whatAreMutations",
+    "subscriptions",
+    "whatAreSubscriptions",
+    "eventBasedSubscriptions",
+    "liveQueries",
+    "deferStreamDirectives",
+    "rootFields",
+    "resolvers",
+    "synchronous",
+    "asynchronous",
+    "scalarCoercion",
+    "lists2",
+    "validation2",
+    "producingTheResult",
+    "schema",
+    "validation",
+    "execution",
+    "servingOverInternet",
+    "pagination",
+    "implementations",
+    "servers",
+    "clients",
+    "intFloatStringBooleanId",
+    "scalars",
+    "enums",
+    "objects",
+    "lists",
+    "interfaces",
+    "unions",
+    "arguments2",
+    "graphqlOverHttpSpec",
+    "caching",
+    "batching",
+    "authorization",
+    "graphqlOverWebsockets",
+    "specification",
+    "goImplementation",
+    "realtime",
+    "authorization2",
+    "graphqlGo",
+    "graphqlOverSse",
+    "javascriptImplementation",
+    "specification2",
+    "graphqlJs",
+    "authorization3",
+    "javaImplementation",
+    "graphqlJava",
+    "pythonImplementation",
+    "javascript",
+    "graphene",
+    "graphqlHttp",
+    "graphqlYoga",
+    "javascript2",
+    "apolloServer",
+    "graphqlHttp2",
+    "mercurius",
+    "relay",
+    "apolloClient",
+    "urql"
+  ],
+  "topics": {
+    "introduction": {
+      "title": "Introduction",
+      "sourceId": "JfXwzkN29UGz17FYHHE3A",
+      "type": "topic",
+      "order": 1,
+      "summary": "GraphQL is a query language and runtime for APIs that enables clients to request exactly the data they need in a single call. It provides a predictable format, reducing multiple API calls and eliminating over-fetching, making data retrieval more efficient than traditional REST APIs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to GraphQL",
+          "url": "https://graphql.org/learn/"
+        },
+        {
+          "type": "official",
+          "title": "Getting started with GraphQL",
+          "url": "https://graphql.org/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GraphQL",
+          "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "graphql"
+      ],
+      "children": [
+        "problemsGraphqlSolves",
+        "whatIsGraphql",
+        "thinkingInGraphs",
+        "graphqlOnFrontend",
+        "graphqlOnBackend",
+        "graphqlQueries"
+      ]
+    },
+    "problemsGraphqlSolves": {
+      "title": "Problems GraphQL Solves",
+      "sourceId": "2rlmLn_yQQV-7DpX1qT98",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "GraphQL solves major API problems including over-fetching (getting unnecessary data), under-fetching (multiple requests needed), inefficient versioning, and lack of flexibility. It enables precise data requests, single queries for multiple resources, seamless versioning through schema evolution, and microservice communication through federation.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "whatIsGraphql": {
+      "title": "What is GraphQL",
+      "sourceId": "cMfsRtvzvDZZJ0TqeUOxm",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "GraphQL is a query language for APIs and server-side runtime that lets clients request exactly the data they need. Unlike REST, it uses a type system to define data structure and allows fetching multiple resources in a single request, reducing over-fetching and under-fetching problems.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to graphQL",
+          "url": "https://graphql.org/learn/"
+        },
+        {
+          "type": "article",
+          "title": "Tutorial - What is graphQL?",
+          "url": "https://www.howtographql.com/basics/0-introduction/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GraphQL",
+          "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "thinkingInGraphs": {
+      "title": "Thinking in Graphs",
+      "sourceId": "J5mU0v491qrm-mr1W3Msd",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "\"Thinking in Graphs\" is a GraphQL mindset where data is organized as a graph with nodes (objects) and edges (relationships). This approach allows flexible and intuitive querying by following relationships between connected data points, making complex data retrieval more natural and efficient.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL - Thinking in Graphs",
+          "url": "https://graphql.org/learn/thinking-in-graphs/"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "graphqlOnFrontend": {
+      "title": "GraphQL on Frontend",
+      "sourceId": "6r9XbwlBtHmJrhviG2cTD",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "GraphQL on the frontend enables efficient data fetching with clients like Apollo, URQL, or Relay. It provides declarative data requirements, intelligent caching, real-time subscriptions, and type safety, allowing frontend applications to request exactly the data they need in a single query.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Get started with GraphQL on the frontend",
+          "url": "https://www.howtographql.com/react-apollo/0-introduction/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Frontend Development",
+          "url": "https://app.daily.dev/tags/frontend?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "graphqlOnBackend": {
+      "title": "GraphQL on Backend",
+      "sourceId": "ODQ8zrHc2rsc8PN-APKvz",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "GraphQL on the backend involves implementing servers that execute GraphQL queries, mutations, and subscriptions. It includes defining schemas, writing resolvers, handling data sources, implementing authentication/authorization, and optimizing performance through caching and batching strategies.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to use GraphQL in Backend?",
+          "url": "https://www.howtographql.com/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Backend Development",
+          "url": "https://app.daily.dev/tags/backend?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "graphqlQueries": {
+      "title": "GraphQL Queries",
+      "sourceId": "W_Lg8086ZhrIqtck1sgnb",
+      "type": "topic",
+      "order": 7,
+      "summary": "GraphQL queries are client requests to retrieve specific data from a server. They specify exactly which fields should be returned, using a hierarchical structure that matches the data requirements. Queries are written in GraphQL syntax and executed by the server to fetch the requested data.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "What are GraphQL Queries?",
+          "url": "https://graphql.org/learn/queries/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GraphQL",
+          "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": [
+        "variables",
+        "aliases",
+        "arguments",
+        "directives",
+        "fragments",
+        "fields",
+        "whatAreQueries",
+        "mutations"
+      ]
+    },
+    "variables": {
+      "title": "Variables",
+      "sourceId": "YZaFEK547FYricfOuANvH",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Variables in GraphQL pass dynamic values to queries and mutations, making them flexible and reusable. Defined with the $ symbol and a type, their values are passed in a separate JSON object. Variables are type-safe, ensuring values match the defined types.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Intro to Variables in GraphQL",
+          "url": "https://graphql.org/learn/queries/#variables"
+        },
+        {
+          "type": "article",
+          "title": "GraphQL Variables",
+          "url": "https://dgraph.io/docs/graphql/api/variables/"
+        }
+      ],
+      "parents": [
+        "graphqlQueries"
+      ],
+      "children": []
+    },
+    "aliases": {
+      "title": "Aliases",
+      "sourceId": "B77yLU4SuRChSjEbmYwc-",
+      "type": "subtopic",
+      "order": 9,
+      "summary": "Aliases in GraphQL rename fields in query responses, useful when requesting the same field multiple times with different arguments or when field names aren't suitable for client usage. They distinguish fields in responses and improve query readability and usability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "What are GraphQL Aliases?",
+          "url": "https://graphql.org/learn/queries/#aliases"
+        }
+      ],
+      "parents": [
+        "graphqlQueries"
+      ],
+      "children": []
+    },
+    "arguments": {
+      "title": "Arguments",
+      "sourceId": "hrpb108R8Gyu3hhzkMYzL",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "Arguments in GraphQL are values passed to fields or directives to specify execution details like filtering, sorting, pagination, or configuration options. They're passed as key-value pairs, can be defined as variables, and may be optional or required depending on the field definition.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL - Arguments",
+          "url": "https://graphql.org/learn/queries/#arguments"
+        }
+      ],
+      "parents": [
+        "graphqlQueries"
+      ],
+      "children": []
+    },
+    "directives": {
+      "title": "Directives",
+      "sourceId": "MnmwccPahqPCzOhqjfbsY",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "Directives in GraphQL modify query execution by adding behavior or validation to fields, operations, and fragments. They can take arguments to configure behavior and include built-in directives like @include and @skip, or custom ones defined by developers for specific functionality.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Directives in GraphQL",
+          "url": "https://graphql.org/learn/queries/#directives"
+        }
+      ],
+      "parents": [
+        "graphqlQueries"
+      ],
+      "children": []
+    },
+    "fragments": {
+      "title": "Fragments",
+      "sourceId": "CehwjrCG_wbUU-TFNCuJn",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Fragments in GraphQL are reusable pieces of queries that retrieve specific fields from one or more types. Defined with the \"fragment\" keyword, they promote code reuse, reduce duplication, and make complex queries more maintainable by separating common field selections.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Intro to Fragments in GraphQL",
+          "url": "https://graphql.org/learn/queries/#fragments"
+        }
+      ],
+      "parents": [
+        "graphqlQueries"
+      ],
+      "children": []
+    },
+    "fields": {
+      "title": "Fields",
+      "sourceId": "Pc9H7AcoqJQkWnuhbytyD",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "Fields in GraphQL are individual pieces of data that can be queried or modified, representing properties of the requested data. They're defined in the GraphQL schema and serve as building blocks for queries and mutations, specifying what data is available for each type.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL: Types and Fields",
+          "url": "https://graphql.org/learn/queries/#fields"
+        }
+      ],
+      "parents": [
+        "graphqlQueries"
+      ],
+      "children": []
+    },
+    "whatAreQueries": {
+      "title": "What are Queries?",
+      "sourceId": "2SU4dcaz7zwGsF7g8FjmI",
+      "type": "subtopic",
+      "order": 14,
+      "summary": "In GraphQL, queries are client requests to retrieve data from the server. They're structured as hierarchical trees of fields that correspond to the properties of the requested data, allowing clients to specify exactly what data they need in a predictable format.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction of GraphQL - Query",
+          "url": "https://graphql.org/learn/queries/"
+        }
+      ],
+      "parents": [
+        "graphqlQueries"
+      ],
+      "children": []
+    },
+    "mutations": {
+      "title": "Mutations",
+      "sourceId": "jy_91mhFWbpR6sYVbuX1x",
+      "type": "topic",
+      "order": 15,
+      "summary": "Mutations in GraphQL are used to modify data on the server, including creating, updating, or deleting records. They're structured like queries but use the \"mutation\" field at the top level and include fields specifying the data to be changed and the operation type.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Getting started with Mutations",
+          "url": "https://graphql.org/learn/queries/#mutations"
+        }
+      ],
+      "parents": [
+        "graphqlQueries"
+      ],
+      "children": [
+        "multipleFieldsInMutation",
+        "operationName",
+        "whatAreMutations",
+        "subscriptions"
+      ]
+    },
+    "multipleFieldsInMutation": {
+      "title": "Multiple Fields in Mutation",
+      "sourceId": "AySlY8AyI6jE-cy-qKKOU",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "GraphQL allows multiple mutations in a single query by including multiple mutation fields, a practice often called batching mutations. This approach improves network efficiency by reducing the number of round-trips between the client and server.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Guide to Multiple fields in mutations",
+          "url": "https://graphql.org/learn/mutations/#multiple-fields-in-mutations"
+        }
+      ],
+      "parents": [
+        "mutations"
+      ],
+      "children": []
+    },
+    "operationName": {
+      "title": "Operation Name",
+      "sourceId": "q9TYEygvUyHourdZIvk8G",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "Operation names are optional identifiers for GraphQL queries and mutations that help uniquely identify operations in documents with multiple operations. They provide meaningful names for operations, improve debugging, and make error identification easier in complex applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Intro to Operation Name",
+          "url": "https://graphql.org/learn/queries/#operation-name"
+        }
+      ],
+      "parents": [
+        "mutations"
+      ],
+      "children": [
+        "typeSystem"
+      ]
+    },
+    "typeSystem": {
+      "title": "Type System",
+      "sourceId": "jpu0_FAlxtD-H80mPcod5",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "GraphQL is strongly typed with a type system that defines data types available in applications. It includes Scalar, Object, Query, Mutation, and Enum types. The type system defines the schema, acting as a contract between client and server for predictable API interactions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get started with Type system",
+          "url": "https://graphql.org/learn/schema/#type-system"
+        }
+      ],
+      "parents": [
+        "operationName"
+      ],
+      "children": [
+        "fields2"
+      ]
+    },
+    "fields2": {
+      "title": "Fields",
+      "sourceId": "HPdntdgTar1T34CZX8Y6y",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "Fields in GraphQL are units of data that can be queried or manipulated. Each field has a name, type, and optional description, and can return scalar values or objects, enabling complex nested data structures and taking arguments for filtering.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL: Types and Fields",
+          "url": "https://graphql.org/learn/queries/#fields"
+        }
+      ],
+      "parents": [
+        "typeSystem"
+      ],
+      "children": []
+    },
+    "whatAreMutations": {
+      "title": "What are Mutations?",
+      "sourceId": "9Q2pGidY-rfkltHq3vChp",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "Mutations in GraphQL are operations used to modify data on the server - creating, updating, or deleting records. They're structured like queries but use the \"mutation\" field at the top level and include fields specifying the data to be changed and the operation type.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get started with Mutations",
+          "url": "https://graphql.org/learn/mutations/"
+        }
+      ],
+      "parents": [
+        "mutations"
+      ],
+      "children": []
+    },
+    "subscriptions": {
+      "title": "Subscriptions",
+      "sourceId": "IbEqXlGjsyNLKE9dZrPPk",
+      "type": "topic",
+      "order": 21,
+      "summary": "Subscriptions in GraphQL enable real-time updates by allowing clients to subscribe to specific events or data changes on the server. The server maintains an open connection and pushes updates to subscribed clients as soon as events occur or data changes.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Subscriptions and Live Queries - Real Time with GraphQL",
+          "url": "https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql"
+        }
+      ],
+      "parents": [
+        "mutations"
+      ],
+      "children": [
+        "whatAreSubscriptions",
+        "eventBasedSubscriptions",
+        "liveQueries",
+        "deferStreamDirectives",
+        "schema"
+      ]
+    },
+    "whatAreSubscriptions": {
+      "title": "What are Subscriptions",
+      "sourceId": "RlBc-hWEUOPaEQLTgJa-K",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "Subscriptions in GraphQL enable real-time updates by allowing clients to subscribe to specific events or data changes on the server. They're structured like queries with a \"subscription\" field at the top level and push updates to clients as soon as events occur.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How GraphQL Subscriptions Work?",
+          "url": "https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql"
+        }
+      ],
+      "parents": [
+        "subscriptions"
+      ],
+      "children": []
+    },
+    "eventBasedSubscriptions": {
+      "title": "Event Based Subscriptions",
+      "sourceId": "kJMyRhasBKfBypent3GxK",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "Event-based subscriptions in GraphQL provide real-time updates by subscribing to specific events or data changes. Clients maintain persistent connections through WebSockets to receive live updates when subscribed events occur, enabling reactive applications with real-time functionality.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL Subscriptions Documentation",
+          "url": "https://graphql.org/blog/subscriptions-in-graphql-and-relay/"
+        },
+        {
+          "type": "article",
+          "title": "GraphQL Subscriptions",
+          "url": "https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql"
+        }
+      ],
+      "parents": [
+        "subscriptions"
+      ],
+      "children": []
+    },
+    "liveQueries": {
+      "title": "Live Queries",
+      "sourceId": "CHdzww8_TNfeM6Bp1oTPI",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "Live Queries automatically update query results when underlying data changes, providing real-time synchronization without manual subscription management. This advanced feature simplifies building reactive applications by maintaining fresh data automatically, though it requires specialized GraphQL implementations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "GraphQL Live Queries",
+          "url": "https://the-guild.dev/blog/collecting-graphql-live-query-resource-identifier-with-graphql-tools"
+        }
+      ],
+      "parents": [
+        "subscriptions"
+      ],
+      "children": []
+    },
+    "deferStreamDirectives": {
+      "title": "@defer / @stream directives",
+      "sourceId": "t6XxFB_lx27kS4FE2_GMH",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "Defer and Stream directives are experimental GraphQL features for incremental data delivery. @defer postpones non-critical fields to improve initial response times, while @stream sends list items progressively, enabling better user experiences with large datasets and slow-loading fields.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Defer and Stream in GraphQL",
+          "url": "https://the-guild.dev/graphql/yoga-server/docs/features/defer-stream"
+        }
+      ],
+      "parents": [
+        "subscriptions"
+      ],
+      "children": [
+        "rootFields"
+      ]
+    },
+    "rootFields": {
+      "title": "Root Fields",
+      "sourceId": "AlJlHZD3_SPoLNaqdM-pB",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "Root fields are the top-level fields available to clients in GraphQL queries and mutations. They serve as entry points for client requests, with Query fields for retrieving data and Mutation fields for modifying data on the server.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with Root Fields",
+          "url": "https://graphql.org/learn/execution/#root-fields-resolvers"
+        }
+      ],
+      "parents": [
+        "deferStreamDirectives"
+      ],
+      "children": [
+        "resolvers"
+      ]
+    },
+    "resolvers": {
+      "title": "Resolvers",
+      "sourceId": "VDur5xYBC0LJtQgDrSEyj",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "Resolvers are functions responsible for fetching data for each field in GraphQL queries and mutations. Defined in the schema and executed by the GraphQL server, they retrieve data from databases, APIs, or other sources and return it to clients.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Guide to Resolver",
+          "url": "https://the-guild.dev/blog/better-type-safety-for-resolvers-with-graphql-codegen"
+        }
+      ],
+      "parents": [
+        "rootFields"
+      ],
+      "children": [
+        "synchronous",
+        "asynchronous",
+        "scalarCoercion",
+        "lists2",
+        "validation2"
+      ]
+    },
+    "synchronous": {
+      "title": "Synchronous",
+      "sourceId": "uPpsj2kCdgKsJpmTaw86u",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "Synchronous resolvers in GraphQL execute immediately and return their results directly without waiting for external operations. They complete their execution before returning any value, making them simpler but potentially blocking if they perform complex computations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL Execution",
+          "url": "https://graphql.org/learn/execution/"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Resolvers",
+          "url": "https://www.apollographql.com/docs/apollo-server/data/resolvers/"
+        }
+      ],
+      "parents": [
+        "resolvers"
+      ],
+      "children": []
+    },
+    "asynchronous": {
+      "title": "Asynchronous",
+      "sourceId": "tbDvQBtLRAcD-xYX9V7Va",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "Asynchronous resolvers in GraphQL are functions that return promises instead of immediate values. They allow resolvers to wait for external operations like database queries or API calls to complete before returning results, enabling non-blocking execution.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with Asynchronous",
+          "url": "https://graphql.org/learn/execution/#asynchronous-resolvers"
+        }
+      ],
+      "parents": [
+        "resolvers"
+      ],
+      "children": []
+    },
+    "scalarCoercion": {
+      "title": "Scalar Coercion",
+      "sourceId": "QFUOmJlPkkjpcl1vJxg9h",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "Scalar coercion in GraphQL converts input values from one type to another when they don't match the expected type but can be successfully converted. This process is implemented using custom scalar types with coerce functions that handle the type conversion.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get started with Scalar coercion",
+          "url": "https://graphql.org/learn/execution/#scalar-coercion"
+        }
+      ],
+      "parents": [
+        "resolvers"
+      ],
+      "children": []
+    },
+    "lists2": {
+      "title": "Lists",
+      "sourceId": "sJ1_c3e08aehiqNMbIEEP",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "Lists in GraphQL represent ordered collections of items and can be used as return types for fields. They can contain any type of items including scalars and objects, with resolver functions typically returning data as arrays from databases or APIs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get started with Lists and Non-Null",
+          "url": "https://graphql.org/learn/schema/#lists-and-non-null"
+        }
+      ],
+      "parents": [
+        "resolvers"
+      ],
+      "children": []
+    },
+    "validation2": {
+      "title": "Validation",
+      "sourceId": "I4wNBXV4xEZ0LWBhv5FwF",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "Validation in GraphQL ensures queries and mutations adhere to schema rules by verifying field access, type correctness, and input constraints. GraphQL servers validate all incoming operations before execution, returning errors for invalid queries with specific details about violations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with Validation in GraphQL",
+          "url": "https://graphql.org/learn/validation/"
+        }
+      ],
+      "parents": [
+        "resolvers"
+      ],
+      "children": [
+        "producingTheResult"
+      ]
+    },
+    "producingTheResult": {
+      "title": "Producing the Result",
+      "sourceId": "zQHifboRreE4OgJ7GnUlp",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "Producing the result in GraphQL involves generating the final response to queries and mutations. This process includes parsing the request, validating against the schema, executing resolvers to fetch data, and formatting the response according to the query requirements.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with GraphQL",
+          "url": "https://graphql.org/learn/"
+        }
+      ],
+      "parents": [
+        "validation2"
+      ],
+      "children": []
+    },
+    "schema": {
+      "title": "Schema",
+      "sourceId": "lj1WEh4WbfBsoZFYsi1Yz",
+      "type": "topic",
+      "order": 34,
+      "summary": "A GraphQL schema defines the structure and capabilities of a GraphQL API using Schema Definition Language (SDL). It specifies types, fields, arguments, relationships, and root operations (Query, Mutation, Subscription) that serve as entry points, acting as a contract between client and server.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "What is Schema?",
+          "url": "https://graphql.org/learn/schema/"
+        }
+      ],
+      "parents": [
+        "subscriptions"
+      ],
+      "children": [
+        "validation"
+      ]
+    },
+    "validation": {
+      "title": "Validation",
+      "sourceId": "iYkHCKTsjtvo40f3eZoet",
+      "type": "topic",
+      "order": 35,
+      "summary": "Validation in GraphQL ensures queries and mutations conform to schema rules and constraints. It checks for required fields, correct argument types, and value ranges before execution, preventing invalid operations and improving API reliability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with Validation in GraphQL",
+          "url": "https://graphql.org/learn/validation/"
+        }
+      ],
+      "parents": [
+        "schema"
+      ],
+      "children": [
+        "execution"
+      ]
+    },
+    "execution": {
+      "title": "Execution",
+      "sourceId": "72wGg6yP8WnEdmkeKL9vh",
+      "type": "topic",
+      "order": 36,
+      "summary": "Execution in GraphQL is the process of running queries or mutations and returning results to clients. The GraphQL engine performs parsing, validation, and data retrieval steps to produce the final response, coordinating resolver functions to fetch data from various sources.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with Execution in GraphQL",
+          "url": "https://graphql.org/learn/execution/"
+        },
+        {
+          "type": "official",
+          "title": "Intro to Execution",
+          "url": "https://graphql.org/graphql-js/execution/"
+        }
+      ],
+      "parents": [
+        "validation"
+      ],
+      "children": [
+        "servingOverInternet"
+      ]
+    },
+    "servingOverInternet": {
+      "title": "Serving over Internet",
+      "sourceId": "inhjhH-7xJyX8o4DQqErF",
+      "type": "topic",
+      "order": 37,
+      "summary": "Serving GraphQL over the internet involves making a GraphQL server accessible to clients through a public IP address or domain name. This can be done using reverse proxies, cloud services, or serverless functions to expose the GraphQL endpoint publicly.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to Serving over HTTPs",
+          "url": "https://graphql.org/learn/serving-over-http/"
+        }
+      ],
+      "parents": [
+        "execution"
+      ],
+      "children": [
+        "pagination"
+      ]
+    },
+    "pagination": {
+      "title": "Pagination",
+      "sourceId": "Uf8XxJPs7RzKVhlxiQdbB",
+      "type": "topic",
+      "order": 38,
+      "summary": "Pagination in GraphQL handles large datasets by breaking them into smaller chunks. Common approaches include cursor-based pagination (using cursors for stable pagination) and offset-based pagination (using skip/take), with cursor-based being preferred for performance and consistency.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with Pagination",
+          "url": "https://graphql.org/learn/pagination/"
+        }
+      ],
+      "parents": [
+        "servingOverInternet"
+      ],
+      "children": [
+        "implementations"
+      ]
+    },
+    "implementations": {
+      "title": "Implementations",
+      "sourceId": "Qab1pyIZiJ3Z9q8CuEsc-",
+      "type": "paragraph",
+      "order": 39,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "pagination"
+      ],
+      "children": [
+        "servers"
+      ]
+    },
+    "servers": {
+      "title": "Servers",
+      "sourceId": "XD0hNlAu05_ZYgv8JvEp1",
+      "type": "paragraph",
+      "order": 40,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "implementations"
+      ],
+      "children": [
+        "clients"
+      ]
+    },
+    "clients": {
+      "title": "Clients",
+      "sourceId": "WFO_AwmbUJPAFj0tFClJg",
+      "type": "paragraph",
+      "order": 41,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "servers"
+      ],
+      "children": []
+    },
+    "intFloatStringBooleanId": {
+      "title": "Int, Float, String, Boolean, ID",
+      "sourceId": "icm7gi90MRG4vn9KUUaqR",
+      "type": "paragraph",
+      "order": 42,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "scalars"
+      ]
+    },
+    "scalars": {
+      "title": "Scalars",
+      "sourceId": "U-tLelmNQtR-pUq-sxU_2",
+      "type": "subtopic",
+      "order": 43,
+      "summary": "Scalars are \"leaf\" values in GraphQL representing primitive data types. Built-in scalars include String, Int, Float, Boolean, and ID for unique identifiers. Custom scalars can be defined for specific needs like dates, JSON, or large integers, extending the type system beyond basic primitives.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get started with Scalars in GraphQL",
+          "url": "https://graphql.org/learn/schema/#scalar-types"
+        }
+      ],
+      "parents": [
+        "intFloatStringBooleanId"
+      ],
+      "children": [
+        "enums",
+        "objects",
+        "lists",
+        "interfaces",
+        "unions",
+        "arguments2"
+      ]
+    },
+    "enums": {
+      "title": "Enums",
+      "sourceId": "wfOsfb0zSAIdNkwFHfBcw",
+      "type": "subtopic",
+      "order": 44,
+      "summary": "Enums (enumeration types) are special scalars restricted to a particular set of allowed values. They validate arguments against allowed values and communicate through the type system that fields will always be one of a finite set of predefined options.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "What are Enums?",
+          "url": "https://graphql.org/learn/schema/#enumeration-types"
+        }
+      ],
+      "parents": [
+        "scalars"
+      ],
+      "children": []
+    },
+    "objects": {
+      "title": "Objects",
+      "sourceId": "LX9vZpx7yKlf0iR6AtBWz",
+      "type": "subtopic",
+      "order": 45,
+      "summary": "Objects in GraphQL are types that represent groups of fields, defining the structure of queries and mutations. Each field can return scalar values or other objects, enabling complex nested data structures. Objects are defined using the \"type\" keyword followed by the name and field definitions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Object Types and Fields",
+          "url": "https://graphql.org/learn/schema/#object-types-and-fields"
+        },
+        {
+          "type": "official",
+          "title": "Object Types",
+          "url": "https://graphql.org/graphql-js/object-types/"
+        }
+      ],
+      "parents": [
+        "scalars"
+      ],
+      "children": []
+    },
+    "lists": {
+      "title": "Lists",
+      "sourceId": "d2ikbo4sZq7PmaCi5znkd",
+      "type": "subtopic",
+      "order": 46,
+      "summary": "Lists in GraphQL represent ordered collections of items, defined using square brackets around the item type. They can contain scalars, objects, or other lists, enabling complex nested data structures and array-based field returns in schemas.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get started with Lists",
+          "url": "https://graphql.org/learn/schema/#lists-and-non-null"
+        }
+      ],
+      "parents": [
+        "scalars"
+      ],
+      "children": []
+    },
+    "interfaces": {
+      "title": "Interfaces",
+      "sourceId": "tc_rjJZrr2x3bp8mcoQ0F",
+      "type": "subtopic",
+      "order": 47,
+      "summary": "Interfaces in GraphQL define a set of fields that implementing types must include. They enable polymorphism by allowing common field querying across different types that implement the same interface, promoting code reuse and consistent API design.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get started with Interfaces",
+          "url": "https://graphql.org/learn/schema/#interfaces"
+        }
+      ],
+      "parents": [
+        "scalars"
+      ],
+      "children": []
+    },
+    "unions": {
+      "title": "Unions",
+      "sourceId": "59COH3rerJJzKr6vrj4bF",
+      "type": "subtopic",
+      "order": 48,
+      "summary": "Unions allow fields to return multiple types, enabling different handling for various types in clients. They provide schema flexibility by grouping types together, though they don't allow common field querying across types like interfaces do.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get started with Union in GraphQL",
+          "url": "https://graphql.org/learn/schema/#union-types"
+        }
+      ],
+      "parents": [
+        "scalars"
+      ],
+      "children": []
+    },
+    "arguments2": {
+      "title": "Arguments",
+      "sourceId": "A54vi3Ao7fBHyTuqoH_it",
+      "type": "subtopic",
+      "order": 49,
+      "summary": "Arguments in GraphQL are values passed to fields in queries and mutations to filter or modify returned data. They're defined in the schema with a name, type, and optional default value, enabling dynamic data retrieval.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get started with Arguments in GraphQL",
+          "url": "https://graphql.org/learn/schema/#arguments"
+        }
+      ],
+      "parents": [
+        "scalars"
+      ],
+      "children": []
+    },
+    "graphqlOverHttpSpec": {
+      "title": "GraphQL Over HTTP Spec",
+      "sourceId": "V3bgswBFr1xames3F8S_V",
+      "type": "subtopic",
+      "order": 51,
+      "summary": "The GraphQL over HTTP specification defines standard practices for serving GraphQL over HTTP, including request/response formats, status codes, and content types. It ensures interoperability between different GraphQL implementations and provides guidance for consistent API behavior across platforms.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "caching",
+        "batching",
+        "authorization"
+      ]
+    },
+    "caching": {
+      "title": "Caching",
+      "sourceId": "UYwuUVTeurwODV4_Kdt_W",
+      "type": "subtopic",
+      "order": 52,
+      "summary": "Caching in GraphQL improves performance by storing query results for reuse. Strategies include HTTP caching, response caching, dataloader for batching requests, and normalized caching at the client level to reduce redundant API calls and improve user experience.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get started with Caching",
+          "url": "https://graphql.org/learn/caching/"
+        }
+      ],
+      "parents": [
+        "graphqlOverHttpSpec"
+      ],
+      "children": []
+    },
+    "batching": {
+      "title": "Batching",
+      "sourceId": "v9gVexHfDkpG9z3NL5S-9",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "Batching in GraphQL combines multiple queries into a single request to reduce network overhead and improve performance. DataLoader is a common pattern that batches and caches database requests, preventing N+1 query problems and optimizing data fetching efficiency.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "DataLoader",
+          "url": "https://github.com/graphql/dataloader"
+        },
+        {
+          "type": "article",
+          "title": "Solving the N+1 Problem",
+          "url": "https://shopify.engineering/solving-the-n-1-problem-for-graphql-through-batching"
+        }
+      ],
+      "parents": [
+        "graphqlOverHttpSpec"
+      ],
+      "children": []
+    },
+    "authorization": {
+      "title": "Authorization",
+      "sourceId": "i-zcfN6RNXhA_sb7DcIon",
+      "type": "subtopic",
+      "order": 54,
+      "summary": "Authorization in GraphQL refers to the process of controlling access to specific fields, types, or operations in a GraphQL schema based on user roles or permissions. It allows you to restrict access to certain data or functionality in your application based on the user's role or permissions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with Authorization",
+          "url": "https://graphql.org/learn/authorization/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Authorization",
+          "url": "https://app.daily.dev/tags/authorization?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "graphqlOverHttpSpec"
+      ],
+      "children": []
+    },
+    "graphqlOverWebsockets": {
+      "title": "GraphQL Over WebSockets",
+      "sourceId": "st02HY5-DEab1pYXkBc3S",
+      "type": "label",
+      "order": 55,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "specification"
+      ]
+    },
+    "specification": {
+      "title": "Specification",
+      "sourceId": "A-PQ3_FVuCK3Eud75hsdj",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "The GraphQL specification is the official standard that defines the GraphQL query language, type system, execution algorithm, and validation rules. It ensures consistency across different GraphQL implementations and serves as the authoritative reference for developers building GraphQL services and tools.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL Specification",
+          "url": "https://spec.graphql.org/"
+        },
+        {
+          "type": "official",
+          "title": "GraphQL Foundation",
+          "url": "https://foundation.graphql.org/"
+        }
+      ],
+      "parents": [
+        "graphqlOverWebsockets"
+      ],
+      "children": [
+        "realtime",
+        "authorization2"
+      ]
+    },
+    "goImplementation": {
+      "title": "Go Implementation",
+      "sourceId": "1q77xUifPS5sLx5tktXxF",
+      "type": "label",
+      "order": 57,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "graphqlGo"
+      ]
+    },
+    "realtime": {
+      "title": "Realtime",
+      "sourceId": "2YLm_S1j_832pb1OGSNaM",
+      "type": "subtopic",
+      "order": 58,
+      "summary": "Realtime GraphQL enables live data updates through subscriptions, allowing clients to receive instant notifications when data changes. Implemented using WebSockets, Server-Sent Events, or polling, it's essential for chat applications, live feeds, and collaborative tools requiring immediate data synchronization.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Get Started with Real Time with GraphQL",
+          "url": "https://the-guild.dev/blog/subscriptions-and-live-queries-real-time-with-graphql"
+        }
+      ],
+      "parents": [
+        "specification"
+      ],
+      "children": []
+    },
+    "authorization2": {
+      "title": "Authorization",
+      "sourceId": "GzwPvLybxTJM96fUhQUOi",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "Authorization in GraphQL refers to the process of controlling access to specific fields, types, or operations in a GraphQL schema based on user roles or permissions. It allows you to restrict access to certain data or functionality in your application based on the user's role or permissions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with Authorization",
+          "url": "https://graphql.org/learn/authorization/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Authorization",
+          "url": "https://app.daily.dev/tags/authorization?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "specification"
+      ],
+      "children": []
+    },
+    "graphqlGo": {
+      "title": "GraphQL Go",
+      "sourceId": "9nVo95gRNGHGIbaJQPH1x",
+      "type": "subtopic",
+      "order": 60,
+      "summary": "GraphQL Go refers to implementing GraphQL servers and clients using the Go programming language. Popular libraries include graphql-go/graphql for schema-first development and 99designs/gqlgen for code-first generation. Go's strong typing and performance make it excellent for building scalable GraphQL APIs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "graphql-go/graphql",
+          "url": "https://github.com/graphql-go/graphql"
+        },
+        {
+          "type": "opensource",
+          "title": "99designs/gqlgen",
+          "url": "https://github.com/99designs/gqlgen"
+        }
+      ],
+      "parents": [
+        "goImplementation"
+      ],
+      "children": []
+    },
+    "graphqlOverSse": {
+      "title": "GraphQL Over SSE",
+      "sourceId": "F4nR2VZ4k1uekWXINoMKH",
+      "type": "label",
+      "order": 61,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "specification2"
+      ]
+    },
+    "javascriptImplementation": {
+      "title": "JavaScript Implementation",
+      "sourceId": "qmlQ3184CZ9HgvRHVcPT6",
+      "type": "label",
+      "order": 62,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "graphqlJs"
+      ]
+    },
+    "specification2": {
+      "title": "Specification",
+      "sourceId": "O8k-m6s9B_uXkLsXKVFnL",
+      "type": "subtopic",
+      "order": 63,
+      "summary": "The GraphQL specification defines the core language, type system, execution model, and validation rules for GraphQL. Maintained by the GraphQL Foundation, it provides the technical foundation that all GraphQL implementations must follow to ensure interoperability and consistency across platforms.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL Specification",
+          "url": "https://spec.graphql.org/"
+        },
+        {
+          "type": "official",
+          "title": "GraphQL Foundation",
+          "url": "https://foundation.graphql.org/"
+        }
+      ],
+      "parents": [
+        "graphqlOverSse"
+      ],
+      "children": [
+        "authorization3"
+      ]
+    },
+    "graphqlJs": {
+      "title": "GraphQL.js",
+      "sourceId": "jCzrMElTo-c9xGcpPOOPl",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "GraphQL.js is the reference implementation of GraphQL for JavaScript and Node.js. It provides the core functionality for parsing, validating, and executing GraphQL queries, serving as the foundation for many other GraphQL tools and libraries in the JavaScript ecosystem.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL.js Repository",
+          "url": "https://github.com/graphql/graphql-js"
+        },
+        {
+          "type": "official",
+          "title": "GraphQL.js Documentation",
+          "url": "https://graphql.org/graphql-js/"
+        }
+      ],
+      "parents": [
+        "javascriptImplementation"
+      ],
+      "children": []
+    },
+    "authorization3": {
+      "title": "Authorization",
+      "sourceId": "G50ZMlmP7Ru5LcFne5Rhu",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "Authorization in GraphQL controls access to data and operations based on user permissions and roles. It can be implemented at the schema level, field level, or within resolvers, ensuring users only access data they're permitted to see through various authentication and permission strategies.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with Authorization",
+          "url": "https://graphql.org/learn/authorization/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Authorization",
+          "url": "https://app.daily.dev/tags/authorization?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "specification2"
+      ],
+      "children": []
+    },
+    "javaImplementation": {
+      "title": "Java Implementation",
+      "sourceId": "-STVQpKbY5I9eTExdJ6mc",
+      "type": "label",
+      "order": 66,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "graphqlJava"
+      ]
+    },
+    "graphqlJava": {
+      "title": "GraphQL Java",
+      "sourceId": "7szipojhVb2VoL3VcS619",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "GraphQL Java is a popular library for implementing GraphQL APIs in Java applications. It provides schema-first development capabilities, runtime query execution, and integrates well with Spring Boot and other Java frameworks, making it a solid choice for enterprise GraphQL implementations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL Java Repository",
+          "url": "https://github.com/graphql-java/graphql-java"
+        },
+        {
+          "type": "article",
+          "title": "GraphQL Java Documentation",
+          "url": "https://www.graphql-java.com/"
+        }
+      ],
+      "parents": [
+        "javaImplementation"
+      ],
+      "children": []
+    },
+    "pythonImplementation": {
+      "title": "Python Implementation",
+      "sourceId": "kS01-perdFxHsTKTwvuC4",
+      "type": "label",
+      "order": 68,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "graphene"
+      ]
+    },
+    "javascript": {
+      "title": "JavaScript",
+      "sourceId": "_8RiK9B8endMNBjiKsazU",
+      "type": "label",
+      "order": 69,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "graphqlHttp"
+      ]
+    },
+    "graphene": {
+      "title": "Graphene",
+      "sourceId": "r3Yf5pxzgSGAckOPr3eSt",
+      "type": "subtopic",
+      "order": 70,
+      "summary": "Graphene is a Python library that facilitates building GraphQL APIs. It allows developers to define GraphQL schemas using Python classes, mapping these classes to data sources and resolvers. Graphene simplifies the process of creating GraphQL endpoints in Python web applications, providing tools for defining types, fields, and queries.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Graphene",
+          "url": "https://graphene-python.org/"
+        },
+        {
+          "type": "article",
+          "title": "Graphene",
+          "url": "https://github.com/graphql-python/graphene?tab=readme-ov-file"
+        }
+      ],
+      "parents": [
+        "pythonImplementation"
+      ],
+      "children": [
+        "urql"
+      ]
+    },
+    "graphqlHttp": {
+      "title": "graphql-http",
+      "sourceId": "N-vsu-wvOikuoTbzdgX3X",
+      "type": "subtopic",
+      "order": 71,
+      "summary": "GraphQL over HTTP is a specification that defines how GraphQL queries and mutations should be transported over HTTP. It standardizes request/response formats, HTTP methods, status codes, and headers, ensuring consistent GraphQL API communication across different implementations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "GraphQL over HTTP Specification",
+          "url": "https://graphql.github.io/graphql-over-http/"
+        },
+        {
+          "type": "opensource",
+          "title": "graphql-http Library",
+          "url": "https://github.com/graphql/graphql-http"
+        }
+      ],
+      "parents": [
+        "javascript"
+      ],
+      "children": [
+        "graphqlYoga"
+      ]
+    },
+    "graphqlYoga": {
+      "title": "GraphQL Yoga",
+      "sourceId": "Gotb1xtxySCVC5MrnkPSs",
+      "type": "subtopic",
+      "order": 72,
+      "summary": "GraphQL Yoga is an open-source GraphQL server library for Node.js built on Express.js. It provides minimal boilerplate setup with built-in authentication, authorization, data validation, and subscription support for real-time updates, making GraphQL server development streamlined.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "GraphQL Armor - for Yoga Server 2",
+          "url": "https://the-guild.dev/blog/improved-security-with-graphql-armor-support-for-yoga-server-2"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GraphQL",
+          "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "graphqlHttp"
+      ],
+      "children": [
+        "apolloServer"
+      ]
+    },
+    "javascript2": {
+      "title": "JavaScript",
+      "sourceId": "3lQ4cxevkw0p8v7fHm4I7",
+      "type": "label",
+      "order": 73,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "graphqlHttp2",
+        "relay",
+        "apolloClient"
+      ]
+    },
+    "apolloServer": {
+      "title": "Apollo Server",
+      "sourceId": "o_VkyoN6DmUUkfl0u0cro",
+      "type": "subtopic",
+      "order": 74,
+      "summary": "Apollo Server is a popular open-source library for building GraphQL servers in JavaScript. It provides tools for parsing, validating, executing resolvers, and formatting responses with built-in features for authentication, authorization, data validation, and real-time subscriptions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Apollo Tutorial - Introduction",
+          "url": "https://www.howtographql.com/react-apollo/0-introduction/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Apollo",
+          "url": "https://app.daily.dev/tags/apollo?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "graphqlYoga"
+      ],
+      "children": [
+        "mercurius"
+      ]
+    },
+    "graphqlHttp2": {
+      "title": "graphql-http",
+      "sourceId": "datKo3vPDwXoyVskcrdkc",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "GraphQL HTTP is a specification for serving GraphQL over HTTP protocol. It defines standard methods for sending queries and mutations, primarily using POST requests with JSON payloads in the request body, and receiving results in the response body.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Overview of GraphQL HTTP",
+          "url": "https://graphql.org/graphql-js/express-graphql/#graphqlhttp"
+        },
+        {
+          "type": "official",
+          "title": "Get Started with GraphQL HTTP",
+          "url": "https://graphql.org/learn/serving-over-http/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GraphQL",
+          "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "javascript2"
+      ],
+      "children": []
+    },
+    "mercurius": {
+      "title": "mercurius",
+      "sourceId": "iTV2H8clmRTOksul4v38p",
+      "type": "subtopic",
+      "order": 76,
+      "summary": "Mercurius is a high-performance GraphQL server library for Fastify, offering excellent performance and minimal memory usage. It provides schema-first development, built-in caching, subscriptions support, and integration with Fastify's ecosystem for building fast, scalable GraphQL APIs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Mercurius Repository",
+          "url": "https://github.com/mercurius-js/mercurius"
+        },
+        {
+          "type": "article",
+          "title": "Mercurius Documentation",
+          "url": "https://mercurius.dev/"
+        }
+      ],
+      "parents": [
+        "apolloServer"
+      ],
+      "children": []
+    },
+    "relay": {
+      "title": "Relay",
+      "sourceId": "Ab_ngkf6bmejvcp9okuw6",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "Relay is Facebook's GraphQL client designed for React applications, emphasizing performance and data consistency. It uses a declarative approach with fragments, automatic query optimization, pagination handling, and strict conventions for building scalable, efficient GraphQL applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "GraphQL Code Generator & Relay Compiler",
+          "url": "https://the-guild.dev/blog/graphql-codegen-relay-compiler"
+        }
+      ],
+      "parents": [
+        "javascript2"
+      ],
+      "children": []
+    },
+    "apolloClient": {
+      "title": "Apollo Client",
+      "sourceId": "D5O7ky5eXwm_Ys1IcFNaq",
+      "type": "subtopic",
+      "order": 78,
+      "summary": "Apollo Client is a popular GraphQL client library for JavaScript that provides data fetching, caching, and state management. It offers declarative data fetching with React hooks, intelligent caching, optimistic UI updates, and error handling for building efficient GraphQL-powered applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Why Apollo Client - Frontend?",
+          "url": "https://www.howtographql.com/react-apollo/0-introduction/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Apollo",
+          "url": "https://app.daily.dev/tags/apollo?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "javascript2"
+      ],
+      "children": []
+    },
+    "urql": {
+      "title": "Urql",
+      "sourceId": "WP0Oo_YMfLBlXqDQQtKes",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "URQL is a lightweight, highly customizable GraphQL client for React, Vue, and Svelte. It provides caching, real-time subscriptions, offline support, and a modular architecture with exchanges for extending functionality, offering an alternative to Apollo Client with better performance.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "urql - Formidable Labs",
+          "url": "https://formidable.com/open-source/urql/"
+        }
+      ],
+      "parents": [
+        "graphene"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "graphql",
+      "to": "introduction",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "problemsGraphqlSolves",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "whatIsGraphql",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "thinkingInGraphs",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "graphqlOnFrontend",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "graphqlOnBackend",
+      "style": "dashed"
+    },
+    {
+      "from": "graphqlQueries",
+      "to": "variables",
+      "style": "dashed"
+    },
+    {
+      "from": "graphqlQueries",
+      "to": "aliases",
+      "style": "dashed"
+    },
+    {
+      "from": "graphqlQueries",
+      "to": "arguments",
+      "style": "dashed"
+    },
+    {
+      "from": "graphqlQueries",
+      "to": "directives",
+      "style": "dashed"
+    },
+    {
+      "from": "graphqlQueries",
+      "to": "fragments",
+      "style": "dashed"
+    },
+    {
+      "from": "graphqlQueries",
+      "to": "fields",
+      "style": "dashed"
+    },
+    {
+      "from": "graphqlQueries",
+      "to": "whatAreQueries",
+      "style": "dashed"
+    },
+    {
+      "from": "graphqlQueries",
+      "to": "mutations",
+      "style": "solid"
+    },
+    {
+      "from": "mutations",
+      "to": "multipleFieldsInMutation",
+      "style": "dashed"
+    },
+    {
+      "from": "mutations",
+      "to": "operationName",
+      "style": "dashed"
+    },
+    {
+      "from": "mutations",
+      "to": "whatAreMutations",
+      "style": "dashed"
+    },
+    {
+      "from": "mutations",
+      "to": "subscriptions",
+      "style": "solid"
+    },
+    {
+      "from": "subscriptions",
+      "to": "whatAreSubscriptions",
+      "style": "dashed"
+    },
+    {
+      "from": "subscriptions",
+      "to": "eventBasedSubscriptions",
+      "style": "dashed"
+    },
+    {
+      "from": "subscriptions",
+      "to": "liveQueries",
+      "style": "dashed"
+    },
+    {
+      "from": "subscriptions",
+      "to": "deferStreamDirectives",
+      "style": "dashed"
+    },
+    {
+      "from": "subscriptions",
+      "to": "schema",
+      "style": "solid"
+    },
+    {
+      "from": "schema",
+      "to": "validation",
+      "style": "solid"
+    },
+    {
+      "from": "validation",
+      "to": "execution",
+      "style": "solid"
+    },
+    {
+      "from": "execution",
+      "to": "servingOverInternet",
+      "style": "solid"
+    },
+    {
+      "from": "servingOverInternet",
+      "to": "pagination",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "graphqlQueries",
+      "style": "solid"
+    },
+    {
+      "from": "pagination",
+      "to": "implementations",
+      "style": "solid"
+    },
+    {
+      "from": "implementations",
+      "to": "servers",
+      "style": "solid"
+    },
+    {
+      "from": "servers",
+      "to": "clients",
+      "style": "solid"
+    },
+    {
+      "from": "operationName",
+      "to": "typeSystem",
+      "style": "solid"
+    },
+    {
+      "from": "typeSystem",
+      "to": "fields2",
+      "style": "solid"
+    },
+    {
+      "from": "intFloatStringBooleanId",
+      "to": "scalars",
+      "style": "solid"
+    },
+    {
+      "from": "scalars",
+      "to": "enums",
+      "style": "solid"
+    },
+    {
+      "from": "scalars",
+      "to": "objects",
+      "style": "solid"
+    },
+    {
+      "from": "deferStreamDirectives",
+      "to": "rootFields",
+      "style": "solid"
+    },
+    {
+      "from": "scalars",
+      "to": "lists",
+      "style": "solid"
+    },
+    {
+      "from": "scalars",
+      "to": "interfaces",
+      "style": "solid"
+    },
+    {
+      "from": "rootFields",
+      "to": "resolvers",
+      "style": "solid"
+    },
+    {
+      "from": "scalars",
+      "to": "unions",
+      "style": "solid"
+    },
+    {
+      "from": "scalars",
+      "to": "arguments2",
+      "style": "solid"
+    },
+    {
+      "from": "resolvers",
+      "to": "synchronous",
+      "style": "solid"
+    },
+    {
+      "from": "resolvers",
+      "to": "asynchronous",
+      "style": "solid"
+    },
+    {
+      "from": "resolvers",
+      "to": "scalarCoercion",
+      "style": "solid"
+    },
+    {
+      "from": "resolvers",
+      "to": "lists2",
+      "style": "solid"
+    },
+    {
+      "from": "graphqlOverHttpSpec",
+      "to": "caching",
+      "style": "solid"
+    },
+    {
+      "from": "graphqlOverHttpSpec",
+      "to": "batching",
+      "style": "solid"
+    },
+    {
+      "from": "graphqlOverHttpSpec",
+      "to": "authorization",
+      "style": "solid"
+    },
+    {
+      "from": "resolvers",
+      "to": "validation2",
+      "style": "solid"
+    },
+    {
+      "from": "validation2",
+      "to": "producingTheResult",
+      "style": "solid"
+    },
+    {
+      "from": "graphqlOverWebsockets",
+      "to": "specification",
+      "style": "solid"
+    },
+    {
+      "from": "specification",
+      "to": "realtime",
+      "style": "solid"
+    },
+    {
+      "from": "specification",
+      "to": "authorization2",
+      "style": "solid"
+    },
+    {
+      "from": "goImplementation",
+      "to": "graphqlGo",
+      "style": "solid"
+    },
+    {
+      "from": "graphqlOverSse",
+      "to": "specification2",
+      "style": "solid"
+    },
+    {
+      "from": "javascriptImplementation",
+      "to": "graphqlJs",
+      "style": "solid"
+    },
+    {
+      "from": "specification2",
+      "to": "authorization3",
+      "style": "solid"
+    },
+    {
+      "from": "javaImplementation",
+      "to": "graphqlJava",
+      "style": "solid"
+    },
+    {
+      "from": "pythonImplementation",
+      "to": "graphene",
+      "style": "solid"
+    },
+    {
+      "from": "javascript",
+      "to": "graphqlHttp",
+      "style": "solid"
+    },
+    {
+      "from": "graphqlHttp",
+      "to": "graphqlYoga",
+      "style": "solid"
+    },
+    {
+      "from": "graphqlYoga",
+      "to": "apolloServer",
+      "style": "solid"
+    },
+    {
+      "from": "javascript2",
+      "to": "graphqlHttp2",
+      "style": "solid"
+    },
+    {
+      "from": "apolloServer",
+      "to": "mercurius",
+      "style": "solid"
+    },
+    {
+      "from": "javascript2",
+      "to": "relay",
+      "style": "solid"
+    },
+    {
+      "from": "javascript2",
+      "to": "apolloClient",
+      "style": "solid"
+    },
+    {
+      "from": "graphene",
+      "to": "urql",
+      "style": "solid"
+    }
+  ]
+}

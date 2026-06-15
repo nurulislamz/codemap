@@ -1,0 +1,595 @@
+{
+  "title": "Vibe Coding",
+  "summary": "Step-by-step guide to master Vibe Coding in 2026",
+  "url": "https://roadmap.sh/vibe-coding",
+  "order": [
+    "whatIsVibeCoding",
+    "aiAssistedCodingTools",
+    "claudeCode2",
+    "gemini",
+    "codex",
+    "cursor",
+    "windsurf",
+    "copilot",
+    "theVibeCoderMindset",
+    "frontendFocused",
+    "v0",
+    "lovable",
+    "planBeforeYouCode",
+    "techStackAndCoding",
+    "securityBestPractices",
+    "promptingBestPractices",
+    "context",
+    "debugging",
+    "masterVersionControl",
+    "testing"
+  ],
+  "topics": {
+    "whatIsVibeCoding": {
+      "title": "What is vibe coding?",
+      "sourceId": "lzHnwx_3gftRZbstk6INB",
+      "type": "topic",
+      "order": 1,
+      "summary": "\"Vibe coding\" is a software development method in which you use AI and LLMs to generate code via natural-language prompts rather than writing it by hand. The idea is you describe what you want the application to do, and AI builds it. Good for fast prototyping. You don't need to review every line of code. Makes development faster and more accessible for people who are not traditional programmers.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Vibe coding tutorial: Build your first app with Claude Code",
+          "url": "https://roadmap.sh/vibe-coding/tutorial"
+        },
+        {
+          "type": "article",
+          "title": "Vibe Coding Best Practices: How To Get Consistent Results",
+          "url": "https://roadmap.sh/vibe-coding/best-practices"
+        },
+        {
+          "type": "article",
+          "title": "The 10 Best Vibe Coding Tools in 2026: Our Choices",
+          "url": "https://roadmap.sh/vibe-coding/best-tools"
+        }
+      ],
+      "parents": [
+        "vibe-coding"
+      ],
+      "children": []
+    },
+    "aiAssistedCodingTools": {
+      "title": "AI Assisted Coding Tools",
+      "sourceId": "D_UfkD8c3zjmOzl2FWqg2",
+      "type": "label",
+      "order": 2,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "claudeCode2",
+        "gemini",
+        "codex",
+        "cursor",
+        "windsurf",
+        "copilot"
+      ]
+    },
+    "claudeCode2": {
+      "title": "Claude Code",
+      "sourceId": "wr5ddjutC-fX_ixysTHaT",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "Claude Code is a terminal-based AI tool built by Anthropic. It is designed to reason through complex code problems, explain unfamiliar codebases, and help with debugging. It works best when you need to understand what a piece of code is doing before modifying it; give it a specific problem and it will walk through it step by step.",
+      "video": {
+        "title": "Claude Code Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=eMZmDH3T2bY"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Claude Code Roadmap",
+          "url": "https://roadmap.sh/claude-code"
+        },
+        {
+          "type": "official",
+          "title": "Claude Code Overview",
+          "url": "https://code.claude.com/docs/en/overview"
+        },
+        {
+          "type": "article",
+          "title": "Vibe coding tutorial: Build your first app with Claude Code",
+          "url": "https://roadmap.sh/vibe-coding/tutorial"
+        }
+      ],
+      "parents": [
+        "aiAssistedCodingTools"
+      ],
+      "children": []
+    },
+    "gemini": {
+      "title": "Gemini",
+      "sourceId": "hzeEo8COf2l07iu5EdlFo",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "Gemini CLI is Google's command-line AI tool for developers. It assists with code generation, explanation, and refactoring directly in the terminal. It is a practical option if you are already working within Google's ecosystem or want a powerful AI assistant without switching away from your existing terminal workflow.",
+      "video": {
+        "title": "Welcome to the Gemini era",
+        "url": "https://www.youtube.com/watch?v=_fuimO6ErKI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Google Gemini",
+          "url": "https://gemini.google.com/"
+        },
+        {
+          "type": "official",
+          "title": "Google's Gemini Documentation",
+          "url": "https://workspace.google.com/solutions/ai/"
+        }
+      ],
+      "parents": [
+        "aiAssistedCodingTools"
+      ],
+      "children": []
+    },
+    "codex": {
+      "title": "Codex",
+      "sourceId": "eMMFaVwsxY2tVE9uWz5qT",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Codex is an AI model developed by OpenAI that translates natural language instructions into functional code. It acts as the engine behind many modern programming assistants, allowing developers to describe what they want to build in plain English and receive the corresponding code snippets in return.",
+      "video": {
+        "title": "Codex Crash Course",
+        "url": "ttps://www.youtube.com/playlist?list=PL4cUxeGkcC9iDBeA8IyR1IE1kl4w5IDEG"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Codex Docs",
+          "url": "https://developers.openai.com/codex"
+        }
+      ],
+      "parents": [
+        "aiAssistedCodingTools"
+      ],
+      "children": []
+    },
+    "cursor": {
+      "title": "Cursor",
+      "sourceId": "MWhoqhNnBaoeCdN_8i15k",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "Cursor is a code editor built on top of VS Code with AI assistance integrated throughout. It is particularly useful for navigating and editing large codebases you did not write yourself, which makes it well suited for working with AI-generated code. You can select any part of the code and ask it to explain, fix, or rewrite it without having to read every line around it.",
+      "video": {
+        "title": "Cursor AI Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=3289vhOUdKA"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Cursor Docs",
+          "url": "https://cursor.com/docs"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code vs Cursor: Which AI Coding Tool To Choose in 2026?",
+          "url": "https://roadmap.sh/claude-code/vs-cursor"
+        }
+      ],
+      "parents": [
+        "aiAssistedCodingTools"
+      ],
+      "children": []
+    },
+    "windsurf": {
+      "title": "Windsurf",
+      "sourceId": "Xsl8mx6J182TxPPtNP471",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "Windsurf is an AI-powered code editor developed by Codeium. It combines code generation, editing, and navigation in a single environment and is designed to keep context across the entire codebase rather than just the file you are working on. It is a practical alternative to Cursor for developers who want deep AI integration without leaving the editor.",
+      "video": {
+        "title": "Windsurf Tutorial for Beginners (AI Code Editor) - Better than Cursor??",
+        "url": "https://www.youtube.com/watch?v=8TcWGk1DJVs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Windsurf Docs",
+          "url": "https://docs.windsurf.com/windsurf/getting-started"
+        }
+      ],
+      "parents": [
+        "aiAssistedCodingTools"
+      ],
+      "children": []
+    },
+    "copilot": {
+      "title": "Copilot",
+      "sourceId": "Ubk4GN0Z4XlDJ3EbRXdxg",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "GitHub Copilot is an AI-powered coding assistant that helps you write code faster. It suggests lines of code and even entire functions as you type, learning from your style and comments to provide relevant suggestions. It's like having a coding partner that understands your intentions and helps you bring them to life.",
+      "video": {
+        "title": "Getting started with GitHub Copilot | Tutorial",
+        "url": "https://www.youtube.com/watch?v=n0NlxUyA7FI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "GitHub Copilot Docs",
+          "url": "https://docs.github.com/en/copilot"
+        },
+        {
+          "type": "official",
+          "title": "Tutorials",
+          "url": "https://docs.github.com/en/copilot/tutorials"
+        }
+      ],
+      "parents": [
+        "aiAssistedCodingTools"
+      ],
+      "children": []
+    },
+    "theVibeCoderMindset": {
+      "title": "The vibe coder mindset",
+      "sourceId": "LkLQ8GjBXDuw1XsrE4Cjj",
+      "type": "topic",
+      "order": 9,
+      "summary": "AI is more like a junior developer working next to you. You don't ask one question and leave. You have a conversation with it. You give context, check what it gives back, tell it when something is wrong, and guide it to what you need. If you explain your idea clearly, it works better.",
+      "video": {
+        "title": "What is Vibe Coding?",
+        "url": "https://www.youtube.com/watch?v=5OWurmg41tI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Vibe Coding Best Practices: How To Get Consistent Results",
+          "url": "https://roadmap.sh/vibe-coding/best-practices"
+        },
+        {
+          "type": "article",
+          "title": "The Unbearable Lightness of Coding",
+          "url": "https://towardsdatascience.com/the-unbearable-lightness-of-coding/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "planBeforeYouCode"
+      ]
+    },
+    "frontendFocused": {
+      "title": "Frontend-Focused",
+      "sourceId": "jNuYPLUdJDr8ivsE9dwU_",
+      "type": "label",
+      "order": 10,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "v0",
+        "lovable"
+      ]
+    },
+    "v0": {
+      "title": "v0",
+      "sourceId": "eX9-1I_hC2zwJNiBYXFu6",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "v0 is Vercel's UI generation tool. You describe a component or screen in plain language, and it produces clean React code ready to drop into your project. It is best for generating individual UI components rather than full applications; use it when you need a specific interface element quickly without writing it from scratch.",
+      "video": {
+        "title": "Build a fullstack app in 7 minutes with v0 (Figma to code)",
+        "url": "https://www.youtube.com/watch?v=cyFVtaLy-bA"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "v0",
+          "url": "https://v0.app/"
+        },
+        {
+          "type": "official",
+          "title": "Transforming how you work with v0 - Vercel",
+          "url": "https://vercel.com/blog/transforming-how-you-work-with-v0"
+        }
+      ],
+      "parents": [
+        "frontendFocused"
+      ],
+      "children": []
+    },
+    "lovable": {
+      "title": "Lovable",
+      "sourceId": "5WogJrcXhNXewsXzSAME7",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Lovable generates a working front-end application from a text description. It is one of the fastest ways to go from idea to something clickable. The output is good enough for early user testing but may need refinement with a code editor before it is ready for production.",
+      "video": {
+        "title": "Master Lovable In 24 Minutes",
+        "url": "https://www.youtube.com/watch?v=rqvtLxwMklo"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Lovable",
+          "url": "https://lovable.dev"
+        },
+        {
+          "type": "article",
+          "title": "What is Lovable AI? A Deep Dive into the Builder | UI Bakery Blog",
+          "url": "https://uibakery.io/blog/what-is-lovable-ai"
+        },
+        {
+          "type": "article",
+          "title": "How I Built and Deployed an App in 2 days with Lovable, Supabase, and Netlify",
+          "url": "https://towardsdatascience.com/how-i-built-and-deployed-an-app-in-2-days-with-lovable-supabase-and-netlify/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration"
+        }
+      ],
+      "parents": [
+        "frontendFocused"
+      ],
+      "children": []
+    },
+    "planBeforeYouCode": {
+      "title": "Plan before you Code",
+      "sourceId": "pfgsxuQ-D7dTMPNWKG9OY",
+      "type": "topic",
+      "order": 13,
+      "summary": "Before you start coding with AI, have a plan. Define your MVP and break the project into phases. Don't try to build everything at once; work step by step. Give AI examples like mockups, screenshots, or code samples so it understands what you want. You can even use AI itself to help you plan. Tell it your idea, let it help you refine it, and break it into phases. Little planning at the start saves many hours of fixing later.",
+      "video": {
+        "title": "Vibe Planning: The Smarter Way to Code with AI Agents",
+        "url": "https://www.youtube.com/watch?v=B4uD9z6i_IU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "From vibe coding to vibe planning",
+          "url": "https://tessl.io/blog/from-vibe-coding-to-vibe-planning/"
+        },
+        {
+          "type": "article",
+          "title": "Advance Planning for AI Project Evaluation",
+          "url": "https://towardsdatascience.com/advance-planning-for-ai-project-evaluation/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration"
+        }
+      ],
+      "parents": [
+        "theVibeCoderMindset"
+      ],
+      "children": []
+    },
+    "techStackAndCoding": {
+      "title": "Tech Stack and Coding",
+      "sourceId": "GC4vVcOcFWE1RByD-sd4G",
+      "type": "topic",
+      "order": 17,
+      "summary": "AI works better with popular tech stacks like React, Next.js, Python, and Tailwind. If you use something niche, expect more errors. Go with what's popular. Write down your coding preferences and give them to AI before you start, otherwise it will make its own choices.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Web Frameworks 2026: Future-Proofing Enterprise Tech Stack - DEV Community",
+          "url": "https://dev.to/devin-rosario/web-frameworks-2026-future-proofing-enterprise-tech-stack-4l03"
+        },
+        {
+          "type": "article",
+          "title": "The 2025 Tech Stack Shake-Up: Why Next.js, Python and Postgres Are Taking Over - DEV Community",
+          "url": "https://dev.to/usman_awan/the-2025-tech-stack-shake-up-why-nextjs-python-postgres-are-taking-over-the-world-4d6p"
+        },
+        {
+          "type": "article",
+          "title": "TypeScript, Python, and the AI Feedback Loop Changing Software Development - GitHub Blog",
+          "url": "https://github.blog/news-insights/octoverse/typescript-python-and-the-ai-feedback-loop-changing-software-development/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "securityBestPractices": {
+      "title": "Security Best Practices",
+      "sourceId": "2omItZjkVFW9kMiNXdt-h",
+      "type": "topic",
+      "order": 21,
+      "summary": "Security is easy to overlook when you are focused on building, but the consequences of ignoring it can be serious. Always use environment variables for sensitive information like API keys and passwords, and before going live, explicitly ask AI to audit your app for vulnerabilities.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Passing the Security Vibe Check: The Dangers of Vibe Coding",
+          "url": "https://www.databricks.com/blog/passing-security-vibe-check-dangers-vibe-coding"
+        },
+        {
+          "type": "article",
+          "title": "How to secure AI-coded (vibe coded) applications",
+          "url": "https://dev.to/zvone187/how-to-secure-ai-coded-vibe-coded-applications-18ge"
+        },
+        {
+          "type": "article",
+          "title": "Vibe Coding Security: Risks and Best Practices - Legit Security",
+          "url": "https://www.legitsecurity.com/aspm-knowledge-base/vibe-coding-security"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "promptingBestPractices": {
+      "title": "Prompting Best Practices",
+      "sourceId": "6GvIXEzWbSD8q6Qt-BsHP",
+      "type": "topic",
+      "order": 23,
+      "summary": "How you talk to AI determines the quality of what you get back. Ask for one thing at a time, be specific, show examples, tell it what to avoid, and use a context document so you don't repeat yourself every session.",
+      "video": {
+        "title": "RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models",
+        "url": "https://www.youtube.com/watch?v=zYGDpG-pTho"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Prompt Engineering Roadmap",
+          "url": "https://roadmap.sh/prompt-engineering"
+        },
+        {
+          "type": "article",
+          "title": "Vibe Coding Like A Pro",
+          "url": "https://leonnicholls.medium.com/vibe-coding-like-a-pro-de18aa1a0cce"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "context": {
+      "title": "Context",
+      "sourceId": "0ZJrFxKo5HyD9OgzG5LWp",
+      "type": "topic",
+      "order": 27,
+      "summary": "Context is everything when working with AI. The AI only knows what you tell it; it has no memory of your project, your past decisions, or your preferences unless you provide that information in the current session. Keep sessions focused, start fresh for unrelated tasks, and use subagents when possible to keep context clean and costs low.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Effective context engineering for AI agents",
+          "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+        },
+        {
+          "type": "article",
+          "title": "Context Engineering Best Practices for AI-Powered Dev Teams - Packmind",
+          "url": "https://packmind.com/context-engineering-ai-coding/context-engineering-best-practices/"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Context Engineering for Coding Agents - Latitude",
+          "url": "https://latitude.so/blog/context-engineering-guide-coding-agents"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "debugging": {
+      "title": "Debugging",
+      "sourceId": "mHChjJd39ofwPBS-v_sQY",
+      "type": "topic",
+      "order": 30,
+      "summary": "AI is very good at fixing errors when you give it the right information. Paste the error message directly, let it diagnose the problem, and if it keeps failing after a few attempts, ask it to list all possible causes instead of guessing. Use logs to trace exactly where things go wrong, and when available, use MCP tools to give AI direct visibility into what is happening inside your app in real time.",
+      "video": {
+        "title": "Vibe Coding Debugging: The Only Tutorial You Need for 10X Fast Debugging",
+        "url": "https://www.youtube.com/watch?v=2h8WSChA1-o"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "10 Debugging Techniques and How AI Is Changing the Game - WeAreBrain",
+          "url": "https://wearebrain.com/blog/10-effective-debugging-techniques-for-developers/"
+        },
+        {
+          "type": "article",
+          "title": "AI-First Debugging: Tools and Techniques for Faster Root Cause Analysis - LogRocket",
+          "url": "https://blog.logrocket.com/ai-debugging/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "masterVersionControl": {
+      "title": "Master Version Control",
+      "sourceId": "q5lkCO_uGmkcJopjltg8j",
+      "type": "topic",
+      "order": 33,
+      "summary": "Version control is the system you use to track changes to your code over time. Version control tools like Git are especially important for vibe coders because AI can sometimes make sweeping changes that break things unexpectedly, and having a recent save point means you never lose too much progress.",
+      "video": {
+        "title": "Vibe Coding Course 7 \u2013 Version Control Basics (Git)",
+        "url": "https://www.youtube.com/watch?v=qUE-nVUrpq4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Git Guardian: Why Version Control is Non-Negotiable in Vibe Coding",
+          "url": "https://verityai.co/blog/vibe-coding-version-control"
+        },
+        {
+          "type": "article",
+          "title": "Version Control in the Age of AI - Tower Blog",
+          "url": "https://www.git-tower.com/blog/version-control-in-the-age-of-ai"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "testing": {
+      "title": "Testing",
+      "sourceId": "4bJRhuZzVc32x2Y0gGGrh",
+      "type": "topic",
+      "order": 36,
+      "summary": "Testing is how you make sure your app actually works the way it's supposed to. Ask AI to write tests as it builds, not after. Use E2E tests to catch real user-facing bugs, write a breaking test before fixing any bug, and refactor freely once your tests are in place.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Vibe Coding Testing Gap: AI Apps Need Tests - Autonoma",
+          "url": "https://getautonoma.com/blog/vibe-coding-testing"
+        },
+        {
+          "type": "article",
+          "title": "Test-Driven Development with AI - Builder.io",
+          "url": "https://www.builder.io/blog/test-driven-development-ai"
+        },
+        {
+          "type": "article",
+          "title": "Stop Vibe Coding Your Unit Tests - Andy Gallagher",
+          "url": "https://www.andy-gallagher.com/blog/stop-vibe-coding-your-unit-tests/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "vibe-coding",
+      "to": "whatIsVibeCoding",
+      "style": "solid"
+    },
+    {
+      "from": "theVibeCoderMindset",
+      "to": "planBeforeYouCode",
+      "style": "solid"
+    },
+    {
+      "from": "aiAssistedCodingTools",
+      "to": "claudeCode2",
+      "style": "solid"
+    },
+    {
+      "from": "aiAssistedCodingTools",
+      "to": "gemini",
+      "style": "solid"
+    },
+    {
+      "from": "aiAssistedCodingTools",
+      "to": "codex",
+      "style": "solid"
+    },
+    {
+      "from": "aiAssistedCodingTools",
+      "to": "cursor",
+      "style": "solid"
+    },
+    {
+      "from": "aiAssistedCodingTools",
+      "to": "windsurf",
+      "style": "solid"
+    },
+    {
+      "from": "aiAssistedCodingTools",
+      "to": "copilot",
+      "style": "solid"
+    },
+    {
+      "from": "frontendFocused",
+      "to": "v0",
+      "style": "solid"
+    },
+    {
+      "from": "frontendFocused",
+      "to": "lovable",
+      "style": "solid"
+    }
+  ]
+}

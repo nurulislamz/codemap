@@ -1,0 +1,118 @@
+{
+  "title": "API Security Best Practices",
+  "summary": "Detailed list of best practices to make your APIs secure",
+  "url": "https://roadmap.sh/api-security-best-practices",
+  "order": [
+    "authentication",
+    "jsonWebTokensJwt",
+    "accessControl",
+    "oauth",
+    "input",
+    "processing",
+    "output",
+    "ciCd",
+    "monitoring"
+  ],
+  "topics": {
+    "authentication": {
+      "title": "Authentication",
+      "sourceId": "yYvrBJrKs1b-gyEHyt7Ob",
+      "type": "checklist",
+      "order": 1,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "jsonWebTokensJwt": {
+      "title": "JSON Web Tokens (JWT)",
+      "sourceId": "dv1lz30pSbWny_RDR2qWr",
+      "type": "checklist",
+      "order": 2,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "accessControl": {
+      "title": "Access Control",
+      "sourceId": "mcBf7BjmXsVZCAa5S4jc8",
+      "type": "checklist",
+      "order": 3,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "oauth": {
+      "title": "OAuth",
+      "sourceId": "gUWPNJQggySy1LXelJlv4",
+      "type": "checklist",
+      "order": 4,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "input": {
+      "title": "Input",
+      "sourceId": "dRnLoQlAzdZdFta6oM2vT",
+      "type": "checklist",
+      "order": 5,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "processing": {
+      "title": "Processing",
+      "sourceId": "iltiDQTdDdeIg_kFm0xLy",
+      "type": "checklist",
+      "order": 6,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "output": {
+      "title": "Output",
+      "sourceId": "N2kOrRMDdEasVaIOdPwBJ",
+      "type": "checklist",
+      "order": 7,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "ciCd": {
+      "title": "CI / CD",
+      "sourceId": "HdUBCNKET6_Clifl8FnWC",
+      "type": "checklist",
+      "order": 8,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "monitoring": {
+      "title": "Monitoring",
+      "sourceId": "dG33P2LWb3vl-fUbpBC68",
+      "type": "checklist",
+      "order": 9,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    }
+  },
+  "edges": []
+}

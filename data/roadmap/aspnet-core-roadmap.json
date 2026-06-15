@@ -1,0 +1,4792 @@
+{
+  "title": "ASP.NET Core Developer",
+  "summary": "Step by step guide to becoming an ASP.NET core developer in 2026",
+  "url": "https://roadmap.sh/aspnet-core",
+  "order": [
+    "c",
+    "net",
+    "netCli",
+    "learnTheBasicsOfC",
+    "gitVersionControl",
+    "stylecopRules",
+    "githubGitlabBitbucket",
+    "generalDevelopmentSkills",
+    "httpHttpsProtocol",
+    "sqlBasics",
+    "dataStructuresAndAlgorithms",
+    "databaseDesignBasics",
+    "aspNetCoreBasics",
+    "databaseFundamentals",
+    "storedProcedures",
+    "constraints",
+    "objectRelationalMapping",
+    "mvc",
+    "rest",
+    "triggers",
+    "minimalApis",
+    "repodb",
+    "dapper",
+    "entityFrameworkCore",
+    "razorPages",
+    "nhibernate",
+    "frameworkBasics",
+    "razorComponents",
+    "codeFirstMigrations",
+    "middlewares",
+    "redis",
+    "changeTrackerApi",
+    "memcached",
+    "scoped",
+    "lazyEagerExplicitLoading",
+    "appSettingsAndConfigs",
+    "distributedCache",
+    "transient",
+    "memoryCache",
+    "scrutor",
+    "singleton",
+    "entityFramework2ndLevelCache",
+    "caching",
+    "dependencyInjection",
+    "lifeCycles",
+    "diContainers",
+    "searchEngines",
+    "cloud",
+    "databases",
+    "microsoftExtensions",
+    "elasticSearch",
+    "cosmosDb",
+    "autofac",
+    "solr",
+    "sphinx",
+    "dynamoDb",
+    "serilog",
+    "relational",
+    "nosql",
+    "nlog",
+    "sqlServer",
+    "mongodb",
+    "postgresql",
+    "cassandra",
+    "logFrameworks",
+    "graphqlNet",
+    "gridlify",
+    "mariadb",
+    "litedb",
+    "hotchocolate",
+    "odata",
+    "mysql",
+    "couchdb",
+    "graphql",
+    "rest2",
+    "webSockets",
+    "apiClientsAndCommunication",
+    "realTimeCommunication",
+    "signalrCore",
+    "automapper",
+    "grpc",
+    "objectMapping",
+    "mapperly",
+    "manualMapping",
+    "nativeBackgroundService",
+    "e2eTesting",
+    "integrationTesting",
+    "hangfire",
+    "webapplicationfactory",
+    "playwright",
+    "taskScheduling",
+    "quartz",
+    "puppeteer",
+    "coravel",
+    "testing",
+    "cypress",
+    "behaviorTesting",
+    "unitTestingFrameworks",
+    "messageBrokers",
+    "microservices",
+    "mstest",
+    "xunit",
+    "nunit",
+    "specflow",
+    "kafka",
+    "activemq",
+    "lightBdd",
+    "assertions",
+    "rabbitmq",
+    "netmq",
+    "shouldly",
+    "azureServiceBus",
+    "githubActions",
+    "fakeDataGeneration",
+    "mocking",
+    "azurePipelines",
+    "messageBus",
+    "nsubstitute",
+    "autofixture",
+    "nservicebus",
+    "moq",
+    "fakeiteasy",
+    "massTransit",
+    "circleCi",
+    "easynetq",
+    "apiGateway",
+    "ciCd",
+    "softwareDesignAndArchitecture",
+    "ocelot",
+    "yarp",
+    "containerization",
+    "razor",
+    "docker",
+    "templateEngines",
+    "scriban",
+    "blazor",
+    "kubernetes",
+    "fluid",
+    "frameworks",
+    "netMaui",
+    "other",
+    "mediatr",
+    "orleans",
+    "steeltoe",
+    "fluentvalidation",
+    "dapr",
+    "polly",
+    "nuke",
+    "benchmarkNet"
+  ],
+  "topics": {
+    "c": {
+      "title": "C",
+      "sourceId": "fxANnSiTb2VzA9u-YeBL1",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "Cis a modern coding language that was developed by Microsoft that focuses on applying the coding style to C++ and making it so that way it's more condensed and simple. It's similar to Java by both being static, strong, and manifestive languages. Both use the System's prebuilt class to do certain features like printing output to the screen, etc.C, like Java, also contains a garbage collection, which removes lower-level maintenance code from the programmer.",
+      "video": {
+        "title": "C# Full Course - Learn C# 10 and .NET 6 in 7 hours",
+        "url": "https://www.youtube.com/watch?v=q_F4PyW8GTg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "C# official website?",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about C#",
+          "url": "https://app.daily.dev/tags/csharp?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "learnTheBasicsOfC"
+      ],
+      "children": []
+    },
+    "net": {
+      "title": ".NET",
+      "sourceId": "3GGvuxdfuDwLpNX_gtjCK",
+      "type": "subtopic",
+      "order": 4,
+      "summary": ".NET (pronounced \"dot net\") is a software framework developed by Microsoft that can be used to create a wide range of applications, including Windows desktop and web applications, mobile apps, and gaming. The .NET Framework provides a large library of pre-built functionality, including collections, file input/output, and networking, that can be used by .NET applications. It also includes a Common Language Runtime (CLR) which manages the execution of code, providing features such as memory management, security, and exception handling.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is .NET?",
+          "url": "https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet"
+        },
+        {
+          "type": "article",
+          "title": "An Overview of .NET",
+          "url": "https://auth0.com/blog/what-is-dotnet-platform-overview/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about .NET",
+          "url": "https://app.daily.dev/tags/.net?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "learnTheBasicsOfC"
+      ],
+      "children": []
+    },
+    "netCli": {
+      "title": ".NET CLI",
+      "sourceId": "6HJQ1Evgah0Pki04Z2hQt",
+      "type": "subtopic",
+      "order": 5,
+      "summary": ".NET CLI is the command-line interface (CLI) for the .NET platform. It is a tool that provides a common interface for running .NET Core command-line tools and utilities. .NET Core is a cross-platform, open-source, and modular version of the .NET framework, and the .NET CLI provides a way to interact with it from the command line.",
+      "video": {
+        "title": "Intro To The .NET CLI",
+        "url": "https://youtu.be/RQLzp2Z8-BE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Microsoft - .NET CLI overview",
+          "url": "https://learn.microsoft.com/en-us/dotnet/core/tools/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about CLI",
+          "url": "https://app.daily.dev/tags/cli?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "learnTheBasicsOfC": {
+      "title": "Learn the Basics of C",
+      "sourceId": "NvODRFR0DLINB0RlPSsvt",
+      "type": "topic",
+      "order": 6,
+      "summary": "C(pronounced \"C-sharp\") is a general-purpose, object-oriented programming language developed by Microsoft. It is part of the .NET family of languages and is used to build a wide range of applications, from web and mobile applications to games and cloud services.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to C#",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/"
+        },
+        {
+          "type": "article",
+          "title": "Basics Of C#",
+          "url": "https://www.c-sharpcorner.com/UploadFile/e9fdcd/basics-of-C-Sharp/"
+        },
+        {
+          "type": "article",
+          "title": "C# Tutorials",
+          "url": "https://dotnettutorials.net/course/csharp-dot-net-tutorials/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about C#",
+          "url": "https://app.daily.dev/tags/csharp?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "c",
+        "net",
+        "stylecopRules",
+        "generalDevelopmentSkills"
+      ]
+    },
+    "gitVersionControl": {
+      "title": "Git - Version Control",
+      "sourceId": "OtdCmkj0SvrGwCUSfm96C",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+      "video": {
+        "title": "Git & GitHub Crash Course For Beginners",
+        "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Learn Git with Tutorials, News and Tips - Atlassian",
+          "url": "https://www.atlassian.com/git"
+        },
+        {
+          "type": "article",
+          "title": "Git Cheat Sheet",
+          "url": "https://cs.fyi/guide/git-cheatsheet"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Git",
+          "url": "https://app.daily.dev/tags/git?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "generalDevelopmentSkills"
+      ],
+      "children": []
+    },
+    "stylecopRules": {
+      "title": "StyleCop Rules",
+      "sourceId": "R7Qk5hsEIl9dspQXdaJAJ",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "StyleCop is a tool used for developers to standardize their code and ensure they all follow the same syntax principles. With StyleCop, one standard can be defined in a `stylecop.json` file and shared across your team so that each member has the same guidelines when formatting your code. Beyond a single project, StyleCop can also be added as an extension, so all of the projects on your IDE follow the same formatting rules, this is especially useful if your organization follows the same rule standards for all projects.",
+      "video": {
+        "title": "The StyleCop setup and Advantages",
+        "url": "https://www.youtube.com/watch?v=dmpOKmz3lPw"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "StyleCop GitHub official page",
+          "url": "https://github.com/StyleCop/StyleCop"
+        },
+        {
+          "type": "opensource",
+          "title": "StyeleCop Analyzers, a more modern version of StyleCop",
+          "url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers"
+        },
+        {
+          "type": "article",
+          "title": "StyleCop: A Detailed Guide to Starting and Using It",
+          "url": "https://blog.submain.com/stylecop-detailed-guide/"
+        }
+      ],
+      "parents": [
+        "learnTheBasicsOfC"
+      ],
+      "children": []
+    },
+    "githubGitlabBitbucket": {
+      "title": "GitHub, GitLab, BitBucket",
+      "sourceId": "KAZF-mIg-FlfMonfdOLhb",
+      "type": "subtopic",
+      "order": 9,
+      "summary": "There are different repository hosting services with the most famous one being GitHub, GitLab and BitBucket. I would recommend creating an account on GitHub because that is where most of the OpenSource work is done and most of the developers are.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "GitHub: Where the world builds software",
+          "url": "https://github.com"
+        },
+        {
+          "type": "opensource",
+          "title": "GitLab: Iterate faster, innovate together",
+          "url": "https://gitlab.com"
+        },
+        {
+          "type": "article",
+          "title": "BitBucket: The Git solution for professional teams",
+          "url": "https://bitbucket.com"
+        }
+      ],
+      "parents": [
+        "generalDevelopmentSkills"
+      ],
+      "children": []
+    },
+    "generalDevelopmentSkills": {
+      "title": "General Development Skills",
+      "sourceId": "NEnna_8DstfYH4T9qrP3-",
+      "type": "topic",
+      "order": 10,
+      "summary": "There are several skills that are generally considered to be important for working with .NET and C:",
+      "video": {
+        "title": "Asp.net - Complete Tutorial",
+        "url": "https://www.youtube.com/watch?v=kdPtNMb8tPw"
+      },
+      "articles": [
+        {
+          "type": "feed",
+          "title": "Explore top posts about Career",
+          "url": "https://app.daily.dev/tags/career?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "learnTheBasicsOfC"
+      ],
+      "children": [
+        "gitVersionControl",
+        "githubGitlabBitbucket",
+        "httpHttpsProtocol",
+        "dataStructuresAndAlgorithms",
+        "databaseFundamentals"
+      ]
+    },
+    "httpHttpsProtocol": {
+      "title": "HTTP / HTTPs Protocol",
+      "sourceId": "YI3cAezupWNntFw4B6elY",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "HTTP is the `TCP/IP` based application layer communication protocol which standardizes how the client and server communicate with each other. It defines how the content is requested and transmitted across the internet.",
+      "video": {
+        "title": "HTTP Crash Course & Exploration",
+        "url": "https://www.youtube.com/watch?v=iYM2zFP3Zn0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Everything you need to know about HTTP",
+          "url": "https://cs.fyi/guide/http-in-depth"
+        },
+        {
+          "type": "article",
+          "title": "What is HTTP?",
+          "url": "https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/"
+        },
+        {
+          "type": "article",
+          "title": "An overview of HTTP",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "type": "article",
+          "title": "HTTP/3 From A To Z: Core Concepts",
+          "url": "https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/"
+        },
+        {
+          "type": "article",
+          "title": "What is HTTPS?",
+          "url": "https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/"
+        },
+        {
+          "type": "article",
+          "title": "Why HTTPS Matters",
+          "url": "https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https"
+        },
+        {
+          "type": "article",
+          "title": "Enabling HTTPS on Your Servers",
+          "url": "https://web.dev/enable-https/"
+        },
+        {
+          "type": "article",
+          "title": "How HTTPS works (comic)",
+          "url": "https://howhttps.works/"
+        }
+      ],
+      "parents": [
+        "generalDevelopmentSkills"
+      ],
+      "children": []
+    },
+    "sqlBasics": {
+      "title": "SQL Basics",
+      "sourceId": "aOJMVrTcA_I2y_QHzj7aM",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "SQL stands for Structured Query Language. SQL lets you access and manipulate databases SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987.",
+      "video": {
+        "title": "SQL Tutorial - Full Database Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY"
+      },
+      "articles": [
+        {
+          "type": "feed",
+          "title": "Explore top posts about SQL",
+          "url": "https://app.daily.dev/tags/sql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "databaseFundamentals"
+      ],
+      "children": []
+    },
+    "dataStructuresAndAlgorithms": {
+      "title": "Data Structures and Algorithms",
+      "sourceId": "RAX2xN37taw9cqA3pnORh",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "As the name indicates, a **Data Structure** is a way of organizing the data in the **memory** so it can be used efficiently. Some common data structures are array, linked list, stack, hashtable, queue, tree, heap, and graph.",
+      "video": {
+        "title": "Data Structures Illustrated",
+        "url": "https://www.youtube.com/watch?v=9rhT3P1MDHk&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "C# resources",
+          "url": "https://dev.to/adavidoaiei/fundamental-data-structures-and-algorithms-in-c-4ocf"
+        },
+        {
+          "type": "article",
+          "title": "Interview Questions about Data Structures",
+          "url": "https://www.csharpstar.com/csharp-algorithms/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Algorithms",
+          "url": "https://app.daily.dev/tags/algorithms?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "generalDevelopmentSkills"
+      ],
+      "children": []
+    },
+    "databaseDesignBasics": {
+      "title": "Database Design Basics",
+      "sourceId": "zlAcgLKxGF_TyrcJIk4X7",
+      "type": "subtopic",
+      "order": 14,
+      "summary": "Database Design is a collection of processes that facilitate the designing, development, implementation and maintenance of enterprise data management systems. Properly designed database are easy to maintain, improves data consistency and are cost effective in terms of disk storage space. The main objectives of database design in DBMS are to produce logical and physical designs models of the proposed database system.",
+      "video": {
+        "title": "Database Design Course",
+        "url": "https://www.youtube.com/watch?v=ztHopE5Wnpc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Database design basics",
+          "url": "https://support.microsoft.com/en-us/office/database-design-basics-eb2159cf-1e30-401a-8084-bd4f9c9ca1f5"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Database",
+          "url": "https://app.daily.dev/tags/database?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "databaseFundamentals"
+      ],
+      "children": []
+    },
+    "aspNetCoreBasics": {
+      "title": "ASP.NET Core Basics",
+      "sourceId": "v2ZTCQQFQPoJNhOVGMG2g",
+      "type": "topic",
+      "order": 15,
+      "summary": "ASP.NET Core is a open-source, cross-platform web framework for building modern web applications using .NET. Some of the basics of ASP.NET Core are Cross-platform, Open-source, Modular, High performance, MVC pattern, Dependency Injection, Middleware, Razor Pages and Razor Components, EF Core.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "ASP.NET documentation",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "ASP.NET Core Tutorial",
+          "url": "https://www.tutorialspoint.com/asp.net_core/index.htm"
+        },
+        {
+          "type": "article",
+          "title": "Learn ASP.NET Core from Scratch",
+          "url": "https://www.tutorialsteacher.com/core"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about ASP.NET",
+          "url": "https://app.daily.dev/tags/aspnet?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "databaseFundamentals"
+      ],
+      "children": [
+        "mvc",
+        "rest",
+        "minimalApis",
+        "razorPages",
+        "objectRelationalMapping"
+      ]
+    },
+    "databaseFundamentals": {
+      "title": "Database Fundamentals",
+      "sourceId": "tnKUdsgp6bnFtQTexEmfy",
+      "type": "topic",
+      "order": 16,
+      "summary": "A database is a collection of useful data of one or more related organizations structured in a way to make data an asset to the organization. A database management system is a software designed to assist in maintaining and extracting large collections of data in a timely fashion.",
+      "video": {
+        "title": "What is Relational Database",
+        "url": "https://youtu.be/OqjJjpjDRLc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Oracle: What is a Database?",
+          "url": "https://www.oracle.com/database/what-is-database/"
+        },
+        {
+          "type": "article",
+          "title": "Prisma.io: What are Databases?",
+          "url": "https://www.prisma.io/dataguide/intro/what-are-databases"
+        },
+        {
+          "type": "article",
+          "title": "Intro To Relational Databases",
+          "url": "https://www.udacity.com/course/intro-to-relational-databases--ud197"
+        },
+        {
+          "type": "article",
+          "title": "NoSQL Explained",
+          "url": "https://www.mongodb.com/nosql-explained"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Database",
+          "url": "https://app.daily.dev/tags/database?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "generalDevelopmentSkills"
+      ],
+      "children": [
+        "sqlBasics",
+        "databaseDesignBasics",
+        "storedProcedures",
+        "constraints",
+        "triggers",
+        "aspNetCoreBasics"
+      ]
+    },
+    "storedProcedures": {
+      "title": "Stored Procedures",
+      "sourceId": "ZiK-c9zNbi5RZkKUi44wP",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "A stored procedure is a pre-compiled collection of SQL statements that can be executed on a database server. Stored procedures are typically used to perform specific tasks, such as retrieving data from a database, inserting or updating data, or performing complex calculations. They are stored on the database server and can be called or executed from a client application or other stored procedures. Stored procedures can improve database performance by reducing the amount of SQL code needed to be executed and allowing developers to reuse common pieces of code. They can also provide security by allowing database administrators to control which users have access to specific stored procedures.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Stored Procedure in SQL: Benefits And How to Create It",
+          "url": "https://www.simplilearn.com/tutorials/sql-tutorial/stored-procedure-in-sql"
+        },
+        {
+          "type": "article",
+          "title": "SQL Server stored procedures for beginners",
+          "url": "https://www.sqlshack.com/sql-server-stored-procedures-for-beginners/"
+        }
+      ],
+      "parents": [
+        "databaseFundamentals"
+      ],
+      "children": []
+    },
+    "constraints": {
+      "title": "Constraints",
+      "sourceId": "1-XdtrGPbUoxpu9ZcQlBA",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "Database constraints are rules that are used to limit the data that can be stored in a database table. These constraints can be used to ensure the integrity and accuracy of the data in the table, and they can be used to enforce business rules or other requirements. For example, a constraint might be used to ensure that a column only contains positive numbers, or to ensure that a column always has a unique value. Constraints can be specified at the time a table is created, or they can be added to an existing table. Some common types of constraints include primary keys, foreign keys, and NOT NULL constraints.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Constraints of SQL",
+          "url": "https://www.educative.io/courses/database-design-fundamentals/m7JnY9Xm6Qp"
+        },
+        {
+          "type": "article",
+          "title": "Constraints in DBMS",
+          "url": "https://beginnersbook.com/2015/04/constraints-in-dbms/"
+        }
+      ],
+      "parents": [
+        "databaseFundamentals"
+      ],
+      "children": []
+    },
+    "objectRelationalMapping": {
+      "title": "Object Relational Mapping",
+      "sourceId": "POQPoN98eqOH2873ZI6Hm",
+      "type": "topic",
+      "order": 19,
+      "summary": "ORM stands for Object-Relational Mapping, and it is a technique that allows a developer to work with a database using objects. It is a way of abstracting the database so that the developer can think in terms of objects, rather than tables and SQL queries. This can make it easier to write and maintain code, as well as improve the performance of the application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "ORM (Object Relational Mapping)",
+          "url": "https://www.telerik.com/blogs/dotnet-basics-orm-object-relational-mapping"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Object-Relational Mapping: Pros, Cons",
+          "url": "https://www.altexsoft.com/blog/object-relational-mapping/"
+        }
+      ],
+      "parents": [
+        "aspNetCoreBasics"
+      ],
+      "children": [
+        "repodb",
+        "dapper",
+        "entityFrameworkCore",
+        "nhibernate",
+        "frameworkBasics"
+      ]
+    },
+    "mvc": {
+      "title": "MVC",
+      "sourceId": "D3aQw0-pk3ycO-n10HBaA",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "MVC is an architectural design pattern used for developing applications, specifically web applications. This pattern separates an application into three main logical components **Model View Controller**. Each architectural component is built to handle specific development aspects of an application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "MVC Official Documentation",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?WT.mc_id=dotnet-35129-website&view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "ASP.NET MVC Architecture",
+          "url": "https://www.tutorialsteacher.com/mvc/mvc-architecture"
+        },
+        {
+          "type": "article",
+          "title": "MVC Framework - Introduction",
+          "url": "https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm"
+        }
+      ],
+      "parents": [
+        "aspNetCoreBasics"
+      ],
+      "children": []
+    },
+    "rest": {
+      "title": "REST",
+      "sourceId": "dZ9fYWMBa1OemTmLOI8_q",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "REST (Representational State Transfer) is an architectural style for building web services. In the context of .NET, RESTful web services can be created using the ASP.NET Web API framework, which allows developers to create HTTP-based services that can be consumed by a wide range of clients, including web browsers and mobile devices. The Web API framework provides a set of tools and libraries for creating RESTful services, including routing, request/response handling, and support for a variety of data formats, such as JSON and XML.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is REST Services?",
+          "url": "http://www.codedigest.com/quick-start/16/what-is-rest-services-how-to-create-rest-services-in-aspnet"
+        },
+        {
+          "type": "article",
+          "title": "Restful API In ASP.NET: Introduction of REST & Web API",
+          "url": "https://www.c-sharpcorner.com/UploadFile/4b0136/restful-api-in-Asp-Net-introduction-of-rest-web-api/"
+        },
+        {
+          "type": "article",
+          "title": "What are RESTful APIs",
+          "url": "https://www.pragimtech.com/blog/blazor/what-are-restful-apis/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about REST API",
+          "url": "https://app.daily.dev/tags/rest-api?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "aspNetCoreBasics"
+      ],
+      "children": []
+    },
+    "triggers": {
+      "title": "Triggers",
+      "sourceId": "2f_CJMnXwPxjMEwm5P_QJ",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "Triggers are special type of stored procedures that are automatically executed in response to specific events that occur within a database. These events can include:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Database Triggers",
+          "url": "https://docs.oracle.com/cd/A57673_01/DOC/server/doc/SCN73/ch15.htm"
+        },
+        {
+          "type": "article",
+          "title": "Database Triggers: Examples & Overview",
+          "url": "https://study.com/academy/lesson/database-triggers-examples-overview.html"
+        },
+        {
+          "type": "article",
+          "title": "What are Triggers in SQL?",
+          "url": "https://www.edureka.co/blog/triggers-in-sql/"
+        },
+        {
+          "type": "article",
+          "title": "What is a SQL Trigger?",
+          "url": "https://www.essentialsql.com/sql-trigger/"
+        }
+      ],
+      "parents": [
+        "databaseFundamentals"
+      ],
+      "children": []
+    },
+    "minimalApis": {
+      "title": "Minimal APIs",
+      "sourceId": "ipABerBcM9zCte9pYaIse",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "Minimal APIs is a lightweight approach to building HTTP APIs in .NET with minimal ceremony. It is designed for simplicity and performance, making it ideal for microservices, serverless applications, and small web services. Minimal APIs provide a streamlined way to define routes, handle requests, and return responses without requiring controllers or extensive configuration. They leverage top-level statements, reducing boilerplate code while maintaining flexibility and scalability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Minimal APIs in .NET 8: A Simplified Approach to Build Services",
+          "url": "https://medium.com/codenx/minimal-apis-in-net-8-a-simplified-approach-to-build-services-eb50df56819f"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to ASP.NET Core Minimal APIs",
+          "url": "https://blog.jetbrains.com/dotnet/2023/04/25/introduction-to-asp-net-core-minimal-apis/"
+        }
+      ],
+      "parents": [
+        "aspNetCoreBasics"
+      ],
+      "children": []
+    },
+    "repodb": {
+      "title": "RepoDB",
+      "sourceId": "tYDVcnG0oUF3R8DwASvAh",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "RepoDB is an open-source ORM (Object-Relational Mapping) library for .NET that simplifies the process of working with databases. It is a lightweight, fast, and easy-to-use library that provides a simple and consistent API for performing common database operations such as querying, inserting, updating, and deleting data.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with RepoDB",
+          "url": "https://repodb.net/"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to RepoDB",
+          "url": "https://medium.com/nerd-for-tech/everything-you-need-to-know-about-repodb-23cd4b9939c1"
+        },
+        {
+          "type": "article",
+          "title": "Why Choose RepoDB?",
+          "url": "https://blog.devgenius.io/why-choose-repodb-orm-over-dapper-da87432c7830"
+        }
+      ],
+      "parents": [
+        "objectRelationalMapping"
+      ],
+      "children": []
+    },
+    "dapper": {
+      "title": "Dapper",
+      "sourceId": "UkWc41r0bZ1lptjse3As6",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "Dapper is a lightweight object-relational mapper (ORM) for the .NET framework. It is designed to provide fast and simple access to data stored in a database, by mapping the data to objects in the application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "The official Dapper website",
+          "url": "https://github.com/StackExchange/Dapper"
+        },
+        {
+          "type": "article",
+          "title": "The Dapper Documentation",
+          "url": "https://dappertutorial.net/"
+        }
+      ],
+      "parents": [
+        "objectRelationalMapping"
+      ],
+      "children": []
+    },
+    "entityFrameworkCore": {
+      "title": "Entity Framework Core",
+      "sourceId": "ET74_7ieahNaGdPT11_NI",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "Entity Framework Core (EF Core) is an open-source Object-Relational Mapping (ORM) framework for .NET. It is a lightweight, cross-platform version of Entity Framework, the ORM framework that was part of the .NET Framework. EF Core allows developers to work with relational data using domain-specific objects, eliminating the need to write raw SQL statements. Instead, EF Core provides a set of APIs that can be used to interact with a database, providing a simple and efficient way to perform common database operations such as querying, inserting, updating, and deleting data.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Example of Entity Framework Core",
+          "url": "https://learn.microsoft.com/en-us/ef/core/"
+        },
+        {
+          "type": "article",
+          "title": "Entity Framework Core Documentation",
+          "url": "https://learn.microsoft.com/en-us/ef/"
+        },
+        {
+          "type": "article",
+          "title": "What are the Basics of Entity Framework Core?",
+          "url": "https://www.jetbrains.com/dotnet/guide/tutorials/basics/entity-framework-core/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about .NET",
+          "url": "https://app.daily.dev/tags/.net?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "objectRelationalMapping"
+      ],
+      "children": []
+    },
+    "razorPages": {
+      "title": "Razor Pages",
+      "sourceId": "qpVxwuyA2oE06MZLtEdP1",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "Razor Pages is a feature of the ASP.NET Core framework that allows developers to build web applications using a combination of Razor markup (a markup syntax for defining dynamic HTML) and Ccode. Razor Pages is built on top of the ASP.NET Core MVC (Model-View-Controller) framework, and provides a simpler, more intuitive way to build web pages and handle user input.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Basics of Razor Pages",
+          "url": "https://www.jetbrains.com/dotnet/guide/tutorials/basics/razor-pages/"
+        },
+        {
+          "type": "article",
+          "title": "Get started with Razor Pages in ASP.NET Core",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "What Is Razor Pages?",
+          "url": "https://www.learnrazorpages.com/"
+        }
+      ],
+      "parents": [
+        "aspNetCoreBasics"
+      ],
+      "children": []
+    },
+    "nhibernate": {
+      "title": "NHibernate",
+      "sourceId": "z24IJndpQYTl1PhiUI2mx",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "NHibernate is an open-source Object-Relational Mapping (ORM) framework for .NET. It is a powerful and flexible framework that can greatly simplify working with relational data in .NET. NHibernate is similar to other ORM frameworks such as Entity Framework and RepoDb in that it provides a higher-level abstraction on top of the underlying data access technology (ADO.NET in this case) and allows developers to work with data using domain-specific objects, eliminating the need to write raw SQL statements.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Get Started with NHibernate",
+          "url": "https://nhibernate.info/"
+        },
+        {
+          "type": "article",
+          "title": "What is Nhibernate?",
+          "url": "https://www.partech.nl/en/publications/2021/08/what-is-nhibernate-and-how-is-it-different-from-entity-framework"
+        },
+        {
+          "type": "article",
+          "title": "NHibernate - ORM",
+          "url": "https://www.tutorialspoint.com/nhibernate/nhibernate_orm.htm"
+        }
+      ],
+      "parents": [
+        "objectRelationalMapping"
+      ],
+      "children": []
+    },
+    "frameworkBasics": {
+      "title": "Framework Basics",
+      "sourceId": "eGVaAz3VhGu3cXBNxTAWd",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "An ORM (Object-Relational Mapping) framework is a tool that maps the objects in an application to the database tables, allowing developers to work with the database using familiar, object-oriented concepts.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "ORM Framework",
+          "url": "https://www.h2kinfosys.com/blog/orm-framework/"
+        },
+        {
+          "type": "article",
+          "title": "What are Frameworks in ORM",
+          "url": "https://www.killerphp.com/articles/what-are-orm-frameworks/"
+        },
+        {
+          "type": "article",
+          "title": "Essentials of ORM Framework",
+          "url": "https://medium.com/@mikependon/the-essentials-of-orm-framework-in-your-software-development-837131efd91b"
+        },
+        {
+          "type": "article",
+          "title": "ORM Frameworks \u2013 What is an Object-Relational Mapping Framework",
+          "url": "https://onlinecode.org/what-are-orm-frameworks/"
+        }
+      ],
+      "parents": [
+        "objectRelationalMapping"
+      ],
+      "children": []
+    },
+    "razorComponents": {
+      "title": "Razor Components",
+      "sourceId": "vePinRjDfSGULKw0LE9K-",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "Razor Components is a feature of ASP.NET Core that allows developers to build reusable, self-contained components that can be used across multiple pages or even multiple applications. Razor Components is built on top of the Razor view engine, which allows developers to define components using a combination of Razor markup and Ccode.",
+      "video": {
+        "title": "What is Core razor components?",
+        "url": "https://www.youtube.com/watch?v=KseDLejhYi0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "ASP.NET Core Razor components",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/components/?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "Core Razor Componets in .NET",
+          "url": "https://www.c-sharpcorner.com/blogs/asp-net-core-razor-componets"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "codeFirstMigrations": {
+      "title": "Code First + Migrations",
+      "sourceId": "ZPeebwJ3OBuywEgLLgQTG",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "Code First Migrations is a feature of Entity Framework that enables you to change the model classes in your application and then propagate those changes to the database. When you use Code First Migrations, Entity Framework generates the necessary SQL commands to update the database schema to match the model classes.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is a Code First Migration?",
+          "url": "https://www.entityframeworktutorial.net/code-first/what-is-code-first.aspx"
+        },
+        {
+          "type": "article",
+          "title": "Example for Code First Migrations",
+          "url": "https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/migrations/"
+        },
+        {
+          "type": "article",
+          "title": "Code First Migrations in Entity Framework",
+          "url": "https://www.c-sharpcorner.com/UploadFile/26b237/code-first-migrations-in-entity-framework/"
+        }
+      ],
+      "parents": [
+        "dependencyInjection"
+      ],
+      "children": []
+    },
+    "middlewares": {
+      "title": "Middlewares",
+      "sourceId": "dG--AAcZZdltYCeg6zCz2",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "Middleware is software that sits between an operating system and application software, and facilitates communication and data exchange between them. In the context of web development, middleware refers to software components that handle requests and responses in a web application. These components are typically executed in a pipeline, with each component performing a specific task, such as authentication, logging, or routing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Middleware?",
+          "url": "https://www.redhat.com/en/topics/middleware/what-is-middleware"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to Middleware",
+          "url": "https://www.techtarget.com/searchapparchitecture/definition/middleware"
+        },
+        {
+          "type": "article",
+          "title": "What is Middleware in .NET?",
+          "url": "https://www.talend.com/resources/what-is-middleware/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "redis": {
+      "title": "Redis",
+      "sourceId": "Ts0gJ4DdwFp48LGr4YSvM",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "Redis is an open source (BSD licensed) which is an in-memory data structure store used as a database, cache, message broker, and streaming engine. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and various levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.",
+      "video": {
+        "title": "ASP.Net Core Distributed Caching - Redis Caching",
+        "url": "https://www.youtube.com/watch?v=4Br-QnBo6Yw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Learn how to build with Redis Stack and .NET",
+          "url": "https://redis.io/docs/stack/get-started/tutorials/stack-dotnet/"
+        },
+        {
+          "type": "article",
+          "title": "Redis Cache In ASP.NET 6.0 Web API",
+          "url": "https://www.c-sharpcorner.com/article/easily-use-redis-cache-in-asp-net-6-0-web-api/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Redis",
+          "url": "https://app.daily.dev/tags/redis?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "caching"
+      ],
+      "children": []
+    },
+    "changeTrackerApi": {
+      "title": "Change Tracker API",
+      "sourceId": "wfEOvAkGXkTZGdGX341D4",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "The Change Tracker API is a feature of ORM (Object-Relational Mapping) frameworks, such as Entity Framework Core, that allows developers to track changes to entities and automatically persist them to the database.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Change Tracking in EF Core",
+          "url": "https://learn.microsoft.com/en-us/ef/core/change-tracking/"
+        },
+        {
+          "type": "article",
+          "title": "Intro to Change Tracking",
+          "url": "https://www.oreilly.com/library/view/programming-entity-framework/9781449331825/ch05.html"
+        },
+        {
+          "type": "article",
+          "title": "ChangeTracker in Entity Framework Core",
+          "url": "https://www.entityframeworktutorial.net/efcore/changetracker-in-ef-core.aspx"
+        }
+      ],
+      "parents": [
+        "dependencyInjection"
+      ],
+      "children": []
+    },
+    "memcached": {
+      "title": "Memcached",
+      "sourceId": "u2pc3ZkL0EumAsbM12D5y",
+      "type": "subtopic",
+      "order": 36,
+      "summary": "Memcached is an open-source, high-performance, distributed memory object caching system which helps in reducing database load. It maintains data as an in-memory key-value store for small chunks of arbitrary data (strings, objects) which can be result of API calls, database reads and so on.",
+      "video": {
+        "title": "Memcached as Distributed Cache in .Net Core Application",
+        "url": "https://www.youtube.com/watch?v=yQ8Kwx9M_Hg"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Intro to Memcached",
+          "url": "https://memcached.org/"
+        },
+        {
+          "type": "article",
+          "title": "Using Memcached as Distributed Cache in .NET Core",
+          "url": "https://dotnetcorecentral.com/blog/using-memcached-as-distributed-cache-in-net-core/"
+        }
+      ],
+      "parents": [
+        "caching"
+      ],
+      "children": []
+    },
+    "scoped": {
+      "title": "Scoped",
+      "sourceId": "M3BW_63MFQyD8NE68dazD",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "Scoped lifetime is a type of dependency injection that creates a new instance of an object for each unique request, but reuses the same instance for the same request. This means that if multiple components within the same request depend on the same service, they will all receive the same instance. However, if another request is made, a new instance of the service will be created for that request.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Dependency Injection - What is Scope?",
+          "url": "https://javaranch.com/journal/2008/10/dependency-injection-what-is-scope.html"
+        },
+        {
+          "type": "article",
+          "title": "Effective Dependency Injection Scoping",
+          "url": "https://medium.com/android-news/effective-dependency-injection-scoping-4bac813d4491"
+        }
+      ],
+      "parents": [
+        "lifeCycles"
+      ],
+      "children": []
+    },
+    "lazyEagerExplicitLoading": {
+      "title": "Lazy, Eager, Explicit Loading",
+      "sourceId": "9AMotSwdEbB8uOg80SykE",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "Eager Loading -------------",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Eager Loading & Lazy Loading",
+          "url": "https://www.c-sharpcorner.com/article/eager-loading-lazy-loading-and-explicit-loading-in-entity-framework/"
+        },
+        {
+          "type": "article",
+          "title": "Difference between Eager and Lazy Loading",
+          "url": "https://stackoverflow.com/questions/31366236/lazy-loading-vs-eager-loading"
+        },
+        {
+          "type": "article",
+          "title": "Working With Lazy & Eager Loading in Entity Framework",
+          "url": "https://dzone.com/articles/working-with-lazy-loading-and-eager-loading-in-ent"
+        }
+      ],
+      "parents": [
+        "dependencyInjection"
+      ],
+      "children": []
+    },
+    "appSettingsAndConfigs": {
+      "title": "App Settings and Configs",
+      "sourceId": "EJxliq-HPVp00CVsFc6kf",
+      "type": "subtopic",
+      "order": 39,
+      "summary": "In the ASP.NET Core framework, app settings and configurations refer to the process of storing and managing application-specific settings and configuration data.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Azure App Configuration?",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview"
+        },
+        {
+          "type": "article",
+          "title": "What are App Configurations and how do I work with them?",
+          "url": "https://support.procore.com/faq/what-are-app-configurations"
+        },
+        {
+          "type": "article",
+          "title": "Configuration & AppSettings",
+          "url": "https://docs.servicestack.net/appsettings"
+        }
+      ],
+      "parents": [
+        "searchEngines"
+      ],
+      "children": []
+    },
+    "distributedCache": {
+      "title": "Distributed Cache",
+      "sourceId": "SiG0FWWznjDg-2mIWlchy",
+      "type": "subtopic",
+      "order": 40,
+      "summary": "A distributed cache is a cache shared by multiple app servers, typically maintained as an external service to the app servers that access it. A distributed cache can improve the performance and scalability of an ASP.NET Core app, especially when the app is hosted by a cloud service or a server farm.",
+      "video": {
+        "title": "Distributed Caching In ASP.NET Core With Redis",
+        "url": "https://www.youtube.com/watch?v=Tt5zIKVMMbs"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Distributed caching in ASP.NET Core",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "What is a Distributed Cached?",
+          "url": "https://hazelcast.com/glossary/distributed-cache/"
+        }
+      ],
+      "parents": [
+        "caching"
+      ],
+      "children": []
+    },
+    "transient": {
+      "title": "Transient",
+      "sourceId": "-N0XM0-VtCZ6QMo2YyMD-",
+      "type": "subtopic",
+      "order": 41,
+      "summary": "Transient lifetime is a type of dependency injection that creates a new instance of an object each time it is requested. This means that if multiple components within the same request or across different requests depend on the same service, they will each receive a new instance of the service.",
+      "video": {
+        "title": "Dependency Injection Explained with Transient",
+        "url": "https://www.youtube.com/watch?v=NkTF_6IQPiY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What are Transient Dependencies?",
+          "url": "https://blazor-university.com/dependency-injection/dependency-lifetimes-and-scopes/transient-dependencies/"
+        },
+        {
+          "type": "article",
+          "title": "Dependency Injection Lifetime",
+          "url": "https://www.tektutorialshub.com/asp-net-core/asp-net-core-dependency-injection-lifetime/"
+        }
+      ],
+      "parents": [
+        "lifeCycles"
+      ],
+      "children": []
+    },
+    "memoryCache": {
+      "title": "Memory Cache",
+      "sourceId": "8CRsr7UZszjc_fZ-4ZmIx",
+      "type": "subtopic",
+      "order": 42,
+      "summary": "Memory caching (often simply referred to as caching) is a technique in which computer applications temporarily store data in a computer\u2019s main memory (i.e., random access memory, or RAM) to enable fast retrievals of that data. The RAM that is used for the temporary storage is known as the cache.",
+      "video": {
+        "title": "Intro to In-Memory Caching in C#",
+        "url": "https://www.youtube.com/watch?v=2jj2wH60QuE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Cache in-memory in ASP.NET Core",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/performance/caching/memory?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "What is Memory Caching?",
+          "url": "https://hazelcast.com/glossary/memory-caching/"
+        }
+      ],
+      "parents": [
+        "caching"
+      ],
+      "children": []
+    },
+    "scrutor": {
+      "title": "Scrutor",
+      "sourceId": "f212ztDU_kb7gO71Nn76L",
+      "type": "subtopic",
+      "order": 43,
+      "summary": "Scrutor is an open-source library for .NET that extends the functionality of the built-in dependency injection framework in .NET Core. It provides a set of extension methods for the `IServiceCollection` interface, which can be used to register and configure services in a more convenient and flexible way.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to use Scrutor in ASP.Net Core?",
+          "url": "https://www.infoworld.com/article/3321356/how-to-use-scrutor-in-aspnet-core.html"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide to Scrutor",
+          "url": "https://andrewlock.net/using-scrutor-to-automatically-register-your-services-with-the-asp-net-core-di-container/"
+        }
+      ],
+      "parents": [
+        "diContainers"
+      ],
+      "children": []
+    },
+    "singleton": {
+      "title": "Singleton",
+      "sourceId": "y9bDrCjkDbxSIrEEtu_Mi",
+      "type": "subtopic",
+      "order": 44,
+      "summary": "Singleton lifetime is a type of dependency injection that creates a single instance of an object and reuses it throughout the lifetime of the application. This means that if multiple components within the same request or across different requests depend on the same service, they will all receive the same instance of the service.",
+      "video": {
+        "title": "Dependency Injection Explained with Singleton",
+        "url": "https://www.youtube.com/watch?v=NkTF_6IQPiY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What are Singleton Dependencies?",
+          "url": "https://blazor-university.com/dependency-injection/dependency-lifetimes-and-scopes/transient-dependencies/"
+        },
+        {
+          "type": "article",
+          "title": "Dependency Injection Lifetime",
+          "url": "https://www.tektutorialshub.com/asp-net-core/asp-net-core-dependency-injection-lifetime/"
+        }
+      ],
+      "parents": [
+        "lifeCycles"
+      ],
+      "children": []
+    },
+    "entityFramework2ndLevelCache": {
+      "title": "Entity Framework 2nd Level Cache",
+      "sourceId": "FV4GsPjUyAc99DnIwkkCC",
+      "type": "subtopic",
+      "order": 45,
+      "summary": "Entity Framework Core(EF Core) is a cross-platform version of the popular Entity Framework data access technology that is lightweight, extendable, and open source. It can be used as an object-relational mapper (O/RM), which can Allow .NET developers to use .NET objects to interact with a database and Removes the requirement for most of the data-access code that is generally required.",
+      "video": {
+        "title": "What is Entity Framework?",
+        "url": "https://www.youtube.com/watch?v=Z7713GBhi4k"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Entity Framework 2nd Level Cache",
+          "url": "https://www.gridgain.com/docs/latest/developers-guide/net-specific/net-entity-framework-cache"
+        },
+        {
+          "type": "article",
+          "title": "Caching In Entity Framework",
+          "url": "https://www.c-sharpcorner.com/article/caching-in-entity-framework-ef-core-using-ncache/"
+        }
+      ],
+      "parents": [
+        "caching"
+      ],
+      "children": []
+    },
+    "caching": {
+      "title": "Caching",
+      "sourceId": "7Nth4LOrM_KirhvjDGkgS",
+      "type": "topic",
+      "order": 46,
+      "summary": "Caching is a technique of storing frequently used data or information in a local memory, for a certain time period. So, next time, when the client requests the same information, instead of retrieving the information from the database, it will give the information from the local memory. The main advantage of caching is that it improves the performance by reducing the processing burden.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Caching in ASP.Net",
+          "url": "https://www.c-sharpcorner.com/UploadFile/2072a9/caching-in-Asp-Net/"
+        },
+        {
+          "type": "article",
+          "title": "Overview of caching in ASP.NET Core",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/performance/caching/overview?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "Intro to Data Caching in ASP.NET",
+          "url": "https://www.tutorialspoint.com/asp.net/asp.net_data_caching.htm"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "redis",
+        "memcached",
+        "distributedCache",
+        "entityFramework2ndLevelCache",
+        "memoryCache"
+      ]
+    },
+    "dependencyInjection": {
+      "title": "Dependency Injection",
+      "sourceId": "IejHMMVKwA0sIInla4FjX",
+      "type": "topic",
+      "order": 47,
+      "summary": "Dependency injection (DI) is a software design pattern that is used to manage the dependencies of an application. It is a technique that allows developers to write loosely-coupled code, by separating the responsibility of creating and managing objects from the objects themselves.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Dependency Injection?",
+          "url": "https://stackoverflow.com/questions/130794/what-is-dependency-injection"
+        },
+        {
+          "type": "article",
+          "title": "Dependency Injection, It's Definition & principles",
+          "url": "https://www.growin.com/blog/what-is-dependency-injection/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Dependency Injection",
+          "url": "https://app.daily.dev/tags/dependency-injection?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "codeFirstMigrations",
+        "changeTrackerApi",
+        "lazyEagerExplicitLoading",
+        "lifeCycles"
+      ]
+    },
+    "lifeCycles": {
+      "title": "Life Cycles",
+      "sourceId": "Tjaczp2E-cCn0qSv89xgo",
+      "type": "topic",
+      "order": 48,
+      "summary": "In ASP.NET, dependency injection (DI) lifecycles determine the lifetime of objects that are resolved through the DI container. There are several predefined lifecycle options in the `Microsoft.Extensions.DependencyInjection` library, including:",
+      "video": {
+        "title": "Complete Guide to Dependency Injection Lifecycles",
+        "url": "https://www.youtube.com/watch?v=wA5bPsv2CLA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What are Service Life Cyles in ASP.NET Core?",
+          "url": "https://endjin.com/blog/2022/09/service-lifetimes-in-aspnet-core"
+        },
+        {
+          "type": "article",
+          "title": "Learn Service Lifetimes in .NET Core",
+          "url": "https://henriquesd.medium.com/dependency-injection-and-service-lifetimes-in-net-core-ab9189349420"
+        }
+      ],
+      "parents": [
+        "dependencyInjection"
+      ],
+      "children": [
+        "scoped",
+        "transient",
+        "singleton"
+      ]
+    },
+    "diContainers": {
+      "title": "DI Containers",
+      "sourceId": "iM760f8Ys66-VSkMiZfIX",
+      "type": "topic",
+      "order": 49,
+      "summary": "A dependency injection (DI) container is a software component that is responsible for managing the dependencies of an application. It is used to create and manage instances of objects and their dependencies, and is particularly useful for implementing the Dependency Inversion Principle in software development.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is DI Container?",
+          "url": "https://www.dotnettricks.com/learn/dependencyinjection/what-is-ioc-container-or-di-container"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started with DI Container",
+          "url": "https://stackoverflow.com/questions/50718586/what-is-a-di-container"
+        },
+        {
+          "type": "article",
+          "title": "How to Use DI Container?",
+          "url": "https://learn.userfrosting.com/services/the-di-container"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Containers",
+          "url": "https://app.daily.dev/tags/containers?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "scrutor",
+        "microsoftExtensions",
+        "autofac"
+      ]
+    },
+    "searchEngines": {
+      "title": "Search Engines",
+      "sourceId": "6p5atMYw3b3bXkQuXZsDV",
+      "type": "topic",
+      "order": 50,
+      "summary": "A search engine in an ASP.NET application is a tool or module that allows users to search for and retrieve specific information from the application's database or other data sources. Search engines can be used to perform full-text search, faceted search, and geospatial search, among other things.",
+      "video": {
+        "title": "Simple Search Engine in ASP.NET",
+        "url": "https://www.youtube.com/watch?v=KTkubhS-u50"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Search Engine Optimization with ASP.NET",
+          "url": "https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/september/search-engine-optimization-with-asp-net-4-0-visual-studio-2010-and-iis7"
+        },
+        {
+          "type": "article",
+          "title": "Creating an ASP.NET Search Engine",
+          "url": "https://www.developerfusion.com/article/4389/create-a-site-search-engine-in-aspnet/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "appSettingsAndConfigs",
+        "elasticSearch"
+      ]
+    },
+    "cloud": {
+      "title": "Cloud",
+      "sourceId": "LrjmJs6_rXUkc2A7fEq24",
+      "type": "topic",
+      "order": 51,
+      "summary": "Cloud in the context of ASP.NET refers to the use of cloud computing services to host and run ASP.NET web applications. Cloud computing is a model of delivering computing resources (such as servers, storage, and applications) over the internet on a pay-per-use basis.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Building a .NET Cloud Application",
+          "url": "https://www.c-sharpcorner.com/article/building-the-net-cloud-application/"
+        },
+        {
+          "type": "article",
+          "title": "How to make a .NET Cloud Application?",
+          "url": "https://dotnet.microsoft.com/en-us/apps/cloud"
+        },
+        {
+          "type": "article",
+          "title": "Getting started with Cloud",
+          "url": "https://aws.amazon.com/free/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Cloud",
+          "url": "https://app.daily.dev/tags/cloud?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "cosmosDb"
+      ]
+    },
+    "databases": {
+      "title": "Databases",
+      "sourceId": "Ujzn_dILCA7xoupnz398l",
+      "type": "topic",
+      "order": 52,
+      "summary": "In an ASP.NET application, there are several types of databases that can be used to store and retrieve data. Some of the most commonly used databases include:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "ASP.NET Database Tutorial",
+          "url": "https://www.guru99.com/insert-update-delete-asp-net.html"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to Working with a Database in ASP.NET",
+          "url": "https://learn.microsoft.com/en-us/aspnet/web-pages/overview/data/5-working-with-data"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Backend Development",
+          "url": "https://app.daily.dev/tags/backend?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "serilog",
+        "logFrameworks"
+      ]
+    },
+    "microsoftExtensions": {
+      "title": "Microsoft.Extensions",
+      "sourceId": "J9XdYLo7qJiBoL8p3c68P",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "Microsoft.Extensions.DependencyInjection is a dependency injection framework that is part of the Microsoft.Extensions.DependencyInjection NuGet package. It is used to create and manage instances of objects and their dependencies, and is particularly useful for implementing the Dependency Inversion Principle in .NET applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Guide to Microsoft Extensions Dependency Injection",
+          "url": "https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection?view=dotnet-plat-ext-7.0"
+        },
+        {
+          "type": "article",
+          "title": "Exploring the Microsoft.Extensions.DependencyInjection",
+          "url": "https://www.codeproject.com/Articles/5339241/Exploring-the-Microsoft-Extensions-DependencyInjec"
+        },
+        {
+          "type": "article",
+          "title": "How to use Microsoft.Extensions.DependencyInjection",
+          "url": "https://stackoverflow.com/questions/53825155/how-can-i-use-microsoft-extensions-dependencyinjection-in-an-net-core-console-a"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Microsoft",
+          "url": "https://app.daily.dev/tags/microsoft?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "diContainers"
+      ],
+      "children": []
+    },
+    "elasticSearch": {
+      "title": "Elastic Search",
+      "sourceId": "mK9OAwjReZoQZr1WSLRKJ",
+      "type": "subtopic",
+      "order": 54,
+      "summary": "Elasticsearch is a distributed, open-source search and analytics engine that can be used to index, search, and analyze large volumes of data quickly and in near real-time. It is built on top of the Apache Lucene library and can be used to perform full-text search, faceted search, and geospatial search, among other things.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Elasticsearch in ASP.NET Core",
+          "url": "https://code-maze.com/elasticsearch-aspnet-core/"
+        },
+        {
+          "type": "article",
+          "title": "An Elasticsearch Tutorial for .NET Developers",
+          "url": "https://www.toptal.com/dot-net/elasticsearch-dot-net-developers"
+        },
+        {
+          "type": "article",
+          "title": "How to integrate ElasticSearch in ASP.NET?",
+          "url": "https://blexin.com/en/blog-en/how-to-integrate-elasticsearch-in-asp-net-core/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about ELK",
+          "url": "https://app.daily.dev/tags/elk?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "searchEngines"
+      ],
+      "children": []
+    },
+    "cosmosDb": {
+      "title": "Cosmos DB",
+      "sourceId": "KrkV1w9b_Nwm6pe9diDRS",
+      "type": "subtopic",
+      "order": 55,
+      "summary": "",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Azure Cosmos DB?",
+          "url": "https://intellipaat.com/blog/what-is-azure-cosmos-db/"
+        },
+        {
+          "type": "article",
+          "title": "Cosmos DB, Its Features, Benefits, Pricing etc",
+          "url": "https://stackify.com/what-is-azure-cosmos-db/"
+        },
+        {
+          "type": "article",
+          "title": "Getting started with Cosmos DB",
+          "url": "https://acloudguru.com/blog/engineering/azure-cosmos-db-lets-you-focus-on-the-good-stuff"
+        }
+      ],
+      "parents": [
+        "cloud"
+      ],
+      "children": []
+    },
+    "autofac": {
+      "title": "AutoFac",
+      "sourceId": "gbpSbjF12dBE1Tb3PX8Bz",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "Autofac is an open-source dependency injection framework for .NET. It is designed to make it easier to manage the dependencies of an application by automatically resolving and managing the lifetime of objects and their dependencies.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Getting started with Autofac",
+          "url": "https://autofac.org/"
+        },
+        {
+          "type": "article",
+          "title": "Autofac\u2019s Documentation",
+          "url": "https://autofac.readthedocs.io/en/latest/"
+        },
+        {
+          "type": "article",
+          "title": "Dependency Injection with Autofac",
+          "url": "https://www.codeproject.com/Articles/25380/Dependency-Injection-with-Autofac"
+        }
+      ],
+      "parents": [
+        "diContainers"
+      ],
+      "children": []
+    },
+    "solr": {
+      "title": "Solr",
+      "sourceId": "2sY_p_8cOOBmZtDHO2Cmy",
+      "type": "subtopic",
+      "order": 57,
+      "summary": "Apache Solr is a search engine platform based on the Apache Lucene library. It is a standalone enterprise search server that provides a REST-like API for indexing, searching, and updating documents. Solr can be used to perform full-text search, faceted search, and geospatial search, among other things.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Guide to Solr in ASP.NET",
+          "url": "https://www.codeproject.com/Tips/480091/Using-Solr-for-Search-with-NET-Csharp"
+        },
+        {
+          "type": "article",
+          "title": "How to get Started with Solr.NET?",
+          "url": "https://stackoverflow.com/questions/5646615/how-to-get-started-with-solr-net"
+        },
+        {
+          "type": "article",
+          "title": "Integrate Solr Instance With .NET Core",
+          "url": "https://stacksecrets.com/dot-net-core/integrate-solr-instance-with-net-core"
+        }
+      ],
+      "parents": [
+        "relational"
+      ],
+      "children": []
+    },
+    "sphinx": {
+      "title": "Sphinx",
+      "sourceId": "Ye9WHfwZa-Fc2YDaTCmU1",
+      "type": "subtopic",
+      "order": 58,
+      "summary": "Sphinx is an open-source full-text search engine that can be used to index, search and analyze large volumes of data quickly and in near real-time. It is designed to handle high-traffic websites and large data sets and can be used for full-text search, faceted search, and geospatial search.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Overview of Sphinx in ASP.NET",
+          "url": "https://www.sphinxconnector.net/"
+        },
+        {
+          "type": "article",
+          "title": "Intro to Sphinx",
+          "url": "http://sphinxsearch.com/forum/view.html?id=3609"
+        },
+        {
+          "type": "article",
+          "title": "Documentation of Sphinx in ASP.NET",
+          "url": "https://www.ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/"
+        }
+      ],
+      "parents": [
+        "relational"
+      ],
+      "children": []
+    },
+    "dynamoDb": {
+      "title": "Dynamo DB",
+      "sourceId": "1Om9aQDZmnj_DN10ogwDL",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "Amazon DynamoDB is a fully-managed, NoSQL database service provided by Amazon Web Services (AWS) that can be used to store and retrieve large amounts of data. It is a highly-scalable, fast, and flexible NoSQL database service that supports both document and key-value data models.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Getting started with DynamoDB",
+          "url": "https://aws.amazon.com/dynamodb/"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to DynamoDB",
+          "url": "https://cloudacademy.com/lab/introduction-dynamodb/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about AWS DynamoDB",
+          "url": "https://app.daily.dev/tags/aws-dynamodb?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "nosql"
+      ],
+      "children": []
+    },
+    "serilog": {
+      "title": "Serilog",
+      "sourceId": "xL0s4-HfRxNy2ru0jiIWR",
+      "type": "subtopic",
+      "order": 60,
+      "summary": "Serilog is a third-party logging library for ASP.NET Core that allows developers to easily create structured and searchable log data. It is built on top of the `Microsoft.Extensions.Logging` framework, which is included in ASP.NET Core. Serilog provides features such as automatic logging of request and response data, and the ability to write logs to a variety of destinations, including the console, files, and various logging services. It also supports for filtering and formatting log messages.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Complete guide to Serilog in ASP.NET",
+          "url": "https://github.com/serilog/serilog-aspnetcore"
+        },
+        {
+          "type": "article",
+          "title": "How to Work with Serilog in ASP.NET?",
+          "url": "https://www.codeguru.com/dotnet/serilog-c-sharp/"
+        },
+        {
+          "type": "article",
+          "title": "Advanced Serilog features in ASP.NET",
+          "url": "https://www.infoworld.com/article/3624022/how-to-use-advanced-serilog-features-in-aspnet-core-mvc.html"
+        }
+      ],
+      "parents": [
+        "databases"
+      ],
+      "children": []
+    },
+    "relational": {
+      "title": "Relational",
+      "sourceId": "FnRxRY3uDZdTve1w-nBfc",
+      "type": "topic",
+      "order": 61,
+      "summary": "A relational database is a type of database that stores data in a structured format, using tables and relationships between them. It is based on the relational model, which organizes data into one or more tables, with each table consisting of a set of rows and columns.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to Working with Database in ASP.NET",
+          "url": "https://learn.microsoft.com/en-us/aspnet/web-pages/overview/data/5-working-with-data"
+        },
+        {
+          "type": "article",
+          "title": "Implement a Relational Database with ASP.NET",
+          "url": "https://openclassrooms.com/en/courses/5671811-implement-a-relational-database-with-asp-net-core"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "solr",
+        "sphinx",
+        "sqlServer",
+        "postgresql",
+        "mariadb",
+        "mysql"
+      ]
+    },
+    "nosql": {
+      "title": "NoSQL",
+      "sourceId": "WUis4K9vduriYdVkKvM9r",
+      "type": "topic",
+      "order": 62,
+      "summary": "NoSQL (Not Only SQL) is a type of database that does not use the traditional table-based relational model. It is designed to handle large amounts of unstructured or semi-structured data, and it is often used in big data and real-time web applications. NoSQL databases are highly scalable and can handle high-performance needs and large data sets.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "NoSQL in .NET Applications",
+          "url": "https://www.slideshare.net/shijucv/nosql-database-in-net-apps"
+        },
+        {
+          "type": "article",
+          "title": "Open Source NoSQL Database for .NET",
+          "url": "https://www.alachisoft.com/nosdb/"
+        },
+        {
+          "type": "article",
+          "title": "Use NoSQL databases in ASP.NET",
+          "url": "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/nosql-database-persistence-infrastructure"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about NoSQL",
+          "url": "https://app.daily.dev/tags/nosql?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "dynamoDb",
+        "mongodb",
+        "cassandra",
+        "litedb"
+      ]
+    },
+    "nlog": {
+      "title": "NLog",
+      "sourceId": "ykF2bB_68AhCOzeQ_QSW1",
+      "type": "subtopic",
+      "order": 63,
+      "summary": "NLog is an open-source logging library for .NET applications, including ASP.NET. It is designed to be easy to use, highly configurable, and extensible, and it provides a number of features that help developers to log and analyze data in their applications.",
+      "video": {
+        "title": "Tutorial of Nlog with ASP.NET",
+        "url": "https://www.youtube.com/watch?v=PnlxRmHg0lU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Logging with NLog in ASP.NET",
+          "url": "https://codewithmukesh.com/blog/logging-with-nlog-in-aspnet-core/"
+        },
+        {
+          "type": "article",
+          "title": "Introduction To NLog With ASP.NET Core",
+          "url": "https://www.c-sharpcorner.com/article/introduction-to-nlog-with-asp-net-core2/"
+        }
+      ],
+      "parents": [
+        "logFrameworks"
+      ],
+      "children": []
+    },
+    "sqlServer": {
+      "title": "SQL Server",
+      "sourceId": "HQHSzsqBGSVYNLQ9o5EI-",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "MS SQL (or Microsoft SQL Server) is the Microsoft developed relational database management system (RDBMS). MS SQL uses the T-SQL (Transact-SQL) query language to interact with the relational databases. There are many different versions and editions available of MS SQL",
+      "video": {
+        "title": "SQL Server tutorial for beginners",
+        "url": "https://www.youtube.com/watch?v=-EPMOaV7h_Q"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "MS SQL website",
+          "url": "https://www.microsoft.com/en-ca/sql-server/"
+        },
+        {
+          "type": "article",
+          "title": "Tutorials for SQL Server",
+          "url": "https://docs.microsoft.com/en-us/sql/sql-server/tutorials-for-sql-server-2016?view=sql-server-ver15"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about SQL",
+          "url": "https://app.daily.dev/tags/sql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "relational"
+      ],
+      "children": []
+    },
+    "mongodb": {
+      "title": "MongoDB",
+      "sourceId": "-wYRa8qSuKVKo_yOTKV67",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "MongoDB is a cross-platform, open-source, NoSQL document-oriented database that can be used to store and retrieve large amounts of data. It uses a flexible, JSON-like data structure called BSON (binary JSON) and it is designed to handle large amounts of unstructured data.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Use MongoDB in Your C# ASP.NET Apps",
+          "url": "https://developer.okta.com/blog/2020/01/02/mongodb-csharp-aspnet-datastore"
+        },
+        {
+          "type": "article",
+          "title": "MongoDB With ASP.NET Core Web API",
+          "url": "https://www.c-sharpcorner.com/article/using-mongodb-with-asp-net-core-web-api/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about MongoDB",
+          "url": "https://app.daily.dev/tags/mongodb?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "nosql"
+      ],
+      "children": []
+    },
+    "postgresql": {
+      "title": "PostgreSQL",
+      "sourceId": "An9TLvo-I6NtC8wFU3bh4",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "PostgreSQL, often simply \"Postgres\", is an open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance. It was originally developed at the University of California, Berkeley in the 1980s and is now maintained by the PostgreSQL Global Development Group.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Postgresql - Open Source Relational Database",
+          "url": "https://www.postgresql.org/"
+        },
+        {
+          "type": "article",
+          "title": "What is Postgresql?",
+          "url": "https://postgresqltutorial.com/postgresql-getting-started/what-is-postgresql/"
+        },
+        {
+          "type": "article",
+          "title": "Introduction, Advantages & Disadvantages of PostgreSQL",
+          "url": "https://www.guru99.com/introduction-postgresql.html"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about PostgreSQL",
+          "url": "https://app.daily.dev/tags/postgresql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "relational"
+      ],
+      "children": []
+    },
+    "cassandra": {
+      "title": "Cassandra",
+      "sourceId": "U_-Gt5csu_hihl7ybFY-B",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "Apache Cassandra is a free and open-source, NoSQL, distributed, wide-column store, and high-performance database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. It is designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to Cassandra",
+          "url": "https://www.tutorialspoint.com/cassandra/cassandra_introduction.htm"
+        },
+        {
+          "type": "article",
+          "title": "Overview of Cassandra in ASP.NET",
+          "url": "https://www.spiceworks.com/tech/big-data/articles/what-is-cassandra/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Apache Cassandra",
+          "url": "https://app.daily.dev/tags/apache-cassandra?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "nosql"
+      ],
+      "children": []
+    },
+    "logFrameworks": {
+      "title": "Log Frameworks",
+      "sourceId": "fQ3w8REYWzQfeJ0nPyq6W",
+      "type": "topic",
+      "order": 68,
+      "summary": "In ASP.NET, log frameworks are libraries that provide a way to log and analyze data in an application. Some popular log frameworks for ASP.NET include:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Implement logging in ASP.NET",
+          "url": "https://learn.microsoft.com/en-us/training/modules/aspnet-logging/"
+        },
+        {
+          "type": "article",
+          "title": "ASP.NET Core: Logging with log4net",
+          "url": "https://www.linkedin.com/learning/asp-dot-net-core-logging-with-log4net"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Logging",
+          "url": "https://app.daily.dev/tags/logging?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "databases"
+      ],
+      "children": [
+        "nlog"
+      ]
+    },
+    "graphqlNet": {
+      "title": "GraphQL .NET",
+      "sourceId": "Efxu9gDodODMTKJbWcXzB",
+      "type": "subtopic",
+      "order": 69,
+      "summary": "GraphQL is a query language for your API, it allows clients to define the structure of the data they need, and the server will return only the requested data. It is an alternative to RESTful web services, and it is gaining popularity because of its flexibility and efficiency.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to GraphQL .NET in ASP.NET",
+          "url": "https://graphql-dotnet.github.io/docs/getting-started/introduction/"
+        },
+        {
+          "type": "article",
+          "title": "How to use GraphQL in .NET?",
+          "url": "https://softchris.github.io/pages/dotnet-graphql.html"
+        },
+        {
+          "type": "article",
+          "title": "Building and consuming GraphQL API in ASP.NET",
+          "url": "https://www.red-gate.com/simple-talk/development/dotnet-development/building-and-consuming-graphql-api-in-asp-net-core-5/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GraphQL",
+          "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "graphql"
+      ],
+      "children": []
+    },
+    "gridlify": {
+      "title": "Gridlify",
+      "sourceId": "w5RnrhsP4p-AdSOLYVAY9",
+      "type": "subtopic",
+      "order": 70,
+      "summary": "Gridify offers a powerful string-based dynamic LINQ query language that is both simple and easy to use. Gridify is a dynamic LINQ library that simplifies the process of converting strings to LINQ queries. Gridify makes it effortless to apply filtering, sorting, and pagination using text-based data. It also has a Javascript/Typescript client to integrate the Gridify with the frontend tables.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Gridify Library",
+          "url": "https://github.com/alirezanet/Gridify"
+        },
+        {
+          "type": "article",
+          "title": "Working with Dynamic Filters Using Gridify in .NET",
+          "url": "https://levelup.gitconnected.com/working-with-dynamic-filters-using-gridify-in-net-6bba618dd9f8"
+        }
+      ],
+      "parents": [
+        "rest2"
+      ],
+      "children": []
+    },
+    "mariadb": {
+      "title": "MariaDB",
+      "sourceId": "Gs8XcsTo11MeCsiSGpjkU",
+      "type": "subtopic",
+      "order": 71,
+      "summary": "MariaDB is an open-source relational database management system (RDBMS) that is a fork of the MySQL database. It is fully compatible with MySQL, but it also includes additional features and improvements. MariaDB is developed and maintained by the MariaDB Corporation and the MariaDB community, and it is widely used as a replacement for MySQL in many web and enterprise applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Working with MariaDB and .Net",
+          "url": "https://mariadb.com/kb/en/mariadb-and-net/"
+        },
+        {
+          "type": "article",
+          "title": "How to use MariaDB in ASP.NET?",
+          "url": "https://blog.georgekosmidis.net/using-mariadb-in-an-aspnet-core-api-with-entity-framework-core.html"
+        },
+        {
+          "type": "article",
+          "title": "Building an application with ASP.NET & MariaDB",
+          "url": "https://medium.com/@BMatt92656920/building-a-web-application-with-asp-net-core-mvc-entity-framework-core-mariadb-bootstrap-a2bf0927d20e"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Infrastructure",
+          "url": "https://app.daily.dev/tags/infrastructure?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "relational"
+      ],
+      "children": []
+    },
+    "litedb": {
+      "title": "LiteDB",
+      "sourceId": "3gcXaOnHL4v5OoStrTWNV",
+      "type": "subtopic",
+      "order": 72,
+      "summary": "LiteDB is a lightweight, open-source, NoSQL embedded document-oriented database engine for .NET and .NET Core. It uses a file-based storage system, meaning that the entire database is stored in a single file on disk. It uses a similar syntax to MongoDB, but it is designed to be simple and easy to use, and it does not require a separate server or installation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Getting started with LiteDB",
+          "url": "https://www.litedb.org/"
+        },
+        {
+          "type": "official",
+          "title": "Overview of LiteDB in ASP.NET",
+          "url": "https://www.litedb.org/docs/"
+        }
+      ],
+      "parents": [
+        "nosql"
+      ],
+      "children": []
+    },
+    "hotchocolate": {
+      "title": "HotChocolate",
+      "sourceId": "XMrQx9JH0eSQJpMzhvy0F",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "Hot Chocolate is a GraphQL server implementation for .NET and .NET Core. It is an open-source library that provides a simple and flexible way to build GraphQL APIs in ASP.NET.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Getting started with HotChocolate",
+          "url": "https://learn.microsoft.com/en-us/shows/on-net/getting-started-with-hotchocolate"
+        },
+        {
+          "type": "article",
+          "title": "ASP.NET Core and HotChocolate",
+          "url": "https://chillicream.com/docs/hotchocolate/v12/api-reference/aspnetcore"
+        },
+        {
+          "type": "article",
+          "title": "Intro to HotChocolate",
+          "url": "https://chillicream.com/docs/hotchocolate"
+        }
+      ],
+      "parents": [
+        "graphql"
+      ],
+      "children": []
+    },
+    "odata": {
+      "title": "Odata",
+      "sourceId": "YojZ5fpzw-5WgoqqkO6wl",
+      "type": "subtopic",
+      "order": 74,
+      "summary": "OData (Open Data Protocol) is a web protocol for querying and updating data. It is an open standard for creating and consuming RESTful web services. OData is built on top of the HTTP protocol, and it uses the conventions of REST to expose data through a standard interface.",
+      "video": {
+        "title": "Example of OData Protocol With ASP.NET Core",
+        "url": "https://www.youtube.com/watch?v=L9HdnNCi0R0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Create an OData v4 Endpoint Using ASP.NET",
+          "url": "https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint"
+        }
+      ],
+      "parents": [
+        "rest2"
+      ],
+      "children": []
+    },
+    "mysql": {
+      "title": "MySQL",
+      "sourceId": "WsGwg4qdlu_vBsFEpmBvU",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "MySQL is an open-source relational database management system (RDBMS) that is widely used in web and enterprise applications. It is developed, distributed, and supported by Oracle Corporation. MySQL provides a rich set of features to handle high-performance, high-availability, and high-scalability requirements of modern web applications.",
+      "video": {
+        "title": "How To Connect MySQL With ASP.NET",
+        "url": "https://www.youtube.com/watch?v=g5rVd1JGbIg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Getting started with ASP.NET Core and MySQL",
+          "url": "https://dev.mysql.com/blog-archive/getting-started-with-asp-net-core-and-mysql-connectornet/"
+        },
+        {
+          "type": "article",
+          "title": "MySql database connectivity with ASP.Net",
+          "url": "https://www.c-sharpcorner.com/UploadFile/brij_mcn/mysql-database-connectivity-with-Asp-Net/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about MySQL",
+          "url": "https://app.daily.dev/tags/mysql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "relational"
+      ],
+      "children": []
+    },
+    "couchdb": {
+      "title": "CouchDB",
+      "sourceId": "vHcwt6ARi5YR3v-eDDjfl",
+      "type": "subtopic",
+      "order": 76,
+      "summary": "CouchDB is an open-source, NoSQL document database designed for the web. It uses a document-oriented data model, which means that it stores data in semi-structured JSON format, and it is designed to be simple and easy to use. CouchDB provides a built-in web interface, called Futon, which can be used to interact with the database, and it also provides an HTTP API that can be used to interact with the database from an ASP.NET application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "CouchDB in ASP.NET Core Application",
+          "url": "https://www.c-sharpcorner.com/article/crud-operation-to-couchdb-via-rest-api-in-asp-net-core-application/"
+        },
+        {
+          "type": "article",
+          "title": "Use CouchDB with .NET",
+          "url": "https://stackoverflow.com/questions/1050152/use-couchdb-with-net"
+        }
+      ],
+      "parents": [
+        "realTimeCommunication"
+      ],
+      "children": []
+    },
+    "graphql": {
+      "title": "GraphQL",
+      "sourceId": "BdTQ5ZMNDNZvkAUoCfL5H",
+      "type": "topic",
+      "order": 77,
+      "summary": "GraphQL is a query language for your API that allows clients to define the structure of the data they need, and the server will return only the requested data. It is an alternative to RESTful web services, and it is gaining popularity because of its flexibility and efficiency.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to implement GraphQL in ASP.Net",
+          "url": "https://blog.christian-schou.dk/how-to-implement-graphql-in-asp-net-core/"
+        },
+        {
+          "type": "article",
+          "title": "Intro to GraphQL",
+          "url": "https://graphql-dotnet.github.io/docs/getting-started/introduction/"
+        },
+        {
+          "type": "article",
+          "title": "Developing API In .NET Core With GraphQL",
+          "url": "https://www.c-sharpcorner.com/article/building-api-in-net-core-with-graphql2/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GraphQL",
+          "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "graphqlNet",
+        "hotchocolate"
+      ]
+    },
+    "rest2": {
+      "title": "REST",
+      "sourceId": "KJCtxH3mYsZq3hfBZ6cJF",
+      "type": "topic",
+      "order": 78,
+      "summary": "REST (Representational State Transfer) is an architectural style for building web services. It is based on the principles of the HTTP protocol, and it uses the conventions of HTTP to create a standard interface for interacting with web services.",
+      "video": {
+        "title": "Tutorial of Rest and Restful API",
+        "url": "https://www.youtube.com/watch?v=4r1CIUs5s2I"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is REST Services in ASP.NET?",
+          "url": "http://www.codedigest.com/quick-start/16/what-is-rest-services-how-to-create-rest-services-in-aspnet"
+        },
+        {
+          "type": "article",
+          "title": "What are RESTful APIs?",
+          "url": "https://www.pragimtech.com/blog/blazor/what-are-restful-apis/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about REST API",
+          "url": "https://app.daily.dev/tags/rest-api?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "gridlify",
+        "odata",
+        "grpc"
+      ]
+    },
+    "webSockets": {
+      "title": "Web Sockets",
+      "sourceId": "tBl8neu3tJd5GPwGfJbjZ",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "WebSockets is a protocol that allows for real-time, bidirectional communication between a client and a server. It is based on the same principle as HTTP, but it uses a different protocol to establish and maintain a connection between the client and the server. Once a connection is established, WebSockets enables the client and server to send messages to each other in real-time.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "WebSockets support in ASP.NET",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/websockets?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "Understanding WebSockets with ASP.NET",
+          "url": "https://sahansera.dev/understanding-websockets-with-aspnetcore-5/"
+        },
+        {
+          "type": "article",
+          "title": "Writing a WebSocket server in ASP.NET",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_server"
+        }
+      ],
+      "parents": [
+        "realTimeCommunication"
+      ],
+      "children": []
+    },
+    "apiClientsAndCommunication": {
+      "title": "API Clients and Communication",
+      "sourceId": "GLkDH0X0uy8_1DIdCzbUD",
+      "type": "topic",
+      "order": 80,
+      "summary": "API clients in ASP.NET are software libraries that allow applications to interact with external APIs. They provide a set of methods and classes that make it easy to send requests to an API and process the responses.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to Call a Web API From a .NET Client",
+          "url": "https://learn.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client"
+        },
+        {
+          "type": "article",
+          "title": "Overview of Web API REST Service in ASP.NET",
+          "url": "https://www.c-sharpcorner.com/article/consuming-asp-net-web-api-rest-service-in-asp-net-mvc-using-http-client/"
+        },
+        {
+          "type": "article",
+          "title": "Building an ASP.NET Web API With ASP.NET",
+          "url": "https://www.toptal.com/asp-dot-net/asp-net-web-api-tutorial"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "realTimeCommunication": {
+      "title": "Real-Time Communication",
+      "sourceId": "9Vv3OxafB6BlHhi1ZkeVO",
+      "type": "topic",
+      "order": 81,
+      "summary": "Real-time communication in ASP.NET refers to the ability to send and receive data between a client and a server in real-time, typically with low latency. It allows the server to push updates to the client as they happen, instead of the client having to continuously poll the server for updates.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Overview of ASP.NET Core SignalR",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/signalr/introduction?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "Real-time ASP.NET with SignalR",
+          "url": "https://dotnet.microsoft.com/en-us/apps/aspnet/signalr"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "couchdb",
+        "webSockets",
+        "signalrCore",
+        "objectMapping"
+      ]
+    },
+    "signalrCore": {
+      "title": "SignalR Core",
+      "sourceId": "8dvd4M0TKNyQR8dEolGNT",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "SignalR is a real-time communication library for .NET that allows for the creation of real-time web applications. SignalR Core is the latest version of SignalR, which has been rebuilt from the ground up to be cross-platform and lightweight. It allows for bidirectional communication between a client (such as a web page) and a server, enabling real-time updates, notifications, and other interactions. SignalR Core can be used in a variety of scenarios such as chat applications, gaming, and real-time dashboards. It supports multiple transports like WebSockets, Server-Sent Events and Long polling. It also supports for authentication and authorization.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Overview of ASP.NET Core SignalR",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/signalr/introduction?view=aspnetcore-8.0"
+        }
+      ],
+      "parents": [
+        "realTimeCommunication"
+      ],
+      "children": []
+    },
+    "automapper": {
+      "title": "AutoMapper",
+      "sourceId": "GPmlueMnuLCUW_t4jvGhc",
+      "type": "subtopic",
+      "order": 83,
+      "summary": "AutoMapper is a library for .NET that allows you to easily map between objects of different types. It is particularly useful when working with domain models and data transfer objects (DTOs) in a layered architecture. It can also be used to map between different versions of an object, or to map between objects in different formats, such as JSON and XML.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Automapper in ASP.NET?",
+          "url": "https://www.simplilearn.com/tutorials/asp-dot-net-tutorial/automapper-in-c-sharp"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started with AutoMapper in ASP.NET",
+          "url": "https://code-maze.com/automapper-net-core/"
+        },
+        {
+          "type": "article",
+          "title": "Examples of AutoMapper in ASP.NET",
+          "url": "https://dotnettutorials.net/lesson/automapper-in-c-sharp/"
+        }
+      ],
+      "parents": [
+        "objectMapping"
+      ],
+      "children": []
+    },
+    "grpc": {
+      "title": "gRPC",
+      "sourceId": "x3SJlLc19DNJ-PyDOOj_G",
+      "type": "subtopic",
+      "order": 84,
+      "summary": "gRPC is a high-performance, open-source framework for building remote procedure call (RPC) APIs. It uses the Protocol Buffers data serialization format and the HTTP/2 protocol to create highly efficient and scalable APIs. gRPC supports a variety of programming languages, including Cand ASP.NET.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Overview for gRPC on .NET",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started with ASP.NET Core and gRPC",
+          "url": "https://blog.jetbrains.com/dotnet/2021/07/19/getting-started-with-asp-net-core-and-grpc/"
+        },
+        {
+          "type": "article",
+          "title": "Create a gRPC client & server in ASP.NET",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/tutorials/grpc/grpc-start?view=aspnetcore-7.0&tabs=visual-studio"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about gRPC",
+          "url": "https://app.daily.dev/tags/grpc?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "rest2"
+      ],
+      "children": []
+    },
+    "objectMapping": {
+      "title": "Object Mapping",
+      "sourceId": "9ECykIIvXlDblbFbRVcJS",
+      "type": "topic",
+      "order": 85,
+      "summary": "Object mapping in ASP.NET refers to the process of converting an object of one type to an object of another type. This can be useful in a number of scenarios, such as when working with domain models and data transfer objects (DTOs) in a layered architecture, or when mapping between different versions of an object or different formats such as JSON and XML.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Building a Fast Object-to-Object Mapper in .NET",
+          "url": "https://www.twilio.com/blog/building-blazing-fast-object-mapper-c-sharp-net-core"
+        },
+        {
+          "type": "article",
+          "title": "Overview of Object Mapping in ASP.NET",
+          "url": "https://docs.abp.io/en/abp/latest/Object-To-Object-Mapping"
+        },
+        {
+          "type": "article",
+          "title": "Comparison of Object Mapper Libraries",
+          "url": "https://www.simplilearn.com/tutorials/asp-dot-net-tutorial/automapper-in-c-sharp"
+        }
+      ],
+      "parents": [
+        "realTimeCommunication"
+      ],
+      "children": [
+        "nativeBackgroundService",
+        "automapper",
+        "mapperly",
+        "manualMapping",
+        "taskScheduling"
+      ]
+    },
+    "mapperly": {
+      "title": "Mapperly",
+      "sourceId": "x0OopRTwIvoWgT8qi0CE9",
+      "type": "subtopic",
+      "order": 86,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "objectMapping"
+      ],
+      "children": []
+    },
+    "manualMapping": {
+      "title": "Manual Mapping",
+      "sourceId": "oMMBzRrHkUymxAR4oqr75",
+      "type": "subtopic",
+      "order": 87,
+      "summary": "Manual object mapping in ASP.NET Core means explicitly assigning values from one object to another without using third-party libraries like AutoMapper. This approach gives you full control over how properties are mapped and allows for custom transformations if needed.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Manual vs Automapping in ASP.NET?",
+          "url": "https://medium.com/@anderson.buenogod/manual-vs-automated-mapping-in-c-which-approach-is-best-for-your-project-50de1fd73bfa"
+        }
+      ],
+      "parents": [
+        "objectMapping"
+      ],
+      "children": []
+    },
+    "nativeBackgroundService": {
+      "title": "Native Background Service",
+      "sourceId": "uP1nqbmFmZL_wA2DoqP8C",
+      "type": "subtopic",
+      "order": 88,
+      "summary": "A Native Background Service in ASP.NET is a type of service that can run in the background on a device, without the need for an active user session. These services are typically used for tasks that need to run continuously, such as sending notifications, polling for updates, or processing data.",
+      "video": {
+        "title": "Tutorial on Background Tasks in ASP.NET",
+        "url": "https://youtube.com/watch?v=rugxQIH_p3A"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Background tasks with hosted services in ASP.NET",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services?view=aspnetcore-7.0&tabs=visual-studio"
+        },
+        {
+          "type": "article",
+          "title": "BackgroundService in ASP.NET Core",
+          "url": "https://medium.com/@daniel.sagita/backgroundservice-for-a-long-running-work-3debe8f8d25b"
+        }
+      ],
+      "parents": [
+        "objectMapping"
+      ],
+      "children": []
+    },
+    "e2eTesting": {
+      "title": "E2E Testing",
+      "sourceId": "_cHDH4bo1Q_Ru9iuKaPQa",
+      "type": "label",
+      "order": 89,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "playwright",
+        "puppeteer",
+        "cypress"
+      ]
+    },
+    "integrationTesting": {
+      "title": "Integration Testing",
+      "sourceId": "FjpBEi77yGh9oSsHdh7mf",
+      "type": "label",
+      "order": 90,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "webapplicationfactory"
+      ]
+    },
+    "hangfire": {
+      "title": "Hangfire",
+      "sourceId": "QiQsx1udyKcPJ-lZjRQVy",
+      "type": "subtopic",
+      "order": 91,
+      "summary": "Hangfire is an open-source, lightweight library for .NET that allows you to easily perform background processing in your ASP.NET application. It provides a simple and elegant way to run background jobs, schedule future tasks, and monitor the progress of your background jobs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Hangfire with ASP.NET Core",
+          "url": "https://code-maze.com/hangfire-with-asp-net-core/"
+        },
+        {
+          "type": "article",
+          "title": "Intro to Hangfire",
+          "url": "https://www.partech.nl/nl/publicaties/2021/05/a-beginners-guide-to-hangfire"
+        },
+        {
+          "type": "article",
+          "title": "How to use Hangfire with ASP.NET",
+          "url": "https://blog.christian-schou.dk/how-to-use-hangfire-with-asp-net-core-5-0-api/"
+        }
+      ],
+      "parents": [
+        "taskScheduling"
+      ],
+      "children": []
+    },
+    "webapplicationfactory": {
+      "title": "WebApplicationFactory",
+      "sourceId": "Xx5G09n4WWnnydCgxnL0A",
+      "type": "subtopic",
+      "order": 92,
+      "summary": "Web Application Factory (WAF) is a built-in feature of the ASP.NET Core framework that allows developers to create and configure a web application in a programmatic way. It provides a simple and flexible way to set up a web application for testing, without the need for a web server or a browser. The WAF can be used to create a test server that can be used to run integration tests or end-to-end tests for an ASP.NET Core web application, this allows developers to test the web application in a realistic environment, without the need for a physical web server or a browser. The WAF can be configured to use different services, middleware, and settings, depending on the needs of the application, this allows developers to easily set up a web application that is configured specifically for testing. The WAF also allows developers to test the web application against different configurations, such as different databases, different authentication providers, and different hosting environments.",
+      "video": {
+        "title": "Integration Testing ASP.NET Core WebAPI Applications",
+        "url": "https://www.youtube.com/watch?v=xs8gNQjCXw0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Integration tests in ASP.NET Core",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "How to use WebApplicationFactory in .NET",
+          "url": "https://stackoverflow.com/questions/69058176/how-to-use-webapplicationfactory-in-net6-without-speakable-entry-point"
+        }
+      ],
+      "parents": [
+        "integrationTesting"
+      ],
+      "children": []
+    },
+    "playwright": {
+      "title": "Playwright",
+      "sourceId": "AtyL0ij8FeJCBmqG2YvTO",
+      "type": "subtopic",
+      "order": 93,
+      "summary": "Playwright is an open-source library for automating web browsers built by Microsoft, similar to Selenium, it's commonly used for testing web applications. It's built on top of the .NET Core runtime and it provides bindings for C, it allows developers to write tests for web applications in Cor other .NET languages. Playwright is designed to be fast and reliable and allows developers to run tests in multiple browsers.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Playwright for .NET",
+          "url": "https://github.com/microsoft/playwright-dotnet"
+        },
+        {
+          "type": "article",
+          "title": "How to test Apps with Playwright and .NETs",
+          "url": "https://www.twilio.com/blog/test-web-apps-with-playwright-and-csharp-dotnet"
+        },
+        {
+          "type": "article",
+          "title": "End-to-End Tests With ASP.NET and Playwright",
+          "url": "https://khalidabuhakmeh.com/end-to-end-test-with-aspnet-core-xunit-and-playwright"
+        }
+      ],
+      "parents": [
+        "e2eTesting"
+      ],
+      "children": []
+    },
+    "taskScheduling": {
+      "title": "Task Scheduling",
+      "sourceId": "s57tKy1rajlJbKFDVXLqs",
+      "type": "topic",
+      "order": 94,
+      "summary": "Task scheduling in ASP.NET refers to the process of scheduling and executing background tasks in an application. This can include tasks such as sending emails, processing data, generating reports, or performing maintenance tasks.",
+      "video": {
+        "title": "Task Scheduling in ASP.NET",
+        "url": "https://www.youtube.com/watch?v=Vg4AOpb7OqA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How schedule Tasks in ASP.NET?",
+          "url": "https://beansoftware.com/ASP.NET-Tutorials/Scheduled-Tasks.aspx"
+        }
+      ],
+      "parents": [
+        "objectMapping"
+      ],
+      "children": [
+        "hangfire",
+        "coravel",
+        "quartz",
+        "testing"
+      ]
+    },
+    "quartz": {
+      "title": "Quartz",
+      "sourceId": "zOWlPXIl4XPs_0pA8-yi5",
+      "type": "subtopic",
+      "order": 95,
+      "summary": "Quartz is an open-source, job scheduling library for .NET that can be used in ASP.NET applications. It is based on the popular Quartz scheduler for Java, and provides a similar feature set for scheduling and executing background jobs in .NET applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Intro to Quartz in ASP.NET",
+          "url": "https://aspnetboilerplate.com/Pages/Documents/Quartz-Integration"
+        },
+        {
+          "type": "article",
+          "title": "How to work with Quartz.Net in ASP.NET",
+          "url": "https://www.infoworld.com/article/3078781/how-to-work-with-quartz-net-in-c.html"
+        }
+      ],
+      "parents": [
+        "taskScheduling"
+      ],
+      "children": []
+    },
+    "puppeteer": {
+      "title": "Puppeteer",
+      "sourceId": "UCpoLiQJ4LeniI9x3uGcY",
+      "type": "subtopic",
+      "order": 96,
+      "summary": "Puppeteer is an open-source library for automating web browsers, similar to Selenium and Playwright. It's built on top of the Chrome DevTools protocol and it provides a set of APIs that allows developers to interact with web browsers and simulate user interactions, such as clicking buttons, filling out forms, and navigating between pages. It's commonly used for testing web applications, web scraping, and generating screenshots and PDFs of web pages. Puppeteer for .NET is built on top of the .NET Core runtime and it provides bindings for Cand allows developers to write tests for web applications in Cor other .NET languages.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Why use Puppeteer?",
+          "url": "https://www.kiltandcode.com/puppeteer-sharp-crawl-the-web-using-csharp-and-headless-chrome/"
+        },
+        {
+          "type": "article",
+          "title": "Documentations of Puppeteer",
+          "url": "https://www.puppeteersharp.com/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Crawling",
+          "url": "https://app.daily.dev/tags/crawling?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "e2eTesting"
+      ],
+      "children": []
+    },
+    "coravel": {
+      "title": "Coravel",
+      "sourceId": "p3bZnKIyRgLmB764Kkhju",
+      "type": "subtopic",
+      "order": 98,
+      "summary": "Coravel is an open-source, lightweight library for .NET that allows you to easily perform background processing and scheduling in your ASP.NET Core application. It provides a simple and elegant way to schedule tasks, run background jobs, and manage queues in your application.",
+      "video": {
+        "title": "ASP.NET Task Scheduling with Coravel",
+        "url": "https://www.youtube.com/watch?v=vu0fxlWl0wo"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Documentation of Coravel",
+          "url": "https://docs.coravel.net/"
+        }
+      ],
+      "parents": [
+        "taskScheduling"
+      ],
+      "children": []
+    },
+    "testing": {
+      "title": "Testing",
+      "sourceId": "XofWWhlU_vWCG5oXVMZze",
+      "type": "topic",
+      "order": 100,
+      "summary": "Testing in ASP.NET is the process of evaluating the performance, functionality, and overall correctness of an application developed using the ASP.NET framework. There are several types of testing that can be performed on an ASP.NET application, including unit testing, integration testing, acceptance testing and E2E testing. Each type of testing has a different focus and is used at a different stage of the development process. Common testing frameworks for ASP.NET include MSTest, XUnit, NUnit, Selenium, Playwright, Puppeteer, Cypress, Specflow, Cucumber, and LightBDD.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "A Complete Tutorial on ASP.NET Testing",
+          "url": "https://www.lambdatest.com/blog/aspnet-testing/"
+        },
+        {
+          "type": "article",
+          "title": "Unit test controller logic in ASP.NET",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "Integration tests in ASP.NET Core",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-7.0"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Testing",
+          "url": "https://app.daily.dev/tags/testing?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "taskScheduling"
+      ],
+      "children": [
+        "microservices"
+      ]
+    },
+    "cypress": {
+      "title": "Cypress",
+      "sourceId": "f2UP2jDnDr7XEFIdAtBhH",
+      "type": "subtopic",
+      "order": 101,
+      "summary": "Cypress is an open-source end-to-end testing framework for web applications, it's built on top of JavaScript and provides a set of APIs that allows developers to automate browser interactions. It's commonly used for testing web applications, as it can be used to automate browser-based tests and assert that the application behaves as expected. Cypress for .NET is not built on top of the .NET Core runtime and it does not provide bindings for Cor any other .NET languages, it's built on top of JavaScript and can be run in the browser.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Overview of Cypress",
+          "url": "https://www.cypress.io/"
+        },
+        {
+          "type": "article",
+          "title": "Cypress - End To End Testing Tool",
+          "url": "https://www.c-sharpcorner.com/article/getting-started-with-cypress-io/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Cypress",
+          "url": "https://app.daily.dev/tags/cypress?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "e2eTesting"
+      ],
+      "children": []
+    },
+    "behaviorTesting": {
+      "title": "Behavior Testing",
+      "sourceId": "8sr7NcSsrn67x75-vYLNQ",
+      "type": "label",
+      "order": 103,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "specflow",
+        "lightBdd"
+      ]
+    },
+    "unitTestingFrameworks": {
+      "title": "Unit Testing Frameworks",
+      "sourceId": "rcr1V3vhuilYbvgaQm7IE",
+      "type": "label",
+      "order": 104,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "mstest",
+        "xunit",
+        "nunit"
+      ]
+    },
+    "messageBrokers": {
+      "title": "Message Brokers",
+      "sourceId": "eMolc0UKdEgLDFJ2FximV",
+      "type": "label",
+      "order": 105,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "kafka",
+        "activemq",
+        "rabbitmq",
+        "netmq",
+        "azureServiceBus"
+      ]
+    },
+    "microservices": {
+      "title": "Microservices",
+      "sourceId": "37c2eCvRdebztkbc5AjYp",
+      "type": "topic",
+      "order": 106,
+      "summary": "Microservices are a software architectural style in which a large application is built as a set of small, independent services that communicate with each other through APIs. These services are typically built using different technologies and run in their own processes, and can be deployed, scaled, and updated independently.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Intro to Microservices Using ASP.NET Core",
+          "url": "https://www.c-sharpcorner.com/article/microservice-using-asp-net-core/"
+        },
+        {
+          "type": "article",
+          "title": "Advantages and Disadvantages of Microservices Architecture",
+          "url": "https://www.dotnettricks.com/learn/microservices/architecture-example-advantages"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Microservices",
+          "url": "https://app.daily.dev/tags/microservices?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": [
+        "githubActions",
+        "azurePipelines",
+        "ciCd"
+      ]
+    },
+    "mstest": {
+      "title": "MSTest",
+      "sourceId": "236VJJjMvqHfSj-MHSDPV",
+      "type": "subtopic",
+      "order": 107,
+      "summary": "MSTest is a unit testing framework for the .NET framework, it's one of the built-in test frameworks in Visual Studio and it's widely used for unit testing in the .NET ecosystem. In the context of ASP.NET, MSTest can be used to write unit tests for web applications built using the ASP.NET framework. MSTest provides features such as data-driven testing, parallel test execution, and test discovery and execution, it also provides the ability to run tests on multiple frameworks.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": ".NET Core testing with MSTest",
+          "url": "https://www.oreilly.com/library/view/c-and-net/9781788292481/aa08c601-f374-4e31-be8e-8eb69d63bd19.xhtml"
+        },
+        {
+          "type": "article",
+          "title": "Unit testing with MSTest and .NET",
+          "url": "https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest"
+        },
+        {
+          "type": "article",
+          "title": "Complete Guide of MSTest for Unit Testing in ASP.NET",
+          "url": "https://sweetcode.io/a-complete-guide-of-mstest-for-unit-testing-in-asp-net/"
+        }
+      ],
+      "parents": [
+        "unitTestingFrameworks"
+      ],
+      "children": []
+    },
+    "xunit": {
+      "title": "XUnit",
+      "sourceId": "R8C6s53RYjkRVma0nCJpy",
+      "type": "subtopic",
+      "order": 108,
+      "summary": "xUnit is a unit testing framework for the .NET framework, it's an open-source testing framework that provides a set of attributes and classes that can be used to create unit tests. In the context of ASP.NET, xUnit can be used to write unit tests for web applications built using the ASP.NET framework. xUnit provides features such as support for data-driven tests, support for parallel test execution, and support for test discovery and execution, it also provides support for test isolation which allows developers to run tests in isolation from each other. xUnit is a popular alternative to other testing frameworks like MSTest and it does not rely on a test runner, instead relies on a console runner that can be run from the command line.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Unit Testing with xUnit in ASP.NET Core",
+          "url": "https://code-maze.com/aspnetcore-unit-testing-xunit/"
+        },
+        {
+          "type": "article",
+          "title": "Unit testing in .NET Core using and xUnit",
+          "url": "https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started With Unit Testing Using ASP.NET And xUnit",
+          "url": "https://www.c-sharpcorner.com/article/getting-started-with-unit-testing-using-c-sharp-and-xunit/"
+        }
+      ],
+      "parents": [
+        "unitTestingFrameworks"
+      ],
+      "children": []
+    },
+    "nunit": {
+      "title": "NUnit",
+      "sourceId": "qHYBlBCvCGUZGh6gyEI63",
+      "type": "subtopic",
+      "order": 109,
+      "summary": "NUnit is a unit testing framework for the .NET framework, it's an open-source testing framework that provides a set of attributes and classes that can be used to create unit tests. In the context of ASP.NET, NUnit can be used to write unit tests for web applications built using the ASP.NET framework. NUnit provides features such as support for data-driven tests, support for parallel test execution, and support for test discovery and execution, it also provides support for test isolation which allows developers to run tests in isolation from each other. NUnit is a popular alternative to other testing frameworks like MSTest and xUnit and it has a similar syntax as JUnit and it's considered as one of the oldest testing frameworks for .NET.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "NUnit With C#",
+          "url": "https://www.c-sharpcorner.com/UploadFile/84c85b/nunit-with-C-Sharp/"
+        },
+        {
+          "type": "article",
+          "title": "Unit testing C# with NUnit and .NET Core",
+          "url": "https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-nunit"
+        }
+      ],
+      "parents": [
+        "unitTestingFrameworks"
+      ],
+      "children": []
+    },
+    "specflow": {
+      "title": "Specflow",
+      "sourceId": "9WZmjiFowydYrkHQ2xeNm",
+      "type": "subtopic",
+      "order": 110,
+      "summary": "SpecFlow is an open-source tool that allows developers to create automated acceptance tests in a natural language format, such as Gherkin. SpecFlow is commonly used in the context of ASP.NET and other .NET technologies, to write acceptance tests for web applications. With SpecFlow, developers can write test scenarios using plain text in the Gherkin syntax, which uses a Given-When-Then format to describe the steps of a test. These scenarios can be written by non-technical stakeholders, such as business analysts or product owners, and can be easily understood by anyone who reads them. SpecFlow then converts these Gherkin scenarios into executable tests, which can be run using a variety of test runners, such as NUnit, xUnit, or MSTest. The tool also provides a set of bindings that allow developers to map the steps in the Gherkin scenarios to code in their application, making it easy to test specific functionality. Additionally, SpecFlow provides a set of advanced features, such as support for parameterized tests, background steps, and hooks, which allows developers to create more complex and powerful tests.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "What is SpecFlow?",
+          "url": "https://specflow.org/tools/specflow/"
+        },
+        {
+          "type": "article",
+          "title": "SpecFlow\u2019s documentation",
+          "url": "https://docs.specflow.org/_/downloads/specflow/en/latest/pdf/"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started with SpecFlow",
+          "url": "https://docs.specflow.org/projects/getting-started/en/latest/index.html"
+        }
+      ],
+      "parents": [
+        "behaviorTesting"
+      ],
+      "children": []
+    },
+    "kafka": {
+      "title": "Kafka",
+      "sourceId": "L8RkeMYm0WGNeLLcHKF1R",
+      "type": "subtopic",
+      "order": 111,
+      "summary": "Apache Kafka is an open-source, distributed event streaming platform that is used for building real-time data pipelines and streaming applications. It is designed to handle high volumes of data and to support real-time data processing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Working with Apache Kafka in ASP.NET",
+          "url": "https://www.codemag.com/Article/2201061/Working-with-Apache-Kafka-in-ASP.NET-6-Core"
+        },
+        {
+          "type": "article",
+          "title": "Kafka and .NET",
+          "url": "https://docs.confluent.io/kafka-clients/dotnet/current/overview.html"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Apache",
+          "url": "https://app.daily.dev/tags/apache?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "messageBrokers"
+      ],
+      "children": []
+    },
+    "activemq": {
+      "title": "ActiveMQ",
+      "sourceId": "sNYYEBMHV_NO_NToP51VY",
+      "type": "subtopic",
+      "order": 112,
+      "summary": "ActiveMQ is an open-source message broker written in Java that implements the Java Message Service (JMS) API. It can be used to send and receive messages between different applications in a loosely coupled, asynchronous manner. ActiveMQ supports a variety of messaging protocols, including JMS, AMQP, STOMP, MQTT, and OpenWire.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Is ActiveMQ And How Can You Use It?",
+          "url": "https://www.c-sharpcorner.com/article/what-is-activemq-and-how-can-you-use-it/"
+        },
+        {
+          "type": "article",
+          "title": "Messaging with .NET and ActiveMQ",
+          "url": "https://remark.wordpress.com/articles/messaging-with-net-and-activemq/"
+        },
+        {
+          "type": "article",
+          "title": "Messaging with ActiveMQ and ASP.NET",
+          "url": "https://havret.io/activemq-artemis-net-core"
+        }
+      ],
+      "parents": [
+        "messageBrokers"
+      ],
+      "children": []
+    },
+    "lightBdd": {
+      "title": "Light BDD",
+      "sourceId": "aWRv5sU9dksgcpE9RGJb1",
+      "type": "subtopic",
+      "order": 113,
+      "summary": "LightBDD is an open-source, lightweight, and easy-to-use BDD (Behavior-Driven Development) framework for .NET, which allows developers to write automated acceptance tests in a simple and readable format. LightBDD is commonly used in the context of ASP.NET and other .NET technologies, to write acceptance tests for web applications. LightBDD is designed to provide a simple, yet powerful, way to write BDD tests. It allows developers to write tests using a fluent API, which allows them to describe the behavior of their application in a natural language format. The framework also provides a set of extension methods, which can be used to add additional functionality, such as validating the output of a test, logging test results, or integrating with other testing tools. LightBDD also comes with a built-in test runner, which makes it easy to execute tests and view the results. The framework supports a variety of test runners, such as NUnit, xUnit, and MSTest, and can be integrated with other BDD frameworks, such as SpecFlow and Cucumber.",
+      "video": {
+        "title": "Getting started with Behavior Driven Development (BDD) in .NET",
+        "url": "https://www.youtube.com/watch?v=EEeVU0z26u0"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "The Lightweight Behavior Driven Development test framework",
+          "url": "https://github.com/LightBDD/LightBDD"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Testing",
+          "url": "https://app.daily.dev/tags/testing?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "behaviorTesting"
+      ],
+      "children": []
+    },
+    "assertions": {
+      "title": "Assertions",
+      "sourceId": "TAKxVS6DfIhmSJ6oOQxOM",
+      "type": "label",
+      "order": 114,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "shouldly"
+      ]
+    },
+    "rabbitmq": {
+      "title": "RabbitMQ",
+      "sourceId": "KqvBn2_wvYhFdv0dBZMC9",
+      "type": "subtopic",
+      "order": 115,
+      "summary": "RabbitMQ is an open-source message broker software that implements the Advanced Message Queuing Protocol (AMQP). It is written in Erlang and can be used to send and receive messages between different applications in a loosely coupled, asynchronous manner. RabbitMQ supports a variety of messaging patterns, including point-to-point, publish-subscribe, and request-response.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction of RabbitMQ",
+          "url": "https://www.rabbitmq.com/tutorials/tutorial-one-dotnet.html"
+        },
+        {
+          "type": "article",
+          "title": "How to Use RabbitMQ in ASP NET?",
+          "url": "https://www.freecodespot.com/blog/use-rabbitmq-in-asp-net-core/"
+        },
+        {
+          "type": "article",
+          "title": "ASP.NET and RabbitMQ",
+          "url": "https://referbruv.com/blog/integrating-rabbitmq-with-aspnet-core-quickstart-with-an-example/"
+        }
+      ],
+      "parents": [
+        "messageBrokers"
+      ],
+      "children": []
+    },
+    "netmq": {
+      "title": "NetMQ",
+      "sourceId": "8d4f7_3VO03vy7YDWwPI9",
+      "type": "subtopic",
+      "order": 116,
+      "summary": "NetMQ is a lightweight, open-source messaging library for building distributed systems and real-time applications in .NET. It provides an API for sending and receiving messages using a variety of messaging patterns and protocols, including request-response, publish-subscribe, and push-pull.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Documentation of NetMQ",
+          "url": "https://netmq.readthedocs.io/en/latest/introduction/"
+        },
+        {
+          "type": "article",
+          "title": "NetMQ and creating a Dynamic Worker in .NET",
+          "url": "https://mikaelkoskinen.net/post/netmq-and-creating-a-dynamic-worker-per-task"
+        }
+      ],
+      "parents": [
+        "messageBrokers"
+      ],
+      "children": []
+    },
+    "shouldly": {
+      "title": "Shouldly",
+      "sourceId": "zhn-VLGPfV6FZT2OMl6zf",
+      "type": "subtopic",
+      "order": 117,
+      "summary": "Shouldly is a .NET library that provides a set of extension methods for writing expressive and readable assertions in unit tests, it's designed to be an alternative to traditional assertion libraries. In the context of ASP.NET, Shouldly can be used in conjunction with test frameworks such as MSTest, xUnit, and NUnit to write more expressive and readable unit tests for the application. It provides advanced features such as support for collection-specific assertions, support for asynchronous code, and support for custom types, also includes options to customize the error message.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to Use Shouldly to Improve Unit Tests in .NET?",
+          "url": "https://code-maze.com/improve-unit-tests-shouldly-dotnet/"
+        },
+        {
+          "type": "article",
+          "title": "Improve Test Asserts with Shouldly",
+          "url": "https://visualstudiomagazine.com/articles/2015/08/01/improve-test-asserts-with-shouldly.aspx?admgarea=ALM"
+        }
+      ],
+      "parents": [
+        "assertions"
+      ],
+      "children": []
+    },
+    "azureServiceBus": {
+      "title": "Azure Service Bus",
+      "sourceId": "gBuaVZfqJ0-g21sKohQtx",
+      "type": "subtopic",
+      "order": 118,
+      "summary": "Azure Service Bus is a scalable and reliable messaging platform that can handle a high volume of messages, it's also easy to use, has a lot of features like subscription, Topics, Dead Letter, and easy to integrate with other Azure services, and it's a managed service which means Microsoft takes care of the infrastructure and scaling. However, it's worth noting that Azure Service Bus is a paid service and the cost will depend on the number of messages and the size of the data that you are sending and receiving.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Getting Started With Azure Service Bus and ASP.NET Core",
+          "url": "https://www.c-sharpcorner.com/article/get-started-with-azure-service-bus-queues-asp-net-core-part-1/"
+        },
+        {
+          "type": "article",
+          "title": "How to Send & receive messages from Azure Service Bus queue (.NET)?",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues?tabs=passwordless"
+        },
+        {
+          "type": "article",
+          "title": "What is Azure Service Bus?",
+          "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Azure",
+          "url": "https://app.daily.dev/tags/azure?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "messageBrokers"
+      ],
+      "children": []
+    },
+    "githubActions": {
+      "title": "GitHub Actions",
+      "sourceId": "0-PLMXGlRyRzTk-EjXMs2",
+      "type": "subtopic",
+      "order": 119,
+      "summary": "GitHub Actions is a powerful and flexible automation platform that enables developers to create custom workflows for their software development lifecycle (SDLC) directly in their GitHub repository. It allows developers to automate various tasks, such as building, testing, and deploying code, directly from their GitHub repository.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Intro to GitHub Actions for .NET",
+          "url": "https://devblogs.microsoft.com/dotnet/dotnet-loves-github-actions/"
+        },
+        {
+          "type": "article",
+          "title": "Tutorial: Create a GitHub Action with .NET",
+          "url": "https://learn.microsoft.com/en-us/dotnet/devops/create-dotnet-github-action"
+        },
+        {
+          "type": "article",
+          "title": "Building and testing .NET",
+          "url": "https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GitHub",
+          "url": "https://app.daily.dev/tags/github?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "microservices"
+      ],
+      "children": []
+    },
+    "fakeDataGeneration": {
+      "title": "Fake Data Generation",
+      "sourceId": "GbK3uwt1x7Bp_rSXCHYwL",
+      "type": "label",
+      "order": 120,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "autofixture"
+      ]
+    },
+    "mocking": {
+      "title": "Mocking",
+      "sourceId": "nYOf8Q0lWnzBdGRHbdwwq",
+      "type": "label",
+      "order": 121,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "nsubstitute",
+        "moq",
+        "fakeiteasy"
+      ]
+    },
+    "azurePipelines": {
+      "title": "Azure Pipelines",
+      "sourceId": "_-GQNpsb7KZw76hNNOq3h",
+      "type": "subtopic",
+      "order": 122,
+      "summary": "Azure Pipelines is a continuous integration and continuous delivery (CI/CD) platform that allows developers to automate the process of building, testing, and deploying code. It is a part of the Azure DevOps suite of tools and can be used to automate the software development process for various languages and platforms, including ASP.NET.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Deploy ASP.NET Apps with Azure Pipelines",
+          "url": "https://learn.microsoft.com/en-us/training/modules/deploy-aspnet-apps-azure-app-service-pipelines/"
+        },
+        {
+          "type": "article",
+          "title": "Build ASP.NET apps with .NET Framework",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/aspnet/build-aspnet-4?view=azure-devops"
+        },
+        {
+          "type": "article",
+          "title": "How to Build, test & deploy .NET Apps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops&tabs=dotnetfive"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Azure",
+          "url": "https://app.daily.dev/tags/azure?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "microservices"
+      ],
+      "children": []
+    },
+    "messageBus": {
+      "title": "Message Bus",
+      "sourceId": "X0hmqW8LAkhBGprxP8iBo",
+      "type": "label",
+      "order": 123,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "nservicebus",
+        "massTransit",
+        "easynetq"
+      ]
+    },
+    "nsubstitute": {
+      "title": "NSubstitute",
+      "sourceId": "iZCxinqlVefBk5-ICqt4v",
+      "type": "subtopic",
+      "order": 124,
+      "summary": "NSubstitute is a popular open-source .NET library that allows developers to create mock objects for use in unit testing, it is a powerful and flexible substitute for traditional mocking frameworks such as Moq and Rhino Mocks. In the context of ASP.NET, NSubstitute can be used to create mock objects for testing web applications built using the ASP.NET framework, it provides a simple and intuitive syntax for creating mock objects, setting up mock behavior, and making assertions on calls made to the mock objects. NSubstitute supports a wide range of testing frameworks and test runners, including MSTest, NUnit, and xUnit and it also supports various platforms including .NET Framework, .NET Core, Xamarin and Unity.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Overview of NSubstitute",
+          "url": "https://github.com/nsubstitute/NSubstitute"
+        },
+        {
+          "type": "article",
+          "title": "Getting started NSubstitute",
+          "url": "https://nsubstitute.github.io/help/getting-started/"
+        }
+      ],
+      "parents": [
+        "mocking"
+      ],
+      "children": []
+    },
+    "autofixture": {
+      "title": "AutoFixture",
+      "sourceId": "K49M_7gSpfJuZaE6WaHxQ",
+      "type": "subtopic",
+      "order": 125,
+      "summary": "AutoFixture is an open-source .NET library designed to minimize the 'Arrange' phase of your unit tests by creating object instances automatically with dummy data. It helps reduce boilerplate code and makes tests easier to maintain.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Quick start to AutoFixture",
+          "url": "https://autofixture.github.io/docs/quick-start/"
+        }
+      ],
+      "parents": [
+        "fakeDataGeneration"
+      ],
+      "children": []
+    },
+    "nservicebus": {
+      "title": "NServiceBus",
+      "sourceId": "vf8W1FLhcb3awx4JBaY5r",
+      "type": "subtopic",
+      "order": 126,
+      "summary": "NServiceBus (NSB) is a service bus framework for building distributed systems using the .NET framework. It provides a set of features for building message-based, loosely-coupled applications, including support for message routing, message handling, and message persistence.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Using NServiceBus in an ASP.NET",
+          "url": "https://docs.particular.net/samples/web/send-from-aspnetcore-webapi/"
+        },
+        {
+          "type": "article",
+          "title": "Learn NServiceBus from .NET Core",
+          "url": "https://www.codeproject.com/Articles/1224839/Learn-NServiceBus-from-NET-Core-WebAPI"
+        }
+      ],
+      "parents": [
+        "messageBus"
+      ],
+      "children": []
+    },
+    "moq": {
+      "title": "Moq",
+      "sourceId": "eyOXWb1kL80Wqiwc2WHd_",
+      "type": "subtopic",
+      "order": 129,
+      "summary": "Moq is an open-source library for .NET that allows developers to create mock objects for use in unit testing, it is a popular mocking framework that provides a simple and intuitive syntax for creating mock objects and setting up mock behavior. In the context of ASP.NET, Moq can be used to create mock objects for testing web applications built using the ASP.NET framework, it provides a simple and expressive syntax for creating mock objects and setting up mock behavior. Moq supports a wide range of testing frameworks, including MSTest, NUnit, and xUnit and it also supports various platforms including .NET Framework, .NET Core and Xamarin. Moq is lightweight and easy to use, making it a good choice for developers who are new to mocking and unit testing, it also provides a rich set of features, such as support for setting up mock behavior, making assertions on calls made to the mock objects, and more.",
+      "video": {
+        "title": "Getting started with Mocking using Moq in .NET",
+        "url": "https://www.youtube.com/watch?v=9ZvDBSQa_so"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is use of Moq?",
+          "url": "https://stackoverflow.com/questions/678878/what-is-use-of-moq"
+        },
+        {
+          "type": "article",
+          "title": "Moq - Unit Test In .NET Core App",
+          "url": "https://www.c-sharpcorner.com/article/moq-unit-test-net-core-app-using-mock-object/"
+        }
+      ],
+      "parents": [
+        "mocking"
+      ],
+      "children": []
+    },
+    "fakeiteasy": {
+      "title": "FakeItEasy",
+      "sourceId": "diRJ_F6kx42Ucs0fxidtZ",
+      "type": "subtopic",
+      "order": 130,
+      "summary": "FakeItEasy is an open-source library for .NET that allows developers to create fake objects for use in unit testing, it is a powerful and easy-to-use mocking framework that provides a simple and intuitive syntax for creating fake objects and setting up fake behavior. In the context of ASP.NET, FakeItEasy can be used to create fake objects for testing web applications built using the ASP.NET framework, it provides a simple and expressive syntax for creating fake objects and setting up fake behavior. FakeItEasy supports a wide range of testing frameworks, including MSTest, NUnit, and xUnit. FakeItEasy is lightweight and easy to use, making it a good choice for developers who are new to mocking and unit testing, it also provides a rich set of features, such as support for setting up fake behavior, making assertions on calls made to the fake objects, and more. It also has a wide range of extension points for customizing the fakes to suit different needs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Easy mocking in C# code with FakeItEasy library",
+          "url": "https://devislandblog.wordpress.com/2018/05/09/easy-mocking-in-c-code-with-fakeiteasy-library/"
+        },
+        {
+          "type": "article",
+          "title": "FakeItEasy when testing ASP.NET Core controllers",
+          "url": "https://stackoverflow.com/questions/56170818/how-to-fake-an-interface-method-dynamically-with-fakeiteasy-when-testing-asp-net"
+        }
+      ],
+      "parents": [
+        "mocking"
+      ],
+      "children": []
+    },
+    "massTransit": {
+      "title": "Mass Transit",
+      "sourceId": "SQKIUa_UsJ4cls-Vs9yHU",
+      "type": "subtopic",
+      "order": 131,
+      "summary": "MassTransit is an open-source, highly configurable service bus framework for building distributed systems using the .NET framework. It allows developers to easily create message-based, loosely-coupled applications by providing a simple and fluent API for defining message contracts, handling messages, and managing message routing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Complete guide to MassTransit",
+          "url": "https://github.com/MassTransit/MassTransit"
+        },
+        {
+          "type": "article",
+          "title": "Using MassTransit with RabbitMQ in ASP.NET Core",
+          "url": "https://code-maze.com/masstransit-rabbitmq-aspnetcore/"
+        }
+      ],
+      "parents": [
+        "messageBus"
+      ],
+      "children": []
+    },
+    "circleCi": {
+      "title": "Circle CI",
+      "sourceId": "KyGjXgG6JFo42qOV0wqfB",
+      "type": "subtopic",
+      "order": 132,
+      "summary": "CircleCI is a cloud-based continuous integration and continuous delivery (CI/CD) platform that allows developers to automate the process of building, testing, and deploying code. It is a popular platform that supports a wide range of languages and frameworks, including ASP.NET.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Building and testing an ASP.NET apps with CircleCI",
+          "url": "https://circleci.com/blog/building-and-testing-an-asp-net-core-application/"
+        },
+        {
+          "type": "article",
+          "title": "How to Setup CircleCI for ASP.NET project",
+          "url": "https://discuss.circleci.com/t/setup-circleci-for-asp-net-project/33796s"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about CI/CD",
+          "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "ciCd"
+      ],
+      "children": []
+    },
+    "easynetq": {
+      "title": "EasyNetQ",
+      "sourceId": "X6iSHoHnFFMaGb6YPQFhl",
+      "type": "subtopic",
+      "order": 133,
+      "summary": "EasyNetQ is a simple and easy-to-use .NET client for RabbitMQ, a popular open-source message broker. It provides a simple and fluent API for connecting to RabbitMQ, publishing and consuming messages, and managing message queues.",
+      "video": {
+        "title": "RabbitMQ with EasyNetQ Tutorials",
+        "url": "https://www.youtube.com/watch?v=CqxV_Xn4PlI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Overview of EasyNetQ",
+          "url": "https://easynetq.com/"
+        }
+      ],
+      "parents": [
+        "messageBus"
+      ],
+      "children": []
+    },
+    "apiGateway": {
+      "title": "API Gateway",
+      "sourceId": "TY3iovpKLvTqPQmbQFTRW",
+      "type": "label",
+      "order": 134,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "ocelot",
+        "yarp"
+      ]
+    },
+    "ciCd": {
+      "title": "CI / CD",
+      "sourceId": "KIFmahcNiSo2NGoLtAyRR",
+      "type": "topic",
+      "order": 135,
+      "summary": "CI/CD (Continuous Integration/Continuous Deployment) is a software development practice that involves automating the process of building, testing, and deploying code changes. It is a popular practice among software development teams, as it helps to ensure that code changes are integrated, tested, and deployed quickly and reliably.",
+      "video": {
+        "title": "Building a CI/CD Pipeline in Azure DevOps for ASP.NET Core",
+        "url": "https://youtube.com/watch?v=eOQL0nXQlLs"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to reate a CI/CD pipeline for ASP.NET?",
+          "url": "https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about CI/CD",
+          "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "microservices"
+      ],
+      "children": [
+        "circleCi",
+        "softwareDesignAndArchitecture"
+      ]
+    },
+    "softwareDesignAndArchitecture": {
+      "title": "Software Design and Architecture",
+      "sourceId": "RX_6yD1QGLEGwV4j6z_g-",
+      "type": "button",
+      "order": 136,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "ciCd"
+      ],
+      "children": []
+    },
+    "ocelot": {
+      "title": "Ocelot",
+      "sourceId": "2k-rGuhYTTAR9XN3aDAnW",
+      "type": "subtopic",
+      "order": 137,
+      "summary": "Ocelot is an open-source API gateway for ASP.NET Core. It is designed to work as a reverse proxy, routing incoming requests to the appropriate service and aggregating the responses to return to the client. Ocelot allows you to define routing rules, handle requests and responses, and perform other common API gateway tasks such as rate limiting, caching, and authentication.",
+      "video": {
+        "title": "Building an API Gateway in ASP.NET using Ocelotss",
+        "url": "https://www.youtube.com/watch?v=hlUGZ6Hmv6s"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Implement API Gateways with Ocelot",
+          "url": "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/implement-api-gateways-with-ocelot"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started with Ocelot",
+          "url": "https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html"
+        }
+      ],
+      "parents": [
+        "apiGateway"
+      ],
+      "children": []
+    },
+    "yarp": {
+      "title": "YARP",
+      "sourceId": "2axfolu26P8XwxMxgMaS3",
+      "type": "subtopic",
+      "order": 138,
+      "summary": "YARP is a library to help create reverse proxy servers that are high-performance, production-ready, and highly customizable. YARP is built on .NET using the infrastructure from ASP.NET and .NET (.NET 6 and newer). The key differentiator for YARP is that it's been designed to be easily customized and tweaked via .NET code to match the specific needs of each deployment scenario. YARP is designed with customizability as a primary scenario rather than requiring you to break out to script or rebuild the library from source.",
+      "video": {
+        "title": "YARP: The .NET Reverse proxy",
+        "url": "https://www.youtube.com/watch?v=1IqQkNcsqWE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Getting Started with YARP",
+          "url": "https://microsoft.github.io/reverse-proxy/articles/getting-started.html"
+        }
+      ],
+      "parents": [
+        "apiGateway"
+      ],
+      "children": []
+    },
+    "containerization": {
+      "title": "Containerization",
+      "sourceId": "4ObSoVqiiYzV_Ph0UdSr-",
+      "type": "label",
+      "order": 139,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "docker",
+        "kubernetes"
+      ]
+    },
+    "razor": {
+      "title": "Razor",
+      "sourceId": "nUE2-egUMNFQoPVrVRFPl",
+      "type": "subtopic",
+      "order": 140,
+      "summary": "Razor is a markup syntax for embedding server-side code in web pages. It was introduced with ASP.NET MVC 3 and later became a part of ASP.NET Web Pages. It allows developers to write server-side code using Cor Visual Basic and embed it in HTML markup. Its syntax is designed to be compact and easy to read. It provides a rich set of features for building web applications, such as a component model for building reusable UI, a routing system for navigation, and support for dependency injection, it also allows you to use the same libraries, frameworks, and tools that you're already familiar with from building traditional ASP.NET web applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to ASP.NET Web Programming Using Razor",
+          "url": "https://learn.microsoft.com/en-us/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c"
+        },
+        {
+          "type": "article",
+          "title": "An Introduction To Razor",
+          "url": "https://khalidabuhakmeh.com/what-is-razor-aspnet"
+        }
+      ],
+      "parents": [
+        "templateEngines"
+      ],
+      "children": []
+    },
+    "docker": {
+      "title": "Docker",
+      "sourceId": "rmRESzLiZNWdBFXLrwQFJ",
+      "type": "subtopic",
+      "order": 141,
+      "summary": "Docker is a platform for developing, shipping, and running applications in containers. A container is a lightweight, standalone, and executable package of software that includes everything needed to run a piece of software, including the code, a runtime, system tools, libraries, and settings.",
+      "video": {
+        "title": "What is Docker, Why use it?",
+        "url": "https://www.youtube.com/watch?v=vmnvOITMoIg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "ASP.NET and Docker",
+          "url": "https://www.tatvasoft.com/blog/asp-net-core-and-docker/"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to .NET and Docker",
+          "url": "https://learn.microsoft.com/en-us/dotnet/core/docker/introduction"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Docker",
+          "url": "https://app.daily.dev/tags/docker?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "containerization"
+      ],
+      "children": []
+    },
+    "templateEngines": {
+      "title": "Template Engines",
+      "sourceId": "C85aJvrzj6rP2Hmfj9uPB",
+      "type": "topic",
+      "order": 143,
+      "summary": "Template engines in ASP.NET are libraries that allow developers to embed dynamic data in HTML templates. These engines are used to separate the logic of the application from the presentation of the data, making it easy to change the appearance of the application without having to change the underlying code.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Template Engine in ASP.NET",
+          "url": "https://ej2.syncfusion.com/aspnetmvc/documentation/common/template-engine"
+        },
+        {
+          "type": "article",
+          "title": "How to to Create Custom Templates using the .Net Template Engine ",
+          "url": "https://www.infoq.com/articles/dotnet-core-template-engine/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "razor",
+        "scriban",
+        "fluid"
+      ]
+    },
+    "scriban": {
+      "title": "Scriban",
+      "sourceId": "dWB5OCvWVYkD30Op_dMwy",
+      "type": "subtopic",
+      "order": 144,
+      "summary": "Scriban is an open-source, lightweight template engine for .NET that is based on the Lua programming language. It is designed to be simple and easy to use, while still providing a powerful set of features for creating and manipulating templates. It provides a simple and easy-to-use API for parsing and rendering templates, and supports a wide range of features such as variables, loops, conditionals, and functions. It also provides a wide range of built-in functions for working with strings, numbers, dates, and other types of data, and also supports advanced features such as scripting and metaprogramming.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Guide to Scriban in ASP.NET",
+          "url": "https://github.com/scriban/scriban"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to Scriban",
+          "url": "https://www.markvanaalst.com/blog/sxa/sxa-9-3-introducing-scriban/"
+        }
+      ],
+      "parents": [
+        "templateEngines"
+      ],
+      "children": []
+    },
+    "blazor": {
+      "title": "Blazor",
+      "sourceId": "4iD_hDtgJ15IlJGxiO-E8",
+      "type": "subtopic",
+      "order": 145,
+      "summary": "Blazor is a framework for building web applications using Cand .NET that runs in the browser via WebAssembly. It allows developers to write Ccode that runs directly in the browser, eliminating the need for JavaScript.",
+      "video": {
+        "title": "Tutorial of ASP.NET Core Blazor",
+        "url": "https://www.youtube.com/watch?v=LyO4zj6NRuc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Guide to ASP.NET Core Blazor",
+          "url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-7.0"
+        },
+        {
+          "type": "article",
+          "title": "What Is Blazor And How It Works?",
+          "url": "https://www.c-sharpcorner.com/article/what-is-blazor-and-how-does-it-works/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Blazor",
+          "url": "https://app.daily.dev/tags/blazor?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "frameworks"
+      ],
+      "children": []
+    },
+    "kubernetes": {
+      "title": "Kubernetes",
+      "sourceId": "02rtFStTeIm8prNskxaUN",
+      "type": "subtopic",
+      "order": 146,
+      "summary": "Kubernetes is an open source container management platform, and the dominant product in this space. Using Kubernetes, teams can deploy images across multiple underlying hosts, defining their desired availability, deployment logic, and scaling logic in YAML. Kubernetes evolved from Borg, an internal Google platform used to provision and allocate compute resources (similar to the Autopilot and Aquaman systems of Microsoft Azure).",
+      "video": {
+        "title": "Kubernetes Crash Course for Absolute Beginners",
+        "url": "https://www.youtube.com/watch?v=s_o8dwzRlu4"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Kubernetes Website",
+          "url": "https://kubernetes.io/"
+        },
+        {
+          "type": "official",
+          "title": "Kubernetes Documentation",
+          "url": "https://kubernetes.io/docs/home/"
+        },
+        {
+          "type": "article",
+          "title": "Primer: How Kubernetes Came to Be, What It Is, and Why You Should Care",
+          "url": "https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/"
+        },
+        {
+          "type": "article",
+          "title": "Kubernetes: An Overview",
+          "url": "https://thenewstack.io/kubernetes-an-overview/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Kubernetes",
+          "url": "https://app.daily.dev/tags/kubernetes?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "containerization"
+      ],
+      "children": []
+    },
+    "fluid": {
+      "title": "Fluid",
+      "sourceId": "ZaOhWWDgVxrn0hbesJ7xT",
+      "type": "subtopic",
+      "order": 147,
+      "summary": "Fluid is a template engine for .NET that is based on the Fluid template language, it is similar to Liquid, but it's written in C. It provides a simple and easy-to-use API for parsing and rendering templates, and supports a wide range of features such as variables, loops, conditionals, and functions. It also provides a wide range of built-in functions for working with strings, numbers, dates, and other types of data. It also supports advanced features such as scripting and metaprogramming. It is often used in web applications to separate the logic of the application from the presentation of the data, making it easy to change the appearance of the application without having to change the underlying code.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Overview of Fluid",
+          "url": "https://github.com/sebastienros/fluid"
+        }
+      ],
+      "parents": [
+        "templateEngines"
+      ],
+      "children": []
+    },
+    "frameworks": {
+      "title": "Frameworks",
+      "sourceId": "1YL7aXluINOO15W3waaiD",
+      "type": "topic",
+      "order": 148,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "mediatr",
+        "blazor",
+        "netMaui"
+      ]
+    },
+    "netMaui": {
+      "title": ".NET MAUI",
+      "sourceId": "olqSPUU3RoxhQ6exfMzeN",
+      "type": "subtopic",
+      "order": 149,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "frameworks"
+      ],
+      "children": []
+    },
+    "other": {
+      "title": "Other",
+      "sourceId": "Kq2TQn9DN1bIy9fWSSCkP",
+      "type": "label",
+      "order": 150,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "orleans",
+        "steeltoe",
+        "dapr"
+      ]
+    },
+    "mediatr": {
+      "title": "MediatR",
+      "sourceId": "cc0UNQwbDlySue-CvpChR",
+      "type": "subtopic",
+      "order": 153,
+      "summary": "MediatR is an open-source library for .NET that is designed to simplify the process of handling messages and commands in a clean, decoupled manner. It's particularly useful in applications that use the Command-Query Responsibility Segregation (CQRS) pattern and event-driven architecture. It provides a simple and easy-to-use API for handling messages, and supports the concept of pipelines, which allow you to add additional behavior to message handling, such as logging, validation, and exception handling.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Use MediatR in ASP.NET or ASP.NET Core",
+          "url": "https://medium.com/dotnet-hub/use-mediatr-in-asp-net-or-asp-net-core-cqrs-and-mediator-in-dotnet-how-to-use-mediatr-cqrs-aspnetcore-5076e2f2880c"
+        },
+        {
+          "type": "article",
+          "title": "How to implement CQRS using MediatR in an ASP.NET?",
+          "url": "https://christian-schou.dk/blog/how-to-implement-cqrs-with-mediatr-in-asp-net/"
+        }
+      ],
+      "parents": [
+        "frameworks"
+      ],
+      "children": []
+    },
+    "orleans": {
+      "title": "Orleans",
+      "sourceId": "XKsLqDDco5OXKURCcWAmv",
+      "type": "subtopic",
+      "order": 154,
+      "summary": "Orleans is an open-source virtual actor model framework for building distributed, high-scale, and low-latency applications in .NET. It is designed to make it easy to build and operate large-scale, distributed systems, such as cloud services, IoT applications, and gaming servers.",
+      "video": {
+        "title": "Building real applications with Orleans",
+        "url": "https://www.youtube.com/watch?v=8duFuggnj8o"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Microsoft Orleans",
+          "url": "https://learn.microsoft.com/en-us/dotnet/orleans/overview"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to Orleans",
+          "url": "https://dev.to/willvelida/introduction-to-microsoft-orleans-796"
+        }
+      ],
+      "parents": [
+        "other"
+      ],
+      "children": []
+    },
+    "steeltoe": {
+      "title": "SteelToe",
+      "sourceId": "s8evqe2MireS1UhxoXrd1",
+      "type": "subtopic",
+      "order": 155,
+      "summary": "Steeltoe is an open-source project that provides a set of libraries for building cloud-native applications on the .NET platform. The libraries are designed to work with the .NET Core runtime and provide a set of abstractions for common cloud-native patterns, such as service discovery, configuration management, and circuit breaking. The goal of Steeltoe is to make it easy for developers to take advantage of the cloud-native capabilities of the .NET platform and build resilient and scalable applications.",
+      "video": {
+        "title": ".NET Microservices with Steeltoe",
+        "url": "https://www.youtube.com/watch?v=QLRi6iPapVg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": ".NET Microservices with Steeltoe",
+          "url": "https://learn.microsoft.com/en-us/shows/on-net/net-microservices-with-steeltoe"
+        },
+        {
+          "type": "article",
+          "title": "Steeltoe Documentation",
+          "url": "https://docs.steeltoe.io/api/v3/welcome/index.html"
+        }
+      ],
+      "parents": [
+        "other"
+      ],
+      "children": []
+    },
+    "fluentvalidation": {
+      "title": "FluentValidation",
+      "sourceId": "sa0zXd8lpNs_SFQ2y-PY4",
+      "type": "subtopic",
+      "order": 156,
+      "summary": "FluentValidation is an open-source library for .NET that provides a fluent, easy-to-use API for validating domain models. It allows developers to define validation rules using a fluent, chainable syntax. It separates validation rules into separate classes called validators, it supports async validation, custom validation rules, and cascading validation. It makes it easy to read and understand the validation logic, and it returns a ValidationResult object, which contains information about any validation errors that were found.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Documentations of FluentValidation",
+          "url": "https://docs.fluentvalidation.net/en/latest/"
+        },
+        {
+          "type": "article",
+          "title": "FluentValidation in ASP.NET Core",
+          "url": "https://docs.fluentvalidation.net/en/latest/aspnet.html"
+        },
+        {
+          "type": "article",
+          "title": "Overview of FluentValidation in ASP.NET Core",
+          "url": "https://code-maze.com/fluentvalidation-in-aspnet/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "dapr": {
+      "title": "Dapr",
+      "sourceId": "IHY9uL3dzYmf2D2wWgIh-",
+      "type": "subtopic",
+      "order": 158,
+      "summary": "Dapr (Distributed Application Runtime) is an open-source, portable runtime that makes it easy to build microservices-based applications that run on the cloud and edge. It provides a set of building blocks for building microservices, including service discovery, state management, pub-sub messaging, and more. It is designed to be language-agnostic, so it can be used with any programming language, including .NET.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Get started with Dapr",
+          "url": "https://learn.microsoft.com/en-us/dotnet/architecture/dapr-for-net-developers/getting-started"
+        },
+        {
+          "type": "article",
+          "title": "Building an event-driven .NET Core app with Dapr",
+          "url": "https://medium.com/polarsquad/building-an-event-driven-net-core-app-with-dapr-58cc83ab120b"
+        }
+      ],
+      "parents": [
+        "other"
+      ],
+      "children": []
+    },
+    "polly": {
+      "title": "Polly",
+      "sourceId": "gQhiEpvx__70N1WbEHGYJ",
+      "type": "subtopic",
+      "order": 159,
+      "summary": "Polly is an open-source library for .NET that provides a simple and flexible API for handling transient faults and other types of errors that occur during the execution of a service. It allows developers to define a set of policies, such as retry, circuit breaker, and timeout, that can be used to handle specific types of errors and improve the resiliency of the service. It provides a fluent API that makes it easy to define and configure policies, supports advanced features such as async and sync execution, fallback policies, and policy wrapping. Additionally, it allows to specify the exception type that is thrown and it would trigger the policy.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Using Polly for .NET Resilience",
+          "url": "https://www.telerik.com/blogs/using-polly-for-net-resilience-and-transient-fault-handling-with-net-core"
+        },
+        {
+          "type": "article",
+          "title": "Build Resilient Microservices Using Polly In ASP.NET",
+          "url": "https://procodeguide.com/programming/polly-in-aspnet-core/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "nuke": {
+      "title": "Nuke",
+      "sourceId": "EsC1JwFOMOlQVelpmxISh",
+      "type": "subtopic",
+      "order": 161,
+      "summary": "NUKE (Build Automation for .NET) is an open-source build automation tool for .NET projects. It is designed to be simple, flexible, and extensible, making it easy to automate the build, test, and deployment process of your .NET projects.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to Build Automation with NUKE",
+          "url": "https://learn.microsoft.com/en-us/shows/on-net/build-automation-with-nuke"
+        },
+        {
+          "type": "article",
+          "title": "Automate your .NET project builds with NUKE",
+          "url": "https://laurentkempe.com/2022/02/02/automate-your-dotnet-project-builds-with-nuke-a-cross-platform-build-automation-solution/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "benchmarkNet": {
+      "title": "Benchmark.NET",
+      "sourceId": "9LEVN-uVEwxJooEiB9ApK",
+      "type": "subtopic",
+      "order": 163,
+      "summary": "BenchmarkDotNet is an open-source library for .NET that provides a simple and easy-to-use API for benchmarking the performance of code. It allows you to measure the performance of methods, classes, and entire assemblies, and provides a rich set of features for analyzing and comparing the results. It provides a wide range of performance metrics, such as CPU cycles, memory allocation, and garbage collection, and can generate detailed reports that include charts, tables, and source code highlighting. It has support for multithreading and a built-in support for .NET Core.",
+      "video": {
+        "title": "Benchmarking ASP.NET Applications with .NET Crank",
+        "url": "https://www.youtube.com/watch?v=2IgfrnG-128"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Benchmarking .NET Using BenchmarkDotNet",
+          "url": "https://www.codemag.com/Article/2209061/Benchmarking-.NET-6-Applications-Using-BenchmarkDotNet-A-Deep-Dive"
+        }
+      ],
+      "parents": [],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "learnTheBasicsOfC",
+      "to": "c",
+      "style": "dashed"
+    },
+    {
+      "from": "learnTheBasicsOfC",
+      "to": "net",
+      "style": "dashed"
+    },
+    {
+      "from": "generalDevelopmentSkills",
+      "to": "gitVersionControl",
+      "style": "dashed"
+    },
+    {
+      "from": "generalDevelopmentSkills",
+      "to": "githubGitlabBitbucket",
+      "style": "dashed"
+    },
+    {
+      "from": "generalDevelopmentSkills",
+      "to": "httpHttpsProtocol",
+      "style": "dashed"
+    },
+    {
+      "from": "generalDevelopmentSkills",
+      "to": "dataStructuresAndAlgorithms",
+      "style": "dashed"
+    },
+    {
+      "from": "generalDevelopmentSkills",
+      "to": "databaseFundamentals",
+      "style": "solid"
+    },
+    {
+      "from": "databaseFundamentals",
+      "to": "sqlBasics",
+      "style": "dashed"
+    },
+    {
+      "from": "databaseFundamentals",
+      "to": "databaseDesignBasics",
+      "style": "dashed"
+    },
+    {
+      "from": "databaseFundamentals",
+      "to": "storedProcedures",
+      "style": "dashed"
+    },
+    {
+      "from": "databaseFundamentals",
+      "to": "constraints",
+      "style": "dashed"
+    },
+    {
+      "from": "databaseFundamentals",
+      "to": "triggers",
+      "style": "dashed"
+    },
+    {
+      "from": "databaseFundamentals",
+      "to": "aspNetCoreBasics",
+      "style": "solid"
+    },
+    {
+      "from": "learnTheBasicsOfC",
+      "to": "stylecopRules",
+      "style": "dashed"
+    },
+    {
+      "from": "aspNetCoreBasics",
+      "to": "objectRelationalMapping",
+      "style": "solid"
+    },
+    {
+      "from": "dependencyInjection",
+      "to": "lifeCycles",
+      "style": "solid"
+    },
+    {
+      "from": "caching",
+      "to": "entityFramework2ndLevelCache",
+      "style": "dashed"
+    },
+    {
+      "from": "caching",
+      "to": "memoryCache",
+      "style": "dashed"
+    },
+    {
+      "from": "databases",
+      "to": "logFrameworks",
+      "style": "solid"
+    },
+    {
+      "from": "realTimeCommunication",
+      "to": "webSockets",
+      "style": "dashed"
+    },
+    {
+      "from": "realTimeCommunication",
+      "to": "signalrCore",
+      "style": "dashed"
+    },
+    {
+      "from": "realTimeCommunication",
+      "to": "objectMapping",
+      "style": "solid"
+    },
+    {
+      "from": "objectMapping",
+      "to": "automapper",
+      "style": "dashed"
+    },
+    {
+      "from": "objectMapping",
+      "to": "mapperly",
+      "style": "dashed"
+    },
+    {
+      "from": "objectMapping",
+      "to": "manualMapping",
+      "style": "dashed"
+    },
+    {
+      "from": "objectMapping",
+      "to": "taskScheduling",
+      "style": "solid"
+    },
+    {
+      "from": "taskScheduling",
+      "to": "hangfire",
+      "style": "dashed"
+    },
+    {
+      "from": "taskScheduling",
+      "to": "coravel",
+      "style": "dashed"
+    },
+    {
+      "from": "taskScheduling",
+      "to": "quartz",
+      "style": "dashed"
+    },
+    {
+      "from": "taskScheduling",
+      "to": "testing",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "microservices",
+      "style": "solid"
+    },
+    {
+      "from": "microservices",
+      "to": "ciCd",
+      "style": "solid"
+    },
+    {
+      "from": "ciCd",
+      "to": "softwareDesignAndArchitecture",
+      "style": "solid"
+    },
+    {
+      "from": "templateEngines",
+      "to": "razor",
+      "style": "dashed"
+    },
+    {
+      "from": "templateEngines",
+      "to": "scriban",
+      "style": "dashed"
+    },
+    {
+      "from": "templateEngines",
+      "to": "fluid",
+      "style": "dashed"
+    },
+    {
+      "from": "frameworks",
+      "to": "blazor",
+      "style": "dashed"
+    },
+    {
+      "from": "frameworks",
+      "to": "netMaui",
+      "style": "dashed"
+    },
+    {
+      "from": "learnTheBasicsOfC",
+      "to": "generalDevelopmentSkills",
+      "style": "solid"
+    },
+    {
+      "from": "aspNetCoreBasics",
+      "to": "mvc",
+      "style": "solid"
+    },
+    {
+      "from": "aspNetCoreBasics",
+      "to": "rest",
+      "style": "solid"
+    },
+    {
+      "from": "aspNetCoreBasics",
+      "to": "minimalApis",
+      "style": "solid"
+    },
+    {
+      "from": "objectRelationalMapping",
+      "to": "repodb",
+      "style": "solid"
+    },
+    {
+      "from": "objectRelationalMapping",
+      "to": "dapper",
+      "style": "solid"
+    },
+    {
+      "from": "objectRelationalMapping",
+      "to": "entityFrameworkCore",
+      "style": "solid"
+    },
+    {
+      "from": "aspNetCoreBasics",
+      "to": "razorPages",
+      "style": "solid"
+    },
+    {
+      "from": "objectRelationalMapping",
+      "to": "nhibernate",
+      "style": "solid"
+    },
+    {
+      "from": "objectRelationalMapping",
+      "to": "frameworkBasics",
+      "style": "solid"
+    },
+    {
+      "from": "dependencyInjection",
+      "to": "codeFirstMigrations",
+      "style": "solid"
+    },
+    {
+      "from": "caching",
+      "to": "redis",
+      "style": "solid"
+    },
+    {
+      "from": "dependencyInjection",
+      "to": "changeTrackerApi",
+      "style": "solid"
+    },
+    {
+      "from": "caching",
+      "to": "memcached",
+      "style": "solid"
+    },
+    {
+      "from": "lifeCycles",
+      "to": "scoped",
+      "style": "solid"
+    },
+    {
+      "from": "dependencyInjection",
+      "to": "lazyEagerExplicitLoading",
+      "style": "solid"
+    },
+    {
+      "from": "searchEngines",
+      "to": "appSettingsAndConfigs",
+      "style": "solid"
+    },
+    {
+      "from": "caching",
+      "to": "distributedCache",
+      "style": "solid"
+    },
+    {
+      "from": "lifeCycles",
+      "to": "transient",
+      "style": "solid"
+    },
+    {
+      "from": "diContainers",
+      "to": "scrutor",
+      "style": "solid"
+    },
+    {
+      "from": "lifeCycles",
+      "to": "singleton",
+      "style": "solid"
+    },
+    {
+      "from": "diContainers",
+      "to": "microsoftExtensions",
+      "style": "solid"
+    },
+    {
+      "from": "searchEngines",
+      "to": "elasticSearch",
+      "style": "solid"
+    },
+    {
+      "from": "cloud",
+      "to": "cosmosDb",
+      "style": "solid"
+    },
+    {
+      "from": "diContainers",
+      "to": "autofac",
+      "style": "solid"
+    },
+    {
+      "from": "relational",
+      "to": "solr",
+      "style": "solid"
+    },
+    {
+      "from": "relational",
+      "to": "sphinx",
+      "style": "solid"
+    },
+    {
+      "from": "nosql",
+      "to": "dynamoDb",
+      "style": "solid"
+    },
+    {
+      "from": "databases",
+      "to": "serilog",
+      "style": "solid"
+    },
+    {
+      "from": "logFrameworks",
+      "to": "nlog",
+      "style": "solid"
+    },
+    {
+      "from": "relational",
+      "to": "sqlServer",
+      "style": "solid"
+    },
+    {
+      "from": "nosql",
+      "to": "mongodb",
+      "style": "solid"
+    },
+    {
+      "from": "relational",
+      "to": "postgresql",
+      "style": "solid"
+    },
+    {
+      "from": "nosql",
+      "to": "cassandra",
+      "style": "solid"
+    },
+    {
+      "from": "graphql",
+      "to": "graphqlNet",
+      "style": "solid"
+    },
+    {
+      "from": "rest2",
+      "to": "gridlify",
+      "style": "solid"
+    },
+    {
+      "from": "relational",
+      "to": "mariadb",
+      "style": "solid"
+    },
+    {
+      "from": "nosql",
+      "to": "litedb",
+      "style": "solid"
+    },
+    {
+      "from": "graphql",
+      "to": "hotchocolate",
+      "style": "solid"
+    },
+    {
+      "from": "rest2",
+      "to": "odata",
+      "style": "solid"
+    },
+    {
+      "from": "relational",
+      "to": "mysql",
+      "style": "solid"
+    },
+    {
+      "from": "realTimeCommunication",
+      "to": "couchdb",
+      "style": "solid"
+    },
+    {
+      "from": "rest2",
+      "to": "grpc",
+      "style": "solid"
+    },
+    {
+      "from": "objectMapping",
+      "to": "nativeBackgroundService",
+      "style": "solid"
+    },
+    {
+      "from": "integrationTesting",
+      "to": "webapplicationfactory",
+      "style": "solid"
+    },
+    {
+      "from": "e2eTesting",
+      "to": "playwright",
+      "style": "solid"
+    },
+    {
+      "from": "e2eTesting",
+      "to": "puppeteer",
+      "style": "solid"
+    },
+    {
+      "from": "e2eTesting",
+      "to": "cypress",
+      "style": "solid"
+    },
+    {
+      "from": "unitTestingFrameworks",
+      "to": "mstest",
+      "style": "solid"
+    },
+    {
+      "from": "unitTestingFrameworks",
+      "to": "xunit",
+      "style": "solid"
+    },
+    {
+      "from": "unitTestingFrameworks",
+      "to": "nunit",
+      "style": "solid"
+    },
+    {
+      "from": "behaviorTesting",
+      "to": "specflow",
+      "style": "solid"
+    },
+    {
+      "from": "messageBrokers",
+      "to": "kafka",
+      "style": "solid"
+    },
+    {
+      "from": "messageBrokers",
+      "to": "activemq",
+      "style": "solid"
+    },
+    {
+      "from": "behaviorTesting",
+      "to": "lightBdd",
+      "style": "solid"
+    },
+    {
+      "from": "messageBrokers",
+      "to": "rabbitmq",
+      "style": "solid"
+    },
+    {
+      "from": "messageBrokers",
+      "to": "netmq",
+      "style": "solid"
+    },
+    {
+      "from": "assertions",
+      "to": "shouldly",
+      "style": "solid"
+    },
+    {
+      "from": "messageBrokers",
+      "to": "azureServiceBus",
+      "style": "solid"
+    },
+    {
+      "from": "microservices",
+      "to": "githubActions",
+      "style": "solid"
+    },
+    {
+      "from": "microservices",
+      "to": "azurePipelines",
+      "style": "solid"
+    },
+    {
+      "from": "mocking",
+      "to": "nsubstitute",
+      "style": "solid"
+    },
+    {
+      "from": "fakeDataGeneration",
+      "to": "autofixture",
+      "style": "solid"
+    },
+    {
+      "from": "messageBus",
+      "to": "nservicebus",
+      "style": "solid"
+    },
+    {
+      "from": "mocking",
+      "to": "moq",
+      "style": "solid"
+    },
+    {
+      "from": "mocking",
+      "to": "fakeiteasy",
+      "style": "solid"
+    },
+    {
+      "from": "messageBus",
+      "to": "massTransit",
+      "style": "solid"
+    },
+    {
+      "from": "ciCd",
+      "to": "circleCi",
+      "style": "solid"
+    },
+    {
+      "from": "messageBus",
+      "to": "easynetq",
+      "style": "solid"
+    },
+    {
+      "from": "apiGateway",
+      "to": "ocelot",
+      "style": "solid"
+    },
+    {
+      "from": "apiGateway",
+      "to": "yarp",
+      "style": "solid"
+    },
+    {
+      "from": "containerization",
+      "to": "docker",
+      "style": "solid"
+    },
+    {
+      "from": "containerization",
+      "to": "kubernetes",
+      "style": "solid"
+    },
+    {
+      "from": "frameworks",
+      "to": "mediatr",
+      "style": "solid"
+    },
+    {
+      "from": "other",
+      "to": "orleans",
+      "style": "solid"
+    },
+    {
+      "from": "other",
+      "to": "steeltoe",
+      "style": "solid"
+    },
+    {
+      "from": "other",
+      "to": "dapr",
+      "style": "solid"
+    }
+  ]
+}

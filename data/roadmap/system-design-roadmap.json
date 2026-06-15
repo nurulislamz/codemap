@@ -1,0 +1,4293 @@
+{
+  "title": "System Design Roadmap",
+  "summary": "Everything you need to know about designing large-scale systems in 2026",
+  "url": "https://roadmap.sh/system-design",
+  "order": [
+    "introduction",
+    "whatIsSystemDesign",
+    "howToApproachSystemDesign",
+    "performanceVsScalability",
+    "cpConsistencyPartitionTolerance",
+    "latencyVsThroughput",
+    "capTheorem",
+    "availabilityVsConsistency",
+    "weakConsistency",
+    "consistencyPatterns",
+    "eventualConsistency",
+    "strongConsistency",
+    "activePassive",
+    "masterMaster",
+    "availabilityPatterns",
+    "failOver",
+    "replication",
+    "availabilityInParallelVsSequence",
+    "eventDriven",
+    "availabilityInNumbers",
+    "backgroundJobs",
+    "scheduleDriven",
+    "pullCdns",
+    "returningResults",
+    "domainNameSystem",
+    "contentDeliveryNetworks",
+    "pushCdns",
+    "microservices",
+    "keyValueStore",
+    "lbVsReverseProxy",
+    "serviceDiscovery",
+    "documentStore",
+    "loadBalancingAlgorithms",
+    "wideColumnStore",
+    "applicationLayer",
+    "loadBalancers",
+    "layer7LoadBalancing",
+    "graphDatabases",
+    "layer4LoadBalancing",
+    "nosql",
+    "databases",
+    "horizontalScaling",
+    "sharding",
+    "sqlVsNosql",
+    "refreshAhead",
+    "caching",
+    "writeBehind",
+    "backPressure",
+    "denormalization",
+    "writeThrough",
+    "taskQueues",
+    "sqlTuning",
+    "asynchronism",
+    "cacheAside",
+    "messageQueues",
+    "rdbms",
+    "clientCaching",
+    "http",
+    "tcp",
+    "udp",
+    "communication",
+    "idempotentOperations",
+    "rpc",
+    "grpc",
+    "webServerCaching",
+    "rest",
+    "graphql",
+    "databaseCaching",
+    "performanceAntipatterns",
+    "applicationCaching",
+    "busyDatabase",
+    "improperInstantiation",
+    "busyFrontend",
+    "monolithicPersistence",
+    "chattyIO",
+    "noisyNeighbor",
+    "healthMonitoring",
+    "retryStorm",
+    "synchronousIO",
+    "availabilityMonitoring",
+    "noCaching",
+    "extraneousFetching",
+    "performanceMonitoring",
+    "monitoring",
+    "securityMonitoring",
+    "usageMonitoring",
+    "instrumentation",
+    "visualizationAlerts",
+    "cloudDesignPatterns",
+    "designImplementation",
+    "stranglerFig",
+    "sidecar",
+    "dataManagement",
+    "messaging",
+    "staticContentHosting2",
+    "sequentialConvoy",
+    "valetKey",
+    "leaderElection",
+    "cqrs2",
+    "schedulingAgentSupervisor",
+    "staticContentHosting",
+    "pipesFilters",
+    "ambassador",
+    "queueBasedLoadLeveling",
+    "sharding2",
+    "gatewayRouting",
+    "publisherSubscriber",
+    "materializedView",
+    "gatewayOffloading",
+    "priorityQueue",
+    "indexTable",
+    "gatewayAggregation",
+    "pipesAndFilters",
+    "eventSourcing",
+    "externalConfigStore",
+    "competingConsumers",
+    "cqrs",
+    "computeResourceConsolidation",
+    "choreography",
+    "cacheAside2",
+    "backendsForFrontend",
+    "claimCheck",
+    "antiCorruptionLayer",
+    "asyncRequestReply",
+    "reliabilityPatterns",
+    "availability",
+    "highAvailability",
+    "resiliency",
+    "deploymentStamps",
+    "deploymentStamps2",
+    "bulkhead2",
+    "throttling",
+    "geodes",
+    "geodes2",
+    "bulkhead",
+    "circuitBreaker2",
+    "healthEndpointMonitoring",
+    "healthEndpointMonitoring2",
+    "compensatingTransaction",
+    "circuitBreaker",
+    "queueBasedLoadLeveling2",
+    "healthEndpointMonitoring3",
+    "leaderElection2",
+    "security",
+    "queueBasedLoadLeveling3",
+    "federatedIdentity",
+    "retry",
+    "gatekeeper",
+    "schedulerAgentSupervisor",
+    "valetKey2",
+    "visitTheFollowingRelevantTracksToLearnMore"
+  ],
+  "topics": {
+    "introduction": {
+      "title": "Introduction",
+      "sourceId": "_hYN0gEi9BL24nptEtXWU",
+      "type": "topic",
+      "order": 1,
+      "summary": "System design is the process of defining the elements of a system, as well as their interactions and relationships, in order to satisfy a set of specified requirements.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "system-design"
+      ],
+      "children": [
+        "whatIsSystemDesign",
+        "howToApproachSystemDesign"
+      ]
+    },
+    "whatIsSystemDesign": {
+      "title": "What is System Design?",
+      "sourceId": "idLHBxhvcIqZTqmh_E8Az",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "System design is the process of defining the elements of a system, as well as their interactions and relationships, in order to satisfy a set of specified requirements.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "System Design: Complete Guide with Patterns, Examples, and Techniques",
+          "url": "https://swimm.io/learn/system-design/system-design-complete-guide-with-patterns-examples-and-techniques"
+        },
+        {
+          "type": "article",
+          "title": "A comprehensive guide to system design",
+          "url": "https://www.crio.do/blog/a-comprehensive-guide-to-system-design/"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "howToApproachSystemDesign": {
+      "title": "How to approach System Design?",
+      "sourceId": "os3Pa6W9SSNEzgmlBbglQ",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "There are several steps that can be taken when approaching a system design:",
+      "video": {
+        "title": "Intro to Architecture and Systems Design Interviews",
+        "url": "https://www.youtube.com/watch?v=ZgdS0EUmn70"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "How to approach System Design?",
+          "url": "https://github.com/donnemartin/system-design-primer#how-to-approach-a-system-design-interview-question"
+        },
+        {
+          "type": "article",
+          "title": "What are system design questions?",
+          "url": "https://www.hiredintech.com/system-design"
+        },
+        {
+          "type": "article",
+          "title": "My System Design Template",
+          "url": "https://leetcode.com/discuss/career/229177/My-System-Design-Template"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "performanceVsScalability": {
+      "title": "Performance vs Scalability",
+      "sourceId": "e_15lymUjFc6VWqzPnKxG",
+      "type": "topic",
+      "order": 4,
+      "summary": "A service is **scalable** if it results in increased **performance** in a manner proportional to resources added. Generally, increasing performance means serving more units of work, but it can also be to handle larger units of work, such as when datasets grow.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Scalability, Availability & Stability Patterns",
+          "url": "https://www.slideshare.net/jboner/scalability-availability-stability-patterns/"
+        },
+        {
+          "type": "article",
+          "title": "A Word on Scalability",
+          "url": "https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html"
+        },
+        {
+          "type": "article",
+          "title": "Performance vs Scalability",
+          "url": "https://blog.professorbeekums.com/performance-vs-scalability/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Performance",
+          "url": "https://app.daily.dev/tags/performance?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "cpConsistencyPartitionTolerance": {
+      "title": "CP - Consistency + Partition Tolerance",
+      "sourceId": "2b5j0CJbR1NahDu9VmB6F",
+      "type": "label",
+      "order": 6,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "capTheorem"
+      ]
+    },
+    "latencyVsThroughput": {
+      "title": "Latency vs Throughput",
+      "sourceId": "O3wAHLnzrkvLWr4afHDdr",
+      "type": "topic",
+      "order": 7,
+      "summary": "Latency and throughput are two important measures of a system's performance. **Latency** refers to the amount of time it takes for a system to respond to a request. **Throughput** refers to the number of requests that a system can handle at the same time.",
+      "video": {
+        "title": "Latency and Throughput - MIT",
+        "url": "https://www.youtube.com/watch?v=3HIV4MnLGCw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "System Design: Latency vs Throughput",
+          "url": "https://cs.fyi/guide/latency-vs-throughput/"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Latency versus Throughput",
+          "url": "https://community.cadence.com/cadence_blogs_8/b/fv/posts/understanding-latency-vs-throughput"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "capTheorem": {
+      "title": "CAP Theorem",
+      "sourceId": "tcGdVQsCEobdV9hgOq3eG",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "According to CAP theorem, in a distributed system, you can only support two of the following guarantees:",
+      "video": {
+        "title": "The CAP theorem",
+        "url": "https://www.youtube.com/watch?v=k-Yaq8AHlFA"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "CAP FAQ",
+          "url": "https://github.com/henryr/cap-faq"
+        },
+        {
+          "type": "article",
+          "title": "CAP theorem revisited",
+          "url": "http://robertgreiner.com/2014/08/cap-theorem-revisited/"
+        },
+        {
+          "type": "article",
+          "title": "A plain english introduction to CAP theorem",
+          "url": "http://ksat.me/a-plain-english-introduction-to-cap-theorem"
+        }
+      ],
+      "parents": [
+        "cpConsistencyPartitionTolerance"
+      ],
+      "children": []
+    },
+    "availabilityVsConsistency": {
+      "title": "Availability vs Consistency",
+      "sourceId": "uJc27BNAuP321HQNbjftn",
+      "type": "topic",
+      "order": 9,
+      "summary": "Availability refers to the ability of a system to provide its services to clients even in the presence of failures. This is often measured in terms of the percentage of time that the system is up and running, also known as its uptime.",
+      "video": {
+        "title": "CAP Theorem",
+        "url": "https://www.youtube.com/watch?v=_RbsFXWRZ10&t=1s"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "CAP FAQ",
+          "url": "https://github.com/henryr/cap-faq"
+        },
+        {
+          "type": "article",
+          "title": "CAP Theorem Revisited",
+          "url": "https://robertgreiner.com/cap-theorem-revisited/"
+        },
+        {
+          "type": "article",
+          "title": "A plain english introduction to CAP Theorem",
+          "url": "http://ksat.me/a-plain-english-introduction-to-cap-theorem"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "weakConsistency": {
+      "title": "Weak Consistency",
+      "sourceId": "EKD5AikZtwjtsEYRPJhQ2",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "After an update is made to the data, it is not guaranteed that any subsequent read operation will immediately reflect the changes made. The read may or may not see the recent write.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Consistency Patterns in Distributed Systems",
+          "url": "https://cs.fyi/guide/consistency-patterns-week-strong-eventual/"
+        }
+      ],
+      "parents": [
+        "consistencyPatterns"
+      ],
+      "children": []
+    },
+    "consistencyPatterns": {
+      "title": "Consistency Patterns",
+      "sourceId": "GHe8V-REu1loRpDnHbyUn",
+      "type": "topic",
+      "order": 11,
+      "summary": "Consistency patterns refer to the ways in which data is stored and managed in a distributed system, and how that data is made available to users and applications. There are three main types of consistency patterns:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Consistency Patterns in Distributed Systems",
+          "url": "https://cs.fyi/guide/consistency-patterns-week-strong-eventual/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "eventualConsistency",
+        "weakConsistency",
+        "strongConsistency",
+        "availabilityPatterns"
+      ]
+    },
+    "eventualConsistency": {
+      "title": "Eventual Consistency",
+      "sourceId": "rRDGVynX43inSeQ9lR_FS",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Eventual consistency is a form of Weak Consistency. After an update is made to the data, it will be eventually visible to any subsequent read operations. The data is replicated in an asynchronous manner, ensuring that all copies of the data are eventually updated.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Consistency Patterns in Distributed Systems",
+          "url": "https://cs.fyi/guide/consistency-patterns-week-strong-eventual/"
+        }
+      ],
+      "parents": [
+        "consistencyPatterns"
+      ],
+      "children": []
+    },
+    "strongConsistency": {
+      "title": "Strong Consistency",
+      "sourceId": "JjB7eB8gdRCAYf5M0RcT7",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "After an update is made to the data, it will be immediately visible to any subsequent read operations. The data is replicated in a synchronous manner, ensuring that all copies of the data are updated at the same time.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Consistency Patterns in Distributed Systems",
+          "url": "https://cs.fyi/guide/consistency-patterns-week-strong-eventual/"
+        }
+      ],
+      "parents": [
+        "consistencyPatterns"
+      ],
+      "children": []
+    },
+    "activePassive": {
+      "title": "Active - Passive",
+      "sourceId": "OUz9JOof4kkNAIsTzklS3",
+      "type": "label",
+      "order": 16,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "failOver"
+      ]
+    },
+    "masterMaster": {
+      "title": "Master - Master",
+      "sourceId": "K8xJZfEGkwOFcqb7CRJ7f",
+      "type": "label",
+      "order": 17,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "replication"
+      ]
+    },
+    "availabilityPatterns": {
+      "title": "Availability Patterns",
+      "sourceId": "ezptoTqeaepByegxS5kHL",
+      "type": "topic",
+      "order": 18,
+      "summary": "Availability patterns are established architectural approaches used to ensure a system remains operational and accessible to users, even in the face of failures or unexpected events. These patterns focus on minimizing downtime and maintaining a consistent level of service by incorporating redundancy, fault tolerance, and recovery mechanisms into the system's design. They provide a structured way to address potential points of failure and ensure business continuity.",
+      "video": {
+        "title": "Design Patterns for High Availability: What gets you 99.999% uptime?",
+        "url": "https://www.youtube.com/watch?v=LdvduBxZRLs"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "High Availability in System Design \u2013 15 Strategies for Always-On Systems",
+          "url": "https://www.designgurus.io/blog/high-availability-system-design-basics"
+        },
+        {
+          "type": "article",
+          "title": "System Design: Availability Patterns",
+          "url": "https://dev.to/decoders_lord/system-design-availability-patterns-104i"
+        }
+      ],
+      "parents": [
+        "consistencyPatterns"
+      ],
+      "children": [
+        "backgroundJobs"
+      ]
+    },
+    "failOver": {
+      "title": "Fail-Over",
+      "sourceId": "L_jRfjvMGjFbHEbozeVQl",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "Failover is an availability pattern that is used to ensure that a system can continue to function in the event of a failure. It involves having a backup component or system that can take over in the event of a failure.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Fail Over",
+          "url": "https://github.com/donnemartin/system-design-primer?tab=readme-ov-file#fail-over"
+        },
+        {
+          "type": "article",
+          "title": "Active-Passive vs. Active-Active Failover",
+          "url": "https://www.serverion.com/uncategorized/active-passive-vs-active-active-failover/"
+        }
+      ],
+      "parents": [
+        "activePassive"
+      ],
+      "children": []
+    },
+    "replication": {
+      "title": "Replication",
+      "sourceId": "0RQ5jzZKdadYY0h_QZ0Bb",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "Replication is an availability pattern that involves having multiple copies of the same data stored in different locations. In the event of a failure, the data can be retrieved from a different location. There are two main types of replication: Master-Master replication and Master-Slave replication.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Replication: Availability Pattern",
+          "url": "https://github.com/donnemartin/system-design-primer#replication"
+        },
+        {
+          "type": "article",
+          "title": "Database Replication Introduction: Types and Advantages",
+          "url": "https://www.enjoyalgorithms.com/blog/introduction-to-database-replication-system-design"
+        }
+      ],
+      "parents": [
+        "masterMaster"
+      ],
+      "children": []
+    },
+    "availabilityInParallelVsSequence": {
+      "title": "Availability in Parallel vs Sequence",
+      "sourceId": "XJrLBec_U4QXa7IOecFbL",
+      "type": "label",
+      "order": 23,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "availabilityInNumbers"
+      ]
+    },
+    "eventDriven": {
+      "title": "Event-Driven",
+      "sourceId": "NEsPjQifNDlZJE-2YLVl1",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "Event-driven invocation uses a trigger to start the background task. Examples of using event-driven triggers include:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Background Jobs - Event Driven Triggers",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs#event-driven-triggers"
+        }
+      ],
+      "parents": [
+        "backgroundJobs"
+      ],
+      "children": []
+    },
+    "availabilityInNumbers": {
+      "title": "Availability in Numbers",
+      "sourceId": "uHdrZllrZFAnVkwIB3y5-",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "Availability is often quantified by uptime (or downtime) as a percentage of time the service is available. Availability is generally measured in number of 9s--a service with 99.99% availability is described as having four 9s.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Availability in System Design",
+          "url": "https://www.enjoyalgorithms.com/blog/availability-system-design-concept/"
+        },
+        {
+          "type": "article",
+          "title": "Uptime calculator: How much downtime corresponds to 99.9 % uptime",
+          "url": "https://uptime.is/"
+        }
+      ],
+      "parents": [
+        "availabilityInParallelVsSequence"
+      ],
+      "children": []
+    },
+    "backgroundJobs": {
+      "title": "Background Jobs",
+      "sourceId": "DOESIlBThd_wp2uOSd_CS",
+      "type": "topic",
+      "order": 26,
+      "summary": "Background jobs in system design refer to tasks that are executed in the background, independently of the main execution flow of the system. These tasks are typically initiated by the system itself, rather than by a user or another external agent.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Background Jobs - Best Practices",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs"
+        }
+      ],
+      "parents": [
+        "availabilityPatterns"
+      ],
+      "children": [
+        "eventDriven",
+        "scheduleDriven",
+        "domainNameSystem"
+      ]
+    },
+    "scheduleDriven": {
+      "title": "Schedule Driven",
+      "sourceId": "zoViI4kzpKIxpU20T89K_",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "Schedule-driven invocation uses a timer to start the background task. Examples of using schedule-driven triggers include:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Schedule Driven - Background Jobs",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs#schedule-driven-triggers"
+        }
+      ],
+      "parents": [
+        "backgroundJobs"
+      ],
+      "children": [
+        "returningResults"
+      ]
+    },
+    "pullCdns": {
+      "title": "Pull CDNs",
+      "sourceId": "HkXiEMLqxJoQyAHav3ccL",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "Pull CDNs grab new content from your server when the first user requests the content. You leave the content on your server and rewrite URLs to point to the CDN. This results in a slower request until the content is cached on the CDN.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Introduction to CDNs",
+          "url": "https://github.com/donnemartin/system-design-primer#content-delivery-network"
+        },
+        {
+          "type": "article",
+          "title": "The Differences Between Push And Pull CDNs",
+          "url": "http://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/"
+        }
+      ],
+      "parents": [
+        "contentDeliveryNetworks"
+      ],
+      "children": []
+    },
+    "returningResults": {
+      "title": "Returning Results",
+      "sourceId": "2gRIstNT-fTkv5GZ692gx",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "Background jobs execute asynchronously in a separate process, or even in a separate location, from the UI or the process that invoked the background task. Ideally, background tasks are \"fire and forget\" operations, and their execution progress has no impact on the UI or the calling process. This means that the calling process does not wait for completion of the tasks. Therefore, it cannot automatically detect when the task ends.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Returning Results - Background Jobs",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs#returning-results"
+        }
+      ],
+      "parents": [
+        "scheduleDriven"
+      ],
+      "children": []
+    },
+    "domainNameSystem": {
+      "title": "Domain Name System",
+      "sourceId": "Uk6J8JRcKVEFz4_8rLfnQ",
+      "type": "topic",
+      "order": 30,
+      "summary": "A Domain Name System (DNS) translates a domain name such as www.example.com to an IP address.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Getting started with Domain Name System",
+          "url": "https://github.com/donnemartin/system-design-primer#domain-name-system"
+        },
+        {
+          "type": "article",
+          "title": "What is DNS?",
+          "url": "https://www.cloudflare.com/learning/dns/what-is-dns/"
+        },
+        {
+          "type": "article",
+          "title": "Latency Based",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-latency"
+        },
+        {
+          "type": "article",
+          "title": "Geolocation Based",
+          "url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-geo"
+        },
+        {
+          "type": "article",
+          "title": "Weighted Round Robin",
+          "url": "https://www.jscape.com/blog/load-balancing-algorithms"
+        }
+      ],
+      "parents": [
+        "backgroundJobs"
+      ],
+      "children": [
+        "microservices",
+        "keyValueStore",
+        "contentDeliveryNetworks"
+      ]
+    },
+    "contentDeliveryNetworks": {
+      "title": "Content Delivery Networks",
+      "sourceId": "O730v5Ww3ByAiBSs6fwyM",
+      "type": "topic",
+      "order": 31,
+      "summary": "A content delivery network (CDN) is a globally distributed network of proxy servers, serving content from locations closer to the user. Generally, static files such as HTML/CSS/JS, photos, and videos are served from CDN, although some CDNs such as Amazon's CloudFront support dynamic content. The site's DNS resolution will tell clients which server to contact.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Introduction to CDNs",
+          "url": "https://github.com/donnemartin/system-design-primer#content-delivery-network"
+        },
+        {
+          "type": "article",
+          "title": "The Differences Between Push And Pull CDNs",
+          "url": "http://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/"
+        },
+        {
+          "type": "article",
+          "title": "Brief about Content delivery network",
+          "url": "https://en.wikipedia.org/wiki/Content_delivery_network"
+        }
+      ],
+      "parents": [
+        "domainNameSystem"
+      ],
+      "children": [
+        "pullCdns",
+        "pushCdns"
+      ]
+    },
+    "pushCdns": {
+      "title": "Push CDNs",
+      "sourceId": "uIerrf_oziiLg-KEyz8WM",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "Push CDNs receive new content whenever changes occur on your server. You take full responsibility for providing content, uploading directly to the CDN and rewriting URLs to point to the CDN. You can configure when content expires and when it is updated. Content is uploaded only when it is new or changed, minimizing traffic, but maximizing storage.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Introduction to CDNs",
+          "url": "https://github.com/donnemartin/system-design-primer#content-delivery-network"
+        }
+      ],
+      "parents": [
+        "contentDeliveryNetworks"
+      ],
+      "children": []
+    },
+    "microservices": {
+      "title": "Microservices",
+      "sourceId": "UKTiaHCzYXnrNw31lHriv",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "Related to the \"Application Layer\" discussion are microservices, which can be described as a suite of independently deployable, small, modular services. Each service runs a unique process and communicates through a well-defined, lightweight mechanism to serve a business goal. 1",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to Microservices",
+          "url": "https://aws.amazon.com/microservices/"
+        },
+        {
+          "type": "article",
+          "title": "Microservices - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Microservices"
+        },
+        {
+          "type": "article",
+          "title": "Microservices",
+          "url": "https://martinfowler.com/articles/microservices.html"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Microservices",
+          "url": "https://app.daily.dev/tags/microservices?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "domainNameSystem"
+      ],
+      "children": []
+    },
+    "keyValueStore": {
+      "title": "Key-Value Store",
+      "sourceId": "KFtdmmce4bRkDyvFXZzLN",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "A key-value store generally allows for `O(1)` reads and writes and is often backed by memory or SSD. Data stores can maintain keys in lexicographic order, allowing efficient retrieval of key ranges. Key-value stores can allow for storing of metadata with a value.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Key\u2013value database",
+          "url": "https://en.wikipedia.org/wiki/Key%E2%80%93value_database"
+        },
+        {
+          "type": "article",
+          "title": "What are the disadvantages of using a key/value table?",
+          "url": "https://stackoverflow.com/questions/4056093/what-are-the-disadvantages-of-using-a-key-value-table-over-nullable-columns-or"
+        }
+      ],
+      "parents": [
+        "domainNameSystem"
+      ],
+      "children": []
+    },
+    "lbVsReverseProxy": {
+      "title": "LB vs Reverse Proxy",
+      "sourceId": "ocdcbhHrwjJX0KWgmsOL6",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "* Deploying a load balancer is useful when you have multiple servers. Often, load balancers route traffic to a set of servers serving the same function. * Reverse proxies can be useful even with just one web server or application server, opening up the benefits described in the previous section. * Solutions such as NGINX and HAProxy can support both layer 7 reverse proxying and load balancing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Reverse Proxy vs Load Balancer",
+          "url": "https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/"
+        },
+        {
+          "type": "article",
+          "title": "NGINX Architecture",
+          "url": "https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/"
+        },
+        {
+          "type": "article",
+          "title": "HAProxy Architecture Guide",
+          "url": "http://www.haproxy.org/download/1.2/doc/architecture.txt"
+        },
+        {
+          "type": "article",
+          "title": "Reverse Proxy",
+          "url": "https://en.wikipedia.org/wiki/Reverse_proxy"
+        }
+      ],
+      "parents": [
+        "loadBalancers"
+      ],
+      "children": []
+    },
+    "serviceDiscovery": {
+      "title": "Service Discovery",
+      "sourceId": "Nt0HUWLOl4O77elF8Is1S",
+      "type": "subtopic",
+      "order": 36,
+      "summary": "Systems such as Consul, Etcd, and Zookeeper can help services find each other by keeping track of registered names, addresses, and ports. Health checks help verify service integrity and are often done using an HTTP endpoint. Both Consul and Etcd have a built in key-value store that can be useful for storing config values and other shared data.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Intro to Service Discovery",
+          "url": "https://github.com/donnemartin/system-design-primer#Service-Discovery"
+        },
+        {
+          "type": "article",
+          "title": "What is Service-oriented architecture?",
+          "url": "https://en.wikipedia.org/wiki/Service-oriented_architecture"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Architecture",
+          "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "applicationLayer"
+      ],
+      "children": []
+    },
+    "documentStore": {
+      "title": "Document Store",
+      "sourceId": "didEznSlVHqqlijtyOSr3",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "A document store is centered around documents (XML, JSON, binary, etc), where a document stores all information for a given object. Document stores provide APIs or a query language to query based on the internal structure of the document itself. Note, many key-value stores include features for working with a value's metadata, blurring the lines between these two storage types.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Document-oriented database",
+          "url": "https://en.wikipedia.org/wiki/Document-oriented_database"
+        }
+      ],
+      "parents": [
+        "applicationLayer"
+      ],
+      "children": []
+    },
+    "loadBalancingAlgorithms": {
+      "title": "Load Balancing Algorithms",
+      "sourceId": "urSjLyLTE5IIz0TFxMBWL",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "A load balancer is a software or hardware device that keeps any one server from becoming overloaded. A load balancing algorithm is the logic that a load balancer uses to distribute network traffic between servers (an algorithm is a set of predefined rules).",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Types of Load Balancing Algorithms",
+          "url": "https://www.cloudflare.com/learning/performance/types-of-load-balancing-algorithms/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Algorithms",
+          "url": "https://app.daily.dev/tags/algorithms?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "loadBalancers"
+      ],
+      "children": []
+    },
+    "wideColumnStore": {
+      "title": "Wide Column Store",
+      "sourceId": "WHq1AdISkcgthaugE9uY7",
+      "type": "subtopic",
+      "order": 39,
+      "summary": "A wide column store's basic unit of data is a column (name/value pair). A column can be grouped in column families (analogous to a SQL table). Super column families further group column families. You can access each column independently with a row key, and columns with the same row key form a row. Each value contains a timestamp for versioning and for conflict resolution.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Bigtable architecture",
+          "url": "https://www.read.seas.harvard.edu/~kohler/class/cs239-w08/chang06bigtable.pdf"
+        }
+      ],
+      "parents": [
+        "applicationLayer"
+      ],
+      "children": []
+    },
+    "applicationLayer": {
+      "title": "Application Layer",
+      "sourceId": "XXuzTrP5UNVwSpAk-tAGr",
+      "type": "topic",
+      "order": 40,
+      "summary": "Separating out the web layer from the application layer (also known as platform layer) allows you to scale and configure both layers independently. Adding a new API results in adding application servers without necessarily adding additional web servers. The single responsibility principle advocates for small and autonomous services that work together. Small teams with small services can plan more aggressively for rapid growth.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Intro to architecting systems for scale",
+          "url": "http://lethain.com/introduction-to-architecting-systems-for-scale/#platform_layer"
+        }
+      ],
+      "parents": [
+        "loadBalancers"
+      ],
+      "children": [
+        "documentStore",
+        "wideColumnStore",
+        "graphDatabases",
+        "serviceDiscovery",
+        "databases"
+      ]
+    },
+    "loadBalancers": {
+      "title": "Load Balancers",
+      "sourceId": "14KqLKgh090Rb3MDwelWY",
+      "type": "topic",
+      "order": 41,
+      "summary": "Load balancers distribute incoming client requests to computing resources such as application servers and databases. In each case, the load balancer returns the response from the computing resource to the appropriate client. Load balancers are effective at:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Scalability",
+          "url": "https://cs.fyi/guide/scalability-for-dummies"
+        },
+        {
+          "type": "article",
+          "title": "NGINX Architecture",
+          "url": "https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/"
+        },
+        {
+          "type": "article",
+          "title": "HAProxy Architecture Guide",
+          "url": "http://www.haproxy.org/download/1.2/doc/architecture.txt"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "lbVsReverseProxy",
+        "loadBalancingAlgorithms",
+        "layer7LoadBalancing",
+        "layer4LoadBalancing",
+        "horizontalScaling",
+        "applicationLayer"
+      ]
+    },
+    "layer7LoadBalancing": {
+      "title": "Layer 7 Load Balancing",
+      "sourceId": "e69-JVbDj7dqV_p1j1kML",
+      "type": "subtopic",
+      "order": 42,
+      "summary": "Layer 7 load balancers look at the application layer to decide how to distribute requests. This can involve contents of the header, message, and cookies. Layer 7 load balancers terminate network traffic, reads the message, makes a load-balancing decision, then opens a connection to the selected server. For example, a layer 7 load balancer can direct video traffic to servers that host videos while directing more sensitive user billing traffic to security-hardened servers.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "loadBalancers"
+      ],
+      "children": []
+    },
+    "graphDatabases": {
+      "title": "Graph Databases",
+      "sourceId": "6RLgnL8qLBzYkllHeaI-Z",
+      "type": "subtopic",
+      "order": 43,
+      "summary": "In a graph database, each node is a record and each arc is a relationship between two nodes. Graph databases are optimized to represent complex relationships with many foreign keys or many-to-many relationships.",
+      "video": {
+        "title": "Introduction to NoSQL",
+        "url": "https://www.youtube.com/watch?v=qI_g07C_Q5I"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Graph database",
+          "url": "https://en.wikipedia.org/wiki/Graph_database"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Backend Development",
+          "url": "https://app.daily.dev/tags/backend?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "applicationLayer"
+      ],
+      "children": []
+    },
+    "layer4LoadBalancing": {
+      "title": "Layer 4 Load Balancing",
+      "sourceId": "MpM9rT1-_LGD7YbnBjqOk",
+      "type": "subtopic",
+      "order": 44,
+      "summary": "Layer 4 load balancers look at info at the transport layer to decide how to distribute requests. Generally, this involves the source, destination IP addresses, and ports in the header, but not the contents of the packet. Layer 4 load balancers forward network packets to and from the upstream server, performing Network Address Translation (NAT).",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Layer 4 Load Balancing",
+          "url": "https://www.f5.com/glossary/layer-4-load-balancing"
+        }
+      ],
+      "parents": [
+        "loadBalancers"
+      ],
+      "children": []
+    },
+    "nosql": {
+      "title": "NoSQL",
+      "sourceId": "de-uXrRy3XDwZbLyXXluK",
+      "type": "label",
+      "order": 45,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "sharding"
+      ]
+    },
+    "databases": {
+      "title": "Databases",
+      "sourceId": "5FXwwRMNBhG7LT5ub6t2L",
+      "type": "topic",
+      "order": 46,
+      "summary": "Picking the right database for a system is an important decision, as it can have a significant impact on the performance, scalability, and overall success of the system. Some of the key reasons why it's important to pick the right database include:",
+      "video": {
+        "title": "Scaling up to your first 10 million users",
+        "url": "https://www.youtube.com/watch?v=kKjm4ehYiMs"
+      },
+      "articles": [
+        {
+          "type": "feed",
+          "title": "Explore top posts about Backend Development",
+          "url": "https://app.daily.dev/tags/backend?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "applicationLayer"
+      ],
+      "children": [
+        "denormalization",
+        "sqlVsNosql",
+        "caching"
+      ]
+    },
+    "horizontalScaling": {
+      "title": "Horizontal Scaling",
+      "sourceId": "IkUCfSWNY-02wg2WCo1c6",
+      "type": "subtopic",
+      "order": 47,
+      "summary": "Load balancers can also help with horizontal scaling, improving performance and availability. Scaling out using commodity machines is more cost efficient and results in higher availability than scaling up a single server on more expensive hardware, called Vertical Scaling. It is also easier to hire for talent working on commodity hardware than it is for specialized enterprise systems.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "loadBalancers"
+      ],
+      "children": [
+        "refreshAhead"
+      ]
+    },
+    "sharding": {
+      "title": "Sharding",
+      "sourceId": "FX6dcV_93zOfbZMdM_-li",
+      "type": "subtopic",
+      "order": 49,
+      "summary": "Sharding distributes data across different databases such that each database can only manage a subset of the data. Taking a users database as an example, as the number of users increases, more shards are added to the cluster.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The coming of the Shard",
+          "url": "http://highscalability.com/blog/2009/8/6/an-unorthodox-approach-to-database-design-the-coming-of-the.html"
+        },
+        {
+          "type": "article",
+          "title": "Shard (database architecture)",
+          "url": "https://en.wikipedia.org/wiki/Shard_(database_architecture)"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Backend Development",
+          "url": "https://app.daily.dev/tags/backend?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "nosql"
+      ],
+      "children": []
+    },
+    "sqlVsNosql": {
+      "title": "SQL vs NoSQL",
+      "sourceId": "KLnpMR2FxlQkCHZP6-tZm",
+      "type": "subtopic",
+      "order": 50,
+      "summary": "SQL databases, such as MySQL and PostgreSQL, are best suited for structured, relational data and use a fixed schema. They provide robust ACID (Atomicity, Consistency, Isolation, Durability) transactions and support complex queries and joins.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "SQL vs NoSQL: The Differences",
+          "url": "https://www.sitepoint.com/sql-vs-nosql-differences/"
+        },
+        {
+          "type": "article",
+          "title": "SQL vs. NoSQL Databases: What\u2019s the Difference?",
+          "url": "https://www.ibm.com/blog/sql-vs-nosql/"
+        },
+        {
+          "type": "article",
+          "title": "NoSQL vs. SQL Databases",
+          "url": "https://www.mongodb.com/nosql-explained/nosql-vs-sql"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about NoSQL",
+          "url": "https://app.daily.dev/tags/nosql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "databases"
+      ],
+      "children": []
+    },
+    "refreshAhead": {
+      "title": "Refresh Ahead",
+      "sourceId": "Bgqgl67FK56ioLNFivIsc",
+      "type": "subtopic",
+      "order": 51,
+      "summary": "You can configure the cache to automatically refresh any recently accessed cache entry prior to its expiration.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "From cache to in-memory data grid",
+          "url": "http://www.slideshare.net/tmatyashovsky/from-cache-to-in-memory-data-grid-introduction-to-hazelcast"
+        },
+        {
+          "type": "article",
+          "title": "Caching Strategy: Refresh Ahead Pattern",
+          "url": "https://www.enjoyalgorithms.com/blog/refresh-ahead-caching-pattern"
+        }
+      ],
+      "parents": [
+        "horizontalScaling"
+      ],
+      "children": [
+        "writeBehind"
+      ]
+    },
+    "caching": {
+      "title": "Caching",
+      "sourceId": "-X4g8kljgVBOBcf1DDzgi",
+      "type": "topic",
+      "order": 52,
+      "summary": "Caching is the process of storing frequently accessed data in a temporary storage location, called a cache, in order to quickly retrieve it without the need to query the original data source. This can improve the performance of an application by reducing the number of times a data source must be accessed.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Caching Strategies",
+          "url": "https://medium.com/@mmoshikoo/cache-strategies-996e91c80303"
+        }
+      ],
+      "parents": [
+        "databases"
+      ],
+      "children": [
+        "asynchronism"
+      ]
+    },
+    "writeBehind": {
+      "title": "Write-behind",
+      "sourceId": "vNndJ-MWetcbaF2d-3-JP",
+      "type": "subtopic",
+      "order": 54,
+      "summary": "In write-behind, the application does the following:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Scalability, availability, stability, patterns",
+          "url": "http://www.slideshare.net/jboner/scalability-availability-stability-patterns/"
+        }
+      ],
+      "parents": [
+        "refreshAhead"
+      ],
+      "children": [
+        "writeThrough"
+      ]
+    },
+    "backPressure": {
+      "title": "Back Pressure",
+      "sourceId": "YiYRZFE_zwPMiCZxz9FnP",
+      "type": "subtopic",
+      "order": 55,
+      "summary": "If queues start to grow significantly, the queue size can become larger than memory, resulting in cache misses, disk reads, and even slower performance. Back pressure can help by limiting the queue size, thereby maintaining a high throughput rate and good response times for jobs already in the queue. Once the queue fills up, clients get a server busy or HTTP 503 status code to try again later. Clients can retry the request at a later time, perhaps with exponential backoff.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "asynchronism"
+      ],
+      "children": []
+    },
+    "denormalization": {
+      "title": "Denormalization",
+      "sourceId": "Zp9D4--DgtlAjE2nIfaO_",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "Denormalization attempts to improve read performance at the expense of some write performance. Redundant copies of the data are written in multiple tables to avoid expensive joins. Some RDBMS such as PostgreSQL and Oracle support materialized views which handle the work of storing redundant information and keeping redundant copies consistent.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Denormalization",
+          "url": "https://en.wikipedia.org/wiki/Denormalization"
+        }
+      ],
+      "parents": [
+        "databases"
+      ],
+      "children": []
+    },
+    "writeThrough": {
+      "title": "Write-through",
+      "sourceId": "RNITLR1FUQWkRbSBXTD_z",
+      "type": "subtopic",
+      "order": 57,
+      "summary": "The application uses the cache as the main data store, reading and writing data to it, while the cache is responsible for reading and writing to the database:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Scalability, availability, stability, patterns",
+          "url": "http://www.slideshare.net/jboner/scalability-availability-stability-patterns/"
+        }
+      ],
+      "parents": [
+        "writeBehind"
+      ],
+      "children": [
+        "cacheAside"
+      ]
+    },
+    "taskQueues": {
+      "title": "Task Queues",
+      "sourceId": "a9wGW_H1HpvvdYCXoS-Rf",
+      "type": "subtopic",
+      "order": 58,
+      "summary": "Tasks queues receive tasks and their related data, runs them, then delivers their results. They can support scheduling and can be used to run computationally-intensive jobs in the background.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Celery - Distributed Task Queue",
+          "url": "https://docs.celeryq.dev/en/stable/"
+        }
+      ],
+      "parents": [
+        "asynchronism"
+      ],
+      "children": []
+    },
+    "sqlTuning": {
+      "title": "SQL Tuning",
+      "sourceId": "fY8zgbB13wxZ1CFtMSdZZ",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "SQL tuning is the attempt to diagnose and repair SQL statements that fail to meet a performance standard. It is a broad topic and many books have been written as reference. It's important to benchmark and profile to simulate and uncover bottlenecks.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to SQL Tuning - Oracle",
+          "url": "https://docs.oracle.com/en/database/oracle/oracle-database/23/tgsql/introduction-to-sql-tuning.html#GUID-B653E5F3-F078-4BBC-9516-B892960046A2"
+        },
+        {
+          "type": "article",
+          "title": "Query Optimization for Mere Humans in PostgreSQL",
+          "url": "https://towardsdatascience.com/query-optimization-for-mere-humans-in-postgresql-875ab864390a/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about SQL",
+          "url": "https://app.daily.dev/tags/sql?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "asynchronism": {
+      "title": "Asynchronism",
+      "sourceId": "84N4XY31PwXRntXX1sdCU",
+      "type": "topic",
+      "order": 60,
+      "summary": "Asynchronous workflows help reduce request times for expensive operations that would otherwise be performed in-line. They can also help by doing time-consuming work in advance, such as periodic aggregation of data.",
+      "video": {
+        "title": "It's all a numbers game",
+        "url": "https://www.youtube.com/watch?v=1KRYH75wgy4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Patterns for microservices - Sync vs Async",
+          "url": "https://medium.com/inspiredbrilliance/patterns-for-microservices-e57a2d71ff9e"
+        },
+        {
+          "type": "article",
+          "title": "Applying back pressure when overloaded",
+          "url": "http://mechanical-sympathy.blogspot.com/2012/05/apply-back-pressure-when-overloaded.html"
+        },
+        {
+          "type": "article",
+          "title": "Little's law",
+          "url": "https://en.wikipedia.org/wiki/Little%27s_law"
+        },
+        {
+          "type": "article",
+          "title": "What is the difference between a message queue and a task queue?",
+          "url": "https://www.quora.com/What-is-the-difference-between-a-message-queue-and-a-task-queue-Why-would-a-task-queue-require-a-message-broker-like-RabbitMQ-Redis-Celery-or-IronMQ-to-function"
+        }
+      ],
+      "parents": [
+        "caching"
+      ],
+      "children": [
+        "taskQueues",
+        "messageQueues",
+        "backPressure"
+      ]
+    },
+    "cacheAside": {
+      "title": "Cache Aside",
+      "sourceId": "bffJlvoLHFldS0CluWifP",
+      "type": "subtopic",
+      "order": 61,
+      "summary": "The application is responsible for reading and writing from storage. The cache does not interact with storage directly. The application does the following:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "From cache to in-memory data grid",
+          "url": "https://www.slideshare.net/tmatyashovsky/from-cache-to-in-memory-data-grid-introduction-to-hazelcast"
+        }
+      ],
+      "parents": [
+        "writeThrough"
+      ],
+      "children": [
+        "clientCaching"
+      ]
+    },
+    "messageQueues": {
+      "title": "Message Queues",
+      "sourceId": "37X1_9eCmkZkz5RDudE5N",
+      "type": "subtopic",
+      "order": 62,
+      "summary": "Message queues receive, hold, and deliver messages. If an operation is too slow to perform inline, you can use a message queue with the following workflow:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Redis?",
+          "url": "https://redis.io/"
+        },
+        {
+          "type": "article",
+          "title": "RabbitMQ in Message Queues",
+          "url": "https://www.rabbitmq.com/"
+        },
+        {
+          "type": "article",
+          "title": "Overview of Amazon SQS",
+          "url": "https://aws.amazon.com/sqs/"
+        },
+        {
+          "type": "article",
+          "title": "Apache Kafka",
+          "url": "https://kafka.apache.org/"
+        },
+        {
+          "type": "article",
+          "title": "RabbitMQ for beginners",
+          "url": "https://www.cloudamqp.com/blog/part1-rabbitmq-for-beginners-what-is-rabbitmq.html"
+        }
+      ],
+      "parents": [
+        "asynchronism"
+      ],
+      "children": []
+    },
+    "rdbms": {
+      "title": "RDBMS",
+      "sourceId": "uyrV_iIIQQvEDSUM9gt7H",
+      "type": "label",
+      "order": 63,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "http",
+        "tcp",
+        "rpc",
+        "grpc"
+      ]
+    },
+    "clientCaching": {
+      "title": "Client Caching",
+      "sourceId": "RHNRb6QWiGvCK3KQOPK3u",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "Client-side caching refers to the practice of storing frequently accessed data on the client's device rather than the server. This type of caching can help improve the performance of an application by reducing the number of times the client needs to request data from the server.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTTP Caching",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching"
+        }
+      ],
+      "parents": [
+        "cacheAside"
+      ],
+      "children": []
+    },
+    "http": {
+      "title": "HTTP",
+      "sourceId": "I_nR6EwjNXSG7_hw-_VhX",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "HTTP is a method for encoding and transporting data between a client and a server. It is a request/response protocol: clients issue requests and servers issue responses with relevant content and completion status info about the request. HTTP is self-contained, allowing requests and responses to flow through many intermediate routers and servers that perform load balancing, caching, encryption, and compression.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Everything you need to know about HTTP",
+          "url": "https://cs.fyi/guide/http-in-depth"
+        },
+        {
+          "type": "article",
+          "title": "What Is HTTP?",
+          "url": "https://www.nginx.com/resources/glossary/http/"
+        },
+        {
+          "type": "article",
+          "title": "What is the difference between HTTP protocol and TCP protocol?",
+          "url": "https://www.quora.com/What-is-the-difference-between-HTTP-protocol-and-TCP-protocol"
+        }
+      ],
+      "parents": [
+        "rdbms"
+      ],
+      "children": []
+    },
+    "tcp": {
+      "title": "TCP",
+      "sourceId": "2nF5uC6fYKbf0RFgGNHiP",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "TCP (Transmission Control Protocol) is a connection-oriented, reliable, and ordered protocol used for transmitting data over an IP network. It establishes a connection between a sender and receiver before data transfer begins, ensures that data packets arrive in the correct sequence without errors, and provides mechanisms for retransmission of lost packets and flow control to manage network congestion.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "What Is TCP?",
+          "url": "https://github.com/donnemartin/system-design-primer#transmission-control-protocol-tcp"
+        },
+        {
+          "type": "article",
+          "title": "What is the difference between HTTP protocol and TCP protocol?",
+          "url": "https://www.quora.com/What-is-the-difference-between-HTTP-protocol-and-TCP-protocol"
+        },
+        {
+          "type": "article",
+          "title": "Networking for game programming",
+          "url": "http://gafferongames.com/networking-for-game-programmers/udp-vs-tcp/"
+        },
+        {
+          "type": "article",
+          "title": "Key differences between TCP and UDP protocols",
+          "url": "http://www.cyberciti.biz/faq/key-differences-between-tcp-and-udp-protocols/"
+        },
+        {
+          "type": "article",
+          "title": "Difference between TCP and UDP",
+          "url": "http://stackoverflow.com/questions/5970383/difference-between-tcp-and-udp"
+        },
+        {
+          "type": "article",
+          "title": "Transmission control protocol",
+          "url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+        },
+        {
+          "type": "article",
+          "title": "User datagram protocol",
+          "url": "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+        },
+        {
+          "type": "article",
+          "title": "Scaling memcache at Facebook",
+          "url": "http://www.cs.bu.edu/~jappavoo/jappavoo.github.com/451/papers/memcache-fb.pdf"
+        }
+      ],
+      "parents": [
+        "rdbms"
+      ],
+      "children": []
+    },
+    "udp": {
+      "title": "UDP",
+      "sourceId": "LC5aTmUKNiw9RuSUt3fSE",
+      "type": "subtopic",
+      "order": 68,
+      "summary": "UDP is connectionless. Datagrams (analogous to packets) are guaranteed only at the datagram level. Datagrams might reach their destination out of order or not at all. UDP does not support congestion control. Without the guarantees that TCP support, UDP is generally more efficient.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Networking for game programming",
+          "url": "http://gafferongames.com/networking-for-game-programmers/udp-vs-tcp/"
+        },
+        {
+          "type": "article",
+          "title": "Key differences between TCP and UDP protocols",
+          "url": "http://www.cyberciti.biz/faq/key-differences-between-tcp-and-udp-protocols/"
+        },
+        {
+          "type": "article",
+          "title": "Difference between TCP and UDP",
+          "url": "http://stackoverflow.com/questions/5970383/difference-between-tcp-and-udp"
+        },
+        {
+          "type": "article",
+          "title": "Transmission control protocol",
+          "url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+        },
+        {
+          "type": "article",
+          "title": "User datagram protocol",
+          "url": "https://en.wikipedia.org/wiki/User_Datagram_Protocol"
+        },
+        {
+          "type": "article",
+          "title": "Scaling memcache at Facebook",
+          "url": "http://www.cs.bu.edu/~jappavoo/jappavoo.github.com/451/papers/memcache-fb.pdf"
+        }
+      ],
+      "parents": [
+        "communication"
+      ],
+      "children": []
+    },
+    "communication": {
+      "title": "Communication",
+      "sourceId": "uQFzD_ryd-8Dr1ppjorYJ",
+      "type": "topic",
+      "order": 69,
+      "summary": "Network protocols are a key part of systems today, as no system can exist in isolation - they all need to communicate with each other. You should learn about the networking protocols such as HTTP, TCP, UDP. Also, learn about the architectural styles such as RPC, REST, GraphQL and gRPC.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "idempotentOperations"
+      ],
+      "children": [
+        "udp"
+      ]
+    },
+    "idempotentOperations": {
+      "title": "Idempotent Operations",
+      "sourceId": "3pRi8M4xQXsehkdfUNtYL",
+      "type": "topic",
+      "order": 70,
+      "summary": "Idempotent operations are operations that can be applied multiple times without changing the result beyond the initial application. In other words, if an operation is idempotent, it will have the same effect whether it is executed once or multiple times.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is an idempotent operation?",
+          "url": "https://stackoverflow.com/questions/1077412/what-is-an-idempotent-operation"
+        },
+        {
+          "type": "article",
+          "title": "Overview of Idempotent Operation",
+          "url": "https://www.baeldung.com/cs/idempotent-operations"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "communication"
+      ]
+    },
+    "rpc": {
+      "title": "RPC",
+      "sourceId": "ixqucoAkgnphWYAFnsMe-",
+      "type": "subtopic",
+      "order": 72,
+      "summary": "In an RPC, a client causes a procedure to execute on a different address space, usually a remote server. The procedure is coded as if it were a local procedure call, abstracting away the details of how to communicate with the server from the client program. Remote calls are usually slower and less reliable than local calls so it is helpful to distinguish RPC calls from local calls. Popular RPC frameworks include Protobuf, Thrift, and Avro.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "What Is RPC?",
+          "url": "https://github.com/donnemartin/system-design-primer#remote-procedure-call-rpc"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Backend Development",
+          "url": "https://app.daily.dev/tags/backend?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "rdbms"
+      ],
+      "children": []
+    },
+    "grpc": {
+      "title": "gRPC",
+      "sourceId": "Hw2v1rCYn24qxBhhmdc28",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "gRPC is a high-performance, open-source framework for building remote procedure call (RPC) APIs. It is based on the Protocol Buffers data serialization format and supports a variety of programming languages, including C, Java, and Python.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Is gRPC?",
+          "url": "https://www.wallarm.com/what/the-concept-of-grpc"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about gRPC",
+          "url": "https://app.daily.dev/tags/grpc?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "rdbms"
+      ],
+      "children": []
+    },
+    "webServerCaching": {
+      "title": "Web Server Caching",
+      "sourceId": "o532nPnL-d2vXJn9k6vMl",
+      "type": "subtopic",
+      "order": 74,
+      "summary": "Reverse proxies and caches such as Varnish can serve static and dynamic content directly. Web servers can also cache requests, returning responses without having to contact application servers.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "databaseCaching"
+      ]
+    },
+    "rest": {
+      "title": "REST",
+      "sourceId": "6-bgmfDTAQ9zABhpmVoHV",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "REST is an architectural style enforcing a client/server model where the client acts on a set of resources managed by the server. The server provides a representation of resources and actions that can either manipulate or get a new representation of resources. All communication must be stateless and cacheable.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "What Is REST?",
+          "url": "https://github.com/donnemartin/system-design-primer#representational-state-transfer-rest"
+        },
+        {
+          "type": "article",
+          "title": "What are the drawbacks of using RESTful APIs?",
+          "url": "https://www.quora.com/What-are-the-drawbacks-of-using-RESTful-APIs"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about REST API",
+          "url": "https://app.daily.dev/tags/rest-api?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "performanceAntipatterns"
+      ],
+      "children": []
+    },
+    "graphql": {
+      "title": "GraphQL",
+      "sourceId": "jwv2g2Yeq-6Xv5zSd746R",
+      "type": "subtopic",
+      "order": 76,
+      "summary": "GraphQL is a query language and runtime for building APIs. It allows clients to define the structure of the data they need and the server will return exactly that. This is in contrast to traditional REST APIs, where the server exposes a fixed set of endpoints and the client must work with the data as it is returned.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "GraphQL Server",
+          "url": "https://www.howtographql.com/basics/3-big-picture/"
+        },
+        {
+          "type": "article",
+          "title": "What is GraphQL?",
+          "url": "https://www.redhat.com/en/topics/api/what-is-graphql"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about GraphQL",
+          "url": "https://app.daily.dev/tags/graphql?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "performanceAntipatterns"
+      ],
+      "children": []
+    },
+    "databaseCaching": {
+      "title": "Database Caching",
+      "sourceId": "BeIg4jzbij2cwc_a_VpYG",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "Database caching involves storing frequently accessed data from a database in a temporary storage location (the cache) to reduce the load on the database and improve application performance. Instead of repeatedly querying the database for the same data, the application first checks the cache. If the data is present (a cache hit), it's retrieved from the cache, which is much faster than a database query. If the data is not in the cache (a cache miss), the application queries the database, retrieves the data, stores it in the cache for future use, and then returns it to the application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Database Caching",
+          "url": "https://aws.amazon.com/caching/database-caching/"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to database caching",
+          "url": "https://www.prisma.io/dataguide/managing-databases/introduction-database-caching"
+        },
+        {
+          "type": "article",
+          "title": "Database Caching Strategies",
+          "url": "https://medium.com/@sesmiat/database-caching-strategies-f5e40c3c9b74"
+        }
+      ],
+      "parents": [
+        "webServerCaching"
+      ],
+      "children": [
+        "applicationCaching"
+      ]
+    },
+    "performanceAntipatterns": {
+      "title": "Performance Antipatterns",
+      "sourceId": "p--uEm6klLx_hKxKJiXE5",
+      "type": "topic",
+      "order": 78,
+      "summary": "Performance antipatterns in system design refer to common mistakes or suboptimal practices that can lead to poor performance in a system. These patterns can occur at different levels of the system and can be caused by a variety of factors such as poor design, lack of optimization, or lack of understanding of the workload.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Performance antipatterns for cloud applications",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Performance",
+          "url": "https://app.daily.dev/tags/performance?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "rest",
+        "graphql",
+        "busyDatabase",
+        "improperInstantiation",
+        "busyFrontend",
+        "chattyIO",
+        "monitoring"
+      ]
+    },
+    "applicationCaching": {
+      "title": "Application Caching",
+      "sourceId": "5Ux_JBDOkflCaIm4tVBgO",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "In-memory caches such as Memcached and Redis are key-value stores between your application and your data storage. Since the data is held in RAM, it is much faster than typical databases where data is stored on disk. RAM is more limited than disk, so cache invalidation algorithms such as least recently used (LRU)) can help invalidate 'cold' entries and keep 'hot' data in RAM.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Intro to Application Caching",
+          "url": "https://github.com/donnemartin/system-design-primer#application-caching"
+        }
+      ],
+      "parents": [
+        "databaseCaching"
+      ],
+      "children": []
+    },
+    "busyDatabase": {
+      "title": "Busy Database",
+      "sourceId": "hxiV2uF7tvhZKe4K-4fTn",
+      "type": "subtopic",
+      "order": 80,
+      "summary": "A busy database in system design refers to a database that is handling a high volume of requests or transactions, this can occur when a system is experiencing high traffic or when a database is not properly optimized for the workload it is handling. This can lead to Performance degradation, Increased resource utilization, Deadlocks and contention, Data inconsistencies. To address a busy database, a number of approaches can be taken such as Scaling out, Optimizing the schema, Caching, and Indexing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Busy Database antipattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-database/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Database",
+          "url": "https://app.daily.dev/tags/database?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "performanceAntipatterns"
+      ],
+      "children": []
+    },
+    "improperInstantiation": {
+      "title": "Improper Instantiation",
+      "sourceId": "lwMs4yiUHF3nQwcvauers",
+      "type": "subtopic",
+      "order": 81,
+      "summary": "Improper instantiation in system design refers to the practice of creating unnecessary instances of an object, class or service, which can lead to performance and scalability issues. This can happen when the system is not properly designed, when the code is not written in an efficient way, or when the code is not optimized for the specific use case.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Improper Instantiation antipattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/improper-instantiation/"
+        }
+      ],
+      "parents": [
+        "performanceAntipatterns"
+      ],
+      "children": [
+        "monolithicPersistence"
+      ]
+    },
+    "busyFrontend": {
+      "title": "Busy Frontend",
+      "sourceId": "i_2M3VloG-xTgWDWp4ngt",
+      "type": "subtopic",
+      "order": 83,
+      "summary": "A busy frontend happens when the user-facing part of the system \u2014 such as the web servers, CDN, or browser \u2014 is handling more work than it can efficiently manage. This can lead to slow page loads, delayed responses, or timeouts. Common causes include too many concurrent users, large static assets, heavy client-side rendering, or missing caching layers.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Busy Front End antipattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-front-end/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Frontend Development",
+          "url": "https://app.daily.dev/tags/frontend?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "performanceAntipatterns"
+      ],
+      "children": []
+    },
+    "monolithicPersistence": {
+      "title": "Monolithic Persistence",
+      "sourceId": "p1QhCptnwzTGUXVMnz_Oz",
+      "type": "subtopic",
+      "order": 84,
+      "summary": "Monolithic Persistence refers to the use of a single, monolithic database to store all of the data for an application or system. This approach can be used for simple, small-scale systems but as the system grows and evolves it can become a bottleneck, resulting in poor scalability, limited flexibility, and increased complexity. To address these limitations, a number of approaches can be taken such as Microservices, Sharding, and NoSQL databases.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Monolithic Persistence antipattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/monolithic-persistence/"
+        }
+      ],
+      "parents": [
+        "improperInstantiation"
+      ],
+      "children": [
+        "noisyNeighbor"
+      ]
+    },
+    "chattyIO": {
+      "title": "Chatty I/O",
+      "sourceId": "0IzQwuYi_E00bJwxDuw2B",
+      "type": "subtopic",
+      "order": 85,
+      "summary": "The cumulative effect of a large number of I/O requests can have a significant impact on performance and responsiveness.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Chatty I/O antipattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/chatty-io/"
+        }
+      ],
+      "parents": [
+        "performanceAntipatterns"
+      ],
+      "children": []
+    },
+    "noisyNeighbor": {
+      "title": "Noisy Neighbor",
+      "sourceId": "r7uQxmurvfsYtTCieHqly",
+      "type": "subtopic",
+      "order": 86,
+      "summary": "Noisy neighbor refers to a situation in which one or more components of a system are utilizing a disproportionate amount of shared resources, leading to resource contention and reduced performance for other components. This can occur when a system is not properly designed or configured to handle the workload, or when a component is behaving unexpectedly.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Noisy Neighbor antipattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/noisy-neighbor/noisy-neighbor"
+        }
+      ],
+      "parents": [
+        "monolithicPersistence"
+      ],
+      "children": [
+        "synchronousIO"
+      ]
+    },
+    "healthMonitoring": {
+      "title": "Health Monitoring",
+      "sourceId": "hkjYvLoVt9xKDzubm0Jy3",
+      "type": "subtopic",
+      "order": 87,
+      "summary": "A system is healthy if it is running and capable of processing requests. The purpose of health monitoring is to generate a snapshot of the current health of the system so that you can verify that all components of the system are functioning as expected.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Health Monitoring of a System",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#health-monitoring"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Monitoring",
+          "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "retryStorm": {
+      "title": "Retry Storm",
+      "sourceId": "LNmAJmh2ndFtOQIpvX_ga",
+      "type": "subtopic",
+      "order": 88,
+      "summary": "Retry Storm refers to a situation in which a large number of retries are triggered in a short period of time, leading to a significant increase in traffic and resource usage. This can occur when a system is not properly designed to handle failures or when a component is behaving unexpectedly. This can lead to Performance degradation, Increased resource utilization, Increased network traffic, and Poor user experience. To address retry storms, a number of approaches can be taken such as Exponential backoff, Circuit breaking, and Monitoring and alerting.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Retry Storm antipattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/retry-storm/"
+        },
+        {
+          "type": "article",
+          "title": "How To Avoid Retry Storms In Distributed Systems",
+          "url": "https://faun.pub/how-to-avoid-retry-storms-in-distributed-systems-91bf34f43c7f"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "synchronousIO": {
+      "title": "Synchronous I/O",
+      "sourceId": "Ihnmxo_bVgZABDwg1QGGk",
+      "type": "subtopic",
+      "order": 89,
+      "summary": "Blocking the calling thread while I/O completes can reduce performance and affect vertical scalability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Synchronous I/O antipattern?",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/synchronous-io/"
+        }
+      ],
+      "parents": [
+        "noisyNeighbor"
+      ],
+      "children": [
+        "extraneousFetching"
+      ]
+    },
+    "availabilityMonitoring": {
+      "title": "Availability Monitoring",
+      "sourceId": "rVrwaioGURvrqNBufF2dj",
+      "type": "subtopic",
+      "order": 90,
+      "summary": "A truly healthy system requires that the components and subsystems that compose the system are available. Availability monitoring is closely related to health monitoring. But whereas health monitoring provides an immediate view of the current health of the system, availability monitoring is concerned with tracking the availability of the system and its components to generate statistics about the uptime of the system.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Availability Monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#availability-monitoring"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Monitoring",
+          "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "noCaching": {
+      "title": "No Caching",
+      "sourceId": "klvHk1_e03Jarn5T46QNi",
+      "type": "subtopic",
+      "order": 91,
+      "summary": "No caching antipattern occurs when a cloud application that handles many concurrent requests, repeatedly fetches the same data. This can reduce performance and scalability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "No Caching antipattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/no-caching/"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "extraneousFetching": {
+      "title": "Extraneous Fetching",
+      "sourceId": "6u3XmtJFWyJnyZUnJcGYb",
+      "type": "subtopic",
+      "order": 92,
+      "summary": "Extraneous fetching in system design refers to the practice of retrieving more data than is needed for a specific task or operation. This can occur when a system is not optimized for the specific workload or when the system is not properly designed to handle the data requirements.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Extraneous Fetching antipattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/antipatterns/extraneous-fetching/"
+        }
+      ],
+      "parents": [
+        "synchronousIO"
+      ],
+      "children": []
+    },
+    "performanceMonitoring": {
+      "title": "Performance Monitoring",
+      "sourceId": "x1i3qWFtNNjd00-kAvFHw",
+      "type": "subtopic",
+      "order": 93,
+      "summary": "As the system is placed under more and more stress (by increasing the volume of users), the size of the datasets that these users access grows and the possibility of failure of one or more components becomes more likely. Frequently, component failure is preceded by a decrease in performance. If you're able detect such a decrease, you can take proactive steps to remedy the situation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Performance Monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#performance-monitoring"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Monitoring",
+          "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "monitoring": {
+      "title": "Monitoring",
+      "sourceId": "hDFYlGFYwcwWXLmrxodFX",
+      "type": "topic",
+      "order": 95,
+      "summary": "Distributed applications and services running in the cloud are, by their nature, complex pieces of software that comprise many moving parts. In a production environment, it's important to be able to track the way in which users use your system, trace resource utilization, and generally monitor the health and performance of your system. You can use this information as a diagnostic aid to detect and correct issues, and also to help spot potential problems and prevent them from occurring.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Monitoring and Diagnostics Guidance",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Monitoring",
+          "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "performanceAntipatterns"
+      ],
+      "children": [
+        "retryStorm",
+        "noCaching",
+        "securityMonitoring",
+        "healthMonitoring",
+        "availabilityMonitoring",
+        "performanceMonitoring",
+        "usageMonitoring",
+        "instrumentation",
+        "visualizationAlerts"
+      ]
+    },
+    "securityMonitoring": {
+      "title": "Security Monitoring",
+      "sourceId": "I_NfmDcBph8-oyFVFTknL",
+      "type": "subtopic",
+      "order": 96,
+      "summary": "All commercial systems that include sensitive data must implement a security structure. The complexity of the security mechanism is usually a function of the sensitivity of the data. In a system that requires users to be authenticated, you should record:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Security Monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#security-monitoring"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Monitoring",
+          "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "usageMonitoring": {
+      "title": "Usage Monitoring",
+      "sourceId": "eSZq74lROh5lllLyTBK5a",
+      "type": "subtopic",
+      "order": 97,
+      "summary": "Usage monitoring tracks how the features and components of an application are used. An operator can use the gathered data to:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Usage Monitoring",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#usage-monitoring"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Monitoring",
+          "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "instrumentation": {
+      "title": "Instrumentation",
+      "sourceId": "Q0fKphqmPwjTD0dhqiP6K",
+      "type": "subtopic",
+      "order": 98,
+      "summary": "Instrumentation is a critical part of the monitoring process. You can make meaningful decisions about the performance and health of a system only if you first capture the data that enables you to make these decisions. The information that you gather by using instrumentation should be sufficient to enable you to assess performance, diagnose problems, and make decisions without requiring you to sign in to a remote production server to perform tracing (and debugging) manually. Instrumentation data typically comprises metrics and information that's written to trace logs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Instrumenting an application",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#instrumenting-an-application"
+        },
+        {
+          "type": "article",
+          "title": "Instrumenting using Open Telemetry",
+          "url": "https://opentelemetry.io/docs/concepts/what-is-opentelemetry"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "visualizationAlerts": {
+      "title": "Visualization & Alerts",
+      "sourceId": "IwMOTpsYHApdvHZOhXtIw",
+      "type": "subtopic",
+      "order": 99,
+      "summary": "An important aspect of any monitoring system is the ability to present the data in such a way that an operator can quickly spot any trends or problems. Also important is the ability to quickly inform an operator if a significant event has occurred that might require attention.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Visualize Data and Raise Alerts",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#visualizing-data-and-raising-alerts"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "cloudDesignPatterns": {
+      "title": "Cloud Design Patterns",
+      "sourceId": "THlzcZTNnPGLRiHPWT-Jv",
+      "type": "topic",
+      "order": 100,
+      "summary": "Cloud design patterns are solutions to common problems that arise when building systems that run on a cloud platform. These patterns provide a way to design and implement systems that can take advantage of the unique characteristics of the cloud, such as scalability, elasticity, and pay-per-use pricing. Some common cloud design patterns include Scalability, Elasticity, Fault Tolerance, Microservices, Serverless, Data Management, Front-end and Back-end separation and Hybrid.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Cloud Design Patterns",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Cloud",
+          "url": "https://app.daily.dev/tags/cloud?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "designImplementation",
+        "reliabilityPatterns"
+      ]
+    },
+    "designImplementation": {
+      "title": "Design & Implementation",
+      "sourceId": "PtJ7-v1VCLsyaWWYHYujV",
+      "type": "topic",
+      "order": 101,
+      "summary": "Good design encompasses factors such as consistency and coherence in component design and deployment, maintainability to simplify administration and development, and reusability to allow components and subsystems to be used in other applications and in other scenarios. Decisions made during the design and implementation phase have a huge impact on the quality and the total cost of ownership of cloud hosted applications and services.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Design and implementation patterns",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation"
+        }
+      ],
+      "parents": [
+        "cloudDesignPatterns"
+      ],
+      "children": [
+        "stranglerFig",
+        "staticContentHosting2"
+      ]
+    },
+    "stranglerFig": {
+      "title": "Strangler Fig",
+      "sourceId": "VIbXf7Jh9PbQ9L-g6pHUG",
+      "type": "subtopic",
+      "order": 102,
+      "summary": "Incrementally migrate a legacy system by gradually replacing specific pieces of functionality with new applications and services. As features from the legacy system are replaced, the new system eventually replaces all of the old system's features, strangling the old system and allowing you to decommission it.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Strangler fig?",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig"
+        }
+      ],
+      "parents": [
+        "designImplementation"
+      ],
+      "children": []
+    },
+    "sidecar": {
+      "title": "Sidecar",
+      "sourceId": "AAgOGrra5Yz3_eG6tD2Fx",
+      "type": "subtopic",
+      "order": 103,
+      "summary": "Deploy components of an application into a separate process or container to provide isolation and encapsulation. This pattern can also enable applications to be composed of heterogeneous components and technologies.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Sidecar pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Infrastructure",
+          "url": "https://app.daily.dev/tags/infrastructure?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "dataManagement"
+      ],
+      "children": []
+    },
+    "dataManagement": {
+      "title": "Data Management",
+      "sourceId": "W0cUCrhiwH_Nrzxw50x3L",
+      "type": "topic",
+      "order": 104,
+      "summary": "Data management is the key element of cloud applications, and influences most of the quality attributes. Data is typically hosted in different locations and across multiple servers for reasons such as performance, scalability or availability, and this can present a range of challenges. For example, data consistency must be maintained, and data will typically need to be synchronized across different locations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Data management patterns",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/category/data-management"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Data Management",
+          "url": "https://app.daily.dev/tags/data-management?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "sidecar",
+        "valetKey",
+        "staticContentHosting",
+        "sharding2",
+        "materializedView"
+      ]
+    },
+    "messaging": {
+      "title": "Messaging",
+      "sourceId": "dsWpta3WIBvv2K9pNVPo0",
+      "type": "topic",
+      "order": 105,
+      "summary": "Messaging is a pattern that allows for the communication and coordination between different components or systems, using messaging technologies such as message queues, message brokers, and event buses. This pattern allows for decoupling of the sender and receiver, and can be used to build scalable and flexible systems.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Messaging Cloud Patterns",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/category/messaging"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "sequentialConvoy"
+      ]
+    },
+    "staticContentHosting2": {
+      "title": "Static Content Hosting",
+      "sourceId": "izPT8NfJy1JC6h3i7GJYl",
+      "type": "subtopic",
+      "order": 106,
+      "summary": "Deploy static content to a cloud-based storage service that can deliver them directly to the client. This can reduce the need for potentially expensive compute instances.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Static Content Hosting pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting"
+        }
+      ],
+      "parents": [
+        "designImplementation"
+      ],
+      "children": [
+        "leaderElection",
+        "cqrs2",
+        "pipesFilters",
+        "ambassador",
+        "gatewayRouting"
+      ]
+    },
+    "sequentialConvoy": {
+      "title": "Sequential Convoy",
+      "sourceId": "VgvUWAC6JYFyPZKBRoEqf",
+      "type": "subtopic",
+      "order": 107,
+      "summary": "Sequential Convoy is a pattern that allows for the execution of a series of tasks, or convoy, in a specific order. This pattern can be used to ensure that a set of dependent tasks are executed in the correct order and to handle errors or failures during the execution of the tasks. It can be used in scenarios like workflow and transaction. It can be implemented using a variety of technologies such as state machines, workflows, and transactions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Sequential Convoy?",
+          "url": "https://learn.microsoft.com/en-us/biztalk/core/sequential-convoys"
+        },
+        {
+          "type": "article",
+          "title": "Overview - Sequential Convoy pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/sequential-convoy"
+        }
+      ],
+      "parents": [
+        "messaging"
+      ],
+      "children": [
+        "schedulingAgentSupervisor"
+      ]
+    },
+    "valetKey": {
+      "title": "Valet Key",
+      "sourceId": "stZOcr8EUBOK_ZB48uToj",
+      "type": "subtopic",
+      "order": 108,
+      "summary": "Use a token that provides clients with restricted direct access to a specific resource, in order to offload data transfer from the application. This is particularly useful in applications that use cloud-hosted storage systems or queues, and can minimize cost and maximize scalability and performance.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Valet Key pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/valet-key"
+        }
+      ],
+      "parents": [
+        "dataManagement"
+      ],
+      "children": []
+    },
+    "leaderElection": {
+      "title": "Leader Election",
+      "sourceId": "beWKUIB6Za27yhxQwEYe3",
+      "type": "subtopic",
+      "order": 109,
+      "summary": "Coordinate the actions performed by a collection of collaborating instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the others. This can help to ensure that instances don't conflict with each other, cause contention for shared resources, or inadvertently interfere with the work that other instances are performing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Leader Election Pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/leader-election"
+        }
+      ],
+      "parents": [
+        "staticContentHosting2"
+      ],
+      "children": []
+    },
+    "cqrs2": {
+      "title": "CQRS",
+      "sourceId": "ivr3mh0OES5n86FI1PN4N",
+      "type": "subtopic",
+      "order": 110,
+      "summary": "CQRS stands for Command and Query Responsibility Segregation, a pattern that separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security. The flexibility created by migrating to CQRS allows a system to better evolve over time and prevents update commands from causing merge conflicts at the domain level.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "CQRS pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs"
+        }
+      ],
+      "parents": [
+        "staticContentHosting2"
+      ],
+      "children": []
+    },
+    "schedulingAgentSupervisor": {
+      "title": "Scheduling Agent Supervisor",
+      "sourceId": "uR1fU6pm7zTtdBcNgSRi4",
+      "type": "subtopic",
+      "order": 111,
+      "summary": "Coordinate a set of distributed actions as a single operation. If any of the actions fail, try to handle the failures transparently, or else undo the work that was performed, so the entire operation succeeds or fails as a whole. This can add resiliency to a distributed system, by enabling it to recover and retry actions that fail due to transient exceptions, long-lasting faults, and process failures.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Scheduler Agent Supervisor pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor"
+        }
+      ],
+      "parents": [
+        "sequentialConvoy"
+      ],
+      "children": [
+        "queueBasedLoadLeveling"
+      ]
+    },
+    "staticContentHosting": {
+      "title": "Static Content Hosting",
+      "sourceId": "-lKq-LT7EPK7r3xbXLgwS",
+      "type": "subtopic",
+      "order": 112,
+      "summary": "Deploy static content to a cloud-based storage service that can deliver them directly to the client. This can reduce the need for potentially expensive compute instances.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Static Content Hosting pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/static-content-hosting"
+        }
+      ],
+      "parents": [
+        "dataManagement"
+      ],
+      "children": []
+    },
+    "pipesFilters": {
+      "title": "Pipes & Filters",
+      "sourceId": "WkoFezOXLf1H2XI9AtBtv",
+      "type": "subtopic",
+      "order": 113,
+      "summary": "Decompose a task that performs complex processing into a series of separate elements that can be reused. This can improve performance, scalability, and reusability by allowing task elements that perform the processing to be deployed and scaled independently.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Pipe and Filter Architectural Style",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters"
+        }
+      ],
+      "parents": [
+        "staticContentHosting2"
+      ],
+      "children": []
+    },
+    "ambassador": {
+      "title": "Ambassador",
+      "sourceId": "Hja4YF3JcgM6CPwB1mxmo",
+      "type": "subtopic",
+      "order": 114,
+      "summary": "Create helper services that send network requests on behalf of a consumer service or application. An ambassador service can be thought of as an out-of-process proxy that is co-located with the client.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Ambassador pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador"
+        }
+      ],
+      "parents": [
+        "staticContentHosting2"
+      ],
+      "children": []
+    },
+    "queueBasedLoadLeveling": {
+      "title": "Queue-Based Load Leveling",
+      "sourceId": "LncTxPg-wx8loy55r5NmV",
+      "type": "subtopic",
+      "order": 115,
+      "summary": "Use a queue that acts as a buffer between a task and a service it invokes in order to smooth intermittent heavy loads that can cause the service to fail or the task to time out. This can help to minimize the impact of peaks in demand on availability and responsiveness for both the task and the service.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Queue-Based Load Leveling pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling"
+        }
+      ],
+      "parents": [
+        "schedulingAgentSupervisor"
+      ],
+      "children": [
+        "publisherSubscriber"
+      ]
+    },
+    "sharding2": {
+      "title": "Sharding",
+      "sourceId": "R6YehzA3X6DDo6oGBoBAx",
+      "type": "subtopic",
+      "order": 116,
+      "summary": "Sharding is a technique used to horizontally partition a large data set across multiple servers, in order to improve the performance, scalability, and availability of a system. This is done by breaking the data set into smaller chunks, called shards, and distributing the shards across multiple servers. Each shard is self-contained and can be managed and scaled independently of the other shards. Sharding can be used in scenarios like scalability, availability, and geo-distribution. Sharding can be implemented using several different algorithms such as range-based sharding, hash-based sharding, and directory-based sharding.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Sharding pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Backend Development",
+          "url": "https://app.daily.dev/tags/backend?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "dataManagement"
+      ],
+      "children": []
+    },
+    "gatewayRouting": {
+      "title": "Gateway Routing",
+      "sourceId": "LXH_mDlILqcyIKtMYTWqy",
+      "type": "subtopic",
+      "order": 117,
+      "summary": "Route requests to multiple services or multiple service instances using a single endpoint. The pattern is useful when you want to:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Gateway Routing pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing"
+        }
+      ],
+      "parents": [
+        "staticContentHosting2"
+      ],
+      "children": [
+        "gatewayOffloading"
+      ]
+    },
+    "publisherSubscriber": {
+      "title": "Publisher/Subscriber",
+      "sourceId": "2ryzJhRDTo98gGgn9mAxR",
+      "type": "subtopic",
+      "order": 118,
+      "summary": "Enable an application to announce events to multiple interested consumers asynchronously, without coupling the senders to the receivers.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Publisher-Subscriber pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber"
+        }
+      ],
+      "parents": [
+        "queueBasedLoadLeveling"
+      ],
+      "children": [
+        "priorityQueue"
+      ]
+    },
+    "materializedView": {
+      "title": "Materialized View",
+      "sourceId": "WB7vQ4IJ0TPh2MbZvxP6V",
+      "type": "subtopic",
+      "order": 119,
+      "summary": "Generate prepopulated views over the data in one or more data stores when the data isn't ideally formatted for required query operations. This can help support efficient querying and data extraction, and improve application performance.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Materialized View pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/materialized-view"
+        }
+      ],
+      "parents": [
+        "dataManagement"
+      ],
+      "children": []
+    },
+    "gatewayOffloading": {
+      "title": "Gateway Offloading",
+      "sourceId": "0SOWAA8hrLM-WsG5k66fd",
+      "type": "subtopic",
+      "order": 120,
+      "summary": "Offload shared or specialized service functionality to a gateway proxy. This pattern can simplify application development by moving shared service functionality, such as the use of SSL certificates, from other parts of the application into the gateway.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Gateway Offloading pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading"
+        }
+      ],
+      "parents": [
+        "gatewayRouting"
+      ],
+      "children": [
+        "gatewayAggregation"
+      ]
+    },
+    "priorityQueue": {
+      "title": "Priority Queue",
+      "sourceId": "DZcZEOi7h3u0744YhASet",
+      "type": "subtopic",
+      "order": 121,
+      "summary": "Prioritize requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority. This pattern is useful in applications that offer different service level guarantees to individual clients.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Priority Queue pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/priority-queue"
+        }
+      ],
+      "parents": [
+        "publisherSubscriber"
+      ],
+      "children": [
+        "pipesAndFilters"
+      ]
+    },
+    "indexTable": {
+      "title": "Index Table",
+      "sourceId": "AH0nVeVsfYOjcI3vZvcdz",
+      "type": "subtopic",
+      "order": 122,
+      "summary": "Create indexes over the fields in data stores that are frequently referenced by queries. This pattern can improve query performance by allowing applications to more quickly locate the data to retrieve from a data store.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Index Table pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/index-table"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "gatewayAggregation": {
+      "title": "Gateway Aggregation",
+      "sourceId": "bANGLm_5zR9mqMd6Oox8s",
+      "type": "subtopic",
+      "order": 123,
+      "summary": "Use a gateway to aggregate multiple individual requests into a single request. This pattern is useful when a client must make multiple calls to different backend systems to perform an operation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Gateway Aggregation pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation"
+        }
+      ],
+      "parents": [
+        "gatewayOffloading"
+      ],
+      "children": [
+        "externalConfigStore"
+      ]
+    },
+    "pipesAndFilters": {
+      "title": "Pipes and Filters",
+      "sourceId": "siXdR3TB9-4wx_qWieJ5w",
+      "type": "subtopic",
+      "order": 124,
+      "summary": "Decompose a task that performs complex processing into a series of separate elements that can be reused. This can improve performance, scalability, and reusability by allowing task elements that perform the processing to be deployed and scaled independently.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Pipes and Filters pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters"
+        }
+      ],
+      "parents": [
+        "priorityQueue"
+      ],
+      "children": [
+        "competingConsumers"
+      ]
+    },
+    "eventSourcing": {
+      "title": "Event Sourcing",
+      "sourceId": "7OgRKlwFqrk3XO2z49EI1",
+      "type": "subtopic",
+      "order": 125,
+      "summary": "Instead of storing just the current state of the data in a domain, use an append-only store to record the full series of actions taken on that data. The store acts as the system of record and can be used to materialize the domain objects. This can simplify tasks in complex domains, by avoiding the need to synchronize the data model and the business domain, while improving performance, scalability, and responsiveness. It can also provide consistency for transactional data, and maintain full audit trails and history that can enable compensating actions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Event Sourcing pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Architecture",
+          "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "externalConfigStore": {
+      "title": "External Config Store",
+      "sourceId": "BrgXwf7g2F-6Rqfjryvpj",
+      "type": "subtopic",
+      "order": 126,
+      "summary": "Move configuration information out of the application deployment package to a centralized location. This can provide opportunities for easier management and control of configuration data, and for sharing configuration data across applications and application instances.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "External Configuration Store pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/external-configuration-store"
+        }
+      ],
+      "parents": [
+        "gatewayAggregation"
+      ],
+      "children": [
+        "computeResourceConsolidation"
+      ]
+    },
+    "competingConsumers": {
+      "title": "Competing Consumers",
+      "sourceId": "9Ld07KLOqP0ICtXEjngYM",
+      "type": "subtopic",
+      "order": 127,
+      "summary": "Enable multiple concurrent consumers to process messages received on the same messaging channel. With multiple concurrent consumers, a system can process multiple messages concurrently to optimize throughput, to improve scalability and availability, and to balance the workload.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Competing Consumers pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/competing-consumers"
+        }
+      ],
+      "parents": [
+        "pipesAndFilters"
+      ],
+      "children": [
+        "choreography"
+      ]
+    },
+    "cqrs": {
+      "title": "CQRS",
+      "sourceId": "LTD3dn05c0ruUJW0IQO7z",
+      "type": "subtopic",
+      "order": 128,
+      "summary": "CQRS stands for Command and Query Responsibility Segregation, a pattern that separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security. The flexibility created by migrating to CQRS allows a system to better evolve over time and prevents update commands from causing merge conflicts at the domain level.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "CQRS pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "computeResourceConsolidation": {
+      "title": "Compute Resource Consolidation",
+      "sourceId": "ODjVoXnvJasPvCS2A5iMO",
+      "type": "subtopic",
+      "order": 129,
+      "summary": "Consolidate multiple tasks or operations into a single computational unit. This can increase compute resource utilization, and reduce the costs and management overhead associated with performing compute processing in cloud-hosted applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Compute Resource Consolidation pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/compute-resource-consolidation"
+        }
+      ],
+      "parents": [
+        "externalConfigStore"
+      ],
+      "children": [
+        "backendsForFrontend"
+      ]
+    },
+    "choreography": {
+      "title": "Choreography",
+      "sourceId": "aCzRgUkVBvtHUeLU6p5ZH",
+      "type": "subtopic",
+      "order": 130,
+      "summary": "Have each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Choreography pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/choreography"
+        }
+      ],
+      "parents": [
+        "competingConsumers"
+      ],
+      "children": [
+        "claimCheck"
+      ]
+    },
+    "cacheAside2": {
+      "title": "Cache-Aside",
+      "sourceId": "PK4V9OWNVi8StdA2N13X2",
+      "type": "subtopic",
+      "order": 131,
+      "summary": "Load data on demand into a cache from a data store. This can improve performance and also helps to maintain consistency between data held in the cache and data in the underlying data store.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Cache-Aside pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cache-aside"
+        }
+      ],
+      "parents": [
+        "highAvailability"
+      ],
+      "children": []
+    },
+    "backendsForFrontend": {
+      "title": "Backends for Frontend",
+      "sourceId": "n4It-lr7FFtSY83DcGydX",
+      "type": "subtopic",
+      "order": 132,
+      "summary": "Create separate backend services to be consumed by specific frontend applications or interfaces. This pattern is useful when you want to avoid customizing a single backend for multiple interfaces. This pattern was first described by Sam Newman.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Backends for Frontends pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Frontend Development",
+          "url": "https://app.daily.dev/tags/frontend?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "computeResourceConsolidation"
+      ],
+      "children": [
+        "antiCorruptionLayer"
+      ]
+    },
+    "claimCheck": {
+      "title": "Claim Check",
+      "sourceId": "kl4upCnnZvJSf2uII1Pa0",
+      "type": "subtopic",
+      "order": 133,
+      "summary": "Split a large message into a claim check and a payload. Send the claim check to the messaging platform and store the payload to an external service. This pattern allows large messages to be processed, while protecting the message bus and the client from being overwhelmed or slowed down. This pattern also helps to reduce costs, as storage is usually cheaper than resource units used by the messaging platform.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Claim Check - Cloud Design patterns",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/claim-check"
+        }
+      ],
+      "parents": [
+        "choreography"
+      ],
+      "children": [
+        "asyncRequestReply"
+      ]
+    },
+    "antiCorruptionLayer": {
+      "title": "Anti-Corruption Layer",
+      "sourceId": "4hi7LvjLcv8eR6m-uk8XQ",
+      "type": "subtopic",
+      "order": 134,
+      "summary": "Implement a facade or adapter layer between different subsystems that don't share the same semantics. This layer translates requests that one subsystem makes to the other subsystem. Use this pattern to ensure that an application's design is not limited by dependencies on outside subsystems. This pattern was first described by Eric Evans in Domain-Driven Design.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Anti-corruption Layer pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer"
+        }
+      ],
+      "parents": [
+        "backendsForFrontend"
+      ],
+      "children": []
+    },
+    "asyncRequestReply": {
+      "title": "Async Request Reply",
+      "sourceId": "eNFNXPsFiryVxFe4unVxk",
+      "type": "subtopic",
+      "order": 135,
+      "summary": "Decouple backend processing from a frontend host, where backend processing needs to be asynchronous, but the frontend still needs a clear response.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Asynchronous Request-Reply pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/async-request-reply"
+        }
+      ],
+      "parents": [
+        "claimCheck"
+      ],
+      "children": []
+    },
+    "reliabilityPatterns": {
+      "title": "Reliability Patterns",
+      "sourceId": "DYkdM_L7T2GcTPAoZNnUR",
+      "type": "topic",
+      "order": 136,
+      "summary": "These patterns provide a way to design and implement systems that can withstand failures, maintain high levels of performance, and recover quickly from disruptions. Some common reliability patterns include Failover, Circuit Breaker, Retry, Bulkhead, Backpressure, Cache-Aside, Idempotent Operations and Health Endpoint Monitoring.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Reliability Patterns",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns"
+        }
+      ],
+      "parents": [
+        "cloudDesignPatterns"
+      ],
+      "children": [
+        "visitTheFollowingRelevantTracksToLearnMore"
+      ]
+    },
+    "availability": {
+      "title": "Availability",
+      "sourceId": "Xzkvf4naveszLGV9b-8ih",
+      "type": "topic",
+      "order": 137,
+      "summary": "Availability is measured as a percentage of uptime, and defines the proportion of time that a system is functional and working. Availability is affected by system errors, infrastructure problems, malicious attacks, and system load. Cloud applications typically provide users with a service level agreement (SLA), which means that applications must be designed and implemented to maximize availability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Availability Patterns",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#availability"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "deploymentStamps"
+      ]
+    },
+    "highAvailability": {
+      "title": "High Availability",
+      "sourceId": "wPe7Xlwqws7tEpTAVvYjr",
+      "type": "topic",
+      "order": 138,
+      "summary": "Azure infrastructure is composed of geographies, regions, and Availability Zones, which limit the blast radius of a failure and therefore limit potential impact to customer applications and data. The Azure Availability Zones construct was developed to provide a software and networking solution to protect against datacenter failures and to provide increased high availability (HA) to our customers. With HA architecture there is a balance between high resilience, low latency, and cost.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "High availability Patterns",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#high-availability"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "cacheAside2",
+        "deploymentStamps2"
+      ]
+    },
+    "resiliency": {
+      "title": "Resiliency",
+      "sourceId": "wlAWMjxZF6yav3ZXOScxH",
+      "type": "topic",
+      "order": 139,
+      "summary": "Resiliency is the ability of a system to gracefully handle and recover from failures, both inadvertent and malicious.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Resiliency Patterns",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#resiliency"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "bulkhead2"
+      ]
+    },
+    "deploymentStamps": {
+      "title": "Deployment Stamps",
+      "sourceId": "FPPJw-I1cw8OxKwmDh0dT",
+      "type": "subtopic",
+      "order": 140,
+      "summary": "The deployment stamp pattern involves provisioning, managing, and monitoring a heterogeneous group of resources to host and operate multiple workloads or tenants. Each individual copy is called a stamp, or sometimes a service unit, scale unit, or cell. In a multi-tenant environment, every stamp or scale unit can serve a predefined number of tenants. Multiple stamps can be deployed to scale the solution almost linearly and serve an increasing number of tenants. This approach can improve the scalability of your solution, allow you to deploy instances across multiple regions, and separate your customer data.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Deployment Stamps pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/deployment-stamp"
+        },
+        {
+          "type": "article",
+          "title": "Deployment Stamps 101",
+          "url": "https://blog.devgenius.io/deployment-stamps-101-7c04a6f704a2"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about CI/CD",
+          "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "availability"
+      ],
+      "children": [
+        "throttling",
+        "geodes",
+        "healthEndpointMonitoring"
+      ]
+    },
+    "deploymentStamps2": {
+      "title": "Deployment Stamps",
+      "sourceId": "Ze471tPbAwlwZyU4oIzH9",
+      "type": "subtopic",
+      "order": 141,
+      "summary": "The deployment stamp pattern involves provisioning, managing, and monitoring a heterogeneous group of resources to host and operate multiple workloads or tenants. Each individual copy is called a stamp, or sometimes a service unit, scale unit, or cell. In a multi-tenant environment, every stamp or scale unit can serve a predefined number of tenants. Multiple stamps can be deployed to scale the solution almost linearly and serve an increasing number of tenants. This approach can improve the scalability of your solution, allow you to deploy instances across multiple regions, and separate your customer data.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Deployment Stamps pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/deployment-stamp"
+        },
+        {
+          "type": "article",
+          "title": "Deployment Stamps 101",
+          "url": "https://blog.devgenius.io/deployment-stamps-101-7c04a6f704a2"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about CI/CD",
+          "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "highAvailability"
+      ],
+      "children": [
+        "geodes2",
+        "bulkhead",
+        "healthEndpointMonitoring2"
+      ]
+    },
+    "bulkhead2": {
+      "title": "Bulkhead",
+      "sourceId": "PLn9TF9GYnPcbpTdDMQbG",
+      "type": "subtopic",
+      "order": 142,
+      "summary": "The Bulkhead pattern is a type of application design that is tolerant of failure. In a bulkhead architecture, elements of an application are isolated into pools so that if one fails, the others will continue to function. It's named after the sectioned partitions (bulkheads) of a ship's hull. If the hull of a ship is compromised, only the damaged section fills with water, which prevents the ship from sinking.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Bulkhead pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"
+        },
+        {
+          "type": "article",
+          "title": "Get started with Bulkhead",
+          "url": "https://dzone.com/articles/resilient-microservices-pattern-bulkhead-pattern"
+        }
+      ],
+      "parents": [
+        "resiliency"
+      ],
+      "children": [
+        "circuitBreaker2"
+      ]
+    },
+    "throttling": {
+      "title": "Throttling",
+      "sourceId": "6YVkguDOtwveyeP4Z1NL3",
+      "type": "subtopic",
+      "order": 143,
+      "summary": "Control the consumption of resources used by an instance of an application, an individual tenant, or an entire service. This can allow the system to continue to function and meet service level agreements, even when an increase in demand places an extreme load on resources.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Throttling pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/throttling"
+        }
+      ],
+      "parents": [
+        "deploymentStamps"
+      ],
+      "children": []
+    },
+    "geodes": {
+      "title": "Geodes",
+      "sourceId": "Ml9lPDGjRAJTHkBnX51Un",
+      "type": "subtopic",
+      "order": 144,
+      "summary": "The Geode pattern involves deploying a collection of backend services into a set of geographical nodes, each of which can service any request for any client in any region. This pattern allows serving requests in an active-active style, improving latency and increasing availability by distributing request processing around the globe.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Geode pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/geodes"
+        },
+        {
+          "type": "article",
+          "title": "Geode Formation, Types & Appearance | What is a Geode?",
+          "url": "https://study.com/academy/lesson/geode-formation-types-appearance.html"
+        }
+      ],
+      "parents": [
+        "deploymentStamps"
+      ],
+      "children": []
+    },
+    "geodes2": {
+      "title": "Geodes",
+      "sourceId": "6hOSEZJZ7yezVN67h5gmS",
+      "type": "subtopic",
+      "order": 145,
+      "summary": "The Geode pattern involves deploying a collection of backend services into a set of geographical nodes, each of which can service any request for any client in any region. This pattern allows serving requests in an active-active style, improving latency and increasing availability by distributing request processing around the globe.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Geode pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/geodes"
+        }
+      ],
+      "parents": [
+        "deploymentStamps2"
+      ],
+      "children": []
+    },
+    "bulkhead": {
+      "title": "Bulkhead",
+      "sourceId": "IR2_kgs2U9rnAJiDBmpqK",
+      "type": "subtopic",
+      "order": 146,
+      "summary": "The Bulkhead pattern is a type of application design that is tolerant of failure. In a bulkhead architecture, elements of an application are isolated into pools so that if one fails, the others will continue to function. It's named after the sectioned partitions (bulkheads) of a ship's hull. If the hull of a ship is compromised, only the damaged section fills with water, which prevents the ship from sinking.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Bulkhead pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"
+        },
+        {
+          "type": "article",
+          "title": "Get started with Bulkhead",
+          "url": "https://dzone.com/articles/resilient-microservices-pattern-bulkhead-pattern"
+        }
+      ],
+      "parents": [
+        "deploymentStamps2"
+      ],
+      "children": []
+    },
+    "circuitBreaker2": {
+      "title": "Circuit Breaker",
+      "sourceId": "O4zYDqvVWD7sMI27k_0Nl",
+      "type": "subtopic",
+      "order": 147,
+      "summary": "Handle faults that might take a variable amount of time to recover from, when connecting to a remote service or resource. This can improve the stability and resiliency of an application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Circuit breaker design pattern",
+          "url": "https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern"
+        },
+        {
+          "type": "article",
+          "title": "Overview of Circuit Breaker",
+          "url": "https://medium.com/geekculture/design-patterns-for-microservices-circuit-breaker-pattern-276249ffab33"
+        }
+      ],
+      "parents": [
+        "bulkhead2"
+      ],
+      "children": [
+        "compensatingTransaction"
+      ]
+    },
+    "healthEndpointMonitoring": {
+      "title": "Health Endpoint Monitoring",
+      "sourceId": "cNJQoMNZmxNygWAJIA8HI",
+      "type": "subtopic",
+      "order": 148,
+      "summary": "Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals. This can help to verify that applications and services are performing correctly.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Health Endpoint Monitoring pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring"
+        },
+        {
+          "type": "article",
+          "title": "Explaining the health endpoint monitoring pattern",
+          "url": "https://www.oreilly.com/library/view/java-ee-8/9781788830621/5012c01e-90ca-4809-a210-d3736574f5b3.xhtml"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Monitoring",
+          "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "deploymentStamps"
+      ],
+      "children": [
+        "queueBasedLoadLeveling2"
+      ]
+    },
+    "healthEndpointMonitoring2": {
+      "title": "Health Endpoint Monitoring",
+      "sourceId": "uK5o7NgDvr2pV0ulF0Fh9",
+      "type": "subtopic",
+      "order": 149,
+      "summary": "Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals. This can help to verify that applications and services are performing correctly.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Health Endpoint Monitoring pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring"
+        },
+        {
+          "type": "article",
+          "title": "Explaining the health endpoint monitoring pattern",
+          "url": "https://www.oreilly.com/library/view/java-ee-8/9781788830621/5012c01e-90ca-4809-a210-d3736574f5b3.xhtml"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Monitoring",
+          "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "deploymentStamps2"
+      ],
+      "children": [
+        "circuitBreaker"
+      ]
+    },
+    "compensatingTransaction": {
+      "title": "Compensating Transaction",
+      "sourceId": "MNlWNjrG8eh5OzPVlbb9t",
+      "type": "subtopic",
+      "order": 150,
+      "summary": "Undo the work performed by a series of steps, which together define an eventually consistent operation, if one or more of the steps fail. Operations that follow the eventual consistency model are commonly found in cloud-hosted applications that implement complex business processes and workflows.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Compensating Transaction pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction"
+        },
+        {
+          "type": "article",
+          "title": "Intro to Compensation Transaction",
+          "url": "https://en.wikipedia.org/wiki/Compensating_transaction"
+        }
+      ],
+      "parents": [
+        "circuitBreaker2"
+      ],
+      "children": [
+        "healthEndpointMonitoring3"
+      ]
+    },
+    "circuitBreaker": {
+      "title": "Circuit Breaker",
+      "sourceId": "D1OmCoqvd3-_af3u0ciHr",
+      "type": "subtopic",
+      "order": 151,
+      "summary": "Handle faults that might take a variable amount of time to recover from, when connecting to a remote service or resource. This can improve the stability and resiliency of an application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Circuit breaker design pattern",
+          "url": "https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern"
+        },
+        {
+          "type": "article",
+          "title": "Overview of Circuit Breaker",
+          "url": "https://medium.com/geekculture/design-patterns-for-microservices-circuit-breaker-pattern-276249ffab33"
+        }
+      ],
+      "parents": [
+        "healthEndpointMonitoring2"
+      ],
+      "children": []
+    },
+    "queueBasedLoadLeveling2": {
+      "title": "Queue-Based Load Leveling",
+      "sourceId": "-M3Zd8w79sKBAY6_aJRE8",
+      "type": "subtopic",
+      "order": 152,
+      "summary": "Use a queue that acts as a buffer between a task and a service it invokes in order to smooth intermittent heavy loads that can cause the service to fail or the task to time out. This can help to minimize the impact of peaks in demand on availability and responsiveness for both the task and the service.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Queue-Based Load Leveling pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling"
+        }
+      ],
+      "parents": [
+        "healthEndpointMonitoring"
+      ],
+      "children": []
+    },
+    "healthEndpointMonitoring3": {
+      "title": "Health Endpoint Monitoring",
+      "sourceId": "CKCNk3obx4u43rBqUj2Yf",
+      "type": "subtopic",
+      "order": 153,
+      "summary": "Implement functional checks in an application that external tools can access through exposed endpoints at regular intervals. This can help to verify that applications and services are performing correctly.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Health Endpoint Monitoring pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/health-endpoint-monitoring"
+        },
+        {
+          "type": "article",
+          "title": "Explaining the health endpoint monitoring pattern",
+          "url": "https://www.oreilly.com/library/view/java-ee-8/9781788830621/5012c01e-90ca-4809-a210-d3736574f5b3.xhtml"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Monitoring",
+          "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "compensatingTransaction"
+      ],
+      "children": [
+        "leaderElection2"
+      ]
+    },
+    "leaderElection2": {
+      "title": "Leader Election",
+      "sourceId": "AJLBFyAsEdQYF6ygO0MmQ",
+      "type": "subtopic",
+      "order": 154,
+      "summary": "Coordinate the actions performed by a collection of collaborating instances in a distributed application by electing one instance as the leader that assumes responsibility for managing the others. This can help to ensure that instances don't conflict with each other, cause contention for shared resources, or inadvertently interfere with the work that other instances are performing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Leader Election Pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/leader-election"
+        }
+      ],
+      "parents": [
+        "healthEndpointMonitoring3"
+      ],
+      "children": [
+        "queueBasedLoadLeveling3"
+      ]
+    },
+    "security": {
+      "title": "Security",
+      "sourceId": "ZvYpE6-N5dAtRDIwqcAu6",
+      "type": "topic",
+      "order": 155,
+      "summary": "Security provides confidentiality, integrity, and availability assurances against malicious attacks on information systems (and safety assurances for attacks on operational technology systems). Losing these assurances can negatively impact your business operations and revenue, as well as your organization's reputation in the marketplace. Maintaining security requires following well-established practices (security hygiene) and being vigilant to detect and rapidly remediate vulnerabilities and active attacks.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Security patterns",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/framework/security/security-patterns"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Security",
+          "url": "https://app.daily.dev/tags/security?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "federatedIdentity"
+      ]
+    },
+    "queueBasedLoadLeveling3": {
+      "title": "Queue-Based Load Leveling",
+      "sourceId": "NybkOwl1lgaglZPRJQJ_Z",
+      "type": "subtopic",
+      "order": 156,
+      "summary": "Use a queue that acts as a buffer between a task and a service it invokes in order to smooth intermittent heavy loads that can cause the service to fail or the task to time out. This can help to minimize the impact of peaks in demand on availability and responsiveness for both the task and the service.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Queue-Based Load Leveling pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling"
+        }
+      ],
+      "parents": [
+        "leaderElection2"
+      ],
+      "children": [
+        "retry"
+      ]
+    },
+    "federatedIdentity": {
+      "title": "Federated Identity",
+      "sourceId": "lHPl-kr1ArblR7bJeQEB9",
+      "type": "subtopic",
+      "order": 157,
+      "summary": "Delegate authentication to an external identity provider. This can simplify development, minimize the requirement for user administration, and improve the user experience of the application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Federated Identity pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/federated-identity"
+        }
+      ],
+      "parents": [
+        "security"
+      ],
+      "children": [
+        "gatekeeper"
+      ]
+    },
+    "retry": {
+      "title": "Retry",
+      "sourceId": "xX_9VGUaOkBYFH3jPjnww",
+      "type": "subtopic",
+      "order": 158,
+      "summary": "Enable an application to handle transient failures when it tries to connect to a service or network resource, by transparently retrying a failed operation. This can improve the stability of the application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Retry pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry"
+        }
+      ],
+      "parents": [
+        "queueBasedLoadLeveling3"
+      ],
+      "children": [
+        "schedulerAgentSupervisor"
+      ]
+    },
+    "gatekeeper": {
+      "title": "Gatekeeper",
+      "sourceId": "DTQJu0AvgWOhMFcOYqzTD",
+      "type": "subtopic",
+      "order": 159,
+      "summary": "Protect applications and services using a dedicated host instance that acts as a broker between clients and the application or service, validates and sanitizes requests, and passes requests and data between them. This can provide an additional layer of security and limit the system's attack surface.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Gatekeeper pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/gatekeeper"
+        }
+      ],
+      "parents": [
+        "federatedIdentity"
+      ],
+      "children": [
+        "valetKey2"
+      ]
+    },
+    "schedulerAgentSupervisor": {
+      "title": "Scheduler Agent Supervisor",
+      "sourceId": "RTEJHZ26znfBLrpQPtNvn",
+      "type": "subtopic",
+      "order": 160,
+      "summary": "Coordinate a set of distributed actions as a single operation. If any of the actions fail, try to handle the failures transparently, or else undo the work that was performed, so the entire operation succeeds or fails as a whole. This can add resiliency to a distributed system, by enabling it to recover and retry actions that fail due to transient exceptions, long-lasting faults, and process failures.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Scheduler Agent Supervisor pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/scheduler-agent-supervisor"
+        }
+      ],
+      "parents": [
+        "retry"
+      ],
+      "children": []
+    },
+    "valetKey2": {
+      "title": "Valet Key",
+      "sourceId": "VltZgIrApHOwZ8YHvdmHB",
+      "type": "subtopic",
+      "order": 161,
+      "summary": "Use a token that provides clients with restricted direct access to a specific resource, in order to offload data transfer from the application. This is particularly useful in applications that use cloud-hosted storage systems or queues, and can minimize cost and maximize scalability and performance.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Valet Key pattern",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/valet-key"
+        }
+      ],
+      "parents": [
+        "gatekeeper"
+      ],
+      "children": []
+    },
+    "visitTheFollowingRelevantTracksToLearnMore": {
+      "title": "Visit the following relevant tracks to learn more",
+      "sourceId": "0vLaVNJaJSHZ_bHli6Qzs",
+      "type": "paragraph",
+      "order": 162,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "reliabilityPatterns"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "system-design",
+      "to": "introduction",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "whatIsSystemDesign",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "howToApproachSystemDesign",
+      "style": "dashed"
+    },
+    {
+      "from": "consistencyPatterns",
+      "to": "eventualConsistency",
+      "style": "dashed"
+    },
+    {
+      "from": "consistencyPatterns",
+      "to": "weakConsistency",
+      "style": "dashed"
+    },
+    {
+      "from": "consistencyPatterns",
+      "to": "strongConsistency",
+      "style": "dashed"
+    },
+    {
+      "from": "consistencyPatterns",
+      "to": "availabilityPatterns",
+      "style": "solid"
+    },
+    {
+      "from": "availabilityPatterns",
+      "to": "backgroundJobs",
+      "style": "solid"
+    },
+    {
+      "from": "scheduleDriven",
+      "to": "returningResults",
+      "style": "dashed"
+    },
+    {
+      "from": "backgroundJobs",
+      "to": "eventDriven",
+      "style": "dashed"
+    },
+    {
+      "from": "backgroundJobs",
+      "to": "scheduleDriven",
+      "style": "dashed"
+    },
+    {
+      "from": "backgroundJobs",
+      "to": "domainNameSystem",
+      "style": "solid"
+    },
+    {
+      "from": "domainNameSystem",
+      "to": "contentDeliveryNetworks",
+      "style": "solid"
+    },
+    {
+      "from": "contentDeliveryNetworks",
+      "to": "pullCdns",
+      "style": "dashed"
+    },
+    {
+      "from": "contentDeliveryNetworks",
+      "to": "pushCdns",
+      "style": "dashed"
+    },
+    {
+      "from": "loadBalancers",
+      "to": "lbVsReverseProxy",
+      "style": "dashed"
+    },
+    {
+      "from": "loadBalancers",
+      "to": "loadBalancingAlgorithms",
+      "style": "dashed"
+    },
+    {
+      "from": "loadBalancers",
+      "to": "layer7LoadBalancing",
+      "style": "dashed"
+    },
+    {
+      "from": "loadBalancers",
+      "to": "layer4LoadBalancing",
+      "style": "dashed"
+    },
+    {
+      "from": "loadBalancers",
+      "to": "horizontalScaling",
+      "style": "dashed"
+    },
+    {
+      "from": "loadBalancers",
+      "to": "applicationLayer",
+      "style": "solid"
+    },
+    {
+      "from": "applicationLayer",
+      "to": "serviceDiscovery",
+      "style": "dashed"
+    },
+    {
+      "from": "applicationLayer",
+      "to": "databases",
+      "style": "solid"
+    },
+    {
+      "from": "databases",
+      "to": "sqlVsNosql",
+      "style": "dashed"
+    },
+    {
+      "from": "databases",
+      "to": "caching",
+      "style": "solid"
+    },
+    {
+      "from": "caching",
+      "to": "asynchronism",
+      "style": "solid"
+    },
+    {
+      "from": "asynchronism",
+      "to": "taskQueues",
+      "style": "dashed"
+    },
+    {
+      "from": "asynchronism",
+      "to": "messageQueues",
+      "style": "dashed"
+    },
+    {
+      "from": "asynchronism",
+      "to": "backPressure",
+      "style": "dashed"
+    },
+    {
+      "from": "idempotentOperations",
+      "to": "communication",
+      "style": "solid"
+    },
+    {
+      "from": "communication",
+      "to": "udp",
+      "style": "dashed"
+    },
+    {
+      "from": "performanceAntipatterns",
+      "to": "monitoring",
+      "style": "solid"
+    },
+    {
+      "from": "monitoring",
+      "to": "securityMonitoring",
+      "style": "dashed"
+    },
+    {
+      "from": "monitoring",
+      "to": "healthMonitoring",
+      "style": "dashed"
+    },
+    {
+      "from": "monitoring",
+      "to": "availabilityMonitoring",
+      "style": "dashed"
+    },
+    {
+      "from": "monitoring",
+      "to": "performanceMonitoring",
+      "style": "dashed"
+    },
+    {
+      "from": "monitoring",
+      "to": "usageMonitoring",
+      "style": "dashed"
+    },
+    {
+      "from": "monitoring",
+      "to": "instrumentation",
+      "style": "dashed"
+    },
+    {
+      "from": "monitoring",
+      "to": "visualizationAlerts",
+      "style": "dashed"
+    },
+    {
+      "from": "cloudDesignPatterns",
+      "to": "designImplementation",
+      "style": "dashed"
+    },
+    {
+      "from": "cloudDesignPatterns",
+      "to": "reliabilityPatterns",
+      "style": "solid"
+    },
+    {
+      "from": "reliabilityPatterns",
+      "to": "visitTheFollowingRelevantTracksToLearnMore",
+      "style": "solid"
+    },
+    {
+      "from": "cpConsistencyPartitionTolerance",
+      "to": "capTheorem",
+      "style": "solid"
+    },
+    {
+      "from": "activePassive",
+      "to": "failOver",
+      "style": "solid"
+    },
+    {
+      "from": "masterMaster",
+      "to": "replication",
+      "style": "solid"
+    },
+    {
+      "from": "availabilityInParallelVsSequence",
+      "to": "availabilityInNumbers",
+      "style": "solid"
+    },
+    {
+      "from": "domainNameSystem",
+      "to": "microservices",
+      "style": "solid"
+    },
+    {
+      "from": "domainNameSystem",
+      "to": "keyValueStore",
+      "style": "solid"
+    },
+    {
+      "from": "applicationLayer",
+      "to": "documentStore",
+      "style": "solid"
+    },
+    {
+      "from": "applicationLayer",
+      "to": "wideColumnStore",
+      "style": "solid"
+    },
+    {
+      "from": "applicationLayer",
+      "to": "graphDatabases",
+      "style": "solid"
+    },
+    {
+      "from": "nosql",
+      "to": "sharding",
+      "style": "solid"
+    },
+    {
+      "from": "horizontalScaling",
+      "to": "refreshAhead",
+      "style": "solid"
+    },
+    {
+      "from": "refreshAhead",
+      "to": "writeBehind",
+      "style": "solid"
+    },
+    {
+      "from": "databases",
+      "to": "denormalization",
+      "style": "solid"
+    },
+    {
+      "from": "writeBehind",
+      "to": "writeThrough",
+      "style": "solid"
+    },
+    {
+      "from": "writeThrough",
+      "to": "cacheAside",
+      "style": "solid"
+    },
+    {
+      "from": "cacheAside",
+      "to": "clientCaching",
+      "style": "solid"
+    },
+    {
+      "from": "rdbms",
+      "to": "http",
+      "style": "solid"
+    },
+    {
+      "from": "rdbms",
+      "to": "tcp",
+      "style": "solid"
+    },
+    {
+      "from": "rdbms",
+      "to": "rpc",
+      "style": "solid"
+    },
+    {
+      "from": "rdbms",
+      "to": "grpc",
+      "style": "solid"
+    },
+    {
+      "from": "performanceAntipatterns",
+      "to": "rest",
+      "style": "solid"
+    },
+    {
+      "from": "performanceAntipatterns",
+      "to": "graphql",
+      "style": "solid"
+    },
+    {
+      "from": "webServerCaching",
+      "to": "databaseCaching",
+      "style": "solid"
+    },
+    {
+      "from": "databaseCaching",
+      "to": "applicationCaching",
+      "style": "solid"
+    },
+    {
+      "from": "performanceAntipatterns",
+      "to": "busyDatabase",
+      "style": "solid"
+    },
+    {
+      "from": "performanceAntipatterns",
+      "to": "improperInstantiation",
+      "style": "solid"
+    },
+    {
+      "from": "performanceAntipatterns",
+      "to": "busyFrontend",
+      "style": "solid"
+    },
+    {
+      "from": "improperInstantiation",
+      "to": "monolithicPersistence",
+      "style": "solid"
+    },
+    {
+      "from": "performanceAntipatterns",
+      "to": "chattyIO",
+      "style": "solid"
+    },
+    {
+      "from": "monolithicPersistence",
+      "to": "noisyNeighbor",
+      "style": "solid"
+    },
+    {
+      "from": "monitoring",
+      "to": "retryStorm",
+      "style": "solid"
+    },
+    {
+      "from": "noisyNeighbor",
+      "to": "synchronousIO",
+      "style": "solid"
+    },
+    {
+      "from": "monitoring",
+      "to": "noCaching",
+      "style": "solid"
+    },
+    {
+      "from": "synchronousIO",
+      "to": "extraneousFetching",
+      "style": "solid"
+    },
+    {
+      "from": "designImplementation",
+      "to": "stranglerFig",
+      "style": "solid"
+    },
+    {
+      "from": "dataManagement",
+      "to": "sidecar",
+      "style": "solid"
+    },
+    {
+      "from": "designImplementation",
+      "to": "staticContentHosting2",
+      "style": "solid"
+    },
+    {
+      "from": "messaging",
+      "to": "sequentialConvoy",
+      "style": "solid"
+    },
+    {
+      "from": "dataManagement",
+      "to": "valetKey",
+      "style": "solid"
+    },
+    {
+      "from": "staticContentHosting2",
+      "to": "leaderElection",
+      "style": "solid"
+    },
+    {
+      "from": "staticContentHosting2",
+      "to": "cqrs2",
+      "style": "solid"
+    },
+    {
+      "from": "sequentialConvoy",
+      "to": "schedulingAgentSupervisor",
+      "style": "solid"
+    },
+    {
+      "from": "dataManagement",
+      "to": "staticContentHosting",
+      "style": "solid"
+    },
+    {
+      "from": "staticContentHosting2",
+      "to": "pipesFilters",
+      "style": "solid"
+    },
+    {
+      "from": "staticContentHosting2",
+      "to": "ambassador",
+      "style": "solid"
+    },
+    {
+      "from": "schedulingAgentSupervisor",
+      "to": "queueBasedLoadLeveling",
+      "style": "solid"
+    },
+    {
+      "from": "dataManagement",
+      "to": "sharding2",
+      "style": "solid"
+    },
+    {
+      "from": "staticContentHosting2",
+      "to": "gatewayRouting",
+      "style": "solid"
+    },
+    {
+      "from": "queueBasedLoadLeveling",
+      "to": "publisherSubscriber",
+      "style": "solid"
+    },
+    {
+      "from": "dataManagement",
+      "to": "materializedView",
+      "style": "solid"
+    },
+    {
+      "from": "gatewayRouting",
+      "to": "gatewayOffloading",
+      "style": "solid"
+    },
+    {
+      "from": "publisherSubscriber",
+      "to": "priorityQueue",
+      "style": "solid"
+    },
+    {
+      "from": "gatewayOffloading",
+      "to": "gatewayAggregation",
+      "style": "solid"
+    },
+    {
+      "from": "priorityQueue",
+      "to": "pipesAndFilters",
+      "style": "solid"
+    },
+    {
+      "from": "gatewayAggregation",
+      "to": "externalConfigStore",
+      "style": "solid"
+    },
+    {
+      "from": "pipesAndFilters",
+      "to": "competingConsumers",
+      "style": "solid"
+    },
+    {
+      "from": "externalConfigStore",
+      "to": "computeResourceConsolidation",
+      "style": "solid"
+    },
+    {
+      "from": "competingConsumers",
+      "to": "choreography",
+      "style": "solid"
+    },
+    {
+      "from": "highAvailability",
+      "to": "cacheAside2",
+      "style": "solid"
+    },
+    {
+      "from": "computeResourceConsolidation",
+      "to": "backendsForFrontend",
+      "style": "solid"
+    },
+    {
+      "from": "choreography",
+      "to": "claimCheck",
+      "style": "solid"
+    },
+    {
+      "from": "backendsForFrontend",
+      "to": "antiCorruptionLayer",
+      "style": "solid"
+    },
+    {
+      "from": "claimCheck",
+      "to": "asyncRequestReply",
+      "style": "solid"
+    },
+    {
+      "from": "availability",
+      "to": "deploymentStamps",
+      "style": "solid"
+    },
+    {
+      "from": "highAvailability",
+      "to": "deploymentStamps2",
+      "style": "solid"
+    },
+    {
+      "from": "resiliency",
+      "to": "bulkhead2",
+      "style": "solid"
+    },
+    {
+      "from": "deploymentStamps",
+      "to": "throttling",
+      "style": "solid"
+    },
+    {
+      "from": "deploymentStamps",
+      "to": "geodes",
+      "style": "solid"
+    },
+    {
+      "from": "deploymentStamps2",
+      "to": "geodes2",
+      "style": "solid"
+    },
+    {
+      "from": "deploymentStamps2",
+      "to": "bulkhead",
+      "style": "solid"
+    },
+    {
+      "from": "bulkhead2",
+      "to": "circuitBreaker2",
+      "style": "solid"
+    },
+    {
+      "from": "deploymentStamps",
+      "to": "healthEndpointMonitoring",
+      "style": "solid"
+    },
+    {
+      "from": "deploymentStamps2",
+      "to": "healthEndpointMonitoring2",
+      "style": "solid"
+    },
+    {
+      "from": "circuitBreaker2",
+      "to": "compensatingTransaction",
+      "style": "solid"
+    },
+    {
+      "from": "healthEndpointMonitoring2",
+      "to": "circuitBreaker",
+      "style": "solid"
+    },
+    {
+      "from": "healthEndpointMonitoring",
+      "to": "queueBasedLoadLeveling2",
+      "style": "solid"
+    },
+    {
+      "from": "compensatingTransaction",
+      "to": "healthEndpointMonitoring3",
+      "style": "solid"
+    },
+    {
+      "from": "healthEndpointMonitoring3",
+      "to": "leaderElection2",
+      "style": "solid"
+    },
+    {
+      "from": "leaderElection2",
+      "to": "queueBasedLoadLeveling3",
+      "style": "solid"
+    },
+    {
+      "from": "security",
+      "to": "federatedIdentity",
+      "style": "solid"
+    },
+    {
+      "from": "queueBasedLoadLeveling3",
+      "to": "retry",
+      "style": "solid"
+    },
+    {
+      "from": "federatedIdentity",
+      "to": "gatekeeper",
+      "style": "solid"
+    },
+    {
+      "from": "retry",
+      "to": "schedulerAgentSupervisor",
+      "style": "solid"
+    },
+    {
+      "from": "gatekeeper",
+      "to": "valetKey2",
+      "style": "solid"
+    }
+  ]
+}

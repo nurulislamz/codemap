@@ -1,0 +1,3955 @@
+{
+  "title": "Ruby",
+  "summary": "Step by step guide to becoming a Ruby developer in 2026",
+  "url": "https://roadmap.sh/ruby",
+  "order": [
+    "introduction",
+    "packageManagers",
+    "installers",
+    "managers",
+    "settingThingsUp",
+    "constantsVariables",
+    "integers",
+    "floats",
+    "putsPrintP",
+    "syntaxBasics",
+    "booleans",
+    "strings",
+    "comments",
+    "hashes",
+    "arrays",
+    "namingConventions",
+    "dataTypes",
+    "nil",
+    "symbols",
+    "typeCasting",
+    "arithmetic",
+    "operators",
+    "case",
+    "unless",
+    "comparison",
+    "conditionalStatements",
+    "ifElsifElse",
+    "logical",
+    "assignment",
+    "while",
+    "until",
+    "doWhile",
+    "ranges",
+    "for",
+    "each",
+    "times",
+    "loopsEnumerations",
+    "break",
+    "next",
+    "redo",
+    "querying",
+    "fetching",
+    "enumerable",
+    "searchingFiltering",
+    "handlingExceptions",
+    "beginRescueEnsure",
+    "sorting",
+    "iterating",
+    "interactiveRubyIrb",
+    "objectOrientedProgramming",
+    "methodsAkaFunctions",
+    "dateTime",
+    "definingMethods",
+    "packageManagement",
+    "regex",
+    "methodParameters",
+    "rubygems",
+    "fileIO",
+    "scope",
+    "bundler",
+    "chainingMethods",
+    "dataStructuresAlgorithms",
+    "environments",
+    "stacksQueues",
+    "rvm",
+    "rbenv",
+    "blocksProcsLambdas",
+    "searchAlgorithms",
+    "blocks",
+    "sortingAlgorithms",
+    "procs",
+    "recursion",
+    "send",
+    "lambdas",
+    "defineMethod",
+    "classesObjects",
+    "definingClasses",
+    "methodMissing",
+    "metaprogramming",
+    "instanceVariables",
+    "rubyDsl",
+    "attributesAccessors",
+    "threads",
+    "inheritance",
+    "concurrency",
+    "ractors",
+    "fibers",
+    "concurrentRuby",
+    "modulesMixins",
+    "toolingEcosystem",
+    "advancedTopics",
+    "closures",
+    "debugging",
+    "methodLookup",
+    "pickAFramework",
+    "pry",
+    "irb",
+    "rubyOnRails2",
+    "monkeyPatching",
+    "byebug",
+    "debug",
+    "rack",
+    "sinatra",
+    "refinements",
+    "testing",
+    "singletonClasses",
+    "rspec",
+    "ides",
+    "vsCode",
+    "minitest",
+    "testUnit",
+    "rubymine",
+    "lintingFormating",
+    "rubocop",
+    "standard",
+    "documentation",
+    "rdoc",
+    "yard"
+  ],
+  "topics": {
+    "introduction": {
+      "title": "Introduction",
+      "sourceId": "A_ftl-42mIGBk-9S5LgCv",
+      "type": "topic",
+      "order": 1,
+      "summary": "Ruby is a dynamic, open-source programming language known for its simplicity and productivity. It emphasizes human readability, using a syntax that is easy to learn and write. Ruby is object-oriented, meaning everything is treated as an object, and it supports multiple programming paradigms, including procedural, object-oriented, and functional programming.",
+      "video": {
+        "title": "Ruby Programming Language - Full Course",
+        "url": "https://www.youtube.com/playlist?list=PL_EzhIKp343lBMH4UuklrMRL_WkilGoXe"
+      },
+      "articles": [
+        {
+          "type": "book",
+          "title": "The Ruby Programming Language",
+          "url": "https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf"
+        },
+        {
+          "type": "official",
+          "title": "Ruby",
+          "url": "https://www.ruby-lang.org/en/"
+        },
+        {
+          "type": "official",
+          "title": "Documentation",
+          "url": "https://www.ruby-lang.org/en/documentation/"
+        },
+        {
+          "type": "official",
+          "title": "Ruby in Twenty Minutes",
+          "url": "https://www.ruby-lang.org/en/documentation/quickstart/"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Tutorial",
+          "url": "https://www.tutorialspoint.com/ruby/index.htm"
+        },
+        {
+          "type": "article",
+          "title": "Learn Ruby Online",
+          "url": "https://www.learnrubyonline.org/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Ruby",
+          "url": "https://app.daily.dev/tags/ruby?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "ruby"
+      ],
+      "children": []
+    },
+    "packageManagers": {
+      "title": "Package Managers",
+      "sourceId": "cRQjwGKIG7CmbDOwj7dfU",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "Package managers simplify the process of installing and managing software, including Ruby, on your system. Instead of manually downloading and configuring Ruby, you can use a package manager specific to your operating system. For example, on macOS, you might use Homebrew, while on Debian/Ubuntu Linux, you'd use apt. These tools handle dependencies and ensure Ruby is installed correctly, making the setup process much easier.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Package Management Systems",
+          "url": "https://www.ruby-lang.org/en/documentation/installation/#package-management-systems"
+        }
+      ],
+      "parents": [
+        "settingThingsUp"
+      ],
+      "children": []
+    },
+    "installers": {
+      "title": "Installers",
+      "sourceId": "zY4gsqXOOT3yp9ad9-T5a",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "Installers are software packages designed to simplify the process of setting up Ruby on your computer. They typically handle downloading the necessary files, configuring your system environment, and ensuring that Ruby and its related tools are ready to use. Using an installer avoids the complexities of manual installation, making it easier for beginners to get started with Ruby development.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Installers - Ruby Docs",
+          "url": "https://www.ruby-lang.org/en/documentation/installation/#installers"
+        },
+        {
+          "type": "official",
+          "title": "RubyInstaller (Windows)",
+          "url": "https://rubyinstaller.org/"
+        },
+        {
+          "type": "official",
+          "title": "Ruby Stack",
+          "url": "https://bitnami.com/stack/ruby/installer"
+        },
+        {
+          "type": "opensource",
+          "title": "ruby-build (macOS, Linux, UNIX OS)",
+          "url": "https://github.com/rbenv/ruby-build#readme"
+        },
+        {
+          "type": "opensource",
+          "title": "ruby-install (macOS, Linux, UNIX OS)",
+          "url": "https://github.com/postmodern/ruby-install#readme"
+        }
+      ],
+      "parents": [
+        "settingThingsUp"
+      ],
+      "children": []
+    },
+    "managers": {
+      "title": "Managers",
+      "sourceId": "RnKFjcscp8nqwesQ06YWU",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "Ruby version managers are tools that allow you to install and manage multiple versions of Ruby on the same system. This is useful because different projects may require different Ruby versions, and using a version manager prevents conflicts and simplifies switching between them. They typically work by modifying your shell environment to point to the desired Ruby installation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Managers - Ruby Docs",
+          "url": "https://www.ruby-lang.org/en/documentation/installation/#managers"
+        }
+      ],
+      "parents": [
+        "settingThingsUp"
+      ],
+      "children": [
+        "floats",
+        "booleans",
+        "hashes",
+        "nil",
+        "case"
+      ]
+    },
+    "settingThingsUp": {
+      "title": "Setting things Up",
+      "sourceId": "Av5hlCtE-ZoeKpS0k3kLA",
+      "type": "topic",
+      "order": 5,
+      "summary": "Installing Ruby involves setting up the Ruby interpreter and related tools on your system so you can run Ruby programs. This typically includes downloading a Ruby distribution, configuring your environment, and verifying the installation to ensure everything is working correctly. Different operating systems (like Windows, macOS, and Linux) have their own preferred methods for installing Ruby, often involving package managers or dedicated installers.",
+      "video": {
+        "title": "Ruby Beginner Tutorial 2 | How To Install Ruby On Windows",
+        "url": "https://www.youtube.com/watch?v=XC1ccTyhLPI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Installing Ruby",
+          "url": "https://www.ruby-lang.org/en/documentation/installation/"
+        },
+        {
+          "type": "article",
+          "title": "Installing Ruby",
+          "url": "https://www.theodinproject.com/lessons/ruby-installing-ruby"
+        },
+        {
+          "type": "article",
+          "title": "How to Install Ruby on Windows, macOS, and Linux",
+          "url": "https://dev.to/luigi_ichi/how-to-install-ruby-on-windows-macos-and-linux-35o3"
+        },
+        {
+          "type": "article",
+          "title": "Setting up Ruby on WSL2 using Rbenv",
+          "url": "https://codex.org/2022/08/19/setting-up-ruby-wsl2.html"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "managers",
+        "installers",
+        "packageManagers",
+        "syntaxBasics"
+      ]
+    },
+    "constantsVariables": {
+      "title": "Constants & Variables",
+      "sourceId": "FfM3pPbyP1VsvWousb3YK",
+      "type": "topic",
+      "order": 6,
+      "summary": "In Ruby, variables are named storage locations that hold data, and their values can be changed during the program's execution. Constants, on the other hand, are also named storage locations, but their values are intended to remain fixed throughout the program's runtime. While Ruby technically allows you to reassign a constant (it will issue a warning), the convention is to treat them as immutable values that should not be altered. Variables are typically named using snake\\_case, while constants are named using SCREAMING\\_SNAKE\\_CASE.",
+      "video": {
+        "title": "Variables | Ruby | Tutorial 6",
+        "url": "https://www.youtube.com/watch?v=4mWc6Q9shcQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Variables",
+          "url": "https://ruby-for-beginners.rubymonstas.org/variables.html"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Variables",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_variables.htm"
+        },
+        {
+          "type": "article",
+          "title": "Everything You Need to Know About Ruby Constants",
+          "url": "https://www.rubyguides.com/2017/07/ruby-constants/"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started with Ruby Variables: A Beginner\u2019s Guide",
+          "url": "https://medium.com/@sz.soczewka/getting-started-with-ruby-variables-a-beginners-guide-d90a53eb5139"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "integers": {
+      "title": "Integers",
+      "sourceId": "_-bUq5jtewDmsmnzYw1-q",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "Integers are whole numbers, meaning they don't have any fractional or decimal parts. They can be positive, negative, or zero. In programming, integers are used to represent countable quantities, indices, and other discrete values.",
+      "video": {
+        "title": "03 Ruby Learning Path Integers and Floats",
+        "url": "https://docs.ruby-lang.org/en/master/Integer.html"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "class Integer",
+          "url": "https://docs.ruby-lang.org/en/master/Integer.html"
+        },
+        {
+          "type": "article",
+          "title": "Numbers",
+          "url": "https://ruby-for-beginners.rubymonstas.org/built_in_classes/numbers.html"
+        },
+        {
+          "type": "article",
+          "title": "Numbers - Odin Project",
+          "url": "https://www.theodinproject.com/lessons/ruby-basic-data-types#numbers"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "floats": {
+      "title": "Floats",
+      "sourceId": "aLIXcqB258WNrdASuN_7G",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Floats represent real numbers with fractional parts in Ruby. They are used to store numerical values that require more precision than integers can provide. Floats are typically represented using a decimal point or in scientific notation.",
+      "video": {
+        "title": "03 Ruby Learning Path Integers and Floats",
+        "url": "https://www.youtube.com/watch?v=FScOX-TavfA"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "class Floar",
+          "url": "https://docs.ruby-lang.org/en/master/Float.html"
+        },
+        {
+          "type": "article",
+          "title": "Numbers",
+          "url": "https://ruby-for-beginners.rubymonstas.org/built_in_classes/numbers.html"
+        },
+        {
+          "type": "article",
+          "title": "Numbers - Odin Project",
+          "url": "https://www.theodinproject.com/lessons/ruby-basic-data-types#numbers"
+        }
+      ],
+      "parents": [
+        "managers"
+      ],
+      "children": []
+    },
+    "putsPrintP": {
+      "title": "puts, print, p",
+      "sourceId": "DKA6AJR1kz6Ox90MmN5Tl",
+      "type": "topic",
+      "order": 9,
+      "summary": "`puts`, `print`, and `p` are methods in Ruby used to display output to the console. `puts` prints the given arguments followed by a newline character, `print` prints the arguments as they are without adding a newline, and `p` prints a human-readable representation of the given object, which is useful for debugging.",
+      "video": {
+        "title": "Differences Between Print, Puts & P in Ruby",
+        "url": "https://www.youtube.com/watch?v=9jSwVvyjAKE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Understanding The Differences Between Puts, Print & P",
+          "url": "https://www.rubyguides.com/2018/10/puts-vs-print/"
+        },
+        {
+          "type": "article",
+          "title": "puts vs print vs p in Ruby",
+          "url": "https://flexiple.com/ruby-on-rails/puts-vs-p-vs-print-ruby"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "syntaxBasics": {
+      "title": "Syntax Basics",
+      "sourceId": "6rs1pmEXEGfiiDoblaKQN",
+      "type": "label",
+      "order": 10,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "settingThingsUp"
+      ],
+      "children": []
+    },
+    "booleans": {
+      "title": "Booleans",
+      "sourceId": "Ze02ApxTvyQqtB3VYv3d4",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "Booleans represent truth values: either `true` or `false`. They are fundamental for decision-making in Ruby code, allowing programs to execute different blocks of code based on whether a condition is true or false. Boolean values are the result of logical operations and comparisons.",
+      "video": {
+        "title": "True or False Booleans in Ruby for Beginners 4",
+        "url": "https://www.youtube.com/watch?v=zzDNAu3IVpQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Booleans - Odin Project",
+          "url": "https://www.theodinproject.com/lessons/ruby-basic-data-types#booleans"
+        },
+        {
+          "type": "article",
+          "title": "True, False, and Nil",
+          "url": "https://ruby-for-beginners.rubymonstas.org/built_in_classes/true_false_nil.html"
+        }
+      ],
+      "parents": [
+        "managers"
+      ],
+      "children": []
+    },
+    "strings": {
+      "title": "Strings",
+      "sourceId": "F-0Rxwu_RcNF_NOoFHoo7",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Strings are sequences of characters used to represent text. They are a fundamental data type for storing and manipulating textual information. Strings can contain letters, numbers, symbols, and spaces, and are typically enclosed within single or double quotes.",
+      "video": {
+        "title": "Working With Strings | Ruby | Tutorial 8",
+        "url": "https://www.youtube.com/watch?v=9HB4iIAxuh0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "class String",
+          "url": "https://docs.ruby-lang.org/en/master/String.html"
+        },
+        {
+          "type": "article",
+          "title": "Strings",
+          "url": "https://ruby-for-beginners.rubymonstas.org/built_in_classes/strings.html"
+        },
+        {
+          "type": "article",
+          "title": "Strings - Odin Project",
+          "url": "https://www.theodinproject.com/lessons/ruby-basic-data-types#strings"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "comments": {
+      "title": "Comments",
+      "sourceId": "PqSnJOOQm3lRoBUs9Fan6",
+      "type": "topic",
+      "order": 13,
+      "summary": "Comments are notes in your code that the Ruby interpreter ignores. They're used to explain what the code does, making it easier for you and others to understand. You can create a single-line comment by starting a line with a ``. For multi-line comments, you can use `=begin` and `=end` blocks; anything between these markers is treated as a comment.",
+      "video": {
+        "title": "Comments | Ruby | Tutorial 25",
+        "url": "https://www.youtube.com/watch?v=7wbX3OMgqn0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Code Comments",
+          "url": "https://docs.ruby-lang.org/en/master/syntax/comments_rdoc.html"
+        },
+        {
+          "type": "article",
+          "title": "How To Use Comments in Ruby",
+          "url": "https://www.digitalocean.com/community/tutorials/how-to-use-comments-in-ruby"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "hashes": {
+      "title": "Hashes",
+      "sourceId": "mpsx0lr9ljlMEzuU5cZD6",
+      "type": "subtopic",
+      "order": 14,
+      "summary": "Hashes are collections of key-value pairs. Think of them like dictionaries, where each word (the key) has a definition (the value). Keys are unique within a hash, and they are used to quickly access their corresponding values. Hashes can store any type of data as keys and values, making them a versatile way to organize and retrieve information.",
+      "video": {
+        "title": "Hashes | Ruby | Tutorial 14",
+        "url": "https://www.youtube.com/watch?v=BtHKhsDUPwQ"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "class Hash",
+          "url": "https://docs.ruby-lang.org/en/master/Hash.html"
+        },
+        {
+          "type": "article",
+          "title": "What is a Hash",
+          "url": "https://launchschool.com/books/ruby/read/hashes#whatisahash"
+        },
+        {
+          "type": "article",
+          "title": "Hashes - Odin Project",
+          "url": "https://www.theodinproject.com/lessons/ruby-hashes"
+        }
+      ],
+      "parents": [
+        "managers"
+      ],
+      "children": []
+    },
+    "arrays": {
+      "title": "Arrays",
+      "sourceId": "2QHXNKV0tETI5FroFNylt",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "Arrays in Ruby are ordered collections of items. They can hold any type of data, including numbers, strings, symbols, or even other arrays. You create an array using square brackets `[]`, with elements separated by commas. Arrays are dynamic, meaning their size can change as you add or remove elements. You can access elements in an array using their index, starting from 0 for the first element.",
+      "video": {
+        "title": "Arrays are Easy in Ruby for Beginners 9",
+        "url": "https://www.youtube.com/watch?v=PeyodDIfLeE"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "class Array",
+          "url": "https://docs.ruby-lang.org/en/master/Array.html"
+        },
+        {
+          "type": "article",
+          "title": "Arrays",
+          "url": "https://launchschool.com/books/ruby/read/arrays#whatisanarray"
+        },
+        {
+          "type": "article",
+          "title": "Arrays - Odin Project",
+          "url": "https://www.theodinproject.com/lessons/ruby-arrays"
+        },
+        {
+          "type": "article",
+          "title": "Arrrays",
+          "url": "https://ruby-for-beginners.rubymonstas.org/built_in_classes/arrays.html"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "namingConventions": {
+      "title": "Naming conventions",
+      "sourceId": "tRGKIfQG9IiPJGuO8DUX4",
+      "type": "topic",
+      "order": 16,
+      "summary": "Naming conventions are a set of rules or guidelines for choosing names for variables, methods, classes, and other entities in a programming language. These conventions promote code readability, maintainability, and consistency across projects. Following a standard naming style helps developers understand the purpose and scope of different elements within the code more easily.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Ruby Naming Convention",
+          "url": "https://namingconvention.org/ruby/"
+        },
+        {
+          "type": "article",
+          "title": "Naming conventions in Ruby language",
+          "url": "https://dhanusir.com/ruby/section-two/naming-conventions/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "dataTypes": {
+      "title": "Data Types",
+      "sourceId": "wsnjdnZZohQsVBfM1uN8H",
+      "type": "topic",
+      "order": 17,
+      "summary": "Data types classify the kind of value a variable can hold. They define the operations that can be performed on the data and the way the data is stored in memory. Common data types include numbers (integers and floats), strings (sequences of characters), booleans (true or false), and more complex structures like arrays (ordered lists) and hashes (key-value pairs).",
+      "video": {
+        "title": "Data Types | Ruby | Tutorial 7",
+        "url": "https://www.youtube.com/watch?v=rjLB_bD3SLU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Basic Data Types",
+          "url": "https://www.theodinproject.com/lessons/ruby-basic-data-types"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Data Types in Ruby",
+          "url": "https://www.digitalocean.com/community/tutorials/understanding-data-types-in-ruby"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "integers",
+        "strings",
+        "arrays",
+        "symbols"
+      ]
+    },
+    "nil": {
+      "title": "nil",
+      "sourceId": "WMa8k6sbhow-TXNibFj0a",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "`nil` represents the absence of a value or a non-existent object. It's a special object in Ruby that signifies emptiness or the lack of a meaningful result. Think of it as a placeholder indicating that a variable or expression doesn't currently hold a valid value.",
+      "video": {
+        "title": "Ruby Nil Explained",
+        "url": "https://www.youtube.com/watch?v=mBJrQ84f6-4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Nothingness and the truth",
+          "url": "http://ruby-for-beginners.rubymonstas.org/conditionals/nothing_and_truth.html"
+        },
+        {
+          "type": "article",
+          "title": "Everything You Need to Know About Nil",
+          "url": "https://www.rubyguides.com/2018/01/ruby-nil/"
+        },
+        {
+          "type": "article",
+          "title": "True, False, and Nil",
+          "url": "https://ruby-for-beginners.rubymonstas.org/built_in_classes/true_false_nil.html"
+        }
+      ],
+      "parents": [
+        "managers"
+      ],
+      "children": []
+    },
+    "symbols": {
+      "title": "Symbols",
+      "sourceId": "U-V-MNSnIL17Imug_iFvE",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "Symbols are lightweight, immutable strings often used as identifiers or names within a Ruby program. Unlike regular strings, symbols are guaranteed to be unique; Ruby only creates one copy of a symbol, regardless of how many times it's referenced. This makes them efficient for tasks like hash keys or representing states, where comparing identity is more important than comparing content. They are typically written with a colon prefix, like `:my_symbol`.",
+      "video": {
+        "title": "Ruby's Symbols Explained",
+        "url": "https://www.youtube.com/watch?v=mBXGBbEbXZY&t=16s&pp=ygUMc3ltbm9scyBydWJ5"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "class Symbol",
+          "url": "https://docs.ruby-lang.org/en/master/Symbol.html"
+        },
+        {
+          "type": "article",
+          "title": "Symbols",
+          "url": "https://ruby-for-beginners.rubymonstas.org/built_in_classes/symbols.html"
+        },
+        {
+          "type": "article",
+          "title": "What Are Ruby Symbols & How Do They Work?",
+          "url": "https://www.rubyguides.com/2018/02/ruby-symbols/"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "typeCasting": {
+      "title": "Type Casting",
+      "sourceId": "NjCor7ePiZapd4f6bMZlV",
+      "type": "topic",
+      "order": 20,
+      "summary": "Type casting, also known as type conversion, is the process of changing a value from one data type to another. This is often necessary when you need to perform operations that require specific data types or when you want to represent data in a different format. For example, you might need to convert a string representation of a number into an actual integer or float to perform mathematical calculations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Ruby type conversion",
+          "url": "https://kddnewton.com/2021/09/09/ruby-type-conversion.html"
+        },
+        {
+          "type": "article",
+          "title": "How To Convert Data Types in Ruby",
+          "url": "https://www.digitalocean.com/community/tutorials/how-to-convert-data-types-in-ruby"
+        },
+        {
+          "type": "article",
+          "title": "Confident Code - Ruby Implicit and Explicit Type Converters",
+          "url": "https://whatapalaver.co.uk/ruby-implicit-explicit-type-conversion"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "operators"
+      ]
+    },
+    "arithmetic": {
+      "title": "Arithmetic",
+      "sourceId": "I708SVAEVSpdHzwxoHhgD",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "Arithmetic operators are symbols that perform mathematical calculations on numerical values. These operators allow you to perform addition, subtraction, multiplication, division, and other common arithmetic operations. They take one or more operands (the values being operated on) and produce a result based on the operation performed.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Arithmetical operators",
+          "url": "https://ruby-for-beginners.rubymonstas.org/operators/arithmetical.html"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - Operators",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_operators.htm"
+        }
+      ],
+      "parents": [
+        "operators"
+      ],
+      "children": []
+    },
+    "operators": {
+      "title": "Operators",
+      "sourceId": "5ThpsSMnFZUxWV1Y2Z75A",
+      "type": "topic",
+      "order": 22,
+      "summary": "Operators are special symbols in Ruby that perform operations on one or more operands (values or variables). These operations can include arithmetic calculations (like addition and subtraction), comparisons (like checking if two values are equal), logical evaluations (like determining if a condition is true or false), and assignment of values to variables. They are fundamental building blocks for creating expressions and controlling the flow of logic in Ruby programs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Operators",
+          "url": "https://docs.ruby-lang.org/en/3.4/syntax/operators_rdoc.html"
+        },
+        {
+          "type": "article",
+          "title": "Everything You Need to Know About Ruby Operators",
+          "url": "https://www.rubyguides.com/2018/07/ruby-operators/"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - Operators",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_operators.htm"
+        }
+      ],
+      "parents": [
+        "typeCasting"
+      ],
+      "children": [
+        "logical",
+        "assignment",
+        "ranges",
+        "comparison",
+        "arithmetic"
+      ]
+    },
+    "case": {
+      "title": "case",
+      "sourceId": "BiUeOOd9E7V4Gpmu3PWj7",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "A `case` statement in Ruby provides a way to execute different blocks of code based on the value of a variable or expression. It's an alternative to using multiple `if/elsif/else` statements, especially when you need to check for several different possible values. The `case` statement compares a given value against multiple `when` clauses, and executes the code block associated with the first matching clause. An optional `else` clause can be included to handle cases where none of the `when` clauses match.",
+      "video": {
+        "title": "case..when in Ruby",
+        "url": "https://www.youtube.com/watch?v=gsmexAC2eoM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Case statements",
+          "url": "https://www.theodinproject.com/lessons/ruby-conditional-logic#case-statements"
+        },
+        {
+          "type": "article",
+          "title": "The Many Uses Of Ruby Case Statements",
+          "url": "https://www.rubyguides.com/2015/10/ruby-case/"
+        }
+      ],
+      "parents": [
+        "managers"
+      ],
+      "children": []
+    },
+    "unless": {
+      "title": "unless",
+      "sourceId": "MrPUYjPaz2F7c77GoPmue",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "`unless` is a conditional statement in Ruby that executes a block of code only if a specified condition is false. It's essentially the opposite of `if`. If the condition provided to `unless` evaluates to false, the code block is executed; otherwise, the code block is skipped. It provides a more readable way to express negative conditions.",
+      "video": {
+        "title": "Ruby Programming Tutorial - 16 - unless",
+        "url": "https://www.youtube.com/watch?v=2iysMciUQpw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Unless statements",
+          "url": "https://www.theodinproject.com/lessons/ruby-conditional-logic#unless-statements"
+        },
+        {
+          "type": "article",
+          "title": "Read This Post 'Unless' You're Not A Ruby Developer",
+          "url": "https://jesseduffield.com/Unless/"
+        }
+      ],
+      "parents": [
+        "conditionalStatements"
+      ],
+      "children": []
+    },
+    "comparison": {
+      "title": "Comparison",
+      "sourceId": "HiDx1OWbSDJJb7APHwG34",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "Comparison operators are symbols used to compare two values. These operators evaluate to either `true` or `false` based on the relationship between the values being compared. Common comparison operators include equal to (`==`), not equal to (`!=`), greater than (`>`), less than (`<`), greater than or equal to (`>=`), and less than or equal to (`<=`).",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Comparison operators",
+          "url": "https://ruby-for-beginners.rubymonstas.org/operators/comparison.html"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - Operators",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_operators.htm"
+        }
+      ],
+      "parents": [
+        "operators"
+      ],
+      "children": []
+    },
+    "conditionalStatements": {
+      "title": "Conditional Statements",
+      "sourceId": "FIALdP3ZhOlzW-OIlJoT2",
+      "type": "topic",
+      "order": 26,
+      "summary": "Conditional statements allow you to execute different blocks of code based on whether a certain condition is true or false. They provide a way to control the flow of your program, enabling it to make decisions and respond differently to various inputs or situations. Common conditional statements include `if`, `elsif`, and `else`, which let you define different code paths depending on the evaluation of boolean expressions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Conditional Logic",
+          "url": "https://www.theodinproject.com/lessons/ruby-conditional-logic#case-statements"
+        },
+        {
+          "type": "article",
+          "title": "Conditionals",
+          "url": "https://launchschool.com/books/ruby/read/flow_control#conditionals"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Explained: Conditionals and Flow Control",
+          "url": "https://eriktrautman.com/posts/ruby-explained-conditionals-and-flow-control"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "ifElsifElse",
+        "unless",
+        "loopsEnumerations"
+      ]
+    },
+    "ifElsifElse": {
+      "title": "if, elsif, else",
+      "sourceId": "cVSN9992bpxZwZ9JC1HHg",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "Conditional statements allow you to execute different blocks of code based on whether a certain condition is true or false. The `if` statement executes a block of code if a condition is true. The `elsif` statement (optional) allows you to check additional conditions if the initial `if` condition is false. The `else` statement (optional) provides a block of code to execute if none of the preceding conditions are true.",
+      "video": {
+        "title": "If Statements | Ruby | Tutorial 17",
+        "url": "https://www.youtube.com/watch?v=Ss-IHmrSTow"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Conditionals",
+          "url": "https://ruby-for-beginners.rubymonstas.org/conditionals.html"
+        },
+        {
+          "type": "article",
+          "title": "The Beginner's Guide to Ruby If & Else Statements",
+          "url": "https://www.rubyguides.com/ruby-tutorial/ruby-if-else/"
+        },
+        {
+          "type": "article",
+          "title": "Conditional logic",
+          "url": "https://www.theodinproject.com/lessons/ruby-conditional-logic"
+        }
+      ],
+      "parents": [
+        "conditionalStatements"
+      ],
+      "children": [
+        "until",
+        "doWhile",
+        "each",
+        "times",
+        "next",
+        "redo"
+      ]
+    },
+    "logical": {
+      "title": "Logical",
+      "sourceId": "vLgIRI5GD9ANBjYJoZmid",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "Logical operators in Ruby let you combine or modify boolean expressions (true or false). The main ones are `&&` (and), `||` (or), and `!` (not). `&&` returns true only if both operands are true. `||` returns true if at least one operand is true. `!` reverses the boolean value of its operand, turning true into false and vice versa. These operators are fundamental for controlling program flow based on different conditions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Logical operators",
+          "url": "https://ruby-for-beginners.rubymonstas.org/operators/logical.html"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - Operators",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_operators.htm"
+        }
+      ],
+      "parents": [
+        "operators"
+      ],
+      "children": []
+    },
+    "assignment": {
+      "title": "Assignment",
+      "sourceId": "NpHLz4I9wwwXX-KBrjdgU",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "Assignment operators in Ruby are used to assign values to variables. The most basic assignment operator is the equals sign (=), which assigns the value on the right-hand side to the variable on the left-hand side. Ruby also provides compound assignment operators that combine assignment with arithmetic or bitwise operations, such as +=, -=, \\*=, /=, and %=. These operators modify the variable's value by performing the specified operation with the right-hand side operand and then assigning the result back to the variable.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Assignment operators",
+          "url": "https://kddnewton.com/2023/07/20/ruby-operators.html#assignment-operators"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - Operators",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_operators.htm"
+        }
+      ],
+      "parents": [
+        "operators"
+      ],
+      "children": []
+    },
+    "while": {
+      "title": "while",
+      "sourceId": "xO2RCVIxZprDgEW4-O9n9",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "A `while` loop in Ruby repeatedly executes a block of code as long as a specified condition is true. It checks the condition before each iteration, and if the condition is false from the start, the code block is never executed. This makes it suitable for situations where you want to execute code an unknown number of times until a certain condition is met.",
+      "video": {
+        "title": "While Loops | Ruby | Tutorial 21",
+        "url": "https://www.youtube.com/watch?v=3bXd6h8Zsfk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "While Loops",
+          "url": "https://www.theodinproject.com/lessons/ruby-loops#while-loop"
+        },
+        {
+          "type": "article",
+          "title": "Ruby while Loop",
+          "url": "https://www.programiz.com/ruby/while-loop"
+        }
+      ],
+      "parents": [
+        "loopsEnumerations"
+      ],
+      "children": []
+    },
+    "until": {
+      "title": "until",
+      "sourceId": "OVPm4SgT7wvapUNWKQOdH",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "The `until` loop in Ruby executes a block of code as long as a specified condition is false. It repeatedly runs the code within the loop until the condition becomes true. Think of it as the opposite of a `while` loop; where `while` loops continue as long as the condition is true, `until` loops continue as long as the condition is false.",
+      "video": {
+        "title": "Ruby Programming Tutorial | Until Loops",
+        "url": "https://www.youtube.com/watch?v=Y32UnAPHJm4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Until loop",
+          "url": "https://www.theodinproject.com/lessons/ruby-loops#until-loop"
+        },
+        {
+          "type": "article",
+          "title": "5.3 Until Loops",
+          "url": "https://www.oreilly.com/library/view/computer-science-programming/9781449356835/fivedot3_until_loops.html"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - Loops",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_loops.htm"
+        }
+      ],
+      "parents": [
+        "ifElsifElse"
+      ],
+      "children": []
+    },
+    "doWhile": {
+      "title": "do/while",
+      "sourceId": "OwRukUn8ypko_hPUHkxv_",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "`do/while` loops are a type of control flow statement that executes a block of code at least once, and then repeatedly executes the block as long as a specified condition is true. The condition is checked _after_ the code block is executed, ensuring the block runs at least one time regardless of the initial state of the condition. This is different from a `while` loop, where the condition is checked _before_ the code block is executed.",
+      "video": {
+        "title": "Ruby For Beginners #5 - Loops | For, While, Do, Do While",
+        "url": "https://www.youtube.com/watch?v=Q_zP40toAMY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Ruby Loops",
+          "url": "https://www.codecademy.com/resources/docs/ruby/loops"
+        }
+      ],
+      "parents": [
+        "ifElsifElse"
+      ],
+      "children": []
+    },
+    "ranges": {
+      "title": "Ranges",
+      "sourceId": "OHq_172eTWaVlxES7Ccfc",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "Ranges in Ruby are used to create a sequence of values. They are defined using two endpoints, which can be numbers, characters, or any objects that can be compared using the `<=>` operator. Ranges can be inclusive (including the last value) or exclusive (excluding the last value), denoted by `..` and `...` respectively. They are commonly used for iterating over a sequence, creating subsets of arrays, and checking if a value falls within a specific interval.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Range operators",
+          "url": "https://kddnewton.com/2023/07/20/ruby-operators.html#range-operators"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - Operators",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_operators.htm"
+        }
+      ],
+      "parents": [
+        "operators"
+      ],
+      "children": []
+    },
+    "for": {
+      "title": "for",
+      "sourceId": "VlhY73X3c0PnA1uYjbfZH",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "The `for` loop in Ruby provides a way to iterate over a sequence of values, such as elements in an array or a range. It executes a block of code for each item in the sequence. While functional, the `for` loop is not as commonly used in Ruby as other iteration methods like `each`, `map`, or `select`, which are often considered more idiomatic and flexible.",
+      "video": {
+        "title": "Ruby For Beginners #5 - Loops | For, While, Do, Do While",
+        "url": "https://www.youtube.com/watch?v=Q_zP40toAMY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "For Loops",
+          "url": "https://launchschool.com/books/ruby/read/loops_iterators#forloops"
+        },
+        {
+          "type": "article",
+          "title": "For loop",
+          "url": "https://www.theodinproject.com/lessons/ruby-loops#for-loop"
+        }
+      ],
+      "parents": [
+        "loopsEnumerations"
+      ],
+      "children": []
+    },
+    "each": {
+      "title": "each",
+      "sourceId": "iJ7e3-VJV6l-Qe-b5yAgC",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "`each` is a fundamental method in Ruby used to iterate over elements within a collection, such as an array or a hash. It applies a given block of code to each element in the collection, allowing you to perform operations on every item. The `each` method does not modify the original collection; it simply iterates through it.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Iterators",
+          "url": "https://www.ruby-lang.org/en/documentation/faq/5/"
+        },
+        {
+          "type": "article",
+          "title": "Iterators",
+          "url": "https://launchschool.com/books/ruby/read/loops_iterators#iterators"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Explained: Iteration",
+          "url": "https://eriktrautman.com/posts/ruby-explained-iteration"
+        }
+      ],
+      "parents": [
+        "ifElsifElse"
+      ],
+      "children": []
+    },
+    "times": {
+      "title": "times",
+      "sourceId": "1NIxWfLiaXKNZJSmrudPv",
+      "type": "subtopic",
+      "order": 36,
+      "summary": "The `times` method in Ruby is a simple way to execute a block of code a specified number of times. It's called on an integer, and the block is executed that many times, with an optional block variable representing the current iteration number (starting from zero). It provides a concise way to repeat actions without needing to explicitly manage a counter variable.",
+      "video": {
+        "title": "#20 Ruby Tutorial - For Loop and its Alternative .each loop",
+        "url": "https://www.youtube.com/watch?v=0Bp-91lv-zw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Times loop",
+          "url": "https://www.theodinproject.com/lessons/ruby-loops#times-loop"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Explained: Iteration",
+          "url": "https://eriktrautman.com/posts/ruby-explained-iteration"
+        }
+      ],
+      "parents": [
+        "ifElsifElse"
+      ],
+      "children": []
+    },
+    "loopsEnumerations": {
+      "title": "Loops & Enumerations",
+      "sourceId": "dRfPXHrI5CHCELySKLZuQ",
+      "type": "topic",
+      "order": 37,
+      "summary": "Loops in Ruby allow you to execute a block of code repeatedly. Enumerations, on the other hand, are methods that iterate over collections like arrays and hashes, applying a block of code to each element. Both loops and enumerations provide ways to process data and perform actions multiple times, but enumerations are often preferred for their conciseness and readability when working with collections.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Loops and Iterators",
+          "url": "https://launchschool.com/books/ruby/read/loops_iterators#simpleloop"
+        },
+        {
+          "type": "article",
+          "title": "Loops",
+          "url": "https://www.theodinproject.com/lessons/ruby-loops"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Loops: Repeating Something Many Times",
+          "url": "https://www.rubyguides.com/ruby-tutorial/loops/"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - Loops",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_loops.htm"
+        }
+      ],
+      "parents": [
+        "conditionalStatements"
+      ],
+      "children": [
+        "while",
+        "for",
+        "break",
+        "enumerable"
+      ]
+    },
+    "break": {
+      "title": "break",
+      "sourceId": "0gjDinuRDgPV9iTm39ZnS",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "The `break` statement in Ruby is a control flow tool used to exit a loop prematurely. When `break` is encountered within a loop (like `for`, `while`, `until`, or `each`), the loop's execution is immediately terminated, and the program continues with the next statement after the loop. It's useful for stopping a loop when a specific condition is met, preventing unnecessary iterations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Understanding The Ruby Next & Break Keywords",
+          "url": "https://www.rubyguides.com/2019/09/ruby-next-break-keywords/"
+        },
+        {
+          "type": "article",
+          "title": "Controlling Loop Execution",
+          "url": "https://launchschool.com/books/ruby/read/loops_iterators#controllloop"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Explained: Iteration",
+          "url": "https://eriktrautman.com/posts/ruby-explained-iteration"
+        }
+      ],
+      "parents": [
+        "loopsEnumerations"
+      ],
+      "children": []
+    },
+    "next": {
+      "title": "next",
+      "sourceId": "ueQ4bgcEXEgEDGhfVPjH8",
+      "type": "subtopic",
+      "order": 39,
+      "summary": "The `next` keyword in Ruby provides a way to skip the current iteration of a loop and proceed directly to the next iteration. When `next` is encountered within a loop (like `for`, `while`, `until`, or iterators like `each`), the remaining code in the current loop cycle is bypassed, and the loop immediately begins its next cycle, if one exists. This is useful for skipping certain elements or conditions within a collection or range.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Controlling Loop Execution",
+          "url": "https://launchschool.com/books/ruby/read/loops_iterators#controllloop"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Explained: Iteration",
+          "url": "https://eriktrautman.com/posts/ruby-explained-iteration"
+        },
+        {
+          "type": "article",
+          "title": "Understanding The Ruby Next & Break Keywords",
+          "url": "https://www.rubyguides.com/2019/09/ruby-next-break-keywords/"
+        }
+      ],
+      "parents": [
+        "ifElsifElse"
+      ],
+      "children": []
+    },
+    "redo": {
+      "title": "redo",
+      "sourceId": "gUa4S-_xZhClyiit_MSkQ",
+      "type": "subtopic",
+      "order": 40,
+      "summary": "`redo` is a control flow statement in Ruby used within loops (like `for`, `while`, `until`) and iterators (like `each`, `map`). When `redo` is encountered, it restarts the current iteration of the loop or iterator from the beginning, without evaluating any remaining code in that iteration. It essentially repeats the current step.",
+      "video": {
+        "title": "#23 Ruby Tutorial - NEXT and REDO statements with codes in Ruby",
+        "url": "https://www.youtube.com/watch?v=oHlSMSawyc8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Ruby's redo, retry and next keywords",
+          "url": "https://blog.appsignal.com/2018/06/05/redo-retry-next.html"
+        },
+        {
+          "type": "article",
+          "title": "The redo Keyword in Ruby",
+          "url": "https://medium.com/rubycademy/the-redo-keyword-in-ruby-3f150d69e3c2"
+        }
+      ],
+      "parents": [
+        "ifElsifElse"
+      ],
+      "children": []
+    },
+    "querying": {
+      "title": "Querying",
+      "sourceId": "ZQuUDWqbNUxOYc-Fkk2pI",
+      "type": "subtopic",
+      "order": 41,
+      "summary": "Enumerable querying methods in Ruby allow you to gather information _about_ a collection without necessarily extracting or transforming its elements. These methods check for the presence of elements that meet certain conditions, determine the size or characteristics of the collection, or verify if all or any elements satisfy a given criteria. They return boolean values, counts, or other summary data about the Enumerable itself, rather than returning a modified Enumerable.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Methods for Querying",
+          "url": "https://ruby-doc.org/3.4.1/Enumerable.html#module-Enumerable-label-Methods+for+Querying"
+        },
+        {
+          "type": "article",
+          "title": "Getting to know Ruby's Enumerable Module",
+          "url": "https://www.rafaelmontas.com/getting-to-know-ruby-enumerable-module/"
+        }
+      ],
+      "parents": [
+        "enumerable"
+      ],
+      "children": []
+    },
+    "fetching": {
+      "title": "Fetching",
+      "sourceId": "PQX6c9h1O_p-ExDvC88zl",
+      "type": "subtopic",
+      "order": 42,
+      "summary": "`Enumerable` comes with some methods that allow you to retrieve entries from the Enumerable, without modifying it. This includes methods to get leading and trailing elements, extract minimum and maximum value elements, as well as conduct groups, slices, and partitions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "https://ruby-doc.org/3.4.1/Enumerable.html#top",
+          "url": "https://ruby-doc.org/3.4.1/Enumerable.html#top"
+        },
+        {
+          "type": "article",
+          "title": "Getting to know Ruby's Enumerable Module",
+          "url": "https://www.rafaelmontas.com/getting-to-know-ruby-enumerable-module/"
+        },
+        {
+          "type": "article",
+          "title": "The Simple Yet Powerful Ruby Enumerable Module",
+          "url": "https://www.cloudbees.com/blog/the-enumerable-module"
+        }
+      ],
+      "parents": [
+        "enumerable"
+      ],
+      "children": []
+    },
+    "enumerable": {
+      "title": "Enumerable",
+      "sourceId": "jw218cE_PQDRnOTzCXpXr",
+      "type": "topic",
+      "order": 43,
+      "summary": "Conditional statements allow you to execute different blocks of code based on whether a certain condition is true or false. They provide a way to control the flow of your program, enabling it to make decisions and respond differently to various inputs or situations. Common conditional statements include `if`, `elsif`, `else`, and `unless`.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Conditional Logic",
+          "url": "https://www.theodinproject.com/lessons/ruby-conditional-logic"
+        },
+        {
+          "type": "article",
+          "title": "The Beginner's Guide to Ruby If & Else Statements",
+          "url": "http://rubyguides.com/ruby-tutorial/ruby-if-else/"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - if...else, case, unless",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_if_else.htm"
+        }
+      ],
+      "parents": [
+        "loopsEnumerations"
+      ],
+      "children": [
+        "fetching",
+        "searchingFiltering",
+        "sorting",
+        "iterating",
+        "querying"
+      ]
+    },
+    "searchingFiltering": {
+      "title": "Searching & Filtering",
+      "sourceId": "Zil-9cf_-g1H5VUF52bxo",
+      "type": "subtopic",
+      "order": 44,
+      "summary": "`Enumerable` comes with some methods that allow you to select specific elements from a collection based on certain criteria. This allows you to extract subsets of data that meet your desired conditions, making it easier to work with large datasets or focus on relevant information. Common operations include finding the first element that satisfies a condition, selecting all elements that match a pattern, or rejecting elements that don't meet specific requirements.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "module Enumerable",
+          "url": "https://ruby-doc.org/3.4.1/Enumerable.html#top"
+        },
+        {
+          "type": "article",
+          "title": "Getting to know Ruby's Enumerable Module",
+          "url": "https://www.rafaelmontas.com/getting-to-know-ruby-enumerable-module/"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Ruby - Enumerable - Searching and Filtering",
+          "url": "https://dev.to/baweaver/understanding-ruby-enumerable-searching-and-filtering-23o7"
+        }
+      ],
+      "parents": [
+        "enumerable"
+      ],
+      "children": []
+    },
+    "handlingExceptions": {
+      "title": "Handling exceptions",
+      "sourceId": "aZYZcRlB1Azm4N_jox0Ow",
+      "type": "topic",
+      "order": 45,
+      "summary": "Exception handling is a mechanism to deal with errors that occur during the execution of a program. It involves identifying potential error-prone sections of code, anticipating possible exceptions, and implementing specific blocks of code to gracefully handle these exceptions, preventing the program from crashing and allowing it to continue execution or terminate in a controlled manner.",
+      "video": {
+        "title": "Handling Errors | Ruby | Tutorial 28",
+        "url": "https://www.youtube.com/watch?v=J7R94i2bhlI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Exceptions",
+          "url": "https://docs.ruby-lang.org/en/master/language/exceptions_md.html"
+        },
+        {
+          "type": "official",
+          "title": "Exception Handling",
+          "url": "https://docs.ruby-lang.org/en/3.4/syntax/exceptions_rdoc.html"
+        },
+        {
+          "type": "article",
+          "title": "Handling Exceptions in Ruby (begin/rescue)",
+          "url": "https://medium.com/@alexfarmer/handling-exceptions-in-ruby-b4ba93caf538"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Ruby Error Handling",
+          "url": "https://betterstack.com/community/guides/scaling-ruby/ruby-error-handling/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "beginRescueEnsure",
+        "interactiveRubyIrb"
+      ]
+    },
+    "beginRescueEnsure": {
+      "title": "begin, rescue, ensure",
+      "sourceId": "-2BSGoXGMMP50en_NnQ97",
+      "type": "subtopic",
+      "order": 46,
+      "summary": "Exception handling is a mechanism to deal with errors that occur during the execution of a program. In Ruby, the `begin`, `rescue`, and `ensure` keywords provide a structured way to handle these exceptions. The `begin` block encloses the code that might raise an exception. If an exception occurs, the `rescue` block catches and handles it. The `ensure` block, if present, guarantees that its code will always be executed, regardless of whether an exception was raised or not, making it suitable for cleanup operations.",
+      "video": {
+        "title": "Handling Errors | Ruby | Tutorial 28",
+        "url": "https://www.youtube.com/watch?v=J7R94i2bhlI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to Use The \u201cBegin\u201d & \u201cRescue\u201d Keywords in Ruby",
+          "url": "https://www.rubyguides.com/2019/06/ruby-rescue-exceptions/"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Ruby Error Handling",
+          "url": "https://betterstack.com/community/guides/scaling-ruby/ruby-error-handling/"
+        },
+        {
+          "type": "article",
+          "title": "Unlocking Ruby Keywords: Begin, End, Ensure, Rescue",
+          "url": "https://vaidehijoshi.github.io/blog/2015/08/25/unlocking-ruby-keywords-begin-end-ensure-rescue/"
+        }
+      ],
+      "parents": [
+        "handlingExceptions"
+      ],
+      "children": []
+    },
+    "sorting": {
+      "title": "Sorting",
+      "sourceId": "knmTmlDbyRwZKxuIIVbwn",
+      "type": "subtopic",
+      "order": 47,
+      "summary": "The `Enumerable` module in Ruby provides several methods for sorting collections. These methods allow you to arrange elements in ascending or descending order based on their natural ordering or a custom comparison logic. The most common sorting methods include `sort`, which returns a new sorted array, and `sort_by`, which sorts based on the result of a block applied to each element. You can also use `min`, `max`, `minmax` to find the smallest, largest, or both smallest and largest elements in a collection, respectively.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "module Enumerable",
+          "url": "https://ruby-doc.org/3.4.1/Enumerable.html#top"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Ruby - Enumerable - Sorting and Comparing",
+          "url": "https://dev.to/baweaver/understanding-ruby-enumerable-sorting-and-comparing-fff"
+        },
+        {
+          "type": "article",
+          "title": "Sorting short sequences with Enumerable#sort_by",
+          "url": "https://silvercat.com/blog/sort-by-unexpected-ordering"
+        }
+      ],
+      "parents": [
+        "enumerable"
+      ],
+      "children": []
+    },
+    "iterating": {
+      "title": "Iterating",
+      "sourceId": "frFY2AeO2BQF6I0CmTLkV",
+      "type": "subtopic",
+      "order": 48,
+      "summary": "The `Enumerable` module in Ruby provides a collection of methods that allow you to traverse and process elements within a collection (like an array or hash). These iterating methods, such as `each`, `map`, `select`, and `reject`, simplify the process of performing actions on each item in the collection, transforming the collection, or filtering elements based on specific conditions. They abstract away the need for manual indexing and provide a more concise and readable way to work with collections.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "module Enumerable",
+          "url": "https://ruby-doc.org/3.4.1/Enumerable.html#top"
+        },
+        {
+          "type": "article",
+          "title": "Programaci\u00f3n Iterating in Ruby: Enumerable and Enumerators",
+          "url": "https://libreim.github.io/blog/2015/08/24/ruby-enumerators/"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Ruby - Enumerable - Iterating and Taking",
+          "url": "https://dev.to/baweaver/understanding-ruby-enumerable-iterating-and-taking-1fga"
+        }
+      ],
+      "parents": [
+        "enumerable"
+      ],
+      "children": []
+    },
+    "interactiveRubyIrb": {
+      "title": "Interactive Ruby (irb)",
+      "sourceId": "uvPvcmhaO6WbkE9Xs5hsJ",
+      "type": "topic",
+      "order": 49,
+      "summary": "Interactive Ruby (irb) is a command-line tool that allows you to execute Ruby code interactively. It provides a read-eval-print loop (REPL) environment where you can type in Ruby expressions, and irb will immediately evaluate and display the result. This makes it a valuable tool for experimenting with code, testing ideas, and quickly checking the behavior of Ruby methods and objects.",
+      "video": {
+        "title": "Interactive Ruby (irb) | Ruby | Tutorial 35",
+        "url": "https://www.youtube.com/watch?v=9pKLGhh5mrM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How To Use IRB to Explore Ruby",
+          "url": "https://www.digitalocean.com/community/tutorials/how-to-use-irb-to-explore-ruby"
+        },
+        {
+          "type": "article",
+          "title": "Interactive Ruby",
+          "url": "https://ruby-for-beginners.rubymonstas.org/your_tools/irb.html"
+        },
+        {
+          "type": "article",
+          "title": "Interactive Ruby",
+          "url": "https://ruby-doc.org/docs/ruby-doc-bundle/Tutorial/part_01/first_steps.html"
+        }
+      ],
+      "parents": [
+        "handlingExceptions"
+      ],
+      "children": [
+        "objectOrientedProgramming"
+      ]
+    },
+    "objectOrientedProgramming": {
+      "title": "Object-Oriented Programming",
+      "sourceId": "oxSxPVDTotbGggIUQVJfc",
+      "type": "label",
+      "order": 50,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "interactiveRubyIrb"
+      ],
+      "children": []
+    },
+    "methodsAkaFunctions": {
+      "title": "Methods (aka functions)",
+      "sourceId": "GO8vwhZOb-3lZj2eQGFQT",
+      "type": "label",
+      "order": 51,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "definingMethods"
+      ]
+    },
+    "dateTime": {
+      "title": "Date & Time",
+      "sourceId": "RGo3VGXftLx877w0Cxhwb",
+      "type": "topic",
+      "order": 52,
+      "summary": "Date and Time represent specific points in time. They allow you to work with dates (year, month, day) and times (hour, minute, second) and perform operations like calculating durations, formatting dates for display, and comparing different points in time. They are essential for handling events, scheduling tasks, and managing temporal data.",
+      "video": {
+        "title": "Ruby Tutorial For Beginners - Date and Time in Ruby",
+        "url": "https://www.youtube.com/watch?v=noUaGvexdok"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "class Date",
+          "url": "https://docs.ruby-lang.org/en/master/Date.html"
+        },
+        {
+          "type": "official",
+          "title": "class Time",
+          "url": "https://docs.ruby-lang.org/en/master/Time.html"
+        },
+        {
+          "type": "article",
+          "title": "How to Use Ruby Time & Date Classes",
+          "url": "https://www.rubyguides.com/2015/12/ruby-time/"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - Date & Time",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_date_time.htm"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "definingMethods": {
+      "title": "Defining methods",
+      "sourceId": "CkYLHSGH8dmfS5fK2JLfH",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "Methods, also known as functions in other programming languages, are reusable blocks of code designed to perform a specific task. Defining a method involves specifying its name, the parameters it accepts (if any), and the sequence of instructions it executes. This allows you to organize your code into logical units, making it more readable, maintainable, and reusable throughout your program.",
+      "video": {
+        "title": "Methods | Ruby | Tutorial 15",
+        "url": "https://www.youtube.com/watch?v=e1EpXUgSfN8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Methods",
+          "url": "https://docs.ruby-lang.org/en/master/syntax/methods_rdoc.html"
+        },
+        {
+          "type": "article",
+          "title": "Methods - Odin Project",
+          "url": "https://www.theodinproject.com/lessons/ruby-methods"
+        },
+        {
+          "type": "article",
+          "title": "Objects, Classes, Methods",
+          "url": "https://ruby-for-beginners.rubymonstas.org/objects.html"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - Methods",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_methods.htm"
+        }
+      ],
+      "parents": [
+        "methodsAkaFunctions"
+      ],
+      "children": [
+        "methodParameters"
+      ]
+    },
+    "packageManagement": {
+      "title": "Package Management",
+      "sourceId": "qeAOBoD1BI-KBgByoe_Y-",
+      "type": "label",
+      "order": 54,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "rubygems",
+        "bundler"
+      ]
+    },
+    "regex": {
+      "title": "Regex",
+      "sourceId": "B5T4d3FYTvydh4DOcTFFR",
+      "type": "topic",
+      "order": 55,
+      "summary": "Regular expressions (regex) are patterns used to match character combinations in strings. In Ruby, you can use regex to search, replace, or validate text within strings. They are defined using forward slashes (`/pattern/`) or the `%r{pattern}` syntax and provide a powerful way to manipulate and analyze text data based on specific patterns.",
+      "video": {
+        "title": "Ruby for Newbies: Regular Expressions",
+        "url": "https://www.youtube.com/watch?v=hy6KUoU34_w"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "class Regexp",
+          "url": "https://docs.ruby-lang.org/en/master/Regexp.html"
+        },
+        {
+          "type": "article",
+          "title": "Mastering Ruby Regular Expressions",
+          "url": "https://www.rubyguides.com/2015/06/ruby-regex/"
+        },
+        {
+          "type": "article",
+          "title": "Regular Expressions",
+          "url": "https://ruby-for-beginners.rubymonstas.org/advanced/regular_expressions.html"
+        },
+        {
+          "type": "article",
+          "title": "Cool Ruby regex tricks",
+          "url": "https://www.honeybadger.io/blog/ruby-regex-tricks/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "methodParameters": {
+      "title": "Method Parameters",
+      "sourceId": "m4QhKH7mVhxRqnJOF5Xc2",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "Method parameters, also called arguments, are the values you pass into a method when you call it. There are several types: required parameters, which must be provided; optional parameters, which have default values if not provided; and variable-length arguments (using `*args`), which allow you to pass in an arbitrary number of arguments as an array. Arbitrary keyword arguments (using `**args`) allow you to pass arguments by name, and can also be required or optional. Block parameters (using `&block`) allow you to pass a block of code to a method.",
+      "video": {
+        "title": "How to Use Method Arguments in Ruby",
+        "url": "https://www.youtube.com/watch?v=rwVWKx-fQDg"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Arguments",
+          "url": "https://docs.ruby-lang.org/en/master/syntax/methods_rdoc.html#label-Arguments"
+        },
+        {
+          "type": "article",
+          "title": "Parameters and arguments",
+          "url": "https://www.theodinproject.com/lessons/ruby-methods#parameters-and-arguments"
+        },
+        {
+          "type": "article",
+          "title": "Methods",
+          "url": "https://launchschool.com/books/ruby/read/methods"
+        }
+      ],
+      "parents": [
+        "definingMethods"
+      ],
+      "children": [
+        "scope"
+      ]
+    },
+    "rubygems": {
+      "title": "RubyGems",
+      "sourceId": "iwXBPrnuwPvNRbOIDxWvq",
+      "type": "subtopic",
+      "order": 57,
+      "summary": "RubyGems is a package management system for the Ruby programming language. It provides a standard format for distributing Ruby programs and libraries (called \"gems\"), a tool for easily installing gems, and a central repository (RubyGems.org) for finding and sharing them. It simplifies the process of managing dependencies and distributing reusable code in the Ruby ecosystem.",
+      "video": {
+        "title": "What Are RubyGems - Explained",
+        "url": "https://www.youtube.com/watch?v=M4szKwqFHKs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "RubyGems",
+          "url": "https://rubygems.org/"
+        },
+        {
+          "type": "official",
+          "title": "Libraries",
+          "url": "https://www.ruby-lang.org/en/libraries/"
+        },
+        {
+          "type": "official",
+          "title": "RubyGems Basics",
+          "url": "https://guides.rubygems.org/rubygems-basics/"
+        },
+        {
+          "type": "opensource",
+          "title": "rubygems",
+          "url": "https://github.com/ruby/rubygems"
+        }
+      ],
+      "parents": [
+        "packageManagement"
+      ],
+      "children": []
+    },
+    "fileIO": {
+      "title": "File I/O",
+      "sourceId": "UQeCaogH4IJg4_Inxsjg1",
+      "type": "topic",
+      "order": 58,
+      "summary": "File I/O involves reading data from and writing data to files. It allows your Ruby programs to interact with files on your computer's file system. You can open files, read their contents line by line or in chunks, write new data to them, or append data to existing files. This interaction is essential for tasks like reading configuration files, processing data from external sources, and saving program output.",
+      "video": {
+        "title": "Reading Files | Ruby | Tutorial 26",
+        "url": "https://www.youtube.com/watch?v=92li0A8d4io"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "class IO",
+          "url": "https://docs.ruby-lang.org/en/master/IO.html"
+        },
+        {
+          "type": "article",
+          "title": "Input & Output (IO) In Ruby: The Definitive Guide",
+          "url": "https://www.rubyguides.com/2019/02/ruby-io/"
+        },
+        {
+          "type": "article",
+          "title": "Ruby - FIlei/o",
+          "url": "https://www.tutorialspoint.com/ruby/ruby_input_output.htm"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "scope": {
+      "title": "Scope",
+      "sourceId": "SB_IzxfilaHBVL1fe5aYG",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "Scope refers to the visibility and accessibility of variables within different parts of a program. It determines where a variable can be accessed and used. Understanding scope is crucial for avoiding naming conflicts and ensuring that data is accessed and modified correctly within different parts of your Ruby code.",
+      "video": {
+        "title": "Methods & Variable Scope in Ruby",
+        "url": "https://www.youtube.com/watch?v=rzZK79C6nSI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Scope",
+          "url": "https://docs.ruby-lang.org/en/master/syntax/methods_rdoc.html#label-Scope"
+        },
+        {
+          "type": "article",
+          "title": "Variable Scope and Access in Ruby: The Important Parts",
+          "url": "https://ethanweiner.medium.com/variable-scope-and-access-in-ruby-the-important-parts-dc2d146977b3"
+        },
+        {
+          "type": "article",
+          "title": "Method Definition and Local Variable Scope",
+          "url": "https://launchschool.com/books/ruby/read/methods"
+        }
+      ],
+      "parents": [
+        "methodParameters"
+      ],
+      "children": [
+        "chainingMethods"
+      ]
+    },
+    "bundler": {
+      "title": "Bundler",
+      "sourceId": "Y6yFuFfcdlcupQUFHV3cg",
+      "type": "subtopic",
+      "order": 60,
+      "summary": "Bundler is a dependency manager for Ruby. It ensures that an application uses the exact versions of gems (Ruby libraries) that it needs to function correctly. It tracks and installs the specific gem versions required by a project, creating a consistent environment across different machines and deployments. This prevents conflicts and ensures that the application behaves as expected, regardless of where it's run.",
+      "video": {
+        "title": "Introduction to Ruby Bundler Gem",
+        "url": "https://www.youtube.com/watch?v=nGKAa04hpZE"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Bundler",
+          "url": "https://bundler.io/"
+        },
+        {
+          "type": "official",
+          "title": "What is Bundler?",
+          "url": "https://bundler.io/guides/getting_started.html"
+        },
+        {
+          "type": "article",
+          "title": "The Beginner's Guide to Bundler and Gemfiles",
+          "url": "https://www.moncefbelyamani.com/the-beginner-s-guide-to-bundler-and-gemfiles/"
+        }
+      ],
+      "parents": [
+        "packageManagement"
+      ],
+      "children": []
+    },
+    "chainingMethods": {
+      "title": "Chaining Methods",
+      "sourceId": "CIV4Ph1B-kUcYv_EqVw2I",
+      "type": "subtopic",
+      "order": 61,
+      "summary": "Chaining methods in Ruby lets you call multiple methods on an object in a single line of code. This works because most methods in Ruby return an object (often `self`, the object the method was called on). By returning an object, the next method in the chain can be immediately called on the result of the previous method. This creates a fluent and readable way to perform a series of operations on a single object.",
+      "video": {
+        "title": "How to Read, Analyze & Understand Ruby Method Chains",
+        "url": "https://www.youtube.com/watch?v=toeX_3cHqYg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Chaining Methods",
+          "url": "https://launchschool.com/books/ruby/read/methods#chainingmethods"
+        },
+        {
+          "type": "article",
+          "title": "Chaining methods - Odin Project",
+          "url": "https://www.theodinproject.com/lessons/ruby-methods#chaining-methods"
+        },
+        {
+          "type": "article",
+          "title": "A Guide to Method Chaining",
+          "url": "https://www.sitepoint.com/a-guide-to-method-chaining/"
+        }
+      ],
+      "parents": [
+        "scope"
+      ],
+      "children": []
+    },
+    "dataStructuresAlgorithms": {
+      "title": "Data Structures & Algorithms",
+      "sourceId": "MN4RfvuiVk90-YkRCbbhU",
+      "type": "label",
+      "order": 62,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "stacksQueues"
+      ]
+    },
+    "environments": {
+      "title": "Environments",
+      "sourceId": "5YaG_dAi1xqG_0aev1Gsm",
+      "type": "label",
+      "order": 63,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "rvm",
+        "rbenv"
+      ]
+    },
+    "stacksQueues": {
+      "title": "Stacks & queues",
+      "sourceId": "wcw4QurFUczUKnyBPpnr5",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "Stacks and queues are fundamental data structures used to manage collections of items. A stack operates on the Last-In, First-Out (LIFO) principle, where the last element added is the first one removed, like a stack of plates. Conversely, a queue follows the First-In, First-Out (FIFO) principle, where the first element added is the first one removed, similar to a waiting line. In Ruby, these can be implemented using arrays or custom classes to manage data in a specific order.",
+      "video": {
+        "title": "Introduction to Stacks and Queues (Data Structures & Algorithms #12)",
+        "url": "https://www.youtube.com/watch?v=A3ZUpyrnCbM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction: Stacks and Queues",
+          "url": "https://codesignal.com/learn/courses/mastering-complex-data-structures-in-ruby/lessons/exploring-stacks-and-queues-in-ruby"
+        },
+        {
+          "type": "article",
+          "title": "Stack, Queue and Deque Data Structures in Ruby",
+          "url": "https://medium.com/@paulndemo/stack-queue-and-deque-data-structures-in-ruby-64ce9a546247"
+        },
+        {
+          "type": "article",
+          "title": "How to Use Stacks in Ruby to Solve Problems",
+          "url": "https://www.rubyguides.com/2017/03/computer-science-in-ruby-stacks/"
+        }
+      ],
+      "parents": [
+        "dataStructuresAlgorithms"
+      ],
+      "children": [
+        "searchAlgorithms"
+      ]
+    },
+    "rvm": {
+      "title": "RVM",
+      "sourceId": "0c_0zyh1LQA80gmriWOT3",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "RVM (Ruby Version Manager) is a command-line tool that allows you to easily manage multiple Ruby environments on a single system. It enables you to install, manage, and work with different Ruby versions (like Ruby 2.7, 3.0, or JRuby) and gemsets (isolated collections of gems) independently. This prevents conflicts between projects that require different Ruby versions or gem dependencies.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "RVM",
+          "url": "https://rvm.io/"
+        },
+        {
+          "type": "opensource",
+          "title": "rvn",
+          "url": "https://github.com/rvm/rvm"
+        },
+        {
+          "type": "article",
+          "title": "What\u2019s an RVM and Why You Should Use it for Rails Apps?",
+          "url": "https://medium.com/@moulayjam/whats-an-rvm-and-why-you-should-use-it-for-rails-apps-b5cced2469a8"
+        },
+        {
+          "type": "article",
+          "title": "rbenv vs RVM: Picking Your Ruby Version Manager Buddy",
+          "url": "https://dev.to/lovestaco/rbenv-vs-rvm-picking-your-ruby-version-manager-buddy-4130"
+        }
+      ],
+      "parents": [
+        "environments"
+      ],
+      "children": []
+    },
+    "rbenv": {
+      "title": "Rbenv",
+      "sourceId": "VaRe4VrB7hjGp2UUFxtGf",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "Rbenv is a command-line tool that allows you to easily manage multiple Ruby environments (versions) on a single system. It works by intercepting Ruby commands and determining which Ruby version to use based on the current directory or a global setting. This enables you to work on different projects that require different Ruby versions without conflicts.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Rbenv",
+          "url": "https://rbenv.org/"
+        },
+        {
+          "type": "opensource",
+          "title": "rbenv",
+          "url": "https://github.com/rbenv/rbenv"
+        },
+        {
+          "type": "article",
+          "title": "Rbenv \u2014 How it works",
+          "url": "https://medium.com/@Sudhagar/rbenv-how-it-works-e5a0e4fa6e76"
+        },
+        {
+          "type": "article",
+          "title": "rbenv cheatsheet",
+          "url": "https://devhints.io/rbenv"
+        },
+        {
+          "type": "article",
+          "title": "rbenv vs RVM: Picking Your Ruby Version Manager Buddy",
+          "url": "https://dev.to/lovestaco/rbenv-vs-rvm-picking-your-ruby-version-manager-buddy-4130"
+        }
+      ],
+      "parents": [
+        "environments"
+      ],
+      "children": []
+    },
+    "blocksProcsLambdas": {
+      "title": "Blocks, Procs & Lambdas",
+      "sourceId": "Mo9iwQmofTUSXFOjGwY7s",
+      "type": "label",
+      "order": 67,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "blocks"
+      ]
+    },
+    "searchAlgorithms": {
+      "title": "Search Algorithms",
+      "sourceId": "EPNxjJqcP10c1__q1KKea",
+      "type": "subtopic",
+      "order": 68,
+      "summary": "Search algorithms are methods used to find a specific element within a collection of data, like an array or a hash. These algorithms work by systematically checking each element in the data structure until the desired element is found or it's determined that the element is not present. Common examples include linear search, which checks each element sequentially, and binary search, which efficiently finds elements in sorted data by repeatedly dividing the search interval in half.",
+      "video": {
+        "title": "Binary Search & Linear Search: Algorithms With Ruby",
+        "url": "https://www.youtube.com/watch?v=7RPr83FYEkE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Search algorithms with Ruby",
+          "url": "https://dev.to/daviducolo/search-algorithms-in-ruby-3nbj"
+        },
+        {
+          "type": "article",
+          "title": "Search Algorithms in Ruby",
+          "url": "https://medium.com/@limichelle21/search-algorithms-in-ruby-c3b8c9b70451"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to Binary Search",
+          "url": "https://codesignal.com/learn/courses/sorting-and-searching-algorithms-in-ruby/lessons/introduction-to-binary-search-in-ruby"
+        }
+      ],
+      "parents": [
+        "stacksQueues"
+      ],
+      "children": [
+        "sortingAlgorithms"
+      ]
+    },
+    "blocks": {
+      "title": "Blocks",
+      "sourceId": "DzolktV1UUCdSWqmqWgV3",
+      "type": "subtopic",
+      "order": 69,
+      "summary": "Blocks are chunks of code that can be passed to methods as if they were arguments. They are defined using either `do...end` or curly braces `{}`. Blocks are not objects themselves, but they can be converted into objects called Procs. Methods can then execute the code within the block using the `yield` keyword. Blocks are a fundamental part of Ruby's expressiveness, allowing for powerful iteration and control flow patterns.",
+      "video": {
+        "title": "Blocks, Procs, and Lambda Functions in Ruby",
+        "url": "https://www.youtube.com/watch?v=Dh3cSYjHITI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Ultimate Guide to Blocks, Procs & Lambdas",
+          "url": "https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/"
+        },
+        {
+          "type": "article",
+          "title": "Blocks and Procs",
+          "url": "https://launchschool.com/books/ruby/read/more_stuff#blocksandprocs"
+        },
+        {
+          "type": "article",
+          "title": "Blocks - Odin Project",
+          "url": "https://www.theodinproject.com/lessons/ruby-blocks"
+        },
+        {
+          "type": "article",
+          "title": "The two common ways to call a Ruby block",
+          "url": "https://www.codewithjason.com/two-common-ways-call-ruby-block/"
+        }
+      ],
+      "parents": [
+        "blocksProcsLambdas"
+      ],
+      "children": [
+        "procs"
+      ]
+    },
+    "sortingAlgorithms": {
+      "title": "Sorting Algorithms",
+      "sourceId": "hD6uldPLaedTvUwAWKFYY",
+      "type": "subtopic",
+      "order": 70,
+      "summary": "Sorting algorithms are methods used to rearrange a collection of items (like numbers, strings, or objects) into a specific order, such as ascending or descending. These algorithms work by comparing elements and swapping their positions until the entire collection is ordered according to the desired criteria. Different sorting algorithms have varying efficiencies and are suitable for different types and sizes of data.",
+      "video": {
+        "title": "Ruby Sorting Algorithms",
+        "url": "https://www.youtube.com/playlist?list=PLVVKl6q0Euw62GGkbh5PNSlEm37Lft9Re"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Sorting Algorithms with Ruby",
+          "url": "https://dev.to/daviducolo/sorting-algorithms-with-ruby-4o18"
+        },
+        {
+          "type": "article",
+          "title": "Sorting Algorithms in Ruby",
+          "url": "https://www.sitepoint.com/sorting-algorithms-ruby/"
+        }
+      ],
+      "parents": [
+        "searchAlgorithms"
+      ],
+      "children": [
+        "recursion"
+      ]
+    },
+    "procs": {
+      "title": "Procs",
+      "sourceId": "DD3TQAEl2JD0TIPDNZXXl",
+      "type": "subtopic",
+      "order": 71,
+      "summary": "A Proc in Ruby is an object that represents a block of code that can be stored, passed around, and executed later. Think of it as a named, reusable chunk of code. Unlike regular methods, Procs are objects, allowing them to be treated like any other variable, passed as arguments to methods, and stored in data structures. They capture the surrounding context in which they are defined, meaning they have access to variables and methods available at the time of their creation.",
+      "video": {
+        "title": "Blocks, Procs, and Lambda Functions in Ruby",
+        "url": "https://www.youtube.com/watch?v=Dh3cSYjHITI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "class Proc",
+          "url": "https://docs.ruby-lang.org/en/master/Proc.html"
+        },
+        {
+          "type": "article",
+          "title": "The Ultimate Guide to Blocks, Procs & Lambdas",
+          "url": "https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Ruby Proc objects",
+          "url": "https://www.codewithjason.com/ruby-procs/"
+        }
+      ],
+      "parents": [
+        "blocks"
+      ],
+      "children": [
+        "lambdas"
+      ]
+    },
+    "recursion": {
+      "title": "Recursion",
+      "sourceId": "yqsXD8ugaAHPnLJsd5XDQ",
+      "type": "subtopic",
+      "order": 72,
+      "summary": "Recursion is a programming technique where a function calls itself within its own definition. This creates a loop-like behavior, but instead of using explicit loops (like `for` or `while`), the function breaks down a problem into smaller, self-similar subproblems until it reaches a base case, which stops the recursion and returns a value. The results from each recursive call are then combined to produce the final solution.",
+      "video": {
+        "title": "Ruby Recursion Explained!",
+        "url": "https://www.youtube.com/watch?v=5JyJWdOP8PM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to Use Recursion & Memoization in Ruby",
+          "url": "https://www.rubyguides.com/2015/08/ruby-recursion-and-memoization/"
+        },
+        {
+          "type": "article",
+          "title": "Simple Recursion in Practice with Ruby",
+          "url": "https://codesignal.com/learn/courses/easy-interview-coding-practice-in-ruby/lessons/simple-recursion-in-practice-with-ruby"
+        }
+      ],
+      "parents": [
+        "sortingAlgorithms"
+      ],
+      "children": []
+    },
+    "send": {
+      "title": "send",
+      "sourceId": "5uayAWgKAYW_mJiMxuXmK",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "`send` in Ruby is a method that allows you to call other methods on an object dynamically by their name, which is passed as a symbol or string. It essentially bypasses the usual method call syntax, enabling you to invoke methods at runtime based on conditions or data. This provides a powerful way to write flexible and adaptable code.",
+      "video": {
+        "title": "send in ruby",
+        "url": "https://www.youtube.com/watch?v=cY-wxg5z5bA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Metaprogramming with the send Method in Ruby",
+          "url": "https://medium.com/nyc-ruby-on-rails/meta-programming-with-the-send-method-in-ruby-e88d568f868"
+        }
+      ],
+      "parents": [
+        "metaprogramming"
+      ],
+      "children": []
+    },
+    "lambdas": {
+      "title": "Lambdas",
+      "sourceId": "Tb5DcDuAZNyuIPepJ_yy4",
+      "type": "subtopic",
+      "order": 74,
+      "summary": "Lambdas are anonymous functions, meaning they are functions without a name. They are objects in Ruby and can be treated like any other object, such as being passed as arguments to methods or stored in variables. Lambdas are defined using the `lambda` keyword or the shorthand `->` syntax, and they are similar to procs but differ in how they handle arguments and `return` statements.",
+      "video": {
+        "title": "Ruby Blocks, Procs, and Lambdas \ud83e\udd81\ud83d\udc05\ud83d\udc3b",
+        "url": "https://www.youtube.com/watch?v=SADF5diqAJk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "An Introduction to Lambdas in Ruby",
+          "url": "https://blog.appsignal.com/2023/06/21/an-introduction-to-lambdas-in-ruby.html"
+        },
+        {
+          "type": "article",
+          "title": "https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/",
+          "url": "https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/"
+        },
+        {
+          "type": "article",
+          "title": "How to Use Lambdas in Ruby",
+          "url": "https://www.scoutapm.com/blog/how-to-use-lambdas-in-ruby"
+        }
+      ],
+      "parents": [
+        "procs"
+      ],
+      "children": []
+    },
+    "defineMethod": {
+      "title": "define_method",
+      "sourceId": "iwLZktEcLmnahj4o-IgWB",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "`define_method` is a method used to dynamically create new methods within a class or module. Instead of explicitly writing out the method definition with the `def` keyword, `define_method` allows you to generate methods at runtime, often based on data or logic that isn't known until the program is running. This provides a powerful way to reduce code duplication and create more flexible and adaptable code.",
+      "video": {
+        "title": "define_method - Metaprogramming in Ruby",
+        "url": "https://www.youtube.com/watch?v=I0itVuoprAY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Dynamic method definition with ruby\u2019s .define_method",
+          "url": "https://medium.com/@camfeg/dynamic-method-definition-with-rubys-define-method-b3ffbbee8197"
+        },
+        {
+          "type": "article",
+          "title": "Explain Ruby's define_method like I'm five",
+          "url": "https://dev.to/tiffanywismer/explain-rubys-definemethod-like-im-five-2807"
+        }
+      ],
+      "parents": [
+        "metaprogramming"
+      ],
+      "children": []
+    },
+    "classesObjects": {
+      "title": "Classes & Objects",
+      "sourceId": "UjaTLzZ03ZxzUVfVmSDUc",
+      "type": "label",
+      "order": 76,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "definingClasses"
+      ]
+    },
+    "definingClasses": {
+      "title": "Defining Classes",
+      "sourceId": "lPPdaW7EEyUCxV41ljvPY",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "A class is a blueprint for creating objects. It defines the attributes (data) and behaviors (methods) that objects of that class will possess. Defining a class involves specifying its name and the characteristics that its instances will have. This includes declaring instance variables to hold data and defining methods to perform actions on that data.",
+      "video": {
+        "title": "Classes & Objects | Ruby | Tutorial 29",
+        "url": "https://www.youtube.com/watch?v=sc5RhTIBf4c"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to Write Your Own Classes in Ruby (Explained Clearly)",
+          "url": "https://www.rubyguides.com/2019/02/ruby-class/"
+        },
+        {
+          "type": "article",
+          "title": "A Beginner\u2019s Guide to Ruby Classes (Part 1)",
+          "url": "https://medium.com/@grahamwatson/a-beginners-guide-to-ruby-classes-f8dec30d5821"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Classes Refresher",
+          "url": "https://codesignal.com/learn/courses/ruby-classes-basics-revision/lessons/understanding-ruby-classes-a-refresher-on-attributes-and-methods"
+        }
+      ],
+      "parents": [
+        "classesObjects"
+      ],
+      "children": [
+        "instanceVariables"
+      ]
+    },
+    "methodMissing": {
+      "title": "method_missing",
+      "sourceId": "pBbtuN36wqgXz4Oua0ukX",
+      "type": "subtopic",
+      "order": 78,
+      "summary": "`method_missing` is a Ruby method that gets called when you try to invoke a method on an object that doesn't exist. Instead of raising a `NoMethodError`, Ruby gives you a chance to handle the missing method call yourself. This allows you to dynamically respond to method calls based on the method name and arguments provided, enabling flexible and expressive code.",
+      "video": {
+        "title": "How and why to use Ruby\u2019s method_missing",
+        "url": "https://www.youtube.com/watch?v=rp1luOKyT9g"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Metaprogramming in Ruby: method_missing",
+          "url": "https://josh-works.medium.com/metaprogramming-in-ruby-method-missing-f6d7f7f6aef5"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Metaprogramming - Method Missing",
+          "url": "https://www.leighhalliday.com/ruby-metaprogramming-method-missing"
+        }
+      ],
+      "parents": [
+        "metaprogramming"
+      ],
+      "children": []
+    },
+    "metaprogramming": {
+      "title": "Metaprogramming",
+      "sourceId": "ufLdyKM3iya8zuMD1_sIj",
+      "type": "topic",
+      "order": 79,
+      "summary": "Metaprogramming is essentially writing code that manipulates other code. It allows you to define methods, classes, or even modify existing ones at runtime. This means your program can dynamically adapt and change its behavior based on conditions or data it encounters while running, rather than being fixed at compile time.",
+      "video": {
+        "title": "RubyConf 2022: In Defense of Ruby Metaprogramming By Noel Rappin",
+        "url": "https://www.youtube.com/watch?v=D_ZRaZucjm4"
+      },
+      "articles": [
+        {
+          "type": "book",
+          "title": "Metaprogramming Ruby.pdf",
+          "url": "https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Ruby/Metaprogramming%20Ruby.pdf"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Metaprogramming: How to Write Dynamic Code",
+          "url": "https://betterstack.com/community/guides/scaling-ruby/metaprogramming/"
+        },
+        {
+          "type": "article",
+          "title": "An Introduction to Metaprogramming in Ruby",
+          "url": "https://blog.appsignal.com/2023/07/26/an-introduction-to-metaprogramming-in-ruby.html"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Metaprogramming: Real-World Examples",
+          "url": "https://www.rubyguides.com/2016/04/metaprogramming-in-the-wild/"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Metaprogramming Secrets",
+          "url": "https://www.rubyguides.com/guides/metaprogramming-guide.pdf"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "rubyDsl",
+        "methodMissing",
+        "defineMethod",
+        "send",
+        "concurrency"
+      ]
+    },
+    "instanceVariables": {
+      "title": "Instance variables",
+      "sourceId": "dbdllih50mNFBrP9huQz9",
+      "type": "subtopic",
+      "order": 80,
+      "summary": "Instance variables in Ruby are variables that hold data specific to an object. They are defined within a class but belong to individual instances (objects) of that class. You create an instance variable by prefixing a variable name with an `@` symbol (e.g., `@name`). Each object of the class will have its own copy of these variables, allowing you to store different values for each object's attributes.",
+      "video": {
+        "title": "Instances and Instance Variables in Ruby Programming",
+        "url": "https://www.youtube.com/watch?v=H27i3WuAEVI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Read This If You Want to Understand Instance Variables in Ruby",
+          "url": "https://www.rubyguides.com/2019/07/ruby-instance-variables/"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Ruby Objects and Instance Variables",
+          "url": "https://dev.to/bhumi/understanding-ruby-objects-and-instance-variables-4157"
+        }
+      ],
+      "parents": [
+        "definingClasses"
+      ],
+      "children": [
+        "attributesAccessors"
+      ]
+    },
+    "rubyDsl": {
+      "title": "Ruby DSL",
+      "sourceId": "aU4XniRWyGKQxGnrxYKyE",
+      "type": "subtopic",
+      "order": 81,
+      "summary": "A Domain Specific Language (DSL) is a programming language designed for a particular kind of application. Instead of being a general-purpose language that can solve a wide range of problems, a DSL is focused on solving problems in a specific domain, making code more readable and maintainable within that domain. Ruby's flexible syntax makes it well-suited for creating internal DSLs, which are DSLs implemented within Ruby itself, leveraging Ruby's features to create a more expressive and concise syntax for a specific task.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Creating a Ruby DSL: A Guide to Advanced Metaprogramming",
+          "url": "https://www.toptal.com/developers/ruby/ruby-dsl-metaprogramming-guide"
+        },
+        {
+          "type": "article",
+          "title": "Writing a Domain-Specific Language in Ruby",
+          "url": "https://thoughtbot.com/blog/writing-a-domain-specific-language-in-ruby"
+        },
+        {
+          "type": "article",
+          "title": "Crafting a Ruby configuration DSL: Lessons learned",
+          "url": "https://vaisakhvm.medium.com/crafting-a-ruby-configuration-dsl-lessons-learned-8bbb0958c670"
+        }
+      ],
+      "parents": [
+        "metaprogramming"
+      ],
+      "children": []
+    },
+    "attributesAccessors": {
+      "title": "Attributes accessors",
+      "sourceId": "I9dIFxsUrysgrcqUSBNsW",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "Attributes accessors provide a convenient way to access and modify the instance variables of a class. They automatically generate methods for reading (getting) and writing (setting) the values of these variables. The three main types are `attr_reader`, which creates a getter method; `attr_writer`, which creates a setter method; and `attr_accessor`, which makes both a getter and a setter method. These accessors simplify code and encapsulate the internal state of objects.",
+      "video": {
+        "title": "How to Use Attribute Accessors in Ruby",
+        "url": "https://www.youtube.com/watch?v=C4O7bcbItw4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Accessors and Attributes of Class in Ruby",
+          "url": "https://www.naukri.com/code360/library/accessors-and-attributes-of-class-in-ruby"
+        },
+        {
+          "type": "article",
+          "title": "What is an accessor?",
+          "url": "https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/accessors.html"
+        },
+        {
+          "type": "article",
+          "title": "Understanding attr methods in Ruby!",
+          "url": "https://dev.to/kateh/understanding-attr-methods-in-ruby-412"
+        }
+      ],
+      "parents": [
+        "instanceVariables"
+      ],
+      "children": []
+    },
+    "threads": {
+      "title": "Threads",
+      "sourceId": "xJ_F95dKmaRKE42yQ2R-r",
+      "type": "subtopic",
+      "order": 83,
+      "summary": "Threads allow you to run multiple blocks of code seemingly at the same time within a single program. Think of them as lightweight processes that share the same memory space. This means they can access the same variables and objects, making it easier to share data, but also requiring careful management to avoid conflicts when multiple threads try to modify the same data simultaneously.",
+      "video": {
+        "title": "Magesh, \"Concurrency in Ruby: Threads, Fibers, and Ractors Demystified\"",
+        "url": "https://www.youtube.com/watch?v=LVHiq_SbQOE"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Thread",
+          "url": "https://docs.ruby-lang.org/en/master/Thread.html"
+        },
+        {
+          "type": "article",
+          "title": "How to Use Ruby Threads: An Easy To Understand Tutorial",
+          "url": "https://www.rubyguides.com/2015/07/ruby-threads/"
+        },
+        {
+          "type": "article",
+          "title": "Untangling Ruby Threads",
+          "url": "https://thoughtbot.com/blog/untangling-ruby-threads"
+        }
+      ],
+      "parents": [
+        "concurrency"
+      ],
+      "children": [
+        "fibers"
+      ]
+    },
+    "inheritance": {
+      "title": "Inheritance",
+      "sourceId": "7HSJh15ice_CG3FtfQ5x6",
+      "type": "subtopic",
+      "order": 84,
+      "summary": "Inheritance in Ruby allows a class (the subclass or derived class) to inherit properties and behaviors from another class (the superclass or base class). This promotes code reuse and establishes an \"is-a\" relationship. The subclass automatically gains the methods and attributes of the superclass, and can also add its own or override existing ones to customize its behavior.",
+      "video": {
+        "title": "Inheritance | Ruby | Tutorial 33",
+        "url": "https://www.youtube.com/watch?v=Zkk7whVb3f4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Inheritance",
+          "url": "https://launchschool.com/books/oo_ruby/read/inheritance"
+        },
+        {
+          "type": "article",
+          "title": "Ruby \u2014 Inheritance and Module",
+          "url": "https://medium.com/swlh/ruby-inheritance-and-module-cc0132348dcd"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Inheritance Explained \u2013 Learn OOP Today!",
+          "url": "https://www.rubyguides.com/2019/01/what-is-inheritance-in-ruby/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "modulesMixins"
+      ]
+    },
+    "concurrency": {
+      "title": "Concurrency",
+      "sourceId": "oM4ezZoguNFOALXH3Sl6E",
+      "type": "topic",
+      "order": 85,
+      "summary": "Concurrency and parallelism are techniques for improving the performance and responsiveness of programs by executing multiple tasks seemingly or actually at the same time. Concurrency deals with managing multiple tasks within a single program, allowing them to make progress even if one task is blocked. Parallelism, on the other hand, involves physically executing multiple tasks simultaneously, typically by distributing them across multiple processor cores.",
+      "video": {
+        "title": "RailsConf 2016 - Introduction to Concurrency in Ruby by Thijs Cadier",
+        "url": "https://www.youtube.com/watch?v=5AxtY4dfuwc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Ruby Concurrency and Parallelism: A Practical Tutorial",
+          "url": "http://toptal.com/developers/ruby/ruby-concurrency-and-parallelism-a-practical-primer"
+        },
+        {
+          "type": "article",
+          "title": "Parallelism and concurrency in Ruby",
+          "url": "https://msuliq.medium.com/concurrency-and-parallin-ruby-91d10045d2fe"
+        }
+      ],
+      "parents": [
+        "metaprogramming"
+      ],
+      "children": [
+        "threads",
+        "concurrentRuby",
+        "ractors",
+        "toolingEcosystem"
+      ]
+    },
+    "ractors": {
+      "title": "Ractors",
+      "sourceId": "H4Cz_4xcMJmU0UwvEhNIn",
+      "type": "subtopic",
+      "order": 86,
+      "summary": "Ractors are an actor-model-based concurrency abstraction in Ruby, designed to allow for parallel execution. They provide a way to isolate data and execution between different parts of a program, minimizing shared mutable state and thus simplifying concurrent programming by preventing common issues like race conditions. Each Ractor runs in its own thread and has its own isolated heap, communicating with other Ractors through message passing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Ractor",
+          "url": "https://docs.ruby-lang.org/en/3.4/ractor_md.html"
+        },
+        {
+          "type": "article",
+          "title": "An Introduction to Ractors in Ruby",
+          "url": "https://blog.appsignal.com/2022/08/24/an-introduction-to-ractors-in-ruby.html"
+        }
+      ],
+      "parents": [
+        "concurrency"
+      ],
+      "children": []
+    },
+    "fibers": {
+      "title": "Fibers",
+      "sourceId": "_ruCDzzaSuoE_8tRacTeK",
+      "type": "subtopic",
+      "order": 87,
+      "summary": "Fibers are a lightweight concurrency construct that allows you to create code blocks that can be paused and resumed. They provide a way to implement cooperative multitasking within a single thread, enabling you to manage multiple tasks without the overhead of creating and managing multiple threads or processes. Fibers are useful for scenarios where you need fine-grained control over the execution flow and want to avoid the complexities of thread synchronization.",
+      "video": null,
+      "articles": [
+        {
+          "type": "book",
+          "title": "Magesh, \"Concurrency in Ruby: Threads, Fibers, and Ractors Demystified\"",
+          "url": "https://www.youtube.com/watch?v=LVHiq_SbQOE"
+        },
+        {
+          "type": "official",
+          "title": "class Fiber",
+          "url": "https://docs.ruby-lang.org/en/master/Fiber.html"
+        },
+        {
+          "type": "article",
+          "title": "How to use Ruby Fibers for Background Jobs",
+          "url": "https://medium.com/@alieckaja/unleashing-the-power-of-fibers-for-background-jobs-8a22e3a38cd1"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Fibers 101",
+          "url": "https://blog.saeloun.com/2022/03/01/ruby-fibers-101/"
+        }
+      ],
+      "parents": [
+        "threads"
+      ],
+      "children": []
+    },
+    "concurrentRuby": {
+      "title": "Concurrent Ruby",
+      "sourceId": "toevE0eM7c5f_zeSaVjdr",
+      "type": "subtopic",
+      "order": 88,
+      "summary": "Concurrent Ruby is a library that provides tools and abstractions for concurrent and parallel programming in Ruby. It offers features like actors, promises, dataflow variables, and thread pools to help developers write efficient and thread-safe code, enabling them to take advantage of multi-core processors and improve application performance.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Concurrent Ruby",
+          "url": "https://ruby-concurrency.github.io/concurrent-ruby/1.3.6/index.html"
+        },
+        {
+          "type": "opensource",
+          "title": "concurrent-ruby",
+          "url": "https://github.com/ruby-concurrency/concurrent-ruby"
+        }
+      ],
+      "parents": [
+        "concurrency"
+      ],
+      "children": []
+    },
+    "modulesMixins": {
+      "title": "Modules & Mixins",
+      "sourceId": "8OF85n6CRQ3u3GFxlJlc8",
+      "type": "subtopic",
+      "order": 89,
+      "summary": "Modules in Ruby are collections of methods, classes, and constants. They provide a way to namespace and prevent naming conflicts. Mixins allow you to incorporate module functionality into classes, enabling code reuse and multiple inheritance-like behavior. By including a module in a class, the class gains access to the module's methods, effectively \"mixing in\" the module's functionality.",
+      "video": {
+        "title": "Modules | Ruby | Tutorial 34",
+        "url": "https://www.youtube.com/watch?v=Cq_dKYAqMrI&pp=ygUMcnVieSBtb2R1bGVz"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Module",
+          "url": "https://ruby-doc.org/core-2.5.0/Module.html"
+        },
+        {
+          "type": "article",
+          "title": "A Beginner's Guide to Ruby Modules and Mixins",
+          "url": "https://betterstack.com/community/guides/scaling-ruby/modules-mixins/"
+        },
+        {
+          "type": "article",
+          "title": "Mixing in Modules",
+          "url": "https://launchschool.com/books/oo_ruby/read/inheritance#mixinginmodules"
+        },
+        {
+          "type": "article",
+          "title": "Ruby \u2014 Inheritance and Module",
+          "url": "https://medium.com/swlh/ruby-inheritance-and-module-cc0132348dcd"
+        }
+      ],
+      "parents": [
+        "inheritance"
+      ],
+      "children": []
+    },
+    "toolingEcosystem": {
+      "title": "Tooling & Ecosystem",
+      "sourceId": "o1pYnU17AGEyKT01m569s",
+      "type": "label",
+      "order": 90,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "concurrency"
+      ],
+      "children": []
+    },
+    "advancedTopics": {
+      "title": "Advanced Topics",
+      "sourceId": "B6k8K0WO4Js3KGy6hFsY6",
+      "type": "label",
+      "order": 91,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "closures"
+      ]
+    },
+    "closures": {
+      "title": "Closures",
+      "sourceId": "yaC-XKRT0dWDFmDqpCvUw",
+      "type": "subtopic",
+      "order": 92,
+      "summary": "A closure is a block of code that can be passed around and executed later, even after the scope in which it was originally defined has ended. It \"closes over\" its surrounding environment, capturing the values of variables that were in scope when the closure was created. This allows the closure to access and use those variables even when it's executed in a different context.",
+      "video": {
+        "title": "Understanding Ruby closures",
+        "url": "https://www.youtube.com/watch?v=1OrZ2edTHGQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Understanding Ruby closures",
+          "url": "https://www.codewithjason.com/ruby-closures/"
+        },
+        {
+          "type": "article",
+          "title": "Closures in Ruby: Blocks, Procs and Lambdas",
+          "url": "https://blog.appsignal.com/2018/09/04/ruby-magic-closures-in-ruby-blocks-procs-and-lambdas.html"
+        }
+      ],
+      "parents": [
+        "advancedTopics"
+      ],
+      "children": [
+        "methodLookup"
+      ]
+    },
+    "debugging": {
+      "title": "Debugging",
+      "sourceId": "PD6q-vB4hFlT3oHWAVU_6",
+      "type": "label",
+      "order": 93,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "pry",
+        "irb",
+        "byebug",
+        "debug"
+      ]
+    },
+    "methodLookup": {
+      "title": "Method Lookup",
+      "sourceId": "ihUJHaZ1gu3Fb7MiybXCj",
+      "type": "subtopic",
+      "order": 94,
+      "summary": "Method lookup is the process a programming language uses to determine which method to execute when a method is called on an object. It involves searching through the object's class and its ancestors (inheritance hierarchy) to find the appropriate method definition. The search typically starts with the object's class and proceeds up the inheritance chain until a matching method is found.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Understanding Ruby Method Lookup",
+          "url": "https://www.honeybadger.io/blog/ruby-method-lookup/"
+        },
+        {
+          "type": "article",
+          "title": "Better Know A Ruby Thing: Method Lookup",
+          "url": "https://noelrappin.com/blog/2025/03/better-know-a-ruby-thing-method-lookup/"
+        }
+      ],
+      "parents": [
+        "closures"
+      ],
+      "children": [
+        "monkeyPatching"
+      ]
+    },
+    "pickAFramework": {
+      "title": "Pick a Framework",
+      "sourceId": "QZHvZhbPUFh60BMxhshqD",
+      "type": "label",
+      "order": 95,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "rubyOnRails2"
+      ]
+    },
+    "pry": {
+      "title": "Pry",
+      "sourceId": "Voz_H9SBIeOndzl3gmuS7",
+      "type": "subtopic",
+      "order": 96,
+      "summary": "Pry is a powerful Ruby runtime developer console and an alternative to `irb`. It offers features like syntax highlighting, code browsing, documentation lookup, and the ability to step through code execution. Pry allows developers to pause program execution at any point, inspect variables, and even modify code on the fly, making it an invaluable tool for debugging and understanding Ruby code.",
+      "video": {
+        "title": "Debugging Ruby with PRY",
+        "url": "https://www.youtube.com/watch?v=dPDrgpWakrA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Debugging Ruby Code with Pry",
+          "url": "https://laflamablanc.medium.com/debugging-ruby-code-with-pry-a0bf1f5e97ca"
+        },
+        {
+          "type": "article",
+          "title": "Debugging in Ruby with pry-byebug",
+          "url": "https://blog.appsignal.com/2024/05/08/debugging-in-ruby-with-pry-byebug.html"
+        },
+        {
+          "type": "article",
+          "title": "Pry debugging",
+          "url": "https://docs.gitlab.com/development/pry_debugging/"
+        }
+      ],
+      "parents": [
+        "debugging"
+      ],
+      "children": []
+    },
+    "irb": {
+      "title": "irb",
+      "sourceId": "_TyiwnXJ7kQI8Z02ooAIy",
+      "type": "subtopic",
+      "order": 97,
+      "summary": "IRB (Interactive Ruby) is a powerful tool for debugging Ruby code. It allows you to execute Ruby code line by line, inspect variables, and test code snippets in real-time. This interactive environment helps you understand how your code behaves, identify errors, and experiment with different solutions without having to run your entire program. You can use IRB to step through your code, set breakpoints, and examine the state of your application at any point during execution.",
+      "video": {
+        "title": "Ruby Debugging Tools: irb, pry, byebug, debug | Talk.rb",
+        "url": "https://www.youtube.com/watch?v=Jx5SdGUezY0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Debugging with IRB",
+          "url": "https://ruby.github.io/irb/#label-Debugging+with+IRB"
+        },
+        {
+          "type": "article",
+          "title": "A Beginner\u2019s Guide to Debugging in Ruby",
+          "url": "https://medium.com/@claire_logan/a-beginners-guide-to-debugging-in-ruby-b8103d7ad35b"
+        }
+      ],
+      "parents": [
+        "debugging"
+      ],
+      "children": []
+    },
+    "rubyOnRails2": {
+      "title": "Ruby on Rails",
+      "sourceId": "AE7YB3XH70HJWCf51i5YH",
+      "type": "subtopic",
+      "order": 98,
+      "summary": "Ruby on Rails is a server-side web application framework written in Ruby under the MIT License. Rails is a model-view-controller (MVC) framework, providing default structures for a database, a web service, and web pages. It encourages the use of web standards such as JSON or XML for data transfer, and HTML, CSS, and JavaScript for the user interface.",
+      "video": {
+        "title": "Learn Ruby on Rails - Full Course",
+        "url": "https://www.youtube.com/watch?v=fmyvWz5TUWg"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Ruby on Rails",
+          "url": "https://rubyonrails.org/"
+        },
+        {
+          "type": "official",
+          "title": "Getting Started with Rails",
+          "url": "https://guides.rubyonrails.org/getting_started.html"
+        },
+        {
+          "type": "opensource",
+          "title": "rails",
+          "url": "https://github.com/rails/rails"
+        },
+        {
+          "type": "article",
+          "title": "Ruby vs Ruby on Rails: What\u2019s the Difference?",
+          "url": "https://kinsta.com/blog/ruby-vs-ruby-on-rails/"
+        },
+        {
+          "type": "article",
+          "title": "Visit the Dedicated Ruby on Rails Roadmap",
+          "url": "https://roadmap.sh/ruby-on-rails"
+        }
+      ],
+      "parents": [
+        "pickAFramework"
+      ],
+      "children": [
+        "rack",
+        "sinatra"
+      ]
+    },
+    "monkeyPatching": {
+      "title": "Monkey Patching",
+      "sourceId": "6mCtbDW5pkFQdLSjsr_Ad",
+      "type": "subtopic",
+      "order": 99,
+      "summary": "Monkey patching is a technique that allows you to add, modify, or replace existing code in a class or module at runtime. This means you can change the behavior of classes and modules, even those defined in external libraries, without directly altering their source code. It's a powerful tool for extending functionality or fixing bugs, but it should be used with caution as it can lead to unexpected side effects and make code harder to maintain.",
+      "video": {
+        "title": "Introduction to Monkey Patching In Ruby",
+        "url": "https://www.youtube.com/watch?v=BH8-1SK7ZYI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Responsible Monkeypatching in Ruby",
+          "url": "https://blog.appsignal.com/2021/08/24/responsible-monkeypatching-in-ruby.html"
+        }
+      ],
+      "parents": [
+        "methodLookup"
+      ],
+      "children": [
+        "refinements"
+      ]
+    },
+    "byebug": {
+      "title": "byebug",
+      "sourceId": "2y9U11vXpTXHwkIGogzaf",
+      "type": "subtopic",
+      "order": 100,
+      "summary": "Byebug is a powerful debugger for Ruby programs. It allows you to step through your code line by line, inspect variables, set breakpoints, and evaluate expressions in real-time. This helps you understand the flow of your program, identify the source of bugs, and fix them more efficiently.",
+      "video": {
+        "title": "Debugging Ruby With Byebug",
+        "url": "https://www.youtube.com/watch?v=toZrovVX4ug"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "byebug",
+          "url": "https://github.com/deivid-rodriguez/byebug"
+        },
+        {
+          "type": "article",
+          "title": "Debugging with \u2018ByeBug\u2019 gem",
+          "url": "https://medium.com/le-wagon-tokyo/debugging-with-byebug-gem-6a47b2a210bb"
+        }
+      ],
+      "parents": [
+        "debugging"
+      ],
+      "children": []
+    },
+    "debug": {
+      "title": "debug",
+      "sourceId": "JSauSDvDotwrWZiyLuWks",
+      "type": "subtopic",
+      "order": 101,
+      "summary": "`debug` is a powerful debugging tool integrated directly into Ruby. It allows developers to step through code execution, inspect variables, set breakpoints, and evaluate expressions in real-time. This helps in identifying and resolving errors or unexpected behavior within Ruby programs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "debug",
+          "url": "https://github.com/ruby/debug"
+        },
+        {
+          "type": "article",
+          "title": "ruby/debug cheatsheet",
+          "url": "https://st0012.dev/2022/09/08/ruby-debug-cheatsheet/"
+        }
+      ],
+      "parents": [
+        "debugging"
+      ],
+      "children": []
+    },
+    "rack": {
+      "title": "Rack",
+      "sourceId": "qvg65UaeythwvO38wn8Gc",
+      "type": "subtopic",
+      "order": 102,
+      "summary": "Rack provides a minimal interface between web servers and Ruby frameworks. By abstracting the connection between the server and the application, Rack allows developers to write Ruby web applications that can run on a variety of web servers with minimal configuration. It essentially provides a common API for handling HTTP requests and responses.",
+      "video": {
+        "title": "What is Rack? How does it work? A brief guide for Ruby on Rails Developers",
+        "url": "https://www.youtube.com/watch?v=C4wy8L--FmE"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "rack",
+          "url": "https://github.com/rack/rack"
+        },
+        {
+          "type": "article",
+          "title": "The Basics of Rack for Ruby",
+          "url": "https://blog.appsignal.com/2024/10/30/the-basics-of-rack-for-ruby.html"
+        },
+        {
+          "type": "article",
+          "title": "What is Ruby Rack? \u2014 Build your first Rack app",
+          "url": "https://cdragon.medium.com/what-is-ruby-rack-build-your-first-rack-app-32771cde34d9"
+        }
+      ],
+      "parents": [
+        "rubyOnRails2"
+      ],
+      "children": []
+    },
+    "sinatra": {
+      "title": "Sinatra",
+      "sourceId": "XI-1114QVFgALBF9VAb99",
+      "type": "subtopic",
+      "order": 103,
+      "summary": "Sinatra is a lightweight and flexible Domain Specific Language (DSL) for creating web applications in Ruby with minimal effort. It provides a simple way to map routes to Ruby code, allowing developers to quickly build web applications without the complexity of larger frameworks. Sinatra emphasizes convention over configuration, making it easy to get started and build small to medium-sized web applications.",
+      "video": {
+        "title": "Sinatra Ruby Gem",
+        "url": "https://www.youtube.com/watch?v=sfw5ZPowLJY&list=PL1sGH26TWrxot1_zsMNqb1lYbS54-OzVU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Sinatra",
+          "url": "https://sinatrarb.com/"
+        },
+        {
+          "type": "opensource",
+          "title": "sinatra",
+          "url": "https://github.com/sinatra/sinatra"
+        },
+        {
+          "type": "article",
+          "title": "How to Use Sinatra to Build a Ruby Application",
+          "url": "https://blog.appsignal.com/2023/05/31/how-to-use-sinatra-to-build-a-ruby-application.html"
+        },
+        {
+          "type": "article",
+          "title": "Tutorial: Run a Sinatra application",
+          "url": "https://www.jetbrains.com/help/ruby/sinatra.html"
+        }
+      ],
+      "parents": [
+        "rubyOnRails2"
+      ],
+      "children": []
+    },
+    "refinements": {
+      "title": "Refinements",
+      "sourceId": "aNf0-Yhwl98L_oNfipvj3",
+      "type": "subtopic",
+      "order": 104,
+      "summary": "Refinements provide a way to modify the behavior of a class or module within a specific scope, without affecting the global definition of that class or module. This allows you to introduce changes or extensions to existing code in a localized manner, preventing unintended side effects in other parts of your application. Refinements are particularly useful for managing dependencies and avoiding conflicts when working with shared code or libraries.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Pros and Cons of Ruby Refinements",
+          "url": "https://www.cloudbees.com/blog/ruby-refinements"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Ruby refinements and lexical scope",
+          "url": "https://www.honeybadger.io/blog/understanding-ruby-refinements-and-lexical-scope/"
+        },
+        {
+          "type": "article",
+          "title": "Refinement: The Correct Way To Monkey-Patch in Ruby",
+          "url": "https://reinteractive.com/articles/tutorial-series-for-experienced-rails-developers/ruby-refinements-vs-monkey-patching-best-practices"
+        }
+      ],
+      "parents": [
+        "monkeyPatching"
+      ],
+      "children": [
+        "singletonClasses"
+      ]
+    },
+    "testing": {
+      "title": "Testing",
+      "sourceId": "r5GiIF1kYA_l9qn6cT5LS",
+      "type": "label",
+      "order": 105,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "rspec",
+        "testUnit"
+      ]
+    },
+    "singletonClasses": {
+      "title": "Singleton Classes",
+      "sourceId": "WNiD4Tllt2uDncEVPg8Pm",
+      "type": "subtopic",
+      "order": 106,
+      "summary": "A singleton class in Ruby is a special kind of class that is associated with a single object. It allows you to define methods that are specific to that particular object, without affecting other objects of the same class. Think of it as a way to add unique behavior to an individual object instance.",
+      "video": {
+        "title": "The Singleton Pattern in Ruby",
+        "url": "https://www.youtube.com/watch?v=IP3I_t2rR6A"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Explaining Ruby's Singleton Class (Eigenclass) to confused beginners",
+          "url": "https://dev.to/samuelfaure/explaining-ruby-s-singleton-class-eigenclass-to-confused-beginners-cep"
+        },
+        {
+          "type": "article",
+          "title": "Better Know A Ruby Thing: Singleton Classes",
+          "url": "https://noelrappin.com/blog/2025/01/better-know-a-ruby-thing-singleton-classes/"
+        }
+      ],
+      "parents": [
+        "refinements"
+      ],
+      "children": []
+    },
+    "rspec": {
+      "title": "RSpec",
+      "sourceId": "E6k00oTuohQOBkPNyuKAA",
+      "type": "subtopic",
+      "order": 107,
+      "summary": "RSpec is a testing tool for Ruby. It provides a domain-specific language (DSL) for writing tests in a clear and readable format. RSpec focuses on behavior-driven development (BDD), allowing developers to describe the expected behavior of their code in a way that is easy to understand and maintain.",
+      "video": {
+        "title": "RSpec Ruby Tutorial",
+        "url": "https://www.youtube.com/watch?v=FgGOa7Mxoxg&list=PL_noPv5wmuO9Z3h_Nq4aEPfzGqrJzhthb"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "RSpec",
+          "url": "https://rspec.info/"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started with RSpec",
+          "url": "https://semaphore.io/community/tutorials/getting-started-with-rspec"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to RSpec",
+          "url": "https://www.theodinproject.com/lessons/ruby-introduction-to-rspec"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": [
+        "minitest"
+      ]
+    },
+    "ides": {
+      "title": "IDEs",
+      "sourceId": "JsoqD1PLPqPDV9kEnGyLj",
+      "type": "label",
+      "order": 108,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "vsCode"
+      ]
+    },
+    "vsCode": {
+      "title": "VS Code",
+      "sourceId": "9_KhHCWRDTNl1nroot_Ri",
+      "type": "subtopic",
+      "order": 109,
+      "summary": "The VS Code Ruby extension enhances the Visual Studio Code editor with features specifically designed for Ruby development. It provides functionalities like syntax highlighting, code completion, debugging support, linting, and formatting, making it easier for developers to write, test, and maintain Ruby code within the VS Code environment. This extension streamlines the development workflow and improves code quality by offering real-time feedback and assistance.",
+      "video": {
+        "title": "How to Set Up VS Code for Ruby",
+        "url": "https://www.youtube.com/watch?v=Zw4wdDLMAIw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Ruby in Visual Studio Code",
+          "url": "https://code.visualstudio.com/docs/languages/ruby"
+        },
+        {
+          "type": "article",
+          "title": "Best Visual Studio Code extensions and settings for Ruby and Rails",
+          "url": "https://achris.me/posts/setup-ruby-vscode/"
+        },
+        {
+          "type": "article",
+          "title": "Ruby Development with VS Code",
+          "url": "https://medium.com/@terrenceong/ruby-development-with-vs-code-fab258db5f1d"
+        }
+      ],
+      "parents": [
+        "ides"
+      ],
+      "children": [
+        "rubymine"
+      ]
+    },
+    "minitest": {
+      "title": "Minitest",
+      "sourceId": "C7Dy0rqAo-HotIVlCBa1G",
+      "type": "subtopic",
+      "order": 110,
+      "summary": "Minitest is a complete testing suite for Ruby. It provides support for test-driven development (TDD), behavior-driven development (BDD), mocking, and benchmarking. It's a lightweight and fast testing framework that's included in the Ruby standard library, making it readily available for use in Ruby projects without requiring additional installations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Ruby Minitest Tutorial",
+          "url": "https://www.youtube.com/watch?v=Reso8FlRRAc"
+        },
+        {
+          "type": "opensource",
+          "title": "minitest",
+          "url": "https://github.com/minitest/minitest"
+        },
+        {
+          "type": "article",
+          "title": "MiniTest - Writing Test Code In Ruby (2/3)",
+          "url": "https://dev.to/exampro/minitest-writing-test-code-in-ruby-part-2-of-3-4306"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started with Minitest",
+          "url": "https://www.cloudbees.com/blog/getting-started-with-minitest"
+        }
+      ],
+      "parents": [
+        "rspec"
+      ],
+      "children": []
+    },
+    "testUnit": {
+      "title": "Test::Unit",
+      "sourceId": "Tzf1uJDIeIjPAVleVe_yx",
+      "type": "subtopic",
+      "order": 111,
+      "summary": "Test::Unit is a testing framework for Ruby, providing a structure for writing and running tests. It allows developers to define test cases as methods within classes, making it easy to organize and execute tests to verify the correctness of their code. Test::Unit includes assertions to check expected outcomes and report failures, helping ensure code quality and reliability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Test::Unit",
+          "url": "https://ruby-doc.org/stdlib-3.1.0/libdoc/test-unit/rdoc/Test/Unit.html"
+        },
+        {
+          "type": "article",
+          "title": "TestUnit - Writing Test Code In Ruby (1/3)",
+          "url": "https://dev.to/exampro/testunit-writing-test-code-in-ruby-part-1-of-3-44m2"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": []
+    },
+    "rubymine": {
+      "title": "RubyMine",
+      "sourceId": "WQQuaLnCCzy48uDPJ-sDb",
+      "type": "subtopic",
+      "order": 112,
+      "summary": "RubyMine is an Integrated Development Environment (IDE) specifically designed for Ruby and Ruby on Rails development. It provides a comprehensive suite of tools for coding, testing, debugging, and deploying Ruby applications, aiming to enhance developer productivity through features like intelligent code completion, refactoring, and integration with various testing frameworks and version control systems.",
+      "video": {
+        "title": "RubyMine vs VSCode (2026): Which Is The Best IDE For Ruby on Rails?",
+        "url": "https://www.youtube.com/watch?v=WIc1de6_1MM"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "RubyMine",
+          "url": "https://www.jetbrains.com/ruby/"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to RubyMine \u2014 A Powerful Ruby Development Tool",
+          "url": "https://medium.com/@AlexanderObregon/introduction-to-rubymine-a-powerful-ruby-development-tool-4127851de5f9"
+        }
+      ],
+      "parents": [
+        "vsCode"
+      ],
+      "children": []
+    },
+    "lintingFormating": {
+      "title": "Linting & Formating",
+      "sourceId": "sZtvGFl25yCH4Oj1_vZpf",
+      "type": "label",
+      "order": 113,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "rubocop",
+        "standard"
+      ]
+    },
+    "rubocop": {
+      "title": "RuboCop",
+      "sourceId": "gHn3q_539Ia31Kviem8lK",
+      "type": "subtopic",
+      "order": 114,
+      "summary": "RuboCop is a static code analyzer and formatter for Ruby. It inspects Ruby code and reports style issues, potential errors, and code smells based on a community-driven Ruby style guide. RuboCop can also automatically correct many of these issues, ensuring code consistency and improving overall code quality.",
+      "video": {
+        "title": "RubyConf 2022: Analyzing an analyzer - A dive into how RuboCop works by Kyle d'Oliveira",
+        "url": "https://www.youtube.com/watch?v=LAo-PYs6bp0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "RuboCop",
+          "url": "https://rubocop.org/"
+        },
+        {
+          "type": "official",
+          "title": "RuboCop Docs",
+          "url": "https://docs.rubocop.org/rubocop/1.82/index.html"
+        },
+        {
+          "type": "opensource",
+          "title": "rubocop",
+          "url": "https://github.com/rubocop/rubocop"
+        },
+        {
+          "type": "article",
+          "title": "Using RuboCop for Effective Ruby Code Linting",
+          "url": "https://betterstack.com/community/guides/scaling-ruby/rubocop/"
+        }
+      ],
+      "parents": [
+        "lintingFormating"
+      ],
+      "children": []
+    },
+    "standard": {
+      "title": "Standard",
+      "sourceId": "Wf6AYAz8gTpaj6ZfOxoZM",
+      "type": "subtopic",
+      "order": 116,
+      "summary": "Standard is a Ruby gem that automatically formats and lints Ruby code, aiming to enforce a consistent style across projects. It combines the functionality of linters like RuboCop with an auto-formatter, providing a single tool to ensure code adheres to a predefined set of style rules. By automatically fixing style issues, Standard helps developers focus on writing code rather than debating formatting preferences.",
+      "video": {
+        "title": "Lint & Format Messy Ruby Code Using Standard",
+        "url": "https://www.youtube.com/watch?v=zQ4BiObOf2U&t=28s"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "standard",
+          "url": "https://github.com/standardrb/standard"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started with StandardRB",
+          "url": "https://betterstack.com/community/guides/scaling-ruby/standardrb-explained/"
+        }
+      ],
+      "parents": [
+        "lintingFormating"
+      ],
+      "children": []
+    },
+    "documentation": {
+      "title": "Documentation",
+      "sourceId": "Ljvgdf_xfhOGveArQJoG8",
+      "type": "label",
+      "order": 120,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "rdoc",
+        "yard"
+      ]
+    },
+    "rdoc": {
+      "title": "RDoc",
+      "sourceId": "QFkREObmZZebsCwXM3ML0",
+      "type": "subtopic",
+      "order": 121,
+      "summary": "RDoc is a documentation generator for Ruby source code. It parses Ruby files and creates HTML or other formatted documentation based on comments and code structure. It's the standard tool for generating API documentation for Ruby projects, allowing developers to easily understand and use libraries and applications.",
+      "video": {
+        "title": "Reading and using Ruby Documentation - Rdoc",
+        "url": "https://www.youtube.com/watch?v=opvB-_vycTs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "RDoc - Ruby Documentation System",
+          "url": "https://ruby.github.io/rdoc/"
+        },
+        {
+          "type": "opensource",
+          "title": "rdoc",
+          "url": "https://github.com/ruby/rdoc"
+        }
+      ],
+      "parents": [
+        "documentation"
+      ],
+      "children": []
+    },
+    "yard": {
+      "title": "YARD",
+      "sourceId": "EDfqLvVxq-PIqb1eGYL20",
+      "type": "subtopic",
+      "order": 122,
+      "summary": "YARD (Yet Another Ruby Documentation) is a documentation generation tool for the Ruby programming language. It allows developers to create comprehensive and consistent documentation for their Ruby projects by parsing source code and extracting information based on specially formatted comments. YARD generates output in various formats, including HTML, making it easy to browse and share project documentation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "YARD",
+          "url": "https://yardoc.org/"
+        },
+        {
+          "type": "official",
+          "title": "Getting Started",
+          "url": "https://rubydoc.info/gems/yard/file/docs/GettingStarted.md"
+        },
+        {
+          "type": "opensource",
+          "title": "yard",
+          "url": "https://github.com/lsegal/yard"
+        },
+        {
+          "type": "article",
+          "title": "YARD for Ruby Beginners: A Documentation Guide",
+          "url": "https://medium.com/@swastik.thapaliya/yard-for-ruby-beginners-a-documentation-guide-d276b919fc12"
+        }
+      ],
+      "parents": [
+        "documentation"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "ruby",
+      "to": "introduction",
+      "style": "solid"
+    },
+    {
+      "from": "concurrency",
+      "to": "threads",
+      "style": "dashed"
+    },
+    {
+      "from": "inheritance",
+      "to": "modulesMixins",
+      "style": "dashed"
+    },
+    {
+      "from": "concurrency",
+      "to": "concurrentRuby",
+      "style": "dashed"
+    },
+    {
+      "from": "concurrency",
+      "to": "ractors",
+      "style": "dashed"
+    },
+    {
+      "from": "settingThingsUp",
+      "to": "managers",
+      "style": "dashed"
+    },
+    {
+      "from": "settingThingsUp",
+      "to": "installers",
+      "style": "dashed"
+    },
+    {
+      "from": "settingThingsUp",
+      "to": "packageManagers",
+      "style": "dashed"
+    },
+    {
+      "from": "settingThingsUp",
+      "to": "syntaxBasics",
+      "style": "solid"
+    },
+    {
+      "from": "dataTypes",
+      "to": "integers",
+      "style": "dashed"
+    },
+    {
+      "from": "dataTypes",
+      "to": "strings",
+      "style": "dashed"
+    },
+    {
+      "from": "dataTypes",
+      "to": "arrays",
+      "style": "dashed"
+    },
+    {
+      "from": "dataTypes",
+      "to": "symbols",
+      "style": "dashed"
+    },
+    {
+      "from": "typeCasting",
+      "to": "operators",
+      "style": "solid"
+    },
+    {
+      "from": "operators",
+      "to": "logical",
+      "style": "dashed"
+    },
+    {
+      "from": "operators",
+      "to": "assignment",
+      "style": "dashed"
+    },
+    {
+      "from": "operators",
+      "to": "ranges",
+      "style": "dashed"
+    },
+    {
+      "from": "operators",
+      "to": "comparison",
+      "style": "dashed"
+    },
+    {
+      "from": "operators",
+      "to": "arithmetic",
+      "style": "dashed"
+    },
+    {
+      "from": "conditionalStatements",
+      "to": "ifElsifElse",
+      "style": "dashed"
+    },
+    {
+      "from": "conditionalStatements",
+      "to": "unless",
+      "style": "dashed"
+    },
+    {
+      "from": "conditionalStatements",
+      "to": "loopsEnumerations",
+      "style": "solid"
+    },
+    {
+      "from": "loopsEnumerations",
+      "to": "while",
+      "style": "dashed"
+    },
+    {
+      "from": "loopsEnumerations",
+      "to": "for",
+      "style": "dashed"
+    },
+    {
+      "from": "loopsEnumerations",
+      "to": "break",
+      "style": "dashed"
+    },
+    {
+      "from": "loopsEnumerations",
+      "to": "enumerable",
+      "style": "solid"
+    },
+    {
+      "from": "enumerable",
+      "to": "fetching",
+      "style": "dashed"
+    },
+    {
+      "from": "enumerable",
+      "to": "searchingFiltering",
+      "style": "dashed"
+    },
+    {
+      "from": "enumerable",
+      "to": "sorting",
+      "style": "dashed"
+    },
+    {
+      "from": "enumerable",
+      "to": "iterating",
+      "style": "dashed"
+    },
+    {
+      "from": "enumerable",
+      "to": "querying",
+      "style": "dashed"
+    },
+    {
+      "from": "handlingExceptions",
+      "to": "beginRescueEnsure",
+      "style": "dashed"
+    },
+    {
+      "from": "handlingExceptions",
+      "to": "interactiveRubyIrb",
+      "style": "solid"
+    },
+    {
+      "from": "interactiveRubyIrb",
+      "to": "objectOrientedProgramming",
+      "style": "solid"
+    },
+    {
+      "from": "metaprogramming",
+      "to": "rubyDsl",
+      "style": "dashed"
+    },
+    {
+      "from": "metaprogramming",
+      "to": "methodMissing",
+      "style": "dashed"
+    },
+    {
+      "from": "metaprogramming",
+      "to": "defineMethod",
+      "style": "dashed"
+    },
+    {
+      "from": "metaprogramming",
+      "to": "send",
+      "style": "dashed"
+    },
+    {
+      "from": "metaprogramming",
+      "to": "concurrency",
+      "style": "solid"
+    },
+    {
+      "from": "concurrency",
+      "to": "toolingEcosystem",
+      "style": "solid"
+    },
+    {
+      "from": "managers",
+      "to": "floats",
+      "style": "solid"
+    },
+    {
+      "from": "managers",
+      "to": "booleans",
+      "style": "solid"
+    },
+    {
+      "from": "managers",
+      "to": "hashes",
+      "style": "solid"
+    },
+    {
+      "from": "managers",
+      "to": "nil",
+      "style": "solid"
+    },
+    {
+      "from": "managers",
+      "to": "case",
+      "style": "solid"
+    },
+    {
+      "from": "ifElsifElse",
+      "to": "until",
+      "style": "solid"
+    },
+    {
+      "from": "ifElsifElse",
+      "to": "doWhile",
+      "style": "solid"
+    },
+    {
+      "from": "ifElsifElse",
+      "to": "each",
+      "style": "solid"
+    },
+    {
+      "from": "ifElsifElse",
+      "to": "times",
+      "style": "solid"
+    },
+    {
+      "from": "ifElsifElse",
+      "to": "next",
+      "style": "solid"
+    },
+    {
+      "from": "ifElsifElse",
+      "to": "redo",
+      "style": "solid"
+    },
+    {
+      "from": "methodsAkaFunctions",
+      "to": "definingMethods",
+      "style": "solid"
+    },
+    {
+      "from": "definingMethods",
+      "to": "methodParameters",
+      "style": "solid"
+    },
+    {
+      "from": "packageManagement",
+      "to": "rubygems",
+      "style": "solid"
+    },
+    {
+      "from": "methodParameters",
+      "to": "scope",
+      "style": "solid"
+    },
+    {
+      "from": "packageManagement",
+      "to": "bundler",
+      "style": "solid"
+    },
+    {
+      "from": "scope",
+      "to": "chainingMethods",
+      "style": "solid"
+    },
+    {
+      "from": "dataStructuresAlgorithms",
+      "to": "stacksQueues",
+      "style": "solid"
+    },
+    {
+      "from": "environments",
+      "to": "rvm",
+      "style": "solid"
+    },
+    {
+      "from": "environments",
+      "to": "rbenv",
+      "style": "solid"
+    },
+    {
+      "from": "stacksQueues",
+      "to": "searchAlgorithms",
+      "style": "solid"
+    },
+    {
+      "from": "blocksProcsLambdas",
+      "to": "blocks",
+      "style": "solid"
+    },
+    {
+      "from": "searchAlgorithms",
+      "to": "sortingAlgorithms",
+      "style": "solid"
+    },
+    {
+      "from": "blocks",
+      "to": "procs",
+      "style": "solid"
+    },
+    {
+      "from": "sortingAlgorithms",
+      "to": "recursion",
+      "style": "solid"
+    },
+    {
+      "from": "procs",
+      "to": "lambdas",
+      "style": "solid"
+    },
+    {
+      "from": "classesObjects",
+      "to": "definingClasses",
+      "style": "solid"
+    },
+    {
+      "from": "definingClasses",
+      "to": "instanceVariables",
+      "style": "solid"
+    },
+    {
+      "from": "instanceVariables",
+      "to": "attributesAccessors",
+      "style": "solid"
+    },
+    {
+      "from": "threads",
+      "to": "fibers",
+      "style": "solid"
+    },
+    {
+      "from": "advancedTopics",
+      "to": "closures",
+      "style": "solid"
+    },
+    {
+      "from": "closures",
+      "to": "methodLookup",
+      "style": "solid"
+    },
+    {
+      "from": "debugging",
+      "to": "pry",
+      "style": "solid"
+    },
+    {
+      "from": "debugging",
+      "to": "irb",
+      "style": "solid"
+    },
+    {
+      "from": "pickAFramework",
+      "to": "rubyOnRails2",
+      "style": "solid"
+    },
+    {
+      "from": "methodLookup",
+      "to": "monkeyPatching",
+      "style": "solid"
+    },
+    {
+      "from": "debugging",
+      "to": "byebug",
+      "style": "solid"
+    },
+    {
+      "from": "debugging",
+      "to": "debug",
+      "style": "solid"
+    },
+    {
+      "from": "rubyOnRails2",
+      "to": "rack",
+      "style": "solid"
+    },
+    {
+      "from": "rubyOnRails2",
+      "to": "sinatra",
+      "style": "solid"
+    },
+    {
+      "from": "monkeyPatching",
+      "to": "refinements",
+      "style": "solid"
+    },
+    {
+      "from": "refinements",
+      "to": "singletonClasses",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "rspec",
+      "style": "solid"
+    },
+    {
+      "from": "ides",
+      "to": "vsCode",
+      "style": "solid"
+    },
+    {
+      "from": "rspec",
+      "to": "minitest",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "testUnit",
+      "style": "solid"
+    },
+    {
+      "from": "vsCode",
+      "to": "rubymine",
+      "style": "solid"
+    },
+    {
+      "from": "lintingFormating",
+      "to": "rubocop",
+      "style": "solid"
+    },
+    {
+      "from": "lintingFormating",
+      "to": "standard",
+      "style": "solid"
+    },
+    {
+      "from": "documentation",
+      "to": "rdoc",
+      "style": "solid"
+    },
+    {
+      "from": "documentation",
+      "to": "yard",
+      "style": "solid"
+    }
+  ]
+}

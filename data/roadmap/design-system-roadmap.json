@@ -1,0 +1,1076 @@
+{
+  "title": "Design System",
+  "summary": "Learn how to create a design system with this step by step guide",
+  "url": "https://roadmap.sh/design-system",
+  "order": [
+    "understandTheBasics",
+    "needOfDesignSystem",
+    "whatIsADesignSystem",
+    "designSystemVsComponentLibrary",
+    "whatIsAtomicDesign",
+    "stakeholdersInvolvedInBuilding",
+    "designSystemExamples",
+    "terminology",
+    "component",
+    "designLanguage",
+    "guidelines",
+    "pattern",
+    "makingADesignSystem",
+    "makingItFromScratch",
+    "makingItFromExistingDesign",
+    "existingDesignAnalysis",
+    "aBTestsExperiments",
+    "regionalRequirements",
+    "documentation",
+    "vision",
+    "componentLibrary",
+    "governance",
+    "pilot",
+    "token",
+    "uiKit",
+    "ifBuildingFromExistingDesign",
+    "creatingDesignLanguage",
+    "logo",
+    "definingDesignTokens",
+    "smallUseGuidance",
+    "usageGuidance",
+    "fileFormats",
+    "guidelines2",
+    "accessibility",
+    "userOnboarding",
+    "creatingCoreComponents",
+    "tooling",
+    "projectManagement"
+  ],
+  "topics": {
+    "understandTheBasics": {
+      "title": "Understand the Basics",
+      "sourceId": "uvnV1IjE8RV-FKDxHntUU",
+      "type": "topic",
+      "order": 1,
+      "summary": "A design system is a set of standards to manage design at scale by reducing redundancy while creating a shared language and visual consistency across different pages and channels.",
+      "video": {
+        "title": "What is a Design System? Design Systems 101 for Designers",
+        "url": "https://www.youtube.com/watch?v=wc5krC28ynQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Design Systems 101",
+          "url": "https://www.nngroup.com/articles/design-systems-101/"
+        },
+        {
+          "type": "article",
+          "title": "How to build your design system",
+          "url": "https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/"
+        },
+        {
+          "type": "article",
+          "title": "Everything you need to know about Design Systems",
+          "url": "https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969"
+        }
+      ],
+      "parents": [
+        "design-system"
+      ],
+      "children": [
+        "needOfDesignSystem",
+        "whatIsADesignSystem",
+        "designSystemVsComponentLibrary",
+        "whatIsAtomicDesign",
+        "stakeholdersInvolvedInBuilding",
+        "designSystemExamples",
+        "terminology"
+      ]
+    },
+    "needOfDesignSystem": {
+      "title": "Need of Design System",
+      "sourceId": "2rlmLn_yQQV-7DpX1qT98",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "Having a solid design system speeds up your work by making the product team more efficient, and it creates consistency and harmony within the product and brand ecosystem. A strong design system takes the burden off individual designers to think through commonly recurring design problems. With a full library of pre-approved elements, designers can focus on bigger problems like creating seamless, intuitive flows that delight users. That kind of efficiency pays huge dividends over time.",
+      "video": {
+        "title": "Design Systems, when and how much?",
+        "url": "https://www.youtube.com/watch?v=Hx02SaL_IH0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Why You Need a Strong Design System (and How to Build One)",
+          "url": "https://www.drawbackwards.com/blog/why-you-need-a-strong-design-system-and-how-to-build-one"
+        },
+        {
+          "type": "article",
+          "title": "On Design Systems: Sell The Output, Not The Workflow",
+          "url": "https://www.smashingmagazine.com/2016/05/design-systems-responsive-design-sell-output-not-workflow/"
+        }
+      ],
+      "parents": [
+        "understandTheBasics"
+      ],
+      "children": []
+    },
+    "whatIsADesignSystem": {
+      "title": "What is a Design System?",
+      "sourceId": "4PrkkoZ5fY-oow0O-bVhu",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "A Design System is the single source of truth which groups all the elements that will allow the teams to design, realize and develop a product.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Everything you need to know about Design Systems",
+          "url": "https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969"
+        },
+        {
+          "type": "article",
+          "title": "Design Systems 101",
+          "url": "https://www.nngroup.com/articles/design-systems-101/"
+        },
+        {
+          "type": "article",
+          "title": "A comprehensive guide to design systems",
+          "url": "https://www.invisionapp.com/inside-design/guide-to-design-systems/"
+        }
+      ],
+      "parents": [
+        "understandTheBasics"
+      ],
+      "children": []
+    },
+    "designSystemVsComponentLibrary": {
+      "title": "Design System vs Component Library",
+      "sourceId": "J5mU0v491qrm-mr1W3Msd",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "A component library is just a collection of visuals i.e. colours, button stylings, fonts, etc. A Design System takes it to the next level by including standards and documentation around the look and usage of each component. The Design System acts as the single-source of truth.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "A Design System: So Much More Than A Component Library",
+          "url": "https://www.architech.ca/a-design-system-so-much-more-than-a-component-library"
+        },
+        {
+          "type": "article",
+          "title": "Design System vs UI Component Library vs Brand Style Guide",
+          "url": "https://prototype.net/blog/design-system-component-library-style-guide"
+        },
+        {
+          "type": "article",
+          "title": "Design Systems vs Pattern Libraries vs Style Guides vs Component Libraries",
+          "url": "https://www.uxpin.com/studio/blog/design-systems-vs-pattern-libraries-vs-style-guides-whats-difference/"
+        }
+      ],
+      "parents": [
+        "understandTheBasics"
+      ],
+      "children": []
+    },
+    "whatIsAtomicDesign": {
+      "title": "What is Atomic Design",
+      "sourceId": "6r9XbwlBtHmJrhviG2cTD",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Atomic design (by Brad Frost) is a mental model to help you think of user interfaces as a cohesive whole and a collection of parts at the same time. Through the comparison to atoms, molecules, and organisms, we can think of the design of our UI as a composition of self-containing modules put together.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Atomic Design Principles & Methodology 101",
+          "url": "https://xd.adobe.com/ideas/process/ui-design/atomic-design-principles-methodology-101/"
+        },
+        {
+          "type": "article",
+          "title": "Atomic Design Methodology",
+          "url": "https://atomicdesign.bradfrost.com/chapter-2/"
+        },
+        {
+          "type": "article",
+          "title": "Atomic Design and UI Components: Theory to Practice",
+          "url": "https://blog.bitsrc.io/atomic-design-and-ui-components-theory-to-practice-f200db337c24"
+        }
+      ],
+      "parents": [
+        "understandTheBasics"
+      ],
+      "children": []
+    },
+    "stakeholdersInvolvedInBuilding": {
+      "title": "Stakeholders Involved in Building",
+      "sourceId": "_3_tFOpQisx6DSP4Yc2E2",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "Building an effective design system is not an individual responsibility, you need more than just designers. Here\u2019s a quick list of the disciplines that can be represented in your team to create an effective design system:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Designing the Design System",
+          "url": "https://www.designbetter.co/design-systems-handbook/designing-design-system"
+        }
+      ],
+      "parents": [
+        "understandTheBasics"
+      ],
+      "children": []
+    },
+    "designSystemExamples": {
+      "title": "Design System Examples",
+      "sourceId": "hauTvrBOAHgrUnO_m_kDM",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Collection of Open Source Design Systems",
+          "url": "https://github.com/alexpate/awesome-design-systems"
+        },
+        {
+          "type": "article",
+          "title": "Material Design (Google)",
+          "url": "https://material.io/"
+        },
+        {
+          "type": "article",
+          "title": "Carbon Design System (IBM)",
+          "url": "https://carbondesignsystem.com/"
+        },
+        {
+          "type": "article",
+          "title": "Atlassian Design System",
+          "url": "https://atlassian.design/"
+        },
+        {
+          "type": "article",
+          "title": "Polaris Design System (Shopify)",
+          "url": "https://polaris.shopify.com/"
+        },
+        {
+          "type": "article",
+          "title": "Gov.uk Design System",
+          "url": "https://design-system.service.gov.uk/"
+        }
+      ],
+      "parents": [
+        "understandTheBasics"
+      ],
+      "children": []
+    },
+    "terminology": {
+      "title": "Terminology",
+      "sourceId": "de0TKvmFTDmKGZc5X7iFq",
+      "type": "topic",
+      "order": 8,
+      "summary": "Design systems can be tricky if you don\u2019t know what certain words mean. Have a look at the roadmap nodes as well as follow the link below to read the glossary.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Design Systems Glossary",
+          "url": "https://web.archive.org/web/20220620075140/https://superfriendly.com/design-systems/glossary/"
+        }
+      ],
+      "parents": [
+        "understandTheBasics",
+        "componentLibrary",
+        "governance",
+        "pilot",
+        "token",
+        "uiKit"
+      ],
+      "children": [
+        "component",
+        "designLanguage",
+        "guidelines",
+        "pattern",
+        "makingADesignSystem"
+      ]
+    },
+    "component": {
+      "title": "Component",
+      "sourceId": "97cpJyKBKNAq1P_pQZH-t",
+      "type": "subtopic",
+      "order": 9,
+      "summary": "Components are the reusable building blocks of a design system. Each component meets a specific interaction or UI needs, and is specifically created to work together to create patterns and intuitive user experiences.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "terminology"
+      ],
+      "children": []
+    },
+    "designLanguage": {
+      "title": "Design Language",
+      "sourceId": "fPUuXrlchna3K00KcY4O6",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "A design language or design vocabulary is an overarching scheme or style that guides the design of a complement of products or architectural settings, creating a coherent design system for styling.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is a Design Language.. really?",
+          "url": "https://medium.com/thinking-design/what-is-a-design-language-really-cd1ef87be793"
+        },
+        {
+          "type": "article",
+          "title": "How to Develop a Design Language",
+          "url": "https://xd.adobe.com/ideas/principles/web-design/how-to-develop-design-language/"
+        },
+        {
+          "type": "article",
+          "title": "What Actually Constitutes Design Language?",
+          "url": "https://www.uxpin.com/studio/blog/design-language/"
+        },
+        {
+          "type": "article",
+          "title": "Visual Design Language: The Building Blocks Of Design",
+          "url": "https://www.smashingmagazine.com/2020/03/visual-design-language-building-blocks/"
+        }
+      ],
+      "parents": [
+        "terminology"
+      ],
+      "children": []
+    },
+    "guidelines": {
+      "title": "Guidelines",
+      "sourceId": "mlBzJ2YvBr9QuOthKdj0p",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "Design guidelines are sets of recommendations on how to apply design principles to provide a positive user experience. Designers use such guidelines to judge how to adopt principles such as intuitiveness, learnability, efficiency and consistency so they can create compelling designs and meet and exceed user needs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Design Guidelines",
+          "url": "https://www.interaction-design.org/literature/topics/design-guidelines"
+        }
+      ],
+      "parents": [
+        "terminology"
+      ],
+      "children": []
+    },
+    "pattern": {
+      "title": "Pattern",
+      "sourceId": "7xPT8rUX3hjSWbxH_FfQs",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Patterns are best practice design solutions for specific user-focused tasks and page types. Patterns often use one or more components and explain how to adapt them to the context. Some sample patterns could be user signing in to the application or performing the checkout operation.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "terminology"
+      ],
+      "children": []
+    },
+    "makingADesignSystem": {
+      "title": "Making a Design System",
+      "sourceId": "dUaoMARPabiD4DRqdkaer",
+      "type": "topic",
+      "order": 13,
+      "summary": "First step in building a design system is identifying if you even need a design system.",
+      "video": {
+        "title": "Introducing Design Systems Into Chaos - Diana Mounter, GitHub",
+        "url": "https://www.youtube.com/watch?v=FZSi1bK-BRM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Design Systems: Step-by-Step Guide to Creating Your Own",
+          "url": "https://www.uxpin.com/create-design-system-guide/"
+        },
+        {
+          "type": "article",
+          "title": "Does My Organization Need a Design System?",
+          "url": "https://www.method.com/insights/does-my-organization-need-a-design-system/"
+        }
+      ],
+      "parents": [
+        "terminology"
+      ],
+      "children": [
+        "makingItFromScratch",
+        "makingItFromExistingDesign",
+        "existingDesignAnalysis"
+      ]
+    },
+    "makingItFromScratch": {
+      "title": "Making it from Scratch",
+      "sourceId": "-9I3fTpnQlmcZmIIuQiPe",
+      "type": "subtopic",
+      "order": 14,
+      "summary": "If you are building a Design System from Scratch, you may skip the \"Existing Design Analysis\" node of the roadmap and start with \"Creating Design Language\".",
+      "video": {
+        "title": "Create a Design System with Figma - Full Course",
+        "url": "https://www.youtube.com/watch?v=RYDiDpW2VkM"
+      },
+      "articles": [],
+      "parents": [
+        "makingADesignSystem"
+      ],
+      "children": []
+    },
+    "makingItFromExistingDesign": {
+      "title": "Making it from Existing Design",
+      "sourceId": "z5gBy7BjlBKwbYbxXtoDA",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "If you are creating a Design System from pre-existing product design, there is an additional step to perform the existing design analysis, understand the existing design process, perform a visual audit, identify design elements and components and so on.",
+      "video": {
+        "title": "Create a Design System with Figma - Full Course",
+        "url": "https://www.youtube.com/watch?v=RYDiDpW2VkM"
+      },
+      "articles": [],
+      "parents": [
+        "makingADesignSystem"
+      ],
+      "children": []
+    },
+    "existingDesignAnalysis": {
+      "title": "Existing Design Analysis",
+      "sourceId": "8eWhvW2zDIxMGHaXl0Y9i",
+      "type": "topic",
+      "order": 16,
+      "summary": "First step in creating a design system from an existing design is performing a design analysis and understanding what you will be working with to identify the requirements and prepare a plan. Performing the analysis may consist of:",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "makingADesignSystem"
+      ],
+      "children": [
+        "aBTestsExperiments",
+        "regionalRequirements",
+        "documentation"
+      ]
+    },
+    "aBTestsExperiments": {
+      "title": "A/B Tests & Experiments",
+      "sourceId": "ILRDAnpfGHCZq-FBlbfDO",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "Understand how the team implements A/B tests and experiments on different screens and if the new design system should accommodate any necessary requirements.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "existingDesignAnalysis"
+      ],
+      "children": []
+    },
+    "regionalRequirements": {
+      "title": "Regional Requirements",
+      "sourceId": "pRJ9wEPNfFx_6EYB501vk",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "Understand any regional requirements such as LTR or any other UX variations that your design system should accommodate.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "existingDesignAnalysis"
+      ],
+      "children": []
+    },
+    "documentation": {
+      "title": "Documentation",
+      "sourceId": "-b4GjLpL_ppDMJSiChTef",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "Organize and document the results of visual audit, design elements, components with variations, states, patterns found, any existing documentation, current design process, and considerations. This documentation will be shared across the team and act as a guide when building the new design system.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "existingDesignAnalysis"
+      ],
+      "children": [
+        "vision"
+      ]
+    },
+    "vision": {
+      "title": "Vision",
+      "sourceId": "cMfsRtvzvDZZJ0TqeUOxm",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "Brand vision serves as the foundation for design system decisions, providing purpose and direction. An effective vision should articulate organizational purpose, identify core values, visualize future success, prioritize user needs, clarify brand uniqueness, account for cultural considerations, and connect to measurable goals.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Creating Brand Vision",
+          "url": "https://www.interaction-design.org/literature/article/branding-in-ux"
+        },
+        {
+          "type": "article",
+          "title": "Vision-Driven Design Systems",
+          "url": "https://bradfrost.com/blog/post/the-design-system-ecosystem/"
+        },
+        {
+          "type": "article",
+          "title": "Brand Strategy for Design",
+          "url": "https://alistapart.com/article/creating-a-brand-identity/"
+        },
+        {
+          "type": "article",
+          "title": "Purpose-Driven Design",
+          "url": "https://designsystem.digital.gov/design-tokens/brand/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Brand Strategy",
+          "url": "https://app.daily.dev/tags/branding?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "documentation"
+      ],
+      "children": []
+    },
+    "componentLibrary": {
+      "title": "Component Library",
+      "sourceId": "vJ4WytrzY7j10mo8S3O1u",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "A component library is a collection of all the components used in a website, software or app. Some of the common tools to showcase and browse components in a component library include are given below:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Pattern Lab",
+          "url": "https://patternlab.io/"
+        },
+        {
+          "type": "article",
+          "title": "Fractal",
+          "url": "https://fractal.build/"
+        },
+        {
+          "type": "article",
+          "title": "Storybook",
+          "url": "https://storybook.js.org/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "terminology"
+      ]
+    },
+    "governance": {
+      "title": "Governance",
+      "sourceId": "kifE3JE2immnU1O3-toZf",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "Governance is a framework for clarifying roles, responsibilities, and authority over decisions. Having that clarity ensures that decisions for the design system funnel smoothly through the governance process",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Governance is a design system\u2019s friend",
+          "url": "https://zeroheight.com/blog/governance-is-a-design-systems-friend"
+        },
+        {
+          "type": "article",
+          "title": "Design System Governance \u2013 Scale Your Design",
+          "url": "https://www.uxpin.com/studio/blog/design-system-governance/"
+        },
+        {
+          "type": "article",
+          "title": "Governance by design: Building successful design systems",
+          "url": "https://rangle.io/blog/governance-by-design-building-successful-design-systems/"
+        },
+        {
+          "type": "article",
+          "title": "Team Models for Scaling a Design System",
+          "url": "https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "terminology"
+      ]
+    },
+    "pilot": {
+      "title": "Pilot",
+      "sourceId": "4dzoZmkNHPedgLqLy93t8",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "Pilots are one of the best ways to put your design system through its paces, especially before the design system even gets to a v1. Like television pilots help test audience reactions to a series concept without investing significant resources to create the whole thing, application pilots are a good foundation for ensuring your design system\u2019s design and code are battle-tested.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Design Systems: Pilots & Scorecards",
+          "url": "https://danmall.com/posts/design-systems-pilots-scorecards/"
+        },
+        {
+          "type": "article",
+          "title": "How to run a design system pilot",
+          "url": "https://university.obvious.in/product-design/design-system/how-to-run-a-design-system-pilot"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "terminology"
+      ]
+    },
+    "token": {
+      "title": "Token",
+      "sourceId": "jETJVuS_EczJiQASLqaQr",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "Design system tokens are the style values of UI elements such as color, typography, spacing, shadows, etc., that are used across products and capable of being converted to a format for any platform (web, mobile, desktop). Tokens are building blocks of the design system\u2014think of them as sub atoms, the smallest pieces of style values that allow designers to create styles for a product.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Are Design Tokens?",
+          "url": "https://xd.adobe.com/ideas/principles/design-systems/what-are-design-tokens/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "terminology"
+      ]
+    },
+    "uiKit": {
+      "title": "UI Kit",
+      "sourceId": "lUObv2N7eH3Jdnwwd5vmI",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "As it relates to a design system, a UI Kit is a representation of coded components created in a way that designers who don\u2019t know code can create interface mockups. Examples of UI kits are Sketch libraries and Figma design systems.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Design System vs UI Kit",
+          "url": "https://uigstudio.com/insights/design-system-vs-ui-kit"
+        },
+        {
+          "type": "article",
+          "title": "Your sketch library is not a design system",
+          "url": "http://bradfrost.com/blog/post/your-sketch-library-is-not-a-design-system/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "terminology"
+      ]
+    },
+    "ifBuildingFromExistingDesign": {
+      "title": "If building from existing design",
+      "sourceId": "zSv63LkcNpHjAMB4eZewE",
+      "type": "paragraph",
+      "order": 32,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "creatingDesignLanguage"
+      ]
+    },
+    "creatingDesignLanguage": {
+      "title": "Creating Design Language",
+      "sourceId": "JnaNZ9MfMrXQrjW2wABzB",
+      "type": "topic",
+      "order": 46,
+      "summary": "Like any language, a design language is a methodical way of communicating with your audience through your approach to product design. It\u2019s the cornerstone of consistent customer experiences.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is a Design Language.. really?",
+          "url": "https://medium.com/thinking-design/what-is-a-design-language-really-cd1ef87be793"
+        },
+        {
+          "type": "article",
+          "title": "How to Develop a Design Language",
+          "url": "https://xd.adobe.com/ideas/principles/web-design/how-to-develop-design-language/"
+        },
+        {
+          "type": "article",
+          "title": "What Actually Constitutes Design Language?",
+          "url": "https://www.uxpin.com/studio/blog/design-language/"
+        },
+        {
+          "type": "article",
+          "title": "Visual Design Language: The Building Blocks Of Design",
+          "url": "https://www.smashingmagazine.com/2020/03/visual-design-language-building-blocks/"
+        }
+      ],
+      "parents": [
+        "ifBuildingFromExistingDesign"
+      ],
+      "children": [
+        "definingDesignTokens"
+      ]
+    },
+    "logo": {
+      "title": "Logo",
+      "sourceId": "82Due7XFcIKGY5I8cp9yr",
+      "type": "label",
+      "order": 55,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "smallUseGuidance"
+      ]
+    },
+    "definingDesignTokens": {
+      "title": "Defining Design Tokens",
+      "sourceId": "a53cl6ZKvYXxG25Ii2_zu",
+      "type": "topic",
+      "order": 59,
+      "summary": "Variables that store values for the base layer of your design system, like colour and typography. They\u2019re used in components, so changes on this level will resonate throughout the whole system.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Are Design Tokens?",
+          "url": "https://xd.adobe.com/ideas/principles/design-systems/what-are-design-tokens/"
+        }
+      ],
+      "parents": [
+        "creatingDesignLanguage"
+      ],
+      "children": []
+    },
+    "smallUseGuidance": {
+      "title": "Small Use Guidance",
+      "sourceId": "FA3JsZgNhKrgNHVtVreol",
+      "type": "subtopic",
+      "order": 62,
+      "summary": "",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Everything You Need to Know About Logo Usage Guidelines",
+          "url": "https://www.tailorbrands.com/blog/logo-usage-guidelines"
+        }
+      ],
+      "parents": [
+        "logo"
+      ],
+      "children": []
+    },
+    "usageGuidance": {
+      "title": "Usage Guidance",
+      "sourceId": "RmSFwKqL9yXXxGKZusKWX",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "Logo usage guidance provides rules for proper implementation to maintain brand consistency. Effective guidance should establish clear examples of proper usage and mistakes to avoid, define logo variations, specify color requirements, prohibit unauthorized alterations, and include approval processes for new contexts.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Logo Usage Best Practices",
+          "url": "https://99designs.com/blog/tips/logo-usage-guidelines/"
+        },
+        {
+          "type": "article",
+          "title": "Brand Guidelines Development",
+          "url": "https://designsystem.digital.gov/design-tokens/logo/"
+        },
+        {
+          "type": "article",
+          "title": "Trademark and Logo Legal Guidelines",
+          "url": "https://www.uspto.gov/trademarks-getting-started/trademark-basics"
+        },
+        {
+          "type": "article",
+          "title": "Brand Identity Protection",
+          "url": "https://www.brandfolder.com/blog/brand-guidelines"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Brand Management",
+          "url": "https://app.daily.dev/tags/branding?ref=roadmapsh"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "fileFormats": {
+      "title": "File Formats",
+      "sourceId": "-6LPUMRm-SqvRVEWPDFl8",
+      "type": "subtopic",
+      "order": 68,
+      "summary": "",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is a Vector Logo and Why You Need It",
+          "url": "https://www.renderforest.com/blog/vector-logo"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "guidelines2": {
+      "title": "Guidelines",
+      "sourceId": "6-o1viBIrvHaefbcMIJMW",
+      "type": "label",
+      "order": 74,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "accessibility",
+        "userOnboarding"
+      ]
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "sourceId": "aLtOGjNFxaRzg0PI-ed99",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "Guidelines for how you approach accessibility and how you leverage colour, hierarchy and assistive technologies to help your users.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to Web Accessibility",
+          "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+        },
+        {
+          "type": "article",
+          "title": "What is Accessibility? by Mozilla",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility"
+        },
+        {
+          "type": "article",
+          "title": "Accessibility Principles",
+          "url": "https://www.w3.org/WAI/fundamentals/accessibility-principles/"
+        },
+        {
+          "type": "article",
+          "title": "WebAIMs Website (Web Accessibility In Mind)",
+          "url": "https://webaim.org/"
+        },
+        {
+          "type": "article",
+          "title": "WAVE Web Accessibility Evaluation Tool",
+          "url": "https://wave.webaim.org/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Accessibility",
+          "url": "https://app.daily.dev/tags/accessibility?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "guidelines2"
+      ],
+      "children": []
+    },
+    "userOnboarding": {
+      "title": "User Onboarding",
+      "sourceId": "PlW8mHnOTyYnbtl0zUSG9",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "",
+      "video": {
+        "title": "What is user onboarding? ",
+        "url": "https://www.youtube.com/watch?v=PatIqbGEQe4"
+      },
+      "articles": [],
+      "parents": [
+        "guidelines2"
+      ],
+      "children": []
+    },
+    "creatingCoreComponents": {
+      "title": "Creating Core Components",
+      "sourceId": "Hw_LQInG6OtSwDXch3Lvg",
+      "type": "topic",
+      "order": 90,
+      "summary": "Components are the main building blocks for user interfaces. Building a reusable component library enhances your product development workflow by reducing design and tech debt and speeding up the process. Core components can\u2019t be broken down into granular pieces without losing their meaning.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "tooling": {
+      "title": "Tooling",
+      "sourceId": "jggrr5nZOe6FY3ZrZJTOw",
+      "type": "topic",
+      "order": 100,
+      "summary": "Design system tooling encompasses technical infrastructure and workflows. Effective tooling should integrate with design tools, provide component libraries for frameworks, implement token management, utilize documentation platforms, establish automated versioning, create testing infrastructure, and enable collaboration workflows.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "projectManagement": {
+      "title": "Project Management",
+      "sourceId": "JfXwzkN29UGz17FYHHE3A",
+      "type": "topic",
+      "order": 122,
+      "summary": "Design systems are no different than any other project your team might take on. In order to successfully build and maintain one, you need a clear strategy that\u2019s well executed daily, and you\u2018ll need to create opportunities for your colleagues to give feedback to help share your design system together.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "design-system",
+      "to": "understandTheBasics",
+      "style": "solid"
+    },
+    {
+      "from": "understandTheBasics",
+      "to": "needOfDesignSystem",
+      "style": "dashed"
+    },
+    {
+      "from": "understandTheBasics",
+      "to": "whatIsADesignSystem",
+      "style": "dashed"
+    },
+    {
+      "from": "understandTheBasics",
+      "to": "designSystemVsComponentLibrary",
+      "style": "dashed"
+    },
+    {
+      "from": "understandTheBasics",
+      "to": "whatIsAtomicDesign",
+      "style": "dashed"
+    },
+    {
+      "from": "understandTheBasics",
+      "to": "stakeholdersInvolvedInBuilding",
+      "style": "dashed"
+    },
+    {
+      "from": "understandTheBasics",
+      "to": "designSystemExamples",
+      "style": "dashed"
+    },
+    {
+      "from": "understandTheBasics",
+      "to": "terminology",
+      "style": "solid"
+    },
+    {
+      "from": "terminology",
+      "to": "component",
+      "style": "dashed"
+    },
+    {
+      "from": "componentLibrary",
+      "to": "terminology",
+      "style": "dashed"
+    },
+    {
+      "from": "terminology",
+      "to": "designLanguage",
+      "style": "dashed"
+    },
+    {
+      "from": "governance",
+      "to": "terminology",
+      "style": "dashed"
+    },
+    {
+      "from": "terminology",
+      "to": "guidelines",
+      "style": "dashed"
+    },
+    {
+      "from": "terminology",
+      "to": "pattern",
+      "style": "dashed"
+    },
+    {
+      "from": "pilot",
+      "to": "terminology",
+      "style": "dashed"
+    },
+    {
+      "from": "token",
+      "to": "terminology",
+      "style": "dashed"
+    },
+    {
+      "from": "uiKit",
+      "to": "terminology",
+      "style": "dashed"
+    },
+    {
+      "from": "terminology",
+      "to": "makingADesignSystem",
+      "style": "solid"
+    },
+    {
+      "from": "makingADesignSystem",
+      "to": "makingItFromScratch",
+      "style": "dashed"
+    },
+    {
+      "from": "makingADesignSystem",
+      "to": "makingItFromExistingDesign",
+      "style": "dashed"
+    },
+    {
+      "from": "makingADesignSystem",
+      "to": "existingDesignAnalysis",
+      "style": "solid"
+    },
+    {
+      "from": "existingDesignAnalysis",
+      "to": "aBTestsExperiments",
+      "style": "dashed"
+    },
+    {
+      "from": "existingDesignAnalysis",
+      "to": "regionalRequirements",
+      "style": "dashed"
+    },
+    {
+      "from": "existingDesignAnalysis",
+      "to": "documentation",
+      "style": "dashed"
+    },
+    {
+      "from": "ifBuildingFromExistingDesign",
+      "to": "creatingDesignLanguage",
+      "style": "solid"
+    },
+    {
+      "from": "creatingDesignLanguage",
+      "to": "definingDesignTokens",
+      "style": "solid"
+    },
+    {
+      "from": "documentation",
+      "to": "vision",
+      "style": "solid"
+    },
+    {
+      "from": "logo",
+      "to": "smallUseGuidance",
+      "style": "solid"
+    },
+    {
+      "from": "guidelines2",
+      "to": "accessibility",
+      "style": "solid"
+    },
+    {
+      "from": "guidelines2",
+      "to": "userOnboarding",
+      "style": "solid"
+    }
+  ]
+}

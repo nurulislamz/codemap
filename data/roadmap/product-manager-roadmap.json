@@ -1,0 +1,2668 @@
+{
+  "title": "Product Manager",
+  "summary": "Everything you need to know to become a Product Manager in 2026",
+  "url": "https://roadmap.sh/product-manager",
+  "order": [
+    "introduction2",
+    "ideaGeneration",
+    "marketAndUserResearch",
+    "marketAnalysis",
+    "identifyingMarketNeeds",
+    "competitiveAnalysis",
+    "emergingMarketTrends",
+    "userResearch",
+    "userPersonas",
+    "userInterviews",
+    "surveysAndQuestionnaires",
+    "ethnographicResearch",
+    "positioning",
+    "uspUniqueSellingPoint",
+    "marketSegmentation",
+    "caseStudies",
+    "productStrategy",
+    "visionMission",
+    "statement",
+    "proposition",
+    "capabilities",
+    "solvedConstraints",
+    "futureConstraints",
+    "referenceMaterials",
+    "narrative",
+    "definingGoals",
+    "valueProposition",
+    "definingValueProposition",
+    "valueVsFeatures",
+    "findingBalance",
+    "strategicThinking",
+    "competitiveStrategy",
+    "productIdentification",
+    "brainstormingTechniques",
+    "iterativeProcess",
+    "discovery",
+    "blueOceanStrategy",
+    "whatIsProductManagement",
+    "productVsProjectManagement",
+    "rolesAndResponsibilities",
+    "keySkills",
+    "productDevelopmentLifecycle",
+    "development",
+    "productPlanning",
+    "writingPrds",
+    "userStories",
+    "productRequirements",
+    "jobStories",
+    "communicatingTheRoadmap",
+    "productDesign",
+    "userStoryMapping",
+    "productRoadmap",
+    "backlogManagement",
+    "releaseStrategies",
+    "principlesOfUxDesign",
+    "uxUiDesign",
+    "wireframingAndPrototyping",
+    "designThinking",
+    "serviceDesign",
+    "usabilityTesting",
+    "interactionDesign",
+    "goToMarketStrategy",
+    "aBTesting",
+    "remoteUserTesting",
+    "userTesting",
+    "scrumBasics",
+    "kanbanBasics",
+    "developmentAndLaunch",
+    "workingWithEngineeringTeams",
+    "agileMethodology",
+    "productMetrics",
+    "dauDailyActiveUsers",
+    "mauMonthlyActiveUsers",
+    "conversionRate",
+    "keyProductMetrics",
+    "retentionRate",
+    "aBTesting2",
+    "churnRate",
+    "dataDrivenDecisionMaking",
+    "cohortAnalysis",
+    "ltvLifetimeValue",
+    "predictiveAnalytics",
+    "cacCustomerAcquisitionCost",
+    "northStarMetric",
+    "feedbackLoops",
+    "stakeholderManagement",
+    "communicationSkills",
+    "productManagementTools",
+    "managingStakeholders",
+    "productBoard",
+    "identifyingStakeholders",
+    "aha",
+    "notion",
+    "roadmappingTools",
+    "jira",
+    "linear",
+    "projectManagementTools",
+    "trello",
+    "amplitude",
+    "heap",
+    "analyticsTools",
+    "slack",
+    "looker",
+    "teams",
+    "riskManagement",
+    "discord",
+    "communicationTools",
+    "riskIdentificationTechniques",
+    "riskRegister",
+    "identifyingRisks",
+    "contingencyPlanning",
+    "riskMitigation",
+    "riskAssessment",
+    "qualitativeRiskAssessment",
+    "monitoringAndControllingRisks",
+    "platformThinking",
+    "riskMonitoringTools",
+    "advancedTopics",
+    "scalingProducts",
+    "predictiveAnalytics2",
+    "mlInProductMgmt",
+    "advancedAnalysis",
+    "portfolioManagement",
+    "aiInProductMgmt",
+    "buildingAndLeadingTeams",
+    "leadershipAndInfluence",
+    "influencingWithoutAuthority",
+    "emotionalIntelligence",
+    "keepLearning"
+  ],
+  "topics": {
+    "introduction2": {
+      "title": "Introduction",
+      "sourceId": "9vy4uIoykk2zSSyIok4_S",
+      "type": "topic",
+      "order": 1,
+      "summary": "The role of a Product Manager is arguably one of the most important in any tech company. Responsible for guiding the success of a product and leading the cross-functional team that is responsible for improving it, a Product Manager is essentially the chief advocate for a product's feature set and overall business value. In fact, a Product Manager often analyzes market and competitive conditions and lays out a product vision that is differentiated and delivers unique value based on customer demands. The role of a Product Manager spans many activities from strategic to tactical and provides important cross-functional leadership \u2014 most notably between engineering, marketing, sales, and support teams. As the product's key strategist and advocate, a Product Manager communicates the voice of the customer and strives to maximize the value of their product, for both users and the company.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "product-manager"
+      ],
+      "children": [
+        "ideaGeneration",
+        "whatIsProductManagement",
+        "productVsProjectManagement",
+        "rolesAndResponsibilities",
+        "keySkills"
+      ]
+    },
+    "ideaGeneration": {
+      "title": "Idea Generation",
+      "sourceId": "Hk61DnFkfaeuxO2LSupMS",
+      "type": "paragraph",
+      "order": 2,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "introduction2"
+      ],
+      "children": [
+        "marketAndUserResearch",
+        "productIdentification"
+      ]
+    },
+    "marketAndUserResearch": {
+      "title": "Market and User Research",
+      "sourceId": "KnAlfSHDjLnQ7CMv5W-Ee",
+      "type": "paragraph",
+      "order": 3,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "ideaGeneration"
+      ],
+      "children": [
+        "marketAnalysis"
+      ]
+    },
+    "marketAnalysis": {
+      "title": "Market Analysis",
+      "sourceId": "Eusp5p6gNIxtU_yVvOkmu",
+      "type": "topic",
+      "order": 4,
+      "summary": "As a central aspect of a Product Manager's role, market analysis encompasses the examination of the market within which the product will operate. It includes a detailed understanding of potential consumers, competitors, and market conditions. Market analysis helps Product Managers to develop strategic plans, set objectives, and make informed decisions about product development, positioning, and growth strategies. This extensive research forms the groundwork for understanding market trends, industry patterns, customer behavior and the competitive landscape.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "marketAndUserResearch"
+      ],
+      "children": [
+        "identifyingMarketNeeds",
+        "competitiveAnalysis",
+        "emergingMarketTrends",
+        "userResearch"
+      ]
+    },
+    "identifyingMarketNeeds": {
+      "title": "Identifying Market Needs",
+      "sourceId": "LkDLk6DsEvbFXZPGOhD0C",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Identifying market needs is a fundamental task for a Product Manager during the process of market analysis. A market need is what motivates a consumer to buy a product or service. The market analysis mandates the Product Manager to study the market, understand the customers' behavior patterns and preferences, and keep an eye on current market trends. This data-driven outlook helps the Product Manager decipher the gaps in the market, what pain-points the potential customers have that are unresolved, and hence, find opportunities to create new products or enhance existing ones. Glazing through customer feedback, surveys, and competitor analysis are some of the methods that help identify these needs and provide the launchpad for successful product planning and development.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "marketAnalysis"
+      ],
+      "children": []
+    },
+    "competitiveAnalysis": {
+      "title": "Competitive Analysis",
+      "sourceId": "PBDlYIyS8LAyPE6tV-kU7",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "Understanding the competitive landscape is a critical aspect of a Product Manager's role. Competitive analysis involves identifying your competitors and evaluating their strategies to determine their strengths and weaknesses relative to your own product or service. A product manager uses competitive analysis to understand market trends, discover opportunities for growth, and determine competitive advantages. It is an essential factor in positioning, marketing, and strategic decision-making. This process of understanding often involves collecting and reviewing information about competitor products, including their features, functionality, pricing structures, and success within target markets.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "marketAnalysis"
+      ],
+      "children": []
+    },
+    "emergingMarketTrends": {
+      "title": "Emerging Market Trends",
+      "sourceId": "aDhSpLRZ6Sd8SnkcwtyLf",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "Understanding emerging market trends is a critical aspect of a Product Manager's role. Market analysis involves closely observing changes, patterns, and shifts in the marketplace to not only anticipate customer needs and preferences but also efficiently strategize the product's design, development, and positioning accordingly. Keeping track of emerging market trends provides a competitive edge, aids in identifying opportunities for innovation, and enables better decision-making to ensure product success and sustainability in the market.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "marketAnalysis"
+      ],
+      "children": []
+    },
+    "userResearch": {
+      "title": "User Research",
+      "sourceId": "8LAy6uBfrdtrjF8ygAGoo",
+      "type": "topic",
+      "order": 8,
+      "summary": "User research is a critical aspect of a Product Manager's role. It is through understanding the needs, behaviors, and pain points of a user that a Product Manager can create, refine, and market products successfully. User research is not a one-time event but a continuous process that helps Product Managers stay abreast of their target market's evolving demands and expectations. Methods used include interviews, surveys, usability testing, and observation, among others. By staying connected to the users' perspectives, a Product Manager can ensure a more user-centric product development process resulting in a product that genuinely meets and exceed user expectations.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "marketAnalysis"
+      ],
+      "children": [
+        "userPersonas",
+        "userInterviews",
+        "surveysAndQuestionnaires",
+        "ethnographicResearch",
+        "positioning"
+      ]
+    },
+    "userPersonas": {
+      "title": "User Personas",
+      "sourceId": "0y8F9x6MhApQkS1VhS8Dx",
+      "type": "subtopic",
+      "order": 9,
+      "summary": "User Personas are considered foundational in user research in product management. These are fictional characters or profiles representing a certain user segment for a product or service. For a Product Manager, understanding user personas is crucial as it allows them to better identify with the user's needs, behavior patterns, and goals. It serves as a tool that humanizes these users and allows for a more personalized approach when designing a product or service. They contribute towards making informed decisions about product features, user interface, and overall user experience. Thus, user personas play a significant role in aligning all stakeholders in a product lifecycle on who the target users are.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "userResearch"
+      ],
+      "children": []
+    },
+    "userInterviews": {
+      "title": "User Interviews",
+      "sourceId": "5kt8AkCsdAdlBmsKOkKFH",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "For a Product Manager, User Interviews are a key instrument in User Research. They provide a pristine opportunity to understand the user's needs, problems, motivations, and behaviors. This process involves having a one-on-one conversation with current or potential users of a product to understand their experiences with the product, to gain insights about their needs and wants, and to determine how a product can be improved to meet the user's expectations. If conducted effectively, user interviews can help a Product Manager to make informed product development decisions thereby increasing user satisfaction and product success.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "userResearch"
+      ],
+      "children": []
+    },
+    "surveysAndQuestionnaires": {
+      "title": "Surveys and Questionnaires",
+      "sourceId": "a_5AyOKAgcg0rArZfapA_",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "For a product manager, understanding the needs, wants, and experiences of users is a critical task. This comprehension is often facilitated through user research, where tools like surveys and questionnaires come into the picture. These tools enable product managers to garner valuable insights about user behavior, preferences, and pain points. With well-crafted surveys and questionnaires, product managers can proactively address user needs, refine product strategy, and ultimately create products that provide high value and usability.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "userResearch"
+      ],
+      "children": []
+    },
+    "ethnographicResearch": {
+      "title": "Ethnographic Research",
+      "sourceId": "VwI7plziVzwkp3KZd4466",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Ethnographic research, stemming from anthropology, is a significant methodology often adopted by product managers to gain a profound understanding of user behaviours, routines, cultures, and motivations in their natural surroundings. It is essential as it offers contextual and holistic insights on user behaviour that other methods, like surveys or interviews, may not provide. For a product manager, this research helps compose a more empathetic and comprehensive user point-of-view, thus successfully driving product decisions that meet users' needs more effectively. This may involve observing users interact with the product in their everyday life, carrying out contextual inquiry, or even studying competitors to understand the factors that drive users towards specific actions. Understanding the subtleties of user behaviour through ethnographic research can truly create the difference between a good product and a great one.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "userResearch"
+      ],
+      "children": []
+    },
+    "positioning": {
+      "title": "Positioning",
+      "sourceId": "YPqdrZguH0ArEFSe-VwKS",
+      "type": "topic",
+      "order": 13,
+      "summary": "Positioning, within the realm of product management, refers to the delicate art of crafting and communicating a product's unique value proposition to the intended audience, in relation to competing products. It's about defining where your product fits into the market and how it should be perceived by its consumer base. A seasoned Product Manager meticulously shapes and controls this perception in order to strengthen the product\u2019s standing in the market, increase sales, and boost the overall brand image. The correct positioning strategy can ultimately lead to a product's success or failure. For Product Managers, mastering this strategic function is a key element in directing both product development and marketing efforts.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "userResearch"
+      ],
+      "children": [
+        "uspUniqueSellingPoint",
+        "marketSegmentation",
+        "caseStudies",
+        "productStrategy"
+      ]
+    },
+    "uspUniqueSellingPoint": {
+      "title": "USP (Unique Selling Point)",
+      "sourceId": "tKDlfVvNym_OIqkommiJ8",
+      "type": "subtopic",
+      "order": 14,
+      "summary": "In the competitive realm of product management, a Unique Selling Point (USP) can be considered as the DNA of your product. It is that distinctive edge or feature that positions your product uniquely in the market and makes it stand out from the crowd. For a Product Manager, comprehending the USP of their product is vital, as it not only aids in driving the product strategy and development but also impacts the marketing campaigns and sales propositions. It gives direction to both the inward and outward-facing decisions and actions pertaining to the product. This nucleus feature, in essence, becomes a crucial factor in setting up the product's market positioning. Hence, a sound grasp of the USP can act as a guiding compass in the successful management and evolution of a product.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "positioning"
+      ],
+      "children": []
+    },
+    "marketSegmentation": {
+      "title": "Market Segmentation",
+      "sourceId": "3MYjrnd6h2ZlcfaXjUbkC",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "As a Product Manager, understanding market segmentation is crucial in the process of positioning your product. Market segmentation involves dividing a market into distinct groups of buyers who have different needs, characteristics, and behaviors, and who might require separate products or marketing mixes. It helps product managers identify and analyze potential customers, their needs, and how the product can meet their needs. Furthermore, using market segmentation for positioning assists in developing a product's unique selling proposition, thus facilitating a stronger connection with targeted customer segments. Without proper market segmentation, product positioning may become less effective and could result in wasted marketing efforts.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "positioning"
+      ],
+      "children": []
+    },
+    "caseStudies": {
+      "title": "Case Studies",
+      "sourceId": "JhhjMPTNb646aQKlS_cji",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "Case studies play a pivotal role in exhibiting the efficiency of a product and its potential value in the lives of customers. For Product Managers, understanding case studies in positioning is invaluable. It allows them to comprehend how a product fits into a market, how it behaves in relation to competitors, and how it meets customer needs. These case studies provide insights into the real-world application and results of strategic positioning, enabling Product Managers to devise more effective strategies that attract target customers and build lasting brand value.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "positioning"
+      ],
+      "children": []
+    },
+    "productStrategy": {
+      "title": "Product Strategy",
+      "sourceId": "WbrOaEjm9pVz9U0sq1Sw0",
+      "type": "paragraph",
+      "order": 17,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "positioning"
+      ],
+      "children": [
+        "visionMission"
+      ]
+    },
+    "visionMission": {
+      "title": "Vision & Mission",
+      "sourceId": "l-KrmCOKEfpLHq4j-9SoY",
+      "type": "topic",
+      "order": 18,
+      "summary": "A critical aspect of a Product Manager's role is to understand, define and communicate the Vision and Mission of their product. The Vision is the long-term goal, reflecting what the product aims to achieve or become in the future. This provides a strategic direction that aligns all stakeholders. The Mission, on the other hand, is a tactical plan detailing how the product will achieve this Vision. It involves specific, actionable objectives that can be assessed and adjusted periodically. Together, the Vision and Mission guide the Product Manager in making decisions, prioritizing actions and inspiring the team.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productStrategy"
+      ],
+      "children": [
+        "statement",
+        "proposition",
+        "capabilities",
+        "solvedConstraints",
+        "futureConstraints",
+        "referenceMaterials",
+        "narrative",
+        "definingGoals"
+      ]
+    },
+    "statement": {
+      "title": "Statement",
+      "sourceId": "DnKHDm0TZ7QQUyrhPdqkV",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "As a Product Manager, an integral part of your responsibility revolves around defining and understanding the Vision and Mission statement of the product you are managing. These statements not only align the team and the organization with a specific goal, but they also provide a roadmap of the larger purpose that the product aims to serve in the most succinct way possible. A clear and motivating Vision and Mission statement can lead to empowered teams and efficient decision-making processes. The Vision depicts the ultimate goal of the product, where it aspires to be. The Mission, on the other hand, focuses on the present, defining the purpose of the product, the why and the how behind its existence. Gaining a deep understanding of these statements becomes an essential aspect of successful product management.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "visionMission"
+      ],
+      "children": []
+    },
+    "proposition": {
+      "title": "Proposition",
+      "sourceId": "ZCTSbMHAMSaOxlqaJImzr",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "As a critical cog in the wheel, a Product Manager is closely entwined with the strategic development of the product's proposition under the company's vision and mission. This involves understanding and aligning the product's value proposition with the overarching business objectives. A well-articulated proposition gives direction to the product development process, influences the marketing strategies, and contributes to creating a product that rings true to the brand promise. The role of the Product Manager here is multifaceted\u2014they contribute to defining, refining, and maintaining this proposition while ensuring it's in sync with the customers' needs and market trends. They also act as a crucial link between various stakeholders, including leadership, technical teams, and customers.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "visionMission"
+      ],
+      "children": []
+    },
+    "capabilities": {
+      "title": "Capabilities",
+      "sourceId": "8srsCEv55zh1y4gsp-rCO",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "The role of a Product Manager is multifaceted and one important aspect of that role revolves around setting and understanding the vision and mission. A vision is a long-term goal or aspiration for a product and encompasses the overall direction or strategy for the product. Conversely, a mission statement focuses more on the present, describing the purpose of the product and who it serves. These aspects help drive the decision-making process in product management. Product Managers utilize these tools to align the product team and the company as a whole. They make strategic decisions and formulate plans based on the foundation set by the vision and mission. By leveraging these capabilities, Product Managers are able to make informed decisions that propel the product towards success.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "visionMission"
+      ],
+      "children": []
+    },
+    "solvedConstraints": {
+      "title": "Solved Constraints",
+      "sourceId": "eKJ2XfDxu0NAKA932tbzy",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "The role of a Product Manager extends to managing and solving constraints regarding a product's vision & mission. The mission is the purpose that propels the product towards its ultimate goal, while the vision outlines where the organization or product aims to be in the future. The complexities lie in the constraints that might hinder the product's way to achieve its vision and mission. These constraints could be technical, financial, time-bound, resource-based, and more. The Product Manager's responsibility is to identify these constraints, design strategies to overcome them, and effectively implement those strategies, thereby channeling energy in alignment with the product's mission and vision.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "visionMission"
+      ],
+      "children": []
+    },
+    "futureConstraints": {
+      "title": "Future Constraints",
+      "sourceId": "wuqZntn1ivkr9AV_09zYX",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "As a product manager, one has to deal with various constraints while building a product strategy which aligns with the company's vision and mission. Future Constraints under Vision & Mission dives into these upcoming limitations or challenges that may impede the pursuit of the organization\u2019s goals. These could range from technical or resource limitations, to market changes, regulatory environments and competitive forces. To successfully design and deliver products, understanding these future constraints is vital for a Product Manager. This allows them to proactively plan and devise effective strategies to tackle potential issues, ensuring the product direction remains aligned with the organization's vision and mission.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "visionMission"
+      ],
+      "children": []
+    },
+    "referenceMaterials": {
+      "title": "Reference Materials",
+      "sourceId": "uXseNTJlteD6Fgi1bzQB4",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "When considering the role of a Product Manager, one must appreciate the crucial impact of \"Reference Materials under Vision & Mission\". These materials comprise everything from project proposals and business plans to company strategy documents and competitors' analysis reports. They serve as a factual and thematic basis for a product manager's day-to-day decisions and long-term strategic planning. Understanding the company\u2019s vision and mission is a foundational requirement for a product manager since they act as a guiding compass for all product development activities, ensuring alignment of all efforts towards achieving the company's goals.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "visionMission"
+      ],
+      "children": []
+    },
+    "narrative": {
+      "title": "Narrative",
+      "sourceId": "zS_CjYSTOIkJZn-oUEvgh",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "A Product Manager, in their role, often stands as the conduit linking different business components, including customers, sales, marketing, and engineering. A crucial aspect of this role involves crafting the narrative under the Vision & Mission of their product. This narrative is a strategically designed story that brings to life, the product's purpose, its potential market impact, and the roadmap to its success. The narrative not only sets the direction for the team but it also helps stakeholders understand the product\u2019s strategic importance. From illustrating the product's value proposition to external audiences to aligning internal teams, a solid, compelling narrative, shaped by the Product Manager, is crucial in defining and driving a product\u2019s vision and mission.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "visionMission"
+      ],
+      "children": []
+    },
+    "definingGoals": {
+      "title": "Defining Goals",
+      "sourceId": "n2AYdM2dlJfuZ97jXY49U",
+      "type": "topic",
+      "order": 26,
+      "summary": "As a Product Manager, defining goals is a critical aspect of your role. Having clear, well-defined goals crafting the strategic roadmap for your product. This involves identifying the desired outcomes or changes that need to be achieved within a specified timeline. These encompass various facets including market share, revenue, user experience and product functionality among others. Setting these goals requires a combination of data-driven insights, understanding of market trends and user feedback. Ultimately, these goals will serve as the guiding points for the development teams and stakeholders, streamlining efforts towards the shared vision. Your ability to articulate these goals effectively, will directly influence the success of the product.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "visionMission"
+      ],
+      "children": [
+        "valueProposition"
+      ]
+    },
+    "valueProposition": {
+      "title": "Value Proposition",
+      "sourceId": "6OjKcLbUZVJdUDC7if0Uy",
+      "type": "topic",
+      "order": 27,
+      "summary": "As a product manager, understanding, defining, and communicating your product's value proposition is vital. It refers to the unique value that a product or service provides to a customer, highlighting the reasons why they should choose your product over competitors. It's a differentiator that sets your product apart and communicates the additional benefits that customers would receive. A compelling value proposition aligns with customer needs and demands, positions your product fittingly in the market, and serves as a foundation for the product strategy and roadmap.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "definingGoals"
+      ],
+      "children": [
+        "definingValueProposition",
+        "valueVsFeatures"
+      ]
+    },
+    "definingValueProposition": {
+      "title": "Defining Value Proposition",
+      "sourceId": "1j2ZSo7UGnBgoLpYzsA5t",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "The Value Proposition serves as the foundation for a product manager's strategy, directly influencing the design, development, and marketing decisions of a product. By defining the unique value your product brings to the market, you communicate its benefits, solve customers' problems, and outdo competitors. A well-articulated value proposition is crucial as it affects every aspect of your product\u2014from conception to final sale. For a product manager, understanding and continually refining the value proposition can guide decision making, target key demographics more effectively, and increase overall user satisfaction.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "valueProposition"
+      ],
+      "children": []
+    },
+    "valueVsFeatures": {
+      "title": "Value vs Features",
+      "sourceId": "0AQj2F1n8VKHBwuF4ywrp",
+      "type": "topic",
+      "order": 29,
+      "summary": "In the realm of product management, a key decision-making factor is striking a balance between value and features. Product managers are often caught in the dilemma of whether to focus more on increasing the number of features, making the product functionally rich, or to focus on the core value that a product would deliver to the user. While features may seem appealing and can act as selling points, it's the genuine value or solution to the customer's problem that tends to encourage satisfaction and loyalty. To make this complex decision, Product Managers often use strategies such as customer feedback, market research, competitor analysis, and various prioritization frameworks.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "valueProposition"
+      ],
+      "children": [
+        "findingBalance",
+        "strategicThinking"
+      ]
+    },
+    "findingBalance": {
+      "title": "Finding Balance",
+      "sourceId": "xu8A_QKs6lXzKPMiifNF_",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "As a Product Manager, one vital skill required of you is understanding the balance between value and features. This revolves around prioritizing what features to implement based on the value they provide to the customer or user. It is about striking a balance; not all features will provide the same level of value, and understanding this is key to efficient resource allocation. You must maintain a focus on delivering value while also ensuring the product's features remain compelling and relevant to the target audience.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "valueVsFeatures"
+      ],
+      "children": []
+    },
+    "strategicThinking": {
+      "title": "Strategic Thinking",
+      "sourceId": "m46lX4dUHik_BSHQwaU2l",
+      "type": "topic",
+      "order": 31,
+      "summary": "Strategic thinking is a critical competence for Product Managers. This involves the ability to think long-term, beyond immediate actions, to comprehend how various components influence each other within the big picture, as well as predicting potential outcomes. It's about identifying strengths and weaknesses, understanding opportunities and threats, planning for diverse scenarios, and making sound decisions. A Product Manager with strategic thinking skills effectively aligns product decisions with the broader organizational strategy, anticipates upcoming market trends, and maintains a competitive edge.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "valueVsFeatures"
+      ],
+      "children": [
+        "competitiveStrategy"
+      ]
+    },
+    "competitiveStrategy": {
+      "title": "Competitive Strategy",
+      "sourceId": "qy_IXzenBOEVBMvVlXPaY",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "Product Managers play a crucial role in defining and implementing the competitive strategy of a product. This strategy is typically a long-term action plan for a company that identifies how to achieve a competitive advantage while meeting the needs of its customers. Product managers, with their deep understanding of the market, identify opportunities, understand competitors, and align the product to meet business goals and customers' needs. Strong strategic thinking aids in making informed decisions towards competitive positioning of the product, considering factors such as pricing, features, and marketing strategies.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "strategicThinking"
+      ],
+      "children": []
+    },
+    "productIdentification": {
+      "title": "Product Identification",
+      "sourceId": "fmpJB_14CYn7PVuoGZdoz",
+      "type": "topic",
+      "order": 33,
+      "summary": "Product Identification plays a critical role in the diverse spectrum of responsibilities held by a Product Manager. It typically involves identifying and detailing the core features, value proposition, and user demographics of a product. This is an essential preliminary step in product development that not only assists in recognising the unique selling points but also helps in positioning the product appropriately in the competitive market. The rationale, advantages and potential of a product are all captured during the product identification process, making it a key strategic roadmap element for a Product Manager. Knowledge of product identification can empower Product Managers to make informed decisions that align with user needs and business goals.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "ideaGeneration"
+      ],
+      "children": [
+        "brainstormingTechniques",
+        "iterativeProcess",
+        "blueOceanStrategy"
+      ]
+    },
+    "brainstormingTechniques": {
+      "title": "Brainstorming Techniques",
+      "sourceId": "69IgqluiW9cVfezSIKInD",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "When it comes to the role of a Product Manager, brainstorming techniques are paramount, especially during the stage of Product Identification. This initial stage involves the generation and rallying of innovative ideas that could potentially translate into a viable product. The Product Manager is required to leverage different techniques, like mind maps, SWOT analysis, SCAMPER, or Six Thinking Hats, to effectively encourage creativity, drive cross-functional collaboration, and foster a breeding ground for market-leading product concepts. Effective brainstorming sessions can reveal unique market opportunities, create an alignment of vision among teams, and contribute to the overall product strategy.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productIdentification"
+      ],
+      "children": []
+    },
+    "iterativeProcess": {
+      "title": "Iterative Process",
+      "sourceId": "1HytzY1KRYIQWoQa5FMwY",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "The Iterative Process is a fundamental approach in product management, which allows Product Managers to continuously improve and refine their products. In essence, it means creating, testing, refining, and repeating. Using this methodology, a Product Manager incrementally enhances the product based on feedback and learnings from each iteration. This constant evolution of the product makes for a more flexible development process, particularly useful in dynamic environments where user needs or market conditions may frequently change. Understanding and applying the Iterative Process can greatly enhance the ability of a Product Manager to deliver an effective and successful product to the market.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productIdentification"
+      ],
+      "children": [
+        "discovery"
+      ]
+    },
+    "discovery": {
+      "title": "Discovery",
+      "sourceId": "vP4tfzP-hOiAsv4K4RsQy",
+      "type": "subtopic",
+      "order": 36,
+      "summary": "The discovery phase is a crucial stage in a Product Manager's role. It involves exploring, researching, understanding customer needs, and identifying market opportunities to develop a product that aligns with business goals while providing value to users. During this phase, Product Managers gather and analyze data from customers, competitors, and the market to clearly define the problem to be solved. Visual forms like customer journey maps, personas, or prototypes are often used to effectively communicate the findings. The insights gained during the discovery phase set the foundation for the decisions made in the subsequent product development phases.",
+      "video": {
+        "title": "Introduction to Modern Product Discovery by Teresa Torres",
+        "url": "https://youtu.be/l7-5x0ra2tc?si=Zh4LeSF_qAj8y6-a"
+      },
+      "articles": [],
+      "parents": [
+        "iterativeProcess"
+      ],
+      "children": []
+    },
+    "blueOceanStrategy": {
+      "title": "Blue Ocean Strategy",
+      "sourceId": "gjdCSm_jZmG_q6YjG_8Qu",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "Blue Ocean Strategy is a significant methodology in product identification for a Product Manager. It's a marketing theory from a book published in 2005 which advocates the creation of new demand in uncontested market spaces, or \"Blue Oceans\". Rather than competing within the confines of the existing industry or trying to steal customers from rivals (Red Ocean Strategy), Blue Ocean Strategy proposes to create a new space in the market, thereby making the competition irrelevant.",
+      "video": {
+        "title": "How To Differentiate Your Business With BLUE OCEAN STRATEGY",
+        "url": "https://www.youtube.com/watch?v=UKDxj6W7CXs"
+      },
+      "articles": [],
+      "parents": [
+        "productIdentification"
+      ],
+      "children": []
+    },
+    "whatIsProductManagement": {
+      "title": "What is Product Management?",
+      "sourceId": "luk1vnpy0duneVjen8WzO",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "Product management is a multifaceted discipline that forms the backbone of any technology organization. As a product manager, individuals are responsible for guiding the success of a product and leading the cross-functional team that is responsible for improving it. This entails an understanding of the market, the competitive landscape, customer demand and preferences, as well as business strategy. The decisions made by the product manager directly influence the strategic direction, design, functionality, and commercial success of the product. They essentially form a bridge between different teams, such as engineering, design, marketing, sales, and customer support, ensuring a seamless transition from product development to product release.",
+      "video": {
+        "title": "What is Product Management? - Atlassian",
+        "url": "https://www.youtube.com/watch?v=kzMBIyzq9Ag"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Product Management? - Product Plan",
+          "url": "https://www.productplan.com/learn/what-is-product-management/#what-is-product-management"
+        }
+      ],
+      "parents": [
+        "introduction2"
+      ],
+      "children": []
+    },
+    "productVsProjectManagement": {
+      "title": "Product vs Project Management",
+      "sourceId": "V-IeFB9S2tToxANHIzpMs",
+      "type": "subtopic",
+      "order": 39,
+      "summary": "Project management focuses on planning, executing, and closing specific projects with defined objectives, timelines, and deliverables, ensuring that tasks are completed on time and within budget. It is concerned with the successful completion of a project, often involving temporary endeavors with a clear beginning and end. In contrast, product management is a continuous process that involves the entire lifecycle of a product, from ideation and development to market launch and ongoing improvements.",
+      "video": {
+        "title": "Product Manager vs Project Manager",
+        "url": "https://www.youtube.com/watch?v=nPR6HsUO_XY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Product vs Project Manager - Coursera",
+          "url": "https://www.coursera.org/gb/articles/product-manager-vs-project-manager"
+        }
+      ],
+      "parents": [
+        "introduction2"
+      ],
+      "children": []
+    },
+    "rolesAndResponsibilities": {
+      "title": "Roles and Responsibilities",
+      "sourceId": "Dx6ee8P_Agpw1MLKlAPGI",
+      "type": "subtopic",
+      "order": 40,
+      "summary": "A product manager is a pivotal role that stands at the crossroads of business, technology, and user experience aspects. Their roles and responsibilities include understanding customer needs, defining and communicating product strategy, prioritizing product features, liaising with different teams such as engineering, sales and marketing to ensure seamless product development and launch, monitoring and analyzing market trends, and ultimately driving the success of the product in the market. A prodigious product manager, with a unique blend of business acuity and technical knack, can significantly impact the product's acceptance in the market and the company's bottom line.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Product Manager Roles & Responsibilities",
+          "url": "https://www.productside.com/product-manager-roles-and-responsibilities-keytask/"
+        }
+      ],
+      "parents": [
+        "introduction2"
+      ],
+      "children": []
+    },
+    "keySkills": {
+      "title": "Key Skills",
+      "sourceId": "5W-3jh1-4qSU5kagrWv9z",
+      "type": "subtopic",
+      "order": 41,
+      "summary": "A Product Manager is often viewed as the \"CEO of the Product\", requiring a unique blend of business, technical, and strategic skills to drive the product's success. Core competencies for a Product Manager typically include strategic thinking, the ability to influence cross-functional teams, technical proficiency, understanding of customer needs and market trends, problem-solving abilities, and exceptional communication skills. These key skills are vital in managing stakeholders, formulating strategic product vision, making crucial business decisions, and ensuring seamless product execution. The ability to continuously learn and adapt is also crucial due to the dynamic nature of the product management industry.",
+      "video": {
+        "title": "Skills Every Product Manager Needs",
+        "url": "https://www.youtube.com/watch?v=ysBpePyeHkU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Skills Does a Product Manager Need?",
+          "url": "https://careerfoundry.com/en/blog/product-management/product-manager-skills/"
+        }
+      ],
+      "parents": [
+        "introduction2"
+      ],
+      "children": []
+    },
+    "productDevelopmentLifecycle": {
+      "title": "Product Development Lifecycle",
+      "sourceId": "kB8e26BUm8BpTY1_O3N3_",
+      "type": "subtopic",
+      "order": 42,
+      "summary": "The Product Development Lifecycle is a crucial aspect for Product Managers to understand. It represents the systematic and methodical journey a product takes from conceptual idea to market distribution. This lifecycle consists of several distinct stages such as ideation, design, development, testing, and launch. Developing a thorough comprehension of this process enables Product Managers to effectively manage, predict and strategize around the potential challenges and opportunities each stage presents. This understanding is vital for successful product launches, maximizing product potential, and ensuring alignment with market demands and customer expectations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Product Development Lifecycle - MailChimp",
+          "url": "https://mailchimp.com/resources/product-life-cycle/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "development"
+      ]
+    },
+    "development": {
+      "title": "Development",
+      "sourceId": "5okUFVMuG6mjRki4fyCcF",
+      "type": "subtopic",
+      "order": 43,
+      "summary": "The development phase of the product development lifecycle is a critical stage where ideas transform into tangible products. For product managers, this phase involves coordinating with cross-functional teams, including engineering, design, and quality assurance, to ensure that the product meets its specifications and market requirements. This phase focuses on building, testing, and refining the product, incorporating feedback from iterative testing and addressing any technical challenges that arise. Effective management during this stage is essential for aligning the product with its strategic goals and preparing it for a successful launch.",
+      "video": {
+        "title": "What's Product Development?",
+        "url": "https://www.youtube.com/watch?v=jLvMGnAYicY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Product Development?",
+          "url": "https://www.aha.io/roadmapping/guide/what-is-product-development"
+        }
+      ],
+      "parents": [
+        "productDevelopmentLifecycle"
+      ],
+      "children": []
+    },
+    "productPlanning": {
+      "title": "Product Planning",
+      "sourceId": "DoJCeL_vEXv3aVrLt7P_R",
+      "type": "paragraph",
+      "order": 67,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "productRequirements"
+      ]
+    },
+    "writingPrds": {
+      "title": "Writing PRDs",
+      "sourceId": "0FqpBfvnkGN_oE2KSC-_8",
+      "type": "subtopic",
+      "order": 71,
+      "summary": "In the realm of product management, writing Product Requirement Documents (PRDs) serves as a crucial part of the job. This activity involves detailing and articulating the product\u2019s purposes, features, and functionalities. PRDs become a roadmap that guides the design and development team. As a Product Manager, you play a pivotal role in crafting a well-structured PRD, ensuring it clearly communicates the product's vision to stakeholders and enables seamless product development.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productRequirements"
+      ],
+      "children": []
+    },
+    "userStories": {
+      "title": "User Stories",
+      "sourceId": "kN-UfAbQ8j7g0jDdqWK55",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "For a product manager, understanding user stories is an essential part of defining product requirements. A user story is a tool used in Agile development that captures a description of a product feature from an end-user perspective. User Stories helps the product manager not only in understanding and noting down the user's perspective but also in communicating this perspective to the design and development teams efficiently. User stories depict the type of user, what they want, and why, giving the team a clear focus of what needs to be accomplished. Therefore, as a product manager, utilizing user stories can lead to products that meet user expectations and demands effectively.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productRequirements"
+      ],
+      "children": []
+    },
+    "productRequirements": {
+      "title": "Product Requirements",
+      "sourceId": "0tJ7zlgOIaioCMmVavfqz",
+      "type": "topic",
+      "order": 74,
+      "summary": "Product requirements are a vital component in the realm of product management. They represent the critical elements, features, and functionalities that a product must possess to meet the needs and expectations of customers, stakeholders, and the business itself. Product Managers hold the responsibility to define, document, and communicate these requirements effectively with all parties involved. This process involves understanding customer needs, market trends, and technical feasibility, translating these understandings into well-defined requirements for the development teams. Thus, mastering the art of product requirements is an essential skill for a successful Product Manager.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productPlanning"
+      ],
+      "children": [
+        "writingPrds",
+        "userStories",
+        "jobStories",
+        "productRoadmap"
+      ]
+    },
+    "jobStories": {
+      "title": "Job Stories",
+      "sourceId": "B9fgJmzVViaq7dvSuEglb",
+      "type": "subtopic",
+      "order": 76,
+      "summary": "The concept of Job Stories is a tool integral to a Product Manager's dynamic role. Structured differently from traditional user stories, Job Stories shift the focus from personas to the situation, providing a fresh perspective for understanding user requirements. They provide an opportunity for product managers to emphasize the context and causality of user needs. This perspective plays a crucial role in creating successful products and ensuring they deliver value to the end-users. Teleriking why and when someone uses the product opens avenues for actionable insights leading to judicious decision-making in defining product requirements.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productRequirements"
+      ],
+      "children": []
+    },
+    "communicatingTheRoadmap": {
+      "title": "Communicating the Roadmap",
+      "sourceId": "NjLt_B_kV7FdnkOomqayx",
+      "type": "subtopic",
+      "order": 78,
+      "summary": "An essential role of a Product Manager involves communicating the product roadmap. This strategic document delineates the vision, direction, priorities, and progress of a product over time. It is paramount that this roadmap is communicated effectively to various stakeholders including team members, leadership, clients, and investors. This not only sets appropriate expectations but also ensures that everyone associated with the product is on the same page. The successful alignment increases the chance of product success and reduces the scope of misunderstandings and delays. For a Product Manager, mastering this communication is key to leading a product effectively.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productRoadmap"
+      ],
+      "children": []
+    },
+    "productDesign": {
+      "title": "Product Design",
+      "sourceId": "74FApE4fYNihBkOfl3w3p",
+      "type": "paragraph",
+      "order": 80,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "backlogManagement"
+      ],
+      "children": [
+        "uxUiDesign"
+      ]
+    },
+    "userStoryMapping": {
+      "title": "User Story Mapping",
+      "sourceId": "3JY85Tu40ABy9XfoliaqE",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "User Story Mapping is a crucial practice product managers adopt under the broad area of backlog management. This strategic process encourages the development team and stakeholders to have a collaborated understanding of the product or application, as it aligns them into visualization and diagraming of user activities. User Story Mapping provides a structured approach to defining user interactions with the product, assisting Product Managers to prioritize requirements, and ultimately leading to a product that meets the needs of the users effectively. This approach allows the product manager to set realistic goals, enable seamless team collaboration, and ensure an efficient project schedule that captures the product's functionality from the user's perspective.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "backlogManagement"
+      ],
+      "children": []
+    },
+    "productRoadmap": {
+      "title": "Product Roadmap",
+      "sourceId": "gS3ofDrqDRKbecIskIyGi",
+      "type": "topic",
+      "order": 83,
+      "summary": "The product roadmap is a strategic document that provides a detailed overview of the product's direction and vision. It outlines the product's plans, both tactical and strategic - including the specific steps necessary to achieve the company's goals and vision. As a Product Manager, you are expected to guide the creation of the product roadmap, communicating the product\u2019s evolution to the team, stakeholders, and customers. This tool serves as an essential reference point helping to align all stakeholders with the key priorities and vision of the product, and acts as a guide for decisions around product development.",
+      "video": {
+        "title": "What is a Product Roadmap? - Vibhor Chandel",
+        "url": "https://www.youtube.com/watch?v=BJR70jnpHog&ab_channel=VibhorChandel"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is a Product Roadmap? - Product Plan",
+          "url": "https://www.productplan.com/learn/what-is-a-product-roadmap/"
+        }
+      ],
+      "parents": [
+        "productRequirements"
+      ],
+      "children": [
+        "communicatingTheRoadmap",
+        "backlogManagement"
+      ]
+    },
+    "backlogManagement": {
+      "title": "Backlog Management",
+      "sourceId": "lq5Hl1ZXBQRRI_4ywn7yA",
+      "type": "topic",
+      "order": 84,
+      "summary": "Backlog Management is a critical aspect in the role of a Product Manager. It involves organizing and prioritizing a list of tasks or features - known as the \"backlog\" -that are required for the development of a product. Effective backlog management ensures that the product team is working on the most valuable features at the right time, thereby maximizing the product's value and reducing time to market. It requires continuous collaboration with stakeholders, balancing business needs with technical feasibility, and strategically planning to meet short and long term objectives.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productRoadmap"
+      ],
+      "children": [
+        "userStoryMapping",
+        "productDesign"
+      ]
+    },
+    "releaseStrategies": {
+      "title": "Release Strategies",
+      "sourceId": "VqNK1rNAnr_yvi_a0YZEs",
+      "type": "topic",
+      "order": 85,
+      "summary": "Release strategies play a critical role in the responsibilities of a Product Manager. Essentially, a release strategy defines the plan for the distribution of the final version of a product. The role of the Product Manager here is to ensure that new releases deliver on the product vision while meeting business objectives. They must carefully plan and manage product releases, outlining what features will be delivered, deciding on the release date, coordinating the teams involved and ensuring the product is effectively launched into the market. An effective release strategy is crucial to achieve the product goals and maximize the value delivered to the customers and business alike.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "principlesOfUxDesign": {
+      "title": "Principles of UX Design",
+      "sourceId": "TwL-EqDorSgUpBYr4O4rf",
+      "type": "subtopic",
+      "order": 86,
+      "summary": "When it comes to product development, one of the key roles a Product Manager must understand is the Principles of UX Design. UX (User Experience) Design is an intricate part of product management which aims at creating a streamlined and satisfying experience for the user interacting with a product. These principles guide designers and product managers alike in crafting products that aren't just functional but highly engaging. The skill of grasping these principles often separates successful products from the rest. A good understanding of UX Design principles helps product managers to maintain a user-focused approach throughout the product's life cycle, ensuring its viability in the market.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "uxUiDesign"
+      ],
+      "children": []
+    },
+    "uxUiDesign": {
+      "title": "UX / UI Design",
+      "sourceId": "-lFYy5W1YqWuTiM3QRF4k",
+      "type": "topic",
+      "order": 88,
+      "summary": "UX (User Experience) and UI (User Interface) design are integral parts of product management. A product manager often works closely with UX/UI designers to ensure that the product not only meets the functional requirements but also provides a seamless and engaging user experience. UX design focuses on the overall feel of the product, ensuring it solves problems for users effectively and provides a positive experience. On the other hand, UI design concentrates on the aesthetics of the product \u2013 its look and feel, responsiveness, and interactivity. Understanding UX/UI design is vital for a product manager as it heavily influences user satisfaction and product success.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productDesign"
+      ],
+      "children": [
+        "principlesOfUxDesign",
+        "wireframingAndPrototyping",
+        "designThinking",
+        "serviceDesign"
+      ]
+    },
+    "wireframingAndPrototyping": {
+      "title": "Wireframing and Prototyping",
+      "sourceId": "zwrmh-djneZ8HIqbaBOkN",
+      "type": "subtopic",
+      "order": 89,
+      "summary": "Wireframing and prototyping form an essential part of product development, especially in the domain of UX / UI Design. For a Product Manager, understanding these processes serves as a crucial tool in enabling them to visualize the path of the user interface before it is fully developed.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "uxUiDesign"
+      ],
+      "children": []
+    },
+    "designThinking": {
+      "title": "Design Thinking",
+      "sourceId": "yPtxGBDEJkFBhF8ZgQUVH",
+      "type": "subtopic",
+      "order": 91,
+      "summary": "As a Product Manager, understanding and utilizing Design Thinking in the context of UX / UI is a crucial aspect of the job. This innovative, solution-based approach to problem-solving allows Product Managers to create user-centered product designs that meet both user needs and business goals flawlessly. By incorporating Design Thinking, Product Managers can better empathize with the user, define the problem effectively, ideate creative solutions, prototype, and test the results, all contributing towards delivering a superior product. It's a process that emphasizes collaboration, user feedback, and iteration, thereby ensuring the product is continually refined and improved upon.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "uxUiDesign"
+      ],
+      "children": []
+    },
+    "serviceDesign": {
+      "title": "Service Design",
+      "sourceId": "lxU25qxxgxnNF3c3kdZxz",
+      "type": "topic",
+      "order": 93,
+      "summary": "Service Design refers to the process of planning and organizing a business's resources (people, infrastructure, materials, etc.) to directly improve the service's quality, interactions between service provider and clients, and the customer's experience. For a Product Manager, it's a crucial practice as it gives them a broader understanding of their product's lifecycle and interactions with the end users. This process aids in crafting or refining products to ensure alignment with customer needs and provide superior user experience.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "uxUiDesign"
+      ],
+      "children": [
+        "interactionDesign"
+      ]
+    },
+    "usabilityTesting": {
+      "title": "Usability Testing",
+      "sourceId": "1uXjKKvOKqpO50m1pM627",
+      "type": "subtopic",
+      "order": 94,
+      "summary": "Usability testing is a crucial aspect in a Product Manager's role. It essentially involves evaluating a product or feature by testing it with representative users. As a Product Manager, they must ensure that usability testing is performed at various stages of product development to understand and improve user satisfaction and experience. It provides direct input on how users use and perceive a product. Often, it is the Product Manager's responsibility to facilitate this process, from selecting suitable user groups to facilitating the sessions and analysing the results for future product iteration and improvement. Understanding usability testing allows Product Managers to identify any design problems and necessary improvements before full-scale product launch.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "userTesting"
+      ],
+      "children": []
+    },
+    "interactionDesign": {
+      "title": "Interaction Design",
+      "sourceId": "S_-9msr3vGZgOQ36zErnf",
+      "type": "topic",
+      "order": 95,
+      "summary": "Interaction Design is a key discipline within the field of Product Management. It focuses on the design and creation of digital interfaces and systems with which human users interact. As a product manager, mastery in interaction design is critical because the ease-of-use, intuitiveness, and satisfaction of a user's interaction with a product largely determine its success or failure. An Interaction-design-savvy product manager will strive to make sure the product offers a seamless user experience, ensuring it is aesthetically pleasing, easy to navigate, and delivers the desired functionality efficiently.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "serviceDesign"
+      ],
+      "children": [
+        "userTesting"
+      ]
+    },
+    "goToMarketStrategy": {
+      "title": "Go-to-Market Strategy",
+      "sourceId": "53XS2zKdK6IDdOP07yiT7",
+      "type": "topic",
+      "order": 96,
+      "summary": "A Go-to-Market (GTM) strategy is an action plan that specifies how a product manager will reach target customers and achieve a competitive advantage. It serves as a blueprint that guides companies in introducing their products to the market. For a product manager, the GTM strategy is not just about product launch, it includes understanding the market dynamics, customer needs, creating marketing and sales strategies, and post-launch activities like customer service. An effective GTM strategy can help product managers ensure a successful product launch and strong market presence.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "aBTesting": {
+      "title": "A/B Testing",
+      "sourceId": "Ws7IFrHQNoBjLE2Td2xIZ",
+      "type": "subtopic",
+      "order": 97,
+      "summary": "A/B testing, otherwise known as split testing, is an essential statistical tool that is central to the responsibilities of a product manager. This method involves comparing two versions of a webpage, product feature, or user interface to determine which performs better according to certain metrics or goals. It allows product managers to make data-driven decisions and improve the product based on real user experiences and preferences. A solid understanding of A/B testing methods and application equips product managers with the ability to optimize user engagement, retention and conversion rates.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "userTesting"
+      ],
+      "children": []
+    },
+    "remoteUserTesting": {
+      "title": "Remote User Testing",
+      "sourceId": "5fze1aw1in3Gp3K31bvin",
+      "type": "subtopic",
+      "order": 99,
+      "summary": "Remote User Testing is a crucial aspect of the role of a Product Manager. This technique allows the validation of ideas, products, features, and updates with real users in their natural environment. This method of testing can provide invaluable insights into how users interact with a product, what challenges they might face, and what improvements can be made. For a Product Manager, implementing remote user testing into the development cycle can significantly aid in creating a user-centric product that meets the audience's needs and expectations. It is cost-effective, versatile, and applicable to a variery of stages in the product's lifecycle.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "userTesting"
+      ],
+      "children": [
+        "scrumBasics"
+      ]
+    },
+    "userTesting": {
+      "title": "User Testing",
+      "sourceId": "v3hKowLMBVq9eCXkUhrDZ",
+      "type": "topic",
+      "order": 100,
+      "summary": "User Testing is an essential responsibility for a product manager. In this process, the product manager ensures that the product developed by the team meets the users' needs and provides a good user experience. This is done by selecting representative users or personas, understanding the user's goals, implementing and planning test scenarios, facilitating the test and analysing the observed user behaviour. The feedback collected is then used to refine the product design, thus playing a significant part in shaping the product's road map and release cycle. Overall, User Testing provides invaluable insights that can often lead to significant improvements in the product.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "interactionDesign"
+      ],
+      "children": [
+        "remoteUserTesting",
+        "aBTesting",
+        "usabilityTesting",
+        "developmentAndLaunch"
+      ]
+    },
+    "scrumBasics": {
+      "title": "Scrum Basics",
+      "sourceId": "WNCVmFrpHW7rMaIzlLaXl",
+      "type": "subtopic",
+      "order": 102,
+      "summary": "The role of a Product Manager greatly correlates to the understanding and implementation of Scrum basics. Scrum is an agile framework that works towards delivering valuable products iteratively and incrementally. Scrum Basics cover a myriad range of concepts including, but not limited to, Scrum roles (Product Owner, Scrum Master, and the Development Team), Scrum artifacts (Product Backlog, Sprint Backlog, and Product Increment) and Scrum ceremonies (Sprint Planning, Daily Standup, Retrospective, etc.). An effective Product Manager is expected to thoroughly comprehend these components to smoothly manage projects, optimize product value and efficiently deal with complex situations, ensuring product success.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Official Scrum Guide",
+          "url": "https://scrumguides.org/scrum-guide.html"
+        }
+      ],
+      "parents": [
+        "remoteUserTesting"
+      ],
+      "children": []
+    },
+    "kanbanBasics": {
+      "title": "Kanban Basics",
+      "sourceId": "kJ2HQFEsnc5yISU8d9Lla",
+      "type": "subtopic",
+      "order": 104,
+      "summary": "As a Product Manager in the fast-paced environment of technological innovation, being aware of and proficient in Agile methodology and specifically, the Kanban basics, is crucial. Originated in Toyota production system, Kanban is a visual tool that effectively supports the management of a product as it goes through its lifecycle. For a Product Manager, understanding Kanban basics implies being able to streamline workflow, limit work-in-progress and visualize work, thereby optimizing the efficiency of a team and the production timeline. Simply put, Kanban helps in managing work by balancing demands with available capacity, and improving the handling of system-level bottlenecks.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "agileMethodology"
+      ],
+      "children": []
+    },
+    "developmentAndLaunch": {
+      "title": "Development and Launch",
+      "sourceId": "hLy9kA3yEyDQ32XTq6I8b",
+      "type": "paragraph",
+      "order": 105,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "userTesting"
+      ],
+      "children": [
+        "agileMethodology"
+      ]
+    },
+    "workingWithEngineeringTeams": {
+      "title": "Working with Engineering Teams",
+      "sourceId": "2r-NPGcROFmw-pd4rvsAJ",
+      "type": "topic",
+      "order": 106,
+      "summary": "When it comes to the role of a Product Manager, effective collaboration with the engineering team is paramount. This involves fostering a strong communication culture, understanding technical constraints, and efficiently managing the product backlog. The relationship between a Product Manager and the engineering team can significantly influence the success of a product. Mutual respect, transparency and a clear understanding of roles and responsibilities help pave the way for a fruitful partnership.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "agileMethodology"
+      ],
+      "children": []
+    },
+    "agileMethodology": {
+      "title": "Agile Methodology",
+      "sourceId": "sAu4Gr1hg8S4jAV0bOSdY",
+      "type": "topic",
+      "order": 107,
+      "summary": "Agile Methodology in product management refers to an iterative approach to project management and product development, where requirements and solutions evolve through collaboration among cross-functional teams. As a Product Manager, understanding Agile is essential since it not only speeds up the development process but also allows flexibility in response to changes. Agile can positively impact your product planning, product development, and customer feedback loop ensuring consistent improvement and value delivery.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "developmentAndLaunch"
+      ],
+      "children": [
+        "workingWithEngineeringTeams",
+        "kanbanBasics"
+      ]
+    },
+    "productMetrics": {
+      "title": "Product Metrics",
+      "sourceId": "h10DphS6mi7ZwbyHppPsb",
+      "type": "paragraph",
+      "order": 110,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "keyProductMetrics"
+      ]
+    },
+    "dauDailyActiveUsers": {
+      "title": "DAU (Daily Active Users)",
+      "sourceId": "g2EgVtqwQxLfjBjomUqcU",
+      "type": "subtopic",
+      "order": 111,
+      "summary": "For a Product Manager, understanding the significance of DAU or Daily Active Users is crucial. DAU is a key product metric used in the tech industry to measure the success of a product. It refers to the number of unique individuals who interact with a product or service on a daily basis. This insight helps product managers understand how compelling and sticky a product is and provides valuable data for making strategic product decisions. Monitoring and analyzing DAU trends can assist in identifying potential issues, measuring user engagement, or capturing growth opportunities.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "keyProductMetrics"
+      ],
+      "children": []
+    },
+    "mauMonthlyActiveUsers": {
+      "title": "MAU (Monthly Active Users)",
+      "sourceId": "Sbi5Y72nU_B1Jk6xNp17u",
+      "type": "subtopic",
+      "order": 113,
+      "summary": "MAU (Monthly Active Users) is a critical performance metric that product managers often use to gauge the user engagement and growth of a digital product such as a mobile app, a SaaS product, or a website. It refers to the unique users who engage with the product at least once within a month. As a product manager, understanding the MAU helps in designing effective marketing strategies, making product enhancements, and ultimately driving the product's success.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "keyProductMetrics"
+      ],
+      "children": []
+    },
+    "conversionRate": {
+      "title": "Conversion Rate",
+      "sourceId": "avkgeNNVQOCE7dvEKFVZv",
+      "type": "subtopic",
+      "order": 115,
+      "summary": "The Conversion Rate is a crucial product metric for any Product Manager. It is the percentage of users who complete a desired action on a product or service, such as making a purchase, signing up for a trial, or subscribing to a newsletter. Monitoring conversion rates allows Product Managers to understand how effectively their product is meeting target audience needs, achieving business goals, and driving desired customer behaviors. It helps in identifying areas of improvement, opportunities for growth, and impact of changes on user interactions.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "keyProductMetrics"
+      ],
+      "children": []
+    },
+    "keyProductMetrics": {
+      "title": "Key Product Metrics",
+      "sourceId": "RfllpwFxWBeHF29oUwGo_",
+      "type": "topic",
+      "order": 116,
+      "summary": "Key Product Metrics are essential parameters that Product Managers use to measure the performance and success of a product. These set of metrics help understand the usage, engagement, and overall value of a product to its users. Product Managers rely on these insights to inform their decision-making process, prioritize features, identify areas for improvement and evaluate the impact of changes made to the product. From user acquisition and retention rate to churn rate and time spent on product, choosing the right metrics is vital for driving growth and achieving product goals.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productMetrics"
+      ],
+      "children": [
+        "dauDailyActiveUsers",
+        "mauMonthlyActiveUsers",
+        "conversionRate",
+        "retentionRate",
+        "churnRate",
+        "ltvLifetimeValue",
+        "cacCustomerAcquisitionCost",
+        "northStarMetric",
+        "dataDrivenDecisionMaking"
+      ]
+    },
+    "retentionRate": {
+      "title": "Retention Rate",
+      "sourceId": "mfG1UheUwzO8dbS4oglgo",
+      "type": "subtopic",
+      "order": 117,
+      "summary": "For a product manager, understanding the retention rate is integral to making key business decisions. This metric refers to the percentage of customers who continue to use a specific product over a given time period. By closely monitoring the retention rate, product managers can gauge the degree to which the product, application, or service meets the needs and expectations of consumers. Low retention rates may indicate dissatisfaction or competition, while high retention rates can suggest user satisfaction and loyalty. Understanding this figure can provide insights into changes that can improve customer engagement and satisfaction, making it a vital aspect of a product manager's role.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "keyProductMetrics"
+      ],
+      "children": []
+    },
+    "aBTesting2": {
+      "title": "A/B Testing",
+      "sourceId": "V3yGVN7z_ihLkScO0_92_",
+      "type": "subtopic",
+      "order": 118,
+      "summary": "The role of a Product Manager often requires making informed decisions to improve product performance and user experience. This is where A/B Testing, a vital aspect of data-driven decision making, comes into play. A/B Testing, also known as split testing, involves comparing two versions of a webpage, ad, or other product experience to see which performs better. It is a methodical approach that enables product managers to determine the impact of changes and make data-driven decisions. It helps reduce the inherent uncertainty in introducing new features or changes and is a key tool in the product manager's arsenal.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "dataDrivenDecisionMaking"
+      ],
+      "children": []
+    },
+    "churnRate": {
+      "title": "Churn Rate",
+      "sourceId": "jRWVaNpTfBXVjpi4WNT7H",
+      "type": "subtopic",
+      "order": 119,
+      "summary": "Churn Rate is a pivotal term in the world of Product Manager. While understanding key product metrics, the term churn plays a significant role. It is the measurement of the percentage of customers or users who leave a product over a given period of time, divided by remaining customers. For example, if you start your month with 100 users and end with 90, your churn rate is 10%. Keeping a low churn rate can signify that customer satisfaction is high, sustaining customer loyalty and fostering conditions for growth. As a Product Manager, understanding, measuring and acting to reduce churn rate is critical to product strategy and overall business sustainability.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "keyProductMetrics"
+      ],
+      "children": []
+    },
+    "dataDrivenDecisionMaking": {
+      "title": "Data-Driven Decision Making",
+      "sourceId": "eO7glnL0HixQYnoF3uvSW",
+      "type": "topic",
+      "order": 120,
+      "summary": "As a product manager, having a good grip on data-driven decision making is a pivotal skill to have. It is a process where decisions are made based on actual data rather than intuitions or observations. This process helps product managers evaluate where the product stands in terms of its effectiveness, performance, and reception in the market. Decisions are then made about the product's future based on this analysis - whether it needs improvements, new features, or a different marketing approach. By focusing on data-driven decision making, product managers can make choices that are more likely to bring in positive results and reduce risks associated with intuition-based decision making.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "keyProductMetrics"
+      ],
+      "children": [
+        "aBTesting2",
+        "cohortAnalysis",
+        "predictiveAnalytics",
+        "feedbackLoops"
+      ]
+    },
+    "cohortAnalysis": {
+      "title": "Cohort Analysis",
+      "sourceId": "APdoU9kzHEqpUgKGKfyp9",
+      "type": "subtopic",
+      "order": 121,
+      "summary": "Cohort Analysis is a valuable tool in a Product manager's data-driven decision-making toolkit. This specific kind of analysis divides a product's user base into related groups. It's not strictly about the demographics, but rather the shared characteristics within a specific timeframe. These groups, or cohorts, could be determined by the users' behaviors, experiences, or traits. Understanding these cohorts and their behaviors proves to be crucial in identifying trends, predicting user actions, and innovating ways to improve overall user experience and product utility.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "dataDrivenDecisionMaking"
+      ],
+      "children": []
+    },
+    "ltvLifetimeValue": {
+      "title": "LTV (Lifetime Value)",
+      "sourceId": "DB-dN0bfG29Xv_a8iV8Yg",
+      "type": "subtopic",
+      "order": 122,
+      "summary": "The Lifetime Value (LTV) of a customer is a crucial metric for a Product Manager. In its simplest form, LTV is the total revenue a company can expect from a single customer over the duration of their relationship with the company. It's a long-term perspective that ties together the upfront costs of customer acquisition with the ongoing costs of retention and the revenue generated by the customer. With a deep understanding of LTV, Product Managers can make informed decisions about marketing spend, product development, customer retention strategies, and more.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "keyProductMetrics"
+      ],
+      "children": []
+    },
+    "predictiveAnalytics": {
+      "title": "Predictive Analytics",
+      "sourceId": "YsDt5I0prvYeaFfn4_lpx",
+      "type": "subtopic",
+      "order": 123,
+      "summary": "In today's fast-paced digital business landscape, it's imperative for a Product Manager to leverage data for driving effective decision-making. This is where Predictive Analytics comes into play. Predictive Analytics employs statistical algorithms and machine learning techniques to determine the likelihood of future outcomes based on historical data. For Product Managers, this powerful tool allows them to anticipate customer behavior and market trends, inform planning and prioritization, and ultimately enhance their product's value proposition. This proactive approach can markedly reduce risks while maximizing opportunities for enterprise growth and customer satisfaction.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "dataDrivenDecisionMaking"
+      ],
+      "children": []
+    },
+    "cacCustomerAcquisitionCost": {
+      "title": "CAC (Customer Acquisition Cost)",
+      "sourceId": "kVd36zDyjLvVG2Nw9gsXi",
+      "type": "subtopic",
+      "order": 124,
+      "summary": "Customer Acquisition Cost (CAC) is a fundamental concept in business and specifically, a significant metric for Product Managers to monitor and optimize. Essentially, CAC is the total cost incurred to acquire a new customer, including all the product, research, marketing, and other associated costs. It provides valuable insight about the efficiency and effectiveness of a company's customer acquisition strategies. In the realm of a Product Manager, understanding and managing CAC is key to ensure that the product's value proposition is being communicated effectively, while also staying profitable and scalable. Hence, a detailed understanding and continuous tracking of CAC is an integral part of effective product management.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "keyProductMetrics"
+      ],
+      "children": []
+    },
+    "northStarMetric": {
+      "title": "North Star Metric",
+      "sourceId": "MYKZIDHSIXr-69BdtFcNR",
+      "type": "subtopic",
+      "order": 125,
+      "summary": "The North Star Metric is a pivotal element of product management, providing a guiding light for strategic decision-making. This critical value speaks to the core value that a product delivers its customers. As a product manager, identifying, tracking, and improving the North Star Metric is essential to cultivating product growth and enhancing user satisfaction. This metric shines a light on the product\u2019s mission, assisting product managers in sharpening the focus on what truly matters for the product's success and lasting impact on users.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "keyProductMetrics"
+      ],
+      "children": []
+    },
+    "feedbackLoops": {
+      "title": "Feedback Loops",
+      "sourceId": "kirIe5QsxruRUbWGfQtbD",
+      "type": "topic",
+      "order": 126,
+      "summary": "Feedback loops play a vital role in product management. As a product manager, instituting a feedback loop in your workflow is essential in enhancing product quality, user satisfaction, and team performance. This iterative, systematic process involves various stakeholders, including customers, team members, to deliver their insights about the product or service. These insights are critical as they can significantly influence decision-making, product strategy, and future development. Understanding and implementing feedback loops lead to continuous improvement and guide a product manager in successfully driving the product towards its ultimate vision.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "dataDrivenDecisionMaking"
+      ],
+      "children": [
+        "stakeholderManagement"
+      ]
+    },
+    "stakeholderManagement": {
+      "title": "Stakeholder Management",
+      "sourceId": "q-D_wIIv24wQyX1wqYi2R",
+      "type": "paragraph",
+      "order": 128,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "feedbackLoops"
+      ],
+      "children": [
+        "communicationSkills"
+      ]
+    },
+    "communicationSkills": {
+      "title": "Communication Skills",
+      "sourceId": "5-4MXlRjH-4PlF2giZpVL",
+      "type": "topic",
+      "order": 133,
+      "summary": "Communication Skills are crucial for a product manager as they act as the bridge between different stakeholders such as development, design, marketing, and executives. Effective communication enables a product manager to share their visions, align the team towards common goals, and articulate stakeholder needs clearly. These skills help to prevent misunderstandings and conflicts, ensuring the successful implementation of product strategies. Without efficient communication skills, a product manager will struggle to convey their ideas, which can ultimately lead to ineffective strategies and unsuccessful products.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "stakeholderManagement"
+      ],
+      "children": [
+        "managingStakeholders"
+      ]
+    },
+    "productManagementTools": {
+      "title": "Product Management Tools",
+      "sourceId": "xbtAfWUo8V5JqW7f3103x",
+      "type": "paragraph",
+      "order": 137,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "managingStakeholders"
+      ],
+      "children": [
+        "roadmappingTools"
+      ]
+    },
+    "managingStakeholders": {
+      "title": "Managing Stakeholders",
+      "sourceId": "X-2mVBut_pn4o_fEGVrib",
+      "type": "topic",
+      "order": 138,
+      "summary": "As a Product Manager, managing stakeholders is one of the most essential and challenging aspects of your role. Stakeholders include anyone who has an interest in the product, its development, and its success. This could range from executive leadership and different teams within the company to clients, users, and even investors. Successful stakeholder management involves understanding the needs and concerns of stakeholders and effectively communicating with them, navigating conflicting interests, and managing expectations. It requires a balanced approach that ensures the interests of all stakeholders align with the overall product strategy and objectives.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "communicationSkills"
+      ],
+      "children": [
+        "identifyingStakeholders",
+        "productManagementTools"
+      ]
+    },
+    "productBoard": {
+      "title": "Product Board",
+      "sourceId": "70yvt_oKcadnjZgg8FtAh",
+      "type": "subtopic",
+      "order": 139,
+      "summary": "Product Board is a strategic tool that serves as a backbone in the realm of product management. Known for its compelling visual environment, it is widely used to cater decision-making processes and hare insights about the product roadmap. It acts as a guidance system for product managers to prioritize the high-impact assignments and deliver meticulously crafted, user-centric products. Able to integrate with other popular platforms, Product Board offers a seamless user experience with its powerful features to bridge the gap between strategy, execution, and team alignment. Excellent facilitator for feedback management, user segmentation, and iterative planning, it is a must-have tool for every agile product manager.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "roadmappingTools"
+      ],
+      "children": []
+    },
+    "identifyingStakeholders": {
+      "title": "Identifying Stakeholders",
+      "sourceId": "Cryuk9pCI3y78HDGv6TMK",
+      "type": "subtopic",
+      "order": 140,
+      "summary": "As a Product Manager, it's crucial to identify key stakeholders who have a direct or indirect influence on the product's success. These stakeholders can include anyone from customers, team members, organizational leadership, to external business partners. Identifying stakeholders at an early stage can assist in getting their support, understanding their expectations, and mitigating any potential risks they may pose to the product life cycle. It's not only understanding who your stakeholders are, but also their interests, power dynamics, and their potential influence on the product\u2019s success. This process is an essential foundation for effective stakeholder management and ensures alignment across the organization in terms of product vision and objectives.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "managingStakeholders"
+      ],
+      "children": []
+    },
+    "aha": {
+      "title": "Aha",
+      "sourceId": "dr5BLjsZXk50R7vp3cMsu",
+      "type": "subtopic",
+      "order": 141,
+      "summary": "Aha, as a roadmapping tool, is an indispensable toolset in the arsenal of a Product Manager. It's a comprehensive product management suite that focuses on strategy and roadmapping. Its ability to build visual roadmaps, prioritize features, capture ideas, and define requirements makes it one of the most widely used product management tools. As a product manager, mastering Aha can enable you to envision and articulate strategic product plans while staying aligned with your company's goals.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "roadmappingTools"
+      ],
+      "children": []
+    },
+    "notion": {
+      "title": "Notion",
+      "sourceId": "dk1YzX84UUe_es1x-dfp2",
+      "type": "subtopic",
+      "order": 143,
+      "summary": "As a Product Manager, Notion is an indispensable tool in your arsenal for creating roadmaps. This powerful platform is a combination of note-taking, database, project management, and much more. With Notion, you can track the progress of various product initiatives, communicate status updates to stakeholders, and clearly lay out the strategic path ahead. With its flexible, customizable interface and integrations with other useful tools, it is perfectly suited towards collating and synthesizing large amounts of information, which is central to effective product management. The visual nature of Notion's interface makes it particularly well suited for creating compelling, easy-to-understand roadmaps.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "roadmappingTools"
+      ],
+      "children": []
+    },
+    "roadmappingTools": {
+      "title": "Roadmapping Tools",
+      "sourceId": "XG-QBb--HXL-1r-jInYDN",
+      "type": "topic",
+      "order": 144,
+      "summary": "Every exceptional product manager understands the crucial role that product roadmaps play in the successful coordination and execution of product strategy. Roadmapping tools often come into play here, as they help simplify complex processes, while enhancing communication and transparency among teams. These tools deliver visually compelling, data-supported product maps, offering an easy-to-understand view of the prioritized features, projected timelines, strategic alignment, and progress tracking. By utilizing such applications, product managers are not only able to manage and communicate their strategy effectively, but also prioritize requests, track progress, and adjust plans based on insights.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "productManagementTools"
+      ],
+      "children": [
+        "notion",
+        "aha",
+        "productBoard",
+        "projectManagementTools"
+      ]
+    },
+    "jira": {
+      "title": "Jira",
+      "sourceId": "EPQ4-cKr-RqJ457XniP6w",
+      "type": "subtopic",
+      "order": 146,
+      "summary": "The role of a product manager often calls for effective project management tools, and one of the most prominent among them is Jira. Developed by Atlassian, Jira is a versatile platform that allows product managers to plan, track, and release top-class software. It's cherished for its user-friendly interface and capabilities to create user stories, plan sprints, and distribute tasks across teams. As a product manager, understanding and utilizing Jira enhances the tracking of issues and workflows, aiding in efficient product development and team collaboration. Moreover, Jira's extensive features and customization options make it an indispensable tool in a product manager's arsenal.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "projectManagementTools"
+      ],
+      "children": []
+    },
+    "linear": {
+      "title": "Linear",
+      "sourceId": "PIIGfDN6t8H6tXZuKuE04",
+      "type": "subtopic",
+      "order": 148,
+      "summary": "Linear is a powerful project management tool designed to help teams improve their productivity and efficiency. It helps organize, prioritize, and track tasks in one streamlined platform. For the role of a Product Manager, Linear is an essential tool that aids in managing and monitoring progress, evaluating performance, and ensuring the roadmap aligns with the strategic goals of the product. Product managers may utilize the functionalities of Linear to communicate with various stakeholders, delegate tasks, and manage product backlogs effectively. Its clean and user-friendly interface makes it easy for Product Managers to streamline their workflow and focus more on building high-quality products.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "projectManagementTools"
+      ],
+      "children": []
+    },
+    "projectManagementTools": {
+      "title": "Project Management Tools",
+      "sourceId": "Yjxk2gUi5jQONeLzBaeJz",
+      "type": "topic",
+      "order": 149,
+      "summary": "As a Product Manager, the utilization of project management tools is vital to effectively oversee and organize various products within a project lifecycle. These tools aid in planning, delegation, tracking, and reporting of tasks, all of which are crucial in managing a product. They bring structure to large scale projects by providing a visual overview of progress, aligning team members, and ensuring timely completion. Whether it's cultivating roadmaps or highlighting dependencies, Project Management tools serve as an indispensable asset for Product Managers.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "roadmappingTools"
+      ],
+      "children": [
+        "jira",
+        "linear",
+        "trello",
+        "analyticsTools"
+      ]
+    },
+    "trello": {
+      "title": "Trello",
+      "sourceId": "SD98_s1ET_j2eIIKmcKRc",
+      "type": "subtopic",
+      "order": 150,
+      "summary": "Product management entails numerous responsibilities, among which is managing several tasks, teams and deadlines to make sure that products are developed and launched on time. To effectively manage these responsibilities, Product Managers often require robust Project Management Tools. One such tool is \"Trello\".",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "projectManagementTools"
+      ],
+      "children": []
+    },
+    "amplitude": {
+      "title": "Amplitude",
+      "sourceId": "Z5oorppEJ0ydvwMXSlk1J",
+      "type": "subtopic",
+      "order": 151,
+      "summary": "Amplitude is an exceptional analytical tool that offers in-depth insights about user behavior, allowing product managers to optimize their products based on real-time data. Equipped with features like funnel analysis, retention analysis, and user segmentation, Amplitude provides an essential understanding of how users interact with products. For product managers, understanding these interactions is crucial in decision-making, prioritizing product improvements, and enhancing the overall user experience. Thus, Amplitude serves as a valuable resource for Product Managers looking to drive product growth and maximize user engagement.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "analyticsTools"
+      ],
+      "children": []
+    },
+    "heap": {
+      "title": "Heap",
+      "sourceId": "xas-t2sAKmJNfb0-Zcpwy",
+      "type": "subtopic",
+      "order": 152,
+      "summary": "Heap Analytics is a robust solution for product managers looking to gain actionable insights into their product's usage and performance. It's a powerful analytics tool that allows the automatic capturing of every user interaction across the entire customer journey. From clicks and taps to form submissions and transactions, Heap captures all data without needing any pre-defined tracking set-up. As a Product Manager, understanding the value that Heap brings in effortlessly tracking user engagement and offering data-driven insights is integral for refining product decisions and driving the overall product strategy.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "analyticsTools"
+      ],
+      "children": []
+    },
+    "analyticsTools": {
+      "title": "Analytics Tools",
+      "sourceId": "lJ_7-oYaFWST8aBd5lIgM",
+      "type": "topic",
+      "order": 153,
+      "summary": "Product Managers, being key decision-makers in the product life cycle, need to have a deep understanding of their product\u2019s performance. For this, they rely heavily on data. This is where Analytics Tools come into play. These tools provide critical insights into user behavior, product usage, and market trends, which help product managers to make data-driven decisions. They range from user analytics tools to business intelligence platforms, each providing different perspectives of data. Mastering these tools is a fundamental aspect of becoming an effective product manager.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "projectManagementTools"
+      ],
+      "children": [
+        "amplitude",
+        "heap",
+        "looker",
+        "communicationTools"
+      ]
+    },
+    "slack": {
+      "title": "Slack",
+      "sourceId": "UdOJDzkDP_R3E5f_IltYh",
+      "type": "subtopic",
+      "order": 154,
+      "summary": "As a product manager, effective communication with different stakeholders is a crucial task. Slack emerges as an essential platform for this role. It is a cloud-based team collaboration tool that facilitates quick and efficient communication among team members, from developers and marketing professionals to various stakeholders. This platform also integrates with a variety of other tools that product managers use regularly, thereby acting as an operational hub for project management. Product managers can create channels on Slack for different projects or topics to ensure organized and focused conversations. It also supports direct messaging and file sharing which enhances day-to-day communication and coordination.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "communicationTools"
+      ],
+      "children": []
+    },
+    "looker": {
+      "title": "Looker",
+      "sourceId": "y8Ys_WfPXLVfJngOLryGR",
+      "type": "subtopic",
+      "order": 155,
+      "summary": "Looker is a modern, cutting-edge data platform that provides robust tools for business analytics. As a Product Manager, understanding and utilizing Looker becomes significant since it enables data-driven decision-making. This tool facilitates comprehensive data exploration, interactive dashboard creation, and sharable reporting, which helps in managing product strategies effectively. Familiarity with Looker's capabilities thus empowers a product manager to explore markets, understand user behaviors, and ultimately define successful products.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "analyticsTools"
+      ],
+      "children": []
+    },
+    "teams": {
+      "title": "Teams",
+      "sourceId": "z72akk5E5XjEuLraS9Gug",
+      "type": "subtopic",
+      "order": 156,
+      "summary": "In the landscape of product management, communication plays an extraordinary role and Microsoft Teams is one of the most pivotal communication tools in this aspect. A product manager often engages with diverse teams - engineering, design, marketing, sales, and more, ensuring coherence and alignment towards the product vision. The Microsoft Teams platform boosts this communication process, providing a centralized space for conversations, content, meetings, and tasks. Its features like chat, video meetings, file sharing, and integration with other tools significantly streamline collaboration and decision-making, which are integral to a product manager's role.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "communicationTools"
+      ],
+      "children": []
+    },
+    "riskManagement": {
+      "title": "Risk Management",
+      "sourceId": "5KH5gd8l8ZcXb3hrbXVGv",
+      "type": "paragraph",
+      "order": 157,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "communicationTools"
+      ],
+      "children": [
+        "identifyingRisks"
+      ]
+    },
+    "discord": {
+      "title": "Discord",
+      "sourceId": "e6gO1twjter9xWm14g9S9",
+      "type": "subtopic",
+      "order": 158,
+      "summary": "Discord is a widely used communication tool that is beginning to make its mark in the field of product management. It offers a secure and user-friendly platform with features that are quintessential for a Product Manager. With its rich text chats, voice channels, and ability to create multiple channels with different access levels, it ensures seamless communication within cross-functional teams. For Product Managers, Discord can be an essential collaboration tool that aids in the exchange of innovative ideas, constructive feedback, and bug reporting, thereby allowing them to design, plan, and execute with efficiency.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "communicationTools"
+      ],
+      "children": []
+    },
+    "communicationTools": {
+      "title": "Communication Tools",
+      "sourceId": "IAta7OX7pAxUzkFdHibY9",
+      "type": "topic",
+      "order": 159,
+      "summary": "As a Product Manager, communication is a vital tool to effectively manage and execute projects. Product Managers usually deal with complex challenges, multiple stakeholder groups, and shifting priorities, thus the effective use of communication tools is crucial. Communication tools, such as emails, meetings, messaging apps, video conferencing tools, project management apps, and more, are used to ensure everyone on the team remains aligned on key objectives, deadlines, and deliverables. By leveraging these tools, a Product Manager can provide clear instructions, set expectations, collect feedback, and ensure transparency and collaboration among team members.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "analyticsTools"
+      ],
+      "children": [
+        "discord",
+        "teams",
+        "slack",
+        "riskManagement"
+      ]
+    },
+    "riskIdentificationTechniques": {
+      "title": "Risk Identification Techniques",
+      "sourceId": "0zRGIArMUe9xVDSKfnoHZ",
+      "type": "subtopic",
+      "order": 160,
+      "summary": "Risk identification techniques are critical tools used by Product Managers to anticipate potential obstacles and take preventative measures in product development lifecycle. They involve various methods to identify possible risks that could negatively impact the realization of the product\u2019s goals. Early detection of risks allows for proper risk management and mitigation, thus ensuring a smooth and successful product launch. These techniques can range from brainstorming sessions and scenario analysis to risk checklists and assessment workshops. Understanding these methodologies is vital for any Product Manager aiming for effective product management and successful project outcomes.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "identifyingRisks"
+      ],
+      "children": []
+    },
+    "riskRegister": {
+      "title": "Risk Register",
+      "sourceId": "WBnLicFo9p2zm57pyXciI",
+      "type": "subtopic",
+      "order": 161,
+      "summary": "The Risk Register is an important tool for Product Managers as it systematically identifies and manages potential issues that could negatively impact the outcome of a product's development. It consists of a log of potential risks, quantifying their impact, likelihood, and mitigation strategies. This essential document allows Product Managers to prioritize strategies, allocate resources more efficiently, and develop contingency plans. In essence, a Risk Register helps Product Managers to better anticipate, assess, and prepare for the potential bumps on the road to successful product delivery. It encourages a proactive rather than reactive approach to managing risk, contributing to overall product success.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "identifyingRisks"
+      ],
+      "children": []
+    },
+    "identifyingRisks": {
+      "title": "Identifying Risks",
+      "sourceId": "oO-ujKApmpoQdkPEkOQG7",
+      "type": "topic",
+      "order": 162,
+      "summary": "Risk identification is a critical component in the role of a Product Manager. It involves determining potential threats that could negatively affect the success of a product. These risks could exist in various circumstances, including development, marketing, sales, or even post-launch.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "riskManagement"
+      ],
+      "children": [
+        "riskRegister",
+        "riskIdentificationTechniques",
+        "riskAssessment"
+      ]
+    },
+    "contingencyPlanning": {
+      "title": "Contingency Planning",
+      "sourceId": "ybq-zRDLvtTTl8X8GnRNf",
+      "type": "subtopic",
+      "order": 164,
+      "summary": "Contingency planning constitutes an integral part of risk mitigation strategies for any Product Manager. It involves identifying potential risks and developing plans to prevent, respond to, or minimize the impact of those risks on the product development process. For a Product Manager, contingency planning entails envisioning various scenarios that could lead to setbacks in the delivery of the product and devising alternate plans. This acts as a safeguard to ensure smooth operations and delivery of the product on time, catering to user expectations. It provides a roadmap to manage unforeseen problems and reduces potential losses by maintaining the consistency and quality of the product.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "riskMitigation"
+      ],
+      "children": []
+    },
+    "riskMitigation": {
+      "title": "Risk Mitigation",
+      "sourceId": "A-srndVB0olGq0qkApnwi",
+      "type": "topic",
+      "order": 165,
+      "summary": "Risk Mitigation plays an essential role in the realm of Product Management. It's the responsibility of a Product Manager to anticipate potential pitfalls and create strategies to minimize their impact on the product's development and lifecycle. It requires a deep understanding of the project's scope, stakeholders' expectations, market trends and potential technical constraints. By intimately knowing the product and the environment in which it operates, a product manager can effectively strategize against any risk and ensure that the product stays on its intended course towards success.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "riskAssessment"
+      ],
+      "children": [
+        "contingencyPlanning",
+        "monitoringAndControllingRisks"
+      ]
+    },
+    "riskAssessment": {
+      "title": "Risk Assessment",
+      "sourceId": "0uRTNYMwTU9JzvIWSvDSm",
+      "type": "topic",
+      "order": 166,
+      "summary": "Risk Assessment is an essential tool in the lifecycle of product management. It involves the identification and analysis of potential risks that could negatively impact key business initiatives or critical projects. As a Product Manager, understanding and managing these risks can not only prevent potential issues but also prepare the team with strategic solutions to counteract them. Implementing effective risk assessment can result in improved product quality, reduced costs, and increased stakeholder satisfaction. It is a dynamic process that should be revisited throughout the product development process to minimize threats and maximize opportunities.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "identifyingRisks"
+      ],
+      "children": [
+        "qualitativeRiskAssessment",
+        "riskMitigation"
+      ]
+    },
+    "qualitativeRiskAssessment": {
+      "title": "Qualitative Risk Assessment",
+      "sourceId": "KXadmIkKJM0XLV4Qz0Stj",
+      "type": "subtopic",
+      "order": 168,
+      "summary": "Qualitative Risk Assessment is a crucial aspect of a Product Manager's role. It involves evaluating potential risks according to their likelihood and potential impact, rather than using exact numerical measurements. This subjective assessment aids in prioritizing risks that could impact product development and helps implement necessary mitigation strategies. Product Managers need a profound understanding of qualitative risk assessment to successfully navigate the complexities of product management, ensuring the product's success while considering all possible risk factors.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "riskAssessment"
+      ],
+      "children": []
+    },
+    "monitoringAndControllingRisks": {
+      "title": "Monitoring and Controlling Risks",
+      "sourceId": "zJGg20NPStLPkeL5LKoGm",
+      "type": "topic",
+      "order": 169,
+      "summary": "In the realm of product management, monitoring and controlling risks is a critical responsibility. This process entails identifying potential areas of risks in product development and implementing strategies to mitigate them. Consequently, it involves continuous vigilance to ensure that potential threats do not escalate into problems that could jeopardize the success of the product. Product managers are often tasked with predicting likely risks, developing contingency plans and ensuring contractual compliance to keep the product development process smooth and within specified constraints. Their role hence extends beyond mere product vision and development, into a vital aspect of business strategy and risk management.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "riskMitigation"
+      ],
+      "children": [
+        "riskMonitoringTools",
+        "advancedTopics"
+      ]
+    },
+    "platformThinking": {
+      "title": "Platform Thinking",
+      "sourceId": "EEi56Ww04QbuF2I7B7xW8",
+      "type": "subtopic",
+      "order": 172,
+      "summary": "The role of a Product Manager extends beyond managing individual products. It often involves taking a broader outlook known as Platform Thinking. In the context of product management and particularly in scaling products, Platform Thinking involves considering the product not merely as a standalone offering but as a part of a larger ecosystem. This ecosystem is constituted by other products, services, users, developers, and other actors. A product manager, thus, needs to strategically design, develop, and scale the product in a way that it seamlessly fits into and contributes to the ecosystem, while also gaining valuable inputs and leveraging opportunities originating from the same platform.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "scalingProducts"
+      ],
+      "children": []
+    },
+    "riskMonitoringTools": {
+      "title": "Risk Monitoring Tools",
+      "sourceId": "S2w72SRx-9QvRO7RNBlKZ",
+      "type": "subtopic",
+      "order": 173,
+      "summary": "As a Product Manager, one of the key responsibilities is understanding and managing risks associated with the product. Risk Monitoring Tools play an integral role in this process. These tools are specialized software designed to identify, assess, track, and mitigate risks in product development and releases. They provide data-driven insights on potential hazards, allowing product managers to make informed decisions and implement strategies to prevent or minimize risk impacts. These tools can help in tracking the progress of risk resolution, visualize risk prioritization, and alert the product managers about the upcoming risks in time.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "monitoringAndControllingRisks"
+      ],
+      "children": []
+    },
+    "advancedTopics": {
+      "title": "Advanced Topics",
+      "sourceId": "nrGUiI55jBUgegvRGGe7P",
+      "type": "paragraph",
+      "order": 175,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "monitoringAndControllingRisks"
+      ],
+      "children": [
+        "scalingProducts"
+      ]
+    },
+    "scalingProducts": {
+      "title": "Scaling Products",
+      "sourceId": "4i_kX9oZunMBFYevu7lyi",
+      "type": "topic",
+      "order": 176,
+      "summary": "Scaling products is a crucial responsibility of a Product Manager. It involves optimizing a product's infrastructure and processes to cater to an increasing number of users or requests, without compromising on its efficiency or functionality. This process not only involves improving actual product features but also business strategies such as go-to-market plans, revenue models, and customer relations. A successful Product Manager has a specific scale-up strategy in place, effectively enabling product growth while managing potential risks. Being able to scale products successfully is a hallmark of a successful product, crucial to the company's long-term sustainability and profitability.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "advancedTopics"
+      ],
+      "children": [
+        "platformThinking",
+        "portfolioManagement"
+      ]
+    },
+    "predictiveAnalytics2": {
+      "title": "Predictive Analytics",
+      "sourceId": "h5N51_YgjaTHhPUHxkqQR",
+      "type": "subtopic",
+      "order": 177,
+      "summary": "Product Management encompasses a plethora of analytical strategies and one of the essential approaches is Predictive Analytics. As a Product Manager, having insights about future outcomes can make a substantial difference in decision-making. Predictive Analytics is leveraged to analyze historical and current data and make predictions about unseen or future events. This can help in efficient planning, risk management, and strategic decision making. It's a powerful tool for product managers that enables them to predict trends, understand user behavior, forecast demand, and ultimately, to build better products.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "advancedAnalysis"
+      ],
+      "children": []
+    },
+    "mlInProductMgmt": {
+      "title": "ML in Product Mgmt.",
+      "sourceId": "rzrxYqFENQ3d0WpZv9-0Q",
+      "type": "subtopic",
+      "order": 178,
+      "summary": "Machine Learning (ML) is revolutionizing various industries and the field of product management is no exception. In a dynamic digital era, product managers are leveraging machine learning techniques to drive product innovation, better understand customer behavior, and forecast trends. With ML, data can be processed at an immense speed allowing product managers to make data-driven decisions and anticipate the future needs of the market, thus creating products that resonate with target audiences. Its contribution to predictive and behavioral analytics, customer segmentation and pricing strategy makes ML an essential tool for modern-day Product Management.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "advancedAnalysis"
+      ],
+      "children": []
+    },
+    "advancedAnalysis": {
+      "title": "Advanced Analysis",
+      "sourceId": "9y_I41kJhkmyBJjiTw8Xd",
+      "type": "topic",
+      "order": 179,
+      "summary": "The field of Advanced Analysis plays a pivotal role in the domain of Product Management. As the driving force behind decision-making, it incorporates sophisticated methods and tools to draw meaning from data, enabling Product Managers to extract actionable insights. This subject involves applications such as Predictive Modeling, Statistical Analysis, and Machine Learning algorithms to yield a deep understanding of user behavior, market trends, product performance and forecast potential outcomes. With the power of advanced analysis, Product Managers can create data-driven strategies, optimize the user experience, and accelerate overall product growth.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "portfolioManagement"
+      ],
+      "children": [
+        "predictiveAnalytics2",
+        "mlInProductMgmt",
+        "aiInProductMgmt",
+        "leadershipAndInfluence"
+      ]
+    },
+    "portfolioManagement": {
+      "title": "Portfolio Management",
+      "sourceId": "BGtxI9CHtJfhRMdUEIfWa",
+      "type": "topic",
+      "order": 180,
+      "summary": "Portfolio Management is one of the most critical responsibilities of a Product Manager. It involves the strategic decision-making process aimed at aligning organizational strategy with the efforts of teams tasked with planning, creating, and delivering products. Portfolio management allows product managers to assess how potential products or a set of products can deliver the most value to the company and its customers. Balancing benefits, costs, risks, and resources, while maintaining a keen eye on market trends and competition forms the core of portfolio management for a company. In essence, a Product Manager has to curate the product portfolio in a way that ensures long-term success and growth of a business.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "scalingProducts"
+      ],
+      "children": [
+        "advancedAnalysis"
+      ]
+    },
+    "aiInProductMgmt": {
+      "title": "AI in Product Mgmt.",
+      "sourceId": "H7sf23kwv73XjnFCdKHPi",
+      "type": "subtopic",
+      "order": 181,
+      "summary": "Artificial Intelligence (AI) has been increasingly instrumental in shaping the field of product management. As a product manager, it is crucial to comprehend the implications and applicability of AI in managing products effectively. AI can aid in forecasting trends, understanding customer behavior, automating routine tasks and improving decision-making processes. Grasping the full potential of AI can greatly assist product managers in building more effective strategies and in constantly refining their products to meet customer needs. It's a powerful tool that can significantly heighten the intelligence and efficiency of a product environment.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "advancedAnalysis"
+      ],
+      "children": []
+    },
+    "buildingAndLeadingTeams": {
+      "title": "Building and Leading Teams",
+      "sourceId": "MP-jZtofXCufnvtSldxqU",
+      "type": "subtopic",
+      "order": 182,
+      "summary": "As a Product Manager, building and leading teams are crucial aspects of one's role. This involves assembling a competent and diverse team and establishing a shared vision and goals. Once the team has been formed, it\u2019s up to the Product Manager to guide, motivate, and manage the team to drive the grand vision into reality. They need to exhibit strong leadership qualities, foster a healthy and collaborative work environment, recognize individual contributions and ensure that every member feels valued for their work. This involves not just managing but also mentoring and empowering the team to take ownership and deliver their best work. This process of team building and leadership directly influences the successful execution of a product's lifecycle.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "leadershipAndInfluence"
+      ],
+      "children": []
+    },
+    "leadershipAndInfluence": {
+      "title": "Leadership and Influence",
+      "sourceId": "WyKJxhfnbz6jx-Tvg40_j",
+      "type": "topic",
+      "order": 183,
+      "summary": "The roles of a Product Manager extend beyond merely guiding product development. Leadership and influence are integral to a Product Manager's toolkit. With a unique, cross-functional role that interacts with various departments such as design, engineering, and marketing, a Product Manager needs to inspire and mobilize teams towards a singular product vision. Moreover, they must effectively communicate, influence decisions, and advocate for their product in the face of potential resistance, all the while fostering a climate that empowers team members and stakeholders. This underscores the necessity for skills in leadership and influence in product management, underlining its significance beyond technical knowledge and tactical expertise.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "advancedAnalysis"
+      ],
+      "children": [
+        "buildingAndLeadingTeams",
+        "influencingWithoutAuthority",
+        "emotionalIntelligence",
+        "keepLearning"
+      ]
+    },
+    "influencingWithoutAuthority": {
+      "title": "Influencing without Authority",
+      "sourceId": "CMge123Tm9DrZ31LvipLD",
+      "type": "subtopic",
+      "order": 184,
+      "summary": "As a Product Manager, the ability to influence without authority is a critical skill set. This is often because Product Managers do not necessarily have direct authority over the team yet are expected to guide product strategies and make vital decisions. Influencing without authority involves convincing others to follow your ideas or approach, and can often include multidirectional influence, not just downward but upward and sideways too. A Product Manager navigates between different stakeholders like cross-functional partnerships, sales, marketing, engineering, design, etc., with varying levels of authority. Mastering the art of Influencing without Authority allows Product Managers to motivate and sway these differing parties to work collectively towards a shared vision or goal, thereby driving the product's success.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "leadershipAndInfluence"
+      ],
+      "children": []
+    },
+    "emotionalIntelligence": {
+      "title": "Emotional Intelligence",
+      "sourceId": "gyNOziqf1VsfI2j-FaNZ_",
+      "type": "subtopic",
+      "order": 185,
+      "summary": "Emotional Intelligence (EI) is vital in every aspect of leadership, and in the realm of product management, it is no less significant. A Product Manager with high emotional intelligence can navigate complex work relationships, make better decisions, maintain morale in their team, and efficiently drive a product from conception to completion. In essence, emotional intelligence shapes a successful Product Manager and contributes to the effectiveness of their leadership. With the ability to identify and handle not only their own emotions, but also those of their team members, Product Managers can create a productive, creative, and resilient working environment.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "leadershipAndInfluence"
+      ],
+      "children": []
+    },
+    "keepLearning": {
+      "title": "Keep Learning",
+      "sourceId": "kYr7vgV-9US2x5HFYZGwq",
+      "type": "paragraph",
+      "order": 186,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "leadershipAndInfluence"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "productIdentification",
+      "to": "brainstormingTechniques",
+      "style": "dashed"
+    },
+    {
+      "from": "productIdentification",
+      "to": "iterativeProcess",
+      "style": "dashed"
+    },
+    {
+      "from": "productIdentification",
+      "to": "blueOceanStrategy",
+      "style": "dashed"
+    },
+    {
+      "from": "marketAnalysis",
+      "to": "identifyingMarketNeeds",
+      "style": "dashed"
+    },
+    {
+      "from": "marketAnalysis",
+      "to": "competitiveAnalysis",
+      "style": "dashed"
+    },
+    {
+      "from": "marketAnalysis",
+      "to": "emergingMarketTrends",
+      "style": "dashed"
+    },
+    {
+      "from": "marketAnalysis",
+      "to": "userResearch",
+      "style": "solid"
+    },
+    {
+      "from": "userResearch",
+      "to": "userPersonas",
+      "style": "dashed"
+    },
+    {
+      "from": "userResearch",
+      "to": "userInterviews",
+      "style": "dashed"
+    },
+    {
+      "from": "userResearch",
+      "to": "surveysAndQuestionnaires",
+      "style": "dashed"
+    },
+    {
+      "from": "userResearch",
+      "to": "ethnographicResearch",
+      "style": "dashed"
+    },
+    {
+      "from": "userResearch",
+      "to": "positioning",
+      "style": "solid"
+    },
+    {
+      "from": "positioning",
+      "to": "uspUniqueSellingPoint",
+      "style": "dashed"
+    },
+    {
+      "from": "positioning",
+      "to": "marketSegmentation",
+      "style": "dashed"
+    },
+    {
+      "from": "positioning",
+      "to": "caseStudies",
+      "style": "dashed"
+    },
+    {
+      "from": "marketAndUserResearch",
+      "to": "marketAnalysis",
+      "style": "solid"
+    },
+    {
+      "from": "ideaGeneration",
+      "to": "marketAndUserResearch",
+      "style": "solid"
+    },
+    {
+      "from": "positioning",
+      "to": "productStrategy",
+      "style": "solid"
+    },
+    {
+      "from": "productStrategy",
+      "to": "visionMission",
+      "style": "solid"
+    },
+    {
+      "from": "visionMission",
+      "to": "statement",
+      "style": "dashed"
+    },
+    {
+      "from": "visionMission",
+      "to": "proposition",
+      "style": "dashed"
+    },
+    {
+      "from": "visionMission",
+      "to": "capabilities",
+      "style": "dashed"
+    },
+    {
+      "from": "visionMission",
+      "to": "solvedConstraints",
+      "style": "dashed"
+    },
+    {
+      "from": "visionMission",
+      "to": "futureConstraints",
+      "style": "dashed"
+    },
+    {
+      "from": "visionMission",
+      "to": "referenceMaterials",
+      "style": "dashed"
+    },
+    {
+      "from": "visionMission",
+      "to": "narrative",
+      "style": "dashed"
+    },
+    {
+      "from": "visionMission",
+      "to": "definingGoals",
+      "style": "solid"
+    },
+    {
+      "from": "definingGoals",
+      "to": "valueProposition",
+      "style": "solid"
+    },
+    {
+      "from": "valueProposition",
+      "to": "definingValueProposition",
+      "style": "dashed"
+    },
+    {
+      "from": "valueVsFeatures",
+      "to": "findingBalance",
+      "style": "dashed"
+    },
+    {
+      "from": "valueProposition",
+      "to": "valueVsFeatures",
+      "style": "solid"
+    },
+    {
+      "from": "valueVsFeatures",
+      "to": "strategicThinking",
+      "style": "solid"
+    },
+    {
+      "from": "strategicThinking",
+      "to": "competitiveStrategy",
+      "style": "dashed"
+    },
+    {
+      "from": "productPlanning",
+      "to": "productRequirements",
+      "style": "solid"
+    },
+    {
+      "from": "productRequirements",
+      "to": "writingPrds",
+      "style": "dashed"
+    },
+    {
+      "from": "productRequirements",
+      "to": "userStories",
+      "style": "dashed"
+    },
+    {
+      "from": "productRequirements",
+      "to": "jobStories",
+      "style": "dashed"
+    },
+    {
+      "from": "productRequirements",
+      "to": "productRoadmap",
+      "style": "solid"
+    },
+    {
+      "from": "productRoadmap",
+      "to": "communicatingTheRoadmap",
+      "style": "dashed"
+    },
+    {
+      "from": "backlogManagement",
+      "to": "userStoryMapping",
+      "style": "dashed"
+    },
+    {
+      "from": "productRoadmap",
+      "to": "backlogManagement",
+      "style": "solid"
+    },
+    {
+      "from": "backlogManagement",
+      "to": "productDesign",
+      "style": "solid"
+    },
+    {
+      "from": "productDesign",
+      "to": "uxUiDesign",
+      "style": "solid"
+    },
+    {
+      "from": "uxUiDesign",
+      "to": "principlesOfUxDesign",
+      "style": "dashed"
+    },
+    {
+      "from": "uxUiDesign",
+      "to": "wireframingAndPrototyping",
+      "style": "dashed"
+    },
+    {
+      "from": "uxUiDesign",
+      "to": "designThinking",
+      "style": "dashed"
+    },
+    {
+      "from": "uxUiDesign",
+      "to": "serviceDesign",
+      "style": "solid"
+    },
+    {
+      "from": "serviceDesign",
+      "to": "interactionDesign",
+      "style": "solid"
+    },
+    {
+      "from": "interactionDesign",
+      "to": "userTesting",
+      "style": "solid"
+    },
+    {
+      "from": "userTesting",
+      "to": "remoteUserTesting",
+      "style": "dashed"
+    },
+    {
+      "from": "userTesting",
+      "to": "aBTesting",
+      "style": "dashed"
+    },
+    {
+      "from": "userTesting",
+      "to": "usabilityTesting",
+      "style": "dashed"
+    },
+    {
+      "from": "developmentAndLaunch",
+      "to": "agileMethodology",
+      "style": "solid"
+    },
+    {
+      "from": "agileMethodology",
+      "to": "workingWithEngineeringTeams",
+      "style": "solid"
+    },
+    {
+      "from": "userTesting",
+      "to": "developmentAndLaunch",
+      "style": "solid"
+    },
+    {
+      "from": "agileMethodology",
+      "to": "kanbanBasics",
+      "style": "dashed"
+    },
+    {
+      "from": "keyProductMetrics",
+      "to": "dauDailyActiveUsers",
+      "style": "dashed"
+    },
+    {
+      "from": "keyProductMetrics",
+      "to": "mauMonthlyActiveUsers",
+      "style": "dashed"
+    },
+    {
+      "from": "keyProductMetrics",
+      "to": "conversionRate",
+      "style": "dashed"
+    },
+    {
+      "from": "keyProductMetrics",
+      "to": "retentionRate",
+      "style": "dashed"
+    },
+    {
+      "from": "keyProductMetrics",
+      "to": "churnRate",
+      "style": "dashed"
+    },
+    {
+      "from": "keyProductMetrics",
+      "to": "ltvLifetimeValue",
+      "style": "dashed"
+    },
+    {
+      "from": "keyProductMetrics",
+      "to": "cacCustomerAcquisitionCost",
+      "style": "dashed"
+    },
+    {
+      "from": "keyProductMetrics",
+      "to": "northStarMetric",
+      "style": "dashed"
+    },
+    {
+      "from": "productMetrics",
+      "to": "keyProductMetrics",
+      "style": "solid"
+    },
+    {
+      "from": "keyProductMetrics",
+      "to": "dataDrivenDecisionMaking",
+      "style": "solid"
+    },
+    {
+      "from": "dataDrivenDecisionMaking",
+      "to": "aBTesting2",
+      "style": "dashed"
+    },
+    {
+      "from": "dataDrivenDecisionMaking",
+      "to": "cohortAnalysis",
+      "style": "dashed"
+    },
+    {
+      "from": "dataDrivenDecisionMaking",
+      "to": "predictiveAnalytics",
+      "style": "dashed"
+    },
+    {
+      "from": "dataDrivenDecisionMaking",
+      "to": "feedbackLoops",
+      "style": "solid"
+    },
+    {
+      "from": "feedbackLoops",
+      "to": "stakeholderManagement",
+      "style": "solid"
+    },
+    {
+      "from": "stakeholderManagement",
+      "to": "communicationSkills",
+      "style": "solid"
+    },
+    {
+      "from": "managingStakeholders",
+      "to": "identifyingStakeholders",
+      "style": "dashed"
+    },
+    {
+      "from": "communicationSkills",
+      "to": "managingStakeholders",
+      "style": "solid"
+    },
+    {
+      "from": "managingStakeholders",
+      "to": "productManagementTools",
+      "style": "solid"
+    },
+    {
+      "from": "productManagementTools",
+      "to": "roadmappingTools",
+      "style": "solid"
+    },
+    {
+      "from": "roadmappingTools",
+      "to": "notion",
+      "style": "dashed"
+    },
+    {
+      "from": "roadmappingTools",
+      "to": "aha",
+      "style": "dashed"
+    },
+    {
+      "from": "roadmappingTools",
+      "to": "productBoard",
+      "style": "dashed"
+    },
+    {
+      "from": "roadmappingTools",
+      "to": "projectManagementTools",
+      "style": "solid"
+    },
+    {
+      "from": "projectManagementTools",
+      "to": "jira",
+      "style": "dashed"
+    },
+    {
+      "from": "projectManagementTools",
+      "to": "linear",
+      "style": "dashed"
+    },
+    {
+      "from": "projectManagementTools",
+      "to": "trello",
+      "style": "dashed"
+    },
+    {
+      "from": "projectManagementTools",
+      "to": "analyticsTools",
+      "style": "solid"
+    },
+    {
+      "from": "analyticsTools",
+      "to": "amplitude",
+      "style": "dashed"
+    },
+    {
+      "from": "analyticsTools",
+      "to": "heap",
+      "style": "dashed"
+    },
+    {
+      "from": "analyticsTools",
+      "to": "looker",
+      "style": "dashed"
+    },
+    {
+      "from": "analyticsTools",
+      "to": "communicationTools",
+      "style": "solid"
+    },
+    {
+      "from": "communicationTools",
+      "to": "discord",
+      "style": "dashed"
+    },
+    {
+      "from": "communicationTools",
+      "to": "teams",
+      "style": "dashed"
+    },
+    {
+      "from": "communicationTools",
+      "to": "slack",
+      "style": "dashed"
+    },
+    {
+      "from": "communicationTools",
+      "to": "riskManagement",
+      "style": "solid"
+    },
+    {
+      "from": "riskManagement",
+      "to": "identifyingRisks",
+      "style": "solid"
+    },
+    {
+      "from": "identifyingRisks",
+      "to": "riskRegister",
+      "style": "dashed"
+    },
+    {
+      "from": "identifyingRisks",
+      "to": "riskIdentificationTechniques",
+      "style": "dashed"
+    },
+    {
+      "from": "identifyingRisks",
+      "to": "riskAssessment",
+      "style": "solid"
+    },
+    {
+      "from": "riskAssessment",
+      "to": "qualitativeRiskAssessment",
+      "style": "dashed"
+    },
+    {
+      "from": "riskMitigation",
+      "to": "contingencyPlanning",
+      "style": "dashed"
+    },
+    {
+      "from": "riskAssessment",
+      "to": "riskMitigation",
+      "style": "solid"
+    },
+    {
+      "from": "riskMitigation",
+      "to": "monitoringAndControllingRisks",
+      "style": "solid"
+    },
+    {
+      "from": "monitoringAndControllingRisks",
+      "to": "riskMonitoringTools",
+      "style": "dashed"
+    },
+    {
+      "from": "monitoringAndControllingRisks",
+      "to": "advancedTopics",
+      "style": "solid"
+    },
+    {
+      "from": "advancedTopics",
+      "to": "scalingProducts",
+      "style": "solid"
+    },
+    {
+      "from": "scalingProducts",
+      "to": "platformThinking",
+      "style": "dashed"
+    },
+    {
+      "from": "scalingProducts",
+      "to": "portfolioManagement",
+      "style": "solid"
+    },
+    {
+      "from": "portfolioManagement",
+      "to": "advancedAnalysis",
+      "style": "solid"
+    },
+    {
+      "from": "advancedAnalysis",
+      "to": "predictiveAnalytics2",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedAnalysis",
+      "to": "mlInProductMgmt",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedAnalysis",
+      "to": "aiInProductMgmt",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedAnalysis",
+      "to": "leadershipAndInfluence",
+      "style": "solid"
+    },
+    {
+      "from": "leadershipAndInfluence",
+      "to": "buildingAndLeadingTeams",
+      "style": "dashed"
+    },
+    {
+      "from": "leadershipAndInfluence",
+      "to": "influencingWithoutAuthority",
+      "style": "dashed"
+    },
+    {
+      "from": "leadershipAndInfluence",
+      "to": "emotionalIntelligence",
+      "style": "dashed"
+    },
+    {
+      "from": "leadershipAndInfluence",
+      "to": "keepLearning",
+      "style": "solid"
+    },
+    {
+      "from": "product-manager",
+      "to": "introduction2",
+      "style": "solid"
+    },
+    {
+      "from": "introduction2",
+      "to": "ideaGeneration",
+      "style": "solid"
+    },
+    {
+      "from": "ideaGeneration",
+      "to": "productIdentification",
+      "style": "solid"
+    },
+    {
+      "from": "introduction2",
+      "to": "whatIsProductManagement",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction2",
+      "to": "productVsProjectManagement",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction2",
+      "to": "rolesAndResponsibilities",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction2",
+      "to": "keySkills",
+      "style": "dashed"
+    },
+    {
+      "from": "productDevelopmentLifecycle",
+      "to": "development",
+      "style": "solid"
+    },
+    {
+      "from": "iterativeProcess",
+      "to": "discovery",
+      "style": "solid"
+    },
+    {
+      "from": "remoteUserTesting",
+      "to": "scrumBasics",
+      "style": "solid"
+    }
+  ]
+}

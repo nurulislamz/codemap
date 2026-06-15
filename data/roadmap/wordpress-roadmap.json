@@ -1,0 +1,4289 @@
+{
+  "title": "WordPress",
+  "summary": "Step by step guide to becoming a WordPress Developer in 2026",
+  "url": "https://roadmap.sh/wordpress",
+  "order": [
+    "introduction",
+    "installationSetup",
+    "wordpressConcepts",
+    "themes",
+    "block",
+    "universal",
+    "hybrid",
+    "thirdParty",
+    "actions",
+    "plugins",
+    "whatIsHttp",
+    "howTheWebWorks",
+    "whatIsACms",
+    "frontendFundamentals",
+    "backendFundamentals",
+    "sql",
+    "php",
+    "classic",
+    "specialThanksToMelapressForHelpingUsCreateThisRoadmap",
+    "html",
+    "css",
+    "javascript",
+    "wordpressComWordpressOrg",
+    "startWithLocalDeployment",
+    "localwp",
+    "xampp",
+    "vvv",
+    "docker",
+    "fileStructure",
+    "filters",
+    "hooks",
+    "pageEditors",
+    "theLoop",
+    "classic2",
+    "blockEditor",
+    "shortcodes",
+    "thirdPartyPageBuilders",
+    "customPostTypes",
+    "styleScriptEnqueueing",
+    "taxonomies",
+    "wordpressRestApi",
+    "themesPlugins",
+    "codingStandards",
+    "classicVsBlockThemes",
+    "classicThemes",
+    "blockThemes",
+    "pluginBasics2",
+    "styleCss",
+    "functionsPhp",
+    "pluginBasics",
+    "themeStructure2",
+    "templateFiles",
+    "fileStructure2",
+    "fullSiteEditingFse",
+    "childThemes",
+    "blockPatterns",
+    "extendingFunctionality",
+    "templateHierarchy",
+    "templateParts",
+    "transientsApi",
+    "themeStructure",
+    "styles",
+    "overrides",
+    "menus",
+    "customizer",
+    "licensingUpdates",
+    "widgets",
+    "templateTags",
+    "customFields",
+    "acf",
+    "metabox",
+    "performance",
+    "optimizations",
+    "images",
+    "assets",
+    "databaseTuning",
+    "security",
+    "caching",
+    "coreWebVitals",
+    "cdnIntegration",
+    "firewallMalwareScanning",
+    "securityHardening",
+    "activityLogging",
+    "userRoles",
+    "vulnerabilityMonitoring",
+    "securityBestPractices",
+    "phpunit",
+    "virtualPatching",
+    "wpDebug",
+    "userLoginSecurity",
+    "testingDebugging",
+    "queryMonitor",
+    "logFiles",
+    "shared",
+    "vps",
+    "monitoring",
+    "backupsRecovery",
+    "managed",
+    "updateStrategies",
+    "deployment",
+    "performanceMonitoring",
+    "wpCli",
+    "bedrock",
+    "sage",
+    "composer",
+    "migrations",
+    "advancedWordpress",
+    "automatedDeployments",
+    "workflowsAutomation",
+    "accessibility",
+    "advancedPhpArchitecture",
+    "oopInPhp",
+    "wordpressCreditProgram",
+    "localization",
+    "designPatterns",
+    "multisite",
+    "composerAutoloading",
+    "contributeToWordpress",
+    "headlessWordpress",
+    "careerGrowth",
+    "boostYourWordpressCareer",
+    "basicsOfSeo",
+    "visitTheFollowingRoadmapsToKeepLearning"
+  ],
+  "topics": {
+    "introduction": {
+      "title": "Introduction",
+      "sourceId": "moyU0BmFtCW6IVq_wKKGo",
+      "type": "topic",
+      "order": 1,
+      "summary": "WordPress is a popular content management system (CMS) that allows users to create and manage websites. It provides a user-friendly interface for building and publishing content, managing media, and customizing the appearance of a website through themes and plugins. WordPress is known for its flexibility, scalability, and large community support, making it a versatile platform for various types of websites, from blogs to e-commerce stores.",
+      "video": {
+        "title": "How to Create a Website \u2013 WordPress Tutorial for Beginners 2025",
+        "url": "https://www.youtube.com/watch?v=R4v_7hh4Yys"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Beginner WordPress Developer",
+          "url": "https://learn.wordpress.org/course/beginner-wordpress-developer/"
+        },
+        {
+          "type": "official",
+          "title": "WordPress",
+          "url": "https://wordpress.com/"
+        },
+        {
+          "type": "official",
+          "title": "Getting started on WordPress.com",
+          "url": "https://wordpress.com/support/getting-started-with-wordpress-com/"
+        },
+        {
+          "type": "official",
+          "title": "WordPress Tutorials",
+          "url": "https://learn.wordpress.org/tutorials/"
+        },
+        {
+          "type": "article",
+          "title": "What is WordPress? Explained for beginners",
+          "url": "https://kinsta.com/blog/what-is-wordpress/"
+        }
+      ],
+      "parents": [
+        "wordpress",
+        "wordpressComWordpressOrg"
+      ],
+      "children": [
+        "installationSetup",
+        "whatIsHttp",
+        "howTheWebWorks",
+        "whatIsACms",
+        "frontendFundamentals",
+        "backendFundamentals"
+      ]
+    },
+    "installationSetup": {
+      "title": "Installation & Setup",
+      "sourceId": "0X6ry0jNhMwd9ksFSlFYx",
+      "type": "topic",
+      "order": 2,
+      "summary": "Installing and setting up WordPress involves getting it onto your web server and configuring it to function correctly. This process typically includes downloading the WordPress software, creating a database, connecting WordPress to that database, and then configuring basic settings like the site title, tagline, and user accounts. It's the foundational step for building any WordPress website.",
+      "video": {
+        "title": "Why would a WordPress user need to run a local site?",
+        "url": "https://www.youtube.com/watch?v=agHdxUrIKow&list=PL1pJFUVKQ7ERioxFzW7z0zwh0OJW_-5jI&index=2"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "How to install WordPress",
+          "url": "https://developer.wordpress.org/advanced-administration/before-install/howto-install/"
+        },
+        {
+          "type": "official",
+          "title": "Setting Up Your Local Development Environment for WordPress",
+          "url": "https://wordpress.com/blog/2022/11/14/setting-up-your-local-development-environment-for-wordpress/"
+        },
+        {
+          "type": "article",
+          "title": "How to install WordPress locally (3 methods)",
+          "url": "https://www.hostinger.com/tutorials/install-wordpress-locally"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": [
+        "wordpressConcepts"
+      ]
+    },
+    "wordpressConcepts": {
+      "title": "WordPress Concepts",
+      "sourceId": "7xRSY6VVjkVsjRWPrhxO7",
+      "type": "paragraph",
+      "order": 3,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "installationSetup"
+      ],
+      "children": [
+        "themes",
+        "plugins"
+      ]
+    },
+    "themes": {
+      "title": "Themes",
+      "sourceId": "z7gh1lLCcgpwjK9Q9hJB0",
+      "type": "topic",
+      "order": 4,
+      "summary": "Themes in WordPress control the overall design and appearance of your website. They dictate the layout, colors, fonts, and styles used to present your content to visitors. Think of them as pre-designed templates that you can customize to create a unique look for your site without needing to write code from scratch.",
+      "video": {
+        "title": "What is a WordPress Theme? | Best WordPress Theme for Business (Beginners Guide)",
+        "url": "https://www.youtube.com/watch?v=0tt_JxQr_ds"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Themes",
+          "url": "https://wordpress.org/themes/"
+        },
+        {
+          "type": "official",
+          "title": "What Is a Theme?",
+          "url": "https://developer.wordpress.org/themes/getting-started/what-is-a-theme/"
+        },
+        {
+          "type": "official",
+          "title": "Different types of themes",
+          "url": "https://wordpress.com/support/theme-types/"
+        },
+        {
+          "type": "article",
+          "title": "What is a WordPress theme and how to choose one",
+          "url": "https://www.hostinger.com/tutorials/what-is-a-wordpress-theme"
+        },
+        {
+          "type": "article",
+          "title": "30 best free WordPress themes",
+          "url": "https://www.hostinger.com/tutorials/best-free-wordpress-themes"
+        }
+      ],
+      "parents": [
+        "wordpressConcepts"
+      ],
+      "children": [
+        "block",
+        "universal",
+        "hybrid",
+        "thirdParty",
+        "actions"
+      ]
+    },
+    "block": {
+      "title": "Block",
+      "sourceId": "65zlrIkArzxRwVU_fTzhi",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Block themes in WordPress are a modern approach to website design, where the entire site structure, from header to footer, is built using blocks. These blocks, the same ones used to create content in the WordPress editor, offer a visual and intuitive way to customize every aspect of your site's appearance without needing to write code. This allows for greater flexibility and control over design, empowering users to create unique and personalized websites.",
+      "video": {
+        "title": "WordPress Block Themes Simplified: A Must-Watch Guide for Beginners!",
+        "url": "https://www.youtube.com/watch?v=hvd6h_RpFJM&pp=ygUVd2hhdCBhcmUgYmxvY2sgdGhlbWVz"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Block themes",
+          "url": "https://wordpress.org/documentation/article/block-themes/"
+        },
+        {
+          "type": "official",
+          "title": "WordPress Block Themes Explained in 250 Seconds",
+          "url": "https://wordpress.com/blog/2024/03/21/wordpress-block-themes/?utm_source=google&utm_campaign=google_search_wpcom_acquisition_non_es_en&utm_medium=paid_search&keyword=best%20wordpress%20hosting&creative=769260987320&campaignid=647898138&adgroupid=182524974134&matchtype=p&device=c&network=g&targetid=kwd-3533394882&utm_content=&gad_source=1&gad_campaignid=647898138&gbraid=0AAAAADhlTH4nM8YtqQIqSHg4gaJYkKDoF&gclid=CjwKCAiA3L_JBhAlEiwAlcWO5_jDc9B8F8lbtURg7lIkF6URN1tohPUeJJFmyd_nDGWhliaY0I-18hoC9ogQAvD_BwE"
+        },
+        {
+          "type": "article",
+          "title": "What Is a Block Theme in WordPress?",
+          "url": "https://www.wpzoom.com/blog/what-are-wordpress-block-themes/"
+        }
+      ],
+      "parents": [
+        "themes"
+      ],
+      "children": []
+    },
+    "universal": {
+      "title": "Universal",
+      "sourceId": "wlFxhJTD3VZBhRTWKHaT6",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "Universal themes were the initial iteration of themes designed specifically to leverage the power of WordPress's block editor (Gutenberg). They aimed to provide a seamless and consistent editing experience, allowing users to build entire websites using blocks, from headers and footers to page content, all within the editor interface. While mostly similar to block themes, the primary difference is that they still use the Customizer to edit certain aspects, like Menus.",
+      "video": {
+        "title": "Choosing and installing a theme",
+        "url": "https://www.youtube.com/watch?v=tMi4F6bScqM"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Different types of themes",
+          "url": "https://wordpress.com/support/theme-types/"
+        },
+        {
+          "type": "article",
+          "title": "Choosing and installing a theme",
+          "url": "https://learn.wordpress.org/tutorial/choosing-and-installing-theme/"
+        },
+        {
+          "type": "article",
+          "title": "Universal themes: Some ideas",
+          "url": "https://themeshaper.com/2021/06/23/universal-themes-some-ideas/"
+        }
+      ],
+      "parents": [
+        "themes"
+      ],
+      "children": []
+    },
+    "hybrid": {
+      "title": "Hybrid",
+      "sourceId": "YcwvhxKuYYL8xd3Sx-fY_",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "Hybrid themes in WordPress combine the best aspects of traditional themes and block themes. They allow developers to use both classic PHP templates and the block editor for different parts of their website, offering flexibility in design and development. However, they are not built to use the Site Editor. This approach enables a gradual transition to block-based theming while still leveraging existing theme structures and code.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Bridging the gap: Hybrid themes",
+          "url": "https://developer.wordpress.org/news/2024/12/bridging-the-gap-hybrid-themes/"
+        },
+        {
+          "type": "official",
+          "title": "Hybrid themes",
+          "url": "https://developer.wordpress.org/themes/getting-started/what-is-a-theme/#hybrid-themes"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Hybrid Themes: A user and developer approach",
+          "url": "https://kinsta.com/blog/hybrid-themes/"
+        },
+        {
+          "type": "article",
+          "title": "What is a WordPress Hybrid Theme & How to Use It in 2025",
+          "url": "https://serveravatar.com/wordpress-hybrid-theme/"
+        }
+      ],
+      "parents": [
+        "themes"
+      ],
+      "children": []
+    },
+    "thirdParty": {
+      "title": "Third-Party",
+      "sourceId": "bM7grwJzuauC3ap7MNwuN",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Third-party WordPress themes are pre-designed website templates created by developers or companies other than WordPress.org. These themes offer a wide range of designs and functionalities, allowing users to quickly customize the look and feel of their WordPress website without extensive coding knowledge. They are typically purchased or downloaded from independent marketplaces or theme developers' websites.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Different types of themes",
+          "url": "https://wordpress.com/support/theme-types/"
+        },
+        {
+          "type": "official",
+          "title": "Upload a theme",
+          "url": "https://wordpress.com/support/themes/uploading-setting-up-custom-themes/"
+        },
+        {
+          "type": "article",
+          "title": "Third-Party vs Custom WordPress Themes: What\u2019s Best for Your Agency?",
+          "url": "https://automattic.com/for-agencies/blog/wordpress-themes-for-agencies/"
+        }
+      ],
+      "parents": [
+        "themes"
+      ],
+      "children": []
+    },
+    "actions": {
+      "title": "Actions",
+      "sourceId": "zAV29-MTFNLLVPu3rlRFv",
+      "type": "subtopic",
+      "order": 9,
+      "summary": "Actions in WordPress are hooks that allow you to execute custom functions at specific points in the WordPress core, plugins, and themes. They provide a way to \"do\" something at a particular moment during the execution of WordPress code, enabling developers to modify or extend functionality without directly altering the source code. Think of them as triggers that fire off custom code when certain events occur within WordPress.",
+      "video": {
+        "title": "WordPress Hooks Actions and Filters Introduction Full Playlist Part -1",
+        "url": "https://www.youtube.com/watch?v=7qiPMpi2xc0&list=PLD8nQCAhR3tTVcreVOlFteq0piaXq1jjk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Actions",
+          "url": "https://developer.wordpress.org/plugins/hooks/actions/"
+        },
+        {
+          "type": "official",
+          "title": "Action Reference",
+          "url": "https://developer.wordpress.org/apis/hooks/action-reference/"
+        },
+        {
+          "type": "article",
+          "title": "The WordPress Hooks Bootcamp: How to Use Actions, Filters, and Custom Hooks",
+          "url": "https://kinsta.com/blog/wordpress-hooks/"
+        }
+      ],
+      "parents": [
+        "themes"
+      ],
+      "children": []
+    },
+    "plugins": {
+      "title": "Plugins",
+      "sourceId": "9vUEteBwtAyEFZsVXzKTl",
+      "type": "topic",
+      "order": 10,
+      "summary": "WordPress plugins are like add-ons for your WordPress website. They are pieces of software that you can upload and install to extend the functionality of your site. Think of them as apps for your website, allowing you to add features like contact forms, e-commerce capabilities, SEO tools, social media integration, and much more, without needing to write any code yourself.",
+      "video": {
+        "title": "What is a WordPress Plugin?",
+        "url": "https://www.youtube.com/watch?v=WAAh3DsI7_Q"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "What Are WordPress Plugins and Themes? (A Beginner\u2019s Guide)",
+          "url": "https://wordpress.com/go/website-building/what-are-wordpress-plugins-and-themes-a-beginners-guide/"
+        },
+        {
+          "type": "official",
+          "title": "What is a plugin?",
+          "url": "https://learn.wordpress.org/lesson/what-is-a-plugin/"
+        },
+        {
+          "type": "official",
+          "title": "Plugin Docs",
+          "url": "https://developer.wordpress.org/plugins/"
+        },
+        {
+          "type": "official",
+          "title": "Plugin Catalog",
+          "url": "https://wordpress.com/plugins"
+        },
+        {
+          "type": "article",
+          "title": "What is a WordPress plugin: A comprehensive guide for beginners",
+          "url": "https://www.hostinger.com/tutorials/what-is-wordpress-plugin"
+        }
+      ],
+      "parents": [
+        "wordpressConcepts"
+      ],
+      "children": []
+    },
+    "whatIsHttp": {
+      "title": "What is HTTP?",
+      "sourceId": "LmEWD_XxAfoGvFqvmcT7Q",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "HTTP, or Hypertext Transfer Protocol, is the foundation of data communication on the World Wide Web. It's the set of rules that govern how web browsers and web servers communicate, allowing users to request and receive resources like HTML documents, images, and other files. Essentially, it's the language that computers use to talk to each other when you browse the internet.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Everything you need to know about HTTP",
+          "url": "https://cs.fyi/guide/http-in-depth"
+        },
+        {
+          "type": "article",
+          "title": "What is HTTP?",
+          "url": "https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/"
+        },
+        {
+          "type": "article",
+          "title": "How HTTPS Works",
+          "url": "https://howhttps.works"
+        },
+        {
+          "type": "article",
+          "title": "HTTP/3 Is Now a Standard: Why Use It and How to Get Started",
+          "url": "https://thenewstack.io/http-3-is-now-a-standard-why-use-it-and-how-to-get-started/"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "howTheWebWorks": {
+      "title": "How the Web Works?",
+      "sourceId": "r1_DTSDTbijMxtUEqpEm2",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "The internet functions through a network of interconnected computers that communicate using a standardized set of rules called protocols. When you type a website address into your browser, your computer sends a request to a server that hosts the website. This server then sends back the website's files, which your browser interprets and displays for you. This entire process relies on various technologies working together, including DNS (Domain Name System) to translate domain names into IP addresses, HTTP (Hypertext Transfer Protocol) for transferring data, and HTML, CSS, and JavaScript for structuring, styling, and adding interactivity to web pages.",
+      "video": {
+        "title": "How the Internet Works in 5 Minutes",
+        "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to Internet",
+          "url": "https://roadmap.sh/guides/what-is-internet"
+        },
+        {
+          "type": "article",
+          "title": "How does the Internet Work?",
+          "url": "https://cs.fyi/guide/how-does-internet-work"
+        },
+        {
+          "type": "article",
+          "title": "How Does the Internet Work? MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "whatIsACms": {
+      "title": "What is a CMS?",
+      "sourceId": "zc99eitvwwv7EmMRjhOSE",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "A Content Management System (CMS), such as WordPress, is a software application that allows users to create, manage, and modify content on a website without needing specialized technical knowledge. It provides a user-friendly interface for tasks like writing and editing text, uploading images, and organizing website structure. Essentially, it simplifies the process of building and maintaining a website.",
+      "video": {
+        "title": "What Is A CMS? - What Is Web Development",
+        "url": "https://www.youtube.com/watch?v=ObEifg2REog"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Content management system",
+          "url": "https://en.wikipedia.org/wiki/Content_management_system"
+        },
+        {
+          "type": "article",
+          "title": "What is a content management system (CMS)?",
+          "url": "https://www.ibm.com/think/topics/content-management-system"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "frontendFundamentals": {
+      "title": "Frontend Fundamentals",
+      "sourceId": "8ZMCYeqiy5fzoIWUk1XK5",
+      "type": "subtopic",
+      "order": 14,
+      "summary": "Frontend fundamentals encompass the core technologies that drive the visual and interactive aspects of a website. This includes HTML for structuring content, CSS for styling and layout, and JavaScript for adding dynamic behavior. Understanding these fundamentals is crucial because they form the foundation upon which all websites, including those built with WordPress, are constructed. Without a grasp of these technologies, customizing and troubleshooting the appearance and functionality of a WordPress site becomes significantly more challenging.",
+      "video": {
+        "title": "Frontend web development - a complete overview",
+        "url": "https://www.youtube.com/watch?v=WG5ikvJ2TKA"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the dedicated Frontend Developer Roadmap",
+          "url": "https://roadmap.sh/frontend"
+        },
+        {
+          "type": "book",
+          "title": "Frontend Development Handbook",
+          "url": "https://github.com/FrontendMasters/front-end-handbook-2019/blob/master/exports/Front-end%20Developer%20Handbook%202019.pdf"
+        },
+        {
+          "type": "article",
+          "title": "What Is Front-End Development?",
+          "url": "https://cloudinary.com/guides/front-end-development/front-end-development-the-complete-guide"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "backendFundamentals": {
+      "title": "Backend Fundamentals",
+      "sourceId": "Xy15NSxlS0QXYNzEvgocK",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "Backend fundamentals encompass the core logic and infrastructure that power a website or application. This includes servers, databases, and the code that handles data processing, user authentication, and other essential functions behind the scenes. Understanding these fundamentals is important because it provides a deeper insight into how WordPress functions, allowing you to troubleshoot issues, customize functionality beyond the visual interface, and make informed decisions about hosting, security, and performance optimization.",
+      "video": {
+        "title": "Complete Backend Course | Build and Deploy Your First Production-Ready API",
+        "url": "https://www.youtube.com/watch?v=rOpEN1JDaD0"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Backend Roadmap",
+          "url": "https://roadmap.sh/backend"
+        },
+        {
+          "type": "article",
+          "title": "What is backend? A comprehensive intro to server-side development",
+          "url": "https://alokai.com/blog/what-is-backend"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": [
+        "sql",
+        "php",
+        "classic"
+      ]
+    },
+    "sql": {
+      "title": "SQL",
+      "sourceId": "F-9uI39S9oYVGA8hi7aZI",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "SQL, or Structured Query Language, is a programming language used for managing and manipulating data held in a relational database management system (RDBMS). It allows you to create, read, update, and delete data. WordPress uses a MySQL database to store all of its content, including posts, pages, user information, and settings, making SQL essential for understanding how WordPress functions and for tasks like database optimization or troubleshooting.",
+      "video": {
+        "title": "SQL Course for Beginners [Full Course]",
+        "url": "https://www.youtube.com/watch?v=7S_tz1z_5bA"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "roadmap.sh - Master SQL",
+          "url": "https://roadmap.sh/courses/sql"
+        },
+        {
+          "type": "article",
+          "title": "Visit the Dedicated QSL Rodmap",
+          "url": "https://roadmap.sh/sql"
+        },
+        {
+          "type": "article",
+          "title": "SQL Tutorial",
+          "url": "https://www.sqltutorial.org/"
+        },
+        {
+          "type": "article",
+          "title": "SQL Tutorial",
+          "url": "https://www.thoughtspot.com/sql-tutorial"
+        }
+      ],
+      "parents": [
+        "backendFundamentals"
+      ],
+      "children": []
+    },
+    "php": {
+      "title": "PHP",
+      "sourceId": "fX71CXA26cUxY5WX_zABi",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "PHP is a scripting language primarily used for web development. It's embedded within HTML, meaning you can weave PHP code directly into your web pages. When a user requests a page containing PHP code, the server processes the PHP, generates HTML, and sends that HTML to the user's browser. This allows for dynamic content generation, database interaction, and handling user input, making websites interactive and personalized.",
+      "video": {
+        "title": "Introduction to PHP",
+        "url": "https://www.youtube.com/watch?v=KBT2gmAfav4"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the dedicated PHP Roadmap",
+          "url": "https://roadmap.sh/php"
+        },
+        {
+          "type": "official",
+          "title": "PHP",
+          "url": "https://www.php.net/"
+        },
+        {
+          "type": "official",
+          "title": "PHP Docs",
+          "url": "https://www.php.net/docs.php"
+        },
+        {
+          "type": "article",
+          "title": "PHP Tutorial",
+          "url": "https://www.phptutorial.net/"
+        },
+        {
+          "type": "article",
+          "title": "Learn PHP Interactively",
+          "url": "https://www.learn-php.org/about"
+        }
+      ],
+      "parents": [
+        "backendFundamentals"
+      ],
+      "children": []
+    },
+    "classic": {
+      "title": "Classic",
+      "sourceId": "_X1752swPqlH51enlkg2u",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "Classic Themes represent the traditional way of designing and structuring a WordPress website, relying heavily on PHP, HTML, CSS, and JavaScript within the theme files themselves. These themes typically involve a more direct approach to coding and customization, often requiring developers to modify template files directly to alter the site's appearance and functionality. They offer a high degree of control but can also be more complex to manage and update compared to newer theme types.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to Classic themes",
+          "url": "https://learn.wordpress.org/lesson/introduction-to-classic-themes/"
+        },
+        {
+          "type": "official",
+          "title": "Classic themes",
+          "url": "https://developer.wordpress.org/themes/classic-themes/"
+        },
+        {
+          "type": "article",
+          "title": "Core concepts to understand in WordPress theme development",
+          "url": "https://kinsta.com/blog/wordpress-theme-core-concepts/"
+        }
+      ],
+      "parents": [
+        "backendFundamentals"
+      ],
+      "children": []
+    },
+    "specialThanksToMelapressForHelpingUsCreateThisRoadmap": {
+      "title": "Special thanks to Melapress for helping us create this roadmap",
+      "sourceId": "lXiJ07yzAxfdrivnVCzDa",
+      "type": "paragraph",
+      "order": 19,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "html",
+        "css",
+        "javascript"
+      ]
+    },
+    "html": {
+      "title": "HTML",
+      "sourceId": "oWXYF_l401eQLlkCT3rn6",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "HTML (HyperText Markup Language) is the standard markup language for creating web pages. It provides the structure and content of a website, using elements to define headings, paragraphs, images, links, and other components that a user sees in their browser. These elements are defined by tags, which tell the browser how to display the content.",
+      "video": {
+        "title": "HTML Full Course for Beginners | Complete All-in-One Tutorial | 4 Hours",
+        "url": "https://www.youtube.com/watch?v=mJgBOIoGihA"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated HTML Roadmap",
+          "url": "https://roadmap.sh/html"
+        },
+        {
+          "type": "official",
+          "title": "HTML MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        }
+      ],
+      "parents": [
+        "specialThanksToMelapressForHelpingUsCreateThisRoadmap"
+      ],
+      "children": []
+    },
+    "css": {
+      "title": "CSS",
+      "sourceId": "qNr6gKBcxYoUJSOc4O3nn",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "CSS, or Cascading Style Sheets, is a language used to describe the presentation of a document written in HTML or XML. It controls the layout, colors, fonts, and other visual aspects of a website, ensuring a consistent and appealing user experience across different devices and screen sizes. By separating the content (HTML) from the design (CSS), it allows for easier maintenance and greater flexibility in website styling.",
+      "video": {
+        "title": "CSS Tutorial \u2013 Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=OXGznpKZ_sA"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated CSS Roadmap",
+          "url": "https://roadmap.sh/css"
+        },
+        {
+          "type": "book",
+          "title": "HTML & CSS: design and build websites",
+          "url": "https://sites.math.duke.edu/courses/math_everywhere/assets/techRefs/HTML%20and%20CSS-%20Design%20and%20Build%20Websites_Jon%20Duckett_2011.pdf"
+        },
+        {
+          "type": "article",
+          "title": "CSS MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS"
+        },
+        {
+          "type": "article",
+          "title": "CSS | Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/CSS"
+        }
+      ],
+      "parents": [
+        "specialThanksToMelapressForHelpingUsCreateThisRoadmap"
+      ],
+      "children": []
+    },
+    "javascript": {
+      "title": "JavaScript",
+      "sourceId": "soF98LgnxSW3o5y9PEY0t",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "JavaScript is a programming language primarily used to add interactivity and dynamic behavior to websites. It allows developers to create engaging user experiences by manipulating the content, style, and structure of web pages in response to user actions. It runs directly in the web browser, making it a fundamental technology for frontend web development.",
+      "video": {
+        "title": "JavaScript Crash Course For Beginners",
+        "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c&t=4s"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated JavaScript Roadmap",
+          "url": "https://roadmap.sh/javascript"
+        },
+        {
+          "type": "book",
+          "title": "The Modern JavaScript Tutorial",
+          "url": "https://javascript.info/"
+        },
+        {
+          "type": "article",
+          "title": "Build 30 Javascript projects in 30 days",
+          "url": "https://javascript30.com/"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript from Beginner to Professional",
+          "url": "https://www.gurukultti.org/admin/notice/javascript.pdf"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about JavaScript",
+          "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "specialThanksToMelapressForHelpingUsCreateThisRoadmap"
+      ],
+      "children": []
+    },
+    "wordpressComWordpressOrg": {
+      "title": "wordpress.com & wordpress.org",
+      "sourceId": "k9-YjpBsN8ID0haGR6ucq",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "WordPress offers two distinct platforms: WordPress.com and WordPress.org. WordPress.com is a hosted platform where WordPress handles the server and software, offering varying plans with different features. WordPress.org, on the other hand, is the self-hosted version of WordPress, requiring you to download the software and manage your own hosting, giving you complete control and flexibility.",
+      "video": {
+        "title": "WordPress.org VS WordPress.com: The Confusing Differences Explained!",
+        "url": "https://www.youtube.com/watch?v=kD_Db3TCno0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "WordPress.com vs. WordPress.org",
+          "url": "https://wordpress.com/support/com-vs-org/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "introduction"
+      ]
+    },
+    "startWithLocalDeployment": {
+      "title": "Start with local deployment",
+      "sourceId": "ftr0xEtlhgidAH2rB297J",
+      "type": "label",
+      "order": 25,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "localwp",
+        "xampp",
+        "vvv",
+        "docker"
+      ]
+    },
+    "localwp": {
+      "title": "LocalWP",
+      "sourceId": "dDmT2tDd7_3SktXDqGMa1",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "LocalWP is a free tool that simplifies the process of creating and managing local WordPress development environments on your computer. It allows you to quickly set up WordPress sites without needing to configure web servers, databases, or PHP manually. This makes it easier for developers and designers to test themes, plugins, and code changes in a safe and isolated environment before deploying them to a live server.",
+      "video": {
+        "title": "How to Install WordPress Locally | WordPress Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=fArmNhkSrSw&t=10s"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Local WP",
+          "url": "https://localwp.com/"
+        },
+        {
+          "type": "article",
+          "title": "How to set up local WordPress development with LocalWP",
+          "url": "https://www.liquidweb.com/wordpress/local/localwp/"
+        }
+      ],
+      "parents": [
+        "startWithLocalDeployment"
+      ],
+      "children": []
+    },
+    "xampp": {
+      "title": "XAMPP",
+      "sourceId": "Giqhdf6bmqsgEkCZ-aa65",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "XAMPP is a free and open-source cross-platform web server solution stack package, consisting primarily of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages. It allows you to create a local server environment on your computer, enabling you to develop and test websites and web applications before deploying them to a live server. This is particularly useful for WordPress development, as it provides a convenient way to build and experiment with WordPress sites offline.",
+      "video": {
+        "title": "How to Install WordPress locally in Xampp Localhost on Windows 10/11 Complete Guide",
+        "url": "https://www.youtube.com/watch?v=6M5Unq3Vbhg"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "XAMPP",
+          "url": "https://www.apachefriends.org/"
+        },
+        {
+          "type": "official",
+          "title": "Installing XAMPP",
+          "url": "https://make.wordpress.org/core/handbook/tutorials/installing-wordpress-locally/installing-xampp/"
+        },
+        {
+          "type": "article",
+          "title": "How to Use XAMPP: A 3-Step Guide to Setting Up a Local WordPress Site",
+          "url": "https://www.hostinger.com/uk/tutorials/how-to-use-xampp-wordpress"
+        }
+      ],
+      "parents": [
+        "startWithLocalDeployment"
+      ],
+      "children": []
+    },
+    "vvv": {
+      "title": "VVV",
+      "sourceId": "4z0UM3vkE2m01G5vfH2rv",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "VVV (Varying Vagrant Vagrants) is an open-source development environment specifically designed for WordPress. It provides a pre-configured virtual machine that includes everything you need to develop WordPress themes, plugins, and even WordPress core itself. This allows developers to create a consistent and isolated environment, minimizing compatibility issues and streamlining the development process.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "VVV",
+          "url": "https://varyingvagrantvagrants.org/"
+        },
+        {
+          "type": "official",
+          "title": "Installing VVV",
+          "url": "https://make.wordpress.org/core/handbook/tutorials/installing-wordpress-locally/installing-vvv/"
+        },
+        {
+          "type": "opensource",
+          "title": "varying-vagrant-vagrants",
+          "url": "https://github.com/Varying-Vagrant-Vagrants/VVV"
+        },
+        {
+          "type": "article",
+          "title": "How to Use Varying Vagrant Vagrants (VVV) for WordPress Development",
+          "url": "https://www.wpkube.com/how-to-use-varying-vagrant-vagrants-vvv-for-wordpress-development/"
+        }
+      ],
+      "parents": [
+        "startWithLocalDeployment"
+      ],
+      "children": []
+    },
+    "docker": {
+      "title": "Docker",
+      "sourceId": "2W-s3ugsrRpkFj0WQFDKe",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "Docker is a platform that uses containerization to package software with all its dependencies into standardized units for software development. This allows developers to create, deploy, and run applications in isolated environments called containers, ensuring consistency across different computing environments, from development to production. For WordPress, Docker simplifies setting up a local development environment by providing pre-configured containers with all the necessary components like web servers, databases, and PHP.",
+      "video": {
+        "title": "Quick Wordpress Setup With Docker",
+        "url": "https://www.youtube.com/watch?v=pYhLEV-sRpY"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Docker Roadmap",
+          "url": "https://roadmap.sh/docker"
+        },
+        {
+          "type": "official",
+          "title": "Docker with WP",
+          "url": "https://hub.docker.com/_/wordpress"
+        },
+        {
+          "type": "official",
+          "title": "Dockerize WordPress: Simplify Your Site\u2019s Setup and Deployment",
+          "url": "https://www.docker.com/blog/how-to-dockerize-wordpress/"
+        },
+        {
+          "type": "article",
+          "title": "How To Install WordPress With Docker Compose",
+          "url": "https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-docker-compose"
+        }
+      ],
+      "parents": [
+        "startWithLocalDeployment"
+      ],
+      "children": []
+    },
+    "fileStructure": {
+      "title": "File Structure",
+      "sourceId": "BYoMY5a7j-X5tAUB9N3-y",
+      "type": "topic",
+      "order": 30,
+      "summary": "The WordPress file structure is the organized system of folders and files that make up a WordPress website. It includes core WordPress files, theme files, plugin files, and user-uploaded content, all working together to display your website's content and functionality. Understanding this structure is essential for troubleshooting, customizing, and managing your WordPress site effectively.",
+      "video": {
+        "title": "The WordPress file system",
+        "url": "https://www.youtube.com/watch?v=Bz-UB_KjufU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "The WordPress file structure",
+          "url": "https://learn.wordpress.org/lesson/the-wordpress-file-structure/"
+        },
+        {
+          "type": "article",
+          "title": "Beginner\u2019s Guide to WordPress File and Directory Structure",
+          "url": "https://www.wpbeginner.com/beginners-guide/beginners-guide-to-wordpress-file-and-directory-structure/"
+        },
+        {
+          "type": "article",
+          "title": "Beginner\u2019s Guide to Understanding WordPress File Structure & Database",
+          "url": "https://www.malcare.com/blog/beginners-guide-to-understanding-the-structure-of-a-wordpress-site/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "filters": {
+      "title": "Filters",
+      "sourceId": "k7JT0NaGrBd9OS3VhOsEM",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "Filters in WordPress allow you to modify data as it's being processed. Think of them as checkpoints in the code where you can intercept a variable, change its value, and then pass it along to continue its journey. This lets you alter things like post content, excerpt text, or even options stored in the database without directly editing the core WordPress files or plugin code.",
+      "video": {
+        "title": "Filter Hooks",
+        "url": "https://www.youtube.com/watch?v=EZNJWgq26_E"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "WordPress Filter Hooks",
+          "url": "https://learn.wordpress.org/tutorial/wordpress-filter-hooks/"
+        },
+        {
+          "type": "official",
+          "title": "add_filter",
+          "url": "https://developer.wordpress.org/reference/functions/add_filter/"
+        },
+        {
+          "type": "article",
+          "title": "The WordPress Hooks Bootcamp: How to Use Actions, Filters, and Custom Hooks",
+          "url": "https://kinsta.com/blog/wordpress-hooks/"
+        }
+      ],
+      "parents": [
+        "hooks"
+      ],
+      "children": []
+    },
+    "hooks": {
+      "title": "Hooks",
+      "sourceId": "p2zuReNEeVSNKNqxDAVAt",
+      "type": "topic",
+      "order": 32,
+      "summary": "Hooks are a way for WordPress developers to modify or extend the default behavior of WordPress without directly altering the core files. They essentially allow you to \"hook into\" specific points in the WordPress execution process and add your own code to be executed at those points. This makes WordPress highly customizable and extensible.",
+      "video": {
+        "title": "WordPress Hooks",
+        "url": "https://www.youtube.com/watch?v=MW-evyl4nQU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hooks",
+          "url": "https://developer.wordpress.org/plugins/hooks/"
+        },
+        {
+          "type": "official",
+          "title": "Hooks List",
+          "url": "https://developer.wordpress.org/reference/hooks/"
+        },
+        {
+          "type": "article",
+          "title": "The WordPress Hooks Bootcamp: How to Use Actions, Filters, and Custom Hooks",
+          "url": "https://kinsta.com/blog/wordpress-hooks/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Hooks Explained",
+          "url": "https://crocoblock.com/blog/wordpress-hooks-explained/"
+        }
+      ],
+      "parents": [
+        "pageEditors"
+      ],
+      "children": [
+        "filters"
+      ]
+    },
+    "pageEditors": {
+      "title": "Page Editors",
+      "sourceId": "WvQNMj6wTKVEDq9ro3NWp",
+      "type": "topic",
+      "order": 33,
+      "summary": "Page editors are tools that allow users to create and modify the content and layout of individual pages on a website through a visual interface. They simplify the process of web design and content creation by providing a user-friendly way to arrange elements like text, images, and other media without needing to write code. These editors often use a drag-and-drop interface, making it easy to build and customize pages to suit specific needs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "WordPress Editors: Site Editor, Template Editor, and Page Editor Explained",
+          "url": "https://wordpress.com/go/website-building/site-editor-template-editor-page-editor-explained/"
+        },
+        {
+          "type": "official",
+          "title": "About WordPress editors",
+          "url": "https://wordpress.com/support/editors/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Editors, the Customizer and Page Builders",
+          "url": "https://kubiobuilder.com/wordpress-web-design/wordpress-editor-customizer-builder/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "classic2",
+        "blockEditor",
+        "thirdPartyPageBuilders",
+        "hooks"
+      ]
+    },
+    "theLoop": {
+      "title": "The Loop",
+      "sourceId": "d8QcGVn2NoHxJlDxH_n_R",
+      "type": "topic",
+      "order": 34,
+      "summary": "The Loop in WordPress is essentially a PHP code structure that fetches and displays your website's posts. Think of it as a cycle that goes through each post in your database, one by one, and presents its content on the page. It continues this process until all relevant posts have been displayed, then it stops.",
+      "video": {
+        "title": "The Loop",
+        "url": "https://www.youtube.com/watch?v=jMI9oYI4ySk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "The Loop",
+          "url": "https://developer.wordpress.org/themes/classic-themes/basics/the-loop/"
+        },
+        {
+          "type": "article",
+          "title": "The Loop",
+          "url": "https://codex.wordpress.org/The_Loop"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Loop complete guide: everything you need to know",
+          "url": "https://kinsta.com/blog/wordpress-loop/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "classic2": {
+      "title": "Classic",
+      "sourceId": "sNJTLbzuzNIoezVmZt89M",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "The Classic Editor is the original text-based editor in WordPress. It allows you to create and edit pages and posts using a visual editor similar to a word processor, or directly with HTML code. You can format text, add images, create lists, and embed media using buttons and shortcodes. While it's been superseded by the Block Editor (Gutenberg), the Classic Editor remains available as a plugin for those who prefer its familiar interface.",
+      "video": {
+        "title": "How to Edit a Page in Wordpress Using the Classic Editor (Full 2025 Guide)",
+        "url": "https://www.youtube.com/watch?v=T-LerlXW8pA"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Classic Editor",
+          "url": "https://wordpress.org/plugins/classic-editor/"
+        },
+        {
+          "type": "official",
+          "title": "Using the Classic Editor",
+          "url": "https://wordpress.com/support/editors/classic-editor-guide/"
+        },
+        {
+          "type": "official",
+          "title": "Classic Content Editor Overview",
+          "url": "https://learn.wordpress.org/lesson-plan/content-editor-overview/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress classic editor: How to install and use it",
+          "url": "https://www.hostinger.com/tutorials/wordpress-classic-editor"
+        },
+        {
+          "type": "article",
+          "title": "How to Use the Classic Editor in WordPress and Why",
+          "url": "https://www.greengeeks.com/tutorials/classic-editor-wordpress/"
+        }
+      ],
+      "parents": [
+        "pageEditors"
+      ],
+      "children": []
+    },
+    "blockEditor": {
+      "title": "Block Editor",
+      "sourceId": "YbzkrzDYtja8rhYvzkQU8",
+      "type": "subtopic",
+      "order": 36,
+      "summary": "The Block Editor, also known as Gutenberg, is the default content editor in WordPress. It allows users to create and format content using individual blocks, each representing a specific element like paragraphs, images, headings, or galleries. These blocks can be easily arranged and customized to build visually appealing and structured pages and posts.",
+      "video": {
+        "title": "Creating posts and pages with the WordPress Block Editor",
+        "url": "https://www.youtube.com/watch?v=DaaCThv_NNM"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "WordPress Block Editor",
+          "url": "https://wordpress.org/documentation/article/wordpress-block-editor/"
+        },
+        {
+          "type": "official",
+          "title": "Block Editor Handbook",
+          "url": "https://developer.wordpress.org/block-editor/"
+        },
+        {
+          "type": "article",
+          "title": "How to Use the WordPress Block Editor (+ 10 Advanced Tips)",
+          "url": "https://jetpack.com/resources/wordpress-block-editor/"
+        },
+        {
+          "type": "article",
+          "title": "How to Use the WordPress Block Editor (Beginner\u2019s Tutorial)",
+          "url": "https://thrivethemes.com/wordpress-block-editor-tutorial/"
+        }
+      ],
+      "parents": [
+        "pageEditors"
+      ],
+      "children": []
+    },
+    "shortcodes": {
+      "title": "Shortcodes",
+      "sourceId": "-YkWyPuFOn8n9l9UjJje9",
+      "type": "topic",
+      "order": 37,
+      "summary": "Shortcodes in WordPress are like shortcuts that allow you to easily add dynamic content or functionality to your posts, pages, and widgets. They are special tags enclosed in square brackets, such as `[my_shortcode]`, that WordPress recognizes and replaces with the corresponding output defined by the shortcode's associated function. This lets you embed things like videos, forms, or complex layouts without writing any code directly in your content.",
+      "video": {
+        "title": "Gu\u00eda definitiva de los shortcodes de WordPress",
+        "url": "https://www.youtube.com/watch?v=sq1OZ2ZNqIw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Shortcode",
+          "url": "https://codex.wordpress.org/Shortcode"
+        },
+        {
+          "type": "official",
+          "title": "Shortcode block",
+          "url": "https://wordpress.com/support/wordpress-editor/blocks/shortcode-block/"
+        },
+        {
+          "type": "official",
+          "title": "Shortcode API",
+          "url": "https://codex.wordpress.org/Shortcode_API"
+        },
+        {
+          "type": "article",
+          "title": "The Ultimate Guide to WordPress Shortcodes (With Examples to Create Your Own)",
+          "url": "https://kinsta.com/blog/wordpress-shortcodes/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "thirdPartyPageBuilders": {
+      "title": "Third-Party Page Builders",
+      "sourceId": "OAb9tYljyN-Xo1RRx4TED",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "Third-party page builders are plugins that extend WordPress's functionality by providing a visual, drag-and-drop interface for designing and creating website pages. They offer a more intuitive alternative to the standard WordPress editor, allowing users to build complex layouts and designs without needing to write code. These builders often come with pre-designed templates and a variety of customizable elements, making it easier to create professional-looking websites.",
+      "video": {
+        "title": "Do You Need a WordPress Page Builder in 2025?",
+        "url": "https://www.youtube.com/watch?v=u-uacAnL2Sw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Third-party editors",
+          "url": "https://wordpress.com/support/editors/#third-party-editors"
+        },
+        {
+          "type": "official",
+          "title": "Get help with plugins and themes",
+          "url": "https://wordpress.com/support/plugins/get-help-with-plugins-and-themes/"
+        },
+        {
+          "type": "article",
+          "title": "10 best WordPress page builders for 2025",
+          "url": "https://www.hostinger.com/ca/tutorials/wordpress-page-builders"
+        }
+      ],
+      "parents": [
+        "pageEditors"
+      ],
+      "children": []
+    },
+    "customPostTypes": {
+      "title": "Custom Post Types",
+      "sourceId": "zOQLL3hD8NzAb-287CifD",
+      "type": "topic",
+      "order": 39,
+      "summary": "Custom Post Types allow you to create different types of content beyond the standard posts and pages. Think of them as a way to organize and manage specific kinds of information on your website, like products, events, or testimonials, each with its own unique set of fields and display options. This helps you structure your website's content in a more meaningful and organized way.",
+      "video": {
+        "title": "Creating custom post types and taxonomies",
+        "url": "https://www.youtube.com/watch?v=WB7BKQdcP9w"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Custom post types",
+          "url": "https://learn.wordpress.org/lesson/custom-post-types/"
+        },
+        {
+          "type": "official",
+          "title": "How to Use WordPress Custom Post Types to Create a Specialty Website",
+          "url": "https://wordpress.com/go/tutorials/wordpress-custom-post-types"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Custom Post Types: The All-In-One Guide to Create and Use Them",
+          "url": "http://kinsta.com/blog/wordpress-custom-post-types/"
+        }
+      ],
+      "parents": [
+        "styleScriptEnqueueing"
+      ],
+      "children": []
+    },
+    "styleScriptEnqueueing": {
+      "title": "Style & Script Enqueueing",
+      "sourceId": "5BNtWkac37Bydp6pFzHuP",
+      "type": "topic",
+      "order": 40,
+      "summary": "Style and script enqueueing is the proper way to add CSS stylesheets and JavaScript files to your WordPress website. Instead of directly adding code to your theme's header or footer, enqueueing uses WordPress functions to register and load these assets in a controlled and organized manner. This ensures compatibility, avoids conflicts with other plugins and themes, and allows for dependency management.",
+      "video": {
+        "title": "Enqueuing CSS and JavaScript",
+        "url": "https://www.youtube.com/watch?v=a7ZRFA2s-pM"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Enqueueing Scripts And Styles",
+          "url": "https://learn.wordpress.org/lesson-plan/enqueueing-scripts-and-styles/"
+        },
+        {
+          "type": "official",
+          "title": "wp_enqueue_style",
+          "url": "https://developer.wordpress.org/reference/functions/wp_enqueue_style/"
+        },
+        {
+          "type": "official",
+          "title": "wp_enqueue_script",
+          "url": "https://developer.wordpress.org/reference/functions/wp_enqueue_script/"
+        },
+        {
+          "type": "article",
+          "title": "wp_enqueue_scripts \u2013 How to Enqueue Your Assets in WordPress",
+          "url": "https://kinsta.com/blog/wp-enqueue-scripts/"
+        },
+        {
+          "type": "article",
+          "title": "How to Enqueue CSS Stylesheet to WordPress Using wp_enqueue_style",
+          "url": "https://www.hostinger.com/ph/tutorials/wp_enqueue_style"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "customPostTypes"
+      ]
+    },
+    "taxonomies": {
+      "title": "Taxonomies",
+      "sourceId": "x4mnKW7I-du18ybY3Pb0r",
+      "type": "topic",
+      "order": 41,
+      "summary": "Taxonomies are ways to group content. Think of them as organizational tools that help you classify and structure your website's information. They allow you to create relationships between different pieces of content, making it easier for users to navigate and find what they're looking for. Common examples include categories and tags, but you can also create custom taxonomies to suit your specific needs.",
+      "video": {
+        "title": "WordPress taxonomies",
+        "url": "https://www.youtube.com/watch?v=TPbMiwuoMtU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Taxonomies",
+          "url": "http://wordpress.org/documentation/article/taxonomies/"
+        },
+        {
+          "type": "article",
+          "title": "Categories, Tags, & Custom Taxonomies",
+          "url": "https://developer.wordpress.org/themes/classic-themes/basics/categories-tags-custom-taxonomies/"
+        },
+        {
+          "type": "article",
+          "title": "What is a Taxonomy? WordPress Taxonomies Explained",
+          "url": "https://kinsta.com/blog/what-is-taxonomy/"
+        },
+        {
+          "type": "article",
+          "title": "What is WordPress taxonomy and how to create custom ones?",
+          "url": "https://www.hostinger.com/tutorials/wordpress-taxonomy"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "wordpressRestApi": {
+      "title": "WordPress REST API",
+      "sourceId": "gpO6iYnsepFTjbYzUEET0",
+      "type": "topic",
+      "order": 42,
+      "summary": "The WordPress REST API is an interface that allows other applications to interact with your WordPress site by sending and receiving data in a standardized way. It uses HTTP requests (like GET, POST, PUT, DELETE) to access and manipulate WordPress content, users, media, and other data. This enables developers to build custom applications, integrate WordPress with other systems, and create headless WordPress setups.",
+      "video": {
+        "title": "The WordPress REST API",
+        "url": "https://www.youtube.com/watch?v=u04-vaaDS2g"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "REST API Handbook",
+          "url": "https://developer.wordpress.org/rest-api/"
+        },
+        {
+          "type": "official",
+          "title": "REST API Docs",
+          "url": "https://developer.wordpress.com/docs/api/"
+        },
+        {
+          "type": "official",
+          "title": "Using the WordPress REST API",
+          "url": "https://learn.wordpress.org/tutorial/using-the-wordpress-rest-api/"
+        },
+        {
+          "type": "official",
+          "title": "Other WordPress APIs",
+          "url": "https://codex.wordpress.org/WordPress_APIs"
+        },
+        {
+          "type": "article",
+          "title": "The Complete Guide to WordPress REST API Basics",
+          "url": "https://kinsta.com/blog/wordpress-rest-api/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "themesPlugins": {
+      "title": "Themes & Plugins",
+      "sourceId": "PFN5W625KG6BjsCtdiaYv",
+      "type": "paragraph",
+      "order": 43,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "codingStandards"
+      ],
+      "children": [
+        "classicVsBlockThemes"
+      ]
+    },
+    "codingStandards": {
+      "title": "Coding Standards",
+      "sourceId": "yZ5sglhcY2--dT-JyPQFd",
+      "type": "topic",
+      "order": 44,
+      "summary": "WordPress Coding Standards are a set of guidelines and best practices for writing code that is consistent, readable, and maintainable within the WordPress ecosystem. These standards cover various aspects of coding, including PHP, HTML, CSS, and JavaScript, and aim to ensure that code is easy to understand, debug, and collaborate on, regardless of who wrote it. Adhering to these standards helps create a more unified and professional codebase for WordPress themes, plugins, and the core software itself.",
+      "video": {
+        "title": "Introduction to WordPress Coding Standards",
+        "url": "https://www.youtube.com/watch?v=n7-F-FMzM7Q"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "WordPress Coding Standards",
+          "url": "https://developer.wordpress.org/coding-standards/wordpress-coding-standards/"
+        },
+        {
+          "type": "official",
+          "title": "WordPress Coding Standards Docs",
+          "url": "https://codex.wordpress.org/WordPress_Coding_Standards"
+        },
+        {
+          "type": "article",
+          "title": "An introduction to WordPress coding standards",
+          "url": "https://kinsta.com/blog/wordpress-coding-standards/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "themesPlugins"
+      ]
+    },
+    "classicVsBlockThemes": {
+      "title": "Classic vs Block Themes",
+      "sourceId": "1rfPHsFNlnCCmk5gLPBoD",
+      "type": "topic",
+      "order": 45,
+      "summary": "Classic themes in WordPress rely on PHP templates and the WordPress Template Hierarchy to structure and display content. Block themes, on the other hand, leverage the Block Editor (Gutenberg) for full site editing, allowing users to design and customize every aspect of their website using blocks. This fundamental difference impacts how themes are built, customized, and how users interact with their website's design.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Different types of themes",
+          "url": "https://wordpress.com/support/theme-types/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Block Themes vs Classic Themes: 4 Key Differences",
+          "url": "https://www.wpzoom.com/blog/block-themes-vs-classic-themes/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Block Theme vs Classic Theme",
+          "url": "https://instawp.com/wordpress-block-theme-vs-classic-theme/"
+        },
+        {
+          "type": "article",
+          "title": "How to Switch from a Classic Theme to a Block Theme in WordPress",
+          "url": "https://jetpack.com/resources/wordpress-switch-from-classic-to-block-theme/"
+        }
+      ],
+      "parents": [
+        "themesPlugins"
+      ],
+      "children": []
+    },
+    "classicThemes": {
+      "title": "Classic Themes",
+      "sourceId": "6fq6xIYQtmIWQAOXhUGD3",
+      "type": "label",
+      "order": 46,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "styleCss",
+        "functionsPhp",
+        "templateFiles"
+      ]
+    },
+    "blockThemes": {
+      "title": "Block Themes",
+      "sourceId": "Z5B-H955_t27CP4AYZ9NO",
+      "type": "label",
+      "order": 47,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "themeStructure2"
+      ]
+    },
+    "pluginBasics2": {
+      "title": "Plugin Basics",
+      "sourceId": "HFIYdCrRARH2iBJoUCaB0",
+      "type": "label",
+      "order": 48,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "pluginBasics"
+      ]
+    },
+    "styleCss": {
+      "title": "style.css",
+      "sourceId": "1BtXLjHOINLx9SJ1Y9gyd",
+      "type": "subtopic",
+      "order": 49,
+      "summary": "The `style.css` file is the main stylesheet in a classic WordPress theme. It controls the visual appearance of your website, defining elements like colors, fonts, layout, and responsiveness. This file is also required for WordPress to recognize the theme and display its name and other metadata in the WordPress admin panel.",
+      "video": {
+        "title": "How to Edit CSS in WordPress",
+        "url": "https://www.youtube.com/watch?v=1DUH_85wxVI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Main Stylesheet (style.css)",
+          "url": "https://developer.wordpress.org/themes/classic-themes/basics/main-stylesheet-style-css/"
+        },
+        {
+          "type": "official",
+          "title": "Add custom CSS",
+          "url": "https://wordpress.com/support/editing-css/"
+        },
+        {
+          "type": "article",
+          "title": "How to Edit CSS in WordPress (Edit, Add, and Customize How Your Site Looks)",
+          "url": "https://kinsta.com/blog/wordpress-css/"
+        }
+      ],
+      "parents": [
+        "classicThemes"
+      ],
+      "children": []
+    },
+    "functionsPhp": {
+      "title": "functions.php",
+      "sourceId": "28RlVJKJinaFBCjROCYu-",
+      "type": "subtopic",
+      "order": 50,
+      "summary": "The `functions.php` file in a Classic WordPress theme acts as a plugin, adding custom functionality and features to your website. It's a powerful tool for modifying the behavior of your theme and WordPress itself, allowing you to define custom functions, hooks, filters, and more, without directly altering the core theme files.",
+      "video": {
+        "title": "Customizing WordPress #6 - Introduction to the functions template",
+        "url": "https://www.youtube.com/watch?v=XD6hGrZPkQU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Custom Functionality (functions.php)",
+          "url": "https://developer.wordpress.org/themes/core-concepts/custom-functionality/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress functions.php File: The Ultimate Guide + Helpful Code Snippets",
+          "url": "https://kinsta.com/blog/wordpress-functions-php/"
+        },
+        {
+          "type": "article",
+          "title": "How to Find, Access, and Edit functions.php in WordPress",
+          "url": "https://jetpack.com/resources/wordpress-functions-php/"
+        }
+      ],
+      "parents": [
+        "classicThemes"
+      ],
+      "children": []
+    },
+    "pluginBasics": {
+      "title": "Plugin Basics",
+      "sourceId": "CrD4HH8mht1KZ0_m1MUsm",
+      "type": "subtopic",
+      "order": 51,
+      "summary": "WordPress plugins are essentially bundles of code that you can upload to your WordPress site to extend its functionality. They allow you to add new features, modify existing ones, or integrate with third-party services without having to directly edit the core WordPress files. Think of them as apps for your website, enabling you to customize and enhance your site's capabilities with ease.",
+      "video": {
+        "title": "What is a WordPress Plugin?",
+        "url": "https://www.youtube.com/watch?v=WAAh3DsI7_Q&t=152s"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "What is a plugin?",
+          "url": "https://learn.wordpress.org/lesson/what-is-a-plugin/"
+        },
+        {
+          "type": "official",
+          "title": "Plugins",
+          "url": "https://wordpress.com/support/plugins"
+        },
+        {
+          "type": "official",
+          "title": "Plugin Catalog",
+          "url": "https://wordpress.com/plugins"
+        },
+        {
+          "type": "article",
+          "title": "What is a WordPress plugin: A comprehensive guide for beginners",
+          "url": "https://www.hostinger.com/tutorials/what-is-wordpress-plugin"
+        }
+      ],
+      "parents": [
+        "pluginBasics2"
+      ],
+      "children": [
+        "fileStructure2"
+      ]
+    },
+    "themeStructure2": {
+      "title": "Theme Structure",
+      "sourceId": "HGczCcVcLru6ac76YdcZW",
+      "type": "subtopic",
+      "order": 52,
+      "summary": "Block themes in WordPress are structured around blocks, which are the fundamental units for building website content and layout. The theme's structure defines how these blocks are organized and rendered, encompassing template files, template parts, and the theme's `theme.json` file, which controls global styles and settings. This structure dictates the overall look and feel of the website, offering flexibility and customization through block-based editing.",
+      "video": {
+        "title": "WordPress Block Themes: Don't make this BEGINNERS mistake!",
+        "url": "https://www.youtube.com/watch?v=RsFMHafzUz4"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Theme Structure",
+          "url": "https://developer.wordpress.org/themes/core-concepts/theme-structure/"
+        },
+        {
+          "type": "article",
+          "title": "Block Theme Anatomy: Structure & Files",
+          "url": "https://www.wpexplorer.com/block-theme-anatomy/"
+        },
+        {
+          "type": "article",
+          "title": "A Comprehensive Guide to Building WordPress Block Themes",
+          "url": "https://gutenbergmarket.com/news/a-comprehensive-guide-to-building-wordpress-block-themes"
+        }
+      ],
+      "parents": [
+        "blockThemes"
+      ],
+      "children": [
+        "fullSiteEditingFse"
+      ]
+    },
+    "templateFiles": {
+      "title": "Template Files",
+      "sourceId": "47mdVZFZl1CF-_mgG3qHF",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "Template files are the building blocks of a WordPress theme, determining how your website's content is displayed. These files, written in PHP, HTML, and CSS, control the layout and design of different pages and sections of your site, such as the homepage, single posts, and archives. By modifying or creating template files, you can customize the appearance and functionality of your WordPress website.",
+      "video": {
+        "title": "The Hidden Power of WordPress Templates",
+        "url": "https://www.youtube.com/watch?v=JO-bn9jwarQ"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Template Files",
+          "url": "https://developer.wordpress.org/themes/classic-themes/basics/template-files/"
+        },
+        {
+          "type": "official",
+          "title": "Templates Guide",
+          "url": "https://wordpress.com/support/templates/"
+        },
+        {
+          "type": "official",
+          "title": "Templates",
+          "url": "https://codex.wordpress.org/Templates"
+        }
+      ],
+      "parents": [
+        "classicThemes"
+      ],
+      "children": [
+        "childThemes"
+      ]
+    },
+    "fileStructure2": {
+      "title": "File Structure",
+      "sourceId": "KmGbX5xFuap5EUUjQiJtK",
+      "type": "subtopic",
+      "order": 54,
+      "summary": "A plugin's file structure is the way its files and folders are organized within the WordPress plugins directory. This structure determines how WordPress loads and executes the plugin's code, assets, and other resources. A well-organized file structure makes the plugin easier to understand, maintain, and update.",
+      "video": {
+        "title": "WordPress Plugin Tutorial: Folder Structure and the Plugin Header",
+        "url": "https://www.youtube.com/watch?v=GNaJygOfgnk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Getting Started with Plugins",
+          "url": "https://developer.wordpress.org/plugins/plugin-basics/#getting-started"
+        },
+        {
+          "type": "official",
+          "title": "Best Practices",
+          "url": "https://developer.wordpress.org/plugins/plugin-basics/best-practices/"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to Plugin Development",
+          "url": "https://developer.wordpress.org/plugins/intro/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Plugin Development",
+          "url": "https://triggergrowth.com/blog/wordpress-plugin-development/"
+        }
+      ],
+      "parents": [
+        "pluginBasics"
+      ],
+      "children": []
+    },
+    "fullSiteEditingFse": {
+      "title": "Full Site Editing (FSE)",
+      "sourceId": "r3hcgBKcIIuTuqqVIvpC9",
+      "type": "subtopic",
+      "order": 55,
+      "summary": "Full Site Editing (FSE) is a set of features in WordPress that allows you to customize all parts of your website using blocks. This includes areas like headers, footers, and page templates, giving you complete control over the design and layout of your entire site through the block editor interface.",
+      "video": {
+        "title": "WordPress 5.9 Tutorial | Full Site Editing Tutorial",
+        "url": "https://www.youtube.com/watch?v=1ThMIssK3IY"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Use the Site Editor",
+          "url": "https://wordpress.com/support/site-editor/"
+        },
+        {
+          "type": "official",
+          "title": "A First Look at Using Full Site Editing to Edit Your WordPress Theme",
+          "url": "https://wordpress.com/go/tutorials/first-look-full-site-editing/"
+        },
+        {
+          "type": "article",
+          "title": "Mastering WordPress full site editing: a step-by-step tutorial",
+          "url": "https://kinsta.com/blog/wordpress-full-site-editing/"
+        },
+        {
+          "type": "article",
+          "title": "A Complete Beginner\u2019s Guide to WordPress Full Site Editing",
+          "url": "https://www.wpbeginner.com/beginners-guide/wordpress-full-site-editing/"
+        },
+        {
+          "type": "article",
+          "title": "Full site editing",
+          "url": "https://fullsiteediting.com/courses/full-site-editing-for-theme-developers/"
+        }
+      ],
+      "parents": [
+        "themeStructure2"
+      ],
+      "children": [
+        "blockPatterns"
+      ]
+    },
+    "childThemes": {
+      "title": "Child Themes",
+      "sourceId": "GG6uE_p44ybIxez--igF1",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "Child themes are sub-themes that inherit the functionality and styling of a parent theme. They allow you to modify the design and code of your WordPress site without directly altering the parent theme files. This is crucial because when the parent theme receives an update, any changes made directly to it will be overwritten, but modifications made in the child theme will remain intact.",
+      "video": {
+        "title": "Child Themes",
+        "url": "https://www.youtube.com/watch?v=XTzWivuH10I"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Child Themes",
+          "url": "https://developer.wordpress.org/themes/advanced-topics/child-themes/"
+        },
+        {
+          "type": "official",
+          "title": "Create a child theme",
+          "url": "https://wordpress.com/support/themes/child-themes/"
+        },
+        {
+          "type": "article",
+          "title": "How to create a WordPress child theme + customization tips",
+          "url": "https://www.hostinger.com/tutorials/how-to-create-wordpress-child-theme"
+        }
+      ],
+      "parents": [
+        "templateFiles"
+      ],
+      "children": [
+        "templateHierarchy"
+      ]
+    },
+    "blockPatterns": {
+      "title": "Block Patterns",
+      "sourceId": "lDuJRUjKyie7PbdU12d7r",
+      "type": "subtopic",
+      "order": 57,
+      "summary": "Block Patterns are pre-designed collections of blocks that you can quickly insert into your WordPress content. They offer a convenient way to create visually appealing layouts and sections without having to configure each block manually. Think of them as reusable templates for common design elements, saving you time and effort in building your website.",
+      "video": {
+        "title": "WordPress Block Patterns Give You Superpowers",
+        "url": "https://www.youtube.com/watch?v=UCHhb4wqDwk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Use block patterns",
+          "url": "https://wordpress.com/support/wordpress-editor/block-pattern/"
+        },
+        {
+          "type": "official",
+          "title": "Block patterns",
+          "url": "https://developer.wordpress.com/docs/guides/block-patterns/"
+        },
+        {
+          "type": "official",
+          "title": "Patterns",
+          "url": "http://wordpress.org/patterns/"
+        },
+        {
+          "type": "article",
+          "title": "What is a block pattern?",
+          "url": "https://fullsiteediting.com/lessons/introduction-to-block-patterns/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Block Patterns: How to Use Them & Create Your Own",
+          "url": "https://jetpack.com/resources/wordpress-block-patterns/"
+        }
+      ],
+      "parents": [
+        "fullSiteEditingFse"
+      ],
+      "children": [
+        "templateParts"
+      ]
+    },
+    "extendingFunctionality": {
+      "title": "Extending Functionality",
+      "sourceId": "cnBozFgNQnUQ3sCx_Uy5H",
+      "type": "label",
+      "order": 58,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "transientsApi"
+      ]
+    },
+    "templateHierarchy": {
+      "title": "Template Hierarchy",
+      "sourceId": "dPgcKkbULFFdx3po8Ijgf",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "The Template Hierarchy is the system WordPress uses to determine which template file to use for displaying a specific page or post. It's essentially a roadmap that WordPress follows, checking for specific template files in your theme's folder. If a specific template file isn't found, WordPress moves down the hierarchy to a more general template until it finds one that matches. This allows for highly customized layouts for different content types and archive pages.",
+      "video": {
+        "title": "Template Hierarchy",
+        "url": "https://www.youtube.com/watch?v=sDWvuYzeW4E"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Template Hierarchy",
+          "url": "https://developer.wordpress.org/themes/classic-themes/basics/template-hierarchy/"
+        },
+        {
+          "type": "article",
+          "title": "A Guide to the WordPress Template Hierarchy",
+          "url": "https://kinsta.com/blog/wordpress-template-hierarchy/"
+        },
+        {
+          "type": "article",
+          "title": "Template hierarchy",
+          "url": "https://www.hostinger.com/ca/tutorials/wordpress-template-hierarchy"
+        }
+      ],
+      "parents": [
+        "childThemes"
+      ],
+      "children": []
+    },
+    "templateParts": {
+      "title": "Template Parts",
+      "sourceId": "SyKVTUomX-UB3zUnCfrdA",
+      "type": "subtopic",
+      "order": 60,
+      "summary": "Template Parts are reusable sections of a WordPress block theme that define specific areas of a website's layout, like headers, footers, or sidebars. They are built using blocks and can be easily included in multiple templates, allowing for consistent design and easier content management across a site. Changes made to a Template Part are automatically reflected wherever that part is used.",
+      "video": {
+        "title": "Using template parts",
+        "url": "https://www.youtube.com/watch?v=CTn9jtvCvtc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Template Parts",
+          "url": "https://developer.wordpress.org/themes/global-settings-and-styles/template-parts/"
+        },
+        {
+          "type": "official",
+          "title": "Template Parts",
+          "url": "https://developer.wordpress.org/themes/templates/template-parts/"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to templates and template parts",
+          "url": "https://fullsiteediting.com/lessons/templates-and-template-parts/"
+        },
+        {
+          "type": "article",
+          "title": "Block-Based Template Parts: A Happy Medium Between Classic and Block Themes",
+          "url": "https://gutenbergtimes.com/block-based-template-parts-for-classic-themes/"
+        }
+      ],
+      "parents": [
+        "blockPatterns"
+      ],
+      "children": [
+        "styles",
+        "overrides"
+      ]
+    },
+    "transientsApi": {
+      "title": "Transients API",
+      "sourceId": "WXTnOWylTg4aLn8r1mdwS",
+      "type": "subtopic",
+      "order": 61,
+      "summary": "The Transients API in WordPress provides a simple way to store temporary data in the database. Think of it as a caching system for storing the results of expensive operations, like complex database queries or external API calls. This stored data can then be quickly retrieved later, reducing server load and improving website performance. Transients have an expiration time, after which they are automatically deleted, ensuring that the stored data remains relevant and doesn't clutter the database indefinitely.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "An introduction to the Transients API",
+          "url": "https://developer.wordpress.org/news/2024/06/an-introduction-to-the-transients-api/"
+        },
+        {
+          "type": "official",
+          "title": "Transients",
+          "url": "https://developer.wordpress.org/apis/transients/"
+        },
+        {
+          "type": "official",
+          "title": "https://wordpress.com/blog/2022/11/04/complete-guide-to-wordpress-transients/",
+          "url": "https://wordpress.com/blog/2022/11/04/complete-guide-to-wordpress-transients/"
+        },
+        {
+          "type": "article",
+          "title": "A Guide to Transients in WordPress",
+          "url": "https://wpengine.com/resources/guide-to-transients-in-wordpress/"
+        }
+      ],
+      "parents": [
+        "extendingFunctionality"
+      ],
+      "children": []
+    },
+    "themeStructure": {
+      "title": "Theme Structure",
+      "sourceId": "-bOmhXgqJRei6uBUzyyTF",
+      "type": "label",
+      "order": 62,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "menus",
+        "customizer",
+        "widgets"
+      ]
+    },
+    "styles": {
+      "title": "Styles",
+      "sourceId": "rl-8l8nhjNLtVglNM_Aaw",
+      "type": "subtopic",
+      "order": 63,
+      "summary": "Block theme styles in WordPress are sets of pre-defined visual settings that control the look and feel of your website. They allow you to quickly change things like colors, typography, and spacing across your entire site without needing to write any code. These styles are applied to the blocks that make up your pages and posts, ensuring a consistent and visually appealing design.",
+      "video": {
+        "title": "Block Style Variations",
+        "url": "https://www.youtube.com/watch?v=38crES_t-Qk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Styles",
+          "url": "https://developer.wordpress.org/block-editor/reference-guides/block-api/block-styles/"
+        },
+        {
+          "type": "official",
+          "title": "Block Style Variations",
+          "url": "https://developer.wordpress.org/themes/features/block-style-variations/"
+        },
+        {
+          "type": "official",
+          "title": "Mastering Custom Block Styles in WordPress: 6 Methods for Theme and Plugin Developers",
+          "url": "https://wordpress.com/blog/2025/05/07/custom-block-styles/"
+        },
+        {
+          "type": "article",
+          "title": "Block style variations and section styles",
+          "url": "https://fullsiteediting.com/lessons/custom-block-styles/"
+        }
+      ],
+      "parents": [
+        "templateParts"
+      ],
+      "children": []
+    },
+    "overrides": {
+      "title": "Overrides",
+      "sourceId": "xAVlAoI_aSSfDxyW5fUkC",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "Overrides allow you to modify the default appearance and behavior of blocks and templates without directly editing the core theme files. This ensures that your customizations are preserved during theme updates. You can achieve this by creating custom templates, template parts, and block styles within your child theme or custom plugin, effectively overriding the original definitions.",
+      "video": {
+        "title": "New in WordPress 6.5: Synced Pattern Overrides \u2b50\ufe0f",
+        "url": "https://www.youtube.com/watch?v=VGw3aNIwTNw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Override content in synced patterns",
+          "url": "https://wordpress.com/support/wordpress-editor/block-pattern/pattern-overrides"
+        },
+        {
+          "type": "official",
+          "title": "An introduction to overrides in Synced Patterns",
+          "url": "https://developer.wordpress.org/news/2024/06/an-introduction-to-overrides-in-synced-patterns/"
+        },
+        {
+          "type": "official",
+          "title": "Explore synced pattern overrides",
+          "url": "https://learn.wordpress.org/lesson/explore-synced-pattern-overrides/"
+        }
+      ],
+      "parents": [
+        "templateParts"
+      ],
+      "children": []
+    },
+    "menus": {
+      "title": "Menus",
+      "sourceId": "_pPBxAMteOviyqkrCi2TM",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "In classic WordPress themes, menus are how you organize and display navigation links on your website. They allow visitors to easily find different pages, categories, or custom links. You create and manage these menus through the WordPress admin panel, assigning them to specific locations within your theme, such as the header or footer. These locations are predefined by the theme developer.",
+      "video": {
+        "title": "Create a WordPress Navigation Menu in 5 Minutes (Even If You're a Beginner!)",
+        "url": "https://www.youtube.com/watch?v=6MCZ3lXAEdk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Menus",
+          "url": "https://wordpress.com/support/menus/"
+        },
+        {
+          "type": "official",
+          "title": "WordPress Menu User Guide",
+          "url": "https://codex.wordpress.org/WordPress_Menu_User_Guide"
+        },
+        {
+          "type": "article",
+          "title": "An In-Depth Guide to Create and Customize a WordPress Menu",
+          "url": "https://kinsta.com/blog/wordpress-custom-menu/"
+        },
+        {
+          "type": "article",
+          "title": "How to Set Up Your WordPress Menus (In 3 Steps)",
+          "url": "https://www.dreamhost.com/blog/tutorial-wp-menu-setup/"
+        }
+      ],
+      "parents": [
+        "themeStructure"
+      ],
+      "children": []
+    },
+    "customizer": {
+      "title": "Customizer",
+      "sourceId": "fh4oAQsCeAisrxUEqDbqu",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "The WordPress Customizer is a built-in interface that allows users to modify various aspects of their website's theme in a live preview environment. It provides a visual way to adjust settings like site identity, colors, menus, widgets, and more, seeing the changes reflected in real-time before publishing them. This tool simplifies the process of personalizing a theme without needing to directly edit code. The Customizer is primarily used by classic themes.",
+      "video": {
+        "title": "How to Use the WordPress Customizer",
+        "url": "https://www.youtube.com/watch?v=PhmbXAlDP34"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Customizer",
+          "url": "https://wordpress.com/support/customizer/"
+        },
+        {
+          "type": "official",
+          "title": "Customizer Docs",
+          "url": "https://wordpress.org/documentation/article/customizer/"
+        },
+        {
+          "type": "article",
+          "title": "How to Use WordPress Theme Customizer Like a Pro (Ultimate Guide)",
+          "url": "http://wpbeginner.com/beginners-guide/how-to-use-wordpress-theme-customizer/"
+        }
+      ],
+      "parents": [
+        "themeStructure"
+      ],
+      "children": []
+    },
+    "licensingUpdates": {
+      "title": "Licensing & Updates",
+      "sourceId": "oT5yJrNY2Q5IjqpFiTUW5",
+      "type": "topic",
+      "order": 69,
+      "summary": "WordPress themes and plugins often come with licenses that dictate how you can use, modify, and distribute them. These licenses can range from open-source (like GPL, allowing broad freedom) to commercial (with restrictions and paid support). Keeping your themes and plugins updated is crucial for security, compatibility, and access to new features. Updates often patch vulnerabilities, ensure the theme or plugin works with the latest version of WordPress, and introduce improvements that enhance functionality and user experience.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "performance"
+      ]
+    },
+    "widgets": {
+      "title": "Widgets",
+      "sourceId": "DzXBl8O1uwq_DgyD88qRq",
+      "type": "subtopic",
+      "order": 70,
+      "summary": "Widgets are small blocks of content that you can add to various areas of your WordPress website, typically in sidebars, footers, or other widget-ready areas defined by your theme. They allow you to easily add features and content without needing to write code, such as displaying recent posts, categories, search bars, or custom text.",
+      "video": {
+        "title": "WordPress Widgets: The Complete Guide",
+        "url": "https://www.youtube.com/watch?v=JZcCR8BGjIA"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Widgets",
+          "url": "https://wordpress.com/support/widgets/"
+        },
+        {
+          "type": "official",
+          "title": "Manage WordPress widgets",
+          "url": "https://wordpress.org/documentation/article/manage-wordpress-widgets/"
+        },
+        {
+          "type": "article",
+          "title": "The Complete Guide to WordPress Widgets: How to Use, Add, and Implement Them to Customize Your Site",
+          "url": "https://kinsta.com/blog/wordpress-widgets/"
+        },
+        {
+          "type": "article",
+          "title": "What Are WordPress Widgets & How to Add Them to Your Site",
+          "url": "https://jetpack.com/resources/wordpress-widgets/"
+        }
+      ],
+      "parents": [
+        "themeStructure"
+      ],
+      "children": [
+        "templateTags"
+      ]
+    },
+    "templateTags": {
+      "title": "Template Tags",
+      "sourceId": "Gr68jNPdHq19bLDpx17aU",
+      "type": "subtopic",
+      "order": 72,
+      "summary": "|Template Tags",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Template Tags - Theme Handbook",
+          "url": "https://developer.wordpress.org/themes/classic-themes/basics/template-tags/"
+        },
+        {
+          "type": "official",
+          "title": "Template Tags",
+          "url": "https://codex.wordpress.org/Template_Tags"
+        },
+        {
+          "type": "article",
+          "title": "What is: Template Tag",
+          "url": "https://www.wpbeginner.com/glossary/template-tag/"
+        }
+      ],
+      "parents": [
+        "widgets"
+      ],
+      "children": [
+        "customFields"
+      ]
+    },
+    "customFields": {
+      "title": "Custom Fields",
+      "sourceId": "6rmwfUecLKrhxOXQIRszK",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "Custom fields are a way to add extra information to your WordPress posts, pages, and other content types beyond the standard title, content, and excerpt. They allow you to create specific data entry points for things like product prices, book authors, event dates, or any other unique piece of information you want to associate with your content. This data can then be displayed on your website in a structured and organized manner.",
+      "video": {
+        "title": "Beginners Guide to Custom Fields in WordPress (Advanced Custom Fields Tutorial)",
+        "url": "https://www.youtube.com/watch?v=CFR9FKxACX8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Assign custom fields",
+          "url": "https://wordpress.org/documentation/article/assign-custom-fields/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Custom Fields 101: Tips, Tricks, and Hacks",
+          "url": "https://www.wpbeginner.com/wp-tutorials/wordpress-custom-fields-101-tips-tricks-and-hacks/"
+        }
+      ],
+      "parents": [
+        "templateTags"
+      ],
+      "children": [
+        "acf",
+        "metabox"
+      ]
+    },
+    "acf": {
+      "title": "ACF",
+      "sourceId": "JTWl8rqTwaD2YulcOnwu9",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "Advanced Custom Fields (ACF) is a WordPress plugin that allows you to add custom fields to your WordPress edit screens. These custom fields can include various types of data, such as text, images, files, and more, enabling you to create more structured and dynamic content for your website without needing to write custom code. This provides greater control over the content entry process and how that content is displayed on the front end.",
+      "video": {
+        "title": "Unlock WordPress Potential: A Beginner's Guide to Advanced Custom Fields",
+        "url": "https://www.youtube.com/watch?v=G6ENmGxR2ow"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Advanced Custom Fields",
+          "url": "https://www.advancedcustomfields.com/"
+        },
+        {
+          "type": "official",
+          "title": "Advanced Custom Fields Plugin",
+          "url": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+          "type": "article",
+          "title": "Advanced Custom Fields Tutorial: Your Ultimate Guide",
+          "url": "https://kinsta.com/blog/advanced-custom-fields/"
+        }
+      ],
+      "parents": [
+        "customFields"
+      ],
+      "children": []
+    },
+    "metabox": {
+      "title": "Metabox",
+      "sourceId": "uozpsemLlAJWS-uQkdy6X",
+      "type": "subtopic",
+      "order": 78,
+      "summary": "A metabox is a custom input panel added to the WordPress post or page editing screen. It allows users to enter or select additional data related to the content being created, such as specific details, settings, or options that go beyond the standard title and body text. This data is then stored and can be used to display information or modify the behavior of the website.",
+      "video": {
+        "title": "Beginners Guide To MetaBox for WordPress",
+        "url": "https://www.youtube.com/watch?v=ZbTLmSluti8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Metabox.io",
+          "url": "https://metabox.io/"
+        },
+        {
+          "type": "official",
+          "title": "Meta Box Plugin",
+          "url": "https://wordpress.org/plugins/meta-box/"
+        },
+        {
+          "type": "official",
+          "title": "Custom Meta Boxes",
+          "url": "https://developer.wordpress.org/plugins/metadata/custom-meta-boxes/"
+        },
+        {
+          "type": "article",
+          "title": "How To Add Meta Boxes and Custom Fields To Posts in Gutenberg",
+          "url": "https://kinsta.com/blog/wordpress-add-meta-box-to-post/"
+        }
+      ],
+      "parents": [
+        "customFields"
+      ],
+      "children": []
+    },
+    "performance": {
+      "title": "Performance",
+      "sourceId": "uKMMyCkbH1-Na6vaG5bJQ",
+      "type": "paragraph",
+      "order": 82,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "licensingUpdates"
+      ],
+      "children": []
+    },
+    "optimizations": {
+      "title": "Optimizations",
+      "sourceId": "jsgjt-3B7KrkHIzyFwXOP",
+      "type": "label",
+      "order": 83,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "images",
+        "assets",
+        "databaseTuning"
+      ]
+    },
+    "images": {
+      "title": "Images",
+      "sourceId": "_Z0jfQot6JP9o2WocoPyx",
+      "type": "subtopic",
+      "order": 85,
+      "summary": "Image optimization involves reducing the file size of your images without significantly sacrificing their quality. This makes your website load faster, improves user experience, and can boost your search engine rankings. Techniques include compressing images, choosing the right file format (like JPEG for photos and PNG for graphics), resizing images to appropriate dimensions, and using lazy loading so images only load when they're visible on the screen.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Optimize your images",
+          "url": "https://wordpress.com/support/media/image-optimization/"
+        },
+        {
+          "type": "article",
+          "title": "The 5 Best WordPress Image Optimization Plugins (Tests Included)",
+          "url": "https://patchstack.com/articles/best-wordpress-image-optimization-plugins/"
+        }
+      ],
+      "parents": [
+        "optimizations"
+      ],
+      "children": []
+    },
+    "assets": {
+      "title": "Assets",
+      "sourceId": "TX8dzu0k2sgXUnUOldhmZ",
+      "type": "subtopic",
+      "order": 86,
+      "summary": "Assets optimization involves refining the files that make up a website, such as images, CSS, and JavaScript, to improve loading speed and overall performance. This process typically includes techniques such as compressing files to reduce their size, combining multiple files to minimize HTTP requests, and utilizing browser caching to store assets locally for faster retrieval on subsequent visits. Efficient asset optimization results in a quicker and more responsive user experience.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Optimization",
+          "url": "https://developer.wordpress.org/advanced-administration/performance/optimization/"
+        },
+        {
+          "type": "article",
+          "title": "Eight Ways to Optimize Your WordPress Site\u2019s Performance",
+          "url": "https://wordpress.com/go/tutorials/eight-ways-to-optimize-your-wordpress-sites-performance/"
+        },
+        {
+          "type": "article",
+          "title": "Speed Up Your Slow WordPress Site In 21 Steps: The Only Tutorial You Need To Pass Core Web Vitals Totally Revamped For 2025",
+          "url": "https://onlinemediamasters.com/slow-wordpress-site/"
+        }
+      ],
+      "parents": [
+        "optimizations"
+      ],
+      "children": []
+    },
+    "databaseTuning": {
+      "title": "Database Tuning",
+      "sourceId": "5nd9YdT871IZF2Ry35bdh",
+      "type": "subtopic",
+      "order": 88,
+      "summary": "Database tuning involves optimizing the performance of a database system to improve its speed, efficiency, and overall responsiveness. This process includes analyzing database queries, adjusting configuration parameters, and reorganizing data structures to minimize resource consumption and maximize throughput. The goal is to ensure the database operates smoothly and efficiently, handling requests quickly and reliably.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Ultimate Guide to WordPress MySQL Optimization",
+          "url": "https://elementor.com/blog/the-ultimate-guide-to-wordpress-mysql-optimization/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Database Optimization Myths: When \u2018Tuning\u2019 Makes MySQL Worse",
+          "url": "https://blog.webhostmost.com/wordpress-database-optimization-2025/"
+        },
+        {
+          "type": "article",
+          "title": "How to speed up a WordPress website: 12 performance optimization methods",
+          "url": "https://www.hostinger.com/tutorials/speed-up-wordpress"
+        }
+      ],
+      "parents": [
+        "optimizations"
+      ],
+      "children": [
+        "caching"
+      ]
+    },
+    "security": {
+      "title": "Security",
+      "sourceId": "1Vq61V9Ddo0bk5y93HrCo",
+      "type": "paragraph",
+      "order": 89,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "securityHardening"
+      ]
+    },
+    "caching": {
+      "title": "Caching",
+      "sourceId": "zEogtBBsOALQegh5QTy14",
+      "type": "subtopic",
+      "order": 91,
+      "summary": "Caching is a technique used to store copies of files or data in a temporary storage location, allowing for faster access in the future. When a user requests information, the system first checks the cache. If the information is found there (a \"cache hit\"), it's delivered quickly. If not (a \"cache miss\"), the system retrieves the information from its source and then stores a copy in the cache for subsequent requests.",
+      "video": {
+        "title": "Using caching to improve website performance \u2013 W3 Total Cache plugin",
+        "url": "https://www.youtube.com/watch?v=BKhYa1E2yAc&list=PL1pJFUVKQ7ERioxFzW7z0zwh0OJW_-5jI&index=10"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Cache",
+          "url": "https://developer.wordpress.org/advanced-administration/performance/cache/"
+        },
+        {
+          "type": "article",
+          "title": "Everything About WordPress Cache",
+          "url": "https://wp-rocket.me/wordpress-cache/"
+        },
+        {
+          "type": "article",
+          "title": "5 Best WordPress Caching Plugins to Speed Up Your Website (2025)",
+          "url": "https://www.wpbeginner.com/plugins/best-wordpress-caching-plugins/"
+        }
+      ],
+      "parents": [
+        "databaseTuning"
+      ],
+      "children": [
+        "coreWebVitals"
+      ]
+    },
+    "coreWebVitals": {
+      "title": "Core Web Vitals",
+      "sourceId": "ktqvYkk7d680p2eRteAvR",
+      "type": "subtopic",
+      "order": 93,
+      "summary": "Core Web Vitals are a set of specific metrics that Google uses to evaluate user experience on a webpage. They focus on three key aspects: loading performance (Largest Contentful Paint - LCP), interactivity (First Input Delay - FID), and visual stability (Cumulative Layout Shift - CLS). These metrics aim to quantify how quickly a page loads, how responsive it is to user input, and how much unexpected layout shifting occurs while the page is loading.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to Improve Google Core Web Vitals on WordPress",
+          "url": "https://jetpack.com/resources/wordpress-core-web-vitals/"
+        },
+        {
+          "type": "article",
+          "title": "Google Core Web Vitals for WordPress: How to Test and Improve Them",
+          "url": "https://wp-rocket.me/google-core-web-vitals-wordpress/"
+        },
+        {
+          "type": "article",
+          "title": "Optimizing WordPress for Core Web Vitals",
+          "url": "https://deliciousbrains.com/optimizing-wordpress-for-core-web-vitals/"
+        }
+      ],
+      "parents": [
+        "caching"
+      ],
+      "children": [
+        "cdnIntegration"
+      ]
+    },
+    "cdnIntegration": {
+      "title": "CDN Integration",
+      "sourceId": "PREVV_dtO35j4Vi1FwQjk",
+      "type": "subtopic",
+      "order": 94,
+      "summary": "A Content Delivery Network (CDN) is a geographically distributed group of servers that work together to provide fast delivery of internet content. By caching website assets like images, videos, and scripts on these servers, which are located closer to users, a CDN reduces latency and improves website loading times. This results in a better user experience and can also decrease the load on your origin server.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "WordPress CDNs: 6 best choices to speed up your website",
+          "url": "https://www.hostinger.com/tutorials/wordpress-cdn"
+        },
+        {
+          "type": "article",
+          "title": "How to Add & Use a CDN in WordPress (+ Best Free CDN Plugin)",
+          "url": "https://jetpack.com/resources/wordpress-cdn/"
+        },
+        {
+          "type": "article",
+          "title": "Using a CDN to enhance performance",
+          "url": "https://www.youtube.com/watch?v=_GDiC3oayj0"
+        }
+      ],
+      "parents": [
+        "coreWebVitals"
+      ],
+      "children": []
+    },
+    "firewallMalwareScanning": {
+      "title": "Firewall & Malware Scanning",
+      "sourceId": "bDzltzHlI7p-0UqJg2N68",
+      "type": "subtopic",
+      "order": 95,
+      "summary": "A firewall acts as a barrier between your website and the outside world, filtering out malicious traffic and preventing unauthorized access. Malware scanning involves regularly checking your website's files and database for malicious code that could harm your site, steal data, or spread to visitors. These tools work together to protect your WordPress site from common security threats.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Protect your website from malware",
+          "url": "https://wordpress.com/support/malware-and-site-security/"
+        },
+        {
+          "type": "article",
+          "title": "What is a Web Application Firewall (WAF) for WordPress?",
+          "url": "https://jetpack.com/resources/wordpress-web-application-firewall/"
+        },
+        {
+          "type": "article",
+          "title": "6 Best WordPress Firewall Plugins Compared (Tested in 2025)",
+          "url": "https://www.wpbeginner.com/plugins/best-wordpress-firewall-plugins-compared/"
+        },
+        {
+          "type": "article",
+          "title": "How to scan WordPress for malware in 4 easy steps",
+          "url": "https://kinsta.com/blog/scan-wordpress-for-malware/"
+        }
+      ],
+      "parents": [
+        "securityHardening"
+      ],
+      "children": []
+    },
+    "securityHardening": {
+      "title": "Security & Hardening",
+      "sourceId": "E559_d1l7iIMDb6QobOsh",
+      "type": "topic",
+      "order": 96,
+      "summary": "Security & Hardening refers to the process of strengthening a system or application to reduce its vulnerability to attacks. This involves implementing various measures to protect against unauthorized access, data breaches, and other security threats by identifying and mitigating potential weaknesses in the system's configuration and code.",
+      "video": {
+        "title": "How to Secure Your WordPress Site in 2025",
+        "url": "https://www.youtube.com/watch?v=D0Q6448Fpo8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hardening WordPress",
+          "url": "https://developer.wordpress.org/advanced-administration/security/hardening/"
+        },
+        {
+          "type": "official",
+          "title": "Keep your site safe and secure",
+          "url": "https://wordpress.com/support/security/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress security & hardening, the definitive guide",
+          "url": "https://melapress.com/wordpress-security/?utm_medium=referral&utm_source=roadmapsh&utm_campaign=wproadmap"
+        },
+        {
+          "type": "article",
+          "title": "How to improve WordPress security: 22 methods to protect your website",
+          "url": "https://www.hostinger.com/tutorials/how-to-secure-wordpress"
+        }
+      ],
+      "parents": [
+        "security"
+      ],
+      "children": [
+        "firewallMalwareScanning",
+        "activityLogging",
+        "vulnerabilityMonitoring",
+        "virtualPatching",
+        "userLoginSecurity"
+      ]
+    },
+    "activityLogging": {
+      "title": "Activity Logging",
+      "sourceId": "KBHvwgqRRRg-amfGTUAL3",
+      "type": "subtopic",
+      "order": 97,
+      "summary": "Activity logging involves tracking and recording actions taken within a system, such as user logins, content modifications, and settings changes. This creates an audit trail that can be used for security analysis, troubleshooting, and compliance purposes. By monitoring these activities, administrators can identify suspicious behavior, investigate security incidents, and gain insights into how the system is being used.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Definitive guide to WordPress activity logs",
+          "url": "https://melapress.com/wordpress-activity-log/definitive-guide/?utm_medium=referral&utm_source=roadmapsh&utm_campaign=wproadmap"
+        },
+        {
+          "type": "article",
+          "title": "7 Best WordPress Activity Log and Tracking Plugins (Compared)",
+          "url": "https://www.wpbeginner.com/showcase/best-wordpress-activity-log-and-tracking-plugins-compared/"
+        }
+      ],
+      "parents": [
+        "securityHardening"
+      ],
+      "children": []
+    },
+    "userRoles": {
+      "title": "User Roles",
+      "sourceId": "KR9cp-nDEGTab4vmz0XBZ",
+      "type": "topic",
+      "order": 98,
+      "summary": "User roles define the capabilities and permissions granted to different users on a WordPress website. They control what actions a user can perform, such as creating posts, managing comments, or installing plugins. By assigning appropriate roles, website administrators can effectively manage access and maintain the security and integrity of their WordPress site.",
+      "video": {
+        "title": "Adding custom user roles using a WordPress plugin",
+        "url": "https://www.youtube.com/watch?v=FfEpt8RaTB4"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Roles and Capabilities",
+          "url": "https://wordpress.org/documentation/article/roles-and-capabilities/"
+        },
+        {
+          "type": "article",
+          "title": "How to use WordPress user roles for improved WordPress security",
+          "url": "https://melapress.com/wordpress-user-roles-wordpress-security/?utm_medium=referral&utm_source=roadmapsh&utm_campaign=wproadmap"
+        },
+        {
+          "type": "article",
+          "title": "The ultimate guide to WordPress user management",
+          "url": "https://melapress.com/ultimate-guide-wordpress-user-management/?utm_medium=referral&utm_source=roadmapsh&utm_campaign=wproadmap"
+        },
+        {
+          "type": "article",
+          "title": "WordPress User Roles & Capabilities: The Ultimate 2025 Guide",
+          "url": "https://jetpack.com/resources/wordpress-user-roles-the-ultimate-guide/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "vulnerabilityMonitoring": {
+      "title": "Vulnerability Monitoring",
+      "sourceId": "pdoRrBaVwVTGCaJH4kY60",
+      "type": "subtopic",
+      "order": 99,
+      "summary": "Vulnerability monitoring is the process of continuously scanning and assessing systems, applications, and networks for known weaknesses or flaws that could be exploited by attackers. This involves identifying potential security gaps, tracking new vulnerabilities as they are discovered, and prioritizing remediation efforts to minimize risk. Effective vulnerability monitoring helps organizations proactively address security threats before they can be leveraged to compromise data or disrupt operations.",
+      "video": {
+        "title": "How Hackers Find Vulnerabilities in WordPress & Exploit Them | Scanning WP For Vulnerabilities",
+        "url": "https://www.youtube.com/watch?v=IoHUftKVvmk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is vulnerability monitoring in WordPress?",
+          "url": "https://www.one.com/en/wordpress-hosting/vulnerability-monitoring-wordpress"
+        },
+        {
+          "type": "article",
+          "title": "Hosting security tested: 87.8% of vulnerability exploits bypassed hosting defenses",
+          "url": "https://patchstack.com/articles/hosting-security-tested-87-percent-of-vulnerability-exploits-bypassed-hosting-defenses/"
+        },
+        {
+          "type": "article",
+          "title": "The Best 5 WordPress Vulnerability Scanners in 2025 (Compared)",
+          "url": "https://runcloud.io/blog/best-wordpress-vulnerability-scanner"
+        }
+      ],
+      "parents": [
+        "securityHardening"
+      ],
+      "children": []
+    },
+    "securityBestPractices": {
+      "title": "Security Best Practices",
+      "sourceId": "9jEQivDC8PpTGTJXMkD6t",
+      "type": "topic",
+      "order": 100,
+      "summary": "Security best practices are a set of guidelines and techniques designed to minimize vulnerabilities and protect systems and data from unauthorized access, use, disclosure, disruption, modification, or destruction. They involve implementing various measures, such as strong passwords, regular software updates, access controls, and proactive monitoring, to create a robust defense against potential threats.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Security",
+          "url": "https://developer.wordpress.org/advanced-administration/security/"
+        },
+        {
+          "type": "article",
+          "title": "A complete guide to WordPress security best practices in 2025",
+          "url": "https://nordlayer.com/blog/wordpress-security-best-practices/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress security checklist: 30 measures to safeguard your site",
+          "url": "https://www.hostinger.com/tutorials/wordpress-security-checklist"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "testingDebugging"
+      ]
+    },
+    "phpunit": {
+      "title": "PHPUnit",
+      "sourceId": "lW3g0UO-UeyjddzF0lpup",
+      "type": "subtopic",
+      "order": 101,
+      "summary": "PHPUnit is a testing framework for PHP, providing a structured way to write and run automated tests for your code. It allows developers to define specific expectations for their code's behavior and then automatically verify if those expectations are met. In WordPress development, PHPUnit is used to test plugins, themes, and WordPress core itself, ensuring code quality and preventing regressions.",
+      "video": {
+        "title": "WordPress PHP Unit Testing | Step-by-Step Guide | 2024",
+        "url": "https://www.youtube.com/watch?v=G9GaEgiY0zY"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "PHP: PHPUnit",
+          "url": "https://make.wordpress.org/core/handbook/testing/automated-testing/phpunit/"
+        },
+        {
+          "type": "official",
+          "title": "PHPUnit",
+          "url": "https://phpunit.de/index.html"
+        },
+        {
+          "type": "article",
+          "title": "PHP unit testing: How to write your first test for WordPress",
+          "url": "https://www.liquidweb.com/wordpress/php/unit-testing/"
+        }
+      ],
+      "parents": [
+        "testingDebugging"
+      ],
+      "children": []
+    },
+    "virtualPatching": {
+      "title": "Virtual Patching",
+      "sourceId": "GkaZLnXVhHqn2sQfChor7",
+      "type": "subtopic",
+      "order": 102,
+      "summary": "Virtual patching is a security policy enforcement mechanism that addresses vulnerabilities in real-time. It involves deploying security rules to protect against known exploits, effectively shielding vulnerable systems without requiring immediate code modification. This approach acts as a temporary fix, providing a window for developers to apply permanent patches while mitigating the risk of exploitation.",
+      "video": {
+        "title": "What is Virtual Patching & How Does It Work?",
+        "url": "https://www.youtube.com/watch?v=Y2dXCGPpBjE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Virtual Patching, Your WordPress Website\u2019s First Line Of Defence",
+          "url": "https://www.impactmedia.co.uk/insights/virtual-patching-wordpress-website-first-line-defence/"
+        }
+      ],
+      "parents": [
+        "securityHardening"
+      ],
+      "children": []
+    },
+    "wpDebug": {
+      "title": "WP_DEBUG",
+      "sourceId": "InInDsldD3V7MHYCV7c89",
+      "type": "subtopic",
+      "order": 103,
+      "summary": "`WP_DEBUG` is a PHP constant in WordPress that, when enabled, activates the debugging mode. This mode displays PHP errors, notices, and warnings on your website, which are normally hidden. It's a valuable tool for developers to identify and fix issues within their WordPress themes, plugins, or core installation.",
+      "video": {
+        "title": "Debugging in WordPress",
+        "url": "https://www.youtube.com/watch?v=gY3htjypHL0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Debugging in WordPress",
+          "url": "https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/"
+        },
+        {
+          "type": "article",
+          "title": "A Complete Guide to WordPress Debugging (Enable WP_DEBUG + Other Tools)",
+          "url": "https://kinsta.com/blog/wordpress-debug/"
+        },
+        {
+          "type": "article",
+          "title": "How To Enable WP_DEBUG Mode In WordPress",
+          "url": "https://instawp.com/how-to-enable-wp-debug-mode-in-wordpress/"
+        }
+      ],
+      "parents": [
+        "testingDebugging"
+      ],
+      "children": []
+    },
+    "userLoginSecurity": {
+      "title": "User & Login Security",
+      "sourceId": "1737UjumNSgI4woESMn49",
+      "type": "subtopic",
+      "order": 104,
+      "summary": "User and login security focus on protecting user accounts and the login process from unauthorized access. This involves implementing measures like strong passwords, two-factor authentication, limiting login attempts, and regularly monitoring user activity to prevent brute-force attacks and account compromises. Properly securing user accounts is essential for maintaining the overall integrity and safety of a WordPress website.",
+      "video": {
+        "title": "Simple WordPress Security Wins - How to Protect Your WordPress Users' Accounts (for FREE)",
+        "url": "https://www.youtube.com/watch?v=HzZ6FIvuiB4/?utm_medium=referral&utm_source=roadmapsh&utm_campaign=wproadmap"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is 2FA? A beginner\u2019s guide",
+          "url": "https://melapress.com/what-is-2fa-beginners-guide/?utm_medium=referral&utm_source=roadmapsh&utm_campaign=wproadmap"
+        },
+        {
+          "type": "article",
+          "title": "How to Monitor User Activity in WordPress With Security Audit Logs",
+          "url": "https://www.wpbeginner.com/plugins/how-to-monitor-user-activity-in-wordpress-with-simple-history/"
+        }
+      ],
+      "parents": [
+        "securityHardening"
+      ],
+      "children": [
+        "shared",
+        "vps",
+        "managed"
+      ]
+    },
+    "testingDebugging": {
+      "title": "Testing & Debugging",
+      "sourceId": "AhNZlM1DVdm0Klg5-essZ",
+      "type": "paragraph",
+      "order": 105,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "securityBestPractices",
+        "monitoring"
+      ],
+      "children": [
+        "logFiles",
+        "queryMonitor",
+        "wpDebug",
+        "phpunit"
+      ]
+    },
+    "queryMonitor": {
+      "title": "Query Monitor",
+      "sourceId": "e5DY4WPJmaKzuj1KncBuY",
+      "type": "subtopic",
+      "order": 106,
+      "summary": "Query Monitor is a free WordPress plugin designed for developers. It helps identify and debug performance bottlenecks by providing detailed information about database queries, PHP errors, hooks and actions, block editor blocks, enqueued scripts and stylesheets, HTTP API calls, and more. This allows developers to quickly pinpoint slow queries, problematic plugins, or inefficient theme code, leading to a faster and more stable WordPress site.",
+      "video": {
+        "title": "Query Monitor - 7 Important Tools for Modern WordPress Development #1",
+        "url": "https://www.youtube.com/watch?v=M2g18-l7Aso"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Query Monitor",
+          "url": "https://querymonitor.com/"
+        },
+        {
+          "type": "official",
+          "title": "Query Monitor \u2013 The developer tools panel for WordPress",
+          "url": "https://wordpress.org/plugins/query-monitor/"
+        },
+        {
+          "type": "article",
+          "title": "Query Monitor \u2013 Debug WordPress and Improve Website Performance",
+          "url": "https://kinsta.com/blog/query-monitor/"
+        }
+      ],
+      "parents": [
+        "testingDebugging"
+      ],
+      "children": []
+    },
+    "logFiles": {
+      "title": "Log Files",
+      "sourceId": "N_M4ICk29TBAmDX-xokG4",
+      "type": "subtopic",
+      "order": 107,
+      "summary": "Log files are records that document events occurring within a system or application. They track activities, errors, warnings, and other relevant information, providing a chronological history of what happened. These files are essential for troubleshooting problems, monitoring performance, and understanding the behavior of software over time.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Debugging in WordPress",
+          "url": "https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/"
+        },
+        {
+          "type": "article",
+          "title": "How Do I View My Access and WordPress Error Logs?",
+          "url": "https://kinsta.com/blog/wordpress-error-log/"
+        },
+        {
+          "type": "article",
+          "title": "How to Set up and Access WordPress Logs (Complete Guide)",
+          "url": "https://www.cloudways.com/blog/wordpress-logs/"
+        }
+      ],
+      "parents": [
+        "testingDebugging"
+      ],
+      "children": []
+    },
+    "shared": {
+      "title": "Shared",
+      "sourceId": "r-1Dz77W-afY3PARBR5LI",
+      "type": "subtopic",
+      "order": 108,
+      "summary": "Shared hosting is a type of web hosting where multiple websites reside on a single physical server. Resources like CPU, memory, and bandwidth are shared among all the websites hosted on that server. This makes it a cost-effective option, especially for beginners and small websites with moderate traffic.",
+      "video": {
+        "title": "Shared Hosting vs Managed WordPress Hosting - Everything you need to know + which 1 is right for you",
+        "url": "https://www.youtube.com/watch?v=tcUB7IyK1D8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Is Shared Hosting and How Does It Work +Pros & Cons",
+          "url": "https://www.hostinger.com/tutorials/what-is-shared-hosting"
+        }
+      ],
+      "parents": [
+        "userLoginSecurity"
+      ],
+      "children": []
+    },
+    "vps": {
+      "title": "VPS",
+      "sourceId": "7p44mAXvgrxoeJU1h0sP1",
+      "type": "subtopic",
+      "order": 109,
+      "summary": "A Virtual Private Server (VPS) provides a virtualized server environment within a larger physical server. It offers more control and resources compared to shared hosting, as each VPS operates independently with its own operating system, dedicated storage, and allocated RAM. This isolation ensures that your website's performance isn't affected by other users on the same physical server.",
+      "video": {
+        "title": "How to Install WordPress on a VPS | QUICK & EASY WordPress Installation",
+        "url": "https://www.youtube.com/watch?v=Ve6uLry5LY4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is a VPS (Virtual Private Server)?",
+          "url": "https://aws.amazon.com/what-is/vps/"
+        },
+        {
+          "type": "article",
+          "title": "What is VPS (virtual private server) hosting?",
+          "url": "https://www.hostinger.com/tutorials/what-is-vps-hosting"
+        }
+      ],
+      "parents": [
+        "userLoginSecurity"
+      ],
+      "children": []
+    },
+    "monitoring": {
+      "title": "Monitoring",
+      "sourceId": "sywXUuRlvcxQAdbLo5aB0",
+      "type": "paragraph",
+      "order": 110,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "testingDebugging",
+        "backupsRecovery"
+      ]
+    },
+    "backupsRecovery": {
+      "title": "Backups & Recovery",
+      "sourceId": "4fIWzIY2720UME6qjLdhS",
+      "type": "topic",
+      "order": 111,
+      "summary": "Backups in WordPress involve creating a copy of your website's files, database, themes, and plugins. This copy acts as a safety net, allowing you to restore your website to a previous working state if something goes wrong, such as a server crash, hacking attempt, or accidental data loss. Recovery is the process of using this backup to reinstate your website, minimizing downtime and data loss.",
+      "video": {
+        "title": "How to Backup Your WordPress Website in 5 Min",
+        "url": "https://www.youtube.com/watch?v=bmx39y_8tOs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Backups",
+          "url": "https://developer.wordpress.org/advanced-administration/security/backup/"
+        },
+        {
+          "type": "article",
+          "title": "4 Best Incremental WordPress Backup Plugins (Save Space and Speed)",
+          "url": "https://kinsta.com/blog/wordpress-backup-plugins/"
+        },
+        {
+          "type": "article",
+          "title": "Guide to restoring WordPress from backup files and database",
+          "url": "https://teamupdraft.com/blog/restoring-wordpress-from-backup/"
+        },
+        {
+          "type": "article",
+          "title": "Back up your backup for WordPress disaster recovery",
+          "url": "https://kinsta.com/blog/wordpress-disaster-recovery/"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "managed": {
+      "title": "Managed",
+      "sourceId": "Y7a4TRYbgUOO2F_gO877f",
+      "type": "subtopic",
+      "order": 112,
+      "summary": "Managed WordPress hosting is a specialized type of web hosting where the provider handles all the technical aspects of running a WordPress website. This includes tasks like security updates, backups, performance optimization, and WordPress core updates, allowing website owners to focus solely on creating content and growing their online presence without worrying about server management.",
+      "video": {
+        "title": "Shared Hosting vs Managed WordPress Hosting - Everything you need to know + which 1 is right for you",
+        "url": "https://www.youtube.com/watch?v=tcUB7IyK1D8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Is Managed Web Hosting?",
+          "url": "https://www.hostinger.com/tutorials/what-is-managed-web-hosting"
+        },
+        {
+          "type": "article",
+          "title": "What is managed hosting?",
+          "url": "https://www.digitalocean.com/resources/articles/what-is-managed-hosting"
+        }
+      ],
+      "parents": [
+        "userLoginSecurity"
+      ],
+      "children": []
+    },
+    "updateStrategies": {
+      "title": "Update Strategies",
+      "sourceId": "AGQ9uXMYuYQ5d6w56gJBP",
+      "type": "topic",
+      "order": 113,
+      "summary": "Updating WordPress involves keeping your core software, themes, and plugins current to ensure security, performance, and compatibility. You can manage updates directly from your WordPress dashboard by navigating to the \"Updates\" section. Here, you'll see available updates and can install them with a click. For more control, you can configure automatic updates for minor versions or specific plugins. Regularly updating your WordPress site is crucial for maintaining a healthy and secure website.",
+      "video": {
+        "title": "WordPress Updates 101 (and Beyond)",
+        "url": "https://www.youtube.com/watch?v=8o40zePHRwo&t=354s&utm_medium=referral&utm_source=roadmapsh&utm_campaign=wproadmap"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How To Update WordPress Without Breaking Your Site",
+          "url": "https://www.dreamhost.com/blog/update-wordpress/"
+        },
+        {
+          "type": "article",
+          "title": "Don\u2019t Panic! A Stress-Free Approach to WordPress Update Management",
+          "url": "https://wponcall.com/wordpress-update-management/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "deployment": {
+      "title": "Deployment",
+      "sourceId": "6bg1IT2mC4cbKv7dn1__l",
+      "type": "paragraph",
+      "order": 114,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "performanceMonitoring"
+      ],
+      "children": []
+    },
+    "performanceMonitoring": {
+      "title": "Performance monitoring",
+      "sourceId": "sWgjddp7yGITFu_sYIVA7",
+      "type": "topic",
+      "order": 116,
+      "summary": "Performance monitoring involves tracking key metrics like website loading speed, server response time, and database query efficiency. This process helps identify bottlenecks that slow down your site, impacting user experience and search engine rankings. By regularly analyzing these metrics, you can optimize your WordPress site for faster performance and improved overall efficiency.",
+      "video": {
+        "title": "5 Best WordPress Site Monitoring Tools in 2025",
+        "url": "https://www.youtube.com/watch?v=e6tvoZ0eSZU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Improve your website\u2019s speed and performance",
+          "url": "https://wordpress.com/support/site-speed/"
+        },
+        {
+          "type": "article",
+          "title": "Guide to Monitoring WordPress Performance with Free Tools",
+          "url": "https://wisdmlabs.com/blog/guide-to-monitoring-wordpress-performance/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "wpCli",
+        "bedrock",
+        "deployment"
+      ]
+    },
+    "wpCli": {
+      "title": "WP-CLI",
+      "sourceId": "CNWRqhsaWK6xrIDvN564O",
+      "type": "subtopic",
+      "order": 117,
+      "summary": "WP-CLI is a command-line interface for WordPress. It allows you to manage WordPress installations, update plugins and themes, publish posts, and perform many other administrative tasks without using a web browser. It's a powerful tool for developers and system administrators who need to automate WordPress management.",
+      "video": {
+        "title": "The Only WP CLI Tutorial You\u2019ll Ever Need",
+        "url": "https://www.youtube.com/watch?v=9E1lyVyh4xc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "WP-CLI",
+          "url": "https://wp-cli.org/"
+        },
+        {
+          "type": "official",
+          "title": "WP-CLI Commands",
+          "url": "https://developer.wordpress.org/cli/commands/"
+        },
+        {
+          "type": "official",
+          "title": "Quick Start",
+          "url": "https://make.wordpress.org/cli/handbook/guides/quick-start/"
+        },
+        {
+          "type": "article",
+          "title": "How to Use the WordPress Command Line Interface \u2013 WP-CLI Tutorial",
+          "url": "https://www.freecodecamp.org/news/how-to-use-wordpress-cli/"
+        }
+      ],
+      "parents": [
+        "performanceMonitoring"
+      ],
+      "children": []
+    },
+    "bedrock": {
+      "title": "Bedrock",
+      "sourceId": "ND0sr6SbdQYcEHic8mOxL",
+      "type": "subtopic",
+      "order": 118,
+      "summary": "Bedrock is a WordPress boilerplate project designed to improve WordPress development by utilizing modern development standards. It introduces a more structured project setup, dependency management with Composer, and environment configuration, making WordPress projects more maintainable, secure, and easier to deploy. It essentially treats your WordPress site as a modern application.",
+      "video": {
+        "title": "Supercharging Your WordPress Development with Bedrock",
+        "url": "https://www.youtube.com/watch?v=VnTiwu7LUZ0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Bedrock",
+          "url": "https://roots.io/bedrock/"
+        },
+        {
+          "type": "opensource",
+          "title": "debrock",
+          "url": "https://github.com/roots/bedrock"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Development: How to Use Bedrock and Trellis?",
+          "url": "https://kinsta.com/blog/bedrock-trellis/"
+        }
+      ],
+      "parents": [
+        "performanceMonitoring"
+      ],
+      "children": []
+    },
+    "sage": {
+      "title": "Sage",
+      "sourceId": "eshQkhtAGQZYR-4YRQoFC",
+      "type": "subtopic",
+      "order": 119,
+      "summary": "Sage is a WordPress starter theme that offers a modern development workflow. It utilizes tools like Composer, Webpack, and Blade templating to streamline the process of building custom WordPress themes. This approach aims to improve code quality, maintainability, and overall development efficiency.",
+      "video": {
+        "title": "Become pro WP Developer with Sage (Roots stack) and Gutenberg - ep. 1",
+        "url": "https://www.youtube.com/watch?v=l8Xf97a7Ans&list=PLJmazrJBxbTQKEBfQZtYXYJgReCH5BIQ_"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Sage",
+          "url": "https://roots.io/sage/"
+        },
+        {
+          "type": "opensource",
+          "title": "sage",
+          "url": "https://github.com/roots/sage"
+        },
+        {
+          "type": "article",
+          "title": "Dummy\u2019s Guide to Roots Sage Theme in WordPress",
+          "url": "https://toby.ink/blog/2020/11/26/dummys-guide-to-roots-sage-theme-in-wordpress/"
+        }
+      ],
+      "parents": [
+        "workflowsAutomation"
+      ],
+      "children": []
+    },
+    "composer": {
+      "title": "Composer",
+      "sourceId": "SG0_5ZaQcDdnu4Th75Pje",
+      "type": "subtopic",
+      "order": 120,
+      "summary": "Composer is a tool for managing dependencies in PHP projects, including WordPress. It lets you declare the libraries your project needs, and it will install them for you. This means you can easily include external code, like plugins or themes from repositories, without manually downloading and managing the files. Composer simplifies updating these dependencies and ensures your project has the correct versions of everything it needs to run.",
+      "video": {
+        "title": "Using Composer with WordPress",
+        "url": "https://www.youtube.com/watch?v=_X82sj464NI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Composer",
+          "url": "https://getcomposer.org/"
+        },
+        {
+          "type": "article",
+          "title": "Managing Your WordPress Site With Git and Composer",
+          "url": "https://deliciousbrains.com/storing-wordpress-in-git/"
+        },
+        {
+          "type": "article",
+          "title": "Using Composer With WordPress",
+          "url": "https://www.smashingmagazine.com/2019/03/composer-wordpress/"
+        }
+      ],
+      "parents": [
+        "workflowsAutomation"
+      ],
+      "children": []
+    },
+    "migrations": {
+      "title": "Migrations",
+      "sourceId": "CLqqdBm5yQ85UabxPvlPw",
+      "type": "topic",
+      "order": 121,
+      "summary": "Migrations involve moving a WordPress website from one environment to another. This could be from a local development server to a live production server, from one hosting provider to another, or even between different servers within the same provider. The process typically includes transferring the WordPress files (themes, plugins, uploads) and the database containing all the website's content and settings.",
+      "video": {
+        "title": "How to MANUALLY Migrate Your Wordpress Site",
+        "url": "https://www.youtube.com/watch?v=wROa37k_RQA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to manually migrate a WordPress Site",
+          "url": "https://teamupdraft.com/blog/how-to-manually-migrate-a-wordpress-site/"
+        },
+        {
+          "type": "article",
+          "title": "9 Powerful WordPress Migration Plugins (Move Your Site Safely)",
+          "url": "https://kinsta.com/blog/wordpress-migration-plugins/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "advancedWordpress": {
+      "title": "Advanced WordPress",
+      "sourceId": "ElD1b6ktTIopHCl3WzE7Y",
+      "type": "paragraph",
+      "order": 122,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "automatedDeployments"
+      ],
+      "children": [
+        "workflowsAutomation"
+      ]
+    },
+    "automatedDeployments": {
+      "title": "Automated Deployments",
+      "sourceId": "UDQ3VQCllviOq8wI806Wk",
+      "type": "topic",
+      "order": 123,
+      "summary": "Automated deployments streamline the process of moving website code and files from a development environment to a live server. This involves setting up a system where changes made to the website's code are automatically tested, built, and then transferred to the server without manual intervention, ensuring a faster and more reliable release cycle.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to automated WordPress deployments",
+          "url": "https://carlalexander.ca/introduction-automated-wordpress-deployments/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress CI/CD: continuous integration and deployment for WordPress",
+          "url": "https://www.hostinger.com/tutorials/wordpress-continuous-integration-and-deployment"
+        },
+        {
+          "type": "article",
+          "title": "The Ultimate Guide to Automated WordPress Deployments",
+          "url": "https://spinupwp.com/wordpress-deployment-workflow-preparing/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "advancedWordpress"
+      ]
+    },
+    "workflowsAutomation": {
+      "title": "Workflows & Automation",
+      "sourceId": "5IJERQdGXAGLi7GDDBBUP",
+      "type": "topic",
+      "order": 124,
+      "summary": "Workflows and automation involve streamlining repetitive tasks and processes to improve efficiency and reduce manual effort. This often includes setting up triggers and actions that automatically execute based on specific events or conditions. By automating tasks, you can free up time to focus on more strategic initiatives and ensure consistency in your operations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Advanced WordPress automation workflows for agencies",
+          "url": "https://kinsta.com/blog/wordpress-workflow-automation/"
+        },
+        {
+          "type": "article",
+          "title": "Best WordPress Integrations for Workflow Automation",
+          "url": "https://pressable.com/blog/best-wordpress-workflow-automation-integrations/"
+        }
+      ],
+      "parents": [
+        "advancedWordpress"
+      ],
+      "children": [
+        "sage",
+        "composer"
+      ]
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "sourceId": "bfFSH7alQ8IZZJ5gUed-T",
+      "type": "topic",
+      "order": 125,
+      "summary": "Accessibility refers to designing and developing websites that are usable by people of all abilities, including those with disabilities. This involves ensuring that content is perceivable, operable, understandable, and robust for users who may rely on assistive technologies like screen readers, keyboard navigation, or alternative input devices. A focus on accessibility creates a more inclusive and user-friendly experience for everyone.",
+      "video": {
+        "title": "Testing your content for accessibility",
+        "url": "https://www.youtube.com/watch?v=iEL11QKi7T0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Accessibility",
+          "url": "https://wordpress.org/about/accessibility/"
+        },
+        {
+          "type": "official",
+          "title": "Accessibility Coding Standards",
+          "url": "https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/"
+        },
+        {
+          "type": "article",
+          "title": "How to Make Your WordPress Website Accessible",
+          "url": "https://kinsta.com/blog/wordpress-accessibility/"
+        },
+        {
+          "type": "article",
+          "title": "The Complete Guide to Accessibility for WordPress Websites",
+          "url": "https://www.deque.com/blog/wordpress-accessibility/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "advancedPhpArchitecture": {
+      "title": "Advanced PHP & Architecture",
+      "sourceId": "aI9yJGnzztuVayUhgIxAw",
+      "type": "topic",
+      "order": 126,
+      "summary": "Advanced PHP & Architecture in WordPress delves into the deeper aspects of PHP programming and the underlying structure of the WordPress platform. It involves understanding object-oriented programming principles, design patterns, and how WordPress core functions and APIs are built. This knowledge allows developers to create more efficient, scalable, and maintainable plugins and themes, as well as contribute to the WordPress core itself.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated PHP Roadmap",
+          "url": "https://roadmap.sh/php"
+        },
+        {
+          "type": "official",
+          "title": "PHP Optimization",
+          "url": "https://developer.wordpress.org/advanced-administration/performance/php/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress and PHP: What it is, how WordPress uses it, and more",
+          "url": "https://www.liquidweb.com/wordpress/php/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "oopInPhp",
+        "designPatterns",
+        "composerAutoloading"
+      ]
+    },
+    "oopInPhp": {
+      "title": "OOP in PHP",
+      "sourceId": "Pg83mKnN_q2OPWZoSUeIw",
+      "type": "subtopic",
+      "order": 127,
+      "summary": "Object-Oriented Programming (OOP) is a programming paradigm that uses \"objects\" to structure software design. These objects combine data (properties) and code (methods) that operate on that data. In PHP, OOP allows developers to create reusable and organized code by defining classes, which are blueprints for creating objects. This approach promotes modularity, making code easier to maintain, extend, and debug.",
+      "video": {
+        "title": "WordPress Architecture Fundamentals: OOP vs Procedural Approach - Which wins?",
+        "url": "https://www.youtube.com/watch?v=xTcFXEbOMxE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Object-oriented programming in PHP: transforming WordPress development",
+          "url": "https://kinsta.com/blog/php-oop/"
+        },
+        {
+          "type": "article",
+          "title": "Simplifying WordPress's functions.php with OOP",
+          "url": "https://dev.to/tylerlwsmith/simplifying-wordpresss-functionsphp-with-oop-2mj8"
+        },
+        {
+          "type": "article",
+          "title": "How to approach object-oriented programming with WordPress",
+          "url": "https://carlalexander.ca/approaching-object-oriented-programming-wordpress/"
+        }
+      ],
+      "parents": [
+        "advancedPhpArchitecture"
+      ],
+      "children": []
+    },
+    "wordpressCreditProgram": {
+      "title": "WordPress Credit Program",
+      "sourceId": "0FtAQxN7lVZcTOVjbffvW",
+      "type": "subtopic",
+      "order": 128,
+      "summary": "The WordPress Credit Program recognizes and rewards individuals who contribute to the WordPress open-source project. By participating in various activities like coding, testing, documentation, translation, and community support, contributors earn credits that are displayed on their WordPress.org profiles. This program is particularly relevant for students as it provides a structured way to gain practical experience, build a portfolio, and demonstrate their skills to potential employers within the WordPress ecosystem.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "WordPress Credits",
+          "url": "https://learn.wordpress.org/course/wordpress-credits/"
+        },
+        {
+          "type": "official",
+          "title": "WordPress Credits: Contribution Program for Students",
+          "url": "https://make.wordpress.org/handbook/wordpress-credits-contribution-internship-program/"
+        }
+      ],
+      "parents": [
+        "contributeToWordpress"
+      ],
+      "children": []
+    },
+    "localization": {
+      "title": "Localization",
+      "sourceId": "dyZC4MVm-TqclSnTVznPo",
+      "type": "topic",
+      "order": 129,
+      "summary": "Localization is the process of adapting a product or content to a specific target market. This involves translating text, but also modifying other elements like images, dates, and currencies to suit the cultural and technical requirements of the locale. The goal is to make the product feel native to the user, regardless of their location or language.",
+      "video": {
+        "title": "How To Translate Your WordPress Website to Make it Multilingual (And Get More Traffic)",
+        "url": "https://www.youtube.com/watch?v=V3cu9TOQKRI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Localization",
+          "url": "https://developer.wordpress.org/apis/internationalization/localization/#what-is-localization"
+        },
+        {
+          "type": "article",
+          "title": "WordPress localization: The simplest guide you\u2019ll find",
+          "url": "https://lokalise.com/blog/wordpress-localization/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress localization: How to get started",
+          "url": "https://poeditor.com/blog/wordpress-localization/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "designPatterns": {
+      "title": "Design Patterns",
+      "sourceId": "sXDr-m69q3b7HTEwAx4Oe",
+      "type": "subtopic",
+      "order": 130,
+      "summary": "Design patterns are reusable solutions to commonly occurring problems in software design. They represent best practices developed over time by experienced developers. Instead of providing code directly, they offer a template or blueprint for how to solve a particular design challenge, allowing developers to adapt the pattern to their specific context and create more maintainable, flexible, and robust code.",
+      "video": {
+        "title": "PHP Design Patterns in REAL life - Student code review #1",
+        "url": "https://www.youtube.com/watch?v=JS-AdMxIfew&list=PLL4sNmZle1wAg3rX2V0tdllT15T6j5mvz"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Using PHP in Patterns",
+          "url": "https://developer.wordpress.org/themes/patterns/using-php-in-patterns/"
+        },
+        {
+          "type": "article",
+          "title": "Basic PHP Design Patterns For WordPress Developers",
+          "url": "https://torquemag.io/2016/06/basic-php-design-patterns-developers/"
+        }
+      ],
+      "parents": [
+        "advancedPhpArchitecture"
+      ],
+      "children": []
+    },
+    "multisite": {
+      "title": "Multisite",
+      "sourceId": "yfkZv_REsq-ttyeiW9c8y",
+      "type": "topic",
+      "order": 131,
+      "summary": "WordPress Multisite is a feature that allows you to create and manage a network of multiple websites from a single WordPress installation. Instead of installing WordPress separately for each website, you can use Multisite to share core files and plugins, simplifying administration and updates across all sites in the network. Each site within the network can have its own unique domain name, theme, and content, while still being managed from a central dashboard.",
+      "video": {
+        "title": "What is WordPress Multisite?",
+        "url": "https://www.youtube.com/watch?v=VOuEl4ZLEgc&list=PL1pJFUVKQ7ERioxFzW7z0zwh0OJW_-5jI&index=13"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "WordPress Multisite / Network",
+          "url": "https://developer.wordpress.org/advanced-administration/multisite/"
+        },
+        {
+          "type": "article",
+          "title": "WordPress Multisite: The Everything-You-Need-To-Know Guide to WordPress Network",
+          "url": "https://kinsta.com/blog/wordpress-multisite/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "composerAutoloading": {
+      "title": "Composer & Autoloading",
+      "sourceId": "DGUKyNG_gTUWqmPRZNOpz",
+      "type": "subtopic",
+      "order": 132,
+      "summary": "Composer is a dependency management tool for PHP, allowing you to declare the libraries your project depends on, and it will manage (install/update) them for you. Autoloading is a mechanism that automatically loads PHP class files when the classes are first used in your code, eliminating the need to manually require or include them. Together, Composer and autoloading streamline the process of managing external libraries and organizing your PHP code in a WordPress project.",
+      "video": {
+        "title": "Using Composer & PSR-4 autoloading for WordPress Plugin",
+        "url": "https://www.youtube.com/watch?v=rOFmgbcMCDw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Implementing namespaces and coding standards in WordPress plugin development",
+          "url": "https://developer.wordpress.org/news/2025/09/implementing-namespaces-and-coding-standards-in-wordpress-plugin-development/"
+        },
+        {
+          "type": "article",
+          "title": "How to use composer autoload for the WordPress",
+          "url": "https://i-wp-dev.com/how-to-use-composer-autoload-for-the-wordpress/"
+        }
+      ],
+      "parents": [
+        "advancedPhpArchitecture"
+      ],
+      "children": []
+    },
+    "contributeToWordpress": {
+      "title": "Contribute to WordPress",
+      "sourceId": "IJ_aNI71Z0H5CMLIDRvqR",
+      "type": "subtopic",
+      "order": 133,
+      "summary": "To elevate your WordPress career, consider contributing directly to the WordPress project. This can involve submitting code to WordPress Core, improving documentation, or helping with translations. Engaging with the WordPress community through forums, online groups, and local meetups provides valuable networking and learning opportunities. Attending WordCamps and local WordPress meetups offers chances to learn from experts, connect with other professionals, and stay updated on the latest trends and best practices.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Become a WordPress contributor",
+          "url": "https://wordpress.org/documentation/article/become-a-wordpress-contributor/"
+        },
+        {
+          "type": "official",
+          "title": "Contribute with Code",
+          "url": "https://make.wordpress.org/core/handbook/contribute/"
+        },
+        {
+          "type": "article",
+          "title": "How to Get Started as a WordPress Contributor",
+          "url": "https://kinsta.com/blog/wordpress-contributor/"
+        }
+      ],
+      "parents": [
+        "careerGrowth"
+      ],
+      "children": [
+        "wordpressCreditProgram"
+      ]
+    },
+    "headlessWordpress": {
+      "title": "Headless WordPress",
+      "sourceId": "1FG5pAtfZjpQH6Mn-B1Nv",
+      "type": "topic",
+      "order": 134,
+      "summary": "Headless WordPress decouples the content management system from the presentation layer (the front-end). This means WordPress is used solely for creating, storing, and managing content, while a separate technology like React, Vue.js, or Angular is used to build and display the website to visitors. This approach allows developers greater flexibility in designing the user experience and leveraging modern front-end frameworks.",
+      "video": {
+        "title": "Should You Use WordPress As A Headless CMS?",
+        "url": "https://www.youtube.com/watch?v=rHNl5PZT0VU&list=PLxvoH8hcoFgmlCawg0WydWGNoTaKLAPWr"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "What Is Headless WordPress (And How Do You Use It)?",
+          "url": "https://wordpress.com/blog/2025/03/20/headless-wordpress/"
+        },
+        {
+          "type": "article",
+          "title": "How to make a headless WordPress website using React and a plugin",
+          "url": "https://www.hostinger.com/tutorials/headless-wordpress"
+        },
+        {
+          "type": "article",
+          "title": "How To Create a Headless WordPress Site With React.js",
+          "url": "https://kinsta.com/blog/wordpress-react/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "careerGrowth": {
+      "title": "Career Growth",
+      "sourceId": "prgqgwBX-RtBQi5YeF33q",
+      "type": "paragraph",
+      "order": 135,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "basicsOfSeo",
+        "boostYourWordpressCareer"
+      ],
+      "children": [
+        "visitTheFollowingRoadmapsToKeepLearning",
+        "contributeToWordpress"
+      ]
+    },
+    "boostYourWordpressCareer": {
+      "title": "Boost your WordPress Career",
+      "sourceId": "dGHHlz26kn14_o7emPcFV",
+      "type": "subtopic",
+      "order": 136,
+      "summary": "Want to level up your WordPress career? It's all about exploring different paths, showcasing your skills, and staying in the loop. Think about whether you'd enjoy being a developer, designer, content creator, or something else entirely within the WordPress ecosystem. Build a portfolio with real-world projects to demonstrate your abilities. Finally, keep learning by following relevant blogs, listening to podcasts, and subscribing to newsletters to stay updated on the latest trends and best practices.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "WordPress Career Options \u2013 How to Make a Living With WordPress",
+          "url": "https://www.wpbeginner.com/opinion/wordpress-career-options-how-to-make-living-wordpress/"
+        },
+        {
+          "type": "article",
+          "title": "Unlock a Promising Future: A Comprehensive Guide to a WordPress Developer Career",
+          "url": "https://teamcubate.com/blogs/wordpress-developer-career"
+        },
+        {
+          "type": "article",
+          "title": "How to use WordPress: A complete guide to building a WordPress website",
+          "url": "https://www.hostinger.com/tutorials/how-to-use-wordpress"
+        },
+        {
+          "type": "article",
+          "title": "A WordPress Tutorial for Beginners: Create Your First Site in 10 Steps",
+          "url": "https://wpmudev.com/blog/a-wordpress-tutorial-for-beginners-create-your-first-site-in-10-steps/"
+        },
+        {
+          "type": "article",
+          "title": "36 Best WordPress Blogs You Should Read & Follow (in 2025)",
+          "url": "https://www.wpbeginner.com/showcase/best-wordpress-blogs-to-follow/"
+        },
+        {
+          "type": "article",
+          "title": "9+ Best WordPress Podcasts You Should Listen To",
+          "url": "https://metabox.io/best-wordpress-podcasts/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "careerGrowth"
+      ]
+    },
+    "basicsOfSeo": {
+      "title": "Basics of SEO",
+      "sourceId": "CLQwjime3I2HKRzLLnSL3",
+      "type": "topic",
+      "order": 137,
+      "summary": "Search Engine Optimization (SEO) is the practice of improving your website to increase its visibility when people search for products or services related to your business in search engines like Google. The better visibility your pages have in search results, the more likely you are to garner attention and attract prospective and existing customers to your website. For WordPress, this means optimizing your site's content and structure to rank higher in search engine results pages (SERPs), driving more organic traffic to your website.",
+      "video": {
+        "title": "WordPress SEO Tutorial for Beginners 2025 | All in One SEO Plugin Tutorial",
+        "url": "https://www.youtube.com/watch?v=es_7J3WgXAE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "60 WordPress SEO Tips to Grow Your Organic Traffic by 280%",
+          "url": "https://kinsta.com/blog/wordpress-seo/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "careerGrowth"
+      ]
+    },
+    "visitTheFollowingRoadmapsToKeepLearning": {
+      "title": "Visit the following roadmaps to keep learning",
+      "sourceId": "O5dely89N5UCMBeUfh8ud",
+      "type": "paragraph",
+      "order": 138,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "careerGrowth"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "wordpress",
+      "to": "introduction",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "installationSetup",
+      "style": "solid"
+    },
+    {
+      "from": "installationSetup",
+      "to": "wordpressConcepts",
+      "style": "solid"
+    },
+    {
+      "from": "styleScriptEnqueueing",
+      "to": "customPostTypes",
+      "style": "solid"
+    },
+    {
+      "from": "codingStandards",
+      "to": "themesPlugins",
+      "style": "solid"
+    },
+    {
+      "from": "themesPlugins",
+      "to": "classicVsBlockThemes",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "whatIsHttp",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "howTheWebWorks",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "whatIsACms",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "frontendFundamentals",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "backendFundamentals",
+      "style": "dashed"
+    },
+    {
+      "from": "wordpressConcepts",
+      "to": "themes",
+      "style": "solid"
+    },
+    {
+      "from": "wordpressConcepts",
+      "to": "plugins",
+      "style": "solid"
+    },
+    {
+      "from": "pageEditors",
+      "to": "hooks",
+      "style": "solid"
+    },
+    {
+      "from": "hooks",
+      "to": "filters",
+      "style": "dashed"
+    },
+    {
+      "from": "licensingUpdates",
+      "to": "performance",
+      "style": "solid"
+    },
+    {
+      "from": "securityHardening",
+      "to": "firewallMalwareScanning",
+      "style": "dashed"
+    },
+    {
+      "from": "securityHardening",
+      "to": "activityLogging",
+      "style": "dashed"
+    },
+    {
+      "from": "securityHardening",
+      "to": "vulnerabilityMonitoring",
+      "style": "dashed"
+    },
+    {
+      "from": "securityHardening",
+      "to": "virtualPatching",
+      "style": "dashed"
+    },
+    {
+      "from": "securityHardening",
+      "to": "userLoginSecurity",
+      "style": "dashed"
+    },
+    {
+      "from": "security",
+      "to": "securityHardening",
+      "style": "solid"
+    },
+    {
+      "from": "automatedDeployments",
+      "to": "advancedWordpress",
+      "style": "solid"
+    },
+    {
+      "from": "advancedWordpress",
+      "to": "workflowsAutomation",
+      "style": "solid"
+    },
+    {
+      "from": "advancedPhpArchitecture",
+      "to": "oopInPhp",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedPhpArchitecture",
+      "to": "designPatterns",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedPhpArchitecture",
+      "to": "composerAutoloading",
+      "style": "dashed"
+    },
+    {
+      "from": "wordpressComWordpressOrg",
+      "to": "introduction",
+      "style": "dashed"
+    },
+    {
+      "from": "basicsOfSeo",
+      "to": "careerGrowth",
+      "style": "solid"
+    },
+    {
+      "from": "boostYourWordpressCareer",
+      "to": "careerGrowth",
+      "style": "dashed"
+    },
+    {
+      "from": "contributeToWordpress",
+      "to": "wordpressCreditProgram",
+      "style": "dashed"
+    },
+    {
+      "from": "careerGrowth",
+      "to": "visitTheFollowingRoadmapsToKeepLearning",
+      "style": "solid"
+    },
+    {
+      "from": "careerGrowth",
+      "to": "contributeToWordpress",
+      "style": "dashed"
+    },
+    {
+      "from": "securityBestPractices",
+      "to": "testingDebugging",
+      "style": "solid"
+    },
+    {
+      "from": "testingDebugging",
+      "to": "logFiles",
+      "style": "dashed"
+    },
+    {
+      "from": "testingDebugging",
+      "to": "queryMonitor",
+      "style": "dashed"
+    },
+    {
+      "from": "testingDebugging",
+      "to": "wpDebug",
+      "style": "dashed"
+    },
+    {
+      "from": "testingDebugging",
+      "to": "phpunit",
+      "style": "dashed"
+    },
+    {
+      "from": "monitoring",
+      "to": "testingDebugging",
+      "style": "solid"
+    },
+    {
+      "from": "monitoring",
+      "to": "backupsRecovery",
+      "style": "solid"
+    },
+    {
+      "from": "performanceMonitoring",
+      "to": "deployment",
+      "style": "solid"
+    },
+    {
+      "from": "specialThanksToMelapressForHelpingUsCreateThisRoadmap",
+      "to": "html",
+      "style": "solid"
+    },
+    {
+      "from": "specialThanksToMelapressForHelpingUsCreateThisRoadmap",
+      "to": "css",
+      "style": "solid"
+    },
+    {
+      "from": "specialThanksToMelapressForHelpingUsCreateThisRoadmap",
+      "to": "javascript",
+      "style": "solid"
+    },
+    {
+      "from": "backendFundamentals",
+      "to": "sql",
+      "style": "solid"
+    },
+    {
+      "from": "backendFundamentals",
+      "to": "php",
+      "style": "solid"
+    },
+    {
+      "from": "startWithLocalDeployment",
+      "to": "localwp",
+      "style": "solid"
+    },
+    {
+      "from": "startWithLocalDeployment",
+      "to": "xampp",
+      "style": "solid"
+    },
+    {
+      "from": "themes",
+      "to": "block",
+      "style": "solid"
+    },
+    {
+      "from": "backendFundamentals",
+      "to": "classic",
+      "style": "solid"
+    },
+    {
+      "from": "startWithLocalDeployment",
+      "to": "vvv",
+      "style": "solid"
+    },
+    {
+      "from": "startWithLocalDeployment",
+      "to": "docker",
+      "style": "solid"
+    },
+    {
+      "from": "themes",
+      "to": "universal",
+      "style": "solid"
+    },
+    {
+      "from": "themes",
+      "to": "hybrid",
+      "style": "solid"
+    },
+    {
+      "from": "themes",
+      "to": "thirdParty",
+      "style": "solid"
+    },
+    {
+      "from": "themes",
+      "to": "actions",
+      "style": "solid"
+    },
+    {
+      "from": "pageEditors",
+      "to": "classic2",
+      "style": "solid"
+    },
+    {
+      "from": "pageEditors",
+      "to": "blockEditor",
+      "style": "solid"
+    },
+    {
+      "from": "pageEditors",
+      "to": "thirdPartyPageBuilders",
+      "style": "solid"
+    },
+    {
+      "from": "classicThemes",
+      "to": "styleCss",
+      "style": "solid"
+    },
+    {
+      "from": "classicThemes",
+      "to": "functionsPhp",
+      "style": "solid"
+    },
+    {
+      "from": "pluginBasics2",
+      "to": "pluginBasics",
+      "style": "solid"
+    },
+    {
+      "from": "blockThemes",
+      "to": "themeStructure2",
+      "style": "solid"
+    },
+    {
+      "from": "classicThemes",
+      "to": "templateFiles",
+      "style": "solid"
+    },
+    {
+      "from": "pluginBasics",
+      "to": "fileStructure2",
+      "style": "solid"
+    },
+    {
+      "from": "themeStructure2",
+      "to": "fullSiteEditingFse",
+      "style": "solid"
+    },
+    {
+      "from": "templateFiles",
+      "to": "childThemes",
+      "style": "solid"
+    },
+    {
+      "from": "fullSiteEditingFse",
+      "to": "blockPatterns",
+      "style": "solid"
+    },
+    {
+      "from": "childThemes",
+      "to": "templateHierarchy",
+      "style": "solid"
+    },
+    {
+      "from": "blockPatterns",
+      "to": "templateParts",
+      "style": "solid"
+    },
+    {
+      "from": "extendingFunctionality",
+      "to": "transientsApi",
+      "style": "solid"
+    },
+    {
+      "from": "templateParts",
+      "to": "styles",
+      "style": "solid"
+    },
+    {
+      "from": "templateParts",
+      "to": "overrides",
+      "style": "solid"
+    },
+    {
+      "from": "themeStructure",
+      "to": "menus",
+      "style": "solid"
+    },
+    {
+      "from": "themeStructure",
+      "to": "customizer",
+      "style": "solid"
+    },
+    {
+      "from": "themeStructure",
+      "to": "widgets",
+      "style": "solid"
+    },
+    {
+      "from": "widgets",
+      "to": "templateTags",
+      "style": "solid"
+    },
+    {
+      "from": "templateTags",
+      "to": "customFields",
+      "style": "solid"
+    },
+    {
+      "from": "customFields",
+      "to": "acf",
+      "style": "solid"
+    },
+    {
+      "from": "customFields",
+      "to": "metabox",
+      "style": "solid"
+    },
+    {
+      "from": "optimizations",
+      "to": "images",
+      "style": "solid"
+    },
+    {
+      "from": "optimizations",
+      "to": "assets",
+      "style": "solid"
+    },
+    {
+      "from": "optimizations",
+      "to": "databaseTuning",
+      "style": "solid"
+    },
+    {
+      "from": "databaseTuning",
+      "to": "caching",
+      "style": "solid"
+    },
+    {
+      "from": "caching",
+      "to": "coreWebVitals",
+      "style": "solid"
+    },
+    {
+      "from": "coreWebVitals",
+      "to": "cdnIntegration",
+      "style": "solid"
+    },
+    {
+      "from": "userLoginSecurity",
+      "to": "shared",
+      "style": "solid"
+    },
+    {
+      "from": "userLoginSecurity",
+      "to": "vps",
+      "style": "solid"
+    },
+    {
+      "from": "userLoginSecurity",
+      "to": "managed",
+      "style": "solid"
+    },
+    {
+      "from": "performanceMonitoring",
+      "to": "wpCli",
+      "style": "solid"
+    },
+    {
+      "from": "performanceMonitoring",
+      "to": "bedrock",
+      "style": "solid"
+    },
+    {
+      "from": "workflowsAutomation",
+      "to": "sage",
+      "style": "solid"
+    },
+    {
+      "from": "workflowsAutomation",
+      "to": "composer",
+      "style": "solid"
+    }
+  ]
+}

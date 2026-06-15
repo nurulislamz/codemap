@@ -1,6 +1,7 @@
 import "server-only";
 
-import rawRoadmaps from "@/data/roadmap/backend-roadmap.json";
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 
 export type RoadmapSummary = {
   slug: string;
@@ -72,8 +73,10 @@ type RawRoadmapTopic = {
   children: string[];
 };
 
+const rawRoadmaps = loadRoadmaps();
+
 export function getRoadmapCatalog(): RoadmapSummary[] {
-  return Object.entries(rawRoadmaps as RawRoadmapData).map(([slug, roadmap]) => {
+  return Object.entries(rawRoadmaps).map(([slug, roadmap]) => {
     const topicCount = roadmap.order.filter((topicSlug) => {
       const topic = roadmap.topics[topicSlug];
       if (!topic) return false;
@@ -92,7 +95,7 @@ export function getRoadmapCatalog(): RoadmapSummary[] {
 }
 
 export function getRoadmapBySlug(slug: string): RoadmapDetail | null {
-  const roadmap = (rawRoadmaps as RawRoadmapData)[slug];
+  const roadmap = rawRoadmaps[slug];
 
   if (!roadmap) {
     return null;
@@ -165,6 +168,21 @@ export function getRoadmapBySlug(slug: string): RoadmapDetail | null {
       (edge) => topicSlugSet.has(edge.from) && topicSlugSet.has(edge.to),
     ),
   };
+}
+
+function loadRoadmaps(): RawRoadmapData {
+  const roadmapDir = join(process.cwd(), "data", "roadmap");
+  const roadmaps: RawRoadmapData = {};
+
+  for (const fileName of readdirSync(roadmapDir).sort()) {
+    if (!fileName.endsWith("-roadmap.json")) continue;
+
+    const slug = fileName.replace(/-roadmap\.json$/, "");
+    const filePath = join(roadmapDir, fileName);
+    roadmaps[slug] = JSON.parse(readFileSync(filePath, "utf8")) as RawRoadmap;
+  }
+
+  return roadmaps;
 }
 
 function normalizeRoadmapResourceUrl(url: string) {

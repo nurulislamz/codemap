@@ -1,0 +1,106 @@
+{
+  "title": "Code Review",
+  "summary": "Detailed list of best practices for effective code reviews and quality",
+  "url": "https://roadmap.sh/code-review-best-practices",
+  "order": [
+    "teamWidePractices",
+    "developmentAuthor",
+    "postDevelopmentAuthor",
+    "beforeReviewReviewer",
+    "duringReviewReviewer",
+    "afterReviewAuthor",
+    "afterReviewReviewer",
+    "afterApprovalBoth"
+  ],
+  "topics": {
+    "teamWidePractices": {
+      "title": "Team Wide Practices",
+      "sourceId": "zIe8oVwRPkMiAelRCGnMX",
+      "type": "checklist",
+      "order": 1,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "developmentAuthor": {
+      "title": "Development (Author)",
+      "sourceId": "dR2FyZHi8vWnF-yeqLCSW",
+      "type": "checklist",
+      "order": 2,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "postDevelopmentAuthor": {
+      "title": "Post Development (Author)",
+      "sourceId": "IDizJtnubM_XEF4BEdr9Z",
+      "type": "checklist",
+      "order": 3,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "beforeReviewReviewer": {
+      "title": "Before Review (Reviewer)",
+      "sourceId": "4J4GzUP0AMCOd4PD_W8KU",
+      "type": "checklist",
+      "order": 4,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "duringReviewReviewer": {
+      "title": "During Review (Reviewer)",
+      "sourceId": "CUwj117WQa4ulAyViX3sW",
+      "type": "checklist",
+      "order": 5,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "afterReviewAuthor": {
+      "title": "After Review (Author)",
+      "sourceId": "o1W6YQx36_CWpvAmgLzam",
+      "type": "checklist",
+      "order": 6,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "afterReviewReviewer": {
+      "title": "After Review (Reviewer)",
+      "sourceId": "L2PBkQobjXnRRc_bgMbA_",
+      "type": "checklist",
+      "order": 7,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "afterApprovalBoth": {
+      "title": "After Approval (Both)",
+      "sourceId": "wlrqUL0nTe1q4wE3ejAUe",
+      "type": "checklist",
+      "order": 8,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    }
+  },
+  "edges": []
+}

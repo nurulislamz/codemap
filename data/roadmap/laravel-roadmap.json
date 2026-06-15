@@ -1,0 +1,3927 @@
+{
+  "title": "Laravel",
+  "summary": "Step by step guide to mastering Laravel in 2026",
+  "url": "https://roadmap.sh/laravel",
+  "order": [
+    "phpRoadmap",
+    "whatIsLaravel",
+    "whyWebFrameworks",
+    "laravelForFullStack",
+    "laravelForFrontend",
+    "laravelHerd",
+    "installingLaravel",
+    "yorFirstApp",
+    "createANewProject",
+    "starterKits",
+    "inertia",
+    "livewire",
+    "projectStructure",
+    "requestResponseFlow",
+    "breeze",
+    "jetstream",
+    "app",
+    "bootstrap",
+    "config",
+    "database",
+    "routingControllers",
+    "public",
+    "resources",
+    "basicRoutes",
+    "routes",
+    "storage",
+    "viewRoutes",
+    "tests",
+    "vendor",
+    "redirectRoutes",
+    "routeModelBinding",
+    "routeParameters",
+    "rateLimiting",
+    "namedRoutes",
+    "cors",
+    "caching",
+    "basicControllers",
+    "routeGroups",
+    "resourceControllers",
+    "singleActionControllers",
+    "viewsBlade",
+    "dependencyInjection",
+    "middleware",
+    "globalVsRoute",
+    "crudOperations",
+    "bladeTemplating",
+    "relationships",
+    "displayingData",
+    "castsAccessors",
+    "bladeDirectives",
+    "ifElse",
+    "loops",
+    "queryScopes",
+    "components",
+    "eloquentOrm",
+    "layouts",
+    "databasesEloquent",
+    "configuration",
+    "bladeLivewire",
+    "queryBuilder",
+    "migrationsSeeders",
+    "requestsResponses",
+    "pagination",
+    "retrievingDataFiles",
+    "files",
+    "views",
+    "json",
+    "redirects",
+    "creatingResponses",
+    "streamedResponses",
+    "gates",
+    "policies",
+    "forms",
+    "authorization",
+    "authentication",
+    "manualValidation",
+    "encryptionHashing",
+    "errorMessages",
+    "withStarterKits",
+    "manualAuthentication",
+    "loggingDebugging",
+    "sanctum",
+    "passport",
+    "errorHandling",
+    "handlingExceptions",
+    "telescope",
+    "debugbar",
+    "messageCustomization",
+    "loggingBasics",
+    "httpExceptions",
+    "logStacksMessages",
+    "debuggingBasics",
+    "pest",
+    "phpunit",
+    "testing",
+    "advancedFeatures",
+    "unitFeatureTests",
+    "queuesJobs",
+    "clis",
+    "eventsListeners",
+    "artisan",
+    "sail",
+    "configuration2",
+    "notifications",
+    "codeStyle",
+    "optimization",
+    "taskSchedulling",
+    "pint",
+    "healthRoute",
+    "fileStorage",
+    "performance",
+    "deploymentOptions",
+    "octane",
+    "localization",
+    "laravelCloud",
+    "monitoring",
+    "facades",
+    "laravelForge",
+    "pulse",
+    "packageManagement",
+    "deployment",
+    "toolsAndPackages",
+    "visitTheFollowingRoadmapsToKeepLearning"
+  ],
+  "topics": {
+    "phpRoadmap": {
+      "title": "PHP Roadmap",
+      "sourceId": "S5K2LZZmxYKF7uMeBJR9y",
+      "type": "button",
+      "order": 1,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "laravel"
+      ],
+      "children": [
+        "whatIsLaravel"
+      ]
+    },
+    "whatIsLaravel": {
+      "title": "What is Laravel?",
+      "sourceId": "QvWjQUrEYX9NRbzdm3Fvp",
+      "type": "topic",
+      "order": 2,
+      "summary": "Laravel is a PHP web application framework that provides tools and structure for building web applications using the Model-View-Controller (MVC) architectural pattern. It aims to simplify common tasks used in web development, such as routing, templating, authentication, and database interactions, by providing a clean and expressive syntax. Laravel emphasizes developer experience and promotes rapid application development.",
+      "video": {
+        "title": "Laravel 12 in 11 hours - Laravel for Beginners Full Course",
+        "url": "https://www.youtube.com/watch?v=0M84Nk7iWkA"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Learn Laravel - Free Video Courses",
+          "url": "https://laravel.com/learn"
+        },
+        {
+          "type": "course",
+          "title": "[FREE] Laravel 11 For Beginners: Your First Project",
+          "url": "https://laraveldaily.com/course/laravel-beginners"
+        },
+        {
+          "type": "official",
+          "title": "Laravel",
+          "url": "https://laravel.com/"
+        },
+        {
+          "type": "official",
+          "title": "Laravel Docs",
+          "url": "https://laravel.com/docs/master"
+        },
+        {
+          "type": "article",
+          "title": "What is Laravel: core features, use cases, and advantages of the PHP framework",
+          "url": "https://www.hostinger.com/tutorials/what-is-laravel"
+        }
+      ],
+      "parents": [
+        "phpRoadmap",
+        "installingLaravel"
+      ],
+      "children": [
+        "whyWebFrameworks",
+        "laravelForFullStack",
+        "laravelForFrontend"
+      ]
+    },
+    "whyWebFrameworks": {
+      "title": "Why Web Frameworks?",
+      "sourceId": "8wOQ-Kmz3dBlOKMg-ui5D",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "Web frameworks provide a structured way to develop web applications by offering pre-built components, tools, and conventions. They streamline common tasks like routing, templating, database interaction, and security, allowing developers to focus on the unique features of their application rather than reinventing the wheel for basic functionalities. This leads to faster development, more maintainable code, and improved overall application quality.",
+      "video": {
+        "title": "What Is a Framework in Programming? | Why Is It Useful?",
+        "url": "https://www.youtube.com/watch?v=BfhSoFARn6w"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Why Laravel",
+          "url": "https://laravel.com/docs/master#why-laravel"
+        },
+        {
+          "type": "article",
+          "title": "Web Frameworks: All You Should Know About",
+          "url": "https://www.browserstack.com/guide/web-development-frameworks"
+        }
+      ],
+      "parents": [
+        "whatIsLaravel"
+      ],
+      "children": []
+    },
+    "laravelForFullStack": {
+      "title": "Laravel for Full Stack",
+      "sourceId": "_Squ3npZfjfd_xYn__Qna",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "Full-stack development involves building both the front-end (what users see and interact with) and the back-end (the server-side logic, database interactions, and APIs) of a web application. Laravel, primarily a back-end framework, can be effectively used in full-stack development by pairing it with front-end technologies like Vue.js, React, or even Blade templates to create complete web applications. This approach allows developers to leverage Laravel's robust features for handling data, authentication, and routing, while using front-end tools to create dynamic and interactive user interfaces.",
+      "video": {
+        "title": "Vue + Laravel API Full Stack App - Build and Deploy",
+        "url": "https://www.youtube.com/watch?v=qVi3vv9K8Fk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Livewire",
+          "url": "https://laravel-livewire.com/"
+        }
+      ],
+      "parents": [
+        "whatIsLaravel"
+      ],
+      "children": []
+    },
+    "laravelForFrontend": {
+      "title": "Laravel for Frontend",
+      "sourceId": "ns75IOfTHNmWsLm4q8sQx",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Laravel, primarily known as a backend framework, can also be effectively utilized for building the frontend of web applications. While Laravel excels at handling server-side logic, routing, database interactions, and APIs, it offers features like Blade templating engine and asset management tools that allow developers to create dynamic and interactive user interfaces directly within the Laravel environment. This approach can be particularly useful for projects where a tight integration between the frontend and backend is desired, or when leveraging Laravel's existing ecosystem for a full-stack solution.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Laravel for Frontend",
+          "url": "https://laravel.com/docs/frontend"
+        },
+        {
+          "type": "article",
+          "title": "Integrating Laravel with Popular Frontend Frameworks: A Developer's Guide",
+          "url": "https://dev.to/elisaray/integrating-laravel-with-popular-frontend-frameworks-a-developers-guide-4625"
+        }
+      ],
+      "parents": [
+        "whatIsLaravel"
+      ],
+      "children": []
+    },
+    "laravelHerd": {
+      "title": "Laravel Herd",
+      "sourceId": "Kee5SXZbkwmoxAF8O6Y2f",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "Laravel Herd is a fast, native Laravel and PHP development environment for macOS. It eliminates the need for Docker or virtual machines, offering a streamlined experience for setting up and running Laravel projects. It includes everything you need to get started, such as PHP, Nginx, and DNSmasq, all pre-configured for optimal performance.",
+      "video": {
+        "title": "How to Install Laravel on Windows with Laravel Herd and MySQL, phpMyAdmin for Beginners",
+        "url": "https://www.youtube.com/watch?v=Io0GZLAc5WI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Laravel herd",
+          "url": "https://herd.laravel.com/"
+        },
+        {
+          "type": "official",
+          "title": "Installation Using Herd",
+          "url": "https://laravel.com/docs/installation#installation-using-herd"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Development using Herd",
+          "url": "https://medium.com/@Ashleecooper/laravel-development-using-herd-1da0932b9888"
+        }
+      ],
+      "parents": [
+        "installingLaravel"
+      ],
+      "children": []
+    },
+    "installingLaravel": {
+      "title": "Installing Laravel",
+      "sourceId": "cmczkTxiNFtfnr5Wgznef",
+      "type": "topic",
+      "order": 7,
+      "summary": "Installing Laravel involves setting up a new project environment where you can begin building your web application. This process typically includes downloading the Laravel framework, configuring your server environment to meet its requirements, and setting up any necessary dependencies. The installation process ensures that you have a clean and functional starting point for your Laravel project.",
+      "video": {
+        "title": "How to Easily Install Laravel | Laravel for Complete Beginners | Laravel Tutorial",
+        "url": "https://www.youtube.com/watch?v=iBaM5LYgyPk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Installation",
+          "url": "https://laravel.com/docs/installation"
+        },
+        {
+          "type": "article",
+          "title": "How To Install Laravel on Windows, macOS, and Linux",
+          "url": "https://kinsta.com/blog/install-laravel/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "whatIsLaravel",
+        "laravelHerd",
+        "yorFirstApp"
+      ]
+    },
+    "yorFirstApp": {
+      "title": "Yor First App",
+      "sourceId": "mPCzSwS_falCWlbyyzYyH",
+      "type": "paragraph",
+      "order": 8,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "installingLaravel"
+      ],
+      "children": [
+        "createANewProject"
+      ]
+    },
+    "createANewProject": {
+      "title": "Create a new project",
+      "sourceId": "7NR5Dj24EFDsvea61_BTu",
+      "type": "topic",
+      "order": 9,
+      "summary": "To start a new Laravel project, you'll typically use Composer, a dependency management tool for PHP. Open your terminal or command prompt, navigate to the directory where you want to create your project, and then run the command `composer create-project laravel/laravel your-project-name`. Replace `your-project-name` with the desired name for your project. This command downloads Laravel and all its dependencies, sets up the basic project structure, and prepares your development application.",
+      "video": {
+        "title": "Laravel Project Setup & Getting Started | Laravel for Complete Beginners | Laravel Tutorial",
+        "url": "https://www.youtube.com/watch?v=52WpfAQfgXs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Creating a Laravel Application",
+          "url": "https://laravel.com/docs/installation#creating-a-laravel-project"
+        },
+        {
+          "type": "official",
+          "title": "Setting up your Laravel project",
+          "url": "https://laravel.com/learn/getting-started-with-laravel/setting-up-your-laravel-project"
+        },
+        {
+          "type": "article",
+          "title": "A Beginner\u2019s Guide to Setting Up a Project in Laravel",
+          "url": "https://www.sitepoint.com/laravel-project-setup-beginners-guide/"
+        }
+      ],
+      "parents": [
+        "yorFirstApp"
+      ],
+      "children": [
+        "starterKits"
+      ]
+    },
+    "starterKits": {
+      "title": "Starter Kits",
+      "sourceId": "9YTtSeu4nY5A5AcFcZFto",
+      "type": "topic",
+      "order": 10,
+      "summary": "Starter kits provide a pre-built scaffolding for new Laravel applications, offering a foundation with common features like authentication, user interface components, and basic styling already configured. This allows developers to quickly begin building application-specific functionality without having to set up these fundamental elements from scratch. They streamline the initial development process and promote consistency across projects.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Starter Kits",
+          "url": "https://laravel.com/docs/starter-kits#main-content"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Starter Kits List: Official and Community",
+          "url": "https://nabilhassen.com/laravel-starter-kits-list-official-and-community"
+        },
+        {
+          "type": "article",
+          "title": "10 Best Laravel Starter Kits for 2025",
+          "url": "https://saasykit.com/blog/10-best-laravel-starter-kits-for-2025"
+        }
+      ],
+      "parents": [
+        "createANewProject"
+      ],
+      "children": [
+        "inertia",
+        "livewire",
+        "breeze"
+      ]
+    },
+    "inertia": {
+      "title": "Inertia",
+      "sourceId": "0B41E-UtzvCsXVDX5DUqY",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "Inertia.js allows you to build single-page applications (SPAs) using server-side routing and controllers. Instead of building an API and a separate frontend, Inertia lets you use your existing server-side framework (like Laravel) for both. It achieves this by rendering server-side views and then using JavaScript to progressively enhance the user experience, creating a seamless SPA feel without the complexity of traditional SPA development.",
+      "video": {
+        "title": "The New Features of Inertia 2.0 in 3 Minutes",
+        "url": "https://www.youtube.com/watch?v=I96tyvRdmbA"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Inertia",
+          "url": "https://inertiajs.com/"
+        },
+        {
+          "type": "official",
+          "title": "Inertia - Laravel Docs",
+          "url": "https://laravel.com/docs/frontend#inertia"
+        },
+        {
+          "type": "opensource",
+          "title": "Inertia",
+          "url": "https://github.com/inertiajs/inertia-laravel"
+        },
+        {
+          "type": "article",
+          "title": "How To Use Inertia.js in Your Laravel Projects",
+          "url": "https://kinsta.com/blog/laravel-inertia/"
+        }
+      ],
+      "parents": [
+        "starterKits"
+      ],
+      "children": []
+    },
+    "livewire": {
+      "title": "Livewire",
+      "sourceId": "5A0DGzGXXBHQTRuzWEkuW",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Livewire starter kits in Laravel provide a pre-configured foundation for building dynamic, reactive user interfaces using Livewire components. These kits typically include basic layouts, authentication scaffolding, and often pre-built components that demonstrate Livewire's capabilities, allowing developers to quickly begin building interactive features without setting up the underlying infrastructure from scratch. They streamline the development process by providing a ready-to-use environment with Livewire already integrated and configured.",
+      "video": {
+        "title": "Laravel Livewire Crash Course #1 - Introduction & Setup",
+        "url": "https://www.youtube.com/watch?v=c8pPND7kclg"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Laravel Livewire",
+          "url": "https://livewire.laravel.com/"
+        },
+        {
+          "type": "official",
+          "title": "Livewire - Laravel Docs",
+          "url": "https://laravel.com/docs/frontend#livewire"
+        },
+        {
+          "type": "opensource",
+          "title": "Livewire",
+          "url": "https://github.com/livewire/livewire"
+        }
+      ],
+      "parents": [
+        "starterKits"
+      ],
+      "children": []
+    },
+    "projectStructure": {
+      "title": "Project Structure",
+      "sourceId": "yReWNr4qDBqQmblJwAEE4",
+      "type": "label",
+      "order": 13,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "app",
+        "bootstrap",
+        "config",
+        "database",
+        "public",
+        "resources"
+      ]
+    },
+    "requestResponseFlow": {
+      "title": "Request\u2013Response Flow",
+      "sourceId": "jARVkKaEkVAYIe8WSO0aY",
+      "type": "topic",
+      "order": 14,
+      "summary": "In Laravel, the request-response flow begins when a user sends a request to the application. This request first hits the `public/index.php` file, which bootstraps the Laravel framework. The request is then passed to the HTTP kernel, which identifies the appropriate route based on the request URI. The route then calls a controller action or closure, which processes the request and generates a response. Finally, the response is sent back to the user's browser.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Request Lifecycle",
+          "url": "https://laravel.com/docs/lifecycle"
+        },
+        {
+          "type": "article",
+          "title": "Understanding the Laravel Request/Response Lifecycle: A Simple Guide for Developers",
+          "url": "https://chandankshaw.medium.com/understanding-the-laravel-request-response-lifecycle-a-simple-guide-for-developers-e6afdf887a6d"
+        },
+        {
+          "type": "article",
+          "title": "Requests and Responses",
+          "url": "https://www.fastcomet.com/tutorials/laravel/requests-and-responses"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "breeze": {
+      "title": "Breeze",
+      "sourceId": "vI2qUCCDghYynHr2hUSkb",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "Breeze is a minimal, simple implementation of all of Laravel's authentication features, including login, registration, password reset, email verification, and password confirmation. It provides a basic starting point for building a new Laravel application with authentication already configured, allowing developers to quickly scaffold the user authentication system and focus on building the core features of their application. Breeze offers Blade templates, Tailwind CSS styling, and can be optionally configured with Inertia.js or Livewire.",
+      "video": {
+        "title": "Kickstart Your Laravel Project with Breeze: The Minimal Starter Kit",
+        "url": "https://www.youtube.com/watch?v=iZWprN9RYDo"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Laravel Breeze",
+          "url": "https://laravel.com/docs/10.x/starter-kits"
+        },
+        {
+          "type": "opensource",
+          "title": "Laravel Breeze",
+          "url": "https://github.com/laravel/breeze"
+        }
+      ],
+      "parents": [
+        "starterKits"
+      ],
+      "children": []
+    },
+    "jetstream": {
+      "title": "Jetstream",
+      "sourceId": "lBpyPXS2zHbJ49bHpOyi5",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "Jetstream is a scaffolding package for Laravel applications. It provides a robust starting point for your next Laravel project, featuring key functionalities such as user registration, login, email verification, two-factor authentication, session management, API support via Laravel Sanctum, and team management. It's designed to be a complete solution for quickly building modern web applications with authentication and common features already implemented.",
+      "video": {
+        "title": "Laravel Jetstream: The Most Powerful Way to Kickstart Your Application",
+        "url": "https://www.youtube.com/watch?v=Z1Bt8LHaDmE"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Laravel jetstream",
+          "url": "https://jetstream.laravel.com/introduction.html"
+        },
+        {
+          "type": "opensource",
+          "title": "Jetstream",
+          "url": "https://github.com/laravel/jetstream"
+        }
+      ],
+      "parents": [
+        "basicRoutes"
+      ],
+      "children": []
+    },
+    "app": {
+      "title": "App",
+      "sourceId": "U9EVG_fIFy57WWPwJSXv6",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "The `app` directory in a Laravel project houses the core logic of your application. It contains the code that defines your application's behavior, including models, controllers, middleware, services, and other custom classes. This directory is structured to promote organization and maintainability, making it easier to manage and scale your application as it grows.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "App directory",
+          "url": "https://laravel.com/docs/structure#the-root-app-directory"
+        }
+      ],
+      "parents": [
+        "projectStructure"
+      ],
+      "children": []
+    },
+    "bootstrap": {
+      "title": "Bootstrap",
+      "sourceId": "BWl1EezIH8xHf0N4grruF",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "Bootstrap in a Laravel project is the initial point where the framework starts its execution process. It involves setting up the environment, loading configurations, registering service providers, and handling exceptions. This process ensures that all the necessary components and dependencies are available and properly configured before the application starts processing requests.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "The Bootstrap Directory",
+          "url": "https://laravel.com/docs/structure#the-bootstrap-directory"
+        }
+      ],
+      "parents": [
+        "projectStructure"
+      ],
+      "children": []
+    },
+    "config": {
+      "title": "Config",
+      "sourceId": "RfSXcTBYSX4_9YhsOdSQc",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "Configuration files in Laravel allow you to manage settings for your application in a centralized and organized manner. These files store key-value pairs that define various aspects of your application's behavior, such as database connections, mail settings, and application-specific parameters. By using configuration files, you can easily modify your application's settings without directly altering the code, making it more flexible and maintainable across different environments.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "The Config Directory",
+          "url": "http://laravel.com/docs/structure#the-config-directory"
+        }
+      ],
+      "parents": [
+        "projectStructure"
+      ],
+      "children": []
+    },
+    "database": {
+      "title": "Database",
+      "sourceId": "QEapMmUt1VLeERQy8pOEn",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "The `database` directory in a Laravel project houses all files related to your application's database interactions. This includes migrations, which define the structure of your database tables; seeders, which populate your database with initial data; factories, which generate fake data for testing; and any custom database-related logic you might implement. It serves as a central location for managing and version controlling your database schema and initial data.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "The Database Directory",
+          "url": "http://laravel.com/docs/structure#the-database-directory"
+        }
+      ],
+      "parents": [
+        "projectStructure"
+      ],
+      "children": []
+    },
+    "routingControllers": {
+      "title": "Routing & Controllers",
+      "sourceId": "Ap35AOS9vRMP2r5pUxtGZ",
+      "type": "paragraph",
+      "order": 21,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "routeModelBinding",
+        "rateLimiting",
+        "caching",
+        "basicRoutes"
+      ]
+    },
+    "public": {
+      "title": "Public",
+      "sourceId": "ciVFg7PpqdBtSt0XaXNZL",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "The `public` directory serves as the document root for your Laravel application. It's the only directory that should be directly accessible from the web. This directory contains the `index.php` file, which is the entry point for all HTTP requests entering your application, as well as assets like images, CSS, and JavaScript files.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "The Public Directory",
+          "url": "https://laravel.com/docs/structure#the-public-directory"
+        }
+      ],
+      "parents": [
+        "projectStructure"
+      ],
+      "children": []
+    },
+    "resources": {
+      "title": "Resources",
+      "sourceId": "ieFd1B_Ntp1pK8ew47WyP",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "The `resources` directory in a Laravel project is where you store your application's raw, uncompiled assets. This includes things like your views (HTML templates), language files, CSS, JavaScript, and images. These assets are often processed by tools like Webpack or Vite before being served to the user.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "The Routes Directory",
+          "url": "https://laravel.com/docs/structure#the-routes-directory"
+        }
+      ],
+      "parents": [
+        "projectStructure"
+      ],
+      "children": []
+    },
+    "basicRoutes": {
+      "title": "Basic Routes",
+      "sourceId": "LgHiEGflKuzsBEOMSX4i4",
+      "type": "topic",
+      "order": 24,
+      "summary": "Routing in Laravel determines how your application responds to client requests. It essentially maps URLs (like `/about` or `/contact`) to specific functions or controllers within your application. When a user visits a particular URL, Laravel's router identifies the corresponding route and executes the associated code, which might involve displaying a view, processing data, or performing other actions. This system allows you to define the structure and behavior of your web application based on the URLs users access.",
+      "video": {
+        "title": "The Basics of Routing in Laravel | Learn Laravel The Right Way",
+        "url": "https://www.youtube.com/watch?v=pP4g0xPq0TQ"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Basic Routes",
+          "url": "https://laravel.com/docs/routing#basic-routing"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Routing Guide \u2013 How to Create Route to Call a View",
+          "url": "http://cloudways.com/blog/routing-in-laravel/"
+        },
+        {
+          "type": "article",
+          "title": "Laravel - Routing",
+          "url": "https://www.tutorialspoint.com/laravel/laravel_routing.htm"
+        }
+      ],
+      "parents": [
+        "routingControllers"
+      ],
+      "children": [
+        "jetstream"
+      ]
+    },
+    "routes": {
+      "title": "Routes",
+      "sourceId": "eMVYQ1Q1o1IZmeHnrfBV7",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "The `routes` directory in Laravel houses all the route definitions for your application. These files tell Laravel how to respond to different HTTP requests (like GET, POST, PUT, DELETE) for specific URLs. Each file typically defines a set of routes, mapping a URL to a specific controller action or closure that will handle the request and return a response.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Routes Directory",
+          "url": "https://laravel.com/docs/structure#the-routes-directory"
+        }
+      ],
+      "parents": [
+        "basicControllers"
+      ],
+      "children": []
+    },
+    "storage": {
+      "title": "Storage",
+      "sourceId": "Q8IaWP-McT1x89_87fVUF",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "The `storage` directory in Laravel is where the framework stores files generated during the application's runtime. This includes compiled Blade templates, file-based sessions, cache files, and logs. It's structured into `app`, `framework`, and `logs` subdirectories to organize these different types of data. The `app` directory can be used to store any files generated by your application, while `framework` is primarily used by Laravel itself. The `logs` directory contains the application's log files, which are essential for debugging.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Storage Directory",
+          "url": "https://laravel.com/docs/structure#the-storage-directory"
+        }
+      ],
+      "parents": [
+        "basicControllers"
+      ],
+      "children": []
+    },
+    "viewRoutes": {
+      "title": "View Routes",
+      "sourceId": "5NMRzpig1p9SJaeA7Twmh",
+      "type": "topic",
+      "order": 27,
+      "summary": "View routes provide a simple way to return a view directly from a route without needing a full controller. Instead of defining a controller method to load and return a view, you can use the `Route::view` method. This is particularly useful for simple routes that only need to display static content or a basic view without any complex logic. You specify the URI, the view to be rendered, and optionally, an array of data to pass to the view.",
+      "video": {
+        "title": "Laravel Tutorial for Beginners #2 - Routes & Views",
+        "url": "https://www.youtube.com/watch?v=RT0DZYYE3wc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "View Routes",
+          "url": "https://laravel.com/docs/routing#view-routes"
+        },
+        {
+          "type": "article",
+          "title": "Basic routing & views",
+          "url": "https://itf-laravel-11.netlify.app/laravel/basicRouting"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "tests": {
+      "title": "Tests",
+      "sourceId": "6iTp6YFyfzg_7uyIKwu37",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "The `tests` directory in Laravel projects houses all the automated tests for your application. These tests are designed to verify that your code functions as expected, covering various aspects like models, controllers, routes, and features. It typically includes subdirectories like `Feature` for high-level feature tests and `Unit` for testing individual components in isolation. The tests are written using PHPUnit and provide a way to ensure code quality and prevent regressions as your application evolves.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "The Tests Directory",
+          "url": "https://laravel.com/docs/structure#the-tests-directory"
+        }
+      ],
+      "parents": [
+        "basicControllers"
+      ],
+      "children": []
+    },
+    "vendor": {
+      "title": "Vendor",
+      "sourceId": "-xOvjCCRwfkms2SRUvMaC",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "The `vendor` directory in a Laravel project houses all the Composer-installed dependencies. These dependencies are third-party packages and libraries that your project relies on for various functionalities, such as database interactions, authentication, or templating. It's essentially a collection of code that you didn't write yourself but is essential for your application to function correctly.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Vendor Directory",
+          "url": "https://laravel.com/docs/structure#the-vendor-directory"
+        }
+      ],
+      "parents": [
+        "basicControllers"
+      ],
+      "children": []
+    },
+    "redirectRoutes": {
+      "title": "Redirect Routes",
+      "sourceId": "LCCEkY9fZOUqNo1jIpy0D",
+      "type": "topic",
+      "order": 30,
+      "summary": "Redirect routes provide a simple way to create HTTP redirects within your application. Instead of defining a full route with a controller action, you can directly instruct the application to redirect the user to another URL or route. This is useful for creating permanent or temporary redirects, handling old URLs, or simplifying route definitions when only a redirection is needed.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Redirect Routes",
+          "url": "https://laravel.com/docs/routing#redirect-routes"
+        },
+        {
+          "type": "article",
+          "title": "Route Redirect in Laravel: The Complete Guide",
+          "url": "https://larafast.com/blog/route-redirect-in-laravel-the-complete-guide"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "routeModelBinding": {
+      "title": "Route model binding",
+      "sourceId": "hC0-JDJtpgh4ELcFuhch1",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "Route model binding is a way to automatically inject model instances into your route handlers based on the route parameters. Instead of manually querying the database for a model within your controller method using the ID passed in the route, Laravel can automatically resolve the model instance for you, making your code cleaner and more readable. This simplifies the process of retrieving data associated with a specific model based on the route parameters.",
+      "video": {
+        "title": "Master Laravel Route Model Binding to Clean Your Code",
+        "url": "https://www.youtube.com/watch?v=qWo2n11N-uw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Route model binding",
+          "url": "https://laravel.com/docs/folio#route-model-binding"
+        },
+        {
+          "type": "article",
+          "title": "What is route model binding in Laravel?",
+          "url": "https://www.educative.io/answers/what-is-route-model-binding-in-laravel"
+        },
+        {
+          "type": "article",
+          "title": "Cleaner Laravel Controllers with Route Model Binding",
+          "url": "https://www.digitalocean.com/community/tutorials/cleaner-laravel-controllers-with-route-model-binding"
+        }
+      ],
+      "parents": [
+        "routingControllers"
+      ],
+      "children": []
+    },
+    "routeParameters": {
+      "title": "Route parameters",
+      "sourceId": "6TkDx8eXb9nMU_OE3ArhJ",
+      "type": "topic",
+      "order": 32,
+      "summary": "Route parameters allow you to capture segments of the URI within your route definitions. These captured segments can then be passed as arguments to your route's controller or closure, enabling you to create dynamic routes that respond to different data. You define parameters by enclosing them in curly braces, such as `{id}`, within the route URI.",
+      "video": {
+        "title": "Working with Route Parameters in Laravel | Learn Laravel The Right Way",
+        "url": "https://www.youtube.com/watch?v=DgQEDXBcyZw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Route parameters",
+          "url": "https://laravel.com/docs/routing#route-parameters"
+        },
+        {
+          "type": "article",
+          "title": "Route Parameters and Route Model Binding",
+          "url": "https://laraveldaily.com/lesson/laravel-beginners/route-parameters-route-model-binding"
+        },
+        {
+          "type": "article",
+          "title": "Get Laravel Route Parameters in Middleware",
+          "url": "https://www.digitalocean.com/community/tutorials/get-laravel-route-parameters-in-middleware"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "rateLimiting": {
+      "title": "Rate limiting",
+      "sourceId": "_0QY_h0802wBAKEo2Hq9f",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "Rate limiting is a technique used to control the number of requests a user or client can make to a server within a specific time period. This helps to prevent abuse, protect resources, and maintain the stability and performance of an application by preventing it from being overwhelmed by excessive requests. It essentially sets a threshold for how often a particular action can be performed.",
+      "video": {
+        "title": "Exploring Laravel Rate Limiters: Control Traffic & Secure Actions \u26d4",
+        "url": "https://www.youtube.com/watch?v=5YlJ8DllTFw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Rate Limiting",
+          "url": "https://laravel.com/docs/rate-limiting#main-content"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Rate Limiting \u2014 Explained with Real-Life Examples",
+          "url": "https://backpackforlaravel.com/articles/tutorials/laravel-rate-limiting-explained-with-real-life-examples"
+        },
+        {
+          "type": "article",
+          "title": "Implementing API Rate Limiting in Laravel 11",
+          "url": "https://apiacademy.treblle.com/laravel-api-course/rate-limiting"
+        }
+      ],
+      "parents": [
+        "routingControllers"
+      ],
+      "children": []
+    },
+    "namedRoutes": {
+      "title": "Named routes",
+      "sourceId": "PAdXLppvU-X94gK5uCbf-",
+      "type": "topic",
+      "order": 34,
+      "summary": "Named routes provide a convenient way to refer to routes throughout your application. Instead of hardcoding route URIs, you can assign a name to a route and then use that name to generate URLs or redirects. This makes your code more maintainable because if the route URI changes, you only need to update it in one place (the route definition) rather than everywhere it's used.",
+      "video": {
+        "title": "Laravel Tutorial for Beginners #14 - Named Routes",
+        "url": "https://www.youtube.com/watch?v=awStsyqYcbc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Names Routes",
+          "url": "https://laravel.com/docs/routing#named-routes"
+        },
+        {
+          "type": "article",
+          "title": "What are Named Routes in Laravel?",
+          "url": "https://www.tutorialspoint.com/what-are-named-routes-in-laravel"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "cors": {
+      "title": "CORS",
+      "sourceId": "l14wSdac211BUDxKkGk9J",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "Cross-Origin Resource Sharing (CORS) is a browser security feature that restricts web pages from making requests to a different domain than the one that served the web page. This policy prevents malicious websites from accessing sensitive data from other sites. CORS defines a way for servers to specify which origins (domains, schemes, or ports) are permitted to access their resources.",
+      "video": {
+        "title": "CORS in Laravel & Sanctum",
+        "url": "https://www.youtube.com/watch?v=VW5fWPxv7Ak"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Cross-Origin Resource Sharing (CORS)",
+          "url": "https://laravel.com/docs/routing#cors"
+        },
+        {
+          "type": "article",
+          "title": "Laravel CORS Guide: What It Is and How to Enable It",
+          "url": "https://www.stackhawk.com/blog/laravel-cors/"
+        },
+        {
+          "type": "article",
+          "title": "Diving into Cross-Origin Resource Sharing",
+          "url": "https://laravel-news.com/diving-into-cross-origin-resource-sharing"
+        }
+      ],
+      "parents": [
+        "middleware"
+      ],
+      "children": []
+    },
+    "caching": {
+      "title": "Caching",
+      "sourceId": "eeWk2_ZYQUcYlITUzSly0",
+      "type": "subtopic",
+      "order": 36,
+      "summary": "Route caching in Laravel involves storing the compiled routes in a cache file to significantly reduce the time it takes to register all of your application's routes on each request. Instead of re-parsing route definitions every time, Laravel can quickly load the routes from the cached file, leading to improved application performance, especially in larger applications with many routes. This is particularly beneficial in production environments where route definitions rarely change.",
+      "video": {
+        "title": "#2: Route Cache | Laravel Performance Tips \ud83d\ude80",
+        "url": "https://www.youtube.com/watch?v=NBVY4e3oQLc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Route Caching",
+          "url": "https://laravel.com/docs/routing#route-caching"
+        },
+        {
+          "type": "article",
+          "title": "Optimize your app with Route Caching in Laravel",
+          "url": "https://medium.com/@harrisrafto/optimize-your-app-with-route-caching-in-laravel-5def92abdd0a"
+        }
+      ],
+      "parents": [
+        "routingControllers"
+      ],
+      "children": []
+    },
+    "basicControllers": {
+      "title": "Basic controllers",
+      "sourceId": "Xjt4YYR8zEzUfNY6D2JwU",
+      "type": "topic",
+      "order": 37,
+      "summary": "Controllers are fundamental building blocks in web applications that handle incoming requests and orchestrate the application's response. They act as intermediaries between the user interface (or API endpoint) and the application's data and logic. A controller receives a request, processes it by interacting with models or other services, and then returns a response, such as a view, JSON data, or a redirect.",
+      "video": {
+        "title": "Controllers in Laravel: Detailed explanation for beginners",
+        "url": "https://www.youtube.com/watch?v=DZmkzV9SJEI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Basic Controllers",
+          "url": "https://laravel.com/docs/controllers#basic-controllers"
+        },
+        {
+          "type": "article",
+          "title": "Controllers",
+          "url": "https://www.tutorialspoint.com/laravel/laravel_controllers.htm"
+        },
+        {
+          "type": "article",
+          "title": "How to Use Controllers in Laravel",
+          "url": "https://www.inmotionhosting.com/support/edu/laravel/how-to-use-controllers-in-laravel/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "routes",
+        "storage",
+        "tests",
+        "vendor"
+      ]
+    },
+    "routeGroups": {
+      "title": "Route groups",
+      "sourceId": "Pmw0OdtrsMIaHB9Y8v3An",
+      "type": "topic",
+      "order": 38,
+      "summary": "Route groups provide a way to share route attributes, such as middleware, namespaces, prefixes, and subdomain restrictions, across a large number of routes without needing to define them individually for each route. This allows for cleaner and more organized route definitions, reducing redundancy and improving maintainability. They essentially bundle common configurations for a set of routes.",
+      "video": {
+        "title": "Laravel 12 Route Grouping & Naming \u2013 Organize Your Routes Like a Pro",
+        "url": "https://www.youtube.com/watch?v=qXulJqduM4I"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Route Groupes",
+          "url": "https://laravel.com/docs/routing#route-groups"
+        },
+        {
+          "type": "article",
+          "title": "How Laravel Route Groups Can Simplify and Organize Your Code",
+          "url": "https://redberry.international/laravel-route-group-organize-your-code/"
+        },
+        {
+          "type": "article",
+          "title": "6 Tips To Organize Your Routes",
+          "url": "https://laravel-news.com/laravel-route-organization-tips"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "resourceControllers": {
+      "title": "Resource controllers",
+      "sourceId": "AAURmpEyp78p31GY0q3rV",
+      "type": "topic",
+      "order": 40,
+      "summary": "Resource controllers provide a standardized way to manage CRUD (Create, Read, Update, Delete) operations for a specific model. They group related request handling logic into a single class, making your code more organized and easier to maintain by mapping conventional HTTP verbs (like GET, POST, PUT, DELETE) to specific controller methods. This approach promotes a RESTful architecture for your application.",
+      "video": {
+        "title": "11 | Laravel Controller Resource Methods Step-by-Step (CRUD Example)",
+        "url": "https://www.youtube.com/watch?v=XAwQUUr1obM"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Resource controllers",
+          "url": "https://laravel.com/docs/controllers#resource-controllers"
+        },
+        {
+          "type": "article",
+          "title": "What is a Resource Controller in Laravel, and what are its Actions?",
+          "url": "http://webdew.com/blog/what-is-a-resource-controller-in-laravel?srsltid=AfmBOor4QIQckQzQ4o6EeD_bsn-wsRR87DetunjF-bB6j4rt7QLJaida"
+        },
+        {
+          "type": "article",
+          "title": "Simple Laravel CRUD with Resource Controllers",
+          "url": "https://www.digitalocean.com/community/tutorials/simple-laravel-crud-with-resource-controllers"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "singleActionControllers": {
+      "title": "Single-action controllers",
+      "sourceId": "1hS7qJ218Ud3et0E1JsfH",
+      "type": "topic",
+      "order": 41,
+      "summary": "Single-action controllers are controllers that contain only one method, typically named `__invoke`. This approach simplifies controller logic when a controller is responsible for performing a single, specific task. Instead of defining multiple methods for different actions, you define a single method that handles the entire request, leading to cleaner and more focused code.",
+      "video": {
+        "title": "Using single action controllers in Laravel",
+        "url": "https://www.youtube.com/watch?v=lLj8UYrqLuU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Single Action Controllers",
+          "url": "https://laravel.com/docs/controllers#single-action-controllers"
+        },
+        {
+          "type": "article",
+          "title": "Single Action Controllers: One Job, Done Right",
+          "url": "https://laracasts.com/series/jeremys-larabits/episodes/22"
+        },
+        {
+          "type": "article",
+          "title": "The Beauty of Single Action Controllers",
+          "url": "http://driesvints.com/blog/the-beauty-of-single-action-controllers/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "viewsBlade": {
+      "title": "Views & Blade",
+      "sourceId": "ZobtakCgkiO6Tum_fLE5s",
+      "type": "paragraph",
+      "order": 42,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "middleware"
+      ],
+      "children": [
+        "bladeTemplating"
+      ]
+    },
+    "dependencyInjection": {
+      "title": "Dependency injection",
+      "sourceId": "1icfSs9qyM4RB_RG2N9l6",
+      "type": "topic",
+      "order": 43,
+      "summary": "Dependency Injection is a design pattern where a component receives its dependencies from external sources rather than creating them itself. This promotes loose coupling, making code more modular, testable, and reusable. Instead of a class being responsible for instantiating its dependencies, those dependencies are \"injected\" into the class, typically through its constructor, setter methods, or interface injection.",
+      "video": {
+        "title": "The Power of Dependency Injection in Laravel: Best Practices for Developers\ud83d\udcbb",
+        "url": "https://www.youtube.com/watch?v=xOxTdXicWd0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Dependency Injection",
+          "url": "https://laravel.com/docs/routing#dependency-injection"
+        },
+        {
+          "type": "article",
+          "title": "Learn all about Laravel's dependency injection container",
+          "url": "https://laravel-news.com/leaning-on-the-container"
+        },
+        {
+          "type": "article",
+          "title": "Dependency Injection and Service Container in Laravel",
+          "url": "https://www.codemag.com/Article/2212041/Dependency-Injection-and-Service-Container-in-Laravel"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "crudOperations",
+        "relationships",
+        "middleware"
+      ]
+    },
+    "middleware": {
+      "title": "Middleware",
+      "sourceId": "SoHBSaHmds3C4uJ-vljhf",
+      "type": "topic",
+      "order": 44,
+      "summary": "Middleware provides a convenient mechanism for filtering HTTP requests entering your application. Think of it as a series of checkpoints that a request must pass through before reaching your application's core logic. These checkpoints can perform various tasks, such as authenticating users, verifying input data, or even modifying the request before it's handled by your controllers.",
+      "video": {
+        "title": "What is Middleware ? How to use Middleware in Laravel with Example",
+        "url": "https://www.youtube.com/watch?v=DYTJFqALX7o"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Middleware",
+          "url": "https://laravel.com/docs/middleware#main-content"
+        },
+        {
+          "type": "article",
+          "title": "Configuring Middleware in Laravel",
+          "url": "https://laravel-news.com/configuring-middleware-in-laravel"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Middleware",
+          "url": "https://www.tutorialspoint.com/laravel/laravel_middleware.htm"
+        },
+        {
+          "type": "article",
+          "title": "Middleware in Laravel: Main Things to Know",
+          "url": "https://laraveldaily.com/post/middleware-laravel-main-things-to-know"
+        }
+      ],
+      "parents": [
+        "dependencyInjection"
+      ],
+      "children": [
+        "cors",
+        "globalVsRoute",
+        "viewsBlade"
+      ]
+    },
+    "globalVsRoute": {
+      "title": "Global vs Route",
+      "sourceId": "jBPpf2X6oNXwPH5FuWHvt",
+      "type": "subtopic",
+      "order": 45,
+      "summary": "Global middleware runs on every HTTP request entering your application. Route middleware, on the other hand, is only applied to specific routes or groups of routes that you define. This allows for more granular control over which middleware is executed for different parts of your application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Global Middelware",
+          "url": "https://laravel.com/docs/middleware#global-middleware"
+        },
+        {
+          "type": "article",
+          "title": "How to define global middleware in Laravel 11",
+          "url": "https://codecourse.com/articles/how-to-define-global-middleware-in-laravel-11"
+        },
+        {
+          "type": "article",
+          "title": "Configuring Middleware in Laravel",
+          "url": "https://laravel-news.com/configuring-middleware-in-laravel"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Routes and Middlewares: An In-depth Guide",
+          "url": "https://medium.com/@dev.muhammadazeem/laravel-routes-and-middlewares-an-in-depth-guide-ccd8c0593aa3"
+        }
+      ],
+      "parents": [
+        "middleware"
+      ],
+      "children": [
+        "ifElse"
+      ]
+    },
+    "crudOperations": {
+      "title": "CRUD Operations",
+      "sourceId": "2VWPYrDyJSRy_SNysjK1P",
+      "type": "subtopic",
+      "order": 46,
+      "summary": "CRUD operations stand for Create, Read, Update, and Delete. These are the four basic functions of persistent storage, and they represent the fundamental operations performed on data within a database. In the context of Eloquent ORM, CRUD operations are simplified through intuitive methods that allow developers to interact with database tables as if they were working with PHP objects.",
+      "video": {
+        "title": "Laravel Models - The Basics You Must Know (Eloquent & Query Builder in 10 Minutes)",
+        "url": "https://www.youtube.com/watch?v=TdEZcP1JTf8&t=342s"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Eloquent: Getting Started",
+          "url": "https://laravel.com/docs/eloquent"
+        },
+        {
+          "type": "article",
+          "title": "How To CRUD (Create, Read, Update, and Delete) With Laravel",
+          "url": "https://kinsta.com/blog/laravel-crud/"
+        },
+        {
+          "type": "article",
+          "title": "Eloquent Queries - From beginner to advanced techniques",
+          "url": "https://laravel-news.com/effective-eloquent"
+        }
+      ],
+      "parents": [
+        "dependencyInjection"
+      ],
+      "children": []
+    },
+    "bladeTemplating": {
+      "title": "Blade Templating",
+      "sourceId": "L6uzrZ7z6ebnha3r-aHzb",
+      "type": "topic",
+      "order": 47,
+      "summary": "Blade is a simple yet powerful templating engine provided with Laravel. It allows you to use plain PHP in your views, but also offers convenient shortcuts and directives for common tasks like displaying data, looping through arrays, and conditional statements. Blade templates are compiled into plain PHP code and cached, meaning they add essentially zero overhead to your application.",
+      "video": {
+        "title": "Laravel 12 \u2013 Creating Layouts with Blade for Reusable Templates",
+        "url": "https://www.youtube.com/watch?v=gZkpUNVFiYE"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Blade Templating",
+          "url": "https://laravel.com/docs/blade#main-content"
+        },
+        {
+          "type": "article",
+          "title": "Laravel - Blade Templates",
+          "url": "https://www.tutorialspoint.com/laravel/laravel_blade_templates.htm"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Blade Template Engine: A Beginner's Guide",
+          "url": "https://dev.to/icornea/laravel-blade-template-engine-a-beginners-guide-54bi"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Blade Basics",
+          "url": "https://www.inmotionhosting.com/support/edu/laravel/laravel-blade-basics/"
+        }
+      ],
+      "parents": [
+        "viewsBlade"
+      ],
+      "children": []
+    },
+    "relationships": {
+      "title": "Relationships",
+      "sourceId": "NEbYfTpH0mnbPKPFI1x-B",
+      "type": "subtopic",
+      "order": 48,
+      "summary": "Eloquent relationships define how different database tables are connected. They allow you to easily retrieve related data from multiple tables using intuitive methods. For example, a user might have many posts, or a post might belong to a single category. Eloquent supports various relationship types like one-to-one, one-to-many, many-to-many, and polymorphic relationships, enabling you to model complex data structures and retrieve related data with ease.",
+      "video": {
+        "title": "Laravel Eloquent Relationships",
+        "url": "https://www.youtube.com/playlist?list=PL1JpS8jP1wgA7YIkG5pJDa0XwvonK-mQR"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Eloquent: Relationships",
+          "url": "https://laravel.com/docs/eloquent-relationships"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Eloquent Relationships: An Advanced Guide",
+          "url": "https://kinsta.com/blog/laravel-relationships/"
+        },
+        {
+          "type": "article",
+          "title": "Mastering Laravel Eloquent Relationships: A Complete Guide to Using \u201cwith()\u201d",
+          "url": "https://medium.com/@zulfikarditya/mastering-laravel-eloquent-relationships-a-complete-guide-to-using-with-b2258c857e44"
+        }
+      ],
+      "parents": [
+        "dependencyInjection"
+      ],
+      "children": []
+    },
+    "displayingData": {
+      "title": "Displaying data",
+      "sourceId": "SX0gVvrD0oNFUlhrfmPBV",
+      "type": "topic",
+      "order": 49,
+      "summary": "Displaying data in Laravel views involves passing information from your application's logic (controllers) to the view templates, which are then rendered into HTML and presented to the user. This process allows you to dynamically generate web pages with content that changes based on user input, database records, or other application data. Blade, Laravel's templating engine, provides a simple and powerful syntax for embedding PHP code within your HTML, making it easy to display variables, loop through arrays, and perform other data manipulations directly within your views.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Displaying data",
+          "url": "https://laravel.com/docs/blade#displaying-data"
+        },
+        {
+          "type": "article",
+          "title": "Laravel | Working with Blade Template Engine",
+          "url": "https://magecomp.com/blog/laravel-working-with-blade-template-engine/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "castsAccessors": {
+      "title": "Casts, Accessors",
+      "sourceId": "lPuBSP-PNifc0jIWzn_Gd",
+      "type": "subtopic",
+      "order": 50,
+      "summary": "Eloquent models in Laravel provide a way to interact with your database tables in an object-oriented manner. Casts allow you to modify the data type of an attribute when it's retrieved from or stored in the database. Accessors, on the other hand, let you format or modify attribute values when you access them, providing a convenient way to present data in a specific format without altering the underlying database value.",
+      "video": {
+        "title": "Laravel Eoquent | Almost every thing about casts #freetopg #laravel #php",
+        "url": "https://www.youtube.com/watch?v=n3-n57kIUPc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Eloquent: Mutators & Casting",
+          "url": "https://laravel.com/docs/eloquent-mutators#main-content"
+        },
+        {
+          "type": "article",
+          "title": "Eloquent Attribute Casting",
+          "url": "https://laravel-news.com/eloquent-attribute-casting"
+        },
+        {
+          "type": "article",
+          "title": "A Beginner\u2019s Guide to use Laravel Casting with Examples",
+          "url": "https://bagisto.com/en/a-beginners-guide-to-use-laravel-casting-with-examples/"
+        }
+      ],
+      "parents": [
+        "eloquentOrm"
+      ],
+      "children": []
+    },
+    "bladeDirectives": {
+      "title": "Blade Directives",
+      "sourceId": "lG-7OBSjPCyxpYQsROA5C",
+      "type": "topic",
+      "order": 51,
+      "summary": "Blade directives are shortcuts to common PHP control structures, like `if` statements and loops, within Laravel's Blade templating engine. They provide a cleaner and more readable syntax for embedding PHP logic directly into your HTML views. Instead of writing verbose PHP code, you can use directives like `@if`, `@foreach`, and `@csrf` to control the flow and output of your templates.",
+      "video": {
+        "title": "Laravel Tutorial for Beginners #4 - Blade Directives",
+        "url": "https://www.youtube.com/watch?v=cNE0HIRpeiU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Blade Directives",
+          "url": "https://laravel.com/docs/blade#blade-directives"
+        },
+        {
+          "type": "article",
+          "title": "What are blade directives?",
+          "url": "https://www.educative.io/answers/what-are-blade-directives"
+        },
+        {
+          "type": "article",
+          "title": "Useful Blade Directives",
+          "url": "https://laracasts.com/discuss/channels/laravel/useful-blade-directives"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "loops"
+      ]
+    },
+    "ifElse": {
+      "title": "if, else",
+      "sourceId": "m1mVsw_kF2GW50UM-6o3f",
+      "type": "subtopic",
+      "order": 52,
+      "summary": "Conditional statements, like `if` and `else`, allow you to control the rendering of content in your Blade templates based on certain conditions. This means you can display different parts of your view depending on whether a variable is true, a user is logged in, or any other logical expression you define. These directives provide a clean and readable way to implement logic directly within your HTML markup.",
+      "video": {
+        "title": "Laravel 10 Fundamental [Part 24] - Blade Directive - if statement",
+        "url": "https://www.youtube.com/watch?v=mNpKgiocqtE"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "If Statements",
+          "url": "https://laravel.com/docsblade#if-statements"
+        },
+        {
+          "type": "article",
+          "title": "Conditional statements in Laravel for Beginners",
+          "url": "https://medium.com/@studylearnandfun/conditional-statements-in-laravel-for-beginners-3dbb3f8e9ad4"
+        },
+        {
+          "type": "article",
+          "title": "Custom conditionals with Laravel's Blade Directives",
+          "url": "https://mattstauffer.com/blog/custom-conditionals-with-laravels-blade-directives/"
+        }
+      ],
+      "parents": [
+        "globalVsRoute"
+      ],
+      "children": []
+    },
+    "loops": {
+      "title": "loops",
+      "sourceId": "GTtgi4rShCn3AFwgBLuFc",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "Blade directives offer a concise way to work with loops directly within your Laravel views. Instead of using standard PHP loop syntax, Blade provides directives like `@for`, `@foreach`, `@while`, and `@forelse` to iterate over data and display it in your templates. These directives simplify the process of rendering dynamic content based on collections, arrays, or other iterable data structures, making your views cleaner and more readable.",
+      "video": {
+        "title": "Loops in Blade | Blade Template Basics | Laravel Basics | Laravel",
+        "url": "https://www.youtube.com/watch?v=m1BPK6lMvNg"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Loops",
+          "url": "https://laravel.com/docs/blade#loops"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Advanced: Know the sneaky $loop.",
+          "url": "https://backpackforlaravel.com/articles/tips-and-tricks/laravel-advanced-know-the-sneaky-loop"
+        },
+        {
+          "type": "article",
+          "title": "Using the $loop variable in Laravel",
+          "url": "https://medium.com/afrivelle-engineering/using-the-loop-variable-in-laravel-9d22f07eb00b"
+        }
+      ],
+      "parents": [
+        "bladeDirectives"
+      ],
+      "children": []
+    },
+    "queryScopes": {
+      "title": "Query scopes",
+      "sourceId": "d35_8oQcSQUBnDMiwzNfU",
+      "type": "subtopic",
+      "order": 54,
+      "summary": "Query scopes in Eloquent provide a way to add constraints to all queries of a given model. They allow you to define common sets of query conditions as reusable methods within your Eloquent models. This promotes cleaner, more maintainable code by encapsulating query logic and preventing duplication across your application.",
+      "video": {
+        "title": "Laravel 12 - Master Query Scopes for Cleaner & Reusable Queries!",
+        "url": "https://www.youtube.com/watch?v=BaFeFot0L2U"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "https://laravel.com/docs/12.x/eloquent#query-scopes",
+          "url": "https://laravel.com/docs/eloquent#query-scopes"
+        },
+        {
+          "type": "article",
+          "title": "Learn to master Query Scopes in Laravel",
+          "url": "https://laravel-news.com/query-scopes"
+        },
+        {
+          "type": "article",
+          "title": "Mastering Laravel Scope \u2014 A Comprehensive Guide with Code Examples",
+          "url": "https://arjunamrutiya.medium.com/mastering-laravel-scope-a-comprehensive-guide-with-code-examples-daa54a4ee633"
+        }
+      ],
+      "parents": [
+        "eloquentOrm"
+      ],
+      "children": []
+    },
+    "components": {
+      "title": "Components",
+      "sourceId": "bDM7WPrs8fW_V4KkIfbru",
+      "type": "topic",
+      "order": 55,
+      "summary": "Components are reusable pieces of code that encapsulate HTML, CSS, and logic to create modular and maintainable user interface elements. They allow developers to define custom HTML tags that can be used throughout their application's views, promoting code reuse and consistency. This approach simplifies the process of building complex UIs by breaking them down into smaller, manageable parts.",
+      "video": {
+        "title": "Become a PRO at Using Components in Laravel",
+        "url": "https://www.youtube.com/watch?v=7E76PPoIVW4"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Components",
+          "url": "https://laravel.com/docs/blade#components"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Fundamentals: Components",
+          "url": "https://medium.com/@darshitabaldha2001/laravel-fundamentals-components-f03e8c2874b7"
+        },
+        {
+          "type": "article",
+          "title": "Laravel: Blade Components 101",
+          "url": "http://dev.to/ericchapman/laravel-blade-components-5c9c"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "eloquentOrm": {
+      "title": "Eloquent ORM",
+      "sourceId": "xqXQsC_2EX4rnGAiKML9o",
+      "type": "topic",
+      "order": 56,
+      "summary": "Eloquent is an Object-Relational Mapper (ORM) that provides a simple and enjoyable way to interact with your database. It allows you to define models that represent database tables, and then use those models to query, insert, update, and delete data without writing raw SQL queries. Eloquent uses an Active Record implementation, meaning each model instance corresponds to a single row in its associated table.",
+      "video": {
+        "title": "Laravel Tutorial for Beginners #9 - Eloquent Models",
+        "url": "https://www.youtube.com/watch?v=0LCAS5WXnL4"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Eloquent: Getting Started",
+          "url": "https://laravel.com/docs/eloquent"
+        },
+        {
+          "type": "article",
+          "title": "Mastering Eloquent ORM: A Beginner's Guide to Laravel's Magic \ud83d\ude80",
+          "url": "https://dev.to/icornea/mastering-eloquent-orm-a-beginners-guide-to-laravels-magic-2pj3"
+        },
+        {
+          "type": "article",
+          "title": "Eloquent Queries - From beginner to advanced techniques",
+          "url": "https://laravel-news.com/effective-eloquent"
+        }
+      ],
+      "parents": [
+        "configuration"
+      ],
+      "children": [
+        "castsAccessors",
+        "queryScopes"
+      ]
+    },
+    "layouts": {
+      "title": "Layouts",
+      "sourceId": "NkxalJLKZxQPvTzecBrJa",
+      "type": "topic",
+      "order": 57,
+      "summary": "Layouts provide a consistent structure for your application's pages. They define the common elements like headers, footers, sidebars, and overall page structure, allowing you to avoid repeating the same HTML code across multiple views. By using layouts, you can create a template that child views can then extend and populate with their specific content, promoting code reusability and maintainability.",
+      "video": {
+        "title": "https://www.youtube.com/watch?v=3UhgEsLxmG8",
+        "url": "https://www.youtube.com/watch?v=mI7GW7xuO-I"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Building Layouts",
+          "url": "https://laravel.com/docs/blade#building-layouts"
+        },
+        {
+          "type": "article",
+          "title": "Create Layouts Using Laravel Blade Templating Engine (Step-by-Step for Beginners)",
+          "url": "https://www.cloudways.com/blog/create-laravel-blade-layout/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "databasesEloquent": {
+      "title": "Databases & Eloquent",
+      "sourceId": "jUOSg0uw-e3NSmyL4_85W",
+      "type": "paragraph",
+      "order": 58,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bladeLivewire"
+      ],
+      "children": [
+        "configuration"
+      ]
+    },
+    "configuration": {
+      "title": "Configuration",
+      "sourceId": "y6rsw2UrgUR0tm2Zzqhxk",
+      "type": "topic",
+      "order": 59,
+      "summary": "Laravel simplifies database interaction by allowing you to configure database connections within the `.env` file and the `config/database.php` file. The `.env` file stores sensitive information like database credentials, while `config/database.php` defines the available database connections and their default settings. You can specify the database driver (e.g., MySQL, PostgreSQL, SQLite), host, port, database name, username, and password. Laravel supports multiple database connections, enabling you to interact with different databases within the same application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Configuration",
+          "url": "https://laravel.com/docs/configuration#main-content"
+        }
+      ],
+      "parents": [
+        "databasesEloquent"
+      ],
+      "children": [
+        "eloquentOrm"
+      ]
+    },
+    "bladeLivewire": {
+      "title": "Blade + Livewire",
+      "sourceId": "rUKVDwwjP3pXswi-rWIj2",
+      "type": "topic",
+      "order": 60,
+      "summary": "Blade is Laravel's templating engine, allowing developers to use simple syntax to create dynamic web pages. Livewire is a full-stack framework for Laravel that enables you to build dynamic interfaces using Laravel and PHP, without writing JavaScript. Combining Blade and Livewire allows you to create interactive and reactive user interfaces with the power and simplicity of Laravel's templating system and the real-time capabilities of Livewire components.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Supercharging Blade With Livewire",
+          "url": "https://laravel.com/docs/blade#supercharging-blade-with-livewire"
+        },
+        {
+          "type": "official",
+          "title": "Livewire",
+          "url": "https://livewire.laravel.com/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "databasesEloquent"
+      ]
+    },
+    "queryBuilder": {
+      "title": "Query Builder",
+      "sourceId": "OpRkcv-Qom47TALqcEsRc",
+      "type": "topic",
+      "order": 61,
+      "summary": "The Query Builder provides a convenient, fluent interface for creating and running database queries. It allows you to interact with your database without writing raw SQL, offering a more readable and maintainable way to perform common database operations like selecting, inserting, updating, and deleting data. It supports various database systems and protects against SQL injection vulnerabilities.",
+      "video": {
+        "title": "Laravel Query Builder",
+        "url": "https://www.youtube.com/watch?v=5R0tVpkuQ1M&list=PLkyrdyGDWthC-yd9n8R3CEauJC4sFl-kj"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Database: Query Builder",
+          "url": "https://laravel.com/docs/queries#main-content"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Query Builder: Detailed Guide with Code Examples + Screenshots",
+          "url": "https://www.cloudways.com/blog/laravel-query-builder/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "migrationsSeeders": {
+      "title": "Migrations, seeders",
+      "sourceId": "IxFi316xmxdP2ZZDVSE5f",
+      "type": "topic",
+      "order": 62,
+      "summary": "Database migrations are like version control for your database schema, allowing you to modify and share the database structure in a structured and organized way. Seeders, on the other hand, are used to populate your database with initial data, such as default user accounts or categories, making it easier to start working with your application. They work together to ensure a consistent and reproducible database setup across different environments.",
+      "video": {
+        "title": "Laravel Tutorial for Beginners #8 - Database Migrations",
+        "url": "https://www.youtube.com/watch?v=PgeP3vsWbTc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Migrations",
+          "url": "https://laravel.com/docs/migrations#main-content"
+        },
+        {
+          "type": "official",
+          "title": "Seeding",
+          "url": "https://laravel.com/docs/seeding#main-content"
+        },
+        {
+          "type": "article",
+          "title": "A Comprehensive Guide to Laravel Migrations: From Basics to Advanced",
+          "url": "https://medium.com/@jaswanth_270602/a-comprehensive-guide-to-laravel-migrations-from-basics-to-advanced-727ead0a18f1"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Seeder Generator",
+          "url": "https://laravel-news.com/laravel-seeder-generator"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "requestsResponses": {
+      "title": "Requests & Responses",
+      "sourceId": "4InRt-kRnrFN1066ApR0p",
+      "type": "paragraph",
+      "order": 63,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "pagination"
+      ],
+      "children": [
+        "files",
+        "retrievingDataFiles"
+      ]
+    },
+    "pagination": {
+      "title": "Pagination",
+      "sourceId": "zJf_ZQYXSGob24p9rrVfr",
+      "type": "topic",
+      "order": 64,
+      "summary": "Pagination is the process of dividing content into discrete pages, allowing users to navigate through large datasets in a manageable way. Instead of displaying all the data at once, which can be overwhelming and slow down performance, pagination presents the data in smaller, more digestible chunks, typically with navigation controls to move between pages. This improves user experience and reduces the load on the server.",
+      "video": {
+        "title": "Laravel Tutorial for Beginners #15 - Pagination",
+        "url": "https://www.youtube.com/watch?v=tPhp3PunmuU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Pagination",
+          "url": "https://laravel.com/docs/pagination#main-content"
+        },
+        {
+          "type": "article",
+          "title": "A Guide to Pagination in Laravel",
+          "url": "https://laravel-news.com/laravel-pagination"
+        },
+        {
+          "type": "article",
+          "title": "How to use Pagination in Laravel?",
+          "url": "https://bagisto.com/en/how-to-use-pagination-in-laravel/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "requestsResponses"
+      ]
+    },
+    "retrievingDataFiles": {
+      "title": "Retrieving data & files",
+      "sourceId": "wR92EYaAPILQRmtBiaoCX",
+      "type": "topic",
+      "order": 65,
+      "summary": "When a user interacts with a web application, they often send data to the server through forms or file uploads. Retrieving data involves accessing and using the information submitted by the user, such as form inputs or query parameters. Similarly, retrieving files involves accessing and processing files that users upload to the server, enabling the application to handle and store these files appropriately.",
+      "video": {
+        "title": "Laravel and External APIs: Get Data with HTTP Client",
+        "url": "https://www.youtube.com/watch?v=oEDDZsmMLc0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Retrieving Files",
+          "url": "https://laravel.com/docs/filesystem#retrieving-files"
+        },
+        {
+          "type": "article",
+          "title": "HTTP Requests",
+          "url": "https://laravel.com/docs/requests"
+        }
+      ],
+      "parents": [
+        "requestsResponses"
+      ],
+      "children": [
+        "creatingResponses"
+      ]
+    },
+    "files": {
+      "title": "Files",
+      "sourceId": "PaAvakZ8NziU1mEAN6okm",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "File responses in Laravel provide a way to send files, such as images, PDFs, or documents, directly to the user's browser for download or display. This functionality allows you to serve files stored on your server's filesystem to users, enabling features like downloading reports, displaying images, or providing access to other file-based resources. Laravel offers convenient methods to handle the necessary headers and file streaming for efficient and secure file delivery.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Files",
+          "url": "https://laravel.com/docs/requests#files"
+        },
+        {
+          "type": "official",
+          "title": "File Responses",
+          "url": "https://laravel.com/docs/12.x/responses#file-responses"
+        }
+      ],
+      "parents": [
+        "requestsResponses"
+      ],
+      "children": []
+    },
+    "views": {
+      "title": "Views",
+      "sourceId": "PipmRcDfvwRYNLe9VMbeU",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "Laravel, beyond processing data and logic, can also present information to the user. One common way to do this is by sending a \"view\" as a response. A view is essentially an HTML template file that Laravel renders, often populated with data you pass to it from your application's logic. This allows you to dynamically generate web pages and other user interfaces.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "View Responses",
+          "url": "https://laravel.com/docs/12.x/responses#view-responses"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Response",
+          "url": "https://www.w3schools.in/laravel/response"
+        }
+      ],
+      "parents": [
+        "creatingResponses"
+      ],
+      "children": []
+    },
+    "json": {
+      "title": "JSON",
+      "sourceId": "pb7eSi-UQ7KTcdi8_pzya",
+      "type": "subtopic",
+      "order": 68,
+      "summary": "JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate. In Laravel, you can easily return JSON responses from your routes or controllers, allowing you to build APIs or provide data to JavaScript-based frontends. This involves converting data, typically arrays or objects, into a JSON string that can be sent as the response body.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Json Responses",
+          "url": "https://laravel.com/docs/responses#json-responses"
+        },
+        {
+          "type": "official",
+          "title": "Streamed JSON Responses",
+          "url": "https://laravel.com/docs/responses#streamed-json-responses"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Response",
+          "url": "https://www.w3schools.in/laravel/response"
+        },
+        {
+          "type": "article",
+          "title": "Proper JSON Responses for Laravel API",
+          "url": "https://dev.to/bradisrad83/proper-json-responses-for-laravel-api-2jfo"
+        }
+      ],
+      "parents": [
+        "authentication"
+      ],
+      "children": []
+    },
+    "redirects": {
+      "title": "Redirects",
+      "sourceId": "j684EyDXKtd9QgcYQdtB4",
+      "type": "subtopic",
+      "order": 69,
+      "summary": "Redirects are a way to send a user from one URL to another. They are commonly used after a form submission to prevent resubmitting data, or to guide users to a different part of a website after an action has been completed. A redirect response contains an HTTP status code in the 300 range, indicating that the client should perform another request to a different URL.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Redirects Response",
+          "url": "https://laravel.com/docs/responses#redirects"
+        }
+      ],
+      "parents": [
+        "creatingResponses"
+      ],
+      "children": []
+    },
+    "creatingResponses": {
+      "title": "Creating Responses",
+      "sourceId": "PWAlppGP7HNMD7y4I6LnJ",
+      "type": "topic",
+      "order": 70,
+      "summary": "Creating responses in web applications involves generating and sending data back to the client in response to a request. This data can be in various formats, such as HTML, JSON, or XML, and often includes information requested by the client or the result of an action performed on the server. The response also includes HTTP status codes and headers that provide additional information about the response.",
+      "video": {
+        "title": "Laravel Return Types in API Controller: Five Options?",
+        "url": "https://www.youtube.com/watch?v=xC2QzRzefVg"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "HTTP Responses",
+          "url": "https://laravel.com/docs/responses"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Response Classes",
+          "url": "https://laravel-news.com/laravel-response-classes"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Response",
+          "url": "https://www.w3schools.in/laravel/response"
+        }
+      ],
+      "parents": [
+        "retrievingDataFiles"
+      ],
+      "children": [
+        "forms",
+        "views",
+        "redirects",
+        "streamedResponses"
+      ]
+    },
+    "streamedResponses": {
+      "title": "Streamed Responses",
+      "sourceId": "mpfzIVmulV3sJthKxP_PV",
+      "type": "subtopic",
+      "order": 71,
+      "summary": "Streamed responses allow you to send large files or data streams to the user's browser in chunks, rather than loading the entire content into memory at once. This is particularly useful for handling large downloads, video streaming, or any situation where you need to send data incrementally to avoid memory limitations and improve performance. Instead of waiting for the entire file to be processed, the browser can start receiving and displaying the content as it becomes available.",
+      "video": {
+        "title": "Welcome the New Stream Hooks for React & Vue",
+        "url": "https://www.youtube.com/watch?v=mSssWRUkmXAv"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Streamed Responses",
+          "url": "https://laravel.com/docs/responses#streamed-responses"
+        },
+        {
+          "type": "article",
+          "title": "Optimizing Large Data Delivery with Laravel Streaming Responses",
+          "url": "https://laravel-news.com/streaming-responses"
+        },
+        {
+          "type": "article",
+          "title": "Streaming Responses in Laravel: A Guide to Efficient Data Delivery",
+          "url": "https://medium.com/@harrisrafto/streaming-responses-in-laravel-a-guide-to-efficient-data-delivery-bac37aa76c03"
+        }
+      ],
+      "parents": [
+        "creatingResponses"
+      ],
+      "children": []
+    },
+    "gates": {
+      "title": "Gates",
+      "sourceId": "YCDtdh7aZ7YPa_LFOZTLh",
+      "type": "subtopic",
+      "order": 72,
+      "summary": "Authorization gates provide a way to control access to specific resources or actions within your application. They are essentially closures that determine if a user is authorized to perform a given action. You define these gates with a name and a callback function that receives the authenticated user as an argument, allowing you to implement custom authorization logic based on user roles, permissions, or any other criteria.",
+      "video": {
+        "title": "Laravel 11 Full Course 2025: Authorization with Policies & Gates [Lesson #8]",
+        "url": "https://www.youtube.com/watch?v=tJANVX2IhkM"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Gates",
+          "url": "https://laravel.com/docs/authorization#gates"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Gates: A Rapid Introduction.",
+          "url": "https://www.twilio.com/en-us/blog/developers/community/rapid-introduction-laravel-gates"
+        }
+      ],
+      "parents": [
+        "authorization"
+      ],
+      "children": []
+    },
+    "policies": {
+      "title": "Policies",
+      "sourceId": "mOxPpW0Ic9_ZAYYNrZlb9",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "Authorization Policies provide a structured way to define authorization logic for your application. They allow you to encapsulate the rules that determine whether a user is authorized to perform a specific action on a given resource. Instead of scattering authorization checks throughout your controllers and views, policies centralize this logic into dedicated classes, making your code more organized, maintainable, and testable.",
+      "video": {
+        "title": "Laravel Policies: AuthorizeResource and \"can:ABC\" Usage",
+        "url": "https://www.youtube.com/watch?v=Q3YQVEJIQbo"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Creating Policies",
+          "url": "https://laravel.com/docs/authorization#creating-policies"
+        },
+        {
+          "type": "article",
+          "title": "Mastering Laravel Policies: A Complete Guide to Authorization in Laravel",
+          "url": "https://medium.com/@zulfikarditya/mastering-laravel-policies-a-complete-guide-to-authorization-in-laravel-991bbdcc6756"
+        },
+        {
+          "type": "article",
+          "title": "What Are Laravel Policies and How to Use Them to Control Access",
+          "url": "https://www.twilio.com/en-us/blog/developers/community/what-are-laravel-policies-and-how-to-use-them-to-control-access"
+        }
+      ],
+      "parents": [
+        "authorization"
+      ],
+      "children": []
+    },
+    "forms": {
+      "title": "Forms",
+      "sourceId": "A07HwtMsmcaRB7gAruqOH",
+      "type": "subtopic",
+      "order": 74,
+      "summary": "Form validation is the process of ensuring that user-submitted data in a form meets specific criteria before it's processed or stored. This involves checking for required fields, verifying data types (like email or number), and ensuring data conforms to specific formats or constraints. Effective validation helps prevent errors, maintain data integrity, and improve the overall user experience by providing immediate feedback on incorrect or missing information.",
+      "video": {
+        "title": "Validate That Data (A 3 Minute Overview of Validation in Laravel)",
+        "url": "https://www.youtube.com/watch?v=Pj9nSAJrF6E"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Form Request Validation",
+          "url": "https://laravel.com/docs/validation#form-request-validation"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Form Request Validation: A Complete Guide on Data handling",
+          "url": "https://medium.com/@prevailexcellent/laravel-form-request-validation-a-complete-guide-on-data-handling-1f181a74123f"
+        },
+        {
+          "type": "article",
+          "title": "Data Validation in Laravel: Convenient and Powerful",
+          "url": "https://kinsta.com/blog/laravel-validation/"
+        },
+        {
+          "type": "article",
+          "title": "The ultimate guide to Laravel Validation",
+          "url": "https://laravel-news.com/laravel-validation"
+        }
+      ],
+      "parents": [
+        "creatingResponses"
+      ],
+      "children": [
+        "manualValidation"
+      ]
+    },
+    "authorization": {
+      "title": "Authorization",
+      "sourceId": "PvSwwdBaYY32Sv5qfe9aB",
+      "type": "topic",
+      "order": 75,
+      "summary": "Authorization is the process of determining whether a user has permission to access a specific resource or perform a particular action. It verifies if an authenticated user is allowed to do what they are attempting to do within an application. This involves checking the user's roles, permissions, and policies against the requested resource or action.",
+      "video": {
+        "title": "Authorization in Laravel: Can You Do That?",
+        "url": "https://www.youtube.com/watch?v=NXt5XqyaaNE"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Authorization",
+          "url": "https://laravel.com/docs/authorization#main-content"
+        },
+        {
+          "type": "article",
+          "title": "Mastering Laravel Policies: A Complete Guide to Authorization in Laravel",
+          "url": "https://medium.com/@zulfikarditya/mastering-laravel-policies-a-complete-guide-to-authorization-in-laravel-991bbdcc6756"
+        }
+      ],
+      "parents": [
+        "authentication"
+      ],
+      "children": [
+        "gates",
+        "policies"
+      ]
+    },
+    "authentication": {
+      "title": "Authentication",
+      "sourceId": "SZY9d1QisyChz-Jmu82pC",
+      "type": "topic",
+      "order": 76,
+      "summary": "Authentication is the process of verifying the identity of a user. It involves confirming that a user is who they claim to be, typically by checking their credentials (like a username and password) against stored records. Laravel provides built-in tools and features to simplify this process, making it easier to secure your application and control access to protected resources.",
+      "video": {
+        "title": "Laravel Authentication Tutorial #1 - Intro & Setup",
+        "url": "https://www.youtube.com/watch?v=3JBmbQsR0ag"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Authentication",
+          "url": "https://laravel.com/docs//authentication#main-content"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Authentication: Getting Started and HTTP Auth Tutorial",
+          "url": "https://frontegg.com/blog/laravel-authentication"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Laravel Authentication: Best Practices and Tips",
+          "url": "http://medium.com/@aiman.asfia/understanding-laravel-authentication-best-practices-and-tips-cf00bcb894a4"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "json",
+        "withStarterKits",
+        "authorization"
+      ]
+    },
+    "manualValidation": {
+      "title": "Manual validation",
+      "sourceId": "aY_sz_Nb-kX4NL0g_nXoA",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "Manual validation in Laravel involves directly interacting with the validator class to validate data. Instead of relying on request objects or form requests, you create a validator instance, define the validation rules, and then check if the data passes these rules. This approach provides more control and flexibility, especially when dealing with complex validation scenarios or when validating data outside of a typical HTTP request.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Manually Creating Validators",
+          "url": "https://laravel.com/docs/validation#manually-creating-validators"
+        },
+        {
+          "type": "article",
+          "title": "Laravel FormRequest vs Manual Validation: Which One Should You Choose?",
+          "url": "https://medium.com/@developerawam/laravel-formrequest-vs-manual-validation-which-one-should-you-choose-fac53e1ed17d"
+        },
+        {
+          "type": "article",
+          "title": "The ultimate guide to Laravel Validation",
+          "url": "https://laravel-news.com/laravel-validation"
+        }
+      ],
+      "parents": [
+        "forms"
+      ],
+      "children": [
+        "errorMessages"
+      ]
+    },
+    "encryptionHashing": {
+      "title": "Encryption & Hashing",
+      "sourceId": "BXiM7ROYLZ7_a6x6c_wyd",
+      "type": "topic",
+      "order": 78,
+      "summary": "Encryption and hashing are fundamental security techniques used to protect sensitive data. Encryption transforms data into an unreadable format using an algorithm and a key, making it unintelligible to unauthorized parties; decryption reverses this process to restore the original data. Hashing, on the other hand, creates a fixed-size, one-way representation (hash) of data, making it suitable for verifying data integrity and storing passwords securely, as the original data cannot be recovered from the hash.",
+      "video": {
+        "title": "How to Encrypt Database Fields in Laravel?",
+        "url": "https://www.youtube.com/watch?v=a6V5Cxk03rk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Encryption",
+          "url": "https://laravel.com/docs/encryption"
+        },
+        {
+          "type": "official",
+          "title": "Hashing",
+          "url": "https://laravel.com/docs/hashing"
+        },
+        {
+          "type": "article",
+          "title": "How to Encrypt and Decrypt Messages in Laravel",
+          "url": "https://www.twilio.com/en-us/blog/developers/community/encrypt-decrypt-messages-laravel"
+        },
+        {
+          "type": "article",
+          "title": "Laravel - Encryption",
+          "url": "https://www.tutorialspoint.com/laravel/laravel_encryption.htm"
+        },
+        {
+          "type": "article",
+          "title": "Laravel - Hashing",
+          "url": "https://www.tutorialspoint.com/laravel/laravel_hashing.htm"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "loggingDebugging"
+      ]
+    },
+    "errorMessages": {
+      "title": "Error messages",
+      "sourceId": "-H9JJ_DsGAjtwdki5LPo-",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "Error messages in validation are the feedback provided to users when the data they submit doesn't meet the defined validation rules. These messages inform users about the specific issues with their input, guiding them to correct the errors and successfully submit the form or data. They are crucial for a good user experience, ensuring clarity and ease of use.",
+      "video": {
+        "title": "\ud83d\ude24Laravel 12 Custom Validation Messages | Display & Customize Error Messages in Laravel | Laravel 12",
+        "url": "https://www.youtube.com/watch?v=2uTHfPzyEZ4"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Working With Error Messages",
+          "url": "https://laravel.com/docs/1validation#working-with-error-messages"
+        },
+        {
+          "type": "article",
+          "title": "Form Validation and Error Messages",
+          "url": "https://laraveldaily.com/lesson/laravel-from-scratch/form-validation-error-messages"
+        },
+        {
+          "type": "article",
+          "title": "The ultimate guide to Laravel Validation",
+          "url": "https://laravel-news.com/laravel-validation"
+        }
+      ],
+      "parents": [
+        "manualValidation"
+      ],
+      "children": []
+    },
+    "withStarterKits": {
+      "title": "With Starter Kits",
+      "sourceId": "-yacHIWQ5Oylia9e0pJXT",
+      "type": "subtopic",
+      "order": 80,
+      "summary": "Authentication is the process of verifying a user's identity. Laravel starter kits provide pre-built scaffolding for authentication features like registration, login, password reset, and email verification. These kits offer a quick and convenient way to implement authentication in your Laravel application, saving you from writing the boilerplate code from scratch.",
+      "video": {
+        "title": "Laravel 12 Starter Kits: THREE Layouts for Auth",
+        "url": "https://www.youtube.com/watch?v=hSzSMrRFvtk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Authentication with Starter Kits",
+          "url": "https://laravel.com/docs/authentication#starter-kits"
+        },
+        {
+          "type": "article",
+          "title": "Starter Kits and Using Laravel Breeze",
+          "url": "https://laraveldaily.com/lesson/laravel-from-scratch/starter-kits-breeze"
+        }
+      ],
+      "parents": [
+        "authentication"
+      ],
+      "children": [
+        "manualAuthentication"
+      ]
+    },
+    "manualAuthentication": {
+      "title": "Manual Authentication",
+      "sourceId": "PBK-lqE3yWB2Mj1kHq4Rz",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "Manual authentication involves directly handling user login and logout processes within your application, giving you complete control over how users are identified and authorized. This approach requires you to manage user credentials, session management, and security measures yourself, rather than relying on built-in Laravel features or packages. It's useful when you need highly customized authentication logic or integration with existing systems.",
+      "video": {
+        "title": "Build Laravel Login & Registration from Scratch",
+        "url": "https://www.youtube.com/watch?v=QtKZxNNPT_U"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Manually Authenticating Users",
+          "url": "https://laravel.com/docs/authentication#authenticating-users"
+        },
+        {
+          "type": "article",
+          "title": "A Comprehensive Guide to Laravel Authentication",
+          "url": "https://kinsta.com/blog/laravel-authentication/"
+        },
+        {
+          "type": "article",
+          "title": "Manual auth in Laravel: signing in and out",
+          "url": "https://dev.to/jeroenvanrensen/manual-auth-in-laravel-signing-in-and-out-30gf"
+        }
+      ],
+      "parents": [
+        "withStarterKits"
+      ],
+      "children": [
+        "sanctum",
+        "passport"
+      ]
+    },
+    "loggingDebugging": {
+      "title": "Logging & Debugging",
+      "sourceId": "ZE8urT865-JSR6evbXxw3",
+      "type": "paragraph",
+      "order": 83,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "encryptionHashing"
+      ],
+      "children": [
+        "loggingBasics"
+      ]
+    },
+    "sanctum": {
+      "title": "Sanctum",
+      "sourceId": "dGNOYhShoyT9ovSouI00l",
+      "type": "subtopic",
+      "order": 84,
+      "summary": "Sanctum is a lightweight authentication system primarily designed for single-page applications (SPAs), mobile applications, and simple APIs. It provides a straightforward method for authenticating users using API tokens, allowing them to access protected routes and resources. Sanctum focuses on issuing API tokens that are scoped to specific abilities, offering a more granular control over user permissions compared to traditional session-based authentication.",
+      "video": {
+        "title": "Example of Laravel Sanctum with API Tokens",
+        "url": "https://www.youtube.com/watch?v=Ql5z9TjXWLY"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Laravel Sanctum",
+          "url": "https://laravel.com/docs/sanctum"
+        },
+        {
+          "type": "opensource",
+          "title": "sanctum",
+          "url": "https://github.com/laravel/sanctum"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Sanctum Installation: A Quick 5-Minute Guide for Secure REST API",
+          "url": "https://medium.com/@sarfaraz.muhammad.sajib/laravel-sanctum-installation-a-quick-5-minute-guide-for-secure-rest-api-00e0eb27a8c1"
+        }
+      ],
+      "parents": [
+        "manualAuthentication"
+      ],
+      "children": []
+    },
+    "passport": {
+      "title": "Passport",
+      "sourceId": "2QZCHTZMP72sVuf97A59N",
+      "type": "subtopic",
+      "order": 85,
+      "summary": "Passport is a full OAuth 2.0 server implementation for your Laravel application, providing a secure and standardized way to authenticate users and grant access to your API. It allows users to authorize third-party applications to access their data without sharing their credentials, using tokens to represent authorization. This simplifies the process of building APIs that can be consumed by various clients, such as mobile apps or other web applications.",
+      "video": {
+        "title": "Getting started with Laravel Passport and OAuth2",
+        "url": "https://www.youtube.com/watch?v=PTFPMAX_88s"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Laravel Passport",
+          "url": "https://laravel.com/docs/passport#main-content"
+        },
+        {
+          "type": "opensource",
+          "title": "passport",
+          "url": "https://github.com/laravel/passport"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Authentication Using Passport",
+          "url": "https://dev.to/anashussain284/laravel-authentication-using-passport-1gkk"
+        }
+      ],
+      "parents": [
+        "manualAuthentication"
+      ],
+      "children": []
+    },
+    "errorHandling": {
+      "title": "Error Handling",
+      "sourceId": "RRJ4YsoM9SD1ZbaUVduEQ",
+      "type": "label",
+      "order": 86,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "handlingExceptions"
+      ]
+    },
+    "handlingExceptions": {
+      "title": "Handling Exceptions",
+      "sourceId": "ZlD6g0djdDH6ozwMJ5WIr",
+      "type": "subtopic",
+      "order": 87,
+      "summary": "Exceptions are unexpected events that disrupt the normal flow of a program's execution. Handling exceptions involves anticipating these potential problems, catching them when they occur, and then gracefully responding to them, preventing the application from crashing and providing informative feedback to the user or logging the error for debugging. This process ensures the application remains stable and user-friendly even when unexpected issues arise.",
+      "video": {
+        "title": "Laravel: The BEST way to handle exceptions",
+        "url": "https://www.youtube.com/watch?v=0AAg47xygTI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Handling Exceptions",
+          "url": "https://laravel.com/docs/errors#handling-exceptions"
+        },
+        {
+          "type": "article",
+          "title": "Handling Exceptions in Laravel: A Cleaner Method",
+          "url": "https://dev.to/timilehin-olusegun/handling-exceptions-in-laravel-a-cleaner-method-57io"
+        },
+        {
+          "type": "article",
+          "title": "Advanced error handling in Laravel",
+          "url": "https://www.honeybadger.io/blog/advanced-error-handling-in-laravel/"
+        }
+      ],
+      "parents": [
+        "errorHandling"
+      ],
+      "children": [
+        "messageCustomization"
+      ]
+    },
+    "telescope": {
+      "title": "Telescope",
+      "sourceId": "j5giyFLzIm2wsOqkbjc4-",
+      "type": "subtopic",
+      "order": 88,
+      "summary": "Telescope is an elegant debug assistant for the Laravel framework. It provides insights into the requests coming into your application, exceptions, log entries, database queries, queued jobs, mail, notifications, cache operations, scheduled tasks, variable dumps, and more. It essentially acts as a powerful dashboard to monitor and debug your Laravel application's activity.",
+      "video": {
+        "title": "Laravel Telescope: Monitor and Debug Slow API Queries",
+        "url": "https://www.youtube.com/watch?v=rrqNbzR_0pk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Telescope",
+          "url": "https://laravel.com/docs/telescope#main-content"
+        },
+        {
+          "type": "opensource",
+          "title": "telescope",
+          "url": "https://github.com/laravel/telescope"
+        },
+        {
+          "type": "article",
+          "title": "What is Laravel Telescope?",
+          "url": "https://dev.to/ethanleetech/what-is-laravel-telescope-2iaf"
+        }
+      ],
+      "parents": [
+        "debuggingBasics"
+      ],
+      "children": []
+    },
+    "debugbar": {
+      "title": "Debugbar",
+      "sourceId": "G_e9X1yp-SJ-pSOO1Knvq",
+      "type": "subtopic",
+      "order": 89,
+      "summary": "Debugbar is a package that provides a convenient toolbar displayed in the browser, offering insights into your application's performance and debugging information. It allows you to inspect things like queries executed, views rendered, routes matched, and other useful data without having to dig through log files or use `dd()` statements extensively. This makes it easier to identify bottlenecks and understand how your application is behaving during development.",
+      "video": {
+        "title": "Laravel Debugbar: 4 Features You May Not Know",
+        "url": "https://www.youtube.com/watch?v=YuxXSHKkNJc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Debugbar",
+          "url": "https://laraveldebugbar.com/"
+        },
+        {
+          "type": "opensource",
+          "title": "laravel-debugbar",
+          "url": "https://github.com/barryvdh/laravel-debugbar"
+        },
+        {
+          "type": "article",
+          "title": "Debugging Laravel Applications with Laravel Debugbar",
+          "url": "https://www.inmotionhosting.com/support/edu/laravel/debugging-laravel-applications-with-laravel-debugbar/"
+        }
+      ],
+      "parents": [
+        "debuggingBasics"
+      ],
+      "children": []
+    },
+    "messageCustomization": {
+      "title": "Message Customization",
+      "sourceId": "VvSn3Zqxi6HPBkDqxoqEE",
+      "type": "subtopic",
+      "order": 90,
+      "summary": "Error message customization involves tailoring the default error messages displayed to users when validation or other exceptions occur. This allows developers to provide more user-friendly and contextually relevant feedback, improving the overall user experience by guiding them towards correcting errors more effectively. Instead of generic messages, you can display specific instructions or explanations that are easier for users to understand.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Rendering Exceptions",
+          "url": "https://laravel.com/docs/errors#rendering-exceptions"
+        }
+      ],
+      "parents": [
+        "handlingExceptions"
+      ],
+      "children": [
+        "httpExceptions"
+      ]
+    },
+    "loggingBasics": {
+      "title": "Logging Basics",
+      "sourceId": "Wt_QP7R4DRUNOMQZSnMeI",
+      "type": "topic",
+      "order": 91,
+      "summary": "Logging is the process of recording events that occur during the execution of a software application. These events, often called logs, provide valuable insights into the application's behavior, helping developers track errors, monitor performance, and understand user activity. Logs typically include timestamps, severity levels (e.g., debug, info, error), and contextual information about the event.",
+      "video": {
+        "title": "Configuring (and viewing!) logs in Laravel",
+        "url": "https://www.youtube.com/watch?v=MGASWCQ6TJ0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Logging",
+          "url": "https://laravel.com/docs/logging#main-content"
+        },
+        {
+          "type": "article",
+          "title": "How Logging Works in Laravel Applications",
+          "url": "https://www.freecodecamp.org/news/laravel-logging/"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Logging: Everything You Need To Know",
+          "url": "https://kinsta.com/blog/laravel-logging/"
+        }
+      ],
+      "parents": [
+        "loggingDebugging"
+      ],
+      "children": []
+    },
+    "httpExceptions": {
+      "title": "HTTP Exceptions",
+      "sourceId": "qetgYqhWAEHUfDIDkMGGX",
+      "type": "subtopic",
+      "order": 92,
+      "summary": "HTTP Exceptions are a specific type of exception used to represent HTTP error responses. They allow you to easily return standard HTTP error codes (like 404 Not Found or 500 Internal Server Error) along with a corresponding message and optional headers directly from your application logic. This provides a clean and consistent way to handle errors and communicate them to the client.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "HTTP Exceptions",
+          "url": "https://laravel.com/docs/errors#http-exceptions"
+        }
+      ],
+      "parents": [
+        "messageCustomization"
+      ],
+      "children": []
+    },
+    "logStacksMessages": {
+      "title": "Log Stacks & Messages",
+      "sourceId": "JeJXr5g6pJY3za5E_ewEY",
+      "type": "topic",
+      "order": 93,
+      "summary": "Log stacks allow you to send log messages to multiple handlers simultaneously. This provides flexibility in how you manage and store your application's logs, enabling you to route different types of messages to different destinations, such as files, databases, or external services. You can also customize the format and severity level of the messages sent to each handler.",
+      "video": {
+        "title": "Configuring (and viewing!) logs in Laravel",
+        "url": "https://www.youtube.com/watch?v=MGASWCQ6TJ0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Building Log Stacks",
+          "url": "https://laravel.com/docs/logging#building-log-stacks"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Logging: Channels and Stacks Explained",
+          "url": "https://inspector.dev/laravel-logging-channels-and-stacks-explained/"
+        },
+        {
+          "type": "article",
+          "title": "How to Get Started with Logging in Laravel",
+          "url": "https://betterstack.com/community/guides/logging/how-to-start-logging-with-laravel/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "debuggingBasics",
+        "testing"
+      ]
+    },
+    "debuggingBasics": {
+      "title": "Debugging basics",
+      "sourceId": "nvxpeUXdFs1elkG4FS8PR",
+      "type": "topic",
+      "order": 94,
+      "summary": "Debugging is the process of identifying and removing errors or defects from software code. It involves systematically testing the code, locating the source of problems, and then correcting them to ensure the software functions as intended. Effective debugging is crucial for producing reliable and maintainable applications.",
+      "video": {
+        "title": "Laravel 11 Debugging: The Ultimate Guide to Using the Dumpable Trait",
+        "url": "https://www.youtube.com/watch?v=4y40zvSifQg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to debug Laravel apps",
+          "url": "https://madewithlaravel.com/blog/debugging-in-laravel"
+        }
+      ],
+      "parents": [
+        "logStacksMessages"
+      ],
+      "children": [
+        "telescope",
+        "debugbar"
+      ]
+    },
+    "pest": {
+      "title": "Pest",
+      "sourceId": "3hluy0wKpsbWHpI1AwTfB",
+      "type": "subtopic",
+      "order": 95,
+      "summary": "Pest is an elegant PHP testing framework with a focus on simplicity and developer experience. It provides a clean and expressive syntax for writing tests, aiming to make testing more enjoyable and efficient. Pest builds on top of PHPUnit, leveraging its powerful features while offering a more streamlined and intuitive API.",
+      "video": {
+        "title": "Laravel Testing 21/24: What is PEST and How It Works",
+        "url": "https://www.youtube.com/watch?v=4ubp_IF6kqY"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Pest",
+          "url": "https://pestphp.com/"
+        },
+        {
+          "type": "article",
+          "title": "Mastering Testing in Laravel with Pest PHP: A Comprehensive Guide",
+          "url": "https://medium.com/@zulfikarditya/mastering-testing-in-laravel-with-pest-php-a-comprehensive-guide-0d1a599f79f5"
+        },
+        {
+          "type": "article",
+          "title": "How to Unit Test a Laravel API with the Pest Framework",
+          "url": "https://www.twilio.com/en-us/blog/developers/community/unit-test-laravel-api-pest-framework"
+        },
+        {
+          "type": "article",
+          "title": "Laravel for Beginners: PHPUnit and PEST Tests",
+          "url": "https://www.luckymedia.dev/blog/laravel-for-beginners-phpunit-and-pest-tests"
+        }
+      ],
+      "parents": [
+        "unitFeatureTests"
+      ],
+      "children": []
+    },
+    "phpunit": {
+      "title": "PHPUnit",
+      "sourceId": "pUJVZ6oUKVSixtxshwhqi",
+      "type": "subtopic",
+      "order": 96,
+      "summary": "PHPUnit is a popular testing framework for PHP that allows developers to write and run automated tests for their code. It provides a structured way to define test cases, assertions, and test suites, ensuring that code behaves as expected. In Laravel, PHPUnit is the default testing framework, offering a robust environment for both unit and feature testing.",
+      "video": {
+        "title": "PHPUnit in Laravel: Simple Example of Why/How to Test",
+        "url": "https://www.youtube.com/watch?v=DRhhfy2sG1E"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "PHPUnit",
+          "url": "https://phpunit.de/"
+        },
+        {
+          "type": "opensource",
+          "title": "phpunit",
+          "url": "https://github.com/sebastianbergmann/phpunit"
+        },
+        {
+          "type": "article",
+          "title": "A Beginner\u2019s Guide to PHPUnit",
+          "url": "https://www.browserstack.com/guide/unit-testing-php"
+        }
+      ],
+      "parents": [
+        "unitFeatureTests"
+      ],
+      "children": []
+    },
+    "testing": {
+      "title": "Testing",
+      "sourceId": "-MfbXnkwrE-nxokFNi0Wi",
+      "type": "paragraph",
+      "order": 97,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "logStacksMessages"
+      ],
+      "children": [
+        "unitFeatureTests"
+      ]
+    },
+    "advancedFeatures": {
+      "title": "Advanced Features",
+      "sourceId": "z8obc-biJAAs9EJbr7fiI",
+      "type": "paragraph",
+      "order": 98,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "unitFeatureTests"
+      ],
+      "children": [
+        "queuesJobs"
+      ]
+    },
+    "unitFeatureTests": {
+      "title": "Unit & Feature tests",
+      "sourceId": "69IAYj71d4L6XxwX0M_j4",
+      "type": "topic",
+      "order": 99,
+      "summary": "Unit and feature tests are automated ways to verify that your code works as expected. Unit tests focus on testing individual components or functions in isolation, ensuring each part performs its specific task correctly. Feature tests, on the other hand, test larger parts of your application, simulating user interactions and verifying that different components work together to deliver the desired functionality.",
+      "video": {
+        "title": "Laravel Testing 01/24: Why Test Your Code Automatically?",
+        "url": "https://www.youtube.com/watch?v=BuDger5Ytbc&list=PLdXLsjL7A9k0esh2qNCtUMsGPLUWdLjHp&index=1"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Testing: Getting Started",
+          "url": "https://laravel.com/docs/12.x/testing"
+        },
+        {
+          "type": "article",
+          "title": "Unit TestHow to Get Started with Unit Testing in Laravel",
+          "url": "https://betterstack.com/community/guides/testing/laravel-unit-testing/"
+        },
+        {
+          "type": "article",
+          "title": "Unit Testing in Laravel: A Practical Approach for Developers",
+          "url": "https://dev.to/arafatweb/unit-testing-in-laravel-a-practical-approach-for-developers-7oa"
+        }
+      ],
+      "parents": [
+        "testing"
+      ],
+      "children": [
+        "pest",
+        "phpunit",
+        "configuration2",
+        "advancedFeatures"
+      ]
+    },
+    "queuesJobs": {
+      "title": "Queues & Jobs",
+      "sourceId": "kn3-JVSd_C_KKx3SzGx84",
+      "type": "topic",
+      "order": 100,
+      "summary": "Queues and jobs provide a mechanism to defer the processing of time-consuming tasks, such as sending emails, processing large datasets, or performing complex calculations, to a later time. Instead of executing these tasks immediately within a web request, they are pushed onto a queue. A worker process then retrieves and executes these jobs in the background, freeing up the web server to handle incoming requests more efficiently and improving the application's responsiveness.",
+      "video": {
+        "title": "Queues in Laravel: Main Things You Need to Know (Two Examples)",
+        "url": "https://www.youtube.com/watch?v=D5tr7r2_i7E"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Queues",
+          "url": "https://laravel.com/docs/queues"
+        },
+        {
+          "type": "article",
+          "title": "Creating Jobs",
+          "url": "https://laravel.com/docs/queues#creating-jobs"
+        },
+        {
+          "type": "article",
+          "title": "How to Use Queueing in Laravel",
+          "url": "https://www.twilio.com/en-us/blog/queueing-in-laravel"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Queue Jobs",
+          "url": "https://medium.com/@hossamsoliuman/laravel-queue-jobs-4dec9ccf0ae7"
+        }
+      ],
+      "parents": [
+        "advancedFeatures"
+      ],
+      "children": []
+    },
+    "clis": {
+      "title": "CLIs",
+      "sourceId": "9f6LOAmz06Z4yk2_Z3SYr",
+      "type": "label",
+      "order": 101,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "artisan",
+        "sail"
+      ]
+    },
+    "eventsListeners": {
+      "title": "Events & Listeners",
+      "sourceId": "MRWdMXNwNyVgyNrx0qTdp",
+      "type": "topic",
+      "order": 102,
+      "summary": "Events and listeners provide a simple observer pattern implementation, allowing you to subscribe to and react to events that occur in your application. An event signifies that something has happened, while listeners are classes that execute specific actions in response to those events. This decoupling of event triggering and handling promotes cleaner, more maintainable code by allowing different parts of your application to communicate without direct dependencies.",
+      "video": {
+        "title": "Let's talk about Events and Listeners",
+        "url": "https://www.youtube.com/watch?v=_8Rrq_RtaB0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Events",
+          "url": "https://laravel.com/docs/events"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Events, Listeners and Observers Complete Guide",
+          "url": "https://muwangaxyz.medium.com/laravel-events-listeners-and-observers-complete-guide-06196203b2a8"
+        },
+        {
+          "type": "article",
+          "title": "Getting Started with Laravel Events and Listeners",
+          "url": "https://neon.com/guides/laravel-events-and-listeners"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "artisan": {
+      "title": "Artisan",
+      "sourceId": "mz4QuqdC_EXKuX3KLX8_S",
+      "type": "subtopic",
+      "order": 103,
+      "summary": "Artisan is the command-line interface (CLI) included with Laravel. It provides a number of helpful commands that can assist you while building your application. These commands can automate repetitive tasks, generate boilerplate code, interact with your database, and perform other useful functions, ultimately streamlining the development process.",
+      "video": {
+        "title": "Getting Started with Artisan Commands in Laravel | Learn Laravel The Right Way",
+        "url": "https://www.youtube.com/watch?v=gw7O8P0J1jE"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Artisan",
+          "url": "https://laravel.com/docs/artisan"
+        },
+        {
+          "type": "article",
+          "title": "Laravel - Artisan Console",
+          "url": "https://www.tutorialspoint.com/laravel/laravel_artisan_console.htm"
+        },
+        {
+          "type": "article",
+          "title": "Laravel commands: Top Artisan commands to know and how to create them",
+          "url": "https://www.hostinger.com/tutorials/laravel-commands"
+        }
+      ],
+      "parents": [
+        "clis"
+      ],
+      "children": []
+    },
+    "sail": {
+      "title": "Sail",
+      "sourceId": "_hhgO69zAsDdtvIW0iM7a",
+      "type": "subtopic",
+      "order": 104,
+      "summary": "Sail is a light-weight command-line interface (CLI) for interacting with Laravel's default Docker development environment. It provides a simple way to manage and run your Laravel application using Docker, without requiring prior Docker experience. It offers commands to start, stop, and manage your application's containers, making local development easier and more consistent.",
+      "video": {
+        "title": "The Laravel Ecosystem - Sail \u26f5",
+        "url": "https://www.youtube.com/watch?v=jEzqiloXKMs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Sail",
+          "url": "https://laravel.com/docs/sail"
+        },
+        {
+          "type": "opensource",
+          "title": "sail",
+          "url": "https://github.com/laravel/sail"
+        },
+        {
+          "type": "article",
+          "title": "A Complete Guide to Laravel Sail",
+          "url": "https://hackernoon.com/a-complete-guide-to-laravel-sail"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Sail",
+          "url": "https://laravel-news.com/laravel-sail"
+        }
+      ],
+      "parents": [
+        "clis"
+      ],
+      "children": []
+    },
+    "configuration2": {
+      "title": "Configuration",
+      "sourceId": "Luq5PQpmDJDpf8DAkpiJt",
+      "type": "subtopic",
+      "order": 105,
+      "summary": "Deployment configuration involves setting up the necessary environment variables and settings for your Laravel application to run correctly in a production environment. This includes configuring database connections, cache settings, session drivers, and other environment-specific parameters to ensure optimal performance and security when the application is live.",
+      "video": {
+        "title": "Deploy Laravel applications fast and cheap",
+        "url": "https://www.youtube.com/watch?v=kG8RP6Rk0K8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Deployment",
+          "url": "https://laravel.com/docs/12.x/deployment#introduction"
+        },
+        {
+          "type": "article",
+          "title": "Deploying Laravel 12: From Local Development to Production Using CI/CD",
+          "url": "https://medium.com/@zulfikarditya/deploying-laravel-12-from-local-development-to-production-using-ci-cd-615defdb7827"
+        },
+        {
+          "type": "article",
+          "title": "How to Deploy Laravel Project on a Virtual Private Server",
+          "url": "https://www.hostinger.com/tutorials/how-to-deploy-laravel"
+        }
+      ],
+      "parents": [
+        "unitFeatureTests"
+      ],
+      "children": []
+    },
+    "notifications": {
+      "title": "Notifications",
+      "sourceId": "LZ8UiFvBT_rxirANh6XxZ",
+      "type": "topic",
+      "order": 106,
+      "summary": "Notifications provide a way to alert users about events that occur in your application, such as when a task is completed, a comment is posted, or a new follower is gained. These alerts can be delivered through various channels, including email, SMS, database entries, or even custom channels, allowing for flexible and tailored communication with users. The system typically involves defining notification classes that represent specific events and then sending these notifications to the appropriate recipients.",
+      "video": {
+        "title": "Should You Use a Notification or a Mailable?",
+        "url": "https://www.youtube.com/watch?v=GGZF9E9mM_E"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Notifications",
+          "url": "https://laravel.com/docs/notifications"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Notifications: dynamic channels, priority, and delayed sending",
+          "url": "https://crnkovic.me/laravel-notifications-on-steroids"
+        },
+        {
+          "type": "article",
+          "title": "How to create notifications in Laravel",
+          "url": "https://www.honeybadger.io/blog/php-laravel-notifications/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "optimization"
+      ]
+    },
+    "codeStyle": {
+      "title": "Code Style",
+      "sourceId": "UuHmg37MvwNAXJCPUt1-a",
+      "type": "label",
+      "order": 107,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "pint"
+      ]
+    },
+    "optimization": {
+      "title": "Optimization",
+      "sourceId": "jL-NldBPyDK_0SqvMBqVu",
+      "type": "subtopic",
+      "order": 108,
+      "summary": "Optimization, in the context of deployment, refers to the process of refining and improving a deployed application's performance, efficiency, and resource utilization. This involves identifying bottlenecks, reducing resource consumption (like memory and CPU), and enhancing the overall speed and responsiveness of the application to ensure a smooth and scalable user experience in a production environment.",
+      "video": {
+        "title": "10+ Mistakes When Deploying Laravel Project to Production",
+        "url": "https://www.youtube.com/watch?v=9gEsqgO05ZE"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Optimization",
+          "url": "https://laravel.com/docs/deployment#optimization"
+        }
+      ],
+      "parents": [
+        "notifications"
+      ],
+      "children": []
+    },
+    "taskSchedulling": {
+      "title": "Task Schedulling",
+      "sourceId": "aWC-GXotQYf5e43Hgfaa9",
+      "type": "topic",
+      "order": 109,
+      "summary": "Task scheduling involves automating the execution of specific commands or tasks at predefined intervals. This allows developers to automate repetitive processes, such as sending emails, cleaning up data, or generating reports, without manual intervention. By defining a schedule, these tasks can run in the background, freeing up resources and ensuring timely execution.",
+      "video": {
+        "title": "Laravel Task Scheduling: Run Artisan Command Hourly",
+        "url": "https://www.youtube.com/watch?v=r-KrsQ0dN80"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Task Schedulling",
+          "url": "https://laravel.com/docs/12.x/scheduling"
+        },
+        {
+          "type": "article",
+          "title": "Streamlining Application Automation with Laravel's Task Scheduler",
+          "url": "https://laravel-news.com/task-scheduler"
+        },
+        {
+          "type": "article",
+          "title": "A Complete Guide to Task Scheduling in Laravel",
+          "url": "http://betterstack.com/community/guides/scaling-php/laravel-task-scheduling/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "healthRoute"
+      ]
+    },
+    "pint": {
+      "title": "Pint",
+      "sourceId": "8XZ3g4gW34k1sThHvb2cH",
+      "type": "subtopic",
+      "order": 110,
+      "summary": "Pint is an opinionated PHP code style fixer. It automatically corrects coding style issues in your PHP code, ensuring consistency and adherence to defined coding standards. It simplifies the process of maintaining a clean and uniform codebase by automatically applying formatting rules.",
+      "video": {
+        "title": "New Laravel Pint: Code Styling Made Easier",
+        "url": "https://www.youtube.com/watch?v=5khyIHIYIK4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Laravel Pint",
+          "url": "https://laravel.com/docs/pint"
+        },
+        {
+          "type": "article",
+          "title": "pint",
+          "url": "https://github.com/laravel/pint"
+        }
+      ],
+      "parents": [
+        "codeStyle"
+      ],
+      "children": []
+    },
+    "healthRoute": {
+      "title": "Health Route",
+      "sourceId": "JLMf5OE1ggRMOabf8KDwp",
+      "type": "subtopic",
+      "order": 111,
+      "summary": "A health route is a specific endpoint in an application that provides information about its operational status. It's designed to be easily accessible and quickly indicate whether the application is running correctly and its dependencies are healthy. This allows monitoring systems and load balancers to automatically detect and respond to issues, ensuring high availability and reliability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Health Route",
+          "url": "https://laravel.com/docs/12.x/deployment#the-health-route"
+        },
+        {
+          "type": "article",
+          "title": "New Laravel 11 Apps Include a Health Check Endpoint",
+          "url": "https://laravel-news.com/laravel-11-health-endpoint"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Health Checks: Monitor App State in 2025",
+          "url": "https://dev.to/arasosman/laravel-health-checks-monitor-app-state-in-2025-heb"
+        }
+      ],
+      "parents": [
+        "taskSchedulling"
+      ],
+      "children": []
+    },
+    "fileStorage": {
+      "title": "File Storage",
+      "sourceId": "oB20h3_6U41cVvoACb63y",
+      "type": "topic",
+      "order": 112,
+      "summary": "File storage provides a convenient way to store and retrieve files, whether they are stored locally on the server or in cloud storage services like Amazon S3 or Google Cloud Storage. It offers a unified API for working with different storage systems, allowing you to easily switch between them without modifying your application's code. This system handles tasks like file uploads, downloads, and management, simplifying the process of working with files in your application.",
+      "video": {
+        "title": "File Upload in Laravel: Main Things You Need To Know",
+        "url": "https://www.youtube.com/watch?v=xN-CF7dzeyM"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "File Storage",
+          "url": "https://laravel.com/docs/12.x/filesystem"
+        },
+        {
+          "type": "article",
+          "title": "Master Laravel File Storage Retrieval in Minutes",
+          "url": "https://dev.to/dosenngoding/master-laravel-file-storage-retrieval-in-minutes-4n3g"
+        },
+        {
+          "type": "article",
+          "title": "Laravel 12 File Storage",
+          "url": "https://kritimyantra.com/blogs/laravel-12-file-storage"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "performance": {
+      "title": "Performance",
+      "sourceId": "4oRub9QpVWe2mw5SPPt5b",
+      "type": "label",
+      "order": 113,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "octane"
+      ]
+    },
+    "deploymentOptions": {
+      "title": "Deployment Options",
+      "sourceId": "KZ52I2q7hvBS5cIeVqBR0",
+      "type": "label",
+      "order": 114,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "laravelCloud",
+        "laravelForge"
+      ]
+    },
+    "octane": {
+      "title": "Octane",
+      "sourceId": "h78y25Zlzoc2RrrCIGztf",
+      "type": "subtopic",
+      "order": 115,
+      "summary": "Octane supercharges your Laravel application's performance by serving it using high-powered application servers like Swoole or RoadRunner. Instead of creating a fresh application instance for each request, Octane keeps the application loaded in memory, significantly reducing boot times and overhead. This allows your application to handle a much higher volume of requests with lower latency.",
+      "video": {
+        "title": "Laravel Octane: supercharge your Laravel applications",
+        "url": "https://www.youtube.com/watch?v=YGBvdAWt0W8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Octane",
+          "url": "https://laravel.com/docs/12.x/octane"
+        },
+        {
+          "type": "opensource",
+          "title": "octane",
+          "url": "https://github.com/laravel/octane"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Octane \u2013 What It Is, Why It Matters & How To Take Advantage Of It",
+          "url": "https://runcloud.io/blog/laravel-octane"
+        }
+      ],
+      "parents": [
+        "performance"
+      ],
+      "children": []
+    },
+    "localization": {
+      "title": "Localization",
+      "sourceId": "_y5s3ZGwvWR_RiQ0VnWYv",
+      "type": "topic",
+      "order": 116,
+      "summary": "Localization is the process of adapting a product or content to a specific target market. This involves translating text, but also adapting other elements like date formats, currency symbols, and cultural references to suit the local audience. The goal is to make the product feel native and relevant to users in different regions.",
+      "video": {
+        "title": "Laravel Localization Tutorial: Step-by-Step Guide for Multi-Language Apps | Laravel i18n & l10n",
+        "url": "https://www.youtube.com/watch?v=SOvHYMN-rw8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Localization",
+          "url": "https://laravel.com/docs/localization#main-content"
+        },
+        {
+          "type": "article",
+          "title": "Laravel localization: A step-by-step guide with examples",
+          "url": "https://lokalise.com/blog/laravel-localization-step-by-step/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "laravelCloud": {
+      "title": "Laravel Cloud",
+      "sourceId": "UzhlPw7flQ9UHeia0o-uj",
+      "type": "subtopic",
+      "order": 117,
+      "summary": "Laravel Cloud provides a streamlined platform for deploying and managing Laravel applications. It simplifies the process of setting up servers, configuring databases, and handling deployments, allowing developers to focus on building features rather than managing infrastructure. This typically involves automated provisioning, scaling, and monitoring tools tailored for Laravel applications.",
+      "video": {
+        "title": "I got my first Laravel Cloud Invoice...",
+        "url": "https://www.youtube.com/watch?v=9Q9sW8oFvSM"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Laravel Cloud",
+          "url": "https://cloud.laravel.com/"
+        },
+        {
+          "type": "official",
+          "title": "Deploying With Laravel Cloud or Forge",
+          "url": "https://laravel.com/docs/deployment#deploying-with-cloud-or-forge"
+        },
+        {
+          "type": "article",
+          "title": "Introducing Laravel Cloud",
+          "url": "https://laravel-news.com/introducing-laravel-cloud"
+        }
+      ],
+      "parents": [
+        "deploymentOptions"
+      ],
+      "children": []
+    },
+    "monitoring": {
+      "title": "Monitoring",
+      "sourceId": "460FOmMKHjW7xOSWx61IC",
+      "type": "label",
+      "order": 118,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "pulse"
+      ]
+    },
+    "facades": {
+      "title": "Facades",
+      "sourceId": "182iKn3FXLZEKI47S7GIk",
+      "type": "topic",
+      "order": 119,
+      "summary": "Facades provide a \"static\" interface to classes that are available in the application's service container. Laravel facades allow you to access the underlying object instance of a class registered in the service container as if you were calling static methods on it. This provides a more expressive and readable syntax for interacting with various Laravel components.",
+      "video": {
+        "title": "What in the world is a Facade?",
+        "url": "https://www.youtube.com/watch?v=gpn_4tWz1w8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Facades",
+          "url": "http://laravel.com/docs/facades#main-content"
+        },
+        {
+          "type": "article",
+          "title": "Learn how to create custom Facades in Laravel",
+          "url": "https://laravel-news.com/laravel-facades"
+        },
+        {
+          "type": "article",
+          "title": "Laravel - Facades",
+          "url": "https://www.tutorialspoint.com/laravel/laravel_facades.htm"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "laravelForge": {
+      "title": "Laravel Forge",
+      "sourceId": "teD9pAQ-dKKLg5kYOPN6c",
+      "type": "subtopic",
+      "order": 120,
+      "summary": "Laravel Forge is a web-based platform designed to simplify the deployment and management of PHP applications, particularly those built with Laravel. It automates server provisioning, configuration, and deployment processes, allowing developers to focus on writing code rather than managing infrastructure. Forge supports various cloud providers and offers features like server monitoring, database management, and SSL certificate installation.",
+      "video": {
+        "title": "Getting Started with Laravel Forge",
+        "url": "https://www.youtube.com/watch?v=AGYKgFc0DUQ"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Laravel Forge",
+          "url": "https://forge.laravel.com/"
+        },
+        {
+          "type": "official",
+          "title": "Deploying With Laravel Cloud or Forge",
+          "url": "https://laravel.com/docs/12.x/deployment#deploying-with-cloud-or-forge"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Forge: Control Your PHP Servers With Ease",
+          "url": "https://kinsta.com/blog/laravel-forge/"
+        }
+      ],
+      "parents": [
+        "deploymentOptions"
+      ],
+      "children": []
+    },
+    "pulse": {
+      "title": "Pulse",
+      "sourceId": "M-x3UwacbhtaGyPS6tzu3",
+      "type": "subtopic",
+      "order": 121,
+      "summary": "Pulse is a real-time monitoring tool designed to provide insights into your application's performance and health. It collects and displays key metrics like slow queries, cache interactions, queue jobs, and server resource usage, allowing developers to quickly identify and address potential bottlenecks or issues. This helps ensure the application remains responsive and performs optimally.",
+      "video": {
+        "title": "Getting Started with Laravel Pulse \ud83d\udc97",
+        "url": "https://www.youtube.com/watch?v=di9fYHxdZ-8"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Pulse",
+          "url": "https://pulse.laravel.com/"
+        },
+        {
+          "type": "official",
+          "title": "Laravel Pulse",
+          "url": "https://laravel.com/docs/12.x/pulse#main-content"
+        },
+        {
+          "type": "opensource",
+          "title": "pulse",
+          "url": "https://github.com/laravel/pulse"
+        },
+        {
+          "type": "article",
+          "title": "Announcing Laravel Pulse - A New Performance Monitoring Tool for Laravel Apps",
+          "url": "https://laravel-news.com/announcing-laravel-pulse"
+        }
+      ],
+      "parents": [
+        "monitoring"
+      ],
+      "children": []
+    },
+    "packageManagement": {
+      "title": "Package Management",
+      "sourceId": "t3iEtiCHghB4S9gAQOQJM",
+      "type": "topic",
+      "order": 122,
+      "summary": "Package management involves using tools to automate the process of installing, updating, configuring, and removing software packages. In Laravel, this is primarily handled by Composer, a dependency manager for PHP. Composer allows you to declare the libraries your project depends on, and it will manage the installation and updating of those dependencies for you, ensuring compatibility and simplifying the process of incorporating external functionality into your Laravel application.",
+      "video": {
+        "title": "How To Build a Laravel Package \ud83d\udce6",
+        "url": "https://www.youtube.com/watch?v=QsA5mdzKXLA"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Package Development",
+          "url": "https://laravel.com/docs/packages"
+        },
+        {
+          "type": "article",
+          "title": "Step by Step Guide to Custom Laravel Package Development",
+          "url": "https://www.monocubed.com/blog/laravel-package-development/"
+        },
+        {
+          "type": "article",
+          "title": "Laravel Package Management: Bundling & Distribution Simplified",
+          "url": "https://homeville.tech/laravel-package-management-bundling-distribution-simplified-b2326fa24d39"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "deployment"
+      ]
+    },
+    "deployment": {
+      "title": "Deployment",
+      "sourceId": "nNFGTPDGmI7bcUwnClRgQ",
+      "type": "paragraph",
+      "order": 123,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "packageManagement"
+      ],
+      "children": [
+        "toolsAndPackages",
+        "visitTheFollowingRoadmapsToKeepLearning"
+      ]
+    },
+    "toolsAndPackages": {
+      "title": "Tools and Packages",
+      "sourceId": "OnNjO3zDIYNHesUxr8qdt",
+      "type": "paragraph",
+      "order": 124,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "deployment"
+      ],
+      "children": []
+    },
+    "visitTheFollowingRoadmapsToKeepLearning": {
+      "title": "Visit the following roadmaps to keep learning",
+      "sourceId": "O5dely89N5UCMBeUfh8ud",
+      "type": "paragraph",
+      "order": 125,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "deployment"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "phpRoadmap",
+      "to": "whatIsLaravel",
+      "style": "solid"
+    },
+    {
+      "from": "whatIsLaravel",
+      "to": "whyWebFrameworks",
+      "style": "dashed"
+    },
+    {
+      "from": "whatIsLaravel",
+      "to": "laravelForFullStack",
+      "style": "dashed"
+    },
+    {
+      "from": "whatIsLaravel",
+      "to": "laravelForFrontend",
+      "style": "dashed"
+    },
+    {
+      "from": "installingLaravel",
+      "to": "whatIsLaravel",
+      "style": "solid"
+    },
+    {
+      "from": "installingLaravel",
+      "to": "laravelHerd",
+      "style": "dashed"
+    },
+    {
+      "from": "installingLaravel",
+      "to": "yorFirstApp",
+      "style": "solid"
+    },
+    {
+      "from": "yorFirstApp",
+      "to": "createANewProject",
+      "style": "solid"
+    },
+    {
+      "from": "createANewProject",
+      "to": "starterKits",
+      "style": "solid"
+    },
+    {
+      "from": "routingControllers",
+      "to": "basicRoutes",
+      "style": "solid"
+    },
+    {
+      "from": "dependencyInjection",
+      "to": "middleware",
+      "style": "solid"
+    },
+    {
+      "from": "middleware",
+      "to": "globalVsRoute",
+      "style": "dashed"
+    },
+    {
+      "from": "middleware",
+      "to": "viewsBlade",
+      "style": "solid"
+    },
+    {
+      "from": "viewsBlade",
+      "to": "bladeTemplating",
+      "style": "solid"
+    },
+    {
+      "from": "bladeDirectives",
+      "to": "loops",
+      "style": "dashed"
+    },
+    {
+      "from": "bladeLivewire",
+      "to": "databasesEloquent",
+      "style": "solid"
+    },
+    {
+      "from": "databasesEloquent",
+      "to": "configuration",
+      "style": "solid"
+    },
+    {
+      "from": "configuration",
+      "to": "eloquentOrm",
+      "style": "solid"
+    },
+    {
+      "from": "retrievingDataFiles",
+      "to": "creatingResponses",
+      "style": "solid"
+    },
+    {
+      "from": "pagination",
+      "to": "requestsResponses",
+      "style": "solid"
+    },
+    {
+      "from": "requestsResponses",
+      "to": "retrievingDataFiles",
+      "style": "solid"
+    },
+    {
+      "from": "creatingResponses",
+      "to": "views",
+      "style": "dashed"
+    },
+    {
+      "from": "creatingResponses",
+      "to": "redirects",
+      "style": "dashed"
+    },
+    {
+      "from": "creatingResponses",
+      "to": "streamedResponses",
+      "style": "dashed"
+    },
+    {
+      "from": "authentication",
+      "to": "withStarterKits",
+      "style": "dashed"
+    },
+    {
+      "from": "authentication",
+      "to": "authorization",
+      "style": "solid"
+    },
+    {
+      "from": "encryptionHashing",
+      "to": "loggingDebugging",
+      "style": "solid"
+    },
+    {
+      "from": "loggingDebugging",
+      "to": "loggingBasics",
+      "style": "solid"
+    },
+    {
+      "from": "logStacksMessages",
+      "to": "debuggingBasics",
+      "style": "solid"
+    },
+    {
+      "from": "laravel",
+      "to": "phpRoadmap",
+      "style": "solid"
+    },
+    {
+      "from": "logStacksMessages",
+      "to": "testing",
+      "style": "solid"
+    },
+    {
+      "from": "testing",
+      "to": "unitFeatureTests",
+      "style": "solid"
+    },
+    {
+      "from": "unitFeatureTests",
+      "to": "advancedFeatures",
+      "style": "solid"
+    },
+    {
+      "from": "packageManagement",
+      "to": "deployment",
+      "style": "solid"
+    },
+    {
+      "from": "advancedFeatures",
+      "to": "queuesJobs",
+      "style": "solid"
+    },
+    {
+      "from": "deployment",
+      "to": "toolsAndPackages",
+      "style": "solid"
+    },
+    {
+      "from": "deployment",
+      "to": "visitTheFollowingRoadmapsToKeepLearning",
+      "style": "solid"
+    },
+    {
+      "from": "starterKits",
+      "to": "inertia",
+      "style": "solid"
+    },
+    {
+      "from": "starterKits",
+      "to": "livewire",
+      "style": "solid"
+    },
+    {
+      "from": "starterKits",
+      "to": "breeze",
+      "style": "solid"
+    },
+    {
+      "from": "basicRoutes",
+      "to": "jetstream",
+      "style": "solid"
+    },
+    {
+      "from": "projectStructure",
+      "to": "app",
+      "style": "solid"
+    },
+    {
+      "from": "projectStructure",
+      "to": "bootstrap",
+      "style": "solid"
+    },
+    {
+      "from": "projectStructure",
+      "to": "config",
+      "style": "solid"
+    },
+    {
+      "from": "projectStructure",
+      "to": "database",
+      "style": "solid"
+    },
+    {
+      "from": "projectStructure",
+      "to": "public",
+      "style": "solid"
+    },
+    {
+      "from": "projectStructure",
+      "to": "resources",
+      "style": "solid"
+    },
+    {
+      "from": "basicControllers",
+      "to": "routes",
+      "style": "solid"
+    },
+    {
+      "from": "basicControllers",
+      "to": "storage",
+      "style": "solid"
+    },
+    {
+      "from": "basicControllers",
+      "to": "tests",
+      "style": "solid"
+    },
+    {
+      "from": "basicControllers",
+      "to": "vendor",
+      "style": "solid"
+    },
+    {
+      "from": "routingControllers",
+      "to": "routeModelBinding",
+      "style": "solid"
+    },
+    {
+      "from": "routingControllers",
+      "to": "rateLimiting",
+      "style": "solid"
+    },
+    {
+      "from": "middleware",
+      "to": "cors",
+      "style": "solid"
+    },
+    {
+      "from": "routingControllers",
+      "to": "caching",
+      "style": "solid"
+    },
+    {
+      "from": "dependencyInjection",
+      "to": "crudOperations",
+      "style": "solid"
+    },
+    {
+      "from": "dependencyInjection",
+      "to": "relationships",
+      "style": "solid"
+    },
+    {
+      "from": "eloquentOrm",
+      "to": "castsAccessors",
+      "style": "solid"
+    },
+    {
+      "from": "globalVsRoute",
+      "to": "ifElse",
+      "style": "solid"
+    },
+    {
+      "from": "eloquentOrm",
+      "to": "queryScopes",
+      "style": "solid"
+    },
+    {
+      "from": "requestsResponses",
+      "to": "files",
+      "style": "solid"
+    },
+    {
+      "from": "authentication",
+      "to": "json",
+      "style": "solid"
+    },
+    {
+      "from": "authorization",
+      "to": "gates",
+      "style": "solid"
+    },
+    {
+      "from": "authorization",
+      "to": "policies",
+      "style": "solid"
+    },
+    {
+      "from": "creatingResponses",
+      "to": "forms",
+      "style": "solid"
+    },
+    {
+      "from": "forms",
+      "to": "manualValidation",
+      "style": "solid"
+    },
+    {
+      "from": "manualValidation",
+      "to": "errorMessages",
+      "style": "solid"
+    },
+    {
+      "from": "withStarterKits",
+      "to": "manualAuthentication",
+      "style": "solid"
+    },
+    {
+      "from": "manualAuthentication",
+      "to": "sanctum",
+      "style": "solid"
+    },
+    {
+      "from": "manualAuthentication",
+      "to": "passport",
+      "style": "solid"
+    },
+    {
+      "from": "errorHandling",
+      "to": "handlingExceptions",
+      "style": "solid"
+    },
+    {
+      "from": "debuggingBasics",
+      "to": "telescope",
+      "style": "solid"
+    },
+    {
+      "from": "debuggingBasics",
+      "to": "debugbar",
+      "style": "solid"
+    },
+    {
+      "from": "handlingExceptions",
+      "to": "messageCustomization",
+      "style": "solid"
+    },
+    {
+      "from": "messageCustomization",
+      "to": "httpExceptions",
+      "style": "solid"
+    },
+    {
+      "from": "unitFeatureTests",
+      "to": "pest",
+      "style": "solid"
+    },
+    {
+      "from": "unitFeatureTests",
+      "to": "phpunit",
+      "style": "solid"
+    },
+    {
+      "from": "clis",
+      "to": "artisan",
+      "style": "solid"
+    },
+    {
+      "from": "clis",
+      "to": "sail",
+      "style": "solid"
+    },
+    {
+      "from": "unitFeatureTests",
+      "to": "configuration2",
+      "style": "solid"
+    },
+    {
+      "from": "notifications",
+      "to": "optimization",
+      "style": "solid"
+    },
+    {
+      "from": "codeStyle",
+      "to": "pint",
+      "style": "solid"
+    },
+    {
+      "from": "taskSchedulling",
+      "to": "healthRoute",
+      "style": "solid"
+    },
+    {
+      "from": "performance",
+      "to": "octane",
+      "style": "solid"
+    },
+    {
+      "from": "deploymentOptions",
+      "to": "laravelCloud",
+      "style": "solid"
+    },
+    {
+      "from": "deploymentOptions",
+      "to": "laravelForge",
+      "style": "solid"
+    },
+    {
+      "from": "monitoring",
+      "to": "pulse",
+      "style": "solid"
+    }
+  ]
+}

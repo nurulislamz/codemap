@@ -1,0 +1,944 @@
+{
+  "title": "Full Stack Developer",
+  "summary": "Step by step guide to becoming a modern full stack developer in 2026",
+  "url": "https://roadmap.sh/full-stack",
+  "order": [
+    "html",
+    "css",
+    "javascript",
+    "npm",
+    "git",
+    "github",
+    "tailwindCss",
+    "react",
+    "startBackendDevelopment",
+    "nodeJs",
+    "postgresql",
+    "restfulApis",
+    "jwtAuth",
+    "redis",
+    "linuxBasics",
+    "basicAwsServices",
+    "monit",
+    "githubActions",
+    "ansible",
+    "terraform",
+    "continueLearningWithFollowingRelevantTracks",
+    "route53",
+    "ec2",
+    "vpc",
+    "ses",
+    "s3",
+    "useTheCheckpointsAndDoNotForgetToPracticeWhatYouLearnThereAreProjectIdeasAtEachCheckpointThatYouCanBuildToSolidifyYourKnowledge",
+    "checkpointDeployment"
+  ],
+  "topics": {
+    "html": {
+      "title": "HTML",
+      "sourceId": "B0kARTODvCBi0iOF8iiqI",
+      "type": "topic",
+      "order": 1,
+      "summary": "HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.",
+      "video": {
+        "title": "HTML Full Course for Beginners",
+        "url": "https://youtu.be/mJgBOIoGihA"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated HTML Roadmap",
+          "url": "https://roadmap.sh/html"
+        }
+      ],
+      "parents": [
+        "full-stack"
+      ],
+      "children": [
+        "css"
+      ]
+    },
+    "css": {
+      "title": "CSS",
+      "sourceId": "dAJHWmGeiYdzZ1ZjrWz1S",
+      "type": "topic",
+      "order": 2,
+      "summary": "CSS or Cascading Style Sheets is the language used to style the frontend of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.",
+      "video": {
+        "title": "CSS Complete Course",
+        "url": "https://youtu.be/n4R2E7O-Ngo"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated CSS Roadmap",
+          "url": "https://roadmap.sh/css"
+        },
+        {
+          "type": "article",
+          "title": "Web.dev by Google \u2014 Learn CSS",
+          "url": "https://web.dev/learn/css/"
+        }
+      ],
+      "parents": [
+        "html"
+      ],
+      "children": [
+        "javascript"
+      ]
+    },
+    "javascript": {
+      "title": "JavaScript",
+      "sourceId": "T9PB6WQf-Fa9NXKKvVOy_",
+      "type": "topic",
+      "order": 3,
+      "summary": "JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on.",
+      "video": {
+        "title": "JavaScript Crash Course for Beginners",
+        "url": "https://youtu.be/hdI2bqOjy3c?t=2"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated JavaScript Roadmap",
+          "url": "https://roadmap.sh/javascript"
+        },
+        {
+          "type": "article",
+          "title": "The Modern JavaScript Tutorial",
+          "url": "https://javascript.info/"
+        },
+        {
+          "type": "article",
+          "title": "Build 30 Javascript projects in 30 days",
+          "url": "https://javascript30.com/"
+        }
+      ],
+      "parents": [
+        "css"
+      ],
+      "children": [
+        "npm"
+      ]
+    },
+    "npm": {
+      "title": "npm",
+      "sourceId": "mGgx_QTEPmVKf6AijX9fi",
+      "type": "topic",
+      "order": 4,
+      "summary": "npm is a package manager for the JavaScript programming language maintained by npm, Inc. npm is the default package manager for the JavaScript runtime environment Node.js.",
+      "video": {
+        "title": "NPM Crash Course",
+        "url": "https://www.youtube.com/watch?v=jHDhaSSKmB0"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "How to NPM",
+          "url": "https://github.com/workshopper/how-to-npm"
+        },
+        {
+          "type": "article",
+          "title": "Modern JavaScript for Dinosaurs",
+          "url": "https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html"
+        },
+        {
+          "type": "article",
+          "title": "An Absolute Beginners Guide to Using npm",
+          "url": "https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/"
+        }
+      ],
+      "parents": [
+        "javascript"
+      ],
+      "children": [
+        "git"
+      ]
+    },
+    "git": {
+      "title": "Git",
+      "sourceId": "We2APJpOPTr-VNfowG0kI",
+      "type": "topic",
+      "order": 5,
+      "summary": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+      "video": {
+        "title": "Git & GitHub Crash Course For Beginners",
+        "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated Git & GitHub Roadmap",
+          "url": "https://roadmap.sh/git-github"
+        },
+        {
+          "type": "course",
+          "title": "Why use Git? (Interactive Lesson)",
+          "url": "https://inter-git.com/lessons/introduction"
+        },
+        {
+          "type": "article",
+          "title": "Tutorial: Git for Absolutely Everyone",
+          "url": "https://thenewstack.io/tutorial-git-for-absolutely-everyone/"
+        }
+      ],
+      "parents": [
+        "npm"
+      ],
+      "children": [
+        "github"
+      ]
+    },
+    "github": {
+      "title": "GitHub",
+      "sourceId": "8sPXL8iClpPqje03ksses",
+      "type": "topic",
+      "order": 6,
+      "summary": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.",
+      "video": {
+        "title": "Git vs. GitHub: Whats the difference?",
+        "url": "https://www.youtube.com/watch?v=wpISo9TNjfU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "GitHub Documentation",
+          "url": "https://docs.github.com/en/get-started/quickstart"
+        },
+        {
+          "type": "article",
+          "title": "How to Use Git in a Professional Dev Team",
+          "url": "https://ooloo.io/project/github-flow"
+        }
+      ],
+      "parents": [
+        "git"
+      ],
+      "children": [
+        "tailwindCss"
+      ]
+    },
+    "tailwindCss": {
+      "title": "Tailwind CSS",
+      "sourceId": "CVCqdPkq_hGQfI8EEi5RC",
+      "type": "topic",
+      "order": 7,
+      "summary": "CSS Framework that provides atomic CSS classes to help you style components e.g. `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.",
+      "video": {
+        "title": "Tailwind CSS Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=lCxcTsOHrjo"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Tailwind CSS",
+          "url": "https://tailwindcss.com"
+        }
+      ],
+      "parents": [
+        "github"
+      ],
+      "children": [
+        "react"
+      ]
+    },
+    "react": {
+      "title": "React",
+      "sourceId": "khoUtTUxdf8udAzN9_CAb",
+      "type": "topic",
+      "order": 8,
+      "summary": "React is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native.",
+      "video": {
+        "title": "React JS Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=nTeuhbP7wdE"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated React Roadmap",
+          "url": "https://roadmap.sh/react"
+        },
+        {
+          "type": "official",
+          "title": "Getting Started with React",
+          "url": "https://react.dev/learn/tutorial-tic-tac-toe"
+        }
+      ],
+      "parents": [
+        "tailwindCss"
+      ],
+      "children": [
+        "startBackendDevelopment"
+      ]
+    },
+    "startBackendDevelopment": {
+      "title": "Start Backend Development",
+      "sourceId": "QfW-odmDYknm_qXNcDu5o",
+      "type": "paragraph",
+      "order": 9,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "react"
+      ],
+      "children": [
+        "nodeJs"
+      ]
+    },
+    "nodeJs": {
+      "title": "Node.js",
+      "sourceId": "_aA6Hp4KkgJeptqo8oKTg",
+      "type": "topic",
+      "order": 10,
+      "summary": "Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project! Node.js runs the V8 JavaScript engine, Google Chrome's core, outside the browser. This allows Node.js to be very performant. A Node.js app runs in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.",
+      "video": {
+        "title": "Node.js and Express.js Full Course",
+        "url": "https://www.youtube.com/watch?v=Oe421EPjeBE"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated Node.js Roadmap",
+          "url": "https://roadmap.sh/nodejs"
+        },
+        {
+          "type": "official",
+          "title": "Node.js Website",
+          "url": "https://nodejs.org/en/about/"
+        },
+        {
+          "type": "official",
+          "title": "Learn Node.js Official Website",
+          "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
+        }
+      ],
+      "parents": [
+        "startBackendDevelopment"
+      ],
+      "children": [
+        "postgresql"
+      ]
+    },
+    "postgresql": {
+      "title": "PostgreSQL",
+      "sourceId": "HGhnbMg6jh6cAmUH4DtOx",
+      "type": "topic",
+      "order": 11,
+      "summary": "PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.",
+      "video": {
+        "title": "Postgres tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=eMIxuk0nOkU"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated PostgreSQL DBA Roadmap",
+          "url": "https://roadmap.sh/postgresql-dba"
+        },
+        {
+          "type": "official",
+          "title": "PostgreSQL Website",
+          "url": "https://www.postgresql.org/"
+        },
+        {
+          "type": "article",
+          "title": "Learn PostgreSQL - Full Tutorial for Beginners",
+          "url": "https://www.postgresqltutorial.com/"
+        }
+      ],
+      "parents": [
+        "nodeJs"
+      ],
+      "children": [
+        "restfulApis"
+      ]
+    },
+    "restfulApis": {
+      "title": "RESTful APIs",
+      "sourceId": "vmHbWdmMHF53otXIrqzRV",
+      "type": "topic",
+      "order": 12,
+      "summary": "REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.",
+      "video": {
+        "title": "What Is A RESTful API? Explanation of REST & HTTP",
+        "url": "https://www.youtube.com/watch?v=Q-BpqyOT3a8"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated API Design Roadmap",
+          "url": "https://roadmap.sh/api-design"
+        },
+        {
+          "type": "article",
+          "title": "What is a REST API?",
+          "url": "https://www.redhat.com/en/topics/api/what-is-a-rest-api"
+        },
+        {
+          "type": "article",
+          "title": "Learn REST: A RESTful Tutorial",
+          "url": "https://restapitutorial.com/"
+        }
+      ],
+      "parents": [
+        "postgresql"
+      ],
+      "children": [
+        "ses",
+        "s3",
+        "jwtAuth"
+      ]
+    },
+    "jwtAuth": {
+      "title": "JWT Auth",
+      "sourceId": "vHojhJYjiN0IwruEqi1Dv",
+      "type": "topic",
+      "order": 13,
+      "summary": "JWT stands for JSON Web Token is a token-based encryption open standard/methodology that is used to transfer information securely as a JSON object. Clients and Servers use JWT to securely share information, with the JWT containing encoded JSON objects and claims. JWTs are designed to be compact, safe to use within URLs, and ideal for SSO contexts.",
+      "video": {
+        "title": "What Is JWT and Why Should You Use JWT",
+        "url": "https://www.youtube.com/watch?v=7Q17ubqLfaM"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introduction to JSON Web Tokens",
+          "url": "https://jwt.io/introduction"
+        },
+        {
+          "type": "article",
+          "title": "What is JWT?",
+          "url": "https://www.akana.com/blog/what-is-jwt"
+        }
+      ],
+      "parents": [
+        "restfulApis"
+      ],
+      "children": [
+        "redis"
+      ]
+    },
+    "redis": {
+      "title": "Redis",
+      "sourceId": "Onfd7Sl8LG2sjh2aQY7gb",
+      "type": "topic",
+      "order": 14,
+      "summary": "Redis is an open source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.",
+      "video": {
+        "title": "Redis in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=G1rOthIU-uo"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated Redis Roadmap",
+          "url": "https://roadmap.sh/redis"
+        },
+        {
+          "type": "official",
+          "title": "Redis Documentation",
+          "url": "https://redis.io/docs/latest/"
+        }
+      ],
+      "parents": [
+        "jwtAuth"
+      ],
+      "children": [
+        "linuxBasics"
+      ]
+    },
+    "linuxBasics": {
+      "title": "Linux Basics",
+      "sourceId": "SHTSvMDqI7X1_ZT7-m--n",
+      "type": "topic",
+      "order": 15,
+      "summary": "Knowledge of UNIX is a must for almost all kind of development as most of the code that you write is most likely going to be finally deployed on a UNIX/Linux machine. Linux has been the backbone of the free and open source software movement, providing a simple and elegant operating system for almost all your needs.",
+      "video": {
+        "title": "Linux Operating System - Crash Course",
+        "url": "https://www.youtube.com/watch?v=ROjZy1WbCIA"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated Linux Roadmap",
+          "url": "https://roadmap.sh/linux"
+        },
+        {
+          "type": "course",
+          "title": "Coursera - Unix Courses",
+          "url": "https://www.coursera.org/courses?query=unix"
+        },
+        {
+          "type": "article",
+          "title": "Unix / Linux Tutorial",
+          "url": "https://www.tutorialspoint.com/unix/index.htm"
+        }
+      ],
+      "parents": [
+        "redis"
+      ],
+      "children": [
+        "basicAwsServices"
+      ]
+    },
+    "basicAwsServices": {
+      "title": "Basic AWS Services",
+      "sourceId": "cUOfvOlQ_0Uu1VX3i67kJ",
+      "type": "topic",
+      "order": 16,
+      "summary": "AWS has several services but you don't need to know all of them. Some common ones that you can start with are EC2, VPC, S3, Route 53, and SES.",
+      "video": {
+        "title": "Deploy Node App on AWS EC2",
+        "url": "https://youtu.be/oHAQ3TzUTro"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated AWS Roadmap",
+          "url": "https://roadmap.sh/aws"
+        },
+        {
+          "type": "article",
+          "title": "VPC Basics",
+          "url": "https://cloudcasts.io/course/vpc-basics"
+        },
+        {
+          "type": "article",
+          "title": "EC2 Essentials",
+          "url": "https://cloudcasts.io/course/ec2-essentials"
+        }
+      ],
+      "parents": [
+        "linuxBasics"
+      ],
+      "children": [
+        "route53",
+        "ec2",
+        "vpc",
+        "monit"
+      ]
+    },
+    "monit": {
+      "title": "Monit",
+      "sourceId": "y1SFX7uvWaCy4OYBnECLu",
+      "type": "topic",
+      "order": 17,
+      "summary": "When it comes to monitoring the health of your applications, there are several different options available. My favorite monitoring stack is Prometheus and Grafana, but it can be a bit overwhelming to set up and configure. If you're looking for a simpler solution, **Monit** is a great alternative that can be utilized to monitor and manage system resources such as services, processes, files, directories, devices, and network connections, making your application more reliable and resilient to issues like crashes, unresponsiveness, or resource exhaustion.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Monit Documentation",
+          "url": "https://mmonit.com/monit/documentation/"
+        }
+      ],
+      "parents": [
+        "basicAwsServices"
+      ],
+      "children": [
+        "githubActions"
+      ]
+    },
+    "githubActions": {
+      "title": "GitHub Actions",
+      "sourceId": "863KMXcFJzInvTp_-Ldmz",
+      "type": "topic",
+      "order": 18,
+      "summary": "GitHub Actions is a workflow automation tool provided by GitHub that can be used to automate various tasks in the app development process.",
+      "video": {
+        "title": "5 Ways to DevOps-ify your App",
+        "url": "https://www.youtube.com/watch?v=eB0nUzAI7M8"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated Git & GitHub Roadmap",
+          "url": "https://roadmap.sh/git-github"
+        },
+        {
+          "type": "official",
+          "title": "GitHub Actions Documentation",
+          "url": "https://docs.github.com/en/actions"
+        }
+      ],
+      "parents": [
+        "monit"
+      ],
+      "children": [
+        "ansible"
+      ]
+    },
+    "ansible": {
+      "title": "Ansible",
+      "sourceId": "rFXupYpUFfp7vZO8zh614",
+      "type": "topic",
+      "order": 19,
+      "summary": "Ansible is an open-source configuration management, application deployment and provisioning tool that uses its own declarative language in YAML. Ansible is agentless, meaning you only need remote connections via SSH or Windows Remote Management via Powershell in order to function",
+      "video": {
+        "title": "Ansible Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=9Ua2b06oAr4"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Ansible Documentation",
+          "url": "https://docs.ansible.com/"
+        },
+        {
+          "type": "official",
+          "title": "Ansible Getting Started Guide",
+          "url": "https://www.ansible.com/resources/get-started"
+        }
+      ],
+      "parents": [
+        "githubActions"
+      ],
+      "children": [
+        "terraform"
+      ]
+    },
+    "terraform": {
+      "title": "Terraform",
+      "sourceId": "2kKHuQZScu7hCDgQWxl5u",
+      "type": "topic",
+      "order": 20,
+      "summary": "Terraform is an extremely popular open source Infrastructure as Code (IaC) tool that can be used with many different cloud and service provider APIs. Terraform focuses on an immutable approach to infrastructure, with a terraform state file center to tracking the status of your real world infrastructure.",
+      "video": {
+        "title": "Intro to Terraform",
+        "url": "https://www.youtube.com/watch?v=h970ZBgKINg&ab_channel=HashiCorp"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit Dedicated Terraform Roadmap",
+          "url": "https://roadmap.sh/terraform"
+        },
+        {
+          "type": "official",
+          "title": "Terraform Documentation",
+          "url": "https://www.terraform.io/docs"
+        },
+        {
+          "type": "official",
+          "title": "Terraform Tutorials",
+          "url": "https://learn.hashicorp.com/terraform"
+        }
+      ],
+      "parents": [
+        "ansible"
+      ],
+      "children": [
+        "continueLearningWithFollowingRelevantTracks"
+      ]
+    },
+    "continueLearningWithFollowingRelevantTracks": {
+      "title": "Continue Learning with following relevant tracks",
+      "sourceId": "sVXZrBCsiSzWBBYWTm-nQ",
+      "type": "paragraph",
+      "order": 21,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "terraform"
+      ],
+      "children": []
+    },
+    "route53": {
+      "title": "Route53",
+      "sourceId": "5zyYpu9cyuTFwQCjTbHpS",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "Route53 is AWS's Domain Name System (DNS) service that plays a critical role in connecting user requests to your web application or other resources within your infrastructure. With Route53, you can easily manage domains, redirect traffic, and configure domain-related settings. It has several advantages, including high availability, low latency, and integration with other AWS resources.",
+      "video": {
+        "title": "Amazon Route 53",
+        "url": "https://www.youtube.com/watch?v=RGWgfhZByAI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Route53",
+          "url": "https://aws.amazon.com/route53/"
+        }
+      ],
+      "parents": [
+        "basicAwsServices"
+      ],
+      "children": []
+    },
+    "ec2": {
+      "title": "EC2",
+      "sourceId": "6oBIxYj8WPcUHidQ99tus",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the form of virtual servers, known as instances. With EC2, you can quickly scale your infrastructure up or down as your computing requirements change. This service effectively reduces the time required to obtain and boot new server instances, allowing you to easily adjust capacity according to the needs of your application.",
+      "video": {
+        "title": "Deploy Node App on AWS EC2",
+        "url": "https://youtu.be/oHAQ3TzUTro"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Amazon AWS EC2",
+          "url": "https://aws.amazon.com/ec2/"
+        },
+        {
+          "type": "article",
+          "title": "Up and Running with AWS EC2",
+          "url": "https://cs.fyi/guide/up-and-running-with-aws-ec2"
+        },
+        {
+          "type": "article",
+          "title": "EC2 Essentials",
+          "url": "https://cloudcasts.io/course/ec2-essentials"
+        }
+      ],
+      "parents": [
+        "basicAwsServices"
+      ],
+      "children": []
+    },
+    "vpc": {
+      "title": "VPC",
+      "sourceId": "QtL-bLKtWIdH00K6k_PdC",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "VPC stands for **Virtual Private Cloud** and is an essential service provided by AWS that allows you to create a private, isolated section within the AWS cloud, where you can define your own virtual network. It offers a more secure and controlled environment, enabling you to easily launch and manage your resources within your personal network.",
+      "video": {
+        "title": "AWS VPC & Subnets For Beginners",
+        "url": "https://youtu.be/TUTqYEZZUdc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Amazon AWS VPC",
+          "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+        },
+        {
+          "type": "article",
+          "title": "Up and Running with AWS VPC",
+          "url": "https://cs.fyi/guide/up-and-running-with-aws-vpc"
+        },
+        {
+          "type": "article",
+          "title": "VPC Basics",
+          "url": "https://cloudcasts.io/course/vpc-basics"
+        }
+      ],
+      "parents": [
+        "basicAwsServices"
+      ],
+      "children": []
+    },
+    "ses": {
+      "title": "SES",
+      "sourceId": "B-cphY7Imnv6JBMujVIF7",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "Amazon SES (Simple Email Service) is a scalable, flexible, and cost-effective cloud-based email service that is specifically designed for developers, marketers, and businesses to send and receive marketing, transactional, and notification emails. SES is useful, especially when you need to send a large volume of emails, as it offers high deliverability, reliability, and ease of use.",
+      "video": {
+        "title": "Contact Form Submission With AWS SES",
+        "url": "https://www.youtube.com/watch?v=HiHflLTqiwU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Amazon AWS SES",
+          "url": "https://aws.amazon.com/ses/"
+        }
+      ],
+      "parents": [
+        "restfulApis"
+      ],
+      "children": []
+    },
+    "s3": {
+      "title": "S3",
+      "sourceId": "n2Xp_ijJ2OS8xhE7xMWxk",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "S3 is a service that allows you to store files in the cloud. It's a simple service that you can use to store files and serve them to your users.",
+      "video": {
+        "title": "Upload Images to S3 from Node Back End",
+        "url": "https://www.youtube.com/watch?v=NZElg91l_ms"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Amazon AWS S3",
+          "url": "https://aws.amazon.com/s3/"
+        }
+      ],
+      "parents": [
+        "restfulApis"
+      ],
+      "children": []
+    },
+    "useTheCheckpointsAndDoNotForgetToPracticeWhatYouLearnThereAreProjectIdeasAtEachCheckpointThatYouCanBuildToSolidifyYourKnowledge": {
+      "title": "Use the checkpoints and do not forget to practice what you learn. There are project ideas at each checkpoint that you can build to solidify your knowledge.",
+      "sourceId": "fKzuMTsf6XL_0Ik6t8SAX",
+      "type": "paragraph",
+      "order": 44,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "checkpointDeployment"
+      ]
+    },
+    "checkpointDeployment": {
+      "title": "Checkpoint \u2014 Deployment",
+      "sourceId": "J2_IWAb1s9zZcxOY3NXm2",
+      "type": "subtopic",
+      "order": 47,
+      "summary": "Now that you know the basics of AWS, you should be able to deploy your application to AWS. You don't need to use all the AWS services, here is what you can probably get started with:",
+      "video": {
+        "title": "Deploy Node App on AWS EC2",
+        "url": "https://youtu.be/oHAQ3TzUTro"
+      },
+      "articles": [],
+      "parents": [
+        "useTheCheckpointsAndDoNotForgetToPracticeWhatYouLearnThereAreProjectIdeasAtEachCheckpointThatYouCanBuildToSolidifyYourKnowledge"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "full-stack",
+      "to": "html",
+      "style": "solid"
+    },
+    {
+      "from": "html",
+      "to": "css",
+      "style": "solid"
+    },
+    {
+      "from": "javascript",
+      "to": "npm",
+      "style": "solid"
+    },
+    {
+      "from": "css",
+      "to": "javascript",
+      "style": "solid"
+    },
+    {
+      "from": "npm",
+      "to": "git",
+      "style": "solid"
+    },
+    {
+      "from": "git",
+      "to": "github",
+      "style": "solid"
+    },
+    {
+      "from": "github",
+      "to": "tailwindCss",
+      "style": "solid"
+    },
+    {
+      "from": "tailwindCss",
+      "to": "react",
+      "style": "solid"
+    },
+    {
+      "from": "react",
+      "to": "startBackendDevelopment",
+      "style": "solid"
+    },
+    {
+      "from": "startBackendDevelopment",
+      "to": "nodeJs",
+      "style": "solid"
+    },
+    {
+      "from": "postgresql",
+      "to": "restfulApis",
+      "style": "solid"
+    },
+    {
+      "from": "restfulApis",
+      "to": "jwtAuth",
+      "style": "solid"
+    },
+    {
+      "from": "jwtAuth",
+      "to": "redis",
+      "style": "solid"
+    },
+    {
+      "from": "redis",
+      "to": "linuxBasics",
+      "style": "solid"
+    },
+    {
+      "from": "linuxBasics",
+      "to": "basicAwsServices",
+      "style": "solid"
+    },
+    {
+      "from": "basicAwsServices",
+      "to": "monit",
+      "style": "solid"
+    },
+    {
+      "from": "nodeJs",
+      "to": "postgresql",
+      "style": "solid"
+    },
+    {
+      "from": "monit",
+      "to": "githubActions",
+      "style": "solid"
+    },
+    {
+      "from": "githubActions",
+      "to": "ansible",
+      "style": "solid"
+    },
+    {
+      "from": "ansible",
+      "to": "terraform",
+      "style": "solid"
+    },
+    {
+      "from": "terraform",
+      "to": "continueLearningWithFollowingRelevantTracks",
+      "style": "solid"
+    },
+    {
+      "from": "basicAwsServices",
+      "to": "route53",
+      "style": "solid"
+    },
+    {
+      "from": "restfulApis",
+      "to": "ses",
+      "style": "solid"
+    },
+    {
+      "from": "basicAwsServices",
+      "to": "ec2",
+      "style": "solid"
+    },
+    {
+      "from": "basicAwsServices",
+      "to": "vpc",
+      "style": "solid"
+    },
+    {
+      "from": "restfulApis",
+      "to": "s3",
+      "style": "solid"
+    },
+    {
+      "from": "useTheCheckpointsAndDoNotForgetToPracticeWhatYouLearnThereAreProjectIdeasAtEachCheckpointThatYouCanBuildToSolidifyYourKnowledge",
+      "to": "checkpointDeployment",
+      "style": "solid"
+    }
+  ]
+}

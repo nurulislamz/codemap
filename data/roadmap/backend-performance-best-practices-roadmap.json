@@ -1,0 +1,130 @@
+{
+  "title": "Backend Performance",
+  "summary": "Detailed list of best practices to improve your backend performance",
+  "url": "https://roadmap.sh/backend-performance-best-practices",
+  "order": [
+    "caching",
+    "optimizeApiResponse",
+    "databases",
+    "asynchronism",
+    "loadBalancingScaling",
+    "codeOptimization",
+    "security",
+    "monitoringAndLogging",
+    "network",
+    "performanceTesting"
+  ],
+  "topics": {
+    "caching": {
+      "title": "Caching",
+      "sourceId": "im1nMFkPRX-1kmsIpe40L",
+      "type": "checklist",
+      "order": 1,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "optimizeApiResponse": {
+      "title": "Optimize API Response",
+      "sourceId": "QTgJLewn79WOuEqR0Jk1-",
+      "type": "checklist",
+      "order": 2,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "databases": {
+      "title": "Databases",
+      "sourceId": "5B1NCOBg170dU9q3it7hB",
+      "type": "checklist",
+      "order": 3,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "asynchronism": {
+      "title": "Asynchronism",
+      "sourceId": "bbctWQmEVPSeZ_WJ9dy5r",
+      "type": "checklist",
+      "order": 4,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "loadBalancingScaling": {
+      "title": "Load Balancing & Scaling",
+      "sourceId": "bUEhIxYBXd0PStE0K6Aui",
+      "type": "checklist",
+      "order": 5,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "codeOptimization": {
+      "title": "Code Optimization",
+      "sourceId": "vdVRO0pJRDdwh4kiRRxC-",
+      "type": "checklist",
+      "order": 6,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "security": {
+      "title": "Security",
+      "sourceId": "yqA9FsmYMmkb5qSyDasv-",
+      "type": "checklist",
+      "order": 7,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "monitoringAndLogging": {
+      "title": "Monitoring and Logging",
+      "sourceId": "f_PG0zOizhzjnf0LxwhRk",
+      "type": "checklist",
+      "order": 8,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "network": {
+      "title": "Network",
+      "sourceId": "wJrT9PHgVurLUjgFUrZDg",
+      "type": "checklist",
+      "order": 9,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "performanceTesting": {
+      "title": "Performance Testing",
+      "sourceId": "T1utpBUbbzsaIliJn5OYg",
+      "type": "checklist",
+      "order": 10,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    }
+  },
+  "edges": []
+}

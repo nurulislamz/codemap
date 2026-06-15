@@ -1,0 +1,975 @@
+{
+  "title": "Technical Writer",
+  "summary": "Roadmap for anyone looking for a career in technical writing in 2026",
+  "url": "https://roadmap.sh/technical-writer",
+  "order": [
+    "introduction",
+    "whoIsATechnicalWriter",
+    "whatIsTechnicalWriting",
+    "roleOfTechnicalWritersInorganizations",
+    "formsOfTechnicalWriting",
+    "growthAsATechnicalWriter",
+    "requiredSkills",
+    "writtenCommunicationProficiency",
+    "tooling",
+    "publishingTools",
+    "plagiarismChecker",
+    "gitVersionControl",
+    "researchTools",
+    "bestPractices",
+    "storyTelling",
+    "subtleSelling",
+    "contentStructure",
+    "callToActions",
+    "references",
+    "craftingGreatTitles",
+    "contentObjectivesIntent",
+    "userPersona",
+    "writingStyleGuides",
+    "contentResearch",
+    "typesOfTechnicalContent",
+    "howToGuides",
+    "technicalContentMarketing",
+    "contentSeo",
+    "topFunnelContent",
+    "pillarContent",
+    "midFunnelContent",
+    "genericGatedContent",
+    "bottomFunnelContent",
+    "topicScore",
+    "developerDocs",
+    "apiReference",
+    "helpContent",
+    "releaseNotesProductAnnouncements",
+    "customerCaseStudies",
+    "contentAgingTimelines",
+    "technicalWebsiteCopy",
+    "contentAnalysis",
+    "contentOptimization",
+    "frequentlyAskedQuestions",
+    "canonicalLink",
+    "contentDistribution",
+    "contentDistributionChannels",
+    "contentDistributionAmplificationStrategies",
+    "keepLearning"
+  ],
+  "topics": {
+    "introduction": {
+      "title": "Introduction",
+      "sourceId": "HlUUGj3dOZ68t4gIjerXh",
+      "type": "topic",
+      "order": 1,
+      "summary": "Technical writing involves explaining complex concepts in a simple, easy-to-understand language to a specific audience. This form of writing is commonly utilized in fields such as engineering, computer hardware and software, finance, consumer electronics, and biotechnology. The primary objective of a technical writer is to simplify complicated information and present it in a clear and concise manner. Duties of a technical writer may include creating how-to guides, instruction manuals, FAQ pages, journal articles, and other technical content that can aid the user understanding. The ultimate goal is to enable the user to understand and navigate a new product or concept without difficulty.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "technical-writer"
+      ],
+      "children": [
+        "whoIsATechnicalWriter",
+        "whatIsTechnicalWriting",
+        "roleOfTechnicalWritersInorganizations",
+        "formsOfTechnicalWriting",
+        "growthAsATechnicalWriter",
+        "requiredSkills"
+      ]
+    },
+    "whoIsATechnicalWriter": {
+      "title": "Who is a Technical Writer?",
+      "sourceId": "ZRGsokU313Ky-anWbWK6q",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Is a Technical Writer?",
+          "url": "https://boffin.education/introduction-to-technical-writing/#2-what-is-a-technical-writer"
+        },
+        {
+          "type": "article",
+          "title": "A Day in the Life of a Technical Writer",
+          "url": "https://boffin.education/technical-writing-roles-and-responsibilities/#4-a-day-in-the-life-of-a-technical-writer"
+        },
+        {
+          "type": "article",
+          "title": "Glossary of Technical Writing Terms: \"Technical Writer\"",
+          "url": "https://boffin.education/glossary-of-technical-writing-terms/#technical-writer"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "whatIsTechnicalWriting": {
+      "title": "What is Technical Writing?",
+      "sourceId": "jl1FsQ5-WGKeFyaILNt_p",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "Technical writing involves explaining complex concepts in a simple, easy-to-understand language to a specific audience. This form of writing is commonly utilized in fields such as engineering, computer hardware and software, finance, consumer electronics, and biotechnology.",
+      "video": {
+        "title": "Amruta Ranade: What do Technical Writers do?",
+        "url": "https://www.youtube.com/watch?v=biocrCx5T_k"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Indeed: What Is Technical Writing?",
+          "url": "https://www.indeed.com/career-advice/career-development/technical-writing"
+        },
+        {
+          "type": "article",
+          "title": "TechWhirl: What Is Technical Writing?",
+          "url": "https://techwhirl.com/what-is-technical-writing/"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "roleOfTechnicalWritersInorganizations": {
+      "title": "Role of Technical Writers inOrganizations",
+      "sourceId": "j69erqfosSZMDlmKcnnn0",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "The role of a **Technical Writer** is primarily to translate complex technical information into simpler language that is easy to understand for a non-technical audience. They design, write, edit, and rewrite technical pieces like operating instructions, FAQs, installation guides, and more. Apart from this, they also gather and disseminate technical information among customers, designers, and manufacturers. Essentially, their job involves communicating technical terminologies and a clear understanding of complex information to those who need it in an easy-to-understand format.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "formsOfTechnicalWriting": {
+      "title": "Forms of Technical Writing",
+      "sourceId": "cNeT1dJDfgn0ndPzSxhSL",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "These can range from user manuals, how-to guides, white papers, design specifications, and project plans, among others. Each form serves a different purpose and audience. For instance, user manuals are typically directed towards end users, providing step-by-step instructions on how to use a particular product. On the other hand, design specifications target developers or technical teams, detailing how a certain technology or product should be designed or built. These various forms highlight the breadth and diversity of output that a technical writer can create. It's essential for a technical writer to understand the distinctions and appropriate usage of these forms to effectively communicate technical information.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "growthAsATechnicalWriter": {
+      "title": "Growth as a Technical Writer",
+      "sourceId": "FVxNjbDBxgf6vkZWw1Awt",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "The growth phase in the field of technical writing is intriguing. As a technical writer gains experience and demonstrates excellent work consistently, they are likely to encounter many opportunities for growth. This can include taking on more complex projects, managing teams, or even moving toward strategic roles. Career advancement may involve specializing in specific industries or gaining fluency in cutting-edge tools and formats. Technical writers may also grow by expanding their skill set to encompass related fields like data analysis, UX writing, content management, or project coordination.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "requiredSkills": {
+      "title": "Required Skills",
+      "sourceId": "8rjUZ9NZPGwVRGmk6Dlyb",
+      "type": "topic",
+      "order": 7,
+      "summary": "Here are Core Skills required to become a proficient **Technical Writer**:",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "introduction"
+      ],
+      "children": [
+        "writtenCommunicationProficiency",
+        "tooling"
+      ]
+    },
+    "writtenCommunicationProficiency": {
+      "title": "Written Communication Proficiency",
+      "sourceId": "7-3tqRUpntoQP4nK_nul5",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Written communication is a critical asset in a technical writer's skill set. This skill is not just about having a good command of grammar and vocabulary, but also the ability to convey complex information in an understandable, clear and concise manner. A proficient technical writer should know how to structure their content appropriately, maintain a consistent tone and voice, and use illustrative examples to make the concepts more relatable for the audience. Accuracy is essential in written communication as technical writing often involves descriptions of intricate processes or use-cases where there is no margin for error. Understanding the nuances of different writing styles and adapting to the intended audience's comprehension level are also a part of effective written communication.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Formal, permanent, clear business communication through writing",
+          "url": "https://www.scribd.com/document/546030656/Unit-3-Written-Communication"
+        }
+      ],
+      "parents": [
+        "requiredSkills"
+      ],
+      "children": []
+    },
+    "tooling": {
+      "title": "Tooling",
+      "sourceId": "_5xFbl2BHx0f2u9HmSVS8",
+      "type": "topic",
+      "order": 9,
+      "summary": "In the realm of technical writing, \"tooling\" refers to the various software and applications technical writers utilize to create, manage, and publish high-quality technical documentation. This can include word processors, desktop publishing apps, XML editors, content management systems, and many more. Some popular examples of tools used by technical writers include Microsoft Word, Google Docs, Adobe FrameMaker, MadCap Flare, Markdown, GitHub, and Jira. These tools enhance productivity by allowing for document versioning, enabling collaboration, offering templates for consistent formatting, providing features for managing large amounts of content, and even offering functionality for translating documentation into multiple languages. The choice of tools depends on the specific needs and workflow of the technical writer or the organization they are working for.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "requiredSkills"
+      ],
+      "children": [
+        "publishingTools",
+        "plagiarismChecker",
+        "gitVersionControl",
+        "researchTools",
+        "bestPractices"
+      ]
+    },
+    "publishingTools": {
+      "title": "Publishing Tools",
+      "sourceId": "jC3ZrpskBqzxiV6SKf4Uf",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "When discussing the realm of tooling in technical writing, publishing plays a significant role. It involves the final process of making the documentation accessible to users. There are various tools used for publishing like Adobe FrameMaker, MadCap Flare, Jekyll, etc, which support different formats like PDF, HTML, ePubs, etc. They could also include features for version control, collaboration, and content reuse. This not only makes the content accessible to the users but also ensures that the documentation is kept consistent and up-to-date.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tooling"
+      ],
+      "children": []
+    },
+    "plagiarismChecker": {
+      "title": "Plagiarism Checker",
+      "sourceId": "cSZbTOB0FPPOlGzy-MkSi",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "**Plagiarism** refers to the act of copying someone else's work, ideas, or expressions and presenting them as your own without giving due credit to the original author. This unoriginal practice is seen as theft of intellectual property and can incur serious repercussions in both academic and professional settings. In the case of technical writing, using specialized plagiarism detection softwares is crucial to ensure the originality and authenticity of the content. Some of these detection tools include Turnitin, Grammarly, Copyscape, and many more. They work by cross-referencing your work with a vast database of academic and professional documents to identify any matching phrases that could constitute plagiarism.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tooling"
+      ],
+      "children": []
+    },
+    "gitVersionControl": {
+      "title": "Git / Version Control",
+      "sourceId": "ffJyulu9GPB_TDqjeJYyV",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Git is a free and open-source distributed version control system, designed to handle everything from small to very large projects with speed and efficiency. It is easy to learn and has a tiny footprint with lightning-fast performance. Git allows and encourages you to have multiple local branches that can be entirely independent of each other. The creation, merging, and deletion of those lines of development take seconds. It also provides strong support for non-linear development, numerous workflows, and robust features such as strong cryptographic authenticity of history.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tooling"
+      ],
+      "children": []
+    },
+    "researchTools": {
+      "title": "Research Tools",
+      "sourceId": "0XWiraeoicNBbaGYQnNZr",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "In the work of a technical writer, **Research Tools** are critical, as they aid in sourcing, verifying, and organizing information needed for creating technical documents. Various specific tools are available, depending on the information you're seeking. For instance, scientific papers may be searched using **Google Scholar** or specialized databases like **PubMed**. **Semantic Scholar** can help find academic papers across many disciplines. For less formal online sources, **Google Alert** can be set up to watch for new information on a specific topic. Further, **Evernote** can be used to compile and manage information from multiple sources. For organizing and evaluating data, tools like **Microsoft Excel**, **Tableau**, or **Google Sheets** can be employed. Please remember that the choice of tool will depend on your subject, the type of information you need, and how you want to manage and present that information.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tooling"
+      ],
+      "children": []
+    },
+    "bestPractices": {
+      "title": "Best Practices",
+      "sourceId": "yYLsG2LuPaNUuhXSVev_0",
+      "type": "topic",
+      "order": 14,
+      "summary": "As a technical writer, adhering to established best practices helps to ensure the consistency, clarity, and overall quality of your work. Some common best practices include:",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tooling"
+      ],
+      "children": [
+        "storyTelling",
+        "subtleSelling",
+        "contentStructure",
+        "callToActions",
+        "references",
+        "craftingGreatTitles",
+        "contentObjectivesIntent",
+        "userPersona",
+        "writingStyleGuides",
+        "contentResearch"
+      ]
+    },
+    "storyTelling": {
+      "title": "Story Telling",
+      "sourceId": "27muFD1Ld1gF6hhIh22sG",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "**Story Telling** is a powerful tool for technical writers. It allows you to communicate complex concepts and information in a more relatable and understandable way. Essentially, it revolves around presenting information as a narrative with a clear beginning, middle, and end. This entails establishing context (beginning), explaining the process or concept (middle), and summarizing the outcome, conclusion, or application of the process or concept (end). Story telling in technical writing can take various forms including business scenarios, case studies, user stories, etc. It is essential to keep your 'story' relevant, realistic, and as concise as possible. Remember, the purpose is not primarily to entertain but to educate and inform your audience while keeping them engaged.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bestPractices"
+      ],
+      "children": []
+    },
+    "subtleSelling": {
+      "title": "Subtle Selling",
+      "sourceId": "lxSSjgtqJk-PtRp4hARDw",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "**Subtle Selling**: This is an approach in technical writing where the writer indirectly promotes or advocates for a particular product, service, or idea. Subtle selling is about providing informative, helpful content without overtly pushing a sale or marketing a product. It often involves highlighting the unique features or aspects of a product or service in the context of solving a problem or addressing a particular need, hence subtly influencing the reader to consider it. It's about clever positioning rather than overt persuasion, emphasizing the value a product or service can provide in a discreet and unobtrusive manner.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bestPractices"
+      ],
+      "children": []
+    },
+    "contentStructure": {
+      "title": "Content Structure",
+      "sourceId": "Ezz2e4lYLD_bdNNwvsV_y",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "Content structure in technical writing is a crucial aspect that ensures readers can follow through and understand the information seamlessly. It involves organizing content logically, creating outlines, using headings and subheadings, and writing in a linear and clear manner. Furthermore, the structure includes the application of sequences such as chronological orders, step-by-step guides, or flowcharts. The table of contents and index also play a significant role in structure, as they allow readers to navigate quickly to different areas of the document. Additionally, elements such as glossaries help to define complex terms used in the text. Ultimately, a well-structured document creates an excellent user and reading experience.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bestPractices"
+      ],
+      "children": []
+    },
+    "callToActions": {
+      "title": "Call to Actions",
+      "sourceId": "a1ChwDwztjZBi79y38AGa",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "Call-to-Actions (CTAs) ----------------------",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bestPractices"
+      ],
+      "children": []
+    },
+    "references": {
+      "title": "References",
+      "sourceId": "8qSL2esjsA3YYuB4d7B9z",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "References are an essential part of any technical document. They provide a means to verify the information you have given, adding credibility to your work. Cite sources from where you gather your data, facts or figures. According to the style of writing you are using, you may be required to provide in-text citations or footnotes. Also, there are various formats for creating a reference list or bibliography at the end of your document. Examples of some commonly used formats include APA, MLA, and Chicago. Always make sure that your references are relevant, current, and correctly cited to avoid plagiarism. The number of references may vary based on the type, length, and complexity of the technical document.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bestPractices"
+      ],
+      "children": []
+    },
+    "craftingGreatTitles": {
+      "title": "Crafting Great Titles",
+      "sourceId": "WmOvQYlnedX0QgC5Adeen",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "Creating great titles is an essential best practice for technical writers. Titles should be engaging, accurate, clear, concise, and should provide a quick summary of what your article or document is all about. They should include keywords relevant to your content, but avoid jargon that could alienate your readers. Use active verbs instead of passive wherever possible to give your titles more impact. Also, make sure that your title doesn't promise something that the content doesn't deliver. Consider your audience and what would be most valuable and informative to them. Finally, always review and revise your titles as needed.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bestPractices"
+      ],
+      "children": []
+    },
+    "contentObjectivesIntent": {
+      "title": "Content Objectives & Intent",
+      "sourceId": "7FGMPztd6ouvqemcGhIol",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "Content objectives refer to the identified goals or targets that a technical writer aims to fulfill with a piece of content. Often, these goals are aligned with the overall project aims and may include educating users, providing clear instructions, or explaining a specific topic in a digestible format. It is important for technical writers to define their content objectives clearly, in order to tailor their writing approach, style, and structure accordingly. Moreover, content objectives serve as a guide in creating, reviewing, and revising the content to ensure that it meets the intended purpose. Therefore, content objectives serve as the underlying basis, which significantly influences the quality of the final content output.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bestPractices"
+      ],
+      "children": []
+    },
+    "userPersona": {
+      "title": "User Persona",
+      "sourceId": "UuV51vM2JT_LFFXORSwru",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "User Persona is a significant and efficient tool used by technical writers to address their audience effectively. It is a fictional character, a typical member of the target audience who is characterized by behavior patterns, goals, skills, attitudes, etc. The persona is built based on the data about real users. It serves to help technical writers visualize the audience, understand their needs and expectations, ensure that the content is clearly understood, and enhance the overall readability. User Personas allow writers to design effective communication strategies and create more user-centered documentation, making information easy to find, understand, and use.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bestPractices"
+      ],
+      "children": []
+    },
+    "writingStyleGuides": {
+      "title": "Writing Style Guides",
+      "sourceId": "cnEVPsqZqs9ZdyqmOuLGA",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "As a technical writer, creating a **writing guide** is essential to ensure consistency and quality in all documents you create. A writing guide can entail a set of rules about the style, tone, terminology, syntax, punctuation, and lexicon in your text. This should aid in maintaining a uniform approach to your writing, which is vital when dealing with technical information. Your writing guide will depend on the project requirements and preferences of your target audience, and it needs to be easily understood and followed by anyone involved in the project. Additionally, your guide may also include procedures on how to incorporate images, links, or other similar elements in your text. Importantly, make sure to keep updating your guide as you gain more knowledge and skills in technical writing.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bestPractices"
+      ],
+      "children": []
+    },
+    "contentResearch": {
+      "title": "Content Research",
+      "sourceId": "O-dZEkmU0tP3dUIUPM6YJ",
+      "type": "topic",
+      "order": 24,
+      "summary": "`Content research` involves a systematic investigation into a specific subject matter in order to gather reliable and relevant information. This process is crucial for a technical writer as it helps in generating valuable content that's accurate, informative, and engaging. It goes beyond basic internet search; it includes reading technical documents, interviewing experts, conducting surveys, and analyzing data. Content research should be conducted in a strategic manner, taking into consideration the purpose of the information, the target audience, and the key message to be conveyed. A well-executed content research process helps technical writers produce high-quality content that's both clear and concise.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "bestPractices"
+      ],
+      "children": [
+        "typesOfTechnicalContent",
+        "topicScore"
+      ]
+    },
+    "typesOfTechnicalContent": {
+      "title": "Types of Technical Content",
+      "sourceId": "xV8mox1WnSbl2jAGqQpeg",
+      "type": "topic",
+      "order": 25,
+      "summary": "There are several types of technical writing, each focused on different aspects. **End-user documentation writers** specialize in creating materials for product users (like user manuals and quick start guides). **Traditional technical writers** draft articles, FAQs, guides, and other content primarily for websites. **API/SDK writers** are responsible for creating and maintaining documentation for application programming interfaces (Software Development Kits), which requires knowledge of multiple programming languages. **Medical writers** work in the medical sector and must understand medical concepts. **Grant and proposal writers** are essential for organizations obtaining funds for projects. Note that these are not all mutually exclusive; many technical writers span multiple categories.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "contentResearch"
+      ],
+      "children": [
+        "howToGuides",
+        "technicalContentMarketing"
+      ]
+    },
+    "howToGuides": {
+      "title": "How-to Guides",
+      "sourceId": "C-eVVtF6Yabp2a6XvMeh_",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "\"How to Guides\" is a type of technical writing that prioritizes instructive, step-by-step information. Typically, these guides are designed to help the reader understand how to perform a specific task or process. They may depend on clear written instructions, accompanied by visuals like diagrams or screenshots. This format ensures in-depth accuracy and demonstrates each phase of the process explicitly. Examples of \"how to guides\" can range from software user manuals, product assembly instructions, tutorial blog posts, to recipe instructions. These guides thrive on simplicity, targeting a wide audience including both professionals and novices.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "typesOfTechnicalContent"
+      ],
+      "children": []
+    },
+    "technicalContentMarketing": {
+      "title": "Technical Content Marketing",
+      "sourceId": "mJ1s5-SGd_tj8y0LLZxYg",
+      "type": "topic",
+      "order": 27,
+      "summary": "`Marketing` is a business strategy which involves identifying customer needs and determining how best to meet those needs. In other words, it is about ensuring that a business or product is positioned in such a way that it will attract the desired audience, encouraging them to buy in. This strategy comprises multiple aspects including `market research`, `branding`, `product development`, `sales`, `promotion`, and `public relations`. Marketers use these tactics to create a company image, build customer relationships, attract potential customers and retain existing ones. The ultimate aim of marketing is to boost sales and help the business grow.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "typesOfTechnicalContent"
+      ],
+      "children": [
+        "contentSeo"
+      ]
+    },
+    "contentSeo": {
+      "title": "Content SEO",
+      "sourceId": "-IBL9S4DelIi07w_fmrX3",
+      "type": "topic",
+      "order": 28,
+      "summary": "\"SEO\" stands for \"Search Engine Optimization\". It is a digital marketing strategy focused on boosting the online visibility of a website or a web page in a search engine's unpaid results. Typically, the higher ranked on the search results page or more frequently a site appears in the search results list, the more visitors it will receive from the search engine's users. SEO tactics can target various types of search like image search, local search, video search, academic search, news search and industry-specific vertical search engines. It involves a range of activities such as keyword research and optimization, link building, and content creation, geared towards making a site more attractive to search engines. Beyond assisting with visibility, SEO also helps to improve the user experience and usability of a website.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "technicalContentMarketing"
+      ],
+      "children": [
+        "topFunnelContent"
+      ]
+    },
+    "topFunnelContent": {
+      "title": "Top-funnel Content",
+      "sourceId": "5dnZe0oCIzb5qGwgI6pwH",
+      "type": "topic",
+      "order": 29,
+      "summary": "\"Top funnel\" refers to the awareness stage of a customer's journey, where they first come into contact with a business or product. In this stage, they become aware of a problem they have and begin to search for information or solutions. Content at this stage aims to capture the attention and interest of potential customers by offering solutions or valuable information that relates to their problem. This content is typically broad and informative, rather than product-specific. The aim is to inform and educate the audience, while establishing trust and brand authority.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "contentSeo"
+      ],
+      "children": [
+        "pillarContent",
+        "midFunnelContent"
+      ]
+    },
+    "pillarContent": {
+      "title": "Pillar Content",
+      "sourceId": "wBDjGa2PgdmeXxHnILFjY",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "\"Pillar content\" is a comprehensive piece of content on a specific topic or theme that can be broken down into many smaller related sections. This could range from an extensive blog post, to an e-book or a guide. The main intention of creating pillar content is to share highly valuable and in-depth information about a particular subject. It forms the core or the 'pillar' of your content strategy. Supporting contents or 'cluster contents', which are essentially various sub-topics related to the pillar content, link back to this main pillar, creating a content cluster. These cluster content pieces can be blog posts, podcasts, infographics, or videos, etc., which keep your audience engaged and drives them back to your pillar content. Pillar content not only positions you as an authority in your field but also improves your SEO rankings.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "topFunnelContent"
+      ],
+      "children": []
+    },
+    "midFunnelContent": {
+      "title": "Mid-funnel Content",
+      "sourceId": "Q2KD70IKwBXAH3UQgeZpp",
+      "type": "topic",
+      "order": 31,
+      "summary": "\"Mid Funnel\" refers to the phase in the marketing funnel where the consumer has moved beyond initial awareness and is now considering various options. At this stage, potential buyers are evaluating the information and comparing solutions. It is the job of a technical writer to provide content, such as case studies, webinars, whitepapers, demonstrative videos, etc., that helps guide the consumer towards choosing their solution. Technical writers must provide accurate information, uphold the brand's integrity, and position the product or service as a solution that meets the potential customer's needs effectively.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "topFunnelContent"
+      ],
+      "children": [
+        "genericGatedContent",
+        "bottomFunnelContent"
+      ]
+    },
+    "genericGatedContent": {
+      "title": "Generic Gated Content",
+      "sourceId": "XDX2QxMUkUok2fcS3tFki",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "\"Generic Gated\" refers to the type of content, usually informative or educational, that requires a user to provide certain information, like an email address, before gaining access to it. It's a strategy frequently used by businesses to generate leads. This can include a range of content, such as white papers, ebooks, webinars, or research reports. This strategy helps businesses capture the contact information of potential customers who scale through the top of the funnel content and have shown interest in the mid funnel \"Generic Gated\" content. These potential customers are individuals who could likely convert to customers, making them valuable leads.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "midFunnelContent"
+      ],
+      "children": []
+    },
+    "bottomFunnelContent": {
+      "title": "Bottom-funnel Content",
+      "sourceId": "vo1udIIRpxNZCpA3g32F3",
+      "type": "topic",
+      "order": 33,
+      "summary": "\"Bottom funnel\" refers to the final stage in the marketing funnel where potential customers are ready to make a purchase. This phase typically includes actions like negotiations, sales calls, and the final transaction. For a technical writer, understanding the \"bottom funnel\" can be crucial as it could influence the type of technical content they create. For instance, they might need to create in-depth product guides, FAQs, or troubleshooting articles that potential customers could use during the decision-making process. The main goal during the \"bottom funnel\" stage is to convince the potential customer to finalize their purchase and become an actual customer.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "midFunnelContent"
+      ],
+      "children": []
+    },
+    "topicScore": {
+      "title": "Topic Score",
+      "sourceId": "SX4vL_JEHrwqHdThyqKKO",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "`Topic Score` is a computational study that calculates how well a particular content piece covers a specified topic. Usually measured on a scale of 0 to 100, it uses different metrics such as keyword usage, semantic relevance, depth of topic coverage, among others. The higher the topic score, the more comprehensively your content is considered to cover the targeted topic. It can be beneficial for content strategists and technical writers to focus on target keywords in order to improve overall content quality and boost SEO performance.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "contentResearch"
+      ],
+      "children": []
+    },
+    "developerDocs": {
+      "title": "Developer Docs",
+      "sourceId": "e8oNoXw1KLY4jDzojIXyk",
+      "type": "topic",
+      "order": 51,
+      "summary": "Developer docs, also known as developer documentation or API documentation, is a form of technical writing specifically aimed towards software developers. This type of documentation usually includes technical specifications of APIs, code comments, software design and architecture, and other detailed technical descriptions involved in software development. Developer docs are essential tools for developers as they provide the necessary guidelines, standards, and examples for using and integrating specific software, libraries, or APIs. The structure and comprehensiveness of developer docs can vary greatly depending on the complexity of the software it describes, but the main purpose is to help developers understand, utilize, and contribute to the software efficiently.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "apiReference": {
+      "title": "API Reference",
+      "sourceId": "z5_73Q7dWbBd4m_OrdZlH",
+      "type": "topic",
+      "order": 52,
+      "summary": "API References are comprehensive guides designed to understand the details of the API. Usually, they include information such as endpoints, request examples, response types and examples, and error codes. API References help developers learn the specifics of your API\u2019s endpoints and understand how to successfully integrate the API into their software.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "helpContent": {
+      "title": "Help Content",
+      "sourceId": "e_bsYrZ0eQqduURg2ybX4",
+      "type": "topic",
+      "order": 53,
+      "summary": "\"Help Content\" refers to a variety of resources specifically designed to provide users with detailed information, assistance, and troubleshooting advice for software products, hardware devices, or complex services. This includes guides, FAQs, how-to articles, and video tutorials. Help content should be easily accessible, clear, concise, and focused on helping the end-user to perform specific tasks effectively or resolve issues independently. The complexity and depth of the help content may vary based on the target audience's technical expertise and familiarity with the product or service.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "releaseNotesProductAnnouncements": {
+      "title": "Release Notes / Product Announcements",
+      "sourceId": "-GZXLc9RjY6eWkKC1K_Rg",
+      "type": "topic",
+      "order": 74,
+      "summary": "Release notes, often a part of software documentation, are brief, high-level summaries provided to the users during a new release of the product. They contain vital information about the updates, including new features, enhancements, bug fixes, and often known issues of the released software version. Each release note is associated with a specific software version and aids the users in understanding what changes or improvements to expect in that particular release. An effective release note will discuss new features or enhancements in a user-focused manner, identify any action required by the user, highlight known issues and workarounds, and contain links to more detailed information if necessary. It empowers users to use the software more effectively and troubleshoot potential issues.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "customerCaseStudies": {
+      "title": "Customer Case-Studies",
+      "sourceId": "W44q1iEj7RKM55-9jabMJ",
+      "type": "topic",
+      "order": 76,
+      "summary": "\"Case Studies\" are in-depth analyses often used by technical writers. They offer a detailed investigation into a specific subject, typically presenting real-world applications or scenarios. By employing a systematic approach, case studies can provide valuable insights which might not be achieved with other methods. They may contain extensive research, including interviews, observations, and data collection for quantitative and qualitative assessment. Case studies can encompass unique perspectives or complex matters, offering a rich understanding of the subject matter. They are often used in scientific, academic, and business contexts.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "contentAgingTimelines": {
+      "title": "Content Aging & Timelines",
+      "sourceId": "JgdrXG7MX1gGuNG9uyubA",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "`Content Aging` refers to the natural process where the information or data presented becomes outdated or irrelevant over time. This typically happens in rapidly evolving industries or topics, where new developments or advancements regularly occur. As a technical writer, it's crucial to regularly review and update your content to ensure its accuracy and relevance. Ignored, aged content can lead to misinformation, confusion, and loss of trust among your readers. Therefore, a systematic approach to manage content aging, like implementing a review cycle or updating schedule, is an integral part of content management strategy.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "contentAnalysis"
+      ],
+      "children": []
+    },
+    "technicalWebsiteCopy": {
+      "title": "Technical Website Copy",
+      "sourceId": "tAFenZA0MFhMPE5cevNuD",
+      "type": "topic",
+      "order": 78,
+      "summary": "\"Web copy\" refers to all the text content that appears on a website. This includes everything from the headlines, subheadlines, body content, call-to-action statements, product descriptions to all the metadata like the title tags and meta descriptions. The primary purpose of web copy is to communicate the site's purpose or value proposition to its visitors and motivate them to take a certain action\u2014be it make a purchase, subscribe to a newsletter, etc. It's a critical component in search engine optimization (SEO) as search engines rank websites based on the quality and relevance of the website's copy to user searches. Markdown, a lightweight markup language, can be used to write web copy; it allows writers to format text (like headers, lists, and links) in plain text which will then be converted into HTML for web display.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "contentAnalysis": {
+      "title": "Content Analysis",
+      "sourceId": "TbSBCITdLswhVB82fErTP",
+      "type": "topic",
+      "order": 79,
+      "summary": "Content Analysis is a research methodology used by technical writers to interpret and quantify textual data. It involves a systematic process of coding and identifying themes or patterns within a body of text from different sources such as books, blogs, articles, or other document types. The primary goal is to provide a subjectively interpreted, yet valid and replicatable, inference from the data. This technique helps decipher whether the content in question conveys the desired communication effectively or if there are areas that require improvement. For example, you may conduct a content analysis to measure the user-friendliness of a software manual or the clarity and comprehensibility of an instructional guide.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "contentOptimization"
+      ],
+      "children": [
+        "contentAgingTimelines",
+        "contentDistribution"
+      ]
+    },
+    "contentOptimization": {
+      "title": "Content Optimization",
+      "sourceId": "XyFEYDJvJpGZ7qSdoSZeI",
+      "type": "topic",
+      "order": 80,
+      "summary": "\"Content Optimization\" is a vital technique in digital writing, focusing on making your content more appealing and useful to your target audience. It involves several strategies such as keyword usage, meta-tag optimization, using relevant links and references, maintaining proper content length, utilizing images and infographics effectively, and ensuring a mobile-friendly layout. Also, optimization of your content for search engines (SEO) is vital, enabling your content to rank higher in search rankings. However, it's not just about SEO; attention must be given to the readability, clarity, and overall user experience. The aim is to both engage human readership and satisfy search engine algorithms. Remember, content optimization isn't a one-time process but requires regular updates and review for achieving consistent advantages.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "contentAnalysis"
+      ]
+    },
+    "frequentlyAskedQuestions": {
+      "title": "Frequently Asked Questions",
+      "sourceId": "pgrKfp1trcIxhDdvLk95g",
+      "type": "topic",
+      "order": 81,
+      "summary": "\"FAQs\" stands for \"Frequently Asked Questions\". This is a crucial part of any technical document or user guide that compiles a list of common questions (with their respective answers) that users might have about a particular product, service, or topic. Good FAQs are clear, concise, and organized in a logical way. Typically, they are updated regularly based on user queries and feedback to remain helpful and relevant. FAQs can include instructions to resolve common user problems, terms and definitions, links to related resources, and other information useful for understanding and using the product or service effectively.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "canonicalLink": {
+      "title": "Canonical Link",
+      "sourceId": "NIxIhMEOxrUR8nbjbF_Fp",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "A `canonical link` is an HTML element that helps prevent duplicate content in search engine optimization by specifying the \"preferred\" version of a page. The canonical tag is added to the HTML head of a page and has a link leading to the version of the web page that is the most complete or authoritative. Irrespective of the number of URLs pointing to similar content, the canonical link denotes which is the key version. This is crucial in guiding search engine bots to index and rank the right pages.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "contentDistribution"
+      ],
+      "children": []
+    },
+    "contentDistribution": {
+      "title": "Content Distribution",
+      "sourceId": "mrqBxsNRl1CQEKtuYSy9F",
+      "type": "topic",
+      "order": 84,
+      "summary": "Content distribution refers to the process of sharing, publishing, or disseminating content to your audience through various mediums. These mediums can include different channels like social media platforms (Facebook, Twitter, LinkedIn, etc.), email newsletters, blogs, podcasts, websites, or even offline venues like magazines and newspapers. The nature of content being distributed can range from blog posts, articles, videos, infographics, to podcasts. The aim of content distribution is to make your content accessible to as many relevant audiences as possible, increasing reach, visibility, and engagement. The strategy may involve both organic and paid means of distribution, and typically pursues a multichannel approach to maximize reach.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "contentAnalysis"
+      ],
+      "children": [
+        "canonicalLink",
+        "contentDistributionChannels",
+        "contentDistributionAmplificationStrategies",
+        "keepLearning"
+      ]
+    },
+    "contentDistributionChannels": {
+      "title": "Content Distribution Channels",
+      "sourceId": "m9-DqsQfeukmhjhIfCph-",
+      "type": "subtopic",
+      "order": 85,
+      "summary": "Content distribution channels refer to the mediums through which content creators disseminate their work to reach their chosen audience. Broadly, these channels can be divided into three categories: owned, earned, and paid. Owned channels are those controlled by the content creators themselves, such as their websites, blogs or email newsletters. Earned channels are ones where others distribute the content on the creator's behalf out of their own desire, such as shares on social media or word-of-mouth recommendations. Paid channels, as the name implies, are those where content creators pay to have their work distributed, such as through sponsored posts or advertisements on social media, promotional emails, or paid search results in search engines.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "contentDistribution"
+      ],
+      "children": []
+    },
+    "contentDistributionAmplificationStrategies": {
+      "title": "Content Distribution Amplification Strategies",
+      "sourceId": "_cAGbAswDhOqpoiiikPbD",
+      "type": "subtopic",
+      "order": 86,
+      "summary": "In technical writing, **amplification strategies** are tactics utilized to increase the reach and impact of the content produced. This often involves promoting and sharing the content through various mediums to ensure it gets in front of the largest and most relevant audience. These strategies can include everything from social media promotion and email marketing campaigns to leveraging influencers and using SEO (Search Engine Optimization) strategies. Additionally, they can also involve repurposing content into different formats (like infographics or videos) to engage wider demographics. These amplification techniques help to maximize the reach and effectiveness of the technical content produced.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "contentDistribution"
+      ],
+      "children": []
+    },
+    "keepLearning": {
+      "title": "Keep Learning",
+      "sourceId": "KEP_DmmmIbG5zdC0dj6a_",
+      "type": "paragraph",
+      "order": 87,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "contentDistribution"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "introduction",
+      "to": "whoIsATechnicalWriter",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "whatIsTechnicalWriting",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "roleOfTechnicalWritersInorganizations",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "formsOfTechnicalWriting",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "growthAsATechnicalWriter",
+      "style": "dashed"
+    },
+    {
+      "from": "technical-writer",
+      "to": "introduction",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "requiredSkills",
+      "style": "solid"
+    },
+    {
+      "from": "requiredSkills",
+      "to": "writtenCommunicationProficiency",
+      "style": "dashed"
+    },
+    {
+      "from": "requiredSkills",
+      "to": "tooling",
+      "style": "solid"
+    },
+    {
+      "from": "tooling",
+      "to": "publishingTools",
+      "style": "dashed"
+    },
+    {
+      "from": "tooling",
+      "to": "plagiarismChecker",
+      "style": "dashed"
+    },
+    {
+      "from": "tooling",
+      "to": "gitVersionControl",
+      "style": "dashed"
+    },
+    {
+      "from": "tooling",
+      "to": "researchTools",
+      "style": "dashed"
+    },
+    {
+      "from": "tooling",
+      "to": "bestPractices",
+      "style": "solid"
+    },
+    {
+      "from": "bestPractices",
+      "to": "storyTelling",
+      "style": "dashed"
+    },
+    {
+      "from": "bestPractices",
+      "to": "subtleSelling",
+      "style": "dashed"
+    },
+    {
+      "from": "bestPractices",
+      "to": "contentStructure",
+      "style": "dashed"
+    },
+    {
+      "from": "bestPractices",
+      "to": "callToActions",
+      "style": "dashed"
+    },
+    {
+      "from": "bestPractices",
+      "to": "references",
+      "style": "dashed"
+    },
+    {
+      "from": "bestPractices",
+      "to": "craftingGreatTitles",
+      "style": "dashed"
+    },
+    {
+      "from": "bestPractices",
+      "to": "contentObjectivesIntent",
+      "style": "dashed"
+    },
+    {
+      "from": "bestPractices",
+      "to": "userPersona",
+      "style": "dashed"
+    },
+    {
+      "from": "bestPractices",
+      "to": "writingStyleGuides",
+      "style": "dashed"
+    },
+    {
+      "from": "bestPractices",
+      "to": "contentResearch",
+      "style": "solid"
+    },
+    {
+      "from": "contentResearch",
+      "to": "typesOfTechnicalContent",
+      "style": "solid"
+    },
+    {
+      "from": "typesOfTechnicalContent",
+      "to": "howToGuides",
+      "style": "dashed"
+    },
+    {
+      "from": "contentResearch",
+      "to": "topicScore",
+      "style": "dashed"
+    },
+    {
+      "from": "typesOfTechnicalContent",
+      "to": "technicalContentMarketing",
+      "style": "solid"
+    },
+    {
+      "from": "technicalContentMarketing",
+      "to": "contentSeo",
+      "style": "solid"
+    },
+    {
+      "from": "contentSeo",
+      "to": "topFunnelContent",
+      "style": "solid"
+    },
+    {
+      "from": "topFunnelContent",
+      "to": "pillarContent",
+      "style": "dashed"
+    },
+    {
+      "from": "topFunnelContent",
+      "to": "midFunnelContent",
+      "style": "solid"
+    },
+    {
+      "from": "midFunnelContent",
+      "to": "genericGatedContent",
+      "style": "dashed"
+    },
+    {
+      "from": "midFunnelContent",
+      "to": "bottomFunnelContent",
+      "style": "solid"
+    },
+    {
+      "from": "contentOptimization",
+      "to": "contentAnalysis",
+      "style": "solid"
+    },
+    {
+      "from": "contentAnalysis",
+      "to": "contentAgingTimelines",
+      "style": "dashed"
+    },
+    {
+      "from": "contentAnalysis",
+      "to": "contentDistribution",
+      "style": "solid"
+    },
+    {
+      "from": "contentDistribution",
+      "to": "canonicalLink",
+      "style": "dashed"
+    },
+    {
+      "from": "contentDistribution",
+      "to": "contentDistributionChannels",
+      "style": "dashed"
+    },
+    {
+      "from": "contentDistribution",
+      "to": "contentDistributionAmplificationStrategies",
+      "style": "dashed"
+    },
+    {
+      "from": "contentDistribution",
+      "to": "keepLearning",
+      "style": "solid"
+    }
+  ]
+}

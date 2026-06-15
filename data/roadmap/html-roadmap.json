@@ -1,0 +1,2509 @@
+{
+  "title": "HTML",
+  "summary": "Step by step guide to learning HTML in 2026",
+  "url": "https://roadmap.sh/html",
+  "order": [
+    "introduction",
+    "howTheWebWorks",
+    "whatIsHttp",
+    "domainNames",
+    "hosting",
+    "dns",
+    "browsers",
+    "whatIsSeo",
+    "yourFirstHtmlFile",
+    "tagsAndAttributes",
+    "caseInsensitivity",
+    "htmlComments",
+    "whitespaces",
+    "basicTags",
+    "textualTags",
+    "h1ToH6",
+    "title",
+    "hr",
+    "iEm",
+    "sub",
+    "p",
+    "br",
+    "pre",
+    "mark",
+    "sup",
+    "links",
+    "priorityHints",
+    "groupingText",
+    "standardAttributes",
+    "dataAttributes",
+    "style",
+    "class",
+    "listsAndTypes",
+    "orderedLists",
+    "tableTag",
+    "embeddingMedia",
+    "video",
+    "images",
+    "imgVsFigure",
+    "audio",
+    "csp",
+    "usingForms",
+    "labelsAndInputs",
+    "fileUploads",
+    "formValidation",
+    "limitations",
+    "semanticMarkup",
+    "stylingBasics",
+    "inlineCss",
+    "internalCss",
+    "externalCss",
+    "includingJavascript",
+    "accessibility",
+    "basicsOfSeo",
+    "iframe",
+    "meta",
+    "div",
+    "span",
+    "id",
+    "doctype",
+    "html",
+    "head",
+    "htmlEntities",
+    "whatAreMarkupLanguages",
+    "frontendDevelopment",
+    "html2",
+    "css",
+    "javascript",
+    "nestedLists",
+    "highlightingChanges",
+    "del",
+    "s",
+    "ins",
+    "qutotationCitation",
+    "abbr",
+    "cite",
+    "dfn",
+    "address",
+    "blockquote",
+    "q",
+    "layoutTags",
+    "header",
+    "nav",
+    "main",
+    "section",
+    "article",
+    "aside",
+    "footer"
+  ],
+  "topics": {
+    "introduction": {
+      "title": "Introduction",
+      "sourceId": "JkLec2vSBMFAUc1Dzra-L",
+      "type": "topic",
+      "order": 1,
+      "summary": "HTML, or HyperText Markup Language, is the standard language for creating web pages. It uses a system of tags to structure content, such as headings, paragraphs, images, and links, so that web browsers can display them correctly. These tags tell the browser how to present the text, images, and other forms of multimedia on a webpage.",
+      "video": {
+        "title": "HTML Tutorial for Beginners: HTML Crash Course",
+        "url": "https://www.youtube.com/watch?v=qz0aGYrrlhU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "type": "article",
+          "title": "What is HTML \u2013 Definition and Meaning of Hypertext Markup Language",
+          "url": "https://www.freecodecamp.org/news/what-is-html-definition-and-meaning/"
+        }
+      ],
+      "parents": [
+        "html"
+      ],
+      "children": [
+        "howTheWebWorks",
+        "whatAreMarkupLanguages",
+        "frontendDevelopment"
+      ]
+    },
+    "howTheWebWorks": {
+      "title": "How the web works",
+      "sourceId": "0CHn_ubTBRWgrYGy0moZh",
+      "type": "topic",
+      "order": 2,
+      "summary": "The internet is a global network connecting computers and devices for information sharing. Enables browsing, email, streaming, and communication through interconnected systems. Acts as worldwide infrastructure facilitating access to online resources and services.",
+      "video": {
+        "title": "How the Internet Works in 5 Minutes",
+        "url": "https://www.youtube.com/watch?v=7_LPdttKXPc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to the Internet",
+          "url": "https://roadmap.sh/guides/what-is-internet"
+        },
+        {
+          "type": "article",
+          "title": "How does the Internet Work?",
+          "url": "https://cs.fyi/guide/how-does-internet-work"
+        },
+        {
+          "type": "article",
+          "title": "How does the Internet work? | MDN Dcos",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": [
+        "whatIsHttp",
+        "domainNames",
+        "hosting",
+        "dns",
+        "browsers",
+        "whatIsSeo",
+        "yourFirstHtmlFile"
+      ]
+    },
+    "whatIsHttp": {
+      "title": "What is HTTP?",
+      "sourceId": "nXRjahYSDqfEqY26yfLEt",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "HTTP (Hypertext Transfer Protocol) enables browser-server communication through requests and responses. Stateless protocol using methods like GET and POST. HTTPS provides encrypted security. Newer versions (HTTP/2, HTTP/3) offer improved performance. Fundamental for web development understanding.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Everything you need to know about HTTP",
+          "url": "https://cs.fyi/guide/http-in-depth"
+        },
+        {
+          "type": "article",
+          "title": "What is HTTP?",
+          "url": "https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/"
+        },
+        {
+          "type": "article",
+          "title": "How HTTPS Works",
+          "url": "https://howhttps.works/"
+        },
+        {
+          "type": "article",
+          "title": "HTTP/3 Is Now a Standard: Why Use It and How to Get Started",
+          "url": "https://thenewstack.io/http-3-is-now-a-standard-why-use-it-and-how-to-get-started/"
+        }
+      ],
+      "parents": [
+        "howTheWebWorks"
+      ],
+      "children": []
+    },
+    "domainNames": {
+      "title": "Domain names",
+      "sourceId": "oRjacb1OqAlsP-YB16Nuy",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "Domain names are human-friendly web addresses (e.g., google.com) substituting numerical IP addresses. Comprise second-level (\"google\") and top-level (\".com\") domains. Registered through registrars, essential for branding and online presence. DNS translates names to IP addresses for accessibility.",
+      "video": {
+        "title": "What Is a Domain Name | Domain Names Explained",
+        "url": "https://www.youtube.com/watch?v=lMHzpBwPuG8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is a Domain Name?",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name"
+        },
+        {
+          "type": "article",
+          "title": "What is a domain name? | Domain name vs. URL",
+          "url": "https://www.cloudflare.com/en-gb/learning/dns/glossary/what-is-a-domain-name/"
+        }
+      ],
+      "parents": [
+        "howTheWebWorks"
+      ],
+      "children": []
+    },
+    "hosting": {
+      "title": "Hosting",
+      "sourceId": "t9KmPbRh6pkfouPi1mBqJ",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Web hosting stores website files on servers, making sites accessible online. Types include shared (multiple sites per server) and dedicated (exclusive server) hosting. Providers offer additional services like email, domains, and security certificates. Critical for website performance and accessibility.",
+      "video": {
+        "title": "Different Types of Web Hosting Explained",
+        "url": "https://www.youtube.com/watch?v=AXVZYzw8geg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Web Hosting?",
+          "url": "https://www.namecheap.com/guru-guides/what-is-web-hosting/"
+        }
+      ],
+      "parents": [
+        "howTheWebWorks"
+      ],
+      "children": []
+    },
+    "dns": {
+      "title": "DNS",
+      "sourceId": "0Q41Bm_TZqsC7X-MH8uFe",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "DNS (Domain Name System) translates human-readable domain names into IP addresses through a global, decentralized server network. Enables easy internet navigation by converting names like www.example.com to numeric addresses browsers can connect to.",
+      "video": {
+        "title": "DNS and How does it Work?",
+        "url": "https://www.youtube.com/watch?v=Wj0od2ag5sk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is DNS?",
+          "url": "https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/"
+        },
+        {
+          "type": "article",
+          "title": "Mess with DNS - DNS Playground",
+          "url": "https://messwithdns.net/"
+        },
+        {
+          "type": "article",
+          "title": "How DNS works (comic)",
+          "url": "https://howdns.works/"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about DNS",
+          "url": "https://app.daily.dev/tags/dns?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "howTheWebWorks"
+      ],
+      "children": []
+    },
+    "browsers": {
+      "title": "Browsers",
+      "sourceId": "4gvPprSH7hRS4gtXNMcCF",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "Web browsers request and display websites by interpreting HTML, CSS, and JavaScript. Use rendering engines (Blink, Gecko) for display and JavaScript engines (V8) for code execution. Handle security, bookmarks, history, and user interactions for web navigation.",
+      "video": {
+        "title": "How Do Web Browsers Work?",
+        "url": "https://www.youtube.com/watch?v=5rLFYtXHo9s"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How Browsers Work",
+          "url": "https://www.ramotion.com/blog/what-is-web-browser/"
+        },
+        {
+          "type": "article",
+          "title": "Populating the Page: How Browsers Work",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Browsers",
+          "url": "https://app.daily.dev/tags/browsers?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "howTheWebWorks"
+      ],
+      "children": []
+    },
+    "whatIsSeo": {
+      "title": "What is SEO?",
+      "sourceId": "6vGbvRsmQgOpRh8JJ3RF_",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Search Engine Optimization, or SEO, is the practice of improving your website to increase its visibility when people search for products or services related to your business in search engines like Google. The better visibility your pages have in search results, the more likely you are to garner attention and attract prospective and existing customers to your business. A related concept, Generative Engine Optimization (GEO), focuses on optimizing content for AI-powered search experiences, ensuring your information is accurately and effectively presented in AI-generated summaries and responses.",
+      "video": {
+        "title": "SEO In 5 Minutes | What Is SEO And How Does It Work",
+        "url": "https://www.youtube.com/watch?v=MYE6T_gd7H0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Search Engine Optimization (SEO) Starter Guide",
+          "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+        },
+        {
+          "type": "article",
+          "title": "What Is SEO?",
+          "url": "https://exposureninja.com/blog/what-is-seo/"
+        },
+        {
+          "type": "article",
+          "title": "GEO (Generative Engine Optimization) vs SEO (Search Engine Optimization): What\u2019s The Difference?",
+          "url": "https://writesonic.com/blog/geo-vs-seo"
+        }
+      ],
+      "parents": [
+        "howTheWebWorks"
+      ],
+      "children": []
+    },
+    "yourFirstHtmlFile": {
+      "title": "Your First HTML FIle",
+      "sourceId": "LKNBSvhAfu655yOvr_fcm",
+      "type": "paragraph",
+      "order": 9,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "howTheWebWorks"
+      ],
+      "children": [
+        "tagsAndAttributes",
+        "caseInsensitivity",
+        "htmlComments",
+        "whitespaces",
+        "basicTags",
+        "htmlEntities"
+      ]
+    },
+    "tagsAndAttributes": {
+      "title": "Tags and Attributes",
+      "sourceId": "nOIijMH-3TvcO1KL6qzwf",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "Tags and attributes are fundamental building blocks of HTML. Tags define the structure and content of a webpage, such as headings, paragraphs, and images. Attributes provide additional information about HTML elements, modifying their behavior or appearance, like specifying the source of an image or the destination of a link.",
+      "video": {
+        "title": "HTML - Tags | W3Schools",
+        "url": "https://www.youtube.com/watch?v=vIoO52MdZFE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Tags | MDN docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Tag"
+        },
+        {
+          "type": "article",
+          "title": "Attributes | MDN docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Attribute"
+        }
+      ],
+      "parents": [
+        "yourFirstHtmlFile"
+      ],
+      "children": []
+    },
+    "caseInsensitivity": {
+      "title": "Case Insensitivity",
+      "sourceId": "qXcn_AGcGWjT8GgjaW5WN",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "HTML isn't picky about capitalization. You can write tags and attributes using uppercase, lowercase, or a mix of both. For example, `<html>`, `<HTML>`, and `<Html>` all work the same way. While browsers understand all these variations, it's generally considered good practice to stick to lowercase for better readability and consistency in your code.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "yourFirstHtmlFile"
+      ],
+      "children": []
+    },
+    "htmlComments": {
+      "title": "HTML Comments",
+      "sourceId": "-ME4w8Bm5krSH14Yno4E5",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Comments in HTML are notes that you can add to your code to explain what's going on, make reminders, or temporarily disable parts of your code. These comments are not displayed in the browser, so they're only visible when someone views the source code. To create a comment in HTML, you enclose your text within `<!--` and `-->`. Anything between these tags will be ignored by the browser.",
+      "video": {
+        "title": "HTML - Comments - W3Schools.com",
+        "url": "https://www.youtube.com/watch?v=229HYq40vaA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Using HTML comments ",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Comments"
+        }
+      ],
+      "parents": [
+        "yourFirstHtmlFile"
+      ],
+      "children": []
+    },
+    "whitespaces": {
+      "title": "Whitespaces",
+      "sourceId": "IUsaaRxiuOn3y9uYbpsJ0",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "Whitespaces in HTML refer to the spaces, tabs, and line breaks that are used to format the code. Browsers typically collapse multiple consecutive whitespaces into a single space when rendering the content. While using whitespaces can improve the readability of your HTML code, they generally don't affect how the page is displayed to the user.",
+      "video": {
+        "title": "Whitespace in HTML",
+        "url": "https://www.youtube.com/watch?v=XhItAZTTSR8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Handling whitespace | DMN docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_text/Whitespace"
+        }
+      ],
+      "parents": [
+        "yourFirstHtmlFile"
+      ],
+      "children": []
+    },
+    "basicTags": {
+      "title": "Basic Tags",
+      "sourceId": "MjGfRzhVZRxu545TbJ1AJ",
+      "type": "topic",
+      "order": 14,
+      "summary": "HTML documents are structured using fundamental tags that define the document's content and structure. The `<!DOCTYPE html>` declaration informs the browser that the document is an HTML5 document. The `<html>` tag is the root element, encompassing all other HTML elements. Inside `<html>`, the `<head>` tag contains metadata about the document, such as the title and character set, while the `<body>` tag contains the visible content of the webpage. The `<meta>` tag provides metadata like character encoding (`charset=\"UTF-8\"`) to ensure proper text display.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML Basic Tags: A Guide for Complete Beginners with Examples",
+          "url": "https://www.tutorialspoint.com/html/html_basic_tags.htm"
+        }
+      ],
+      "parents": [
+        "yourFirstHtmlFile"
+      ],
+      "children": [
+        "textualTags",
+        "doctype",
+        "html",
+        "head"
+      ]
+    },
+    "textualTags": {
+      "title": "Textual Tags",
+      "sourceId": "ksKI4TDz4_9IcmNORczWo",
+      "type": "topic",
+      "order": 15,
+      "summary": "Textual tags in HTML are used to structure and format text content on a webpage. They define how text should appear, whether it's a paragraph, heading, emphasized word, or a quoted section. These tags provide semantic meaning to the text, helping browsers and search engines understand the content's organization and purpose.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "basicTags"
+      ],
+      "children": [
+        "id",
+        "h1ToH6",
+        "p",
+        "br",
+        "pre",
+        "mark",
+        "sup",
+        "links",
+        "groupingText"
+      ]
+    },
+    "h1ToH6": {
+      "title": "h1 to h6",
+      "sourceId": "AmIRWclu6IYViWHXnGA8U",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "Headings are used to define the titles and subtitles within a document. HTML provides six levels of headings, from `<h1>` (the most important and largest) to `<h6>` (the least important and smallest). They help structure content and improve readability by creating a clear hierarchy.",
+      "video": {
+        "title": "HTML - Headings | W3Schools",
+        "url": "https://www.youtube.com/watch?v=9gHPpwq6IaY"
+      },
+      "articles": [],
+      "parents": [
+        "textualTags"
+      ],
+      "children": [
+        "title",
+        "hr",
+        "iEm",
+        "sub"
+      ]
+    },
+    "title": {
+      "title": "title",
+      "sourceId": "SS7JmTrySRmRlzInvRJxw",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "The `<title>` tag in HTML defines the title of the HTML document. This title is displayed in the browser's title bar or tab, and it's also used for bookmarking pages and in search engine results. It's placed within the `<head>` section of the HTML document.",
+      "video": {
+        "title": "HTML Title Tag Example | Step-by-Step Instructions and Real-World Example!",
+        "url": "https://www.youtube.com/watch?v=LaSOIf6dnzo"
+      },
+      "articles": [],
+      "parents": [
+        "h1ToH6"
+      ],
+      "children": []
+    },
+    "hr": {
+      "title": "hr",
+      "sourceId": "Bdu0_AcAADs7YiCaHte1g",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "The `<hr>` tag in HTML creates a thematic break in an HTML page and is most often displayed as a horizontal rule. It's used to separate content visually, like dividing sections of text or indicating a change in topic. The `<hr>` tag is an empty element, meaning it doesn't have a closing tag.",
+      "video": {
+        "title": "hr & br tags in HTML",
+        "url": "https://www.youtube.com/watch?v=B1UCE3nfLww"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": ": The Thematic Break (Horizontal Rule) element",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr"
+        }
+      ],
+      "parents": [
+        "h1ToH6"
+      ],
+      "children": []
+    },
+    "iEm": {
+      "title": "i / em",
+      "sourceId": "9EGwQalXfVGpVcMpTeD4V",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "The `<i>` and `<em>` tags in HTML are used to emphasize text. The `<i>` tag represents text that is set off from the normal prose, such as technical terms, foreign words, or thoughts. The `<em>` tag represents stress emphasis of its contents. While both may render similarly in browsers (often as italicized text), `<em>` has semantic meaning, indicating importance, whereas `<i>` is purely presentational.",
+      "video": {
+        "title": "Learn HTML em and i elements in 6 minutes",
+        "url": "https://m.youtube.com/watch?v=yhbzW3y_7KE"
+      },
+      "articles": [],
+      "parents": [
+        "h1ToH6"
+      ],
+      "children": []
+    },
+    "sub": {
+      "title": "sub",
+      "sourceId": "JU8Ff3DSCn_db0K7-P-Op",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "The `<sub>` tag in HTML is used to display text as subscript. Subscript text appears slightly below the normal line of text and is typically rendered in a smaller font size. It's commonly used for mathematical formulas, chemical formulas, or footnotes.",
+      "video": {
+        "title": "HTML sub Tag | HTML sup Tag",
+        "url": "https://www.youtube.com/watch?v=7GBTIHoWZko"
+      },
+      "articles": [],
+      "parents": [
+        "h1ToH6"
+      ],
+      "children": []
+    },
+    "p": {
+      "title": "p",
+      "sourceId": "czmIvZYONFDxB2UNpT8U1",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "The `<p>` tag in HTML defines a paragraph. Browsers automatically add a single blank line before and after each paragraph, creating a clear separation between blocks of text. It's a block-level element, meaning it occupies the full width available to it and starts on a new line.",
+      "video": {
+        "title": "HTML - Paragraphs | W3Schools",
+        "url": "https://www.youtube.com/watch?v=qis4kAOThLw"
+      },
+      "articles": [],
+      "parents": [
+        "textualTags"
+      ],
+      "children": []
+    },
+    "br": {
+      "title": "br",
+      "sourceId": "cBKw3jiAvdXVwUryV1aJl",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "The `<br>` tag in HTML creates a line break within a text block. It's used to start a new line without creating a new paragraph, effectively forcing the text that follows to appear on the next line. It is an empty element, meaning it has no closing tag.",
+      "video": {
+        "title": "hr & br tags in HTML",
+        "url": "https://www.youtube.com/watch?v=B1UCE3nfLww"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "\n: The Line Break element",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/br"
+        }
+      ],
+      "parents": [
+        "textualTags"
+      ],
+      "children": []
+    },
+    "pre": {
+      "title": "pre",
+      "sourceId": "-2BvwJsqa5K8Tb8oSDUC8",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "The `<pre>` tag in HTML represents preformatted text. Text inside a `<pre>` element is displayed in a fixed-width font, and it preserves both spaces and line breaks. This is useful for displaying code snippets, ASCII art, or any other text where formatting is important.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "textualTags"
+      ],
+      "children": []
+    },
+    "mark": {
+      "title": "mark",
+      "sourceId": "9S2IUUWVv_Q7ZfD7VqfhH",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "The `<mark>` tag in HTML is used to highlight specific parts of text within a larger block of content. It's primarily intended to draw the reader's attention to these sections, often because they are relevant to the user's current activity or search query. The default styling usually renders the marked text with a yellow background, but this can be customized using CSS.",
+      "video": {
+        "title": "Mark Tag Example HTML | Master When and How to Use Mark Tag properly!",
+        "url": "https://www.youtube.com/watch?v=uJc-UUgZ-UM"
+      },
+      "articles": [],
+      "parents": [
+        "textualTags"
+      ],
+      "children": []
+    },
+    "sup": {
+      "title": "sup",
+      "sourceId": "o1rSXBsjhD-sN0FdOK_dm",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "The `<sup>` tag in HTML is used to display text as superscript. Superscript text appears slightly above the normal line of text and is typically rendered in a smaller font size. It's commonly used for things like exponents, ordinal numbers (e.g., 1st, 2nd), and footnotes.",
+      "video": {
+        "title": "HTML sub Tag | HTML sup Tag",
+        "url": "https://www.youtube.com/watch?v=7GBTIHoWZko"
+      },
+      "articles": [],
+      "parents": [
+        "textualTags"
+      ],
+      "children": []
+    },
+    "links": {
+      "title": "Links",
+      "sourceId": "wmAps9IeAvOxcqBqgUAXN",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "Links, also known as hyperlinks, are elements that connect one web resource to another. They allow users to navigate between different pages on the same website or to external websites. Links are created using the `<a>` (anchor) tag, and they can point to various types of resources, including HTML pages, images, documents, and more.",
+      "video": {
+        "title": "HTML a Tag Tutorial: Easy Guide for Beginners",
+        "url": "https://www.youtube.com/watch?v=J0jqBqFd7Ro"
+      },
+      "articles": [],
+      "parents": [
+        "textualTags"
+      ],
+      "children": [
+        "priorityHints"
+      ]
+    },
+    "priorityHints": {
+      "title": "Priority Hints",
+      "sourceId": "znqYy9Tgfpe-qakjRr7KU",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "Priority Hints in HTML allow developers to indicate the relative priority of fetching resources like images. This helps the browser decide which images to load first, potentially improving page load times and user experience by prioritizing content that is immediately visible or more important to the user. This is achieved using the `fetchpriority` attribute.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "fetchpriority HTML attribute",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/fetchpriority"
+        }
+      ],
+      "parents": [
+        "links"
+      ],
+      "children": []
+    },
+    "groupingText": {
+      "title": "Grouping text",
+      "sourceId": "Wu3oW_gnjKTYV8QJHdNxi",
+      "type": "topic",
+      "order": 28,
+      "summary": "`<div>` and `<span>` are HTML elements used to group other elements together. The `<div>` element is a block-level element, meaning it creates a distinct block on the page and typically starts on a new line. It's often used for larger structural groupings. The `<span>` element, on the other hand, is an inline element, meaning it flows within the surrounding text and doesn't create a new line. It's useful for styling or manipulating specific portions of text without disrupting the overall layout.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "textualTags"
+      ],
+      "children": [
+        "meta",
+        "div",
+        "span",
+        "standardAttributes"
+      ]
+    },
+    "standardAttributes": {
+      "title": "Standard attributes",
+      "sourceId": "xgw2ux-2Poml1fjWxjFsu",
+      "type": "topic",
+      "order": 29,
+      "summary": "Standard attributes are properties that can be used on almost all HTML elements to provide additional information or functionality. These attributes control things like element styling, identification, accessibility, and event handling, allowing you to modify how elements behave and interact within a webpage. They offer a consistent way to manage common element characteristics across different browsers and devices.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "groupingText"
+      ],
+      "children": [
+        "dataAttributes",
+        "style",
+        "class",
+        "listsAndTypes"
+      ]
+    },
+    "dataAttributes": {
+      "title": "Data Attributes",
+      "sourceId": "7iDMmYQ-2Q6hrrFnUgRuP",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "Data attributes are special attributes in HTML that allow you to store extra information directly within HTML elements. These attributes start with `data-` followed by a name of your choosing. They are primarily used to store custom data private to the page or application, meaning they are not intended for use by search engines or other external services. This data can then be accessed and used by JavaScript to enhance the functionality and interactivity of your web pages.",
+      "video": {
+        "title": "Using HTML5 Data Attributes in JavaScript and CSS Tutorial",
+        "url": "https://www.youtube.com/watch?v=cTe5vQAm2So"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Use data attributes",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Use_data_attributes"
+        },
+        {
+          "type": "article",
+          "title": "HTML Data Attributes Guide",
+          "url": "https://css-tricks.com/a-complete-guide-to-data-attributes/"
+        }
+      ],
+      "parents": [
+        "standardAttributes"
+      ],
+      "children": []
+    },
+    "style": {
+      "title": "style",
+      "sourceId": "GpaI2IDHDOZjyT3AZMbYD",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "The `style` attribute in HTML allows you to apply CSS (Cascading Style Sheets) directly to individual HTML elements. It's used to define inline styles, overriding external stylesheets or default browser styles. You can set properties like color, font, size, and layout directly within the HTML tag.",
+      "video": {
+        "title": "HTML Style Attribute | Mastering of Web development",
+        "url": "https://www.youtube.com/watch?v=zk97ve9JM6A"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML style global attribute",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/style"
+        },
+        {
+          "type": "article",
+          "title": "HTML style",
+          "url": "https://www.codecademy.com/resources/docs/html/attributes/style"
+        }
+      ],
+      "parents": [
+        "standardAttributes"
+      ],
+      "children": []
+    },
+    "class": {
+      "title": "class",
+      "sourceId": "R0mDuO5V5NJI8Yupc_i8i",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "The `class` attribute in HTML is used to specify one or more class names for an HTML element. These class names can then be used by CSS and JavaScript to style and manipulate specific elements or groups of elements that share the same class. Essentially, it's a way to categorize and target elements for styling and scripting purposes.",
+      "video": {
+        "title": "HTML - Classes | W3Schools",
+        "url": "https://www.youtube.com/watch?v=tWIkDOJo0Ts"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML class global attribute",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/class"
+        },
+        {
+          "type": "article",
+          "title": "HTML Class",
+          "url": "https://www.codecademy.com/resources/docs/html/attributes/class"
+        }
+      ],
+      "parents": [
+        "standardAttributes"
+      ],
+      "children": []
+    },
+    "listsAndTypes": {
+      "title": "Lists and Types",
+      "sourceId": "oHbzYpFInyr5aKCe-NWkC",
+      "type": "topic",
+      "order": 33,
+      "summary": "Lists in HTML are used to present information in a structured and organized manner. There are primarily two main types: ordered lists (numbered) and unordered lists (bulleted). HTML also supports definition lists, which are used to display terms and their corresponding definitions. Each type of list uses specific HTML tags to define the list structure and its individual items.",
+      "video": {
+        "title": "Learn HTML lists in 4 minutes \ud83d\udccb",
+        "url": "https://www.youtube.com/watch?v=-kXZvKxs9oA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML Lists",
+          "url": "https://www.w3schools.com/html/html_lists.asp"
+        }
+      ],
+      "parents": [
+        "standardAttributes"
+      ],
+      "children": [
+        "orderedLists",
+        "tableTag"
+      ]
+    },
+    "orderedLists": {
+      "title": "Ordered lists",
+      "sourceId": "ePOzN3Sh5tCYlAbsweWU0",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "Ordered lists in HTML are used to display a series of items in a specific order. Each item in the list is typically numbered, allowing readers to easily follow a sequence or ranking. The `<ol>` tag is used to create an ordered list, and each list item is defined using the `<li>` tag.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "listsAndTypes"
+      ],
+      "children": []
+    },
+    "tableTag": {
+      "title": "Table Tag",
+      "sourceId": "3P9p18a9EjbjjMtzpoVRN",
+      "type": "topic",
+      "order": 35,
+      "summary": "The HTML `<table>` tag is used to create tables on web pages. It organizes data into rows and columns, similar to a spreadsheet. Within the `<table>` tag, you'll find tags like `<tr>` for table rows, `<th>` for table headers, and `<td>` for table data cells, which define the structure and content of the table.",
+      "video": {
+        "title": "How to Create Tables in HTML",
+        "url": "https://www.youtube.com/watch?v=e23RA_Uo99o"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML table basics",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics"
+        },
+        {
+          "type": "article",
+          "title": "HTML Table (With Examples)",
+          "url": "https://www.programiz.com/html/table"
+        }
+      ],
+      "parents": [
+        "listsAndTypes"
+      ],
+      "children": [
+        "embeddingMedia"
+      ]
+    },
+    "embeddingMedia": {
+      "title": "Embedding Media",
+      "sourceId": "UevJNi2HHNzpCAx7Icd0k",
+      "type": "topic",
+      "order": 36,
+      "summary": "Embedding media in HTML involves integrating multimedia content like images, audio, and video directly into a webpage. This allows users to view or listen to these elements without having to download them separately or navigate to another site. HTML provides specific elements, such as `<img>`, `<audio>`, and `<video>`, to facilitate this embedding process, along with attributes to control their appearance and behavior.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Adding Media",
+          "url": "https://learn.shayhowe.com/html-css/adding-media/"
+        }
+      ],
+      "parents": [
+        "tableTag"
+      ],
+      "children": [
+        "video",
+        "images",
+        "usingForms",
+        "iframe"
+      ]
+    },
+    "video": {
+      "title": "Video",
+      "sourceId": "mWc4HuNQACXGpJjEPa79j",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "The `<video>` element in HTML is used to embed video content directly into a webpage. It allows you to display video files, control playback, and provide options for users to interact with the video, such as pausing, playing, adjusting volume, and viewing in fullscreen. The element supports various video formats and attributes to customize the video's appearance and behavior.",
+      "video": null,
+      "articles": [
+        {
+          "type": "course",
+          "title": "HTML & CSS - How to Embed a YouTube Video in Your Website",
+          "url": "https://www.youtube.com/watch?v=ly36kn0ug4k"
+        },
+        {
+          "type": "article",
+          "title": "Learn HTML video in 4 minutes!",
+          "url": "https://www.youtube.com/watch?v=BAx2GaMW2qA"
+        }
+      ],
+      "parents": [
+        "embeddingMedia"
+      ],
+      "children": []
+    },
+    "images": {
+      "title": "Images",
+      "sourceId": "94HB2gvHgcEIeFQTlbVDu",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "Images are a way to display visual content on a webpage. They are added to HTML documents using the `<img>` tag, which links to an image file. Attributes like `src` (source), `alt` (alternative text), `width`, and `height` are used to specify the image's location, description, and dimensions.",
+      "video": {
+        "title": "HTML - Images | W3Schools",
+        "url": "https://www.youtube.com/watch?v=FmoYRiepmOE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML images",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_images"
+        },
+        {
+          "type": "article",
+          "title": ": The Image Embed element",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img"
+        }
+      ],
+      "parents": [
+        "embeddingMedia"
+      ],
+      "children": [
+        "audio",
+        "csp",
+        "imgVsFigure"
+      ]
+    },
+    "imgVsFigure": {
+      "title": "img vs figure",
+      "sourceId": "f5O_U9dt0b73ZhLrWWz2L",
+      "type": "subtopic",
+      "order": 39,
+      "summary": "The `<img>` tag in HTML is used to embed a simple image directly into a webpage. It requires a `src` attribute to specify the image source. On the other hand, the `<figure>` element represents self-contained content, like an image, illustration, diagram, code snippet, etc., that is referenced as a single unit. It is typically used with the `<figcaption>` element to provide a caption for the figure.",
+      "video": {
+        "title": "When to use image, figure and picture tag in html",
+        "url": "https://www.youtube.com/watch?v=Xn5_gDQFyJg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Ultimate Guide to Using HTML Figure Elements",
+          "url": "https://www.dhiwise.com/post/the-ultimate-guide-to-using-html-figure-elements"
+        }
+      ],
+      "parents": [
+        "images"
+      ],
+      "children": []
+    },
+    "audio": {
+      "title": "Audio",
+      "sourceId": "k8FZPxFcDPVnXBONWUhME",
+      "type": "subtopic",
+      "order": 40,
+      "summary": "Audio on the web involves incorporating sound files into HTML documents. This allows users to listen to music, podcasts, or other audio content directly within a webpage. The HTML `<audio>` element is used to embed audio, providing attributes for controlling playback, displaying controls, and specifying multiple source files for browser compatibility.",
+      "video": {
+        "title": "Learn HTML audio in 5 minutes!",
+        "url": "https://www.youtube.com/watch?v=uof_zYxtnp0"
+      },
+      "articles": [],
+      "parents": [
+        "images"
+      ],
+      "children": []
+    },
+    "csp": {
+      "title": "CSP",
+      "sourceId": "9FAlTHlRj_DVjbpuiGRzD",
+      "type": "subtopic",
+      "order": 41,
+      "summary": "Content Security Policy (CSP) is a security standard introduced to prevent cross-site scripting (XSS), clickjacking, and other code injection attacks. It works by allowing you to define a whitelist of sources that the browser is permitted to load resources from. This helps to control the origins of scripts, stylesheets, images, and other assets, effectively reducing the attack surface of a web application.",
+      "video": {
+        "title": "Content Security Policy Explained",
+        "url": "https://www.youtube.com/watch?v=-LjPRzFR5f0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Content Security Policy (CSP)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP"
+        },
+        {
+          "type": "article",
+          "title": "Content Security Policy Cheat Sheet\u00b6",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html"
+        }
+      ],
+      "parents": [
+        "images"
+      ],
+      "children": []
+    },
+    "usingForms": {
+      "title": "Using Forms",
+      "sourceId": "P_wR4dwto2NKrvTRbdBIX",
+      "type": "topic",
+      "order": 42,
+      "summary": "Forms in HTML are used to collect data from users. They provide a way for users to input information like text, passwords, and selections, and then submit that data to a server for processing. Forms are created using the `<form>` element, which contains various input elements like `<input>`, `<textarea>`, and `<select>` to define the different fields for user input.",
+      "video": {
+        "title": "Learn HTML forms in 8 minutes \ud83d\udcdd",
+        "url": "https://www.youtube.com/watch?v=2O8pkybH6po"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Your first form",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Your_first_form"
+        }
+      ],
+      "parents": [
+        "embeddingMedia"
+      ],
+      "children": [
+        "labelsAndInputs",
+        "fileUploads",
+        "formValidation",
+        "limitations",
+        "semanticMarkup"
+      ]
+    },
+    "labelsAndInputs": {
+      "title": "Labels and Inputs",
+      "sourceId": "9R5WYPxlChmz6bevJUwsT",
+      "type": "subtopic",
+      "order": 43,
+      "summary": "Labels and inputs are fundamental building blocks for creating forms in HTML. Labels provide descriptive text that tells users what information is expected in a corresponding input field. Input elements, on the other hand, are the interactive controls where users can enter data, such as text, numbers, dates, or make selections from options. They work together to create a user-friendly and accessible form experience.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": ": The HTML Input element",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input"
+        },
+        {
+          "type": "article",
+          "title": "HTML Inputs and Labels: A Love Story",
+          "url": "https://css-tricks.com/html-inputs-and-labels-a-love-story/"
+        }
+      ],
+      "parents": [
+        "usingForms"
+      ],
+      "children": []
+    },
+    "fileUploads": {
+      "title": "File Uploads",
+      "sourceId": "-UlDLjC8VsrKB9yexMtlr",
+      "type": "subtopic",
+      "order": 44,
+      "summary": "File uploads allow users to send files from their computer to a web server. This is typically achieved through an HTML form that includes an `<input>` element with the `type` attribute set to \"file\". When the form is submitted, the selected file(s) are sent to the server for processing and storage.",
+      "video": {
+        "title": "HTML File Uploads in 5 Minutes (Plus Some JavaScript Features)",
+        "url": "https://www.youtube.com/watch?v=iAxUpo0aJSk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Input type file",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/file"
+        },
+        {
+          "type": "article",
+          "title": "How to Upload Files with HTML",
+          "url": "https://www.freecodecamp.org/news/upload-files-with-html/"
+        }
+      ],
+      "parents": [
+        "usingForms"
+      ],
+      "children": []
+    },
+    "formValidation": {
+      "title": "Form Validation",
+      "sourceId": "6NvYDlYYLZzf4IHXu0dWs",
+      "type": "subtopic",
+      "order": 45,
+      "summary": "Form validation is the process of checking if the information a user provides in a form is correct and complete before it's submitted. This ensures that the data received is accurate and meets the required format, preventing errors and improving data quality. It can involve checking for things like required fields, correct email addresses, valid date formats, and acceptable password strength.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Client-side form validation",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation"
+        },
+        {
+          "type": "article",
+          "title": "Using HTML form validation and the Constraint Validation API",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation"
+        },
+        {
+          "type": "article",
+          "title": "HTML Form Validation: Techniques, Tips, and Tools",
+          "url": "https://www.dhiwise.com/post/html-form-validation-techniques-tips-and-tools"
+        }
+      ],
+      "parents": [
+        "usingForms"
+      ],
+      "children": []
+    },
+    "limitations": {
+      "title": "Limitations",
+      "sourceId": "HxgDw9gh1vHiMIMyZW8H2",
+      "type": "subtopic",
+      "order": 46,
+      "summary": "HTML form constraints are rules you set on form fields to control what kind of data users can enter. These constraints help ensure that the information submitted is valid and meets your requirements. For example, you can specify that a field is required, set a minimum or maximum length for text, or restrict the input to a specific data type like a number or email address. These limitations are defined using HTML attributes directly within the form elements.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Using HTML form validation and the Constraint Validation API",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Constraint_validation"
+        },
+        {
+          "type": "article",
+          "title": "The Definitive Guide to the Constraint Validation API",
+          "url": "https://dev.to/itxshakil/the-definitive-guide-to-the-constraint-validation-api-3l80"
+        }
+      ],
+      "parents": [
+        "usingForms"
+      ],
+      "children": []
+    },
+    "semanticMarkup": {
+      "title": "Semantic Markup",
+      "sourceId": "aJTXstcrsINdov7yrH8cE",
+      "type": "topic",
+      "order": 47,
+      "summary": "Semantic markup uses HTML tags to convey the meaning and structure of content, rather than just its appearance. This approach makes web pages more accessible to both humans and machines by providing context about the different parts of the content, such as headings, paragraphs, articles, and navigation menus. By using semantic elements, developers create more organized and understandable code, which improves search engine optimization and overall website usability.",
+      "video": {
+        "title": "HTML & CSS for Absolute Beginners: Semantic HTML",
+        "url": "https://www.youtube.com/watch?v=YOsMJQfwqow"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Semantics",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+        },
+        {
+          "type": "article",
+          "title": "HTML Semantic Elements",
+          "url": "https://www.w3schools.com/html/html5_semantic_elements.asp"
+        }
+      ],
+      "parents": [
+        "usingForms"
+      ],
+      "children": [
+        "stylingBasics"
+      ]
+    },
+    "stylingBasics": {
+      "title": "Styling Basics",
+      "sourceId": "51NlCt5pvWNfa70WaE2M4",
+      "type": "topic",
+      "order": 48,
+      "summary": "Styling Basics in HTML involves using CSS (Cascading Style Sheets) to control the visual presentation of HTML elements. This includes properties like colors, fonts, layout, and responsiveness, allowing you to customize the look and feel of your web pages beyond the default browser styles. By applying CSS rules, you can create visually appealing and user-friendly websites.",
+      "video": {
+        "title": "CSS - How to add CSS to HTML | W3Schools",
+        "url": "https://www.youtube.com/watch?v=VSwaoQ3TFkQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Getting started with CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started"
+        },
+        {
+          "type": "article",
+          "title": "HTML and CSS \u2013 Inline Style, External Stylesheet, CSS Code Examples",
+          "url": "https://www.freecodecamp.org/news/html-and-css-inline-style-external-stylesheet-css-code-examples/"
+        }
+      ],
+      "parents": [
+        "semanticMarkup"
+      ],
+      "children": [
+        "inlineCss",
+        "includingJavascript"
+      ]
+    },
+    "inlineCss": {
+      "title": "Inline CSS",
+      "sourceId": "ievbuvgPKo261hM-9F117",
+      "type": "subtopic",
+      "order": 49,
+      "summary": "Inline CSS involves applying styles directly to individual HTML elements using the `style` attribute. This method allows you to define specific visual properties for a single element, overriding any styles defined in external stylesheets or internal style blocks. It's useful for quick, element-specific styling, but can become difficult to manage for larger projects due to its lack of reusability and separation of concerns.",
+      "video": {
+        "title": "HTML & CSS for Absolute Beginners: Inline CSS and Internal stylesheets",
+        "url": "https://www.youtube.com/watch?v=5vf7rtzil9M"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Inline Style in HTML \u2013 CSS Inline Styles",
+          "url": "https://www.freecodecamp.org/news/inline-style-in-html/"
+        }
+      ],
+      "parents": [
+        "stylingBasics"
+      ],
+      "children": [
+        "internalCss"
+      ]
+    },
+    "internalCss": {
+      "title": "Internal CSS",
+      "sourceId": "1uhThwxjHgXPu_i1__1eE",
+      "type": "subtopic",
+      "order": 50,
+      "summary": "Internal CSS allows you to add styles directly within an HTML document using the `<style>` tag. This tag is typically placed inside the `<head>` section of your HTML file. Within the `<style>` tag, you can define CSS rules that apply to specific HTML elements on that page, controlling their appearance and layout.",
+      "video": {
+        "title": "HTML & CSS for Absolute Beginners: Inline CSS and Internal stylesheets",
+        "url": "https://www.youtube.com/watch?v=5vf7rtzil9M"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Types of CSS: inline, external and internal definitions and differences explained",
+          "url": "https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css"
+        }
+      ],
+      "parents": [
+        "inlineCss"
+      ],
+      "children": [
+        "externalCss"
+      ]
+    },
+    "externalCss": {
+      "title": "External CSS",
+      "sourceId": "PhC4amuHcgxujOJisNsIr",
+      "type": "subtopic",
+      "order": 51,
+      "summary": "External CSS involves creating separate files (with a `.css` extension) to hold all the styling rules for an HTML document. These CSS files are then linked to the HTML document using the `<link>` tag, allowing you to apply the same styles across multiple pages and keep your HTML code clean and organized. This approach promotes reusability and maintainability of your website's design.",
+      "video": {
+        "title": "External Style Sheets | CSS",
+        "url": "https://www.youtube.com/watch?v=2P_LUPc2HrM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Types of CSS: inline, external and internal definitions and differences explained",
+          "url": "https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css"
+        }
+      ],
+      "parents": [
+        "internalCss"
+      ],
+      "children": []
+    },
+    "includingJavascript": {
+      "title": "Including JavaScript",
+      "sourceId": "5Ze6iqSnZLpQWnhUSGQOE",
+      "type": "topic",
+      "order": 52,
+      "summary": "JavaScript can be added to HTML documents to make web pages interactive. This is done by embedding the JavaScript code directly within the HTML or by linking to external JavaScript files. Embedding uses the `<script>` tag, while linking uses the `<script>` tag with the `src` attribute pointing to the JavaScript file.",
+      "video": {
+        "title": "Link JavaScript to HTML: How to run your JavaScript code in the browser",
+        "url": "https://www.youtube.com/watch?v=821C5aJ3SLM"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Visit the Dedicated JavaScript Roadmap",
+          "url": "https://roadmap.sh/javascript"
+        },
+        {
+          "type": "article",
+          "title": "Add JavaScript to your web page",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Add_JavaScript_to_your_web_page"
+        }
+      ],
+      "parents": [
+        "stylingBasics"
+      ],
+      "children": [
+        "accessibility"
+      ]
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "sourceId": "YHoag7UR40OeIVUjfhQg_",
+      "type": "topic",
+      "order": 53,
+      "summary": "Accessibility in HTML refers to the practice of designing and developing web content that is usable by people with disabilities. This involves ensuring that websites and web applications are perceivable, operable, understandable, and robust for individuals who may have visual, auditory, motor, or cognitive impairments, allowing them to access information and interact with the web effectively.",
+      "video": {
+        "title": "Accessibility Savvy: Semantic HTML and Accessibility",
+        "url": "https://www.youtube.com/watch?v=qSNUi7pRmWg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML: A good basis for accessibility",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML"
+        },
+        {
+          "type": "article",
+          "title": "HTML Accessibility: Programming with an Inclusive Perspective",
+          "url": "https://www.a11y-collective.com/blog/html-accessibility-programming-with-an-inclusive-perspective/"
+        }
+      ],
+      "parents": [
+        "includingJavascript"
+      ],
+      "children": [
+        "basicsOfSeo"
+      ]
+    },
+    "basicsOfSeo": {
+      "title": "Basics of SEO",
+      "sourceId": "yEl77JIN5-ixN5Ay247qp",
+      "type": "topic",
+      "order": 54,
+      "summary": "Search Engine Optimization (SEO) is the practice of improving a website to increase its visibility in search engine results pages (SERPs). This involves optimizing various elements of a website, such as its content, structure, and HTML code, to make it more appealing to search engines like Google. The goal is to rank higher in search results for relevant keywords, which can drive more organic traffic to the website.",
+      "video": {
+        "title": "SEO In 5 Minutes | What Is SEO And How Does It Work",
+        "url": "https://www.youtube.com/watch?v=MYE6T_gd7H0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Search Engine Optimization (SEO) Starter Guide",
+          "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+        },
+        {
+          "type": "article",
+          "title": "What Is SEO?",
+          "url": "https://exposureninja.com/blog/what-is-seo/"
+        },
+        {
+          "type": "article",
+          "title": "GEO (Generative Engine Optimization) vs SEO (Search Engine Optimization): What\u2019s The Difference?",
+          "url": "https://writesonic.com/blog/geo-vs-seo"
+        }
+      ],
+      "parents": [
+        "accessibility"
+      ],
+      "children": []
+    },
+    "iframe": {
+      "title": "iframe",
+      "sourceId": "W0pWVr4cdxSan9Ceu5t7i",
+      "type": "subtopic",
+      "order": 55,
+      "summary": "An `iframe` (Inline Frame) is an HTML element that allows you to embed another HTML document within the current HTML page. It essentially creates a window within your webpage where you can display content from a different source, such as another website, a video, or even another HTML file on your own server.",
+      "video": {
+        "title": "Learn HTML iframes in 3 minutes",
+        "url": "https://www.youtube.com/watch?v=aRGdDy18qfY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is an iframe, and how do you use it on your website?",
+          "url": "https://world.siteground.com/kb/what-is-iframe/"
+        }
+      ],
+      "parents": [
+        "embeddingMedia"
+      ],
+      "children": []
+    },
+    "meta": {
+      "title": "meta",
+      "sourceId": "ceAHMWQeaqURKWy628QBH",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "Meta tags are HTML elements that provide metadata about a webpage. This data is not displayed on the page itself but is used by browsers, search engines, and other web services to understand the content and purpose of the page. They are placed within the `<head>` section of an HTML document and can specify information like character set, description, keywords, author, and viewport settings.",
+      "video": {
+        "title": "Learn HTML meta tags in 3 minutes",
+        "url": "https://www.youtube.com/watch?v=bi5bfH_gVWE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": ": The metadata element",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta"
+        },
+        {
+          "type": "article",
+          "title": "Meta elements | Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Meta_element"
+        }
+      ],
+      "parents": [
+        "groupingText"
+      ],
+      "children": []
+    },
+    "div": {
+      "title": "div",
+      "sourceId": "ihP3FIRMr8iQTdOja_CxV",
+      "type": "subtopic",
+      "order": 57,
+      "summary": "The `<div>` element is a generic container for flow content, which in simpler terms means it's a way to group together other HTML elements. It doesn't inherently represent anything specific on its own, but it's commonly used to structure and style sections of a webpage. It has no effect on the content or layout until styled in some way using CSS (e.g., styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).",
+      "video": {
+        "title": "Learn HTML span & div in 4 minutes!",
+        "url": "https://www.youtube.com/watch?v=WbnCll6vvw4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML Div \u2013 What is a Div Tag and How to Style it with CSS",
+          "url": "https://www.freecodecamp.org/news/html-div-what-is-a-div-tag-and-how-to-style-it-with-css/"
+        }
+      ],
+      "parents": [
+        "groupingText"
+      ],
+      "children": []
+    },
+    "span": {
+      "title": "span",
+      "sourceId": "f7-umBvAzDZxHtHgJMCj6",
+      "type": "subtopic",
+      "order": 58,
+      "summary": "The `<span>` element is an inline container used to mark up a part of a text, or a part of a document. It is used to group elements for styling purposes or because they share attributes such as `lang` or `dir`. It doesn't inherently represent anything on its own, but becomes useful when combined with CSS or JavaScript to target specific sections of text.",
+      "video": {
+        "title": "Learn HTML span & div in 4 minutes!",
+        "url": "https://www.youtube.com/watch?v=WbnCll6vvw4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Span HTML \u2013 How to Use the Span Tag with CSS",
+          "url": "https://www.freecodecamp.org/news/span-html-how-to-use-the-span-tag-with-css/"
+        }
+      ],
+      "parents": [
+        "groupingText"
+      ],
+      "children": []
+    },
+    "id": {
+      "title": "id",
+      "sourceId": "PikSDs0EZ93RauZc_GDEw",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "The `id` attribute in HTML provides a unique identifier for an element within a document. This identifier allows you to target and manipulate that specific element using CSS styles, JavaScript code, or even link directly to it using fragment identifiers in URLs (e.g., `section1`). Each `id` value should be unique within the entire HTML document to ensure proper functionality.",
+      "video": {
+        "title": "HTML - Id | W3Schools",
+        "url": "https://www.youtube.com/watch?v=rZ0k516qZmc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML id global attribute",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/id"
+        },
+        {
+          "type": "article",
+          "title": "HTML id",
+          "url": "https://www.codecademy.com/resources/docs/html/attributes/id"
+        }
+      ],
+      "parents": [
+        "textualTags"
+      ],
+      "children": []
+    },
+    "doctype": {
+      "title": "!DOCTYPE",
+      "sourceId": "VscH3rVqpX29vaKmdCMop",
+      "type": "subtopic",
+      "order": 60,
+      "summary": "The `<!DOCTYPE>` declaration is an instruction to the web browser about the HTML version used to write the page. It's placed at the very top of an HTML document, before the `<html>` tag, and ensures that the browser renders the page in \"standards mode,\" following the correct specifications for that HTML version. Technically, It is not an HTML tag itself.",
+      "video": {
+        "title": "HTML DOCTYPE | Standards vs Quirks mode | HTML 5 Tutorial",
+        "url": "https://www.youtube.com/watch?v=G1MOlh5uJYE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Doctype | DMN docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+        },
+        {
+          "type": "article",
+          "title": "What is the DOCTYPE Declaration in HTML?",
+          "url": "https://www.freecodecamp.org/news/what-is-the-doctype-declaration-in-html/"
+        }
+      ],
+      "parents": [
+        "basicTags"
+      ],
+      "children": []
+    },
+    "html": {
+      "title": "html",
+      "sourceId": "fP2cPskF9KzppZUhfyB8U",
+      "type": "subtopic",
+      "order": 61,
+      "summary": "The `<html>` element is the root element of an HTML page. It tells the browser that this is an HTML document. All other HTML elements (except for the `<!DOCTYPE>` declaration) must be descendants of the `<html>` element.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "basicTags"
+      ],
+      "children": [
+        "introduction"
+      ]
+    },
+    "head": {
+      "title": "head",
+      "sourceId": "Ufgy4-kC2drCov4MqEhjy",
+      "type": "subtopic",
+      "order": 62,
+      "summary": "The `<head>` element in HTML acts as a container for metadata (data about data) about the HTML document. This metadata isn't displayed on the page itself, but it provides information like the document's title, character set, linked stylesheets, scripts, and other important configurations that help browsers and search engines understand and process the HTML document correctly.",
+      "video": {
+        "title": "Head Tag in HTML | An HTML5 Head Element Tutorial",
+        "url": "https://www.youtube.com/watch?v=QRvA8Mp-uME"
+      },
+      "articles": [],
+      "parents": [
+        "basicTags"
+      ],
+      "children": []
+    },
+    "htmlEntities": {
+      "title": "HTML Entities",
+      "sourceId": "Ego3XwBDgqlXOj6jSNvpy",
+      "type": "subtopic",
+      "order": 63,
+      "summary": "HTML entities are special codes used to represent reserved characters or characters that are difficult to type directly in HTML. They allow you to display characters like angle brackets (< and >), ampersands (&), and copyright symbols (\u00a9) that have special meanings in HTML or are not readily available on a standard keyboard. Using entities ensures that these characters are displayed correctly in a web browser.",
+      "video": {
+        "title": "What Are HTML Entities, and What Are Some Common Examples?",
+        "url": "https://www.youtube.com/watch?v=brTVRzirTGM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Entity | MDN docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Entity"
+        },
+        {
+          "type": "article",
+          "title": "Character reference | MDN docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Character_reference"
+        }
+      ],
+      "parents": [
+        "yourFirstHtmlFile"
+      ],
+      "children": []
+    },
+    "whatAreMarkupLanguages": {
+      "title": "What are markup languages?",
+      "sourceId": "4gst44L8-ps9YFMHzucfN",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "Markup languages are systems for annotating text in a way that makes it readable by both humans and computers. They use tags to define elements within a document, specifying how the text should be structured, formatted, and displayed. For example, HTML uses tags like `<p>` for paragraphs and `<h1>` for headings to structure web content, while XML uses custom tags to define data structures for various applications.",
+      "video": {
+        "title": "Theory - Markup Languages",
+        "url": "https://www.youtube.com/watch?v=6PWOswN4lgg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What Is a Markup Language?",
+          "url": "https://www.semrush.com/blog/markup-language/"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "frontendDevelopment": {
+      "title": "Frontend Development",
+      "sourceId": "Xy15NSxlS0QXYNzEvgocK",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "Frontend development is the practice of creating the user interface and user experience of a website or web application. It focuses on the parts of a website that users directly interact with, such as buttons, text, images, and navigation menus. Frontend developers use languages like HTML, CSS, and JavaScript to build these interactive elements and ensure they are visually appealing and function correctly across different devices and browsers.",
+      "video": {
+        "title": "Frontend web development - a complete overview",
+        "url": "https://www.youtube.com/watch?v=WG5ikvJ2TKA"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the dedicated Frontend Developer Roadmap",
+          "url": "https://roadmap.sh/frontend"
+        },
+        {
+          "type": "book",
+          "title": "Frontend Development Handbook",
+          "url": "https://github.com/FrontendMasters/front-end-handbook-2019/blob/master/exports/Front-end%20Developer%20Handbook%202019.pdf"
+        },
+        {
+          "type": "article",
+          "title": "What Is Front-End Development?",
+          "url": "https://cloudinary.com/guides/front-end-development/front-end-development-the-complete-guide"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": [
+        "html2",
+        "css",
+        "javascript"
+      ]
+    },
+    "html2": {
+      "title": "HTML",
+      "sourceId": "b83npHc-R9M03hEGzA9Ha",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "HTML (HyperText Markup Language) is the standard markup language for creating web pages. It provides the structure of a webpage, defining elements like headings, paragraphs, images, and links using tags. Web browsers interpret these tags to display the content to users.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "type": "article",
+          "title": "HTML | Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/HTML"
+        }
+      ],
+      "parents": [
+        "frontendDevelopment"
+      ],
+      "children": []
+    },
+    "css": {
+      "title": "CSS",
+      "sourceId": "fX71CXA26cUxY5WX_zABi",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "CSS, or Cascading Style Sheets, is a language used to describe the look and formatting of a document written in HTML. It controls things like the layout, colors, fonts, and overall visual presentation of web pages, ensuring a consistent and appealing user experience across different devices and screen sizes.",
+      "video": {
+        "title": "CSS Tutorial \u2013 Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=OXGznpKZ_sA"
+      },
+      "articles": [
+        {
+          "type": "book",
+          "title": "HTML & CSS: design and build websites",
+          "url": "https://sites.math.duke.edu/courses/math_everywhere/assets/techRefs/HTML%20and%20CSS-%20Design%20and%20Build%20Websites_Jon%20Duckett_2011.pdf"
+        },
+        {
+          "type": "official",
+          "title": "Visit the Dedicated CSS Roadmap",
+          "url": "https://roadmap.sh/css"
+        },
+        {
+          "type": "article",
+          "title": "CSS MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS"
+        },
+        {
+          "type": "article",
+          "title": "CSS | Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/CSS"
+        }
+      ],
+      "parents": [
+        "frontendDevelopment"
+      ],
+      "children": []
+    },
+    "javascript": {
+      "title": "JavaScript",
+      "sourceId": "F-9uI39S9oYVGA8hi7aZI",
+      "type": "subtopic",
+      "order": 68,
+      "summary": "JavaScript is a programming language primarily used to create interactive and dynamic effects within web browsers. It allows developers to implement complex features on web pages, updating content dynamically, controlling multimedia, animating images, and much more, enhancing the user experience beyond static HTML and CSS.",
+      "video": {
+        "title": "JavaScript Crash Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the dedicated JavaScript Roadmap",
+          "url": "https://roadmap.sh/javascript"
+        },
+        {
+          "type": "opensource",
+          "title": "You Don't Know JS Yet (book series)",
+          "url": "https://github.com/getify/You-Dont-Know-JS"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "type": "article",
+          "title": "The Modern JavaScript Tutorial",
+          "url": "https://javascript.info/"
+        },
+        {
+          "type": "article",
+          "title": "Eloquent JavaScript textbook",
+          "url": "https://eloquentjavascript.net/"
+        }
+      ],
+      "parents": [
+        "frontendDevelopment"
+      ],
+      "children": []
+    },
+    "nestedLists": {
+      "title": "Nested lists",
+      "sourceId": "wDBnbKni0SamOqNhnp87B",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "Nested lists in HTML allow you to create lists within lists, forming a hierarchical structure. This is achieved by placing one list (either ordered `<ol>` or unordered `<ul>`) inside a list item `<li>` of another list. This creates a sub-list that is visually indented, helping to organize information into related categories and subcategories.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to Create Nested Lists in HTML: A Simple Guide",
+          "url": "https://www.dhiwise.com/post/how-to-create-nested-lists-in-html-a-simple-guide"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "highlightingChanges": {
+      "title": "Highlighting Changes",
+      "sourceId": "PMqaaII6I26AftVo-Vm5-",
+      "type": "label",
+      "order": 74,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "del",
+        "s",
+        "ins"
+      ]
+    },
+    "del": {
+      "title": "del",
+      "sourceId": "v3Uf4LTfCbyasNJ-2Vfj9",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "The `<del>` element in HTML represents text that has been deleted or removed from a document. Browsers typically render deleted text with a strikethrough, visually indicating that the content is no longer valid or accurate. This element is useful for showing edits and revisions in a clear and understandable way.",
+      "video": {
+        "title": "Deleted Text in HTML (del Tag)",
+        "url": "https://www.youtube.com/watch?v=7TuyqBr0eH8"
+      },
+      "articles": [],
+      "parents": [
+        "highlightingChanges"
+      ],
+      "children": []
+    },
+    "s": {
+      "title": "s",
+      "sourceId": "Hx8mfbfkvRrBqLypE_NL3",
+      "type": "subtopic",
+      "order": 76,
+      "summary": "The `<s>` element in HTML represents content that is no longer accurate or relevant. It indicates things that are no longer correct, accurate, or no longer relevant. Browsers typically render this element with a strikethrough, visually indicating the text has been removed or is no longer valid.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "HTML s Tag: How it Works with Examples",
+          "url": "https://flatcoding.com/tutorials/html/html-s-tag-how-it-works-with-examples/"
+        }
+      ],
+      "parents": [
+        "highlightingChanges"
+      ],
+      "children": []
+    },
+    "ins": {
+      "title": "ins",
+      "sourceId": "G_hZBbIGOLn1-sh1jROL3",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "The `<ins>` element in HTML represents text that has been inserted into a document. It's used to indicate additions or updates to content, often displayed with an underline to visually distinguish it from the original text. This element helps to clearly communicate revisions and modifications within a webpage.",
+      "video": {
+        "title": "Inserted Text in HTML (ins Tag)",
+        "url": "https://www.youtube.com/watch?v=fKWiyfOUs9M"
+      },
+      "articles": [],
+      "parents": [
+        "highlightingChanges"
+      ],
+      "children": []
+    },
+    "qutotationCitation": {
+      "title": "Qutotation / Citation",
+      "sourceId": "6eMHNUld9NIpsy53o0ZQJ",
+      "type": "label",
+      "order": 78,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "abbr",
+        "cite",
+        "dfn",
+        "address",
+        "blockquote",
+        "q"
+      ]
+    },
+    "abbr": {
+      "title": "abbr",
+      "sourceId": "aeovzlUV4oWwZCMcAoRVC",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "The `<abbr>` tag in HTML represents an abbreviation or acronym. It's useful for providing a full description of the abbreviated term when the user hovers over it, improving accessibility and clarity. The `title` attribute is used to specify the expanded form of the abbreviation.",
+      "video": {
+        "title": "HTML abbr tag",
+        "url": "https://www.youtube.com/watch?v=yN191Pkg4kg"
+      },
+      "articles": [],
+      "parents": [
+        "qutotationCitation"
+      ],
+      "children": []
+    },
+    "cite": {
+      "title": "cite",
+      "sourceId": "PE_WoH4nbGAJSJT14Qli0",
+      "type": "subtopic",
+      "order": 80,
+      "summary": "The `<cite>` element in HTML is used to define the title of a creative work (e.g., a book, article, song, movie, painting, sculpture, etc.). It's typically used to provide a reference or citation for a source. The content inside the `<cite>` element is often rendered in italics by browsers, but this styling can be overridden with CSS.",
+      "video": {
+        "title": "How to set work title (cite tag) in HTML | HTML5 Tutorial",
+        "url": "https://www.youtube.com/watch?v=nCsUD4h1qC4"
+      },
+      "articles": [],
+      "parents": [
+        "qutotationCitation"
+      ],
+      "children": []
+    },
+    "dfn": {
+      "title": "dfn",
+      "sourceId": "jfC0Og9340AK7b3Fhp4WI",
+      "type": "subtopic",
+      "order": 81,
+      "summary": "The `<dfn>` element in HTML represents the defining instance of a term. It's used to indicate the specific location where a word or phrase is being defined for the first time within a document. Typically, the term being defined is included within the `<dfn>` tags, and often a definition or explanation of the term is provided nearby.",
+      "video": {
+        "title": "HTML dfn Tag",
+        "url": "https://www.youtube.com/watch?v=o6pKejnUN9s"
+      },
+      "articles": [],
+      "parents": [
+        "qutotationCitation"
+      ],
+      "children": []
+    },
+    "address": {
+      "title": "address",
+      "sourceId": "PGKWhfXEd3Iv0AIhL7y4_",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "The `<address>` element in HTML represents contact information for the author or owner of a document or article. This can include physical addresses, email addresses, phone numbers, and social media links. It's typically used within the `<footer>` of a page or section to provide contact details.",
+      "video": {
+        "title": "How do you display addresses in HTML?",
+        "url": "https://www.youtube.com/watch?v=P1OCt7x5zSA"
+      },
+      "articles": [],
+      "parents": [
+        "qutotationCitation"
+      ],
+      "children": []
+    },
+    "blockquote": {
+      "title": "blockquote",
+      "sourceId": "B-Bv4aY_tGgWakyT8TgEe",
+      "type": "subtopic",
+      "order": 83,
+      "summary": "The `blockquote` element in HTML represents a section of text that is quoted from another source. It's used to indicate that the enclosed content is an extended quotation, often displayed with indentation or other visual cues to distinguish it from the surrounding text. The `cite` attribute can be used to specify the URL of the source document or message.",
+      "video": {
+        "title": "The Blockquote and Quote Tags",
+        "url": "https://www.youtube.com/watch?v=SNEABGfkWhQ"
+      },
+      "articles": [],
+      "parents": [
+        "qutotationCitation"
+      ],
+      "children": []
+    },
+    "q": {
+      "title": "q",
+      "sourceId": "Xprekf2SY1fevcR2P5gRw",
+      "type": "subtopic",
+      "order": 84,
+      "summary": "The `<q>` element in HTML represents a short, inline quotation. Browsers typically render this element with quotation marks around the content it contains. It's designed for brief quotes that fit within a paragraph, as opposed to longer, block-level quotations that would use the `<blockquote>` element.",
+      "video": {
+        "title": "The Blockquote and Quote Tags",
+        "url": "https://www.youtube.com/watch?v=SNEABGfkWhQ"
+      },
+      "articles": [],
+      "parents": [
+        "qutotationCitation"
+      ],
+      "children": []
+    },
+    "layoutTags": {
+      "title": "Layout tags",
+      "sourceId": "wGtowDPBVHaCj7APCKYv0",
+      "type": "label",
+      "order": 85,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "header",
+        "nav",
+        "main",
+        "section",
+        "article",
+        "aside",
+        "footer"
+      ]
+    },
+    "header": {
+      "title": "header",
+      "sourceId": "0AF0Xs2nWVZav9t5Eh9NX",
+      "type": "subtopic",
+      "order": 86,
+      "summary": "The `<header>` element represents introductory content, typically containing a group of introductory or navigational aids. It might contain a heading, logo, search form, or other relevant content. It's used to define the top section of a document, article, or section.",
+      "video": {
+        "title": "Learn HTML headers & footers in 5 minutes!",
+        "url": "https://www.youtube.com/watch?v=JNFdCgmMkPk"
+      },
+      "articles": [],
+      "parents": [
+        "layoutTags"
+      ],
+      "children": []
+    },
+    "nav": {
+      "title": "nav",
+      "sourceId": "4uKQubirOgXz9ZvfR9cWa",
+      "type": "subtopic",
+      "order": 87,
+      "summary": "The `<nav>` element in HTML is used to define a section of a page that contains navigation links. It's intended for major navigational blocks, like a site's menu, a table of contents, or a set of breadcrumbs. Using `<nav>` helps structure your content and makes it more accessible to screen readers and search engines by clearly identifying navigation sections.",
+      "video": {
+        "title": "HTML nav Tag Tutorial (Semantic Element): Easy Guide for Beginners",
+        "url": "https://www.youtube.com/watch?v=FqDFwCQb4yI"
+      },
+      "articles": [],
+      "parents": [
+        "layoutTags"
+      ],
+      "children": []
+    },
+    "main": {
+      "title": "main",
+      "sourceId": "InNY2DPYlnZaeBG9X_sMI",
+      "type": "subtopic",
+      "order": 88,
+      "summary": "The `<main>` element in HTML defines the primary content of a document's `<body>`. It should contain the central topic of the page, excluding any content that is repeated across multiple pages, such as navigation, headers, or footers. Using `<main>` helps improve accessibility and provides a clear structure for search engines and assistive technologies to understand the page's purpose.",
+      "video": {
+        "title": "HTML main Tag Tutorial (Semantic Element): Easy Guide for Beginners",
+        "url": "https://www.youtube.com/watch?v=ROahTJeu-Iw"
+      },
+      "articles": [],
+      "parents": [
+        "layoutTags"
+      ],
+      "children": []
+    },
+    "section": {
+      "title": "section",
+      "sourceId": "1WvHjkclwT-LUGdeuygzV",
+      "type": "subtopic",
+      "order": 89,
+      "summary": "The `<section>` tag in HTML is used to define thematic groupings of content within a document. It's a way to organize related content together, like chapters, introductions, or news items. A section typically has a heading and can contain other HTML elements to structure the content within it.",
+      "video": {
+        "title": "HTML section Tag Tutorial (Semantic Element): Easy Guide for Beginners",
+        "url": "https://www.youtube.com/watch?v=08b6OJbL3Cs"
+      },
+      "articles": [],
+      "parents": [
+        "layoutTags"
+      ],
+      "children": []
+    },
+    "article": {
+      "title": "article",
+      "sourceId": "99wo0cNHe0sU63_aDBrxY",
+      "type": "subtopic",
+      "order": 90,
+      "summary": "The `<article>` element in HTML represents a self-contained composition in a document, page, application, or site. It is intended to independently distributable or reusable, for example, in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, or any other independent item of content.",
+      "video": {
+        "title": "HTML article Tag Tutorial (Semantic Element): Easy Guide for Beginners",
+        "url": "https://www.youtube.com/watch?v=C7Sp70_TU40"
+      },
+      "articles": [],
+      "parents": [
+        "layoutTags"
+      ],
+      "children": []
+    },
+    "aside": {
+      "title": "aside",
+      "sourceId": "VahoGEC6I3jX1916MsmUY",
+      "type": "subtopic",
+      "order": 91,
+      "summary": "The `<aside>` element in HTML represents a section of a page that is tangentially related to the main content. It's often used for sidebars, pull quotes, or other content that provides additional information or context but isn't essential to understanding the primary content. Think of it as content that can be removed without significantly impacting the user's comprehension of the main topic.",
+      "video": {
+        "title": "HTML aside Tag Tutorial (Semantic Element): Easy Guide for Beginners",
+        "url": "https://www.youtube.com/watch?v=2uKbSQ0mXGA"
+      },
+      "articles": [],
+      "parents": [
+        "layoutTags"
+      ],
+      "children": []
+    },
+    "footer": {
+      "title": "footer",
+      "sourceId": "rjE1yjFZ6KBWXgXDRIZc1",
+      "type": "subtopic",
+      "order": 92,
+      "summary": "The `<footer>` element in HTML represents a container for introductory content or navigation links that typically appear at the end of a section or document. It usually contains information about the author, copyright data, terms of use, contact information, related documents, and sometimes navigation. A footer is not necessarily restricted to the bottom of the page; it can be used within sections to denote the end of that specific content area.",
+      "video": {
+        "title": "Learn HTML headers & footers in 5 minutes! \ud83e\udd2f",
+        "url": "https://www.youtube.com/watch?v=JNFdCgmMkPk"
+      },
+      "articles": [],
+      "parents": [
+        "layoutTags"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "html",
+      "to": "introduction",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "howTheWebWorks",
+      "style": "solid"
+    },
+    {
+      "from": "basicTags",
+      "to": "textualTags",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "whatAreMarkupLanguages",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "frontendDevelopment",
+      "style": "dashed"
+    },
+    {
+      "from": "howTheWebWorks",
+      "to": "whatIsHttp",
+      "style": "dashed"
+    },
+    {
+      "from": "howTheWebWorks",
+      "to": "domainNames",
+      "style": "dashed"
+    },
+    {
+      "from": "howTheWebWorks",
+      "to": "hosting",
+      "style": "dashed"
+    },
+    {
+      "from": "howTheWebWorks",
+      "to": "dns",
+      "style": "dashed"
+    },
+    {
+      "from": "howTheWebWorks",
+      "to": "browsers",
+      "style": "dashed"
+    },
+    {
+      "from": "howTheWebWorks",
+      "to": "whatIsSeo",
+      "style": "dashed"
+    },
+    {
+      "from": "howTheWebWorks",
+      "to": "yourFirstHtmlFile",
+      "style": "solid"
+    },
+    {
+      "from": "yourFirstHtmlFile",
+      "to": "tagsAndAttributes",
+      "style": "dashed"
+    },
+    {
+      "from": "yourFirstHtmlFile",
+      "to": "caseInsensitivity",
+      "style": "dashed"
+    },
+    {
+      "from": "yourFirstHtmlFile",
+      "to": "htmlComments",
+      "style": "dashed"
+    },
+    {
+      "from": "yourFirstHtmlFile",
+      "to": "whitespaces",
+      "style": "dashed"
+    },
+    {
+      "from": "yourFirstHtmlFile",
+      "to": "basicTags",
+      "style": "solid"
+    },
+    {
+      "from": "basicTags",
+      "to": "doctype",
+      "style": "dashed"
+    },
+    {
+      "from": "basicTags",
+      "to": "html",
+      "style": "dashed"
+    },
+    {
+      "from": "basicTags",
+      "to": "head",
+      "style": "dashed"
+    },
+    {
+      "from": "textualTags",
+      "to": "h1ToH6",
+      "style": "dashed"
+    },
+    {
+      "from": "textualTags",
+      "to": "p",
+      "style": "dashed"
+    },
+    {
+      "from": "textualTags",
+      "to": "br",
+      "style": "dashed"
+    },
+    {
+      "from": "textualTags",
+      "to": "pre",
+      "style": "dashed"
+    },
+    {
+      "from": "textualTags",
+      "to": "mark",
+      "style": "dashed"
+    },
+    {
+      "from": "textualTags",
+      "to": "sup",
+      "style": "dashed"
+    },
+    {
+      "from": "textualTags",
+      "to": "links",
+      "style": "dashed"
+    },
+    {
+      "from": "textualTags",
+      "to": "groupingText",
+      "style": "solid"
+    },
+    {
+      "from": "yourFirstHtmlFile",
+      "to": "htmlEntities",
+      "style": "dashed"
+    },
+    {
+      "from": "groupingText",
+      "to": "standardAttributes",
+      "style": "solid"
+    },
+    {
+      "from": "standardAttributes",
+      "to": "dataAttributes",
+      "style": "dashed"
+    },
+    {
+      "from": "standardAttributes",
+      "to": "style",
+      "style": "dashed"
+    },
+    {
+      "from": "standardAttributes",
+      "to": "class",
+      "style": "dashed"
+    },
+    {
+      "from": "standardAttributes",
+      "to": "listsAndTypes",
+      "style": "solid"
+    },
+    {
+      "from": "listsAndTypes",
+      "to": "orderedLists",
+      "style": "dashed"
+    },
+    {
+      "from": "listsAndTypes",
+      "to": "tableTag",
+      "style": "solid"
+    },
+    {
+      "from": "tableTag",
+      "to": "embeddingMedia",
+      "style": "solid"
+    },
+    {
+      "from": "embeddingMedia",
+      "to": "video",
+      "style": "dashed"
+    },
+    {
+      "from": "embeddingMedia",
+      "to": "images",
+      "style": "dashed"
+    },
+    {
+      "from": "images",
+      "to": "imgVsFigure",
+      "style": "dashed"
+    },
+    {
+      "from": "embeddingMedia",
+      "to": "usingForms",
+      "style": "solid"
+    },
+    {
+      "from": "embeddingMedia",
+      "to": "iframe",
+      "style": "dashed"
+    },
+    {
+      "from": "usingForms",
+      "to": "labelsAndInputs",
+      "style": "dashed"
+    },
+    {
+      "from": "usingForms",
+      "to": "fileUploads",
+      "style": "dashed"
+    },
+    {
+      "from": "usingForms",
+      "to": "formValidation",
+      "style": "dashed"
+    },
+    {
+      "from": "usingForms",
+      "to": "limitations",
+      "style": "dashed"
+    },
+    {
+      "from": "usingForms",
+      "to": "semanticMarkup",
+      "style": "solid"
+    },
+    {
+      "from": "semanticMarkup",
+      "to": "stylingBasics",
+      "style": "solid"
+    },
+    {
+      "from": "stylingBasics",
+      "to": "inlineCss",
+      "style": "dashed"
+    },
+    {
+      "from": "stylingBasics",
+      "to": "includingJavascript",
+      "style": "solid"
+    },
+    {
+      "from": "includingJavascript",
+      "to": "accessibility",
+      "style": "solid"
+    },
+    {
+      "from": "accessibility",
+      "to": "basicsOfSeo",
+      "style": "solid"
+    },
+    {
+      "from": "frontendDevelopment",
+      "to": "html2",
+      "style": "solid"
+    },
+    {
+      "from": "frontendDevelopment",
+      "to": "css",
+      "style": "solid"
+    },
+    {
+      "from": "frontendDevelopment",
+      "to": "javascript",
+      "style": "solid"
+    },
+    {
+      "from": "groupingText",
+      "to": "meta",
+      "style": "solid"
+    },
+    {
+      "from": "h1ToH6",
+      "to": "title",
+      "style": "solid"
+    },
+    {
+      "from": "groupingText",
+      "to": "div",
+      "style": "solid"
+    },
+    {
+      "from": "groupingText",
+      "to": "span",
+      "style": "solid"
+    },
+    {
+      "from": "h1ToH6",
+      "to": "hr",
+      "style": "solid"
+    },
+    {
+      "from": "h1ToH6",
+      "to": "iEm",
+      "style": "solid"
+    },
+    {
+      "from": "textualTags",
+      "to": "id",
+      "style": "solid"
+    },
+    {
+      "from": "h1ToH6",
+      "to": "sub",
+      "style": "solid"
+    },
+    {
+      "from": "links",
+      "to": "priorityHints",
+      "style": "solid"
+    },
+    {
+      "from": "images",
+      "to": "audio",
+      "style": "solid"
+    },
+    {
+      "from": "images",
+      "to": "csp",
+      "style": "solid"
+    },
+    {
+      "from": "highlightingChanges",
+      "to": "del",
+      "style": "solid"
+    },
+    {
+      "from": "highlightingChanges",
+      "to": "s",
+      "style": "solid"
+    },
+    {
+      "from": "highlightingChanges",
+      "to": "ins",
+      "style": "solid"
+    },
+    {
+      "from": "qutotationCitation",
+      "to": "abbr",
+      "style": "solid"
+    },
+    {
+      "from": "qutotationCitation",
+      "to": "cite",
+      "style": "solid"
+    },
+    {
+      "from": "qutotationCitation",
+      "to": "dfn",
+      "style": "solid"
+    },
+    {
+      "from": "qutotationCitation",
+      "to": "address",
+      "style": "solid"
+    },
+    {
+      "from": "qutotationCitation",
+      "to": "blockquote",
+      "style": "solid"
+    },
+    {
+      "from": "qutotationCitation",
+      "to": "q",
+      "style": "solid"
+    },
+    {
+      "from": "layoutTags",
+      "to": "header",
+      "style": "solid"
+    },
+    {
+      "from": "layoutTags",
+      "to": "nav",
+      "style": "solid"
+    },
+    {
+      "from": "layoutTags",
+      "to": "main",
+      "style": "solid"
+    },
+    {
+      "from": "layoutTags",
+      "to": "section",
+      "style": "solid"
+    },
+    {
+      "from": "layoutTags",
+      "to": "article",
+      "style": "solid"
+    },
+    {
+      "from": "inlineCss",
+      "to": "internalCss",
+      "style": "solid"
+    },
+    {
+      "from": "layoutTags",
+      "to": "aside",
+      "style": "solid"
+    },
+    {
+      "from": "layoutTags",
+      "to": "footer",
+      "style": "solid"
+    },
+    {
+      "from": "internalCss",
+      "to": "externalCss",
+      "style": "solid"
+    }
+  ]
+}

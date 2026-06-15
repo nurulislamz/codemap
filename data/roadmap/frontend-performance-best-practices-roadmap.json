@@ -1,0 +1,80 @@
+{
+  "title": "Frontend Performance",
+  "summary": "Detailed list of best practices to improve your frontend performance",
+  "url": "https://roadmap.sh/frontend-performance-best-practices",
+  "order": [
+    "highPriority",
+    "mediumPriority",
+    "lowPriority",
+    "performanceTools",
+    "pageSpeedInsights"
+  ],
+  "topics": {
+    "highPriority": {
+      "title": "High Priority",
+      "sourceId": "dk5oqYDVXzqB0tdIkU2A5",
+      "type": "checklist",
+      "order": 1,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "mediumPriority": {
+      "title": "Medium Priority",
+      "sourceId": "cTDSB0w4XaZGWxPBC69RB",
+      "type": "checklist",
+      "order": 2,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "lowPriority": {
+      "title": "Low Priority",
+      "sourceId": "7yikZoLe7nZlowgJrDKVK",
+      "type": "checklist",
+      "order": 3,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "performanceTools": {
+      "title": "Performance Tools",
+      "sourceId": "BiexUh7V3auud68HHVeVs",
+      "type": "paragraph",
+      "order": 4,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "pageSpeedInsights"
+      ]
+    },
+    "pageSpeedInsights": {
+      "title": "Page Speed Insights",
+      "sourceId": "XuMyPUGcVuQVnvsCwN2ma",
+      "type": "button",
+      "order": 5,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "performanceTools"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "performanceTools",
+      "to": "pageSpeedInsights",
+      "style": "dashed"
+    }
+  ]
+}

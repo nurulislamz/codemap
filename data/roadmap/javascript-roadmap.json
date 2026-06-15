@@ -1,0 +1,3770 @@
+{
+  "title": "JavaScript Roadmap",
+  "summary": "Step by step guide to learn JavaScript in 2026",
+  "url": "https://roadmap.sh/javascript",
+  "order": [
+    "introductionToJavascript",
+    "whatIsJavascript",
+    "historyOfJavascript",
+    "javascriptVersions",
+    "howToRunJavascript",
+    "var",
+    "let",
+    "const",
+    "variableDeclarations",
+    "hoisting",
+    "allAboutVariables",
+    "variableNamingRules",
+    "variableScopes",
+    "objectPrototype",
+    "block",
+    "function",
+    "global",
+    "prototypalInheritance",
+    "string",
+    "undefined",
+    "number",
+    "bigint",
+    "object",
+    "builtInObjects",
+    "dataTypes",
+    "boolean",
+    "null",
+    "typeofOperator",
+    "json",
+    "map",
+    "symbol",
+    "structuredData",
+    "weakMap",
+    "set",
+    "keyedCollections",
+    "typeConversionVsCoercion",
+    "weakSet",
+    "implicitTypeCasting",
+    "typeCasting",
+    "dataStructures",
+    "explicitTypeCasting",
+    "typedArrays",
+    "indexedCollections",
+    "arrays",
+    "topic",
+    "topic2",
+    "objectIs",
+    "equalityComparisons",
+    "for",
+    "breakContinue",
+    "doWhile",
+    "forOfLoop",
+    "equalityAlgorithms",
+    "while",
+    "forInLoop",
+    "islooselyequal",
+    "conditionalOperators",
+    "isstrictlyequal",
+    "loopsAndIterations",
+    "commaOperators",
+    "samevaluezero",
+    "unaryOperators",
+    "ifElse",
+    "switch",
+    "samevalue",
+    "assignmentOperators",
+    "conditionalStatements",
+    "expressionsOperators",
+    "controlFlow",
+    "comparisonOperators",
+    "exceptionalHandling",
+    "arithmeticOperators",
+    "defaultParams",
+    "rest",
+    "bitwiseOperators",
+    "throwStatement",
+    "logicalOperators",
+    "tryCatchFinally",
+    "functionParameters",
+    "bigintOperators",
+    "errorObjects",
+    "arrowFunctions",
+    "stringOperators",
+    "functions",
+    "iifes",
+    "recursion",
+    "argumentsObject",
+    "lexicalScoping",
+    "scopeFunctionStack",
+    "domApis",
+    "closures",
+    "builtInFunctions",
+    "inAMethod",
+    "strictMode",
+    "callbackHell",
+    "eventLoop",
+    "inAFunction",
+    "callbacks",
+    "usingItAlone",
+    "usingThisKeyword",
+    "asynchronousJavascript",
+    "promises",
+    "inEventHandlers",
+    "functionBorrowing",
+    "settimeout",
+    "inArrowFunctions",
+    "asyncAwait",
+    "explicitBinding",
+    "setinterval",
+    "xmlhttprequest",
+    "commonjs",
+    "call",
+    "apply",
+    "bind",
+    "fetch",
+    "esm",
+    "modulesInJavascript",
+    "iteratorsAndGenerators",
+    "classes",
+    "workingWithApis",
+    "memoryManagement",
+    "usingBrowserDevtools",
+    "debuggingIssues",
+    "debuggingMemoryLeaks",
+    "memoryLifecycle",
+    "debuggingPerformance",
+    "garbageCollection",
+    "haveALookAtTheFollowingRelatedRoadmaps"
+  ],
+  "topics": {
+    "introductionToJavascript": {
+      "title": "Introduction to JavaScript",
+      "sourceId": "6khAD6mzZ9S96JJuC5_j6",
+      "type": "topic",
+      "order": 1,
+      "summary": "JavaScript is a high-level, interpreted programming language created to add interactivity to web pages. It runs in the browser and, with Node.js, on the server as well. JavaScript is the only language that runs natively in web browsers, making it the foundation of frontend web development.",
+      "video": {
+        "title": "JavaScript Crash Course for Beginners",
+        "url": "https://youtu.be/hdI2bqOjy3c?t=2"
+      },
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "You Don't Know JS Yet (book series)",
+          "url": "https://github.com/getify/You-Dont-Know-JS"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "type": "article",
+          "title": "The Modern JavaScript Tutorial",
+          "url": "https://javascript.info/"
+        }
+      ],
+      "parents": [
+        "javascript"
+      ],
+      "children": [
+        "whatIsJavascript",
+        "historyOfJavascript",
+        "javascriptVersions",
+        "howToRunJavascript"
+      ]
+    },
+    "whatIsJavascript": {
+      "title": "What is JavaScript",
+      "sourceId": "UBB-8hUcwo4Mfd0cmEcdA",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "JavaScript is a scripting language used to create dynamic behavior in web applications. It can manipulate HTML and CSS, respond to user events, communicate with servers, and update content without reloading the page. It follows the ECMAScript specification, which defines the language standard.",
+      "video": {
+        "title": "Learn JavaScript - Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Modern JavaScript Tutorial",
+          "url": "https://javascript.info/"
+        },
+        {
+          "type": "article",
+          "title": "A Comprehensive Course on JavaScript with Quizzes and Exercises - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/"
+        },
+        {
+          "type": "article",
+          "title": "Exploring JS: JavaScript books for programmers",
+          "url": "https://exploringjs.com/"
+        }
+      ],
+      "parents": [
+        "introductionToJavascript"
+      ],
+      "children": []
+    },
+    "historyOfJavascript": {
+      "title": "History of JavaScript",
+      "sourceId": "l-GKzcsBNA0r6Jax8hwnP",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "JavaScript was initially created by Brendan Eich of NetScape and was first announced in a press release by Netscape in 1995. It has a bizarre history of naming; initially, it was named Mocha by the creator, which was later renamed LiveScript. In 1996, about a year later after the release, NetScape decided to rename it to JavaScript with hopes of capitalizing on the Java community (although JavaScript did not have any relationship with Java) and released Netscape 2.0 with the official support of JavaScript.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Brief History of JavaScript",
+          "url": "https://roadmap.sh/guides/history-of-javascript"
+        },
+        {
+          "type": "article",
+          "title": "The Weird History of JavaScript",
+          "url": "https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb"
+        }
+      ],
+      "parents": [
+        "introductionToJavascript"
+      ],
+      "children": []
+    },
+    "javascriptVersions": {
+      "title": "JavaScript Versions",
+      "sourceId": "SFPsWnVpZBAw3_re7op4h",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "JavaScript, invented by Brendan Eich, achieved the status of an ECMA standard in 1997 and adopted the official name ECMAScript. This language has evolved through several versions, namely ES1, ES2, ES3, ES5, and the transformative ES6. These updates have played a crucial role in improving and standardizing JavaScript, making it widely used and valuable in the ever-changing field of web development.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Versions: How JavaScript has changed over the years",
+          "url": "https://www.educative.io/blog/javascript-versions-history"
+        },
+        {
+          "type": "article",
+          "title": "Brief History of JavaScript",
+          "url": "https://roadmap.sh/guides/history-of-javascript"
+        }
+      ],
+      "parents": [
+        "introductionToJavascript"
+      ],
+      "children": []
+    },
+    "howToRunJavascript": {
+      "title": "How to run JavaScript",
+      "sourceId": "uXsWIUUxtc4H_iRx3uZv0",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "JavaScript can be run directly in a browser's developer console, embedded in an HTML page using a `<script>` tag, or executed on the server with Node.js. For development, tools like VS Code with a live server extension or online environments like CodePen and JSFiddle make it easy to write and run JavaScript immediately.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How To Add JavaScript to HTML",
+          "url": "https://www.digitalocean.com/community/tutorials/how-to-add-javascript-to-html"
+        },
+        {
+          "type": "article",
+          "title": "How To Write Your First JavaScript Program",
+          "url": "https://www.digitalocean.com/community/tutorials/how-to-write-your-first-javascript-program"
+        },
+        {
+          "type": "article",
+          "title": "How To Use the JavaScript Developer Console",
+          "url": "https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-developer-console"
+        }
+      ],
+      "parents": [
+        "introductionToJavascript"
+      ],
+      "children": []
+    },
+    "var": {
+      "title": "var",
+      "sourceId": "JSjeM8qnBg4onXq9mn5gB",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "The var statement declares a function-scoped or globally-scoped variable, optionally initializing it to a value.",
+      "video": {
+        "title": "Declaring Variables without Var, Let, Const - What Would Happen?",
+        "url": "https://www.youtube.com/watch?v=6UAKBYpUC-Y"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "var keyword - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Variables",
+          "url": "https://javascript.info/variables"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "let": {
+      "title": "let",
+      "sourceId": "kDRa9G3pMp0Cb0mqYUawM",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "`let` declares a block-scoped variable that can be reassigned after declaration. Unlike `var`, it is limited to the block, statement, or expression where it is defined. `let` is the standard choice when a variable's value needs to change over time.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "let keyword - MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Variables",
+          "url": "https://javascript.info/variables"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "const": {
+      "title": "const",
+      "sourceId": "q85z6x1Lc-yLWepwtIT2_",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Constants are block-scoped, much like variables declared using the `let` keyword. The value of a constant can't be changed through reassignment (i.e. by using the assignment operator), and it can't be re-declared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Constants - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/constants"
+        },
+        {
+          "type": "article",
+          "title": "const keyword - MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Variables",
+          "url": "https://javascript.info/variables"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "variableDeclarations": {
+      "title": "Variable Declarations",
+      "sourceId": "BqbAWt--Guqex-rrb4ZUv",
+      "type": "subtopic",
+      "order": 9,
+      "summary": "Variable declarations introduce a variable name into the current scope. JavaScript provides three ways to declare variables: `var`, `let`, and `const`. The choice between them affects scope, hoisting behavior, and whether the variable can be reassigned.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Storing the information you need \u2014 Variables",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Variables - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/variables"
+        }
+      ],
+      "parents": [
+        "allAboutVariables"
+      ],
+      "children": []
+    },
+    "hoisting": {
+      "title": "Hoisting",
+      "sourceId": "Lb5jLF91WO5V5CWpifciW",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their containing scope before code execution. Variables declared with `var` are hoisted and initialized as `undefined`. Function declarations are fully hoisted, meaning they can be called before they appear in the source code. `let` and `const` are hoisted but not initialized, resulting in a temporal dead zone.",
+      "video": {
+        "title": "Learn JavaScript Hoisting In 5 Minutes",
+        "url": "https://www.youtube.com/watch?v=EvfRXyKa_GI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Hoisting - MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Hoisting"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Hoisting",
+          "url": "https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript"
+        }
+      ],
+      "parents": [
+        "allAboutVariables"
+      ],
+      "children": []
+    },
+    "allAboutVariables": {
+      "title": "All about Variables",
+      "sourceId": "kvActjpU4FUJdrmuFoFEe",
+      "type": "topic",
+      "order": 11,
+      "summary": "Variables are named containers for storing data values in a program. In JavaScript, variables are declared using `var`, `let`, or `const`, each with different scoping and reassignment rules. Choosing the right declaration keyword affects how the variable behaves throughout the code.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Variables",
+          "url": "https://javascript.info/variables"
+        },
+        {
+          "type": "article",
+          "title": "Storing the information you need \u2014 Variables",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "objectPrototype",
+        "prototypalInheritance",
+        "variableScopes",
+        "variableNamingRules",
+        "hoisting",
+        "variableDeclarations",
+        "dataTypes"
+      ]
+    },
+    "variableNamingRules": {
+      "title": "Variable Naming Rules",
+      "sourceId": "HfieG3v3wnmpZDfNwEJvZ",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "A variable name should accurately identify your variable. When you create good variable names, your JavaScript code becomes easier to understand and easier to work with. Properly naming variables is really important. JavaScript also has some rules when it comes to naming variables; read about these rules through the links below.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Variable Naming Tips - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/variables#Tips_for_naming_variables"
+        },
+        {
+          "type": "article",
+          "title": "Naming JavaScript Variables",
+          "url": "https://www.dummies.com/article/technology/programming-web-design/javascript/naming-javascript-variables-142522/"
+        },
+        {
+          "type": "article",
+          "title": "Google JavaScript Style Guide",
+          "url": "https://google.github.io/styleguide/jsguide.html"
+        }
+      ],
+      "parents": [
+        "allAboutVariables"
+      ],
+      "children": []
+    },
+    "variableScopes": {
+      "title": "Variable Scopes",
+      "sourceId": "7iMJuaB7yKlSIbT4dBe5L",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "Scope determines where in a program a variable is accessible. JavaScript has three main scope levels: global, function, and block. Understanding scope is important for avoiding naming conflicts and unintended variable access.",
+      "video": {
+        "title": "Understanding Global Local Function Block Scope",
+        "url": "https://www.youtube.com/watch?v=_E96W6ivHng"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Scope",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Scope"
+        },
+        {
+          "type": "article",
+          "title": "Deep dive into Scope Chains and Closures",
+          "url": "https://www.freecodecamp.org/news/deep-dive-into-scope-chains-and-closures-21ee18b71dd9/"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Scope",
+          "url": "https://www.w3schools.com/js/js_scope.asp"
+        }
+      ],
+      "parents": [
+        "allAboutVariables"
+      ],
+      "children": []
+    },
+    "objectPrototype": {
+      "title": "Object Prototype",
+      "sourceId": "0I6dJE0ygXPGjeRAe8AtT",
+      "type": "subtopic",
+      "order": 14,
+      "summary": "JavaScript is an object-oriented language built around a prototype model. In JavaScript, every object inherits properties from its prototype, if there are any. A prototype is simply an object from which another object inherits properties. To create complex programs using JavaScript, one has to be proficient in working with prototypes \u2014 they form the very core of OOP in the language.",
+      "video": {
+        "title": "Prototype in Javascript - Object Prototype",
+        "url": "https://www.youtube.com/watch?v=583MGxjypgU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Prototypes in JavaScript - A Comprehensive Guide",
+          "url": "https://www.codeguage.com/courses/js/objects-prototypes"
+        },
+        {
+          "type": "article",
+          "title": "Prototypes, Inheritance",
+          "url": "https://javascript.info/prototypes"
+        },
+        {
+          "type": "article",
+          "title": "Object prototypes - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes"
+        }
+      ],
+      "parents": [
+        "allAboutVariables"
+      ],
+      "children": []
+    },
+    "block": {
+      "title": "Block",
+      "sourceId": "uqEzHYx13Y2EpvTTRzykn",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "Block scope limits a variable's visibility to the block of code enclosed in curly braces `{}` where it is declared. Variables declared with `let` and `const` are block-scoped. A variable inside an `if` statement or `for` loop with block scope is not accessible outside that block.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Scope",
+          "url": "https://www.w3schools.com/js/js_scope.asp"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "function": {
+      "title": "Function",
+      "sourceId": "YMT7O6lrMSMtNo0EnmsnQ",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "Function scope means a variable declared inside a function is only accessible within that function. Variables declared with `var` are function-scoped. Each function call creates a new scope, so variables inside a function do not conflict with variables of the same name in other functions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Function Scope & Block Scope in JS",
+          "url": "https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "global": {
+      "title": "Global",
+      "sourceId": "oC4o6GLEES_nUgCJu9Q6I",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "Global scope refers to variables declared outside any function or block, making them accessible from anywhere in the program. In browsers, global variables become properties of the `window` object. Overusing global variables is discouraged because it increases the risk of naming conflicts and makes code harder to maintain.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Scope in JavaScript \u2013 Global vs Local vs Block Scope Explained",
+          "url": "https://www.freecodecamp.org/news/scope-in-javascript-global-vs-local-vs-block-scope/"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "prototypalInheritance": {
+      "title": "Prototypal Inheritance",
+      "sourceId": "Xge6eru1hRGobnOEHLZqv",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the Prototype of an object, we use Object.getPrototypeOf and Object.setPrototypeOf.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain"
+        },
+        {
+          "type": "article",
+          "title": "Prototype Inheritance",
+          "url": "https://javascript.info/prototype-inheritance"
+        }
+      ],
+      "parents": [
+        "allAboutVariables"
+      ],
+      "children": []
+    },
+    "string": {
+      "title": "string",
+      "sourceId": "1RcwBHU3jzx0YxxUGZic4",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "String is a primitive type that holds a sequence of characters. String in Javascript is written within a pair of single quotation marks `''`, double quotation marks `\"\"`, or backticks ` `` ` (template literals). All types of quotes can be used to contain a string but only if the starting quote is the same as the end quote.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "String",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Strings",
+          "url": "https://javascript.info/string"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "undefined": {
+      "title": "undefined",
+      "sourceId": "ZLs0NKM0lrnOy5ATDhlk0",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "`undefined` is the default value of a variable that has been declared but not assigned a value. It is also the return value of functions that do not explicitly return anything. Unlike `null`, which is intentionally empty, `undefined` typically indicates something has not been set.",
+      "video": {
+        "title": "undefined in JS",
+        "url": "https://www.youtube.com/watch?v=B7iF6G3EyIk&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "undefined - JavaScript | MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "number": {
+      "title": "number",
+      "sourceId": "GZ_SXsWmP7AsXRTc4WUMw",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "The `number` type represents both integers and floating-point values in JavaScript. It uses the IEEE 754 double-precision format, which means all numbers are stored as floats. Special values include `Infinity`, `-Infinity`, and `NaN` (Not a Number), which result from certain arithmetic operations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Number - JavaScript | MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "bigint": {
+      "title": "bigint",
+      "sourceId": "6lUF0neW1piiP1RsaVxEX",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "`BigInt` is a primitive type for representing integers of arbitrary size, beyond the safe integer limit of the `number` type. A BigInt is created by appending `n` to an integer literal or using the `BigInt()` function. It is used when precise integer arithmetic is needed for very large numbers, such as in cryptography or financial calculations.",
+      "video": {
+        "title": "The Whys and Hows Of BigInt",
+        "url": "https://youtu.be/6I650PQfhMg?si=XyVGrmp4KWLRcHVj"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "BigInt",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "object": {
+      "title": "Object",
+      "sourceId": "xe8HZ8Mt1fK8yJMcDPYHJ",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "JavaScript object is a data structure that allows us to have key-value pairs; so we can have distinct keys and each key is mapped to a value that can be of any JavaScript data type. Comparing it to a real-world object, a pen is an object with several properties such as color, design, the material it is made of, etc. In the same way, JavaScript objects can have properties that define their characteristics.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Objects",
+          "url": "https://javascript.info/object"
+        },
+        {
+          "type": "article",
+          "title": "Working with Objects",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects"
+        },
+        {
+          "type": "article",
+          "title": "Destructuring Objects",
+          "url": "https://javascript.info/destructuring-assignment"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": [
+        "builtInObjects"
+      ]
+    },
+    "builtInObjects": {
+      "title": "Built-in Objects",
+      "sourceId": "D95ndkkwmT5X_HqboEn6E",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "JavaScript provides a set of built-in objects that are available without any imports. These include `Math`, `Date`, `JSON`, `Array`, `RegExp`, `Promise`, and others. They provide standard functionality for common tasks like math operations, date manipulation, and data serialization.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Standard built-in objects",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Built-in Objects",
+          "url": "https://www.tutorialride.com/javascript/javascript-built-in-objects.htm"
+        }
+      ],
+      "parents": [
+        "object"
+      ],
+      "children": []
+    },
+    "dataTypes": {
+      "title": "Data Types",
+      "sourceId": "-jbPPuEXacBR0d0CWPHgd",
+      "type": "topic",
+      "order": 25,
+      "summary": "Data type refers to the type of data that a JavaScript variable can hold. There are seven primitive data types in JavaScript (Number, BigInt, String, Boolean, Null, Undefined and Symbol). Objects are non-primitives.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Data Types - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/data-types"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript data types and data structures",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Data Types",
+          "url": "https://javascript.info/types"
+        }
+      ],
+      "parents": [
+        "allAboutVariables"
+      ],
+      "children": [
+        "undefined",
+        "number",
+        "bigint",
+        "boolean",
+        "null",
+        "symbol",
+        "object",
+        "typeofOperator",
+        "typeCasting"
+      ]
+    },
+    "boolean": {
+      "title": "boolean",
+      "sourceId": "b1HvkoWA2t4kt8mS6FySm",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "A boolean is a primitive type with only two possible values: `true` or `false`. Booleans are used in conditions, comparisons, and logical operations. JavaScript also has truthy and falsy values, where non-boolean values are implicitly converted to `true` or `false` in a boolean context.",
+      "video": {
+        "title": "Booleans in JavaScript",
+        "url": "https://www.youtube.com/watch?v=B4ZCFdrBmbE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Boolean",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "null": {
+      "title": "null",
+      "sourceId": "CxyNyFMuTLS3owtRMgClD",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "`null` is a primitive value that explicitly represents the absence of any value or object. It is typically used to indicate that a variable intentionally holds no value. `typeof null` returns `\"object\"`, which is a known quirk of the language from its original implementation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is null in JavaScript",
+          "url": "https://www.altcademy.com/blog/what-is-null-in-javascript/"
+        },
+        {
+          "type": "article",
+          "title": "null in JavaScript",
+          "url": "https://masteringjs.io/tutorials/fundamentals/null"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "typeofOperator": {
+      "title": "typeof operator",
+      "sourceId": "RRACLQ6-aopkxImIp3Toc",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "The `typeof` operator returns a string indicating the type of an operand. It works with primitives and functions but has some quirks, such as returning `\"object\"` for `null`. It is commonly used to check whether a variable is defined or to guard against unexpected types in a function.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "typeof Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "json": {
+      "title": "JSON",
+      "sourceId": "bFNvtHp97OzKnPJgr7WaH",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa).",
+      "video": {
+        "title": "JSON Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=iiADhChRriM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Working with JSON",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON"
+        }
+      ],
+      "parents": [
+        "dataStructures"
+      ],
+      "children": []
+    },
+    "map": {
+      "title": "Map",
+      "sourceId": "Xc0jL4rafpI-ixIaAxo9O",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "A `Map` is a keyed collection that stores key-value pairs and remembers insertion order. Unlike plain objects, Map keys can be of any type, including objects and functions. Maps are preferred over plain objects when keys are dynamic or when the order of entries matters.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Map - Keyed Collections",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map"
+        },
+        {
+          "type": "article",
+          "title": "Map Data Type",
+          "url": "https://javascript.info/map-set#map"
+        }
+      ],
+      "parents": [
+        "keyedCollections"
+      ],
+      "children": []
+    },
+    "symbol": {
+      "title": "Symbol",
+      "sourceId": "R6ICrk6vjoBxx5nRGo4Jg",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "Symbols are a unique and immutable primitive data type in JavaScript, introduced in ECMAScript 6 (ES6). They are often used to create unique property keys for objects, ensuring no property key collisions occur. Each Symbol value is distinct, even when multiple are created with the same description. Symbols can be created using the Symbol() function, and their primary use case is to add hidden or special properties to objects that won\u2019t interfere with other properties or methods.",
+      "video": {
+        "title": "Symbols in Javascript",
+        "url": "https://www.youtube.com/watch?v=E5Bblr-SFbA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Symbol data type in JavaScript",
+          "url": "https://www.javascripttutorial.net/symbol/"
+        },
+        {
+          "type": "article",
+          "title": "Symbol type",
+          "url": "https://javascript.info/symbol"
+        },
+        {
+          "type": "article",
+          "title": "Symbol",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": []
+    },
+    "structuredData": {
+      "title": "Structured Data",
+      "sourceId": "JwLGAuSOTyZ5BHSqeBDU6",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "Structured data refers to data organized in a defined, parseable format. In JavaScript, JSON (JavaScript Object Notation) is the primary format for structured data exchange. It represents data as key-value pairs and arrays and is widely used for API communication and configuration files.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Google Developers docs",
+          "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data"
+        }
+      ],
+      "parents": [
+        "dataStructures"
+      ],
+      "children": []
+    },
+    "weakMap": {
+      "title": "Weak Map",
+      "sourceId": "6icsjC4aisDgPWasVuCOt",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "A `WeakMap` is a collection of key-value pairs where the keys must be objects and are held weakly. If the key object is garbage collected, the entry is automatically removed from the WeakMap. It is used for storing private data associated with objects without preventing garbage collection.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "WeakMap",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap"
+        },
+        {
+          "type": "article",
+          "title": "WeakMap and WeakSet",
+          "url": "https://javascript.info/weakmap-weakset"
+        }
+      ],
+      "parents": [
+        "keyedCollections"
+      ],
+      "children": []
+    },
+    "set": {
+      "title": "Set",
+      "sourceId": "sciU68E13mcfL577y6Vim",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "A `Set` is a collection of unique values with no duplicates. Values in a Set can be of any type, and the Set maintains insertion order. Sets are useful for deduplicating arrays and checking membership efficiently.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Set - JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set"
+        }
+      ],
+      "parents": [
+        "keyedCollections"
+      ],
+      "children": []
+    },
+    "keyedCollections": {
+      "title": "Keyed Collections",
+      "sourceId": "rhJrrqkRqy2Qw_he4SPGz",
+      "type": "subtopic",
+      "order": 36,
+      "summary": "Keyed collections are data structures that store values indexed by keys. In JavaScript, `Map` and `WeakMap` are keyed collections that allow any value, including objects and functions, to be used as a key. Unlike plain objects, Maps maintain insertion order and provide methods like `get()`, `set()`, and `has()`.",
+      "video": {
+        "title": "Creating keyed collection",
+        "url": "https://youtu.be/4UqSqF4foy4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Keyed collections",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections"
+        },
+        {
+          "type": "article",
+          "title": "ES6 keyed collections- Maps and sets",
+          "url": "https://blog.logrocket.com/es6-keyed-collections-maps-and-sets/"
+        }
+      ],
+      "parents": [
+        "dataStructures"
+      ],
+      "children": [
+        "map",
+        "weakMap",
+        "set",
+        "weakSet"
+      ]
+    },
+    "typeConversionVsCoercion": {
+      "title": "Type Conversion vs Coercion",
+      "sourceId": "_Bo2YZqZ_gY35SLPML4T6",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers). Type conversion is similar to type coercion because they convert values from one data type to another with one key difference \u2014 type coercion is implicit. In contrast, type conversion can be either implicit or explicit.",
+      "video": {
+        "title": "Type Conversion and Coercion video",
+        "url": "https://www.youtube.com/watch?v=jfQyMPzPTjY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Type Conversion - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Type_Conversion"
+        },
+        {
+          "type": "article",
+          "title": "Type Coercion - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion"
+        }
+      ],
+      "parents": [
+        "typeCasting"
+      ],
+      "children": []
+    },
+    "weakSet": {
+      "title": "Weak Set",
+      "sourceId": "DSFzj61N9ojz29mjExhVa",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "A `WeakSet` is a collection of objects held with weak references. Unlike a regular Set, it only accepts objects (not primitives), and entries are automatically removed when the object is garbage collected. WeakSet is used when tracking object references without preventing them from being garbage collected.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "WeakSet",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet"
+        },
+        {
+          "type": "article",
+          "title": "WeakMap and WeakSet",
+          "url": "https://javascript.info/weakmap-weakset"
+        }
+      ],
+      "parents": [
+        "keyedCollections"
+      ],
+      "children": []
+    },
+    "implicitTypeCasting": {
+      "title": "Implicit Type Casting",
+      "sourceId": "pP42K_eH4RCdUdUS8BJlP",
+      "type": "subtopic",
+      "order": 39,
+      "summary": "Implicit type conversion happens when the compiler or runtime automatically converts data types. JavaScript is loosely typed language and most of the time operators automatically convert a value to the right type.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "TutorialsPoint - JavaScript Tutorials",
+          "url": "https://www.tutorialspoint.com/explain-typecasting-in-javascript"
+        },
+        {
+          "type": "article",
+          "title": "What you need to know about JavaScript Implicit Coercion",
+          "url": "https://dev.to/promisetochi/what-you-need-to-know-about-javascripts-implicit-coercion-e23"
+        }
+      ],
+      "parents": [
+        "typeCasting"
+      ],
+      "children": []
+    },
+    "typeCasting": {
+      "title": "Type Casting",
+      "sourceId": "XPmBieVCXvL3WbWkYRoKr",
+      "type": "topic",
+      "order": 40,
+      "summary": "Type conversion (or typecasting) means the transfer of data from one data type to another. Implicit conversion happens when the compiler (for compiled languages) or runtime (for script languages like JavaScript) automatically converts data types. The source code can also explicitly require a conversion to take place.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Type Conversions",
+          "url": "https://javascript.info/type-conversions"
+        },
+        {
+          "type": "article",
+          "title": "Type Casting in JavaScript",
+          "url": "https://www.tutorialspoint.com/type-casting-in-javascript"
+        }
+      ],
+      "parents": [
+        "dataTypes"
+      ],
+      "children": [
+        "typeConversionVsCoercion",
+        "implicitTypeCasting",
+        "explicitTypeCasting",
+        "dataStructures"
+      ]
+    },
+    "dataStructures": {
+      "title": "Data Structures",
+      "sourceId": "ADarwihuI2nBq1C3U7-Zr",
+      "type": "topic",
+      "order": 41,
+      "summary": "A Data structure is a format to organize, manage and store data in a way that allows efficient access and modification. JavaScript has primitive (built-in) and non-primitive (not built-in) data structures. Primitive data structures come by default with the programming language and you can implement them out of the box (like arrays and objects). Non-primitive data structures don't come by default and you have to code them up if you want to use them.",
+      "video": {
+        "title": "Introduction to the Stack Data Structure",
+        "url": "https://youtu.be/4F-BnR2XwqU"
+      },
+      "articles": [],
+      "parents": [
+        "typeCasting"
+      ],
+      "children": [
+        "json",
+        "structuredData",
+        "breakContinue",
+        "keyedCollections",
+        "indexedCollections",
+        "equalityComparisons"
+      ]
+    },
+    "explicitTypeCasting": {
+      "title": "Explicit Type Casting",
+      "sourceId": "1xhjrRN-Rfekei2JwwU7Y",
+      "type": "subtopic",
+      "order": 42,
+      "summary": "Type casting means transferring data from one data type to another by explicitly specifying the type to convert the given data to. Explicit type casting is normally done to make data compatible with other variables. Examples of typecasting methods are `parseInt()`, `parseFloat()`, `toString()`.",
+      "video": {
+        "title": "Data Type Conversion",
+        "url": "https://youtu.be/VQLYiFqetZM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Type Conversion",
+          "url": "https://www.c-sharpcorner.com/article/type-conversions-in-javascript/"
+        },
+        {
+          "type": "article",
+          "title": "Type conversion",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Type_Conversion"
+        }
+      ],
+      "parents": [
+        "typeCasting"
+      ],
+      "children": []
+    },
+    "typedArrays": {
+      "title": "Typed Arrays",
+      "sourceId": "8X1mdQ3NDBVOZZWBbAFRE",
+      "type": "subtopic",
+      "order": 43,
+      "summary": "Typed Arrays are array-like objects for working with raw binary data of a specific numeric type. Types include `Int8Array`, `Uint8Array`, `Float32Array`, and others, each representing a different size and format. They are used in performance-sensitive contexts such as audio processing, WebGL, and network protocols.",
+      "video": {
+        "title": "Intro to Typed Arrays in JavaScript",
+        "url": "https://www.youtube.com/watch?v=UYkJaW3pmj0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript typed arrays",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays"
+        }
+      ],
+      "parents": [
+        "indexedCollections"
+      ],
+      "children": []
+    },
+    "indexedCollections": {
+      "title": "Indexed Collections",
+      "sourceId": "lBOGoHZrmnIRatvryDwTm",
+      "type": "subtopic",
+      "order": 44,
+      "summary": "Indexed Collections are collections that have numeric indices i.e. the collections of data that are ordered by an index value. In JavaScript, an array is an indexed collection. An array is an ordered set of values that has a numeric index.",
+      "video": {
+        "title": "Javascript Arrays",
+        "url": "https://youtu.be/XYq9QpgAx8g"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Indexed collections?",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections"
+        },
+        {
+          "type": "article",
+          "title": "Indexed collections in JavaScript",
+          "url": "https://www.tutorialspoint.com/indexed-collections-in-javascript"
+        }
+      ],
+      "parents": [
+        "dataStructures"
+      ],
+      "children": [
+        "typedArrays",
+        "arrays"
+      ]
+    },
+    "arrays": {
+      "title": "Arrays",
+      "sourceId": "NZedBxG9B9TRVOf2QE2yL",
+      "type": "subtopic",
+      "order": 45,
+      "summary": "Arrays are ordered, indexed collections that can hold values of any type. JavaScript arrays are dynamic, meaning they can grow and shrink, and provide a rich set of built-in methods like `map()`, `filter()`, `reduce()`, `push()`, and `pop()`. They are one of the most used data structures in JavaScript.",
+      "video": {
+        "title": "JavaScript Arrays",
+        "url": "https://www.youtube.com/watch?v=oigfaZ5ApsM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Working with Arrays in JavaScript",
+          "url": "https://javascript.info/array"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Arrays",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+        }
+      ],
+      "parents": [
+        "indexedCollections"
+      ],
+      "children": []
+    },
+    "topic": {
+      "title": "==",
+      "sourceId": "RonBj1htt6jnBt3W7zoTA",
+      "type": "subtopic",
+      "order": 46,
+      "summary": "The `==` operator compares two values for equality after performing type coercion if the types differ. For example, `\"5\" == 5` returns `true` because the string is converted to a number before comparison. This can produce surprising results and is generally avoided in favor of `===`.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Equality comparisons and sameness - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value_equality_using_object.is"
+        }
+      ],
+      "parents": [
+        "equalityComparisons"
+      ],
+      "children": []
+    },
+    "topic2": {
+      "title": "===",
+      "sourceId": "lJwcc6JoUIQoiQ6FkV2KW",
+      "type": "subtopic",
+      "order": 47,
+      "summary": "The `===` operator compares two values for equality without type coercion. Both the value and the type must match for the comparison to return `true`. It is the recommended equality operator for most cases because it produces predictable results.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Strict equality - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality"
+        }
+      ],
+      "parents": [
+        "equalityComparisons"
+      ],
+      "children": []
+    },
+    "objectIs": {
+      "title": "Object.is",
+      "sourceId": "ATma3bLKdmWY_WTsPIKxh",
+      "type": "subtopic",
+      "order": 48,
+      "summary": "`Object.is()` is a method for comparing two values with stricter behavior than `===`. It handles two edge cases differently: `Object.is(NaN, NaN)` returns `true` (while `NaN === NaN` is `false`), and `Object.is(+0, -0)` returns `false` (while `+0 === -0` is `true`). It is useful when exact value identity is needed.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Object.is() - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is"
+        }
+      ],
+      "parents": [
+        "equalityComparisons"
+      ],
+      "children": []
+    },
+    "equalityComparisons": {
+      "title": "Equality Comparisons",
+      "sourceId": "23Xa6q5VvRVlzc6Dx8vST",
+      "type": "topic",
+      "order": 49,
+      "summary": "Comparison operators are used in logical statements to determine equality or difference between variables or values. Comparison operators can be used in conditional statements to compare values and take action depending on the result.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Equality Operators",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#equality_operators"
+        }
+      ],
+      "parents": [
+        "dataStructures"
+      ],
+      "children": [
+        "topic",
+        "topic2",
+        "objectIs",
+        "loopsAndIterations"
+      ]
+    },
+    "for": {
+      "title": "for",
+      "sourceId": "2M211rcaPSWbZ-sPoSEVR",
+      "type": "subtopic",
+      "order": 50,
+      "summary": "The `for` loop is a standard control-flow construct in many programming languages, including JavaScript. It's commonly used to iterate over given sequences or iterate a known number of times and execute a piece of code for each iteration.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript for Loop - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/loops-for-loop"
+        },
+        {
+          "type": "article",
+          "title": "The for Loop - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for"
+        }
+      ],
+      "parents": [
+        "loopsAndIterations"
+      ],
+      "children": []
+    },
+    "breakContinue": {
+      "title": "break / continue",
+      "sourceId": "4oHFzn7R7xLxfuLpsJjr-",
+      "type": "subtopic",
+      "order": 51,
+      "summary": "`break` exits a loop or switch statement immediately, skipping any remaining iterations. `continue` skips the rest of the current iteration and moves to the next one. Both can be used with labels to control nested loops.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript MDN Docs - continue statement",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript MDN Docs - break statement",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break"
+        }
+      ],
+      "parents": [
+        "dataStructures"
+      ],
+      "children": []
+    },
+    "doWhile": {
+      "title": "do...while",
+      "sourceId": "57lO_3uxJaWsFXS-0J1AK",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "The `do...while` statement creates a loop that executes a specified statement until the test condition evaluates to `false`. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "do...while - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while"
+        }
+      ],
+      "parents": [
+        "loopsAndIterations"
+      ],
+      "children": []
+    },
+    "forOfLoop": {
+      "title": "for...of loop",
+      "sourceId": "FBz6h_AmTJBXoBN-a38a5",
+      "type": "subtopic",
+      "order": 54,
+      "summary": "The for...of statement executes a loop that operates on a sequence of values sourced from an iterable object. Iterable objects include instances of built-ins such as Array, String, TypedArray, Map, Set, NodeList (and other DOM collections), and the arguments object, generators produced by generator functions, and user-defined iterables.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "for...of statement - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of"
+        }
+      ],
+      "parents": [
+        "loopsAndIterations"
+      ],
+      "children": []
+    },
+    "equalityAlgorithms": {
+      "title": "Equality Algorithms",
+      "sourceId": "Saqi1gQD3ddyJQ9tFIXqz",
+      "type": "label",
+      "order": 55,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "islooselyequal",
+        "isstrictlyequal"
+      ]
+    },
+    "while": {
+      "title": "while",
+      "sourceId": "9-MpHmzK_IiCi6IcvAlGM",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "The `while` loop executes a block of code as long as a specified condition is true. The condition is evaluated before each iteration, so if it is false from the start, the body never runs. It is used when the number of iterations is not known in advance.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "While Statement - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while"
+        },
+        {
+          "type": "article",
+          "title": "The while Loop - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/loops-while-loop"
+        }
+      ],
+      "parents": [
+        "loopsAndIterations"
+      ],
+      "children": []
+    },
+    "forInLoop": {
+      "title": "for...in loop",
+      "sourceId": "cq3vvFZoNnAAZJ6oEBUwb",
+      "type": "subtopic",
+      "order": 57,
+      "summary": "The `for...in` loop iterates over the enumerable properties of an object, including inherited ones. It is mainly used for iterating over object keys. It is not recommended for arrays because it iterates over all enumerable properties, not just numeric indexes, and does not guarantee order.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "for...in statement - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in"
+        },
+        {
+          "type": "article",
+          "title": "The for..in loop with examples",
+          "url": "https://javascript.info/object#forin"
+        }
+      ],
+      "parents": [
+        "loopsAndIterations"
+      ],
+      "children": []
+    },
+    "islooselyequal": {
+      "title": "isLooselyEqual",
+      "sourceId": "PLallt_T33W6bUEn0Hc3W",
+      "type": "subtopic",
+      "order": 58,
+      "summary": "The abstract equality comparison (loose equality) is the algorithm behind the `==` operator. It defines the rules for how values of different types are coerced before comparison. For example, `null == undefined` is `true`, but `null == 0` is `false`. Understanding this algorithm explains many of JavaScript's surprising equality behaviors.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Loosely Equality (==) Operator",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality"
+        },
+        {
+          "type": "article",
+          "title": "Comparison - javascript.info",
+          "url": "https://javascript.info/comparison"
+        }
+      ],
+      "parents": [
+        "equalityAlgorithms"
+      ],
+      "children": []
+    },
+    "conditionalOperators": {
+      "title": "Conditional Operators",
+      "sourceId": "640mk-m5mB90Mme-7jcXV",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "The conditional (ternary) operator is the only JavaScript operator that takes three operands: `condition ? valueIfTrue : valueIfFalse`. It is a concise alternative to `if...else` for simple conditional assignments or expressions. Nesting ternary operators deeply is discouraged because it reduces readability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#conditional_operator"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "isstrictlyequal": {
+      "title": "isStrictlyEqual",
+      "sourceId": "pcILon_Jjm2_XS10iUJ0E",
+      "type": "subtopic",
+      "order": 60,
+      "summary": "The strict equality comparison is the algorithm behind the `===` operator. It returns `false` if the types differ, without any coercion. For the same type, it compares values directly, with the exception that `NaN === NaN` is `false`.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Strictly Equality (===) Operator",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality"
+        },
+        {
+          "type": "article",
+          "title": "Comparison - javascript.info",
+          "url": "https://javascript.info/comparison"
+        }
+      ],
+      "parents": [
+        "equalityAlgorithms"
+      ],
+      "children": []
+    },
+    "loopsAndIterations": {
+      "title": "Loops and Iterations",
+      "sourceId": "YD-2l_amfqqqCdtc_Zdzo",
+      "type": "topic",
+      "order": 61,
+      "summary": "Loops and iterations allow code to execute repeatedly based on a condition or over a collection of values. JavaScript provides several loop constructs for different use cases: `while`, `do...while`, `for`, `for...in`, and `for...of`. Choosing the right loop depends on what is being ite",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Loops and iteration",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration"
+        }
+      ],
+      "parents": [
+        "equalityComparisons"
+      ],
+      "children": [
+        "for",
+        "doWhile",
+        "forOfLoop",
+        "while",
+        "forInLoop",
+        "ifElse",
+        "switch"
+      ]
+    },
+    "commaOperators": {
+      "title": "Comma Operators",
+      "sourceId": "6_8EwyZY2jBkZr7xnfRY3",
+      "type": "subtopic",
+      "order": 62,
+      "summary": "The comma operator (`,`) evaluates each of its operands (from left to right) and returns the value of the last operand. This lets you create a compound expression in which multiple expressions are evaluated, with the compound expression's final value being the value of the rightmost of its member expressions. This is commonly used to provide multiple parameters to a `for` loop.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Comma operator",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "samevaluezero": {
+      "title": "SameValueZero",
+      "sourceId": "fL3B2hkTgMb0oEwMiWJtK",
+      "type": "subtopic",
+      "order": 63,
+      "summary": "SameValueZero is an equality algorithm used internally by JavaScript in methods like `Array.prototype.includes()` and `Map` key comparison. It behaves like `===` but treats `NaN` as equal to itself. Unlike `SameValue`, it considers `+0` and `-0` as equal.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Same-value-zero equality",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "unaryOperators": {
+      "title": "Unary Operators",
+      "sourceId": "k9rSR-YQ8B_iRcXNm2btP",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "JavaScript Unary Operators are the special operators that consider a single operand and perform all the types of operations on that single operand. These operators include unary plus, unary minus, prefix increments, postfix increments, prefix decrements, and postfix decrements.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Unary Operators in JavaScript",
+          "url": "https://www.educba.com/unary-operators-in-javascript/"
+        },
+        {
+          "type": "article",
+          "title": "Unary Operators - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_operators"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "ifElse": {
+      "title": "if...else",
+      "sourceId": "ndbDXAx6bL4lZmpXv16Y_",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "The `if...else` statement executes a block of code if a condition is true, and an optional `else` block if it is false. Additional conditions can be checked with `else if`. It is the most basic form of conditional logic in JavaScript.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "if...else - MDN docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else"
+        },
+        {
+          "type": "article",
+          "title": "Conditional branching: if, ? - javascript.info",
+          "url": "https://javascript.info/ifelse"
+        }
+      ],
+      "parents": [
+        "loopsAndIterations"
+      ],
+      "children": []
+    },
+    "switch": {
+      "title": "Switch",
+      "sourceId": "H_QlcUlavKKfcNK8CYAvb",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "The `switch` statement evaluates an expression and executes the matching `case` block. It is an alternative to a long chain of `if...else if` statements when comparing one value against multiple options. Each `case` should typically end with a `break` to prevent fall-through to the next case.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "switch - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch"
+        },
+        {
+          "type": "article",
+          "title": "The switch Statement: Why, What and How - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/conditions-switch"
+        },
+        {
+          "type": "article",
+          "title": "The switch statement - javascript.info",
+          "url": "https://javascript.info/switch"
+        }
+      ],
+      "parents": [
+        "loopsAndIterations"
+      ],
+      "children": []
+    },
+    "samevalue": {
+      "title": "SameValue",
+      "sourceId": "nfMrC0eoXZl72H4o3VFEP",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "SameValue is the equality algorithm used by `Object.is()`. It is the strictest equality comparison in JavaScript: it returns `true` only when two values are identical, treating `NaN` as equal to `NaN` and `+0` as not equal to `-0`. It is used in a few specific internal operations.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Same-value equality using Object.is()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value_equality_using_object.is"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "assignmentOperators": {
+      "title": "Assignment Operators",
+      "sourceId": "IvBtUzIGnkgGXrJjqmjf4",
+      "type": "subtopic",
+      "order": 68,
+      "summary": "An assignment operator assigns a value to its left operand based on the value of its right operand. The simple assignment operator is equal (`=`), which assigns the value of its right operand to its left operand. That is, `x = f()` is an assignment expression that assigns the value of `f()` to `x`.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Assignment Operators",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment_operators"
+        },
+        {
+          "type": "article",
+          "title": "Basic Operators",
+          "url": "https://javascript.info/operators#assignment"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "conditionalStatements": {
+      "title": "Conditional Statements",
+      "sourceId": "ttCsd2_H2SuRivCjGv1OX",
+      "type": "subtopic",
+      "order": 69,
+      "summary": "When you write code, you often want to perform different actions for different decisions. You can use conditional statements in your code to do this. In JavaScript, we have three conditional statements: `if`, `if...else`, and `switch`.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Making decisions in your code \u2014 conditionals",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals"
+        },
+        {
+          "type": "article",
+          "title": "Conditional branching: if, ?",
+          "url": "https://javascript.info/ifelse"
+        }
+      ],
+      "parents": [
+        "controlFlow"
+      ],
+      "children": []
+    },
+    "expressionsOperators": {
+      "title": "Expressions & Operators",
+      "sourceId": "_6vZa43gWjxO2OcD1iCCQ",
+      "type": "topic",
+      "order": 70,
+      "summary": "Expressions are combinations of values, variables, and operators that evaluate to a value. Operators perform operations on values and include arithmetic, comparison, logical, assignment, and bitwise operators. Understanding operator precedence and behavior is necessary for writing correct expressions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Expressions and operators",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators"
+        }
+      ],
+      "parents": [
+        "controlFlow"
+      ],
+      "children": [
+        "samevaluezero",
+        "samevalue",
+        "conditionalOperators",
+        "commaOperators",
+        "unaryOperators",
+        "assignmentOperators",
+        "comparisonOperators",
+        "arithmeticOperators",
+        "bitwiseOperators",
+        "logicalOperators",
+        "bigintOperators",
+        "stringOperators"
+      ]
+    },
+    "controlFlow": {
+      "title": "Control Flow",
+      "sourceId": "3tckJ2Sci7z-sNx9jx9eF",
+      "type": "topic",
+      "order": 71,
+      "summary": "Control flow refers to the order in which statements are executed in a program. JavaScript provides conditional statements (`if...else`, `switch`) to branch logic, and exception handling (`try/catch/finally`, `throw`) to manage errors. Writing clear control flow makes code easier to follow and debug.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Control Flow - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Control_flow"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "defaultParams",
+        "rest",
+        "tryCatchFinally",
+        "errorObjects",
+        "conditionalStatements",
+        "exceptionalHandling",
+        "expressionsOperators"
+      ]
+    },
+    "comparisonOperators": {
+      "title": "Comparison Operators",
+      "sourceId": "-v4_V4UuoZSgUk2sqOCim",
+      "type": "subtopic",
+      "order": 72,
+      "summary": "Comparison operators are the operators that compare values and return true or false. The operators include: `>`, `<`, `>=`, `<=`, `==`, `===`, `!=` and `!==`",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "exceptionalHandling": {
+      "title": "Exceptional Handling",
+      "sourceId": "34TKGxV9YziOWMh9rT_KE",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "In JavaScript, all exceptions are simply objects. While the majority of exceptions are implementations of the global Error class, any old object can be thrown. With this in mind, there are two ways to throw an exception: directly via an Error object, and through a custom object. (excerpt from Rollbar)",
+      "video": {
+        "title": "try, catch, finally, throw (video)",
+        "url": "https://youtu.be/cFTFtuEQ-10"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Throwing Exceptions in JavaScript",
+          "url": "https://rollbar.com/guides/javascript/how-to-throw-exceptions-in-javascript"
+        }
+      ],
+      "parents": [
+        "controlFlow"
+      ],
+      "children": [
+        "throwStatement"
+      ]
+    },
+    "arithmeticOperators": {
+      "title": "Arithmetic Operators",
+      "sourceId": "0PK1NwlgkNe2Vf-We4uLH",
+      "type": "subtopic",
+      "order": 74,
+      "summary": "Arithmetic operators perform mathematical operations on numbers. They include `+` (addition), `-` (subtraction), `*` (multiplication), `/` (division), `%` (remainder), and `**` (exponentiation). The `+` operator is also used for string concatenation, which can cause issues when operands are mixed types.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Arithmetic Operators - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators"
+        },
+        {
+          "type": "article",
+          "title": "Arithmetic Operators - JavaScript.info",
+          "url": "https://javascript.info/operators#maths"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "defaultParams": {
+      "title": "Default Params",
+      "sourceId": "8X8mRl-puL0Lp43dO5mha",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "Default function parameters allow named parameters to be initialized with default values if no value or `undefined` is passed.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Default Parameters - MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters"
+        }
+      ],
+      "parents": [
+        "controlFlow"
+      ],
+      "children": []
+    },
+    "rest": {
+      "title": "Rest",
+      "sourceId": "-_6q0bIjQrvAaCWrVkASO",
+      "type": "subtopic",
+      "order": 76,
+      "summary": "The rest parameter syntax allows a function to accept an indefinite number of arguments as an array. It is defined by prefixing the last parameter with `...`, such as `function sum(...numbers)`. Unlike the `arguments` object, rest parameters are a true array and work with arrow functions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Rest Parameters - MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters"
+        }
+      ],
+      "parents": [
+        "controlFlow"
+      ],
+      "children": []
+    },
+    "bitwiseOperators": {
+      "title": "Bitwise Operators",
+      "sourceId": "ghjNJW67Wj5L5QK46xwL-",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "Bitwise operators treat their operands as 32-bit integers and perform operations at the bit level. They include `&` (AND), `|` (OR), `^` (XOR), `~` (NOT), `<<` (left shift), `>>` (right shift), and `>>>` (unsigned right shift). They are used in low-level programming, flag manipulation, and performance-critical code.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Bitwise Operators - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise_operators"
+        },
+        {
+          "type": "article",
+          "title": "Bitwise Operators - JavaScript.info",
+          "url": "https://javascript.info/operators#bitwise-operators"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "throwStatement": {
+      "title": "throw statement",
+      "sourceId": "ReGIniyLYl5hGExchrJd2",
+      "type": "subtopic",
+      "order": 78,
+      "summary": "The throw statement throws a user-defined exception. Execution of the current function will stop (the statements after throw won't be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate. (excerpt from MDN)",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript MDN Docs",
+          "url": "https://developer.mozilla.org/en-us/docs/web/javascript/reference/statements/throw"
+        },
+        {
+          "type": "article",
+          "title": "Error Handling",
+          "url": "https://javascript.info/error-handling"
+        },
+        {
+          "type": "article",
+          "title": "\"Throw\" operator",
+          "url": "https://javascript.info/try-catch#throw-operator"
+        }
+      ],
+      "parents": [
+        "exceptionalHandling"
+      ],
+      "children": []
+    },
+    "logicalOperators": {
+      "title": "Logical Operators",
+      "sourceId": "bo4SvzU4BrPl3c99zW7Y5",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "Logical operators combine or invert boolean expressions. The main logical operators are `&&` (AND), `||` (OR), and `!` (NOT). In JavaScript, `&&` and `||` return one of their operands rather than a strict boolean, which makes them useful for short-circuit evaluation and default value patterns.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Logical Operators - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "tryCatchFinally": {
+      "title": "try/catch/finally",
+      "sourceId": "rbjEZe5vxCJ8reI1oZ-jf",
+      "type": "subtopic",
+      "order": 80,
+      "summary": "The `try` block contains code that might throw an error. If an error occurs, execution jumps to the `catch` block, which receives the error object. The `finally` block runs regardless of whether an error was thrown, making it useful for cleanup operations like closing connections.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "try...catch - JavaScript | MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript try...catch...finally",
+          "url": "https://www.w3schools.com/jsreF/jsref_try_catch.asp"
+        }
+      ],
+      "parents": [
+        "controlFlow"
+      ],
+      "children": []
+    },
+    "functionParameters": {
+      "title": "Function Parameters",
+      "sourceId": "R1D4fsZliHv7wIo8Tj-kp",
+      "type": "subtopic",
+      "order": 81,
+      "summary": "The parameter is the name given to the variable declared inside the definition of a function. There are two special kinds of syntax: default and rest parameters.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Function Parameters",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#function_parameters"
+        },
+        {
+          "type": "article",
+          "title": "Unlimited function parameters using Rest",
+          "url": "https://www.amitmerchant.com/unlimited-function-parameters-with-using-rest-in-java-script/"
+        }
+      ],
+      "parents": [
+        "functions"
+      ],
+      "children": []
+    },
+    "bigintOperators": {
+      "title": "BigInt Operators",
+      "sourceId": "udoz0DZi7f-vm30dSnYKu",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "Most operators that can be used with the `Number` data type will also work with `BigInt` values (e.g. arithmetic, comparison, etc.). However, the unsigned right shift `>>>` operator is an exception and is not supported. Similarly, some operators may have slight differences in behaviour (for example, division with `BigInt` will round towards zero).",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "BigInt Operators",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bigint_operators"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "errorObjects": {
+      "title": "Error Objects",
+      "sourceId": "-z-4VTaC3tOThqChgyoMs",
+      "type": "subtopic",
+      "order": 83,
+      "summary": "JavaScript provides a set of built-in error types that extend the base `Error` class. These include `TypeError`, `RangeError`, `SyntaxError`, `ReferenceError`, and others. Each has a `message` property and a `stack` trace. Using specific error types makes it easier to catch and handle different failure modes separately.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Error Object - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error"
+        },
+        {
+          "type": "article",
+          "title": "Control flow & Error handling - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"
+        }
+      ],
+      "parents": [
+        "controlFlow"
+      ],
+      "children": []
+    },
+    "arrowFunctions": {
+      "title": "Arrow Functions",
+      "sourceId": "fr0NChxMXLpJizyMhXcXS",
+      "type": "subtopic",
+      "order": 84,
+      "summary": "Arrow functions are a concise syntax for writing function expressions introduced in ES6. They use `=>` instead of the `function` keyword and do not have their own `this`, `arguments`, or `super` bindings. They are commonly used for callbacks and short expressions, but are not suitable as object methods or constructors.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "MDN - Arrow Function Expressions",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+        }
+      ],
+      "parents": [
+        "functions"
+      ],
+      "children": []
+    },
+    "stringOperators": {
+      "title": "String Operators",
+      "sourceId": "c38b6t5f17Zg2O2yg3eFP",
+      "type": "subtopic",
+      "order": 85,
+      "summary": "In addition to the comparison operators, which can be used on string values, the concatenation operator (`+`) concatenates two string values together, returning another string that is the union of the two operand strings. The shorthand assignment operator `+=` can also be used to concatenate strings.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript MDN Tutorials",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators"
+        },
+        {
+          "type": "article",
+          "title": "String Concatenation - JavaScript.info",
+          "url": "https://javascript.info/operators#string-concatenation-with-binary"
+        }
+      ],
+      "parents": [
+        "expressionsOperators"
+      ],
+      "children": []
+    },
+    "functions": {
+      "title": "Functions",
+      "sourceId": "k8bJH9qydZm8I9rhH7rXw",
+      "type": "topic",
+      "order": 86,
+      "summary": "Functions exist so we can reuse code. They are blocks of code that execute whenever they are invoked. Each function is typically written to perform a particular task, like an addition function used to find the sum of two or more numbers. When numbers need to be added anywhere within your code, the addition function can be invoked as many times as necessary.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Functions - MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Functions in Detail - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/functions-basics"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "functionParameters",
+        "arrowFunctions",
+        "iifes",
+        "argumentsObject",
+        "scopeFunctionStack",
+        "builtInFunctions"
+      ]
+    },
+    "iifes": {
+      "title": "IIFEs",
+      "sourceId": "YZlCoPvZuX5MmpLOTj5d4",
+      "type": "subtopic",
+      "order": 87,
+      "summary": "An IIFE (Immediately Invoked Function Expression) is a function that is defined and called at the same time. It is written as `(function() { ... })()` or `(() => { ... })()`. IIFEs are used to create a private scope, avoiding polluting the global namespace, and were common before ES6 modules.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "IIFE \u2014 MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/IIFE"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript in Plain English - IIFE",
+          "url": "https://javascript.plainenglish.io/https-medium-com-javascript-in-plain-english-stop-feeling-iffy-about-using-an-iife-7b0292aba174"
+        }
+      ],
+      "parents": [
+        "functions"
+      ],
+      "children": []
+    },
+    "recursion": {
+      "title": "Recursion",
+      "sourceId": "YJGhhFuWmFvhRKOg6nwON",
+      "type": "subtopic",
+      "order": 88,
+      "summary": "One of the most powerful and elegant concept of functions, recursion is when a function invokes itself. Such a function is called a **_recursive function_**. As recursion happens, the underlying code of the recursive function gets executed again and again until a terminating condition, called the _base case_, gets fulfilled. As you dive into the world of algorithms, you'll come across recursion in many many instances.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Recursion and Stack",
+          "url": "https://javascript.info/recursion"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Function Recursions - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/functions-recursions"
+        },
+        {
+          "type": "article",
+          "title": "Recursion - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Recursion"
+        }
+      ],
+      "parents": [
+        "scopeFunctionStack"
+      ],
+      "children": []
+    },
+    "argumentsObject": {
+      "title": "arguments object",
+      "sourceId": "QLC7bW-qHskLH2HOA-Sko",
+      "type": "subtopic",
+      "order": 89,
+      "summary": "The arguments object is an Array-like object accessible inside functions that contains the values of the arguments passed to that function, available within all non-arrow functions. You can refer to a function's arguments inside that function by using its arguments object. It has entries for each argument the function was called with, with the first entry's index at 0. But, in modern code, rest parameters should be preferred.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The arguments object - MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments"
+        }
+      ],
+      "parents": [
+        "functions"
+      ],
+      "children": []
+    },
+    "lexicalScoping": {
+      "title": "Lexical Scoping",
+      "sourceId": "q7b5iMJ1Lfka5A-K-YcaN",
+      "type": "subtopic",
+      "order": 90,
+      "summary": "Before one can make an intuition of closures in JavaScript, it's important to first get the hang of the term '**_lexical environment_**'. In simple words, the lexical environment for a function `f` simply refers to the environment enclosing that function's definition in the source code.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is a lexical environment? - JavaScript - CodeGuage",
+          "url": "https://www.codeguage.com/courses/js/functions-closures#What_is_a_lexical_environment"
+        },
+        {
+          "type": "article",
+          "title": "Lexical scoping - JavaScript - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#lexical_scoping"
+        }
+      ],
+      "parents": [
+        "scopeFunctionStack"
+      ],
+      "children": []
+    },
+    "scopeFunctionStack": {
+      "title": "Scope & Function Stack",
+      "sourceId": "ISNzEYtrWe2v0R7Xfl5k-",
+      "type": "subtopic",
+      "order": 91,
+      "summary": "The function stack (call stack) is the mechanism that tracks the execution of function calls. Each time a function is called, a new frame is pushed onto the stack; when it returns, the frame is popped. Scope determines which variables are accessible at each point in the call stack, and closures preserve access to variables from outer scopes.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Function stack (call stack) - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Call_stack"
+        },
+        {
+          "type": "article",
+          "title": "Kinds of Scope - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Scope"
+        }
+      ],
+      "parents": [
+        "functions"
+      ],
+      "children": [
+        "recursion",
+        "lexicalScoping",
+        "closures"
+      ]
+    },
+    "domApis": {
+      "title": "DOM APIs",
+      "sourceId": "bhuGtcyqPFKu-900aESYz",
+      "type": "topic",
+      "order": 92,
+      "summary": "With HTML DOM, JavaScript can access and change all the elements of an HTML document such as its attributes, CSS styles, remove elements, add and create new elements on the page. Web API means application programming interface for the web. All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data. Like Geo-location API, Web Storage, Web History and others.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "DOM- MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "closures": {
+      "title": "Closures",
+      "sourceId": "itS6B12I8I1KNCPvc0KCQ",
+      "type": "subtopic",
+      "order": 93,
+      "summary": "Function closures are one of the most powerful, yet most misunderstood, concepts of JavaScript that are actually really simple to understand. A closure refers to a function along with its lexical environment. It is essentially what allows us to return a function `A`, from another function `B`, that remembers the local variables defined in `B`, even after `B` exits. The idea of closures is employed in nearly every other JavaScript program, hence, it's paramount for a JavaScript developer to know it really well.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Closures - The Simplest Explanation",
+          "url": "https://www.codeguage.com/courses/js/functions-closures"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Closures Explained in 3 Minutes",
+          "url": "https://medium.com/learning-new-stuff/javascript-closures-explained-in-3-minutes-5aae8dce2014"
+        }
+      ],
+      "parents": [
+        "scopeFunctionStack"
+      ],
+      "children": []
+    },
+    "builtInFunctions": {
+      "title": "Built-in Functions",
+      "sourceId": "s8wUJivWmetysJ8bt9FBC",
+      "type": "subtopic",
+      "order": 94,
+      "summary": "JavaScript offers a variety of built-in functions that simplify common tasks, available globally or within specific objects without requiring explicit definition. Functions like parseInt(), setTimeout(), and Math.random() can be used directly, while objects like Array, String, and Date include built-in methods for efficient data manipulation. Understanding these functions enhances development by leveraging JavaScript\u2019s core features without reinventing the wheel.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Built-in Functions",
+          "url": "https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm"
+        },
+        {
+          "type": "article",
+          "title": "Built-in Methods in Javascript",
+          "url": "https://dev.to/elpepebenitez/built-in-methods-in-javascript-4bll"
+        },
+        {
+          "type": "article",
+          "title": "Built-in Functions:",
+          "url": "https://www.tutorialride.com/javascript/javascript-built-in-functions.htm"
+        }
+      ],
+      "parents": [
+        "functions"
+      ],
+      "children": []
+    },
+    "inAMethod": {
+      "title": "in a method",
+      "sourceId": "3E5MuxPvEJU-dwgTrbQAR",
+      "type": "subtopic",
+      "order": 95,
+      "summary": "Methods are properties of an object which are functions. The value of this inside a method is equal to the calling object. In simple words, this value is the object \u201cbefore dot\u201d, the one used to call the method.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "this in methods",
+          "url": "https://javascript.info/object-methods#this-in-methods"
+        }
+      ],
+      "parents": [
+        "usingThisKeyword"
+      ],
+      "children": []
+    },
+    "strictMode": {
+      "title": "Strict Mode",
+      "sourceId": "Xw8lb0xCWKmNs4KZfhBUy",
+      "type": "topic",
+      "order": 96,
+      "summary": "Strict mode is an opt-in variant of JavaScript that enforces stricter parsing and error handling. It is enabled by adding `\"use strict\"` at the top of a file or function. Strict mode prevents the use of undeclared variables, disallows duplicate parameter names, and makes `this` undefined in functions called without a context, among other restrictions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Strict mode",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode"
+        },
+        {
+          "type": "article",
+          "title": "Strict mode in JavaScript",
+          "url": "https://javascript.info/strict-mode"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "callbackHell": {
+      "title": "Callback Hell",
+      "sourceId": "PJSdqvh5OBwPCNpn3q_S5",
+      "type": "subtopic",
+      "order": 97,
+      "summary": "The callback hell is when we try to write asynchronous JavaScript in a way where execution happens visually from top to bottom, creating a code that has a pyramid shape with many **})** at the end.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Callbacks in Callbacks - Pyramid of Doom",
+          "url": "https://javascript.info/callbacks#pyramid-of-doom"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "callbacks"
+      ]
+    },
+    "eventLoop": {
+      "title": "Event Loop",
+      "sourceId": "_bs5NNHVdHLWGBmpYwHMi",
+      "type": "subtopic",
+      "order": 98,
+      "summary": "The Event Loop is one of the most important aspects to understand about Node.js. Why is this so important? Because it explains how Node.js can be asynchronous and have non-blocking I/O, it explains the \"killer feature\" of Node.js, which made it this successful.",
+      "video": {
+        "title": "What the heck is the event loop anyway?",
+        "url": "https://www.youtube.com/watch?v=8aGhZQkoFbQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Node.Js Event Loop",
+          "url": "https://nodejs.org/learn/asynchronous-work/event-loop-timers-and-nexttick"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Visualized: Event Loop",
+          "url": "https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif"
+        }
+      ],
+      "parents": [
+        "asynchronousJavascript"
+      ],
+      "children": []
+    },
+    "inAFunction": {
+      "title": "in a function",
+      "sourceId": "azsXq6Y5iCvQDgTWZpWQ3",
+      "type": "subtopic",
+      "order": 99,
+      "summary": "When a function is called as a method of an object, `this` refers to the object before the dot. For example, in `user.greet()`, `this` inside `greet` refers to `user`. This is the most intuitive use of `this`.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "usingThisKeyword"
+      ],
+      "children": []
+    },
+    "callbacks": {
+      "title": "Callbacks",
+      "sourceId": "D8oGY7pdviRByaz6c9sU6",
+      "type": "subtopic",
+      "order": 100,
+      "summary": "A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Callbacks in JavaScript",
+          "url": "https://javascript.info/callbacks"
+        },
+        {
+          "type": "article",
+          "title": "Callback Functions",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Callback_function"
+        }
+      ],
+      "parents": [
+        "callbackHell",
+        "asynchronousJavascript"
+      ],
+      "children": []
+    },
+    "usingItAlone": {
+      "title": "using it alone",
+      "sourceId": "qps2Mdm-lwa4Wr0IxKm0C",
+      "type": "subtopic",
+      "order": 101,
+      "summary": "When `this` is used outside any function, it refers to the global object. In a browser, that is `window`. In Node.js at the top level of a module, `this` refers to `module.exports`. This usage is rarely needed in application code.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "usingThisKeyword"
+      ],
+      "children": []
+    },
+    "usingThisKeyword": {
+      "title": "Using (this) keyword",
+      "sourceId": "fm2CuL1IZp3hnrLrPUX7U",
+      "type": "topic",
+      "order": 102,
+      "summary": "The `this` keyword refers to the object that is currently executing the code. Its value depends on how and where a function is called, not where it is defined (except in arrow functions). Understanding `this` is one of the more complex aspects of JavaScript.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "This Keyword",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "functionBorrowing",
+        "explicitBinding",
+        "inAMethod",
+        "inAFunction",
+        "usingItAlone",
+        "inEventHandlers",
+        "inArrowFunctions",
+        "asynchronousJavascript"
+      ]
+    },
+    "asynchronousJavascript": {
+      "title": "Asynchronous JavaScript",
+      "sourceId": "sFOqx6_7poVIVuXhJVY0E",
+      "type": "topic",
+      "order": 103,
+      "summary": "Asynchronous JavaScript allows code to start long-running operations, like network requests or timers, and continue executing other code while waiting for them to complete. JavaScript is single-threaded, so asynchronous patterns prevent the main thread from blocking. The main mechanisms are callbacks, Promises, and async/await.",
+      "video": {
+        "title": "What The Hack is Event Loop and Asynchronous JavaScript - JSConf",
+        "url": "https://youtu.be/8aGhZQkoFbQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Asynchronous JavaScript - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing"
+        }
+      ],
+      "parents": [
+        "usingThisKeyword"
+      ],
+      "children": [
+        "eventLoop",
+        "settimeout",
+        "setinterval",
+        "callbacks",
+        "promises"
+      ]
+    },
+    "promises": {
+      "title": "Promises",
+      "sourceId": "yXSF5gGST7l2X-4z1g0d_",
+      "type": "subtopic",
+      "order": 104,
+      "summary": "Promises are a much better way to work with asynchronous code in JavaScript than the old and error-prone callback approach. They were introduced into JavaScript with ECMAScript 6. Using promises, we can manage extremely complex asynchronous code with rigorous error-handling setup, write code in a more or less synchronous style, and keep ourselves from running into the so-called callback hell.",
+      "video": {
+        "title": "JavaScript Promises - Visualized",
+        "url": "https://youtu.be/Xs1EMmBLpn4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "A Detailed Introduction to Promises",
+          "url": "https://www.codeguage.com/courses/advanced-js/promises-introduction"
+        }
+      ],
+      "parents": [
+        "asynchronousJavascript"
+      ],
+      "children": [
+        "asyncAwait"
+      ]
+    },
+    "inEventHandlers": {
+      "title": "in event handlers",
+      "sourceId": "JVbEBtVrTTFnTF3_yUIAC",
+      "type": "subtopic",
+      "order": 105,
+      "summary": "In an event handler attached to a DOM element, `this` refers to the element that received the event. For example, in a click handler, `this` is the button or element that was clicked. Arrow functions do not have their own `this`, so they inherit it from the surrounding scope instead.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "usingThisKeyword"
+      ],
+      "children": []
+    },
+    "functionBorrowing": {
+      "title": "Function Borrowing",
+      "sourceId": "EAN6DCiCfSq04R4vKgZ0q",
+      "type": "subtopic",
+      "order": 106,
+      "summary": "Function borrowing allows us to use the methods of one object on a different object without having to make a copy of that method and maintain it in two separate places. It is accomplished through the use of `.call()`, `.apply()`, or `.bind()`, all of which exist to explicitly set this on the method we are borrowing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Function borrowing",
+          "url": "https://medium.com/@ensallee/function-borrowing-in-javascript-4bd671e9d7b4"
+        },
+        {
+          "type": "article",
+          "title": "When would I use function borrowing",
+          "url": "https://stackoverflow.com/questions/69892281/when-would-i-use-function-borrowing"
+        }
+      ],
+      "parents": [
+        "usingThisKeyword"
+      ],
+      "children": []
+    },
+    "settimeout": {
+      "title": "setTimeout",
+      "sourceId": "wXypuqEmFLIubx-QQvDIr",
+      "type": "subtopic",
+      "order": 107,
+      "summary": "`setTimeout()` schedules a function to run after a specified delay in milliseconds. It is asynchronous: the rest of the code continues executing while the timer runs. It returns an ID that can be used with `clearTimeout()` to cancel the scheduled execution.",
+      "video": {
+        "title": "setInterval and setTimeout: timing events",
+        "url": "https://www.youtube.com/watch?v=kOcFZV3c75I"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout"
+        }
+      ],
+      "parents": [
+        "asynchronousJavascript"
+      ],
+      "children": []
+    },
+    "inArrowFunctions": {
+      "title": "in arrow functions",
+      "sourceId": "P0190rTm2wLQmCzWOKour",
+      "type": "subtopic",
+      "order": 108,
+      "summary": "Arrow functions do not have their own `this` binding. Instead, they inherit `this` from the lexical scope where they were defined. This makes arrow functions predictable in callbacks and event handlers where regular functions would lose their intended `this` context.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "this keyword and arrow function",
+          "url": "https://stackoverflow.com/questions/66518020/javascript-this-keyword-and-arrow-function"
+        }
+      ],
+      "parents": [
+        "usingThisKeyword"
+      ],
+      "children": []
+    },
+    "asyncAwait": {
+      "title": "async/await",
+      "sourceId": "Dn872mgexmxoLtbkIgIgz",
+      "type": "subtopic",
+      "order": 109,
+      "summary": "`async/await` is a special syntax to work with promises in a more comfortable fashion. We use `async` keyword to declare a async function that return a Promise, and the `await` keyword makes a function wait for a Promise.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Async/await",
+          "url": "https://javascript.info/async-await"
+        },
+        {
+          "type": "article",
+          "title": "async function",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Promises - Chaining",
+          "url": "https://www.codeguage.com/courses/advanced-js/promises-chaining"
+        }
+      ],
+      "parents": [
+        "promises"
+      ],
+      "children": []
+    },
+    "explicitBinding": {
+      "title": "Explicit Binding",
+      "sourceId": "p2NhSwPYMtRiPRHjPaqmX",
+      "type": "subtopic",
+      "order": 110,
+      "summary": "Explicit binding is when you use the `call` or `apply` methods to explicitly set the value of `this` in a function. Explicit Binding can be applied using `call()`, `apply()`, and `bind()`.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Explicit Binding",
+          "url": "https://medium.com/swlh/javascript-this-ac28f8e0f65d"
+        },
+        {
+          "type": "article",
+          "title": "Explicit Binding rule for this keyword",
+          "url": "https://medium.com/@msinha2801/explicit-binding-rule-for-this-keyword-in-js-712405b0a11"
+        }
+      ],
+      "parents": [
+        "usingThisKeyword"
+      ],
+      "children": []
+    },
+    "setinterval": {
+      "title": "setInterval",
+      "sourceId": "jaC3XXudd7OBKwwCpoPFf",
+      "type": "subtopic",
+      "order": 111,
+      "summary": "`setInterval()` repeatedly executes a function at a specified interval in milliseconds. It continues until `clearInterval()` is called with the returned ID. It is used for polling, animations, and periodic tasks, though `requestAnimationFrame` is preferred for visual updates.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Scheduling: setTimeout and setInterval",
+          "url": "https://javascript.info/settimeout-setinterval"
+        }
+      ],
+      "parents": [
+        "asynchronousJavascript"
+      ],
+      "children": []
+    },
+    "xmlhttprequest": {
+      "title": "XMLHTTPRequest",
+      "sourceId": "LiuhBE7dIlkoWkthSoCsa",
+      "type": "subtopic",
+      "order": 112,
+      "summary": "`XMLHttpRequest` (XHR) is a built-in browser object that can be used to interact with server. XHR allows you to update data without having to reload a web page. Despite the word XML in its name, XHR not only used to retrieve data with XML format, we can use it with any type of data, like JSON, file(s), and much more.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Using XMLHttpRequest",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest"
+        },
+        {
+          "type": "article",
+          "title": "Network request - XMLHttpRequest",
+          "url": "https://javascript.info/xmlhttprequest"
+        }
+      ],
+      "parents": [
+        "workingWithApis"
+      ],
+      "children": []
+    },
+    "commonjs": {
+      "title": "CommonJS",
+      "sourceId": "4EXeGkOpfAViB9Uo4zL6O",
+      "type": "subtopic",
+      "order": 113,
+      "summary": "CommonJS modules are the original way to package JavaScript code for Node.js. Node.js also supports the ESModules standard used by browsers and other JavaScript run-times, but CJS is still widely used in backend Node.js applications. Sometimes these modules will be written with a .cjs extension.",
+      "video": {
+        "title": "How to Import and Export Modules in CJS",
+        "url": "https://www.youtube.com/watch?v=XTND4rjATXA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "How the CJS Module System Works",
+          "url": "https://blog.risingstack.com/node-js-at-scale-module-system-commonjs-require/"
+        }
+      ],
+      "parents": [
+        "modulesInJavascript"
+      ],
+      "children": []
+    },
+    "call": {
+      "title": "call",
+      "sourceId": "gsyY3Oa3Jf0W5K_lyqBYO",
+      "type": "subtopic",
+      "order": 114,
+      "summary": "The `call()` method allows you to invoke a function with a given `this` value, and arguments provided individually.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Call Method - MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call"
+        }
+      ],
+      "parents": [
+        "iteratorsAndGenerators"
+      ],
+      "children": []
+    },
+    "apply": {
+      "title": "apply",
+      "sourceId": "-BtF34cEzI6J8sZCDRlRE",
+      "type": "subtopic",
+      "order": 115,
+      "summary": "The apply() method of Function instances calls this function with a given this value, and arguments provided as an array (or an array-like object).",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "apply() - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply"
+        }
+      ],
+      "parents": [
+        "iteratorsAndGenerators"
+      ],
+      "children": []
+    },
+    "bind": {
+      "title": "bind",
+      "sourceId": "dbercnxXVTJXMpYSDNGb2",
+      "type": "subtopic",
+      "order": 116,
+      "summary": "The `bind()` method in JavaScript allows you to create a new function with a specific context and optionally preset arguments. Unlike `call()` or `apply()`, `bind()` does not immediately invoke the function. Instead, it returns a new function that can be called later, either as a regular function or with additional arguments. This is particularly useful when you want to ensure that a function retains a specific context, regardless of how or when it's invoked.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "bind()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind"
+        },
+        {
+          "type": "article",
+          "title": "Function binding",
+          "url": "https://javascript.info/bind"
+        }
+      ],
+      "parents": [
+        "classes"
+      ],
+      "children": []
+    },
+    "fetch": {
+      "title": "Fetch",
+      "sourceId": "kL5rfWxXe4J44ENru1uJS",
+      "type": "subtopic",
+      "order": 117,
+      "summary": "The `fetch()` method in JavaScript is used to request to the server and load the information on the webpages. The request can be of any APIs that return the data of the format JSON or XML. This method returns a promise.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Fetch MDN Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+        },
+        {
+          "type": "article",
+          "title": "Network request - Fetch",
+          "url": "https://javascript.info/fetch"
+        },
+        {
+          "type": "article",
+          "title": "Abort a fetch request manually in JavaScript",
+          "url": "https://www.amitmerchant.com/abort-fetch-request-manually-in-javascript/"
+        }
+      ],
+      "parents": [
+        "workingWithApis"
+      ],
+      "children": []
+    },
+    "esm": {
+      "title": "ESM",
+      "sourceId": "jLNmYeo20Mbu4WRvVgvwU",
+      "type": "subtopic",
+      "order": 118,
+      "summary": "ESModules is a standard that was introduced with ES6 (2015). The idea was to standardize how JS modules work and implement these features in browsers. This standard is widely used with frontend frameworks such as react and can also be used in the backend with Node.js. Sometimes these modules will be written with a .mjs extension.",
+      "video": {
+        "title": "JavaScript ES6 Modules Simplified",
+        "url": "https://www.youtube.com/watch?v=cRHQNNcYf6s"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Full ESM module overview from MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules"
+        },
+        {
+          "type": "article",
+          "title": "Full ESM module overview from js.info",
+          "url": "https://javascript.info/modules"
+        },
+        {
+          "type": "article",
+          "title": "Node.js documentation for ESModules",
+          "url": "https://nodejs.org/api/esm.html"
+        }
+      ],
+      "parents": [
+        "modulesInJavascript"
+      ],
+      "children": []
+    },
+    "modulesInJavascript": {
+      "title": "Modules in JavaScript",
+      "sourceId": "hLnJlwnECFbVMeFpH0M5Q",
+      "type": "topic",
+      "order": 119,
+      "summary": "Modules encapsulate all sorts of code like functions and variables and expose all this to other files. Generally, we use it to break our code into separate files to make it more maintainable. They were introduced into JavaScript with ECMAScript 6.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Modules, introduction",
+          "url": "https://javascript.info/modules-intro"
+        },
+        {
+          "type": "article",
+          "title": "Export and Import",
+          "url": "https://javascript.info/import-export"
+        },
+        {
+          "type": "article",
+          "title": "Dynamic imports",
+          "url": "https://javascript.info/modules-dynamic-imports"
+        }
+      ],
+      "parents": [
+        "iteratorsAndGenerators"
+      ],
+      "children": [
+        "commonjs",
+        "esm",
+        "memoryManagement"
+      ]
+    },
+    "iteratorsAndGenerators": {
+      "title": "Iterators and Generators",
+      "sourceId": "TZ8XGdykSJjKBjX6Nivwo",
+      "type": "topic",
+      "order": 120,
+      "summary": "Iterators and generators, introduced into JavaScript with ECMAScript 6, represent an extremely useful concept related to iteration in the language. Iterators are objects, abiding by the iterator protocol, that allows us to easily iterate over a given sequence in various ways, such as using the `for...of` loop. Generators, on the other hand, allow us to use functions and the `yield` keyword to easily define iterable sequences that are iterators as well.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to Iterators - Advanced JavaScript",
+          "url": "https://www.codeguage.com/courses/advanced-js/iteration-introduction"
+        },
+        {
+          "type": "article",
+          "title": "A Detailed Discussion on Iterators - Advanced JavaScript",
+          "url": "https://www.codeguage.com/courses/advanced-js/iteration-iterators"
+        },
+        {
+          "type": "article",
+          "title": "What Exactly Are Generators? - Advanced JavaScript",
+          "url": "https://www.codeguage.com/courses/advanced-js/iteration-generators"
+        }
+      ],
+      "parents": [
+        "classes"
+      ],
+      "children": [
+        "call",
+        "apply",
+        "modulesInJavascript"
+      ]
+    },
+    "classes": {
+      "title": "Classes",
+      "sourceId": "F_Lrj0F7UXriqJ0mhwxCy",
+      "type": "topic",
+      "order": 121,
+      "summary": "Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but have some syntax and semantics that are not shared with ES5 class-like semantics.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Classes in JavaScript",
+          "url": "https://javascript.info/classes"
+        },
+        {
+          "type": "article",
+          "title": "JavaScript Classes",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+        }
+      ],
+      "parents": [
+        "workingWithApis"
+      ],
+      "children": [
+        "bind",
+        "iteratorsAndGenerators"
+      ]
+    },
+    "workingWithApis": {
+      "title": "Working with APIs",
+      "sourceId": "q6vciQb_Jk-Up16Pk5NeE",
+      "type": "topic",
+      "order": 122,
+      "summary": "When working with remote APIs, you need a way to interact with those APIs. Modern JavaScript provides two native ways to send HTTP requests to remote servers, `XMLHttpRequest` and `Fetch`.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated API Design Roadmap",
+          "url": "https://roadmap.sh/api-design"
+        },
+        {
+          "type": "article",
+          "title": "Fetching data from the server",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data"
+        },
+        {
+          "type": "article",
+          "title": "XMLHttpRequest",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest"
+        },
+        {
+          "type": "article",
+          "title": "Fetch API",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "xmlhttprequest",
+        "classes",
+        "fetch"
+      ]
+    },
+    "memoryManagement": {
+      "title": "Memory Management",
+      "sourceId": "MatU4SthAAhByJ40XdZQn",
+      "type": "topic",
+      "order": 123,
+      "summary": "Low-level languages like C, have manual memory management primitives such as `malloc()` and `free()`. In contrast, JavaScript automatically allocates memory when objects are created and frees it when they are not used anymore (garbage collection). This automaticity is a potential source of confusion: it can give developers the false impression that they don't need to worry about memory management.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Garbage Collection",
+          "url": "https://javascript.info/garbage-collection"
+        },
+        {
+          "type": "article",
+          "title": "Memory Management in JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management"
+        }
+      ],
+      "parents": [
+        "modulesInJavascript"
+      ],
+      "children": [
+        "garbageCollection",
+        "memoryLifecycle",
+        "usingBrowserDevtools"
+      ]
+    },
+    "usingBrowserDevtools": {
+      "title": "Using Browser DevTools",
+      "sourceId": "rc5WzBBOm2cus-rQl8EOE",
+      "type": "topic",
+      "order": 124,
+      "summary": "Browser DevTools are the built-in developer tools available in browsers like Chrome and Firefox. They provide tools for inspecting HTML and CSS, debugging JavaScript, analyzing network requests, profiling performance, and detecting memory leaks. DevTools are the primary environment for diagnosing and fixing issues in web applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Official Docs",
+          "url": "https://developer.chrome.com/docs/devtools/"
+        },
+        {
+          "type": "official",
+          "title": "Debug JavaScript with Chrome Dev Tools",
+          "url": "https://developer.chrome.com/docs/devtools/javascript/"
+        }
+      ],
+      "parents": [
+        "memoryManagement"
+      ],
+      "children": [
+        "debuggingIssues",
+        "debuggingMemoryLeaks",
+        "debuggingPerformance",
+        "haveALookAtTheFollowingRelatedRoadmaps"
+      ]
+    },
+    "debuggingIssues": {
+      "title": "Debugging Issues",
+      "sourceId": "dhEtcgv7G9fNV-AUNJdWk",
+      "type": "subtopic",
+      "order": 125,
+      "summary": "The browser DevTools debugger allows developers to set breakpoints, step through code, inspect variable values, and trace the call stack. The console allows logging values and evaluating expressions in the current scope. These tools make it possible to understand what code is doing at runtime and identify the source of bugs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Debugging JavaScript in the sources panel",
+          "url": "https://developer.chrome.com/docs/devtools/javascript/"
+        }
+      ],
+      "parents": [
+        "usingBrowserDevtools"
+      ],
+      "children": []
+    },
+    "debuggingMemoryLeaks": {
+      "title": "Debugging Memory Leaks",
+      "sourceId": "BA_ArmZMnVMaL_zl3W3Pt",
+      "type": "subtopic",
+      "order": 126,
+      "summary": "In JavaScript, memory leaks commonly occur within heap allocated memory, where short lived objects are attached to long lived ones and the Garbage Collector cannot safely de-allocate that memory as it is still referenced from the root set (the global object).",
+      "video": {
+        "title": "JavaScript Memory Leaks Visualized and How To Fix Them",
+        "url": "https://youtu.be/IkoGmbNJolo"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Catching memory leaks with Chrome DevTools",
+          "url": "https://medium.com/coding-blocks/catching-memory-leaks-with-chrome-devtools-57b03acb6bb9"
+        },
+        {
+          "type": "article",
+          "title": "Effective Javascript Debugging",
+          "url": "https://medium.com/swlh/effective-javascript-debugging-memory-leaks-75059b2436f6"
+        },
+        {
+          "type": "article",
+          "title": "Debugging JavaScript memory leaks",
+          "url": "https://www.debugbear.com/blog/debugging-javascript-memory-leaks"
+        }
+      ],
+      "parents": [
+        "usingBrowserDevtools"
+      ],
+      "children": []
+    },
+    "memoryLifecycle": {
+      "title": "Memory Lifecycle",
+      "sourceId": "ZR2WfH1cerA-V_kaPwRvm",
+      "type": "subtopic",
+      "order": 127,
+      "summary": "The memory lifecycle has three stages: allocation (memory is reserved when a value is created), use (memory is read and written during execution), and release (memory is freed when it is no longer reachable). In JavaScript, allocation happens implicitly, and release is handled by the garbage collector.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "MDN docs - Memory Management",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management"
+        },
+        {
+          "type": "article",
+          "title": "Lifecycle in Memory Management",
+          "url": "https://medium.com/swlh/the-lifecycle-of-memory-in-javascript-5b5bffc5ff4c"
+        }
+      ],
+      "parents": [
+        "memoryManagement"
+      ],
+      "children": []
+    },
+    "debuggingPerformance": {
+      "title": "Debugging Performance",
+      "sourceId": "ECxISKUAU7js_JsfSHzud",
+      "type": "subtopic",
+      "order": 128,
+      "summary": "Enter the dev tools and check out the Lighthouse tab. This is essentially a series of tests that analyses the currently open website on a bunch of metrics related to performance, page speed, accessibility, etc. Feel free to run the tests by clicking the **Analyze Page Load** button (you might want to do this in an incognito tab to avoid errors arising from extensions you're using). Once you have the results, take your time and read through them (and do click through to the reference pages mentioned alongside each test result to know more about it!)",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Analyze runtime performance",
+          "url": "https://developer.chrome.com/docs/devtools/performance"
+        }
+      ],
+      "parents": [
+        "usingBrowserDevtools"
+      ],
+      "children": []
+    },
+    "garbageCollection": {
+      "title": "Garbage Collection",
+      "sourceId": "KKyX8N4lTgN0w-Khm6Ztq",
+      "type": "subtopic",
+      "order": 129,
+      "summary": "Memory management in JavaScript is performed automatically and invisibly to us. We create primitives, objects, functions\u2026 All that takes memory. The main concept of memory management in JavaScript is reachability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "JavaScript Garbage Collection",
+          "url": "https://javascript.info/garbage-collection"
+        },
+        {
+          "type": "article",
+          "title": "Memory Management in JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management"
+        }
+      ],
+      "parents": [
+        "memoryManagement"
+      ],
+      "children": []
+    },
+    "haveALookAtTheFollowingRelatedRoadmaps": {
+      "title": "Have a look at the following related roadmaps",
+      "sourceId": "GV_zWF6rSWg5bqgiXhOEf",
+      "type": "paragraph",
+      "order": 130,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "usingBrowserDevtools"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "introductionToJavascript",
+      "to": "whatIsJavascript",
+      "style": "dashed"
+    },
+    {
+      "from": "introductionToJavascript",
+      "to": "historyOfJavascript",
+      "style": "dashed"
+    },
+    {
+      "from": "introductionToJavascript",
+      "to": "javascriptVersions",
+      "style": "dashed"
+    },
+    {
+      "from": "introductionToJavascript",
+      "to": "howToRunJavascript",
+      "style": "dashed"
+    },
+    {
+      "from": "javascript",
+      "to": "introductionToJavascript",
+      "style": "solid"
+    },
+    {
+      "from": "allAboutVariables",
+      "to": "variableScopes",
+      "style": "dashed"
+    },
+    {
+      "from": "allAboutVariables",
+      "to": "variableNamingRules",
+      "style": "dashed"
+    },
+    {
+      "from": "allAboutVariables",
+      "to": "hoisting",
+      "style": "dashed"
+    },
+    {
+      "from": "allAboutVariables",
+      "to": "variableDeclarations",
+      "style": "dashed"
+    },
+    {
+      "from": "allAboutVariables",
+      "to": "dataTypes",
+      "style": "solid"
+    },
+    {
+      "from": "dataTypes",
+      "to": "object",
+      "style": "dashed"
+    },
+    {
+      "from": "dataTypes",
+      "to": "typeofOperator",
+      "style": "dashed"
+    },
+    {
+      "from": "object",
+      "to": "builtInObjects",
+      "style": "dashed"
+    },
+    {
+      "from": "dataTypes",
+      "to": "typeCasting",
+      "style": "solid"
+    },
+    {
+      "from": "typeCasting",
+      "to": "typeConversionVsCoercion",
+      "style": "dashed"
+    },
+    {
+      "from": "typeCasting",
+      "to": "implicitTypeCasting",
+      "style": "dashed"
+    },
+    {
+      "from": "typeCasting",
+      "to": "explicitTypeCasting",
+      "style": "dashed"
+    },
+    {
+      "from": "dataStructures",
+      "to": "keyedCollections",
+      "style": "dashed"
+    },
+    {
+      "from": "keyedCollections",
+      "to": "map",
+      "style": "dashed"
+    },
+    {
+      "from": "keyedCollections",
+      "to": "weakMap",
+      "style": "dashed"
+    },
+    {
+      "from": "keyedCollections",
+      "to": "set",
+      "style": "dashed"
+    },
+    {
+      "from": "keyedCollections",
+      "to": "weakSet",
+      "style": "dashed"
+    },
+    {
+      "from": "typeCasting",
+      "to": "dataStructures",
+      "style": "solid"
+    },
+    {
+      "from": "dataStructures",
+      "to": "indexedCollections",
+      "style": "dashed"
+    },
+    {
+      "from": "indexedCollections",
+      "to": "typedArrays",
+      "style": "dashed"
+    },
+    {
+      "from": "indexedCollections",
+      "to": "arrays",
+      "style": "dashed"
+    },
+    {
+      "from": "dataStructures",
+      "to": "equalityComparisons",
+      "style": "solid"
+    },
+    {
+      "from": "equalityComparisons",
+      "to": "loopsAndIterations",
+      "style": "solid"
+    },
+    {
+      "from": "controlFlow",
+      "to": "conditionalStatements",
+      "style": "dashed"
+    },
+    {
+      "from": "controlFlow",
+      "to": "exceptionalHandling",
+      "style": "dashed"
+    },
+    {
+      "from": "exceptionalHandling",
+      "to": "throwStatement",
+      "style": "dashed"
+    },
+    {
+      "from": "controlFlow",
+      "to": "expressionsOperators",
+      "style": "solid"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "conditionalOperators",
+      "style": "dashed"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "commaOperators",
+      "style": "dashed"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "unaryOperators",
+      "style": "dashed"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "assignmentOperators",
+      "style": "dashed"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "comparisonOperators",
+      "style": "dashed"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "arithmeticOperators",
+      "style": "dashed"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "bitwiseOperators",
+      "style": "dashed"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "logicalOperators",
+      "style": "dashed"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "bigintOperators",
+      "style": "dashed"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "stringOperators",
+      "style": "dashed"
+    },
+    {
+      "from": "functions",
+      "to": "functionParameters",
+      "style": "dashed"
+    },
+    {
+      "from": "functions",
+      "to": "arrowFunctions",
+      "style": "dashed"
+    },
+    {
+      "from": "functions",
+      "to": "iifes",
+      "style": "dashed"
+    },
+    {
+      "from": "functions",
+      "to": "argumentsObject",
+      "style": "dashed"
+    },
+    {
+      "from": "functions",
+      "to": "scopeFunctionStack",
+      "style": "dashed"
+    },
+    {
+      "from": "functions",
+      "to": "builtInFunctions",
+      "style": "dashed"
+    },
+    {
+      "from": "scopeFunctionStack",
+      "to": "recursion",
+      "style": "dashed"
+    },
+    {
+      "from": "scopeFunctionStack",
+      "to": "lexicalScoping",
+      "style": "dashed"
+    },
+    {
+      "from": "scopeFunctionStack",
+      "to": "closures",
+      "style": "dashed"
+    },
+    {
+      "from": "usingThisKeyword",
+      "to": "inAMethod",
+      "style": "dashed"
+    },
+    {
+      "from": "usingThisKeyword",
+      "to": "inAFunction",
+      "style": "dashed"
+    },
+    {
+      "from": "usingThisKeyword",
+      "to": "usingItAlone",
+      "style": "dashed"
+    },
+    {
+      "from": "usingThisKeyword",
+      "to": "inEventHandlers",
+      "style": "dashed"
+    },
+    {
+      "from": "usingThisKeyword",
+      "to": "inArrowFunctions",
+      "style": "dashed"
+    },
+    {
+      "from": "usingThisKeyword",
+      "to": "asynchronousJavascript",
+      "style": "solid"
+    },
+    {
+      "from": "callbackHell",
+      "to": "callbacks",
+      "style": "dashed"
+    },
+    {
+      "from": "promises",
+      "to": "asyncAwait",
+      "style": "dashed"
+    },
+    {
+      "from": "asynchronousJavascript",
+      "to": "callbacks",
+      "style": "dashed"
+    },
+    {
+      "from": "asynchronousJavascript",
+      "to": "promises",
+      "style": "dashed"
+    },
+    {
+      "from": "workingWithApis",
+      "to": "classes",
+      "style": "solid"
+    },
+    {
+      "from": "classes",
+      "to": "iteratorsAndGenerators",
+      "style": "solid"
+    },
+    {
+      "from": "iteratorsAndGenerators",
+      "to": "modulesInJavascript",
+      "style": "solid"
+    },
+    {
+      "from": "modulesInJavascript",
+      "to": "esm",
+      "style": "dashed"
+    },
+    {
+      "from": "modulesInJavascript",
+      "to": "memoryManagement",
+      "style": "solid"
+    },
+    {
+      "from": "workingWithApis",
+      "to": "fetch",
+      "style": "dashed"
+    },
+    {
+      "from": "memoryManagement",
+      "to": "memoryLifecycle",
+      "style": "dashed"
+    },
+    {
+      "from": "memoryManagement",
+      "to": "usingBrowserDevtools",
+      "style": "solid"
+    },
+    {
+      "from": "usingBrowserDevtools",
+      "to": "debuggingIssues",
+      "style": "dashed"
+    },
+    {
+      "from": "usingBrowserDevtools",
+      "to": "debuggingMemoryLeaks",
+      "style": "dashed"
+    },
+    {
+      "from": "usingBrowserDevtools",
+      "to": "debuggingPerformance",
+      "style": "dashed"
+    },
+    {
+      "from": "usingBrowserDevtools",
+      "to": "haveALookAtTheFollowingRelatedRoadmaps",
+      "style": "solid"
+    },
+    {
+      "from": "allAboutVariables",
+      "to": "objectPrototype",
+      "style": "solid"
+    },
+    {
+      "from": "allAboutVariables",
+      "to": "prototypalInheritance",
+      "style": "solid"
+    },
+    {
+      "from": "dataTypes",
+      "to": "undefined",
+      "style": "solid"
+    },
+    {
+      "from": "dataTypes",
+      "to": "number",
+      "style": "solid"
+    },
+    {
+      "from": "dataTypes",
+      "to": "bigint",
+      "style": "solid"
+    },
+    {
+      "from": "dataTypes",
+      "to": "boolean",
+      "style": "solid"
+    },
+    {
+      "from": "dataTypes",
+      "to": "null",
+      "style": "solid"
+    },
+    {
+      "from": "dataStructures",
+      "to": "json",
+      "style": "solid"
+    },
+    {
+      "from": "dataTypes",
+      "to": "symbol",
+      "style": "solid"
+    },
+    {
+      "from": "dataStructures",
+      "to": "structuredData",
+      "style": "solid"
+    },
+    {
+      "from": "equalityComparisons",
+      "to": "topic",
+      "style": "solid"
+    },
+    {
+      "from": "equalityComparisons",
+      "to": "topic2",
+      "style": "solid"
+    },
+    {
+      "from": "equalityComparisons",
+      "to": "objectIs",
+      "style": "solid"
+    },
+    {
+      "from": "loopsAndIterations",
+      "to": "for",
+      "style": "solid"
+    },
+    {
+      "from": "dataStructures",
+      "to": "breakContinue",
+      "style": "solid"
+    },
+    {
+      "from": "loopsAndIterations",
+      "to": "doWhile",
+      "style": "solid"
+    },
+    {
+      "from": "loopsAndIterations",
+      "to": "forOfLoop",
+      "style": "solid"
+    },
+    {
+      "from": "loopsAndIterations",
+      "to": "while",
+      "style": "solid"
+    },
+    {
+      "from": "loopsAndIterations",
+      "to": "forInLoop",
+      "style": "solid"
+    },
+    {
+      "from": "equalityAlgorithms",
+      "to": "islooselyequal",
+      "style": "solid"
+    },
+    {
+      "from": "equalityAlgorithms",
+      "to": "isstrictlyequal",
+      "style": "solid"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "samevaluezero",
+      "style": "solid"
+    },
+    {
+      "from": "loopsAndIterations",
+      "to": "ifElse",
+      "style": "solid"
+    },
+    {
+      "from": "loopsAndIterations",
+      "to": "switch",
+      "style": "solid"
+    },
+    {
+      "from": "expressionsOperators",
+      "to": "samevalue",
+      "style": "solid"
+    },
+    {
+      "from": "controlFlow",
+      "to": "defaultParams",
+      "style": "solid"
+    },
+    {
+      "from": "controlFlow",
+      "to": "rest",
+      "style": "solid"
+    },
+    {
+      "from": "controlFlow",
+      "to": "tryCatchFinally",
+      "style": "solid"
+    },
+    {
+      "from": "controlFlow",
+      "to": "errorObjects",
+      "style": "solid"
+    },
+    {
+      "from": "asynchronousJavascript",
+      "to": "eventLoop",
+      "style": "solid"
+    },
+    {
+      "from": "usingThisKeyword",
+      "to": "functionBorrowing",
+      "style": "solid"
+    },
+    {
+      "from": "asynchronousJavascript",
+      "to": "settimeout",
+      "style": "solid"
+    },
+    {
+      "from": "usingThisKeyword",
+      "to": "explicitBinding",
+      "style": "solid"
+    },
+    {
+      "from": "asynchronousJavascript",
+      "to": "setinterval",
+      "style": "solid"
+    },
+    {
+      "from": "workingWithApis",
+      "to": "xmlhttprequest",
+      "style": "solid"
+    },
+    {
+      "from": "modulesInJavascript",
+      "to": "commonjs",
+      "style": "solid"
+    },
+    {
+      "from": "iteratorsAndGenerators",
+      "to": "call",
+      "style": "solid"
+    },
+    {
+      "from": "iteratorsAndGenerators",
+      "to": "apply",
+      "style": "solid"
+    },
+    {
+      "from": "classes",
+      "to": "bind",
+      "style": "solid"
+    },
+    {
+      "from": "memoryManagement",
+      "to": "garbageCollection",
+      "style": "solid"
+    }
+  ]
+}

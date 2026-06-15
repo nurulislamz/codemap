@@ -1,0 +1,4251 @@
+{
+  "title": "LeetCode",
+  "summary": "Step-by-step guide to pass your coding interview",
+  "url": "https://roadmap.sh/leetcode",
+  "order": [
+    "whatIsLeetcode",
+    "python",
+    "javascript",
+    "c",
+    "java",
+    "ruby",
+    "go",
+    "whatAreCodingPatterns",
+    "scala",
+    "rust",
+    "pickALanguage",
+    "twoSum",
+    "validAnagram",
+    "arraysHashing",
+    "containsDuplicate",
+    "validPalindrome",
+    "groupAnagrams",
+    "3sum",
+    "topKFrequentElements",
+    "containerWithMostWater",
+    "moreExercises",
+    "trappingRainWater",
+    "twoPointers",
+    "twoSumIi",
+    "validParentheses",
+    "moreExercises2",
+    "minStack",
+    "stacks",
+    "dailyTemperatures",
+    "binarySearch",
+    "generateParentheses",
+    "searchInRotatedArray",
+    "largestRectangleInHist",
+    "minimumInRotatedArray",
+    "moreExercises3",
+    "kokoEatingBananas",
+    "binarySearch2",
+    "medianOfTwoArrays",
+    "bestTimeToBuyAndSell",
+    "moreExercises4",
+    "substringWithoutRepetition",
+    "slidingWindow",
+    "minimumWindowSubstring",
+    "reverseLinkedList",
+    "characterReplacement",
+    "mergeTwoSortedLists",
+    "slidingWindowMaximum",
+    "linkedListCycle",
+    "moreExercises5",
+    "reorderList",
+    "linkedList",
+    "mergeKSortedLists",
+    "binaryTreeLevelOrder",
+    "moreExercises6",
+    "maximumDepthOfBinaryTree",
+    "lowestCommonAncestor",
+    "trees",
+    "kthLargestElementInAnArray",
+    "binaryTreeMaximumPathSum",
+    "kClosestPointsToOrigin",
+    "serializeAndDeserialize",
+    "taskScheduler",
+    "moreExercises7",
+    "findMedianFromDataStream",
+    "heapPriorityQueue",
+    "mergeKSortedLists2",
+    "subsets",
+    "moreExercises8",
+    "combinationSum",
+    "permutations",
+    "backtracking",
+    "implementTrie",
+    "wordSearch",
+    "designAddAndSearchWords",
+    "nQueens",
+    "wordSearchIi",
+    "moreExercises9",
+    "longestCommonPrefix",
+    "tries",
+    "replaceWords",
+    "numberOfIslands",
+    "moreExercises10",
+    "cloneGraph",
+    "pacificAtlanticWaterFlow",
+    "graphs",
+    "networkDelayTime",
+    "courseSchedule",
+    "minCostToConnectAllPoints",
+    "wordLadder",
+    "cheapestFlightsWithinKStops",
+    "moreExercises11",
+    "swimInRisingWater",
+    "advancedGraphs",
+    "reconstructItinerary",
+    "climbingStairs",
+    "moreExercises12",
+    "houseRobber",
+    "1DDynamicProgramming",
+    "coinChange",
+    "uniquePaths",
+    "longestIncreasingSubsequ",
+    "longestCommonSubsequence",
+    "wordBreak",
+    "editDistance",
+    "moreExercises13",
+    "burstBalloons",
+    "2DDynamicProgramming",
+    "regularExpressionMatching",
+    "jumpGame",
+    "moreExercises14",
+    "jumpGameIi",
+    "greedy",
+    "gasStation",
+    "mergeIntervals",
+    "partitionLabels",
+    "insertInterval",
+    "nonOverlappingIntervals",
+    "nonOverlappingIntervals2",
+    "moreExercises15",
+    "meetingRooms",
+    "intervals",
+    "minIntervalToIncludeQuery",
+    "singleNumber",
+    "moreExercises16",
+    "numberOf1Bits",
+    "bitManipulation",
+    "countingBits",
+    "rotateImage",
+    "reverseBits",
+    "spiralMatrix",
+    "sumOfTwoIntegers",
+    "setMatrixZeroes",
+    "moreExercises17",
+    "happyNumber",
+    "mathGeometry",
+    "powXN",
+    "moreExercises18",
+    "continueLearningWithFollowingRelevantTracks"
+  ],
+  "topics": {
+    "whatIsLeetcode": {
+      "title": "What is LeetCode",
+      "sourceId": "DUZWC157r-xhcJZ__p8wQ",
+      "type": "topic",
+      "order": 1,
+      "summary": "LeetCode is an online platform with hundreds of coding problems used by software engineers to prepare for technical interviews. Companies like Google, Meta, Amazon, and Microsoft use similar problems in their hiring process to evaluate how candidates think through algorithmic challenges. You do not need to solve thousands of problems to be ready. What matters is understanding the patterns behind problems well enough to apply them to ones you have never seen before. LeetCode is the practice ground, not the goal.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "LeetCode",
+          "url": "https://leetcode.com/"
+        },
+        {
+          "type": "article",
+          "title": "What I Learned From LeetCode",
+          "url": "https://tenmilesquare.com/resources/software-development/what-i-learned-from-leetcode/"
+        }
+      ],
+      "parents": [
+        "leetcode"
+      ],
+      "children": []
+    },
+    "python": {
+      "title": "Python",
+      "sourceId": "BZvNEZjCNuHPg5SkX90bt",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "Python is the most popular language for LeetCode preparation and for good reason. Its syntax is concise, its built-in data structures like lists, dictionaries, and sets map directly to the structures you use in almost every problem, and the standard library includes a heap module and collections utilities that save significant time. Writing a sliding window or a DFS in Python requires far fewer lines than in most other languages. If you do not have a strong preference, Python is the recommended default for this roadmap.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Python Roadmap",
+          "url": "https://roadmap.sh/python"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "pickALanguage"
+      ]
+    },
+    "javascript": {
+      "title": "JavaScript",
+      "sourceId": "HVD9G3JlLBsAg111vQILj",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "JavaScript is a solid choice if you already use it professionally or are preparing for frontend-focused roles. Its array methods and object literals are expressive, and most algorithmic patterns translate naturally to it. The main limitation is that JavaScript lacks a built-in heap or priority queue, so you will need to implement one or use a library when heap problems arise. If you are comfortable with JavaScript and do not want to switch languages just for interviews, it is a perfectly valid choice.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated JavaScript Roadmap",
+          "url": "https://roadmap.sh/javascript"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "c": {
+      "title": "C++",
+      "sourceId": "IWmq4UFB5j6O3UJfarh1u",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "C++ is the language of choice for competitive programmers and is common in companies where raw performance matters, such as systems, gaming, or high-frequency trading. It has the fastest execution time of any commonly used interview language and gives you direct access to the standard template library, which includes a heap, set, map, and many other useful structures. The tradeoff is verbosity and the overhead of managing memory manually in some cases. If you are already proficient in C++, it is an excellent interview language. If you are starting from scratch, the learning curve is steep.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated C++ Roadmap",
+          "url": "https://roadmap.sh/cpp"
+        }
+      ],
+      "parents": [
+        "pickALanguage"
+      ],
+      "children": []
+    },
+    "java": {
+      "title": "Java",
+      "sourceId": "gjZZOwmYkXQHPfg9Ynz80",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Java is one of the most commonly used interview languages, especially at large companies with backend and enterprise codebases. Its type system is verbose but explicit, and the standard library is comprehensive with well-documented data structures including priority queues, linked lists, and tree maps. Java forces you to think about types and interfaces clearly, which can actually help structure your thinking on harder problems. The main downside for interview prep is boilerplate: simple operations require more lines than in Python or Ruby. If Java is your primary language, it is a strong and widely accepted choice.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Java Roadmap",
+          "url": "https://roadmap.sh/java"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "ruby": {
+      "title": "Ruby",
+      "sourceId": "XyRCXhZjQFcDNaUSNNQV-",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "Ruby is an expressive, readable language with clean syntax and strong built-in enumerable methods that make array and hash manipulation concise. It is less common in technical interviews than Python, JavaScript, or Java, but it is a valid choice if you use it professionally and are comfortable with it. One practical consideration is that Ruby solutions on LeetCode are sometimes slower than equivalent solutions in compiled languages, which can occasionally cause timeout issues on harder problems. Use Ruby if it is your strongest language, but be aware of this limitation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Ruby Roadmap",
+          "url": "https://roadmap.sh/ruby"
+        }
+      ],
+      "parents": [
+        "pickALanguage"
+      ],
+      "children": []
+    },
+    "go": {
+      "title": "Go",
+      "sourceId": "OkdM_PJge70j5tsjT2Esl",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Go is a statically typed, compiled language designed for simplicity and performance. It is increasingly popular in backend and infrastructure roles and is commonly used at companies like Uber, Cloudflare, and Docker. Its syntax is minimal, and its concurrency model is distinctive, but for LeetCode purposes, what matters is its straightforward standard library and fast execution. Go does not have a built-in generic data structure library as rich as Java or C++, so you will sometimes need to implement things like heaps from scratch using the container/heap interface. It is a good choice if Go is your day-to-day language.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Go Roadmap",
+          "url": "https://roadmap.sh/golang"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "whatAreCodingPatterns": {
+      "title": "What are coding patterns?",
+      "sourceId": "ScTtg57POE0kxlZFxYUCs",
+      "type": "topic",
+      "order": 9,
+      "summary": "Coding patterns are recurring problem-solving strategies that apply across many different problems. Instead of memorizing solutions, you learn to recognize the structure of a problem and match it to a pattern you already know. Once you internalize around fifteen to twenty patterns, you can approach most interview problems with a starting point rather than a blank page. This roadmap is organized around those patterns.",
+      "video": {
+        "title": "Data Structure and Algorithm Patterns for LeetCode Interviews",
+        "url": "https://www.youtube.com/watch?v=Z_c4byLrNBU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Don\u2019t Just LeetCode; Follow the Coding Patterns Instead",
+          "url": "https://levelup.gitconnected.com/dont-just-leetcode-follow-the-coding-patterns-instead-4beb6a197fdb"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "scala": {
+      "title": "Scala",
+      "sourceId": "acgRMEuL4ZGGRHpZ7kXSo",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "Scala is a functional and object-oriented language that runs on the JVM and is popular in data engineering and distributed systems roles. Its expressive type system and functional abstractions like pattern matching and higher-order functions can make some algorithmic problems elegant to solve. However, Scala is rarely the expected language in general software engineering interviews, and LeetCode support for it is more limited. Choose Scala only if you are specifically targeting roles where it is the primary language and you are already fluent in it.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Scala Roadmap",
+          "url": "https://roadmap.sh/scala"
+        }
+      ],
+      "parents": [
+        "pickALanguage"
+      ],
+      "children": []
+    },
+    "rust": {
+      "title": "Rust",
+      "sourceId": "9h1mz0xAUvPrnRm9VndJF",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "Rust is a systems programming language focused on memory safety and performance without a garbage collector. It is gaining popularity for roles in systems programming, WebAssembly, and performance-critical applications. For LeetCode, Rust is the most challenging language to use due to its strict ownership model, which can make pointer-heavy problems like linked lists and trees significantly more complex to implement than in other languages. If you are already comfortable with Rust and want to use it for interviews, it is possible and impressive, but it is not recommended as a starting point for interview preparation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Visit the Dedicated Rust Roadmap",
+          "url": "https://roadmap.sh/rust"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "pickALanguage": {
+      "title": "Pick a language",
+      "sourceId": "SKsKYHmpPBjG9tHHFbTLI",
+      "type": "topic",
+      "order": 12,
+      "summary": "For LeetCode and technical interviews, the language you use matters less than how well you know it. Pick one language and stick with it throughout your preparation. Switching between languages wastes time and splits your focus. What interviewers care about is whether you can write clean, correct code and explain your reasoning clearly. That said, some languages have practical advantages: Python is concise and fast to write, which is helpful under time pressure. Java and C++ are common in companies that care about performance. JavaScript is a natural choice if you are coming from frontend development.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "python"
+      ],
+      "children": [
+        "c",
+        "ruby",
+        "scala",
+        "arraysHashing"
+      ]
+    },
+    "twoSum": {
+      "title": "Two Sum",
+      "sourceId": "XbfUbWaGtpcEGa31QyrXN",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "You are given an array of integers and a target number. The goal is to find two numbers in the array that add up to the target and return their positions. The naive approach checks every pair, but the key insight is using a hash map to store numbers you have already seen, bringing the solution from O(n\u00b2) down to O(n). This problem teaches the core habit of trading space for time, a trade-off you will use constantly in harder problems.",
+      "video": {
+        "title": "Two Sum - Leetcode 1 - Hashmaps & Sets (Python)",
+        "url": "https://www.youtube.com/watch?v=aRE7Nxb3Qfs"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Two Sum - LeetCode",
+          "url": "https://leetcode.com/problems/two-sum/description/"
+        }
+      ],
+      "parents": [
+        "arraysHashing"
+      ],
+      "children": []
+    },
+    "validAnagram": {
+      "title": "Valid Anagram",
+      "sourceId": "iqR33GoIxK-CJdbatQqg3",
+      "type": "subtopic",
+      "order": 14,
+      "summary": "Given two strings, decide if one is an anagram of the other, meaning both contain the exact same characters with the same frequency. The trick is not to sort (which works but is slower), but to count character frequencies using a hash map and compare them. This problem teaches you to think about strings as frequency distributions rather than sequences of characters.",
+      "video": {
+        "title": "Valid Anagram | LeetCode problem 242 | Top 150 interview question series",
+        "url": "https://backoffice.roadmap.sh/tree/leetcode"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Valid Anagram - LeetCode",
+          "url": "https://leetcode.com/problems/valid-anagram/description/"
+        }
+      ],
+      "parents": [
+        "arraysHashing"
+      ],
+      "children": []
+    },
+    "arraysHashing": {
+      "title": "Arrays & Hashing",
+      "sourceId": "C4M0XfOtB9_Q8srAJU__A",
+      "type": "topic",
+      "order": 15,
+      "summary": "Arrays and hash maps are the building blocks of almost every algorithm problem. Before learning any pattern, you need to be comfortable navigating an array and reaching for a hash map when you need fast lookups. Most problems in this stage are solved in one or two passes, and the main skill you are developing is recognizing when a hash map can replace a nested loop. If you find yourself thinking about checking membership or counting frequencies, a hash map is almost always the right tool.",
+      "video": {
+        "title": "Ep.1 - Arrays & Hashing",
+        "url": "https://www.youtube.com/watch?v=nET1jqI_Ntk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "DSA Arrays",
+          "url": "https://www.w3schools.com/dsa/dsa_data_arrays.php"
+        },
+        {
+          "type": "article",
+          "title": "DSA Hash Tables",
+          "url": "https://www.w3schools.com/dsa/dsa_theory_hashtables.php"
+        },
+        {
+          "type": "article",
+          "title": "Learning Data Structures",
+          "url": "https://medium.com/@ashissh.dev/learning-data-structures-arrays-and-hash-tables-6ced329a9189"
+        }
+      ],
+      "parents": [
+        "pickALanguage"
+      ],
+      "children": [
+        "twoSum",
+        "validAnagram",
+        "containsDuplicate",
+        "groupAnagrams",
+        "topKFrequentElements",
+        "moreExercises",
+        "twoPointers"
+      ]
+    },
+    "containsDuplicate": {
+      "title": "Contains Duplicate",
+      "sourceId": "_wCmBewDz7Qb21u8HSZtp",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "Given an array, return true if any value appears more than once. The brute force compares every pair, but a hash set lets you check for duplicates in a single pass. Simple as it sounds, this problem is your first introduction to using a set for O(1) membership checks, a pattern you will see in almost every stage.",
+      "video": {
+        "title": "Contains Duplicate",
+        "url": "https://www.youtube.com/watch?v=a1_r3cLQ6wg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Contains Duplicate - LeetCode",
+          "url": "https://leetcode.com/problems/contains-duplicate/description/"
+        }
+      ],
+      "parents": [
+        "arraysHashing"
+      ],
+      "children": []
+    },
+    "validPalindrome": {
+      "title": "Valid Palindrome",
+      "sourceId": "x6-LRp_zgv3WNE-gsS3Cw",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "Given a string, determine if it reads the same forward and backwards after removing non-alphanumeric characters and ignoring case. Two pointers start at each end and move inward, comparing characters as they go. This problem teaches you to use two pointers on a string and is a clean entry point for understanding how pointers can replace nested loops.",
+      "video": {
+        "title": "Valid Palindrome - LeetCode 125 | Two Pointers",
+        "url": "https://www.youtube.com/watch?v=pf5RT8Oi7rk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Valid Palindrome - LeetCode",
+          "url": "https://leetcode.com/problems/valid-palindrome/description/"
+        }
+      ],
+      "parents": [
+        "twoPointers"
+      ],
+      "children": []
+    },
+    "groupAnagrams": {
+      "title": "Group Anagrams",
+      "sourceId": "p7_B-NIBlqyKzR2PkrVWC",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "Given a list of strings, group together all strings that are anagrams of each other. Since anagrams share the same characters, sorting each string gives a common key you can use in a hash map. A more optimal approach uses character frequency arrays as keys instead of sorting. This problem teaches you to think about what makes two things equivalent and use that equivalence as a grouping key, a useful mental model for many hash map problems.",
+      "video": {
+        "title": "Group Anagrams",
+        "url": "https://www.youtube.com/watch?v=eDmxPfVa81k"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Group Anagrams - LeetCode",
+          "url": "https://leetcode.com/problems/group-anagrams/description/"
+        }
+      ],
+      "parents": [
+        "arraysHashing"
+      ],
+      "children": []
+    },
+    "3sum": {
+      "title": "3Sum",
+      "sourceId": "yis4-_D0GREukouiRcCwC",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "Given an array of integers, find all unique triplets that sum to zero. You sort the array first, then for each element use two pointers to find pairs that complete the triplet. The sort plus two pointers bring it from O(n\u00b3) to O(n\u00b2). This problem teaches you to extend the two pointer technique beyond pairs and introduces how sorting enables smarter traversal.",
+      "video": {
+        "title": "3Sum (Updated Solution)",
+        "url": "https://www.youtube.com/watch?v=TBePcj8DgxM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "3Sum - LeetCode",
+          "url": "https://leetcode.com/problems/3sum/description/"
+        }
+      ],
+      "parents": [
+        "twoPointers"
+      ],
+      "children": []
+    },
+    "topKFrequentElements": {
+      "title": "Top K Frequent Elements",
+      "sourceId": "-RjNtskTl7CZYWUpQ6YPh",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "Given an array and a number k, return the k most frequent elements. You could sort by frequency, but the optimal approach uses bucket sort. Since no element can appear more times than the length of the array, you can create buckets indexed by frequency and scan from the top. This problem bridges hash maps and sorting, and introduces the idea that the constraints of a problem often suggest a faster algorithm.",
+      "video": {
+        "title": "Top K Elements in 6 minutes",
+        "url": "https://www.youtube.com/watch?v=6_v6OoxvMOE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Top K Frequent Elements - LeetCode",
+          "url": "https://leetcode.com/problems/top-k-frequent-elements/description/"
+        }
+      ],
+      "parents": [
+        "arraysHashing"
+      ],
+      "children": []
+    },
+    "containerWithMostWater": {
+      "title": "Container With Most Water",
+      "sourceId": "YxfJQl5bHYnhryt9RooV0",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "Given an array of bar heights, find two bars that together with the x-axis form a container holding the most water. You start with the widest possible container and move the pointer on the shorter side inward, since that is the only move that could increase the area. This problem teaches the key insight that moving the longer side never helps, which is a non-obvious greedy choice that the two pointer pattern makes visible.",
+      "video": {
+        "title": "Container With Most Water - Leetcode 11",
+        "url": "https://www.youtube.com/watch?v=Y_4_or0Sc7I"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Container With Most Water - LeetCode",
+          "url": "https://leetcode.com/problems/container-with-most-water/description/"
+        }
+      ],
+      "parents": [
+        "twoPointers"
+      ],
+      "children": []
+    },
+    "moreExercises": {
+      "title": "More Exercises",
+      "sourceId": "JtV6pQzvcXFoNG01tx9pq",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "Below you can find other popular questions covering Arrays & Hashing. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Product of Array Except Self",
+          "url": "https://leetcode.com/problems/product-of-array-except-self/"
+        },
+        {
+          "type": "article",
+          "title": "Valid Sudoku",
+          "url": "https://leetcode.com/problems/valid-sudoku/"
+        },
+        {
+          "type": "article",
+          "title": "Longest Consecutive Sequence",
+          "url": "https://leetcode.com/problems/longest-consecutive-sequence/"
+        },
+        {
+          "type": "article",
+          "title": "Encode and Decode Strings",
+          "url": "https://leetcode.com/problems/encode-and-decode-strings/"
+        },
+        {
+          "type": "article",
+          "title": "Majority Element",
+          "url": "https://leetcode.com/problems/majority-element/"
+        }
+      ],
+      "parents": [
+        "arraysHashing"
+      ],
+      "children": []
+    },
+    "trappingRainWater": {
+      "title": "Trapping Rain Water",
+      "sourceId": "GuWseHiGMKbBqkYKrZNuT",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "Given an array of bar heights representing an elevation map, compute how much water can be trapped between the bars after rain. For each position, the water level is determined by the shorter of the tallest bars to its left and right. Two pointers eliminate the need to precompute these maximums separately. This is one of the hardest two-pointer problems and teaches you to reason about what constrains a value from both directions.",
+      "video": {
+        "title": "How to Solve Trapping Rainwater in 2 MINUTES",
+        "url": "https://www.youtube.com/watch?v=Gu6Iu4q2sd8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Trapping Rain Water - LeetCode",
+          "url": "https://leetcode.com/problems/trapping-rain-water/description/"
+        }
+      ],
+      "parents": [
+        "twoPointers"
+      ],
+      "children": []
+    },
+    "twoPointers": {
+      "title": "Two Pointers",
+      "sourceId": "NHv86YI2-MSH8BkfUsaEx",
+      "type": "topic",
+      "order": 24,
+      "summary": "Two pointers is the first real pattern you will learn, and it is one of the most reusable. The idea is simple: instead of checking every pair of elements with nested loops, you place one pointer at each end of a sorted structure and move them toward each other based on a condition. This brings many O(n\u00b2) problems down to O(n). Most problems here require a sorted input, so sorting is often the first step. Mastering this pattern also prepares you for fast and slow pointers, which appear in linked list problems later.",
+      "video": {
+        "title": "Two Pointers in 7 minutes",
+        "url": "https://www.youtube.com/watch?v=QzZ7nmouLTI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Mastering Problem Solving: Two Pointers",
+          "url": "https://medium.com/@elfrmkr98/mastering-problem-solving-two-pointers-technique-23dafb17e90b"
+        }
+      ],
+      "parents": [
+        "arraysHashing"
+      ],
+      "children": [
+        "validPalindrome",
+        "3sum",
+        "containerWithMostWater",
+        "trappingRainWater",
+        "twoSumIi",
+        "moreExercises2",
+        "stacks"
+      ]
+    },
+    "twoSumIi": {
+      "title": "Two Sum II",
+      "sourceId": "vTpv8AliKFv0Sf13PmVCo",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "Given a sorted array, find two numbers that add up to a target and return their positions. Because the array is sorted, you can use two pointers starting from each end and move them based on whether the current sum is too large or too small. This is where the two pointer pattern clicks for most learners, since the sorted order gives a clear rule for which pointer to move.",
+      "video": {
+        "title": "Two Sum II - Leetcode 167",
+        "url": "https://www.youtube.com/watch?v=ciPrKYoOQkI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Two Sum II - Input Array Is Sorted - LeetCode",
+          "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/"
+        }
+      ],
+      "parents": [
+        "twoPointers"
+      ],
+      "children": []
+    },
+    "validParentheses": {
+      "title": "Valid Parentheses",
+      "sourceId": "YNt85B--HBS2IKDFVLJpx",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "Given a string of brackets, determine if it is valid, meaning every opening bracket is closed by the same type in the correct order. You push opening brackets onto a stack and pop when you see a closing bracket, checking for a match. This is the canonical stack problem and teaches you the key idea: a stack naturally tracks things that need a future match.",
+      "video": {
+        "title": "Valid Parentheses (LeetCode 20)",
+        "url": "https://www.youtube.com/watch?v=TaWs8tIrnoA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Valid Parentheses - LeetCode",
+          "url": "https://leetcode.com/problems/valid-parentheses/description/"
+        }
+      ],
+      "parents": [
+        "stacks"
+      ],
+      "children": []
+    },
+    "moreExercises2": {
+      "title": "More Exercises",
+      "sourceId": "NFOzXHoSHj1_2_isVifsY",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "Below you can find other popular questions covering Two Pointers. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Sort Colors",
+          "url": "https://leetcode.com/problems/sort-colors/"
+        },
+        {
+          "type": "article",
+          "title": "Move Zeroes",
+          "url": "https://leetcode.com/problems/move-zeroes/"
+        },
+        {
+          "type": "article",
+          "title": "Remove Duplicates from Sorted Array",
+          "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+        },
+        {
+          "type": "article",
+          "title": "Boats to Save People",
+          "url": "https://leetcode.com/problems/boats-to-save-people/"
+        },
+        {
+          "type": "article",
+          "title": "4Sum",
+          "url": "https://leetcode.com/problems/4sum/"
+        }
+      ],
+      "parents": [
+        "twoPointers"
+      ],
+      "children": []
+    },
+    "minStack": {
+      "title": "Min Stack",
+      "sourceId": "XjJhO0gX0Dw8yF09TnJwK",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "Design a stack that supports push, pop, top, and retrieving the minimum element, all in O(1) time. The trick is to maintain a second stack that tracks the current minimum at each level. This problem teaches you that stacks can be augmented to carry extra state without breaking their core behavior.",
+      "video": {
+        "title": "Min Stack (LeetCode 155)",
+        "url": "https://www.youtube.com/watch?v=lkYzexIVlOY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Min Stack - LeetCode",
+          "url": "https://leetcode.com/problems/min-stack/description/"
+        }
+      ],
+      "parents": [
+        "stacks"
+      ],
+      "children": []
+    },
+    "stacks": {
+      "title": "Stacks",
+      "sourceId": "Ovs61JkceGbWV3BfUo4Ra",
+      "type": "topic",
+      "order": 29,
+      "summary": "A stack is the right tool whenever you need to process elements in a last-in-first-out order, or when you need to track something that will be resolved later. Many stack problems involve matching pairs, maintaining a running minimum or maximum, or deferring a computation until a future element triggers it. The monotonic stack variant, where you maintain elements in increasing or decreasing order, is particularly important and appears frequently in harder problems involving histograms, temperatures, and next greater elements.",
+      "video": {
+        "title": "wtf is \u201cthe stack\u201d ?",
+        "url": "https://www.youtube.com/watch?v=CRTR5ljBjPM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "DSA Stacks",
+          "url": "https://www.w3schools.com/dsa/dsa_data_stacks.php"
+        }
+      ],
+      "parents": [
+        "twoPointers"
+      ],
+      "children": [
+        "validParentheses",
+        "minStack",
+        "dailyTemperatures",
+        "generateParentheses",
+        "largestRectangleInHist",
+        "moreExercises3",
+        "binarySearch2"
+      ]
+    },
+    "dailyTemperatures": {
+      "title": "Daily Temperatures",
+      "sourceId": "pMCIlFk-XfN91VNYtWjXq",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "Given an array of daily temperatures, return an array where each element is the number of days until a warmer temperature. A monotonic stack stores indices of temperatures in decreasing order, and whenever a warmer day is found, all colder days in the stack get their answer. This problem is the entry point for the monotonic stack pattern, which appears in many harder problems.",
+      "video": {
+        "title": "Daily Temperatures (LeetCode 739)",
+        "url": "https://www.youtube.com/watch?v=ekFs9Nb2RNQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Daily Temperatures - LeetCode",
+          "url": "https://leetcode.com/problems/daily-temperatures/description/"
+        }
+      ],
+      "parents": [
+        "stacks"
+      ],
+      "children": []
+    },
+    "binarySearch": {
+      "title": "Binary Search",
+      "sourceId": "kxvOWb6wyF8GWarP6jrqK",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "Given a sorted array and a target, return the index of the target or -1 if not found. You repeatedly halve the search space by comparing the middle element to the target. This is the simplest form of binary search and the one you must be able to write without mistakes before moving to harder variants.",
+      "video": {
+        "title": "Binary Search | Leet code 704 | Theory explained + Python code",
+        "url": "https://www.youtube.com/watch?v=B7lMQIcIyN4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Binary Search",
+          "url": "https://leetcode.com/problems/binary-search/"
+        }
+      ],
+      "parents": [
+        "binarySearch2"
+      ],
+      "children": []
+    },
+    "generateParentheses": {
+      "title": "Generate Parentheses",
+      "sourceId": "-dW4-xzasJY2CrwS2PyhN",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "Given n, generate all combinations of well-formed parentheses. You build strings recursively, adding an opening bracket if you still have some left and a closing bracket only if it would not break validity. This problem sits at the boundary between stack and backtracking thinking and teaches you to use constraints to prune the search space before exploring it.",
+      "video": {
+        "title": "LeetCode 22. Generate Parentheses",
+        "url": "https://www.youtube.com/watch?v=qBbZ3tS0McI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Generate Parentheses - LeetCode",
+          "url": "https://leetcode.com/problems/generate-parentheses/description/"
+        }
+      ],
+      "parents": [
+        "stacks"
+      ],
+      "children": []
+    },
+    "searchInRotatedArray": {
+      "title": "Search in Rotated Array",
+      "sourceId": "aDKtHMczSpCIT-ST0irRa",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "A sorted array has been rotated at an unknown index. Find a target value in O(log n). At every step, one of the two halves must be sorted, and you can use that to decide which half to search. This problem teaches you to apply binary search even when the input is not perfectly sorted, by adding a condition to identify the sorted half.",
+      "video": {
+        "title": "LeetCode 33. Search in Rotated Sorted Array",
+        "url": "https://www.youtube.com/watch?v=QdVrY3stDD4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Search in Rotated Sorted Array",
+          "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+        }
+      ],
+      "parents": [
+        "binarySearch2"
+      ],
+      "children": []
+    },
+    "largestRectangleInHist": {
+      "title": "Largest Rectangle in Hist.",
+      "sourceId": "zLM5eW7hZ7TrUzyNpvMyG",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "Given an array of bar heights, find the area of the largest rectangle that fits in the histogram. A monotonic stack tracks bars in increasing order of height, and each time a shorter bar is encountered, rectangles extending from the previous bars are resolved. This is one of the hardest stack problems and teaches you to use a stack to resolve pending computations when a condition breaks.",
+      "video": {
+        "title": "Largest Rectangle in Histogram",
+        "url": "https://www.youtube.com/watch?v=ZGMw8Bvpwd4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Largest Rectangle in Histogram - LeetCode",
+          "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/description/"
+        }
+      ],
+      "parents": [
+        "stacks"
+      ],
+      "children": []
+    },
+    "minimumInRotatedArray": {
+      "title": "Minimum in Rotated Array",
+      "sourceId": "XYTIX8oNH3qCmXjRbycDi",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "Given a rotated sorted array, find the minimum element in O(log n). The minimum is always at the rotation point, and you can locate it by checking which half is sorted and narrowing toward the unsorted side. This problem teaches you to think about what binary search is really doing: eliminating halves, not just finding a value.",
+      "video": {
+        "title": "LeetCode 153. Find Minimum in Rotated Sorted Array",
+        "url": "https://www.youtube.com/watch?v=IzHR_U8Ly6c"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Find Minimum in Rotated Sorted Array",
+          "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+        }
+      ],
+      "parents": [
+        "binarySearch2"
+      ],
+      "children": []
+    },
+    "moreExercises3": {
+      "title": "More Exercises",
+      "sourceId": "VpquOgXr8OG_jLkeDSk3H",
+      "type": "subtopic",
+      "order": 36,
+      "summary": "Below you can find other popular questions covering Stack. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Evaluate Reverse Polish Notation",
+          "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/"
+        },
+        {
+          "type": "article",
+          "title": "Car Fleet",
+          "url": "https://leetcode.com/problems/car-fleet/"
+        },
+        {
+          "type": "article",
+          "title": "Asteroid Collision",
+          "url": "https://leetcode.com/problems/asteroid-collision/"
+        },
+        {
+          "type": "article",
+          "title": "Remove K Digits",
+          "url": "https://leetcode.com/problems/remove-k-digits/"
+        },
+        {
+          "type": "article",
+          "title": "Next Greater Element I",
+          "url": "https://leetcode.com/problems/next-greater-element-i/"
+        }
+      ],
+      "parents": [
+        "stacks"
+      ],
+      "children": []
+    },
+    "kokoEatingBananas": {
+      "title": "Koko Eating Bananas",
+      "sourceId": "wyU9wyyQ54KgMeRsbS9AM",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "Koko can eat at most k bananas per hour and must finish all piles within h hours. Find the minimum k. The answer lies in a range, and you can binary search on that range, checking for each candidate k whether it is feasible. This problem teaches you to binary search on the answer rather than on the input array, a shift in thinking that unlocks many harder problems.",
+      "video": {
+        "title": "Koko Eating Bananas",
+        "url": "https://www.youtube.com/watch?v=JGYXNpZaW2U"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Koko Eating Bananas",
+          "url": "https://leetcode.com/problems/koko-eating-bananas/"
+        }
+      ],
+      "parents": [
+        "binarySearch2"
+      ],
+      "children": []
+    },
+    "binarySearch2": {
+      "title": "Binary Search",
+      "sourceId": "OkNQABVymkpxvHE7gVids",
+      "type": "topic",
+      "order": 38,
+      "summary": "Binary search is not just for finding an element in a sorted array. It is a general technique for eliminating half the search space at each step, and it applies whenever you can define a condition that splits possible answers into a valid half and an invalid half. The problems in this stage move from the textbook version to more creative applications: searching in rotated arrays, and binary searching on the answer itself rather than on the input. Getting binary search right under pressure, with correct boundary conditions, is a skill that requires deliberate practice.",
+      "video": {
+        "title": "Binary Search Algorithm in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=MFhxShGxHWc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Binary Search",
+          "url": "https://www.w3schools.com/dsa/dsa_algo_binarysearch.php"
+        }
+      ],
+      "parents": [
+        "stacks"
+      ],
+      "children": [
+        "binarySearch",
+        "searchInRotatedArray",
+        "minimumInRotatedArray",
+        "kokoEatingBananas",
+        "medianOfTwoArrays",
+        "moreExercises4",
+        "slidingWindow"
+      ]
+    },
+    "medianOfTwoArrays": {
+      "title": "Median of Two Arrays",
+      "sourceId": "kV9z7UQsYFMR6umo0fDM1",
+      "type": "subtopic",
+      "order": 39,
+      "summary": "Given two sorted arrays, find the median of their combined elements in O(log(min(m, n))). You binary search on the smaller array to find a partition where all elements on the left side are smaller than all on the right. This is one of the hardest binary search problems and teaches you to think about partitioning rather than searching for a single value.",
+      "video": {
+        "title": "Median of Two Sorted Arrays Python Solution - LeetCode #4",
+        "url": "https://www.youtube.com/watch?v=BhxyUWR_Efc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Median of Two Sorted Arrays",
+          "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+        }
+      ],
+      "parents": [
+        "binarySearch2"
+      ],
+      "children": []
+    },
+    "bestTimeToBuyAndSell": {
+      "title": "Best Time to Buy and Sell",
+      "sourceId": "K7qTp-hRmxxVLYvr4ftr7",
+      "type": "subtopic",
+      "order": 40,
+      "summary": "Given an array of daily stock prices, find the maximum profit from one buy and one sell. You track the minimum price seen so far and the best profit achievable at each step using a single pass. This is the simplest sliding window problem since the window always expands from the current day, and it teaches you how to track a running minimum and maximum simultaneously.",
+      "video": {
+        "title": "LeetCode Best Time to Buy and Sell Stock Solution",
+        "url": "https://www.youtube.com/watch?v=3RHCb8LY-X4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Best Time to Buy and Sell Stock",
+          "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+        }
+      ],
+      "parents": [
+        "slidingWindow"
+      ],
+      "children": []
+    },
+    "moreExercises4": {
+      "title": "More Exercises",
+      "sourceId": "2r0q7Gic8orJx2w28OH_I",
+      "type": "subtopic",
+      "order": 41,
+      "summary": "Below you can find other popular questions covering Binary Search. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Search a 2D Matrix",
+          "url": "https://leetcode.com/problems/search-a-2d-matrix/"
+        },
+        {
+          "type": "article",
+          "title": "Time Based Key-Value Store",
+          "url": "https://leetcode.com/problems/time-based-key-value-store/"
+        },
+        {
+          "type": "article",
+          "title": "Capacity to Ship Packages Within D Days",
+          "url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"
+        },
+        {
+          "type": "article",
+          "title": "Find First and Last Position of Element in Sorted Array",
+          "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+        },
+        {
+          "type": "article",
+          "title": "Find Peak Element",
+          "url": "https://leetcode.com/problems/find-peak-element/"
+        }
+      ],
+      "parents": [
+        "binarySearch2"
+      ],
+      "children": []
+    },
+    "substringWithoutRepetition": {
+      "title": "Substring Without Repetition",
+      "sourceId": "wnHn7ooWZSUfk3HahuyG6",
+      "type": "subtopic",
+      "order": 42,
+      "summary": "Find the length of the longest substring that contains no duplicate characters. You expand the right pointer and shrink the left pointer whenever a duplicate enters the window, using a set to track current characters. This is the canonical variable-size sliding window problem and teaches you the expand-then-shrink rhythm that most substring problems follow.",
+      "video": {
+        "title": "Longest Substring Without Repeating Characters",
+        "url": "https://www.youtube.com/watch?v=FCbOzdHKW18"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Longest Substring Without Repeating Characters",
+          "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+        }
+      ],
+      "parents": [
+        "slidingWindow"
+      ],
+      "children": []
+    },
+    "slidingWindow": {
+      "title": "Sliding Window",
+      "sourceId": "1boDzMfojddbf1ZwzOvEV",
+      "type": "topic",
+      "order": 43,
+      "summary": "The sliding window pattern is used when you need to find an optimal subarray or substring that satisfies some constraint. Instead of checking every possible subarray from scratch, you maintain a window with two pointers and update the result incrementally as the window expands or shrinks. Fixed-size windows are straightforward; variable-size windows require a clear rule for when to shrink from the left. This stage also introduces the monotonic deque, which extends sliding window to problems that need the maximum or minimum within the window at each step.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Sliding Window Technique: A Comprehensive Guide",
+          "url": "https://leetcode.com/discuss/post/3722472/sliding-window-technique-a-comprehensive-ix2k/"
+        },
+        {
+          "type": "article",
+          "title": "Sliding Window in 7 minutes | LeetCode Pattern",
+          "url": "https://www.youtube.com/watch?v=y2d0VHdvfdc"
+        }
+      ],
+      "parents": [
+        "binarySearch2"
+      ],
+      "children": [
+        "bestTimeToBuyAndSell",
+        "substringWithoutRepetition",
+        "minimumWindowSubstring",
+        "characterReplacement",
+        "slidingWindowMaximum",
+        "moreExercises5",
+        "linkedList"
+      ]
+    },
+    "minimumWindowSubstring": {
+      "title": "Minimum Window Substring",
+      "sourceId": "P7scdQHmNUPA6UI36yBtL",
+      "type": "subtopic",
+      "order": 44,
+      "summary": "Given strings s and t, find the smallest substring of s that contains all characters of t. You expand the right pointer until you have a valid window, then shrink from the left as much as possible while keeping it valid. This is one of the hardest sliding window problems and teaches you to manage a character frequency map as the window changes.",
+      "video": {
+        "title": "Leetcode - Minimum Window Substring (Python)",
+        "url": "https://www.youtube.com/watch?v=CX6_L9GLldU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Minimum Window Substring",
+          "url": "https://leetcode.com/problems/minimum-window-substring/"
+        }
+      ],
+      "parents": [
+        "slidingWindow"
+      ],
+      "children": []
+    },
+    "reverseLinkedList": {
+      "title": "Reverse Linked List",
+      "sourceId": "0P0VTUhQxWj0BGygtuKYJ",
+      "type": "subtopic",
+      "order": 45,
+      "summary": "Given the head of a linked list, reverse it in place and return the new head. You iterate through the list, keeping track of the previous node, current node, and next node, rewiring each pointer as you go. This is the first linked list problem most people learn and it teaches you the three-pointer technique that underlies almost every in-place list manipulation.",
+      "video": {
+        "title": "Reverse Linked List - Leetcode 206 - Linked Lists (Python)",
+        "url": "https://www.youtube.com/watch?v=KRxeMng7fBU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Reverse Linked List",
+          "url": "https://leetcode.com/problems/reverse-linked-list/"
+        }
+      ],
+      "parents": [
+        "linkedList"
+      ],
+      "children": []
+    },
+    "characterReplacement": {
+      "title": "Character Replacement",
+      "sourceId": "aLQVocF91X1-IrTP7Vb_b",
+      "type": "subtopic",
+      "order": 46,
+      "summary": "Given a string and a number k, find the length of the longest substring where you can replace at most k characters to make all characters the same. You track the count of the most frequent character in the window, and if the window size minus that count exceeds k, you shrink from the left. This problem teaches you a clever invariant: you never need to shrink the window below its maximum size seen so far.",
+      "video": {
+        "title": "LeetCode Longest Repeating Character Replacement Solution",
+        "url": "https://www.youtube.com/watch?v=00FmUN1pkGE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Longest Repeating Character Replacement",
+          "url": "https://leetcode.com/problems/longest-repeating-character-replacement/"
+        }
+      ],
+      "parents": [
+        "slidingWindow"
+      ],
+      "children": []
+    },
+    "mergeTwoSortedLists": {
+      "title": "Merge Two Sorted Lists",
+      "sourceId": "qEYz2Dj1hqLDBFWYX7XmE",
+      "type": "subtopic",
+      "order": 47,
+      "summary": "Given the heads of two sorted linked lists, merge them into one sorted list by splicing nodes together without creating new ones. You compare the heads of both lists at each step and attach the smaller node to your result. This problem teaches you the dummy node technique, which simplifies edge cases when building a new list from scratch.",
+      "video": {
+        "title": "LeetCode 21: Merge Two Sorted Lists (Visualization)",
+        "url": "https://www.youtube.com/watch?v=E5XXiY6QnAs"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Merge Two Sorted Lists",
+          "url": "https://leetcode.com/problems/merge-two-sorted-lists/"
+        }
+      ],
+      "parents": [
+        "linkedList"
+      ],
+      "children": []
+    },
+    "slidingWindowMaximum": {
+      "title": "Sliding Window Maximum",
+      "sourceId": "zIpM4hiGUSXwkokZFRzSB",
+      "type": "subtopic",
+      "order": 48,
+      "summary": "Given an array and a window size k, return the maximum value in each window. A monotonic deque stores indices in decreasing order of value, so the front is always the current maximum. This problem teaches you the monotonic deque, which gives O(n) window max where a heap would give O(n log n).",
+      "video": {
+        "title": "Sliding Window Maximum (LeetCode 239)",
+        "url": "https://www.youtube.com/watch?v=WcTMo1SHV_s"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Sliding Window Maximum",
+          "url": "https://leetcode.com/problems/sliding-window-maximum/"
+        }
+      ],
+      "parents": [
+        "slidingWindow"
+      ],
+      "children": []
+    },
+    "linkedListCycle": {
+      "title": "Linked List Cycle",
+      "sourceId": "qAWeeYfvFD8-LTZgZ2LVa",
+      "type": "subtopic",
+      "order": 49,
+      "summary": "Given the head of a linked list, determine if it contains a cycle. The fast and slow pointer technique has one pointer move one step at a time and the other move two steps at a time; if there is a cycle, they will eventually meet. This problem introduces the fast-and-slow-pointer pattern, which is used in several more advanced linked list problems.",
+      "video": {
+        "title": "LeetCode Linked List Cycle Solution Explained - Java",
+        "url": "https://www.youtube.com/watch?v=6OrZ4wAy4uE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Linked List Cycle",
+          "url": "https://leetcode.com/problems/linked-list-cycle/"
+        }
+      ],
+      "parents": [
+        "linkedList"
+      ],
+      "children": []
+    },
+    "moreExercises5": {
+      "title": "More Exercises",
+      "sourceId": "AMT2zQPDlKUm-d2vT1Sae",
+      "type": "subtopic",
+      "order": 50,
+      "summary": "Below you can find other popular questions covering Sliding Window. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Permutation in String",
+          "url": "https://leetcode.com/problems/permutation-in-string/"
+        },
+        {
+          "type": "article",
+          "title": "Fruits into Baskets",
+          "url": "https://leetcode.com/problems/fruit-into-baskets/"
+        },
+        {
+          "type": "article",
+          "title": "Minimum Size Subarray Sum",
+          "url": "https://leetcode.com/problems/minimum-size-subarray-sum/"
+        },
+        {
+          "type": "article",
+          "title": "Subarray Product Less Than K",
+          "url": "https://leetcode.com/problems/subarray-product-less-than-k/"
+        },
+        {
+          "type": "article",
+          "title": "Max Consecutive Ones III",
+          "url": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+        }
+      ],
+      "parents": [
+        "slidingWindow"
+      ],
+      "children": []
+    },
+    "reorderList": {
+      "title": "Reorder List",
+      "sourceId": "FYgKuhnZ20g6-v4UrQDJc",
+      "type": "subtopic",
+      "order": 51,
+      "summary": "Given a linked list, reorder it so that nodes alternate from the front and back of the original list. You find the middle, reverse the second half, then merge the two halves. This problem combines three sub-techniques (finding middle, reversing, merging) and teaches you to decompose complex pointer problems into simpler steps.",
+      "video": {
+        "title": "LeetCode Reorder List Solution Explained - Java",
+        "url": "https://www.youtube.com/watch?v=xRYPjDMSUFw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Reorder List",
+          "url": "https://leetcode.com/problems/reorder-list/"
+        }
+      ],
+      "parents": [
+        "linkedList"
+      ],
+      "children": []
+    },
+    "linkedList": {
+      "title": "Linked List",
+      "sourceId": "lDT9PtNMP8lSdeH7EVBoH",
+      "type": "topic",
+      "order": 52,
+      "summary": "Linked list problems test your ability to manipulate pointers directly, without the convenience of index-based access. The core techniques are the dummy node (to simplify edge cases at the head), the fast and slow pointer (to find midpoints and detect cycles), and in-place reversal (to rearrange nodes without extra memory). These three techniques cover the majority of linked list problems. The problems here also build the pointer intuition you will need when working with trees in the next stage.",
+      "video": {
+        "title": "Learn Linked Lists in 13 minutes \ud83d\udd17",
+        "url": "https://www.youtube.com/watch?v=N6dOwBde7-M"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "DSA Linked Lists",
+          "url": "https://www.w3schools.com/dsa/dsa_theory_linkedlists.php"
+        },
+        {
+          "type": "article",
+          "title": "Understanding Linked Lists: A Beginner\u2019s Guide",
+          "url": "https://medium.com/@ogundipe.eniola/understanding-linked-lists-a-beginners-guide-a7ca6aa6ee04"
+        }
+      ],
+      "parents": [
+        "slidingWindow"
+      ],
+      "children": [
+        "reverseLinkedList",
+        "mergeTwoSortedLists",
+        "linkedListCycle",
+        "reorderList",
+        "mergeKSortedLists",
+        "moreExercises6",
+        "trees"
+      ]
+    },
+    "mergeKSortedLists": {
+      "title": "Merge K Sorted Lists",
+      "sourceId": "eHnN9thTtLPIUtz9Z28OL",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "Given k sorted linked lists, merge them into one sorted list. The optimal approach uses a min-heap to always extract the smallest current node across all lists. This problem connects linked list manipulation with heap usage and is the defining example of the k-way merge pattern.",
+      "video": {
+        "title": "Merge K Sorted Linked Lists - Leetcode 23 - Heaps (Python)",
+        "url": "https://www.youtube.com/watch?v=RyrVWP76lVo"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Merge K Sorted Lists",
+          "url": "https://leetcode.com/problems/merge-k-sorted-lists/"
+        }
+      ],
+      "parents": [
+        "linkedList"
+      ],
+      "children": []
+    },
+    "binaryTreeLevelOrder": {
+      "title": "Binary Tree Level Order",
+      "sourceId": "7ac9oA-reXh7xFHj3LRX0",
+      "type": "subtopic",
+      "order": 54,
+      "summary": "Given a binary tree, return its node values level by level. You use a queue to process all nodes at one level before moving to the next, collecting each level into its own list. This is the entry point for tree BFS and teaches you the queue-based level tracking pattern that applies to many tree and graph problems.",
+      "video": {
+        "title": "Binary Tree Level Order Traversal | Live Coding with Explanation",
+        "url": "https://www.youtube.com/watch?v=vQrggrFMyp8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Binary Tree Level Order Traversal",
+          "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+        }
+      ],
+      "parents": [
+        "trees"
+      ],
+      "children": []
+    },
+    "moreExercises6": {
+      "title": "More Exercises",
+      "sourceId": "Ur6eSm0t-jQD2j710Vc89",
+      "type": "subtopic",
+      "order": 55,
+      "summary": "Below you can find other popular questions covering Linked List. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Remove Nth Node From End of List",
+          "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+        },
+        {
+          "type": "article",
+          "title": "Copy List With Random Pointer",
+          "url": "https://leetcode.com/problems/copy-list-with-random-pointer/"
+        },
+        {
+          "type": "article",
+          "title": "Add Two Numbers",
+          "url": "https://leetcode.com/problems/add-two-numbers/"
+        },
+        {
+          "type": "article",
+          "title": "LRU Cache",
+          "url": "https://leetcode.com/problems/lru-cache/"
+        },
+        {
+          "type": "article",
+          "title": "Reverse Nodes in K-Group",
+          "url": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+        }
+      ],
+      "parents": [
+        "linkedList"
+      ],
+      "children": []
+    },
+    "maximumDepthOfBinaryTree": {
+      "title": "Maximum Depth of Binary Tree",
+      "sourceId": "3ny1naGanScRUAOv2IiYz",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "Given a binary tree, return its maximum depth, meaning the number of nodes along the longest root-to-leaf path. You recursively compute the depth of left and right subtrees and return one plus the greater. This is the simplest tree DFS problem and teaches you to think about trees recursively: a tree's depth is defined in terms of its subtrees' depths.",
+      "video": {
+        "title": "LeetCode 104: Maximum Depth of Binary Tree | Recursive DFS",
+        "url": "https://www.youtube.com/watch?v=p-eMCRpvbIY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Maximum Depth of Binary Tree",
+          "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+        }
+      ],
+      "parents": [
+        "trees"
+      ],
+      "children": []
+    },
+    "lowestCommonAncestor": {
+      "title": "Lowest Common Ancestor",
+      "sourceId": "cHPRRjBTrznI6UBC-WQP6",
+      "type": "subtopic",
+      "order": 57,
+      "summary": "Given a BST and two nodes, find their lowest common ancestor. Because it is a BST, you can use the values to decide whether to go left, right, or stop: the ancestor is where the two nodes diverge. This problem teaches you to exploit BST ordering as a navigation tool, rather than doing a general tree search.",
+      "video": {
+        "title": "LOWEST COMMON ANCESTOR OF A BINARY TREE I",
+        "url": "https://www.youtube.com/watch?v=WO1tfq2sbsI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Lowest Common Ancestor of a BST",
+          "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+        }
+      ],
+      "parents": [
+        "trees"
+      ],
+      "children": []
+    },
+    "trees": {
+      "title": "Trees",
+      "sourceId": "PQ31G4_7Y5K6D34hVRyRK",
+      "type": "topic",
+      "order": 58,
+      "summary": "Trees are the data structure where recursion becomes natural. Most tree problems follow one of two patterns: DFS, where you go deep before backtracking, and BFS, where you process nodes level by level. DFS is usually implemented recursively and is good for path-based and structural problems. BFS uses a queue and is good for level-based problems and shortest-path questions on unweighted trees. The key habit to build here is thinking clearly about what a function returns versus what it records as a side effect, since many tree problems require tracking a global answer while the recursion handles local decisions.",
+      "video": {
+        "title": "Tree data structures in 2 minutes \ud83c\udf33",
+        "url": "https://www.youtube.com/watch?v=Etpc_-br5rI&t=1s"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Trees DSA",
+          "url": "https://www.w3schools.com/dsa/dsa_theory_trees.php"
+        },
+        {
+          "type": "article",
+          "title": "Trees",
+          "url": "https://www.programiz.com/dsa/trees"
+        }
+      ],
+      "parents": [
+        "linkedList"
+      ],
+      "children": [
+        "binaryTreeLevelOrder",
+        "maximumDepthOfBinaryTree",
+        "lowestCommonAncestor",
+        "binaryTreeMaximumPathSum",
+        "serializeAndDeserialize",
+        "moreExercises7",
+        "heapPriorityQueue"
+      ]
+    },
+    "kthLargestElementInAnArray": {
+      "title": "Kth Largest Element in an Array",
+      "sourceId": "tMvbBpZDawi2RjSFgOaWc",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "Given an unsorted array and an integer k, return the kth largest element. You can use a min-heap of size k: iterate through the array, push each element, and pop when the heap exceeds k. The top of the heap is then the kth largest. This problem teaches the core heap pattern: maintain a fixed-size heap to track top-k elements without sorting the entire array.",
+      "video": {
+        "title": "Kth Largest Element in an Array",
+        "url": "https://www.youtube.com/watch?v=dXV83KXt7KA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Kth Largest Element in an Array",
+          "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+        }
+      ],
+      "parents": [
+        "heapPriorityQueue"
+      ],
+      "children": []
+    },
+    "binaryTreeMaximumPathSum": {
+      "title": "Binary Tree Maximum Path Sum",
+      "sourceId": "5htwCuI4Dz_G2ar1enQZv",
+      "type": "subtopic",
+      "order": 60,
+      "summary": "Given a binary tree where nodes can have negative values, find the maximum sum of any path between any two nodes. At each node you decide whether to extend either child's path or start fresh, tracking the global maximum as you go. This is one of the hardest tree DFS problems and teaches you to separate what you return up the recursion from what you record as your answer.",
+      "video": {
+        "title": "Binary Tree Maximum Path Sum - LeetCode 124 - Python",
+        "url": "https://www.youtube.com/watch?v=cfn-G-7vVlo"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Binary Tree Maximum Path Sum",
+          "url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/"
+        }
+      ],
+      "parents": [
+        "trees"
+      ],
+      "children": []
+    },
+    "kClosestPointsToOrigin": {
+      "title": "K Closest Points to Origin",
+      "sourceId": "iou03PtccY58DXKHARz_P",
+      "type": "subtopic",
+      "order": 61,
+      "summary": "Given a list of points, return the k closest to the origin. A max-heap of size k keeps the k smallest distances seen so far, ejecting any point farther than the current kth closest as you iterate. This problem shows how to adapt the top-k pattern to a custom comparison and is good practice for heap problems with custom keys.",
+      "video": {
+        "title": "K Closest Points to Origin | Leetcode #973",
+        "url": "https://www.youtube.com/watch?v=VORIA407dB4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "K Closest Points to Origin",
+          "url": "https://leetcode.com/problems/k-closest-points-to-origin/"
+        }
+      ],
+      "parents": [
+        "heapPriorityQueue"
+      ],
+      "children": []
+    },
+    "serializeAndDeserialize": {
+      "title": "Serialize and Deserialize",
+      "sourceId": "DH3ZU-8q765Kjm7SIu_qP",
+      "type": "subtopic",
+      "order": 62,
+      "summary": "Design an algorithm to convert a binary tree to a string and reconstruct it exactly from that string. One approach uses BFS level-order, encoding null pointers explicitly so the structure can be recovered. This problem teaches you that tree traversal is not just for reading trees but also for encoding and rebuilding them, a fundamental idea in tree design problems.",
+      "video": {
+        "title": "Serialize and Deserialize a Binary Tree",
+        "url": "https://www.youtube.com/watch?v=Q9DrSCqg1rw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Serialize and Deserialize Binary Tree",
+          "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+        }
+      ],
+      "parents": [
+        "trees"
+      ],
+      "children": []
+    },
+    "taskScheduler": {
+      "title": "Task Scheduler",
+      "sourceId": "HLTc2xupm-CNM9rgzrcwS",
+      "type": "subtopic",
+      "order": 63,
+      "summary": "Given a list of tasks and a cooldown n, find the minimum time needed to finish all tasks, with the constraint that the same task must wait n intervals between executions. A greedy approach with a max-heap always schedules the most frequent remaining task, filling cooldown gaps with other tasks or idle time. This problem teaches you to combine a heap with a greedy scheduling strategy.",
+      "video": {
+        "title": "LeetCode 621. Task Scheduler (Algorithm Explained)",
+        "url": "https://www.youtube.com/watch?v=eGf-26OTI-A"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Task Scheduler",
+          "url": "https://leetcode.com/problems/task-scheduler/"
+        }
+      ],
+      "parents": [
+        "heapPriorityQueue"
+      ],
+      "children": []
+    },
+    "moreExercises7": {
+      "title": "More Exercises",
+      "sourceId": "XjViEOLzyd_BK9dhgNtdK",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "Below you can find other popular questions covering Trees. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Invert Binary Tree",
+          "url": "https://leetcode.com/problems/invert-binary-tree/"
+        },
+        {
+          "type": "article",
+          "title": "Diameter of Binary Tree",
+          "url": "https://leetcode.com/problems/diameter-of-binary-tree/"
+        },
+        {
+          "type": "article",
+          "title": "Validate Binary Search Tree",
+          "url": "https://leetcode.com/problems/validate-binary-search-tree/"
+        },
+        {
+          "type": "article",
+          "title": "Binary Tree Right Side View",
+          "url": "https://leetcode.com/problems/binary-tree-right-side-view/"
+        },
+        {
+          "type": "article",
+          "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+          "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+        }
+      ],
+      "parents": [
+        "trees"
+      ],
+      "children": []
+    },
+    "findMedianFromDataStream": {
+      "title": "Find Median from Data Stream",
+      "sourceId": "CJ8Hk6XfXuLHmBO6xdUv6",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "Design a data structure that supports adding numbers one by one and returning the median at any point. You maintain two heaps: a max-heap for the lower half and a min-heap for the upper half, keeping them balanced so the median is always accessible at the top. This is the defining two-heap problem and teaches you how splitting a dataset into two heaps gives O(log n) insertion and O(1) median retrieval.",
+      "video": {
+        "title": "Find Median from Data Stream: Real-Time Median with Heaps",
+        "url": "https://www.youtube.com/watch?v=SdURPlHqc1g"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Find Median from Data Stream",
+          "url": "https://leetcode.com/problems/find-median-from-data-stream/"
+        }
+      ],
+      "parents": [
+        "heapPriorityQueue"
+      ],
+      "children": []
+    },
+    "heapPriorityQueue": {
+      "title": "Heap / Priority Queue",
+      "sourceId": "mvcSC0kFiD0AT5a2ffU5l",
+      "type": "topic",
+      "order": 66,
+      "summary": "A heap is the right data structure when you repeatedly need the largest or smallest element from a changing collection. The problems in this stage cover three heap patterns: top-k elements (maintain a heap of size k), two heaps (split a dataset into two halves to track the median), and k-way merge (combine multiple sorted sequences using a single heap). If you find yourself wanting to sort something repeatedly as new elements arrive, a heap is almost always the better choice. Getting comfortable with heap operations and knowing which variant to reach for is the main skill this stage develops.",
+      "video": {
+        "title": "Learn Priority Queue data structures in 5 minutes \ud83e\udd47",
+        "url": "https://www.youtube.com/watch?v=7z_HXFZqXqc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Priority Queue",
+          "url": "https://www.programiz.com/dsa/priority-queue"
+        }
+      ],
+      "parents": [
+        "trees"
+      ],
+      "children": [
+        "kthLargestElementInAnArray",
+        "kClosestPointsToOrigin",
+        "taskScheduler",
+        "findMedianFromDataStream",
+        "mergeKSortedLists2",
+        "moreExercises8",
+        "backtracking"
+      ]
+    },
+    "mergeKSortedLists2": {
+      "title": "Merge K Sorted Lists",
+      "sourceId": "EC2dVHYWqGnu_1HmBeAPT",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "Given k sorted linked lists, merge them into one sorted list using a min-heap. You insert the head of each list into the heap, then repeatedly extract the minimum and push the next node from that list. This problem sits at the intersection of heaps and linked lists and is the canonical k-way merge example.",
+      "video": {
+        "title": "Merge K Sorted Arrays - Min Heap Algorithm",
+        "url": "https://www.youtube.com/watch?v=ptYUCjfNhJY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Merge K Sorted Lists",
+          "url": "https://leetcode.com/problems/merge-k-sorted-lists/"
+        }
+      ],
+      "parents": [
+        "heapPriorityQueue"
+      ],
+      "children": []
+    },
+    "subsets": {
+      "title": "Subsets",
+      "sourceId": "2AfJtRru4gll77Vl-6IJM",
+      "type": "subtopic",
+      "order": 68,
+      "summary": "Given an array of unique integers, return all possible subsets, including the empty set. You use backtracking to make a binary decision at each element: include it or skip it, building subsets recursively. This problem teaches the foundation of backtracking, the include/exclude decision tree that underpins all subset and combination problems.",
+      "video": {
+        "title": "Subsets (LeetCode 78) | Full solution with backtracking examples",
+        "url": "https://www.youtube.com/watch?v=3tpjp5h3M6Y"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Subsets",
+          "url": "https://leetcode.com/problems/subsets/"
+        }
+      ],
+      "parents": [
+        "backtracking"
+      ],
+      "children": []
+    },
+    "moreExercises8": {
+      "title": "More Exercises",
+      "sourceId": "2vhZHAKoFeNoi1utHcPPw",
+      "type": "subtopic",
+      "order": 69,
+      "summary": "Below you can find other popular questions covering Heap and Priority Queue. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Kth Largest Element in a Stream",
+          "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+        },
+        {
+          "type": "article",
+          "title": "Last Stone Weight",
+          "url": "https://leetcode.com/problems/last-stone-weight/"
+        },
+        {
+          "type": "article",
+          "title": "Design Twitter",
+          "url": "https://leetcode.com/problems/design-twitter/"
+        },
+        {
+          "type": "article",
+          "title": "Reorganize String",
+          "url": "https://leetcode.com/problems/reorganize-string/"
+        },
+        {
+          "type": "article",
+          "title": "Sliding Window Median",
+          "url": "https://leetcode.com/problems/sliding-window-median/"
+        }
+      ],
+      "parents": [
+        "heapPriorityQueue"
+      ],
+      "children": []
+    },
+    "combinationSum": {
+      "title": "Combination Sum",
+      "sourceId": "P0ODrjdYJGSHvn02sjWIe",
+      "type": "subtopic",
+      "order": 70,
+      "summary": "Given an array of distinct integers and a target, return all unique combinations that sum to the target, where each number can be used unlimited times. You use backtracking, and at each step either reuse the current number or move to the next. This problem teaches you how to allow repetition in backtracking by staying at the same index instead of advancing.",
+      "video": {
+        "title": "LEETCODE 39 COMBINATION SUM",
+        "url": "https://www.youtube.com/watch?v=uaqDhPGR4ow"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Combination Sum",
+          "url": "https://leetcode.com/problems/combination-sum/"
+        }
+      ],
+      "parents": [
+        "backtracking"
+      ],
+      "children": []
+    },
+    "permutations": {
+      "title": "Permutations",
+      "sourceId": "-9-5g5Qyb3JiSwEfabmRD",
+      "type": "subtopic",
+      "order": 71,
+      "summary": "Given an array of distinct integers, return all possible orderings. Unlike subsets, order matters here, so at each step you pick any unused element and continue recursively. This problem teaches you the difference between combination-style and permutation-style backtracking, and how to track which elements have been used.",
+      "video": {
+        "title": "Permutations (LeetCode 46) | Full solution with backtracking examples",
+        "url": "https://www.youtube.com/watch?v=H232aocj7bQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Permutations",
+          "url": "https://leetcode.com/problems/permutations/"
+        }
+      ],
+      "parents": [
+        "backtracking"
+      ],
+      "children": []
+    },
+    "backtracking": {
+      "title": "Backtracking",
+      "sourceId": "gEZFGJPq0JFjpRwl3z3XK",
+      "type": "topic",
+      "order": 72,
+      "summary": "Backtracking is a systematic way to explore all possible solutions by making a choice, recursing, and undoing the choice when you backtrack. It is the right tool for problems that ask for all combinations, all permutations, all subsets, or any valid configuration. The key skill is recognizing when to prune: stopping a branch early when you can tell it cannot lead to a valid solution. Without pruning, backtracking is just brute force. Most problems here share the same recursive skeleton and differ only in the constraints that determine valid choices and stopping conditions.",
+      "video": {
+        "title": "Backtracking Algorithm in 120 Seconds",
+        "url": "https://www.youtube.com/watch?v=RtpJOGvfo7E"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Backtracking Overview",
+          "url": "https://www.hellointerview.com/learn/code/backtracking/overview"
+        }
+      ],
+      "parents": [
+        "heapPriorityQueue"
+      ],
+      "children": [
+        "subsets",
+        "combinationSum",
+        "permutations",
+        "wordSearch",
+        "nQueens",
+        "moreExercises9",
+        "tries"
+      ]
+    },
+    "implementTrie": {
+      "title": "Implement Trie",
+      "sourceId": "_zumaNoKiaD4zS3wntAsd",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "Build a trie data structure that supports inserting a word, searching for an exact word, and checking if any word starts with a given prefix. Each node stores a map of child characters and a flag marking word endings. This problem teaches you the trie structure itself, which is prerequisite knowledge for all harder trie problems.",
+      "video": {
+        "title": "Implement Trie (Prefix Tree) - LeetCode 202 - Python",
+        "url": "https://www.youtube.com/watch?v=1YmGVaGb-Gc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Implement Trie",
+          "url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+        }
+      ],
+      "parents": [
+        "tries"
+      ],
+      "children": []
+    },
+    "wordSearch": {
+      "title": "Word Search",
+      "sourceId": "boJmdiyIgbV61MDKsB-k-",
+      "type": "subtopic",
+      "order": 74,
+      "summary": "Given a 2D grid of characters and a word, determine if the word exists in the grid by following adjacent cells. You do DFS from each cell that matches the first character, marking visited cells to avoid reuse in the current path. This problem teaches you backtracking on a 2D grid, where you must undo your visited marks when a path fails.",
+      "video": {
+        "title": "LeetCode Word Search Solution Explained - Java",
+        "url": "https://www.youtube.com/watch?v=m9TrOL1ETxI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Word Search",
+          "url": "https://leetcode.com/problems/word-search/"
+        }
+      ],
+      "parents": [
+        "backtracking"
+      ],
+      "children": []
+    },
+    "designAddAndSearchWords": {
+      "title": "Design Add and Search Words",
+      "sourceId": "xRqfE6liWrkLOVqqkXtjy",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "Build a data structure that supports adding words and searching for words where a dot can match any letter. Exact characters navigate the trie normally, while a dot triggers DFS across all child nodes. This problem teaches you how to combine trie traversal with backtracking for wildcard matching.",
+      "video": {
+        "title": "Design Add And Search Word Data Structure",
+        "url": "https://www.youtube.com/watch?v=zDyoxl29yns"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Design Add and Search Words",
+          "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/"
+        }
+      ],
+      "parents": [
+        "tries"
+      ],
+      "children": []
+    },
+    "nQueens": {
+      "title": "N-Queens",
+      "sourceId": "fBtsnKP5n3WBjMycwIfir",
+      "type": "subtopic",
+      "order": 76,
+      "summary": "Place n queens on an n by n chessboard so that no two queens attack each other, and return all valid configurations. You place queens row by row and use sets to track which columns and diagonals are occupied, backtracking when a row has no valid placement. This is the classic constraint satisfaction problem and teaches you to use auxiliary state to prune the search space aggressively.",
+      "video": {
+        "title": "The N Queens Problem using Backtracking/Recursion",
+        "url": "https://www.youtube.com/watch?v=wGbuCyNpxIg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "N-Queens",
+          "url": "https://leetcode.com/problems/n-queens/"
+        }
+      ],
+      "parents": [
+        "backtracking"
+      ],
+      "children": []
+    },
+    "wordSearchIi": {
+      "title": "Word Search II",
+      "sourceId": "46Y-wvaUJZwd32mRqrRix",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "Given a board of characters and a list of words, return all words that exist in the board. You build a trie from the word list and do DFS from each cell, pruning paths that do not match any trie prefix. This problem is the hardest trie problem in this stage and teaches you how a trie dramatically reduces the search space compared to checking each word separately.",
+      "video": {
+        "title": "[Java] Leetcode 212. Word Search II [Backtracking #12]",
+        "url": "https://www.youtube.com/watch?v=IryjR5DteW4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Word Search II",
+          "url": "https://leetcode.com/problems/word-search-ii/"
+        }
+      ],
+      "parents": [
+        "tries"
+      ],
+      "children": []
+    },
+    "moreExercises9": {
+      "title": "More Exercises",
+      "sourceId": "G1SqIZkN9dBKsv2LxqP8D",
+      "type": "subtopic",
+      "order": 78,
+      "summary": "Below you can find other popular questions covering Backtracking. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Subsets II",
+          "url": "https://leetcode.com/problems/subsets-ii/"
+        },
+        {
+          "type": "article",
+          "title": "Combination Sum II",
+          "url": "https://leetcode.com/problems/combination-sum-ii/"
+        },
+        {
+          "type": "article",
+          "title": "Palindrome Partitioning",
+          "url": "https://leetcode.com/problems/palindrome-partitioning/"
+        },
+        {
+          "type": "article",
+          "title": "Letter Combinations of a Phone Number",
+          "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+        },
+        {
+          "type": "article",
+          "title": "Sudoku Solver",
+          "url": "https://leetcode.com/problems/sudoku-solver/"
+        }
+      ],
+      "parents": [
+        "backtracking"
+      ],
+      "children": []
+    },
+    "longestCommonPrefix": {
+      "title": "Longest Common Prefix",
+      "sourceId": "8HrT_SZWMlscj13G0gIID",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "Given an array of strings, find the longest common prefix among all of them. One approach inserts all strings into a trie and traverses down as long as each node has exactly one child and is not a word end. This problem is simpler than the others but it teaches you that tries are not only for search, they also encode shared structure between strings.",
+      "video": {
+        "title": "Longest Common Prefix - Leetcode 14 - Arrays & Strings (Python)",
+        "url": "https://www.youtube.com/watch?v=8C6F8_nM0qs"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Longest Common Prefix",
+          "url": "https://leetcode.com/problems/longest-common-prefix/"
+        }
+      ],
+      "parents": [
+        "tries"
+      ],
+      "children": []
+    },
+    "tries": {
+      "title": "Tries",
+      "sourceId": "dmY-zE1Lql_HfTnhMfKMV",
+      "type": "topic",
+      "order": 80,
+      "summary": "A trie is a tree structure built from the characters of strings, where each path from the root to a marked node spells out a word. It is the right data structure when you need fast prefix lookups across a large set of strings. A hash map can check if a whole word exists, but a trie can check if any word in your dictionary starts with a given prefix in O(length) time. The three problems in this stage cover building a trie, searching with wildcards, and using a trie to prune a grid search, which together cover the full range of trie applications in interviews.",
+      "video": {
+        "title": "Data Structures: Tries",
+        "url": "https://www.youtube.com/watch?v=zIjfhVPRZCg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Trying to Understand Tries",
+          "url": "https://medium.com/basecs/trying-to-understand-tries-3ec6bede0014"
+        }
+      ],
+      "parents": [
+        "backtracking"
+      ],
+      "children": [
+        "implementTrie",
+        "designAddAndSearchWords",
+        "wordSearchIi",
+        "longestCommonPrefix",
+        "replaceWords",
+        "moreExercises10",
+        "graphs"
+      ]
+    },
+    "replaceWords": {
+      "title": "Replace Words",
+      "sourceId": "IINhLJ2evjsS_v2DH3AA1",
+      "type": "subtopic",
+      "order": 81,
+      "summary": "Given a dictionary of root words and a sentence, replace each word in the sentence with its shortest matching root from the dictionary. You insert all roots into a trie, then for each word in the sentence traverse the trie character by character until you hit a root or fail. This problem teaches you practical trie lookup with early termination, which is the core of trie efficiency.",
+      "video": {
+        "title": "Leetcode 648 Replace Words",
+        "url": "https://www.youtube.com/watch?v=5liJnc8iNeY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Replace Words",
+          "url": "https://leetcode.com/problems/replace-words/"
+        }
+      ],
+      "parents": [
+        "tries"
+      ],
+      "children": []
+    },
+    "numberOfIslands": {
+      "title": "Number of Islands",
+      "sourceId": "LInRfygQmBDTFbezzM97o",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "Given a 2D grid of land and water cells, count the number of islands. You do DFS from each unvisited land cell, marking the entire connected landmass as visited before moving on. This is the entry point for graph DFS on a matrix and teaches you to treat a grid as an implicit graph where adjacency is defined by up, down, left, right neighbors.",
+      "video": {
+        "title": "Number of Islands (LeetCode 200) | Full solution",
+        "url": "https://www.youtube.com/watch?v=ZgCZfXPo3hI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Number of Islands",
+          "url": "https://leetcode.com/problems/number-of-islands/"
+        }
+      ],
+      "parents": [
+        "graphs"
+      ],
+      "children": []
+    },
+    "moreExercises10": {
+      "title": "More Exercises",
+      "sourceId": "y-quVGz8J5Rmz2ixUFwBI",
+      "type": "subtopic",
+      "order": 83,
+      "summary": "Below you can find other popular questions covering Tries. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Extra Characters in a String",
+          "url": "https://leetcode.com/problems/extra-characters-in-a-string/"
+        },
+        {
+          "type": "article",
+          "title": "Sum of Prefix Scores of Strings",
+          "url": "https://leetcode.com/problems/sum-of-prefix-scores-of-strings/"
+        },
+        {
+          "type": "article",
+          "title": "Palindrome Pairs",
+          "url": "https://leetcode.com/problems/palindrome-pairs/"
+        },
+        {
+          "type": "article",
+          "title": "Index Pairs of a String",
+          "url": "https://leetcode.com/problems/index-pairs-of-a-string/"
+        },
+        {
+          "type": "article",
+          "title": "Search Suggestions System",
+          "url": "https://leetcode.com/problems/search-suggestions-system/"
+        }
+      ],
+      "parents": [
+        "tries"
+      ],
+      "children": []
+    },
+    "cloneGraph": {
+      "title": "Clone Graph",
+      "sourceId": "WO238sUhvIiZHdLF6Kmfl",
+      "type": "subtopic",
+      "order": 84,
+      "summary": "Given a connected undirected graph, return a deep copy of it. You use DFS or BFS and a hash map to track which nodes have already been cloned, so you do not create duplicate copies when revisiting nodes. This problem teaches you to handle graphs with cycles during traversal, which requires tracking visited nodes from the start.",
+      "video": {
+        "title": "Clone Graph - LeetCode 133 - Python",
+        "url": "https://www.youtube.com/watch?v=2Qzj0t8nrCk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Clone Graph",
+          "url": "https://leetcode.com/problems/clone-graph/"
+        }
+      ],
+      "parents": [
+        "graphs"
+      ],
+      "children": []
+    },
+    "pacificAtlanticWaterFlow": {
+      "title": "Pacific Atlantic Water Flow",
+      "sourceId": "mhSb4eQV970bLlOfFg84p",
+      "type": "subtopic",
+      "order": 85,
+      "summary": "Given a matrix of heights, find all cells from which water can flow to both the Pacific and Atlantic oceans. You reverse the problem: do BFS inward from each ocean's border, marking all reachable cells, then return cells reachable from both. This problem teaches you that reversing the direction of traversal can turn an exponential problem into a linear one.",
+      "video": {
+        "title": "Pacific Atlantic Water Flow - Leetcode 417 - Graphs (Python)",
+        "url": "https://www.youtube.com/watch?v=pDvvDvgHUKE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Pacific Atlantic Water Flow",
+          "url": "https://leetcode.com/problems/pacific-atlantic-water-flow/"
+        }
+      ],
+      "parents": [
+        "graphs"
+      ],
+      "children": []
+    },
+    "graphs": {
+      "title": "Graphs",
+      "sourceId": "ssT7KZITndEvfyqmjeclx",
+      "type": "topic",
+      "order": 86,
+      "summary": "Graphs generalize trees by allowing arbitrary connections and cycles. The two core traversal techniques, DFS and BFS, work on graphs the same way they do on trees, but you must now track visited nodes explicitly to avoid infinite loops. This stage covers the main graph problem types: counting connected components, detecting cycles, finding shortest paths in unweighted graphs, and topological ordering of dependencies. Grids are also implicit graphs, where each cell is a node and adjacency is defined by its four neighbors. Most graph problems reduce to one of these patterns once you recognize the structure.",
+      "video": {
+        "title": "Learn Graphs in 5 minutes \ud83c\udf10",
+        "url": "https://www.youtube.com/watch?v=-VgHk7UMPP4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Graphs DSA",
+          "url": "https://www.w3schools.com/dsa/dsa_theory_graphs.php"
+        }
+      ],
+      "parents": [
+        "tries"
+      ],
+      "children": [
+        "numberOfIslands",
+        "cloneGraph",
+        "pacificAtlanticWaterFlow",
+        "courseSchedule",
+        "wordLadder",
+        "moreExercises11",
+        "advancedGraphs"
+      ]
+    },
+    "networkDelayTime": {
+      "title": "Network Delay Time",
+      "sourceId": "zSqCHDbPvWsDRtEURoVNK",
+      "type": "subtopic",
+      "order": 87,
+      "summary": "Given a network of nodes and weighted directed edges, find the time it takes for a signal to reach all nodes from a source. This is Dijkstra's algorithm: you use a min-heap to always process the closest unvisited node next. This problem teaches you Dijkstra's algorithm in its clearest form, without extra complications, making it the best starting point for weighted shortest path problems.",
+      "video": {
+        "title": "Network Delay Time (Djikstra's Algorithm)",
+        "url": "https://www.youtube.com/watch?v=Bp7STMWMMQw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Network Delay Time",
+          "url": "https://leetcode.com/problems/network-delay-time/"
+        }
+      ],
+      "parents": [
+        "advancedGraphs"
+      ],
+      "children": []
+    },
+    "courseSchedule": {
+      "title": "Course Schedule",
+      "sourceId": "CLOI_M9A3D1UFavCYKCSE",
+      "type": "subtopic",
+      "order": 88,
+      "summary": "Given a list of courses and prerequisites, determine if it is possible to finish all courses. This is a cycle detection problem in a directed graph: if any cycle exists, the schedule is impossible. You can solve it with DFS by tracking nodes in the current recursion path. This problem teaches you topological sort thinking and is a gateway to all dependency-based graph problems.",
+      "video": {
+        "title": "LeetCode 207: Course Schedule | Topological Sort",
+        "url": "https://www.youtube.com/watch?v=EUDwWbvtB_Q"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Course Schedule",
+          "url": "https://leetcode.com/problems/course-schedule/"
+        }
+      ],
+      "parents": [
+        "graphs"
+      ],
+      "children": []
+    },
+    "minCostToConnectAllPoints": {
+      "title": "Min Cost to Connect All Points",
+      "sourceId": "5NxA27PJ7_pN40xzd7Slp",
+      "type": "subtopic",
+      "order": 89,
+      "summary": "Given a list of points, find the minimum cost to connect all of them, where cost is the Manhattan distance between two points. This is a minimum spanning tree problem solvable with Prim's algorithm using a min-heap, always picking the cheapest edge to an unvisited node.",
+      "video": {
+        "title": "Min Cost to Connect All Points | Prim's Algorithm |",
+        "url": "https://www.youtube.com/watch?v=hsr7KolYDH0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Min Cost to Connect All Points",
+          "url": "https://leetcode.com/problems/min-cost-to-connect-all-points/"
+        }
+      ],
+      "parents": [
+        "advancedGraphs"
+      ],
+      "children": []
+    },
+    "wordLadder": {
+      "title": "Word Ladder",
+      "sourceId": "J8YZFOS2sVwILJWdUphIU",
+      "type": "subtopic",
+      "order": 90,
+      "summary": "Given a start word and an end word, find the shortest transformation sequence where each step changes exactly one letter and every intermediate word must exist in a given word list. BFS gives the shortest path, and each word's neighbors are found by replacing each character with every letter. This is the hardest graph problem in this stage and teaches you to model an abstract problem as a shortest-path graph problem.",
+      "video": {
+        "title": "Word Ladder (LeetCode 127) | Interview Essential",
+        "url": "https://www.youtube.com/watch?v=kFKcWYCUpBg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Word Ladder",
+          "url": "https://leetcode.com/problems/word-ladder/"
+        }
+      ],
+      "parents": [
+        "graphs"
+      ],
+      "children": []
+    },
+    "cheapestFlightsWithinKStops": {
+      "title": "Cheapest Flights Within K Stops",
+      "sourceId": "ijY7CmX7wD5uP_6WwO97H",
+      "type": "subtopic",
+      "order": 91,
+      "summary": "Given a graph of flights with prices, find the cheapest route from source to destination using at most k stops. This is a modified Dijkstra or Bellman-Ford problem where the constraint is on the number of edges, not just total cost. This problem teaches you how to add an extra dimension (number of steps) to a shortest path algorithm.",
+      "video": {
+        "title": "LeetCode 787. Cheapest Flights Within K Stops",
+        "url": "https://www.youtube.com/watch?v=vWgoPTvQ3Rw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Cheapest Flights Within K Stops",
+          "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/"
+        }
+      ],
+      "parents": [
+        "advancedGraphs"
+      ],
+      "children": []
+    },
+    "moreExercises11": {
+      "title": "More Exercises",
+      "sourceId": "Q0AxfKbRuyY5rY2pO5xcP",
+      "type": "subtopic",
+      "order": 92,
+      "summary": "Below you can find other popular questions covering Graphs. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Max Area of Island",
+          "url": "https://leetcode.com/problems/max-area-of-island/"
+        },
+        {
+          "type": "article",
+          "title": "Rotting Oranges",
+          "url": "https://leetcode.com/problems/rotting-oranges/"
+        },
+        {
+          "type": "article",
+          "title": "Course Schedule II",
+          "url": "https://leetcode.com/problems/course-schedule-ii/"
+        },
+        {
+          "type": "article",
+          "title": "Redundant Connection",
+          "url": "https://leetcode.com/problems/redundant-connection/"
+        },
+        {
+          "type": "article",
+          "title": "Number of Connected Components in an Undirected Graph",
+          "url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/"
+        }
+      ],
+      "parents": [
+        "graphs"
+      ],
+      "children": []
+    },
+    "swimInRisingWater": {
+      "title": "Swim in Rising Water",
+      "sourceId": "0x9RwyrxbUZj30e-tMdWP",
+      "type": "subtopic",
+      "order": 93,
+      "summary": "Given a grid where each cell has a height, find the earliest time t such that you can travel from top-left to bottom-right, moving only through cells with height at most t. You binary search on t or use Dijkstra treating each cell's height as the cost. This problem teaches you to reframe a graph problem as a min-max path problem, where you minimize the maximum cost along any path.",
+      "video": {
+        "title": "Leetcode - Swim in Rising Water (Python)",
+        "url": "https://www.youtube.com/watch?v=QJuzj-Gm-IM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Swim in Rising Water",
+          "url": "https://leetcode.com/problems/swim-in-rising-water/"
+        }
+      ],
+      "parents": [
+        "advancedGraphs"
+      ],
+      "children": []
+    },
+    "advancedGraphs": {
+      "title": "Advanced Graphs",
+      "sourceId": "jNYQFvR3IafFXbAQHL4bF",
+      "type": "topic",
+      "order": 94,
+      "summary": "Advanced graph problems involve weighted edges, which require more sophisticated algorithms than simple BFS or DFS. Dijkstra's algorithm finds the shortest path in a weighted graph using a min-heap. Prim's and Kruskal's algorithms find the minimum spanning tree, connecting all nodes at minimum total cost. These algorithms are more complex than anything seen so far, and the problems here often combine the algorithm with an additional constraint, such as a limit on the number of steps or a non-standard cost function. Understanding the conditions under which each algorithm applies is as important as knowing how to implement it.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "graphs"
+      ],
+      "children": [
+        "networkDelayTime",
+        "minCostToConnectAllPoints",
+        "cheapestFlightsWithinKStops",
+        "swimInRisingWater",
+        "reconstructItinerary",
+        "moreExercises12",
+        "1DDynamicProgramming"
+      ]
+    },
+    "reconstructItinerary": {
+      "title": "Reconstruct Itinerary",
+      "sourceId": "Edk5ydpwut57XDc08QEgc",
+      "type": "subtopic",
+      "order": 95,
+      "summary": "Given a list of airline tickets, reconstruct the itinerary in lexical order starting from JFK, using all tickets exactly once. You use DFS with a sorted adjacency list and add nodes to the result only after all their outgoing edges are exhausted, which is Hierholzer's algorithm for Eulerian paths. This problem teaches you a non-obvious graph traversal where the order of adding nodes to the result is reversed.",
+      "video": {
+        "title": "Reconstruct Itinerary | Leetcode #332",
+        "url": "https://www.youtube.com/watch?v=WYqsg5dziaQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Reconstruct Itinerary",
+          "url": "https://leetcode.com/problems/reconstruct-itinerary/"
+        }
+      ],
+      "parents": [
+        "advancedGraphs"
+      ],
+      "children": []
+    },
+    "climbingStairs": {
+      "title": "Climbing Stairs",
+      "sourceId": "bXcvRnpO1aVN8XLLTSghB",
+      "type": "subtopic",
+      "order": 96,
+      "summary": "You can climb one or two steps at a time. Find the number of distinct ways to reach the top of n stairs. The number of ways to reach step n is the sum of ways to reach n-1 and n-2, which is exactly the Fibonacci pattern. This is the entry point to DP and teaches you to see a problem as a recurrence: the answer at each state depends on previous states.",
+      "video": {
+        "title": "Climbing Stairs - Leetcode 70 - Dynamic Programming (Python)",
+        "url": "https://www.youtube.com/watch?v=I-R1XsECJu8"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Climbing Stairs",
+          "url": "https://leetcode.com/problems/climbing-stairs/"
+        }
+      ],
+      "parents": [
+        "1DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "moreExercises12": {
+      "title": "More Exercises",
+      "sourceId": "i4A57jKrkhlw-jW3i3HSi",
+      "type": "subtopic",
+      "order": 97,
+      "summary": "Below you can find other popular questions covering Advanced Graphs. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Alien Dictionary",
+          "url": "https://leetcode.com/problems/alien-dictionary/"
+        },
+        {
+          "type": "article",
+          "title": "Path with Maximum Probability",
+          "url": "https://leetcode.com/problems/path-with-maximum-probability/"
+        },
+        {
+          "type": "article",
+          "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+          "url": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/"
+        },
+        {
+          "type": "article",
+          "title": "Minimum Spanning Tree",
+          "url": "https://leetcode.com/problems/connecting-cities-with-minimum-cost/"
+        },
+        {
+          "type": "article",
+          "title": "Shortest Path in Binary Matrix",
+          "url": "https://leetcode.com/problems/shortest-path-in-binary-matrix/"
+        }
+      ],
+      "parents": [
+        "advancedGraphs"
+      ],
+      "children": []
+    },
+    "houseRobber": {
+      "title": "House Robber",
+      "sourceId": "GeLGoM3ocxZ-gjMUes4sE",
+      "type": "subtopic",
+      "order": 98,
+      "summary": "You are a robber planning to steal from houses in a row. You cannot rob two adjacent houses. Find the maximum amount you can steal. At each house you choose to rob it and skip the previous, or skip it and keep the best from before. This problem teaches the classic DP choice between taking the current element and combining it with a past state, or skipping it.",
+      "video": {
+        "title": "House Robber - LeetCode 198 - Python",
+        "url": "https://www.youtube.com/watch?v=r-ib63mhrNM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "House Robber",
+          "url": "https://leetcode.com/problems/house-robber/"
+        }
+      ],
+      "parents": [
+        "1DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "1DDynamicProgramming": {
+      "title": "1-D Dynamic Programming",
+      "sourceId": "sRU06JyWqwCnRDYEAV53L",
+      "type": "topic",
+      "order": 99,
+      "summary": "Dynamic programming is the technique of breaking a problem into overlapping subproblems, solving each once, and storing the result to avoid recomputation. In one-dimensional DP, each state depends only on a fixed number of previous states, so the solution builds a single array from left to right. The first step is always identifying the recurrence: what does the answer at position i depend on? The problems here cover the core DP patterns you will see repeatedly: linear sequences, knapsack decisions, and string segmentation. DP problems are notoriously hard to recognize, and the only reliable way to get better at them is to solve many and study the structure of their recurrences.",
+      "video": {
+        "title": "5 Simple Steps for Solving Dynamic Programming Problems",
+        "url": "https://www.youtube.com/watch?v=aPQY__2H3tE"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "1-D Dynamic Programming Problem",
+          "url": "https://www.scaler.com/topics/data-structures/1-d-dynamic-programming-problem/"
+        }
+      ],
+      "parents": [
+        "advancedGraphs"
+      ],
+      "children": [
+        "climbingStairs",
+        "houseRobber",
+        "coinChange",
+        "longestIncreasingSubsequ",
+        "wordBreak",
+        "moreExercises13",
+        "2DDynamicProgramming"
+      ]
+    },
+    "coinChange": {
+      "title": "Coin Change",
+      "sourceId": "WtOHLWoHNkE9JdxtmBlwC",
+      "type": "subtopic",
+      "order": 100,
+      "summary": "Given coin denominations and a target amount, find the minimum number of coins needed. You build a DP table where each amount stores the fewest coins to make it, using each coin to update future amounts. This is the canonical unbounded knapsack problem and teaches you bottom-up DP where you iterate over amounts rather than items.",
+      "video": {
+        "title": "Coin Change Problem | Minimum Number Of Coins Needed",
+        "url": "https://www.youtube.com/watch?v=KnWorqyDSLA"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Coin Change",
+          "url": "https://leetcode.com/problems/coin-change/"
+        }
+      ],
+      "parents": [
+        "1DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "uniquePaths": {
+      "title": "Unique Paths",
+      "sourceId": "xhEBSwgHsrCQolM9UvJ-c",
+      "type": "subtopic",
+      "order": 101,
+      "summary": "A robot starts at the top-left of an m by n grid and can only move right or down. Find the number of unique paths to the bottom-right. Each cell's count is the sum of the cell above and the cell to the left. This is the simplest 2D DP problem and teaches you to think in terms of a grid where each cell builds on its neighbors.",
+      "video": {
+        "title": "Unique Paths - Leetcode 62 - Dynamic Programming (Python)",
+        "url": "https://www.youtube.com/watch?v=3ZFvBlynmls"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Unique Paths",
+          "url": "https://leetcode.com/problems/unique-paths/"
+        }
+      ],
+      "parents": [
+        "2DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "longestIncreasingSubsequ": {
+      "title": "Longest Increasing Subsequ.",
+      "sourceId": "h9yvrxDYEZ9mCqbeKoPEu",
+      "type": "subtopic",
+      "order": 102,
+      "summary": "Given an array, find the length of the longest strictly increasing subsequence. For each element, you check all previous elements that are smaller and extend the best subsequence ending there. This problem teaches you patience sorting and the classic O(n\u00b2) DP formulation, with an O(n log n) binary search optimization as a natural follow-up.",
+      "video": {
+        "title": "Longest Increasing Subsequence - Leetcode 300",
+        "url": "https://www.youtube.com/watch?v=MrPa5EFcDCU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Longest Increasing Subsequence",
+          "url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+        }
+      ],
+      "parents": [
+        "1DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "longestCommonSubsequence": {
+      "title": "Longest Common Subsequence",
+      "sourceId": "iodbhwYOWDM5JTaaqG4-m",
+      "type": "subtopic",
+      "order": 103,
+      "summary": "Given two strings, find the length of their longest common subsequence. If characters match, you extend the LCS from the diagonal; otherwise you take the best from dropping one character in either string. This is the canonical 2D DP problem and teaches you how a 2D table captures the relationship between two sequences simultaneously.",
+      "video": {
+        "title": "Longest Common Subsequence (LeetCode 1143)",
+        "url": "https://www.youtube.com/watch?v=e9tUPwZZSBI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Longest Common Subsequence",
+          "url": "https://leetcode.com/problems/longest-common-subsequence/"
+        }
+      ],
+      "parents": [
+        "2DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "wordBreak": {
+      "title": "Word Break",
+      "sourceId": "1i59D4ME10oOkxthILaNP",
+      "type": "subtopic",
+      "order": 104,
+      "summary": "Given a string and a dictionary of words, determine if the string can be segmented into a sequence of dictionary words. You use DP where each position stores whether the substring up to that point can be formed, checking every possible last word. This problem teaches you how to use a boolean DP array to track reachability, a pattern that appears in many string segmentation problems.",
+      "video": {
+        "title": "Word Break (LeetCode 139)",
+        "url": "https://www.youtube.com/watch?v=hK6Git1o42c"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Word Break",
+          "url": "https://leetcode.com/problems/word-break/"
+        }
+      ],
+      "parents": [
+        "1DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "editDistance": {
+      "title": "Edit Distance",
+      "sourceId": "xemUw3R72U4hvgHSOcaMg",
+      "type": "subtopic",
+      "order": 105,
+      "summary": "Given two strings, find the minimum number of insertions, deletions, or replacements to transform one into the other. A 2D DP table tracks the cost to convert each prefix of one string to each prefix of the other. This problem teaches you the three-way choice at each cell (insert, delete, replace) and is a foundational example of DP on two sequences.",
+      "video": {
+        "title": "Edit Distance (LeetCode 72) | Full step by step solution",
+        "url": "https://www.youtube.com/watch?v=HwDXH35lr0o"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Edit Distance",
+          "url": "https://leetcode.com/problems/edit-distance/"
+        }
+      ],
+      "parents": [
+        "2DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "moreExercises13": {
+      "title": "More Exercises",
+      "sourceId": "EBqzxy-2FWK4FwHyNKVHP",
+      "type": "subtopic",
+      "order": 106,
+      "summary": "Below you can find other popular questions covering 1-D Dynamic Programming. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "House Robber II",
+          "url": "https://leetcode.com/problems/house-robber-ii/"
+        },
+        {
+          "type": "article",
+          "title": "Decode Ways",
+          "url": "https://leetcode.com/problems/decode-ways/"
+        },
+        {
+          "type": "article",
+          "title": "Longest Palindromic Substring",
+          "url": "https://leetcode.com/problems/longest-palindromic-substring/"
+        },
+        {
+          "type": "article",
+          "title": "Partition Equal Subset Sum",
+          "url": "https://leetcode.com/problems/partition-equal-subset-sum/"
+        },
+        {
+          "type": "article",
+          "title": "Maximum Product Subarray",
+          "url": "https://leetcode.com/problems/maximum-product-subarray/"
+        }
+      ],
+      "parents": [
+        "1DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "burstBalloons": {
+      "title": "Burst Balloons",
+      "sourceId": "ImPbL26vNvxvPm4Kg5Vpl",
+      "type": "subtopic",
+      "order": 107,
+      "summary": "Given an array of balloons with values, burst all of them to maximize coins, where bursting a balloon gives coins equal to the product of itself and its neighbors. You use interval DP: instead of choosing which balloon to burst first, you choose which to burst last within each interval. This problem teaches you that sometimes reversing the order of decisions makes the DP structure cleaner.",
+      "video": {
+        "title": "Minimum Number of Arrows to Burst Balloons",
+        "url": "https://www.youtube.com/watch?v=lPmkKnvNPrw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Burst Balloons",
+          "url": "https://leetcode.com/problems/burst-balloons/"
+        }
+      ],
+      "parents": [
+        "2DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "2DDynamicProgramming": {
+      "title": "2-D Dynamic Programming",
+      "sourceId": "sXyW3ZAURJUze8_g9PvwW",
+      "type": "topic",
+      "order": 108,
+      "summary": "Two-dimensional DP extends the same ideas to problems where the state depends on two variables simultaneously, typically two indices into two sequences or two dimensions of a grid. The table is now a matrix, and each cell is filled based on cells above it, to its left, or diagonally adjacent. The problems here include string comparison (edit distance, longest common subsequence), grid path counting, and interval DP where you think about ranges rather than prefixes. These problems tend to be harder to set up than 1-D DP, but once you identify the state and the transition, the code follows directly from the recurrence.",
+      "video": {
+        "title": "Learn Dynamic Programming with Animations \u2013 Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=66hDgWottdA"
+      },
+      "articles": [],
+      "parents": [
+        "1DDynamicProgramming"
+      ],
+      "children": [
+        "uniquePaths",
+        "longestCommonSubsequence",
+        "editDistance",
+        "burstBalloons",
+        "regularExpressionMatching",
+        "moreExercises14",
+        "greedy"
+      ]
+    },
+    "regularExpressionMatching": {
+      "title": "Regular Expression Matching",
+      "sourceId": "XTDdSFywX863IErL0rmc6",
+      "type": "subtopic",
+      "order": 109,
+      "summary": "Given a string and a pattern with dot and star wildcards, determine if the pattern matches the entire string. A 2D DP table tracks whether each prefix of the string matches each prefix of the pattern, with special handling for the star operator. This is one of the hardest 2D DP problems and teaches you to handle optional repetition in DP, where a character can appear zero or more times.",
+      "video": {
+        "title": "Regular Expression Matching Python Solution - LeetCode #10",
+        "url": "https://www.youtube.com/watch?v=ZNI_yXaGlxY"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Regular Expression Matching",
+          "url": "https://leetcode.com/problems/regular-expression-matching/"
+        }
+      ],
+      "parents": [
+        "2DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "jumpGame": {
+      "title": "Jump Game",
+      "sourceId": "so5popgQyB5vNRz_NYxo6",
+      "type": "subtopic",
+      "order": 110,
+      "summary": "Given an array where each element is the maximum jump length from that position, determine if you can reach the last index. You track the furthest position reachable so far and update it at each step. This problem teaches you the core greedy insight: you never need to track which specific jumps you take, only how far you can reach.",
+      "video": {
+        "title": "LeetCode 55. Jump Game (Algorithm Explained)",
+        "url": "https://www.youtube.com/watch?v=Zb4eRjuPHbM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Jump Game",
+          "url": "https://leetcode.com/problems/jump-game/"
+        }
+      ],
+      "parents": [
+        "greedy"
+      ],
+      "children": []
+    },
+    "moreExercises14": {
+      "title": "More Exercises",
+      "sourceId": "licG83FALxf4jPOV7v_an",
+      "type": "subtopic",
+      "order": 111,
+      "summary": "Below you can find other popular questions covering 2-D Dynamic Programming. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Best Time to Buy and Sell Stock with Cooldown",
+          "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/"
+        },
+        {
+          "type": "article",
+          "title": "Coin Change II",
+          "url": "https://leetcode.com/problems/coin-change-ii/"
+        },
+        {
+          "type": "article",
+          "title": "Target Sum",
+          "url": "https://leetcode.com/problems/target-sum/"
+        },
+        {
+          "type": "article",
+          "title": "Interleaving String",
+          "url": "https://leetcode.com/problems/interleaving-string/"
+        },
+        {
+          "type": "article",
+          "title": "Distinct Subsequences",
+          "url": "https://leetcode.com/problems/distinct-subsequences/"
+        }
+      ],
+      "parents": [
+        "2DDynamicProgramming"
+      ],
+      "children": []
+    },
+    "jumpGameIi": {
+      "title": "Jump Game II",
+      "sourceId": "gJ1O1H12KoNejTV_q0dsf",
+      "type": "subtopic",
+      "order": 112,
+      "summary": "Given the same setup, find the minimum number of jumps to reach the last index. You greedily track the end of the current jump range and the furthest you can reach within it, incrementing the jump count when you exhaust the current range. This problem teaches you the two-range greedy technique, where you separate the current jump's boundary from the next one. Visit the question on the LeetCode website.",
+      "video": {
+        "title": "PASS the coding interview | #45 Jump Game II (Leetcode)",
+        "url": "https://www.youtube.com/watch?v=G8isnm2OylM"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Jump Game II",
+          "url": "https://leetcode.com/problems/jump-game-ii/"
+        }
+      ],
+      "parents": [
+        "greedy"
+      ],
+      "children": []
+    },
+    "greedy": {
+      "title": "Greedy",
+      "sourceId": "MU6i1n0KKiAU_FkBTB3hW",
+      "type": "topic",
+      "order": 113,
+      "summary": "Greedy algorithms make the locally optimal choice at each step and never revisit decisions. They are faster and simpler than DP when they work, but proving that a greedy choice leads to a globally optimal solution is not always obvious. The problems in this stage cover the most common greedy patterns: interval scheduling, jump games, and character frequency problems. A useful habit is to first ask whether a greedy approach is correct before coding it: can a short-sighted choice ever lead you away from the best solution? If the answer is yes, you probably need DP instead.",
+      "video": {
+        "title": "Greedy Algorithms Tutorial \u2013 Solve Coding Challenges",
+        "url": "https://www.youtube.com/watch?v=bC7o8P_Ste4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "DSA Greedy Algorithms",
+          "url": "https://www.w3schools.com/dsa/dsa_ref_greedy.php"
+        }
+      ],
+      "parents": [
+        "2DDynamicProgramming"
+      ],
+      "children": [
+        "jumpGame",
+        "jumpGameIi",
+        "gasStation",
+        "partitionLabels",
+        "nonOverlappingIntervals",
+        "moreExercises15",
+        "intervals"
+      ]
+    },
+    "gasStation": {
+      "title": "Gas Station",
+      "sourceId": "UWJLu3cfCGo487MOeu63T",
+      "type": "subtopic",
+      "order": 114,
+      "summary": "Given gas amounts and costs at each station on a circular route, find the starting station from which you can complete the circuit. If total gas is at least total cost, a solution exists, and the starting point is always after the last segment where the running tank went negative. This problem teaches you that a global observation (total gas vs total cost) can determine existence, while a local scan finds the answer.",
+      "video": {
+        "title": "L82. Gas Station | Greedy Approach | Leetcode 134",
+        "url": "https://www.youtube.com/watch?v=SmTow5Ht4iU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Gas Station",
+          "url": "https://leetcode.com/problems/gas-station/"
+        }
+      ],
+      "parents": [
+        "greedy"
+      ],
+      "children": []
+    },
+    "mergeIntervals": {
+      "title": "Merge Intervals",
+      "sourceId": "JsjPXTe3Zp5E7vCWUMeSe",
+      "type": "subtopic",
+      "order": 115,
+      "summary": "Given a list of intervals, merge all overlapping ones. You sort by start time and iterate, extending the current interval when the next one overlaps, or starting a new one when it does not. This is the foundational interval problem and teaches you that sorting by start time reduces the overlap check to a single comparison with the previous interval's end.",
+      "video": {
+        "title": "Merge Intervals - Leetcode 56 - Arrays & Strings (Python)",
+        "url": "https://www.youtube.com/watch?v=HCbKvBOlMVI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Merge Intervals",
+          "url": "https://leetcode.com/problems/merge-intervals/https://leetcode.com/problems/merge-intervals/"
+        }
+      ],
+      "parents": [
+        "intervals"
+      ],
+      "children": []
+    },
+    "partitionLabels": {
+      "title": "Partition Labels",
+      "sourceId": "V7pvMzno_woUHHSfLTv7q",
+      "type": "subtopic",
+      "order": 116,
+      "summary": "Given a string, partition it into as many parts as possible so that each letter appears in at most one part. You find the last occurrence of each character first, then greedily extend the current partition's boundary as you scan. This problem teaches you how to greedily build non-overlapping intervals using the last-occurrence anchor, a pattern that appears in several interval problems.",
+      "video": {
+        "title": "Partition Labels (LeetCode 763) | Solution with animations",
+        "url": "https://www.youtube.com/watch?v=aUVEMnlcw4E"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Partition Labels",
+          "url": "https://leetcode.com/problems/partition-labels/"
+        }
+      ],
+      "parents": [
+        "greedy"
+      ],
+      "children": []
+    },
+    "insertInterval": {
+      "title": "Insert Interval",
+      "sourceId": "BhiAYH1ug08LnPH8DtR1D",
+      "type": "subtopic",
+      "order": 117,
+      "summary": "Given a sorted list of non-overlapping intervals and a new interval, insert it and merge any overlaps. You add all intervals that end before the new one starts, merge all that overlap with it, then add the rest. This problem teaches you to handle three distinct regions when inserting into a sorted interval list, a pattern that requires careful boundary thinking.",
+      "video": {
+        "title": "Insert Interval - LeetCode 57 - Python",
+        "url": "https://www.youtube.com/watch?v=bx261hofOyk"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Insert Interval",
+          "url": "https://leetcode.com/problems/insert-interval/"
+        }
+      ],
+      "parents": [
+        "intervals"
+      ],
+      "children": []
+    },
+    "nonOverlappingIntervals": {
+      "title": "Non-overlapping Intervals",
+      "sourceId": "Mc1jQ5_-trqgCckM23cjQ",
+      "type": "subtopic",
+      "order": 118,
+      "summary": "Given a list of intervals, find the minimum number of intervals to remove so that the rest do not overlap. You sort by end time and greedily keep every interval that does not conflict with the last kept one. This problem teaches the classic interval scheduling insight: always prefer the interval that ends earliest, since it leaves the most room for future intervals.",
+      "video": {
+        "title": "Non-overlapping Intervals - LeetCode 435 - Python",
+        "url": "https://www.youtube.com/watch?v=2LUQ6tBdGxo"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Non-overlapping Intervals",
+          "url": "https://leetcode.com/problems/non-overlapping-intervals/"
+        }
+      ],
+      "parents": [
+        "greedy"
+      ],
+      "children": []
+    },
+    "nonOverlappingIntervals2": {
+      "title": "Non-overlapping Intervals",
+      "sourceId": "k0XOp6P-EIyRKrSbsgr0w",
+      "type": "subtopic",
+      "order": 119,
+      "summary": "Given a list of intervals, find the minimum number to remove so that no two intervals overlap. Sorting by end time and greedily keeping non-conflicting intervals gives the maximum number you can keep, and the answer is total minus that. This problem reinforces the greedy interval scheduling principle and connects directly to the activity selection problem in algorithm theory.",
+      "video": {
+        "title": "Non-overlapping Intervals (LeetCode 435)",
+        "url": "https://www.youtube.com/watch?v=XsrJgwGlRoc"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Non-overlapping Intervals",
+          "url": "https://leetcode.com/problems/non-overlapping-intervals/"
+        }
+      ],
+      "parents": [
+        "intervals"
+      ],
+      "children": []
+    },
+    "moreExercises15": {
+      "title": "More Exercises",
+      "sourceId": "KHLCYCZqfXqVlHAs7YVHv",
+      "type": "subtopic",
+      "order": 120,
+      "summary": "Below you can find other popular questions covering Greedy. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Hand of Straights",
+          "url": "https://leetcode.com/problems/hand-of-straights/"
+        },
+        {
+          "type": "article",
+          "title": "Merge Triplets to Form Target Triplet",
+          "url": "https://leetcode.com/problems/merge-triplets-to-form-a-target-triplet/"
+        },
+        {
+          "type": "article",
+          "title": "Valid Parenthesis String",
+          "url": "https://leetcode.com/problems/valid-parenthesis-string/"
+        },
+        {
+          "type": "article",
+          "title": "Candy",
+          "url": "https://leetcode.com/problems/candy/"
+        },
+        {
+          "type": "article",
+          "title": "IPO",
+          "url": "https://leetcode.com/problems/ipo/"
+        }
+      ],
+      "parents": [
+        "greedy"
+      ],
+      "children": []
+    },
+    "meetingRooms": {
+      "title": "Meeting Rooms",
+      "sourceId": "9evXTNz1IVOnqWCQ7L5BW",
+      "type": "subtopic",
+      "order": 121,
+      "summary": "Given a list of meeting time intervals, determine if a person can attend all of them. You sort by start time and check if any meeting starts before the previous one ends. This is the simplest interval problem and teaches you that sorted order plus a single-pass scan resolves most interval overlap questions instantly.",
+      "video": {
+        "title": "Meeting Rooms - LeetCode 252 Python",
+        "url": "https://www.youtube.com/watch?v=XI9L0HDl-No"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Meeting Rooms",
+          "url": "https://leetcode.com/problems/meeting-rooms/"
+        }
+      ],
+      "parents": [
+        "intervals"
+      ],
+      "children": []
+    },
+    "intervals": {
+      "title": "Intervals",
+      "sourceId": "zHDAHN1gN5Ofx2eyQg5_7",
+      "type": "topic",
+      "order": 122,
+      "summary": "Interval problems appear frequently in scheduling, calendar, and range-based questions. The dominant technique is sorting by start or end time, which turns an otherwise quadratic overlap-checking problem into a linear scan. Once sorted, you can merge overlaps, count simultaneous events, or find gaps with a single pass. The harder problems in this stage combine interval sorting with a heap to answer queries efficiently. The key mindset shift is thinking of intervals as objects with a start and end, and reasoning about what it means for two intervals to overlap, contain, or be adjacent.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "DSA Fundamentals: Intervals - From Theory to LeetCode Practice",
+          "url": "https://www.jaykye.dev/blog/dsa-intervals-fundamentals"
+        }
+      ],
+      "parents": [
+        "greedy"
+      ],
+      "children": [
+        "mergeIntervals",
+        "insertInterval",
+        "nonOverlappingIntervals2",
+        "meetingRooms",
+        "minIntervalToIncludeQuery",
+        "moreExercises16",
+        "bitManipulation"
+      ]
+    },
+    "minIntervalToIncludeQuery": {
+      "title": "Min. Interval to Include Query",
+      "sourceId": "eYPhWnyTPhfbXco_G4bN_",
+      "type": "subtopic",
+      "order": 123,
+      "summary": "Given a list of intervals and queries, for each query find the length of the smallest interval that contains it. You sort both intervals and queries, use a min-heap keyed by interval length, and process queries in order. This is the hardest interval problem in this stage and teaches you the offline query technique, processing queries in sorted order alongside a heap.",
+      "video": {
+        "title": "Minimum Interval to Include Each Query: 1851",
+        "url": "https://www.youtube.com/watch?v=FZtDTYzVUhU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Minimum Interval to Include Each Query",
+          "url": "https://leetcode.com/problems/minimum-interval-to-include-each-query/"
+        }
+      ],
+      "parents": [
+        "intervals"
+      ],
+      "children": []
+    },
+    "singleNumber": {
+      "title": "Single Number",
+      "sourceId": "4UGevGjQBhbISeh_5bm_e",
+      "type": "subtopic",
+      "order": 124,
+      "summary": "Given an array where every element appears twice except one, find the element that appears only once. XOR of a number with itself is zero, and XOR of a number with zero is the number itself, so XOR-ing all elements cancels duplicates and leaves the unique one. This problem is the entry point to bit manipulation and teaches you that XOR is a surprisingly powerful tool for finding missing or unique values.",
+      "video": {
+        "title": "Single Number - LeetCode 136 - Python #leetcode",
+        "url": "https://www.youtube.com/watch?v=JnM0SQGlLY4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Single Number",
+          "url": "https://leetcode.com/problems/single-number/"
+        }
+      ],
+      "parents": [
+        "bitManipulation"
+      ],
+      "children": []
+    },
+    "moreExercises16": {
+      "title": "More Exercises",
+      "sourceId": "Q-vNw7YUh-4U6im7nrHe8",
+      "type": "subtopic",
+      "order": 125,
+      "summary": "Below you can find other popular questions covering Intervals. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Meeting Rooms II",
+          "url": "https://leetcode.com/problems/meeting-rooms-ii/"
+        },
+        {
+          "type": "article",
+          "title": "Employee Free Time",
+          "url": "https://leetcode.com/problems/employee-free-time/"
+        },
+        {
+          "type": "article",
+          "title": "Car Pooling",
+          "url": "https://leetcode.com/problems/car-pooling/"
+        },
+        {
+          "type": "article",
+          "title": "Interval List Intersections",
+          "url": "https://leetcode.com/problems/interval-list-intersections/"
+        },
+        {
+          "type": "article",
+          "title": "My Calendar I",
+          "url": "https://leetcode.com/problems/my-calendar-i/"
+        }
+      ],
+      "parents": [
+        "intervals"
+      ],
+      "children": []
+    },
+    "numberOf1Bits": {
+      "title": "Number of 1 Bits",
+      "sourceId": "XzQHEP8HYq_vYFWLon4rI",
+      "type": "subtopic",
+      "order": 126,
+      "summary": "Given a 32-bit integer, count how many bits are set to 1. You can check the last bit with a bitwise AND and shift right repeatedly, or use the trick n & (n-1) which clears the lowest set bit, counting until n becomes zero. This problem teaches you to inspect and clear individual bits, a fundamental bit manipulation skill.",
+      "video": {
+        "title": "Number of 1 Bits | Live Coding with Explanation | Leetcode - 191",
+        "url": "https://www.youtube.com/watch?v=wLHhAHkID9M"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Number of 1 Bits",
+          "url": "https://leetcode.com/problems/number-of-1-bits/"
+        }
+      ],
+      "parents": [
+        "bitManipulation"
+      ],
+      "children": []
+    },
+    "bitManipulation": {
+      "title": "Bit Manipulation",
+      "sourceId": "VIXFdmkwl9vw6LyxxoT74",
+      "type": "topic",
+      "order": 127,
+      "summary": "Bit manipulation uses the binary representation of integers directly through bitwise operators: AND, OR, XOR, and shifts. It is useful for problems involving pairs, uniqueness, flags, or any situation where you need to extract or toggle individual bits. XOR is particularly powerful because it is its own inverse: XOR-ing a value twice cancels out. The problems here are mostly short, but they require a different way of thinking about numbers. Once you internalize the basic bit operations, you will start seeing where they can replace more expensive data structures in problems across other categories.",
+      "video": {
+        "title": "Algorithms: Bit Manipulation",
+        "url": "https://www.youtube.com/watch?v=NLKQEOgBAnw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Bit manipulation",
+          "url": "https://cp-algorithms.com/algebra/bit-manipulation.html"
+        }
+      ],
+      "parents": [
+        "intervals"
+      ],
+      "children": [
+        "singleNumber",
+        "numberOf1Bits",
+        "countingBits",
+        "reverseBits",
+        "sumOfTwoIntegers",
+        "moreExercises17",
+        "mathGeometry"
+      ]
+    },
+    "countingBits": {
+      "title": "Counting Bits",
+      "sourceId": "jZscKonByp5QDMcXUA50W",
+      "type": "subtopic",
+      "order": 128,
+      "summary": "Given an integer n, return an array where each element is the number of 1 bits in its binary representation from 0 to n. You can use DP: the number of bits in i equals one plus the bits in i with its lowest set bit removed. This problem teaches you to combine bit manipulation with DP to avoid recomputing from scratch for each number.",
+      "video": {
+        "title": "Counting Bits - LeetCode 338 - Python",
+        "url": "https://www.youtube.com/watch?v=AACAzLKE9MI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Counting Bits",
+          "url": "https://leetcode.com/problems/counting-bits/"
+        }
+      ],
+      "parents": [
+        "bitManipulation"
+      ],
+      "children": []
+    },
+    "rotateImage": {
+      "title": "Rotate Image",
+      "sourceId": "P9U_DFbutAYwQGZjjf-oP",
+      "type": "subtopic",
+      "order": 129,
+      "summary": "Given an n by n matrix, rotate it 90 degrees clockwise in place. You first transpose the matrix (swap across the diagonal), then reverse each row. This problem teaches you that complex in-place transformations often decompose into two simpler operations applied in sequence.",
+      "video": {
+        "title": "Rotate Image (Leetcode 48) | Full solution",
+        "url": "https://www.youtube.com/watch?v=Ux058jpRB9Y"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Rotate Image",
+          "url": "https://leetcode.com/problems/rotate-image/"
+        }
+      ],
+      "parents": [
+        "mathGeometry"
+      ],
+      "children": []
+    },
+    "reverseBits": {
+      "title": "Reverse Bits",
+      "sourceId": "KHR39YdCVeSGJtHrcLJyT",
+      "type": "subtopic",
+      "order": 130,
+      "summary": "Given a 32-bit unsigned integer, reverse its bits. You build the result bit by bit by extracting the last bit from the input and shifting it into the result. This problem teaches you how to construct a new number bit by bit using shifts and masks, which is useful in many low-level and embedded contexts.",
+      "video": {
+        "title": "Reverse Bits - LeetCode 190 - Python",
+        "url": "https://www.youtube.com/watch?v=PywybHkTtPo"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Reverse Bits",
+          "url": "https://leetcode.com/problems/reverse-bits/"
+        }
+      ],
+      "parents": [
+        "bitManipulation"
+      ],
+      "children": []
+    },
+    "spiralMatrix": {
+      "title": "Spiral Matrix",
+      "sourceId": "H6lLJWRhjRVq5ZqKEJ8bL",
+      "type": "subtopic",
+      "order": 131,
+      "summary": "Given an m by n matrix, return all elements in spiral order. You maintain four boundaries (top, bottom, left, right) and peel one layer at a time, moving right, down, left, then up, shrinking the boundaries after each direction. This problem teaches careful boundary management and is a good test of whether you can translate a visual pattern into clean code.",
+      "video": {
+        "title": "Spiral Matrix (LeetCode 54) | Full Solution",
+        "url": "https://www.youtube.com/watch?v=aqVW8IuXUF0"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Spiral Matrix",
+          "url": "https://leetcode.com/problems/spiral-matrix/"
+        }
+      ],
+      "parents": [
+        "mathGeometry"
+      ],
+      "children": []
+    },
+    "sumOfTwoIntegers": {
+      "title": "Sum of Two Integers",
+      "sourceId": "cUgRS-8TyPT98LemGFBf3",
+      "type": "subtopic",
+      "order": 132,
+      "summary": "Calculate the sum of two integers without using the plus or minus operators. XOR gives the sum without carries, and AND shifted left gives the carries. You repeat until there are no more carries. This problem teaches you how addition works at the bit level and deepens your understanding of carry propagation.",
+      "video": {
+        "title": "Sum of Two Integers - LeetCode 371 - Python",
+        "url": "https://www.youtube.com/watch?v=MmIx_NrCkGI"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Sum of Two Integers",
+          "url": "https://leetcode.com/problems/sum-of-two-integers/"
+        }
+      ],
+      "parents": [
+        "bitManipulation"
+      ],
+      "children": []
+    },
+    "setMatrixZeroes": {
+      "title": "Set Matrix Zeroes",
+      "sourceId": "ScROycnqOk2U2GW-Ghy2W",
+      "type": "subtopic",
+      "order": 133,
+      "summary": "Given a matrix, if any cell is zero, set its entire row and column to zero, in place. The trick is to record which rows and columns need zeroing before making any changes, using the first row and column as markers to avoid extra space. This problem teaches you to use existing space within the matrix to avoid allocating extra memory, a useful in-place technique.",
+      "video": {
+        "title": "Set Matrix Zeroes - LeetCode 73 - Python",
+        "url": "https://www.youtube.com/watch?v=IJ24FVsgPFU"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Set Matrix Zeroes",
+          "url": "https://leetcode.com/problems/set-matrix-zeroes/"
+        }
+      ],
+      "parents": [
+        "mathGeometry"
+      ],
+      "children": []
+    },
+    "moreExercises17": {
+      "title": "More Exercises",
+      "sourceId": "awYK5VUD2HS9ywJQfFYU7",
+      "type": "subtopic",
+      "order": 134,
+      "summary": "Below you can find other popular questions covering Bit Manipulation. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Missing Number",
+          "url": "https://leetcode.com/problems/missing-number/"
+        },
+        {
+          "type": "article",
+          "title": "Reverse Integer",
+          "url": "https://leetcode.com/problems/reverse-integer/"
+        },
+        {
+          "type": "article",
+          "title": "Power of Two",
+          "url": "https://leetcode.com/problems/power-of-two/"
+        },
+        {
+          "type": "article",
+          "title": "Bitwise AND of Numbers Range",
+          "url": "https://leetcode.com/problems/bitwise-and-of-numbers-range/"
+        },
+        {
+          "type": "article",
+          "title": "Single Number II",
+          "url": "https://leetcode.com/problems/single-number-ii/"
+        }
+      ],
+      "parents": [
+        "bitManipulation"
+      ],
+      "children": []
+    },
+    "happyNumber": {
+      "title": "Happy Number",
+      "sourceId": "VVB6zLZG6IxB4LQg8jIYT",
+      "type": "subtopic",
+      "order": 135,
+      "summary": "A happy number is one that eventually reaches 1 when you repeatedly replace it with the sum of the squares of its digits. Detect whether a number is happy. This is a cycle detection problem: if the process loops without reaching 1, the number is not happy. You can use Floyd's algorithm or a set to detect the cycle. This problem teaches you to recognize cycle detection in non-graph contexts.",
+      "video": {
+        "title": "Happy Number - LeetCode 202 - Python",
+        "url": "https://www.youtube.com/watch?v=8wDuRgQ2dvw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Happy Number",
+          "url": "https://leetcode.com/problems/happy-number/"
+        }
+      ],
+      "parents": [
+        "mathGeometry"
+      ],
+      "children": []
+    },
+    "mathGeometry": {
+      "title": "Math & Geometry",
+      "sourceId": "Rx59jh-ynzC5wRGja3jvg",
+      "type": "topic",
+      "order": 136,
+      "summary": "Math and geometry problems test your ability to translate a visual or numerical pattern into clean algorithmic logic. Many of these problems have elegant solutions that depend on a single mathematical observation, such as the structure of matrix rotation or the periodicity of digit sums. Unlike the earlier stages, there is no dominant pattern here. Instead, you are developing the habit of looking for structure in a problem before reaching for a general algorithm. These problems are a good test of problem-solving maturity: can you find the insight, or do you default to brute force?",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Basic Geometry",
+          "url": "https://cp-algorithms.com/geometry/basic-geometry.html"
+        }
+      ],
+      "parents": [
+        "bitManipulation"
+      ],
+      "children": [
+        "rotateImage",
+        "spiralMatrix",
+        "setMatrixZeroes",
+        "happyNumber",
+        "powXN",
+        "moreExercises18",
+        "continueLearningWithFollowingRelevantTracks"
+      ]
+    },
+    "powXN": {
+      "title": "Pow(x, n)",
+      "sourceId": "ea7dib41v61Vz--ewLcF4",
+      "type": "subtopic",
+      "order": 137,
+      "summary": "Implement the power function that raises x to the nth power, including negative exponents, in O(log n). You use fast exponentiation: square the base and halve the exponent at each step, handling odd exponents by multiplying in an extra factor. This problem teaches you recursive divide-and-conquer on a numerical computation, and is the standard way to implement exponentiation efficiently. Visit the question on the LeetCode website.",
+      "video": {
+        "title": "POW(x,n) | Binary Exponentiation | Leetcode",
+        "url": "https://www.youtube.com/watch?v=l0YC3876qxg"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Pow(x, n)",
+          "url": "https://leetcode.com/problems/powx-n/"
+        }
+      ],
+      "parents": [
+        "mathGeometry"
+      ],
+      "children": []
+    },
+    "moreExercises18": {
+      "title": "More Exercises",
+      "sourceId": "0u8IQZvJV7ORHcBfUBQ7R",
+      "type": "subtopic",
+      "order": 138,
+      "summary": "Below you can find other popular questions covering Math and Geometry. Work through these once you are comfortable with the five above.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Multiply Strings",
+          "url": "https://leetcode.com/problems/multiply-strings/"
+        },
+        {
+          "type": "article",
+          "title": "Detect Squares",
+          "url": "https://leetcode.com/problems/detect-squares/"
+        },
+        {
+          "type": "article",
+          "title": "Plus One",
+          "url": "https://leetcode.com/problems/plus-one/"
+        },
+        {
+          "type": "article",
+          "title": "Count Primes",
+          "url": "https://leetcode.com/problems/count-primes/"
+        },
+        {
+          "type": "article",
+          "title": "Excel Sheet Column Number",
+          "url": "https://leetcode.com/problems/excel-sheet-column-number/"
+        }
+      ],
+      "parents": [
+        "mathGeometry"
+      ],
+      "children": []
+    },
+    "continueLearningWithFollowingRelevantTracks": {
+      "title": "Continue Learning with following relevant tracks",
+      "sourceId": "0vLaVNJaJSHZ_bHli6Qzs",
+      "type": "paragraph",
+      "order": 139,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "mathGeometry"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "leetcode",
+      "to": "whatIsLeetcode",
+      "style": "solid"
+    },
+    {
+      "from": "arraysHashing",
+      "to": "twoSum",
+      "style": "dashed"
+    },
+    {
+      "from": "arraysHashing",
+      "to": "validAnagram",
+      "style": "dashed"
+    },
+    {
+      "from": "arraysHashing",
+      "to": "containsDuplicate",
+      "style": "dashed"
+    },
+    {
+      "from": "arraysHashing",
+      "to": "groupAnagrams",
+      "style": "dashed"
+    },
+    {
+      "from": "arraysHashing",
+      "to": "topKFrequentElements",
+      "style": "dashed"
+    },
+    {
+      "from": "arraysHashing",
+      "to": "moreExercises",
+      "style": "dashed"
+    },
+    {
+      "from": "twoPointers",
+      "to": "validPalindrome",
+      "style": "dashed"
+    },
+    {
+      "from": "twoPointers",
+      "to": "3sum",
+      "style": "dashed"
+    },
+    {
+      "from": "twoPointers",
+      "to": "containerWithMostWater",
+      "style": "dashed"
+    },
+    {
+      "from": "twoPointers",
+      "to": "trappingRainWater",
+      "style": "dashed"
+    },
+    {
+      "from": "twoPointers",
+      "to": "twoSumIi",
+      "style": "dashed"
+    },
+    {
+      "from": "twoPointers",
+      "to": "moreExercises2",
+      "style": "dashed"
+    },
+    {
+      "from": "twoPointers",
+      "to": "stacks",
+      "style": "solid"
+    },
+    {
+      "from": "stacks",
+      "to": "validParentheses",
+      "style": "dashed"
+    },
+    {
+      "from": "stacks",
+      "to": "minStack",
+      "style": "dashed"
+    },
+    {
+      "from": "stacks",
+      "to": "dailyTemperatures",
+      "style": "dashed"
+    },
+    {
+      "from": "stacks",
+      "to": "generateParentheses",
+      "style": "dashed"
+    },
+    {
+      "from": "stacks",
+      "to": "largestRectangleInHist",
+      "style": "dashed"
+    },
+    {
+      "from": "stacks",
+      "to": "moreExercises3",
+      "style": "dashed"
+    },
+    {
+      "from": "stacks",
+      "to": "binarySearch2",
+      "style": "solid"
+    },
+    {
+      "from": "binarySearch2",
+      "to": "binarySearch",
+      "style": "dashed"
+    },
+    {
+      "from": "binarySearch2",
+      "to": "searchInRotatedArray",
+      "style": "dashed"
+    },
+    {
+      "from": "binarySearch2",
+      "to": "minimumInRotatedArray",
+      "style": "dashed"
+    },
+    {
+      "from": "binarySearch2",
+      "to": "kokoEatingBananas",
+      "style": "dashed"
+    },
+    {
+      "from": "binarySearch2",
+      "to": "medianOfTwoArrays",
+      "style": "dashed"
+    },
+    {
+      "from": "binarySearch2",
+      "to": "moreExercises4",
+      "style": "dashed"
+    },
+    {
+      "from": "binarySearch2",
+      "to": "slidingWindow",
+      "style": "solid"
+    },
+    {
+      "from": "slidingWindow",
+      "to": "bestTimeToBuyAndSell",
+      "style": "dashed"
+    },
+    {
+      "from": "slidingWindow",
+      "to": "substringWithoutRepetition",
+      "style": "dashed"
+    },
+    {
+      "from": "slidingWindow",
+      "to": "minimumWindowSubstring",
+      "style": "dashed"
+    },
+    {
+      "from": "slidingWindow",
+      "to": "characterReplacement",
+      "style": "dashed"
+    },
+    {
+      "from": "slidingWindow",
+      "to": "slidingWindowMaximum",
+      "style": "dashed"
+    },
+    {
+      "from": "slidingWindow",
+      "to": "moreExercises5",
+      "style": "dashed"
+    },
+    {
+      "from": "slidingWindow",
+      "to": "linkedList",
+      "style": "solid"
+    },
+    {
+      "from": "linkedList",
+      "to": "reverseLinkedList",
+      "style": "dashed"
+    },
+    {
+      "from": "linkedList",
+      "to": "mergeTwoSortedLists",
+      "style": "dashed"
+    },
+    {
+      "from": "linkedList",
+      "to": "linkedListCycle",
+      "style": "dashed"
+    },
+    {
+      "from": "linkedList",
+      "to": "reorderList",
+      "style": "dashed"
+    },
+    {
+      "from": "linkedList",
+      "to": "mergeKSortedLists",
+      "style": "dashed"
+    },
+    {
+      "from": "linkedList",
+      "to": "moreExercises6",
+      "style": "dashed"
+    },
+    {
+      "from": "linkedList",
+      "to": "trees",
+      "style": "solid"
+    },
+    {
+      "from": "trees",
+      "to": "binaryTreeLevelOrder",
+      "style": "dashed"
+    },
+    {
+      "from": "trees",
+      "to": "maximumDepthOfBinaryTree",
+      "style": "dashed"
+    },
+    {
+      "from": "trees",
+      "to": "lowestCommonAncestor",
+      "style": "dashed"
+    },
+    {
+      "from": "trees",
+      "to": "binaryTreeMaximumPathSum",
+      "style": "dashed"
+    },
+    {
+      "from": "trees",
+      "to": "serializeAndDeserialize",
+      "style": "dashed"
+    },
+    {
+      "from": "trees",
+      "to": "moreExercises7",
+      "style": "dashed"
+    },
+    {
+      "from": "trees",
+      "to": "heapPriorityQueue",
+      "style": "solid"
+    },
+    {
+      "from": "heapPriorityQueue",
+      "to": "kthLargestElementInAnArray",
+      "style": "dashed"
+    },
+    {
+      "from": "heapPriorityQueue",
+      "to": "kClosestPointsToOrigin",
+      "style": "dashed"
+    },
+    {
+      "from": "heapPriorityQueue",
+      "to": "taskScheduler",
+      "style": "dashed"
+    },
+    {
+      "from": "heapPriorityQueue",
+      "to": "findMedianFromDataStream",
+      "style": "dashed"
+    },
+    {
+      "from": "heapPriorityQueue",
+      "to": "mergeKSortedLists2",
+      "style": "dashed"
+    },
+    {
+      "from": "heapPriorityQueue",
+      "to": "moreExercises8",
+      "style": "dashed"
+    },
+    {
+      "from": "heapPriorityQueue",
+      "to": "backtracking",
+      "style": "solid"
+    },
+    {
+      "from": "backtracking",
+      "to": "subsets",
+      "style": "dashed"
+    },
+    {
+      "from": "backtracking",
+      "to": "combinationSum",
+      "style": "dashed"
+    },
+    {
+      "from": "backtracking",
+      "to": "permutations",
+      "style": "dashed"
+    },
+    {
+      "from": "backtracking",
+      "to": "wordSearch",
+      "style": "dashed"
+    },
+    {
+      "from": "backtracking",
+      "to": "nQueens",
+      "style": "dashed"
+    },
+    {
+      "from": "backtracking",
+      "to": "moreExercises9",
+      "style": "dashed"
+    },
+    {
+      "from": "backtracking",
+      "to": "tries",
+      "style": "solid"
+    },
+    {
+      "from": "tries",
+      "to": "implementTrie",
+      "style": "dashed"
+    },
+    {
+      "from": "tries",
+      "to": "designAddAndSearchWords",
+      "style": "dashed"
+    },
+    {
+      "from": "tries",
+      "to": "wordSearchIi",
+      "style": "dashed"
+    },
+    {
+      "from": "tries",
+      "to": "longestCommonPrefix",
+      "style": "dashed"
+    },
+    {
+      "from": "tries",
+      "to": "replaceWords",
+      "style": "dashed"
+    },
+    {
+      "from": "tries",
+      "to": "moreExercises10",
+      "style": "dashed"
+    },
+    {
+      "from": "tries",
+      "to": "graphs",
+      "style": "solid"
+    },
+    {
+      "from": "graphs",
+      "to": "numberOfIslands",
+      "style": "dashed"
+    },
+    {
+      "from": "graphs",
+      "to": "cloneGraph",
+      "style": "dashed"
+    },
+    {
+      "from": "graphs",
+      "to": "pacificAtlanticWaterFlow",
+      "style": "dashed"
+    },
+    {
+      "from": "graphs",
+      "to": "courseSchedule",
+      "style": "dashed"
+    },
+    {
+      "from": "graphs",
+      "to": "wordLadder",
+      "style": "dashed"
+    },
+    {
+      "from": "graphs",
+      "to": "moreExercises11",
+      "style": "dashed"
+    },
+    {
+      "from": "graphs",
+      "to": "advancedGraphs",
+      "style": "solid"
+    },
+    {
+      "from": "advancedGraphs",
+      "to": "networkDelayTime",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedGraphs",
+      "to": "minCostToConnectAllPoints",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedGraphs",
+      "to": "cheapestFlightsWithinKStops",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedGraphs",
+      "to": "swimInRisingWater",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedGraphs",
+      "to": "reconstructItinerary",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedGraphs",
+      "to": "moreExercises12",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedGraphs",
+      "to": "1DDynamicProgramming",
+      "style": "solid"
+    },
+    {
+      "from": "1DDynamicProgramming",
+      "to": "climbingStairs",
+      "style": "dashed"
+    },
+    {
+      "from": "1DDynamicProgramming",
+      "to": "houseRobber",
+      "style": "dashed"
+    },
+    {
+      "from": "1DDynamicProgramming",
+      "to": "coinChange",
+      "style": "dashed"
+    },
+    {
+      "from": "1DDynamicProgramming",
+      "to": "longestIncreasingSubsequ",
+      "style": "dashed"
+    },
+    {
+      "from": "1DDynamicProgramming",
+      "to": "wordBreak",
+      "style": "dashed"
+    },
+    {
+      "from": "1DDynamicProgramming",
+      "to": "moreExercises13",
+      "style": "dashed"
+    },
+    {
+      "from": "1DDynamicProgramming",
+      "to": "2DDynamicProgramming",
+      "style": "solid"
+    },
+    {
+      "from": "2DDynamicProgramming",
+      "to": "uniquePaths",
+      "style": "dashed"
+    },
+    {
+      "from": "2DDynamicProgramming",
+      "to": "longestCommonSubsequence",
+      "style": "dashed"
+    },
+    {
+      "from": "2DDynamicProgramming",
+      "to": "editDistance",
+      "style": "dashed"
+    },
+    {
+      "from": "2DDynamicProgramming",
+      "to": "burstBalloons",
+      "style": "dashed"
+    },
+    {
+      "from": "2DDynamicProgramming",
+      "to": "regularExpressionMatching",
+      "style": "dashed"
+    },
+    {
+      "from": "2DDynamicProgramming",
+      "to": "moreExercises14",
+      "style": "dashed"
+    },
+    {
+      "from": "2DDynamicProgramming",
+      "to": "greedy",
+      "style": "solid"
+    },
+    {
+      "from": "greedy",
+      "to": "jumpGame",
+      "style": "dashed"
+    },
+    {
+      "from": "greedy",
+      "to": "jumpGameIi",
+      "style": "dashed"
+    },
+    {
+      "from": "greedy",
+      "to": "gasStation",
+      "style": "dashed"
+    },
+    {
+      "from": "greedy",
+      "to": "partitionLabels",
+      "style": "dashed"
+    },
+    {
+      "from": "greedy",
+      "to": "nonOverlappingIntervals",
+      "style": "dashed"
+    },
+    {
+      "from": "greedy",
+      "to": "moreExercises15",
+      "style": "dashed"
+    },
+    {
+      "from": "greedy",
+      "to": "intervals",
+      "style": "solid"
+    },
+    {
+      "from": "intervals",
+      "to": "mergeIntervals",
+      "style": "dashed"
+    },
+    {
+      "from": "intervals",
+      "to": "insertInterval",
+      "style": "dashed"
+    },
+    {
+      "from": "intervals",
+      "to": "nonOverlappingIntervals2",
+      "style": "dashed"
+    },
+    {
+      "from": "intervals",
+      "to": "meetingRooms",
+      "style": "dashed"
+    },
+    {
+      "from": "intervals",
+      "to": "minIntervalToIncludeQuery",
+      "style": "dashed"
+    },
+    {
+      "from": "intervals",
+      "to": "moreExercises16",
+      "style": "dashed"
+    },
+    {
+      "from": "intervals",
+      "to": "bitManipulation",
+      "style": "solid"
+    },
+    {
+      "from": "bitManipulation",
+      "to": "singleNumber",
+      "style": "dashed"
+    },
+    {
+      "from": "bitManipulation",
+      "to": "numberOf1Bits",
+      "style": "dashed"
+    },
+    {
+      "from": "bitManipulation",
+      "to": "countingBits",
+      "style": "dashed"
+    },
+    {
+      "from": "bitManipulation",
+      "to": "reverseBits",
+      "style": "dashed"
+    },
+    {
+      "from": "bitManipulation",
+      "to": "sumOfTwoIntegers",
+      "style": "dashed"
+    },
+    {
+      "from": "bitManipulation",
+      "to": "moreExercises17",
+      "style": "dashed"
+    },
+    {
+      "from": "bitManipulation",
+      "to": "mathGeometry",
+      "style": "solid"
+    },
+    {
+      "from": "mathGeometry",
+      "to": "rotateImage",
+      "style": "dashed"
+    },
+    {
+      "from": "mathGeometry",
+      "to": "spiralMatrix",
+      "style": "dashed"
+    },
+    {
+      "from": "mathGeometry",
+      "to": "setMatrixZeroes",
+      "style": "dashed"
+    },
+    {
+      "from": "mathGeometry",
+      "to": "happyNumber",
+      "style": "dashed"
+    },
+    {
+      "from": "mathGeometry",
+      "to": "powXN",
+      "style": "dashed"
+    },
+    {
+      "from": "mathGeometry",
+      "to": "moreExercises18",
+      "style": "dashed"
+    },
+    {
+      "from": "python",
+      "to": "pickALanguage",
+      "style": "dashed"
+    },
+    {
+      "from": "pickALanguage",
+      "to": "c",
+      "style": "dashed"
+    },
+    {
+      "from": "pickALanguage",
+      "to": "ruby",
+      "style": "dashed"
+    },
+    {
+      "from": "pickALanguage",
+      "to": "scala",
+      "style": "dashed"
+    },
+    {
+      "from": "pickALanguage",
+      "to": "arraysHashing",
+      "style": "solid"
+    },
+    {
+      "from": "arraysHashing",
+      "to": "twoPointers",
+      "style": "solid"
+    },
+    {
+      "from": "mathGeometry",
+      "to": "continueLearningWithFollowingRelevantTracks",
+      "style": "solid"
+    }
+  ]
+}

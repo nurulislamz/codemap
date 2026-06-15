@@ -1,0 +1,1130 @@
+{
+  "title": "UX Design",
+  "summary": "Step by step guide to becoming a UX Designer in 2026",
+  "url": "https://roadmap.sh/ux-design",
+  "order": [
+    "humanDecisionMaking",
+    "behavioralScience",
+    "persuasiveTechnology",
+    "nudgeTheory",
+    "behavioralEconomics",
+    "behaviorDesign",
+    "behaviorChangeStrategies",
+    "bjFoggsBehaviorGrid",
+    "cheating",
+    "defaulting",
+    "makingItIncidental",
+    "automateTheActOfRepetition",
+    "understandingTheProduct",
+    "clarifyProduct",
+    "defineTargetUsers",
+    "businessModel",
+    "conceptualDesign",
+    "figma",
+    "adobeXd",
+    "bjFoggsBehaviorModel",
+    "createActionFunnel",
+    "spectrumOfThinkingInterventions",
+    "dualProcessTheory",
+    "makeOrChangeHabits",
+    "supportConsciousAction",
+    "educateEncourageUser",
+    "helpUserThinkAboutTheirAction",
+    "createUserPersonas",
+    "existingBusinessModel",
+    "businessModelCanvas",
+    "newBusinessModel",
+    "businessModelInspirator",
+    "balsamiq",
+    "goodLayoutRules",
+    "prototyping",
+    "eventDrivenProcessChainModelEpc",
+    "businessProcessModelNotationBpmn",
+    "uxBestPractices",
+    "withManyChancesToInfluenceUser",
+    "behaviorChangeGames",
+    "deployStrongAuthorityOnSubject",
+    "beAuthenticAndPersonal",
+    "measuringTheImpact",
+    "primeUserRelevantAssociations",
+    "avoidDirectPayments",
+    "testing",
+    "avoidChoiceOverload",
+    "avoidCognitiveOverhead",
+    "youMightBeInterestedInFollowingRoadmapsAsWell"
+  ],
+  "topics": {
+    "humanDecisionMaking": {
+      "title": "Human Decision Making",
+      "sourceId": "liUKYf7UghuPk25xMPPYj",
+      "type": "topic",
+      "order": 1,
+      "summary": "Human decision-making encompasses the cognitive processes and influences that drive individuals to select a course of action from multiple options. It involves evaluating information, considering biases, weighing potential outcomes, and ultimately choosing what they believe is the best path forward in a given situation. Understanding how people make decisions is crucial for creating user experiences that align with their natural tendencies and help them achieve their goals effectively.",
+      "video": {
+        "title": "Types of Cognitive Bias",
+        "url": "https://www.youtube.com/watch?v=wEwGBIr_RIw"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "List of Cognitive Biases",
+          "url": "https://thedecisionlab.com/biases"
+        }
+      ],
+      "parents": [
+        "ux-design"
+      ],
+      "children": [
+        "behavioralScience",
+        "persuasiveTechnology",
+        "nudgeTheory",
+        "behavioralEconomics",
+        "behaviorDesign",
+        "behaviorChangeStrategies",
+        "bjFoggsBehaviorModel",
+        "createActionFunnel",
+        "spectrumOfThinkingInterventions",
+        "dualProcessTheory"
+      ]
+    },
+    "behavioralScience": {
+      "title": "Behavioral Science",
+      "sourceId": "D553-nVELaB5gdxtoKSVc",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "Behavioral science is the interdisciplinary study of human behavior, which encompasses disciplines like psychology, sociology, and anthropology. This field- primarily focuses on understanding what impacts our decisions, actions, and emotions. In the context of UX design, applying behavioral science concepts and principles can enhance user experience by improving user engagement, usability, and overall satisfaction.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Behavioral Science",
+          "url": "https://uxplanet.org/how-to-use-behavioral-science-to-influence-user-behavior-in-design-581dc0805f7c"
+        },
+        {
+          "type": "article",
+          "title": "Future of Behavioral Science",
+          "url": "https://behavioralscientist.org/what-is-the-future-of-design-and-behavioral-science-a-conversation-with-cliff-kuang/"
+        }
+      ],
+      "parents": [
+        "humanDecisionMaking"
+      ],
+      "children": []
+    },
+    "persuasiveTechnology": {
+      "title": "Persuasive Technology",
+      "sourceId": "K22gvF9DLt0Ikc80yZLCb",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "Persuasive technology is an area of UX design that focuses on using technology to influence human behavior and encourage users to take specific actions. It combines the principles of psychology and design to create experiences that impact user behavior in a desired way. The goal of persuasive technology is to subtly persuade or encourage users to adopt specific habits or behaviors, often with the intent of improving their overall experience or achieving a particular outcome.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "humanDecisionMaking"
+      ],
+      "children": []
+    },
+    "nudgeTheory": {
+      "title": "Nudge Theory",
+      "sourceId": "6ffY5wO-XhkiDJJ5YcI0x",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "Nudge Theory suggests that people make decisions based on cognitive biases rather than purely rational analysis. It proposes that subtle changes in the way choices are presented can significantly influence people's behavior without restricting their freedom of choice. This involves designing choices that are easier to make or more appealing, guiding users towards desired actions without being overly forceful or restrictive.",
+      "video": {
+        "title": "Nudge Theory Explained in less than 10 minutes",
+        "url": "https://youtu.be/fA5eGIMZTRQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Nudge Theory overview with examples",
+          "url": "https://www.businessballs.com/improving-workplace-performance/nudge-theory/"
+        }
+      ],
+      "parents": [
+        "humanDecisionMaking"
+      ],
+      "children": []
+    },
+    "behavioralEconomics": {
+      "title": "Behavioral Economics",
+      "sourceId": "_lv6GJ0wlMfhJ7PHRGQ_V",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Behavioral Economics is a subfield of economics that studies the psychological, social, and emotional factors that influence decision-making and economic behavior. It seeks to understand why people make choices that deviate from the traditional economic model, which assumes that individuals behave rationally and seek to maximize their utility.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Behavioral Economics",
+          "url": "https://www.interaction-design.org/literature/article/behavioural-economics-ideas-that-you-can-use-in-ux-design"
+        }
+      ],
+      "parents": [
+        "humanDecisionMaking"
+      ],
+      "children": []
+    },
+    "behaviorDesign": {
+      "title": "Behavior Design",
+      "sourceId": "zYCBEUqZVlvjlAKnh5cPQ",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "Behavior Design is an approach that combines elements of psychology, neuroscience, and design principles to understand and influence human behaviors. The goal behind behavior design is to make it easier for users to accomplish their goals or desired actions within a product, service, or system.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Behavior Design",
+          "url": "https://www.interaction-design.org/literature/topics/behavioral-design"
+        }
+      ],
+      "parents": [
+        "humanDecisionMaking"
+      ],
+      "children": []
+    },
+    "behaviorChangeStrategies": {
+      "title": "Behavior Change Strategies",
+      "sourceId": "w_QWN80zCf1tsVROeyuvo",
+      "type": "topic",
+      "order": 7,
+      "summary": "Behavior change strategies are techniques that aim to help users adopt new behaviors or break existing ones to achieve specific goals, such as healthier lifestyles or improved productivity. In UX design, these strategies are applied to design elements and features within digital products or services to motivate and support users in making lasting changes in their actions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Behavioral Change Strategies",
+          "url": "https://blog.logrocket.com/ux-design/starter-guide-behavioral-design/"
+        }
+      ],
+      "parents": [
+        "humanDecisionMaking"
+      ],
+      "children": [
+        "bjFoggsBehaviorGrid",
+        "cheating",
+        "understandingTheProduct"
+      ]
+    },
+    "bjFoggsBehaviorGrid": {
+      "title": "BJ Fogg's Behavior Grid",
+      "sourceId": "lRBC8VYJPsR65LHDuuIsL",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "The BJ Fogg Behavior Grid is a framework that helps UX designers, product managers, and marketers understand and identify different types of behavior change. Created by Stanford University professor B.J. Fogg, the grid consists of 15 behavior types based on the combination of three dimensions: Duration, Frequency, and Intensity.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "BJ Fogg\u2019s Behavior Grid",
+          "url": "https://behaviordesign.stanford.edu/resources/fogg-behavior-grid"
+        },
+        {
+          "type": "article",
+          "title": "The Fogg Behavior Model",
+          "url": "https://blog.logrocket.com/ux-design/fogg-behavior-model/"
+        }
+      ],
+      "parents": [
+        "behaviorChangeStrategies"
+      ],
+      "children": []
+    },
+    "cheating": {
+      "title": "Cheating",
+      "sourceId": "zVXJPpqZvUFIxTGVrr0rN",
+      "type": "topic",
+      "order": 9,
+      "summary": "Cheating, in the context of behavior change strategies, refers to creating shortcuts and loopholes within a designed system, in order to overcome any obstacles users may face while achieving their goals. As a UX designer, you need to understand that users often look for the easiest path to reach their objectives, even if it means bending or breaking the established rules.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "behaviorChangeStrategies"
+      ],
+      "children": [
+        "defaulting",
+        "makingItIncidental",
+        "automateTheActOfRepetition"
+      ]
+    },
+    "defaulting": {
+      "title": "Defaulting",
+      "sourceId": "IpKCXqf_PkxIllwmiIZsq",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "Defaulting in UX design refers to the practice of pre-selecting options or settings for users based on what is likely to be the most common or preferred choice. The goal is to simplify the decision-making process and minimize the effort required for users to complete a task or interact with an interface.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Power of Defaults",
+          "url": "https://www.nngroup.com/articles/the-power-of-defaults/"
+        }
+      ],
+      "parents": [
+        "cheating"
+      ],
+      "children": []
+    },
+    "makingItIncidental": {
+      "title": "Making it Incidental",
+      "sourceId": "Ix5Fll_dAINWLxVF2DXFI",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "In UX design, making something incidental refers to subtly introducing a feature or element while the user is engaged in a different, primary task. The intention behind this approach is to avoid interrupting the user's flow, prevent them from feeling overwhelmed, and make the discovery of that feature feel more natural and serendipitous.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "cheating"
+      ],
+      "children": []
+    },
+    "automateTheActOfRepetition": {
+      "title": "Automate the Act of Repetition",
+      "sourceId": "ZufrLRNkMoJ4e2T-vWxCR",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "To enhance user experience and streamline interactions, it's crucial to automate repetitive tasks that often lead to frustration and decreased efficiency. Properly implemented automation can save time, reduce errors, and improve user satisfaction by minimizing tedious actions. As a UX designer, consider strategies such as pre-filling forms with previously entered information, remembering user preferences, providing smart suggestions based on past behavior, enabling batch actions for group tasks, and offering keyboard shortcuts for common actions. By focusing on these automation techniques, you can create a seamless and enjoyable experience that meets users' needs and increases retention.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Repeating Elements",
+          "url": "https://helpx.adobe.com/au/xd/help/create-repeating-elements.html"
+        }
+      ],
+      "parents": [
+        "cheating"
+      ],
+      "children": []
+    },
+    "understandingTheProduct": {
+      "title": "Understanding the Product",
+      "sourceId": "q1WX2Cp4k4-o1T1vgL8FH",
+      "type": "topic",
+      "order": 13,
+      "summary": "Before diving into UX design, it's crucial to have a thorough understanding of the product you're working on. This doesn't only mean understanding its core features and functionalities, but also being aware of the underlying business goals and the target audience.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "behaviorChangeStrategies"
+      ],
+      "children": [
+        "clarifyProduct",
+        "defineTargetUsers",
+        "businessModel",
+        "conceptualDesign"
+      ]
+    },
+    "clarifyProduct": {
+      "title": "Clarify Product",
+      "sourceId": "sQeGE1Q_7y15-n4LXS8s2",
+      "type": "label",
+      "order": 14,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "understandingTheProduct"
+      ],
+      "children": []
+    },
+    "defineTargetUsers": {
+      "title": "Define Target Users",
+      "sourceId": "4nmx07v1O-rHYl84dutEU",
+      "type": "label",
+      "order": 15,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "understandingTheProduct"
+      ],
+      "children": []
+    },
+    "businessModel": {
+      "title": "Business Model",
+      "sourceId": "D1JzUxHFpT9-xjoLsvsCY",
+      "type": "label",
+      "order": 16,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "understandingTheProduct"
+      ],
+      "children": []
+    },
+    "conceptualDesign": {
+      "title": "Conceptual Design",
+      "sourceId": "r6D07cN0Mg4YXsiRSrl1_",
+      "type": "topic",
+      "order": 17,
+      "summary": "Conceptual design, often referred to as the \"big idea\" phase, is a fundamental step in the UX design process. It entails creating and defining an overarching concept, vision, or framework for a product or service.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How to apply design thinking in UX",
+          "url": "https://medium.com/digital-experience-design/how-to-apply-a-design-thinking-hcd-ux-or-any-creative-process-from-scratch-b8786efbf812"
+        }
+      ],
+      "parents": [
+        "understandingTheProduct"
+      ],
+      "children": [
+        "figma",
+        "adobeXd"
+      ]
+    },
+    "figma": {
+      "title": "Figma",
+      "sourceId": "t46s6Piyd8MoJYzdDTsjr",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "Figma is a powerful and versatile web-based design tool that allows designers, developers, and stakeholders to collaborate on UI and UX projects in real-time. It's an excellent choice for creating wireframes and high-fidelity prototypes and supports vector editing, responsive design, and team collaboration.",
+      "video": {
+        "title": "Free Figma UX Design UI Essentials Course",
+        "url": "https://youtu.be/kbZejnPXyLM?si=W9oY5j_6AcSuHfq2"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Figma Website",
+          "url": "https://figma.com"
+        }
+      ],
+      "parents": [
+        "conceptualDesign"
+      ],
+      "children": []
+    },
+    "adobeXd": {
+      "title": "Adobe XD",
+      "sourceId": "HI_urBhPqT0m3AeBQJIej",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "Adobe XD (Experience Design) is a powerful design and prototyping tool that allows UX designers to create wireframes, mockups, and interactive prototypes for various digital projects. It is available for both Mac and Windows, and it focuses on providing an easy-to-use, intuitive interface for designing responsive websites, mobile apps, and more.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Adobe XD Platform",
+          "url": "https://adobexdplatform.com/"
+        },
+        {
+          "type": "official",
+          "title": "Getting Started with Adobe XD",
+          "url": "https://helpx.adobe.com/xd/get-started.html"
+        },
+        {
+          "type": "official",
+          "title": "Learn Adobe XD",
+          "url": "https://www.adobe.com/ph_en/products/xd/learn/get-started-xd-design.html"
+        }
+      ],
+      "parents": [
+        "conceptualDesign"
+      ],
+      "children": []
+    },
+    "bjFoggsBehaviorModel": {
+      "title": "BJ Fogg's Behavior Model",
+      "sourceId": "2NlgbLeLBYwZX2u2rKkIO",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "B.J. Fogg, a renowned psychologist, and researcher at Stanford University, proposed the Fogg Behavior Model (FBM). This insightful model helps UX designers understand and influence user behavior by focusing on three core elements. These key factors are motivation, ability, and prompts.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Meaning of BJ Fogg's Behavior Model",
+          "url": "https://behaviormodel.org/"
+        },
+        {
+          "type": "article",
+          "title": "The Fogg Behavior Model",
+          "url": "https://blog.logrocket.com/ux-design/fogg-behavior-model/"
+        }
+      ],
+      "parents": [
+        "humanDecisionMaking"
+      ],
+      "children": []
+    },
+    "createActionFunnel": {
+      "title": "CREATE Action Funnel",
+      "sourceId": "kcG4IpneJzA6di0uqTiwb",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "Stephen Wendel's CREATE Action Funnel is a behavioral design framework aimed at helping individuals or organizations encourage specific behaviors in others, especially in the context of product design. It breaks down the process of motivating action into six key stages. Each stage helps identify where users might drop off or face barriers, allowing designers or strategists to address these pain points effectively. These stages are:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Behavioral Science Crash Course: Steve Wendel's CREATE Action Funnel",
+          "url": "https://www.prodify.group/blog/behavioral-science-crash-course-steve-wendels-create-action-funnel"
+        }
+      ],
+      "parents": [
+        "humanDecisionMaking"
+      ],
+      "children": []
+    },
+    "spectrumOfThinkingInterventions": {
+      "title": "Spectrum of Thinking Interventions",
+      "sourceId": "0Df110GZcDw5wbAe1eKoA",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "The _Spectrum of Thinking Interventions_ provides a structure for understanding the different types of decision-making processes by illustrating how our minds would respond in a _default, lowest energy way_, if we didn't consciously do something different. This spectrum ranges from situations requiring minimal thought to those demanding intensive thinking, and includes the mechanisms (\"interventions\") that our minds will likely use.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "humanDecisionMaking"
+      ],
+      "children": []
+    },
+    "dualProcessTheory": {
+      "title": "Dual Process Theory",
+      "sourceId": "kWA8CvocP1pkom2N7O4gb",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "The Dual Process Theory is a psychological concept that suggests that human thinking operates on two different levels \u2013 an intuitive, fast, and automatic level (known as System 1), as well as a more deliberate, slow, and logical level (System 2). In the context of UX design, understanding these two systems can help designers create user interfaces and experiences that cater to both types of thinking.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "humanDecisionMaking"
+      ],
+      "children": []
+    },
+    "makeOrChangeHabits": {
+      "title": "Make or Change Habits",
+      "sourceId": "y6CqgqTvOt-LrvTnPJkQQ",
+      "type": "topic",
+      "order": 29,
+      "summary": "Making or changing habits is an essential aspect of UX design that focuses on helping users adopt new behaviors and patterns. In order to create a lasting impact, designers need to implement strategies that will facilitate the formation or modification of habits for users. Below, we've outlined some key components to consider when creating or changing habits in UX design.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "supportConsciousAction": {
+      "title": "Support Conscious Action",
+      "sourceId": "PTZROvpPtEvu06szwmt4K",
+      "type": "topic",
+      "order": 31,
+      "summary": "The process of changing user behavior involves understanding the factors that influence the way people interact with your product, and applying strategies to help users adopt new, desirable behaviors. The goal is to make users feel comfortable and confident while using your product, ultimately creating a more enjoyable and effective user experience.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "educateEncourageUser"
+      ]
+    },
+    "educateEncourageUser": {
+      "title": "Educate & Encourage User",
+      "sourceId": "SLXjoYL-lhPef8s9V3jpf",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "One of the primary goals of UX design is to guide users through the intended flow of an application or website, and that often involves encouraging them to change their behavior or habits. Educating and encouraging users can be achieved through various methods such as guidance, feedback, and positive reinforcement.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "supportConsciousAction"
+      ],
+      "children": []
+    },
+    "helpUserThinkAboutTheirAction": {
+      "title": "Help User think about their Action",
+      "sourceId": "e9n9an1PGxDPGkLCOHIwz",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "To successfully change user behavior, it's crucial to encourage users to think about their actions consciously. This can be achieved by employing various strategies in your UX design. Following are some effective methods to help users think about their actions:",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "createUserPersonas"
+      ]
+    },
+    "createUserPersonas": {
+      "title": "Create User Personas",
+      "sourceId": "s2KJ5kNv9UcnsP0QKIKQ7",
+      "type": "subtopic",
+      "order": 41,
+      "summary": "User personas are fictional representations of your target users, created to help you understand their needs, behaviors, and goals. They are essential in UX design as they help your team stay focused on user needs and maintain empathy for the user throughout the design process. Here's a brief overview of how to create user personas:",
+      "video": {
+        "title": "Personas in UX",
+        "url": "https://youtube.com/playlist?list=PLJOFJ3Ok_ids-oEPCltCVtmdDOXiyttpq&si=v7ZaI65bQNTfXKHJ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Personas \u2013 A Simple Introduction",
+          "url": "https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them"
+        },
+        {
+          "type": "article",
+          "title": "Personas Make Users Memorable for Product Team Members",
+          "url": "https://www.nngroup.com/articles/persona/"
+        }
+      ],
+      "parents": [
+        "helpUserThinkAboutTheirAction"
+      ],
+      "children": []
+    },
+    "existingBusinessModel": {
+      "title": "Existing Business Model",
+      "sourceId": "803UQ48IOF6XplL6s2R16",
+      "type": "label",
+      "order": 45,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "businessModelCanvas"
+      ]
+    },
+    "businessModelCanvas": {
+      "title": "Business Model Canvas",
+      "sourceId": "SGO9hHju49_py0n0ASGBe",
+      "type": "subtopic",
+      "order": 47,
+      "summary": "The **Business Model Canvas** is a strategic management and visual representation tool that allows you to describe, design, challenge, and pivot your existing business model. Developed by **Alexander Osterwalder** and **Yves Pigneur**, it helps organizations to understand how they create, deliver, and capture value. The canvas is divided into nine building blocks, which represent the essential elements of a business model:",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Business Model Canvas",
+          "url": "https://www.interaction-design.org/literature/topics/business-model-canvas"
+        }
+      ],
+      "parents": [
+        "existingBusinessModel"
+      ],
+      "children": []
+    },
+    "newBusinessModel": {
+      "title": "New Business Model",
+      "sourceId": "mFXXwHxZ0ZHjw31iAQaH-",
+      "type": "label",
+      "order": 51,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "businessModelInspirator"
+      ]
+    },
+    "businessModelInspirator": {
+      "title": "Business Model Inspirator",
+      "sourceId": "GI06-DbGyJlQXq5Tyi-aH",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "A Business Model Inspirator is a tool or method that helps you to generate new or creative ideas for the strategic, operational, and financial aspects of a business. It helps entrepreneurs, startups, and established companies to explore different ways of designing or improving their business models by drawing inspiration from various sources.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Business Model Inspirator",
+          "url": "https://businessdesign.org/knowledge-base/business-model-inspirator"
+        }
+      ],
+      "parents": [
+        "newBusinessModel"
+      ],
+      "children": []
+    },
+    "balsamiq": {
+      "title": "Balsamiq",
+      "sourceId": "fZkARg6kPXPemYW1vDMTe",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "Balsamiq is a popular wireframing tool that helps designers, developers, and product managers to quickly create and visualize user interfaces, web pages, or app screens. It's an easy-to-use software that allows you to focus on ideas and concepts rather than getting caught up in pixel-perfect designs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Balsamiq Website",
+          "url": "https://balsamiq.com/"
+        }
+      ],
+      "parents": [
+        "prototyping"
+      ],
+      "children": []
+    },
+    "goodLayoutRules": {
+      "title": "Good Layout Rules",
+      "sourceId": "90_M5qABC1vZ1nsXVyqFJ",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "In the world of UX design, a good layout is crucial to ensure your prototype is intuitive and user-friendly. By following these good layout rules, you can ensure your designs are efficient, attractive, and easy to navigate for users.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "User Interface Design Guidelines: 10 Rules of Thumb",
+          "url": "https://www.interaction-design.org/literature/article/user-interface-design-guidelines-10-rules-of-thumb"
+        }
+      ],
+      "parents": [
+        "prototyping"
+      ],
+      "children": []
+    },
+    "prototyping": {
+      "title": "Prototyping",
+      "sourceId": "6yCBFwntQ_KxFmmGTJ8iR",
+      "type": "topic",
+      "order": 68,
+      "summary": "Prototyping is a crucial stage in the UX design process, where designers create a representation of the product to test its usability and functionality. This allows designers to uncover any issues, gather feedback, and iterate on the design before the actual development stage. Prototypes can range from simple sketches to fully interactive and detailed models. There are several types of prototyping, such as:",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "balsamiq",
+        "goodLayoutRules",
+        "uxBestPractices"
+      ]
+    },
+    "eventDrivenProcessChainModelEpc": {
+      "title": "Event-driven Process Chain Model (EPC)",
+      "sourceId": "nccToz_0FUvHMJytpDpM0",
+      "type": "subtopic",
+      "order": 70,
+      "summary": "The Event Driven Process Chain (EPC) model is a flowchart-based diagramming method that supports the documentation and analysis of business processes. EPCs are frequently used in the field of UX design to aid in identifying areas for optimization and improvement.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "businessProcessModelNotationBpmn"
+      ]
+    },
+    "businessProcessModelNotationBpmn": {
+      "title": "Business Process Model & Notation (BPMN)",
+      "sourceId": "jy5jtSEyNE8iJpad27rPX",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "Business Process Model and Notation (BPMN) is a graphical representation of business processes, providing a standardized and easy-to-understand method for visualizing different aspects of a business. By using BPMN, UX designers can analyze and optimize business processes and workflows, which ultimately improves the overall user experience.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Business Process Model and Notation (BPMN)",
+          "url": "https://aguayo.co/en/blog-aguayp-user-experience/business-process-model-notation-for-ux/"
+        },
+        {
+          "type": "article",
+          "title": "How to Design BPNM",
+          "url": "https://devlight.io/blog/how-to-design-business-process-model-and-notation-for-a-mobile-app/"
+        }
+      ],
+      "parents": [
+        "eventDrivenProcessChainModelEpc"
+      ],
+      "children": []
+    },
+    "uxBestPractices": {
+      "title": "UX Best Practices",
+      "sourceId": "VUf72i5hYaLR_8ul9EzmM",
+      "type": "topic",
+      "order": 77,
+      "summary": "UX design, or user experience design, is essential for creating user-friendly and effective products. In this section, we'll discuss some of the best practices that can help you create an optimal user experience for your products.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "prototyping"
+      ],
+      "children": [
+        "measuringTheImpact"
+      ]
+    },
+    "withManyChancesToInfluenceUser": {
+      "title": "with many chances to influence user",
+      "sourceId": "jsCKUH1HKQi_5kGvYbVtI",
+      "type": "label",
+      "order": 78,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "behaviorChangeGames"
+      ]
+    },
+    "behaviorChangeGames": {
+      "title": "Behavior Change Games",
+      "sourceId": "JSBiw0C6aq1LhA33y79PM",
+      "type": "subtopic",
+      "order": 80,
+      "summary": "Behavior change games are a powerful UX design pattern that help users adopt new habits or make positive lifestyle changes. These games are typically designed to be engaging, enjoyable, and motivating, utilizing various game elements and mechanics to encourage users to take desired actions. When designing behavior change games, it's essential to keep user experience in mind, and create an enjoyable and motivating experience. Balancing fun and educational elements can result in a powerful tool for guiding users towards positive change in their lives.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Behavioral Change Games",
+          "url": "https://medium.com/@jgruver/designing-for-behavioral-change-a-new-approach-in-ux-ui-design-59f9fb0086d1"
+        }
+      ],
+      "parents": [
+        "withManyChancesToInfluenceUser"
+      ],
+      "children": []
+    },
+    "deployStrongAuthorityOnSubject": {
+      "title": "Deploy Strong Authority on Subject",
+      "sourceId": "C5dKHIIgBzxtBpFgDs-hB",
+      "type": "subtopic",
+      "order": 92,
+      "summary": "Deploying strong subject authority refers to providing the user with a sense of trust and confidence when they interact with your product. This can be achieved by showcasing your expertise and establishing your position as a reliable source of information, products or services. Let us explore the key aspects of deploying strong subject authority in UX design:",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "beAuthenticAndPersonal"
+      ]
+    },
+    "beAuthenticAndPersonal": {
+      "title": "Be Authentic and Personal",
+      "sourceId": "m30ePaw_qa36m9Rv9NSFf",
+      "type": "subtopic",
+      "order": 93,
+      "summary": "When creating a user experience (UX) design, it's essential to be authentic and personal. This means that your design should be genuine, truthful, and relatable to your users. By being authentic and personal, you can create a positive intuitive reaction in your users, as they feel connected and engaged with your website or application.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Rethinking Personas",
+          "url": "https://uxdesign.cc/rethinking-personas-empathy-and-inclusion-in-ux-design-37145d2ee807"
+        }
+      ],
+      "parents": [
+        "deployStrongAuthorityOnSubject"
+      ],
+      "children": []
+    },
+    "measuringTheImpact": {
+      "title": "Measuring the Impact",
+      "sourceId": "GgBazWfF2OvOqkuo3DO2L",
+      "type": "topic",
+      "order": 97,
+      "summary": "Measuring the impact of UX design is crucial to understand its effectiveness and make necessary improvements. In this section, we'll explore the key metrics, methods, and tools to help you measure the impact of your UX design efforts.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "uxBestPractices"
+      ],
+      "children": [
+        "testing",
+        "youMightBeInterestedInFollowingRoadmapsAsWell"
+      ]
+    },
+    "primeUserRelevantAssociations": {
+      "title": "Prime User-Relevant Associations",
+      "sourceId": "jBQtuiHGl3eyCTZG85Vz5",
+      "type": "subtopic",
+      "order": 98,
+      "summary": "Priming user relevant associations is a vital concept in UX design, aiming to create positive associations with various aspects of the user's experience. To achieve this, designers must tap into the cognitive aspects influencing a user's perception, decision-making, and overall satisfaction with the product or service.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "avoidDirectPayments"
+      ]
+    },
+    "avoidDirectPayments": {
+      "title": "Avoid Direct Payments",
+      "sourceId": "iQNvKhwhvbis4Yn1ZxQua",
+      "type": "subtopic",
+      "order": 99,
+      "summary": "Avoiding direct payments is a crucial aspect of UX design that can lead to favorable conscious evaluations from users. Direct payments refer to instances where users are required to pay for your product or service upfront, which can create a negative perception and less willingness to engage. By finding alternative ways to monetize or offer premium features, you can create an enjoyable experience and encourage users to appreciate and invest in your offerings without feeling forced.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Payment UX Best Practices",
+          "url": "https://gocardless.com/guides/posts/payment-ux-best-practices/"
+        }
+      ],
+      "parents": [
+        "primeUserRelevantAssociations"
+      ],
+      "children": [
+        "avoidChoiceOverload"
+      ]
+    },
+    "testing": {
+      "title": "Testing",
+      "sourceId": "M-ghIECr0h_9RUgtpkjX8",
+      "type": "label",
+      "order": 100,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "measuringTheImpact"
+      ],
+      "children": []
+    },
+    "avoidChoiceOverload": {
+      "title": "Avoid Choice Overload",
+      "sourceId": "8wxlu4KA2iu9CJa1UAUll",
+      "type": "subtopic",
+      "order": 102,
+      "summary": "Choice overload occurs when users face too many options, leading to decision paralysis, anxiety, and dissatisfaction. As a UX designer, it's important to simplify decision-making by limiting the number of options to 5-7 at a time, prioritizing the most relevant choices. Organizing options into logical categories with visual cues can help users navigate their selections more easily. Implementing smart defaults can streamline decisions by pre-selecting commonly used options, while advanced filtering and sorting features allow users to refine their choices in complex scenarios. By addressing choice overload with these strategies, you can enhance user experience and facilitate a more seamless decision-making process.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Choice of Overload",
+          "url": "https://medium.com/@evamiller091/the-impact-of-choice-overload-in-ux-f5defb6cee5d"
+        }
+      ],
+      "parents": [
+        "avoidDirectPayments"
+      ],
+      "children": [
+        "avoidCognitiveOverhead"
+      ]
+    },
+    "avoidCognitiveOverhead": {
+      "title": "Avoid Cognitive Overhead",
+      "sourceId": "4AzPOKXUN32CkgchRMrRY",
+      "type": "subtopic",
+      "order": 104,
+      "summary": "Cognitive overhead refers to the mental effort needed to understand or operate a given system, tool, or interface. In UX design, it is crucial to minimize cognitive overhead to create user-friendly and efficient experiences. The less mental effort a user needs to invest, the more likely they will have a positive conscious evaluation of your design.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Cognitive Overload",
+          "url": "https://blog.logrocket.com/ux-design/cognitive-overload/"
+        },
+        {
+          "type": "article",
+          "title": "Reducing Cognitive Overload",
+          "url": "https://uxdesign.cc/reducing-cognitive-overload-designing-for-human-cognition-350f07cff9c4"
+        }
+      ],
+      "parents": [
+        "avoidChoiceOverload"
+      ],
+      "children": []
+    },
+    "youMightBeInterestedInFollowingRoadmapsAsWell": {
+      "title": "You might be interested in following roadmaps as well",
+      "sourceId": "GV_zWF6rSWg5bqgiXhOEf",
+      "type": "paragraph",
+      "order": 118,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "measuringTheImpact"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "ux-design",
+      "to": "humanDecisionMaking",
+      "style": "solid"
+    },
+    {
+      "from": "humanDecisionMaking",
+      "to": "behavioralScience",
+      "style": "dashed"
+    },
+    {
+      "from": "humanDecisionMaking",
+      "to": "persuasiveTechnology",
+      "style": "dashed"
+    },
+    {
+      "from": "humanDecisionMaking",
+      "to": "nudgeTheory",
+      "style": "dashed"
+    },
+    {
+      "from": "humanDecisionMaking",
+      "to": "behavioralEconomics",
+      "style": "dashed"
+    },
+    {
+      "from": "humanDecisionMaking",
+      "to": "behaviorDesign",
+      "style": "dashed"
+    },
+    {
+      "from": "humanDecisionMaking",
+      "to": "behaviorChangeStrategies",
+      "style": "solid"
+    },
+    {
+      "from": "behaviorChangeStrategies",
+      "to": "bjFoggsBehaviorGrid",
+      "style": "dashed"
+    },
+    {
+      "from": "humanDecisionMaking",
+      "to": "bjFoggsBehaviorModel",
+      "style": "dashed"
+    },
+    {
+      "from": "humanDecisionMaking",
+      "to": "createActionFunnel",
+      "style": "dashed"
+    },
+    {
+      "from": "humanDecisionMaking",
+      "to": "spectrumOfThinkingInterventions",
+      "style": "dashed"
+    },
+    {
+      "from": "humanDecisionMaking",
+      "to": "dualProcessTheory",
+      "style": "dashed"
+    },
+    {
+      "from": "behaviorChangeStrategies",
+      "to": "cheating",
+      "style": "solid"
+    },
+    {
+      "from": "supportConsciousAction",
+      "to": "educateEncourageUser",
+      "style": "dashed"
+    },
+    {
+      "from": "cheating",
+      "to": "defaulting",
+      "style": "dashed"
+    },
+    {
+      "from": "cheating",
+      "to": "makingItIncidental",
+      "style": "dashed"
+    },
+    {
+      "from": "cheating",
+      "to": "automateTheActOfRepetition",
+      "style": "dashed"
+    },
+    {
+      "from": "behaviorChangeStrategies",
+      "to": "understandingTheProduct",
+      "style": "solid"
+    },
+    {
+      "from": "understandingTheProduct",
+      "to": "clarifyProduct",
+      "style": "dashed"
+    },
+    {
+      "from": "understandingTheProduct",
+      "to": "defineTargetUsers",
+      "style": "dashed"
+    },
+    {
+      "from": "understandingTheProduct",
+      "to": "businessModel",
+      "style": "dashed"
+    },
+    {
+      "from": "understandingTheProduct",
+      "to": "conceptualDesign",
+      "style": "solid"
+    },
+    {
+      "from": "prototyping",
+      "to": "goodLayoutRules",
+      "style": "dashed"
+    },
+    {
+      "from": "prototyping",
+      "to": "uxBestPractices",
+      "style": "solid"
+    },
+    {
+      "from": "uxBestPractices",
+      "to": "measuringTheImpact",
+      "style": "solid"
+    },
+    {
+      "from": "measuringTheImpact",
+      "to": "testing",
+      "style": "dashed"
+    },
+    {
+      "from": "measuringTheImpact",
+      "to": "youMightBeInterestedInFollowingRoadmapsAsWell",
+      "style": "solid"
+    },
+    {
+      "from": "helpUserThinkAboutTheirAction",
+      "to": "createUserPersonas",
+      "style": "solid"
+    },
+    {
+      "from": "existingBusinessModel",
+      "to": "businessModelCanvas",
+      "style": "solid"
+    },
+    {
+      "from": "conceptualDesign",
+      "to": "figma",
+      "style": "solid"
+    },
+    {
+      "from": "newBusinessModel",
+      "to": "businessModelInspirator",
+      "style": "solid"
+    },
+    {
+      "from": "conceptualDesign",
+      "to": "adobeXd",
+      "style": "solid"
+    },
+    {
+      "from": "prototyping",
+      "to": "balsamiq",
+      "style": "solid"
+    },
+    {
+      "from": "eventDrivenProcessChainModelEpc",
+      "to": "businessProcessModelNotationBpmn",
+      "style": "solid"
+    },
+    {
+      "from": "withManyChancesToInfluenceUser",
+      "to": "behaviorChangeGames",
+      "style": "solid"
+    },
+    {
+      "from": "deployStrongAuthorityOnSubject",
+      "to": "beAuthenticAndPersonal",
+      "style": "solid"
+    },
+    {
+      "from": "primeUserRelevantAssociations",
+      "to": "avoidDirectPayments",
+      "style": "solid"
+    },
+    {
+      "from": "avoidDirectPayments",
+      "to": "avoidChoiceOverload",
+      "style": "solid"
+    },
+    {
+      "from": "avoidChoiceOverload",
+      "to": "avoidCognitiveOverhead",
+      "style": "solid"
+    }
+  ]
+}

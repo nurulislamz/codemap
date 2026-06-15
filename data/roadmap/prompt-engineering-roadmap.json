@@ -1,0 +1,1580 @@
+{
+  "title": "Prompt Engineering Roadmap",
+  "summary": "Step by step guide to learning Prompt Engineering in 2026",
+  "url": "https://roadmap.sh/prompt-engineering",
+  "order": [
+    "introduction",
+    "llmsAndHowTheyWork",
+    "whatIsAPrompt",
+    "whatIsPromptEngineering",
+    "llmConfiguration",
+    "samplingParameters",
+    "temperature",
+    "topK",
+    "topP",
+    "commonTerminology",
+    "llm",
+    "tokens",
+    "contextWindow",
+    "modelsOfferedBy",
+    "openai",
+    "google",
+    "hallucination",
+    "agents",
+    "anthropic",
+    "meta",
+    "promptInjection",
+    "xai",
+    "modelWeightsParameters",
+    "fineTuningVsPromptEngg",
+    "aiVsAgi",
+    "rag",
+    "outputControl",
+    "maxTokens",
+    "stopSequences",
+    "promptingTechniques",
+    "structuredOutputs",
+    "repetitionPenalties",
+    "frequencyPenalty",
+    "presencePenalty",
+    "stepBackPrompting",
+    "zeroShotPrompting",
+    "chainOfThoughtCotPrompting",
+    "oneShotFewShotPrompting",
+    "automaticPromptEngineering",
+    "selfConsistencyPrompting",
+    "systemRoleContextual",
+    "useLlmToGeneratePrompts",
+    "systemPrompting",
+    "treeOfThoughtsTotPrompting",
+    "rolePrompting",
+    "reactPrompting",
+    "contextualPrompting",
+    "promptTuning",
+    "promptingBestPractices",
+    "aiRedTeaming",
+    "improvingReliability",
+    "promptDebiasing",
+    "promptEnsembling",
+    "llmSelfEvaluation",
+    "calibratingLlms",
+    "continueLearningWithFollowingRoadmaps"
+  ],
+  "topics": {
+    "introduction": {
+      "title": "Introduction",
+      "sourceId": "jrH1qE6EnFXL4fTyYU8gR",
+      "type": "topic",
+      "order": 1,
+      "summary": "Prompt engineering is the practice of designing effective inputs for Large Language Models to achieve desired outputs. This roadmap covers fundamental concepts, core techniques, model parameters, and advanced methods. It's a universal skill accessible to anyone, requiring no programming background, yet crucial for unlocking AI potential across diverse applications and domains.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Generative AI? - LearnPrompting",
+          "url": "https://learnprompting.org/docs/basics/generative_ai"
+        }
+      ],
+      "parents": [
+        "prompt-engineering"
+      ],
+      "children": [
+        "llmsAndHowTheyWork",
+        "whatIsAPrompt",
+        "whatIsPromptEngineering",
+        "llmConfiguration"
+      ]
+    },
+    "llmsAndHowTheyWork": {
+      "title": "LLMs and how they work?",
+      "sourceId": "74JxgfJ_1qmVNZ_QRp9Ne",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "LLMs function as sophisticated prediction engines that process text sequentially, predicting the next token based on relationships between previous tokens and patterns from training data. They don't predict single tokens directly but generate probability distributions over possible next tokens, which are then sampled using parameters like temperature and top-K. The model repeatedly adds predicted tokens to the sequence, building responses iteratively. This token-by-token prediction process, combined with massive training datasets, enables LLMs to generate coherent, contextually relevant text across diverse applications and domains.",
+      "video": {
+        "title": "How Large Language Models Work",
+        "url": "https://youtu.be/5sLYAQS9sWQ"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What are large language models (LLMs)? - IBM",
+          "url": "https://www.ibm.com/think/topics/large-language-models"
+        },
+        {
+          "type": "article",
+          "title": "Large language model - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Large_language_model"
+        },
+        {
+          "type": "article",
+          "title": "How Large Language Models Work: Explained Simply",
+          "url": "https://justainews.com/applications/chatbots-and-virtual-assistants/how-large-language-models-work/"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "whatIsAPrompt": {
+      "title": "What is a Prompt?",
+      "sourceId": "i4ijY3T5gLgNz0XqRipXe",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "A prompt is an input provided to a Large Language Model (LLM) to generate a response or prediction. It serves as the instruction or context that guides the AI model's output generation process. Effective prompts are clear, specific, well-structured, and goal-oriented, directly affecting the accuracy and relevance of AI responses.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Basics of Prompting - DAIR.AI",
+          "url": "https://www.promptingguide.ai/introduction/basics"
+        },
+        {
+          "type": "article",
+          "title": "Prompt Elements - DAIR.AI",
+          "url": "https://www.promptingguide.ai/introduction/elements"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "whatIsPromptEngineering": {
+      "title": "What is Prompt Engineering?",
+      "sourceId": "43drPbTwPqJQPyzwYUdBT",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "Prompt engineering is the practice of designing effective inputs for large language models to achieve desired outputs. It covers techniques like few-shot prompting, chain-of-thought, and parameter tuning. No programming background is required, making it a universal skill for anyone working with AI.",
+      "video": {
+        "title": "RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models",
+        "url": "https://youtu.be/zYGDpG-pTho?si=yov4dDrcsHBAkey-&t=522"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Prompt engineering - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Prompt_engineering"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to Prompt Engineering - LearnPrompting",
+          "url": "https://learnprompting.org/docs/basics/prompt_engineering"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "llmConfiguration": {
+      "title": "LLM Configuration",
+      "sourceId": "do4ui2s0NJpVDChe9NPI1",
+      "type": "paragraph",
+      "order": 5,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "introduction"
+      ],
+      "children": [
+        "samplingParameters"
+      ]
+    },
+    "samplingParameters": {
+      "title": "Sampling Parameters",
+      "sourceId": "JgigM7HvmNOuKnp60v1Ce",
+      "type": "topic",
+      "order": 6,
+      "summary": "Sampling parameters (temperature, top-K, top-P) control how LLMs select tokens from probability distributions, determining output randomness and creativity. These parameters interact: at extreme settings, one can override others (temperature 0 makes top-K/top-P irrelevant). A balanced starting point is temperature 0.2, top-P 0.95, top-K 30 for coherent but creative results. Understanding their interactions is crucial for optimal prompting\u2014use temperature 0 for factual tasks, higher values for creativity, and combine settings strategically based on your specific use case.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "LLM Settings (Temperature, Top-K, Top-P) - DAIR.AI",
+          "url": "https://www.promptingguide.ai/introduction/settings"
+        }
+      ],
+      "parents": [
+        "llmConfiguration"
+      ],
+      "children": [
+        "temperature"
+      ]
+    },
+    "temperature": {
+      "title": "Temperature",
+      "sourceId": "iMwg-I76-Tg5dhu8DGO6U",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "Temperature controls the randomness in token selection during text generation. Lower values (0-0.3) produce deterministic, factual outputs. Medium values (0.5-0.7) balance creativity and coherence. Higher values (0.8-1.0) generate creative, diverse outputs but may be less coherent. Use low temperature for math/facts, high for creative writing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is LLM Temperature? - IBM",
+          "url": "https://www.ibm.com/think/topics/llm-temperature"
+        },
+        {
+          "type": "article",
+          "title": "Temperature - LLM Parameter Guide - Vellum",
+          "url": "https://www.vellum.ai/llm-parameters/temperature"
+        }
+      ],
+      "parents": [
+        "samplingParameters"
+      ],
+      "children": [
+        "topK",
+        "topP"
+      ]
+    },
+    "topK": {
+      "title": "Top-K",
+      "sourceId": "FF8ai1v5GDzxXLQhpwuPj",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Top-K restricts token selection to the K most likely tokens from the probability distribution. Low values (1-10) produce conservative, factual outputs. Medium values (20-50) balance creativity and quality. High values (50+) enable diverse, creative outputs. Use low K for technical tasks, high K for creative writing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Gemini API Prompting Strategies - Google",
+          "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies"
+        },
+        {
+          "type": "article",
+          "title": "Top K - LLM Parameter Guide - Vellum",
+          "url": "https://www.vellum.ai/llm-parameters/top-k"
+        }
+      ],
+      "parents": [
+        "temperature"
+      ],
+      "children": []
+    },
+    "topP": {
+      "title": "Top-P",
+      "sourceId": "-G1U1jDN5st1fTUtQmMl1",
+      "type": "subtopic",
+      "order": 9,
+      "summary": "Top-P (nucleus sampling) selects tokens from the smallest set whose cumulative probability exceeds threshold P. Unlike Top-K's fixed number, Top-P dynamically adjusts based on probability distribution. Low values (0.1-0.5) produce focused outputs, medium (0.6-0.9) balance creativity and coherence, high (0.9-0.99) enable creative diversity.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Top P - LLM Parameter Guide - Vellum",
+          "url": "https://www.vellum.ai/llm-parameters/top-p"
+        }
+      ],
+      "parents": [
+        "temperature"
+      ],
+      "children": []
+    },
+    "commonTerminology": {
+      "title": "Common Terminology",
+      "sourceId": "B7EH5iIy1LB26wNl1SSpF",
+      "type": "label",
+      "order": 10,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "llm",
+        "tokens",
+        "contextWindow"
+      ]
+    },
+    "llm": {
+      "title": "LLM",
+      "sourceId": "pamV5Z8DRKk2ioZbg6QVK",
+      "type": "subtopic",
+      "order": 11,
+      "summary": "Large Language Models (LLMs) are AI systems trained on vast text data to understand and generate human-like language. They work as prediction engines, analyzing input and predicting the next most likely token. LLMs perform tasks like text generation, translation, summarization, and Q&A. Understanding token processing is key to effective prompt engineering.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "LLM - Anthropic Glossary",
+          "url": "https://platform.claude.com/docs/en/about-claude/glossary"
+        },
+        {
+          "type": "article",
+          "title": "Differences Between Chatbots and LLMs - LearnPrompting",
+          "url": "https://learnprompting.org/docs/basics/chatbot_basics"
+        }
+      ],
+      "parents": [
+        "commonTerminology"
+      ],
+      "children": []
+    },
+    "tokens": {
+      "title": "Tokens",
+      "sourceId": "NPcaSEteeEA5g22wQ7nL_",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Tokens are fundamental units of text that LLMs process, created by breaking down text into smaller components like words, subwords, or characters. Understanding tokens is crucial because models predict the next token in sequences, API costs are based on token count, and models have maximum token limits for input and output.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Understanding tokens - Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/dotnet/ai/conceptual/understanding-tokens"
+        },
+        {
+          "type": "article",
+          "title": "What Are Tokens in LLMs and Why They Matter - LLM Guides",
+          "url": "https://llmguides.ai/learn/what-are-tokens/"
+        }
+      ],
+      "parents": [
+        "commonTerminology"
+      ],
+      "children": []
+    },
+    "contextWindow": {
+      "title": "Context Window",
+      "sourceId": "b-Xtkv6rt8QgzJXSShOX-",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "Context window refers to the maximum number of tokens an LLM can process in a single interaction, including both input prompt and generated output. When exceeded, older parts are truncated. Understanding this constraint is crucial for prompt engineering\u2014you must balance providing sufficient context with staying within token limits.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Context windows - Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows"
+        },
+        {
+          "type": "article",
+          "title": "What is a context window? - IBM",
+          "url": "https://www.ibm.com/think/topics/context-window"
+        }
+      ],
+      "parents": [
+        "commonTerminology"
+      ],
+      "children": [
+        "hallucination",
+        "agents",
+        "promptInjection"
+      ]
+    },
+    "modelsOfferedBy": {
+      "title": "Models offered by ____",
+      "sourceId": "LsUOBAaW4hjGRrOUqEcCD",
+      "type": "label",
+      "order": 14,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "openai",
+        "google",
+        "anthropic",
+        "meta"
+      ]
+    },
+    "openai": {
+      "title": "OpenAI",
+      "sourceId": "Yb5cQiV2ETxPbBYCLOpt2",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "OpenAI develops leading language models including GPT-5.4, o3, and Codex, setting industry standards for prompt engineering. Their API provides access to frontier models with configurable parameters, and their Agents SDK enables building autonomous AI systems. The OpenAI Cookbook and platform documentation are key references for prompt engineering best practices.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "OpenAI API Documentation",
+          "url": "https://developers.openai.com/api/docs"
+        },
+        {
+          "type": "official",
+          "title": "OpenAI Cookbook (GitHub)",
+          "url": "https://github.com/openai/openai-cookbook"
+        }
+      ],
+      "parents": [
+        "modelsOfferedBy"
+      ],
+      "children": []
+    },
+    "google": {
+      "title": "Google",
+      "sourceId": "o-6UKLZ6oCRbAKgRjH2uI",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "Google develops Gemini, a family of multimodal AI models. The latest flagship, Gemini 3, supports text, image, video, and audio through the Gemini API and Google AI Studio. Google also offers specialized models including Imagen for image generation, Veo for video, and Lyria 3 for music. Their research has advanced many prompt engineering techniques, including Chain of Thought reasoning.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Google AI Studio",
+          "url": "https://ai.google.dev/"
+        },
+        {
+          "type": "official",
+          "title": "Gemini API Documentation",
+          "url": "https://ai.google.dev/gemini-api/docs"
+        }
+      ],
+      "parents": [
+        "modelsOfferedBy"
+      ],
+      "children": []
+    },
+    "hallucination": {
+      "title": "Hallucination",
+      "sourceId": "SWDa3Su3VS815WQbvvNsa",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "Hallucination in LLMs refers to generating plausible-sounding but factually incorrect or fabricated information. This occurs when models fill knowledge gaps or present uncertain information with apparent certainty. Mitigation techniques include requesting sources, asking for confidence levels, providing context, and always verifying critical information independently.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Reduce hallucinations - Anthropic",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+        },
+        {
+          "type": "article",
+          "title": "What are AI hallucinations? - IBM",
+          "url": "https://www.ibm.com/think/topics/ai-hallucinations"
+        }
+      ],
+      "parents": [
+        "contextWindow"
+      ],
+      "children": []
+    },
+    "agents": {
+      "title": "Agents",
+      "sourceId": "Pw5LWA9vNRY0N2M0FW16f",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "AI agents are autonomous systems that use LLMs to reason, plan, and take actions to achieve specific goals. They combine language understanding with tool usage, memory, and decision-making to perform complex, multi-step tasks. Agents can interact with external APIs and services while maintaining context across interactions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Tool use overview - Anthropic",
+          "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to AI Agents - DAIR.AI",
+          "url": "https://www.promptingguide.ai/agents/introduction"
+        }
+      ],
+      "parents": [
+        "contextWindow"
+      ],
+      "children": []
+    },
+    "anthropic": {
+      "title": "Anthropic",
+      "sourceId": "V8pDOwrRKKcHBTd4qlSsH",
+      "type": "subtopic",
+      "order": 19,
+      "summary": "Anthropic develops Claude, a family of large language models focused on safety and helpfulness. The current lineup includes Claude Opus 4.7 (most capable, for complex reasoning and agentic coding), Claude Sonnet 4.6 (best speed-intelligence balance), and Claude Haiku 4.5 (fastest, near-frontier intelligence). All models support extended thinking, vision, and 1M token context windows.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Claude Code Roadmap",
+          "url": "https://roadmap.sh/claude-code"
+        },
+        {
+          "type": "official",
+          "title": "Claude API Documentation",
+          "url": "https://docs.anthropic.com/en/docs/intro"
+        },
+        {
+          "type": "official",
+          "title": "Anthropic Research",
+          "url": "https://www.anthropic.com/research"
+        }
+      ],
+      "parents": [
+        "modelsOfferedBy"
+      ],
+      "children": []
+    },
+    "meta": {
+      "title": "Meta",
+      "sourceId": "Td2YzDFT4LPGDw8JMmQSQ",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "Meta develops the Llama family of open-source large language models. The latest release, Llama 4, comes in Maverick and Scout variants with strong multimodal and long-context capabilities. Llama models are freely available for research and commercial use, providing transparency in training data and architecture without vendor lock-in.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Llama",
+          "url": "https://www.llama.com/"
+        },
+        {
+          "type": "opensource",
+          "title": "Llama Models (GitHub)",
+          "url": "https://github.com/meta-llama/llama-models"
+        }
+      ],
+      "parents": [
+        "modelsOfferedBy"
+      ],
+      "children": []
+    },
+    "promptInjection": {
+      "title": "Prompt Injection",
+      "sourceId": "6W_ONYREbXHwPigoDx1cW",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "Prompt injection is a security vulnerability where malicious users manipulate LLM inputs to override intended behavior, bypass safety measures, or extract sensitive information. Attackers embed instructions within data to make models ignore original prompts and follow malicious commands. Mitigation requires input sanitization, injection-resistant prompt design, and proper security boundaries.",
+      "video": {
+        "title": "What Is a Prompt Injection Attack?",
+        "url": "https://www.youtube.com/watch?v=jrHRe9lSqqA"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Mitigate jailbreaks and prompt injections - Anthropic",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks"
+        },
+        {
+          "type": "official",
+          "title": "LLM01:2025 Prompt Injection - OWASP",
+          "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+        }
+      ],
+      "parents": [
+        "contextWindow"
+      ],
+      "children": [
+        "modelWeightsParameters"
+      ]
+    },
+    "xai": {
+      "title": "xAI",
+      "sourceId": "3wshuH7_DXgbhxsLzzI4D",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "xAI develops Grok, a conversational AI model with real-time web access and integration with X (Twitter). The latest model, Grok 4.20, features a 2M token context window, agentic tool calling, and industry-leading low hallucination rates. Grok focuses on delivering truthful, unfiltered responses with strict prompt adherence.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "xAI Documentation",
+          "url": "https://docs.x.ai/"
+        },
+        {
+          "type": "official",
+          "title": "xAI API Console",
+          "url": "https://console.x.ai"
+        }
+      ],
+      "parents": [
+        "outputControl"
+      ],
+      "children": []
+    },
+    "modelWeightsParameters": {
+      "title": "Model Weights / Parameters",
+      "sourceId": "yfsjW1eze8mWT0iHxv078",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "Model weights and parameters are the learned values that define an LLM's behavior and knowledge. Parameters are the trainable variables adjusted during training, while weights represent their final values. Understanding parameter count helps gauge model capabilities - larger models typically have more parameters and better performance but require more computational resources.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "What are LLM parameters? - IBM",
+          "url": "https://www.ibm.com/think/topics/llm-parameters"
+        }
+      ],
+      "parents": [
+        "promptInjection"
+      ],
+      "children": [
+        "fineTuningVsPromptEngg"
+      ]
+    },
+    "fineTuningVsPromptEngg": {
+      "title": "Fine-Tuning vs Prompt Engg.",
+      "sourceId": "Ke5GT163k_ek9SzbcbBGE",
+      "type": "subtopic",
+      "order": 24,
+      "summary": "Fine-tuning trains models on specific data to specialize behavior, while prompt engineering achieves customization through input design without model modification. Prompt engineering is faster, cheaper, and more accessible. Fine-tuning offers deeper customization but requires significant resources and expertise.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "When to use prompt engineering vs. fine-tuning - TechTarget",
+          "url": "https://www.techtarget.com/searchEnterpriseAI/tip/Prompt-engineering-vs-fine-tuning-Whats-the-difference"
+        },
+        {
+          "type": "article",
+          "title": "Prompt Engineering vs Fine Tuning: When to Use Each - Codecademy",
+          "url": "https://www.codecademy.com/article/prompt-engineering-vs-fine-tuning"
+        }
+      ],
+      "parents": [
+        "modelWeightsParameters"
+      ],
+      "children": [
+        "aiVsAgi",
+        "rag"
+      ]
+    },
+    "aiVsAgi": {
+      "title": "AI vs AGI",
+      "sourceId": "Sj1CMZzZp8kF-LuHcd_UU",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "AI (Artificial Intelligence) refers to systems that perform specific tasks intelligently, while AGI (Artificial General Intelligence) represents hypothetical AI with human-level reasoning across all domains. Current LLMs are narrow AI - powerful at language tasks but lacking true understanding or general intelligence like AGI would possess.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Artificial general intelligence - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Artificial_general_intelligence"
+        }
+      ],
+      "parents": [
+        "fineTuningVsPromptEngg"
+      ],
+      "children": []
+    },
+    "rag": {
+      "title": "RAG",
+      "sourceId": "gxydtFKmnXNY9I5kpTwjP",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "Retrieval-Augmented Generation (RAG) combines LLMs with external knowledge retrieval to ground responses in verified, current information. RAG retrieves relevant documents before generating responses, reducing hallucinations and enabling access to information beyond the model's training cutoff. This approach improves accuracy and provides source attribution.",
+      "video": null,
+      "articles": [
+        {
+          "type": "opensource",
+          "title": "Introduction to RAG - LlamaIndex",
+          "url": "https://developers.llamaindex.ai/python/framework/understanding/rag/"
+        },
+        {
+          "type": "article",
+          "title": "Retrieval Augmented Generation (RAG) - DAIR.AI",
+          "url": "https://www.promptingguide.ai/techniques/rag"
+        }
+      ],
+      "parents": [
+        "fineTuningVsPromptEngg"
+      ],
+      "children": []
+    },
+    "outputControl": {
+      "title": "Output Control",
+      "sourceId": "wSf7Zr8ZYBuKWX0GQX6J3",
+      "type": "topic",
+      "order": 27,
+      "summary": "Output control encompasses techniques and parameters for managing LLM response characteristics including length, format, style, and content boundaries. Key methods include max tokens for length limits, stop sequences for precise boundaries, temperature for creativity control, and structured output requirements for format consistency. Effective output control combines prompt engineering techniques with model parameters to ensure responses meet specific requirements. This is crucial for production applications where consistent, appropriately formatted outputs are essential for user experience and system integration.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Increase Output Consistency - Anthropic",
+          "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency"
+        },
+        {
+          "type": "article",
+          "title": "General Tips for Designing Prompts - DAIR.AI",
+          "url": "https://www.promptingguide.ai/introduction/tips"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "xai",
+        "maxTokens"
+      ]
+    },
+    "maxTokens": {
+      "title": "Max Tokens",
+      "sourceId": "vK9Gf8dGu2UvvJJhhuHG9",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "Max tokens setting controls the maximum number of tokens an LLM can generate in response, directly impacting computation cost, response time, and energy consumption. Setting lower limits doesn't make models more concise\u2014it simply stops generation when the limit is reached. This parameter is crucial for techniques like ReAct where models might generate unnecessary tokens after the desired response. Balancing max tokens involves considering cost efficiency, response completeness, and application requirements while ensuring critical information isn't truncated.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Token Counting - Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/token-counting"
+        },
+        {
+          "type": "article",
+          "title": "Max Tokens - LLM Parameter Guide - Vellum",
+          "url": "https://www.vellum.ai/llm-parameters/max-tokens"
+        }
+      ],
+      "parents": [
+        "outputControl"
+      ],
+      "children": [
+        "stopSequences"
+      ]
+    },
+    "stopSequences": {
+      "title": "Stop Sequences",
+      "sourceId": "v3CylRlojeltcwnE76j8Q",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "Stop sequences are specific strings that signal the LLM to stop generating text when encountered, providing precise control over output length and format. Common examples include newlines, periods, or custom markers like \"\" or \"END\". This parameter is particularly useful for structured outputs, preventing models from generating beyond intended boundaries. Stop sequences are essential for ReAct prompting and other scenarios where you need clean, precisely bounded responses. They offer more control than max tokens by stopping at logical breakpoints rather than arbitrary token limits.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Handling Stop Reasons - Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons"
+        },
+        {
+          "type": "article",
+          "title": "Stop Sequence - LLM Parameter Guide - Vellum",
+          "url": "https://www.vellum.ai/llm-parameters/stop-sequence"
+        }
+      ],
+      "parents": [
+        "maxTokens"
+      ],
+      "children": []
+    },
+    "promptingTechniques": {
+      "title": "Prompting Techniques",
+      "sourceId": "lIf9xR4ZKbNpY9K6Liy8I",
+      "type": "paragraph",
+      "order": 30,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "structuredOutputs"
+      ],
+      "children": [
+        "zeroShotPrompting"
+      ]
+    },
+    "structuredOutputs": {
+      "title": "Structured Outputs",
+      "sourceId": "j-PWO-ZmF9Oi9A5bwMRto",
+      "type": "topic",
+      "order": 31,
+      "summary": "Structured outputs involve prompting LLMs to return responses in specific formats like JSON, XML, or other organized structures rather than free-form text. This approach forces models to organize information systematically, reduces hallucinations by imposing format constraints, enables easy programmatic processing, and facilitates integration with applications. For example, requesting movie classification results as JSON with a specified schema ensures consistent, parseable responses. Structured outputs are particularly valuable for data extraction, API integration, and applications requiring reliable data formatting.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Structured Output - Google Gemini API",
+          "url": "https://ai.google.dev/gemini-api/docs/structured-output"
+        },
+        {
+          "type": "official",
+          "title": "Structured Outputs - Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs"
+        },
+        {
+          "type": "opensource",
+          "title": "Instructor - Structured Output Library",
+          "url": "https://github.com/jxnl/instructor"
+        },
+        {
+          "type": "article",
+          "title": "Structured Outputs - LLM Parameter Guide - Vellum",
+          "url": "https://www.vellum.ai/llm-parameters/structured-outputs"
+        }
+      ],
+      "parents": [
+        "repetitionPenalties"
+      ],
+      "children": [
+        "stepBackPrompting",
+        "promptingTechniques"
+      ]
+    },
+    "repetitionPenalties": {
+      "title": "Repetition Penalties",
+      "sourceId": "g8ylIg4Zh567u-E3yVVY4",
+      "type": "topic",
+      "order": 32,
+      "summary": "Repetition penalties discourage LLMs from repeating words or phrases by reducing the probability of selecting previously used tokens. This includes frequency penalty (scales with usage count) and presence penalty (applies equally to any used token). These parameters improve output quality by promoting vocabulary diversity and preventing redundant phrasing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Tips for Writing Better Prompts - LearnPrompting",
+          "url": "https://learnprompting.org/docs/basics/ai_prompt_tips"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "frequencyPenalty",
+        "structuredOutputs"
+      ]
+    },
+    "frequencyPenalty": {
+      "title": "Frequency Penalty",
+      "sourceId": "YIVNjkmTOY61VmL0md9Pj",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "Frequency penalty reduces token probability based on how frequently they have appeared in the text, with higher penalties for more frequent tokens. This prevents excessive repetition and encourages varied language use. The penalty scales with usage frequency, making overused words less likely to be selected again, improving content diversity.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Frequency Penalty - LLM Parameter Guide - Vellum",
+          "url": "https://www.vellum.ai/llm-parameters/frequency-penalty"
+        }
+      ],
+      "parents": [
+        "repetitionPenalties"
+      ],
+      "children": [
+        "presencePenalty"
+      ]
+    },
+    "presencePenalty": {
+      "title": "Presence Penalty",
+      "sourceId": "WpO8V5caudySVehOcuDvK",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "Presence penalty reduces the likelihood of repeating tokens that have already appeared in the text, encouraging diverse vocabulary usage. Unlike frequency penalty which considers how often tokens appear, presence penalty applies the same penalty to any previously used token, promoting varied content and creativity.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Presence Penalty - LLM Parameter Guide - Vellum",
+          "url": "https://www.vellum.ai/llm-parameters/presence-penalty"
+        }
+      ],
+      "parents": [
+        "frequencyPenalty"
+      ],
+      "children": []
+    },
+    "stepBackPrompting": {
+      "title": "Step-back Prompting",
+      "sourceId": "2MboHh8ugkoH8dSd9d4Mk",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "Step-back prompting improves LLM performance by first asking a general question related to the specific task, then using that answer to inform the final response. This technique activates relevant background knowledge before attempting the specific problem. For example, before writing a video game level storyline, first ask \"What are key settings for engaging first-person shooter levels?\" then use those insights to create the specific storyline. This approach reduces biases and improves accuracy by grounding responses in broader principles.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Step-Back Prompting - LearnPrompting",
+          "url": "https://learnprompting.org/docs/advanced/thought_generation/step_back_prompting"
+        }
+      ],
+      "parents": [
+        "structuredOutputs"
+      ],
+      "children": [
+        "chainOfThoughtCotPrompting"
+      ]
+    },
+    "zeroShotPrompting": {
+      "title": "Zero-Shot Prompting",
+      "sourceId": "GRerL9UXN73TwpCW2eTIE",
+      "type": "subtopic",
+      "order": 36,
+      "summary": "Zero-shot prompting provides only a task description without examples, relying on the model's training patterns. Simply describe the task clearly, provide input data, and optionally specify output format. Works well for simple classification, text generation, and Q&A, but may produce inconsistent results for complex tasks.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Zero-Shot Prompting - DAIR.AI",
+          "url": "https://www.promptingguide.ai/techniques/zeroshot"
+        },
+        {
+          "type": "article",
+          "title": "Introduction to Zero-Shot Techniques - LearnPrompting",
+          "url": "https://learnprompting.org/docs/advanced/zero_shot/introduction"
+        }
+      ],
+      "parents": [
+        "promptingTechniques"
+      ],
+      "children": [
+        "oneShotFewShotPrompting"
+      ]
+    },
+    "chainOfThoughtCotPrompting": {
+      "title": "Chain of Thought (CoT) Prompting",
+      "sourceId": "weRaJxEplhKDyFWSMeoyI",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "Chain of Thought prompting improves LLM reasoning by generating intermediate reasoning steps before providing the final answer. Instead of jumping to conclusions, the model \"thinks through\" problems step by step. Simply adding \"Let's think step by step\" to prompts often dramatically improves accuracy on complex reasoning tasks and mathematical problems.",
+      "video": {
+        "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
+        "url": "https://youtu.be/vD0E3EUb8-8?si=Y6MCLPzjmhMB4jSu&t=203"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Chain-of-Thought Prompting - DAIR.AI",
+          "url": "https://www.promptingguide.ai/techniques/cot"
+        },
+        {
+          "type": "article",
+          "title": "Chain-of-Thought Prompting - LearnPrompting",
+          "url": "https://learnprompting.org/docs/intermediate/chain_of_thought"
+        },
+        {
+          "type": "article",
+          "title": "Reasoning LLMs Guide - DAIR.AI",
+          "url": "https://www.promptingguide.ai/guides/reasoning-llms"
+        }
+      ],
+      "parents": [
+        "stepBackPrompting"
+      ],
+      "children": [
+        "selfConsistencyPrompting"
+      ]
+    },
+    "oneShotFewShotPrompting": {
+      "title": "One-Shot / Few-Shot Prompting",
+      "sourceId": "Iufv_LsgUNls-Alx_Btlh",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "One-shot provides a single example to guide model behavior, while few-shot includes multiple examples (3-5) to demonstrate desired patterns. Examples show output structure, style, and tone, increasing accuracy and consistency. Use few-shot for complex formatting, specialized tasks, and when zero-shot results are inconsistent.",
+      "video": {
+        "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
+        "url": "https://youtu.be/vD0E3EUb8-8?si=Fi2igdPTBUocqnX7&t=177"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Few-Shot Prompting - DAIR.AI",
+          "url": "https://www.promptingguide.ai/techniques/fewshot"
+        },
+        {
+          "type": "article",
+          "title": "Few-Shot Prompting - LearnPrompting",
+          "url": "https://learnprompting.org/docs/basics/few_shot"
+        },
+        {
+          "type": "article",
+          "title": "Few-Shot Introduction - LearnPrompting",
+          "url": "https://learnprompting.org/docs/advanced/few_shot/introduction"
+        }
+      ],
+      "parents": [
+        "zeroShotPrompting"
+      ],
+      "children": []
+    },
+    "automaticPromptEngineering": {
+      "title": "Automatic Prompt Engineering",
+      "sourceId": "diHNCiuKHeMVgvJ4OMwVh",
+      "type": "topic",
+      "order": 39,
+      "summary": "Automatic Prompt Engineering (APE) uses LLMs to generate and optimize prompts automatically, reducing human effort while enhancing model performance. The process involves prompting a model to create multiple prompt variants, evaluating them using metrics like BLEU or ROUGE, then selecting the highest-scoring candidate. For example, generating 10 variants of customer order phrases for chatbot training, then testing and refining the best performers. This iterative approach helps discover effective prompts that humans might not consider, automating the optimization process.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Automatic Prompt Engineer - DAIR.AI",
+          "url": "https://www.promptingguide.ai/techniques/ape"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "selfConsistencyPrompting": {
+      "title": "Self-Consistency Prompting",
+      "sourceId": "1EzqCoplXPiHjp9Z-vqn-",
+      "type": "subtopic",
+      "order": 40,
+      "summary": "Self-consistency prompting generates multiple reasoning paths for the same problem using higher temperature settings, then selects the most commonly occurring answer through majority voting. This technique combines sampling and voting to improve accuracy and provides pseudo-probability of answer correctness. While more expensive due to multiple API calls, it significantly enhances reliability for complex reasoning tasks by reducing the impact of single incorrect reasoning chains and leveraging diverse problem-solving approaches.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Self-Consistency - DAIR.AI",
+          "url": "https://www.promptingguide.ai/techniques/consistency"
+        },
+        {
+          "type": "article",
+          "title": "Self-Consistency - LearnPrompting",
+          "url": "https://learnprompting.org/docs/intermediate/self_consistency"
+        }
+      ],
+      "parents": [
+        "chainOfThoughtCotPrompting"
+      ],
+      "children": [
+        "treeOfThoughtsTotPrompting"
+      ]
+    },
+    "systemRoleContextual": {
+      "title": "System / Role / Contextual",
+      "sourceId": "3iJVcbCmnGdF39ne0U00r",
+      "type": "label",
+      "order": 41,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "systemPrompting"
+      ]
+    },
+    "useLlmToGeneratePrompts": {
+      "title": "Use LLM to generate Prompts",
+      "sourceId": "5baiI4hKmZv6gkTHnfxH6",
+      "type": "label",
+      "order": 42,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "aiRedTeaming"
+      ]
+    },
+    "systemPrompting": {
+      "title": "System Prompting",
+      "sourceId": "fWo39-hehRgwmx7CF36mM",
+      "type": "subtopic",
+      "order": 43,
+      "summary": "System prompting sets the overall context, purpose, and operational guidelines for LLMs. It defines the model's role, behavioral constraints, output format requirements, and safety guardrails. System prompts provide foundational parameters that influence all subsequent interactions, ensuring consistent, controlled, and structured AI responses throughout the session.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Prompt Engineering Overview - Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+        },
+        {
+          "type": "article",
+          "title": "Instructions - LearnPrompting",
+          "url": "https://learnprompting.org/docs/basics/instructions"
+        }
+      ],
+      "parents": [
+        "systemRoleContextual"
+      ],
+      "children": [
+        "rolePrompting"
+      ]
+    },
+    "treeOfThoughtsTotPrompting": {
+      "title": "Tree of Thoughts (ToT) Prompting",
+      "sourceId": "ob9D0W9B9145Da64nbi1M",
+      "type": "subtopic",
+      "order": 44,
+      "summary": "Tree of Thoughts (ToT) generalizes Chain of Thought by allowing LLMs to explore multiple reasoning paths simultaneously rather than following a single linear chain. This approach maintains a tree structure where each thought represents a coherent step toward solving a problem, enabling the model to branch out and explore different reasoning directions. ToT is particularly effective for complex tasks requiring exploration and is well-suited for problems that benefit from considering multiple solution approaches before converging on the best answer.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Tree of Thoughts - DAIR.AI",
+          "url": "https://www.promptingguide.ai/techniques/tot"
+        }
+      ],
+      "parents": [
+        "selfConsistencyPrompting"
+      ],
+      "children": [
+        "reactPrompting"
+      ]
+    },
+    "rolePrompting": {
+      "title": "Role Prompting",
+      "sourceId": "XHWKGaSRBYT4MsCHwV-iR",
+      "type": "subtopic",
+      "order": 45,
+      "summary": "Role prompting assigns a specific character, identity, or professional role to the LLM to generate responses consistent with that role's expertise, personality, and communication style. By establishing roles like \"teacher,\" \"travel guide,\" or \"software engineer,\" you provide the model with appropriate domain knowledge, perspective, and tone for more targeted, natural interactions.",
+      "video": {
+        "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
+        "url": "https://youtu.be/vD0E3EUb8-8?si=9orzEniOGmRD7g-o&t=136"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Assigning Roles to Chatbots - LearnPrompting",
+          "url": "https://learnprompting.org/docs/basics/roles"
+        },
+        {
+          "type": "article",
+          "title": "Role Prompting - LearnPrompting",
+          "url": "https://learnprompting.org/docs/advanced/zero_shot/role_prompting"
+        }
+      ],
+      "parents": [
+        "systemPrompting"
+      ],
+      "children": [
+        "contextualPrompting"
+      ]
+    },
+    "reactPrompting": {
+      "title": "ReAct Prompting",
+      "sourceId": "8Ks6txRSUfMK7VotSQ4sC",
+      "type": "subtopic",
+      "order": 46,
+      "summary": "ReAct (Reason and Act) prompting enables LLMs to solve complex tasks by combining reasoning with external tool interactions. It follows a thought-action-observation loop: analyze the problem, perform actions using external APIs, review results, and iterate until solved. Useful for research, multi-step problems, and tasks requiring current data.",
+      "video": {
+        "title": "4 Methods of Prompt Engineering",
+        "url": "https://youtu.be/vD0E3EUb8-8?si=Y6MCLPzjmhMB4jSu&t=203"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "ReAct - DAIR.AI",
+          "url": "https://www.promptingguide.ai/techniques/react"
+        },
+        {
+          "type": "article",
+          "title": "ReAct: Synergizing Reasoning and Acting - LearnPrompting",
+          "url": "https://learnprompting.org/docs/techniques/react"
+        }
+      ],
+      "parents": [
+        "treeOfThoughtsTotPrompting"
+      ],
+      "children": [
+        "promptTuning"
+      ]
+    },
+    "contextualPrompting": {
+      "title": "Contextual Prompting",
+      "sourceId": "5TNK1KcSzh9GTKiEJnM-y",
+      "type": "subtopic",
+      "order": 47,
+      "summary": "Contextual prompting provides specific background information or situational details relevant to the current task, helping LLMs understand nuances and tailor responses accordingly. Unlike system or role prompts, contextual prompts supply immediate, task-specific information that's dynamic and changes based on the situation. For example: \"Context: You are writing for a blog about retro 80's arcade video games. Suggest 3 topics to write articles about.\" This technique ensures responses are relevant, accurate, and appropriately framed for the specific context provided.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Prompting Best Practices - Anthropic",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+        },
+        {
+          "type": "article",
+          "title": "Prompt Structure and Key Parts - LearnPrompting",
+          "url": "https://learnprompting.org/docs/basics/prompt_structure"
+        }
+      ],
+      "parents": [
+        "rolePrompting"
+      ],
+      "children": []
+    },
+    "promptTuning": {
+      "title": "Prompt Tuning",
+      "sourceId": "VjuUq6nEz3Wyx5NJWNaxr",
+      "type": "subtopic",
+      "order": 48,
+      "summary": "Prompt tuning is a method for adapting large AI models to new tasks without changing the model itself. Instead of retraining billions of parameters, it learns a small set of special vectors called \u201csoft prompts\u201d that are added to the input. These act like hidden instructions that guide the model toward the desired behavior while keeping the original model unchanged. This approach is much more efficient in terms of computation and storage, making it a practical choice for customizing models across many different tasks.",
+      "video": {
+        "title": "What is Prompt Tuning?",
+        "url": "https://www.youtube.com/watch?v=yu27PWzJI_Y"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "What is Prompt Tuning",
+          "url": "https://www.ibm.com/think/topics/prompt-tuning"
+        },
+        {
+          "type": "article",
+          "title": "Prompt tune a Granite model in Python using watsonx",
+          "url": "https://www.ibm.com/think/tutorials/prompt-tune-a-granite-model-using-watsonx"
+        }
+      ],
+      "parents": [
+        "reactPrompting"
+      ],
+      "children": []
+    },
+    "promptingBestPractices": {
+      "title": "Prompting Best Practices",
+      "sourceId": "a3s4_DxtLGo6v-GPpQSXp",
+      "type": "paragraph",
+      "order": 49,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "aiRedTeaming"
+      ],
+      "children": []
+    },
+    "aiRedTeaming": {
+      "title": "AI Red Teaming",
+      "sourceId": "Wvu9Q_kNhH1_JlOgxAjP6",
+      "type": "topic",
+      "order": 50,
+      "summary": "AI red teaming involves deliberately testing AI systems to find vulnerabilities, biases, or harmful behaviors through adversarial prompting. Teams attempt to make models produce undesired outputs, bypass safety measures, or exhibit problematic behaviors. This process helps identify weaknesses and improve AI safety and robustness before deployment.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated AI Red Teaming Roadmap",
+          "url": "https://roadmap.sh/ai-red-teaming"
+        }
+      ],
+      "parents": [
+        "useLlmToGeneratePrompts"
+      ],
+      "children": [
+        "promptingBestPractices"
+      ]
+    },
+    "improvingReliability": {
+      "title": "Improving Reliability",
+      "sourceId": "CwgyTJmEDzeHkC3zsw_d_",
+      "type": "label",
+      "order": 58,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "promptDebiasing"
+      ]
+    },
+    "promptDebiasing": {
+      "title": "Prompt Debiasing",
+      "sourceId": "0H2keZYD8iTNyBgmNVhto",
+      "type": "subtopic",
+      "order": 60,
+      "summary": "Prompt debiasing involves techniques to reduce unwanted biases in LLM outputs by carefully crafting prompts. This includes using neutral language, diverse examples, and explicit instructions to avoid stereotypes or unfair representations. Effective debiasing helps ensure AI outputs are fairer, inclusive, and more representative across different groups and perspectives.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Prompt Debiasing - LearnPrompting",
+          "url": "https://learnprompting.org/docs/reliability/debiasing"
+        }
+      ],
+      "parents": [
+        "improvingReliability"
+      ],
+      "children": [
+        "promptEnsembling"
+      ]
+    },
+    "promptEnsembling": {
+      "title": "Prompt Ensembling",
+      "sourceId": "HOqWHqAkxLX8f2ImSmZE7",
+      "type": "subtopic",
+      "order": 62,
+      "summary": "Prompt ensembling combines multiple different prompts or prompt variations to improve output quality and consistency. This technique involves running the same query with different prompt formulations and aggregating results through voting, averaging, or selection. Ensembling reduces variance and increases reliability by leveraging diverse prompt perspectives.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Introduction to Ensembling - LearnPrompting",
+          "url": "https://learnprompting.org/docs/advanced/ensembling/introduction"
+        }
+      ],
+      "parents": [
+        "promptDebiasing"
+      ],
+      "children": [
+        "llmSelfEvaluation"
+      ]
+    },
+    "llmSelfEvaluation": {
+      "title": "LLM Self Evaluation",
+      "sourceId": "CvV3GIvQhsTvE-TQjTpIQ",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "LLM self-evaluation involves prompting models to assess their own outputs for quality, accuracy, or adherence to criteria. This technique can identify errors, rate confidence levels, or check if responses meet specific requirements. Self-evaluation helps improve output quality through iterative refinement and provides valuable feedback for prompt optimization.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "LLM Self-Evaluation - LearnPrompting",
+          "url": "https://learnprompting.org/docs/reliability/lm_self_eval"
+        }
+      ],
+      "parents": [
+        "promptEnsembling"
+      ],
+      "children": []
+    },
+    "calibratingLlms": {
+      "title": "Calibrating LLMs",
+      "sourceId": "P5nDyQbME53DOEfSkcY6I",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "Calibrating LLMs involves adjusting models so their confidence scores accurately reflect their actual accuracy. Well-calibrated models express appropriate uncertainty - being confident when correct and uncertain when likely wrong. This helps users better trust and interpret model outputs, especially in critical applications where uncertainty awareness is crucial.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Calibrating LLMs - LearnPrompting",
+          "url": "https://learnprompting.org/docs/reliability/calibration"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "continueLearningWithFollowingRoadmaps"
+      ]
+    },
+    "continueLearningWithFollowingRoadmaps": {
+      "title": "Continue learning with following roadmaps",
+      "sourceId": "0vLaVNJaJSHZ_bHli6Qzs",
+      "type": "paragraph",
+      "order": 71,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "calibratingLlms"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "prompt-engineering",
+      "to": "introduction",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "llmsAndHowTheyWork",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "whatIsAPrompt",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "whatIsPromptEngineering",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "llmConfiguration",
+      "style": "solid"
+    },
+    {
+      "from": "llmConfiguration",
+      "to": "samplingParameters",
+      "style": "solid"
+    },
+    {
+      "from": "calibratingLlms",
+      "to": "continueLearningWithFollowingRoadmaps",
+      "style": "solid"
+    },
+    {
+      "from": "repetitionPenalties",
+      "to": "structuredOutputs",
+      "style": "solid"
+    },
+    {
+      "from": "structuredOutputs",
+      "to": "promptingTechniques",
+      "style": "solid"
+    },
+    {
+      "from": "useLlmToGeneratePrompts",
+      "to": "aiRedTeaming",
+      "style": "solid"
+    },
+    {
+      "from": "aiRedTeaming",
+      "to": "promptingBestPractices",
+      "style": "solid"
+    },
+    {
+      "from": "commonTerminology",
+      "to": "llm",
+      "style": "solid"
+    },
+    {
+      "from": "commonTerminology",
+      "to": "tokens",
+      "style": "solid"
+    },
+    {
+      "from": "commonTerminology",
+      "to": "contextWindow",
+      "style": "solid"
+    },
+    {
+      "from": "modelsOfferedBy",
+      "to": "openai",
+      "style": "solid"
+    },
+    {
+      "from": "modelsOfferedBy",
+      "to": "google",
+      "style": "solid"
+    },
+    {
+      "from": "contextWindow",
+      "to": "hallucination",
+      "style": "solid"
+    },
+    {
+      "from": "contextWindow",
+      "to": "agents",
+      "style": "solid"
+    },
+    {
+      "from": "modelsOfferedBy",
+      "to": "anthropic",
+      "style": "solid"
+    },
+    {
+      "from": "modelsOfferedBy",
+      "to": "meta",
+      "style": "solid"
+    },
+    {
+      "from": "contextWindow",
+      "to": "promptInjection",
+      "style": "solid"
+    },
+    {
+      "from": "outputControl",
+      "to": "xai",
+      "style": "solid"
+    },
+    {
+      "from": "promptInjection",
+      "to": "modelWeightsParameters",
+      "style": "solid"
+    },
+    {
+      "from": "samplingParameters",
+      "to": "temperature",
+      "style": "solid"
+    },
+    {
+      "from": "modelWeightsParameters",
+      "to": "fineTuningVsPromptEngg",
+      "style": "solid"
+    },
+    {
+      "from": "temperature",
+      "to": "topK",
+      "style": "solid"
+    },
+    {
+      "from": "temperature",
+      "to": "topP",
+      "style": "solid"
+    },
+    {
+      "from": "fineTuningVsPromptEngg",
+      "to": "aiVsAgi",
+      "style": "solid"
+    },
+    {
+      "from": "fineTuningVsPromptEngg",
+      "to": "rag",
+      "style": "solid"
+    },
+    {
+      "from": "outputControl",
+      "to": "maxTokens",
+      "style": "solid"
+    },
+    {
+      "from": "maxTokens",
+      "to": "stopSequences",
+      "style": "solid"
+    },
+    {
+      "from": "repetitionPenalties",
+      "to": "frequencyPenalty",
+      "style": "solid"
+    },
+    {
+      "from": "frequencyPenalty",
+      "to": "presencePenalty",
+      "style": "solid"
+    },
+    {
+      "from": "structuredOutputs",
+      "to": "stepBackPrompting",
+      "style": "solid"
+    },
+    {
+      "from": "promptingTechniques",
+      "to": "zeroShotPrompting",
+      "style": "solid"
+    },
+    {
+      "from": "stepBackPrompting",
+      "to": "chainOfThoughtCotPrompting",
+      "style": "solid"
+    },
+    {
+      "from": "zeroShotPrompting",
+      "to": "oneShotFewShotPrompting",
+      "style": "solid"
+    },
+    {
+      "from": "chainOfThoughtCotPrompting",
+      "to": "selfConsistencyPrompting",
+      "style": "solid"
+    },
+    {
+      "from": "systemRoleContextual",
+      "to": "systemPrompting",
+      "style": "solid"
+    },
+    {
+      "from": "selfConsistencyPrompting",
+      "to": "treeOfThoughtsTotPrompting",
+      "style": "solid"
+    },
+    {
+      "from": "systemPrompting",
+      "to": "rolePrompting",
+      "style": "solid"
+    },
+    {
+      "from": "treeOfThoughtsTotPrompting",
+      "to": "reactPrompting",
+      "style": "solid"
+    },
+    {
+      "from": "rolePrompting",
+      "to": "contextualPrompting",
+      "style": "solid"
+    },
+    {
+      "from": "reactPrompting",
+      "to": "promptTuning",
+      "style": "solid"
+    },
+    {
+      "from": "improvingReliability",
+      "to": "promptDebiasing",
+      "style": "solid"
+    },
+    {
+      "from": "promptDebiasing",
+      "to": "promptEnsembling",
+      "style": "solid"
+    },
+    {
+      "from": "promptEnsembling",
+      "to": "llmSelfEvaluation",
+      "style": "solid"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "title": "AI and Data Scientist Roadmap",
+  "summary": "Step by step roadmap guide to becoming an AI and Data Scientist in 2026",
+  "url": "https://roadmap.sh/ai-data-scientist",
+  "order": [
+    "mathematics",
+    "statistics",
+    "econometrics",
+    "coding",
+    "exploratoryDataAnalysis",
+    "machineLearning",
+    "deepLearning",
+    "mlops",
+    "vibeCoding",
+    "aiEngineering"
+  ],
+  "topics": {
+    "mathematics": {
+      "title": "Mathematics",
+      "sourceId": "aStaDENn5PhEa-cFvNzXa",
+      "type": "topic",
+      "order": 1,
+      "summary": "Mathematics provides the foundational language and tools for understanding and building algorithms. It encompasses concepts like linear algebra (for manipulating data), calculus (for optimization), probability and statistics (for understanding uncertainty and drawing inferences), and discrete mathematics (for reasoning about data structures and algorithms). These mathematical principles enable the development, analysis, and interpretation of models used in artificial intelligence and data science.",
+      "video": null,
+      "articles": [
+        {
+          "type": "book",
+          "title": "Linear Algebra Done Right - Sheldon Axler",
+          "url": "https://linear.axler.net/LADR4e.pdf"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "statistics": {
+      "title": "Statistics",
+      "sourceId": "4WZL_fzJ3cZdWLLDoWN8D",
+      "type": "topic",
+      "order": 2,
+      "summary": "Statistics is the science of collecting, analyzing, interpreting, presenting, and organizing data. It is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data. It is used in a wide range of fields, including science, engineering, medicine, and social science. Statistics is used to make informed decisions, to predict future events, and to test hypotheses. It is also used to summarize data, to describe relationships between variables, and to make inferences about populations based on samples.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "econometrics": {
+      "title": "Econometrics",
+      "sourceId": "Gd2egqKZPnbPW1W2jw4j8",
+      "type": "topic",
+      "order": 5,
+      "summary": "Econometrics is the application of statistical methods to economic data. It is a branch of economics that aims to give empirical content to economic relations. More precisely, it is \"the quantitative analysis of actual economic phenomena based on the concurrent development of theory and observation, related by appropriate methods of inference.\" Econometrics can be described as something that allows economists \"to sift through mountains of data to extract simple relationships.\"",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "coding": {
+      "title": "Coding",
+      "sourceId": "XLDWuSt4tI4gnmqMFdpmy",
+      "type": "topic",
+      "order": 7,
+      "summary": "Programming is a fundamental skill for data scientists. You need to be able to write code to manipulate data, build models, and deploy solutions. The most common programming languages used in data science are Python and R. Python is a general-purpose programming language that is easy to learn and has a large number of libraries for data manipulation and machine learning. R is a programming language and free software environment for statistical computing and graphics. It is widely used for statistical analysis and data visualization.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "exploratoryDataAnalysis": {
+      "title": "Exploratory Data Analysis",
+      "sourceId": "l1027SBZxTHKzqWw98Ee-",
+      "type": "topic",
+      "order": 9,
+      "summary": "Exploratory Data Analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. EDA is used to understand what the data can tell us beyond the formal modeling or hypothesis testing task. It is a crucial step in the data analysis process.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "machineLearning": {
+      "title": "Machine Learning",
+      "sourceId": "kBdt_t2SvVsY3blfubWIz",
+      "type": "topic",
+      "order": 11,
+      "summary": "Machine learning involves creating algorithms that allow computer systems to learn from data without being explicitly programmed. These algorithms identify patterns, make predictions, and improve their performance over time through experience. The learning process can be supervised, unsupervised, or reinforcement-based, depending on the type of data and the desired outcome.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Machine Learning Roadmap",
+          "url": "https://roadmap.sh/machine-learning"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "deepLearning": {
+      "title": "Deep Learning",
+      "sourceId": "cjvVLN0XjrKPn6o20oMmc",
+      "type": "topic",
+      "order": 13,
+      "summary": "Deep Learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence \"deep\") to analyze data and learn complex patterns. These networks are inspired by the structure and function of the human brain, and they are particularly effective at tasks like image recognition, natural language processing, and speech recognition. By processing data through these layers, deep learning models can automatically extract features and make predictions with high accuracy.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Machine Learning Roadmap",
+          "url": "https://roadmap.sh/machine-learning"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "mlops": {
+      "title": "MLOps",
+      "sourceId": "Qa85hEVe2kz62k9Pj4QCA",
+      "type": "topic",
+      "order": 15,
+      "summary": "MLOps is a practice for collaboration and communication between data scientists and operations professionals to help manage the production ML lifecycle. It is a set of best practices that aims to automate the ML lifecycle, including training, deployment, and monitoring. MLOps helps organizations to scale ML models and deliver business value faster.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated MLOps Roadmap",
+          "url": "https://roadmap.sh/mlops"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "vibeCoding": {
+      "title": "Vibe Coding",
+      "sourceId": "ILGi2zpuyTGfkyZjua9jv",
+      "type": "topic",
+      "order": 17,
+      "summary": "Vibe coding refers to the subjective feeling or intuition a programmer has about the quality or correctness of their code while they're writing it. It's a sense of confidence (or lack thereof) that arises from experience, familiarity with the codebase, and an understanding of best practices. This feeling guides developers in making decisions about code structure, debugging strategies, and potential refactoring.",
+      "video": null,
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Vibe Coding Roadmap",
+          "url": "https://roadmap.sh/vibe-coding"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "aiEngineering": {
+      "title": "AI Engineering",
+      "sourceId": "SWEAVNGiQp5sTm3NWp4n5",
+      "type": "topic",
+      "order": 18,
+      "summary": "AI Engineering focuses on putting AI and machine learning models into practice. It involves building, deploying, and maintaining scalable and reliable AI systems. This includes tasks like data pipelines, model serving, infrastructure management, and ensuring the models perform well in real-world applications, bridging the gap between research and practical deployment.",
+      "video": {
+        "title": "AI, Machine Learning, Deep Learning and Generative AI Explained",
+        "url": "https://www.youtube.com/watch?v=qYNweeDHiyU"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated AI Engineer Roadmap",
+          "url": "https://roadmap.sh/ai-engineer"
+        }
+      ],
+      "parents": [],
+      "children": []
+    }
+  },
+  "edges": []
+}

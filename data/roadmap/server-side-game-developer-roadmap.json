@@ -1,0 +1,1929 @@
+{
+  "title": "Server Side Game Developer",
+  "summary": "Roadmap to becoming a Server Side Game Developer in 2026",
+  "url": "https://roadmap.sh/server-side-game-developer",
+  "order": [
+    "serverSideDevelopment",
+    "clientSide",
+    "reliability",
+    "datagram",
+    "checksum",
+    "congestionControl2",
+    "segmentStructure",
+    "tcp",
+    "udp",
+    "checksum2",
+    "operations",
+    "vulnerability",
+    "maxSegmentSize",
+    "packetStructure",
+    "denialOfService",
+    "orderedVsUnordered",
+    "heavyVsLightweight",
+    "tcpVsUdp",
+    "packetVsDatagram",
+    "congestionControl",
+    "reliableVsUnreliable",
+    "dataTransfer",
+    "reliableTransmission",
+    "streamingVsBroadcast",
+    "flowControl",
+    "errorDetection",
+    "capability",
+    "ip",
+    "reliability2",
+    "linkCapacity",
+    "transactions",
+    "programmingLanguages",
+    "category",
+    "descriptor",
+    "security",
+    "cC",
+    "socketProgramming",
+    "function",
+    "datagramConstruction",
+    "api",
+    "serialization",
+    "multithreading",
+    "threadLocalStorage",
+    "designPatterns",
+    "tdd",
+    "synchronization",
+    "dependencyInjection",
+    "programmingTechniques",
+    "dumpAnalysis",
+    "keyValue",
+    "functionalProgramming",
+    "futurePromises",
+    "databases",
+    "coroutine",
+    "channel",
+    "semaphore",
+    "mutex",
+    "apacheKafka",
+    "grpc",
+    "rabbitmq",
+    "cipher",
+    "rpcRest",
+    "messageQueues",
+    "taskBased",
+    "reactiveModel",
+    "reactiveApproach",
+    "reactiveApproach2",
+    "multithreading2",
+    "asynchronous",
+    "actorModel",
+    "proactor",
+    "reactor",
+    "iocp",
+    "ioUring",
+    "wsaPoll",
+    "select",
+    "kqueue",
+    "epoll",
+    "registeredIo",
+    "azure",
+    "docker",
+    "containerization",
+    "dataClustering",
+    "cloud",
+    "gcp",
+    "aws",
+    "apacheSpark",
+    "dockerCompose",
+    "cloudMl",
+    "ai",
+    "deepLearning",
+    "visitTheFollowingRelevantRoadmaps"
+  ],
+  "topics": {
+    "serverSideDevelopment": {
+      "title": "Server-Side Development",
+      "sourceId": "rQArtuVKGVgLn_fw9yO3b",
+      "type": "topic",
+      "order": 1,
+      "summary": "The term \"server-side\" refers to operations that are performed by the server in a client-server relationship in a computer network. In games, the server-side is responsible for the logic and rules of the game, data persistence, security, and synchronization of the game state among all connected clients. It essentially handles all processing that isn't done on the client-side. Code run on the server-side can be written in various programming languages, but it's often in PHP, Ruby, Python, .NET, Java, or JavaScript (Node.js). Knowing server-side programming is critical for any game developer to create maintainable, scalable, and secure online games.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "server-side-game-developer"
+      ],
+      "children": [
+        "clientSide"
+      ]
+    },
+    "clientSide": {
+      "title": "Client Side",
+      "sourceId": "SIvQYH0q1H29NgbtLq3L8",
+      "type": "button",
+      "order": 2,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "serverSideDevelopment"
+      ],
+      "children": []
+    },
+    "reliability": {
+      "title": "Reliability",
+      "sourceId": "Vh81GnOUOZvDOlOyI5PwT",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Reliability refers to how consistently a data packet can be transferred from one system to another over a network. In terms of the User Datagram Protocol (UDP), it has a lack of reliability built into it. This means UDP does not guarantee that your data will reach its destination, it merely sends the packets without any acknowledgement of receipt. Unlike its counterpart, Transmission Control Protocol (TCP), which implements error-checking mechanisms to ensure data integrity and delivery. In summary, if you require high reliability in your server side game development, protocols other than UDP might need to be considered.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "udp"
+      ],
+      "children": []
+    },
+    "datagram": {
+      "title": "Datagram",
+      "sourceId": "wD_HWc9YxPhlkilt585pg",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "A **Datagram** is the basic unit of data transfer in network communication using protocols such as User Datagram Protocol (UDP). Each datagram operates independently of each other, meaning they may be received in a different order than they were sent, or they might not be received at all. Therefore, unlike TCP (Transmission Control Protocol), UDP does not guarantee that datagrams are delivered in the same order that they were sent, or even at all - hence known as connectionless protocol. However, it is faster and more efficient for applications that do not require delivery guarantees, such as voice over IP, live video broadcasts, and other real-time applications. Each datagram contains information about the sender, the intended recipient, and the data that it is intended to communicate along with its size and other specifications.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "udp"
+      ],
+      "children": []
+    },
+    "checksum": {
+      "title": "Checksum",
+      "sourceId": "XxBl-zO7CF6DpOZ2bMDxJ",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "A **checksum** in TCP (Transmission Control Protocol) is a 16-bit field in the TCP header used to perform error checks on the segments. TCP stack computes the checksum value for the data transmitted and sends it along with the data to the receiving system. The receiving system re-computes the checksum and compares it with the value sent along with the data. If both the computed values match, the data is assumed to be free from transmission errors. However, if the computed values don't match, TCP will detect a possible change in received data, and the receiver will request for the re-transmission of the lost or corrupted data packets. Please note that while the checksum operation helps to ensure data integrity, it is not entirely foolproof as it might not detect all possible errors, particularly those that involve multiple bit changes.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tcp"
+      ],
+      "children": []
+    },
+    "congestionControl2": {
+      "title": "Congestion Control",
+      "sourceId": "jsNsyrGzegVnjIF2l52vI",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "`Congestion Control` is a critical feature of TCP, but not inherently a part of UDP. The primary purpose of congestion control is to prevent too much data from being sent into the network such that it can't handle the traffic, leading to packet loss. TCP's congestion control mechanism adjusts the data send rate based on the perceived network congestion. UDP does not provide congestion control by itself. However, this does not mean congestion control can't be implemented if you're using UDP. Developers can implement a custom congestion control mechanism over UDP, but it requires substantial understanding and careful management to achieve this without creating network or server performance issues.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "udp"
+      ],
+      "children": []
+    },
+    "segmentStructure": {
+      "title": "Segment Structure",
+      "sourceId": "zTCmPUp9j5P1wpGgiboMa",
+      "type": "subtopic",
+      "order": 9,
+      "summary": "TCP (Transmission Control Protocol) uses a method called \"segmentation\" to manage data transmission. In this approach, TCP divides a stream of data into smaller parts, known as \"segments\". Each of these segments is then independently sent over the internet. A basic TCP segment consists of a header and the data section. The header contains various fields such as source port, destination port, sequence number, acknowledgment number, data offset, reserved section, control bit, window, checksum, urgent pointer, and options. The rest of the segment is occupied by the data transferred by TCP. Understanding the structure of these segments is crucial for understanding how TCP, and thereby much of the Internet, operates.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tcp"
+      ],
+      "children": []
+    },
+    "tcp": {
+      "title": "TCP",
+      "sourceId": "mUCidjOsVLMAVDf2jmV5F",
+      "type": "topic",
+      "order": 10,
+      "summary": "TCP, an acronym for Transmission Control Protocol, is a fundamental protocol in the suite of internet protocols. It is a connection-oriented, reliable, byte stream service that sits at the transport layer of the OSI Model. In simpler terms, TCP enables two hosts to establish a connection and exchange data. During this communication, TCP ensures that data is not lost or received out of order by providing error checking mechanisms and a system for retransmission of lost data. Furthermore, to ensure efficient use of network resources, TCP implements flow control, congestion control and provides a means for hosts to dynamically adjust the throughput of the connection.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "checksum",
+        "segmentStructure",
+        "operations",
+        "vulnerability"
+      ]
+    },
+    "udp": {
+      "title": "UDP",
+      "sourceId": "IMyHwnXxJK6oFxzOMLxjS",
+      "type": "topic",
+      "order": 11,
+      "summary": "`UDP`, or User Datagram Protocol, is a communications protocol that sends data over the internet. Unlike TCP (Transmission Control Protocol), it's a connectionless protocol that doesn't ensure data packet delivery. It transmits datagrams \u2013 an independent, discrete packet of data \u2013 without first establishing a proper handshake between the sender and the receiver. The sender doesn't wait for an acknowledgment after sending a datagram, and the receiver doesn't send any acknowledgment upon receiving a datagram. This makes UDP faster but less reliable than TCP. UDP is used for time-sensitive transmissions where dropped packets are acceptable, such as in live video streaming, voice over IP (VoIP), and online multiplayer gaming.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "reliability",
+        "datagram",
+        "congestionControl2",
+        "checksum2",
+        "packetStructure",
+        "tcpVsUdp"
+      ]
+    },
+    "checksum2": {
+      "title": "Checksum",
+      "sourceId": "tBOvBpDi3SOKZjAmkxdM0",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "The `checksum` is an important element in UDP that ensures the integrity and validation of the data being transmitted. It computes the total sum of all the bytes in a packet and incorporates it as an additional `checksum` field in the UDP header. When the packet arrives at its destination, this process is repeated and compared with the included `checksum`. If a match is observed, the packet is deemed valid. If not, it signifies that an error occurred during transmission possibly due to noise or any third-party interference. In such a case, the packet is simply dropped, as UDP does not initiate any retransmission or error correction procedure. This is why a perfect output cannot be guaranteed with UDP, nor can it determine whether all the recipients are receiving the packets properly.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "udp"
+      ],
+      "children": []
+    },
+    "operations": {
+      "title": "Operations",
+      "sourceId": "ALNR_uSq6ByPUrt6lXkhZ",
+      "type": "paragraph",
+      "order": 13,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tcp"
+      ],
+      "children": [
+        "maxSegmentSize"
+      ]
+    },
+    "vulnerability": {
+      "title": "Vulnerability",
+      "sourceId": "MwLWDlciJOq_0n5S3GoF-",
+      "type": "subtopic",
+      "order": 14,
+      "summary": "`TCP` (Transmission Control Protocol) is an important protocol known for its reliability in delivering data packets, but it also has several vulnerabilities. The most significant weakness is TCP\u2019s susceptibility to a variety of **Denial-of-Service (DoS)** attacks, such as TCP SYN flood attacks, where an attacker sends a succession of SYN requests to a target's system in an attempt to consume server resources to make the system unresponsive. Additionally, sequence prediction can be exploited where an attacker can predict the sequence number of TCP packets to hijack the TCP session. There are also risks of IP spoofing, where an attacker can forge the IP address in the TCP packet header and pretend to be another user in the network. These vulnerabilities may expose sensitive information, disrupt normal functions or allow unauthorized access, especially in the context of a server-side game developer dealing with potentially large volumes of traffic.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tcp"
+      ],
+      "children": [
+        "denialOfService"
+      ]
+    },
+    "maxSegmentSize": {
+      "title": "Max Segment Size",
+      "sourceId": "w6ysmcsBn9jJ8xMvg7hcD",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "**Max Segment Size (MSS)** is a crucial concept in `TCP` networking, representing the largest amount of data that can be sent in a single `TCP` segment, excluding the `TCP` header. `MSS` is vital for optimizing performance in server-side game development, as it helps to avoid fragmentation and ensures that data is transmitted efficiently over the network. By adjusting the `MSS`, game servers can minimize packet fragmentation, which can lead to increased latency and reduced throughput. Typically, `MSS` is determined during the `TCP` handshake based on the maximum transmission unit (MTU) of the network, and it can be configured to suit the needs of specific applications or networks. Optimizing `MSS` can improve the overall reliability and performance of data transfers, especially in multiplayer games where real-time communication and high throughput are essential.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "RFC 879 - Maximum Segment Size",
+          "url": "https://tools.ietf.org/html/rfc879"
+        },
+        {
+          "type": "article",
+          "title": "What is MSS (maximum segment size)?",
+          "url": "https://www.cloudflare.com/learning/network-layer/what-is-mss/"
+        },
+        {
+          "type": "article",
+          "title": "TCP Maximum Segment Size tuning",
+          "url": "https://www.ibm.com/docs/en/aix/7.2?topic=tuning-tcp-maximum-segment-size"
+        }
+      ],
+      "parents": [
+        "operations"
+      ],
+      "children": []
+    },
+    "packetStructure": {
+      "title": "Packet Structure",
+      "sourceId": "CCxVnrGDKa1EROXgF_OAm",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "UDP or User Datagram Protocol is designed to send messages known as datagrams over the network. The packet structure of UDP is relatively simple compared to other protocol types. Each UDP header consists of 4 fields, each of 2 bytes. These 4 fields are namely: Source Port, Destination Port, Length, and Checksum. The `Source Port` is for tracking responses and `Destination Port` is for delivering the datagram on the receiving end. The `Length` specifies the entire datagram size including the header and data while the `Checksum` is used to verify the integrity of the data and header.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "udp"
+      ],
+      "children": []
+    },
+    "denialOfService": {
+      "title": "Denial of Service",
+      "sourceId": "TbXJO__4xSnzK1fvvJK86",
+      "type": "subtopic",
+      "order": 18,
+      "summary": "Denial of Service (DoS) is a malicious attempt to disrupt the regular functioning of a network, service, or server by overwhelming the network or server with a flood of internet traffic. The most common type of DoS attack involves flooding the target with unnecessary requests in an attempt to overload the system. In a Distributed Denial of Service (DDoS) attack, multiple computers are used to carry out the cyber attack. For servers, these attacks can significantly affect the availability and performance of games, causing a poor experience for the users.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "vulnerability"
+      ],
+      "children": []
+    },
+    "orderedVsUnordered": {
+      "title": "Ordered vs Unordered",
+      "sourceId": "WMdCDmFsytsF2AWQXfzC8",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "In the context of TCP vs UDP, \"ordered\" and \"not ordered\" refers to the order in which packets are received. In TCP (Transmission Control Protocol), packets are ordered. This means that the packets of data are sent and received in the same order. For example, if packet 1, packet 2, and packet 3 are sent in that order, they will be delivered and read in that exact order whether, packet 2 takes longer to send or not. On the other hand, UDP (User Datagram Protocol) is not ordered. The packets of data are independent of each other. So, if packet 1, packet 2, and packet 3 are sent in that order, they could be received in a different order such as packet 2, packet 1, then packet 3. This happens because UDP doesn't re-order packets as TCP does.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tcpVsUdp"
+      ],
+      "children": []
+    },
+    "heavyVsLightweight": {
+      "title": "Heavy vs Lightweight",
+      "sourceId": "OYXKtl4A-vaK6yGO6hS6n",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "TCP (Transmission Control Protocol) is often described as a \"heavyweight\" protocol because it provides numerous features such as error-checking, guaranteed delivery, and order-of-arrival of data packets, which makes it more complex to implement in the server. This complexity results in additional server load, making it heavier in terms of processing resources and system requirements.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tcpVsUdp"
+      ],
+      "children": []
+    },
+    "tcpVsUdp": {
+      "title": "TCP vs UDP",
+      "sourceId": "RfTcTUjaXyp49FnUf44MK",
+      "type": "topic",
+      "order": 26,
+      "summary": "TCP, or Transmission Control Protocol, is a connection-oriented protocol that guarantees delivery of packets to the destination router. It includes error-checking and ensures packets are delivered in the correct order. On the other hand, UDP, or User Datagram Protocol, is a connectionless protocol which doesn't guarantee delivery or ensure correct sequencing of packets. As a result, UDP is considered faster and more efficient for some applications like video streaming or online gaming where speed matters more than accuracy. So, choosing between TCP and UDP really boils down to the specific requirements and priorities of the situation - it's a trade-off between speed and reliability.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "udp"
+      ],
+      "children": [
+        "orderedVsUnordered",
+        "heavyVsLightweight",
+        "packetVsDatagram",
+        "reliableVsUnreliable",
+        "streamingVsBroadcast",
+        "ip"
+      ]
+    },
+    "packetVsDatagram": {
+      "title": "Packet vs Datagram",
+      "sourceId": "JE3uZ5U6oe6dVzsmglTl2",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "**Packet** and **Datagram** are terms used in data communication.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tcpVsUdp"
+      ],
+      "children": []
+    },
+    "congestionControl": {
+      "title": "Congestion Control",
+      "sourceId": "1GML0Jsfdb1Fn-0PNryiQ",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "**Congestion control** is a fundamental mechanism in `TCP` that prevents excessive data transmission from overwhelming the network, ensuring stable and efficient communication. In server-side game development, congestion control helps maintain smooth gameplay by dynamically adjusting the data flow based on network conditions. `TCP` employs various congestion control algorithms, such as `Reno`, `CUBIC`, and `BBR`, to detect congestion and reduce packet loss. These algorithms regulate the senders transmission rate using strategies like slow start, congestion avoidance, and fast recovery. Proper tuning of congestion control mechanisms is critical for minimizing lag, preventing packet drops, and optimizing multiplayer game performance, especially in high-traffic scenarios.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Congestion Control in Linux TCP",
+          "url": "https://www.usenix.org/conference/2002-usenix-annual-technical-conference/congestion-control-linux-tcp"
+        }
+      ],
+      "parents": [
+        "dataTransfer"
+      ],
+      "children": []
+    },
+    "reliableVsUnreliable": {
+      "title": "Reliable vs Unreliable",
+      "sourceId": "MoyBGT9bscUe8vMN4J0bG",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "In the context of network communication, the terms \"reliable\" and \"unreliable\" refer to whether or not data sent across the network is guaranteed to reach its destination. Reliable protocols, such as TCP, ensure that data is delivered from sender to receiver without loss. They do this by establishing a connection, dividing data into packets, sending them one by one, and waiting for acknowledgment of receipt from the receiver. Each sent packet is numbered so if any packet doesn't reach the receiver, it will be identified by the missing sequence number and resent. In this way, reliable protocols ensure data integrity and order.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tcpVsUdp"
+      ],
+      "children": []
+    },
+    "dataTransfer": {
+      "title": "Data Transfer",
+      "sourceId": "5bJUcx3v4dpdlIsx7bFvK",
+      "type": "subtopic",
+      "order": 31,
+      "summary": "Data transfer in server-side game development refers to the movement of data between the server and client or among various components of the server itself. Game data, such as player scores, game states, and updates, are frequently transferred to ensure a consistent and updated gaming environment. Various methods are used for data transfer, including RESTful APIs, websockets, and protocol buffers. The choice of method often depends on factors such as the size and type of data, the target platform, and the specific needs of the game. Remember, efficient and secure data transfer is essential for providing a smooth and engaging gaming experience.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "reliableTransmission",
+        "congestionControl",
+        "flowControl"
+      ]
+    },
+    "reliableTransmission": {
+      "title": "Reliable Transmission",
+      "sourceId": "X2KHWgQZDHSVDsTRMUwSj",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "**Reliable transmission** ensures that data sent over a network reaches its destination accurately and in the correct order, a critical requirement for server-side game development. `TCP` achieves this through mechanisms like acknowledgments (ACKs), sequence numbers, and retransmission strategies. When a packet is lost or corrupted, `TCP` retransmits it using algorithms such as automatic repeat request (ARQ) and fast retransmit. Additionally, flow control and congestion control work together to prevent data loss due to network congestion. Reliable transmission is essential for maintaining synchronization in multiplayer games, preventing desynchronization issues, and ensuring a smooth gaming experience.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Reliable Transmission",
+          "url": "https://book.systemsapproach.org/direct/reliable.html"
+        },
+        {
+          "type": "article",
+          "title": "TCP Reliable Transmission (IETF RFC 793)",
+          "url": "https://datatracker.ietf.org/doc/html/rfc793"
+        }
+      ],
+      "parents": [
+        "dataTransfer"
+      ],
+      "children": []
+    },
+    "streamingVsBroadcast": {
+      "title": "Streaming vs Broadcast",
+      "sourceId": "pJw8fN1dt3BABtZVz7wGE",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "In the context of network protocol, streaming and broadcasting are two methods for transmitting data packets. Streaming, often performed over TCP, entails sending data from one source to a single specific destination. This method is comparable to a one-to-one phone call. The streaming process is characterized by steady data transmission directly to a single receiver who has initiated a connection. On the contrary, broadcasting refers to the transmittal of data packets from one source to all possible destinations in the network. Similar to a public announcement over a loudspeaker, the data is sent to all receptive entities. Broadcasting primarily utilizes the UDP protocol and does not require a direct connection or acknowledgement of receipt from the recipients.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tcpVsUdp"
+      ],
+      "children": []
+    },
+    "flowControl": {
+      "title": "Flow Control",
+      "sourceId": "lDVD-3i64Mk7-KPJrXmFH",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "**Flow control** is a crucial mechanism in `TCP` that regulates data transmission between a sender and a receiver to prevent network congestion and packet loss. In server-side game development, effective flow control ensures smooth data transfer, reducing latency and improving real-time responsiveness for multiplayer games. `TCP` uses techniques like sliding window protocols, where the receiver dictates how much data it can handle at a time, preventing buffer overflows. Additionally, congestion control algorithms like `TCP Reno` and `CUBIC` help dynamically adjust transmission rates based on network conditions. Proper flow control tuning is essential for maintaining stable connections, minimizing lag, and optimizing server performance in high-traffic gaming environments.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "How Flow Control is Achieved in TCP?",
+          "url": "https://datatracker.ietf.org/doc/html/rfc5681"
+        },
+        {
+          "type": "article",
+          "title": "Flow Control vs. Congestion Control in TCP",
+          "url": "https://www.baeldung.com/cs/tcp-flow-control-vs-congestion-control"
+        },
+        {
+          "type": "article",
+          "title": "TCP Flow Control",
+          "url": "https://www.sanfoundry.com/computer-network-tcp-flow-control/"
+        }
+      ],
+      "parents": [
+        "dataTransfer"
+      ],
+      "children": [
+        "errorDetection"
+      ]
+    },
+    "errorDetection": {
+      "title": "Error Detection",
+      "sourceId": "vFM311xSa5OqNVove2f6j",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "**Error detection** ensures data integrity in `TCP-based` communication, preventing corrupted or altered packets from disrupting server-side game interactions. `TCP` uses checksums to verify data integrity, detecting bit errors during transmission. If an error is found, the corrupted packet is discarded, and retransmission is requested via acknowledgments (ACKs). Additional mechanisms such as cyclic redundancy check (CRC) and parity checks may be used in lower network layers to enhance reliability. Effective error detection minimizes data corruption in multiplayer games, ensuring smooth gameplay and synchronization across players.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Error Detection Code \u2013 Checksum",
+          "url": "https://www.geeksforgeeks.org/error-detection-code-checksum/"
+        },
+        {
+          "type": "article",
+          "title": "Error Control in TCP",
+          "url": "https://www.cisco.com/c/en/us/support/docs/ip/tcp/13733-40.html"
+        }
+      ],
+      "parents": [
+        "flowControl"
+      ],
+      "children": []
+    },
+    "capability": {
+      "title": "Capability",
+      "sourceId": "5kF1fqr-mn5-15e3aMa9k",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "In server-side game development, `capability` basically refers to the potential of the server in terms of supporting the game mechanics, the players, the network traffic, and other elements that allow the game to function effectively. Hosting servers condition the player's game interface and user experience, incorporating the aspects of speed, smooth game flow, glitch prevention, and high-performance gameplay. Certain servers have higher capabilities, supporting complex games with vast virtual environments, numerous players, and extensive data traffic. Their capacity extends to facilitating updates and patches immediately. On the other hand, servers with lower capabilities might only cater to simpler games. Ultimately, the `capability` of an IP server is a key factor in developing and maintaining a successful online, multiplayer, or large-scale game.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "ip"
+      ],
+      "children": []
+    },
+    "ip": {
+      "title": "IP",
+      "sourceId": "tg94V7K0mgYhpkUMp_Scv",
+      "type": "topic",
+      "order": 39,
+      "summary": "**Internet Protocol (IP)** is the primary method used to send and receive messages on the internet. It's a set of rules that dictate how data should be delivered over the internet. An IP address is a unique string of numbers separated by periods that identifies each device using the Internet Protocol to communicate over a network. There are two types: IPv4 and IPv6. IPv4, the most common, consists of four groups of numbers, each ranging from 0 to 255. For example, \"192.168.0.1\". On the other hand, IPv6, the next-generation protocol, provides about 340 undecillion addresses, ensuring the ability to provide unique IPs for every device on the planet. For instance, \"2001:0db8:85a3:0000:0000:8a2e:0370:7334\". Each IP address can be static (permanent) or dynamic (changeable), depending on your network configurations.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "tcpVsUdp"
+      ],
+      "children": [
+        "capability",
+        "reliability2",
+        "linkCapacity",
+        "programmingLanguages"
+      ]
+    },
+    "reliability2": {
+      "title": "Reliability",
+      "sourceId": "2jDV-ovvrkBbTTLk5VbR9",
+      "type": "subtopic",
+      "order": 40,
+      "summary": "The **Reliability** in terms of IP (Internet Protocol) generally refers to the dependability and consistency of the network connections. It's essentially about how reliable the data transfer is over the network. IP itself is an unreliable protocol, meaning it doesn't guarantee the delivery of data packets. This is where protocols like TCP (Transmission Control Protocol) come in. TCP adds a layer of reliability to IP by ensuring the delivery of the data packets, ordering them correctly and error-checking. This ensures that game data synchronizes correctly across the server and clients without any loss, providing consistency and a smooth gameplay experience. However, the full guarantees of TCP come with some additional overhead; therefore, some games might prefer to use unreliable protocols when high performance is more critical than absolute reliability.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "ip"
+      ],
+      "children": []
+    },
+    "linkCapacity": {
+      "title": "Link Capacity",
+      "sourceId": "OzY-LPcfj1sBm_0F0WbIJ",
+      "type": "subtopic",
+      "order": 41,
+      "summary": "Link capacity, also known as bandwidth, refers to the maximum amount of data that can be transmitted over a network link within a given period of time. It is usually measured in bits per second (bps), kilobits per second (Kbps), megabits per second (Mbps), gigabits per second (Gbps), or terabits per second (Tbps). The link capacity is a critical factor in determining the throughput and latency of a server, impacting the overall performance and efficiency of the network communication. Please note that link capacity can be affected by various factors such as the quality of the transmission medium, the distance between the source and destination, and the network congestion.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "ip"
+      ],
+      "children": []
+    },
+    "transactions": {
+      "title": "Transactions",
+      "sourceId": "r2OeI7YC1BLLfctC8q69W",
+      "type": "topic",
+      "order": 43,
+      "summary": "In server-side game development, **transactions** are critical elements that facilitate the exchange or interaction between different processes and data streams. These are usually carried out via a database or a server and are atomically treated as a single unit of work, ensuring data consistency and integrity. Transactions follow a specific pattern known as ACID (Atomicity, Consistency, Isolation, Durability) which makes sure that all intended operations within a transaction are successfully performed or none of them are, preventing disruptions in the event of an error or failure. It also ensures that concurrent execution of transactions results in a system state that would be achieved if transactions were executed sequentially. It's important for a server-side game developer to understand how to manage and control transactions to maintain the robustness of the game's backend system.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "programmingLanguages": {
+      "title": "Programming Languages",
+      "sourceId": "6ilqzjvI4J1pUCmTJ33PA",
+      "type": "topic",
+      "order": 45,
+      "summary": "Programming languages are an essential part of game development. They create the logic and rules for how your game operates. There are various types of programming languages that a server side game developer can use, such as C++, Python, Ruby, etc. These languages have different syntax and structures, as well as varying degrees of complexity. The complexity and capabilities can affect the game's performance, security, and even its potential compatibility with other platforms. Your choice of language often depends greatly on the specific needs of the project and your personal expertise. Picking up a new language can be time-consuming, so it's important to choose wisely. Markdown is another language that's popular for documentation due to its simplicity and readability, but it isn't typically used to code server-side game elements.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "ip"
+      ],
+      "children": [
+        "socketProgramming"
+      ]
+    },
+    "category": {
+      "title": "Category",
+      "sourceId": "NH2eQ1_nij1icTgoO027b",
+      "type": "topic",
+      "order": 49,
+      "summary": "The Internet Protocol Addresses (IP Addresses) are categorized into five different classes, namely, Class A, Class B, Class C, Class D, and Class E.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "descriptor": {
+      "title": "Descriptor",
+      "sourceId": "OAyMj6uLSv1yJ87YAjyZu",
+      "type": "subtopic",
+      "order": 50,
+      "summary": "In the context of socket programming, a **descriptor** is simply an identifier for a resource. With the use of these descriptors, socket applications can interact with system resources such as network connections, files, or data streams. For instance, in C-based languages such as C++, socket programming frequently makes use of file descriptors. These are integer values used by the operating system to identify open files and network sockets. It is crucial for a server-side game developer to understand and make efficient use of descriptors to control and manage all the network protocols, ensuring seamless game experiences.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "socketProgramming"
+      ],
+      "children": []
+    },
+    "security": {
+      "title": "Security",
+      "sourceId": "qkO0s9zR0sAnjTRWcrLQY",
+      "type": "topic",
+      "order": 56,
+      "summary": "In server-side game development, the aspect of IP (Internet Protocol) security is of paramount importance. This primarily involves ensuring the safety of online gaming interactions, protection of sensitive user data being transmitted, and thwarting possible cyber-attacks or threats. This might include mitigation strategies against DDoS (Distributed Denial of Service) attacks, which are common in multiplayer gaming environments, IP spoofing, and session hijacking. Security measures often involve developing secure server architectures, encryption of data in transit and at rest, validation and sanitization of user input, and implementing comprehensive security policies and procedures. Regular risk assessment and vulnerability scanning are also crucial for identifying and addressing potential security loopholes. Therefore, for any game developer, understanding IP security protocols and integrating them into game development processes is essential to provide users with trustworthy gaming environments.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "cC": {
+      "title": "C/C++",
+      "sourceId": "E4H3hniIW6hKpH3Qr--N5",
+      "type": "subtopic",
+      "order": 57,
+      "summary": "",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "C Programming Language",
+          "url": "https://en.wikipedia.org/wiki/C_%28programming_language%29"
+        },
+        {
+          "type": "article",
+          "title": "C++ Programming Language",
+          "url": "https://en.wikipedia.org/wiki/C%2B%2B"
+        }
+      ],
+      "parents": [
+        "serialization"
+      ],
+      "children": []
+    },
+    "socketProgramming": {
+      "title": "Socket Programming",
+      "sourceId": "HvpuFTCknHPhnFkhmhRc4",
+      "type": "topic",
+      "order": 59,
+      "summary": "Socket programming is a method of communication between two computers using a network protocol, typically TCP/IP. In server-side game development, socket programming is used to facilitate real-time, bi-directional communication between the server and client(s). The server opens a socket that waits for incoming connection requests from the client side. Once a connection is established, the server and client can exchange data until the connection is closed. This facilitates live multiplayer gaming experiences, allowing users on different computers to interact within the same game environment.`socket programming` in Python, for example, includes modules for creating both the server side (`socketserver`) and client side (`socket`) of the conversation.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "programmingLanguages"
+      ],
+      "children": [
+        "descriptor",
+        "api",
+        "serialization"
+      ]
+    },
+    "function": {
+      "title": "Function",
+      "sourceId": "YPvm8XD_FaFYCQ-b7-KsH",
+      "type": "topic",
+      "order": 60,
+      "summary": "In server-side game development, functions are a fundamental building block of programming. These are reusable pieces of code designed to perform a particular task. Developers create functions to streamline code, improve readability, and enhance the efficiency of their program. Functions can take parameters as input and return a result. The syntax for declaring a function varies from one programming language to another. However, the basic structure remains the same. It usually starts with a function keyword, followed by the function name and parentheses `()`. Inside these parentheses, we can pass parameters. These parameters are then utilized within the function's body enclosed within curly brackets `{}`. The outputs are typically returned using a return statement. Remember, each function should ideally perform one task, and the function name should accurately represent its purpose to make the code self-explanatory.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "datagramConstruction"
+      ]
+    },
+    "datagramConstruction": {
+      "title": "Datagram Construction",
+      "sourceId": "jnQAzUUnwpJgoRuRIFtSe",
+      "type": "subtopic",
+      "order": 63,
+      "summary": "Datagram construction is a fundamental process in server-side game development, especially when dealing with UDP (User Datagram Protocol). In this context, a datagram is a basic transfer unit associated with a packet-switched network, which typically encompasses a header and payload data. The process of datagram construction involves encapsulating the specific game data (such as player position, game state, etc.) in the datagram payload and setting appropriate values in the datagram header such as Source and Destination IP addresses, Checksum and other protocol-specific values. Constructing and parsing datagrams correctly is crucial for ensuring reliable and efficient communication between the game server and clients.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "function"
+      ],
+      "children": []
+    },
+    "api": {
+      "title": "API",
+      "sourceId": "a2pcxVTGdAPw8aLvdr19M",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "API (Application Programming Interface) is a set of rules and protocols implemented for building and integrating software applications. APIs enable two different software applications to communicate and work together. They work as a bridge connecting two software systems, enabling them to exchange information and execute functions. In the context of server-side game development and socket programming, APIs may be used to handle connection establishment, data transmission, and other necessary network communication operations. APIs can be customized or built based on standard protocols such as HTTP for web services, or TCP/UDP for lower-level socket communications.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "socketProgramming"
+      ],
+      "children": []
+    },
+    "serialization": {
+      "title": "Serialization",
+      "sourceId": "TS6dz61rUSxm-SqmK6JKe",
+      "type": "topic",
+      "order": 66,
+      "summary": "Serialization in server-side game development is the process of transforming data objects or structures into a format that can be stored, transmitted, and reconstructed later. It's significant because it enables you to save the state of a game, pass it between servers, or send it to clients. The two main types of serialization are binary and XML/JSON. Binary serialization turns your objects into a very compact binary format. XML/JSON serialization turns your objects into a textual format, which is less efficient but more human-readable and easier to debug. Depending on your specific needs, you may choose one over the other. Note also that each of these methods has its own exacerbations in terms of compatibility, performance, and security implications.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "socketProgramming"
+      ],
+      "children": [
+        "cC"
+      ]
+    },
+    "multithreading": {
+      "title": "Multithreading",
+      "sourceId": "3QSLUMKD0G08N3MIb1cG7",
+      "type": "topic",
+      "order": 76,
+      "summary": "Multithreading, a specialized form of multitasking, is the ability of a central processing unit (CPU) to manage multiple executions of instructions concurrently. This essentially means that multiple threads or mini-processes are executing independently yet sharing the resources of a single CPU. In programming, threads are a way to improve the application responsiveness and perform multiple operations simultaneously without requiring multiple CPUs or computers. Threads within a process share the same data space with the main thread and can, therefore, communicate more quickly with each other than if they were separate processes. Developers often use multithreading in server-side game development to manage complex operations with high efficiency.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "threadLocalStorage"
+      ]
+    },
+    "threadLocalStorage": {
+      "title": "Thread Local Storage",
+      "sourceId": "IeD-oQ1bkwlKNC-R0lJjZ",
+      "type": "subtopic",
+      "order": 77,
+      "summary": "`Thread Local Storage (TLS)` is a mechanism by which variables are allocated such that each thread gets its own individually allocated variable, but the name of the variable is the same in each thread. In other words, the same variable can simultaneously hold different values for different threads. TLS is required when you need to use a global or static variable in a thread-safe manner but the data must be unique to each thread. TLS can be used in many applications, but it is particularly useful for storing per-thread state in server applications.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "multithreading"
+      ],
+      "children": []
+    },
+    "designPatterns": {
+      "title": "Design Patterns",
+      "sourceId": "gB-TYpgUDV47bxznNJhYn",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "Design Patterns represent best practices developed by experienced software engineers. They are reusable solutions to common problems that occur in software design and fulfill the requirement to decouple the system as much as possible. Design patterns categorize into Creational, Structural, and Behavioural types. Creational type includes patterns like Singleton, Prototype and Factory; Structural includes Adapter, Composite, and Proxy; Behavioural includes Observer, Strategy, Template, and Visitor. Every design pattern has its own particular structure defined that programmers can follow to solve a particular design problem in your programming code.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "programmingTechniques"
+      ],
+      "children": []
+    },
+    "tdd": {
+      "title": "TDD",
+      "sourceId": "FKOhe21PVlaKIoZI4hd49",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "`Test Driven Development (TDD)` is a development strategy in which developers write tests before writing the bare minimum of code required for the test to be passed. The process involves three stages: red, green, and refactor. In the red phase, a test is written which initially fails (since the code it's testing doesn't exist yet). In the green phase, the minimal amount of code to make the test pass is created. Lastly, in the refactor phase, the written code is improved without affecting its behavior. The process is often visualized as a cycle: \"Red - Green - Refactor\". This repeating process allows for smaller, more defined feature development, reduces bug emergence, and encourages simple design. TDD is primarily used in agile development environments.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "programmingTechniques"
+      ],
+      "children": []
+    },
+    "synchronization": {
+      "title": "Synchronization",
+      "sourceId": "idmrgKgVWVLZYANbXiZnS",
+      "type": "topic",
+      "order": 83,
+      "summary": "In the context of multithreading, **synchronization** is a mechanism which ensures that two or more concurrent threads don't simultaneously execute some particular program segment known as a critical section. Concurrent accesses to shared resource can lead to race conditions. Two or more operating systems' threads can access shared data simultaneously. With synchronization, you can ensure that only one thread can access the shared resource at a time, hence avoiding any data inconsistency. Different synchronization techniques such as locks, semaphores, condition variables, monitors and signaling are used to deal with synchronization situations, each with its own pros and cons.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "dependencyInjection": {
+      "title": "Dependency Injection",
+      "sourceId": "uTlxyDOtvt_Qp0gXLWO-j",
+      "type": "subtopic",
+      "order": 84,
+      "summary": "`Dependency Injection` (DI) is a programming technique that makes a class independent of its dependencies. This is achieved by decoupling the use of an object from its creation. In this technique, instead of a class creating an object itself, an object is supplied or \"injected\" to the class by an external entity. The actual creation and binding of dependencies are managed by a 'container', which injects the dependencies into the respective classes. Dependency Injection can be done in three ways: Constructor Injection, Setter Injection, and Interface Injection. Each of these methods involves moving the responsibility of the object creation and binding to another class or method.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "programmingTechniques"
+      ],
+      "children": []
+    },
+    "programmingTechniques": {
+      "title": "Programming Techniques",
+      "sourceId": "tGQu18PWDatW7HvkTP-uh",
+      "type": "topic",
+      "order": 85,
+      "summary": "Programming techniques are methods that are used to write series of instructions (code) that a computer can interpret and execute. There are many ways one can write code, unique to both the individual and the programming language they are using. Techniques such as Object-Oriented Programming (OOP) involve the use of encapsulated objects and inheritance. Functional Programming focuses on mathematical functions, avoiding changes in state and mutable data. Procedural Programming focuses on the process of executing predefined steps of functions to achieve the end result, while Event-Driven programming primarily acts upon user interactions, like mouse clicks or key presses. You can choose one technique depending on the game development requirements, the development team's competence, and preference.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "designPatterns",
+        "tdd",
+        "dependencyInjection",
+        "dumpAnalysis",
+        "functionalProgramming",
+        "databases"
+      ]
+    },
+    "dumpAnalysis": {
+      "title": "Dump Analysis",
+      "sourceId": "1c6EqGv1g-d8M1i0vKImb",
+      "type": "subtopic",
+      "order": 87,
+      "summary": "**Dump Analysis** is a highly useful technique in server-side game development, primarily used for debugging and troubleshooting. It involves studying the 'dump' or all the information within a system when a program crashes or fails. This dump typically includes the system's memory, the active processes, thread stacks, and more. By analyzing this data, developers can get an insight into what caused the failure. Dump analysis can be manual, using debuggers like WinDbg, lldb, gdb, or automated with tools such as Microsoft's Automatic Debugging Tool (ADPlus) and DebugDiag. Note that the complexity of dump analysis can vary depending on the nature of the program crash or the size of the dump.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "programmingTechniques"
+      ],
+      "children": []
+    },
+    "keyValue": {
+      "title": "Key-Value",
+      "sourceId": "CA1pvQw00EF2G_UtqenAZ",
+      "type": "label",
+      "order": 89,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "coroutine"
+      ]
+    },
+    "functionalProgramming": {
+      "title": "Functional Programming",
+      "sourceId": "HXSWvhgT4L5w6xgOO-3kj",
+      "type": "subtopic",
+      "order": 91,
+      "summary": "`Functional programming` is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. In functional programming, functions are first-class citizens. This means that functions can be passed as arguments to other functions, returned as values from other functions, and assigned to variables. Examples of functional programming languages include Haskell, Lisp, and Scala. At the heart of functional programming are the concepts of immutability and pure functions. A pure function is a function that provides the same output for the same input and has no side effects. Immutability avoids changes to variables or objects once they've been created, which makes functional programs easier to debug and test.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "programmingTechniques"
+      ],
+      "children": []
+    },
+    "futurePromises": {
+      "title": "Future & Promises",
+      "sourceId": "zbIbPlqTNSbJUkqH9iLQv",
+      "type": "subtopic",
+      "order": 96,
+      "summary": "`Futures and promises` or simply `Promises` in programming is a pattern used for handling asynchronous operations. A `Promise` is an object that might produce a single value or error in the future either through a non-blocking way or in an asynchronous way. A `Promise` has three states - pending, resolved (success), and rejected (error). The Promise transitions from the Pending state to either an accomplished Resolved state, or Rejected state. These status changes are irreversible, meaning once the Promise reaches either Resolved or Rejected state, it cannot transition to any other state.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "channel"
+      ]
+    },
+    "databases": {
+      "title": "Databases",
+      "sourceId": "FLFaGZDg2MSG6_YHnWETM",
+      "type": "topic",
+      "order": 97,
+      "summary": "Databases are structured sets of data. In terms of server-side game development, databases are extremely vital. They store information like user profiles, game states, rankings, and so much more. You have various types of databases to choose from such as relational databases (MySQL, PostgreSQL), NoSQL databases (MongoDB, Cassandra), and in-memory databases (Redis, Memcached). These databases have their own primary language for interaction, like SQL for relational databases. Most importantly, as a game developer, one needs to plan database schemas wisely to ensure efficient data retrieval and storage. Knowledge of indexing and a solid understanding of ACID (Atomicity, Consistency, Isolation, Durability) properties assists in developing robust game backends.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "programmingTechniques"
+      ],
+      "children": [
+        "cipher"
+      ]
+    },
+    "coroutine": {
+      "title": "Coroutine",
+      "sourceId": "o0Y_hM0KXUApfsXG4PvOY",
+      "type": "subtopic",
+      "order": 98,
+      "summary": "**Coroutines** are lightweight, cooperative multitasking constructs that enable efficient asynchronous programming in server-side game development. Unlike traditional threads, coroutines allow functions to be paused and resumed without blocking the entire execution thread, making them ideal for handling game logic, networking, and AI behavior with minimal overhead. They work seamlessly with future & promise mechanisms, simplifying concurrency management by avoiding callback hell and reducing synchronization complexity. Coroutines are widely supported in modern languages like C++ (via `std::coroutine`), Python (`asyncio`), and Kotlin, offering game developers an efficient way to write non-blocking code while maintaining readability and performance.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "C++ Coroutines (cppreference)",
+          "url": "https://en.cppreference.com/w/cpp/language/coroutines"
+        },
+        {
+          "type": "article",
+          "title": "Python Coroutines and Tasks",
+          "url": "https://docs.python.org/3/library/asyncio-task.html"
+        }
+      ],
+      "parents": [
+        "keyValue"
+      ],
+      "children": []
+    },
+    "channel": {
+      "title": "Channel",
+      "sourceId": "SXOEMkcVYBsRza6BPmmwy",
+      "type": "subtopic",
+      "order": 99,
+      "summary": "A **channel** is a synchronization primitive used to communicate between concurrent tasks or threads, particularly in asynchronous programming. In server-side game development, channels are frequently used to manage data flow between different components, such as game logic, network communication, and I/O operations. `Channels` provide a thread-safe way to pass messages or data between coroutines or threads without the need for complex locks, reducing the chances of race conditions. This makes them ideal for handling tasks like event propagation, message passing, or coordinating actions in multiplayer game servers. `Channels` often work in conjunction with futures and promises to efficiently manage concurrency and improve overall game performance.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Go Channel Documentation",
+          "url": "https://golang.org/doc/effective_go.html#channels"
+        },
+        {
+          "type": "article",
+          "title": "Rust Channels for Concurrency",
+          "url": "https://doc.rust-lang.org/book/ch16-02-message-passing.html"
+        },
+        {
+          "type": "article",
+          "title": "Comprehensive Guide to Channel",
+          "url": "https://elixir-lang.org/getting-started/processes.html#using-processes-and-messages"
+        }
+      ],
+      "parents": [
+        "futurePromises"
+      ],
+      "children": []
+    },
+    "semaphore": {
+      "title": "Semaphore",
+      "sourceId": "DYvzGc_r0SlOArPPc1gNI",
+      "type": "subtopic",
+      "order": 102,
+      "summary": "**Semaphores** are crucial synchronization mechanisms in server-side game development, ensuring controlled access to shared resources and preventing race conditions. They are widely used for managing concurrent processes, such as limiting the number of active players in a session, regulating access to database connections, and synchronizing threads in physics or AI computations. By using semaphores, developers can optimize performance by preventing resource starvation and contention. Implementing them correctly requires careful handling to avoid deadlocks and ensure efficient thread scheduling. Commonly used in conjunction with mutexes and condition variables, semaphores help maintain stability in high-performance multiplayer environments.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Semaphores in Process Synchronization",
+          "url": "https://www.geeksforgeeks.org/semaphores-in-process-synchronization/"
+        }
+      ],
+      "parents": [
+        "mutex"
+      ],
+      "children": []
+    },
+    "mutex": {
+      "title": "Mutex",
+      "sourceId": "G_BEJKkJ1_Nc43aosy_iS",
+      "type": "subtopic",
+      "order": 103,
+      "summary": "`Mutex`, short for mutual exclusion, is a synchronization method used by developers to prevent multiple threads from concurrently accessing some shared resource or part of code. It is a locking mechanism that enforces limits to ensure that only one thread can perform certain operations at a time. If a `mutex` is locked by one thread, the other threads trying to lock it will be blocked until the owner thread unlocks it. This tool is essential especially in multi-threaded programming environments to avoid conditions like race conditions where the program's behavior may depend on the sequence of scheduling or timings of the threads.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "semaphore"
+      ]
+    },
+    "apacheKafka": {
+      "title": "Apache Kafka",
+      "sourceId": "gL7hubTh3qiMyUWeAZNwI",
+      "type": "subtopic",
+      "order": 111,
+      "summary": "Apache Kafka is an open-source stream-processing software platform developed by LinkedIn and donated to the Apache Software Foundation. It is written in Scala and Java and operates based on a message queue, designed to handle real-time data feeds. Kafka functions as a kind of message broker service in between the data producers and the consumers, facilitating efficient transmission of data. It can be viewed as a durable message broker where applications can process and reprocess streamed data. Kafka is a highly scalable and fault-tolerant system which ensures data delivery without loss.",
+      "video": {
+        "title": "Apache Kafka Fundamentals",
+        "url": "https://www.youtube.com/watch?v=B5j3uNBH8X4"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Apache Kafka Quickstart",
+          "url": "https://kafka.apache.org/quickstart"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Kafka",
+          "url": "https://app.daily.dev/tags/kafka?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "messageQueues"
+      ],
+      "children": []
+    },
+    "grpc": {
+      "title": "gRPC",
+      "sourceId": "_uqTTBUYAzDHbEUkDzmzg",
+      "type": "subtopic",
+      "order": 112,
+      "summary": "`gRPC` (Google Remote Procedure Call) is a high-performance, open-source universal RPC framework designed by Google. The gRPC framework supports a wide range of languages, and it is based on the proto3 protocol buffer (protobuf) language. It uses Protocol Buffers as the interface definition language for defining the method parameters service and return types. gRPC is designed to work over a variety of different pluggable transports and also supports load balancing, tracing, health checking and authentication. It's functionality is particularly suited for point-to-point services within a microservice architecture.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "rpcRest"
+      ],
+      "children": []
+    },
+    "rabbitmq": {
+      "title": "RabbitMQ",
+      "sourceId": "UESjGrFyUbNf4pQamaBoy",
+      "type": "subtopic",
+      "order": 113,
+      "summary": "RabbitMQ is an open-source message broker software that implements the Advanced Message Queuing Protocol (AMQP). It's designed to offer a common platform for passing messages between different parts of a system or between separate systems. RabbitMQ allows these parts to speak and understand each other even if they\u2019re written in different programming languages or implemented on different platforms. RabbitMQ is not just limited to AMQP protocol but supports a variety of different messaging protocols including MQTT, STOMP, and more. Also, RabbitMQ is language agnostic, meaning it can be used with almost any programming language. In addition, it comes with a web user interface for managing and monitoring your RabbitMQ server. It's widely used in production systems around the world and can support large scale distributed systems as it supports clustering and fail-over.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "messageQueues"
+      ],
+      "children": []
+    },
+    "cipher": {
+      "title": "Cipher",
+      "sourceId": "1788KFqsQBkYARqA0T5GX",
+      "type": "topic",
+      "order": 116,
+      "summary": "**Cipher** is a vital component in the field of cryptography and is used to encrypt and decrypt information. It is essentially a series of well-defined steps or algorithms followed to convert sensitive information or data into a form that appears to be random and meaningless. This transformed information can only be turned back into its original form with a specific decryption key. Based on their methodology, ciphers are broadly classified into two categories: block ciphers and stream ciphers. Block ciphers work on a chunk of data at once, whereas stream ciphers work on a individual bits or bytes. Examples of ciphers include: Caesar Cipher, Monoalphabetic Cipher, and Vigenere Cipher among others. Usage of ciphers enhances the security in server-side game development by ensuring that player data remains confidential and is not subjected to unauthorized access or manipulation.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "databases"
+      ],
+      "children": [
+        "rpcRest"
+      ]
+    },
+    "rpcRest": {
+      "title": "RPC / REST",
+      "sourceId": "YxaroYL_Az0vKRCeu2jsp",
+      "type": "topic",
+      "order": 117,
+      "summary": "RPC (Remote Procedure Call) and REST (Representational State Transfer) are two different approaches to client-server communication. RPC is a procedure-oriented service, where the client sends a request to the server invoking a specific procedure along with the parameters it needs to execute. The server-side program then processes these inputs and returns the result back to the client. On the other hand, REST is a resource-oriented architecture, leveraging standard HTTP methods like GET, POST, PUT, DELETE to perform operations. In REST, every single information or service is considered as a \"resource\".",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "cipher"
+      ],
+      "children": [
+        "grpc",
+        "messageQueues"
+      ]
+    },
+    "messageQueues": {
+      "title": "Message Queues",
+      "sourceId": "cw7WdFfL5HpeZ_n8wYk2t",
+      "type": "topic",
+      "order": 118,
+      "summary": "Message queues are a fundamental element of server-side game development, primarily used for communication and data exchange between different processes, threads, or microservices. A message queue operates on the principle of first-in, first-out (FIFO). In the typical process, a sender submits messages to the queue, and receivers extract messages from the queue. This mechanism ensures seamless coordination between different parts of a system performing at different speeds and allows asynchronous information exchange. Features such as persistence, delivery acknowledgement, prioritization, and scheduling are commonly associated with message queues. Different technologies support message queues including RabbitMQ, Apache Kafka, and AWS SQS among others. The choice of the appropriate message queue technology can depend on specific requirements, such as the relevant programming language and the expected size and rate of message traffic.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "rpcRest"
+      ],
+      "children": [
+        "apacheKafka",
+        "rabbitmq",
+        "multithreading2"
+      ]
+    },
+    "taskBased": {
+      "title": "Task-Based",
+      "sourceId": "LKPcEeqBOPhQOztD3cM3T",
+      "type": "topic",
+      "order": 129,
+      "summary": "Task-based multithreading refers to a model where tasks are the units of work abstracted from threads. In this model, application logic is divided into smaller tasks, each capable of running independent of the others. The tasks are then executed by a pool of threads, managed by a scheduler. Unlike traditional thread-centric models where each thread performs a specific task, task-based multithreading allows for greater flexibility by decoupling the tasks from the threads and letting the system dynamically assign tasks to idle threads. With task-based multithreading, developers no longer need to manually manage threading details like creation, control, synchronization, and termination, hence enabling more focus on the development of the game logic.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "reactiveModel": {
+      "title": "Reactive Model",
+      "sourceId": "p0P3ZGq_QTCop0vMwe7P3",
+      "type": "topic",
+      "order": 130,
+      "summary": "The Reactive Model is an approach in server-side game development that positions the server as a responder to requests made by the client. In this model, the server is not running its own threads, but simply reacting to incoming requests from clients. It focuses on asynchronous I/O operations, meaning that the system doesn't stall or wait for data to be written or read. When the client sends a request, the server reacts by performing a specific action, like accepting a network connection or reading data. It is built around the idea of event-driven programming, where logic is coded against events, ideally resulting in highly scalable systems. It's often used in conjunction with non-blocking I/O models, such as Node.js or other event-driven architectures.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "reactiveApproach": {
+      "title": "Reactive Approach",
+      "sourceId": "Vl-WW0LThrQTOO_tFl51B",
+      "type": "topic",
+      "order": 131,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "reactiveApproach2": {
+      "title": "Reactive Approach",
+      "sourceId": "LVwGXmZhMewGQy61qwNyu",
+      "type": "topic",
+      "order": 132,
+      "summary": "In the realm of server-side game development, the reactive approach is an important element when dealing with multithreading. This approach is based on the concept of reacting to changes or events happening in the system rather than calling methods or running operations continuously. It incorporates observables, which are objects that represent a stream of data or a series of events, and observers, which are methods that respond to the events or changes in these observables. Reactive programming is based on the observer pattern and is designed to handle asynchronous data calls and events efficiently. This pattern is particularly relevant in situations with a large amount of data, high level of complexity, or stringent real-time requirements. With this approach, it is also simpler to handle concurrency and to write programs that are efficient, clean, and less prone to errors and callback pyramids.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "multithreading2"
+      ],
+      "children": []
+    },
+    "multithreading2": {
+      "title": "Multithreading",
+      "sourceId": "_jd91rrAXGbJI9RhXlSx8",
+      "type": "topic",
+      "order": 133,
+      "summary": "`Multithreading 2` in game development usually refers to an advanced level of understanding, managing, and implementing multithreaded programming. At this stage, developers are expected to manage inter-thread communications and synchronization effectively. This includes mastering the use of mutexes, locks, semaphores, and condition variables. This level extends to the fine-tuning of performance and resolving complex issues such as race conditions, deadlocks, and starvation. Furthermore, it could cover advanced topics like thread-pools and executing modern multithreaded game architectures efficiently and safely. In multithreading 2, developers learn to leverage more concurrent computing power, thus making the server more performant and responsive.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "messageQueues"
+      ],
+      "children": [
+        "asynchronous",
+        "reactiveApproach2",
+        "cloud"
+      ]
+    },
+    "asynchronous": {
+      "title": "Asynchronous",
+      "sourceId": "ThBxS9xIMt9OrXfnto3rW",
+      "type": "topic",
+      "order": 134,
+      "summary": "**Asynchronous programming** is a programming paradigm where the execution of functions or routines does not wait for the activities within them to complete before moving on to subsequent ones. This allows for tasks to be processed independently, making the most of system resources. When a function contains an operation such as I/O, database access, or network communication, which may take a long time to complete, this function is wrapped into a future or promise and sent for execution. Meanwhile, the core program continues to run. When the wrapped function gets executed, a callback function is used to notify that the computation or I/O is complete. This forms the core of non-blocking or asynchronous execution. It is widely used in server-side programming, game development, and any scenario where I/O latency or user experience is a concern. Notably, it is at the core of Node.js and many modern web frameworks.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "multithreading2"
+      ],
+      "children": []
+    },
+    "actorModel": {
+      "title": "Actor Model",
+      "sourceId": "KUQEgHldZPOLwFoXqQ2vM",
+      "type": "topic",
+      "order": 135,
+      "summary": "The **Actor Model** is a conceptual model to deal with concurrent computation. It defines some general rules for how the system's components should behave and interact with each other. In the Actor Model, each object (actor) has its own private state and communication with other actors is done by exchanging messages. Actors read messages from a personal mailbox and may change their own inner state, create more actors, or send messages to other actors. The Actor Model makes it easier for developers to write concurrent and distributed systems by providing high-level abstractions over low-level threading details.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "proactor": {
+      "title": "Proactor",
+      "sourceId": "Tvxe2NemcH21y-eB4bosv",
+      "type": "topic",
+      "order": 137,
+      "summary": "The **Proactor** pattern is an event-driven application design pattern used in asynchronous programming, and is a variant of the Reactor Pattern, but with an important distinction in terms of control flow handling. Instead of the application explicitly triggering and managing operations, this responsibility is delegated to the asynchronous operation processor, also known as the proactor. The proactor initiates an asynchronous operation, and once the operation is complete, it determines the appropriate service to dispatch the completion event to. In other words, proactors are responsible for initiating asynchronous operations, while completion handlers are responsible for dictating what happens next, after the operations complete.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "iocp",
+        "ioUring",
+        "select",
+        "registeredIo"
+      ]
+    },
+    "reactor": {
+      "title": "Reactor",
+      "sourceId": "7mYpgn2gr-5vAYW-UR7_x",
+      "type": "topic",
+      "order": 138,
+      "summary": "The **Reactor** is a design pattern that deals with synchronous I/O multiplexing. It is a part of the server side game development concept where it mainly handles service requests delivered concurrently to an application by one or more clients. The reactor allows multiple requests to be managed efficiently by the resources of a single thread. It uses an event loop and callbacks to control and manage all the different I/O streams. Often, Reactor is combined with the Proactor pattern to achieve concurrency and efficiency in utilizing system resources.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "wsaPoll",
+        "kqueue"
+      ]
+    },
+    "iocp": {
+      "title": "IOCP",
+      "sourceId": "7pgdOZomhGilBTwfJLMbm",
+      "type": "subtopic",
+      "order": 140,
+      "summary": "**I/O Completion Ports (IOCP)** is a high-performance asynchronous I/O mechanism in Windows, designed to efficiently handle large numbers of concurrent network connections. It is widely used in server-side game development to optimize networking performance, making it ideal for MMORPGs and real-time multiplayer games. Unlike `select` or `WSA-Poll`, IOCP uses a thread pool and a queue-based event system to process completed I/O operations asynchronously, minimizing CPU overhead and improving scalability. By leveraging IOCP, game servers can efficiently handle thousands of connections with minimal latency, making it the preferred choice for high-performance Windows-based game networking.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Microsoft IOCP Documentation",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports"
+        }
+      ],
+      "parents": [
+        "proactor"
+      ],
+      "children": []
+    },
+    "ioUring": {
+      "title": "io_uring",
+      "sourceId": "YH7u1FKh85wz78J0stuzS",
+      "type": "subtopic",
+      "order": 141,
+      "summary": "**io\\_uring** is a modern asynchronous I/O framework introduced in Linux 5.1, designed to provide high-performance, low-latency I/O operations. It is widely used in server-side game development to efficiently handle network and disk operations, making it ideal for real-time multiplayer games. Unlike `epoll` or traditional polling mechanisms, `io_uring` minimizes system calls by using a shared memory ring buffer between the kernel and user space, reducing context switching overhead. This results in improved scalability and responsiveness, allowing game servers to handle thousands of concurrent connections with minimal CPU usage.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Linux io_uring_enter",
+          "url": "https://man7.org/linux/man-pages/man2/io_uring_enter.2.html"
+        },
+        {
+          "type": "article",
+          "title": "Efficient Networking with io_uring",
+          "url": "https://lwn.net/Articles/776703/"
+        }
+      ],
+      "parents": [
+        "proactor"
+      ],
+      "children": []
+    },
+    "wsaPoll": {
+      "title": "WSA Poll",
+      "sourceId": "D9Yeyn8phDhB1ohMWccgr",
+      "type": "subtopic",
+      "order": 142,
+      "summary": "**WSA-Poll** is a Windows-specific alternative to `poll`, used for monitoring multiple sockets for readiness in non-blocking network applications. It is commonly utilized in server-side game development to handle multiple client connections efficiently. Unlike `select`, `WSA-Poll` eliminates the limitation of FD\\_SETSIZE, allowing it to scale better for a larger number of connections. However, it is generally less efficient than `epoll` on Linux due to its linear scanning mechanism. For high-performance game servers on Windows, IOCP (I/O Completion Ports) is often preferred over `WSA-Poll`.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Microsoft WSA-Poll Documentation",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/api/winsock2/nf-winsock2-wsapoll"
+        }
+      ],
+      "parents": [
+        "reactor"
+      ],
+      "children": []
+    },
+    "select": {
+      "title": "select",
+      "sourceId": "5-5toy2CblZPCV9d5QPEo",
+      "type": "subtopic",
+      "order": 143,
+      "summary": "**select** is a multiplexing system call in Linux used for monitoring multiple file descriptors to check if they are ready for I/O operations. It is commonly used in server-side game development for handling multiple connections asynchronously. However, `select` has limitations, as it scans all file descriptors linearly, making it inefficient for handling a large number of concurrent connections. Despite its drawbacks, it remains useful for simpler applications or legacy systems. Modern alternatives like `epoll` or `kqueue` offer better performance and scalability.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Linux select API",
+          "url": "https://man7.org/linux/man-pages/man2/select.2.html"
+        },
+        {
+          "type": "article",
+          "title": "select vs epoll vs poll",
+          "url": "https://devarea.com/linux-io-multiplexing-select-vs-poll-vs-epoll/"
+        }
+      ],
+      "parents": [
+        "proactor"
+      ],
+      "children": []
+    },
+    "kqueue": {
+      "title": "kqueue",
+      "sourceId": "caK32NMMrn-3BGAXZoPPr",
+      "type": "subtopic",
+      "order": 145,
+      "summary": "**kqueue** is an efficient event notification system available on BSD-based operating systems, including macOS and FreeBSD. It is designed to handle large numbers of concurrent connections with minimal CPU overhead, making it well-suited for server-side game development. Similar to `epoll` on Linux, `kqueue` operates in an event-driven manner, allowing game servers to efficiently manage network events, timers, and file system changes. By reducing unnecessary polling and system calls, `kqueue` helps improve the scalability and responsiveness of multiplayer game servers, ensuring low-latency interactions and optimized resource usage.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "FreeBSD kqueue Documentation",
+          "url": "https://man.freebsd.org/cgi/man.cgi?query=kqueue"
+        },
+        {
+          "type": "article",
+          "title": "macOS kqueue API Reference",
+          "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/kqueue.2.html"
+        }
+      ],
+      "parents": [
+        "reactor"
+      ],
+      "children": []
+    },
+    "epoll": {
+      "title": "epoll",
+      "sourceId": "qaWv4gxnnj3uX8lEm9KQ4",
+      "type": "subtopic",
+      "order": 146,
+      "summary": "**epoll** is a high-performance I/O event notification system in Linux, essential for handling large-scale asynchronous network operations in server-side game development. Unlike `select` or `poll`, it uses an event-driven model, reducing CPU overhead and improving scalability. Game servers leverage `epoll` to efficiently manage thousands of concurrent connections, responding only when events occur, minimizing system calls, and optimizing resource usage\u2014making it ideal for multiplayer games and real-time applications.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Linux epoll API",
+          "url": "https://man7.org/linux/man-pages/man7/epoll.7.html"
+        },
+        {
+          "type": "article",
+          "title": "Understanding epoll for Scalable Network Servers",
+          "url": "https://medium.com/@copyconstruct/the-method-to-epolls-madness-d9d2d6378642"
+        },
+        {
+          "type": "article",
+          "title": "epoll vs select vs poll",
+          "url": "https://devarea.com/linux-io-multiplexing-select-vs-poll-vs-epoll/"
+        }
+      ],
+      "parents": [
+        "dataClustering"
+      ],
+      "children": []
+    },
+    "registeredIo": {
+      "title": "Registered IO",
+      "sourceId": "94hJX1iGifDzIuaU3zU5j",
+      "type": "subtopic",
+      "order": 147,
+      "summary": "**Registered I/O** is an optimization technique that enhances the performance of asynchronous I/O operations by pre-registering resources such as file descriptors, memory buffers, or network sockets with the operating system. This reduces the overhead of repeated system calls and resource management, making it highly beneficial for server-side game development, where low-latency and high-throughput are critical. Technologies like `io_uring` and Windows `RIO (Registered I/O)` API leverage this approach to minimize kernel interactions, improving efficiency for handling large-scale multiplayer game servers. By reducing context switching and memory allocation overhead, Registered I/O helps game servers achieve smoother performance and lower latency.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "Microsoft Registered I/O (RIO)",
+          "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh997032(v=ws.11)"
+        }
+      ],
+      "parents": [
+        "proactor"
+      ],
+      "children": []
+    },
+    "azure": {
+      "title": "Azure",
+      "sourceId": "73uoFNGcCALxIuRNbebav",
+      "type": "subtopic",
+      "order": 148,
+      "summary": "Azure is Microsoft's public cloud computing platform. Azure provides a broad spectrum of cloud services, including those for analytics, storage, and networking. As a server-side game developer, you can use these functionalities to build, deploy, and manage applications and services through Microsoft-managed data centers. Furthermore, Azure supports a wide range of tools and frameworks, including both Microsoft-specific and third-party software. It also offers 4 different forms of cloud computing: infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS), and serverless. Each allows developers to choose the level of control and complexity they wish to maintain over their application and infrastructure.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "cloud"
+      ],
+      "children": []
+    },
+    "docker": {
+      "title": "Docker",
+      "sourceId": "zW_7VLeEHQp8fp_f5N__0",
+      "type": "subtopic",
+      "order": 149,
+      "summary": "\"Docker\" is an open-source platform that allows developers to automate the deployment, scaling, and management of applications. It uses containerization technologies to wrap up an application with its runtime environment into a container, which can then be run on almost any operating system. Docker containers are lightweight and fast because they do not need the extra load of a hypervisor, but run directly within the host machine's kernel. Additionally, Docker ensures that the application runs seamlessly in any environment by bundling its own software, libraries and system tools. Docker really simplifies the process of managing and deploying services in a distributed environment and breaking down tasks into separate services.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "containerization"
+      ],
+      "children": [
+        "dockerCompose"
+      ]
+    },
+    "containerization": {
+      "title": "Containerization",
+      "sourceId": "k3FJY26SVxdZx4MLLE25h",
+      "type": "topic",
+      "order": 150,
+      "summary": "Containerization in game development refers to the usage of software like Docker, Kubernetes, or similar tools to encapsulate the game's server-side functionality into a single, deployable package. These units, known as containers, include everything the software needs to run, such as libraries, system tools, code, and runtime. Containers are platform-agnostic, meaning they can work across different operating environments in the same way. This enables developers to create a consistent experience, reduce the risk of software conflicts, and facilitate easier updates and deployment of their games. Unlike Virtual Machines (VMs), containers do not include whole operating systems, which makes them more lightweight and efficient to run. Developers can run multiple containers on the same machine, each handling different aspects of the server-side functionality. Containers can also communicate with each other, enabling more efficient use of resources.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "dataClustering"
+      ],
+      "children": [
+        "docker",
+        "ai"
+      ]
+    },
+    "dataClustering": {
+      "title": "Data Clustering",
+      "sourceId": "XCJvgUSS7-oDR-XGdDY33",
+      "type": "topic",
+      "order": 151,
+      "summary": "`Data Clustering` refers to the process of segregating data into various groups or clusters. These organized subsets of data, or clusters, contain similar data points that exhibit common traits, attributes, or characteristics. Clustering is essentially a type of unsupervised machine learning where the data is unlabeled, and the algorithm identifies similarities to group them together. There are several methods used for data clustering including partitioning methods like K-means, hierarchical methods, density-based methods like DBSCAN, and grid-based methods. These methods differ based on how they form the clusters and the types of data they work best with. Data clustering aids in the organization of large amounts of data, making it easier for developers to handle, understand, and utilize in game development.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "cloud"
+      ],
+      "children": [
+        "epoll",
+        "apacheSpark",
+        "containerization"
+      ]
+    },
+    "cloud": {
+      "title": "Cloud",
+      "sourceId": "hhtqvFfTCuVPT0OPu4Y1a",
+      "type": "topic",
+      "order": 152,
+      "summary": "The **cloud** refers to servers that are accessed over the Internet, and the software and databases that run on those servers. By using cloud technology, data can be accessed from anywhere via the Internet, rather than from a local server or a personal computer. Cloud services are typically provided by different companies, such as Google, Amazon, and Microsoft. There are three main types of cloud computing: Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS). Examples of the cloud in gaming include multiplayer online games, game streaming and digital distribution platforms. The cloud is also used in game development for testing, development, and distribution of games.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "multithreading2"
+      ],
+      "children": [
+        "gcp",
+        "azure",
+        "aws",
+        "dataClustering"
+      ]
+    },
+    "gcp": {
+      "title": "GCP",
+      "sourceId": "wD6dUrS-tP2gpCHPghFp5",
+      "type": "subtopic",
+      "order": 153,
+      "summary": "**Google Cloud Platform (GCP)** is a suite of public cloud computing services offered by Google. It provides a range of services including compute, storage, networking, Big Data, machine learning, and the internet of things (IoT), plus cloud management, security, and developer tools. The core cloud computing products in GCP consist of Google Compute Engine, Google App Engine, Google Container Engine, Google Cloud Storage, and Google Cloud SQL. Google also offers cloud services for source code management, load balancing, security and privacy, and more. The architecture of GCP is built on the same infrastructure that Google uses for its global products such as YouTube, Google Search, and Google Maps.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "cloud"
+      ],
+      "children": []
+    },
+    "aws": {
+      "title": "AWS",
+      "sourceId": "Rkx2A6oWsddlCTseZlpRU",
+      "type": "subtopic",
+      "order": 154,
+      "summary": "**Amazon Web Services (AWS)** is a secure cloud services platform offered by Amazon. It provides a broad set of infrastructure services, such as computing power, storage options, networking and databases, delivered on-demand with pay-as-you-go pricing. AWS services assist server side game developers in many tasks such as storing player data, syncing games across devices, and even hosting multiplayer game servers. These services help developers scale their games to a world-wide audience without the need for up-front investments in costly hardware and infrastructure. A popular choice for start-ups and large game development companies alike, AWS has an extensive, feature-rich set of tools that allow developers to deploy, monitor and scale applications quickly.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "cloud"
+      ],
+      "children": []
+    },
+    "apacheSpark": {
+      "title": "Apache Spark",
+      "sourceId": "yrWiWJMSyTWxDakJbqacu",
+      "type": "subtopic",
+      "order": 155,
+      "summary": "Apache Spark is an open-source, distributed computing system used for big data processing and analytics. It offers an interface for programming entire clusters with impeccable data parallelism and fault tolerance. With its high-level APIs in Java, Scala, Python and R, it provides a framework for distributed task dispatching, scheduling and basic I/O functionalities. Notable modules include SQL and DataFrames, MLlib for machine learning, GraphX for graph processing, and Structured Streaming for incremental computation and stream processing. Apache Spark can run standalone, on Hadoop, or in the cloud, and is capable of accessing diverse data sources such as HDFS, Apache Cassandra, Apache HBase, and Amazon S3.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "ApacheSpark",
+          "url": "https://spark.apache.org/documentation.html"
+        },
+        {
+          "type": "article",
+          "title": "Spark By Examples",
+          "url": "https://sparkbyexamples.com"
+        },
+        {
+          "type": "feed",
+          "title": "Explore top posts about Apache Spark",
+          "url": "https://app.daily.dev/tags/spark?ref=roadmapsh"
+        }
+      ],
+      "parents": [
+        "dataClustering"
+      ],
+      "children": []
+    },
+    "dockerCompose": {
+      "title": "Docker Compose",
+      "sourceId": "yAf7VDX7dyaT5AdlNnuKD",
+      "type": "subtopic",
+      "order": 156,
+      "summary": "`Docker Compose` is a tool that allows you to define and manage multiple containers as a single entity. The containers are defined in a `docker-compose.yml` file using a YAML format. This tool is primarily focused on the runtime aspects of your application such as service definitions, configuration, and connections. With `Docker Compose`, you can start, stop, and manage the entire stack of services with a single command. This makes it a very powerful tool for managing multi-container applications. It is also a good method to define a local development environment that mimics your production environment.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "docker"
+      ],
+      "children": []
+    },
+    "cloudMl": {
+      "title": "Cloud ML",
+      "sourceId": "XvvlvDKfYRCcYtTdWohsd",
+      "type": "topic",
+      "order": 158,
+      "summary": "`Cloud Machine Learning` or `Cloud ML` is a branch of Artificial Intelligence that utilizes cloud computing services to provide machine learning capabilities. It enables developers and data scientists to build, train, and deploy machine learning models in a cloud-based environment. Cloud ML platforms usually offer a range of pre-trained models and services for tasks like image recognition, natural language understanding, and predictive analytics. These platforms support popular ML frameworks, such as TensorFlow and PyTorch, which can be used to design custom models. Importantly, Cloud ML abstracts the complex infrastructure management associated with large-scale ML computations providing users with more agile, scalable, and accessible machine learning solutions.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "ai"
+      ],
+      "children": []
+    },
+    "ai": {
+      "title": "AI",
+      "sourceId": "dkCVwuy8GKeEi3VJar_Zo",
+      "type": "topic",
+      "order": 159,
+      "summary": "Artificial Intelligence (AI) in server side game development refers to the use of algorithms and computational procedures to create systems capable of performing tasks that would require human intelligence. Such tasks include learning and adapting to change, recognizing speech, or even making decisions. In game development, AI is often used to give non-player characters (NPCs) their own 'intelligence', making them even more life-like. This could be as simple as the ability to follow a player around in an environment, or as complex as crafting strategies for combat. AI can also be used to generate procedurally or dynamically generated content, creating potentially infinite unique experiences for the player. AI in games is often programmed in a way where it must strike a balance between appearing intelligent and providing an enjoyable experience for the player.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "containerization"
+      ],
+      "children": [
+        "cloudMl",
+        "deepLearning",
+        "visitTheFollowingRelevantRoadmaps"
+      ]
+    },
+    "deepLearning": {
+      "title": "Deep Learning",
+      "sourceId": "jkWvfp4GqckYPQ48GtjlR",
+      "type": "topic",
+      "order": 161,
+      "summary": "Deep Learning is a subset of machine learning that imitates the workings of the human brain in processing data and creating patterns for decision-making. This technique utilizes multiple layers of algorithms (or neural networks) to process information. Deep learning involves training a model using large volumes of data and neural network architectures that contain many layers. A server-side game developer might use deep learning algorithms to create complex AI characters, improve game physics, or even analyze player data. Deep learning can be supervised, semi-supervised or unsupervised and it's extensively applied in various domains such as voice recognition, image recognition, natural language processing, etc. It is a crucial element for many modern AI applications.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "ai"
+      ],
+      "children": []
+    },
+    "visitTheFollowingRelevantRoadmaps": {
+      "title": "Visit the following relevant roadmaps",
+      "sourceId": "GV_zWF6rSWg5bqgiXhOEf",
+      "type": "paragraph",
+      "order": 163,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "ai"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "server-side-game-developer",
+      "to": "serverSideDevelopment",
+      "style": "solid"
+    },
+    {
+      "from": "serverSideDevelopment",
+      "to": "clientSide",
+      "style": "solid"
+    },
+    {
+      "from": "flowControl",
+      "to": "errorDetection",
+      "style": "dashed"
+    },
+    {
+      "from": "dataTransfer",
+      "to": "reliableTransmission",
+      "style": "dashed"
+    },
+    {
+      "from": "dataTransfer",
+      "to": "congestionControl",
+      "style": "dashed"
+    },
+    {
+      "from": "dataTransfer",
+      "to": "flowControl",
+      "style": "dashed"
+    },
+    {
+      "from": "tcp",
+      "to": "checksum",
+      "style": "dashed"
+    },
+    {
+      "from": "tcp",
+      "to": "segmentStructure",
+      "style": "dashed"
+    },
+    {
+      "from": "tcp",
+      "to": "operations",
+      "style": "dashed"
+    },
+    {
+      "from": "vulnerability",
+      "to": "denialOfService",
+      "style": "dashed"
+    },
+    {
+      "from": "tcp",
+      "to": "vulnerability",
+      "style": "dashed"
+    },
+    {
+      "from": "udp",
+      "to": "reliability",
+      "style": "dashed"
+    },
+    {
+      "from": "udp",
+      "to": "datagram",
+      "style": "dashed"
+    },
+    {
+      "from": "udp",
+      "to": "congestionControl2",
+      "style": "dashed"
+    },
+    {
+      "from": "udp",
+      "to": "checksum2",
+      "style": "dashed"
+    },
+    {
+      "from": "udp",
+      "to": "packetStructure",
+      "style": "dashed"
+    },
+    {
+      "from": "udp",
+      "to": "tcpVsUdp",
+      "style": "solid"
+    },
+    {
+      "from": "tcpVsUdp",
+      "to": "orderedVsUnordered",
+      "style": "dashed"
+    },
+    {
+      "from": "tcpVsUdp",
+      "to": "heavyVsLightweight",
+      "style": "dashed"
+    },
+    {
+      "from": "tcpVsUdp",
+      "to": "packetVsDatagram",
+      "style": "dashed"
+    },
+    {
+      "from": "tcpVsUdp",
+      "to": "reliableVsUnreliable",
+      "style": "dashed"
+    },
+    {
+      "from": "tcpVsUdp",
+      "to": "streamingVsBroadcast",
+      "style": "dashed"
+    },
+    {
+      "from": "tcpVsUdp",
+      "to": "ip",
+      "style": "solid"
+    },
+    {
+      "from": "ip",
+      "to": "capability",
+      "style": "dashed"
+    },
+    {
+      "from": "ip",
+      "to": "reliability2",
+      "style": "dashed"
+    },
+    {
+      "from": "ip",
+      "to": "linkCapacity",
+      "style": "dashed"
+    },
+    {
+      "from": "ip",
+      "to": "programmingLanguages",
+      "style": "solid"
+    },
+    {
+      "from": "function",
+      "to": "datagramConstruction",
+      "style": "dashed"
+    },
+    {
+      "from": "programmingLanguages",
+      "to": "socketProgramming",
+      "style": "solid"
+    },
+    {
+      "from": "socketProgramming",
+      "to": "descriptor",
+      "style": "dashed"
+    },
+    {
+      "from": "socketProgramming",
+      "to": "api",
+      "style": "dashed"
+    },
+    {
+      "from": "socketProgramming",
+      "to": "serialization",
+      "style": "solid"
+    },
+    {
+      "from": "mutex",
+      "to": "semaphore",
+      "style": "dashed"
+    },
+    {
+      "from": "futurePromises",
+      "to": "channel",
+      "style": "dashed"
+    },
+    {
+      "from": "multithreading",
+      "to": "threadLocalStorage",
+      "style": "dashed"
+    },
+    {
+      "from": "programmingTechniques",
+      "to": "designPatterns",
+      "style": "dashed"
+    },
+    {
+      "from": "programmingTechniques",
+      "to": "tdd",
+      "style": "dashed"
+    },
+    {
+      "from": "programmingTechniques",
+      "to": "dependencyInjection",
+      "style": "dashed"
+    },
+    {
+      "from": "programmingTechniques",
+      "to": "dumpAnalysis",
+      "style": "dashed"
+    },
+    {
+      "from": "programmingTechniques",
+      "to": "functionalProgramming",
+      "style": "dashed"
+    },
+    {
+      "from": "programmingTechniques",
+      "to": "databases",
+      "style": "solid"
+    },
+    {
+      "from": "databases",
+      "to": "cipher",
+      "style": "solid"
+    },
+    {
+      "from": "cipher",
+      "to": "rpcRest",
+      "style": "solid"
+    },
+    {
+      "from": "rpcRest",
+      "to": "grpc",
+      "style": "dashed"
+    },
+    {
+      "from": "rpcRest",
+      "to": "messageQueues",
+      "style": "solid"
+    },
+    {
+      "from": "messageQueues",
+      "to": "rabbitmq",
+      "style": "dashed"
+    },
+    {
+      "from": "messageQueues",
+      "to": "multithreading2",
+      "style": "solid"
+    },
+    {
+      "from": "multithreading2",
+      "to": "asynchronous",
+      "style": "dashed"
+    },
+    {
+      "from": "multithreading2",
+      "to": "reactiveApproach2",
+      "style": "dashed"
+    },
+    {
+      "from": "multithreading2",
+      "to": "cloud",
+      "style": "solid"
+    },
+    {
+      "from": "cloud",
+      "to": "gcp",
+      "style": "dashed"
+    },
+    {
+      "from": "cloud",
+      "to": "azure",
+      "style": "dashed"
+    },
+    {
+      "from": "cloud",
+      "to": "aws",
+      "style": "dashed"
+    },
+    {
+      "from": "cloud",
+      "to": "dataClustering",
+      "style": "solid"
+    },
+    {
+      "from": "dataClustering",
+      "to": "apacheSpark",
+      "style": "dashed"
+    },
+    {
+      "from": "dataClustering",
+      "to": "containerization",
+      "style": "solid"
+    },
+    {
+      "from": "containerization",
+      "to": "docker",
+      "style": "dashed"
+    },
+    {
+      "from": "docker",
+      "to": "dockerCompose",
+      "style": "dashed"
+    },
+    {
+      "from": "containerization",
+      "to": "ai",
+      "style": "solid"
+    },
+    {
+      "from": "ai",
+      "to": "cloudMl",
+      "style": "dashed"
+    },
+    {
+      "from": "ai",
+      "to": "deepLearning",
+      "style": "dashed"
+    },
+    {
+      "from": "ai",
+      "to": "visitTheFollowingRelevantRoadmaps",
+      "style": "solid"
+    },
+    {
+      "from": "operations",
+      "to": "maxSegmentSize",
+      "style": "solid"
+    },
+    {
+      "from": "serialization",
+      "to": "cC",
+      "style": "solid"
+    },
+    {
+      "from": "keyValue",
+      "to": "coroutine",
+      "style": "solid"
+    },
+    {
+      "from": "messageQueues",
+      "to": "apacheKafka",
+      "style": "solid"
+    },
+    {
+      "from": "proactor",
+      "to": "iocp",
+      "style": "solid"
+    },
+    {
+      "from": "proactor",
+      "to": "ioUring",
+      "style": "solid"
+    },
+    {
+      "from": "reactor",
+      "to": "wsaPoll",
+      "style": "solid"
+    },
+    {
+      "from": "proactor",
+      "to": "select",
+      "style": "solid"
+    },
+    {
+      "from": "reactor",
+      "to": "kqueue",
+      "style": "solid"
+    },
+    {
+      "from": "dataClustering",
+      "to": "epoll",
+      "style": "solid"
+    },
+    {
+      "from": "proactor",
+      "to": "registeredIo",
+      "style": "solid"
+    }
+  ]
+}

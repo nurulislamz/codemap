@@ -1,0 +1,190 @@
+{
+  "title": "AWS Best Practices",
+  "summary": "Detailed list of best practices for Amazon Web Services (AWS)",
+  "url": "https://roadmap.sh/aws-best-practices",
+  "order": [
+    "development",
+    "operations",
+    "billing",
+    "s3",
+    "security",
+    "ec2Vpc",
+    "elb",
+    "rds",
+    "cloudwatch",
+    "elasticache",
+    "autoscaling",
+    "iam",
+    "route53",
+    "miscellaneous",
+    "elasticMapreduce"
+  ],
+  "topics": {
+    "development": {
+      "title": "Development",
+      "sourceId": "Kp-d1-r3JdNxNCvAw7yLb",
+      "type": "checklist",
+      "order": 1,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "operations": {
+      "title": "Operations",
+      "sourceId": "oSA-vIqy3Jp1PrOjEUKid",
+      "type": "checklist",
+      "order": 2,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "billing": {
+      "title": "Billing",
+      "sourceId": "HYtu-fW4GaaDVhibp3jBf",
+      "type": "checklist",
+      "order": 3,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "s3": {
+      "title": "S3",
+      "sourceId": "F68U6qGmVAs5HO08MJgmc",
+      "type": "checklist",
+      "order": 4,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "security": {
+      "title": "Security",
+      "sourceId": "CcD4V1c4sbtjqJ7FUqlq7",
+      "type": "checklist",
+      "order": 5,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "ec2Vpc": {
+      "title": "EC2 / VPC",
+      "sourceId": "1CJGFdhIs-iK7njGtpmxn",
+      "type": "checklist",
+      "order": 6,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "elb": {
+      "title": "ELB",
+      "sourceId": "-y1wgzW2VXta-MkIXLeNW",
+      "type": "checklist",
+      "order": 7,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "rds": {
+      "title": "RDS",
+      "sourceId": "vvN8YoAteDUpiBv7ZgDtl",
+      "type": "checklist",
+      "order": 8,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "cloudwatch": {
+      "title": "CloudWatch",
+      "sourceId": "4rhjWqQZUDCT3u0lHe2MS",
+      "type": "checklist",
+      "order": 9,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "elasticache": {
+      "title": "Elasticache",
+      "sourceId": "m61GctazBT8fTLht_6O-W",
+      "type": "checklist",
+      "order": 10,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "autoscaling": {
+      "title": "Autoscaling",
+      "sourceId": "mz28gFinMI28ThmztnFHT",
+      "type": "checklist",
+      "order": 11,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "iam": {
+      "title": "IAM",
+      "sourceId": "QEiUHvHB0BbRHkCR08bhb",
+      "type": "checklist",
+      "order": 12,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "route53": {
+      "title": "Route53",
+      "sourceId": "SMrjL7AZ4ulRjUppdMDzU",
+      "type": "checklist",
+      "order": 13,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "miscellaneous": {
+      "title": "Miscellaneous",
+      "sourceId": "pg2DwhyswIKd6jFhhnnQZ",
+      "type": "checklist",
+      "order": 14,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    },
+    "elasticMapreduce": {
+      "title": "Elastic MapReduce",
+      "sourceId": "lBfSQSjZ_nAJpw4T2ILGH",
+      "type": "checklist",
+      "order": 15,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": []
+    }
+  },
+  "edges": []
+}

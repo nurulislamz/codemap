@@ -1,0 +1,3981 @@
+{
+  "title": "Claude Code",
+  "summary": "Step-by-Step guide to becoming a Claude Code expert in 2026",
+  "url": "https://roadmap.sh/claude-code",
+  "order": [
+    "introduction",
+    "whatIsVibeCoding",
+    "whatIsACodingAgent",
+    "settingUpClaude",
+    "subscription",
+    "apiUsage",
+    "mcp2",
+    "plugins2",
+    "whatIsAgenticLoop",
+    "claudeCli",
+    "desktopApp",
+    "editorExtensions",
+    "waysToUseClaude",
+    "mobileChannels",
+    "communityTools",
+    "commonUsecases",
+    "understandTheDifferences",
+    "understandTheBasics",
+    "claudeMd",
+    "skills",
+    "context",
+    "modes",
+    "commandCheatsheet",
+    "models",
+    "tools",
+    "ctrlC",
+    "ctrlR",
+    "esc",
+    "escEsc",
+    "usingClaudeCode",
+    "shiftTab",
+    "hooks4",
+    "subagents2",
+    "slashCommands",
+    "whenToUseWhatModel",
+    "topic",
+    "topic2",
+    "topic3",
+    "opus",
+    "sonnet",
+    "haiku",
+    "shortcutsPrefixes",
+    "claudeWorkflow",
+    "permissionModes",
+    "claude",
+    "claudeR",
+    "planMode",
+    "claudeQuery",
+    "manageSessions",
+    "claudeP",
+    "claudeC",
+    "claudeAddDir",
+    "usageBestPractices",
+    "resume",
+    "rewind2",
+    "claudeCommands",
+    "help",
+    "usage",
+    "howToStructure",
+    "claudeMd2",
+    "clear",
+    "cost",
+    "locations",
+    "exit",
+    "export",
+    "status",
+    "rewind",
+    "creatingSkills",
+    "skills2",
+    "plan",
+    "doctor",
+    "skillBestPractices",
+    "sessionCommands",
+    "context2",
+    "compact",
+    "subagents",
+    "creatingSubagents",
+    "init",
+    "memory",
+    "contextMemory",
+    "hookEventsMatchers",
+    "config",
+    "permissions",
+    "hooks3",
+    "hookTypes",
+    "model",
+    "agents",
+    "hookInputsOutputs",
+    "hooks2",
+    "mcp",
+    "manageContext",
+    "understandClaudePricing",
+    "configuration",
+    "useCompactAndClear",
+    "sessionstart",
+    "sessionend",
+    "beMindfulOfExtensions",
+    "pretooluse",
+    "posttooluse",
+    "advancedClaudeCode",
+    "useSubagentsAndHooks",
+    "userpromptsubmit",
+    "stop",
+    "thinkingModesEffort",
+    "promptCaching",
+    "customizeStatusLine",
+    "skillsForMcp",
+    "connectingToolsWithMcp",
+    "channels",
+    "tunnels",
+    "schedulingJobs",
+    "modelConfiguration",
+    "opusplan",
+    "headlessMode",
+    "outputStyles",
+    "gitWorktrees",
+    "codeIntelligence",
+    "plugins",
+    "agentTeam",
+    "scalingClaude",
+    "securityBestPractices",
+    "claudeCodeSecurity",
+    "visitTheFollowingRoadmapsToKeepLearning"
+  ],
+  "topics": {
+    "introduction": {
+      "title": "Introduction",
+      "sourceId": "RqfeqVMhTSdC4w4GcsETP",
+      "type": "topic",
+      "order": 1,
+      "summary": "Claude Code is an AI-powered coding tool developed by Anthropic that operates directly in the terminal. Unlike traditional autocomplete tools, Claude Code functions as an autonomous agent capable of understanding entire codebases, executing multi-step tasks, and maintaining context across complex projects. By understanding the entire codebase, Claude Code helps simplify workflows, making it a powerful tool for software development.",
+      "video": null,
+      "articles": [
+        {
+          "type": "course",
+          "title": "Claude Code in Action",
+          "url": "https://anthropic.skilljar.com/claude-code-in-action"
+        },
+        {
+          "type": "course",
+          "title": "Claude Code 101",
+          "url": "https://anthropic.skilljar.com/claude-code-101"
+        },
+        {
+          "type": "official",
+          "title": "Claude Code overview",
+          "url": "https://code.claude.com/docs/en/overview"
+        },
+        {
+          "type": "official",
+          "title": "How Claude Code works",
+          "url": "https://code.claude.com/docs/en/how-claude-code-works"
+        }
+      ],
+      "parents": [
+        "claude-code"
+      ],
+      "children": [
+        "claudeCli",
+        "whatIsVibeCoding",
+        "whatIsACodingAgent",
+        "settingUpClaude",
+        "whatIsAgenticLoop"
+      ]
+    },
+    "whatIsVibeCoding": {
+      "title": "What is Vibe Coding?",
+      "sourceId": "SKkeuO_5B18AbxlNGeazN",
+      "type": "subtopic",
+      "order": 2,
+      "summary": "Vibe coding is a modern software development approach in which developers use AI agents and large language models (LLMs) to generate, build, and iterate on applications via natural language prompts, rather than writing code manually. Coined by Andrej Karpathy, this method focuses on the \"vibe\" or overall intent of the application, often involving rapid prototyping and minimal manual code review, making software development more accessible and faster.",
+      "video": {
+        "title": "What Is Vibe Coding? Building Software with Agentic AI",
+        "url": "https://www.youtube.com/watch?v=Y68FF_nUSWE"
+      },
+      "articles": [
+        {
+          "type": "roadmap",
+          "title": "Visit the Dedicated Vibe Coding Roadmap",
+          "url": "https://roadmap.sh/vibe-coding"
+        },
+        {
+          "type": "article",
+          "title": "What is vibe coding?",
+          "url": "https://www.ibm.com/think/topics/vibe-coding"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "whatIsACodingAgent": {
+      "title": "What is a Coding Agent?",
+      "sourceId": "LGxnQkrbwVu9z1PFB12P3",
+      "type": "subtopic",
+      "order": 3,
+      "summary": "A coding agent is an AI-powered software entity designed to autonomously write, test, and debug code to solve specific programming tasks or complete software development projects. It uses various AI techniques, like large language models and reinforcement learning, to understand requirements, generate code snippets, identify errors, and iterate on its solutions to achieve the desired outcome.",
+      "video": {
+        "title": "AI Agents, Clearly Explained",
+        "url": "https://www.youtube.com/watch?v=FwOTs4UxQS4"
+      },
+      "articles": [
+        {
+          "type": "article",
+          "title": "Visit the Dedicated AI Agents Roadmap",
+          "url": "https://roadmap.sh/ai-agents"
+        },
+        {
+          "type": "article",
+          "title": "What are AI agents?",
+          "url": "https://www.ibm.com/think/topics/ai-agents"
+        },
+        {
+          "type": "article",
+          "title": "What are AI agents? Definition, examples, and types | Google Cloud",
+          "url": "https://cloud.google.com/discover/what-are-ai-agents"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "settingUpClaude": {
+      "title": "Setting up Claude",
+      "sourceId": "XApGUujmnvp2VYUyEj1Kc",
+      "type": "subtopic",
+      "order": 4,
+      "summary": "To set up Claude Code, you first install the CLI tool through your terminal using a single command tailored to your operating system. For macOS, Linux, or WSL, you run `curl -fsSL https://claude.ai/install.sh | bash`, while Windows users can use PowerShell to run `irm https://claude.ai/install.ps1 | iex`. Once the installation is complete, you navigate to any code project directory and type `claude`, which will trigger a one-time login process where you authenticate using your Claude account or an Anthropic Console API key. After logging in, the tool is ready to use immediately.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Getting started with Claude Code",
+          "url": "https://code.claude.com/docs/en/quickstart"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": [
+        "subscription",
+        "apiUsage",
+        "mcp2",
+        "plugins2"
+      ]
+    },
+    "subscription": {
+      "title": "Subscription",
+      "sourceId": "_Un0jTJaFs5Pdn1DFGl61",
+      "type": "subtopic",
+      "order": 5,
+      "summary": "Subscription options for Claude Code allow users to authenticate and access its features. Individuals with a Claude Pro or Claude Max subscription can link their account for free Claude Code usage. For teams and larger organizations, Team and Enterprise plans offer higher usage limits, enhanced security features like SSO and audit logs, and deeper integration capabilities.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Log in to your account",
+          "url": "https://code.claude.com/docs/en/quickstart#step-2-log-in-to-your-account"
+        },
+        {
+          "type": "official",
+          "title": "Subscription & Pricing",
+          "url": "https://claude.com/pricing"
+        },
+        {
+          "type": "official",
+          "title": "Choosing a Claude plan",
+          "url": "https://support.claude.com/en/articles/11049762-choosing-a-claude-plan"
+        },
+        {
+          "type": "article",
+          "title": "Claude Pricing Explained: Subscription Plans & API Costs",
+          "url": "https://intuitionlabs.ai/articles/claude-pricing-plans-api-costs"
+        }
+      ],
+      "parents": [
+        "settingUpClaude"
+      ],
+      "children": []
+    },
+    "apiUsage": {
+      "title": "API usage",
+      "sourceId": "N6dDyEXIUJUA3-o1J9K_n",
+      "type": "subtopic",
+      "order": 6,
+      "summary": "Claude Console authentication uses a pay-as-you-go model where the tool connects directly to the Anthropic API using a personal API key rather than a flat-rate monthly subscription. To set this up, you must first create an account at the Claude Console, generate a secret API key, and ensure you have a balance of credits in your account. This mode is ideal for power users or developers who prefer to pay only for the specific amount of data (or tokens) processed during their coding sessions. Because this connection communicates directly with the API, it also allows you to choose specific model versions and provides more granular control over your billing and usage thresholds.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Claude Console",
+          "url": "https://platform.claude.com/"
+        },
+        {
+          "type": "official",
+          "title": "Claude Code Analytics API",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/claude-code-analytics-api"
+        },
+        {
+          "type": "article",
+          "title": "Claude Pricing Explained: Subscription Plans & API Costs",
+          "url": "https://intuitionlabs.ai/articles/claude-pricing-plans-api-costs"
+        },
+        {
+          "type": "article",
+          "title": "Claude, Claude API, and Claude Code: What's the Difference?",
+          "url": "https://eval.16x.engineer/blog/claude-vs-claude-api-vs-claude-code"
+        }
+      ],
+      "parents": [
+        "settingUpClaude"
+      ],
+      "children": []
+    },
+    "mcp2": {
+      "title": "MCP",
+      "sourceId": "8Nd9CdGb1_Jl4YLBvew4z",
+      "type": "subtopic",
+      "order": 7,
+      "summary": "The Model Context Protocol (MCP) is an open-source standard that enables a Claude Code to connect securely to a vast ecosystem of external tools, databases, and third-party services. By acting like a \"universal connector\" for AI, MCP allows you to extend the Claude Code's core capabilities beyond simple file editing, giving it the power to interact with APIs like GitHub to manage pull requests, query live databases such as PostgreSQL or Snowflake, and much more.",
+      "video": {
+        "title": "Claude Code Tutorial #7 - MCP Servers",
+        "url": "https://www.youtube.com/watch?v=X7lgIa6guKg"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Introduction to Model Context Protocol",
+          "url": "https://anthropic.skilljar.com/introduction-to-model-context-protocol"
+        },
+        {
+          "type": "course",
+          "title": "Model Context Protocol: Advanced Topics",
+          "url": "https://anthropic.skilljar.com/model-context-protocol-advanced-topics"
+        },
+        {
+          "type": "official",
+          "title": "Connect Claude Code to tools via MCP - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/mcp"
+        },
+        {
+          "type": "article",
+          "title": "What is the Model Context Protocol (MCP)?",
+          "url": "https://modelcontextprotocol.io/docs/getting-started/intro"
+        }
+      ],
+      "parents": [
+        "settingUpClaude"
+      ],
+      "children": []
+    },
+    "plugins2": {
+      "title": "Plugins",
+      "sourceId": "wd9T37TIM_1JU4o_2Fb0h",
+      "type": "subtopic",
+      "order": 8,
+      "summary": "Claude Code plugins are shareable packages that bundle multiple customizations, including slash commands, specialized agents, skills, hooks, and Model Context Protocol (MCP) servers, into a single installable unit. They serve as a standardized way to distribute complex AI workflows across different projects or within an engineering team, ensuring that every developer has access to the same tools and coding standards.",
+      "video": {
+        "title": "Claude Code Now Has SUPERPOWERS! (plugin)",
+        "url": "https://www.youtube.com/watch?v=vfVQP2AbUHo"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Discover and install prebuilt plugins through marketplaces - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/discover-plugins"
+        },
+        {
+          "type": "official",
+          "title": "Plugins",
+          "url": "https://claude.com/plugins"
+        },
+        {
+          "type": "opensource",
+          "title": "plugins",
+          "url": "https://github.com/anthropics/claude-code/tree/main/plugins"
+        }
+      ],
+      "parents": [
+        "settingUpClaude"
+      ],
+      "children": []
+    },
+    "whatIsAgenticLoop": {
+      "title": "What is Agentic Loop?",
+      "sourceId": "uOowDiCXVKyMFrZO1pnXv",
+      "type": "subtopic",
+      "order": 9,
+      "summary": "An agentic loop is a computational pattern where an agent continuously interacts with its environment through a cycle of perception, planning, and action. The agent observes its surroundings, decides on a course of action based on its goals and current state, executes that action, and then observes the results to inform its next decision. This iterative process allows the agent to learn, adapt, and pursue its objectives in a dynamic and potentially unpredictable environment.",
+      "video": {
+        "title": "What is Agentic RAG?",
+        "url": "https://www.youtube.com/watch?v=0z9_MhcYvcY"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Claude Code Agentic Loop",
+          "url": "https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop"
+        },
+        {
+          "type": "article",
+          "title": "What is an Agent Loop?",
+          "url": "https://huggingface.co/learn/agents-course/en/unit1/agent-steps-and-structure"
+        },
+        {
+          "type": "article",
+          "title": "Let's Build your Own Agentic Loop",
+          "url": "https://www.reddit.com/r/AI_Agents/comments/1js1xjz/lets_build_our_own_agentic_loop_running_in_our/"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "claudeCli": {
+      "title": "Claude CLI",
+      "sourceId": "3r-vFlVAEirxD1gaFOO4H",
+      "type": "subtopic",
+      "order": 10,
+      "summary": "Claude Code CLI is a command-line tool that acts as an agentic AI coding partner by interacting directly with your local files and terminal. To set it up, you first need an active Claude subscription or an Anthropic Console account. Once installed, navigate to your project folder, type `claude` to start a session, and follow the prompts to log in via your browser.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Getting Started with Claude Code",
+          "url": "https://code.claude.com/docs/en/quickstart"
+        },
+        {
+          "type": "official",
+          "title": "Optimize your terminal setup",
+          "url": "https://code.claude.com/docs/en/terminal-config"
+        }
+      ],
+      "parents": [
+        "introduction"
+      ],
+      "children": []
+    },
+    "desktopApp": {
+      "title": "Desktop App",
+      "sourceId": "rIG8F-Rc-fMeXZ5n0UTwi",
+      "type": "subtopic",
+      "order": 12,
+      "summary": "Claude Code desktop is a software application that allows an AI assistant to interact directly with your local files and development tools through a graphical interface. It functions as an agentic coding partner that can read your codebase, edit files, and execute terminal commands to help build features or fix bugs in real time.",
+      "video": {
+        "title": "Claude Code on desktop",
+        "url": "https://www.youtube.com/watch?v=zrcCS9oHjtI"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Claude Code on desktop",
+          "url": "https://code.claude.com/docs/en/desktop"
+        },
+        {
+          "type": "article",
+          "title": "I Discovered Claude Code Desktop: The (New) Way to Build Faster Than Your Terminal",
+          "url": "https://medium.com/@joe.njenga/i-discovered-claude-code-desktop-the-new-way-to-build-faster-than-your-terminal-1679aa6ce790"
+        }
+      ],
+      "parents": [
+        "waysToUseClaude"
+      ],
+      "children": []
+    },
+    "editorExtensions": {
+      "title": "Editor Extensions",
+      "sourceId": "ONhEanq8I2RE-Jc_YY3Wa",
+      "type": "subtopic",
+      "order": 13,
+      "summary": "IDE extensions allow you to use Claude Code directly within popular development environments like Visual Studio Code and the JetBrains family (including IntelliJ IDEA, PyCharm, and WebStorm). These extensions provide a graphical sidebar and inline diff viewers, enabling you to review proposed code changes side-by-side with your existing files. By integrating with the IDE, Claude gains automatic awareness of your active workspace, current file selection, and even terminal error messages, which eliminates the need to manually copy and paste context.",
+      "video": {
+        "title": "How to Install Claude Code in VS Code in 3 Minutes",
+        "url": "https://www.youtube.com/watch?v=ph5DRCX_g6s"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Use Claude Code in VS Code",
+          "url": "https://code.claude.com/docs/en/vs-code"
+        },
+        {
+          "type": "official",
+          "title": "JetBrains IDEs - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/jetbrains"
+        },
+        {
+          "type": "article",
+          "title": "Introducing Claude Agent in JetBrains IDEs",
+          "url": "https://blog.jetbrains.com/ai/2025/09/introducing-claude-agent-in-jetbrains-ides/"
+        }
+      ],
+      "parents": [
+        "waysToUseClaude"
+      ],
+      "children": []
+    },
+    "waysToUseClaude": {
+      "title": "Ways to use Claude",
+      "sourceId": "thR8GUbuAkEL4sb4m3llJ",
+      "type": "topic",
+      "order": 14,
+      "summary": "Claude Code offers multiple interfaces to cater to diverse development workflows. These include a Command Line Interface (CLI) for automation and scripting, editor code extensions (like VS Code, JetBrains IDEs) providing a graphical sidebar with inline code diffs, and a standalone Desktop Application for managing complex projects. Each interface leverages the same agentic engine for researching, writing, and executing code, providing options for different development styles. The CLI is accessible via shell scripts for macOS, Linux, and WSL, and through PowerShell for Windows.",
+      "video": null,
+      "articles": [
+        {
+          "type": "course",
+          "title": "Claude 101",
+          "url": "https://anthropic.skilljar.com/claude-101"
+        },
+        {
+          "type": "official",
+          "title": "Use Claude Code everywhere",
+          "url": "https://code.claude.com/docs/en/overview#use-claude-code-everywhere"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "understandTheBasics",
+        "desktopApp",
+        "editorExtensions",
+        "mobileChannels",
+        "communityTools"
+      ]
+    },
+    "mobileChannels": {
+      "title": "Mobile (Channels)",
+      "sourceId": "wLaM_NHs7-ANFhtjYiY-F",
+      "type": "subtopic",
+      "order": 15,
+      "summary": "To use Claude Code with mobile apps through channels, you install a pre-built channel plugin for your messaging platform, like Telegram, Discord, or iMessage. The plugin runs locally on your computer and polls the platform's API for new messages. When someone sends you a message on the mobile app, the plugin receives it and forwards it to Claude Code, which can then read and respond. You configure the plugin in your MCP config file, and Claude Code spawns it automatically. The plugin acts as a bridge between the mobile app and Claude Code, so you can chat with Claude through your phone without exposing any URLs to the internet.",
+      "video": {
+        "title": "Claude Code Channels in 8 Minutes",
+        "url": "https://www.youtube.com/watch?v=QZXaAc80OL0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Push events into a running session with channels",
+          "url": "https://code.claude.com/docs/en/channels"
+        },
+        {
+          "type": "official",
+          "title": "Channels reference",
+          "url": "https://code.claude.com/docs/en/channels-reference"
+        }
+      ],
+      "parents": [
+        "waysToUseClaude"
+      ],
+      "children": []
+    },
+    "communityTools": {
+      "title": "Community Tools",
+      "sourceId": "e12uqC2SEzaMfmBbz7VZf",
+      "type": "subtopic",
+      "order": 16,
+      "summary": "Community tools extend Claude Code's capabilities by integrating it with external platforms via the Model Context Protocol (MCP) and specialized plugins. These integrations allow the assistant to interact directly with services like GitHub for managing pull requests, Slack for sending project updates, and Jira or Linear for tracking issues. Beyond official offerings, the community has developed numerous third-party extensions, which can be easily added via the `/plugin` command.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Conductor",
+          "url": "https://docs.conductor.build/"
+        },
+        {
+          "type": "article",
+          "title": "A Hands-On Review of Conductor, an AI Parallel Runner App",
+          "url": "https://thenewstack.io/a-hands-on-review-of-conductor-an-ai-parallel-runner-app/"
+        }
+      ],
+      "parents": [
+        "waysToUseClaude"
+      ],
+      "children": [
+        "commonUsecases"
+      ]
+    },
+    "commonUsecases": {
+      "title": "Common Usecases",
+      "sourceId": "rGtz0Nw4BgOrdm3WUmjwZ",
+      "type": "subtopic",
+      "order": 17,
+      "summary": "Claude Code can be used for a wide range of professional software development tasks, from legacy system modernization and large-scale refactoring to rapid prototyping for startups. Organizations use it to navigate and modernize massive codebases containing millions of lines of code, while data science teams employ it to convert exploratory research from notebooks into production-ready data pipelines. In daily engineering workflows, it is frequently applied to automate unit testing, diagnose complex bugs using stack traces, and manage dependency upgrades across entire repositories. Additionally, it has become a powerful tool for infrastructure automation, where DevOps teams use it to manage Kubernetes clusters, configure monitoring systems, and build CI/CD pipelines through natural language instructions.",
+      "video": {
+        "title": "8 Insane Claude Code Use Cases (code anything!)",
+        "url": "https://www.youtube.com/watch?v=akIHv-n--io"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "What you can do",
+          "url": "https://code.claude.com/docs/en/overview#what-you-can-do"
+        },
+        {
+          "type": "official",
+          "title": "Common workflows",
+          "url": "https://code.claude.com/docs/en/common-workflows"
+        },
+        {
+          "type": "article",
+          "title": "20+ Real Use Cases That Prove Claude Code Is a Game-Changer",
+          "url": "https://medium.com/@agencyai/20-real-use-cases-that-prove-claude-code-is-a-game-changer-46ceefaf19ed"
+        }
+      ],
+      "parents": [
+        "communityTools"
+      ],
+      "children": []
+    },
+    "understandTheDifferences": {
+      "title": "Understand the Differences",
+      "sourceId": "sCI4gofDwHOHVyVZnLVVP",
+      "type": "label",
+      "order": 18,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "claudeMd",
+        "skills",
+        "context",
+        "modes",
+        "models",
+        "tools"
+      ]
+    },
+    "understandTheBasics": {
+      "title": "Understand the Basics",
+      "sourceId": "LBMeG3sdY6IAJ7EoZBQ_K",
+      "type": "label",
+      "order": 19,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "waysToUseClaude",
+        "usingClaudeCode"
+      ],
+      "children": []
+    },
+    "claudeMd": {
+      "title": "CLAUDE.md",
+      "sourceId": "T6PklJYVOrmcAgNcCFhKt",
+      "type": "subtopic",
+      "order": 20,
+      "summary": "`CLAUDE.md` is a configuration file placed in a project's root directory that provides the AI assistant with specific rules, project context, and custom instructions for that particular codebase. It acts as a set of persistent guidelines that the AI reads at the start of every session to ensure its code suggestions align with your project's coding standards, tech stack, and architectural patterns.",
+      "video": {
+        "title": "Claude Code Tutorial #2 - CLAUDE.md Files & /init - YouTube",
+        "url": "https://www.youtube.com/watch?v=i_OHQH4-M2Y"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Write an effective CLAUDE.md",
+          "url": "https://code.claude.com/docs/en/best-practices#write-an-effective-claude-md"
+        },
+        {
+          "type": "article",
+          "title": "The Complete Guide to CLAUDE.md",
+          "url": "https://www.builder.io/blog/claude-md-guide"
+        },
+        {
+          "type": "article",
+          "title": "Writing a good CLAUDE.md | HumanLayer Blog",
+          "url": "https://www.humanlayer.dev/blog/writing-a-good-claude-md"
+        }
+      ],
+      "parents": [
+        "understandTheDifferences"
+      ],
+      "children": []
+    },
+    "skills": {
+      "title": "Skills",
+      "sourceId": "iVa6piQwdPHIDkSRX8OSy",
+      "type": "subtopic",
+      "order": 21,
+      "summary": "Claude Code skills are modular packages of instructions, scripts, and assets that teach the AI assistant how to perform specific, repeatable workflows. Each skill is stored in a dedicated folder containing a mandatory SKILL.md file, which uses YAML frontmatter to define its name and a description that the AI uses to automatically discover and load the skill when relevant.",
+      "video": {
+        "title": "Claude Code Skills & skills.sh - Crash Course",
+        "url": "https://www.youtube.com/watch?v=rcRS8-7OgBo"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Introduction to agent skills",
+          "url": "https://anthropic.skilljar.com/introduction-to-agent-skills"
+        },
+        {
+          "type": "course",
+          "title": "Agent Skills with Anthropic",
+          "url": "https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/"
+        },
+        {
+          "type": "official",
+          "title": "Extend Claude with skills",
+          "url": "https://code.claude.com/docs/en/skills"
+        },
+        {
+          "type": "official",
+          "title": "The Complete Guide to Building Skills for Claude",
+          "url": "https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en"
+        }
+      ],
+      "parents": [
+        "understandTheDifferences"
+      ],
+      "children": []
+    },
+    "context": {
+      "title": "Context",
+      "sourceId": "C5tCsAJQxq2d-fOrjjloB",
+      "type": "subtopic",
+      "order": 22,
+      "summary": "A context window is the total amount of information a model can hold in its active memory at one time, including your conversation history, the files it has read, and the results of any terminal commands it has executed. It functions like a temporary workspace where every word and symbol (counted as tokens) fills up a limited capacity. As this window fills, Claude Code may begin to \"forget\" earlier details or become less accurate, which is why managing context through commands like `/compact` is essential to keep responses sharp and costs under control.",
+      "video": {
+        "title": "Claude Code\u2019s Memory Problem (Solved in 12 Minutes) - YouTube",
+        "url": "https://www.youtube.com/watch?v=c0g_wYux6X4&t=39s"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "The context window",
+          "url": "https://code.claude.com/docs/en/how-claude-code-works#the-context-window"
+        },
+        {
+          "type": "official",
+          "title": "How large is the context window on paid Claude plans?",
+          "url": "https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans"
+        },
+        {
+          "type": "article",
+          "title": "What is a context window? | IBM",
+          "url": "https://www.ibm.com/think/topics/context-window"
+        }
+      ],
+      "parents": [
+        "understandTheDifferences"
+      ],
+      "children": []
+    },
+    "modes": {
+      "title": "Modes",
+      "sourceId": "gcZCpCWHvIo5Ox0vVkdgV",
+      "type": "subtopic",
+      "order": 23,
+      "summary": "Permission modes are settings that control the level of autonomy the AI has when interacting with your computer. By default, the system operates in Default Mode, where it must ask for your approval before it edits any files or executes shell commands. You can cycle through other levels of authority, such as Accept-Edits Mode, which allows the AI to modify files automatically while still prompting you for terminal commands, or Plan Mode, which restricts the AI to read-only tools so it can research and outline a strategy without making any actual changes. For advanced workflows, specialized states like Delegate Mode exist to limit a \"lead\" agent to coordinating other sub-agents, while the high-risk Bypass-Permissions Mode removes all approval prompts entirely for use in secure, isolated environments.",
+      "video": {
+        "title": "Claude Code Tutorial #4 - Tools & Permissions",
+        "url": "https://www.youtube.com/watch?v=TU0ZcDFq0e0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Configure permissions",
+          "url": "https://code.claude.com/docs/en/permissions"
+        },
+        {
+          "type": "article",
+          "title": "A complete guide to Claude Code permissions",
+          "url": "https://www.eesel.ai/blog/claude-code-permissions"
+        }
+      ],
+      "parents": [
+        "understandTheDifferences"
+      ],
+      "children": []
+    },
+    "commandCheatsheet": {
+      "title": "Command Cheatsheet",
+      "sourceId": "QGRSySgyC8AERo0Vgq76X",
+      "type": "label",
+      "order": 24,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "ctrlC",
+        "ctrlR",
+        "esc",
+        "escEsc",
+        "shiftTab"
+      ]
+    },
+    "models": {
+      "title": "Models",
+      "sourceId": "RHWW3QOFWRMqlaovGOLEO",
+      "type": "subtopic",
+      "order": 25,
+      "summary": "Claude Code is powered by three distinct models\u2014Opus, Sonnet, and Haiku\u2014 each optimized for a specific role within the development lifecycle. **Claude Opus** is the \"deep thinker\" and primary architect, used for complex reasoning, high-level system design, and surgical bug fixes in large codebases. **Claude Sonnet** serves as the versatile \"balanced builder,\" providing a high-speed middle ground for daily tasks like implementing feature logic, writing boilerplate, and managing state across multiple files. **Claude Haiku** is the \"fast-response specialist,\" designed for near-instant execution of lightweight tasks, such as generating rapid UI prototypes, drafting commit messages, or acting as parallel sub-agents to scan logs and run quick checks.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Models",
+          "url": "https://code.claude.com/docs/en/how-claude-code-works#models"
+        },
+        {
+          "type": "official",
+          "title": "Models overview",
+          "url": "https://platform.claude.com/docs/en/about-claude/models/overview"
+        },
+        {
+          "type": "official",
+          "title": "Choosing the right model",
+          "url": "https://platform.claude.com/docs/en/about-claude/models/choosing-a-model"
+        },
+        {
+          "type": "article",
+          "title": "A practical guide to Claude Code model selection",
+          "url": "https://www.eesel.ai/blog/claude-code-model-selection"
+        }
+      ],
+      "parents": [
+        "understandTheDifferences"
+      ],
+      "children": []
+    },
+    "tools": {
+      "title": "Tools",
+      "sourceId": "vB1d1mbiPJK3a1LbYZkH9",
+      "type": "subtopic",
+      "order": 26,
+      "summary": "Tools are specialized functions that allow the AI assistant to perform actions on your computer rather than just generating text. These functions are categorized into client-side tools that interact with your local environment, such as `Bash` for running terminal commands, `Read` and `Edit` for file manipulation, and `Glob` or `Grep` for searching codebases, and server-side tools like `WebSearch` for fetching real-time information from the internet.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Tools",
+          "url": "https://code.claude.com/docs/en/how-claude-code-works#tools"
+        },
+        {
+          "type": "official",
+          "title": "Tools available to Claude",
+          "url": "https://code.claude.com/docs/en/settings#tools-available-to-claude"
+        },
+        {
+          "type": "official",
+          "title": "Introducing advanced tool use on the Claude Developer Platform \\ Anthropic",
+          "url": "https://www.anthropic.com/engineering/advanced-tool-use"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Built-in Tools Reference | vtrivedy",
+          "url": "https://www.vtrivedy.com/posts/claudecode-tools-reference/"
+        }
+      ],
+      "parents": [
+        "understandTheDifferences"
+      ],
+      "children": []
+    },
+    "ctrlC": {
+      "title": "Ctrl+C",
+      "sourceId": "dD0TlpfC4GzYWINplekKw",
+      "type": "subtopic",
+      "order": 27,
+      "summary": "`Ctrl+C` is a keyboard shortcut that immediately sends an interrupt signal to the Claude Code terminal to stop its current activity. It is primarily used to halt a long-running process, such as an accidental infinite loop in your code, a search that is taking too long, or a lengthy model response that you realized was going in the wrong direction. This provides a manual \"kill switch\" that is essential for maintaining control over the agent's actions and preventing the unnecessary consumption of tokens and time.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Interactive mode - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "article",
+          "title": "How I use Claude Code (+ my best tips)",
+          "url": "https://www.builder.io/blog/claude-code"
+        }
+      ],
+      "parents": [
+        "commandCheatsheet"
+      ],
+      "children": []
+    },
+    "ctrlR": {
+      "title": "Ctrl+R",
+      "sourceId": "R7YJyNd0taUVJvXDPHBn5",
+      "type": "subtopic",
+      "order": 28,
+      "summary": "`Ctrl+R` is a terminal shortcut that opens the command history search, allowing you to quickly find and reuse previous prompts or terminal commands you have typed during your session. Instead of manually retyping complex instructions or scrolling back through hundreds of lines of output, you can press `Ctrl+R` and start typing a few letters to filter your recent activity until the correct entry is highlighted. Once you find the desired command, you can press `Enter` to run it immediately or use the arrow keys to edit the text before execution.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Interactive mode - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Reverse search with Ctrl+R",
+          "url": "https://code.claude.com/docs/en/interactive-mode#reverse-search-with-ctrl+r"
+        },
+        {
+          "type": "article",
+          "title": "Ctrl+R: Stop Retyping That Perfect Prompt You Wrote Last Week - DEV Community",
+          "url": "https://dev.to/rajeshroyal/ctrlr-stop-retyping-that-perfect-prompt-you-wrote-last-week-19ae"
+        }
+      ],
+      "parents": [
+        "commandCheatsheet"
+      ],
+      "children": []
+    },
+    "esc": {
+      "title": "Esc",
+      "sourceId": "2pu6b0Z5BQAz44Hx69Pzk",
+      "type": "subtopic",
+      "order": 29,
+      "summary": "The `Esc` key is a navigation shortcut used to exit current menus, cancel active inputs, or clear the command line. If you are in the middle of typing a long prompt and want to start over, pressing Esc will wipe the input field clean, and if you have a dropdown menu or a multi-select list open\u2014such as when choosing files to add to context\u2014it will close that menu without making a selection. This shortcut provides a quick way to reset your immediate interface state without interrupting the underlying AI process or closing the terminal session entirely.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Interactive mode - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        }
+      ],
+      "parents": [
+        "commandCheatsheet"
+      ],
+      "children": []
+    },
+    "escEsc": {
+      "title": "Esc + Esc",
+      "sourceId": "8xqKBvdDfTLeZXeGeqQZr",
+      "type": "subtopic",
+      "order": 30,
+      "summary": "Double-tapping the `Esc` key in Claude Code activates the Rewind feature, which serves as a temporal navigation system for both your conversation history and your code state. When triggered, it opens an interactive menu that allows you to jump back to any previous prompt in the session, effectively acting as a \"undo\" button for AI-driven development. You can choose to restore only the conversation (useful for refining instructions without losing current file edits), restore only the code (to revert specific file changes while keeping the chat context), or restore both to a verified checkpoint. This shortcut is particularly valuable for experimental coding because it automatically creates local checkpoints before every change, allowing you to quickly discard an entire branch of reasoning or a failed implementation without manually restoring individual files or managing Git commits.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Interactive mode - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/interactive-mode#reverse-search-with-ctrl+r"
+        },
+        {
+          "type": "official",
+          "title": "Checkpointing - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/checkpointing"
+        },
+        {
+          "type": "article",
+          "title": "Your Time Machine for Code: Double Esc to Rewind When Things Go Wrong - DEV Community",
+          "url": "https://dev.to/rajeshroyal/your-time-machine-for-code-double-esc-to-rewind-when-things-go-wrong-53pa"
+        }
+      ],
+      "parents": [
+        "commandCheatsheet"
+      ],
+      "children": []
+    },
+    "usingClaudeCode": {
+      "title": "Using Claude Code",
+      "sourceId": "29xiIXYlB0bjXKA794qap",
+      "type": "topic",
+      "order": 31,
+      "summary": "Claude Code is a sophisticated agentic tool that provides significant power through its ability to execute commands and edit files, but it requires a disciplined approach to prevent security risks and runaway costs.",
+      "video": {
+        "title": "How I use Claude Code (Meta Staff Engineer Tips) - YouTube",
+        "url": "https://www.youtube.com/watch?v=mZzhfPle9QU"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "AI Capabilities and Limitations",
+          "url": "https://anthropic.skilljar.com/ai-capabilities-and-limitations"
+        },
+        {
+          "type": "official",
+          "title": "Best Practices for Claude Code - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/best-practices"
+        },
+        {
+          "type": "official",
+          "title": "Prompting best practices - Claude API Docs",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+        },
+        {
+          "type": "article",
+          "title": "Vibe coding tutorial: Build your first app with Claude Code",
+          "url": "https://roadmap.sh/vibe-coding/tutorial"
+        },
+        {
+          "type": "article",
+          "title": "How I use Claude Code (+ my best tips)",
+          "url": "https://www.builder.io/blog/claude-code"
+        }
+      ],
+      "parents": [
+        "claudeWorkflow"
+      ],
+      "children": [
+        "hooks4",
+        "understandTheBasics"
+      ]
+    },
+    "shiftTab": {
+      "title": "Shift+Tab",
+      "sourceId": "gpg2cfEUUKI5J9FMxn5QD",
+      "type": "subtopic",
+      "order": 32,
+      "summary": "`Shift+Tab` is a navigation shortcut that allows you to cycle through different permission modes to control how much autonomy the AI assistant has over your computer. These modes act as a security dial, ranging from Default Mode, where the assistant must ask for your approval before making any file edits or running terminal commands, to Auto-Accept Mode, which grants it the power to modify files automatically while still prompting for shell commands. Additionally, the cycle includes Plan Mode, a specialized read-only state that restricts the assistant to searching and analyzing your codebase without the ability to change any files or execute code. By toggling these modes on the fly, you can switch from a highly controlled \"safety-first\" workflow for critical system files to a high-speed, autonomous mode for repetitive tasks like styling or unit testing.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Interactive mode - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Plan Mode | Developing with AI Tools | Steve Kinney",
+          "url": "https://stevekinney.com/courses/ai-development/claude-code-plan-mode"
+        }
+      ],
+      "parents": [
+        "commandCheatsheet"
+      ],
+      "children": [
+        "slashCommands"
+      ]
+    },
+    "hooks4": {
+      "title": "Hooks",
+      "sourceId": "qPH0w52-8MvzZdFdsNMap",
+      "type": "subtopic",
+      "order": 33,
+      "summary": "Hooks are automated triggers that execute specific scripts or commands at key points in the AI's workflow, such as before or after the assistant performs a task. These hooks allow developers to enforce project standards and ensure system reliability without manual intervention, much like Git hooks but designed for an AI-driven development cycle.",
+      "video": {
+        "title": "How Claude Code Hooks Save Me HOURS Daily",
+        "url": "https://www.youtube.com/watch?v=Q4gsvJvRjCU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Automate workflows with hooks - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/hooks-guide"
+        },
+        {
+          "type": "article",
+          "title": "Automate Your AI Workflows with Claude Code Hooks | Butler's Log",
+          "url": "https://blog.gitbutler.com/automate-your-ai-workflows-with-claude-code-hooks"
+        }
+      ],
+      "parents": [
+        "usingClaudeCode"
+      ],
+      "children": []
+    },
+    "subagents2": {
+      "title": "Subagents",
+      "sourceId": "wFxYfNu7LtzV72a224WTZ",
+      "type": "subtopic",
+      "order": 34,
+      "summary": "Subagents are specialized AI assistants that function as independent \"team members\" to handle focused tasks on behalf of the main agent. Each subagent operates within its own isolated context window, meaning it starts with a clean slate and does not clutter your primary conversation with large amounts of intermediate research or technical logs. They are typically defined by a markdown file in the `.claude/agents/` directory, where you specify their unique system prompt, expertise, and restricted tool access.",
+      "video": {
+        "title": "Stop Using Claude Code Like This (Use Sub-Agents Instead) -",
+        "url": "https://www.youtube.com/watch?v=P60LqQg1RH8"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Introduction to subagents",
+          "url": "https://anthropic.skilljar.com/introduction-to-subagents"
+        },
+        {
+          "type": "official",
+          "title": "Create custom subagents - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/sub-agents"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "slashCommands": {
+      "title": "Slash Commands (/)",
+      "sourceId": "JeotqE91kV1n-YRoXN9gX",
+      "type": "subtopic",
+      "order": 35,
+      "summary": "Slash commands are the steering wheel of Claude Code. They allow you to execute meta-actions, manage your session, and configure the environment without needing to write a natural language request. By typing a forward slash / at the start of your prompt, you gain access to a suite of utility tools that help you control costs, manage context, and extend functionality. These commands are processed locally and do not involve the AI's reasoning engine until necessary, making them instant and efficient",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode#built-in-commands"
+        },
+        {
+          "type": "article",
+          "title": "How to Use Claude Code: A Guide to Slash Commands, Agents, Skills, and Plug-ins",
+          "url": "https://www.producttalk.org/how-to-use-claude-code-features/"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Tutorial #6 - Slash Commands",
+          "url": "https://www.youtube.com/watch?v=52KBhQqqHuc"
+        }
+      ],
+      "parents": [
+        "shiftTab"
+      ],
+      "children": [
+        "topic",
+        "topic2",
+        "topic3"
+      ]
+    },
+    "whenToUseWhatModel": {
+      "title": "When to use what model?",
+      "sourceId": "RRRkkcO3jQMyjfZyBD_aW",
+      "type": "label",
+      "order": 36,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "opus",
+        "sonnet",
+        "haiku"
+      ]
+    },
+    "topic": {
+      "title": "!",
+      "sourceId": "PYjuzInrTOWebl-OyYfMa",
+      "type": "subtopic",
+      "order": 37,
+      "summary": "Bash Mode (triggered by prefixing your input with an exclamation mark !) is a powerful feature that allows you to execute shell commands directly on your machine without involving the Claude Code's reasoning or consuming any tokens. While the AI assistant normally uses the \"Bash tool\" to run commands on your behalf (which costs money and takes time for the model to \"think\"), Bash Mode is your direct line to the terminal.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Bash mode with ! prefix",
+          "url": "https://code.claude.com/docs/en/interactive-mode#bash-mode-with-prefix"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code and Bash Scripts | Developing with AI Tools | Steve Kinney",
+          "url": "https://stevekinney.com/courses/ai-development/claude-code-and-bash-scripts"
+        }
+      ],
+      "parents": [
+        "slashCommands"
+      ],
+      "children": []
+    },
+    "topic2": {
+      "title": "\\",
+      "sourceId": "N6z45nuFeUqRB2f-8b_Ku",
+      "type": "subtopic",
+      "order": 38,
+      "summary": "Multiline input allows you to format complex instructions across several lines without immediately sending the prompt to the AI. The fastest way to create multiline input is by typing `\\` followed by `Enter`. This works in all terminals by default and tells the system to treat the next line as a continuation of the current one. However, depending on your terminal and configuration, alternative methods may be available.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Multiline input",
+          "url": "https://code.claude.com/docs/en/interactive-mode#multiline-input"
+        },
+        {
+          "type": "official",
+          "title": "Line breaks",
+          "url": "http://code.claude.com/docs/en/terminal-config#line-breaks"
+        }
+      ],
+      "parents": [
+        "slashCommands"
+      ],
+      "children": []
+    },
+    "topic3": {
+      "title": "@",
+      "sourceId": "La3uarrUxC5oTszf4oaWr",
+      "type": "subtopic",
+      "order": 39,
+      "summary": "File path mentions, triggered by typing the `@` symbol followed by a filename or folder, allow you to manually point the AI toward specific parts of your codebase. This creates a direct reference that prioritizes those files in the current conversation, ensuring the assistant analyzes the exact code you are interested in without having to search your entire project first. It supports autocomplete, so as you type after the @ symbol, a list of matching files appears, allowing you to quickly select the correct path and add it to the conversation context.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Quick commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode#built-in-commands"
+        },
+        {
+          "type": "official",
+          "title": "CLAUDE.md imports",
+          "url": "https://code.claude.com/docs/en/memory#claude-md-imports"
+        },
+        {
+          "type": "article",
+          "title": "Referencing Files and Resources in Claude Code | Developing with AI Tools | Steve Kinney",
+          "url": "https://stevekinney.com/courses/ai-development/referencing-files-in-claude-code"
+        }
+      ],
+      "parents": [
+        "slashCommands"
+      ],
+      "children": []
+    },
+    "opus": {
+      "title": "Opus",
+      "sourceId": "TWN08Vx7aBK-mvOSQuFfu",
+      "type": "subtopic",
+      "order": 40,
+      "summary": "Claude Opus is the most advanced and capable large language model in the Claude family, designed specifically for high-level reasoning and complex problem-solving. It functions as a \"deep thinking\" engine that can handle vast amounts of information and follow intricate instructions with a high degree of accuracy and nuance.",
+      "video": {
+        "title": "Introducing Claude Opus 4.6",
+        "url": "https://www.youtube.com/watch?v=dPn3GBI8lII"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Claude Opus 4.6 \\ Anthropic",
+          "url": "https://www.anthropic.com/claude/opus"
+        },
+        {
+          "type": "official",
+          "title": "What's new in Claude 4.6 - Claude API Docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-6"
+        }
+      ],
+      "parents": [
+        "whenToUseWhatModel"
+      ],
+      "children": []
+    },
+    "sonnet": {
+      "title": "Sonnet",
+      "sourceId": "nDodLa7_UEeOmx6iM0Xp5",
+      "type": "subtopic",
+      "order": 41,
+      "summary": "Claude Sonnet is a high-performance large language model that strikes an ideal balance between advanced reasoning intelligence and rapid processing speed. It serves as the versatile \"workhorse\" of the Claude family, capable of handling complex programming tasks, such as multi-file refactoring and autonomous debugging, while operating significantly faster and more cost-effectively than the top-tier Opus model.",
+      "video": {
+        "title": "Sonnet 4.5 is the best coding model in the world",
+        "url": "https://www.youtube.com/watch?v=uZBjVeyiYkk"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introducing Claude Sonnet 4.5 \\ Anthropic",
+          "url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+        },
+        {
+          "type": "official",
+          "title": "Claude Sonnet 4.5 \\ Anthropic",
+          "url": "https://www.anthropic.com/claude/sonnet"
+        }
+      ],
+      "parents": [
+        "whenToUseWhatModel"
+      ],
+      "children": []
+    },
+    "haiku": {
+      "title": "Haiku",
+      "sourceId": "y_euG-Rzj-OmCZhvMXegc",
+      "type": "subtopic",
+      "order": 42,
+      "summary": "Claude Haiku is the fastest and most cost-effective model in the Claude family, specifically engineered for high-speed, high-volume tasks that require near-instant responsiveness. It provides a compact but powerful solution for real-time applications like customer service chatbots, rapid data extraction, and moderating large content streams where low latency is critical.",
+      "video": {
+        "title": "Introducing Claude Haiku 4.5",
+        "url": "https://www.youtube.com/watch?v=ccQSHQ3VGIc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Introducing Claude Haiku 4.5",
+          "url": "https://www.anthropic.com/news/claude-haiku-4-5"
+        },
+        {
+          "type": "official",
+          "title": "Claude Haiku 4.5",
+          "url": "https://www.anthropic.com/claude/haiku"
+        }
+      ],
+      "parents": [
+        "whenToUseWhatModel"
+      ],
+      "children": []
+    },
+    "shortcutsPrefixes": {
+      "title": "Shortcuts & Prefixes",
+      "sourceId": "1gQcbBEUoNO8U6bE-wEZP",
+      "type": "label",
+      "order": 43,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "claude",
+        "claudeR",
+        "claudeQuery"
+      ]
+    },
+    "claudeWorkflow": {
+      "title": "Claude Workflow",
+      "sourceId": "_iAIq8mwW0cIGbvrfmSJ5",
+      "type": "topic",
+      "order": 44,
+      "summary": "The Claude Code workflow operates as a continuous agentic loop where the AI moves through four primary phases: Explore, Plan, Implement, and Verify. It begins by indexing your local codebase and reading persistent instructions from your CLAUDE.md file to align with your project's specific standards. When you issue a prompt, Claude uses its suite of built-in tools to research the files (Explore), proposes a detailed step-by-step strategy for the change (Plan), and\u2014upon your approval\u2014executes the modifications using file-editing and shell tools (Implement). The cycle concludes by running your defined test suites or linters (Verify) to ensure no regressions were introduced, often utilizing MCP servers to sync the final results with external platforms like GitHub or Jira.",
+      "video": {
+        "title": "Claude Code Workflows That Will 10x Your Productivity",
+        "url": "https://www.youtube.com/watch?v=yZvDo_n12ns"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "How Claude Code Works",
+          "url": "https://code.claude.com/docs/en/how-claude-code-works"
+        },
+        {
+          "type": "official",
+          "title": "Common workflows",
+          "url": "https://code.claude.com/docs/en/common-workflows"
+        },
+        {
+          "type": "article",
+          "title": "My Best Workflow for Working with Claude Code : r/ClaudeAI",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1m3pol4/my_best_workflow_for_working_with_claude_code/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "manageSessions",
+        "permissionModes",
+        "claudeMd2",
+        "planMode",
+        "usingClaudeCode"
+      ]
+    },
+    "permissionModes": {
+      "title": "Permission Modes",
+      "sourceId": "y8VCGx-h97udP-dRzsSAI",
+      "type": "subtopic",
+      "order": 45,
+      "summary": "Claude Code features several permission modes that define the balance between autonomy and safety during your session, ranging from Plan mode, which restricts Claude to a read-only state for exploration and strategy without any tool execution, to BypassPermissions mode (often called \"YOLO mode\"), which grants the AI full autonomy to run any command or edit any file without interruption.",
+      "video": {
+        "title": "Claude Code Tutorial #4 - Tools & Permissions",
+        "url": "https://www.youtube.com/watch?v=TU0ZcDFq0e0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Permission modes",
+          "url": "https://code.claude.com/docs/en/permissions#permission-modes"
+        },
+        {
+          "type": "article",
+          "title": "A complete guide to Claude Code permissions",
+          "url": "https://www.eesel.ai/blog/claude-code-permissions"
+        },
+        {
+          "type": "article",
+          "title": "3 Things You Must Know About /permissions in Claude Code",
+          "url": "https://wmedia.es/en/tips/claude-code-permissions-3-key-concepts"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code on Loop: The Ultimate YOLO Mode",
+          "url": "https://mfyz.com/claude-code-on-loop-autonomous-ai-coding/"
+        }
+      ],
+      "parents": [
+        "claudeWorkflow"
+      ],
+      "children": []
+    },
+    "claude": {
+      "title": "claude",
+      "sourceId": "lcnfnGocMZIWDQqrmdCWL",
+      "type": "subtopic",
+      "order": 46,
+      "summary": "The `claude` command is the primary entry point used to launch the Claude Code interface from your terminal. When you type this command within a project directory, it initializes the agentic environment, indexes your local files, and establishes a secure connection to the AI model so you can begin issuing natural language instructions. It also supports various flags to customize Claude Code\u2019s behavior.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "CLI commands",
+          "url": "https://code.claude.com/docs/en/cli-reference#cli-commands"
+        }
+      ],
+      "parents": [
+        "shortcutsPrefixes"
+      ],
+      "children": []
+    },
+    "claudeR": {
+      "title": "claude -r",
+      "sourceId": "zUxO8udwPhYK6J_3wAs2Z",
+      "type": "subtopic",
+      "order": 47,
+      "summary": "The `claude -r` command (short for --resume) allows you to restart a specific past conversation by providing its unique Session ID. Unlike the `-c` flag, which automatically opens the very last session you had, `-r` gives you the precision to jump back to any session from your history, ensuring you can continue a specific line of work without losing context or previous tool outputs. If you run the command without an ID\u2014simply typing `claude --resume` \u2014it opens an interactive session picker where you can scroll through a list of recent conversations, see their titles, and choose the one you want to reactivate.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "CLI commands",
+          "url": "https://code.claude.com/docs/en/cli-reference#cli-commands"
+        },
+        {
+          "type": "official",
+          "title": "Resume or fork sessions",
+          "url": "https://code.claude.com/docs/en/how-claude-code-works#resume-or-fork-sessions"
+        }
+      ],
+      "parents": [
+        "shortcutsPrefixes"
+      ],
+      "children": []
+    },
+    "planMode": {
+      "title": "Plan Mode",
+      "sourceId": "Dutj1C19nrbonQ7OpqBnv",
+      "type": "subtopic",
+      "order": 48,
+      "summary": "Plan Mode is a strictly read-only permission state that allows Claude to analyze your codebase, research dependencies, and draft a step-by-step implementation strategy without the risk of modifying any files or executing state-changing commands.",
+      "video": {
+        "title": "I was an AI skeptic. Then I tried plan mode",
+        "url": "https://www.youtube.com/watch?v=WNx-s-RxVxk&t=70s"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "How to use Plan Mode",
+          "url": "https://code.claude.com/docs/en/common-workflows#how-to-use-plan-mode"
+        },
+        {
+          "type": "official",
+          "title": "Explore first, then plan, then code",
+          "url": "https://code.claude.com/docs/en/best-practices#explore-first-then-plan-then-code"
+        },
+        {
+          "type": "article",
+          "title": "What Actually Is Claude Code\u2019s Plan Mode?",
+          "url": "https://lucumr.pocoo.org/2025/12/17/what-is-plan-mode/"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Plan Mode | Developing with AI Tools | Steve Kinney",
+          "url": "https://stevekinney.com/courses/ai-development/claude-code-plan-mode"
+        }
+      ],
+      "parents": [
+        "claudeWorkflow"
+      ],
+      "children": []
+    },
+    "claudeQuery": {
+      "title": "claude \"query\"",
+      "sourceId": "zSpldCAVxYoRpHDIR2oVa",
+      "type": "subtopic",
+      "order": 49,
+      "summary": "The `claude \"query\"` command allows you to start the Claude Code interactive REPL (Read-Eval-Print Loop) with an initial instruction already provided. By passing a string as an argument directly after the `claude` command, the assistant will immediately begin processing that request\u2014such as \"explain this project\" or \"fix the lint errors\"\u2014the moment the interface loads. This method is more efficient than opening the tool first and typing your request manually, as it combines the startup and the initial task into a single step while still keeping the session open for further conversation and follow-up actions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "CLI commands",
+          "url": "https://code.claude.com/docs/en/cli-reference"
+        }
+      ],
+      "parents": [
+        "shortcutsPrefixes"
+      ],
+      "children": [
+        "claudeP",
+        "claudeC"
+      ]
+    },
+    "manageSessions": {
+      "title": "Manage Sessions",
+      "sourceId": "rlj-GMcqgdKM5_7rs7yz9",
+      "type": "subtopic",
+      "order": 50,
+      "summary": "Claude Code manages sessions through a persistent, local architecture where every interaction is stored in a unique session file, allowing you to resume work using terminal flags like `claude --continue` (for the most recent thread) or `claude --resume` (to open an interactive picker of past conversations). While each new session initializes with a fresh context window to optimize token usage and avoid irrelevance, Claude automatically snapshots affected files before any modification, enabling you to use the `/rewind` command to revert both code and conversation history to a previous \"checkpoint.\"",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Work with sessions",
+          "url": "https://code.claude.com/docs/en/how-claude-code-works#work-with-sessions"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Session Management | Developing with AI Tools | Steve Kinney",
+          "url": "https://stevekinney.com/courses/ai-development/claude-code-session-management"
+        }
+      ],
+      "parents": [
+        "claudeWorkflow"
+      ],
+      "children": [
+        "resume",
+        "rewind2"
+      ]
+    },
+    "claudeP": {
+      "title": "claude -p",
+      "sourceId": "2PKH3Ru9XgCz1MO75pDVr",
+      "type": "subtopic",
+      "order": 51,
+      "summary": "The `claude -p` command (short for --print) activates Print Mode, which runs Claude Code as a non-interactive, single-use utility rather than a continuous chat session. When you use this flag, you provide a prompt directly in the command line; Claude then executes its agentic loop\u2014researching, editing files, or running commands as needed\u2014and exits immediately once the task is complete. This mode is designed primarily for automation and scripting, allowing you to integrate Claude's reasoning into CI/CD pipelines, shell scripts, or \"one-liners\".",
+      "video": {
+        "title": "Building headless automation with Claude Code | Code w/ Claude",
+        "url": "https://www.youtube.com/watch?v=dRsjO-88nBs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "CLI commands",
+          "url": "https://code.claude.com/docs/en/cli-reference#cli-commands"
+        },
+        {
+          "type": "official",
+          "title": "Run Claude Code programmatically",
+          "url": "https://code.claude.com/docs/en/headless"
+        }
+      ],
+      "parents": [
+        "claudeQuery"
+      ],
+      "children": []
+    },
+    "claudeC": {
+      "title": "claude -c",
+      "sourceId": "XlCA3rx2C7wx_EcTYtr9_",
+      "type": "subtopic",
+      "order": 52,
+      "summary": "The `claude -c` command (short for --continue) is a CLI flag used to instantly reopen the most recent conversation session in your current directory. Instead of starting a fresh chat with a clean context, this command restores the previous conversation history, allowing you to pick up exactly where you left off without having to re-explain your project\u2019s state or repeat previous instructions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "CLI commands",
+          "url": "https://code.claude.com/docs/en/cli-reference#cli-commands"
+        },
+        {
+          "type": "official",
+          "title": "Resume previous conversations",
+          "url": "https://code.claude.com/docs/en/common-workflows#resume-previous-conversations"
+        }
+      ],
+      "parents": [
+        "claudeQuery"
+      ],
+      "children": []
+    },
+    "claudeAddDir": {
+      "title": "claude --add-dir",
+      "sourceId": "FgQXBQ6oJ5sfW_ar0u6ez",
+      "type": "subtopic",
+      "order": 53,
+      "summary": "The `claude --add-dir` command is a startup flag that allows you to include extra folders in your working session before the interface even opens. By providing one or more directory paths when you launch the tool (for example, `claude --add-dir ../library --add-dir ./docs`), you grant the assistant permission to read and modify files in those external locations alongside your current project. This is particularly useful for cross-repository tasks, such as updating a shared library and its dependent application simultaneously, as it ensures the AI has a unified view of all relevant codebases from the very first prompt.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "help",
+        "clear",
+        "exit",
+        "status",
+        "rewind",
+        "plan"
+      ]
+    },
+    "usageBestPractices": {
+      "title": "Usage Best Practices",
+      "sourceId": "svhWAC463Y9CUkFb524Fd",
+      "type": "topic",
+      "order": 54,
+      "summary": "Effective utilization of Claude Code involves adopting key strategies for optimal performance and long-term efficiency. This begins with a \"Plan First, Implement Second\" approach, especially for complex tasks, utilizing Plan Mode to allow Claude to create a plan before altering the source code. Maintaining a `CLAUDE.md` file as a project's central knowledge repository with relevant information, such as build commands and style guides, is crucial. Context management, through regular use of the /compact command and new conversations for separate tasks, helps mitigate performance degradation. Finally, automating routine processes, like generating Git commits with `claude commit` or setting up hooks, ensures efficiency and consistency throughout the development lifecycle.",
+      "video": {
+        "title": "Claude Code Workflows That Will 10x Your Productivity",
+        "url": "https://www.youtube.com/watch?v=yZvDo_n12ns&t=145s"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Best Practices for Claude Code",
+          "url": "https://code.claude.com/docs/en/best-practices#best-practices-for-claude-code"
+        },
+        {
+          "type": "article",
+          "title": "Vibe Coding Best Practices: How To Get Consistent Results",
+          "url": "https://roadmap.sh/vibe-coding/best-practices"
+        },
+        {
+          "type": "article",
+          "title": "What are your \"best practices\" for Claude Code? : r/ClaudeCode",
+          "url": "https://www.reddit.com/r/ClaudeCode/comments/1nris9w/what_are_your_best_practices_for_claude_code/"
+        },
+        {
+          "type": "article",
+          "title": "How I use Claude Code (+ my best tips)",
+          "url": "https://www.builder.io/blog/claude-code"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "resume": {
+      "title": "Resume",
+      "sourceId": "0HKJlqhoSCMNKf1lRIEy1",
+      "type": "subtopic",
+      "order": 55,
+      "summary": "To resume a conversation in Claude Code, you can use the terminal command `claude --continue` (or `-c`) to instantly pick up the most recent session in your current directory, or `claude --resume` (or `-r`) to open an interactive session picker. This picker allows you to browse past conversations and select one using your arrow keys and the Enter key. If you know a specific session ID, you can bypass the menu by running `claude --resume <session_id>`. Once inside a session, you can also use the `/resume` slash command to switch between conversations without exiting the tool.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Resume previous conversations",
+          "url": "https://code.claude.com/docs/en/common-workflows#resume-previous-conversations"
+        },
+        {
+          "type": "official",
+          "title": "Resume conversations",
+          "url": "https://code.claude.com/docs/en/best-practices#resume-conversations"
+        }
+      ],
+      "parents": [
+        "manageSessions"
+      ],
+      "children": []
+    },
+    "rewind2": {
+      "title": "Rewind",
+      "sourceId": "cW0a112UVj2M3wBDA8UDj",
+      "type": "subtopic",
+      "order": 56,
+      "summary": "To rewind a conversation in Claude Code, you can use the `/rewind` slash command or the `Esc + Esc` keyboard shortcut to open the interactive checkpoint menu. This feature leverages the tool's automatic snapshotting, which creates a restore point for every user prompt and file modification throughout your session.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Rewind and summarize",
+          "url": "https://code.claude.com/docs/en/checkpointing#rewind-and-summarize"
+        },
+        {
+          "type": "official",
+          "title": "Rewind with checkpoints",
+          "url": "https://code.claude.com/docs/en/best-practices#rewind-with-checkpoints"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Checkpoints: 5 Patterns for Disaster Recovery | Medium",
+          "url": "https://alirezarezvani.medium.com/claude-code-rewind-5-patterns-after-a-3-hour-disaster-a9de9bce0372"
+        }
+      ],
+      "parents": [
+        "manageSessions"
+      ],
+      "children": []
+    },
+    "claudeCommands": {
+      "title": "claude Commands",
+      "sourceId": "egjBTPFbDwBTE1_twG8zM",
+      "type": "label",
+      "order": 57,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "usage",
+        "cost",
+        "export"
+      ]
+    },
+    "help": {
+      "title": "/help",
+      "sourceId": "I4i_fKzuBy5pTC0JXyEl-",
+      "type": "subtopic",
+      "order": 58,
+      "summary": "The `/help` command is an interactive directory that provides a comprehensive list of all available slash commands, keyboard shortcuts, and system features. When you type it, Claude Code displays a searchable guide that explains how to use tools such as context management, file mentions, and permission modes. It is designed to be a quick-access manual that helps you discover advanced functionality or refresh your memory of syntax without leaving your terminal or consulting external documentation.",
+      "video": {
+        "title": "Claude Code Tutorial #6 - Slash Commands",
+        "url": "https://www.youtube.com/watch?v=52KBhQqqHuc&t=1s"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        }
+      ],
+      "parents": [
+        "claudeAddDir"
+      ],
+      "children": []
+    },
+    "usage": {
+      "title": "/usage",
+      "sourceId": "CPJulmusiWq3JQ6MmEJ0I",
+      "type": "subtopic",
+      "order": 59,
+      "summary": "The `/usage` command is a specialized diagnostic tool designed specifically for users on Claude Pro or Claude Max subscription plans. Since these plans have unified limits, the command provides a real-time status report of your remaining capacity instead of monetary costs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        }
+      ],
+      "parents": [
+        "claudeCommands"
+      ],
+      "children": []
+    },
+    "howToStructure": {
+      "title": "How to Structure",
+      "sourceId": "7ZD0nOke-7vqaibxBx24Y",
+      "type": "subtopic",
+      "order": 60,
+      "summary": "To write an effective CLAUDE.md, you should treat it as a concise, persistent \"source of truth\" that provides Claude with the project-specific context it cannot infer from the code alone. The file should be kept short and human-readable, focusing on non-obvious information like unique bash commands for building and testing, repository-specific code styles, and architectural decisions.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Write an effective CLAUDE.md",
+          "url": "https://code.claude.com/docs/en/best-practices#write-an-effective-claude-md"
+        },
+        {
+          "type": "article",
+          "title": "How to structure your CLAUDE.md file",
+          "url": "https://www.builder.io/blog/claude-md-guide"
+        },
+        {
+          "type": "article",
+          "title": "How we structure our CLAUDE.md file (and why) : r/ClaudeAI",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1mecx5t/how_we_structure_our_claudemd_file_and_why/"
+        },
+        {
+          "type": "article",
+          "title": "# Writing a good CLAUDE.md",
+          "url": "https://www.humanlayer.dev/blog/writing-a-good-claude-md"
+        }
+      ],
+      "parents": [
+        "claudeMd2"
+      ],
+      "children": []
+    },
+    "claudeMd2": {
+      "title": "CLAUDE.md",
+      "sourceId": "TCWd5vobMAhP7I97Q1rTq",
+      "type": "topic",
+      "order": 61,
+      "summary": "CLAUDE.md is a project-specific markdown file that acts as the \"persistent memory\" and onboarding manual for Claude Code, ensuring the AI adheres to your unique development standards across every session. Since Claude begins each new interaction with a blank context, this file is automatically read at launch to provide essential project \"WHY, WHAT, and HOW\".",
+      "video": {
+        "title": "How to Use CLAUDE.md in Claude Code in 5 Minutes",
+        "url": "https://www.youtube.com/watch?v=h7QJL2_gEXA"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Manage Claude's memory",
+          "url": "https://code.claude.com/docs/en/memory#manage-claudes-memory"
+        },
+        {
+          "type": "article",
+          "title": "The Complete Guide to CLAUDE.md",
+          "url": "https://www.builder.io/blog/claude-md-guide"
+        },
+        {
+          "type": "article",
+          "title": "What is the point of\u00a0CLAUDE.md? : r/ClaudeAI",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1nokaln/what_is_the_point_of_claudemd/"
+        }
+      ],
+      "parents": [
+        "claudeWorkflow"
+      ],
+      "children": [
+        "howToStructure",
+        "locations",
+        "skills2"
+      ]
+    },
+    "clear": {
+      "title": "/clear",
+      "sourceId": "N4YM2lqDcic5AiYgv0eRZ",
+      "type": "subtopic",
+      "order": 62,
+      "summary": "The `/clear` command is a utility tool that removes all previous messages, tool outputs, and file contents from the active conversation history. It wipes the current context, allowing you to start a fresh dialogue with the AI without exiting the application or losing your current working directory settings. This is particularly useful for reducing token costs and preventing \"context drift,\" where the AI might become confused by old instructions or irrelevant code snippets from a previous task.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Context Guide: Master CLAUDE.md & /clear",
+          "url": "https://www.arsturn.com/blog/beyond-prompting-a-guide-to-managing-context-in-claude-code"
+        },
+        {
+          "type": "article",
+          "title": "In claude code, what is the difference between doing /clear and starting a new chat? : r/ClaudeAI",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1myr717/in_claude_code_what_is_the_difference_between/"
+        }
+      ],
+      "parents": [
+        "claudeAddDir"
+      ],
+      "children": []
+    },
+    "cost": {
+      "title": "/cost",
+      "sourceId": "vw9cc6_33nHnNPNyhLo_d",
+      "type": "subtopic",
+      "order": 63,
+      "summary": "The `/cost` command is a financial monitoring tool that provides a real-time snapshot of the monetary expenses and token usage for your active session. While the `/usage` command focuses on how much of your context window is occupied, /cost translates that activity into USD amounts, showing you exactly how much your current conversation has cost based on your API pricing tier.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Using the /cost command",
+          "url": "https://code.claude.com/docs/en/costs"
+        }
+      ],
+      "parents": [
+        "claudeCommands"
+      ],
+      "children": []
+    },
+    "locations": {
+      "title": "Locations",
+      "sourceId": "Ho_DTKqMZnx_nlxjWfrW2",
+      "type": "subtopic",
+      "order": 64,
+      "summary": "Claude Code manages instructions through a hierarchical memory system that layers context based on the directory structure of your project. At the start of every session, Claude recursively searches from your current working directory up to the root, automatically loading global preferences from `~/.claude/CLAUDE.md` and shared team standards from the project root's `CLAUDE.md`. Claude also supports progressive disclosure via subdirectory CLAUDE.md files.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Write an effective CLAUDE.md",
+          "url": "https://code.claude.com/docs/en/best-practices"
+        },
+        {
+          "type": "official",
+          "title": "Determine memory type",
+          "url": "https://code.claude.com/docs/en/memory#determine-memory-type"
+        },
+        {
+          "type": "article",
+          "title": "The Complete Guide to CLAUDE.md",
+          "url": "https://www.builder.io/blog/claude-md-guide"
+        }
+      ],
+      "parents": [
+        "claudeMd2"
+      ],
+      "children": []
+    },
+    "exit": {
+      "title": "/exit",
+      "sourceId": "MjZUaSJLSU5nDMgDJaWUh",
+      "type": "subtopic",
+      "order": 65,
+      "summary": "The `/exit` command is a built-in utility used to safely terminate your current Claude Code session and return you to your standard terminal prompt. Unlike force-quitting the application, using this command ensures that the system performs a clean shutdown, which includes saving your conversation history and updating any local session metadata so that you can resume your work later using the `claude -c` flag.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        }
+      ],
+      "parents": [
+        "claudeAddDir"
+      ],
+      "children": []
+    },
+    "export": {
+      "title": "/export",
+      "sourceId": "eLlCNxa6bqQW0JsHxIdOa",
+      "type": "subtopic",
+      "order": 66,
+      "summary": "The `/export` command is a data utility that allows you to save your entire current conversation history into a single file on your local machine. This command generates a Markdown-formatted document containing all your prompts, the AI's responses, and the results of any code changes or terminal commands executed during the session. It is designed for documentation and knowledge sharing, enabling you to archive successful debugging sessions, create project reports, or share a complex implementation logic with teammates who do not have access to your local terminal history.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "article",
+          "title": "1.0.44 has new /export command : r/ClaudeAI",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1lw5r1l/1044_has_new_export_command/"
+        }
+      ],
+      "parents": [
+        "claudeCommands"
+      ],
+      "children": []
+    },
+    "status": {
+      "title": "/status",
+      "sourceId": "PS0GH8e9sW9N4s3UeHhjH",
+      "type": "subtopic",
+      "order": 67,
+      "summary": "The `/status` command is an interactive dashboard that provides a comprehensive overview of your current session's health and system configuration. Unlike the `/statusline` command, which places a permanent information bar at the bottom of your terminal, `/status` opens a temporary, tabbed interface that displays detailed metrics such as your Claude Code version, the specific AI model in use, active account details, and real-time usage limits. It is designed for one-off checks to verify connection stability or to monitor your daily and weekly token quotas before starting a large coding task.",
+      "video": {
+        "title": "Your Claude Code Terminal Should Look Like This",
+        "url": "https://www.youtube.com/watch?v=fiZfVTsPy-w"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Customize your status line",
+          "url": "https://code.claude.com/docs/en/statusline"
+        }
+      ],
+      "parents": [
+        "claudeAddDir"
+      ],
+      "children": []
+    },
+    "rewind": {
+      "title": "/rewind",
+      "sourceId": "-K5K7yT97VRC7u0IOzJyT",
+      "type": "subtopic",
+      "order": 68,
+      "summary": "The `/rewind` command is a history management tool that allows you to undo recent turns in your conversation. When executed, it removes the most recent prompt and response from the active context, effectively \"winding back\" the session to a previous state. This is particularly useful if the AI misunderstood a complex instruction or if a code generation task went in the wrong direction, as it allows you to re-issue the command with better clarity without the baggage of the failed attempt cluttering the model's memory or inflating your token usage.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commadns",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Checkpointing",
+          "url": "https://code.claude.com/docs/en/checkpointing"
+        },
+        {
+          "type": "article",
+          "title": "Rewind Changes Instantly with Checkpoints",
+          "url": "https://wmedia.es/en/tips/rewind-changes-instantly-with-checkpoints"
+        }
+      ],
+      "parents": [
+        "claudeAddDir"
+      ],
+      "children": []
+    },
+    "creatingSkills": {
+      "title": "Creating Skills",
+      "sourceId": "6WsAQV_e_2XJKl2KlN2dl",
+      "type": "subtopic",
+      "order": 69,
+      "summary": "To create a custom skill in Claude Code, you must establish a new folder within the `.claude/skills/` directory containing a `SKILL.md` file that defines the skill's identity and logic. This file begins with a YAML frontmatter block containing a unique `name` and a detailed `description`, which Claude uses as a trigger to \"know\" when to activate the skill, and can include an optional `disable-model-invocation: true` flag if you want the skill to run as a manual, deterministic workflow rather than an autonomous one.",
+      "video": {
+        "title": "Claude Code Skills & skills.sh - Crash Course",
+        "url": "https://www.youtube.com/watch?v=rcRS8-7OgBo"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Agent Skills with Anthropic",
+          "url": "https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/"
+        },
+        {
+          "type": "official",
+          "title": "Extend Claude with skills",
+          "url": "https://code.claude.com/docs/en/skills#extend-claude-with-skills"
+        },
+        {
+          "type": "official",
+          "title": "How to create custom Skills",
+          "url": "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills"
+        },
+        {
+          "type": "article",
+          "title": "Build Your First Claude Code Agent Skill: A Simple Project Memory System That Saves Hours",
+          "url": "https://pub.spillwave.com/build-your-first-claude-code-skill-a-simple-project-memory-system-that-saves-hours-1d13f21aff9e"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "skills2"
+      ]
+    },
+    "skills2": {
+      "title": "Skills",
+      "sourceId": "OJIfG7DRO4jgQEcberkNx",
+      "type": "topic",
+      "order": 70,
+      "summary": "In Claude Code, Skills are self-contained folders of \"expert knowledge\" and repeatable workflows that Claude loads dynamically into its context only when the task requires it. Each skill is anchored by a `SKILL.md` file containing YAML frontmatter, which helps Claude identify the skill's purpose without bloating the context window, and a body of specific instructions",
+      "video": {
+        "title": "Claude Code Skills & skills.sh - Crash Course",
+        "url": "https://www.youtube.com/watch?v=rcRS8-7OgBo"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Agent Skills with Anthropic",
+          "url": "https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/"
+        },
+        {
+          "type": "course",
+          "title": "Introduction to agent skills",
+          "url": "https://anthropic.skilljar.com/introduction-to-agent-skills"
+        },
+        {
+          "type": "official",
+          "title": "Extend Claude with skills",
+          "url": "https://code.claude.com/docs/en/skills#extend-claude-with-skills"
+        },
+        {
+          "type": "official",
+          "title": "The Complete Guide to Building Skills for Claude",
+          "url": "https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en"
+        }
+      ],
+      "parents": [
+        "claudeMd2",
+        "creatingSkills",
+        "skillBestPractices"
+      ],
+      "children": [
+        "doctor",
+        "subagents"
+      ]
+    },
+    "plan": {
+      "title": "/plan",
+      "sourceId": "3ZYaw7kTiErPiLVwMf3J8",
+      "type": "subtopic",
+      "order": 71,
+      "summary": "Plan Mode is a read-only environment that allows the AI to research, analyze, and outline a multi-step strategy for a task without making any actual changes to your files or executing state-altering commands. When you enter this mode\u2014either by typing `/plan` or pressing `Shift+Tab`\u2014the assistant focuses on gathering context and identifying dependencies to create a detailed implementation document. This serves as a safety gate where you can review and edit the proposed approach (using `Ctrl+G` to open the plan file) before giving the final approval to transition into an execution mode to apply the changes.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Use Plan Mode for safe code analysis",
+          "url": "https://code.claude.com/docs/en/common-workflows#use-plan-mode-for-safe-code-analysis"
+        },
+        {
+          "type": "article",
+          "title": "What Actually Is Claude Code\u2019s Plan Mode?",
+          "url": "https://lucumr.pocoo.org/2025/12/17/what-is-plan-mode/"
+        }
+      ],
+      "parents": [
+        "claudeAddDir"
+      ],
+      "children": []
+    },
+    "doctor": {
+      "title": "/doctor",
+      "sourceId": "IzHlnmGAqG1lpwuX1Oh4p",
+      "type": "subtopic",
+      "order": 72,
+      "summary": "The `/doctor` command is a diagnostic utility used to troubleshoot and verify the health of your Claude Code installation and its environment. When executed, it runs a series of automated checks to ensure that your authentication tokens are valid, your network connection to the Anthropic servers is stable, and all required system dependencies\u2014like Git and Node.js\u2014are correctly configured. If the tool detects an issue, such as a missing binary or an expired session, it provides a detailed error report and suggested steps to resolve the problem immediately.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Installation Guide: Using irm Script, npm Setup, and https://claude.ai/install.ps1 Script",
+          "url": "https://vibecodingwithfred.com/blog/claude-code-installation-guide/"
+        }
+      ],
+      "parents": [
+        "skills2"
+      ],
+      "children": []
+    },
+    "skillBestPractices": {
+      "title": "Skill Best Practices",
+      "sourceId": "5uIBv9rk7Wzc_bXny0B27",
+      "type": "subtopic",
+      "order": 73,
+      "summary": "When configuring Claude Code skills, the primary best practice is to optimize for discoverability and context efficiency by using precise YAML frontmatter and \"lazy loading.\" Your skill's `description` should act as a clear semantic trigger, using specific keywords that help Claude identify exactly when to activate the expert instructions without bloating the context window of every conversation. Structure the `SKILL.md` with a narrow, modular focus rather than creating a \"Swiss Army Knife\" skill; if a workflow has non-negotiable side effects, use `disable-model-invocation: true` to ensure it only runs when manually triggered via a slash command. Additionally, leverage argument placeholders (like `$ARGUMENTS`) to make your skills reusable across different files, and store them in the project\u2019s `.claude/skills/` directory so they are version-controlled and shared with your team. Finally, keep skill instructions deterministic by providing step-by-step tool sequences, which ensures Claude follows your project\u2019s \"golden path\" for complex tasks like deployments or security audits.",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "skills2"
+      ]
+    },
+    "sessionCommands": {
+      "title": "Session Commands",
+      "sourceId": "dXT7DZQW3DyA4VQjiEemb",
+      "type": "label",
+      "order": 74,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "context2",
+        "compact",
+        "init",
+        "memory"
+      ]
+    },
+    "context2": {
+      "title": "/context",
+      "sourceId": "6UHAXR4praMqGiEUgWAt8",
+      "type": "subtopic",
+      "order": 75,
+      "summary": "The `/context` command is a diagnostic tool that provides a technical breakdown of how the model's context window is currently allocated, using a colored grid. While commands like `/usage` show you the \"how much,\" `/context` shows you the \"what.\" It lists every file, conversation turn, and tool result currently being held in the AI's active memory, allowing you to see exactly which resources are consuming tokens.",
+      "video": {
+        "title": "3 Ways to Fix Claude Code's Context",
+        "url": "https://www.youtube.com/watch?v=yBLwsBKPYSw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "article",
+          "title": "Monitor Token Usage with the /context Command",
+          "url": "https://wmedia.es/en/tips/claude-code-context-command-token-usage"
+        }
+      ],
+      "parents": [
+        "sessionCommands"
+      ],
+      "children": []
+    },
+    "compact": {
+      "title": "/compact",
+      "sourceId": "65s0P7d39fFR2yhy4JKEZ",
+      "type": "subtopic",
+      "order": 76,
+      "summary": "The `/compact` command is a context management tool designed to optimize your session's memory when the context window begins to fill up. Instead of completely wiping your history like `/clear`, `/compact` instructs Claude to generate a concise summary of the key decisions, code changes, and project state established so far. It then replaces the bulky, line-by-line conversation history with this summarized version, effectively \"compressing\" the tokens used while preserving the essential knowledge the AI needs to continue the task.",
+      "video": {
+        "title": "3 Ways to Fix Claude Code's Context",
+        "url": "https://www.youtube.com/watch?v=yBLwsBKPYSw"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "article",
+          "title": "What Actually Happens When You Run /compact in Claude Code",
+          "url": "https://dev.to/rigby_/what-actually-happens-when-you-run-compact-in-claude-code-3kl9"
+        }
+      ],
+      "parents": [
+        "sessionCommands"
+      ],
+      "children": []
+    },
+    "subagents": {
+      "title": "Subagents",
+      "sourceId": "EsbasCHDQOBZcBfHIrTbE",
+      "type": "topic",
+      "order": 77,
+      "summary": "Subagents are specialized AI assistants that function as independent \"team members\" to handle focused tasks on behalf of the main agent. Each subagent operates within its own isolated context window, meaning it starts with a clean slate and does not clutter your primary conversation with large amounts of intermediate research or technical logs.",
+      "video": {
+        "title": "Claude Code NEW Sub Agents in 7 Minutes",
+        "url": "https://www.youtube.com/watch?v=DNGxMX7ym44&pp=ygUVY2xhdWRlIGNvZGUgc3ViYWdlbnRz"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Create custom subagents",
+          "url": "https://code.claude.com/docs/en/sub-agents"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Subagents: Complete Guide to Multi-Agent Architecture",
+          "url": "https://wmedia.es/en/writing/claude-code-subagents-guide-ai"
+        },
+        {
+          "type": "article",
+          "title": "Building with Claude Code Subagents (My Beloved Minions) | by Yee Fei | Medium",
+          "url": "https://medium.com/@ooi_yee_fei/building-with-claude-code-subagents-my-beloved-minions-b5a9a4318ba5"
+        },
+        {
+          "type": "article",
+          "title": "99% of Developers Haven\u2019t Seen Claude Code Sub Agents (It Changes Everything)",
+          "url": "https://medium.com/vibe-coding/99-of-developers-havent-seen-claude-code-sub-agents-it-changes-everything-c8b80ed79b97"
+        }
+      ],
+      "parents": [
+        "skills2"
+      ],
+      "children": [
+        "creatingSubagents",
+        "hooks3"
+      ]
+    },
+    "creatingSubagents": {
+      "title": "Creating Subagents",
+      "sourceId": "HnrD1-Wc39ZRH5R6bptqX",
+      "type": "subtopic",
+      "order": 78,
+      "summary": "To create a Subagent in Claude Code, you must define a specialized assistant within a Markdown file located in the `.claude/agents/` directory, using YAML frontmatter to specify its `name`, `description`, `model`, and a restricted set of `tools`.",
+      "video": {
+        "title": "Claude Code Tutorial #8 - Subagents",
+        "url": "https://www.youtube.com/watch?v=Phr7vBx9yFQ"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Create custom subagents",
+          "url": "https://code.claude.com/docs/en/sub-agents"
+        },
+        {
+          "type": "article",
+          "title": "Building with Claude Code Subagents (My Beloved Minions)",
+          "url": "https://medium.com/@ooi_yee_fei/building-with-claude-code-subagents-my-beloved-minions-b5a9a4318ba5"
+        }
+      ],
+      "parents": [
+        "subagents"
+      ],
+      "children": []
+    },
+    "init": {
+      "title": "/init",
+      "sourceId": "oucDNnTIc8gv3dlEibDB2",
+      "type": "subtopic",
+      "order": 79,
+      "summary": "The `/init` command is the initialization utility used to set up Claude Code for a specific project directory. When you run this command, it creates a CLAUDE.md file in your current folder. This file serves as the \"foundation\" for the assistant, allowing you to define project-specific coding standards, build commands, and test suites that Claude will automatically reference in every future session within that repository.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Write an effective CLAUDE.md",
+          "url": "https://code.claude.com/docs/en/best-practices#write-an-effective-claude-md"
+        },
+        {
+          "type": "article",
+          "title": "Build your own /init command like Claude Code",
+          "url": "https://kau.sh/blog/build-ai-init-command/"
+        }
+      ],
+      "parents": [
+        "sessionCommands"
+      ],
+      "children": []
+    },
+    "memory": {
+      "title": "/memory",
+      "sourceId": "l7ECu0Q5bW9_OgVH7Ih4S",
+      "type": "subtopic",
+      "order": 80,
+      "summary": "The `/memory` command is a knowledge management tool used to create and manage persistent information that survives across different Claude Code sessions. Unlike the `/compact` command, which only optimizes the current conversation's temporary window, `/memory` interacts with permanent storage\u2014primarily your project's CLAUDE.md file and a hidden auto-memory directory. When you run this command, it typically opens your system's default text editor, allowing you to manually refine the coding standards, architectural decisions, and project-specific patterns that Claude should \"remember\" every time you launch the tool in that directory.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Manage Claude's memory",
+          "url": "https://code.claude.com/docs/en/memory#directly-edit-memories-with-memory"
+        }
+      ],
+      "parents": [
+        "sessionCommands"
+      ],
+      "children": []
+    },
+    "contextMemory": {
+      "title": "Context & Memory",
+      "sourceId": "yDGvlRu3ONNhIs_WAIEgG",
+      "type": "label",
+      "order": 81,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "config",
+        "permissions",
+        "model",
+        "agents",
+        "hooks2",
+        "mcp"
+      ]
+    },
+    "hookEventsMatchers": {
+      "title": "Hook Events & Matchers",
+      "sourceId": "nq8aLrgh7qNQnwZbS7d9Z",
+      "type": "subtopic",
+      "order": 82,
+      "summary": "In Claude Code, Hook Events represent the specific lifecycle moments when custom logic can be triggered, while Matchers act as the regex-based filters that determine which specific actions within those moments should fire the hook.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hook Events",
+          "url": "https://code.claude.com/docs/en/hooks#hook-events"
+        },
+        {
+          "type": "official",
+          "title": "Event Matchers",
+          "url": "https://code.claude.com/docs/en/hooks#matcher-patterns"
+        },
+        {
+          "type": "article",
+          "title": "Hooks: Automating Event Reactions",
+          "url": "https://angelo-lima.fr/en/claude-code-hooks/"
+        }
+      ],
+      "parents": [
+        "hooks3"
+      ],
+      "children": []
+    },
+    "config": {
+      "title": "/config",
+      "sourceId": "UOSXh1o8bRY8Wcm6uYIgR",
+      "type": "subtopic",
+      "order": 83,
+      "summary": "The `/config` command is the central management tool for customizing your Claude Code experience and fine-tuning how the assistant interacts with your system. Running this command opens an interactive menu\u2014or allows for direct terminal arguments\u2014to modify global and project-specific settings such as default models, theme preferences, and permission levels.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Claude Code settings",
+          "url": "https://code.claude.com/docs/en/settings"
+        }
+      ],
+      "parents": [
+        "contextMemory"
+      ],
+      "children": []
+    },
+    "permissions": {
+      "title": "/permissions",
+      "sourceId": "8rKpgtmO92EUFAKlWVuO5",
+      "type": "subtopic",
+      "order": 84,
+      "summary": "The `/permissions` command is a security management interface that allows you to view and adjust the rules governing what Claude can and cannot do on your machine. By default, Claude Code operates with a \"human-in-the-loop\" philosophy, meaning it asks for your approval before performing any action that could affect your system\u2014such as modifying a file or running a terminal command. The `/permissions` command allows you to grant \"permanent\" trust to specific tools or commands, reducing the number of interruptions during your workflow.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Manage permissions",
+          "url": "https://code.claude.com/docs/en/permissions"
+        }
+      ],
+      "parents": [
+        "contextMemory"
+      ],
+      "children": []
+    },
+    "hooks3": {
+      "title": "Hooks",
+      "sourceId": "801KNtjf61FTiLS1yrDSB",
+      "type": "topic",
+      "order": 85,
+      "summary": "Hooks are automated triggers that execute specific scripts or commands at key points in the AI's workflow, such as before or after the assistant performs a task. These hooks allow developers to enforce project standards and ensure system reliability without manual intervention, much like Git hooks but designed for an AI-driven development cycle.",
+      "video": {
+        "title": "How Claude Code Hooks Save Me HOURS Daily",
+        "url": "https://www.youtube.com/watch?v=Q4gsvJvRjCU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Automate workflows with hooks - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/hooks-guide"
+        },
+        {
+          "type": "article",
+          "title": "Automate Your AI Workflows with Claude Code Hooks | Butler's Log",
+          "url": "https://blog.gitbutler.com/automate-your-ai-workflows-with-claude-code-hooks"
+        }
+      ],
+      "parents": [
+        "subagents",
+        "hookTypes"
+      ],
+      "children": [
+        "hookEventsMatchers",
+        "hookInputsOutputs",
+        "manageContext"
+      ]
+    },
+    "hookTypes": {
+      "title": "Hook Types",
+      "sourceId": "uC2PkMsCK-vaBo5Ygha2P",
+      "type": "subtopic",
+      "order": 86,
+      "summary": "In Claude Code, you can configure three distinct handler types for your hooks\u2014Command, Prompt, and Agent\u2014depending on whether you need a script, an AI \"judgement call,\" or a specialized researcher to validate actions. Command hooks (`type: \"command\"`) are deterministic shell scripts that execute standard commands (like `npm run lint`) and use exit codes to either approve the action or block it with an error message. Prompt hooks (`type: \"prompt\"`) use a lightweight Claude model for single-turn evaluation, where the model analyzes the context (e.g., \"Is this commit message descriptive?\") and returns a simple JSON yes/no decision. Finally, Agent hooks (`type: \"agent\"`) are the most sophisticated, spawning a multi-turn subagent with tool access (like `Read` or `Grep`) to conduct deep, autonomous verification before deciding if the main agent should proceed.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hook Types",
+          "url": "https://code.claude.com/docs/en/hooks"
+        },
+        {
+          "type": "official",
+          "title": "Prompt-based hooks",
+          "url": "https://code.claude.com/docs/en/hooks-guide#prompt-based-hooks"
+        },
+        {
+          "type": "official",
+          "title": "Agent-based hooks",
+          "url": "https://code.claude.com/docs/en/hooks-guide#agent-based-hooks"
+        },
+        {
+          "type": "official",
+          "title": "Automate workflows with hooks",
+          "url": "https://code.claude.com/docs/en/hooks-guide"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "hooks3"
+      ]
+    },
+    "model": {
+      "title": "/model",
+      "sourceId": "NMBBRdBWwCphjwQuFAp9W",
+      "type": "subtopic",
+      "order": 87,
+      "summary": "The `/model` command is a switcher utility that allows you to change which large language model (LLM) is powering your current session without restarting the application. This is particularly useful for cost-performance optimization; you can use a high-intelligence model like Claude Sonnet for complex architectural planning and then switch to a faster, cheaper model like Claude Haiku for repetitive tasks like writing boilerplate code or unit tests.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Model configuration",
+          "url": "https://code.claude.com/docs/en/model-config#setting-your-model"
+        }
+      ],
+      "parents": [
+        "contextMemory"
+      ],
+      "children": []
+    },
+    "agents": {
+      "title": "/agents",
+      "sourceId": "sx2GRmZbQEYxeb05HpHQH",
+      "type": "subtopic",
+      "order": 88,
+      "summary": "The `/agents` command is a specialized management interface used to create, configure, and orchestrate sub-agents within your Claude Code environment. This command transitions from a single-assistant model to a multi-agent workflow, allowing you to delegate specific types of work\u2014like security auditing, unit testing, or architectural planning\u2014to \"specialists\" that have their own isolated context windows and tailored system prompts.",
+      "video": {
+        "title": "Claude Code NEW Sub Agents in 7 Minutes",
+        "url": "https://www.youtube.com/watch?v=DNGxMX7ym44"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Create custom subagents",
+          "url": "https://code.claude.com/docs/en/sub-agents#use-the-agents-command"
+        },
+        {
+          "type": "official",
+          "title": "Agents flag format",
+          "url": "https://code.claude.com/docs/en/cli-reference"
+        }
+      ],
+      "parents": [
+        "contextMemory"
+      ],
+      "children": []
+    },
+    "hookInputsOutputs": {
+      "title": "Hook Inputs & Outputs",
+      "sourceId": "Gwsh4g1SxI2hJcS84p9it",
+      "type": "subtopic",
+      "order": 89,
+      "summary": "Hooks communicate via a standardized JSON interface: Inputs are passed to the hook via `stdin`, and Outputs are returned via `stdout` to influence the agent's next move. The input payload typically includes a `context` object containing session metadata and event-specific data, such as the `tool` name and its arguments (e.g., the exact code being written or command being run). To respond, your hook must return a JSON object.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hook Inputs & Outputs",
+          "url": "https://code.claude.com/docs/en/hooks#hook-input-and-output"
+        }
+      ],
+      "parents": [
+        "hooks3"
+      ],
+      "children": []
+    },
+    "hooks2": {
+      "title": "/hooks",
+      "sourceId": "OTpU2G6mnbkFhthKAkxlM",
+      "type": "subtopic",
+      "order": 90,
+      "summary": "The `/hooks` command opens an interactive management menu for configuring automated workflows that trigger at specific points in the Claude Code lifecycle. While features like `CLAUDE.md` provide \"soft\" instructions, hooks offer deterministic control, ensuring that specific shell commands or AI evaluations run every single time a certain event occurs\u2014such as formatting code after an edit or sending a notification when Claude needs your attention.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Hooks reference",
+          "url": "https://code.claude.com/docs/en/hooks"
+        },
+        {
+          "type": "official",
+          "title": "The /hooks menu",
+          "url": "https://code.claude.com/docs/en/hooks#the-hooks-menu"
+        }
+      ],
+      "parents": [
+        "contextMemory"
+      ],
+      "children": []
+    },
+    "mcp": {
+      "title": "/mcp",
+      "sourceId": "Lyl4h5cvdY1YVpzBo_LEB",
+      "type": "subtopic",
+      "order": 91,
+      "summary": "The `/mcp` command is the integration hub for the Model Context Protocol, an open standard that connects Claude Code to external data sources and third-party tools. While you use the terminal command `claude mcp add` to install a new server, the `/mcp` slash command is used inside the session to manage those connections, authorize permissions, and view the specific capabilities (tools) available to the AI.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Built-in commands",
+          "url": "https://code.claude.com/docs/en/interactive-mode"
+        },
+        {
+          "type": "official",
+          "title": "Connect Claude Code to tools via MCP",
+          "url": "https://code.claude.com/docs/en/mcp"
+        }
+      ],
+      "parents": [
+        "contextMemory"
+      ],
+      "children": []
+    },
+    "manageContext": {
+      "title": "Manage Context",
+      "sourceId": "8fXu3OX3xfwr3NTAIHU0z",
+      "type": "topic",
+      "order": 92,
+      "summary": "Active management of the context window is the single most effective way to ensure reliable model performance and predictable operational costs, as Claude Code is billed based on the total number of tokens processed in each turn. Because the tool re-reads the entire conversation history with every new message to maintain state, unmanaged sessions can quickly balloon in size, leading to \"context rot\" where the model loses track of early instructions or struggles with \"lost-in-the-middle\" accuracy degradation.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Manage costs effectively",
+          "url": "https://code.claude.com/docs/en/costs#reduce-token-usage"
+        }
+      ],
+      "parents": [
+        "hooks3",
+        "advancedClaudeCode"
+      ],
+      "children": [
+        "understandClaudePricing",
+        "useCompactAndClear",
+        "beMindfulOfExtensions",
+        "useSubagentsAndHooks",
+        "thinkingModesEffort",
+        "promptCaching"
+      ]
+    },
+    "understandClaudePricing": {
+      "title": "Understand Claude Pricing",
+      "sourceId": "SCbZprU9r8BIX4BoyjYPE",
+      "type": "subtopic",
+      "order": 93,
+      "summary": "Claude Code offers a flexible, dual-path pricing model designed to accommodate both individual power users and high-scale enterprise teams. You can access the tool through a fixed-rate subscription (such as the Pro or Max plans), which provides a generous recurring allocation of messages shared across the web interface and the terminal, making costs predictable for daily development. Alternatively, you can use a pay-as-you-go API model, where you are billed based on the total number of \"tokens\" (small units of text) processed in each interaction.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Pricing",
+          "url": "https://claude.com/pricing"
+        },
+        {
+          "type": "official",
+          "title": "Pricing in detail",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+        },
+        {
+          "type": "article",
+          "title": "Claude Pricing Explained: Subscription Plans & API Costs",
+          "url": "https://intuitionlabs.ai/articles/claude-pricing-plans-api-costs"
+        }
+      ],
+      "parents": [
+        "manageContext"
+      ],
+      "children": []
+    },
+    "configuration": {
+      "title": "Configuration",
+      "sourceId": "uyqx658gq2SbyvCeiA6jk",
+      "type": "label",
+      "order": 94,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "sessionstart",
+        "sessionend",
+        "pretooluse",
+        "posttooluse",
+        "userpromptsubmit",
+        "stop"
+      ]
+    },
+    "useCompactAndClear": {
+      "title": "Use /compact and /clear",
+      "sourceId": "YjRDJcSK_h82DooDWY2k4",
+      "type": "subtopic",
+      "order": 95,
+      "summary": "Regularly using `/compact` and `/clear` is the most effective way to prevent \"context rot\" and manage spiraling API costs while working with Claude Code. Because Claude re-processes your entire conversation history with every new message, a session that has accumulated thousands of lines of terminal output and file diffs will eventually become expensive, slow, and prone to \"forgetting\" early instructions. Using `/compact` allows you to summarize long research or debugging threads into a lean set of key findings, effectively \"zipping\" the conversation so you can continue without losing essential progress. In contrast, `/clear` is vital when switching to an unrelated task; it wipes the current history to provide a clean slate.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "manageContext"
+      ],
+      "children": []
+    },
+    "sessionstart": {
+      "title": "SessionStart",
+      "sourceId": "cMGYb_X1UK8sWI6brFj9S",
+      "type": "subtopic",
+      "order": 96,
+      "summary": "The `SessionStart` hook is an initialization lifecycle event that triggers at the very beginning of a Claude Code interaction. Unlike other hooks that react to specific user prompts or file edits, `SessionStart` is designed to bootstrap your environment and inject high-priority context before the first prompt is even processed.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hooks reference",
+          "url": "https://code.claude.com/docs/en/hooks"
+        },
+        {
+          "type": "official",
+          "title": "Automate workflows with hooks",
+          "url": "https://code.claude.com/docs/en/hooks-guide"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Session Hooks: Make Every Session Start Smart (and End Clean)",
+          "url": "https://medium.com/@CodeCoup/claude-code-session-hooks-make-every-session-start-smart-and-end-clean-e505e6914d45"
+        }
+      ],
+      "parents": [
+        "configuration"
+      ],
+      "children": []
+    },
+    "sessionend": {
+      "title": "SessionEnd",
+      "sourceId": "x5U0F5WWAqnNCC8f-qjr7",
+      "type": "subtopic",
+      "order": 97,
+      "summary": "The `SessionEnd` hook is a teardown lifecycle event that triggers when you exit Claude Code or terminate a session. While `SessionStart` is for preparation, `SessionEnd` is your dedicated window for cleanup, archiving, and final reporting. It ensures that your environment is left in a clean state and that any important session metrics are captured before the process fully closes.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hooks reference",
+          "url": "https://code.claude.com/docs/en/hooks"
+        },
+        {
+          "type": "official",
+          "title": "Automate workflows with hooks",
+          "url": "https://code.claude.com/docs/en/hooks-guide"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Session Hooks: Make Every Session Start Smart (and End Clean)",
+          "url": "https://medium.com/@CodeCoup/claude-code-session-hooks-make-every-session-start-smart-and-end-clean-e505e6914d45"
+        }
+      ],
+      "parents": [
+        "configuration"
+      ],
+      "children": []
+    },
+    "beMindfulOfExtensions": {
+      "title": "Be mindful of extensions",
+      "sourceId": "__3S2Z00hK_g_GQJxv_21",
+      "type": "subtopic",
+      "order": 98,
+      "summary": "Carefully managing extensions, such as MCP servers, skills, and subagents, is vital because every active integration consumes a portion of Claude\u2019s finite context window, and excessive \"context pollution\" can lead to degraded reasoning or higher operational costs.",
+      "video": null,
+      "articles": [
+        {
+          "type": "article",
+          "title": "The Hidden Cost of MCP Servers (And When They're Worth It)",
+          "url": "https://mariogiancini.com/the-hidden-cost-of-mcp-servers-and-when-theyre-worth-it"
+        },
+        {
+          "type": "article",
+          "title": "Claude Skills are awesome, maybe a bigger deal than MCP",
+          "url": "https://simonw.substack.com/p/claude-skills-are-awesome-maybe-a"
+        }
+      ],
+      "parents": [
+        "manageContext"
+      ],
+      "children": []
+    },
+    "pretooluse": {
+      "title": "PreToolUse",
+      "sourceId": "FWf5hyCRo9UQ2QPalLVYn",
+      "type": "subtopic",
+      "order": 99,
+      "summary": "The `PreToolUse` hook is a validation gate that executes immediately after Claude decides to use a tool (like writing a file or running a shell command) but before that tool actually runs. It is primarily used for security, policy enforcement, and input sanitization, acting as a final check to ensure the AI's proposed action is safe and correct.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hooks reference",
+          "url": "https://code.claude.com/docs/en/hooks"
+        },
+        {
+          "type": "official",
+          "title": "Automate workflows with hooks",
+          "url": "https://code.claude.com/docs/en/hooks-guide"
+        },
+        {
+          "type": "article",
+          "title": "Secure Your Claude Skills with Custom PreToolUse Hooks",
+          "url": "https://egghead.io/secure-your-claude-skills-with-custom-pre-tool-use-hooks~dhqko"
+        }
+      ],
+      "parents": [
+        "configuration"
+      ],
+      "children": []
+    },
+    "posttooluse": {
+      "title": "PostToolUse",
+      "sourceId": "TBrr5EscwLZu7cOJoWbPy",
+      "type": "subtopic",
+      "order": 100,
+      "summary": "The `PostToolUse` hook is a reactive lifecycle event that triggers immediately after a tool (like Bash, Write, Edit, or a custom MCP tool) completes its execution. While the `PreToolUse` hook acts as a guard to block actions, the `PostToolUse` hook is designed for automation, cleanup, and quality control\u2014ensuring that every action Claude takes adheres to your project's standards.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hooks reference",
+          "url": "https://code.claude.com/docs/en/hooks"
+        },
+        {
+          "type": "official",
+          "title": "Automate workflows with hooks",
+          "url": "https://code.claude.com/docs/en/hooks-guide"
+        }
+      ],
+      "parents": [
+        "configuration"
+      ],
+      "children": []
+    },
+    "advancedClaudeCode": {
+      "title": "Advanced Claude Code",
+      "sourceId": "_NcZhE2ZuKl1Lrtvr6X2G",
+      "type": "label",
+      "order": 101,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [],
+      "children": [
+        "manageContext",
+        "customizeStatusLine"
+      ]
+    },
+    "useSubagentsAndHooks": {
+      "title": "Use subagents and hooks",
+      "sourceId": "-P9o-aiDM7CDtLimppkjM",
+      "type": "subtopic",
+      "order": 102,
+      "summary": "Subagents and Hooks are powerful architectural tools that manage the context window by practicing \"selective attention,\" ensuring the main conversation stays lean while specialized tasks remain high-precision. Subagents act as isolated \"expert bubbles\" that run in their own independent context windows with restricted toolsets, while Hooks provide a deterministic way to inject or prune context at key lifecycle moments.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Claude Code Subagents: Complete Guide to Multi-Agent Architecture",
+          "url": "https://wmedia.es/en/writing/claude-code-subagents-guide-ai"
+        },
+        {
+          "type": "official",
+          "title": "Automate workflows with hooks",
+          "url": "https://code.claude.com/docs/en/hooks-guide"
+        },
+        {
+          "type": "article",
+          "title": "Delegate verbose operations to subagents",
+          "url": "https://code.claude.com/docs/en/costs#delegate-verbose-operations-to-subagents"
+        }
+      ],
+      "parents": [
+        "manageContext"
+      ],
+      "children": []
+    },
+    "userpromptsubmit": {
+      "title": "UserPromptSubmit",
+      "sourceId": "Zrqdx4Z8uAS5yhI65Xh6z",
+      "type": "subtopic",
+      "order": 103,
+      "summary": "The `UserPromptSubmit` hook is an interception mechanism that fires the moment you press Enter on a prompt, but before the text is actually sent to the Claude model. It is the most powerful tool for prompt engineering automation, allowing you to programmatically rewrite, validate, or enhance your instructions on the fly.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hooks reference",
+          "url": "https://code.claude.com/docs/en/hooks"
+        },
+        {
+          "type": "official",
+          "title": "Automate workflows with hooks",
+          "url": "https://code.claude.com/docs/en/hooks-guide"
+        },
+        {
+          "type": "article",
+          "title": "Rewrite Prompts on the Fly with UserPromptSubmit Hooks",
+          "url": "https://egghead.io/lessons/rewrite-prompts-on-the-fly-with-user-prompt-submit-hooks~76rrt"
+        }
+      ],
+      "parents": [
+        "configuration"
+      ],
+      "children": []
+    },
+    "stop": {
+      "title": "Stop",
+      "sourceId": "v-gjhrW3oVZTe3EpUCjhY",
+      "type": "subtopic",
+      "order": 104,
+      "summary": "The `Stop` hook is a final-stage lifecycle event that triggers when Claude Code believes it has finished its entire response and is about to return control to the user. Unlike `PostToolUse`, which fires after every single file edit or command, the `Stop` hook only runs once at the very end of the interaction \"turn.\"",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Hooks reference",
+          "url": "https://code.claude.com/docs/en/hooks"
+        },
+        {
+          "type": "official",
+          "title": "Automate workflows with hooks",
+          "url": "https://code.claude.com/docs/en/hooks-guide"
+        }
+      ],
+      "parents": [
+        "configuration"
+      ],
+      "children": []
+    },
+    "thinkingModesEffort": {
+      "title": "Thinking modes & Effort",
+      "sourceId": "cdO7pKphZq1qvCeynxGKo",
+      "type": "subtopic",
+      "order": 105,
+      "summary": "Using thinking modes and adjusting effort levels in Claude Code is essential for balancing deep reasoning with operational efficiency. Furthermore, you can fine-tune Claude's cognitive energy using the effort parameter (available through the /model command).",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Adjust effort level",
+          "url": "https://code.claude.com/docs/en/model-config#adjust-ef"
+        },
+        {
+          "type": "official",
+          "title": "Adjust extended thinking",
+          "url": "https://code.claude.com/docs/en/costs#adjust-extended-thinking"
+        },
+        {
+          "type": "official",
+          "title": "Effort",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/effort"
+        },
+        {
+          "type": "official",
+          "title": "Speed up responses with fast mode",
+          "url": "https://code.claude.com/docs/en/fast-mode"
+        }
+      ],
+      "parents": [
+        "manageContext"
+      ],
+      "children": []
+    },
+    "promptCaching": {
+      "title": "Prompt Caching",
+      "sourceId": "Dam_IG339RrYZXjXq3T8_",
+      "type": "subtopic",
+      "order": 107,
+      "summary": "Prompt caching in Claude Code is a performance-optimizing feature that stores the frequently used \"prefixes\" of your conversations\u2014such as your entire codebase state, system instructions, and tool definitions\u2014so they don't have to be reprocessed from scratch with every new message. In an agentic environment where Claude often re-reads your files multiple times to maintain context, caching acts as a \"checkpoint\" system: while the initial write to the cache carries a slight premium, every subsequent interaction that reuses that prefix receives a 90% discount on input tokens and up to an 85% reduction in latency. Claude Code handles this automatically by placing \"cache breakpoints\" at strategic points in the prompt (like after your CLAUDE.md and project structure), ensuring that even as your conversation grows, the \"static\" foundation of your project remains instantly accessible and cost-effective.",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "manageContext"
+      ],
+      "children": []
+    },
+    "customizeStatusLine": {
+      "title": "Customize Status Line",
+      "sourceId": "xEu9-kBz5SbM3Mrrwu446",
+      "type": "topic",
+      "order": 108,
+      "summary": "Claude Code allows you to personalize your terminal environment by customizing the status line, which is the persistent information bar at the bottom of the interface. You can keep essential data like real-time session costs or context usage percentages visible at all times, helping you manage your budget and \"context rot\" without manually running diagnostic commands.",
+      "video": {
+        "title": "Your Claude Code Terminal Should Look Like This",
+        "url": "https://www.youtube.com/watch?v=fiZfVTsPy-w"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Customize Status Line",
+          "url": "https://code.claude.com/docs/en/statusline"
+        }
+      ],
+      "parents": [
+        "advancedClaudeCode"
+      ],
+      "children": []
+    },
+    "skillsForMcp": {
+      "title": "Skills for MCP",
+      "sourceId": "U22jPxfQWbu7-54OcsqkV",
+      "type": "subtopic",
+      "order": 109,
+      "summary": "Skills act as structured, reusable knowledge packages that dramatically improve how Claude interacts with MCP (Model Context Protocol) servers by giving it precise, context-aware instructions for specific tools and workflows. Rather than relying on Claude to infer how to use a given MCP server from scratch each time, skills provide curated guidance that helps Claude make smarter, more reliable decisions when invoking tools, chaining calls, and interpreting results.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "The Complete Guide to Building Skills for Claude",
+          "url": "https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en"
+        },
+        {
+          "type": "opensource",
+          "title": "Anthropic Skills Guide",
+          "url": "https://github.com/darraghh1/my-claude-setup/blob/main/docs/research/anthropic-skills-guide.md"
+        },
+        {
+          "type": "article",
+          "title": "Claude Skills Library",
+          "url": "https://mcpservers.org/claude-skills"
+        }
+      ],
+      "parents": [
+        "connectingToolsWithMcp"
+      ],
+      "children": [
+        "channels"
+      ]
+    },
+    "connectingToolsWithMcp": {
+      "title": "Connecting Tools with MCP",
+      "sourceId": "OBtJvLaEV3giUhvGFofKv",
+      "type": "topic",
+      "order": 110,
+      "summary": "Model Context Protocol (MCP) transforms Claude Code from a local file editor into a connected agent capable of interacting with your entire tech stack, from Jira tickets to live databases. Acting like a \"USB-C port for AI,\" MCP provides a standardized bridge that allows Claude to discover and execute external functions without requiring custom-coded integrations for every service.",
+      "video": {
+        "title": "Claude Code MCP: How to Add MCP Servers (Complete Guide)",
+        "url": "https://www.youtube.com/watch?v=DfWHX7kszQI"
+      },
+      "articles": [
+        {
+          "type": "course",
+          "title": "Model Context Protocol: Advanced Topics",
+          "url": "https://anthropic.skilljar.com/model-context-protocol-advanced-topics"
+        },
+        {
+          "type": "official",
+          "title": "Connect Claude Code to tools via MCP",
+          "url": "https://code.claude.com/docs/en/mcp"
+        },
+        {
+          "type": "article",
+          "title": "What is the Model Context Protocol (MCP)?",
+          "url": "https://modelcontextprotocol.io/docs/getting-started/intro"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "skillsForMcp",
+        "tunnels"
+      ]
+    },
+    "channels": {
+      "title": "Channels",
+      "sourceId": "GhJI9_4w3RM0_BfWNXbim",
+      "type": "subtopic",
+      "order": 111,
+      "summary": "Claude Code channels are MCP server plugins that push messages, alerts, and webhooks into your running Claude Code session, allowing Claude to react to events while you're away from the terminal. Channels enable two-way communication through platforms like Telegram, Discord, and iMessage. You install them as plugins, configure credentials, and pair your account so Claude can receive and respond to messages in real-time. Unlike web sessions that spawn fresh instances, events arrive in your already-open session, making channels ideal for always-on setups where you run Claude in a background process.",
+      "video": {
+        "title": "Claude Code Channels in 8 Minutes",
+        "url": "https://www.youtube.com/watch?v=QZXaAc80OL0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Push events into a running session with channels",
+          "url": "https://code.claude.com/docs/en/channels"
+        },
+        {
+          "type": "official",
+          "title": "Channels reference",
+          "url": "https://code.claude.com/docs/en/channels-reference"
+        }
+      ],
+      "parents": [
+        "skillsForMcp"
+      ],
+      "children": []
+    },
+    "tunnels": {
+      "title": "Tunnels",
+      "sourceId": "q26hZANRABWXI8bzE0ai2",
+      "type": "subtopic",
+      "order": 112,
+      "summary": "MCP Tunnels let you connect Claude to MCP servers running inside your private network without opening inbound firewall ports or exposing services to the public internet. Traffic flows over an outbound-only encrypted connection, meaning your internal tools and data sources stay fully private while still being accessible to Claude. This makes it practical to build agents that interact with internal databases, APIs, or services that you would never expose publicly.",
+      "video": {
+        "title": "How to connect enterprise MCP servers to Claude via Anthropic MCP Tunnels",
+        "url": "https://www.youtube.com/watch?v=DlCP7PKN-dU"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "MCP Tunnels",
+          "url": "https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview"
+        }
+      ],
+      "parents": [
+        "connectingToolsWithMcp"
+      ],
+      "children": []
+    },
+    "schedulingJobs": {
+      "title": "Scheduling Jobs",
+      "sourceId": "DDEgVgkdu8PR4x8pHfD5Y",
+      "type": "topic",
+      "order": 113,
+      "summary": "Scheduled tasks let you run prompts automatically on a schedule in Claude Code. You can use the `/loop` command to repeat a prompt at regular intervals (like every 5 minutes or every 2 hours) while your session is open. You can also set one-time reminders for specific times. The tasks run in the background and stop when you close Claude Code. If you need tasks to keep running after you close the program, you should use Cloud or Desktop scheduled tasks instead.",
+      "video": {
+        "title": "Claude Code Scheduled Tasks Are Insane",
+        "url": "https://www.youtube.com/watch?v=U_cDKkDvPAQ"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Run prompts on a schedule",
+          "url": "https://code.claude.com/docs/en/scheduled-tasks"
+        },
+        {
+          "type": "official",
+          "title": "Schedule tasks on the web",
+          "url": "https://code.claude.com/docs/en/web-scheduled-tasks"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Loop vs Scheduled Tasks: Which Should You Use?",
+          "url": "https://www.mindstudio.ai/blog/claude-code-loop-vs-scheduled-tasks"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "modelConfiguration": {
+      "title": "Model Configuration",
+      "sourceId": "Tq83zphFUA1J8spMEyN8H",
+      "type": "topic",
+      "order": 114,
+      "summary": "Claude Code offers a highly flexible model configuration hierarchy that allows you to balance speed, cost, and reasoning depth across different tasks. You can switch models instantly during an active session using the `/model` command, specify a model at startup with the `--model` flag, or set a permanent default in your `~/.claude/settings.json` file using the `model` key. The system supports semantic aliases like sonnet (default for daily coding), haiku (fast and efficient), and opus (high-reasoning for complex architecture), as well as a specialized `opusplan` mode that intelligently uses Opus for strategic planning before automatically switching to Sonnet for the actual code implementation. Furthermore, you can fine-tune performance on supported models by adjusting the `effortLevel` (low, medium, or high), which controls how much \"thinking time\" Claude allocates to solving difficult logic puzzles versus generating rapid responses.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Model configuration",
+          "url": "https://code.claude.com/docs/en/model-config#model-configuration"
+        },
+        {
+          "type": "article",
+          "title": "A complete guide to model configuration in Claude Code",
+          "url": "https://www.eesel.ai/blog/model-configuration-claude-code"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "opusplan"
+      ]
+    },
+    "opusplan": {
+      "title": "Opusplan",
+      "sourceId": "aHi-EWuBbn1xvK5osHOUM",
+      "type": "subtopic",
+      "order": 115,
+      "summary": "`opusplan` is a specialized command alias for Claude Code that combines the high-level reasoning of the most advanced model with the speed and efficiency of a faster one to optimize complex development tasks. When you initiate a session using `claude opusplan`, the tool uses Claude Opus to analyze your request, explore the codebase, and draft a comprehensive technical strategy, ensuring that the initial logic and architectural decisions are as accurate as possible.",
+      "video": {
+        "title": "Claude Code Opus Plan Mode // 1M Context // Testing ++",
+        "url": "https://www.youtube.com/watch?v=I2aAkp7q_uY"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "opusplan model setting",
+          "url": "https://code.claude.com/docs/en/model-config#opusplan-model-setting"
+        }
+      ],
+      "parents": [
+        "modelConfiguration"
+      ],
+      "children": []
+    },
+    "headlessMode": {
+      "title": "Headless mode",
+      "sourceId": "FP6Lc-zqmP8yzBytuSsUc",
+      "type": "subtopic",
+      "order": 116,
+      "summary": "Headless mode in Claude Code, enabled by the `-p` (or `--print`) flag, transforms the interactive terminal assistant into a programmable Unix-style utility designed for automation and CI/CD pipelines.",
+      "video": {
+        "title": "Building headless automation with Claude Code | Code w/ Claude",
+        "url": "https://www.youtube.com/watch?v=dRsjO-88nBs"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Run Claude Code programmatically",
+          "url": "https://code.claude.com/docs/en/headless"
+        },
+        {
+          "type": "article",
+          "title": "Headless Mode: Unleash AI in Your CI/CD Pipeline",
+          "url": "https://dev.to/rajeshroyal/headless-mode-unleash-ai-in-your-cicd-pipeline-1imm"
+        }
+      ],
+      "parents": [
+        "scalingClaude"
+      ],
+      "children": []
+    },
+    "outputStyles": {
+      "title": "Output Styles",
+      "sourceId": "i3K2_8VcOGGSPdj1Jb4Im",
+      "type": "topic",
+      "order": 117,
+      "summary": "Claude Code allows you to switch between different output styles to adapt the agent\u2019s persona and verbosity to your specific needs, effectively modifying its core system prompt. Beyond the standard coding mode, you can use built-in styles like Explanatory, which provides educational insights into implementation choices, or Learning, a collaborative mode where Claude places `TODO(human)` markers to encourage hands-on contribution.",
+      "video": {
+        "title": "New Claude Code Output Styles Are HUGE",
+        "url": "https://www.youtube.com/watch?v=IokDmpuXTrQ"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Output styles",
+          "url": "https://code.claude.com/docs/en/output-styles#output-styles"
+        },
+        {
+          "type": "article",
+          "title": "Share your Claude Code output styles",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1mqp4g4/share_your_claude_code_output_styles/"
+        },
+        {
+          "type": "article",
+          "title": "A practical guide to output styles in Claude Code",
+          "url": "https://www.eesel.ai/blog/output-styles-claude-code"
+        }
+      ],
+      "parents": [],
+      "children": []
+    },
+    "gitWorktrees": {
+      "title": "Git Worktrees",
+      "sourceId": "wxkAkdKFTwbNJEfwA9tGl",
+      "type": "subtopic",
+      "order": 118,
+      "summary": "Using Git worktrees with Claude Code is a powerful scaling technique that allows you to run multiple independent AI sessions in parallel without the overhead of context switching or the risk of file-edit collisions. This workflow is highly efficient for \"fanning out\" tasks: you can supervise several separate worktrees simultaneously, leveraging prompt caching across them for shared codebase context, and simply delete the worktree folder once the branch is merged to keep your environment clean.",
+      "video": {
+        "title": "Git Worktrees: The secret sauce to Claude Code!",
+        "url": "https://www.youtube.com/watch?v=up91rbPEdVc"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Run parallel Claude Code sessions with Git worktrees",
+          "url": "https://code.claude.com/docs/en/worktrees"
+        },
+        {
+          "type": "article",
+          "title": "Using Git Worktrees for Parallel AI Development",
+          "url": "https://stevekinney.com/courses/ai-development/git-worktrees"
+        }
+      ],
+      "parents": [
+        "scalingClaude"
+      ],
+      "children": []
+    },
+    "codeIntelligence": {
+      "title": "Code Intelligence",
+      "sourceId": "qg6ZTF0LCz5zo5G1a3BEf",
+      "type": "subtopic",
+      "order": 119,
+      "summary": "Code Intelligence plugins extend the CLI's native search capabilities by integrating with the Language Server Protocol (LSP), granting Claude the same \"IDE-level\" awareness found in modern editors.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Code intelligence",
+          "url": "https://code.claude.com/docs/en/discover-plugins#code-intelligence"
+        },
+        {
+          "type": "official",
+          "title": "LSP server",
+          "url": "https://code.claude.com/docs/en/plugins-reference#lsp-servers"
+        },
+        {
+          "type": "article",
+          "title": "Language Server Protocol",
+          "url": "https://microsoft.github.io/language-server-protocol/"
+        }
+      ],
+      "parents": [
+        "plugins"
+      ],
+      "children": []
+    },
+    "plugins": {
+      "title": "Plugins",
+      "sourceId": "oV7YG_TnJ4ZyVVjqRwPkR",
+      "type": "topic",
+      "order": 120,
+      "summary": "Claude Code plugins are shareable packages that bundle multiple customizations, including slash commands, specialized agents, skills, hooks, and Model Context Protocol (MCP) servers, into a single installable unit. They serve as a standardized way to distribute complex AI workflows across different projects or within an engineering team, ensuring that every developer has access to the same tools and coding standards.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Discover and install prebuilt plugins through marketplaces - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/discover-plugins"
+        },
+        {
+          "type": "official",
+          "title": "Plugins",
+          "url": "https://claude.com/plugins"
+        },
+        {
+          "type": "opensource",
+          "title": "plugins",
+          "url": "https://github.com/anthropics/claude-code/tree/main/plugins"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Now Has SUPERPOWERS! (plugin)",
+          "url": "https://www.youtube.com/watch?v=vfVQP2AbUHo"
+        },
+        {
+          "type": "article",
+          "title": "Claude Code Plugins Just Changed My Workflow Forever",
+          "url": "https://www.youtube.com/watch?v=-KusSduAP1A"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "codeIntelligence"
+      ]
+    },
+    "agentTeam": {
+      "title": "Agent Team",
+      "sourceId": "fI90DtG5CoZbDyJUqLGoy",
+      "type": "subtopic",
+      "order": 121,
+      "summary": "Agent Teams are an experimental multi-agent orchestration feature in Claude Code that allows you to coordinate multiple AI instances working in parallel on a single project. Agent Teams function as a collaborative network where a designated Team Lead manages a shared task list and delegates work to Teammates who can message each other directly to share findings or debate solutions.",
+      "video": {
+        "title": "Claude Code's Agent Teams Are Insane - Multiple AI Agents Coding Together in Real Time",
+        "url": "https://www.youtube.com/watch?v=-1K_ZWDKpU0"
+      },
+      "articles": [
+        {
+          "type": "official",
+          "title": "Orchestrate teams of Claude Code sessions",
+          "url": "https://code.claude.com/docs/en/agent-teams"
+        },
+        {
+          "type": "official",
+          "title": "Building a C compiler with a team of parallel Claudes",
+          "url": "https://www.anthropic.com/engineering/building-c-compiler"
+        },
+        {
+          "type": "article",
+          "title": "How to Set Up Claude Code Agent Teams (Full Walkthrough + What Actually Changed)",
+          "url": "https://www.reddit.com/r/ClaudeCode/comments/1qz8tyy/how_to_set_up_claude_code_agent_teams_full/"
+        }
+      ],
+      "parents": [
+        "scalingClaude"
+      ],
+      "children": []
+    },
+    "scalingClaude": {
+      "title": "Scaling Claude",
+      "sourceId": "ip2bq52qRah-7db6dORO8",
+      "type": "topic",
+      "order": 122,
+      "summary": "Claude Code offers several ways to parallelize work across multiple agents or sessions: subagents, agent view, agent teams, and worktrees. Subagents are delegated workers that handle a side task within their own context and return a summary, keeping the main conversation clean. Agent view lets you dispatch independent sessions to the background and monitor them from a single screen. Agent teams coordinate multiple sessions through a shared task list and inter-agent messaging, managed by a lead agent. Worktrees isolate parallel sessions into separate git checkouts so they never conflict over the same files.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Run agents in parallel",
+          "url": "https://code.claude.com/docs/en/agents"
+        },
+        {
+          "type": "official",
+          "title": "Agent view",
+          "url": "https://code.claude.com/docs/en/agent-view"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "headlessMode",
+        "gitWorktrees",
+        "agentTeam"
+      ]
+    },
+    "securityBestPractices": {
+      "title": "Security Best Practices",
+      "sourceId": "WVrC8-nf8xn1jckCHO3h4",
+      "type": "topic",
+      "order": 123,
+      "summary": "Security is the most critical pillar of using Claude Code because giving an AI agent the ability to execute terminal commands and modify files creates a powerful \"intern with root access\" who is susceptible to prompt injection and data exfiltration.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Security",
+          "url": "https://code.claude.com/docs/en/security#security"
+        },
+        {
+          "type": "official",
+          "title": "Sandboxing",
+          "url": "https://code.claude.com/docs/en/sandboxing"
+        },
+        {
+          "type": "official",
+          "title": "Beyond permission prompts: making Claude Code more secure and autonomous",
+          "url": "https://www.anthropic.com/engineering/claude-code-sandboxing"
+        },
+        {
+          "type": "article",
+          "title": "A deep dive into security for Claude Code in 2025",
+          "url": "https://www.eesel.ai/blog/security-claude-code"
+        }
+      ],
+      "parents": [
+        "claudeCodeSecurity"
+      ],
+      "children": [
+        "visitTheFollowingRoadmapsToKeepLearning"
+      ]
+    },
+    "claudeCodeSecurity": {
+      "title": "Claude Code Security",
+      "sourceId": "KgXvbrUuYyiBn52QCRoLl",
+      "type": "subtopic",
+      "order": 124,
+      "summary": "Claude Code Security is a new feature built into Claude Code that scans your codebase for security vulnerabilities and suggests fixes for your team to review. Every finding goes through a verification process before it reaches you, with severity ratings so you know what to fix first. Nothing gets changed automatically; Claude suggests the fix, but a human always approves it. It is currently available as a limited research preview for Enterprise and Team customers, with free access for open-source maintainers.",
+      "video": null,
+      "articles": [
+        {
+          "type": "official",
+          "title": "Making frontier cybersecurity capabilities available to defenders",
+          "url": "https://www.anthropic.com/news/claude-code-security"
+        },
+        {
+          "type": "article",
+          "title": "Evaluating and mitigating the growing risk of LLM-discovered 0-days",
+          "url": "https://red.anthropic.com/2026/zero-days/"
+        }
+      ],
+      "parents": [],
+      "children": [
+        "securityBestPractices"
+      ]
+    },
+    "visitTheFollowingRoadmapsToKeepLearning": {
+      "title": "Visit the following roadmaps to keep learning",
+      "sourceId": "O5dely89N5UCMBeUfh8ud",
+      "type": "paragraph",
+      "order": 125,
+      "summary": "",
+      "video": null,
+      "articles": [],
+      "parents": [
+        "securityBestPractices"
+      ],
+      "children": []
+    }
+  },
+  "edges": [
+    {
+      "from": "claude-code",
+      "to": "introduction",
+      "style": "solid"
+    },
+    {
+      "from": "introduction",
+      "to": "whatIsVibeCoding",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "whatIsACodingAgent",
+      "style": "dashed"
+    },
+    {
+      "from": "claudeWorkflow",
+      "to": "manageSessions",
+      "style": "dashed"
+    },
+    {
+      "from": "claudeWorkflow",
+      "to": "permissionModes",
+      "style": "dashed"
+    },
+    {
+      "from": "claudeMd2",
+      "to": "howToStructure",
+      "style": "dashed"
+    },
+    {
+      "from": "claudeMd2",
+      "to": "locations",
+      "style": "dashed"
+    },
+    {
+      "from": "claudeWorkflow",
+      "to": "claudeMd2",
+      "style": "solid"
+    },
+    {
+      "from": "claudeMd2",
+      "to": "skills2",
+      "style": "solid"
+    },
+    {
+      "from": "creatingSkills",
+      "to": "skills2",
+      "style": "dashed"
+    },
+    {
+      "from": "skillBestPractices",
+      "to": "skills2",
+      "style": "dashed"
+    },
+    {
+      "from": "skills2",
+      "to": "subagents",
+      "style": "solid"
+    },
+    {
+      "from": "subagents",
+      "to": "creatingSubagents",
+      "style": "dashed"
+    },
+    {
+      "from": "subagents",
+      "to": "hooks3",
+      "style": "solid"
+    },
+    {
+      "from": "hookTypes",
+      "to": "hooks3",
+      "style": "dashed"
+    },
+    {
+      "from": "hooks3",
+      "to": "hookEventsMatchers",
+      "style": "dashed"
+    },
+    {
+      "from": "hooks3",
+      "to": "hookInputsOutputs",
+      "style": "dashed"
+    },
+    {
+      "from": "scalingClaude",
+      "to": "headlessMode",
+      "style": "dashed"
+    },
+    {
+      "from": "scalingClaude",
+      "to": "gitWorktrees",
+      "style": "dashed"
+    },
+    {
+      "from": "scalingClaude",
+      "to": "agentTeam",
+      "style": "dashed"
+    },
+    {
+      "from": "claudeWorkflow",
+      "to": "planMode",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "settingUpClaude",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "whatIsAgenticLoop",
+      "style": "dashed"
+    },
+    {
+      "from": "waysToUseClaude",
+      "to": "understandTheBasics",
+      "style": "solid"
+    },
+    {
+      "from": "claudeWorkflow",
+      "to": "usingClaudeCode",
+      "style": "solid"
+    },
+    {
+      "from": "usingClaudeCode",
+      "to": "understandTheBasics",
+      "style": "solid"
+    },
+    {
+      "from": "hooks3",
+      "to": "manageContext",
+      "style": "solid"
+    },
+    {
+      "from": "manageContext",
+      "to": "understandClaudePricing",
+      "style": "dashed"
+    },
+    {
+      "from": "manageContext",
+      "to": "useCompactAndClear",
+      "style": "dashed"
+    },
+    {
+      "from": "manageContext",
+      "to": "beMindfulOfExtensions",
+      "style": "dashed"
+    },
+    {
+      "from": "manageContext",
+      "to": "useSubagentsAndHooks",
+      "style": "dashed"
+    },
+    {
+      "from": "manageContext",
+      "to": "thinkingModesEffort",
+      "style": "dashed"
+    },
+    {
+      "from": "manageContext",
+      "to": "promptCaching",
+      "style": "dashed"
+    },
+    {
+      "from": "advancedClaudeCode",
+      "to": "manageContext",
+      "style": "solid"
+    },
+    {
+      "from": "modelConfiguration",
+      "to": "opusplan",
+      "style": "dashed"
+    },
+    {
+      "from": "plugins",
+      "to": "codeIntelligence",
+      "style": "dashed"
+    },
+    {
+      "from": "securityBestPractices",
+      "to": "visitTheFollowingRoadmapsToKeepLearning",
+      "style": "solid"
+    },
+    {
+      "from": "advancedClaudeCode",
+      "to": "customizeStatusLine",
+      "style": "solid"
+    },
+    {
+      "from": "connectingToolsWithMcp",
+      "to": "skillsForMcp",
+      "style": "dashed"
+    },
+    {
+      "from": "claudeCodeSecurity",
+      "to": "securityBestPractices",
+      "style": "dashed"
+    },
+    {
+      "from": "waysToUseClaude",
+      "to": "desktopApp",
+      "style": "dashed"
+    },
+    {
+      "from": "waysToUseClaude",
+      "to": "editorExtensions",
+      "style": "dashed"
+    },
+    {
+      "from": "waysToUseClaude",
+      "to": "mobileChannels",
+      "style": "dashed"
+    },
+    {
+      "from": "waysToUseClaude",
+      "to": "communityTools",
+      "style": "dashed"
+    },
+    {
+      "from": "connectingToolsWithMcp",
+      "to": "tunnels",
+      "style": "dashed"
+    },
+    {
+      "from": "introduction",
+      "to": "claudeCli",
+      "style": "solid"
+    },
+    {
+      "from": "settingUpClaude",
+      "to": "subscription",
+      "style": "solid"
+    },
+    {
+      "from": "settingUpClaude",
+      "to": "apiUsage",
+      "style": "solid"
+    },
+    {
+      "from": "communityTools",
+      "to": "commonUsecases",
+      "style": "solid"
+    },
+    {
+      "from": "understandTheDifferences",
+      "to": "claudeMd",
+      "style": "solid"
+    },
+    {
+      "from": "understandTheDifferences",
+      "to": "skills",
+      "style": "solid"
+    },
+    {
+      "from": "understandTheDifferences",
+      "to": "context",
+      "style": "solid"
+    },
+    {
+      "from": "understandTheDifferences",
+      "to": "modes",
+      "style": "solid"
+    },
+    {
+      "from": "understandTheDifferences",
+      "to": "models",
+      "style": "solid"
+    },
+    {
+      "from": "understandTheDifferences",
+      "to": "tools",
+      "style": "solid"
+    },
+    {
+      "from": "commandCheatsheet",
+      "to": "ctrlC",
+      "style": "solid"
+    },
+    {
+      "from": "commandCheatsheet",
+      "to": "ctrlR",
+      "style": "solid"
+    },
+    {
+      "from": "commandCheatsheet",
+      "to": "esc",
+      "style": "solid"
+    },
+    {
+      "from": "commandCheatsheet",
+      "to": "escEsc",
+      "style": "solid"
+    },
+    {
+      "from": "settingUpClaude",
+      "to": "mcp2",
+      "style": "solid"
+    },
+    {
+      "from": "settingUpClaude",
+      "to": "plugins2",
+      "style": "solid"
+    },
+    {
+      "from": "commandCheatsheet",
+      "to": "shiftTab",
+      "style": "solid"
+    },
+    {
+      "from": "usingClaudeCode",
+      "to": "hooks4",
+      "style": "solid"
+    },
+    {
+      "from": "shiftTab",
+      "to": "slashCommands",
+      "style": "solid"
+    },
+    {
+      "from": "slashCommands",
+      "to": "topic",
+      "style": "solid"
+    },
+    {
+      "from": "slashCommands",
+      "to": "topic2",
+      "style": "solid"
+    },
+    {
+      "from": "slashCommands",
+      "to": "topic3",
+      "style": "solid"
+    },
+    {
+      "from": "whenToUseWhatModel",
+      "to": "opus",
+      "style": "solid"
+    },
+    {
+      "from": "whenToUseWhatModel",
+      "to": "sonnet",
+      "style": "solid"
+    },
+    {
+      "from": "whenToUseWhatModel",
+      "to": "haiku",
+      "style": "solid"
+    },
+    {
+      "from": "shortcutsPrefixes",
+      "to": "claude",
+      "style": "solid"
+    },
+    {
+      "from": "shortcutsPrefixes",
+      "to": "claudeR",
+      "style": "solid"
+    },
+    {
+      "from": "shortcutsPrefixes",
+      "to": "claudeQuery",
+      "style": "solid"
+    },
+    {
+      "from": "claudeQuery",
+      "to": "claudeP",
+      "style": "solid"
+    },
+    {
+      "from": "claudeQuery",
+      "to": "claudeC",
+      "style": "solid"
+    },
+    {
+      "from": "manageSessions",
+      "to": "resume",
+      "style": "solid"
+    },
+    {
+      "from": "manageSessions",
+      "to": "rewind2",
+      "style": "solid"
+    },
+    {
+      "from": "claudeAddDir",
+      "to": "help",
+      "style": "solid"
+    },
+    {
+      "from": "claudeCommands",
+      "to": "usage",
+      "style": "solid"
+    },
+    {
+      "from": "claudeAddDir",
+      "to": "clear",
+      "style": "solid"
+    },
+    {
+      "from": "claudeCommands",
+      "to": "cost",
+      "style": "solid"
+    },
+    {
+      "from": "claudeAddDir",
+      "to": "exit",
+      "style": "solid"
+    },
+    {
+      "from": "claudeCommands",
+      "to": "export",
+      "style": "solid"
+    },
+    {
+      "from": "claudeAddDir",
+      "to": "status",
+      "style": "solid"
+    },
+    {
+      "from": "claudeAddDir",
+      "to": "rewind",
+      "style": "solid"
+    },
+    {
+      "from": "claudeAddDir",
+      "to": "plan",
+      "style": "solid"
+    },
+    {
+      "from": "skills2",
+      "to": "doctor",
+      "style": "solid"
+    },
+    {
+      "from": "sessionCommands",
+      "to": "context2",
+      "style": "solid"
+    },
+    {
+      "from": "sessionCommands",
+      "to": "compact",
+      "style": "solid"
+    },
+    {
+      "from": "sessionCommands",
+      "to": "init",
+      "style": "solid"
+    },
+    {
+      "from": "sessionCommands",
+      "to": "memory",
+      "style": "solid"
+    },
+    {
+      "from": "contextMemory",
+      "to": "config",
+      "style": "solid"
+    },
+    {
+      "from": "contextMemory",
+      "to": "permissions",
+      "style": "solid"
+    },
+    {
+      "from": "contextMemory",
+      "to": "model",
+      "style": "solid"
+    },
+    {
+      "from": "contextMemory",
+      "to": "agents",
+      "style": "solid"
+    },
+    {
+      "from": "contextMemory",
+      "to": "hooks2",
+      "style": "solid"
+    },
+    {
+      "from": "contextMemory",
+      "to": "mcp",
+      "style": "solid"
+    },
+    {
+      "from": "configuration",
+      "to": "sessionstart",
+      "style": "solid"
+    },
+    {
+      "from": "configuration",
+      "to": "sessionend",
+      "style": "solid"
+    },
+    {
+      "from": "configuration",
+      "to": "pretooluse",
+      "style": "solid"
+    },
+    {
+      "from": "configuration",
+      "to": "posttooluse",
+      "style": "solid"
+    },
+    {
+      "from": "configuration",
+      "to": "userpromptsubmit",
+      "style": "solid"
+    },
+    {
+      "from": "configuration",
+      "to": "stop",
+      "style": "solid"
+    },
+    {
+      "from": "skillsForMcp",
+      "to": "channels",
+      "style": "solid"
+    }
+  ]
+}
