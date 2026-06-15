@@ -1,0 +1,41 @@
+{
+  "name": "codemap (Next.js + Firebase)",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "jdkDistro": "tem"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.12"
+    }
+  },
+  "forwardPorts": [3000, 4000, 8080, 9099],
+  "portsAttributes": {
+    "3000": { "label": "Next.js dev", "onAutoForward": "notify" },
+    "4000": { "label": "Firebase Emulator UI", "onAutoForward": "silent" },
+    "8080": { "label": "Firestore emulator", "onAutoForward": "silent" },
+    "9099": { "label": "Auth emulator", "onAutoForward": "silent" }
+  },
+  "onCreateCommand": "corepack enable && corepack prepare pnpm@10.33.2 --activate",
+  "postCreateCommand": ".devcontainer/post-create.sh",
+  "remoteUser": "node",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "ms-playwright.playwright",
+        "toba.vsfire"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        }
+      }
+    }
+  }
+}
