@@ -1,5 +1,6 @@
 import { PomodoroTimerClient } from "@/components/pomodoro/pomodoro-timer-client";
 import { savePomodoroSession } from "@/lib/pomodoro/actions";
+import { savePomodoroTasks } from "@/lib/pomodoro/task-actions";
 import { Icon, SectionHero } from "@/components/shared";
 
 export const metadata = {
@@ -15,7 +16,10 @@ export default function PomodoroPage() {
         description="Run timed focus sessions and keep a record of how long you worked."
       />
 
-      <PomodoroTimerClient saveSessionAction={savePomodoroSession} />
+      <PomodoroTimerClient
+        saveSessionAction={savePomodoroSession}
+        saveTasksAction={savePomodoroTasks}
+      />
     </div>
   );
 }
