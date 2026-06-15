@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  buildCurrentFocusStreak,
   buildFocusByDay,
   buildPomodoroStats,
   buildRecentFocusDays,
@@ -76,5 +77,34 @@ describe("buildPomodoroStats", () => {
       { date: "2026-06-11", focusSeconds: 0, sessions: 0 },
       { date: "2026-06-12", focusSeconds: 0, sessions: 0 },
     ]);
+  });
+});
+
+describe("buildCurrentFocusStreak", () => {
+  const today = new Date("2026-06-12T12:00:00.000Z");
+
+  it("counts consecutive active days ending today", () => {
+    const days = [
+      { date: "2026-06-10", focusSeconds: 600, sessions: 1 },
+      { date: "2026-06-11", focusSeconds: 600, sessions: 1 },
+      { date: "2026-06-12", focusSeconds: 600, sessions: 1 },
+    ];
+
+    expect(buildCurrentFocusStreak(days, today)).toBe(3);
+  });
+
+  it("keeps a streak built up to yesterday when today has no focus", () => {
+    const days = [
+      { date: "2026-06-10", focusSeconds: 600, sessions: 1 },
+      { date: "2026-06-11", focusSeconds: 600, sessions: 1 },
+    ];
+
+    expect(buildCurrentFocusStreak(days, today)).toBe(2);
+  });
+
+  it("returns zero when the most recent active day is older than yesterday", () => {
+    const days = [{ date: "2026-06-09", focusSeconds: 600, sessions: 1 }];
+
+    expect(buildCurrentFocusStreak(days, today)).toBe(0);
   });
 });

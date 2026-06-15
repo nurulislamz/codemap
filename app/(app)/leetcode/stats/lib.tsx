@@ -1,6 +1,6 @@
 import { toPercentage } from "@/lib/leetcode/leetcode-formatters";
 import type { LeetcodeStats } from "@/lib/leetcode/leetcode-stats";
-import { fillRecentDays } from "@/lib/stats/recent-days";
+import { fillRecentDays, formatDayLabel } from "@/lib/stats/recent-days";
 import {
   LeetcodeProblemDifficultyLabel,
   type LeetcodeAttemptRow,
@@ -38,12 +38,7 @@ export function difficultyClass(difficulty: LeetcodeProblemRow["difficulty"]) {
   }
 }
 
-export function formatDayLabel(date: string) {
-  return new Intl.DateTimeFormat("en-GB", {
-    day: "numeric",
-    month: "short",
-  }).format(new Date(`${date}T00:00:00.000Z`));
-}
+export { formatDayLabel };
 
 export function buildRecentDisplayDays(days: DisplayDay[], count: number): DisplayDay[] {
   if (days.length === 0) return [];

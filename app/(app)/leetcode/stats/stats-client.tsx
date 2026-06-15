@@ -15,11 +15,7 @@ import { hydrateLeetcodeProblemsWithAttempts } from "@/lib/leetcode/progress";
 import { getLocalLeetcodeAttempts } from "@/lib/leetcode/storage/local-attempt-storage";
 import type { PomodoroSession } from "@/lib/firebase/pomodoro";
 import { getLocalPomodoroSessions } from "@/lib/pomodoro/local-session-storage";
-import {
-  buildFocusByDay,
-  buildPomodoroStats,
-  buildRecentFocusDays,
-} from "@/lib/pomodoro/pomodoro-stats";
+import { FocusTimePanel } from "@/components/pomodoro/focus-time-panel";
 import {
   leetcodeProblemDifficultyLabels,
   type LeetcodeAttemptRow,
@@ -96,19 +92,6 @@ export function LeetcodeStatsClient({
   const yAxisTicks = buildYAxisTicks(maxDailyAttempts);
   const summaryCards = buildSummaryCards(stats);
   const qualityRows = buildQualityRows(stats, attempts);
-  const pomodoroStats = useMemo(
-    () => buildPomodoroStats(pomodoroSessions),
-    [pomodoroSessions],
-  );
-  const focusDays = useMemo(
-    () => buildRecentFocusDays(buildFocusByDay(pomodoroSessions), 14),
-    [pomodoroSessions],
-  );
-  const maxDailyFocusSeconds = Math.max(
-    1,
-    ...focusDays.map((day) => day.focusSeconds),
-  );
-
   return (
     <div className="space-y-5 pb-4">
       <SectionHero
@@ -450,85 +433,7 @@ export function LeetcodeStatsClient({
         </p>
         </AppPanel>
 
-        <AppPanel className="p-7">
-          <h2 className="text-2xl font-extrabold tracking-tight text-white">Focus time</h2>
-          <p className="mt-2 text-base text-slate-300/72">
-            Pomodoro sessions recorded from the focus timer.
-          </p>
-
-          <div className="mt-5 grid grid-cols-2 gap-4">
-            <div className="rounded-lg border border-white/10 bg-[#0b1320]/55 p-4">
-              <div className="text-xs font-bold uppercase tracking-[0.12em] text-slate-300/60">
-                Total focus
-              </div>
-              <div className="mt-2 font-mono text-2xl font-extrabold text-white">
-                {formatSecondsDuration(pomodoroStats.totalFocusSeconds)}
-              </div>
-            </div>
-            <div className="rounded-lg border border-white/10 bg-[#0b1320]/55 p-4">
-              <div className="text-xs font-bold uppercase tracking-[0.12em] text-slate-300/60">
-                Sessions
-              </div>
-              <div className="mt-2 font-mono text-2xl font-extrabold text-white">
-                {pomodoroStats.totalSessions}
-              </div>
-            </div>
-            <div className="rounded-lg border border-white/10 bg-[#0b1320]/55 p-4">
-              <div className="text-xs font-bold uppercase tracking-[0.12em] text-slate-300/60">
-                Completed
-              </div>
-              <div className="mt-2 font-mono text-2xl font-extrabold text-emerald-300">
-                {pomodoroStats.completedSessions} ({pomodoroStats.completionRate}%)
-              </div>
-            </div>
-            <div className="rounded-lg border border-white/10 bg-[#0b1320]/55 p-4">
-              <div className="text-xs font-bold uppercase tracking-[0.12em] text-slate-300/60">
-                Avg session
-              </div>
-              <div className="mt-2 font-mono text-2xl font-extrabold text-white">
-                {formatSecondsDuration(pomodoroStats.averageSessionSeconds)}
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-6">
-            <div className="flex items-center justify-between text-xs font-bold uppercase tracking-[0.12em] text-slate-300/60">
-              <span>Focus over days</span>
-              <span>Last 14 days</span>
-            </div>
-            <div className="mt-3 flex h-24 items-end gap-1.5">
-              {focusDays.map((day) => (
-                <div
-                  key={day.date}
-                  className="flex h-full flex-1 items-end"
-                  title={`${formatSecondsDuration(day.focusSeconds)} over ${day.sessions} sessions on ${formatDayLabel(day.date)}`}
-                >
-                  <div
-                    className={`w-full rounded-t-md ${
-                      day.focusSeconds > 0
-                        ? "bg-[#705cff] shadow-[0_0_18px_rgba(112,92,255,0.45)]"
-                        : "bg-slate-600/28"
-                    }`}
-                    style={{
-                      height: `${Math.max(
-                        4,
-                        Math.round((day.focusSeconds / maxDailyFocusSeconds) * 100),
-                      )}%`,
-                    }}
-                  />
-                </div>
-              ))}
-            </div>
-            <div className="mt-2 flex justify-between text-xs font-semibold text-slate-300/60">
-              <span>{formatDayLabel(focusDays[0]?.date ?? "")}</span>
-              <span>{formatDayLabel(focusDays.at(-1)?.date ?? "")}</span>
-            </div>
-          </div>
-
-          <p className="mt-5 text-sm font-medium text-slate-300/66">
-            Based on the most recent saved sessions.
-          </p>
-        </AppPanel>
+        <FocusTimePanel sessions={pomodoroSessions} />
       </section>
     </div>
   );

@@ -15,12 +15,14 @@ type TimerPanelProps = {
   timeLimitMinutes: number;
 };
 
-export function CountdownTimer({
-  startedAt,
-  timeLimitMinutes,
-  label = "Time remaining",
-  onComplete,
-}: CountdownTimerProps) {
+// Headless countdown: returns the live remaining seconds and fires onComplete
+// once when it crosses to zero. Render however you like (see CountdownTimer for
+// the default presentation, or the pomodoro client for a bespoke one).
+export function useCountdown(
+  startedAt: string,
+  timeLimitMinutes: number,
+  onComplete?: () => void,
+) {
   // Seed with the full limit rather than calling Date.now() during render: the
   // initializer would run on the server and again on the client with a
   // different clock, producing a hydration mismatch. The effect computes the
@@ -51,6 +53,17 @@ export function CountdownTimer({
       window.clearInterval(intervalId);
     };
   }, [onComplete, startedAt, timeLimitMinutes]);
+
+  return remainingSeconds;
+}
+
+export function CountdownTimer({
+  startedAt,
+  timeLimitMinutes,
+  label = "Time remaining",
+  onComplete,
+}: CountdownTimerProps) {
+  const remainingSeconds = useCountdown(startedAt, timeLimitMinutes, onComplete);
 
   return (
     <div className="rounded-3xl bg-white/10 p-6">
@@ -96,7 +109,7 @@ function calculateRemainingSeconds(startedAt: string, timeLimitMinutes: number) 
   return Math.max(0, timeLimitSeconds - elapsedSeconds);
 }
 
-function formatRemainingTime(totalSeconds: number) {
+export function formatRemainingTime(totalSeconds: number) {
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
 

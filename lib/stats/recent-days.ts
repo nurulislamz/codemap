@@ -23,3 +23,13 @@ export function fillRecentDays<T extends DatedEntry>(
     return byDate.get(isoDate) ?? makeEmptyDay(isoDate);
   });
 }
+
+/** Formats an ISO `YYYY-MM-DD` UTC day as a short `12 Jun` label. */
+export function formatDayLabel(date: string) {
+  if (!date) return "";
+
+  return new Intl.DateTimeFormat("en-GB", {
+    day: "numeric",
+    month: "short",
+  }).format(new Date(`${date}T00:00:00.000Z`));
+}
