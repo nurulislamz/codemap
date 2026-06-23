@@ -1,10 +1,9 @@
 import "server-only";
 
-import { getApps, initializeApp } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
 import { headers } from "next/headers";
 
-import { resolveFirebaseProjectId } from "@/lib/env";
+import { getFirebaseAdminApp } from "@/lib/firebase/admin";
 
 type RequestUserSource =
   | FormData
@@ -74,14 +73,4 @@ function getIdTokenFromSource(source?: RequestUserSource): string | null {
   }
 
   return null;
-}
-
-function getFirebaseAdminApp() {
-  const app = getApps()[0];
-
-  if (app) {
-    return app;
-  }
-
-  return initializeApp({ projectId: resolveFirebaseProjectId() });
 }

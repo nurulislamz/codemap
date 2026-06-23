@@ -38,6 +38,13 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  if (env.DAILY_EMAIL_ENABLED !== "true") {
+    return NextResponse.json({
+      ok: true,
+      skipped: "Daily email disabled",
+    });
+  }
+
   if (!env.RESEND_API_KEY || !env.EMAIL_FROM) {
     return NextResponse.json({
       ok: true,

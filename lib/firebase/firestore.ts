@@ -1,7 +1,6 @@
-import { getApps, initializeApp } from "firebase-admin/app";
 import { getFirestore, type Firestore } from "firebase-admin/firestore";
 
-import { resolveFirebaseProjectId } from "@/lib/env";
+import { getFirebaseAdminApp } from "@/lib/firebase/admin";
 
 let firestoreSingleton: Firestore | null = null;
 
@@ -10,9 +9,7 @@ export function getFirestoreDb(): Firestore {
     return firestoreSingleton;
   }
 
-  const app =
-    getApps()[0] ?? initializeApp({ projectId: resolveFirebaseProjectId() });
-  firestoreSingleton = getFirestore(app);
+  firestoreSingleton = getFirestore(getFirebaseAdminApp());
 
   return firestoreSingleton;
 }

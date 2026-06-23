@@ -8,6 +8,7 @@ const envSchema = z.object({
   CRON_SECRET: z.string().min(16).optional(),
   RESEND_API_KEY: z.string().min(1).optional(),
   EMAIL_FROM: z.string().min(1).optional(),
+  DAILY_EMAIL_ENABLED: z.enum(["true", "false"]).default("false"),
   OPENAI_API_KEY: z.string().min(1).optional(),
   OWNER_EMAIL: z.string().email().optional(),
 });

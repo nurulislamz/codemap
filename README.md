@@ -13,6 +13,27 @@ corepack pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+For dev container work that needs auth-backed features, use the emulator flow:
+
+```bash
+corepack pnpm dev:local
+```
+
+This starts Firebase Auth/Firestore emulators, creates the local owner account,
+and signs the browser in automatically.
+
+## Vercel Deployment
+
+Set the variables from `.env.example` in Vercel before deploying. The Firebase
+Admin SDK needs `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, and
+`FIREBASE_PRIVATE_KEY`; store the private key with escaped newlines (`\n`) if
+Vercel keeps it on one line.
+
+Set `APP_BASE_URL` to the production Vercel URL. Daily email is disabled by
+default with `DAILY_EMAIL_ENABLED=false`. If the daily email cron is enabled,
+also set `DAILY_EMAIL_ENABLED=true`, `CRON_SECRET`, `RESEND_API_KEY`,
+`EMAIL_FROM`, and `OWNER_EMAIL`.
+
 ## Project Layout
 
 - `src/app` – thin Next.js route glue: layouts, pages, loading states, and API endpoints.

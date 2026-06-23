@@ -16,6 +16,6 @@ python3 --version
 
 echo "==> Dev container ready."
 echo "    pnpm dev            # Next.js only"
-echo "    pnpm dev:local      # Next.js + Firebase emulators (auth, firestore)"
+echo "    pnpm dev:local      # Next.js + Firebase emulators + local auto sign-in"
 echo "    pnpm test           # unit tests (vitest)"
 echo "    pnpm test:e2e       # Playwright e2e"
