@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { UnauthorizedError, getRequestUserId } from "@/lib/auth/identity";
 import { RoadmapConceptsModal } from "@/components/roadmap/roadmap-concepts-modal";
+import { RoadmapTestYourselfClient } from "@/components/roadmap/roadmap-test-yourself-client";
 import { saveRoadmapProgress } from "@/lib/roadmap/actions";
 import { getRoadmapBySlug } from "@/lib/roadmap/catalog";
 import { getRoadmapLearnedMap } from "@/lib/roadmap/progress";
@@ -36,7 +38,10 @@ export default async function RoadmapSlugPage({
   searchParams,
 }: {
   params: Promise<{ slug: string }>;
-  searchParams?: Promise<{ topic?: string }>;
+  searchParams?: Promise<{
+    test?: string;
+    topic?: string;
+  }>;
 }) {
   const { slug } = await params;
   const query = await searchParams;
@@ -75,6 +80,12 @@ export default async function RoadmapSlugPage({
           title={roadmap.title}
           description={roadmap.summary}
         >
+          <Link
+            href={`/roadmap/${encodeURIComponent(roadmap.slug)}?test=full`}
+            className={primaryActionClass}
+          >
+            Test yourself
+          </Link>
           <a
             href={roadmap.url}
             target="_blank"
@@ -128,6 +139,12 @@ export default async function RoadmapSlugPage({
             icon={<Icon name="calendar" className="h-7 w-7" />}
           />
         </div>
+
+        <RoadmapTestYourselfClient
+          roadmap={roadmap}
+          initialOpen={Boolean(query?.test)}
+          initialTopicSlug={query?.test === "full" ? null : query?.test}
+        />
 
         <RoadmapConceptsModal
           roadmap={roadmap}

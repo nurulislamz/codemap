@@ -24,9 +24,16 @@
     "scrape:roadmap-tree": "python3 scripts/scrape/crawl4ai-cli.py --tree",
     "scrape:roadmap-json": "tsx scripts/scrape/roadmap-json.ts",
     "scrape:roadmaps": "python3 scripts/scrape/roadmaps.py",
+    "create-roadmap:build-question-bank": "tsx scripts/create-roadmap/build-question-bank.ts",
+    "create-roadmap:discover-sources": "tsx scripts/create-roadmap/discover-sources.ts",
+    "create-roadmap:extract-questions": "tsx scripts/create-roadmap/extract-questions.ts",
     "seed:firestore": "tsx scripts/firestore/seed.ts"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.85",
+    "@ai-sdk/openai": "^3.0.74",
+    "@ai-sdk/openai-compatible": "^2.0.51",
+    "ai": "^6.0.208",
     "firebase": "^11.9.0",
     "next": "16.2.4",
     "react": "19.2.4",

@@ -41,20 +41,22 @@ export function RoadmapTopicProgressForm({
   const [appliedProgress, setAppliedProgress] = useState(initialProgress);
   if (savedProgress !== appliedProgress) {
     setAppliedProgress(savedProgress);
-    if (savedProgress) {
-      setLearned(savedProgress.learned);
-      setNotes(savedProgress.notes);
-      setLinks(savedProgress.links);
-    }
+    setLearned(savedProgress?.learned ?? false);
+    setNotes(savedProgress?.notes ?? "");
+    setLinks(savedProgress?.links ?? []);
   }
 
-  function saveProgress() {
+  function saveProgress(nextLearned = learned) {
+    if (nextLearned !== learned) {
+      setLearned(nextLearned);
+    }
+
     setMessage(null);
     startTransition(async () => {
       const progress = {
         roadmapSlug,
         topicSlug,
-        learned,
+        learned: nextLearned,
         notes,
         links,
       };
@@ -97,7 +99,7 @@ export function RoadmapTopicProgressForm({
         Learned
       </label>
 
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex flex-wrap items-center justify-between gap-4">
         <button
           type="submit"
           disabled={isPending}
@@ -105,6 +107,16 @@ export function RoadmapTopicProgressForm({
         >
           {isPending ? "Saving..." : "Save"}
         </button>
+        {!learned ? (
+          <button
+            type="button"
+            disabled={isPending}
+            className="inline-flex h-11 items-center justify-center rounded-lg border border-[#2b8b58]/60 bg-[#0d301f] px-5 text-sm font-extrabold text-[#63e59d] transition hover:border-[#63e59d] hover:bg-[#103924] hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
+            onClick={() => saveProgress(true)}
+          >
+            {isPending ? "Saving..." : "Mark as learned"}
+          </button>
+        ) : null}
         {message ? (
           <p className="text-sm font-semibold text-slate-400" role="status">
             {message}
